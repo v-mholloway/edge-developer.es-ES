@@ -486,25 +486,5 @@
     - name: Guía del desarrollador de WebVR
       href: 'https://docs.microsoft.com/microsoft-edge/webvr/'
     - name: Windows Runtime (WinRT)
-      href: windows-runtime.md
-      items:
-        - name: Uso de Windows Runtime en JavaScript
-          href: windows-runtime/using-the-windows-runtime-in-javascript.md
-          items:
-            - name: Consideraciones sobre el uso de la API de Windows Runtime
-              href: windows-runtime/considerations-when-using-the-windows-runtime-api.md
-            - name: Uso de métodos asincrónicos de Windows Runtime
-              href: windows-runtime/using-windows-runtime-asynchronous-methods.md
-              items:
-                - name: Propiedades de error especiales de métodos asincrónicos de Windows Runtime
-                  href: windows-runtime/special-error-properties-from-asynchronous-windows-runtime-methods.md
-            - name: Controlar eventos de Windows Runtime en JavaScript
-              href: windows-runtime/handling-windows-runtime-events-in-javascript.md
-            - name: Representación de JavaScript de los tipos de Windows Runtime
-              href: windows-runtime/javascript-representation-of-windows-runtime-types.md
-            - name: Representaciones DateTime y TimeSpan de Windows Runtime
-              href: windows-runtime/windows-runtime-datetime-and-timespan-representations.md
-            - name: Códigos de error para aplicaciones de Windows en tiempo de ejecución con JavaScript
-              href: windows-runtime/error-codes-for-windows-runtime-apps-using-javascript.md
-        - name: Referencia
-          href: windows-runtime/reference/toc.md
+      href: windows-runtime/toc.yml
+      topicHref: windows-runtime/index.md
