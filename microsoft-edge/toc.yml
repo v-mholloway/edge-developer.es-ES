@@ -206,6 +206,8 @@
               href: devtools-guide-chromium/remote-debugging/index.md
             - name: Obtener acceso a servidores locales
               href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Emuladores de Surface Duo
+              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
             - name: Dispositivos con Windows 10
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Memoria
