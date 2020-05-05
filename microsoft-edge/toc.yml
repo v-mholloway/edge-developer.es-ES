@@ -488,7 +488,7 @@
         - name: Cadena de agente de usuario de Microsoft Edge
           href: web-platform/user-agent-string.md
     - name: Guía del desarrollador de WebVR
-      href: 'https://docs.microsoft.com/microsoft-edge/webvr/'
+      href: /microsoft-edge/webvr/index
     - name: Windows Runtime (WinRT)
       href: windows-runtime/toc.yml
       topicHref: windows-runtime/index.md
