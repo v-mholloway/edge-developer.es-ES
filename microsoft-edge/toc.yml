@@ -453,6 +453,12 @@
       items:
         - name: Introducción a PWA (cromo)
           href: progressive-web-apps-chromium/get-started.md
+        - name: Escenarios sin conexión
+          href: progressive-web-apps-chromium/offline.md
+        - name: Trabajadores del servicio
+          href: progressive-web-apps-chromium/serviceworker.md
+        - name: Manifiestos de aplicación Web
+          href: progressive-web-apps-chromium/webappmanifests.md
     - name: Aplicaciones web progresivas (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
       items:
