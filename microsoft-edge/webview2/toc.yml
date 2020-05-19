@@ -10,14 +10,20 @@
       href: gettingstarted/winforms.md
 - name: Conceptos
   items:
+    - name: Distribución de la aplicación
+      href: concepts/distribution.md
     - name: Control de versiones
       href: concepts/versioning.md
 - name: Notas de la versión
   href: releasenotes.md
-- name: Herramientas
+- name: Hoja de ruta
+  href: roadmap.md
+- name: Procedimiento
   items:
-    - name: Controlador WebDrive
-      href: tooling/webdriver.md
+    - name: Depurar WebView2
+      href: howto/Debug.md
+    - name: Automatizar con controlador perimetral
+      href: howto/webdriver.md
 - name: Referencia
   href: webview2-api-reference.md
   items:
