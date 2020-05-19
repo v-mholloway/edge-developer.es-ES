@@ -3,23 +3,23 @@ description: Obtenga información sobre cómo probar su sitio web o aplicación 
 title: Controlador WebDrive (cromo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador, WebDrive, Selenium, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: 0cb135553b04cd0cf160755eacc0dbae245d13b7
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+ms.openlocfilehash: 810c45e1e8d7fb5a6dbefee1c4ae6eccbe573326
+ms.sourcegitcommit: f5dc9d3f1e6629120e036c4298f66de636688cb7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645318"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "10659385"
 ---
 # Controlador WebDrive (cromo)  
 
 La API [Webdriver][W3CWebdriver] W3C es una plataforma e interfaz independiente del idioma y Protocolo de conexión que permite a los programas o las secuencias de comandos controlar el comportamiento de un explorador Web, como Microsoft Edge \ (cromo \).  
 
-Webdriver permite a los desarrolladores crear pruebas automatizadas que simulan la interacción del usuario.  Las pruebas y simuladores de WebDrive se diferencian de las pruebas unitarias de JavaScript porque el acceso a la funcionalidad y la información que JavaScript se ejecuta en el explorador no es compatible con WebDrive, y permite simular con más precisión eventos de usuario o eventos a nivel de OS.  El controlador WebDrive es capaz de administrar las pruebas en varias ventanas, pestañas y páginas web en una sola sesión de prueba.  
+Webdriver permite a los desarrolladores crear pruebas automatizadas que simulan la interacción del usuario.  Las pruebas y simuladores de WebDrive se diferencian de las pruebas unitarias de JavaScript porque el acceso a la funcionalidad y la información que JavaScript se ejecuta en el explorador no es posible y WebDrive permite simular eventos de usuario o eventos a nivel de OS con más precisión.  El controlador WebDrive es capaz de administrar las pruebas en varias ventanas, pestañas y páginas web en una sola sesión de prueba.  
 
 A continuación se explica cómo empezar a usar Webdriver para Microsoft Edge \ (cromo \).  
 
@@ -41,37 +41,25 @@ Para encontrar su número de compilación correcto, siga estos pasos.
 
 :::image type="complex" source="./media/webdriver-chromium/edge-version.png" alt-text="El número de compilación para Microsoft Edge Canarias el 14 de enero de 2020":::
    Figura 1.  El número de compilación para Microsoft Edge Canarias el 14 de enero de 2020  
-:::image-end:::
-
-<!--  
-> ##### Figure 1  
-> The build number for Microsoft Edge Canary on January 14, 2020
-> ![The build number for Microsoft Edge Canary on January 14, 2020][ImageWebdriverChromiumEdgeVersion]  
--->  
+:::image-end:::  
 
 Ahora, [descarga la versión coincidente del controlador de Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads].  
 
 :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="Sección de descargas de la página del controlador de Microsoft Edge":::
    Figura 2.  Sección de descargas de la página del [controlador de Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads]  
-:::image-end:::
-
-<!--  
-> ##### Figure 2
-> The Downloads section of the [Microsoft Edge Driver page][MicrosoftDeveloperEdgeToolsWebdriverDownloads]
-> ![The Downloads section of the Microsoft Edge Driver page][ImageWebdriverChromiumEdgeDriverInstall]  
--->  
+:::image-end:::  
 
 > [!NOTE]
 > Microsoft Edge \ (EdgeHTML \) no funciona con el [controlador de Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads].  Para automatizar Microsoft Edge \ (EdgeHTML \), debe descargar [Microsoft Webdriver para Microsoft Edge \ (EdgeHTML \)][Webdriver].  
 
 ## Elegir un enlace de idioma de controlador  
 
-El último componente que debe descargar es un controlador de cliente específico del idioma.  El enlace de idioma traduce el código que escribiste en Python, Java, C \ #, Ruby y JavaScript en comandos que el controlador de Microsoft Edge que descargaste en la [sección anterior](#download-microsoft-edge-driver) puede ejecutarse en Microsoft Edge \ (cromo \).  
+El último componente que debe descargar es un controlador de cliente específico del idioma.  El enlace de idioma traduce el código que escribiste en Python, Java, C \ #, Ruby y JavaScript en comandos que el controlador de Microsoft Edge que [descargaste en la sección anterior](#download-microsoft-edge-driver) puede ejecutarse en Microsoft Edge \ (cromo \).  
 
 [Descargue el enlace de idioma de Webdrives que prefiera][SeleniumDownloads].  El equipo de Microsoft Edge es muy recomendable [Selenium 4,00-alpha05][NugetPackagesSeleniumWebdriver400alpha05] o una versión posterior, ya que cuenta con compatibilidad integrada para Microsoft Edge \ (cromo \).  Sin embargo, puedes conducir a Microsoft Edge \ (cromo \) en todas las versiones anteriores de Selenium, incluida la versión estable actual de Selenium 3.  
 
 > [!IMPORTANT]
-> Si anteriormente estabas automatizado o probando Microsoft Edge \ (cromo \) con `ChromeDriver` y `ChromeOptions` , el código de Webdriver no se ejecuta correctamente en Microsoft Edge V80 o posterior.  Este es un cambio importante y Microsoft Edge \ (cromo \) ya no acepta estos comandos.  Debe cambiar las pruebas para usar el `EdgeOptions` controlador de clase y [Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver].  
+> Si anteriormente estabas automatizado o probando Microsoft Edge \ (cromo \) con `ChromeDriver` y `ChromeOptions` , el código de Webdriver no se ejecuta correctamente en Microsoft Edge V80 o posterior.  Este es un cambio importante y Microsoft Edge \ (cromo \) ya no acepta los comandos.  Debe cambiar las pruebas para usar el `EdgeOptions` controlador de clase y [Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver].  
 
 ### Uso de Selenium 3  
 
@@ -231,263 +219,7 @@ options.add_argument('disable-gpu')
 * * *  
 
 > [!NOTE]
-> Estas [propiedades y métodos específicos de cromo][SeleniumWebDriverChromeoptionsClass] siempre están disponibles, pero no tienen efecto si la `UseChromium` propiedad no está configurada en `true` .  De forma similar, las propiedades y los métodos existentes diseñados para Microsoft Edge \ (EdgeHTML \) no tienen efecto si `UseChromium` propiedad se establece en `true` .  
-
-<!--  
-### [C#](#tab/c-sharp/)  
-
-<a id="selenium-usage" />  
-
-#### Basic Usage  
-
-To use with Microsoft Edge \(EdgeHTML\), simply create a default instance of the `EdgeDriver` class.
-
-```csharp
-var driver = new EdgeDriver();
-```  
-
-#### Driving Microsoft Edge (Chromium)  
-
-To use with Microsoft Edge \(Chromium\) instead, create a new `EdgeDriver` class and pass it the `EdgeOptions` object with the `UseChromium` property set to `true`.  
-
-```csharp
-var options = new EdgeOptions();
-options.UseChromium = true;
-
-var driver = new EdgeDriver(options);
-```  
-
-#### Choosing Specific Browser Binaries (Chromium-Only)  
-
-Use the `EdgeOptions` class to choose a specific binary.  It is useful for testing [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.  
-
-```csharp
-var options = new EdgeOptions();
-options.UseChromium = true;
-options.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe";
-
-var driver = new EdgeDriver(options);
-```  
-
-#### Customizing the Edge Driver Service  
-
-When an `EdgeDriver` class instance is created using `EdgeOptions` class, it automatically creates and launches the appropriate `EdgeDriverService` class for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\).  
-
-If you want to create an `EdgeDriverService`, create one configured for Microsoft Edge \(Chromium\) using the `CreateChromiumService()` method.  You may find it useful for additional customizations like enabling verbose log output in the following code.  
-
-```csharp
-using (var service = EdgeDriverService.CreateChromiumService())
-{
-    service.UseVerboseLogging = true;
-
-    var driver = new EdgeDriver(service);
-}
-```  
-
-> [!NOTE]
-> You do not need to provide the `EdgeOptions` object when passing the `EdgeDriver` class instance the `EdgeDriverService`.  The `EdgeDriver` class uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) depending on what kind of service you provide.  
-> 
-> However, if you want to provide both an `EdgeDriverService` and `EdgeOptions` classes, you must ensure that both are configured for the same version of Microsoft Edge.  For example, it is not possible to use a default Microsoft Edge \(EdgeHTML\) `EdgeDriverService` class and Chromium properties in the `EdgeOptions` class.  The `EdgeDriver` class throws an error to prevent using different versions.  
-
-#### Using Chromium-Specific Options  
-
-Using the `EdgeOptions` class with the `UseChromium` property set to `true` gives you access to all of the same methods and properties that are available in the [ChromeOptions][SeleniumWebDriverChromeoptionsClass] class in Selenium.  For example, just like with other Chromium browsers, use the `EdgeOptions.AddArguments()` method to run Microsoft Edge \(Chromium\) in [headless mode][WikiHeadlessBrowser] in the following code.  
-
-```csharp
-var options = new EdgeOptions();
-options.UseChromium = true;
-options.AddArgument("headless");
-options.AddArgument("disable-gpu");
-```  
-
-> [!NOTE]
-> These [Chromium-specific properties and methods][SeleniumWebDriverChromeoptionsClass] are always available but have no effect if the `UseChromium` property is not set to `true`.  Similarly, existing properties and methods meant for Microsoft Edge \(EdgeHTML\) have no effect if `UseChromium` property is set to `true`.  
-
-### [Python](#tab/python/)  
-
-<a id="selenium-usage" />  
-
-#### Basic Usage  
-
-To use with Microsoft Edge \(EdgeHTML\), simply create a default instance of the `EdgeDriver` class.
-
-```python
-driver = Edge()
-```  
-
-#### Driving Microsoft Edge (Chromium)  
-
-To use with Microsoft Edge \(Chromium\) instead, create a new `EdgeDriver` class and pass it the `EdgeOptions` object with the `UseChromium` property set to `true`.  
-
-```python
-options = EdgeOptions()
-options.use_chromium = True
-
-driver = Edge(options)
-```  
-
-#### Choosing Specific Browser Binaries (Chromium-Only)  
-
-Use the `EdgeOptions` class to choose a specific binary.  It is useful for testing [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.  
-
-```python
-options = EdgeOptions()
-options.use_chromium = True
-options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
-
-driver = Edge(options)
-```  
-
-#### Customizing the Edge Driver Service  
-
-When an `EdgeDriver` class instance is created using `EdgeOptions` class, it automatically creates and launches the appropriate `EdgeDriverService` class for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\).  
-
-If you want to create an `EdgeDriverService`, create one configured for Microsoft Edge \(Chromium\) using the `CreateChromiumService()` method.  You may find it useful for additional customizations like enabling verbose log output in the following code.  
-
-When using Python, the `Edge` object creates and manages the `EdgeService`.  To configure the `EdgeService`, pass additional arguments to the `Edge` object:
-
-```python
-service_args = ['--verbose']
-driver = Edge(service_args = service_args)
-```  
-
-#### Using Chromium-Specific Options  
-
-Using the `EdgeOptions` class with the `UseChromium` property set to `true` gives you access to all of the same methods and properties that are available in the [ChromeOptions][SeleniumWebDriverChromeoptionsClass] class in Selenium.  For example, just like with other Chromium browsers, use the `EdgeOptions.AddArguments()` method to run Microsoft Edge \(Chromium\) in [headless mode][WikiHeadlessBrowser] in the following code.  
-
-```python
-options = EdgeOptions()
-options.use_chromium = True
-options.add_argument('headless')
-options.add_argument('disable-gpu')
-```  
-
-> [!NOTE]
-> These [Chromium-specific properties and methods][SeleniumWebDriverChromeoptionsClass] are always available but have no effect if the `UseChromium` property is not set to `true`.  Similarly, existing properties and methods meant for Microsoft Edge \(EdgeHTML\) have no effect if `UseChromium` property is set to `true`.  
-
-* * *  
-
--->  
-
-<!--  
-### Basic Usage  
-
-To use with Microsoft Edge \(EdgeHTML\), simply create a default instance of the `EdgeDriver` class.
-
-#### C\#  
-
-```csharp
-var driver = new EdgeDriver();
-```  
-
-#### Python  
-
-```python
-driver = Edge()
-```  
-
-### Driving Microsoft Edge (Chromium)  
-
-To use with Microsoft Edge \(Chromium\) instead, create a new `EdgeDriver` class and pass it the `EdgeOptions` object with the `UseChromium` property set to `true`.  
-
-#### C\#  
-
-```csharp
-var options = new EdgeOptions();
-options.UseChromium = true;
-
-var driver = new EdgeDriver(options);
-```  
-
-#### Python  
-
-```python
-options = EdgeOptions()
-options.use_chromium = True
-
-driver = Edge(options)
-```  
-
-### Choosing Specific Browser Binaries (Chromium-Only)  
-
-Use the `EdgeOptions` class to choose a specific binary.  It is useful for testing [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.  
-
-#### C\#  
-
-```csharp
-var options = new EdgeOptions();
-options.UseChromium = true;
-options.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe";
-
-var driver = new EdgeDriver(options);
-```  
-
-#### Python  
-
-```python
-options = EdgeOptions()
-options.use_chromium = True
-options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
-
-driver = Edge(options)
-```  
-
-### Customizing the Edge Driver Service  
-
-#### C\#  
-
-When an `EdgeDriver` class instance is created using `EdgeOptions` class, it automatically creates and launches the appropriate `EdgeDriverService` class for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\).  
-
-If you want to create an `EdgeDriverService`, create one configured for Microsoft Edge \(Chromium\) using the `CreateChromiumService()` method.  You may find it useful for additional customizations like enabling verbose log output in the following code.  
-
-```csharp
-using (var service = EdgeDriverService.CreateChromiumService())
-{
-    service.UseVerboseLogging = true;
-
-    var driver = new EdgeDriver(service);
-}
-```  
-
-> [!NOTE]
-> You do not need to provide the `EdgeOptions` object when passing the `EdgeDriver` class instance the `EdgeDriverService`.  The `EdgeDriver` class uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) depending on what kind of service you provide.  
-> 
-> However, if you want to provide both an `EdgeDriverService` and `EdgeOptions` classes, you must ensure that both are configured for the same version of Microsoft Edge.  For example, it is not possible to use a default Microsoft Edge \(EdgeHTML\) `EdgeDriverService` class and Chromium properties in the `EdgeOptions` class.  The `EdgeDriver` class throws an error to prevent using different versions.  
-
-#### Python  
-
-When using Python, the `Edge` object creates and manages the `EdgeService`.  To configure the `EdgeService`, pass additional arguments to the `Edge` object:
-
-```python
-service_args = ['--verbose']
-driver = Edge(service_args = service_args)
-```  
-
-### Using Chromium-Specific Options  
-
-Using the `EdgeOptions` class with the `UseChromium` property set to `true` gives you access to all of the same methods and properties that are available in the [ChromeOptions][SeleniumWebDriverChromeoptionsClass] class in Selenium.  For example, just like with other Chromium browsers, use the `EdgeOptions.AddArguments()` method to run Microsoft Edge \(Chromium\) in [headless mode][WikiHeadlessBrowser] in the following code.  
-
-#### C\#  
-
-```csharp
-var options = new EdgeOptions();
-options.UseChromium = true;
-options.AddArgument("headless");
-options.AddArgument("disable-gpu");
-```  
-
-#### Python  
-
-```python
-options = EdgeOptions()
-options.use_chromium = True
-options.add_argument('headless')
-options.add_argument('disable-gpu')
-```  
-
-> [!NOTE]
-> These [Chromium-specific properties and methods][SeleniumWebDriverChromeoptionsClass] are always available but have no effect if the `UseChromium` property is not set to `true`.  Similarly, existing properties and methods meant for Microsoft Edge \(EdgeHTML\) have no effect if `UseChromium` property is set to `true`.  
--->  
+> Las [propiedades y los métodos específicos de cromo][SeleniumWebDriverChromeoptionsClass] siempre están disponibles, pero no tienen efecto si la `UseChromium` propiedad no está configurada en `true` .  De forma similar, las propiedades y los métodos existentes diseñados para Microsoft Edge \ (EdgeHTML \) no tienen efecto si `UseChromium` propiedad se establece en `true` .  
 
 ## Otras formas de configurar Webdriver  
 
@@ -518,19 +250,9 @@ El equipo de Microsoft Edge está ansioso por escuchar sus comentarios sobre el 
 
 :::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="El icono de comentarios en el DevTools de Microsoft Edge":::
    El icono de **comentarios** en el DevTools de Microsoft Edge  
-:::image-end:::
-
-<!--  
-> ##### Figure 3  
-> The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The example.png file produced by example.js][ImageDevtoolsGuideChromiumMediaDevtoolsFeedback])  
--->  
+:::image-end:::  
 
 <!-- image links -->  
-
-<!--[ImageWebdriverChromiumEdgeVersion]: ./media/webdriver-chromium/edge-version.png "Figure 1: The build number for Microsoft Edge Canary on January 14, 2020"  -->  
-<!--[ImageWebdriverChromiumEdgeDriverInstall]: ./media/webdriver-chromium/edge-driver-install.png "Figure 2: The Downloads section of the Microsoft Edge Driver page"  -->
-<!--[ImageDevtoolsGuideChromiumMediaDevtoolsFeedback]: ./devtools-guide-chromium/media/devtools-feedback.png "Figure 3: The example.png file produced by example.js"  -->  
 
 <!-- links -->  
 
@@ -564,4 +286,4 @@ El equipo de Microsoft Edge está ansioso por escuchar sus comentarios sobre el 
 
 [W3CWebdriver]: https://w3.org/TR/webdriver2 "Controlador WebDrive"  
 
-[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Explorador sin periféricos | Wikipedia"
+[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Explorador sin periféricos | Wikipedia"  
