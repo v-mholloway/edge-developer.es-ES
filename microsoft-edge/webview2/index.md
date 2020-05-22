@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación Win32 con el control de We
 title: Control WebView2 de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, control del explorador, HTML Edge, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: 184a64fde28345cd52dd6d772284f0393114ec02
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: 4f28ef64bb2936bc6c9a089ea2574070738fc79d
+ms.sourcegitcommit: 8f5c9255dadc2a9bb22c3201d15b57d84851fe64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659639"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "10671641"
 ---
 # Introducción a Microsoft Edge WebView2 (versión preliminar)  
 
@@ -104,7 +104,7 @@ Una vista previa para desarrolladores está disponible en los siguientes entorno
 *   .NET Core 3,0 o posterior  
 *   [WinUI 3,0](/uwp/toolkits/winui3/)  
 
-Mun ejecuta Windows 10, Windows 8,1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2 o Windows Server 2008 R2.   
+Debe ejecutar Windows 10, Windows 8,1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2 o Windows Server 2008 R2.   
 
 ## Pasos siguientes  
 
