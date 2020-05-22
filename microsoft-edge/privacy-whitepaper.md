@@ -3,18 +3,18 @@ description: notas del producto sobre la privacidad de Microsoft Edge
 title: notas del producto sobre la privacidad de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, privacidad, notas del producto, confianza
 localization_priority: Priority
-ms.openlocfilehash: 0849d51c14be78a9e261ea0fad426e126a1eea93
-ms.sourcegitcommit: c5f98907ccff78e0c615f6d664febce74cda8b68
+ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
+ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10658814"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "10673776"
 ---
 # notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -70,9 +70,7 @@ Cada 24 horas, Microsoft Edge descarga una lista de sitios admitidos para los qu
 
 Las plantillas almacenadas en el dispositivo se pueden eliminar borrando los datos de la caché en la opción **Borrar datos de búsqueda** en `edge://settings/privacy` .
 
-<!--  
-If you turn on **Show suggestions from Pinterest in Collections**, Collections perform a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  You may remove the suggestions and stop searches for Pinterest Topic pages by going to `edge://settings/privacy` and turning off **Show suggestions from Pinterest in Collections**.  
--->  
+Si activa **Mostrar sugerencias de Pinterest en colecciones**, las colecciones realizan una búsqueda de Microsoft Bing con el título de la colección para encontrar las páginas de temas relevantes de Pinterest.  Microsoft Edge no envía datos sobre las colecciones a Pinterest.  Puede quitar las sugerencias y detener la búsqueda de páginas de tema de Pinterest yendo a `edge://settings/privacy` y desactivando **Mostrar sugerencias de Pinterest en colecciones**.  
 
 Las colecciones no están disponibles al usar el modo de invitado o exploración de InPrivate.  
 
@@ -189,7 +187,7 @@ En el lado derecho de la barra de direcciones, Microsoft Edge indica cuando la u
 
 ![Ubicación](./media/whitepaper-media/geolocation2.png)  
 
-Si permite el uso compartido de su ubicación con un sitio, Microsoft Edge envía información de red local, como su dirección IP y los puntos de acceso Wi-Fi cercanos al servicio de ubicación de Microsoft.  El servicio de Microsoft usa la información para estimar las coordenadas de la ubicación geográfica.  Esta estimación de geolocalización se compartirá con el sitio con el que aceptaste compartir tu ubicación.  En Windows 10, Microsoft Edge solo usa el servicio de ubicación de Microsoft si ha activado la [configuración de ubicación de Windows](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
+Si permite el uso compartido de su ubicación con un sitio, Microsoft Edge envía información de red local, como su dirección IP y los puntos de acceso Wi-Fi cercanos al servicio de ubicación de Microsoft.  El servicio de Microsoft usa la información para estimar las coordenadas de la ubicación geográfica.  La estimación de ubicación geográfica se comparte con el sitio con el que aceptaste compartir tu ubicación.  En Windows 10, si activa permitir el **acceso a la ubicación en este dispositivo** y **permite que las aplicaciones tengan acceso a su ubicación** en la configuración de **Ubicación** de la configuración de **Windows** , Microsoft Edge proporciona sitios con una ubicación más precisa.  Si desactiva **permitir acceso a la ubicación en este dispositivo** y **permite que las aplicaciones tengan acceso a su ubicación**, se proporcionará una ubicación aproximada a los sitios.  La información solo se comparte con los sitios a los que previamente le ha permitido ver su ubicación.  [Configuración de ubicación de Windows](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
 
 Al realizar solicitudes al servicio de ubicación de Microsoft, se usa un nuevo identificador generado aleatoriamente.  El servicio de ubicación de Microsoft Edge no almacena tus coordenadas de ubicación geográfica durante ningún período de tiempo.  
 
