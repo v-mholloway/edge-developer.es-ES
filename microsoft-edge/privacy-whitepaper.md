@@ -3,18 +3,18 @@ description: notas del producto sobre la privacidad de Microsoft Edge
 title: notas del producto sobre la privacidad de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, privacidad, notas del producto, confianza
 localization_priority: Priority
-ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
-ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
+ms.openlocfilehash: 6aba8f6c1ae7212d5af702bcf13ff9dde6b8659b
+ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673776"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "10678228"
 ---
 # notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -86,7 +86,7 @@ Los volcados de sucesos se envían a Microsoft y se almacenan en servidores segu
 
 Es posible que los datos de diagnóstico de bloqueo almacenados localmente en el dispositivo se borren del sistema de archivos en `edge://crashes` .  
 
-Para desactivar la recopilación de datos de diagnóstico de bloqueo en Windows 10, vaya a **diagnóstico \ & comentarios** en diagnósticos de windows \ & configuración de comentarios.  Para las versiones de Microsoft Edge en todas las demás plataformas `edge://settings/privacy` , vaya a la opción mejorar los productos de Microsoft y desactive el **envío de informes de bloqueo y datos acerca de cómo usar la configuración del explorador** .  Esta recopilación de datos de diagnóstico también se puede desactivar para empresas mediante [directivas de grupo administradas por su organización](/deployedge/microsoft-edge-privacy-policy).  
+Para desactivar la recopilación de datos de diagnóstico de bloqueo en Windows 10, vaya a **diagnóstico \ & comentarios** en diagnósticos de windows \ & configuración de comentarios.  Para las versiones de Microsoft Edge en todas las demás plataformas `edge://settings/privacy` , vaya a la opción mejorar los productos de Microsoft y desactive el **envío de informes de bloqueo y datos acerca de cómo usar la configuración del explorador** .  Esta recopilación de datos de diagnóstico también se puede desactivar para empresas mediante [directivas de grupo administradas por su organización](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 ## Datos de diagnóstico sobre cómo usar el explorador  
 
