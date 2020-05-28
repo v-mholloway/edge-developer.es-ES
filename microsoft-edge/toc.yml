@@ -68,6 +68,8 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+            - name: Microsoft Edge 84
+              href: devtools-guide-chromium/whats-new/2020/05/devtools.md
         - name: Modo IE
           href: devtools-guide-chromium/ie-mode.md
         - name: Vista 3D
@@ -94,7 +96,7 @@
                   href: devtools-guide-chromium/css/print-preview.md
         - name: Consola
           items:
-            - name: Información general
+            - name: Visión general
               href: devtools-guide-chromium/console/index.md
             - name: Mensajes de registro
               href: devtools-guide-chromium/console/log.md
@@ -132,11 +134,13 @@
               href: devtools-guide-chromium/storage/websql.md
             - name: Caché
               href: devtools-guide-chromium/storage/cache.md
+        - name: Problemas
+          href: devtools-guide-chromium/issues/index.md
         - name: Menú de comandos
           href: devtools-guide-chromium/command-menu/index.md
         - name: Simulación móvil
           items:
-            - name: Información general
+            - name: Visión general
               href: devtools-guide-chromium/device-mode/index.md
             - name: Emular y probar otros exploradores
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -182,7 +186,7 @@
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: Optimizar la velocidad del sitio web
               href: devtools-guide-chromium/speed/get-started.md
-            - name: Información general
+            - name: Visión general
               href: devtools-guide-chromium/rendering-tools/index.md
             - name: Referencia del análisis de rendimiento
               href: devtools-guide-chromium/evaluate-performance/reference.md
@@ -212,7 +216,7 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Memoria
           items:
-            - name: Información general
+            - name: Visión general
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Descripción de la terminología de la memoria
               href: devtools-guide-chromium/memory-problems/memory-101.md
@@ -232,7 +236,7 @@
           href: devtools-guide-chromium/resources/index.md
         - name: Personalización
           items:
-            - name: Información general
+            - name: Visión general
               href: devtools-guide-chromium/customize/index.md
             - name: Tema oscuro
               href: devtools-guide-chromium/customize/dark-theme.md
