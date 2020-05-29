@@ -54,7 +54,7 @@ También se incluyen detalles sobre cómo cambiar la ubicación del icono de ext
 ![extensión en el panel de extensión](./../media/sideload-extension-installed.png)
 
 > [!NOTE]
-> Las extensiones no firmadas se desactivan automáticamente en los siguientes inicios de Microsoft Edge. Cuando el explorador entra en un estado de inactividad (después de unos 10 segundos de inactividad), verá la siguiente notificación en la parte inferior de la ventana. ![notificación](./../media/riskynotification.png) arriesgada para activar las extensiones no firmadas, haga clic en "activar de todos modos".
+> Las extensiones no firmadas se desactivan automáticamente en los siguientes inicios de Microsoft Edge. Cuando el explorador entra en un estado de inactividad (después de unos 10 segundos de inactividad), verá la siguiente notificación en la parte inferior de la ventana. ![notificación arriesgada ](./../media/riskynotification.png) para activar las extensiones no firmadas, haga clic en "activar de todos modos".
 
 
 
