@@ -54,11 +54,11 @@ La DevTools de Microsoft Edge \ (EdgeHTML \) incluye:
 
 ## Aplicación de la Microsoft Store  
 
-Los **DevTools de Microsoft Edge \ (EdgeHTML \)** [ahora están disponibles][DevtoolsGuideEdgehtmlWhatsnew] como una [aplicación independiente de Windows 10 en Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], además de la experiencia de herramientas en el`F12`explorador \ (\).  La versión de la tienda viene con un panel de **selección** para adjuntar a destinos de página locales y remotos y un diseño con fichas para facilitar el cambio entre instancias de DevTools.  
+Los **DevTools de Microsoft Edge \ (EdgeHTML \)** [ahora están disponibles][DevtoolsGuideEdgehtmlWhatsnew] como una [aplicación independiente de Windows 10 en Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], además de la experiencia de herramientas en el explorador \ ( `F12` \).  La versión de la tienda viene con un panel de **selección** para adjuntar a destinos de página locales y remotos y un diseño con fichas para facilitar el cambio entre instancias de DevTools.  
 
 ### Depuración local  
 
-Para depurar una página de forma local, simplemente inicia la aplicación Microsoft Edge DevTools.  El panel **local** del selector muestra todos los procesos de contenido de EdgeHTML activos, incluidas las pestañas del explorador abierto, que ejecutan [PWAs][PwasEdgehtmlIndex] \ (`WWAHost.exe` procesos \) y los controles de [WebView][HostingWebview] .  Seleccione el destino que desea adjuntar y abra una nueva pestaña de la DevTools.  
+Para depurar una página de forma local, simplemente inicia la aplicación Microsoft Edge DevTools.  El panel **local** del selector muestra todos los procesos de contenido de EdgeHTML activos, incluidas las pestañas del explorador abierto, que ejecutan [PWAs][PwasEdgehtmlIndex] \ ( `WWAHost.exe` procesos \) y los controles de [WebView][HostingWebview] .  Seleccione el destino que desea adjuntar y abra una nueva pestaña de la DevTools.  
 
 :::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Panel local de la aplicación DevTools":::
    Panel local de la aplicación DevTools
@@ -119,7 +119,7 @@ Estos métodos abreviados controlan la ventana principal de DevTools y deben fun
 
 ## Comentarios  
 
-Envíanos tus comentarios para ayudar a mejorar la DevTools de Microsoft Edge \ (EdgeHTML \).  Simplemente abre las herramientas \ (`F12`\) y selecciona el botón [Enviar comentarios](#microsoft-edge-edgehtml-developer-tools) .  
+Envíanos tus comentarios para ayudar a mejorar la DevTools de Microsoft Edge \ (EdgeHTML \).  Simplemente abre las herramientas \ ( `F12` \) y selecciona el botón [Enviar comentarios](#microsoft-edge-edgehtml-developer-tools) .  
 
 Conviértase en un [Windows Insider][WindowsInsiderProgram] para obtener una vista previa de las [características más recientes de la DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Use la aplicación Hub de comentarios de Windows para publicar, votar, realizar un seguimiento y obtener soporte técnico para sugerencias y problemas generales de Windows.  
 
