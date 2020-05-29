@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 25ea8367aa9d64d0a1066cf8c1564f4d9c9f05ed
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 532c898845125564ad5af6460dc8d1ff6464abfb
+ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655076"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10687807"
 ---
 # Clase Microsoft. Web. WebView2. WinForms. WebView2 
 
@@ -50,9 +50,6 @@ Control para incrustar WebView2 en WinForms.
 [Volver a cargar](#reload) | Vuelva a cargar el documento de nivel superior del WebView2.
 [Detener](#stop) | Detenga cualquier navegación en curso en el WebView2.
 [WebView2](#webview2) | Cree un nuevo control WebView2 WinForms.
-[Entrar](#onenter) | Controlador de foco protegido.
-[OnSizeChanged](#onsizechanged) | Controlador SizeChanged protegido.
-[OnVisibleChanged](#onvisiblechanged) | Controlador de VisibilityChanged protegido.
 
 ## Miembros
 
@@ -216,22 +213,4 @@ Cree un nuevo control WebView2 WinForms.
 > [WebView2](#webview2)pública ()
 
 Después de la construcción, la propiedad CoreWebView2 es NULL. Llama a [EnsureCoreWebView2Async](#ensurecorewebview2async) para inicializar el CoreWebView2 subyacente.
-
-#### Entrar 
-
-Controlador de foco protegido.
-
-> Protected override void [entrar](#onenter)(EventArgs e)
-
-#### OnSizeChanged 
-
-Controlador SizeChanged protegido.
-
-> Protected override void [OnSizeChanged](#onsizechanged)(EventArgs e)
-
-#### OnVisibleChanged 
-
-Controlador de VisibilityChanged protegido.
-
-> Protected override void [OnVisibleChanged](#onvisiblechanged)(EventArgs e)
 
