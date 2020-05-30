@@ -6,12 +6,12 @@ ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f07639d3c5cd246704f3d489c0e59714a938f13d
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+ms.openlocfilehash: fc5dcc10ba3a79bd3f073e0e3504e551d7e23d70
+ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684941"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "10688181"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -114,7 +114,7 @@ Cuando se depura de forma remota un [dispositivo Android][DevToolsRemoteDebugAnd
 
 [#1081486][CR1081486] de problemas de cromo  
 
-### El panel de detalles del panel de red toma el foco  
+### El panel de detalles del panel de red está ahora accesible  
 
 En Microsoft Edge 84, el [Panel de detalles][DevToolsNetworkDetails] del panel **red** toma el foco cuando lo abre para un recurso en el [registro de red][DevToolsNetworkLog].  Este cambio permite a los lectores de pantalla leer e interactuar con el contenido del panel de **detalles** .  
 
