@@ -1,18 +1,18 @@
-- name: Uso de Windows Runtime en JavaScript
+- name: Use Windows en tiempo de ejecución en JavaScript
   href: using-the-windows-runtime-in-javascript.md
   items:
-    - name: Consideraciones sobre el uso de la API de Windows Runtime
+    - name: Consideraciones al usar la API de Windows Runtime
       href: considerations-when-using-the-windows-runtime-api.md
-    - name: Uso de métodos asincrónicos de Windows Runtime
+    - name: Usar métodos asíncronos en tiempo de ejecución de Windows Runtime
       href: using-windows-runtime-asynchronous-methods.md
       items:
-        - name: Propiedades de error especiales de métodos asincrónicos de Windows Runtime
+        - name: Propiedades de error especial de métodos asíncronos de Windows Runtime
           href: special-error-properties-from-asynchronous-windows-runtime-methods.md
-    - name: Controlar eventos de Windows Runtime en JavaScript
+    - name: Control de los eventos de Windows Runtime en JavaScript
       href: handling-windows-runtime-events-in-javascript.md
     - name: Representación de JavaScript de los tipos de Windows Runtime
       href: javascript-representation-of-windows-runtime-types.md
-    - name: Representaciones DateTime y TimeSpan de Windows Runtime
+    - name: Representaciones DateTime y TimeSpan de Windows en tiempo de ejecución
       href: windows-runtime-datetime-and-timespan-representations.md
     - name: Códigos de error para aplicaciones de Windows en tiempo de ejecución con JavaScript
       href: error-codes-for-windows-runtime-apps-using-javascript.md
