@@ -1,4 +1,4 @@
-- name: WebView2 (cromo) (vista previa)
+- name: WebView2 (Chromium) (vista previa)
   href: index.md
 - name: Introducción
   items:
@@ -10,24 +10,24 @@
       href: gettingstarted/winforms.md
 - name: Conceptos
   items:
-    - name: Distribución de la aplicación
+    - name: Distribuir Mi Aplicación
       href: concepts/distribution.md
     - name: Control de versiones
       href: concepts/versioning.md
 - name: Notas de la versión
   href: releasenotes.md
-- name: Hoja de ruta
+- name: Guía básica
   href: roadmap.md
 - name: Procedimiento
   items:
     - name: Depurar WebView2
       href: howto/Debug.md
-    - name: Automatizar con controlador perimetral
+    - name: Automatizar con Edge Driver
       href: howto/webdriver.md
 - name: Referencia
   href: webview2-api-reference.md
   items:
-    - name: C++ Win32
+    - name: Win32 C++
       href: reference/win32/0-9-488-reference-webview2.md
       items:
         - name: ICoreWebView2
@@ -54,7 +54,7 @@
           href: reference/win32/0-9-488/icorewebview2webresourcerequest.md
         - name: ICoreWebView2WebResourceResponse
           href: reference/win32/0-9-488/icorewebview2webresourceresponse.md
-        - name: GLOBALS
+        - name: Global
           href: reference/win32/0-9-488/webview2-idl.md
         - name: Argumentos de evento
           items:
@@ -150,9 +150,9 @@
               href: reference/win32/0-9-488/icorewebview2experimentalenvironment.md
             - name: ICoreWebView2ExperimentalPointerInfo
               href: reference/win32/0-9-488/icorewebview2experimentalpointerinfo.md
-        - name: Archivados
+        - name: Archivado
           items:
-            - name: 0.9.430-Reference (WebView2)
+            - name: 0.9.430 - Referencia (WebView2)
               href: reference/win32/0-9-430-reference-webview2.md
               items:
                 - name: ICoreWebView2
@@ -177,7 +177,7 @@
                   href: reference/win32/0-9-430/icorewebview2webresourcerequest.md
                 - name: ICoreWebView2WebResourceResponse
                   href: reference/win32/0-9-430/icorewebview2webresourceresponse.md
-                - name: GLOBALS
+                - name: Global
                   href: reference/win32/0-9-430/webview2-idl.md
                 - name: Argumentos de evento
                   items:
@@ -263,7 +263,7 @@
                       href: reference/win32/0-9-430/icorewebview2windowcloserequestedeventhandler.md
                     - name: ICoreWebView2ZoomFactorChangedEventHandler
                       href: reference/win32/0-9-430/icorewebview2zoomfactorchangedeventhandler.md
-            - name: 0.8.190-Reference (WebView2)
+            - name: 0.8.190 - Referencia (WebView2)
               href: reference/win32/0-8-190-reference-webview2.md
               items:
                 - name: IWebView2Deferral
@@ -300,7 +300,7 @@
                   href: reference/win32/0-8-190/iwebview2webview4.md
                 - name: IWebView2WebView5
                   href: reference/win32/0-8-190/iwebview2webview5.md
-                - name: GLOBALS
+                - name: Global
                   href: reference/win32/0-8-190/webview2-idl.md
                 - name: Argumentos de evento
                   items:
@@ -380,10 +380,10 @@
                       href: reference/win32/0-8-190/iwebview2zoomfactorchangedeventhandler.md
     - name: .NET
       items:
-        - name: Incorporación principal
+        - name: Core
           href: reference/dotnet/0-9-515-reference-webview2.md
           items:
-            - name: Espacio de nombres Microsoft. Web. WebView2. Core
+            - name: Espacio de nombres Microsoft.Web.WebView2.Core
               href: reference/dotnet/0-9-515/namespace-microsoft-web-webview2-core.md
             - name: CoreWebView2
               href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2.md
