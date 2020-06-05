@@ -1,55 +1,87 @@
 ---
 description: Código de Microsoft Edge (cromo) y Visual Studio
 title: Visual Studio Code
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/12/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, código de vs, código de Visual Studio, depurador, webhint
-ms.openlocfilehash: 94148864edbd43adbe2dc9f3d0c2fa0c1f7f0b43
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: e178612d9db8ce3223bb5158c4557675d3314e15
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10574874"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695890"
 ---
-# Visual Studio Code
+# Visual Studio Code  
 
-[Visual Studio Code](https://code.visualstudio.com/Docs) es un editor de código fuente ligero pero eficaz que se ejecuta en el escritorio y está disponible para Windows, MacOS y Linux. Viene con compatibilidad integrada para JavaScript, TypeScript y node. js, por lo que es una excelente herramienta para desarrolladores web listos para utilizar. Vaya a [esta página](https://code.visualstudio.com/) para descargar el código de Visual Studio si aún no lo está usando.
+[Visual Studio Code][VisualStudioCodeDocs] es un editor de código fuente ligero pero eficaz que se ejecuta en el escritorio y está disponible para Windows, MacOS y Linux.  Viene con compatibilidad integrada para JavaScript, TypeScript y node. js, por lo que es una excelente herramienta para desarrolladores web listos para utilizar.  Si aún no lo usas, descarga el [código de Visual Studio][VisualstudioCode].  
 
-## Extensions
+## Extensions  
 
-<!-- We want to put something like the tiles for extensions VS Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page. I think it's a web page. I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->
+<!--Todo: We want to put something like the tiles for extensions VS Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-Para adquirir cualquiera de las extensiones resaltadas a continuación, vaya a extensiones ( `Ctrl`  +  `Shift`  +  `X` en Windows o `Command`  +  `Shift`  +  `X` en Mac) en vs Code.
+Para adquirir cualquiera de las extensiones resaltadas a continuación, vaya a Extensions \ ( `Ctrl` + `Shift` + `X` en Windows o `Command` + `Shift` + `X` en MacOS \) en vs Code.  
 
-Busque la extensión específica en el Marketplace y seleccione **instalar**.
+Busque la extensión específica en el Marketplace y seleccione **instalar**.  
 
-![Instalar el depurador para la extensión de código de Microsoft Edge VS](./media/vscode-debugger-install.png)
+:::image type="complex" source="./media/vscode-debugger-install.png" alt-text="Instalar el depurador para la extensión de código de Microsoft Edge VS":::
+   Instalar el depurador para la extensión de código de Microsoft Edge VS  
+:::image-end:::  
 
-## Depurador para Microsoft Edge
+:::row:::
+   :::column span="1":::
+      ### Depurador para Microsoft Edge  
 
-Depura el código de JavaScript front-end línea por línea y muestra las `console.log()` instrucciones directamente en [Visual Studio Code](https://code.visualstudio.com/) usando la extensión [de código de depurador para Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) vs.
+      Con el [depurador para la extensión de código de Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] vs, depura el código de JavaScript front-end línea a línea y muestra las `console.log()` instrucciones directamente desde el [código de Visual Studio][VisualstudioCode].  
+      
+      Con la herramienta de depuración, puedes iniciar o adjuntar a Microsoft Edge \ (EdgeHTML \) y Microsoft Edge \ (cromo \).  Para obtener un tutorial sobre la depuración de Microsoft Edge desde VS Code y `launch.json` configuraciones de ejemplo, consulta [depurador para Microsoft Edge vs extensión de código][VscodeDebuggerEdge].  Seleccione la imagen siguiente para ver la extensión en acción.  
 
-Usa el [depurador para la extensión de código de Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) vs para iniciar o adjuntar a Microsoft Edge (EdgeHTML) y Microsoft Edge (cromo). Consulte [esta página](./debugger-for-edge.md) para obtener un tutorial sobre la depuración de Microsoft Edge desde vs Code y la configuración de ejemplo de **lanzamiento. JSON** .
+      :::image type="content" source="./media/debugger-for-edge.png" alt-text="Depurador para la extensión de código perimetral de VS en acción" lightbox="./media/debugger-for-edge.gif":::  
+   :::column-end:::
+   :::column span="1":::
+      ### Elementos de Microsoft Edge  
+      
+      Con los [elementos de][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] la extensión de código de Microsoft Edge vs, usa la herramienta elementos del explorador Microsoft Edge en Visual Studio.  Al iniciar o adjuntar, la herramienta elementos se conecta a una instancia de Microsoft Edge, muestra la estructura HTML en tiempo de ejecución y le permite modificar el diseño o corregir problemas de estilo.  
+      
+      Para obtener más información, consulta [elementos de la extensión de código de Microsoft Edge vs][VscodeElementsEdge].  Seleccione la imagen siguiente para ver la extensión en acción.  
+      
+      :::image type="content" source="./media/elements-for-edge.png" alt-text="Elementos de la extensión de código perimetral de VS en acción" lightbox="./media/elements-for-edge.gif":::  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ### webhint
+      
+      Use [webhint][WebhintMain], una herramienta de desplegable personalizable, para mejorar la accesibilidad, el rendimiento, la compatibilidad entre exploradores, la compatibilidad de PWA y la seguridad de su sitio.  Comprueba los procedimientos recomendados y los errores comunes de tu código. El proyecto de código abierto webhint, desarrollado inicialmente por el equipo de Microsoft Edge, ahora forma parte de la [OpenJS Foundation][OpenjsFoundation].  El equipo de Microsoft Edge continúa contribuyendo a la webhint junto con los desarrolladores web de la comunidad.  <!--Select the following image to see the extension in action.  -->  
+      
+      :::image type="content" source="./media/webhint-extension.png" alt-text="Captura de pantalla de extensión de código webhint VS" lightbox="./media/webhint-extension.png":::  
+      
+      Identifique y solucione problemas en HTML, CSS, JavaScript, TypeScript y más agregando la [extensión webhint para vs Code][VisualstudioMarketplaceWebhint].  Las sugerencias aparecen como líneas de subrayado y se resumen en el panel **problemas** .  
+      
+      Para obtener más información, consulta [Cómo usar webhint en Visual Studio Code][VscodeWebhint].  
+   :::column-end:::
+   :::column span="1":::
+      <!--Empty to retain grid  -->  
+   :::column-end:::
+:::row-end:::
 
-![GIF del depurador para la extensión de código perimetral de VS en acción.](./media/debugger-for-edge.gif)
+<!-- image links -->  
 
-## Elementos de Microsoft Edge
+<!--links -->  
 
-Al agregar los [elementos de la extensión de código de Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) vs, puedes usar la herramienta elementos del explorador desde el código de Visual Studio. Al iniciar o adjuntar, la herramienta elementos se conectará a una instancia de Microsoft Edge, mostrará la estructura HTML en tiempo de ejecución y le permitirá modificar el diseño o corregir problemas de estilo.
+[VscodeDebuggerEdge]: ./debugger-for-edge.md "Depurador para la extensión de código de Microsoft Edge VS | Microsoft docs"  
+[VscodeElementsEdge]: ./elements-for-edge.md "Elementos de la extensión de código de Microsoft Edge VS | Microsoft docs"  
+[VscodeWebhint]: ./webhint.md "Extensión de código de VS webhint | Microsoft docs"  
 
-Para obtener más información, consulta [esta página](./elements-for-edge.md).
+[VisualstudioCode]: https://code.visualstudio.com "Código de Visual Studio"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentación | Código de Visual Studio"   
 
-![GIF de los elementos de la extensión de código perimetral de VS en acción.](./media/elements-for-edge.gif)
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Depurador para Microsoft Edge | Marketplace de Visual Studio"  
+[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elementos de Microsoft Edge (cromo) | Marketplace de Visual Studio"  
 
-## sugerencia
+[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Marketplace de Visual Studio"  
 
-Use [webhint](https://webhint.io), una herramienta de desplegable personalizable, para mejorar la accesibilidad, el rendimiento, la compatibilidad entre exploradores, la compatibilidad de PWA y la seguridad de su sitio. Comprueba los procedimientos recomendados y los errores comunes de tu código. Este proyecto de código abierto, desarrollado inicialmente por el equipo de Microsoft Edge, ahora forma parte de la [OpenJS Foundation](https://openjsf.org/). El equipo de Microsoft Edge continúa contribuyendo a la webhint junto con los desarrolladores web de la comunidad.
-
-![Captura de pantalla de extensión de código webhint VS](./media/webhint-extension.png)
-
-Identifique y solucione problemas en HTML, CSS, JavaScript, TypeScript y más agregando la [extensión webhint para vs Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint). Las sugerencias aparecen como líneas de subrayado y se resumen en el panel problemas.
-
-Para obtener más información, consulta [Cómo usar webhint en Visual Studio Code](./webhint.md).
+[WebhintMain]:  https://webhint.io "sugerencia"  
+[OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  
