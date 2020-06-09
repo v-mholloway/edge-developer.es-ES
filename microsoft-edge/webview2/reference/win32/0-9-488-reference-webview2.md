@@ -8,20 +8,23 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: d7e38f25a3e58d21744c8631319f553f2b0962fb
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 8c0511dc0e7327ebc2f6ee3bac34f62716dff472
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655426"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697885"
 ---
-# Referencia (WebView2)  
+# 0.9.515-Reference (WebView2)  
+
+> [!NOTE]
+> Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../webview2-api-reference.md) para obtener la referencia de API más reciente.
 
 El control Microsoft Edge WebView2 permite hospedar contenido web en tu aplicación con [Microsoft Edge \ (cromo \)](https://www.microsoftedgeinsider.com) como motor de representación.  Para obtener más información, vea [información general sobre Microsoft Edge WebView2](../../index.md)) y [Cómo comenzar a usar WebView2](../../gettingstarted/win32.md).  [ICoreWebView2](0-9-488/ICoreWebView2.md) es un buen lugar para comenzar a conocer los detalles de la API.  
 
-## GLOBALS  
+## Global  
 
-*   [GLOBALS](0-9-430/webview2-idl.md)  
+*   [Global](0-9-488/webview2-idl.md)  
 
 ## Interactúa  
 *   [ICoreWebView2](0-9-488/icorewebview2.md)
@@ -82,7 +85,7 @@ El control Microsoft Edge WebView2 permite hospedar contenido web en tu aplicaci
 *   [ICoreWebView2WindowCloseRequestedEventHandler](0-9-488/icorewebview2windowcloserequestedeventhandler.md)
 *   [ICoreWebView2ZoomFactorChangedEventHandler](0-9-488/icorewebview2zoomfactorchangedeventhandler.md)
 
-### Montaje
+### Experimental
 
 *   [ICoreWebView2ExperimentalCompositionController](0-9-488/icorewebview2experimentalcompositioncontroller.md)
 *   [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](0-9-488/icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md)

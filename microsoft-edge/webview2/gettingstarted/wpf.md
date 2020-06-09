@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones WPF, WPF, Edge, CoreWebView2, control de explorador, código HTML de Edge, introducción, .NET
-ms.openlocfilehash: ebff559a940c54dcea18dec58170bdee1e030e9b
-ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
+ms.openlocfilehash: a38af67e4ac9f7d70c698231882a6b479994fbfd
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10685697"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697976"
 ---
 # Introducción a WebView2 en WPF (vista previa)  
 
@@ -328,7 +328,7 @@ Pulse `F5` para compilar y ejecutar la aplicación.  Ahora la barra de direccion
 ## Pasos siguientes  
 
 * Desproteja el [repositorio de WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) para obtener un ejemplo completo de las capacidades de WebView2's
-* [Consulta la referencia](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2) de la API para obtener información más detallada sobre nuestras API
+* [Consulta la referencia](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md) de la API para obtener información más detallada sobre nuestras API
 * Desproteja una lista de [recursos de WebView2](../index.md#next-steps) para obtener más información sobre WebView2
 
 ## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  

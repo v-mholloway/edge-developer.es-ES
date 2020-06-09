@@ -3,19 +3,22 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 519ef71db87d49aaf5a8a80970ff0cda61dfebbf
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: f0ac0bf7ae3b237bca45b22ed97ec16513666922
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655165"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697556"
 ---
 # Clase Microsoft. Web. WebView2. Core. CoreWebView2Settings 
+
+> [!NOTE]
+> Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.
 
 Espacio de nombres: Microsoft. Web. WebView2. Core \
 Ensamblado: Microsoft. Web. WebView2. Core. dll
@@ -29,7 +32,7 @@ Define las propiedades que habilitan, deshabilitan o modifican las característi
 [AreDefaultContextMenusEnabled](#aredefaultcontextmenusenabled) | La propiedad AreDefaultContextMenusEnabled se usa para evitar que los usuarios de la vista vean los menús contextuales predeterminados.
 [AreDefaultScriptDialogsEnabled](#aredefaultscriptdialogsenabled) | AreDefaultScriptDialogsEnabled se usa al cargar un nuevo documento HTML.
 [AreDevToolsEnabled](#aredevtoolsenabled) | AreDevToolsEnabled controla si el usuario puede usar el menú contextual o los métodos abreviados de teclado para abrir la ventana de DevTools.
-[AreRemoteObjectsAllowed](#areremoteobjectsallowed) | La propiedad AreRemoteObjectsAllowed se usa para controlar si se puede tener acceso a los objetos remotos desde la página de WebView.
+[AreHostObjectsAllowed](#arehostobjectsallowed) | La propiedad AreHostObjectsAllowed se usa para controlar si se puede acceder a los objetos host desde la página de WebView.
 [IsBuiltInErrorPageEnabled](#isbuiltinerrorpageenabled) | La propiedad IsBuiltInErrorPageEnabled se usa para deshabilitar la página de error integrada para el error de navegación y el error del proceso de representación.
 [IsScriptEnabled](#isscriptenabled) | Controla si la ejecución de JavaScript está habilitada en todas las navegaciones futuras de WebView.
 [IsStatusBarEnabled](#isstatusbarenabled) | IsStatusBarEnabled controla si se mostrará la barra de estado.
@@ -64,11 +67,11 @@ AreDevToolsEnabled controla si el usuario puede usar el menú contextual o los m
 
 Es verdadero de forma predeterminada.
 
-#### AreRemoteObjectsAllowed 
+#### AreHostObjectsAllowed 
 
-La propiedad AreRemoteObjectsAllowed se usa para controlar si se puede tener acceso a los objetos remotos desde la página de WebView.
+La propiedad AreHostObjectsAllowed se usa para controlar si se puede acceder a los objetos host desde la página de WebView.
 
-> Public bool [AreRemoteObjectsAllowed](#areremoteobjectsallowed)
+> Public bool [AreHostObjectsAllowed](#arehostobjectsallowed)
 
 El valor predeterminado es TRUE.
 

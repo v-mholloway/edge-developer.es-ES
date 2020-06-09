@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, control del explorador, HTML Edge, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: f17de3bcb7459375617f00aec0cd2897f0859c1d
-ms.sourcegitcommit: c579181af051e2855b785263faa4001c672a929b
+ms.openlocfilehash: 1b140d9f644c7a864cac4966bb4cfdd400feeb0d
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673856"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697745"
 ---
 # Introducción a Microsoft Edge WebView2 (versión preliminar)  
 
@@ -83,9 +83,9 @@ Las aplicaciones híbridas permiten a los desarrolladores disfrutar de lo mejor 
       **Adopción incremental**  
       Agregue componentes Web por partes a la aplicación.  
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
-## Tareas iniciales  
+## Introducción  
 
 Para compilar y probar la aplicación con el control WebView2, debe tener instalado tanto [Microsoft Edge (cromo)](https://www.microsoftedgeinsider.com/download) como el [SDK de WebView2](https://aka.ms/webviewnuget) .  Seleccione una de las siguientes opciones para comenzar.  
 
