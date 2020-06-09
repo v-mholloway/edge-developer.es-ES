@@ -8,47 +8,50 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 2a18fe9f8f79a109047d029affab8d84a6ef845c
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: d3b3f4e78ef37ad2101a3a8f817279e999cea3e3
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655088"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697619"
 ---
-# <span data-ttu-id="10516-104">Clase Microsoft. Web. WebView2. Core. CoreWebView2NavigationCompletedEventArgs</span><span class="sxs-lookup"><span data-stu-id="10516-104">Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs class</span></span> 
+# <span data-ttu-id="10c90-104">Clase Microsoft. Web. WebView2. Core. CoreWebView2NavigationCompletedEventArgs</span><span class="sxs-lookup"><span data-stu-id="10c90-104">Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs class</span></span> 
 
-<span data-ttu-id="10516-105">Espacio de nombres: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="10516-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
-<span data-ttu-id="10516-106">Ensamblado: Microsoft. Web. WebView2. Core. dll</span><span class="sxs-lookup"><span data-stu-id="10516-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
+> [!NOTE]
+> <span data-ttu-id="10c90-105">Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="10c90-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="10c90-106">Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.</span><span class="sxs-lookup"><span data-stu-id="10c90-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
-<span data-ttu-id="10516-107">Argumentos de evento para el evento NavigationCompleted.</span><span class="sxs-lookup"><span data-stu-id="10516-107">Event args for the NavigationCompleted event.</span></span>
+<span data-ttu-id="10c90-107">Espacio de nombres: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="10c90-107">Namespace: Microsoft.Web.WebView2.Core</span></span>\
+<span data-ttu-id="10c90-108">Ensamblado: Microsoft. Web. WebView2. Core. dll</span><span class="sxs-lookup"><span data-stu-id="10c90-108">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
 
-## <span data-ttu-id="10516-108">Resumen</span><span class="sxs-lookup"><span data-stu-id="10516-108">Summary</span></span>
+<span data-ttu-id="10c90-109">Argumentos de evento para el evento NavigationCompleted.</span><span class="sxs-lookup"><span data-stu-id="10c90-109">Event args for the NavigationCompleted event.</span></span>
 
- <span data-ttu-id="10516-109">Miembros</span><span class="sxs-lookup"><span data-stu-id="10516-109">Members</span></span>                        | <span data-ttu-id="10516-110">Descripciones</span><span class="sxs-lookup"><span data-stu-id="10516-110">Descriptions</span></span>
+## <span data-ttu-id="10c90-110">Resumen</span><span class="sxs-lookup"><span data-stu-id="10c90-110">Summary</span></span>
+
+ <span data-ttu-id="10c90-111">Miembros</span><span class="sxs-lookup"><span data-stu-id="10c90-111">Members</span></span>                        | <span data-ttu-id="10c90-112">Descripciones</span><span class="sxs-lookup"><span data-stu-id="10c90-112">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="10516-111">IsSuccess</span><span class="sxs-lookup"><span data-stu-id="10516-111">IsSuccess</span></span>](#issuccess) | <span data-ttu-id="10516-112">Es verdadero cuando la navegación es correcta.</span><span class="sxs-lookup"><span data-stu-id="10516-112">True when the navigation is successful.</span></span>
-[<span data-ttu-id="10516-113">NavigationId</span><span class="sxs-lookup"><span data-stu-id="10516-113">NavigationId</span></span>](#navigationid) | <span data-ttu-id="10516-114">IDENTIFICADOR de la navegación.</span><span class="sxs-lookup"><span data-stu-id="10516-114">The ID of the navigation.</span></span>
-[<span data-ttu-id="10516-115">WebErrorStatus</span><span class="sxs-lookup"><span data-stu-id="10516-115">WebErrorStatus</span></span>](#weberrorstatus) | <span data-ttu-id="10516-116">El código de error si se produjo un error en la navegación.</span><span class="sxs-lookup"><span data-stu-id="10516-116">The error code if the navigation failed.</span></span>
+[<span data-ttu-id="10c90-113">IsSuccess</span><span class="sxs-lookup"><span data-stu-id="10c90-113">IsSuccess</span></span>](#issuccess) | <span data-ttu-id="10c90-114">Es verdadero cuando la navegación es correcta.</span><span class="sxs-lookup"><span data-stu-id="10c90-114">True when the navigation is successful.</span></span>
+[<span data-ttu-id="10c90-115">NavigationId</span><span class="sxs-lookup"><span data-stu-id="10c90-115">NavigationId</span></span>](#navigationid) | <span data-ttu-id="10c90-116">IDENTIFICADOR de la navegación.</span><span class="sxs-lookup"><span data-stu-id="10c90-116">The ID of the navigation.</span></span>
+[<span data-ttu-id="10c90-117">WebErrorStatus</span><span class="sxs-lookup"><span data-stu-id="10c90-117">WebErrorStatus</span></span>](#weberrorstatus) | <span data-ttu-id="10c90-118">El código de error si se produjo un error en la navegación.</span><span class="sxs-lookup"><span data-stu-id="10c90-118">The error code if the navigation failed.</span></span>
 
-## <span data-ttu-id="10516-117">Miembros</span><span class="sxs-lookup"><span data-stu-id="10516-117">Members</span></span>
+## <span data-ttu-id="10c90-119">Miembros</span><span class="sxs-lookup"><span data-stu-id="10c90-119">Members</span></span>
 
-#### <span data-ttu-id="10516-118">IsSuccess</span><span class="sxs-lookup"><span data-stu-id="10516-118">IsSuccess</span></span> 
+#### <span data-ttu-id="10c90-120">IsSuccess</span><span class="sxs-lookup"><span data-stu-id="10c90-120">IsSuccess</span></span> 
 
-<span data-ttu-id="10516-119">Es verdadero cuando la navegación es correcta.</span><span class="sxs-lookup"><span data-stu-id="10516-119">True when the navigation is successful.</span></span>
+<span data-ttu-id="10c90-121">Es verdadero cuando la navegación es correcta.</span><span class="sxs-lookup"><span data-stu-id="10c90-121">True when the navigation is successful.</span></span>
 
-> <span data-ttu-id="10516-120">Public bool [IsSuccess](#issuccess)</span><span class="sxs-lookup"><span data-stu-id="10516-120">public bool [IsSuccess](#issuccess)</span></span>
+> <span data-ttu-id="10c90-122">Public bool [IsSuccess](#issuccess)</span><span class="sxs-lookup"><span data-stu-id="10c90-122">public bool [IsSuccess](#issuccess)</span></span>
 
-<span data-ttu-id="10516-121">Esto es falso para una navegación que terminó en una página de error (errores debidos a ausencia de red, error de búsqueda DNS, el servidor HTTP responde con 4xx), pero también podría ser falso si se llamase a Window. STOP () en la página desplazada.</span><span class="sxs-lookup"><span data-stu-id="10516-121">This is false for a navigation that ended up in an error page (failures due to no network, DNS lookup failure, HTTP server responds with 4xx), but could also be false for additional things such as window.stop() called on navigated page.</span></span>
+<span data-ttu-id="10c90-123">Esto es falso para una navegación que terminó en una página de error (errores debidos a ausencia de red, error de búsqueda DNS, el servidor HTTP responde con 4xx), pero también podría ser falso si se llamase a Window. STOP () en la página desplazada.</span><span class="sxs-lookup"><span data-stu-id="10c90-123">This is false for a navigation that ended up in an error page (failures due to no network, DNS lookup failure, HTTP server responds with 4xx), but could also be false for additional things such as window.stop() called on navigated page.</span></span>
 
-#### <span data-ttu-id="10516-122">NavigationId</span><span class="sxs-lookup"><span data-stu-id="10516-122">NavigationId</span></span> 
+#### <span data-ttu-id="10c90-124">NavigationId</span><span class="sxs-lookup"><span data-stu-id="10c90-124">NavigationId</span></span> 
 
-<span data-ttu-id="10516-123">IDENTIFICADOR de la navegación.</span><span class="sxs-lookup"><span data-stu-id="10516-123">The ID of the navigation.</span></span>
+<span data-ttu-id="10c90-125">IDENTIFICADOR de la navegación.</span><span class="sxs-lookup"><span data-stu-id="10c90-125">The ID of the navigation.</span></span>
 
-> <span data-ttu-id="10516-124">ulong [NavigationId](#navigationid)</span><span class="sxs-lookup"><span data-stu-id="10516-124">public ulong [NavigationId](#navigationid)</span></span>
+> <span data-ttu-id="10c90-126">ulong [NavigationId](#navigationid)</span><span class="sxs-lookup"><span data-stu-id="10c90-126">public ulong [NavigationId](#navigationid)</span></span>
 
-#### <span data-ttu-id="10516-125">WebErrorStatus</span><span class="sxs-lookup"><span data-stu-id="10516-125">WebErrorStatus</span></span> 
+#### <span data-ttu-id="10c90-127">WebErrorStatus</span><span class="sxs-lookup"><span data-stu-id="10c90-127">WebErrorStatus</span></span> 
 
-<span data-ttu-id="10516-126">El código de error si se produjo un error en la navegación.</span><span class="sxs-lookup"><span data-stu-id="10516-126">The error code if the navigation failed.</span></span>
+<span data-ttu-id="10c90-128">El código de error si se produjo un error en la navegación.</span><span class="sxs-lookup"><span data-stu-id="10c90-128">The error code if the navigation failed.</span></span>
 
-> <span data-ttu-id="10516-127">CoreWebView2WebErrorStatus pública [WebErrorStatus](#weberrorstatus)</span><span class="sxs-lookup"><span data-stu-id="10516-127">public CoreWebView2WebErrorStatus [WebErrorStatus](#weberrorstatus)</span></span>
+> <span data-ttu-id="10c90-129">CoreWebView2WebErrorStatus pública [WebErrorStatus](#weberrorstatus)</span><span class="sxs-lookup"><span data-stu-id="10c90-129">public CoreWebView2WebErrorStatus [WebErrorStatus](#weberrorstatus)</span></span>
 

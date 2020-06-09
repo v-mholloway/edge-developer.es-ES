@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 9196f2d9503efbaf9f15b43e7e6d7e80c2de00f7
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: a6c12669bd90da4861412997818de49626282cb1
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655330"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697829"
 ---
-# <span data-ttu-id="48657-104">interfaz ICoreWebView2NewBrowserVersionAvailableEventHandler</span><span class="sxs-lookup"><span data-stu-id="48657-104">interface ICoreWebView2NewBrowserVersionAvailableEventHandler</span></span> 
+# <span data-ttu-id="7ded6-104">interfaz ICoreWebView2NewBrowserVersionAvailableEventHandler</span><span class="sxs-lookup"><span data-stu-id="7ded6-104">interface ICoreWebView2NewBrowserVersionAvailableEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="7ded6-105">Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="7ded6-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="7ded6-106">Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.</span><span class="sxs-lookup"><span data-stu-id="7ded6-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2NewBrowserVersionAvailableEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="48657-105">La persona que llama implementa esta interfaz para recibir eventos NewBrowserVersionAvailable.</span><span class="sxs-lookup"><span data-stu-id="48657-105">The caller implements this interface to receive NewBrowserVersionAvailable events.</span></span>
+<span data-ttu-id="7ded6-107">La persona que llama implementa esta interfaz para recibir eventos NewBrowserVersionAvailable.</span><span class="sxs-lookup"><span data-stu-id="7ded6-107">The caller implements this interface to receive NewBrowserVersionAvailable events.</span></span>
 
-## <span data-ttu-id="48657-106">Resumen</span><span class="sxs-lookup"><span data-stu-id="48657-106">Summary</span></span>
+## <span data-ttu-id="7ded6-108">Resumen</span><span class="sxs-lookup"><span data-stu-id="7ded6-108">Summary</span></span>
 
- <span data-ttu-id="48657-107">Miembros</span><span class="sxs-lookup"><span data-stu-id="48657-107">Members</span></span>                        | <span data-ttu-id="48657-108">Descripciones</span><span class="sxs-lookup"><span data-stu-id="48657-108">Descriptions</span></span>
+ <span data-ttu-id="7ded6-109">Miembros</span><span class="sxs-lookup"><span data-stu-id="7ded6-109">Members</span></span>                        | <span data-ttu-id="7ded6-110">Descripciones</span><span class="sxs-lookup"><span data-stu-id="7ded6-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="48657-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="48657-109">Invoke</span></span>](#invoke) | <span data-ttu-id="48657-110">Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.</span><span class="sxs-lookup"><span data-stu-id="48657-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="7ded6-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="7ded6-111">Invoke</span></span>](#invoke) | <span data-ttu-id="7ded6-112">Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.</span><span class="sxs-lookup"><span data-stu-id="7ded6-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="48657-111">Miembros</span><span class="sxs-lookup"><span data-stu-id="48657-111">Members</span></span>
+## <span data-ttu-id="7ded6-113">Miembros</span><span class="sxs-lookup"><span data-stu-id="7ded6-113">Members</span></span>
 
-#### <span data-ttu-id="48657-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="48657-112">Invoke</span></span> 
+#### <span data-ttu-id="7ded6-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="7ded6-114">Invoke</span></span> 
 
-<span data-ttu-id="48657-113">Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.</span><span class="sxs-lookup"><span data-stu-id="48657-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="7ded6-115">Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.</span><span class="sxs-lookup"><span data-stu-id="7ded6-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="48657-114">invocación [Invoke](#invoke)pública de HRESULT ([ICoreWebView2Environment](icorewebview2environment.md) \* webviewEnvironment, IUnknown \* args)</span><span class="sxs-lookup"><span data-stu-id="48657-114">public HRESULT [Invoke](#invoke)([ICoreWebView2Environment](icorewebview2environment.md) \* webviewEnvironment, IUnknown \* args)</span></span>
+> <span data-ttu-id="7ded6-116">invocación [Invoke](#invoke)pública de HRESULT ([ICoreWebView2Environment](icorewebview2environment.md) \* webviewEnvironment, IUnknown \* args)</span><span class="sxs-lookup"><span data-stu-id="7ded6-116">public HRESULT [Invoke](#invoke)([ICoreWebView2Environment](icorewebview2environment.md) \* webviewEnvironment, IUnknown \* args)</span></span>
 
