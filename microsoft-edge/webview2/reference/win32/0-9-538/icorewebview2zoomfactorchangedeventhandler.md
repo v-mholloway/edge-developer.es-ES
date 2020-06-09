@@ -3,22 +3,19 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 64211bf99873ef2e2a41aaf2fb9453e892f6536a
+ms.openlocfilehash: f0b90cec451a80225f657386fa06b8740d6e1385
 ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698109"
+ms.locfileid: "10699426"
 ---
 # interfaz ICoreWebView2ZoomFactorChangedEventHandler 
-
-> [!NOTE]
-> Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.
 
 ```
 interface ICoreWebView2ZoomFactorChangedEventHandler

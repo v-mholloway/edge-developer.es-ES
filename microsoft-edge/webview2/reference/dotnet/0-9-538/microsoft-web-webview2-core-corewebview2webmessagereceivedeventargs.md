@@ -3,27 +3,22 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 6e0c20f8763e8895c4b5ebdcdfe9ea7d70aca2b8
+ms.openlocfilehash: 9babcaff5b90e22ea6bac5d5703a54caef6d349d
 ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698130"
+ms.locfileid: "10699476"
 ---
-# interfaz ICoreWebView2WebMessageReceivedEventArgs 
+# Clase Microsoft. Web. WebView2. Core. CoreWebView2WebMessageReceivedEventArgs 
 
-> [!NOTE]
-> Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.
-
-```
-interface ICoreWebView2WebMessageReceivedEventArgs
-  : public IUnknown
-```
+Espacio de nombres: Microsoft. Web. WebView2. Core \
+Ensamblado: Microsoft. Web. WebView2. Core. dll
 
 Argumentos de evento para el evento WebMessageReceived.
 
@@ -31,23 +26,23 @@ Argumentos de evento para el evento WebMessageReceived.
 
  Miembros                        | Descripciones
 --------------------------------|---------------------------------------------
-[get_Source](#get_source) | El URI del documento que envió este mensaje Web.
-[get_WebMessageAsJson](#get_webmessageasjson) | Mensaje publicado desde el contenido de WebView en el host convertido en una cadena JSON.
+[Source](#source) | El URI del documento que envió este mensaje Web.
+[WebMessageAsJson](#webmessageasjson) | Mensaje publicado desde el contenido de WebView en el host convertido en una cadena JSON.
 [TryGetWebMessageAsString](#trygetwebmessageasstring) | Si el mensaje publicado desde el contenido de WebView en el host es de tipo cadena, este método devolverá el valor de esa cadena.
 
 ## Miembros
 
-#### get_Source 
+#### Source 
 
 El URI del documento que envió este mensaje Web.
 
-> [get_Source](#get_source)de HRESULT público (código LPWStr *)
+> [origen](#source) de cadena público
 
-#### get_WebMessageAsJson 
+#### WebMessageAsJson 
 
 Mensaje publicado desde el contenido de WebView en el host convertido en una cadena JSON.
 
-> [get_WebMessageAsJson](#get_webmessageasjson)de HRESULT público (LPWStr * WebMessageAsJson)
+> cadena pública [WebMessageAsJson](#webmessageasjson)
 
 Usa esta para comunicarte a través de objetos de JavaScript.
 
@@ -63,7 +58,7 @@ postMessage('example')       L"\"example\""
 
 Si el mensaje publicado desde el contenido de WebView en el host es de tipo cadena, este método devolverá el valor de esa cadena.
 
-> [TRYGETWEBMESSAGEASSTRING](#trygetwebmessageasstring)HRESULT público (LPWStr * webMessageAsString)
+> cadena pública [TryGetWebMessageAsString](#trygetwebmessageasstring)()
 
 Si el mensaje publicado es algún otro tipo de JavaScript, este método producirá un error con E_INVALIDARG. Use esta para comunicarse a través de cadenas simples.
 

@@ -3,22 +3,19 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: db102d065c91fa16778b27a73b047b8d72465d29
+ms.openlocfilehash: 1824c0f626f77e1fb566a361eac6f0358e6a754c
 ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698165"
+ms.locfileid: "10699408"
 ---
 # interfaz ICoreWebView2 
-
-> [!NOTE]
-> Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.
 
 ```
 interface ICoreWebView2
@@ -102,11 +99,11 @@ WebView2 le permite hospedar contenido web con la tecnología de explorador Web 
 
 ## Eventos de navegación
 
-La secuencia normal de eventos de navegación es NavigationStarting, SourceChanged, ContentLoading y, después, NavigationCompleted.
+La secuencia normal de eventos de navegación es NavigationStarting, SourceChanged, ContentLoading y, después, NavigationCompleted. Los siguientes eventos describen el estado de la vista previa en cada navegación: NavigationStarting: WebView comienza a navegar y la navegación provocará una solicitud de red. El anfitrión puede no permitir la solicitud en este momento. SourceChanged: el origen de WebView se cambia a una nueva dirección URL. También puede deberse a una navegación que no cause una solicitud de red, como la navegación de fragmentos. HistoryChanged: el historial de WebView se ha actualizado como resultado de la navegación. ContentLoading: WebView ha empezado a cargar contenido nuevo. NavigationCompleted: WebView terminó de cargar el contenido en la página nueva. Los programadores pueden realizar un seguimiento de la navegación de cada documento nuevo por el identificador de navegación. Los IDENTIFICADOres de navegación de WebView cada vez que hay una navegación correcta a un documento nuevo.
 
 ![DOT-inline-dotgraph-1. png](media/dot-inline-dotgraph-1.png)
 
-Ten en cuenta que esto es para los eventos de navegación con el mismo evento NavigationId. Los eventos de navegación con diferentes argumentos de evento de NavigationId se pueden solapar. Por ejemplo, si inicia una espera de navegación para su evento NavigationStarting y, a continuación, inicia otra navegación, verá el NavigationStarting para la primera navegación, seguida de la NavigationStarting del segundo Navigate, seguido de la NavigationCompleted de la primera navegación y, a continuación, todos los demás eventos de navegación correspondientes para la segunda navegación. En casos de error puede haber o no un evento ContentLoading dependiendo de si la navegación continúa o no en una página de error. En el caso de una redirección HTTP, habrá varios eventos NavigationStarting en una fila, y los siguientes tendrán establecido el marcador IsRedirect.
+Ten en cuenta que esto es para los eventos de navegación con el mismo evento NavigationId. Los eventos de navegación con diferentes argumentos de evento de NavigationId se pueden solapar. Por ejemplo, si inicia una espera de navegación para su evento NavigationStarting y, a continuación, inicia otra navegación, verá el NavigationStarting para la primera navegación, seguida de la NavigationStarting del segundo Navigate, seguido de la NavigationCompleted de la primera navegación y, a continuación, todos los demás eventos de navegación correspondientes para la segunda navegación. En casos de error puede haber o no un evento ContentLoading dependiendo de si la navegación continúa o no en una página de error. En el caso de una redirección HTTP, habrá varios eventos NavigationStarting en una fila, y los que se detallan a continuación tendrán la marca IsRedirect, pero el identificador de navegación sigue siendo el mismo. Las mismas navegación de documento no producen un evento NavigationStarting y tampoco aumentan el identificador de navegación.
 
 Para supervisar o cancelar la navegación dentro de los submarcos de la vista en WebView, use FrameNavigationStarting.
 
@@ -429,7 +426,49 @@ Se desencadena cuando el contenido de la vista en WebView solicita abrir una nue
                 CHECK_FAILURE(args->GetDeferral(&deferral));
                 AppWindow* newAppWindow;
 
-                newAppWindow = new AppWindow(m_creationModeId, L"");
+                wil::com_ptr<ICoreWebView2ExperimentalNewWindowRequestedEventArgs>
+                    experimentalArgs;
+                CHECK_FAILURE(args->QueryInterface(IID_PPV_ARGS(&experimentalArgs)));
+                wil::com_ptr<ICoreWebView2ExperimentalWindowFeatures> windowFeatures;
+                CHECK_FAILURE(experimentalArgs->get_WindowFeatures(&windowFeatures));
+
+                RECT windowRect = {0};
+                UINT32 left = 0;
+                UINT32 top = 0;
+                UINT32 height = 0;
+                UINT32 width = 0;
+                BOOL shouldHaveToolbar = true;
+
+                BOOL hasPosition = FALSE;
+                BOOL hasSize = FALSE;
+                CHECK_FAILURE(windowFeatures->HasPosition(&hasPosition));
+                CHECK_FAILURE(windowFeatures->HasSize(&hasSize));
+
+                bool useDefaultWindow = true;
+
+                if (!!hasPosition && !!hasSize)
+                {
+                    CHECK_FAILURE(windowFeatures->get_Left(&left));
+                    CHECK_FAILURE(windowFeatures->get_Top(&top));
+                    CHECK_FAILURE(windowFeatures->get_Height(&height));
+                    CHECK_FAILURE(windowFeatures->get_Width(&width));
+                    useDefaultWindow = false;
+                }
+                CHECK_FAILURE(windowFeatures->get_Toolbar(&shouldHaveToolbar));
+
+                windowRect.left = left;
+                windowRect.right = left + (width < s_minNewWindowSize  s_minNewWindowSize : width);
+                windowRect.top = top;
+                windowRect.bottom = top + (height < s_minNewWindowSize  s_minNewWindowSize : height);
+
+                if (!useDefaultWindow)
+                {
+                  newAppWindow = new AppWindow(m_creationModeId, L"", nullptr, true, windowRect, !!shouldHaveToolbar);
+                }
+                else
+                {
+                  newAppWindow = new AppWindow(m_creationModeId, L"");
+                }
                 newAppWindow->m_isPopupWindow = true;
                 newAppWindow->m_onWebViewFirstInitialized = [args, deferral, newAppWindow]() {
                     CHECK_FAILURE(args->put_NewWindow(newAppWindow->m_webView.get()));
@@ -474,15 +513,15 @@ Se desencadena cuando el contenido de una vista previa solicita permiso para acc
         message += uri.get();
         message += L"?\n\n";
         message += (userInitiated
-            ? L"This request came from a user gesture."
+             L"This request came from a user gesture."
             : L"This request did not come from a user gesture.");
 
         int response = MessageBox(nullptr, message.c_str(), L"Permission Request",
                                    MB_YESNOCANCEL | MB_ICONWARNING);
 
         COREWEBVIEW2_PERMISSION_STATE state =
-              response == IDYES ? COREWEBVIEW2_PERMISSION_STATE_ALLOW
-            : response == IDNO  ? COREWEBVIEW2_PERMISSION_STATE_DENY
+              response == IDYES  COREWEBVIEW2_PERMISSION_STATE_ALLOW
+            : response == IDNO   COREWEBVIEW2_PERMISSION_STATE_DENY
             :                     COREWEBVIEW2_PERMISSION_STATE_DEFAULT;
         CHECK_FAILURE(args->put_State(state));
 
@@ -1004,7 +1043,7 @@ void ScriptComponent::CallCdpMethod()
         std::wstring methodName = dialog.input.substr(0, delimiterPos);
         std::wstring methodParams =
             (delimiterPos < dialog.input.size()
-                ? dialog.input.substr(delimiterPos + 1)
+                 dialog.input.substr(delimiterPos + 1)
                 : L"{}");
 
         m_webView->CallDevToolsProtocolMethod(

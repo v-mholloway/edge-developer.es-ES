@@ -3,29 +3,29 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: e3618b7dc7b866031709ee276c80ba45ec89512d
+ms.openlocfilehash: 92eab98dfbd5f4c9239a5263e524daa2e7346eb5
 ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698039"
+ms.locfileid: "10699351"
 ---
-# interfaz ICoreWebView2ExecuteScriptCompletedHandler 
+# interfaz ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler 
 
 > [!NOTE]
-> Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.
+> Esta es una API experimental que se incluye con nuestra versión preliminar SDK versión 0.9.538.
 
 ```
-interface ICoreWebView2ExecuteScriptCompletedHandler
+interface ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler
   : public IUnknown
 ```
 
-La persona que llama implementa esta interfaz para recibir el resultado del método ExecuteScript.
+La persona que llama implementa esta interfaz para recibir el CoreWebView2Controller creado a través de CreateCoreWebView2CompositionController.
 
 ## Resumen
 
@@ -39,5 +39,5 @@ La persona que llama implementa esta interfaz para recibir el resultado del mét
 
 Se llama para proporcionar al implementador el estado de finalización y el resultado de la llamada de método asincrónica correspondiente.
 
-> invocación [Invoke](#invoke)de HRESULT pública (HRESULT ERRORCODE, LPCWSTR resultObjectAsJson)
+> invocación [Invoke](#invoke)de HRESULT pública (resultado HRESULT, [ICoreWebView2ExperimentalCompositionController](icorewebview2experimentalcompositioncontroller.md) * WebView)
 

@@ -3,29 +3,26 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 64211bf99873ef2e2a41aaf2fb9453e892f6536a
+ms.openlocfilehash: c154b80e29476666bc0b2121b3eba63009946b36
 ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698109"
+ms.locfileid: "10699364"
 ---
-# interfaz ICoreWebView2ZoomFactorChangedEventHandler 
-
-> [!NOTE]
-> Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.
+# interfaz ICoreWebView2DevToolsProtocolEventReceivedEventHandler 
 
 ```
-interface ICoreWebView2ZoomFactorChangedEventHandler
+interface ICoreWebView2DevToolsProtocolEventReceivedEventHandler
   : public IUnknown
 ```
 
-La persona que llama implementa esta interfaz para recibir eventos ZoomFactorChanged.
+La persona que llama implementa esta interfaz para recibir eventos DevToolsProtocolEventReceived de la vista en WebView.
 
 ## Resumen
 
@@ -33,15 +30,11 @@ La persona que llama implementa esta interfaz para recibir eventos ZoomFactorCha
 --------------------------------|---------------------------------------------
 [Invoke](#invoke) | Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.
 
-Usa la propiedad ICoreWebView2Controller. ZoomFactor para obtener el factor de zoom modificado.
-
 ## Miembros
 
 #### Invoke 
 
 Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.
 
-> invocación [Invoke](#invoke)pública de HRESULT ([ICoreWebView2Controller](icorewebview2controller.md) * Sender, IUnknown * args)
-
-No hay argumentos de evento y el parámetro args será null.
+> invocación [Invoke](#invoke)pública de HRESULT ([ICoreWebView2](icorewebview2.md) * Sender, [ICoreWebView2DevToolsProtocolEventReceivedEventArgs](icorewebview2devtoolsprotocoleventreceivedeventargs.md) * args)
 
