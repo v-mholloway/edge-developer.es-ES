@@ -566,7 +566,7 @@
                   href: reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md
             - name: Archivado
               items:
-                - name: 0-9-515 - Reference (WebView2)
+                - name: 0-9-515 - Referencia (WebView2)
                   href: reference/dotnet/0-9-515-reference-webview2.md
                   items:
                     - name: CoreWebView2
