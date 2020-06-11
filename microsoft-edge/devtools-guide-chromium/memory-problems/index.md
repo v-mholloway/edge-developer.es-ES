@@ -2,16 +2,16 @@
 title: Solucionar problemas de memoria
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 738ef5fe682633f3100345c922ff12c3c27a7166
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+ms.openlocfilehash: 87fee5484bbd535ee5692acfce273ed6edff5da2
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611765"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708728"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10611765"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Solucionar problemas de memoria   
-
-
+# Solucionar problemas de memoria  
 
 Obtenga información sobre cómo usar Microsoft Edge y DevTools para buscar problemas de memoria que afecten al rendimiento de la página, como pérdidas de memoria, recarga de memoria y recolecciones de elementos no utilizados frecuentes.  
 
@@ -70,17 +64,17 @@ Use el administrador de tareas del explorador Microsoft Edge como punto de parti
 
 1.  Presione `Shift` + `Esc` o vaya al menú principal de Microsoft Edge y seleccione **más herramientas**  >  **Administrador de tareas del explorador** para abrir el administrador de tareas del explorador Microsoft Edge.  
     
-    > ##### Figura 1  
-    > Abrir el administrador de tareas del explorador Microsoft Edge  
-    > ![Abrir el administrador de tareas del explorador Microsoft Edge][ImageTaskManager]  
+    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Abrir el administrador de tareas del explorador Microsoft Edge" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
+       Ilustración 1: abrir el administrador de tareas del explorador Microsoft Edge  
+    :::image-end:::  
     
-1.  Haga clic con el botón derecho en el encabezado de tabla del administrador de tareas del explorador Microsoft Edge y habilite la **memoria JavaScript**.  
+1.  Mantenga el mouse en el encabezado de tabla del administrador de tareas del explorador Microsoft Edge, abra el menú contextual \ (haga clic con el botón derecho \) y habilite la **memoria JavaScript**.  
     
-    > ##### Figura 2  
-    > Habilitar la memoria de JavaScript  
-    > ![Habilitar la memoria de JavaScript][ImageJavascriptMemory]  
+    :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Habilitar la memoria de JavaScript" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
+       Ilustración 2: habilitar la memoria de JavaScript  
+    :::image-end:::  
     
-Estas dos columnas le indican diferentes cosas sobre cómo está usando la página la memoria:  
+Estas dos columnas le indican diferentes cosas sobre el uso de la memoria por la página.  
 
 *   La columna **memoria** representa la memoria nativa.  Los nodos DOM se almacenan en la memoria nativa.  Si este valor aumenta, se crean los nodos DOM.  
 *   La columna **memoria de JavaScript** representa el montón de JS.  Esta columna contiene dos valores.  El valor que te interesa es el número en vivo \ (el número entre paréntesis \).  El número en vivo representa la cantidad de memoria que usan los objetos que se pueden encontrar en la página.  Si este número está aumentando, se crean objetos nuevos o los objetos existentes crecen.  
@@ -96,7 +90,7 @@ También puede usar el panel rendimiento como otro punto de partida en su invest
 1.  [Hacer una grabación][DevtoolsEvaluatePerformanceReferenceRecord].  
 
 > [!TIP]
-> Es recomendable iniciar y finalizar la grabación con una recolección de elementos no utilizados forzada.  Haga clic en el botón **recopilar** eliminación de elementos no usados al ![ ][ImageForceGarbageCollectionIcon] grabar para forzar la recolección de elementos no utilizados.  
+> Es recomendable iniciar y finalizar la grabación con una recolección de elementos no utilizados forzada.  Seleccione el botón **recopilar** eliminación de elementos no usados ![ en la ][ImageForceGarbageCollectionIcon] grabación para forzar la recolección de elementos no utilizados.  
 
 Para hacer una demostración de las grabaciones de la memoria, considere el siguiente código:  
 
@@ -111,15 +105,15 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```  
 
-Cada vez que se presiona el botón al que se hace referencia en el código, `div` los nodos de 10000 se anexan al cuerpo del documento y se inserta una cadena de 1 millón `x` caracteres en la `x` matriz.  La ejecución de este código genera una grabación en el panel de **rendimiento** , como la [ilustración 3](#figure-3).  
+Cada vez que se presiona el botón al que se hace referencia en el código, `div` los nodos de 10000 se anexan al cuerpo del documento y se inserta una cadena de 1 millón `x` caracteres en la `x` matriz.  La ejecución del ejemplo de código anterior produce una grabación en el panel de **rendimiento** como la siguiente ilustración.  
 
-> ##### Imagen 3  
-> Crecimiento simple  
-> ![Crecimiento simple][ImageSimpleGrowth]  
+:::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="Crecimiento simple" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
+   Ilustración 3: crecimiento simple  
+:::image-end:::  
 
 En primer lugar, una explicación de la interfaz de usuario.  El gráfico de **montones** en el panel de **información general** \ (debajo de **net**\) representa el montón de JS.  Debajo del panel de **información general** se encuentra el panel de **contador** .  Aquí puede ver el uso de memoria desglosado por montones de JS \ (igual al gráfico de **montón** en el panel de **información general** \), documentos, nodos DOM, oyentes y memoria de GPU.  Al deshabilitar una casilla, la oculta del gráfico.  
 
-Ahora, un análisis del código comparado con la [ilustración 3](#figure-3).  Si miras el contador de nodos \ (el gráfico verde \), podrás ver que coincide perfectamente con el código.  El número de nodos aumenta en pasos discretos.  Puede dar por supuesto que cada aumento en el recuento de nodos es una llamada a `grow()` .  El gráfico de montón JS \ (gráfico azul \) no es tan sencillo.  Siguiendo los procedimientos recomendados, la primera DIP es, en realidad, una recolección forzada de elementos no utilizados \ (que se consigue al **presionar el** botón de recolección de elementos no ![ utilizados ][ImageForceGarbageCollectionIcon] \).  A medida que la grabación se progrese, podrá ver que el tamaño del montón de JS es demasiado bajo.  Esto es natural y se espera: el código JavaScript crea los nodos DOM en cada botón haga clic y realice una gran cantidad de trabajo cuando crea la cadena de 1 millón caracteres.  Lo fundamental aquí es el hecho de que el montón JS finaliza más de lo que comenzó \ (el "comienzo" aquí es el punto después de la recolección de elementos no utilizados forzada \).  En el mundo real, si viera este patrón de aumento del tamaño de la pila de JS o del tamaño del nodo, puede definir potencialmente una pérdida de memoria.  
+Ahora, un análisis del código comparado con la ilustración anterior.  Si miras el contador de nodos \ (el gráfico verde \), podrás ver que coincide perfectamente con el código.  El número de nodos aumenta en pasos discretos.  Puede dar por supuesto que cada aumento en el recuento de nodos es una llamada a `grow()` .  El gráfico de montón JS \ (gráfico azul \) no es tan sencillo.  Siguiendo los procedimientos recomendados, la primera DIP es, en realidad, una recolección forzada de elementos no utilizados \ (que se consigue al **presionar el** botón de recolección de elementos no ![ utilizados ][ImageForceGarbageCollectionIcon] \).  A medida que la grabación se progrese, podrá ver que el tamaño del montón de JS es demasiado bajo.  Esto es natural y se espera: el código JavaScript crea los nodos DOM en cada pulsador de botón y realiza una gran cantidad de trabajo cuando crea la cadena de 1 millón caracteres.  Lo fundamental aquí es el hecho de que el montón JS finaliza más de lo que comenzó \ (el "comienzo" aquí es el punto después de la recolección de elementos no utilizados forzada \).  En el mundo real, si viera este patrón de aumento del tamaño de la pila de JS o del tamaño del nodo, puede definir potencialmente una pérdida de memoria.  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
 
@@ -130,49 +124,50 @@ Un nodo DOM solo se recolecta como no utilizado cuando no hay ninguna referencia
 Este es un ejemplo sencillo de nodos DOM separados.  
 
 ```javascript
-var detachedNodes;
+var detachedTree;
+
 function create() {
     var ul = document.createElement('ul');
     for (var i = 0; i < 10; i++) {
         var li = document.createElement('li');
         ul.appendChild(li);
     }
-    detachedNodes = ul;
+    detachedTree = ul;
 }
 document.getElementById('create').addEventListener('click', create);
 ```  
 
-Al hacer clic en el botón al que se hace referencia en el código, se crea un `ul` nodo con diez `li` elementos secundarios.  El código hace referencia a estos nodos, pero no existen en el árbol DOM, por lo que se desasocian.  
+Al seleccionar el botón al que se hace referencia en el código, se crea un `ul` nodo con diez `li` elementos secundarios.  El código hace referencia a los nodos, pero no existen en el árbol DOM, por lo que se desasocian.  
 
 Las instantáneas de montones son una manera de identificar los nodos desvinculados.  Como su nombre indica, las instantáneas de montones muestran cómo se distribuye la memoria entre los objetos JS y los nodos DOM de la página en el punto de tiempo de la instantánea.  
 
 Para crear una instantánea, abra DevTools y vaya al panel **memoria** , seleccione el botón de radio de la **instantánea de montones** y, después, presione el botón **tomar instantánea** .  
 
-> ##### Imagen 4  
-> Tomar instantánea de montón  
-> ![Tomar instantánea de montón][ImageTakeHeapSnapshot]  
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="Tomar instantánea de montón" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
+   Ilustración 4: tomar instantánea de montón  
+:::image-end:::  
 
 La instantánea puede tardar algún tiempo en procesarse y cargarse.  Una vez que haya terminado, selecciónelo en el panel de la izquierda \ ( **instantáneas de montones**con nombre \).  
 
 Escriba `Detached` el cuadro de texto **filtro de clase** para buscar árboles Dom desvinculados.  
 
-> ##### Imagen 5  
-> Filtrar por nodos desvinculados  
-> ![Filtrar por nodos desvinculados][ImageFilteringForDetachedNodes]  
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="Filtrar por nodos desvinculados" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
+   Ilustración 5: filtrar por nodos desvinculados  
+:::image-end:::  
 
 Expanda el carats para investigar un árbol desvinculado.  
 
-> ##### Imagen 6  
-> Investigando el árbol separado  
-> ![Investigando el árbol separado][ImageInvestigatingDetachedTree]  
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png" alt-text="Investigando el árbol separado" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png":::
+   Ilustración 6: investigación de árboles desconectados  
+:::image-end:::  
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Haga clic en un nodo para investigarlo más lejos.  En el panel **objetos** puede ver más información sobre el código que hace referencia.  Por ejemplo, en la [figura 7](#figure-7) puede ver que la `detachedNodes` variable hace referencia al nodo.  Para corregir esta pérdida de memoria determinada, debe estudiar el código que usa la `detachedUNode` variable y asegurarse de que la referencia al nodo se quita cuando ya no es necesaria.
+Seleccione un nodo para investigarlo más a la vez.  En el panel **objetos** puede ver más información sobre el código que hace referencia.  Por ejemplo, en la siguiente ilustración se puede ver que la `detachedNodes` variable hace referencia al nodo.  Para corregir esta pérdida de memoria determinada, debe estudiar el código que usa la `detachedUNode` variable y asegurarse de que la referencia al nodo se quita cuando ya no es necesaria.  
 
-> ##### Imagen 7  
-> Investigar un nodo  
-> ![Investigar un nodo][ImageInvestigatingNode]  
+:::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigar un nodo" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
+   Ilustración 7: investigar un nodo  
+:::image-end:::  
 
 <!--todo: the allocation timeline does not appear in the DevTools in Edge  -->  
 
@@ -194,31 +189,31 @@ Cada vez que se inserta el botón al que se hace referencia en el código, se ag
 
 Para grabar un instrumental de asignación en la escala de tiempo, abra DevTools, vaya al panel **memoria** , seleccione el botón **de opción instrumentación de asignación en la escala de tiempo** , presione el botón **Inicio** , realice la acción que sospecha que está causando la pérdida de memoria y, después, presione el botón Detener grabación del **montón de grabación** ![ cuando haya ][ImageStopRecordingIcon] terminado.  
 
-Mientras graba, observe si en la línea de tiempo se muestran barras azules en la instrumentación de asignación, como en la [figura 8](#figure-8).  
+Mientras graba, observe si en la línea de tiempo se muestran barras azules en la instrumentación de asignación, como en la siguiente ilustración.  
 
-> ##### Imagen 8  
-> Nuevas asignaciones  
-> ![Nuevas asignaciones][ImageNewAllocations]  
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png" alt-text="Nuevas asignaciones" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png":::
+   Ilustración 8: nuevas asignaciones  
+:::image-end:::  
 
 Estas barras azules representan nuevas asignaciones de memoria.  Estas nuevas asignaciones de memoria son sus candidatos para pérdidas de memoria.  Puede hacer zoom en una barra para filtrar el panel **constructor** y mostrar únicamente los objetos que se asignaron durante el período de tiempo especificado.  
 
-> ##### Imagen 9  
-> Escala de tiempo de asignación ampliada  
-> ![Escala de tiempo de asignación ampliada][ImageZoomedAllocationTimeline]  
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png" alt-text="Escala de tiempo de asignación ampliada" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png":::
+   Ilustración 9: escala de tiempo de asignación ampliada  
+:::image-end:::  
 
-Expanda el objeto y haga clic en el valor para ver más detalles en el panel de **objetos** .  Por ejemplo, en la [figura 10](#figure-10), al ver los detalles del objeto que se ha asignado recientemente, debería poder ver que se ha asignado a la `x` variable en el `Window` ámbito.  
+Expanda el objeto y seleccione el valor para ver más detalles en el panel de **objetos** .  Por ejemplo, en la siguiente ilustración, al ver los detalles del objeto que se acaba de asignar, debería poder ver que se asignó a la `x` variable en el `Window` ámbito.  
 
-> ##### Imagen 10 
-> Detalles del objeto  
-> ![Detalles del objeto][ImageObjectDetail]  
+:::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png" alt-text="Detalles del objeto" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png":::
+   Ilustración 10: detalles del objeto  
+:::image-end:::  
 
-## Investigar la asignación de memoria por función   
+## Investigar la asignación de memoria por función  
 
 Use el tipo de generación de perfiles de **muestreo de asignación** para ver la asignación de memoria por función de JavaScript.  
 
-> ##### Imagen 11  
-> Muestreo de asignación de registros  
-> ![Muestreo de asignación de registros][ImageRecordAllocationSampling]  
+:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png" alt-text="Muestreo de asignación de registros" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png":::
+   Ilustración 11: muestreo de asignación de registros  
+:::image-end:::  
 
 1.  Seleccione el botón de opción **muestreo de asignación** .  Si hay un trabajo en la página, puede seleccionarlo como destino de la generación de perfiles con el menú desplegable situado junto al botón **Inicio** .  
 1.  Pulse el botón **Inicio** .  
@@ -227,39 +222,22 @@ Use el tipo de generación de perfiles de **muestreo de asignación** para ver l
 
 En DevTools se muestra un desglose de la asignación de memoria por función.  La vista predeterminada es **gruesa (inferior hacia arriba)**, que muestra las funciones que asignaron la mayor cantidad de memoria en la parte superior.  
 
-> ##### Imagen 12  
-> Muestreo de asignación  
->![Muestreo de asignación][ImageAllocationSampling]  
+:::image type="complex" source="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png" alt-text="Muestreo de asignación" lightbox="../media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png":::
+   Ilustración 12: muestreo de asignaciones  
+:::image-end:::  
 
 ## Detectar recolecciones de basura frecuentes  
 
 Si parece que la página se pone en pausa con frecuencia, es posible que tenga problemas de recolección de elementos no utilizados.  
 
-Puede usar el administrador de tareas del explorador Microsoft Edge o grabaciones de la memoria de rendimiento para detectar una recolección de elementos no utilizados frecuente.  En el administrador de tareas del explorador Microsoft Edge, el aumento o la caída frecuente de **memoria** o valores de **memoria de JavaScript** representan la recolección de elementos no utilizados.  En las grabaciones de rendimiento, los cambios frecuentes (aumento o caída) en el montón de JS o en los gráficos de recuento de nodos indican una recolección de elementos no utilizados frecuente.  
+Puede usar el administrador de tareas del explorador Microsoft Edge o grabaciones de la memoria de rendimiento para detectar una recolección de elementos no utilizados frecuente.  En el administrador de tareas del explorador Microsoft Edge, el aumento o la caída frecuente de **memoria** o valores de **memoria de JavaScript** representan la recolección de elementos no utilizados.  En las grabaciones de rendimiento, los cambios frecuentes \ (aumento y disminución \) en el montón de JS o los gráficos de recuento de nodos indican una recolección de elementos no utilizados frecuente.  
 
 Después de identificar el problema, puede usar un **instrumental de asignación en** la grabación de la escala de tiempo para averiguar dónde se asigna la memoria y qué funciones están causando las asignaciones.  
 
-<!--## Feedback   -->  
-
-
-
 <!-- image links -->  
 
-[ImageForceGarbageCollectionIcon]: /microsoft-edge/devtools-guide-chromium/media/collect-garbage-icon.msft.png  
-[ImageStopRecordingIcon]: /microsoft-edge/devtools-guide-chromium/media/stop-recording-icon.msft.png  
-
-[ImageTaskManager]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png "Ilustración 1: abrir el administrador de tareas del explorador Microsoft Edge"  
-[ImageJavascriptMemory]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png "Ilustración 2: habilitar la memoria de JavaScript"  
-[ImageSimpleGrowth]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-1-performance-memory.msft.png "Ilustración 3: crecimiento simple"  
-[ImageTakeHeapSnapshot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png "Ilustración 4: tomar instantánea de montón"  
-[ImageFilteringForDetachedNodes]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png "Ilustración 5: filtrar por nodos desvinculados"  
-[ImageInvestigatingDetachedTree]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png "Ilustración 6: investigación de árboles desconectados"  
-[ImageInvestigatingNode]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png "Ilustración 7: investigar un nodo"  
-[ImageNewAllocations]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png "Ilustración 8: nuevas asignaciones"  
-[ImageZoomedAllocationTimeline]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png "Ilustración 9: escala de tiempo de asignación ampliada"  
-[ImageObjectDetail]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png "Ilustración 10: detalles del objeto"  
-[ImageRecordAllocationSampling]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png "Ilustración 11: muestreo de asignación de registros"  
-[ImageAllocationSampling]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png "Ilustración 12: muestreo de asignaciones"  
+[ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png  
+[ImageStopRecordingIcon]: ../media/stop-recording-icon.msft.png  
 
 <!-- links -->  
 

@@ -2,16 +2,16 @@
 title: Introducción a la depuración remota dispositivos Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 06/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: fc7450ba2b088eee8f4005216374980096cbb067
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+ms.openlocfilehash: c77633c4844f0e576b7dff6574000a78c8c083da
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688170"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708539"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "10688170"
 
 # Introducción a la depuración remota dispositivos Android  
 
-Depure de forma remota contenido en vivo en un dispositivo Android desde su equipo con Windows o macOS.  Esta página del tutorial le enseña a completar las siguientes acciones.  
+Depure de forma remota contenido en vivo en un dispositivo Android desde su equipo con Windows o macOS.  La siguiente página del tutorial le enseña a completar las siguientes acciones.  
 
 *   Configure su dispositivo Android para la depuración remota y descárguelo desde el equipo de desarrollo.  
 *   Inspeccione y depure contenido en vivo en su dispositivo Android desde su equipo de desarrollo.  
@@ -41,11 +41,15 @@ Depure de forma remota contenido en vivo en un dispositivo Android desde su equi
 :::image-end:::  
 -->  
 
+> [!NOTE]
+> La depuración remota de la aplicación Microsoft Edge en dispositivos iOS no es compatible actualmente.  La siguiente guía está específicamente centrada en la depuración remota de Microsoft Edge en dispositivos con Android.
+> Si tiene un dispositivo macOS, siga la [Guía de depuración Brightcove][BrightcoveSupportDebuggingMobileDevices] para depurar Microsoft Edge de forma remota en un dispositivo iOS con Safari.  Para obtener más información sobre la herramienta Web Inspector de Safari, vea [herramientas de desarrollo web de Safari][AppleDeveloperSafariTools].  
+
 ## Paso 1: descubrir su dispositivo Android  
 
-El flujo de trabajo siguiente funciona para la mayoría de los usuarios.  Consulte [solución de problemas: DevTools no detecta el dispositivo Android](#troubleshooting-devtools-is-not-detecting-the-android-device) para obtener ayuda.  
+El flujo de trabajo siguiente funciona para la mayoría de los usuarios.  Para obtener más ayuda, consulte la [solución de problemas: DevTools no detecta la sección del dispositivo Android](#troubleshooting-devtools-is-not-detecting-the-android-device) .  
 
-1.  Abra la pantalla **Opciones del desarrollador** en Android.  Para obtener más información, vea [configurar las opciones de Desarrollador en dispositivos](https://developer.android.com/studio/debug/dev-options.html).  
+1.  Abra la pantalla **Opciones del desarrollador** en Android.  Para obtener más información, vea [configurar las opciones de Desarrollador en dispositivos][AndroidDeveloperStudioDevOptions].  
 1.  Seleccione **Habilitar depuración USB**.  
 1.  En tu equipo de desarrollo, abre Microsoft Edge.  
 1.  Vaya a la `edge://inspect` Página de Microsoft Edge.  
@@ -60,7 +64,7 @@ El flujo de trabajo siguiente funciona para la mayoría de los usuarios.  Consul
        Figura 2.  La solicitud de permiso de **depuración USB** en un dispositivo Android  
     :::image-end:::  
     
-1.  Si ve el nombre del modelo de su dispositivo Android, Microsoft Edge ha establecido correctamente la conexión con el dispositivo.  Continúe con el [paso 2](#step-2-debug-content-on-your-android-device-from-your-development-machine).  
+1.  Si ve el nombre del modelo de su dispositivo Android, Microsoft Edge ha establecido correctamente la conexión con el dispositivo.  Continúe con la sección [paso 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) .  
     
     <!--  
     :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
@@ -78,8 +82,8 @@ Use las siguientes sugerencias para solucionar problemas relacionados con la con
 
 Use las siguientes sugerencias para comprobar que el software está configurado correctamente.  
 
-*   Si tu equipo de desarrollo ejecuta Windows, intenta instalar manualmente los drivers USB para tu dispositivo Android.  Para obtener más información, consulte [instalar controladores de OEM USB][AndroidUSBDrivers].  
-*   Algunas combinaciones de Windows y dispositivos Android \ (especialmente Samsung \) requieren configuración adicional.  Para obtener más información, consulte [DevTools los dispositivos no detectan el dispositivo cuando está conectado] [StackOverflowDevicesNotDetected].  
+*   Si tu equipo de desarrollo ejecuta Windows, intenta instalar manualmente los drivers USB para tu dispositivo Android.  Para obtener más información, consulte [instalar controladores de OEM USB][AndroidDeveloperToolsOemUsb].  
+*   Algunas combinaciones de Windows y dispositivos Android \ (especialmente Samsung \) requieren configuración adicional.  Para obtener más información, consulte los [dispositivos de DevTools no detectan el dispositivo cuando está conectado][Stackoverflow21925992].  
 
 Use las siguientes sugerencias para evitar que se vea el aviso de **depuración USB** en su dispositivo Android.  
 
@@ -89,10 +93,10 @@ Use las siguientes sugerencias para evitar que se vea el aviso de **depuración 
     > Es posible que no vea el mensaje si su pantalla de Android o de equipo de desarrollo está bloqueada.  
 
 *   Actualización de la configuración de pantalla de su dispositivo Android y de la máquina de desarrollo para que cada uno nunca vaya al modo de suspensión.  
-*   Configuración del modo USB para Android en PTP.  Para obtener más información, consulte [Galaxy S4 no muestra el cuadro de diálogo autorizar depuración USB][StackExchangeGalaxyS4DoesNotShowDialogBox].  
+*   Configuración del modo USB para Android en PTP.  Para obtener más información, consulte [Galaxy S4 no muestra el cuadro de diálogo autorizar depuración USB][StackexchangeAndroid101933].  
 *   Seleccione **revocar las autorizaciones de depuración USB** en la pantalla de **Opciones del desarrollador** de su dispositivo Android para restablecerla a un estado actualizado.  
 
-Si encuentra una solución que no se menciona en esta página o [los dispositivos DevTools no detectan el dispositivo cuando está conectado] [StackOverflowDevicesNotDetected] en desbordamiento de pila, agregue la solución a la pregunta de desbordamiento de pila.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+Si encuentra una solución que no está mencionada en esta página o en [DevTools dispositivos no detecta el dispositivo cuando está conectado][Stackoverflow21925992] al desbordamiento de la pila, agregue la solución a la pregunta de desbordamiento de pila.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
 
 ## Paso 2: depure contenido en su dispositivo Android desde su equipo de desarrollo  
 
@@ -149,21 +153,20 @@ Puede interactuar con el screencast de las siguientes maneras.
 [ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
 [ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
-<!--[ImageRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--remote-debugging.msft.png "old Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
-<!--[ImageEdgeInspect]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-no-targets.msft.png "Figure 1: The edge://inspect page in Microsoft Edge"  -->  
-<!--[ImageAndroidPermissionPrompt]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-android-permissions-prompt.msft.png "Figure 2: The Allow USB Debugging permission prompt on an Android device"  -->  
-<!--[ImageConnectedRemoteDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets.msft.png "Figure 3: A connected remote device"  -->  
-<!-- [ImageReload]:  /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets-buttons.msft.png "Figure 4: The buttons for focusing, reloading, or closing a tab"  -->  
-<!--[ImageUnknownDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--unknown-device.msft.png "old Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
-
 <!-- links -->  
 
-[AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Instalar controladores USB para OEM | Desarrolladores de Android"  
+[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configurar opciones de Desarrollador en el dispositivo | Desarrollador de Android"  
+[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Instalar controladores USB para OEM | Desarrolladores de Android"  
+
+[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Herramientas de desarrollo web de Safari | Desarrollador de Apple"  
+
+[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Depurar en dispositivos móviles | Soporte técnico de Brightcove"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
-[StackOverflowDevicesNotDetected]: https://stackoverflow.com/questions/21925992 "los dispositivos DevTools no detectan el dispositivo cuando el desbordamiento de pila está conectado"  
 
-[StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933 "ADB-intercambio de pila de entusiastas de Android"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "ADB-intercambio de pila de entusiastas de Android"  
+
+[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "Los dispositivos DevTools no detectan el dispositivo cuando está conectado el desbordamiento de pila"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
