@@ -1,17 +1,17 @@
 ---
-title: Introducción a la visualización y el cambio de CSS
+title: Introducción a cómo ver y cambiar CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 85fceaa44b0143a82ca8f66ef8c63e1a9275dcd8
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 1780e80259d3ed28f6735e11099ad5796c381a95
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601820"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708619"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,155 +27,171 @@ ms.locfileid: "10601820"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# <span data-ttu-id="f9b60-103">Introducción a cómo ver y cambiar CSS</span><span class="sxs-lookup"><span data-stu-id="f9b60-103">Get Started With Viewing And Changing CSS</span></span>  
 
+<span data-ttu-id="f9b60-104">Complete estos tutoriales interactivos para conocer los conceptos básicos de la visualización y el cambio de las CSS de una página con Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="f9b60-104">Complete these interactive tutorials to learn the basics of viewing and changing the CSS for a page using Microsoft Edge DevTools.</span></span>  
 
+## <span data-ttu-id="f9b60-105">Ejemplos de CSS abiertos</span><span class="sxs-lookup"><span data-stu-id="f9b60-105">Open CSS Examples</span></span>  
 
-
-# <span data-ttu-id="15cf6-103">Introducción a la visualización y el cambio de CSS</span><span class="sxs-lookup"><span data-stu-id="15cf6-103">Get Started With Viewing And Changing CSS</span></span>   
-
-
-
-<span data-ttu-id="15cf6-104">Complete estos tutoriales interactivos para conocer los conceptos básicos de la visualización y el cambio de las CSS de una página con Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="15cf6-104">Complete these interactive tutorials to learn the basics of viewing and changing the CSS for a page using Microsoft Edge DevTools.</span></span>  
-
-## <span data-ttu-id="15cf6-105">Ejemplos de CSS abiertos</span><span class="sxs-lookup"><span data-stu-id="15cf6-105">Open CSS Examples</span></span>  
-
-1.  <span data-ttu-id="15cf6-106">Mantenga `Control` \ (Windows \) o `Command` \ (MacOS \) y haga clic en **ejemplos de CSS** para abrir en una ventana nueva.</span><span class="sxs-lookup"><span data-stu-id="15cf6-106">Hold `Control` \(Windows\) or `Command` \(macOS\) and click **CSS Examples** to open in a new window.</span></span>  
+1.  <span data-ttu-id="f9b60-106">Mantenga `Control` \ (Windows \) o `Command` \ (MacOS \) y seleccione **ejemplos de CSS** para abrir en una ventana nueva.</span><span class="sxs-lookup"><span data-stu-id="f9b60-106">Hold `Control` \(Windows\) or `Command` \(macOS\) and select **CSS Examples** to open in a new window.</span></span>  
     
-    [<span data-ttu-id="15cf6-107">Ejemplos de CSS</span><span class="sxs-lookup"><span data-stu-id="15cf6-107">CSS Examples</span></span>][GlitchDevToolsCssExamples]  
-
-> [!NOTE]
-> <span data-ttu-id="15cf6-108">Si desea [acoplar la ventana de DevTools][DevToolsCustomizePlacement] a la derecha de la ventanilla \ (que se muestra en la [figura 1](#figure-1)\), haga clic en **personalizar y controlar DevTools** `...` .</span><span class="sxs-lookup"><span data-stu-id="15cf6-108">If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in [Figure 1](#figure-1)\), click **Customize and control DevTools** `...`.</span></span>  <span data-ttu-id="15cf6-109">En el menú desplegable **personalizar y controlar DevTools** , en la sección de **acoplamiento** , seleccione **acoplar a la derecha**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-109">On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.</span></span>  
+    [<span data-ttu-id="f9b60-107">Ejemplos de CSS</span><span class="sxs-lookup"><span data-stu-id="f9b60-107">CSS Examples</span></span>][GlitchDevToolsCssExamples]  
     
-## <span data-ttu-id="15cf6-110">Ver la CSS de un elemento</span><span class="sxs-lookup"><span data-stu-id="15cf6-110">View the CSS for an element</span></span>   
+    > [!NOTE]
+    > <span data-ttu-id="f9b60-108">Si desea [acoplar la ventana de DevTools][DevToolsCustomizePlacement] a la derecha de la ventanilla \ (que se muestra en la siguiente figura \), seleccione **personalizar y controle DevTools** `...` .</span><span class="sxs-lookup"><span data-stu-id="f9b60-108">If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in following figure\), select **Customize and control DevTools** `...`.</span></span>  <span data-ttu-id="f9b60-109">En el menú desplegable **personalizar y controlar DevTools** , en la sección de **acoplamiento** , seleccione **acoplar a la derecha**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-109">On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.</span></span>  
+    
+## <span data-ttu-id="f9b60-110">Ver la CSS de un elemento</span><span class="sxs-lookup"><span data-stu-id="f9b60-110">View the CSS for an element</span></span>  
 
-1.  <span data-ttu-id="15cf6-111">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="15cf6-111">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="15cf6-112">Haga clic con el botón derecho en el `Inspect Me!` texto y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-112">Right-click the `Inspect Me!` text and select **Inspect**.</span></span>  
-    1.  <span data-ttu-id="15cf6-113">En DevTools, en el panel **elementos** , en la pestaña **árbol DOM** , `Inspect Me!` se resalta el elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-113">In DevTools, on the **Elements** panel, in the **DOM Tree** tab, the `Inspect Me!` element is highlighted.</span></span>  
+1.  <span data-ttu-id="f9b60-111">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="f9b60-111">[Open CSS Examples](#open-css-examples).</span></span>  
+1.  <span data-ttu-id="f9b60-112">Desplace el puntero sobre el `Inspect Me!` texto, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-112">Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and select **Inspect**.</span></span>  
+    1.  <span data-ttu-id="f9b60-113">En DevTools, en el panel **elementos** , en la pestaña **árbol DOM** , `Inspect Me!` se resalta el elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-113">In DevTools, on the **Elements** panel, in the **DOM Tree** tab, the `Inspect Me!` element is highlighted.</span></span>  
         
-        > ##### <span data-ttu-id="15cf6-114">Figura 1</span><span class="sxs-lookup"><span data-stu-id="15cf6-114">Figure 1</span></span>  
-        > <span data-ttu-id="15cf6-115">El elemento inspeccionado está resaltado en el **árbol DOM**</span><span class="sxs-lookup"><span data-stu-id="15cf6-115">The inspected element is highlighted in the **DOM Tree**</span></span>  
-        > ![El elemento inspeccionado está resaltado en el árbol DOM][ImageInspect]  
+        :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-inspect-me.msft.png":::
+           <span data-ttu-id="f9b60-115">Ilustración 1: el elemento inspeccionado está resaltado en el **árbol DOM**</span><span class="sxs-lookup"><span data-stu-id="f9b60-115">Figure 1:  The inspected element is highlighted in the **DOM Tree**</span></span>  
+        :::image-end:::  
         
-    1.  <span data-ttu-id="15cf6-117">En el `Inspect Me!` elemento, busque el valor del `data-message` atributo y cópielo.</span><span class="sxs-lookup"><span data-stu-id="15cf6-117">In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.</span></span>  
-1.  <span data-ttu-id="15cf6-118">En la página, en el cuadro **de texto valor de `data-message` :** , escriba el valor.</span><span class="sxs-lookup"><span data-stu-id="15cf6-118">On the page, in the **Value of `data-message`:** textbox, enter the value.</span></span>  
-1.  <span data-ttu-id="15cf6-119">Haga clic con el botón derecho en el `Inspect Me!` texto y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-119">Right-click the `Inspect Me!` text and select **Inspect**.</span></span>  
-    
-    1.  <span data-ttu-id="15cf6-120">En DevTools, en el panel **elementos** , seleccione la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="15cf6-120">In DevTools, on the **Elements** panel, select the **Styles** tab.</span></span>  
-    1.  <span data-ttu-id="15cf6-121">En la pestaña **estilos** , `Inspect Me!` se resalta el elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-121">In the **Styles** tab, the `Inspect Me!` element is highlighted.</span></span>  
-    1.  <span data-ttu-id="15cf6-122">En el `Inspect Me!` elemento, busque la `aloha` regla de clase.</span><span class="sxs-lookup"><span data-stu-id="15cf6-122">In the `Inspect Me!` element, find the `aloha` class rule.</span></span>  
+    1.  <span data-ttu-id="f9b60-116">En el `Inspect Me!` elemento, busque el valor del `data-message` atributo y cópielo.</span><span class="sxs-lookup"><span data-stu-id="f9b60-116">In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.</span></span>  
+1.  <span data-ttu-id="f9b60-117">En la página, en el cuadro **de texto valor de `data-message` :** , escriba el valor.</span><span class="sxs-lookup"><span data-stu-id="f9b60-117">On the page, in the **Value of `data-message`:** textbox, enter the value.</span></span>  
+1.  <span data-ttu-id="f9b60-118">Desplace el puntero sobre el `Inspect Me!` texto, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-118">Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and select **Inspect**.</span></span>  
+    1.  <span data-ttu-id="f9b60-119">En DevTools, en el panel **elementos** , seleccione la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="f9b60-119">In DevTools, on the **Elements** panel, select the **Styles** tab.</span></span>  
+    1.  <span data-ttu-id="f9b60-120">En la pestaña **estilos** , `Inspect Me!` se resalta el elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-120">In the **Styles** tab, the `Inspect Me!` element is highlighted.</span></span>  
+    1.  <span data-ttu-id="f9b60-121">En el `Inspect Me!` elemento, busque la `aloha` regla de clase.</span><span class="sxs-lookup"><span data-stu-id="f9b60-121">In the `Inspect Me!` element, find the `aloha` class rule.</span></span>  
         
         > [!NOTE]
-        > <span data-ttu-id="15cf6-123">Verá esta regla porque se está aplicando al `Inspect Me!` elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-123">You see this rule because it is being applied to the `Inspect Me!` element.</span></span>  
+        > <span data-ttu-id="f9b60-122">Verá esta regla porque se está aplicando al `Inspect Me!` elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-122">You see this rule because it is being applied to the `Inspect Me!` element.</span></span>  
         
-    1.  <span data-ttu-id="15cf6-124">En la `aloha` clase, busque el valor del `padding` estilo y cópielo.</span><span class="sxs-lookup"><span data-stu-id="15cf6-124">In the `aloha` class, find the value for the `padding` style and copy it.</span></span>  
+    1.  <span data-ttu-id="f9b60-123">En la `aloha` clase, busque el valor del `padding` estilo y cópielo.</span><span class="sxs-lookup"><span data-stu-id="f9b60-123">In the `aloha` class, find the value for the `padding` style and copy it.</span></span>  
         
-        > ##### <span data-ttu-id="15cf6-125">Figura 2</span><span class="sxs-lookup"><span data-stu-id="15cf6-125">Figure 2</span></span>  
-        > <span data-ttu-id="15cf6-126">Las clases CSS que se aplican al elemento seleccionado, como `aloha` , se muestran en la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="15cf6-126">CSS classes being applied to the selected element, such as `aloha`, are displayed in the **Styles** tab</span></span>  
-        > ![Las clases CSS que se aplican al elemento inspeccionado se resaltan en la pestaña estilos.][ImageAloha]  
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Las clases CSS que se aplican al elemento inspeccionado se resaltan en la pestaña estilos." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+           <span data-ttu-id="f9b60-125">Ilustración 2: las clases CSS que se están aplicando al elemento seleccionado, como `aloha` , se muestran en la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="f9b60-125">Figure 2:  CSS classes being applied to the selected element, such as `aloha`, are displayed in the **Styles** tab</span></span>  
+        :::image-end:::  
         
-1.  <span data-ttu-id="15cf6-128">En la página, en el cuadro **de texto valor de `padding` :** , escriba el valor.</span><span class="sxs-lookup"><span data-stu-id="15cf6-128">On the page, in the **Value of `padding`:** textbox, enter the value.</span></span>  
+1.  <span data-ttu-id="f9b60-126">En la página, en el cuadro **de texto valor de `padding` :** , escriba el valor.</span><span class="sxs-lookup"><span data-stu-id="f9b60-126">On the page, in the **Value of `padding`:** textbox, enter the value.</span></span>  
 
-## <span data-ttu-id="15cf6-129">Agregar una declaración CSS a un elemento</span><span class="sxs-lookup"><span data-stu-id="15cf6-129">Add a CSS declaration to an element</span></span>   
+## <span data-ttu-id="f9b60-127">Agregar una declaración CSS a un elemento</span><span class="sxs-lookup"><span data-stu-id="f9b60-127">Add a CSS declaration to an element</span></span>  
 
-<span data-ttu-id="15cf6-130">Use la pestaña **estilos** cuando desee cambiar o agregar declaraciones CSS a un elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-130">Use the **Styles** tab when you want to change or add CSS declarations to an element.</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="15cf6-131">Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.</span><span class="sxs-lookup"><span data-stu-id="15cf6-131">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
-
-1.  <span data-ttu-id="15cf6-132">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="15cf6-132">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="15cf6-133">Haga clic con el botón derecho en el `Add A Background Color To Me!` texto y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-133">Right-click the `Add A Background Color To Me!` text and select **Inspect**.</span></span>  
-1.  <span data-ttu-id="15cf6-134">Haga clic `element.style` cerca de la parte superior de la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="15cf6-134">Click `element.style` near the top of the **Styles** tab.</span></span>  
-1.  <span data-ttu-id="15cf6-135">Escriba `background-color` y presione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="15cf6-135">Type `background-color` and press `Enter`.</span></span>  
-1.  <span data-ttu-id="15cf6-136">Escriba `honeydew` y presione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="15cf6-136">Type `honeydew` and press `Enter`.</span></span>  <span data-ttu-id="15cf6-137">En el **árbol DOM** , debería ver que se aplicó una declaración de estilo en línea al elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-137">In the **DOM Tree** you should see that an inline style declaration was applied to the element.</span></span>  
-
-> ##### <span data-ttu-id="15cf6-138">Imagen 3</span><span class="sxs-lookup"><span data-stu-id="15cf6-138">Figure 3</span></span>  
-> <span data-ttu-id="15cf6-139">La `background-color:honeydew` declaración se ha aplicado al elemento mediante la `element.style` sección de la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="15cf6-139">The `background-color:honeydew` declaration has been applied to the element using the `element.style` section of the **Styles** tab</span></span>  
-> ![Agregar una declaración CSS al elemento mediante la pestaña estilos][ImageDeclaration]  
-
-## <span data-ttu-id="15cf6-141">Agregar una clase CSS a un elemento</span><span class="sxs-lookup"><span data-stu-id="15cf6-141">Add a CSS class to an element</span></span>   
-
-<span data-ttu-id="15cf6-142">Use la pestaña **estilos** para ver el aspecto que tiene un elemento cuando se aplica o se quita una clase CSS de un elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-142">Use the **Styles** tab to see how an element looks when a CSS class is applied to or removed from an element.</span></span>  
+<span data-ttu-id="f9b60-128">Use la pestaña **estilos** cuando desee cambiar o agregar declaraciones CSS a un elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-128">Use the **Styles** tab when you want to change or add CSS declarations to an element.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="15cf6-143">Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.</span><span class="sxs-lookup"><span data-stu-id="15cf6-143">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
+> <span data-ttu-id="f9b60-129">Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.</span><span class="sxs-lookup"><span data-stu-id="f9b60-129">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
 
-1.  <span data-ttu-id="15cf6-144">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="15cf6-144">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="15cf6-145">Haga clic con el botón derecho en el `Add A Class To Me!` elemento y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-145">Right-click the `Add A Class To Me!` element and select **Inspect**.</span></span>  
-1.  <span data-ttu-id="15cf6-146">Haga clic en **. CLS**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-146">Click **.cls**.</span></span>  <span data-ttu-id="15cf6-147">DevTools revela un cuadro de texto en el que puede Agregar clases al elemento seleccionado.</span><span class="sxs-lookup"><span data-stu-id="15cf6-147">DevTools reveals a text box where you may add classes to the selected element.</span></span>  
-1.  <span data-ttu-id="15cf6-148">Escriba `color_me` el cuadro de texto **Agregar nueva clase** y, después, presione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="15cf6-148">Type `color_me` in the **Add new class** text box and then press `Enter`.</span></span>  <span data-ttu-id="15cf6-149">Aparece una casilla debajo del cuadro de texto **Agregar nueva clase** , donde puede activar o desactivar la clase.</span><span class="sxs-lookup"><span data-stu-id="15cf6-149">A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.</span></span>  <span data-ttu-id="15cf6-150">Si el `Add A Class To Me!` elemento tiene otras clases aplicadas, también podrá alternar entre aquí.</span><span class="sxs-lookup"><span data-stu-id="15cf6-150">If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.</span></span>  
+1.  <span data-ttu-id="f9b60-130">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="f9b60-130">[Open CSS Examples](#open-css-examples).</span></span>  
+1.  <span data-ttu-id="f9b60-131">Desplace el puntero sobre el `Add A Background Color To Me!` texto, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-131">Hover on the `Add A Background Color To Me!` text, open the contextual menu \(right-click\), and select **Inspect**.</span></span>  
+1.  <span data-ttu-id="f9b60-132">Seleccione `element.style` cerca de la parte superior de la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="f9b60-132">Select `element.style` near the top of the **Styles** tab.</span></span>  
+1.  <span data-ttu-id="f9b60-133">Escriba `background-color` y presione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="f9b60-133">Type `background-color` and press `Enter`.</span></span>  
+1.  <span data-ttu-id="f9b60-134">Escriba `honeydew` y presione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="f9b60-134">Type `honeydew` and press `Enter`.</span></span>  <span data-ttu-id="f9b60-135">En el **árbol DOM** , debería ver que se aplicó una declaración de estilo en línea al elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-135">In the **DOM Tree** you should see that an inline style declaration was applied to the element.</span></span>  
+    
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Agregar una declaración CSS al elemento mediante la pestaña estilos" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+       <span data-ttu-id="f9b60-137">Ilustración 3: la `background-color:honeydew` declaración se ha aplicado al elemento mediante la `element.style` sección de la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="f9b60-137">Figure 3:  The `background-color:honeydew` declaration has been applied to the element using the `element.style` section of the **Styles** tab</span></span>  
+    :::image-end:::  
+    
+## <span data-ttu-id="f9b60-138">Agregar una clase CSS a un elemento</span><span class="sxs-lookup"><span data-stu-id="f9b60-138">Add a CSS class to an element</span></span>  
 
-> ##### <span data-ttu-id="15cf6-151">Imagen 4</span><span class="sxs-lookup"><span data-stu-id="15cf6-151">Figure 4</span></span>  
-> <span data-ttu-id="15cf6-152">La `color_me` clase se ha aplicado al elemento mediante la sección **. CLS** de la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="15cf6-152">The `color_me` class has been applied to the element using the **.cls** section of the **Styles** tab</span></span>  
-> ![Aplicar la clase color_me al elemento][ImageApplyClass]  
-
-## <span data-ttu-id="15cf6-154">Agregar un PseudoState a una clase</span><span class="sxs-lookup"><span data-stu-id="15cf6-154">Add a pseudostate to a class</span></span>   
-
-<span data-ttu-id="15cf6-155">Use la pestaña **estilos** para aplicar de forma permanente un PseudoState CSS a un elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-155">Use the **Styles** tab to permanently apply a CSS pseudostate to an element.</span></span>  <span data-ttu-id="15cf6-156">DevTools es compatible con `:active` ,, `:focus` `:hover` , y `:visited` .</span><span class="sxs-lookup"><span data-stu-id="15cf6-156">DevTools supports `:active`, `:focus`, `:hover`, and `:visited`.</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="15cf6-157">Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.</span><span class="sxs-lookup"><span data-stu-id="15cf6-157">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
-
-1.  <span data-ttu-id="15cf6-158">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="15cf6-158">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="15cf6-159">Desplace el puntero sobre el `Hover Over Me!` texto.</span><span class="sxs-lookup"><span data-stu-id="15cf6-159">Hover over the `Hover Over Me!` text.</span></span>  <span data-ttu-id="15cf6-160">Cambia el color de fondo.</span><span class="sxs-lookup"><span data-stu-id="15cf6-160">The background color changes.</span></span>  
-1.  <span data-ttu-id="15cf6-161">Haga clic con el botón derecho en el `Hover Over Me!` texto y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-161">Right-click the `Hover Over Me!` text and select **Inspect**.</span></span>  
-1.  <span data-ttu-id="15cf6-162">En la pestaña **estilos** , haga clic en **: HOV**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-162">In the **Styles** tab, click **:hov**.</span></span>  
-1.  <span data-ttu-id="15cf6-163">Active la casilla **: hover** .</span><span class="sxs-lookup"><span data-stu-id="15cf6-163">Check the **:hover** checkbox.</span></span>  <span data-ttu-id="15cf6-164">El color de fondo cambia como antes, aunque no esté colocando el puntero sobre el elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-164">The background color changes like before, even though you are not actually hovering over the element.</span></span>  
-
-> ##### <span data-ttu-id="15cf6-165">Imagen 5</span><span class="sxs-lookup"><span data-stu-id="15cf6-165">Figure 5</span></span>  
-> <span data-ttu-id="15cf6-166">Alternar el `:hover` PseudoState en un elemento</span><span class="sxs-lookup"><span data-stu-id="15cf6-166">Toggling the `:hover` pseudostate on an element</span></span>  
-> ![Alternar el PseudoState hover en un elemento][ImageSetHover]  
-
-## <span data-ttu-id="15cf6-168">Cambiar las dimensiones de un elemento</span><span class="sxs-lookup"><span data-stu-id="15cf6-168">Change the dimensions of an element</span></span>   
-
-<span data-ttu-id="15cf6-169">Use el Diagrama interactivo del **modelo de cuadro** de la pestaña **estilos** para cambiar el ancho, alto, relleno, margen o longitud de borde de un elemento.</span><span class="sxs-lookup"><span data-stu-id="15cf6-169">Use the **Box Model** interactive diagram in the **Styles** tab to change the width, height, padding, margin, or border length of an element.</span></span>  
+<span data-ttu-id="f9b60-139">Use la pestaña **estilos** para ver el aspecto que tiene un elemento cuando se aplica o se quita una clase CSS de un elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-139">Use the **Styles** tab to see how an element looks when a CSS class is applied to or removed from an element.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="15cf6-170">Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.</span><span class="sxs-lookup"><span data-stu-id="15cf6-170">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
+> <span data-ttu-id="f9b60-140">Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.</span><span class="sxs-lookup"><span data-stu-id="f9b60-140">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
 
-1.  <span data-ttu-id="15cf6-171">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="15cf6-171">[Open CSS Examples](#open-css-examples).</span></span>  
-1.  <span data-ttu-id="15cf6-172">Haga clic con el botón derecho en el `Change My Margin!` elemento y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-172">Right-click the `Change My Margin!` element and select **Inspect**.</span></span>  
-1.  <span data-ttu-id="15cf6-173">En el diagrama de **modelo de cuadro** de la pestaña **estilos** , desplace el puntero sobre el **relleno**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-173">In the **Box Model** diagram in the **Styles** tab, hover over **padding**.</span></span>  <span data-ttu-id="15cf6-174">El relleno de un elemento se resalta en la ventanilla.</span><span class="sxs-lookup"><span data-stu-id="15cf6-174">The padding of an element is highlighted in the viewport.</span></span>  
+1.  <span data-ttu-id="f9b60-141">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="f9b60-141">[Open CSS Examples](#open-css-examples).</span></span>  
+1.  <span data-ttu-id="f9b60-142">Desplace el puntero sobre el `Add A Class To Me!` texto, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-142">Hover on the `Add A Class To Me!` text, open the contextual menu \(right-click\), and select **Inspect**.</span></span>  
+1.  <span data-ttu-id="f9b60-143">Seleccione **. CLS**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-143">Select **.cls**.</span></span>  <span data-ttu-id="f9b60-144">DevTools revela un cuadro de texto en el que puede Agregar clases al elemento seleccionado.</span><span class="sxs-lookup"><span data-stu-id="f9b60-144">DevTools reveals a text box where you may add classes to the selected element.</span></span>  
+1.  <span data-ttu-id="f9b60-145">Escriba `color_me` el cuadro de texto **Agregar nueva clase** y, después, presione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="f9b60-145">Type `color_me` in the **Add new class** text box and then press `Enter`.</span></span>  <span data-ttu-id="f9b60-146">Aparece una casilla debajo del cuadro de texto **Agregar nueva clase** , donde puede activar o desactivar la clase.</span><span class="sxs-lookup"><span data-stu-id="f9b60-146">A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.</span></span>  <span data-ttu-id="f9b60-147">Si el `Add A Class To Me!` elemento tiene otras clases aplicadas, también podrá alternar entre aquí.</span><span class="sxs-lookup"><span data-stu-id="f9b60-147">If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.</span></span>  
+    
+    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Aplicar la clase color_me al elemento" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
+       <span data-ttu-id="f9b60-149">Ilustración 4: se ha `color_me` aplicado la clase al elemento con la sección **. CLS** de la pestaña **estilos** .</span><span class="sxs-lookup"><span data-stu-id="f9b60-149">Figure 4:  The `color_me` class has been applied to the element using the **.cls** section of the **Styles** tab</span></span>  
+    :::image-end:::  
+    
+## <span data-ttu-id="f9b60-150">Agregar un PseudoState a una clase</span><span class="sxs-lookup"><span data-stu-id="f9b60-150">Add a pseudostate to a class</span></span>  
+
+<span data-ttu-id="f9b60-151">Use la pestaña **estilos** para aplicar de forma permanente un PseudoState CSS a un elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-151">Use the **Styles** tab to permanently apply a CSS pseudostate to an element.</span></span>  <span data-ttu-id="f9b60-152">DevTools es compatible con `:active` ,, `:focus` `:hover` , y `:visited` .</span><span class="sxs-lookup"><span data-stu-id="f9b60-152">DevTools supports `:active`, `:focus`, `:hover`, and `:visited`.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="f9b60-153">Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.</span><span class="sxs-lookup"><span data-stu-id="f9b60-153">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
+
+1.  <span data-ttu-id="f9b60-154">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="f9b60-154">[Open CSS Examples](#open-css-examples).</span></span>  
+1.  <span data-ttu-id="f9b60-155">Desplace el puntero sobre el `Hover Over Me!` texto.</span><span class="sxs-lookup"><span data-stu-id="f9b60-155">Hover over the `Hover Over Me!` text.</span></span>  <span data-ttu-id="f9b60-156">Cambia el color de fondo.</span><span class="sxs-lookup"><span data-stu-id="f9b60-156">The background color changes.</span></span>  
+1.  <span data-ttu-id="f9b60-157">Desplace el puntero sobre el `Hover Over Me!` texto, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-157">Hover on the `Hover Over Me!` text, open the contextual menu \(right-click\), and select **Inspect**.</span></span>  
+1.  <span data-ttu-id="f9b60-158">En la pestaña **estilos** , seleccione **: HOV**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-158">In the **Styles** tab, select **:hov**.</span></span>  
+1.  <span data-ttu-id="f9b60-159">Active la casilla **: hover** .</span><span class="sxs-lookup"><span data-stu-id="f9b60-159">Check the **:hover** checkbox.</span></span>  <span data-ttu-id="f9b60-160">El color de fondo cambia como antes, aunque no esté colocando el puntero sobre el elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-160">The background color changes like before, even though you are not actually hovering over the element.</span></span>  
+    
+    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Alternar el PseudoState hover en un elemento" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
+       <span data-ttu-id="f9b60-162">Ilustración 5: alternar el `:hover` PseudoState en un elemento</span><span class="sxs-lookup"><span data-stu-id="f9b60-162">Figure 5:  Toggling the `:hover` pseudostate on an element</span></span>  
+    :::image-end:::  
+    
+## <span data-ttu-id="f9b60-163">Cambiar las dimensiones de un elemento</span><span class="sxs-lookup"><span data-stu-id="f9b60-163">Change the dimensions of an element</span></span>  
+
+<span data-ttu-id="f9b60-164">Use el Diagrama interactivo del **modelo de cuadro** de la pestaña **estilos** para cambiar el ancho, alto, relleno, margen o longitud de borde de un elemento.</span><span class="sxs-lookup"><span data-stu-id="f9b60-164">Use the **Box Model** interactive diagram in the **Styles** tab to change the width, height, padding, margin, or border length of an element.</span></span>  
+
+> [!NOTE]
+> <span data-ttu-id="f9b60-165">Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.</span><span class="sxs-lookup"><span data-stu-id="f9b60-165">Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.</span></span>  
+
+1.  <span data-ttu-id="f9b60-166">[Abra ejemplos de CSS](#open-css-examples).</span><span class="sxs-lookup"><span data-stu-id="f9b60-166">[Open CSS Examples](#open-css-examples).</span></span>  
+1.  <span data-ttu-id="f9b60-167">Desplace el puntero sobre el `Change My Margin!` texto, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **inspeccionar**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-167">Hover on the `Change My Margin!` text, open the contextual menu \(right-click\), and select **Inspect**.</span></span>  
+1.  <span data-ttu-id="f9b60-168">En el diagrama de **modelo de cuadro** de la pestaña **estilos** , desplace el puntero sobre el **relleno**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-168">In the **Box Model** diagram in the **Styles** tab, hover over **padding**.</span></span>  <span data-ttu-id="f9b60-169">El relleno de un elemento se resalta en la ventanilla.</span><span class="sxs-lookup"><span data-stu-id="f9b60-169">The padding of an element is highlighted in the viewport.</span></span>  
 
     > [!NOTE]
-    > <span data-ttu-id="15cf6-175">Según el tamaño de la ventana de DevTools, es posible que tenga que desplazarse hasta la parte inferior de la pestaña **estilos** para ver el **modelo de cuadro**.</span><span class="sxs-lookup"><span data-stu-id="15cf6-175">Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** tab to see the **Box Model**.</span></span>  
+    > <span data-ttu-id="f9b60-170">Según el tamaño de la ventana de DevTools, es posible que tenga que desplazarse hasta la parte inferior de la pestaña **estilos** para ver el **modelo de cuadro**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-170">Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** tab to see the **Box Model**.</span></span>  
 
-1.  <span data-ttu-id="15cf6-176">Haga doble clic en el margen izquierdo del **modelo de cuadro**, que tiene actualmente el valor de `-` significado que el elemento no tiene un margen izquierdo.</span><span class="sxs-lookup"><span data-stu-id="15cf6-176">Double-click the left margin in the **Box Model**, which currently has a value of `-` meaning that the element does not have a left-margin.</span></span>  
-1.  <span data-ttu-id="15cf6-177">Escriba `100px` y presione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="15cf6-177">Type `100px` and press `Enter`.</span></span>  <span data-ttu-id="15cf6-178">El **modelo de cuadro** tiene un valor predeterminado de píxeles, pero también acepta otros valores, como `25%` , o `10vw` .</span><span class="sxs-lookup"><span data-stu-id="15cf6-178">The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.</span></span>  
+1.  <span data-ttu-id="f9b60-171">Haga doble clic en el margen izquierdo del **modelo de cuadro**, que tiene actualmente el valor de `-` significado que el elemento no tiene un margen izquierdo.</span><span class="sxs-lookup"><span data-stu-id="f9b60-171">Double-click the left margin in the **Box Model**, which currently has a value of `-` meaning that the element does not have a left-margin.</span></span>  
+1.  <span data-ttu-id="f9b60-172">Escriba `100px` y presione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="f9b60-172">Type `100px` and press `Enter`.</span></span>  <span data-ttu-id="f9b60-173">El **modelo de cuadro** tiene un valor predeterminado de píxeles, pero también acepta otros valores, como `25%` , o `10vw` .</span><span class="sxs-lookup"><span data-stu-id="f9b60-173">The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.</span></span>  
+    
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Mantener el mouse sobre el relleno del elemento" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+             <span data-ttu-id="f9b60-175">Ilustración 6: mantener el mouse sobre el relleno del elemento</span><span class="sxs-lookup"><span data-stu-id="f9b60-175">Figure 6:  Hovering over the padding of the element</span></span>  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Cambiar el margen izquierdo del elemento" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
+             <span data-ttu-id="f9b60-177">Ilustración 7: cambiar el margen izquierdo del elemento</span><span class="sxs-lookup"><span data-stu-id="f9b60-177">Figure 7:  Changing the left-margin of the element</span></span>  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
+    
+## <span data-ttu-id="f9b60-178">Depurar consultas de medios</span><span class="sxs-lookup"><span data-stu-id="f9b60-178">Debugging Media Queries</span></span>  
 
-> ##### <span data-ttu-id="15cf6-179">Imagen 6</span><span class="sxs-lookup"><span data-stu-id="15cf6-179">Figure 6</span></span>  
-> <span data-ttu-id="15cf6-180">Mantener el mouse sobre el relleno del elemento</span><span class="sxs-lookup"><span data-stu-id="15cf6-180">Hovering over the padding of the element</span></span>  
-> ![Mantener el mouse sobre el relleno del elemento][ImageShowPadding]  
+<span data-ttu-id="f9b60-179">[Las consultas de medios][MDNUsingMediaGueries] son una forma de hacer que el producto Web reaccione ante los cambios en la configuración de cada usuario.</span><span class="sxs-lookup"><span data-stu-id="f9b60-179">[Media Queries][MDNUsingMediaGueries] are a way to make your web product react to changes in the configuration settings for each user.</span></span>  <span data-ttu-id="f9b60-180">El caso de uso más importante es proporcionar a tu producto un diseño CSS diferente según las dimensiones de la ventanilla.</span><span class="sxs-lookup"><span data-stu-id="f9b60-180">The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.</span></span>  <span data-ttu-id="f9b60-181">El uso de diseños independientes permite un diseño de una columna para dispositivos móviles y diseños de varias columnas cuando hay más pantalla disponible.</span><span class="sxs-lookup"><span data-stu-id="f9b60-181">Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there is more screen estate available.</span></span>  
 
-> ##### <span data-ttu-id="15cf6-182">Imagen 7</span><span class="sxs-lookup"><span data-stu-id="15cf6-182">Figure 7</span></span>  
-> <span data-ttu-id="15cf6-183">Cambiar el margen izquierdo del elemento</span><span class="sxs-lookup"><span data-stu-id="15cf6-183">Changing the left-margin of the element</span></span>  
-> ![Cambiar el margen izquierdo del elemento][ImageChangeMargin]  
+<span data-ttu-id="f9b60-182">Si desea depurar o probar las consultas de medios definidas en su CSS, siga estos pasos.</span><span class="sxs-lookup"><span data-stu-id="f9b60-182">If you want to debug or test the Media Queries you defined in your CSS, use the following steps.</span></span>  
 
- 
-
-
-
-<!-- image links -->  
-
-[ImageInspect]: /microsoft-edge/devtools-guide-chromium/media/css-elements-inspect-me.msft.png "Ilustración 1: el elemento inspeccionado está resaltado en el árbol DOM"  
-[ImageAloha]: /microsoft-edge/devtools-guide-chromium/media/css-elements-inspect-me-styles.msft.png "Ilustración 2: las clases CSS que se están aplicando al elemento inspeccionado se resaltan en la pestaña estilos."  
-[ImageDeclaration]: /microsoft-edge/devtools-guide-chromium/media/css-elements-add-background-color-to-me-styles-p.msft.png "Ilustración 3: agregar una declaración CSS al elemento mediante la pestaña estilos"  
-[ImageApplyClass]: /microsoft-edge/devtools-guide-chromium/media/css-elements-add-a-class-to-me-styles-cls.msft.png "Ilustración 4: aplicar la clase color_me al elemento"  
-[ImageSetHover]: /microsoft-edge/devtools-guide-chromium/media/css-elements-hover-over-me-styles-hov-hover.msft.png "Ilustración 5: alternar el PseudoState hover en un elemento"  
-[ImageShowPadding]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-padding.msft.png "Ilustración 6: mantener el mouse sobre el relleno del elemento"  
-[ImageChangeMargin]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-margin-edit.msft.png "Ilustración 7: cambiar el margen izquierdo del elemento"  
-
+1.  <span data-ttu-id="f9b60-183">Abra las herramientas de desarrollo y seleccione el icono de la **barra de herramientas del dispositivo de alternancia** en la parte superior izquierda o pulse `Ctrl` + `Shift` + `M` \ ( `Cmd` + `Shift` + `M` en MacOS \).</span><span class="sxs-lookup"><span data-stu-id="f9b60-183">Open the developer tools and select the **Toggle device toolbar** icon second on the top-left, or press `Ctrl`+`Shift`+`M` \(`Cmd`+`Shift`+`M` on macOS\).</span></span>  
+    
+    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Abrir la barra de herramientas del dispositivo" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
+       <span data-ttu-id="f9b60-185">Ilustración 8: abrir la barra de herramientas del dispositivo</span><span class="sxs-lookup"><span data-stu-id="f9b60-185">Figure 8:  Opening the device toolbar</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="f9b60-186">Con la barra de herramientas dispositivo abierta, seleccione el `...` menú en la parte superior derecha y, a continuación, seleccione **Ver consultas de medios**.</span><span class="sxs-lookup"><span data-stu-id="f9b60-186">With the device toolbar open, select the `...` menu on the top-right and select **View Media Queries**.</span></span>  <span data-ttu-id="f9b60-187">Debería ver barras de colores encima de la visualización de la página que representan las diferentes consultas de medios.</span><span class="sxs-lookup"><span data-stu-id="f9b60-187">You should see colored bars above the display of the page that represent the different media queries.</span></span>  
+    
+    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Mostrar las consultas multimedia en la barra de herramientas del dispositivo" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+       <span data-ttu-id="f9b60-189">Ilustración 9: mostrar las consultas multimedia en la barra de herramientas del dispositivo</span><span class="sxs-lookup"><span data-stu-id="f9b60-189">Figure 9:  Showing Media Queries in Device Toolbar</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="f9b60-190">Mantenga el mouse sobre los límites de las barras para ver los valores de las diferentes consultas de medios.</span><span class="sxs-lookup"><span data-stu-id="f9b60-190">Hover over the boundaries in the bars to see the values of the different media queries.</span></span> <span data-ttu-id="f9b60-191">Seleccione cada una para cambiar el tamaño de la página web para que coincidan.</span><span class="sxs-lookup"><span data-stu-id="f9b60-191">Select each to resize the web page to match.</span></span>  
+    
+    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Seleccionar una consulta multimedia desde la barra de vista previa" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
+       <span data-ttu-id="f9b60-193">Ilustración 10: seleccionar una consulta multimedia desde la barra de vista previa</span><span class="sxs-lookup"><span data-stu-id="f9b60-193">Figure 10:  Selecting Media Query from preview bar</span></span>  
+    :::image-end:::  
+    
+1.  <span data-ttu-id="f9b60-194">Para depurar consultas de elementos multimedia y abrir el archivo CSS en el `Sources` Editor; Coloque el puntero sobre cualquiera de los segmentos de la barra, abra el menú contextual \ (haga clic con el botón secundario del mouse \) y seleccione `reveal in source code` .</span><span class="sxs-lookup"><span data-stu-id="f9b60-194">To debug media queries and open the CSS file in the `Sources` editor; hover on any of the bar segments, open the contextual menu \(right-click\), and select `reveal in source code`.</span></span>  
+    
+    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Mostrar consultas de medios en el editor de orígenes" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
+       <span data-ttu-id="f9b60-196">Ilustración 11: revelación de consultas de medios en el editor de orígenes</span><span class="sxs-lookup"><span data-stu-id="f9b60-196">Figure 11:  Revealing Media Queries in Sources Editor</span></span>  
+    :::image-end:::  
+    
 <!-- links -->  
 
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Cambiar la ubicación de DevTools de Microsoft Edge (desacoplar, acoplar a la parte inferior, acoplar a la izquierda)"  
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "Ejemplos de CSS: Microsoft Edge (cromo) DevTools | Intento"  
 
+[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Usar consultas multimedia | MDN"  
+
 > [!NOTE]
-> <span data-ttu-id="15cf6-194">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="15cf6-194">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="15cf6-195">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="15cf6-195">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="f9b60-200">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="f9b60-200">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="f9b60-201">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="f9b60-201">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="15cf6-197">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="15cf6-197">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="f9b60-203">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="f9b60-203">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
