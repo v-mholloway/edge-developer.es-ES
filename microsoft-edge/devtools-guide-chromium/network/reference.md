@@ -2,16 +2,16 @@
 title: Referencia de análisis de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7e7ac287e116e28773a42456c21ec4ba07647f04
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: c9d205fb2cc478e9c3f20458f461f004035e85e8
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709386"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710402"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -73,7 +73,7 @@ Capture las capturas de pantallas para analizar lo que los usuarios ven al esper
 
 Para habilitar capturas de pantalla, seleccione **configuración de red** y marque la casilla **capturar capturas** de pantalla en el panel **red** .  
 
-Vuelva a cargar la página mientras el panel **red** está en el foco para capturar capturas de pantalla.  
+Actualice la página mientras el panel **red** está enfocado para capturar capturas de pantalla.  
 
 Después de capturar una captura de pantalla, puede interactuar con ella de las siguientes maneras.  
 
@@ -470,7 +470,8 @@ Más información sobre cada una de las fases que puede ver en la pestaña **int
 *   **Solicitud enviada**.  Se está enviando la solicitud.  
 *   **Preparación de ServiceWorker**.  El explorador está iniciando el trabajo del servicio.  
 *   **Solicitud para ServiceWorker**.  La solicitud se está enviando al trabajador del servicio.  
-*   **Esperando \ (TTFB \)**.  El explorador está esperando el primer byte de una respuesta.  TTFB es el primer byte.  Este intervalo incluye 1 recorrido de ida y vuelta de la latencia y el tiempo que el servidor necesitó para preparar la respuesta.  
+*   **Esperando \ (TTFB \)**.  El explorador está esperando el primer byte de una respuesta.  
+  TTFB es el primer byte.  Este intervalo incluye 1 recorrido de ida y vuelta de la latencia y el tiempo que el servidor necesitó para preparar la respuesta.  
 *   **Descarga de contenido**.  El explorador está recibiendo la respuesta.  
 *   **Recibiendo Push**.  El explorador está recibiendo datos de esta respuesta a través de la inserción de servidor HTTP/2.  
 *   **Leyendo inserción**.  El explorador está leyendo los datos locales recibidos anteriormente.  

@@ -2,16 +2,16 @@
 title: Ver, editar y eliminar cookies con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4bfd99a36a6a3f8fdf8dbd7787bd54cde87d79da
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708966"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710374"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ La tabla **cookies** contiene los siguientes campos.
 *   **Http**.  Si es true, este campo indica que la cookie solo debe usarse a través de HTTP y no se permite la modificación de JavaScript.  Vea [cookies HttpOnly][MDNHTTPCookiesSecure].  
 *   **Seguro**.  Si es true, este campo indica que la cookie debe enviarse al servidor solo a través de una conexión HTTPS segura.  Consulte [cookies seguras][MDNHTTPCookiesSecure].  
 *   **SameSite**.  Contiene `strict` o `lax` si la cookie está usando el atributo [SameSite][MDNHTTPCookiesSamesite] experimental.  
-*   **Priority**.  Contains `low` , `medium` \ (default \) o `high` si la cookie usa el atributo [Priority][ChromiumIssue232693] de la cookie depreciada.
+*   **Priority**.  Contains `low` , `medium` \ (default \) o `high` si la cookie usa el atributo de [prioridad de cookies][ChromiumIssue232693] obsoleto.
 
 ## Filtrar cookies  
 

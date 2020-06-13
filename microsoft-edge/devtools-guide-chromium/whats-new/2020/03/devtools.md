@@ -2,16 +2,16 @@
 title: Novedades de DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7651430c581346d1f140f0a5974b8aa9bb809204
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ab3df52708febd4928c7e4ac41a77713370b9fa1
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709081"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710381"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -157,7 +157,7 @@ Para emular configuraciones regionales, configura una ubicación en la ubicació
 *   El [`Accept-Language`][MDNAcceptLanguage] encabezado de la solicitud http  
 
 > [!NOTE]
-> Actualizaciones de `navigator.language` y `navigator.languages` no visibles inmediatamente, pero solo después de la siguiente navegación o recarga de la página.  Los cambios en el `Accept-Language` encabezado HTTP solo se reflejan en solicitudes posteriores.  
+> Actualizaciones de `navigator.language` y `navigator.languages` no visibles inmediatamente, pero solo después de la siguiente navegación o actualización de la página.  Los cambios en el `Accept-Language` encabezado HTTP solo se reflejan en solicitudes posteriores.  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Emular una configuración regional" lightbox="../../media/2020/03/locale.msft.png":::
    Ilustración 10: emular una configuración regional  
