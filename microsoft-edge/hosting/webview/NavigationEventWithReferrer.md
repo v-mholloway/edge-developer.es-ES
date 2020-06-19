@@ -3,46 +3,49 @@ description: Contiene información de referencia sobre la navegación
 title: Objeto NavigationEventWithReferrer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/22/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicaciones para Windows 10, UWP, Edge
-ms.openlocfilehash: b11f60724387d996d0a730965602b5ead6a84145
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 72c8a213f632e9e74145de9c34b949adf074cd22
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573361"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752132"
 ---
-# Objeto NavigationEventWithReferrer
+# Objeto NavigationEventWithReferrer  
 
-Un objeto que representa un evento que se desencadena cuando se inicia la navegación y la navegación contiene una referencia.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propiedades
+Un objeto que representa un evento que se desencadena cuando se inicia la navegación y la navegación contiene una referencia.  
+
+## Propiedades  
 
 ### Referer
 
-Identificador uniforme de recursos (URI) de la página de la [vista](../webview.md) web que solicita la navegación.
+Identificador uniforme de recursos (URI) de la página de la [vista](../webview.md) web que solicita la navegación.  
 
-Esta propiedad es de solo lectura.
+Esta propiedad es de solo lectura.  
 
-#### Valor de propiedad
-Escriba: **DOMString**
+#### Valor de propiedad  
 
+Escriba: **DOMString**  
 
-```js
+```javascript
 var referer = NavigationEventWithReferrer.referer;
-```
+```  
 
-### uri
+### uri  
 
-Identificador uniforme de recursos (URI) del destino de la navegación.
+Identificador uniforme de recursos (URI) del destino de la navegación.  
 
-Esta propiedad es de solo lectura.
+Esta propiedad es de solo lectura.  
 
-```js
+```javascript
 var uri = NavigationEventWithReferrer.uri;
-```
+```  
 
-#### Valor de propiedad
-Escriba: **DOMString**
+#### Valor de propiedad  
+
+Escriba: **DOMString**  

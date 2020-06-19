@@ -3,45 +3,49 @@ description: Representa una cadena de notificación pasada desde el contenido de
 title: Objeto ScriptNotifyEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicaciones para Windows 10, UWP, Edge
-ms.openlocfilehash: 22313f2d96ca2c5d4d3554ca40589b9a583c89cd
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 164bfa7228b1f4ccf9817e4b7231361d090f1394
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572894"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752027"
 ---
-# Objeto ScriptNotifyEvent
+# Objeto ScriptNotifyEvent  
 
-Un objeto que representa un evento que se desencadena cuando el contenido incluido en la [vista en WebView](../webview.md) pasa una cadena a la aplicación mediante JavaScript.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propiedades
-    
-### callingUri
+Un objeto que representa un evento que se desencadena cuando el contenido incluido en la [vista en WebView](../webview.md) pasa una cadena a la aplicación mediante JavaScript.  
 
-Obtiene el identificador uniforme de recursos (URI) de la página que contiene el script que ha provocado el **ScriptNotifyEvent**.
+## Propiedades  
 
-Esta propiedad es de solo lectura.
+### callingUri  
 
-```js
+Obtiene el identificador uniforme de recursos (URI) de la página que contiene el script que ha provocado el **ScriptNotifyEvent**.  
+
+Esta propiedad es de solo lectura.  
+
+```javascript
 var callingUri = ScriptNotifyEvent.callingUri;
-```
+```  
 
-#### Valor de propiedad
-Escriba: **DOMString**
+#### Valor de propiedad  
 
-### value
+Escriba: **DOMString**  
 
-El nombre del método como se pasó a la aplicación.
+### value  
 
-Esta propiedad es de solo lectura.
+El nombre del método como se pasó a la aplicación.  
 
-```js
+Esta propiedad es de solo lectura.  
+
+```javascript
 var value = ScriptNotifyEvent.value;
-```
+```  
 
-#### Valor de propiedad
-Escriba: **DOMString**
+#### Valor de propiedad  
+
+Escriba: **DOMString**  

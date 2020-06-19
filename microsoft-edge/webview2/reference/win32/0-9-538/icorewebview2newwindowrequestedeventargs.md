@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: af8df8ff67a0fbe7fd4ec9308b1562b9ef987933
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10699466"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751852"
 ---
 # interfaz ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,6 +52,8 @@ IsUserInitiated es verdadero cuando se inició la solicitud de la nueva ventana 
 
 > [get_IsUserInitiated](#get_isuserinitiated)de HRESULT público (bool * IsUserInitiated)
 
+Los controles de WebView2 pueden mostrar ventanas emergentes porque el bloqueador de elementos emergentes está desactivado. Para bloquear las ventanas emergentes no iniciadas por el usuario para que no se muestren, use `get_IsUserInitiated` .
+
 #### get_NewWindow 
 
 Obtiene la nueva ventana.
@@ -87,4 +89,3 @@ Establece una vista previa como resultado de la NewWindowRequest.
 > [put_NewWindow](#put_newwindow)(HRESULT) público ([ICoreWebView2](icorewebview2.md) * NewWindow)
 
 No se debe navegar por la WebView de destino. Si se establece NewWindow, la ventana de nivel superior volverá como la WindowProxy abierta.
-

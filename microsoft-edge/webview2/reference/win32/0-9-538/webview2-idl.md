@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: Microsoft Edge WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 4f920b5faf79532e81728675bf56218549914e3d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 2fdd047068ec761e1fcd3d3031d4c6c911a5b1ef
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10699470"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752258"
 ---
 # Global 
 
@@ -50,7 +50,7 @@ Esto es equivalente a llamar a CreateCoreWebView2EnvironmentWithOptions con null
 
 Exportación de archivos DLL para crear un entorno de WebView2 con una versión personalizada de Edge, directorio de datos de usuario o opciones adicionales.
 
-browserExecutableFolder es la ruta de acceso relativa a la carpeta que contiene el borde incrustado. El borde incrustado se puede obtener copiando la carpeta con el nombre de la versión de un borde instalado, como 73.0.52.0 subcarpeta de un borde de 73.0.52.0 instalado. La carpeta debería tener msedge. exe, msedge. dll, etc. Use null o una cadena vacía para browserExecutableFolder para crear una vista de usuario con Edge instalado en el equipo, en cuyo caso la API intentará buscar una versión compatible de Edge instalada en el equipo según la preferencia de canal intentando buscar primero por instalación de usuario y, después, por instalación de equipo.
+`browserExecutableFolder`Se usa para especificar si los controles WebView2 usan una versión integrada de Edge o la versión instalada de Edge que existe en un equipo cliente. Para usar una versión insertada de Edge, pase la ruta de acceso relativa de la carpeta que contiene la versión insertada de Edge a `browserExecutableFolder` . Para obtener la versión integrada de Edge, copie el nombre de la carpeta con versión de la versión instalada de Edge en un equipo cliente. Por ejemplo, copie la `73.0.52.0` carpeta de la carpeta donde se instaló la versión de Edge 73.0.52.0. Asegúrese de que la carpeta tiene los archivos **msedgewebview2.exe** y **msedge.dll** . Para crear controles WebView2 que usen la versión instalada de Edge que existe en los equipos cliente, pase una cadena nula o vacía a `browserExecutableFolder` . En este escenario, la API intenta buscar una versión compatible de Edge que está instalada en el equipo cliente (primero en el nivel del equipo y, después, por usuario) con la preferencia de canal seleccionada. 
 
 El orden de búsqueda de canales predeterminado es estable, beta, dev y Canarias. Cuando se produce una invalidación WEBVIEW2_RELEASE_CHANNEL_PREFERENCE variable de entorno o el valor de registro releaseChannelPreference aplicable con el valor de 1, se invierte el orden de búsqueda del canal.
 
@@ -87,7 +87,7 @@ WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 
 Cuando se encuentra con un valor que no está vacío, indica que WebView se está iniciando bajo un depurador de scripts que también es compatible con aplicaciones host que usan varias vistas previas. El valor se usa como identificador de una canalización con nombre que se abrirá y se escribirá cuando la aplicación host cree un nuevo WebView. La carga coincidirá con la del destino JSON del puerto de depuración remota y el depurador externo puede usarla para adjuntar a una instancia de WebView específica. El formato de la canalización creada por el depurador debe ser: `\\.\pipe\WebView2\Debugger\{app_name}\{pipe_name}` Where:
 
-* `{app_name}` es el nombre de archivo exe de la aplicación host, por ejemplo, WebView2Example. exe
+* `{app_name}` es el nombre de archivo exe de la aplicación host, por ejemplo, WebView2Example.exe
 
 * `{pipe_name}` es el valor que se establece para WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER.
 
@@ -138,4 +138,3 @@ En primer lugar, comprobamos la raíz como HKLM y, a continuación, HKCU. AppId 
 Obtener la información de la versión del explorador incluido el nombre del canal si no es el canal estable o el borde incrustado.
 
 Los nombres de canal son beta, dev y Canarias. Si existe una invalidación para el browserExecutableFolder o la preferencia de canal, se usará el reemplazo. Si no hay un reemplazo, se usa el parámetro pasado a GetAvailableCoreWebView2BrowserVersionString.
-

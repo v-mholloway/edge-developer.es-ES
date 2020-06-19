@@ -3,58 +3,63 @@ description: Contiene información sobre la navegación de WebView completada
 title: Objeto NavigationCompletedEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/26/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicaciones para Windows 10, UWP, Edge
-ms.openlocfilehash: 11974f0c66d48569ee63c592bdd3b0153db075b1
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: eb5727ab59dbaf056f05ab4b19450c70f85d595f
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573367"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752145"
 ---
-# Objeto NavigationCompletedEvent
+# Objeto NavigationCompletedEvent  
 
-Un objeto que representa un evento que se desencadena cuando [WebView](../webview.md) ha terminado de cargar el contenido actual o si se ha producido un error en la navegación.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propiedades
-    
-### uri
+Un objeto que representa un evento que se desencadena cuando [WebView](../webview.md) ha terminado de cargar el contenido actual o si se ha producido un error en la navegación.  
 
-Identificador uniforme de recursos (URI) de la navegación.
+## Propiedades  
 
-Esta propiedad es de solo lectura.
+### uri  
 
-```js
+Identificador uniforme de recursos (URI) de la navegación.  
+
+Esta propiedad es de solo lectura.  
+
+```javascript
 var uri = NavigationCompletedEvent.uri;
-```
+```  
 
-#### Valor de propiedad
-Escriba: **DOMString**
+#### Valor de propiedad  
 
-### isSuccess
+Escriba: **DOMString**  
 
-Obtiene un valor que indica si la navegación se completó correctamente.
+### isSuccess  
 
-Esta propiedad es de solo lectura
+Obtiene un valor que indica si la navegación se completó correctamente.  
 
-```js
+Esta propiedad es de solo lectura.  
+
+```javascript
 var isSuccess = NavigationCompletedEvent.isSuccess;
-```
+```  
 
-#### Valor de propiedad
-Tipo: **Boolean**
+#### Valor de propiedad  
 
-### webErrorStatus
+Tipo: **Boolean**  
 
-Si la navegación no se realizó correctamente, obtiene un valor que indica por qué.
+### webErrorStatus  
 
-Esta propiedad es de solo lectura
+Si la navegación no se realizó correctamente, obtiene un valor que indica por qué.  
 
-```js
+Esta propiedad es de solo lectura.  
+
+```javascript
 var webErrorStatus = NavigationCompletedEvent.webErrorStatus;
-```
+```  
 
-#### Valor de propiedad
-Tipo: **largo sin signo**
+#### Valor de propiedad  
+
+Tipo: **largo sin signo**  

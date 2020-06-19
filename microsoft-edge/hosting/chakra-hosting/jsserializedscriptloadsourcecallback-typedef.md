@@ -7,20 +7,20 @@ ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 9406c488-76ac-49e5-b305-39751f3412ea
 caps.latest.revision: 3
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: bc1264bdc77da10cadb44a570ae37e7f3cd9ce6b
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 571314145cc19513f04174a9a1c93822a5795b29
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10574523"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752202"
 ---
-# JsSerializedScriptLoadSourceCallback typedef
+# Definición de tipo JsSerializedScriptLoadSourceCallback
 Lo llama el motor en tiempo de ejecución para cargar el código fuente de la secuencia de comandos serializada. El autor de la llamada debe mantener el búfer de script válido hasta el `JsSerializedScriptUnloadCallback` .  
   
 ## Sintaxis  

@@ -3,22 +3,24 @@ description: Representa una solicitud diferida de permiso de usuario para accede
 title: Objeto DeferredPermissionRequest
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicaciones para Windows 10, UWP, Edge
-ms.openlocfilehash: 6013f20195fc0f5d4f33b871a9c1b01392bf023e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dc1f0753f879f511fdc380c806eb88b6be358016
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573380"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752146"
 ---
-# Objeto DeferredPermissionRequest
+# Objeto DeferredPermissionRequest  
 
-Representa una solicitud diferida por el contenido de la [vista previa](../webview.md) para el permiso del usuario final para acceder a la funcionalidad de dispositivo especializada (como la ubicación geográfica o el bloqueo de puntero).
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Representa una solicitud diferida por el contenido de la [vista previa](../webview.md) para el permiso del usuario final para acceder a la funcionalidad de dispositivo especializada (como la ubicación geográfica o el bloqueo de puntero).  
+
+```javascript
 // In this sample, when we receive a permission request we construct some basic UI to ask the
 // user if they want to give permission.
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
@@ -58,98 +60,98 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
 
     permissionRequest.defer();
 });
-```
+```  
 
-## Métodos
+## Métodos  
 
-### permitir
+### permitir  
 
-Permite la solicitud de permiso.
+Permite la solicitud de permiso.  
 
-```js
+```javascript
 deferredPermissionRequest.allow();
-```
+```  
 
-#### Parameters
+#### Parameters  
 
-Este método no tiene parámetros.
+Este método no tiene parámetros.  
 
-#### Valor devuelto
+#### Valor devuelto  
 
-Este método no devuelve un valor.
+Este método no devuelve un valor.  
 
-### denegar
+### denegar  
 
-Deniega la solicitud de permiso.
+Deniega la solicitud de permiso.  
 
-```js
+```javascript
 deferredPermissionRequest.deny();
-```
+```  
 
-#### Parameters
+#### Parameters  
 
-Este método no tiene parámetros.
+Este método no tiene parámetros.  
 
-#### Valor devuelto
+#### Valor devuelto  
 
-Este método no devuelve un valor.
+Este método no devuelve un valor.  
 
-## Propiedades
+## Propiedades  
 
-### id
+### id  
 
-Un identificador único que se puede usar para correlacionar la DeferredPermissionRequest actual con un objeto PermissionRequest de un evento MSWebViewPermissionRequested anterior. Consulta el método **PermissionRequested. defer** .
+Un identificador único que se puede usar para correlacionar la DeferredPermissionRequest actual con un objeto PermissionRequest de un evento MSWebViewPermissionRequested anterior. Consulta el método **PermissionRequested. defer** .  
 
-Esta propiedad es de solo lectura.
+Esta propiedad es de solo lectura.  
 
-```js
+```javascript
 var id = deferredPermissionRequest.id;
-```
+```  
 
-##### Valor de propiedad
+##### Valor de propiedad  
 
-Tipo: **largo sin signo**
+Tipo: **largo sin signo**  
 
-### tipo
+### tipo  
 
-El tipo de permiso que se solicita. Puede ser uno de los siguientes valores de tipo String:
+El tipo de permiso que se solicita. Puede ser uno de los siguientes valores de tipo String:  
 
-- **Ubicación**geográfica: acceso a los datos de ubicación a través de Navigator. geolocation.
-- **unlimitedIndexedDBQuota**: permitir a las API de IndexedDB ignorar el límite de tamaño de datos almacenado usual.
-- **multimedia**: accede al micrófono y a la cámara a través de Navigator. getUserMedia.
-- **pointerlock**: capacidad para bloquear y controlar el puntero del mouse por medio de Element. requestPointerLock.
-- **notificaciones**por mensaje: posibilidad de Mostrar notificaciones de escritorio a través de la ventana. Aviso.
-- **pantalla**: capacidad para realizar capturas de pantalla a través de la API de captura multimedia.
-- **immersiveview**: capacidad para controlar una pantalla de VR.
+*   **Ubicación**geográfica: acceso a los datos de ubicación a través de Navigator. geolocation.  
+*   **unlimitedIndexedDBQuota**: permitir a las API de IndexedDB ignorar el límite de tamaño de datos almacenado usual.  
+*   **multimedia**: accede al micrófono y a la cámara a través de Navigator. getUserMedia.  
+*   **pointerlock**: capacidad para bloquear y controlar el puntero del mouse por medio de Element. requestPointerLock.  
+*   **notificaciones**por mensaje: posibilidad de Mostrar notificaciones de escritorio a través de la ventana. Aviso.  
+*   **pantalla**: capacidad para realizar capturas de pantalla a través de la API de captura multimedia.  
+*   **immersiveview**: capacidad para controlar una pantalla de VR.  
 
-Esta propiedad es de solo lectura.
+Esta propiedad es de solo lectura.  
 
-```js
+```javascript
 var type = deferredPermissionRequest.type;
-```
+```  
 
-#### Valor de propiedad
+#### Valor de propiedad  
 
-Tipo: **cadena**
+Tipo: **cadena**  
 
-### uri
+### uri  
 
-Identificador uniforme de recursos (URI) del documento que solicita el permiso.
+Identificador uniforme de recursos (URI) del documento que solicita el permiso.  
 
-Esta propiedad es de solo lectura.
+Esta propiedad es de solo lectura.  
 
-```js
+```javascript
 var uri = deferredPermissionRequest.uri;
-```
+```  
 
-##### Valor de propiedad
+##### Valor de propiedad  
 
-Tipo: **cadena**
+Tipo: **cadena**  
 
-## Requisitos
+## Requisitos  
 
-|                                           |                                      |
-|-------------------------------------------|--------------------------------------|
-| <strong>Cliente mínimo admitido</strong> | Windows 10 [solo aplicaciones de la tienda Windows] |
-| <strong>Servidor mínimo admitido</strong> |            No se admite             |
-| <strong>Teléfono mínimo admitido</strong>  |            No se admite             |
+|  |  |  
+|:--- |:--- |  
+| **Cliente mínimo admitido** | Windows 10 [solo aplicaciones de la tienda Windows] |  
+| **Servidor mínimo admitido** | No se admite |  
+| **Teléfono mínimo admitido** | No se admite |  

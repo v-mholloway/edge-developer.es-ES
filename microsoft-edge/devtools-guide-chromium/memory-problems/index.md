@@ -6,12 +6,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 87fee5484bbd535ee5692acfce273ed6edff5da2
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: b9e6e2af333257f0cbe0a4a354dcd1d7b862af9c
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708728"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751992"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -163,7 +163,7 @@ Expanda el carats para investigar un árbol desvinculado.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Seleccione un nodo para investigarlo más a la vez.  En el panel **objetos** puede ver más información sobre el código que hace referencia.  Por ejemplo, en la siguiente ilustración se puede ver que la `detachedNodes` variable hace referencia al nodo.  Para corregir esta pérdida de memoria determinada, debe estudiar el código que usa la `detachedUNode` variable y asegurarse de que la referencia al nodo se quita cuando ya no es necesaria.  
+Seleccione un nodo para investigarlo más a la vez.  En el panel **objetos** puede ver más información sobre el código que hace referencia.  Por ejemplo, en la siguiente ilustración se puede ver que la `detachedNodes` variable hace referencia al nodo.  Para corregir esta pérdida de memoria determinada, debe estudiar el código que usa la `detachedNodes` variable y asegurarse de que la referencia al nodo se quita cuando ya no es necesaria.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigar un nodo" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Ilustración 7: investigar un nodo  
