@@ -3,34 +3,36 @@ description: Un evento que se desencadena cuando se realiza una solicitud HTTP.
 title: Objeto WebResourceRequestedEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, aplicaciones para Windows 10, UWP, Edge
-ms.openlocfilehash: 79cff0d8fd68e3b5747008f343b5b46fb8093013
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3d2bb54cc5d60aec5391f0e3fdd427c8ba8a3dab
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572890"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751985"
 ---
-# <span data-ttu-id="d5b63-104">Objeto WebResourceRequestedEvent</span><span class="sxs-lookup"><span data-stu-id="d5b63-104">WebResourceRequestedEvent object</span></span>
+# <span data-ttu-id="76892-104">Objeto WebResourceRequestedEvent</span><span class="sxs-lookup"><span data-stu-id="76892-104">WebResourceRequestedEvent object</span></span>  
 
-<span data-ttu-id="d5b63-105">Un evento que se desencadena cuando se realiza una solicitud HTTP.</span><span class="sxs-lookup"><span data-stu-id="d5b63-105">An event that is fired when an HTTP request is made.</span></span>
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## <span data-ttu-id="d5b63-106">Propiedades</span><span class="sxs-lookup"><span data-stu-id="d5b63-106">Properties</span></span>
+<span data-ttu-id="76892-105">Un evento que se desencadena cuando se realiza una solicitud HTTP.</span><span class="sxs-lookup"><span data-stu-id="76892-105">An event that is fired when an HTTP request is made.</span></span>  
 
-### <span data-ttu-id="d5b63-107">EventArgs</span><span class="sxs-lookup"><span data-stu-id="d5b63-107">args</span></span>
+## <span data-ttu-id="76892-106">Propiedades</span><span class="sxs-lookup"><span data-stu-id="76892-106">Properties</span></span>  
 
-<span data-ttu-id="d5b63-108">Información sobre la solicitud de recursos.</span><span class="sxs-lookup"><span data-stu-id="d5b63-108">Information about the resource request.</span></span> <span data-ttu-id="d5b63-109">Este es un [Windows. Web. UI. WebViewControlWebResourceRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).</span><span class="sxs-lookup"><span data-stu-id="d5b63-109">This is a [Windows.Web.UI.WebViewControlWebResourceRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).</span></span>
+### <span data-ttu-id="76892-107">EventArgs</span><span class="sxs-lookup"><span data-stu-id="76892-107">args</span></span>  
 
-<span data-ttu-id="d5b63-110">Esta propiedad es de solo lectura.</span><span class="sxs-lookup"><span data-stu-id="d5b63-110">This property is read-only.</span></span>
+<span data-ttu-id="76892-108">Información sobre la solicitud de recursos.</span><span class="sxs-lookup"><span data-stu-id="76892-108">Information about the resource request.</span></span>  <span data-ttu-id="76892-109">Este es un [Windows. Web. UI. WebViewControlWebResourceRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).</span><span class="sxs-lookup"><span data-stu-id="76892-109">This is a [Windows.Web.UI.WebViewControlWebResourceRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).</span></span>  
 
-```js
+<span data-ttu-id="76892-110">Esta propiedad es de solo lectura.</span><span class="sxs-lookup"><span data-stu-id="76892-110">This property is read-only.</span></span>  
+
+```javascript
 var args = webResourceRequestedEventArgs.args;
 var request = args.request;
-```
+```  
 
-#### <span data-ttu-id="d5b63-111">Valor de propiedad</span><span class="sxs-lookup"><span data-stu-id="d5b63-111">Property value</span></span>
-<span data-ttu-id="d5b63-112">Escriba lo siguiente: **cualquiera**</span><span class="sxs-lookup"><span data-stu-id="d5b63-112">Type: **any**</span></span>
+#### <span data-ttu-id="76892-111">Valor de propiedad</span><span class="sxs-lookup"><span data-stu-id="76892-111">Property value</span></span>  
 
+<span data-ttu-id="76892-112">Escriba lo siguiente: **cualquiera**</span><span class="sxs-lookup"><span data-stu-id="76892-112">Type: **any**</span></span>  
