@@ -8,19 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 4a1eb48270e062838fee9223d0a6e0e59505278e
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 68a32b8e7175f2e52960e7c3a7fe16b66e5a043d
+ms.sourcegitcommit: de171a8e7ccd9f23846f3cd06519e4a0104f1c52
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697325"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "10757616"
 ---
 # Notas de la versión para el SDK de WebView2  
 
 El equipo de WebView2 enviará actualizaciones para el [SDK de WebView2][WebView2NuGetGallery] en una cadencia de 6 semanas. Esta página le mantendrá al día con: anuncios de productos, adiciones y modificaciones a la superficie de la API y cambios importantes.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Vuelve a compilar la aplicación después de actualizar el paquete de NuGet.
+
+> [!IMPORTANT]
+> Mientras WebView2 está en versión preliminar, las API de .NET estarán en el **paquete anterior al lanzamiento**.
 
 ## 0.9.538
 
@@ -39,7 +42,7 @@ El equipo de WebView2 enviará actualizaciones para el [SDK de WebView2][WebView
   * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed) es ahora [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
 * [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) actualizado para garantizar que los marcadores de serializador de objeto de host original se establezcan en los objetos proxy y se serialicen como un objeto de host cuando se pasan como un parámetro en la devolución de llamada de JavaScript. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
-#### .NET
+#### .NET (versión preliminar de 0.9.538)
 
 * Se han publicado ejemplos de WinForms y WPF WebView2API, que son guías completas de nuestro SDK. Consulta el [repositorio de ejemplos de WebView2](https://github.com/MicrosoftEdge/WebView2Samples).
 * Se ha agregado compatibilidad con las [API experimentales](./concepts/versioning.md#experimental-apis) de hospedaje visual y características de la ventana
