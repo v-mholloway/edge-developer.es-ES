@@ -204,6 +204,12 @@
               items:
                 - name: Rastrear qué elemento tiene el foco
                   href: devtools-guide-chromium/accessibility/focus.md
+                - name: Simulación del tema Oscuro o Claro
+                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+                - name: Simular movimiento reducido
+                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+                - name: Emular deficiencias visuales
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
         - name: Depuración remota
           items:
             - name: Dispositivos Android

@@ -12,6 +12,10 @@
   items:
     - name: Distribuir mi aplicación
       href: concepts/distribution.md
+    - name: Administrar carpetas de datos de usuario
+      href: concepts/userdatafolder.md
+    - name: Procedimientos recomendados de seguridad
+      href: concepts/security.md
     - name: Control de versiones
       href: concepts/versioning.md
 - name: Notas de la versión
