@@ -3,18 +3,18 @@ description: notas del producto sobre la privacidad de Microsoft Edge
 title: notas del producto sobre la privacidad de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, privacidad, notas del producto, confianza
 localization_priority: Priority
-ms.openlocfilehash: 2fee66a81309ee61d41959ae6992e2fe991ca649
-ms.sourcegitcommit: ffc0eb7bedf6e79326103a78c003f1cb2a2f70b2
+ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
+ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "10696739"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10758875"
 ---
 # notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -62,7 +62,9 @@ Cuando se usa el modo invitado, Autorrellenar no está disponible y no se agrega
 
 ## Transmitir  
 
-Cast en Microsoft Edge le permite mostrar sus elementos multimedia en otra pantalla con Google Cast.  Puede acceder a la característica desde la **configuración y más (...)**  >  **Más herramientas**  >  **Transmitir multimedia al dispositivo**.  Cast no usa los servicios de Microsoft o Google. 
+Cast en Microsoft Edge le permite mostrar sus elementos multimedia en otra pantalla con Google Cast.  Puede acceder a la característica desde la **configuración y más (...)**  >  **Más herramientas**  >  **Transmitir multimedia al dispositivo**.  Cast depende de la extensión del enrutador multimedia que no está incluida en Microsoft Edge de forma predeterminada.  La primera vez que usa Cast, Microsoft Edge solicita permiso para instalar la extensión de enrutador multimedia.  
+
+Seleccione **reiniciar** para instalar las extensiones de router multimedia desde la tienda web de Chrome.  Para mantener la extensión del enrutador multimedia actualizada, al iniciar Microsoft Edge y a intervalos regulares, Microsoft Edge envía solicitudes de actualización a la tienda web de Chrome que incluyen datos básicos sobre su versión de Microsoft Edge.  Google puede recopilar algunos datos asociados con la extensión del enrutador multimedia.  Para desinstalar la extensión del router multimedia, vaya al `edge://flags` **enrutador perimetral a petición**y deshabilítelo.  Esto también detiene las actualizaciones del almacén Web de Chrome.  La extensión está oculta y no aparece en la lista **extensiones instaladas** .  Para la lista **extensiones instaladas** , vaya a `edge://extensions` .  
 
 ## Colecciones  
 

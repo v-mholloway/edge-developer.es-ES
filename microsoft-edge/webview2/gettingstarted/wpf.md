@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones WPF, WPF, Edge, CoreWebView2, control de explorador, código HTML de Edge, introducción, .NET
-ms.openlocfilehash: 0dd4b5b0d336f4107352754e0c23e74bc83e8a5f
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+ms.openlocfilehash: 9ecb80050d52d1d3b888027a728456a881d8c5ad
+ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10752237"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10767019"
 ---
 # Introducción a WebView2 en WPF (vista previa)
 
@@ -69,15 +69,16 @@ A continuación, agregue el SDK de WebView2 al proyecto.  Para obtener la vista 
        Nuget
     :::image-end:::
     
-1.  Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  Establezca la versión del paquete como **versión preliminar**y, a continuación, seleccione **instalar**.  
-    
+2.  Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  
+
+3. Marque la opción **incluir versión preliminar**, seleccione una versión de paquete de versión **preliminar** y, a continuación, elija **instalar**.  
+  
      ![Nuget](./media/installnuget.PNG)
     
     Ya está todo listo para empezar a desarrollar aplicaciones con la API de WebView2.  Pulse `F5` para compilar y ejecutar el proyecto.  El proyecto en ejecución muestra una ventana vacía.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Aplicación vacía":::
-       Aplicación vacía
-    :::image-end:::  
+       Aplicación vacía :::image-end:::  
     
 ## Paso 3: crear una sola vista previa en MainWindow. Xaml  
 

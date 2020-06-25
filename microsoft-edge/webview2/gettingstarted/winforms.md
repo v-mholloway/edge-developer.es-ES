@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones de WinForms, WinForms, Edge, CoreWebView2, control de explorador, ASP.net de Edge, introducción, introducción, .NET, Windows Forms
-ms.openlocfilehash: 20e3d152c8384e33551d75b5baa265fa7cb7f1ec
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 85b114e7eb1e567bd5188353af2826a56b01ad4e
+ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698228"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10767026"
 ---
 # Introducción a WebView2 en las aplicaciones de Windows Forms (versión preliminar)  
 
@@ -54,7 +54,9 @@ A continuación, agregue el SDK de WebView2 al proyecto.  Para obtener la vista 
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
        Nuget :::image-end:::
 
-2. Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  Establezca la versión del paquete como **versión preliminar**y, a continuación, elija **instalar**.  
+2. Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  
+
+3. Marque la opción **incluir versión preliminar**, seleccione una versión de paquete de versión **preliminar** y, a continuación, elija **instalar**.  
 
     ![Nuget](./media/installnuget.png)
 
