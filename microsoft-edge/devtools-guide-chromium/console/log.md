@@ -6,12 +6,12 @@ ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d3dbec41bc1e53b5e9001551c796e5a495dd331e
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4c930caf60af2b5e276e003378546e147c249548
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601736"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843970"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -89,11 +89,11 @@ La mayoría de los mensajes que ve en la consola provienen de los programadores 
     > La consola después de hacer clic en **información de registro**  
     > ! [La consola después de hacer clic en información de registro] [ImageLogInfo]  
     
-1.  Junto al `Hello, Console!` mensaje en la consola, haga clic en **log. js: 2**.  El panel orígenes se abre y resalta la línea de código que causó que el mensaje se registre en la consola.  El mensaje se registró cuando se ejecutó el JavaScript de la página `console.log('Hello, Console!')` .
+1.  Junto al `Hello, Console!` mensaje en la consola, haga clic en **log.js:2**.  El panel orígenes se abre y resalta la línea de código que causó que el mensaje se registre en la consola.  El mensaje se registró cuando se ejecutó el JavaScript de la página `console.log('Hello, Console!')` .
     
     > ##### Imagen 7  
-    > DevTools abre el panel orígenes después de hacer clic en **log. js: 2**  
-    > ! [DevTools abre el panel orígenes después de hacer clic en log. js: 2]. [ImageSourceLog]  
+    > DevTools abre el panel orígenes después de hacer clic en **log.js:2**  
+    > ! [DevTools abre el panel orígenes después de hacer clic en log.js:2] [ImageSourceLog]  
     
 1.  Vuelva a la consola con uno de los siguientes flujos de trabajo:  
     
@@ -166,6 +166,7 @@ El explorador también registra mensajes en la consola.  Esto suele ocurrir cuan
     > ! [Un TypeError en la consola] [ImageConsoleLogTypeError]  
     
 1.  Haga clic en la lista desplegable **niveles de registro** y habilite la opción **detallado** si está deshabilitada.  Para obtener más información sobre el filtrado, vaya a la siguiente sección.  Tiene que hacer esto para asegurarse de que el siguiente mensaje que inicie sesión está visible.  
+    **Nota:** Si la lista desplegable niveles predeterminados está deshabilitado, es posible que tenga que cerrar la barra lateral de la consola. Filtrar por origen del mensaje a continuación para obtener más información sobre la barra lateral de la consola.
     
     > ##### Imagen 16  
     > Habilitar el nivel de registro **detallado**  
@@ -274,29 +275,29 @@ Anteriormente, cuando se hace clic en **información de registro**, se llama a u
 
 [ImageLogExample]: /microsoft-edge/devtools-guide-chromium/media/console-ars-technica-console-onload.msft.png "Ilustración 1: mensajes en la consola"  
 <!--[ImageLogSetUp1]: /microsoft-edge/devtools-guide-chromium/media/log-set-up-1.msft.png "old Figure 2: The tutorial on the left, and the demo on the right"  -->  
-[ImageDevToolsRight]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-example-DevTools-Right-Console.msft.png "Figura 2: DevTools se abre a la derecha de la demostración"  
-[ImageDevToolsBottom]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-example-DevTools-Bottom-Console.msft.png "Ilustración 3: DevTools acoplado a la parte inferior de la demostración"  
-[ImageDevToolsSeparateBrowse]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-example-DevTools-separate-Console-Browse.msft.png "Ilustración 4: explorador en una ventana independiente"  
-[ImageDevToolsSeparateDevTools]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-example-DevTools-separate-Console-DevTools.msft.png "Ilustración 5: DevTools desacoplado en una ventana independiente"  
-[ImageLogInfo]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-log-info.msft.png "Ilustración 6: la consola después de hacer clic en información de registro"  
-[ImageSourceLog]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-sources-logjs.msft.png "Figura 7: DevTools abre el panel orígenes después de hacer clic en log. js: 2"  
-[ImageConsoleLogWarning]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-log-warning.msft.png "Ilustración 8: la consola después de hacer clic en ADVERTENCIA de registro"  
-[ImageStackTrace]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-log-Warning-Expanded.msft.png "Ilustración 9: un seguimiento de la pila"  
-[ImageLogError]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-log-error.msft.png "Figura 10: un mensaje de error"  
-[ImageConsoleTable]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-log-Table.msft.png "ilustración 11: una tabla en la consola"  
-[ImageConsoleLogGroup]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-log-Group.msft.png "Ilustración 12: un grupo de mensajes en la consola"  
-[ImageConsoleLogCustomFormatting]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-log-Custom.msft.png "ilustración 13: un mensaje con formato personalizado en la consola"  
-[ImageConsoleLogError]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-cause-404.msft.png "Ilustración 14: error 404 en la consola"  
-[ImageConsoleLogTypeError]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-cause-error.msft.png "Figura 15: un TypeError en la consola"  
-[ImageVerboseLogLevel]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-cause-error-log-levels.msft.png "Figura 16: habilitar el nivel de registro detallado"  
-[ImageConsoleLogViolation]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-cause-Violation.msft.png "Ilustración 17: una infracción en la consola"  
-[ImageConsoleDisablingLogError]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-cause-Violation-log-levels.msft.png "ilustración 18: deshabilitar mensajes de nivel de error en la consola"  
-[ImageLogTextFiltering]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-All-messages-Text-Filter.msft.png "Ilustración 19: filtrar cualquier mensaje que no incluya Dave"  
-[ImageLogRegExFiltering]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-All-messages-regex-Filter.msft.png "figura 20: filtrar los mensajes que no coincidan con un patrón"  
-[ImageConsoleSidebar]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-Sidebar-All-messages.msft.png "ilustración 21: la barra lateral"  
-[ImageConsoleSidebarLogSource]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-Sidebar-Expanded-All-messages.msft.png "Ilustración 22: ver el origen de los mensajes en la barra lateral"  
-[ImageConsoleLogBrowserFiltering]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-Sidebar-User-messages.msft.png "Ilustración 23: filtrar los mensajes del explorador"  
-[ImageDrawerConsole]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Console-Elements-Drawer-Console-Sidebar-All-messages.msft.png "Ilustración 24: ficha consola en el cajón"  
+[ImageDevToolsRight]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-example-devtools-right-console.msft.png "Figura 2: DevTools se abre a la derecha de la demostración"  
+[ImageDevToolsBottom]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-example-devtools-bottom-console.msft.png "Ilustración 3: DevTools acoplada a la parte inferior de la demostración"  
+[ImageDevToolsSeparateBrowse]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-example-devtools-separate-console-browse.msft.png "figura 4: explorador en una ventana independiente"  
+[ImageDevToolsSeparateDevTools]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-example-devtools-separate-console-devtools.msft.png "Figura 5: DevTools desacoplado en una ventana independiente"  
+[ImageLogInfo]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-log-info.msft.png "Figura 6: la consola después de hacer clic en información de registro"  
+[ImageSourceLog]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-sources-logjs.msft.png "Figura 7: DevTools abre el panel orígenes después de hacer clic en log.js:2"  
+[ImageConsoleLogWarning]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-log-warning.msft.png "Ilustración 8: la consola después de hacer clic en ADVERTENCIA de registro"  
+[ImageStackTrace]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-log-warning-expanded.msft.png "Ilustración 9: un seguimiento de pila"  
+[ImageLogError]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-log-error.msft.png "Figura 10: un mensaje de error"  
+[ImageConsoleTable]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-log-table.msft.png "ilustración 11: una tabla en la consola"  
+[ImageConsoleLogGroup]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-log-group.msft.png "Ilustración 12: un grupo de mensajes en la consola"  
+[ImageConsoleLogCustomFormatting]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-log-custom.msft.png "figura 13: un mensaje con formato personalizado en la consola"  
+[ImageConsoleLogError]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-cause-404.msft.png "figura 14: error 404 en la consola"  
+[ImageConsoleLogTypeError]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-cause-error.msft.png "Figura 15: un TypeError en la consola"  
+[ImageVerboseLogLevel]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-cause-error-log-levels.msft.png "Figura 16: habilitar el nivel de registro detallado"  
+[ImageConsoleLogViolation]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-cause-violation.msft.png "Figura 17: una infracción en la consola"  
+[ImageConsoleDisablingLogError]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-cause-violation-log-levels.msft.png "ilustración 18: deshabilitar mensajes de nivel de error en la consola"  
+[ImageLogTextFiltering]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-all-messages-text-filter.msft.png "Ilustración 19: filtrar cualquier mensaje que no incluya Dave"  
+[ImageLogRegExFiltering]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-all-messages-regex-filter.msft.png "figura 20: filtrar los mensajes que no coincidan con un patrón"  
+[ImageConsoleSidebar]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-sidebar-all-messages.msft.png "ilustración 21: la barra lateral"  
+[ImageConsoleSidebarLogSource]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-sidebar-expanded-all-messages.msft.png "Ilustración 22: ver el origen de los mensajes en la barra lateral"  
+[ImageConsoleLogBrowserFiltering]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-sidebar-user-messages.msft.png "Figura 23: filtrar los mensajes del explorador"  
+[ImageDrawerConsole]:/Microsoft-Edge/DevTools-Guide-Chromium/media/console-elements-drawer-console-sidebar-all-messages.msft.png "Figura 24: la ficha Console del cajón"  
 
 <!-- links -->  
 
