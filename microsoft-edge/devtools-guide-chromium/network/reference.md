@@ -6,12 +6,12 @@ ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c9d205fb2cc478e9c3f20458f461f004035e85e8
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: ec8969fbf7b54512f00120ac4a253b952c55768f
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710402"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844022"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -470,8 +470,7 @@ Más información sobre cada una de las fases que puede ver en la pestaña **int
 *   **Solicitud enviada**.  Se está enviando la solicitud.  
 *   **Preparación de ServiceWorker**.  El explorador está iniciando el trabajo del servicio.  
 *   **Solicitud para ServiceWorker**.  La solicitud se está enviando al trabajador del servicio.  
-*   **Esperando \ (TTFB \)**.  El explorador está esperando el primer byte de una respuesta.  
-  TTFB es el primer byte.  Este intervalo incluye 1 recorrido de ida y vuelta de la latencia y el tiempo que el servidor necesitó para preparar la respuesta.  
+*   **Esperando \ (TTFB \)**.  El explorador está esperando el primer byte de una respuesta.  TTFB es el primer byte.  Este intervalo incluye 1 recorrido de ida y vuelta de la latencia y el tiempo que el servidor necesitó para preparar la respuesta.  
 *   **Descarga de contenido**.  El explorador está recibiendo la respuesta.  
 *   **Recibiendo Push**.  El explorador está recibiendo datos de esta respuesta a través de la inserción de servidor HTTP/2.  
 *   **Leyendo inserción**.  El explorador está leyendo los datos locales recibidos anteriormente.  

@@ -6,12 +6,12 @@ ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 005d2650a1633d49a8c6c2550c4b2c0c2e3f3be6
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4f0370b83d8c939476a1ed378dbdf750101c9527
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601850"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843973"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -155,7 +155,6 @@ Consulte [Agregar un PseudoState a una clase][DevToolsCSSGetStartedAddPseudoStat
 ### Ver una página en modo de impresión   
 
 Para ver una página en modo impresión:  
-
 1.  [Abrir el menú de comandos][DevToolsCommandMenu].  
 1.  Empiece `Rendering` a escribir y seleccione `Show Rendering` .  
 1.  Para la lista desplegable **emular multimedia de CSS** , seleccione **Imprimir**.  
