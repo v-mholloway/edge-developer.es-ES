@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: 370b5da2d42412a08a5c7f8a7401496fa70e3065
-ms.sourcegitcommit: 288bd2a1bec418a84d1f0bda013c1913886bd269
+ms.openlocfilehash: b76ebcd4ebc30e30083e742a5e84075a5c6ef779
+ms.sourcegitcommit: bb62099215e4f610f8561250fa943f58a0f836b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10844407"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "10846020"
 ---
 # Distribución de aplicaciones con WebView2  
 
@@ -50,11 +50,11 @@ Hoy, durante la vista previa, el tiempo de ejecución de WebView2 perenne y el c
 > [!IMPORTANT]
 > No envíe aplicaciones de WebView2 en producción durante la versión preliminar.  
 
-Use el siguiente flujo de trabajo para asegurarse de que el tiempo de ejecución de WebView2 de perenne esté disponible.  
+Se recomienda a los desarrolladores asegurarse de que el tiempo de ejecución de WebView2 de perenne se instala antes de que se inicie la aplicación. A continuación se muestra un flujo de trabajo de ejemplo.  
 
 1.  Descargue el último [instalador de WebView2 de perenne][Webview2Installer].  
 1.  Incluya el instalador en el instalador o actualizador de la aplicación.  
-1.  Durante la instalación o actualización de la aplicación, compruebe si el tiempo de ejecución de WebView2 perenne ya está instalado en el equipo del usuario.  Si no es así, la aplicación invoca el instalador para instalar el motor en tiempo de ejecución.  
+1.  Durante la instalación o actualización de la aplicación, compruebe si el tiempo de ejecución de WebView2 perenne ya está instalado en el equipo del usuario mediante la API de [GetAvailableCoreWebView2BrowserVersionString](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#getavailablecorewebview2browserversionstring) y comprobar si versionInfo es NULL. Si no se instala, el instalador o actualizador de aplicaciones puede invocar silenciosamente el instalador en tiempo de ejecución desde un proceso o símbolo del sistema con privilegios elevados `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
 
 Según el escenario, es posible que tenga que cambiar el flujo de trabajo anterior.  Por ejemplo, el instalador de la aplicación puede descargar el instalador de tiempo de ejecución de WebView2 de perenne en lugar de incluirlo en el paquete de la aplicación.  
 
