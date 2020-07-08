@@ -3,16 +3,15 @@ description: Las últimas características experimentales de Microsoft Edge DevT
 title: Características experimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, experimento
-ms.openlocfilehash: 731a289f555870eeff9cdc160965b59925b70c4d
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
-ms.translationtype: MT
+ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
+ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843959"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858057"
 ---
 # Características experimentales  
 
@@ -26,7 +25,7 @@ Siga estos pasos para activar las características experimentales \ (o desactiva
 
 1.  [Abra DevTools][DevtoolsOpen].  
      *   Pulse `Control` + `Shift` + `I` \ (Windows \) o `Command` + `Option` + `I` \ (MacOS \).  Para obtener más información, vea [métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
-1.  Abra el panel **configuración** .  
+1.  Abra el panel [configuración][DevToolsCustomizeSettings] .  
     *   Presione `Shift` + `?` .  Para obtener más información, vea [métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
 1.  En el lado izquierdo del panel **configuración** , seleccione la sección **experimentos** .  
     
@@ -46,9 +45,22 @@ En las siguientes secciones, se describen las nuevas características experiment
 
 | Característica experimental | Versión de Microsoft Edge |  
 |:--- |:--- |  
+| [Habilitar la pestaña de configuración personalizada de métodos abreviados de teclado](#enable-custom-keyboard-shortcuts-settings-tab) | 84 o posterior |
 | [Habilitar nuevas características de depuración de cuadrícula CSS](#enable-new-css-grid-debugging-features) | 85 o posterior |  
 | [Habilitar la compatibilidad para mover pestañas entre paneles](#enable-support-to-move-tabs-between-panels) | 85 o posterior |  
 | [Habilitar webhint](#enable-webhint) | 85 o posterior |  
+
+### Habilitar la pestaña de configuración personalizada de métodos abreviados de teclado
+
+Proporciona una nueva página de **accesos directos** en la [configuración de DevTools][DevToolsCustomizeSettings] que permite que los [métodos abreviados de teclado][DevToolsShortcuts] coincidentes en el DevTools de [vs][VisualstudioCode].  
+
+Una vez que hayas habilitado este experimento, vuelve a abrir la [configuración de DevTools][DevToolsCustomizeSettings] pulsando `Shift` + `?` .  Vaya a la nueva página de **accesos directos** .  Seleccione **DevTools (valor predeterminado)** en la lista desplegable **coincidir con métodos abreviados preestablecidos** y seleccione **código de Visual Studio**.  Los métodos abreviados de teclado de la DevTools ahora coinciden con los métodos abreviados para acciones equivalentes en VS Code.  
+
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a VS" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Hacer coincidir los métodos abreviados de teclado en el código de DevTools a VS
+:::image-end:::  
+
+Por ejemplo, en Windows, el método abreviado de teclado para pausar o seguir ejecutando un script en [vs Code][VisualstudioCodeShortcutsKeyboardWindows] es `F5` .  Con el valor preestablecido **DevTools (predeterminado)** , ese mismo método abreviado de DevTools es, `F8` pero con el prefijo de código de **Visual Studio** , ese método abreviado también está ahora `F5` .  
 
 ### Habilitar nuevas características de depuración de cuadrícula CSS  
 
@@ -82,11 +94,11 @@ Normalmente, las herramientas, como **los elementos** y la **red** , solo se pue
 
 ## Características experimentales anteriores  
 
-*   la [vista 3D][Devtools3DView] ahora está disponible y activada de forma predeterminada en Microsoft Edge versión 83 o posterior.  
+*   la [vista 3D][Devtools3dViewIndex] ahora está disponible y activada de forma predeterminada en Microsoft Edge versión 83 o posterior.  
 
 ## Proporcionar comentarios sobre características experimentales  
 
-Para proporcionar comentarios sobre experimentos con Microsoft Edge DevTools o sobre cualquier otro tema relacionado con DevTools:  
+Para proporcionar comentarios sobre experimentos con Microsoft Edge DevTools o sobre cualquier otro tema relacionado con DevTools.  
 
 *   Envíe sus comentarios con el icono de comentarios en el DevTools  
 *   Tweet a [@EdgeDevTools][TwitterEdgedevtools]  
@@ -97,11 +109,15 @@ Para proporcionar comentarios sobre experimentos con Microsoft Edge DevTools o s
 
 <!-- links -->  
 
-[Devtools3DView]: ./3D-view.md "Vista 3D | Microsoft docs"  
+[Devtools3dViewIndex]: ./3d-view/index.md "Vista 3D | Microsoft docs"  
 [DevtoolsIssues]: ./issues/index.md "Buscar y solucionar problemas con la herramienta de problemas de Microsoft Edge DevTools | Microsoft docs"  
-[DevToolsShortcuts]: ./shortcuts.md "Métodos abreviados de teclado de Microsoft Edge DevTools-Microsoft docs"  
+[DevToolsCustomizeSettings]: ./customize/index.md#settings "Configuración-personalizar Microsoft Edge DevTools | Microsoft docs"  
+[DevToolsShortcuts]: ./shortcuts.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft docs"  
 [DevtoolsOpen]: ./open.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Código de Visual Studio"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Métodos abreviados de teclado de código de Visual Studio para Windows | Código de Visual Studio"  
 
 [WebhintMain]: https://webhint.io "sugerencia" 
