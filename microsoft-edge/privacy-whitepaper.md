@@ -3,18 +3,21 @@ description: notas del producto sobre la privacidad de Microsoft Edge
 title: notas del producto sobre la privacidad de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, privacidad, notas del producto, confianza
 localization_priority: Priority
-ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
-ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
+no-loc:
+- Cast
+- Google Cast
+ms.openlocfilehash: 4dc6b21a885438e8ddc0b2164386ec8d819b14af
+ms.sourcegitcommit: ec1d73e3addc47ed28ac5f9d61e4e1ee26b9e40d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "10758875"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860433"
 ---
 # notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -60,9 +63,9 @@ Cuando visita una página web y envía un formulario, Microsoft Edge envía info
 
 Cuando se usa el modo invitado, Autorrellenar no está disponible y no se agregan nuevas entradas de rellenado automático.  Al explorar InPrivate, Microsoft Edge ofrece entradas de Autorrelleno, pero no se agregan nuevas entradas de Autorrelleno.  
 
-## Transmitir  
+## Cast  
 
-Cast en Microsoft Edge le permite mostrar sus elementos multimedia en otra pantalla con Google Cast.  Puede acceder a la característica desde la **configuración y más (...)**  >  **Más herramientas**  >  **Transmitir multimedia al dispositivo**.  Cast depende de la extensión del enrutador multimedia que no está incluida en Microsoft Edge de forma predeterminada.  La primera vez que usa Cast, Microsoft Edge solicita permiso para instalar la extensión de enrutador multimedia.  
+Cast en Microsoft Edge, te permite mostrar tus elementos multimedia a otra pantalla con Google Cast .  Puede acceder a la característica desde la **configuración y más (...)**  >  **Más herramientas**  >  ** Cast multimedia a dispositivo**.  Cast se basa en la extensión del enrutador multimedia que no está incluida en Microsoft Edge de forma predeterminada.  Al usar por primera vez Cast , Microsoft Edge solicita permiso para instalar la extensión de enrutador multimedia.  
 
 Seleccione **reiniciar** para instalar las extensiones de router multimedia desde la tienda web de Chrome.  Para mantener la extensión del enrutador multimedia actualizada, al iniciar Microsoft Edge y a intervalos regulares, Microsoft Edge envía solicitudes de actualización a la tienda web de Chrome que incluyen datos básicos sobre su versión de Microsoft Edge.  Google puede recopilar algunos datos asociados con la extensión del enrutador multimedia.  Para desinstalar la extensión del router multimedia, vaya al `edge://flags` **enrutador perimetral a petición**y deshabilítelo.  Esto también detiene las actualizaciones del almacén Web de Chrome.  La extensión está oculta y no aparece en la lista **extensiones instaladas** .  Para la lista **extensiones instaladas** , vaya a `edge://extensions` .  
 
