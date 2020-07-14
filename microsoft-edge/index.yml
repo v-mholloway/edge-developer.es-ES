@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/23/2020
-  localization_priority: Priority
-  ms.openlocfilehash: 52f768582f25f35f8b0b188cfc1a38edc7aac6c8
-  ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
+  ms.date: 07/10/2020
+  ms.localizationpriority: high
+  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
+  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/26/2020
-  ms.locfileid: "10678221"
+  ms.lasthandoff: 07/13/2020
+  ms.locfileid: "10866060"
 highlightedContent:
   items:
   - title: Descargar Microsoft Edge (canal oficial estable)
@@ -72,13 +72,13 @@ productDirectory:
     links:
     - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
       text: Comunidad tecnológica empresarial (centrado en el Insider)
-  - title: Extensiones para Enterprise
+  - title: Extensiones para empresas
     imageSrc: /media/common/i_extensions.svg
     links:
     - url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
       text: Patrones de coincidencia
     - url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
-      text: Alojamiento y actualización
+      text: Hospedaje y actualización
 conceptualContent:
   title: Microsoft Edge para desarrolladores
   summary: DevTools, extensiones y aplicaciones web multiplataforma
@@ -142,19 +142,19 @@ conceptualContent:
       text: Tema oscuro
     - url: /microsoft-edge/devtools-guide-chromium/workspaces/index
       itemType: reference
-      text: Áreas
+      text: Áreas trabajo
     - url: /microsoft-edge/devtools-guide-chromium/shortcuts
       itemType: reference
-      text: Métodos abreviados de teclado
+      text: Métodos abreviados de teclado.
   - title: Probar la automatización de &
     links:
     - text: Accesibilidad
       itemType: reference
       url: /microsoft-edge/accessibility
-    - text: Protocolo DevTools (cromo)
+    - text: Protocolo DevTools (Chromium)
       itemType: reference
       url: /microsoft-edge/devtools-protocol-chromium
-    - text: Controlador WebDrive (cromo)
+    - text: WebDriver (Chromium)
       itemType: reference
       url: /microsoft-edge/webdriver-chromium
     - text: Puppeteer
@@ -163,7 +163,7 @@ conceptualContent:
     - text: Interoperabilidad (compatibilidad de sitios)
       itemType: reference
       url: /microsoft-edge/web-platform/site-impacting-changes
-    - text: sugerencia
+    - text: webhint
       itemType: reference
       url: https://webhint.io/docs/user-guide
     - text: Análisis de rendimiento
@@ -220,7 +220,7 @@ conceptualContent:
       text: Directiva de seguridad de contenido
     - url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
       itemType: reference
-      text: Directivas para desarrolladores de catálogos de Microsoft Edge addons
+      text: Directivas para desarrolladores de catálogo de complementos de Microsoft Edge
   - title: Aplicaciones web progresivas
     links:
     - url: /microsoft-edge/progressive-web-apps-chromium/index
@@ -245,14 +245,14 @@ additionalContent:
   - items:
     - title: Referencia
       links:
-      - text: Cadena de agente de usuario de Microsoft Edge
+      - text: Cadena del agente de usuario de Microsoft Edge
         url: /microsoft-edge/web-platform/user-agent-string
       - text: Estado de la plataforma
         url: https://developer.microsoft.com/microsoft-edge/platform/status
       - text: Visual Studio Code
         url: /microsoft-edge/visual-studio-code/index
       - url: /microsoft-edge/privacy-whitepaper
-        text: Notas del producto de privacidad
+        text: Documento técnico de privacidad
     - title: Documentación heredada de Microsoft Edge
       links:
       - text: Guía para el desarrollador (EdgeHTML)
@@ -261,7 +261,7 @@ additionalContent:
         url: /microsoft-edge/devtools-guide
       - text: Protocolo DevTools (EdgeHTML)
         url: /microsoft-edge/devtools-protocol/index
-      - text: Extensions (EdgeHTML)
+      - text: Extensiones (EdgeHTML)
         url: /microsoft-edge/extensions/index
       - text: Introducción a PWAs (EdgeHTML)
         url: /microsoft-edge/progressive-web-apps-edgehtml/get-started

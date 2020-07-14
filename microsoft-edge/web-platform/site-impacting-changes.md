@@ -7,12 +7,12 @@ ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilidad, plataforma web
-ms.openlocfilehash: f6c19258c1e82e1ce90a21f6efc04496100c3401
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+ms.openlocfilehash: 7a443b36c554439c70017aeee52c92f591c566b8
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843980"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866053"
 ---
 # Cambios que afectan a la compatibilidad del sitio que llegan a Microsoft Edge  
 
@@ -25,7 +25,7 @@ La web está evolucionando constantemente para mejorar la experiencia, la seguri
 | No permitir XmlHttpRequest sincrónico en el descarte de página | [Chrome + 1](#release-comments) \ (Edge V83 \) |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  El cromo coincidente, Microsoft Edge ofrece una directiva de grupo para deshabilitar este cambio hasta Edge 88.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, revise la entrada de estado de la [plataforma de cromo][ChromePlatformStatus4664843055398912].  |  
 | Mostrar sutil aviso de solicitudes de permisos de notificación |  | Canarias V83, dev V83 | Ahora, los usuarios pueden optar por no molestar las solicitudes de notificación en `edge://settings/content/notifications` .  Con esta opción habilitada, Microsoft Edge muestra un icono de solicitud sutil en la barra de direcciones para los sitios que solicitan que los usuarios envíen notificaciones futuras a través de la `Notifications` `Push` API o.  Este icono sutil reemplaza la solicitud de permiso de control flotante.  Un experimento en la Canarias y el desarrollo activa este comportamiento de forma predeterminada para algunos usuarios en todos los sitios que solicitan permisos de notificaciones.  Los usuarios pueden dejar de participar `edge://settings/content/notifications` .  En el futuro, el equipo de Microsoft Edge puede explorar la visualización de la indicación de control flotante en situaciones específicas, en función de los comportamientos del usuario y otros datos introducidos.  |  
 | Deshabilitar TLS/1.0 y TLS/1.1 de forma predeterminada | Edge v84 |  | Para ayudar a descubrir los sitios afectados, puedes establecer la `edge://flags/#display-legacy-tls-warnings` marca para hacer que Microsoft Edge muestre un aviso "no seguro" de no bloqueo al cargar páginas que requieran protocolos TLS heredados.  La Directiva de grupo [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] permite volver a habilitar TLS/1.0 y TLS/1.1; la política estará disponible hasta el borde 88.  |  
-| Bloquear descargas de contenido mixto | [Chrome + 1](#release-comments) \ (Edge V85 \)  |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, revise la [entrada de blog de seguridad de Google][GoogleBlogSecurity20200206].  La programación de lanzamiento de Microsoft sobre tipos de archivo para advertir o bloquear está planificada para una versión posterior a Chrome.  |  
+| Bloquear descargas de contenido mixto | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, revise la [entrada de blog de seguridad de Google][GoogleBlogSecurity20200206].  La programación de lanzamiento de Microsoft sobre tipos de archivo para advertir o bloquear está planificada para una versión posterior a Chrome.  |  
 | Desuso AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, consulte la [documentación del WebDev][WebDevAppCacheRemoval].  La programación de lanzamiento de Microsoft para la degradación está planificada para una versión posterior a Chrome.  Solicitar un [token de OriginTrial de AppCache][AppCacheOriginTrial] permite a los sitios continuar usando la API obsoleta hasta que es Edge V90. |  
 | Eliminación de Adobe Flash | Edge V88  |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, consulta la [Guía básica de cromo de Adobe Flash][ChromiumFlashRoadmapSupportRemoved].  | 
 ##### Publicar comentarios  
