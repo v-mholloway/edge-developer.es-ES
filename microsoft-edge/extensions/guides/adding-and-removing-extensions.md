@@ -1,98 +1,98 @@
 ---
-description: Obtenga información sobre cómo agregar y quitar extensiones, así como mover el botón de una extensión junto a la barra de direcciones.
+description: Obtenga información acerca de cómo agregar y quitar extensiones, así como mover el botón de una extensión junto a la barra de direcciones.
 title: Agregar y quitar extensiones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2019
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador, extensión
+keywords: Microsoft Edge, desarrollo web, html, css, javascript, desarrollador, extensión
 ms.custom: seodec18
-localization_priority: Priority
-ms.openlocfilehash: fdc6950962e7ce7e0a720d0bafa7e2c63ebd7098
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: aeebc0f18d6b4a743c790571b8287a209233e73f
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573632"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866081"
 ---
-# Agregar, mover y quitar extensiones para Microsoft Edge  
+# Agregar, mover y eliminar extensiones para Microsoft Edge  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-La compatibilidad de Microsoft Edge para las extensiones se introdujo en la **actualización de aniversario de Windows 10**. Si estás desarrollando una extensión de Microsoft Edge y deseas cargarla, o si ya tienes y deseas quitarla, consulta los pasos que se indican a continuación.
+El soporte técnico de Microsoft Edge para extensiones se presentó en la **de actualización de aniversario de Windows 10**. Si está desarrollando una extensión de Microsoft Edge y quiere cargarla, o si ya lo ha hecho y ahora quiere quitarla, consulte los pasos siguientes.
 También se incluyen detalles sobre cómo cambiar la ubicación del icono de extensión en el explorador.
 
 ## Agregar una extensión
 
-1. Abra Microsoft Edge y escriba "acerca de: flags" en la barra de direcciones.
+1. Abra Microsoft Edge y escriba "about flags" en la barra de direcciones.
 
-2. Seleccione la casilla **habilitar las características** para el desarrollador de extensiones.
+2. Active la casilla **habilitar las características para desarrolladores de extensión**.
 
    ![Acerca de: marcas activar las características para desarrolladores](./../media/sideload-aboutflags.png)
    > [!NOTE]
-   > Si no tiene la actualización de aniversario de Windows 10 o posterior, esta opción no estará disponible.
+   > Si no tiene la actualización de aniversario de Windows 10 o una posterior, esta opción no estará disponible.
 
 3. Seleccione **más (...)** para abrir el menú.
 
    ![botón más](./../media/morebutton.png)  
 
-4. Seleccione **extensiones** en el menú.
+4. Seleccione **Extensions** en el menú.
 
-5. Seleccione el botón **cargar extensión** .
+5. Seleccione el botón **Extensión de carga**.
 
-   ![selección de cargar extensión](./../media/sideload-load-extension.png)
+   ![seleccionar la extensión de carga](./../media/sideload-load-extension.png)
 
-6. Vaya a la carpeta de la extensión y seleccione el botón **Seleccionar carpeta** .
-   ![selección de la carpeta de extensión que se cargará](./../media/sideload-select-extension.png)
+6. Desplácese a la carpeta de su extensión y seleccione el botón **Seleccionar carpeta**.
+   ![seleccionar la carpeta de extensión para cargar](./../media/sideload-select-extension.png)
    > [!NOTE]
-   > Si aparece un mensaje de error al cargar la extensión, consulte la página de [solución de problemas](./../troubleshooting.md) para obtener instrucciones.
+   > Si se produce un mensaje de error al cargar su extensión, consulte la página [solución de problemas de](./../troubleshooting.md) para obtener instrucciones.
 
 
-**Ya está todo listo. Ahora deberías ver la extensión en el panel de extensión de Microsoft Edge.**
+**Ya está todo listo. Ahora debería ver la extensión que aparece en el panel de extensión de Microsoft Edge.**
 
 ![extensión en el panel de extensión](./../media/sideload-extension-installed.png)
 
 > [!NOTE]
-> Las extensiones no firmadas se desactivan automáticamente en los siguientes inicios de Microsoft Edge. Cuando el explorador entra en un estado de inactividad (después de unos 10 segundos de inactividad), verá la siguiente notificación en la parte inferior de la ventana. ![notificación arriesgada ](./../media/riskynotification.png) para activar las extensiones no firmadas, haga clic en "activar de todos modos".
+> Las extensiones sin firmar se desactivan automáticamente en los inicios posteriores de Microsoft Edge. Cuando el explorador entre en un estado de inactividad (después de unos 10 segundos de inactividad), verá la siguiente notificación en la parte inferior de la ventana. ![notificación arriesgada](./../media/riskynotification.png) activar las extensiones sin firma, haga clic en "activar de todos modos".
 
 
 
-## Mover el botón de extensión
-En función de la configuración de la extensión, podría aparecer en el menú **más (...)** .
+## Mover el botón extensión
+Según la configuración de su extensión, podría aparecer en el menú de **Más (...)**.
 
    ![menú acciones](./../media/browseraction.png)  
 
 
-Si desea mover el botón fuera de este menú para facilitar el acceso:
+Si desea quitar el botón de este menú para facilitar el acceso:
 
-1. Haga clic con el botón derecho en el botón de extensión.
+1. Haga clic con el botón derecho en el botón extensión.
 
-2. Seleccione **Mostrar botón junto a barra de direcciones**.
+2. Seleccione **botón Mostrar situado junto a la barra de direcciones**.
 
    ![menú acciones](./../media/browseraction_contextmenu.png)  
 
-También puede hacerlo desde la página de detalles de extensiones:
+Como alternativa, puede hacerlo desde la página Detalles de extensiones:
 
-1. Haz clic en el botón de extensión.
-2. Mostrar u ocultar el **botón junto a la barra de direcciones** en activado.
+1. Haga clic en el botón de extensión.
+2. Alternar **botón Mostrar situado junto a la barra de direcciones** en activado.
 
-   ![Mostrar u ocultar el botón](./../media/show-button-toggle.png)
+   ![Mostrar u ocultar el botón de alternancia encendido](./../media/show-button-toggle.png)
 
 > [!NOTE]
-> Siempre puede volver a mover el botón al menú **más (...)** haciendo clic con el botón secundario en él y anulando la selección de **Mostrar junto a barra de direcciones** o de ir a la página de detalles de la extensión y desactivar la opción **Mostrar botón junto a barra de direcciones** .
+> Siempre puede volver a colocar el botón en el menú **Más (...)** si hace clic con el botón secundario en él y anula la selección **Mostrar junto a la barra de direcciones** o yendo a la página Detalles de la extensión y moviendo el botón **Mostrar situado junto a la barra de direcciones** a la posición desactivado.
 
 
-## Quitar una extensión
+## Creación de una extensión
 
 1. Abra Microsoft Edge.
 
 2. Seleccione **más (...)** para abrir el menú.
 
-3. Seleccione **extensiones** en el menú.
+3. Seleccione **Extensions** en el menú.
 
-4. Haga clic con el botón secundario en la extensión que desee quitar y seleccione **quitar**, o bien, seleccione la extensión y haga clic en el botón **quitar** .
+4. Haga clic con el botón derecho en la extensión que desea quitar y seleccione **quitar**, o bien seleccione la extensión y haga clic en el botón **quitar**.
 
    ![menú acciones](./../media/remove.png)  
 
-**La extensión debería desaparecer de la lista en Microsoft Edge.**
+**La extensión debe desaparecer de la lista de Microsoft Edge.**
