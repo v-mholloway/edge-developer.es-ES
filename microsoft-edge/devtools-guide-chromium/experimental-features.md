@@ -7,11 +7,12 @@ ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, experimento
-ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858057"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866046"
 ---
 # <span data-ttu-id="fb75b-104">Características experimentales</span><span class="sxs-lookup"><span data-stu-id="fb75b-104">Experimental features</span></span>  
 
@@ -48,7 +49,7 @@ ms.locfileid: "10858057"
 | [<span data-ttu-id="fb75b-126">Habilitar la pestaña de configuración personalizada de métodos abreviados de teclado</span><span class="sxs-lookup"><span data-stu-id="fb75b-126">Enable custom keyboard shortcuts settings tab</span></span>](#enable-custom-keyboard-shortcuts-settings-tab) | <span data-ttu-id="fb75b-127">84 o posterior</span><span class="sxs-lookup"><span data-stu-id="fb75b-127">84 or later</span></span> |
 | [<span data-ttu-id="fb75b-128">Habilitar nuevas características de depuración de cuadrícula CSS</span><span class="sxs-lookup"><span data-stu-id="fb75b-128">Enable new CSS grid debugging features</span></span>](#enable-new-css-grid-debugging-features) | <span data-ttu-id="fb75b-129">85 o posterior</span><span class="sxs-lookup"><span data-stu-id="fb75b-129">85 or later</span></span> |  
 | [<span data-ttu-id="fb75b-130">Habilitar la compatibilidad para mover pestañas entre paneles</span><span class="sxs-lookup"><span data-stu-id="fb75b-130">Enable support to move tabs between panels</span></span>](#enable-support-to-move-tabs-between-panels) | <span data-ttu-id="fb75b-131">85 o posterior</span><span class="sxs-lookup"><span data-stu-id="fb75b-131">85 or later</span></span> |  
-| [<span data-ttu-id="fb75b-132">Habilitar webhint</span><span class="sxs-lookup"><span data-stu-id="fb75b-132">Enable webhint</span></span>](#enable-webhint) | <span data-ttu-id="fb75b-133">85 o posterior</span><span class="sxs-lookup"><span data-stu-id="fb75b-133">85 or later</span></span> |  
+| [<span data-ttu-id="fb75b-132">Habilitar webhint</span><span class="sxs-lookup"><span data-stu-id="fb75b-132">Enable webhint</span></span>](#enable-webhint) | <span data-ttu-id="fb75b-133">85 o posterior</span><span class="sxs-lookup"><span data-stu-id="fb75b-133">85 or later</span></span> | 
 
 ### <span data-ttu-id="fb75b-134">Habilitar la pestaña de configuración personalizada de métodos abreviados de teclado</span><span class="sxs-lookup"><span data-stu-id="fb75b-134">Enable custom keyboard shortcuts settings tab</span></span>
 
