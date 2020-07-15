@@ -1,19 +1,19 @@
 ---
-description: Hospedar contenido web en la aplicación Win32 con el control Microsoft Edge WebView2
-title: Microsoft Edge WebView2 para aplicaciones Win32
+description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicaciones nativas con el control Microsoft Edge WebView2
+title: WebView2 Win32 C++ ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: c69e9cb725bc96115d323770e3803599eee1de91
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge, ICoreWebView2
+ms.openlocfilehash: a482dd4e06e6899b7be64adc53e848ed6b7067d3
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751950"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877563"
 ---
 # interfaz ICoreWebView2 
 

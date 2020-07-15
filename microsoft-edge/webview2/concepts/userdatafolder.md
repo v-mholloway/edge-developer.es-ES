@@ -3,17 +3,17 @@ description: Más información sobre cómo administrar carpetas de datos de usua
 title: Administrar la carpeta de datos de usuario en aplicaciones de WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/02/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control browser, HTML Edge, carpeta de datos de usuario
-ms.openlocfilehash: a7a6fd620cfb417e349a03159204ceb68998745e
-ms.sourcegitcommit: e49b86082da884299fdd485d3311d63a7688c0d0
+ms.openlocfilehash: 870361e5f3edaea776538216c05e4114dc614342
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "10755406"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879159"
 ---
 # Administrar la carpeta de datos de usuario
 
@@ -28,7 +28,7 @@ Las carpetas de datos de usuario se crean automáticamente mediante WebView2. Lo
 
 ## Crear carpetas de datos de usuario
 
-Para especificar la ubicación de la carpeta de datos de usuario, incluya el `userDataFolder` parámetro al llamar a [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment) (Win32) o [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment) (.net). Después de la creación, los datos del explorador del control WebView2 se almacenan en una subcarpeta de `userDataFolder` . Cuando `userDataFolder` no se especifica, WebView2 crea carpetas de datos de usuario en ubicaciones predeterminadas de la siguiente manera:
+Para especificar la ubicación de la carpeta de datos de usuario, incluya el `userDataFolder` parámetro al llamar a [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) (Win32) o [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) (.net). Después de la creación, los datos del explorador del control WebView2 se almacenan en una subcarpeta de `userDataFolder` . Cuando `userDataFolder` no se especifica, WebView2 crea carpetas de datos de usuario en ubicaciones predeterminadas de la siguiente manera:
 
 * Para las aplicaciones empaquetadas de la tienda Windows, la carpeta de usuario predeterminada es la subcarpeta `ApplicationData\LocalFolder` de la carpeta del paquete.
 * Para las aplicaciones de escritorio existentes, la carpeta datos de usuario predeterminada es la ruta de acceso de archivo exe de la aplicación + `.WebView2` . En lugar de usar el valor predeterminado, le recomendamos que especifique una carpeta de datos de usuario y que la cree en la misma carpeta en la que se almacenan todos los demás datos de la aplicación.
@@ -50,14 +50,14 @@ Es posible que su aplicación tenga que eliminar las carpetas de datos de usuari
 
 Es posible que los controles WebView2 compartan las mismas carpetas de datos de usuario en:
 
-* [Optimizar los recursos del sistema](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#process-model) al ejecutarse en un solo proceso del explorador.
+* [Optimizar los recursos del sistema](../reference/win32/0-9-538/icorewebview2.md#process-model) al ejecutarse en un solo proceso del explorador.
 * Compartir el historial del explorador y los recursos almacenados en caché. 
 
 Tenga en cuenta lo siguiente al compartir carpetas de datos de usuario: 
 
-1. Al volver a crear los controles de WebView2 para actualizar las versiones del explorador con eventos de [add_NewBrowserVersionAvailable](../reference/win32/0-9-538/icorewebview2environment#add_newbrowserversionavailable) (Win32) o [NewBrowserVersionAvailable](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment#newbrowserversionavailable) (.net), asegúrese de que los procesos del explorador salen y cierran los controles de WebView2 que comparten la misma carpeta de datos de usuario. Para recuperar el identificador de proceso del proceso del explorador, use la `BrowserProcessId` propiedad del control WebView2.
+1. Al volver a crear los controles de WebView2 para actualizar las versiones del explorador con eventos de [add_NewBrowserVersionAvailable](../reference/win32/0-9-538/icorewebview2environment.md#add_newbrowserversionavailable) (Win32) o [NewBrowserVersionAvailable](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) (.net), asegúrese de que los procesos del explorador salen y cierran los controles de WebView2 que comparten la misma carpeta de datos de usuario. Para recuperar el identificador de proceso del proceso del explorador, use la `BrowserProcessId` propiedad del control WebView2.
 
-2. Los controles de WebView2 que comparten la misma carpeta de datos de usuario deben usar las mismas opciones para [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment) (Win32) o [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment) (.net). De lo contrario, se producirá un error en la creación de WebView2 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` . 
+2. Los controles de WebView2 que comparten la misma carpeta de datos de usuario deben usar las mismas opciones para [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) (Win32) o [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) (.net). De lo contrario, se producirá un error en la creación de WebView2 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` . 
 
 Para aislar las distintas partes de la aplicación o cuando no es necesario compartir datos entre controles WebView2, puede optar por usar carpetas de datos de usuario diferentes. Por ejemplo, una aplicación puede constar de dos controles WebView2, uno para mostrar un anuncio y el otro para mostrar el contenido de la aplicación. En este caso, los desarrolladores pueden optar por usar distintas carpetas de datos de usuario para cada control de WebView2. 
 

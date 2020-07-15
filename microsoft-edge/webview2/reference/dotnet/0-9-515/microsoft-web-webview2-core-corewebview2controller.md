@@ -1,27 +1,27 @@
 ---
 description: Hospedar contenido web en la aplicación Win32 con el control Microsoft Edge WebView2
-title: Microsoft Edge WebView2 para aplicaciones Win32
+title: 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2Controller
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 2b9ad09fd347a6719523213e5ebc13d9000d536b
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 72121ddbc81d2228bf8d185b977e5f3e7ca2deb4
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697710"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879026"
 ---
-# Clase Microsoft. Web. WebView2. Core. CoreWebView2Controller 
+# 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2Controller (clase) 
 
 > [!NOTE]
 > Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.
 
 Espacio de nombres: Microsoft. Web. WebView2. Core \
-Ensamblado: Microsoft. Web. WebView2. Core. dll
+Ensamblado: Microsoft.Web.WebView2.Core.dll
 
 Esta clase es el propietario del objeto CoreWebView2 y proporciona compatibilidad para cambiar el tamaño, mostrar y ocultar, enfocar y otras funciones relacionadas con la ventana y la composición.
 

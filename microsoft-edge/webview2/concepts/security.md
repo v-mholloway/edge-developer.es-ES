@@ -3,17 +3,17 @@ description: Comprender cómo desarrollar aplicaciones de WebView2 seguras
 title: Procedimientos recomendados para desarrollar aplicaciones de WebView2 seguras
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge, seguridad
-ms.openlocfilehash: e71dbe9ad98b7156d8888da074e30a96683469d5
-ms.sourcegitcommit: e49b86082da884299fdd485d3311d63a7688c0d0
+ms.openlocfilehash: 998bcf056e6350efc66880a9ad520f6d969af2f1
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "10755405"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879147"
 ---
 # Procedimientos recomendados para desarrollar aplicaciones de WebView2 seguras
 
@@ -25,14 +25,14 @@ El [control WebView2](https://docs.microsoft.com/microsoft-edge/webview2/) permi
 
 2. Diseñe mensajes Web específicos y interacciones de objeto de hospedaje en lugar de usar proxies genéricos.
 
-3. Restrinja la funcionalidad de contenido web modificando [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings) (Win32) o [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings) (.net) de la siguiente manera:
+3. Restrinja la funcionalidad de contenido web modificando [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings.md) (Win32) o [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings.md) (.net) de la siguiente manera:
     - Se establece `AreHostObjectsAllowed` en `false` si no se espera que el contenido web obtenga acceso a los objetos host.
     - Se establece `IsWebMessageEnabled` en `false` si no se espera que el contenido web publique mensajes Web en la aplicación nativa. 
     - Se establece `IsScriptEnabled` en `false` si no se espera que el contenido web ejecute scripts (por ejemplo, al mostrar contenido HTML estático).
     - Se establece `AreDefaultScriptDialogsEnabled` en `false` si no se espera que el contenido web aparezca o no en los `alert` cuadros de `prompt` diálogo.
 
-4.  Use los `NavigationStarting` `FrameNavigationStarting` eventos y para actualizar la configuración basándose en el origen de la nueva página de la siguiente manera:
-    1.  Para evitar que la aplicación navegue a determinadas páginas, use estos eventos para comprobar y, a continuación, bloquear la navegación de página o marco. 
-    2.  Al navegar a una página nueva, es posible que tenga que ajustar los valores de propiedad en [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings) (Win32) o [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings) (.net), tal como se describe anteriormente.
+4. Use los `NavigationStarting` `FrameNavigationStarting` eventos y para actualizar la configuración basándose en el origen de la nueva página de la siguiente manera:
+    1. Para evitar que la aplicación navegue a determinadas páginas, use estos eventos para comprobar y, a continuación, bloquear la navegación de página o marco. 
+    2. Al navegar a una página nueva, es posible que tenga que ajustar los valores de propiedad en [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings.md) (Win32) o [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings.md) (.net), tal como se describe anteriormente.
 
 5. Cuando navegue a un documento nuevo, use el `ContentLoading` evento para quitar objetos de host expuestos mediante `RemoveHostObjectFromScript` . 

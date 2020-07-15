@@ -1,21 +1,21 @@
 ---
 description: Hospedar contenido web en la aplicación Win32 con el control Microsoft Edge WebView2
-title: Microsoft Edge WebView2 para aplicaciones Win32
+title: 0.9.430-WebView2 Win32 C++ ICoreWebView2NewBrowserVersionAvailableEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: b44724f8e18e11374f88ed2cd22711f06f59f12d
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 42f63855c97363dab1a19cc784cf654afc40de74
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655313"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10877850"
 ---
-# interfaz ICoreWebView2NewBrowserVersionAvailableEventHandler 
+# 0.9.430: ICoreWebView2NewBrowserVersionAvailableEventHandler 
 
 > [!NOTE]
 > Esta interfaz puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.430. Consulta la [referencia](../../../webview2-api-reference.md) de la API más reciente.

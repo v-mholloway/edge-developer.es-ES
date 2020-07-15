@@ -1,21 +1,21 @@
 ---
 description: Hospedar contenido web en la aplicación Win32 con el control Microsoft Edge WebView2
-title: Microsoft Edge WebView2 para aplicaciones Win32
+title: 0.8.355-WebView2 Win32 C++ IWebView2MoveFocusRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge
-ms.openlocfilehash: 2e3afec26b0e09a80182118f74b6f50733b0c71a
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: e5df472e6b69b93fd41e73b96ae238176b64b6d9
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655263"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878445"
 ---
-# interfaz IWebView2MoveFocusRequestedEventArgs 
+# 0.8.355: IWebView2MoveFocusRequestedEventArgs 
 
 > [!NOTE]
 > Esta interfaz puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.8.355. Consulta la [referencia](../../../webview2-api-reference.md) de la API más reciente.
