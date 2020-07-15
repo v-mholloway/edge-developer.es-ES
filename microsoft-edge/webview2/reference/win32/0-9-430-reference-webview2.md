@@ -1,30 +1,30 @@
 ---
 description: Hospedar contenido web en la aplicación Win32 con el control de WebView 2 de Microsoft Edge
-title: Vista previa de Microsoft Edge 2 para aplicaciones Win32
+title: '0.9.430: referencia de Win32 C++'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: 8baa7b1f571d62fad21a30441f47835bff3da96a
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: a0095660af031cafa09e5223650d174f525ba3df
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10655372"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880244"
 ---
-# 0.9.430-Reference (WebView2)  
+# 0.9.430 - Referencia (WebView2)  
 
 > [!NOTE]
 > Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.430. Consulta la [referencia](../../webview2-api-reference.md) de la API más reciente.
 
 El control Microsoft Edge WebView2 permite hospedar contenido web en tu aplicación con [Microsoft Edge \ (cromo \)](https://www.microsoftedgeinsider.com) como motor de representación.  Para obtener más información, vea [información general sobre Microsoft Edge WebView2](../../index.md)) y [Cómo comenzar a usar WebView2](../../gettingstarted/win32.md).  [ICoreWebView2](0-9-430/ICoreWebView2.md) es un buen lugar para comenzar a conocer los detalles de la API.  
 
-## GLOBALS  
+## Global  
 
-*   [GLOBALS](0-9-430/webview2-idl.md)  
+*   [Global](0-9-430/webview2-idl.md)  
 
 ## Interactúa  
 *   [ICoreWebView2](0-9-430/ICoreWebView2.md)

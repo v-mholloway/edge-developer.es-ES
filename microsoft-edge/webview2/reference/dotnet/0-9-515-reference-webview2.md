@@ -1,21 +1,21 @@
 ---
 description: Hospedar contenido web en la aplicación Win32 con el control de WebView 2 de Microsoft Edge
-title: Vista previa de Microsoft Edge 2 para aplicaciones Win32
+title: 0.9.515-Microsoft. Web. WebView2. Core Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: b6131245a550da54545478c9c19e0e9e45d7f7d3
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 32092f4b434506229ffdd3612a68725b67f566a8
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697248"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879978"
 ---
-# 0-9-515: referencia (WebView2)  
+# 0-9-515 - Referencia (WebView2)  
 
 > [!NOTE]
 > Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../webview2-api-reference.md) para obtener la referencia de API más reciente.
