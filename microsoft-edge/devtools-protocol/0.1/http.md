@@ -1,20 +1,20 @@
 ---
 description: El protocolo Microsoft Edge DevTools versión 0,1 admite los siguientes puntos de conexión HTTP.
-title: Puntos de conexión DevTools HTTP versión 0,1
+title: DevTools de protocolo de terminal de versión 0,1 HTTP (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 5b1cf0d347fec5bfe20b2574afcd635ee569c92d
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a9d40772b8175790c034ee67236c4887d0831785
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573751"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882873"
 ---
-# Puntos de conexión HTTP del protocolo DevTools
+# DevTools de protocolo de terminal de versión 0,1 HTTP (EdgeHTML)  
 
 > [!NOTE]
 > El protocolo Microsoft Edge DevTools solo funciona en la [actualización de Windows 10 de abril de 2018](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) y versiones posteriores de [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) .

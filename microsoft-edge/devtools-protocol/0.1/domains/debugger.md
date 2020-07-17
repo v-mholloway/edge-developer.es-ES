@@ -1,20 +1,21 @@
 ---
 description: Referencia del dominio de depuración. El dominio del depurador expone capacidades de depuración de JavaScript. Permite establecer y quitar puntos de interrupción, avanzar por la ejecución, explorar los seguimientos de la pila, etc.
-title: Dominio de depuración-DevTools Protocol versión 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Dominio de depuración-DevTools Protocol versión 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 6c5d668f943a731e5ba86ed5aa2294007a432ce6
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1e76d17e5dfbe39ba61c7cb45a4e88b9fd223068
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573762"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882957"
 ---
-# Depurador
+# Dominio de depuración-DevTools Protocol versión 0,1 (EdgeHTML)  
+  
 El dominio del depurador expone capacidades de depuración de JavaScript. Permite establecer y quitar puntos de interrupción, avanzar por la ejecución, explorar los seguimientos de la pila, etc.
 
 | | |
@@ -22,7 +23,7 @@ El dominio del depurador expone capacidades de depuración de JavaScript. Permit
 | [**Métodos**](#methods) | [enable](#enable), [Disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [ancho](#stepover) [de es, stepInto](#stepinto) [, stepOut](#stepout), [PAUSE](#pause), [resume](#resume) [, getScriptSource, setPauseOnExceptions](#getscriptsource) [, evaluateOnCallFrame](#setpauseonexceptions) [,](#evaluateoncallframe) [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns) [, msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
 | [**Eventos**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [pausado](#paused), [reanudado](#resumed) |
 | [**Tipos**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Ubicación](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [ámbito](#scope) |
-| [**Dependencias**](#dependencies) | [Motores](runtime.md) |
+| [**Dependencias**](#dependencies) | [Tiempo de ejecución](runtime.md) |
 ## Métodos
 
 ### habilitar
@@ -813,4 +814,4 @@ Descripción del ámbito.
 
 ## Dependencias
 
-[Motores](runtime.md)
+[Tiempo de ejecución](runtime.md)

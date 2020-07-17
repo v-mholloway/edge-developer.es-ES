@@ -1,18 +1,18 @@
 ---
 description: Los pasos para crear la cuenta de desarrollador de complementos de Microsoft Edge en el centro de socios.
-title: Abrir una nueva cuenta de desarrollador
+title: Información general y Estados de presentación de extensión
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: 008691d80d6dfcb7a199a326a8c94aa5571712c5
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3bb648ee9db062bcb12f7592df752ab25d8322b5
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573685"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882649"
 ---
 # Información general y Estados de presentación de extensión  
 

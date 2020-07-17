@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: aplicaciones web progresivas, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 482f498e246ee265424f7b80ff3cd67f78501ee2
-ms.sourcegitcommit: 9169d784485e3cb0b1987a8f395c4bb688bd9b2e
+ms.openlocfilehash: 90740bac07ebfd74f89e2524e6955621e1b09b05
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "10583038"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882810"
 ---
 # Aplicaciones web progresivas en Windows  
 
@@ -86,33 +86,31 @@ Al crear una aplicación web progresiva dirigida a las API de Web Standard, la a
 > [!IMPORTANT]
 > Para personalizar PWAs específicamente para Windows 10 que realizan solicitudes de API de WinRT con JavaScript, consulta la [documentación específica de las características de EDGEHTML PWA][PwaEdgehtmlIndex].  Obtenga más información sobre cómo probar su PWA en Windows 10 y cómo distribuirlo en Microsoft Store.  
 
+> [!NOTE]
+> Consulte la [sesión de compilación 2020 PWA][BuildVideo] para obtener información general sobre los beneficios de PWA, las próximas características y las demostraciones breves. 
+
 ## Requisitos  
 
 Para ejecutar como PWA, la aplicación web hospedada por el servidor debe incluir los siguientes requisitos mínimos.  
 
-|  | Requisitos | Detalles | 
-|:--- |:--- |:--- |  
-| X | [HTTPS][WikiHttps] | Proteger a los usuarios proporcionando una conexión segura para la comunicación entre servidores o aplicaciones.  Los trabajadores del servicio y otras tecnologías de PWA solo funcionan con recursos Web servidos a través de una conexión segura \ (o de `localhost` para fines de depuración \).  |  
-| X | [Trabajadores de servicio][MDNServiceWorkerApi] | Use los subprocesos de trabajo de servicio para actuar como proxies de red entre su servidor y la aplicación cliente a fin de proporcionar compatibilidad sin conexión, almacenamiento en caché de recursos, notificaciones push, sincronización de datos en segundo plano y optimizaciones del rendimiento de carga de la página.  |  
-| X | [Manifiesto de la aplicación Web][MDNWebAppManifest] | Proporcione un archivo de metadatos basado en JSON que describa la información clave de la aplicación web \ (como iconos, idioma y punto de entrada de dirección URL \), para que Windows 10 y otras plataformas de hospedaje puedan proporcionar a los usuarios de PWA una experiencia de aplicación nativa, instalable y de aplicación.  |  
+| Requisitos | Detalles | 
+|:--- |:--- |  
+| [HTTPS][WikiHttps] | Proteger a los usuarios proporcionando una conexión segura para la comunicación entre servidores o aplicaciones.  Los trabajadores del servicio y otras tecnologías de PWA solo funcionan con recursos Web servidos a través de una conexión segura \ (o de `localhost` para fines de depuración \).  |  
+| [Trabajos de servicio][MDNServiceWorkerApi] | Use los subprocesos de trabajo de servicio para actuar como proxies de red entre su servidor y la aplicación cliente a fin de proporcionar compatibilidad sin conexión, almacenamiento en caché de recursos, notificaciones push, sincronización de datos en segundo plano y optimizaciones del rendimiento de carga de la página.  |  
+| [Manifiesto de la aplicación Web][MDNWebAppManifest] | Proporcione un archivo de metadatos basado en JSON que describa la información clave de la aplicación web \ (como iconos, idioma y punto de entrada de dirección URL \), para que Windows 10 y otras plataformas de hospedaje puedan proporcionar a los usuarios de PWA una experiencia de aplicación nativa, instalable y de aplicación.  |  
 
 Para ser un fantástico PWA, tu aplicación también debe cumplir con los siguientes requisitos.  
 
-|  | Requisitos | Detalles | 
-|:--- |:--- |:--- |  
-| X | [Compatibilidad entre exploradores][MDNCrossBrowserTesting] | Asegúrese de que su PWA funciona [probando][MicrosoftDeveloperEdgeToolsRemote] en exploradores y entornos diferentes.  |  
-| X | [Diseño adaptativo][WikiResponsiveWebDesign] | Use diseños fluidos y imágenes flexibles con CSS [Grid][MDNCssGridLayout], [Flexbox][MDNCssFlexibleBoxLayout], CSS [Grid][MDNCssGridLayout] y [Flexbox][MDNCssFlexibleBoxLayout] , [consultas de medios][MDNMediaQueries]e [imágenes de respuesta][MDNResponsiveImages] para adaptar su UX al dispositivo del usuario.  Use [las herramientas de emulación de dispositivos][DevToolsGuide|::ref1::|] de su explorador para probar de forma local o configure una [sesión de depuración remota][DevToolsProtocolClientsEdgeDevToolsPreview] para probar directamente en un dispositivo de destino.  |  
-| X | [Vinculación profunda][WikiDeepLinking] | Enrute cada página de su sitio a una dirección URL única de modo que los usuarios existentes puedan ayudarle a atraer a una audiencia aún más amplia mediante el uso compartido de los medios sociales.  |  
-| X | [Procedimientos recomendados][Webhint] | Usa herramientas de calidad de código como [webhint][Webhint] pelusa para optimizar la eficacia, solidez, seguridad y accesibilidad de tu aplicación.  |  
-| X | [Lista de comprobación de cromo PWA][WebDevGoodPwaChecklist] | Consulte su PWA con la lista de comprobación de Google Baseline PWA.  |  
+| Requisitos | Detalles | 
+|:--- |:--- |  
+| [Compatibilidad entre exploradores][MDNCrossBrowserTesting] | Asegúrese de que su PWA funciona [probando][MicrosoftDeveloperEdgeToolsRemote] en exploradores y entornos diferentes.  |  
+| [Diseño adaptativo][WikiResponsiveWebDesign] | Use diseños fluidos y imágenes flexibles con CSS [Grid][MDNCssGridLayout], [Flexbox][MDNCssFlexibleBoxLayout], CSS [Grid][MDNCssGridLayout] y [Flexbox][MDNCssFlexibleBoxLayout] , [consultas de medios][MDNMediaQueries]e [imágenes de respuesta][MDNResponsiveImages] para adaptar su UX al dispositivo del usuario.  Use [las herramientas de emulación de dispositivos][DevToolsGuide|::ref1::|] de su explorador para probar de forma local o configure una [sesión de depuración remota][DevToolsProtocolClientsEdgeDevToolsPreview] para probar directamente en un dispositivo de destino.  |  
+| [Vinculación profunda][WikiDeepLinking] | Enrute cada página de su sitio a una dirección URL única de modo que los usuarios existentes puedan ayudarle a atraer a una audiencia aún más amplia mediante el uso compartido de los medios sociales.  |  
+| [Procedimientos recomendados][Webhint] | Usa herramientas de calidad de código como [webhint][Webhint] pelusa para optimizar la eficacia, solidez, seguridad y accesibilidad de tu aplicación.  |  
+| [Lista de comprobación de cromo PWA][WebDevGoodPwaChecklist] | Consulte su PWA con la lista de comprobación de Google Baseline PWA.  |  
 
 Si quiere convertir su PWA en una aplicación de [Microsoft Store][MicrosoftDeveloperStore] , vaya a la documentación de las [aplicaciones web progresivas (EdgeHTML)][PwaEdgehtmlMicrosoftStore] .  
-
-## Disponibilidad actual  
-
-Motor de explorador compatibilidad con solicitudes de aplicaciones web progresivas para una serie de componentes de arquitectura, lo más importante es la infraestructura de red que subyace a la [API de Fetch][MDNFetchApi].  
-
-Para Microsoft Edge \ (cromo \), la plataforma del explorador incluye compatibilidad completa para estas características que funcionan en todos los dispositivos donde se admite Microsoft Edge \ (cromo \).  
+  
 
 <!-- image links -->  
 
@@ -130,7 +128,7 @@ Para Microsoft Edge \ (cromo \), la plataforma del explorador incluye compatibil
 
 <!-- links -->  
 
-[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview-clientes de protocolo DevTools"  
+[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Vista previa de Microsoft Edge DevTools - Clientes de protocolo de DevTools"  
 [DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Emulación"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps.md "Depurar aplicaciones web progresivas"  
 [DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "Novedades de EdgeHTML 17"  
@@ -181,6 +179,8 @@ Para Microsoft Edge \ (cromo \), la plataforma del explorador incluye compatibil
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "API de trabajo de servicio | MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Manifiesto de la aplicación Web | MDN"  
+
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "Vídeo de PWA"
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
 

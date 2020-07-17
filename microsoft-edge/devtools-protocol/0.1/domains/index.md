@@ -1,25 +1,27 @@
 ---
 description: Lista de referencias para dominios admitidos en el protocolo Microsoft Edge DevTools, versión 0,1.
-title: 'Dominios: Protocolo de DevTools versión 0,1'
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: DevTools Protocol Domains-DevTools Protocol version 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: b3cf3411a8402b7407012eb789f8bf267b4997a8
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: de816e2b07838ba1b6151967ff7b8751789c60ea
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573755"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882950"
 ---
-# Dominios de protocolo de DevTools
-## [Depurador](debugger.md)
+# DevTools Protocol Domains-DevTools Protocol version 0,1 (EdgeHTML)  
+
+## [Depurador](debugger.md)  
+
 El dominio del depurador expone capacidades de depuración de JavaScript. Permite establecer y quitar puntos de interrupción, avanzar por la ejecución, explorar los seguimientos de la pila, etc.
 ## [Página](page.md)
 Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de la página.
-## [Motores](runtime.md)
+## [Tiempo de ejecución](runtime.md)
 El dominio en tiempo de ejecución expone el tiempo de ejecución de JavaScript por medio de objetos de evaluación y reflejo remotos. Los resultados de la evaluación se devuelven como un objeto de espejo que expone el tipo de objeto, la representación de cadena y el identificador único que se puede usar para más referencias de objeto. Los objetos originales se mantienen en la memoria, a menos que se hayan liberado explícitamente.
 ## [Esquema](schema.md)
 Proporciona información sobre el esquema de protocolo.

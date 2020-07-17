@@ -1,17 +1,17 @@
 ---
-title: DevTools para principiantes
+title: 'DevTools para principiantes: Introducción a HTML y el DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 8695fe1b2c5d78bd074447acd26a1f01a5833b2d
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: d992a6ca68de07c879ca8e319ee6c22782924a6b
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581590"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882733"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -180,7 +180,7 @@ Antes de empezar a editar el contenido desde Microsoft Edge DevTools, resulta ú
     
     > ##### Imagen 12  
     > El misterio `A new element!?!` no se encuentra en ningún `index.html`  
-    > ![El dedo texto un elemento nuevo!?! no se encuentra en el índice. html][ImageHtmlDom2]  
+    > ![El dedo texto un elemento nuevo!?! no se encuentra en index.html][ImageHtmlDom2]  
     
 1.  Vuelva a la **ficha en vivo**, haga clic con el botón derecho `A new element!?!` y seleccione **inspeccionar**.  
     
@@ -318,7 +318,7 @@ Ya casi lo ha hecho.  Ha realizado algunos cambios en la página en DevTools, pe
     
     > ##### Ilustración 24  
     > Aspecto del `index.html` archivo  
-    > ![Cómo debería tener el archivo index. html][ImageHtmlCopy2]  
+    > ![Cómo debería tener el archivo index.html][ImageHtmlCopy2]  
     
 ## Pasos siguientes   
 
@@ -339,7 +339,7 @@ Ya casi lo ha hecho.  Ha realizado algunos cambios en la página en DevTools, pe
 [ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "Ilustración 9: el nuevo código está resaltado en la pestaña Editor"  
 [ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "Ilustración 10: la nueva lista está visible en la pestaña en vivo"  
 [ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "Ilustración 11: en la parte inferior de la página el texto de un nuevo elemento!?! se puede ver"  
-[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Ilustración 12: el dedo texto un elemento nuevo!?! no se encuentra en el índice. html"  
+[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Ilustración 12: el dedo texto un elemento nuevo!?! no se encuentra en index.html"  
 [ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "Ilustración 13: inspeccionar texto"  
 [ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "Ilustración 14: DevTools está abierto junto a la página"  
 [ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "Ilustración 15: editar el nodo como HTML"  
@@ -351,7 +351,7 @@ Ya casi lo ha hecho.  Ha realizado algunos cambios en la página en DevTools, pe
 [ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "Ilustración 21: selección del nodo que se va a eliminar"  
 [ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "Ilustración 22: el nodo se ha eliminado"  
 [ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "Ilustración 23: los cambios que ha realizado han desaparecido"  
-[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Ilustración 24: el aspecto del archivo index. html"  
+[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Ilustración 24: el aspecto que tendrá el archivo de index.html"  
 
 <!--- links --->  
 
@@ -361,7 +361,7 @@ Ya casi lo ha hecho.  Ha realizado algunos cambios en la página en DevTools, pe
 
 [CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Introducción al desarrollo web | Coursera"  
 
-[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index. html-alluring-shock | Intento"  
+[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html-alluring: descargas | Intento"  
 
 [MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "Introducción a HTML | MDN"  
 [MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introducción a DOM | MDN"  

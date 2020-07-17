@@ -1,19 +1,20 @@
 ---
 description: Referencia del dominio en tiempo de ejecución. El dominio en tiempo de ejecución expone el tiempo de ejecución de JavaScript por medio de objetos de evaluación y reflejo remotos. Los resultados de la evaluación se devuelven como un objeto de espejo que expone el tipo de objeto, la representación de cadena y el identificador único que se puede usar para más referencias de objeto. Los objetos originales se mantienen en la memoria, a menos que se hayan liberado explícitamente.
-title: Dominio de tiempo de ejecución-protocolo de DevTools versión 0,2
-author: pelavall
-ms.author: pelavall
-ms.date: 8/17/2018
+title: Dominio de tiempo de ejecución-protocolo de DevTools versión 0,2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: 504f944f7a8389450685b40cdd010b54c3a7ba4e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 710b3b3e0383f1f6feb7947e0468730d2e0b0e66
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573730"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882866"
 ---
-# Motores
+# Dominio de tiempo de ejecución-protocolo de DevTools versión 0,2 (EdgeHTML)  
+
 El dominio en tiempo de ejecución expone el tiempo de ejecución de JavaScript por medio de objetos de evaluación y reflejo remotos. Los resultados de la evaluación se devuelven como un objeto de espejo que expone el tipo de objeto, la representación de cadena y el identificador único que se puede usar para más referencias de objeto. Los objetos originales se mantienen en la memoria, a menos que se hayan liberado explícitamente.
 
 | | |

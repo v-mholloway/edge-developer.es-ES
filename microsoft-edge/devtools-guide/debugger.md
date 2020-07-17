@@ -1,21 +1,21 @@
 ---
 description: Use el depurador para recorrer paso a paso y solucionar problemas del código.
-title: 'DevTools: depurador'
+title: 'Depurador: DevTools (EdgeHTML)'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, depuración, depuración, puntos de interrupción, relojes, trabajos de servicios, API de caché, almacenamiento Web, cookies
 ms.custom: seodec18
-ms.openlocfilehash: f82fbb057a3ad1027309d89db1a15dbcbea31292
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 722277618cd8d6d5d6dba4f2a8bd3a28b6466f77
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10574642"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882922"
 ---
-# Depurador
+# Depurador: DevTools (EdgeHTML)
 
 Use el **depurador** para desplazarse por el código, establecer relojes y puntos de interrupción, editar en vivo el código e inspeccionar las cachés. Pruebe y solucione el problema de su código de la siguiente manera:
 
@@ -97,7 +97,7 @@ Para realizar un seguimiento de las bibliotecas en las sesiones de depuración, 
 
 Verá el botón **conmutar mapas de origen** habilitado para el código escrito en un idioma que se compila en JavaScript o CSS y que proporciona una asignación de *origen* (una asignación de archivo intermedio al origen original). Esta opción indica al depurador que presente el origen original que se utilizará para la depuración (en lugar del archivo compilado que *realmente* se ejecuta en el explorador).
 
-El DevTools verificará si el compilador que generó el archivo JavaScript incluyó un comentario con el nombre del archivo de asignación. Por ejemplo, si un compilador comprime el *archivo. js* en un archivo *. min. js*, también puede generar un archivo de asignación, *archivo. min. js. map* e incluir un Comentario en el archivo comprimido como este:
+El DevTools verificará si el compilador que generó el archivo JavaScript incluyó un comentario con el nombre del archivo de asignación. Por ejemplo, si un compilador ha comprimido *myfile.js* *myfile.min.js*, también puede generar un archivo de asignación, *myfile.min.js. map* e incluir un Comentario en el archivo comprimido como este:
 
 ```JavaScript
 //# sourceMappingURL=myfile.min.js.map
@@ -186,7 +186,7 @@ Tipo de punto de interrupción | Descripción | Cómo configurarlo
 
 Los puntos de interrupción y los puntos de seguimiento condicionales tienen acceso a todas las variables locales y globales que se encuentran actualmente en el ámbito al entrar en el depurador.
 
-### Puntos de interrupción de DOM
+### Puntos de interrupción DOM
 
 Administre los puntos de interrupción de mutación de DOM en la pestaña de **puntos de interrupción Dom** , incluyendo la desactivación, la eliminación y el reenlace.  Los [puntos de interrupción de Dom se pueden establecer](./elements/dom-breakpoints.md) desde la *vista de árbol HTML* en el panel **elementos** .
 
@@ -200,7 +200,7 @@ Más información sobre los diferentes tipos de [puntos de interrupción de Dom]
 
 ### Accesos directos de la barra de herramientas
 
-Acción | Método abreviado
+Acción | Acceso directo
 :------------ | :-------------
 Buscar | `Ctrl` + `F`
 Continuar (desde el punto de interrupción) | `F5` o `F8`
@@ -216,7 +216,7 @@ Depurar solo mi código | `Ctrl` + `J`
 
 ### Métodos abreviados del selector de recursos
 
-Acción | Método abreviado
+Acción | Acceso directo
 :------------ | :-------------
 Marcar como mi código/código de biblioteca | `Ctrl` + `L`
 Abrir archivo | `Ctrl` + `O`, `Ctrl` + `P`
@@ -224,7 +224,7 @@ Buscar en todos los archivos | `Ctrl` + `Shift` + `F`
 
 ### Accesos directos a la ventana depuración
 
-Acción | Método abreviado
+Acción | Acceso directo
 :------------ | :-------------
 Quitar punto de interrupción | `F9`
 Deshabilitar punto de interrupción | `Ctrl` + `F9`
@@ -245,14 +245,14 @@ Deshabilitar o habilitar las pestañas del editor. **Nota:** si usa el teclado p
 
 ### Panel de accesos directos para los relojes
 
-Acción | Método abreviado
+Acción | Acceso directo
 :------------ | :-------------
 Agregar inspección | `Ctrl` + `W`
 Eliminar inspección | `Ctrl` + `D`
 
 ### Métodos abreviados para el panel detalles
 
-| Acción                             | Método abreviado                 |
+| Acción                             | Acceso directo                 |
 |:-----------------------------------|:-------------------------|
 | Mostrar u ocultar marcos del código de la biblioteca | `Ctrl` + `Shift` + `J`   |
 | Habilitar todos los puntos de interrupción             | `Ctrl` + `Shift` + `F11` |

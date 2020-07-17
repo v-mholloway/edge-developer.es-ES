@@ -1,19 +1,19 @@
 ---
-title: Personalizar Microsoft Edge DevTools
+title: Cambiar la configuración de idioma de DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, localización, ubicación, idioma
-ms.openlocfilehash: cd95e965e14d5214842a74e798d9d3a8ae90c193
-ms.sourcegitcommit: 738a012a2e0edfc63315c2df77b170e26ad9169b
+ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604168"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882726"
 ---
-# Coincidir con el idioma del explorador  
+# Cambiar la configuración de idioma de DevTools  
 
 Las herramientas de desarrollo coinciden con el idioma del explorador de forma predeterminada, si es uno de los diez idiomas admitidos actualmente \ (además del inglés \).  
 
@@ -58,16 +58,12 @@ Las herramientas de desarrollo coinciden con el idioma del explorador de forma p
    :::column-end:::
 :::row-end:::  
 
-> #### Figura 1  
-> DevTools en Japonés  
-> ![DevTools en Japonés][ImageJpDevTools]  
+:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools en Japonés" lightbox="./media/localization-jp.png":::
+   DevTools en Japonés  
+:::image-end:::  
 
 Si desea revertir DevTools al inglés, vaya a configuración de [DevTools][DevtoolschromiumCustomizeIndexSettings] o pulse `F1`  >  **preferencias** y desactive la casilla de verificación **coincidir con el idioma del explorador** .  
 
-<!-- image links -->
-
-[ImageJpDevTools]: ./media/localization-jp.png "Ilustración 1: DevTools en Japonés"  
-
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Configuración-personalizar Microsoft Edge DevTools"  
+[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Configuración-personalizar Microsoft Edge DevTools | Microsoft docs"  

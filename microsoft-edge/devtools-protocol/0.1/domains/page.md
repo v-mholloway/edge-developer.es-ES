@@ -1,20 +1,21 @@
 ---
 description: Referencia del dominio de la página. Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de la página.
-title: 'Dominio de la página: Protocolo de DevTools versión 0,1'
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: 'Dominio de la página: DevTools Protocol versión 0,1 (EdgeHTML)'
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: a1cd094baef4571240881a86ecccfdb319fef61b
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1602673eae1c04f60046a898dbadeab1b59f9ce5
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573759"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882943"
 ---
-# Página
+# Dominio de la página: DevTools Protocol versión 0,1 (EdgeHTML)  
+
 Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de la página.
 
 | | |

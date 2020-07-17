@@ -1,19 +1,19 @@
 ---
 description: El protocolo Microsoft Edge DevTools versión 0,2 admite los siguientes puntos de conexión HTTP.
-title: Puntos de conexión HTTP de Microsoft Edge DevTools Protocol versión 0,2
+title: Puntos de conexión HTTP de Microsoft Edge DevTools Protocol, versión 0,2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: cc3d0156d92ab479168e0b588ae2b7c9faa7e58f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: eb5b29e4d8149f511d8a7cbca3da72391a13e449
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573724"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882862"
 ---
-# Puntos de conexión HTTP del protocolo DevTools
+# Puntos de conexión HTTP de Microsoft Edge DevTools Protocol, versión 0,2 (EdgeHTML)  
 
 > [!NOTE]
 > La versión 0,2 del protocolo Microsoft Edge DevTools solo funciona en la [actualización de Windows 10 de octubre de 2018]() y versiones posteriores de [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) .
