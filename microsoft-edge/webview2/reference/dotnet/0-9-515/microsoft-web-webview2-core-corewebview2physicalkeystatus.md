@@ -3,76 +3,75 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: da7069fb4dad164720bb697a250a216a0bd452ad
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: eecf4dd59d12c30667defd4e078e8624718bde26
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881203"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884592"
 ---
-# <span data-ttu-id="352f7-104">0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus struct</span><span class="sxs-lookup"><span data-stu-id="352f7-104">0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2PhysicalKeyStatus struct</span></span> 
+# <span data-ttu-id="07526-104">0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus struct</span><span class="sxs-lookup"><span data-stu-id="07526-104">0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2PhysicalKeyStatus struct</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="352f7-105">Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="352f7-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="352f7-106">Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.</span><span class="sxs-lookup"><span data-stu-id="352f7-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
-<span data-ttu-id="352f7-107">Espacio de nombres: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="352f7-107">Namespace: Microsoft.Web.WebView2.Core</span></span>\
-<span data-ttu-id="352f7-108">Ensamblado: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="352f7-108">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
+<span data-ttu-id="07526-105">Espacio de nombres: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="07526-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
+<span data-ttu-id="07526-106">Ensamblado: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="07526-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
 
-<span data-ttu-id="352f7-109">Una estructura que representa la información empaquetada en el LPARAM que se proporciona a un evento de tecla Win32.</span><span class="sxs-lookup"><span data-stu-id="352f7-109">A structure representing the information packed into the LPARAM given to a Win32 key event.</span></span>
+<span data-ttu-id="07526-107">Una estructura que representa la información empaquetada en el LPARAM que se proporciona a un evento de tecla Win32.</span><span class="sxs-lookup"><span data-stu-id="07526-107">A structure representing the information packed into the LPARAM given to a Win32 key event.</span></span>
 
-## <span data-ttu-id="352f7-110">Resumen</span><span class="sxs-lookup"><span data-stu-id="352f7-110">Summary</span></span>
+## <span data-ttu-id="07526-108">Resumen</span><span class="sxs-lookup"><span data-stu-id="07526-108">Summary</span></span>
 
- <span data-ttu-id="352f7-111">Miembros</span><span class="sxs-lookup"><span data-stu-id="352f7-111">Members</span></span>                        | <span data-ttu-id="352f7-112">Descripciones</span><span class="sxs-lookup"><span data-stu-id="352f7-112">Descriptions</span></span>
+ <span data-ttu-id="07526-109">Miembros</span><span class="sxs-lookup"><span data-stu-id="07526-109">Members</span></span>                        | <span data-ttu-id="07526-110">Descripciones</span><span class="sxs-lookup"><span data-stu-id="07526-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="352f7-113">IsExtendedKey</span><span class="sxs-lookup"><span data-stu-id="352f7-113">IsExtendedKey</span></span>](#isextendedkey) | <span data-ttu-id="352f7-114">Indica si la tecla es una tecla extendida.</span><span class="sxs-lookup"><span data-stu-id="352f7-114">Indicates whether the key is an extended key.</span></span>
-[<span data-ttu-id="352f7-115">IsKeyReleased</span><span class="sxs-lookup"><span data-stu-id="352f7-115">IsKeyReleased</span></span>](#iskeyreleased) | <span data-ttu-id="352f7-116">Estado de transición.</span><span class="sxs-lookup"><span data-stu-id="352f7-116">The transition state.</span></span>
-[<span data-ttu-id="352f7-117">IsMenuKeyDown</span><span class="sxs-lookup"><span data-stu-id="352f7-117">IsMenuKeyDown</span></span>](#ismenukeydown) | <span data-ttu-id="352f7-118">El código de contexto.</span><span class="sxs-lookup"><span data-stu-id="352f7-118">The context code.</span></span>
-[<span data-ttu-id="352f7-119">RepeatCount</span><span class="sxs-lookup"><span data-stu-id="352f7-119">RepeatCount</span></span>](#repeatcount) | <span data-ttu-id="352f7-120">El número de repeticiones del mensaje actual.</span><span class="sxs-lookup"><span data-stu-id="352f7-120">The repeat count for the current message.</span></span>
-[<span data-ttu-id="352f7-121">ScanCode</span><span class="sxs-lookup"><span data-stu-id="352f7-121">ScanCode</span></span>](#scancode) | <span data-ttu-id="352f7-122">El código de análisis.</span><span class="sxs-lookup"><span data-stu-id="352f7-122">The scan code.</span></span>
-[<span data-ttu-id="352f7-123">WasKeyDown</span><span class="sxs-lookup"><span data-stu-id="352f7-123">WasKeyDown</span></span>](#waskeydown) | <span data-ttu-id="352f7-124">El estado de clave anterior.</span><span class="sxs-lookup"><span data-stu-id="352f7-124">The previous key state.</span></span>
+[<span data-ttu-id="07526-111">IsExtendedKey</span><span class="sxs-lookup"><span data-stu-id="07526-111">IsExtendedKey</span></span>](#isextendedkey) | <span data-ttu-id="07526-112">Indica si la tecla es una tecla extendida.</span><span class="sxs-lookup"><span data-stu-id="07526-112">Indicates whether the key is an extended key.</span></span>
+[<span data-ttu-id="07526-113">IsKeyReleased</span><span class="sxs-lookup"><span data-stu-id="07526-113">IsKeyReleased</span></span>](#iskeyreleased) | <span data-ttu-id="07526-114">Estado de transición.</span><span class="sxs-lookup"><span data-stu-id="07526-114">The transition state.</span></span>
+[<span data-ttu-id="07526-115">IsMenuKeyDown</span><span class="sxs-lookup"><span data-stu-id="07526-115">IsMenuKeyDown</span></span>](#ismenukeydown) | <span data-ttu-id="07526-116">El código de contexto.</span><span class="sxs-lookup"><span data-stu-id="07526-116">The context code.</span></span>
+[<span data-ttu-id="07526-117">RepeatCount</span><span class="sxs-lookup"><span data-stu-id="07526-117">RepeatCount</span></span>](#repeatcount) | <span data-ttu-id="07526-118">El número de repeticiones del mensaje actual.</span><span class="sxs-lookup"><span data-stu-id="07526-118">The repeat count for the current message.</span></span>
+[<span data-ttu-id="07526-119">ScanCode</span><span class="sxs-lookup"><span data-stu-id="07526-119">ScanCode</span></span>](#scancode) | <span data-ttu-id="07526-120">El código de análisis.</span><span class="sxs-lookup"><span data-stu-id="07526-120">The scan code.</span></span>
+[<span data-ttu-id="07526-121">WasKeyDown</span><span class="sxs-lookup"><span data-stu-id="07526-121">WasKeyDown</span></span>](#waskeydown) | <span data-ttu-id="07526-122">El estado de clave anterior.</span><span class="sxs-lookup"><span data-stu-id="07526-122">The previous key state.</span></span>
 
-<span data-ttu-id="352f7-125">Para obtener más información, consulte la documentación de WM_KEYDOWN en [https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown) .</span><span class="sxs-lookup"><span data-stu-id="352f7-125">See the documentation for WM_KEYDOWN for details at [https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown).</span></span>
+<span data-ttu-id="07526-123">Para obtener más información, consulte la documentación de WM_KEYDOWN en [https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown) .</span><span class="sxs-lookup"><span data-stu-id="07526-123">See the documentation for WM_KEYDOWN for details at [https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown).</span></span>
 
-## <span data-ttu-id="352f7-126">Miembros</span><span class="sxs-lookup"><span data-stu-id="352f7-126">Members</span></span>
+## <span data-ttu-id="07526-124">Miembros</span><span class="sxs-lookup"><span data-stu-id="07526-124">Members</span></span>
 
-#### <span data-ttu-id="352f7-127">IsExtendedKey</span><span class="sxs-lookup"><span data-stu-id="352f7-127">IsExtendedKey</span></span> 
+#### <span data-ttu-id="07526-125">IsExtendedKey</span><span class="sxs-lookup"><span data-stu-id="07526-125">IsExtendedKey</span></span> 
 
-<span data-ttu-id="352f7-128">Indica si la tecla es una tecla extendida.</span><span class="sxs-lookup"><span data-stu-id="352f7-128">Indicates whether the key is an extended key.</span></span>
+<span data-ttu-id="07526-126">Indica si la tecla es una tecla extendida.</span><span class="sxs-lookup"><span data-stu-id="07526-126">Indicates whether the key is an extended key.</span></span>
 
-> <span data-ttu-id="352f7-129">public int [IsExtendedKey](#isextendedkey)</span><span class="sxs-lookup"><span data-stu-id="352f7-129">public int [IsExtendedKey](#isextendedkey)</span></span>
+> <span data-ttu-id="07526-127">public int [IsExtendedKey](#isextendedkey)</span><span class="sxs-lookup"><span data-stu-id="07526-127">public int [IsExtendedKey](#isextendedkey)</span></span>
 
-#### <span data-ttu-id="352f7-130">IsKeyReleased</span><span class="sxs-lookup"><span data-stu-id="352f7-130">IsKeyReleased</span></span> 
+#### <span data-ttu-id="07526-128">IsKeyReleased</span><span class="sxs-lookup"><span data-stu-id="07526-128">IsKeyReleased</span></span> 
 
-<span data-ttu-id="352f7-131">Estado de transición.</span><span class="sxs-lookup"><span data-stu-id="352f7-131">The transition state.</span></span>
+<span data-ttu-id="07526-129">Estado de transición.</span><span class="sxs-lookup"><span data-stu-id="07526-129">The transition state.</span></span>
 
-> <span data-ttu-id="352f7-132">public int [IsKeyReleased](#iskeyreleased)</span><span class="sxs-lookup"><span data-stu-id="352f7-132">public int [IsKeyReleased](#iskeyreleased)</span></span>
+> <span data-ttu-id="07526-130">public int [IsKeyReleased](#iskeyreleased)</span><span class="sxs-lookup"><span data-stu-id="07526-130">public int [IsKeyReleased](#iskeyreleased)</span></span>
 
-#### <span data-ttu-id="352f7-133">IsMenuKeyDown</span><span class="sxs-lookup"><span data-stu-id="352f7-133">IsMenuKeyDown</span></span> 
+#### <span data-ttu-id="07526-131">IsMenuKeyDown</span><span class="sxs-lookup"><span data-stu-id="07526-131">IsMenuKeyDown</span></span> 
 
-<span data-ttu-id="352f7-134">El código de contexto.</span><span class="sxs-lookup"><span data-stu-id="352f7-134">The context code.</span></span>
+<span data-ttu-id="07526-132">El código de contexto.</span><span class="sxs-lookup"><span data-stu-id="07526-132">The context code.</span></span>
 
-> <span data-ttu-id="352f7-135">public int [IsMenuKeyDown](#ismenukeydown)</span><span class="sxs-lookup"><span data-stu-id="352f7-135">public int [IsMenuKeyDown](#ismenukeydown)</span></span>
+> <span data-ttu-id="07526-133">public int [IsMenuKeyDown](#ismenukeydown)</span><span class="sxs-lookup"><span data-stu-id="07526-133">public int [IsMenuKeyDown](#ismenukeydown)</span></span>
 
-#### <span data-ttu-id="352f7-136">RepeatCount</span><span class="sxs-lookup"><span data-stu-id="352f7-136">RepeatCount</span></span> 
+#### <span data-ttu-id="07526-134">RepeatCount</span><span class="sxs-lookup"><span data-stu-id="07526-134">RepeatCount</span></span> 
 
-<span data-ttu-id="352f7-137">El número de repeticiones del mensaje actual.</span><span class="sxs-lookup"><span data-stu-id="352f7-137">The repeat count for the current message.</span></span>
+<span data-ttu-id="07526-135">El número de repeticiones del mensaje actual.</span><span class="sxs-lookup"><span data-stu-id="07526-135">The repeat count for the current message.</span></span>
 
-> <span data-ttu-id="352f7-138">Public uint [RepeatCount](#repeatcount)</span><span class="sxs-lookup"><span data-stu-id="352f7-138">public uint [RepeatCount](#repeatcount)</span></span>
+> <span data-ttu-id="07526-136">Public uint [RepeatCount](#repeatcount)</span><span class="sxs-lookup"><span data-stu-id="07526-136">public uint [RepeatCount](#repeatcount)</span></span>
 
-#### <span data-ttu-id="352f7-139">ScanCode</span><span class="sxs-lookup"><span data-stu-id="352f7-139">ScanCode</span></span> 
+#### <span data-ttu-id="07526-137">ScanCode</span><span class="sxs-lookup"><span data-stu-id="07526-137">ScanCode</span></span> 
 
-<span data-ttu-id="352f7-140">El código de análisis.</span><span class="sxs-lookup"><span data-stu-id="352f7-140">The scan code.</span></span>
+<span data-ttu-id="07526-138">El código de análisis.</span><span class="sxs-lookup"><span data-stu-id="07526-138">The scan code.</span></span>
 
-> <span data-ttu-id="352f7-141">uint pública [Scancode](#scancode)</span><span class="sxs-lookup"><span data-stu-id="352f7-141">public uint [ScanCode](#scancode)</span></span>
+> <span data-ttu-id="07526-139">uint pública [Scancode](#scancode)</span><span class="sxs-lookup"><span data-stu-id="07526-139">public uint [ScanCode](#scancode)</span></span>
 
-#### <span data-ttu-id="352f7-142">WasKeyDown</span><span class="sxs-lookup"><span data-stu-id="352f7-142">WasKeyDown</span></span> 
+#### <span data-ttu-id="07526-140">WasKeyDown</span><span class="sxs-lookup"><span data-stu-id="07526-140">WasKeyDown</span></span> 
 
-<span data-ttu-id="352f7-143">El estado de clave anterior.</span><span class="sxs-lookup"><span data-stu-id="352f7-143">The previous key state.</span></span>
+<span data-ttu-id="07526-141">El estado de clave anterior.</span><span class="sxs-lookup"><span data-stu-id="07526-141">The previous key state.</span></span>
 
-> <span data-ttu-id="352f7-144">public int [WasKeyDown](#waskeydown)</span><span class="sxs-lookup"><span data-stu-id="352f7-144">public int [WasKeyDown](#waskeydown)</span></span>
+> <span data-ttu-id="07526-142">public int [WasKeyDown](#waskeydown)</span><span class="sxs-lookup"><span data-stu-id="07526-142">public int [WasKeyDown](#waskeydown)</span></span>
 
