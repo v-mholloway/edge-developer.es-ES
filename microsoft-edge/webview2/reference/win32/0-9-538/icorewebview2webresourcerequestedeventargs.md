@@ -3,17 +3,17 @@ description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicacio
 title: WebView2 Win32 C++ ICoreWebView2WebResourceRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge, ICoreWebView2WebResourceRequestedEventArgs
-ms.openlocfilehash: 3613ed9b2ef562e8760de1a88322ef028ddf4ca9
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: b3d3e6bc3efae663d78fab2f6b74dc43a88120b7
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879222"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884515"
 ---
 # interfaz ICoreWebView2WebResourceRequestedEventArgs 
 
@@ -28,9 +28,9 @@ Argumentos de evento para el evento WebResourceRequested.
 
  Miembros                        | Descripciones
 --------------------------------|---------------------------------------------
-[get_Request](#get_request) | La solicitud HTTP.
-[get_ResourceContext](#get_resourcecontext) | Los contextos de solicitud de recursos Web.
-[get_Response](#get_response) | La respuesta HTTP.
+[get_Request](#get_request) | La solicitud de recursos Web.
+[get_ResourceContext](#get_resourcecontext) | El contexto de la solicitud de recursos Web.
+[get_Response](#get_response) | Un marcador de posición para el objeto de respuesta de recursos Web.
 [GetDeferral](#getdeferral) | Obtén un objeto [ICoreWebView2Deferral](icorewebview2deferral.md) y coloca el evento en un estado diferido.
 [put_Response](#put_response) | Establezca la propiedad Response.
 
@@ -38,21 +38,25 @@ Argumentos de evento para el evento WebResourceRequested.
 
 #### get_Request 
 
-La solicitud HTTP.
+La solicitud de recursos Web.
 
 > [get_Request](#get_request)de HRESULT público (solicitud[ICoreWebView2WebResourceRequest](icorewebview2webresourcerequest.md) * *)
 
+Es posible que en el objeto de solicitud falten algunos encabezados que la pila de red agrega más adelante.
+
 #### get_ResourceContext 
 
-Los contextos de solicitud de recursos Web.
+El contexto de la solicitud de recursos Web.
 
 > [get_ResourceContext](#get_resourcecontext)de HRESULT público (COREWEBVIEW2_WEB_RESOURCE_CONTEXT *)
 
 #### get_Response 
 
-La respuesta HTTP.
+Un marcador de posición para el objeto de respuesta de recursos Web.
 
 > [get_Response](#get_response)de HRESULT público (respuesta de[ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md) * *)
+
+Si se establece este objeto, la solicitud de recursos Web se completará con esta respuesta.
 
 #### GetDeferral 
 
@@ -60,11 +64,13 @@ Obtén un objeto [ICoreWebView2Deferral](icorewebview2deferral.md) y coloca el e
 
 > [GETDEFERRAL](#getdeferral)HRESULT ([ICoreWebView2Deferral](icorewebview2deferral.md) * * aplazamiento)
 
-Puede usar el objeto [ICoreWebView2Deferral](icorewebview2deferral.md) para completar la solicitud de red más adelante.
+Puedes usar el objeto [ICoreWebView2Deferral](icorewebview2deferral.md) para completar la solicitud más adelante.
 
 #### put_Response 
 
 Establezca la propiedad Response.
 
 > [put_Response](#put_response)de HRESULT público (respuesta de[ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md) *)
+
+Se puede crear un objeto de respuesta de recursos Web vacío con CreateWebResourceResponse y, a continuación, se ha modificado para construir la respuesta.
 

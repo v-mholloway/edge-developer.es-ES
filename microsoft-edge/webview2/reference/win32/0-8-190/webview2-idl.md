@@ -3,22 +3,21 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: 0.8.355-WebView2 Win32 C++ Globals
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge
-ms.openlocfilehash: 5ee2461ca1b0aeb0a5f0d23f0918561065570523
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: f413a9ed3afb6360637abead62a3aee20fd23cea
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877990"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884641"
 ---
 # 0.8.355-Globals 
 
-> [!NOTE]
-> Esta interfaz puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.8.355. Consulta la [referencia](../../../webview2-api-reference.md) de la API más reciente.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ## Resumen
 

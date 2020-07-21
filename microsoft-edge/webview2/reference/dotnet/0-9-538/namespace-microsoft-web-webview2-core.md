@@ -3,17 +3,17 @@ description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicacio
 title: Microsoft. Web. WebView2. Core
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, App, Edge, CoreWebView2, CoreWebView2Controller, control de explorador, Edge HTML, Microsoft. Web. WebView2. Core
-ms.openlocfilehash: e45cb4c6a6fdd01680abc59691a0e0c34a64af15
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 121ca87d1cd444228aeba1328feb2d0633647d74
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881196"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884032"
 ---
 # Espacio de nombres Microsoft.Web.WebView2.Core 
 
@@ -55,6 +55,7 @@ CoreWebView2Settings | Define las propiedades que habilitan, deshabilitan o modi
 CoreWebView2SourceChangedEventArgs | Argumentos de evento para el evento SourceChanged.
 CoreWebView2WebMessageReceivedEventArgs | Argumentos de evento para el evento WebMessageReceived.
 CoreWebView2WebResourceRequestedEventArgs | Argumentos de evento para el evento WebResourceRequested.
+CoreWebView2WebResourceResponseReceivedEventArgs | Argumentos de evento para el evento WebResourceResponseReceived.
 CoreWebView2WindowFeatures | Características de la ventana de una ventana emergente de vista previa.
 EdgeNotFoundException | La excepción que se produce cuando falta la instalación de un extremo.
 CoreWebView2Matrix4x4 | Esta transformación se usa para calcular las coordenadas correctas al llamar a CreateCoreWebView2PointerInfoFromPointerId.
@@ -88,8 +89,7 @@ SystemKeyUp            | Corresponde a WM_SYSKEYUP de mensaje de ventana.
 
 #### CoreWebView2MouseEventKind 
 
-> [!NOTE]
-> Esta es una [API experimental](../../../concepts/versioning.md#experimental-apis) que se incluía con nuestra versión [de SDK 0.9.538-prerelease](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Tipo de evento del mouse usado por SendMouseInput para transmitir el tipo de evento del mouse que se envía a WebView.
 
@@ -116,8 +116,7 @@ XButtonUp            | Primer o segundo evento del botón X del botón arriba, W
 
 #### CoreWebView2MouseEventVirtualKeys 
 
-> [!NOTE]
-> Esta es una [API experimental](../../../concepts/versioning.md#experimental-apis) que se incluía con nuestra versión [de SDK 0.9.538-prerelease](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Teclas virtuales de eventos del mouse asociadas a una CoreWebView2MouseEventKind para SendMouseInput.
 
@@ -176,8 +175,7 @@ Denegar            | Denegar la solicitud de permiso.
 
 #### CoreWebView2PointerEventKind 
 
-> [!NOTE]
-> Esta es una [API experimental](../../../concepts/versioning.md#experimental-apis) que se incluía con nuestra versión [de SDK 0.9.538-prerelease](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Tipo de evento de puntero usado por SendPointerInput para transmitir el tipo de evento de puntero que se envía a WebView.
 

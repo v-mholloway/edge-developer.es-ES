@@ -3,22 +3,21 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2Controller
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 72121ddbc81d2228bf8d185b977e5f3e7ca2deb4
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 50c84a725e9f399fa31b4f78a019556bd3147bcb
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879026"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885103"
 ---
 # 0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2Controller (clase) 
 
-> [!NOTE]
-> Esta referencia puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.9.515. Consulta la referencia de la [API de WebView2](../../../webview2-api-reference.md) para obtener la referencia de API más reciente.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Espacio de nombres: Microsoft. Web. WebView2. Core \
 Ensamblado: Microsoft.Web.WebView2.Core.dll

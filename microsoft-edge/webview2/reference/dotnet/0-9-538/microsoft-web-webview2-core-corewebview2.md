@@ -3,17 +3,17 @@ description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicacio
 title: Microsoft. Web. WebView2. Core. CoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, App, Edge, CoreWebView2, CoreWebView2Controller, control de explorador, Edge HTML, Microsoft. Web. WebView2. Core. CoreWebView2
-ms.openlocfilehash: f8e0ebae683e1e68d12ce541fbec922ec9c05ef4
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 95ef347c8954dc67438a4d09825c11a64ad8872a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879012"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885278"
 ---
 # Clase Microsoft. Web. WebView2. Core. CoreWebView2 
 
@@ -48,6 +48,7 @@ WebView2 le permite hospedar contenido web con la tecnología de explorador Web 
 [SourceChanged](#sourcechanged) | SourceChanged se desencadena cuando cambia la propiedad de origen.
 [WebMessageReceived](#webmessagereceived) | Este evento se desencadena cuando se establece la configuración de IsWebMessageEnabled y el documento de nivel superior de las llamadas de WebView `window.chrome.webview.postMessage` .
 [WebResourceRequested](#webresourcerequested) | Se desencadena cuando WebView realiza una solicitud HTTP a una dirección URL y un filtro de contexto de recursos coincidentes que se agregaron con AddWebResourceRequestedFilter.
+[WebResourceResponseReceived](#webresourceresponsereceived) | El evento WebResourceResponseReceived se desencadena después de que la vista previa reciba y procese la respuesta de una solicitud de recursos de WebResource.
 [WindowCloseRequested](#windowcloserequested) | Se desencadena cuando el contenido de la vista en WebView solicita cerrar la ventana, por ejemplo, después de que se llame a Window. Close.
 [AddHostObjectToScript](#addhostobjecttoscript) | Agregue el objeto host proporcionado a la secuencia de comandos que se ejecuta en la vista Webcon el nombre especificado.
 [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) | Agregue el JavaScript proporcionado a una lista de scripts que se deben ejecutar después de que se haya creado el objeto global, pero antes de que se haya analizado el documento HTML y antes de que se ejecute cualquier otro script incluido en el documento HTML.
@@ -231,6 +232,16 @@ Se desencadena cuando WebView realiza una solicitud HTTP a una dirección URL y 
 
 Debe agregar al menos un filtro para que se active el evento.
 
+#### WebResourceResponseReceived 
+
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
+
+El evento WebResourceResponseReceived se desencadena después de que la vista previa reciba y procese la respuesta de una solicitud de recursos de WebResource.
+
+> evento público EventHandler< [CoreWebView2WebResourceResponseReceivedEventArgs](microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md)  >  [WebResourceResponseReceived](#webresourceresponsereceived)
+
+Los argumentos del evento incluyen los WebResourceRequest enviados por el cable y WebResourceResponse recibidos, incluidos los encabezados adicionales agregados por la pila de red que no se incluyeron como parte del evento WebResourceRequested asociado, como los encabezados de autenticación.
+
 #### WindowCloseRequested 
 
 Se desencadena cuando el contenido de la vista en WebView solicita cerrar la ventana, por ejemplo, después de que se llame a Window. Close.
@@ -307,7 +318,7 @@ Llama a un método DevToolsProtocol asincrónico.
 > Tarea asincrónica pública< String > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(String MethodName, String parametersAsJson)
 
 ##### Devuelve
-Una cadena JSON que representa el objeto devuelto por el método.
+Una cadena JSON que representa el objeto devuelto por el método. 
 
 Consulte el [visor de protocolos de DevTools](https://aka.ms/DevToolsProtocolDocs) para obtener una lista y una descripción de los métodos disponibles. El parámetro methodName es el nombre completo del método en el formato `{domain}.{method}` . El parámetro parametersAsJson es una cadena con formato JSON que contiene los parámetros del método correspondiente. Se llamará al método Invoke del controlador cuando se complete el método de forma asincrónica. Se llamará a Invoke con el objeto devuelto del método como una cadena JSON.
 
@@ -328,7 +339,7 @@ Ejecute el código JavaScript desde el parámetro de JavaScript en el documento 
 ##### Devuelve
 Devuelve una cadena de JSON codificada que representa el resultado de la ejecución de la JavaScript proporcionada. 
 
-Este método ejecuta el JavaScript proporcionado de forma asincrónica y devolverá el resultado del JavaScript proporcionado. Si el resultado de la JavaScript proporcionada es `undefined` , contiene un ciclo de referencia o no se puede codificar en JSON, se devuelve la cadena ' null '. Si una función llamada en el JavaScript proporcionado no tiene ningún valor devuelto explícito, `undefined` se devuelve. Si el JavaScript proporcionado inicia una excepción no controlada, se devuelve ' null '. Si se llama a este método después de un `NavigationStarting` evento, el código JavaScript proporcionado se ejecuta en el documento nuevo cuando se carga, en el mismo momento en que `ContentLoading` se desencadena. `ExecuteScript` funcionará incluso si `IsScriptEnabled` se establece en `FALSE` .
+Este método ejecuta el JavaScript proporcionado de forma asincrónica y devolverá el resultado del JavaScript proporcionado. Si el resultado de la JavaScript proporcionada es `undefined` , contiene un ciclo de referencia o no se puede codificar en JSON, se devuelve la cadena ' null '. Si una función llamada en el JavaScript proporcionado no tiene ningún valor devuelto explícito, `undefined` se devuelve. Si el JavaScript proporcionado inicia una excepción no controlada, se devuelve ' null '. Si se llama a este método después de un evento NavigationStarting, el JavaScript proporcionado se ejecuta en el nuevo documento cuando se carga, en el mismo momento en que se desencadena ContentLoading. ExecuteScriptAsync funcionará aunque IsScriptEnabled se establezca en `FALSE` .
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -434,3 +445,4 @@ Detenga todas las navegaciones y las búsquedas de recursos pendientes.
 > public void [Stop](#stop)()
 
 No detiene las secuencias de comandos.
+

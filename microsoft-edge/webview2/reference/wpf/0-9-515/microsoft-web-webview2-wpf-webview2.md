@@ -3,17 +3,17 @@ description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicacio
 title: Microsoft. Web. WebView2. WPF. WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, App, Edge, CoreWebView2, CoreWebView2Controller, control de explorador, Edge HTML, Microsoft. Web. WebView2. WPF. WebView2
-ms.openlocfilehash: 2dd7bf1035cf5254f4668070d56d2bd2405f1276
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: e7f5d11b540d1d7ad9630aa674ef5bc0073195c2
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880265"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885299"
 ---
 # Clase Microsoft. Web. WebView2. WPF. WebView2 
 
@@ -37,11 +37,13 @@ Un control para incrustar contenido web en una aplicación de WPF.
 [NavigationStarting](#navigationstarting) | Un contenedor para el evento CoreWebView2. NavigationStarting de CoreWebView2.
 [SourceChanged](#sourcechanged) | Un contenedor para el evento CoreWebView2. SourceChanged de CoreWebView2.
 [WebMessageReceived](#webmessagereceived) | Un contenedor para el evento CoreWebView2. WebMessageReceived de CoreWebView2.
+[ZoomFactorChanged](#zoomfactorchanged) | El evento se desencadena cuando cambia la propiedad ZoomFactor de la vista de vista previa.
 [CanGoBack](#cangoback) | Devuelve verdadero si la vista en web puede navegar a una página anterior en el historial de navegación.
 [CanGoForward](#cangoforward) | Devuelve true si la vista Web puede navegar a la página siguiente del historial de navegación.
 [CoreWebView2](#corewebview2) | Accede a la funcionalidad completa de la API básica. CoreWebView2 COM.
 [CreationProperties](#creationproperties) | Obtiene o establece una bolsa de opciones que se usan durante la inicialización de la CoreWebView2 del control.
 [Source](#source) | Identificador URI de nivel superior que la vista en pantalla está mostrando (o se muestra cuando finaliza la inicialización de su CoreWebView2).
+[ZoomFactor](#zoomfactor) | El factor de zoom para la vista de WebView.
 [EnsureCoreWebView2Async](#ensurecorewebview2async) | Desencadenar de forma explícita la inicialización de la CoreWebView2 del control.
 [ExecuteScriptAsync](#executescriptasync) | Ejecuta el código de JavaScript desde el parámetro de javaScript en el documento de nivel superior actual representado en la vista de gráfico.
 [GoBack](#goback) | Navega por la vista Web a la página anterior del historial de navegación.
@@ -119,6 +121,14 @@ Un contenedor para el evento CoreWebView2. WebMessageReceived de CoreWebView2.
 
 La única diferencia entre este evento y CoreWebView2. WebMessageReceived es el primer parámetro que se pasa a los controladores. Los controladores de este evento recibirán el control WebView2, mientras que los controladores de CoreWebView2. WebMessageReceived recibirán la instancia de CoreWebView2.
 
+#### ZoomFactorChanged 
+
+El evento se desencadena cuando cambia la propiedad ZoomFactor de la vista de vista previa.
+
+> evento público EventHandler< EventArgs > [ZoomFactorChanged](#zoomfactorchanged)
+
+Este evento expone directamente CoreWebView2Controller. ZoomFactorChanged, consulta su documentación para obtener más información.
+
 #### CanGoBack 
 
 Devuelve verdadero si la vista en web puede navegar a una página anterior en el historial de navegación.
@@ -162,10 +172,20 @@ Identificador URI de nivel superior que la vista en pantalla está mostrando (o 
 
 > [origen](#source) de URI público
 
-En general, la obtención de esta propiedad es equivalente a la propiedad CoreWebView2. Source de CoreWebView2 y la configuración de esta propiedad es equivalente a llamar al método CoreWebView2. Navigate en CoreWebView2. Si se obtiene esta propiedad antes de que se haya inicializado CoreWebView2, se recuperará el último URI que se ha establecido en él. Si se establece esta propiedad antes de que se haya inicializado CoreWebView2, la inicialización se iniciará en el fondo (si aún no está en curso), después de la cual el WebView2 se desplazará al identificador URI especificado. Consulta la documentación de la clase WebView2 para obtener información general sobre la inicialización.
+En general, la obtención de esta propiedad es equivalente a obtener la propiedad CoreWebView2. Source de CoreWebView2 y establecer esta propiedad (a un valor diferente) es equivalente a llamar al método CoreWebView2. Navigate en CoreWebView2. Un valor de NULL tiene el mismo significado que "About: Blank" (vea la sección Comentarios para obtener más información). Si se obtiene esta propiedad antes de que se haya inicializado CoreWebView2, se recuperará el último URI establecido en él o null (el valor predeterminado) si no se ha realizado ninguno. Si se establece esta propiedad antes de que se haya inicializado CoreWebView2, la inicialización se iniciará en el fondo (si aún no está en curso), después de la cual el WebView2 se desplazará al identificador URI especificado. Consulta la documentación de la clase WebView2 para obtener información general sobre la inicialización.
+
+Si esta propiedad es null, el CoreWebView2 mostrará "About: Blank" (o si se establece en NULL y el CoreWebView2 se desplazará a "About: Blank"). También es posible que esta propiedad se tenga (o se establezca en) el valor explícito "About: Blank", que tiene el mismo efecto en el CoreWebView2. En otras palabras, si el CoreWebView2 muestra "About: Blank", el valor de esta propiedad puede ser null o "About: Blank". Sin embargo, NULL y "About: Blank" son valores distintos de esta propiedad y no se tratan como iguales entre sí. Esto es importante para la inicialización de controles porque significa que cambiar el valor de null (predeterminado) por "About: Blank" sigue siendo un cambio y seguirá desencadenando la inicialización implícita. 
 
 ##### Excepciones
 * `ObjectDisposedException` Se produce si ya se ha llamado a Dispose en el control.
+
+#### ZoomFactor 
+
+El factor de zoom para la vista de WebView.
+
+> [ZoomFactor](#zoomfactor) doble público
+
+Esta propiedad expone directamente CoreWebView2Controller. ZoomFactor, consulta su documentación para obtener más información. Si se obtiene esta propiedad antes de que se haya inicializado CoreWebView2, se recuperará el último valor que se estableció en él, o 1,0 (valor predeterminado) si no se ha realizado ninguno. El valor más reciente establecido en esta propiedad antes de que se haya inicializado el CoreWebView2 se establecerá en él después de la inicialización.
 
 #### EnsureCoreWebView2Async 
 
