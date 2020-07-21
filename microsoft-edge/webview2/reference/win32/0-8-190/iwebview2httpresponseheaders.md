@@ -3,22 +3,21 @@ description: Hospedar contenido web en la aplicación Win32 con el control Micro
 title: 0.8.355-WebView2 Win32 C++ IWebView2HttpResponseHeaders
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge
-ms.openlocfilehash: 48a04ea60dff4cf9b6b52377927ee9085fb8bea2
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 077c85b2458c2cf843c4d2f0548d17ec01ba4751
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878438"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885964"
 ---
 # 0.8.355: IWebView2HttpResponseHeaders 
 
-> [!NOTE]
-> Esta interfaz puede modificarse o no estar disponible para las versiones posteriores a la versión de SDK 0.8.355. Consulta la [referencia](../../../webview2-api-reference.md) de la API más reciente.
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface IWebView2HttpResponseHeaders

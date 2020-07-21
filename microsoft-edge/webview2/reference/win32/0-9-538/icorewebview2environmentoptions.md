@@ -3,17 +3,17 @@ description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicacio
 title: WebView2 Win32 C++ ICoreWebView2EnvironmentOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge, ICoreWebView2EnvironmentOptions
-ms.openlocfilehash: c927c79fc0112ed67f90d6a8acdf590721fecf5e
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 9560a2b092f60dc8f72f5ffd90d16b5744b719b6
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880055"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886279"
 ---
 # interfaz ICoreWebView2EnvironmentOptions 
 
@@ -38,8 +38,10 @@ Opciones usadas para crear un entorno WebView2.
 Se proporciona una implementación predeterminada en WebView2EnvironmentOptions. h.
 
 ```cpp
-    auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
-    if(!m_language.empty())
+    auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
+    CHECK_FAILURE(options->put_IsSingleSignOnUsingOSPrimaryAccountEnabled(
+        m_AADSSOEnabled ? TRUE : FALSE));
+    if (!m_language.empty())
         CHECK_FAILURE(options->put_Language(m_language.c_str()));
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
         subFolder, nullptr, options.Get(),
