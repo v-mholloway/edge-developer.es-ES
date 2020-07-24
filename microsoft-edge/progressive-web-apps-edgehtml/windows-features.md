@@ -7,12 +7,12 @@ ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
-ms.openlocfilehash: 8ba682b03182194a773568254b66c3616bf4c3e2
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 296ae0a65481edd312e06b83c1554813ec2bffae
+ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882789"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894720"
 ---
 # Personalizar su PWA (EdgeHTML) para Windows  
 
@@ -23,9 +23,13 @@ PWAs instalado en Windows 10 disfruta de [todas las ventajas][PwaIndexWindows10]
 *   Iniciar o navegar por la aplicación a través de los comandos de voz Cortana  
 *   Integración con el sistema operativo Windows \ (a través del centro de actividades de Windows, barra de tareas de escritorio y menús contextuales \)  
 
-... y estas son solo algunas de las posibilidades agregadas para tu PWA \ \ (EdgeHTML \) en Windows.  
+Estas son solo algunas de las posibilidades agregadas para su PWA \ \ (EdgeHTML \) en Windows.  
 
-En esta guía se muestra cómo instalar, ejecutar y mejorar el PWA \ (EdgeHTML \) como una aplicación de Windows 10, sin dejar de garantizar la compatibilidad entre exploradores y plataformas.  
+En este artículo se muestra cómo instalar, ejecutar y mejorar el PWA \ (EdgeHTML \) como una aplicación de Windows 10, sin dejar de garantizar la compatibilidad entre exploradores y plataformas.  
+
+> [!IMPORTANT]
+> Los ejemplos y los pasos de este artículo requieren Visual Studio 2017. Visual Studio 2019 no incluye la plantilla utilizada en este artículo. Para descargar Visual Studio 2017, vea [descargas de Visual Studio-2017, 2015 & versiones anteriores][PreviousVSDownloads]  
+
 
 ## Requisitos previos  
 
@@ -342,3 +346,4 @@ Y cuando esté listo, aquí se muestra cómo \ (y por qué! \) [enviar su PWA a 
 [MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "Permisos de aplicación"  
 [MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Descargas"  
 [MicrosoftVisualStudioPreview]: https://visualstudio.microsoft.com/vs/preview "Vista previa de Visual Studio"  
+[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Descargas de Visual Studio"

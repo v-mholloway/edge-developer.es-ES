@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación de Windows Forms con el co
 title: Vista de WebView 2 de Microsoft Edge para aplicaciones de Windows Forms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones de WinForms, WinForms, Edge, CoreWebView2, control de explorador, ASP.net de Edge, introducción, introducción, .NET, Windows Forms
-ms.openlocfilehash: 85b114e7eb1e567bd5188353af2826a56b01ad4e
-ms.sourcegitcommit: 8f2badc98ea7b7d1861dabfaf0e4dd8677e89bea
+ms.openlocfilehash: 634fbd74a94ea990bc3eb9c150760522a5c13ce1
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "10767026"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895528"
 ---
 # Introducción a WebView2 en las aplicaciones de Windows Forms (versión preliminar)  
 
@@ -23,11 +23,11 @@ En este artículo, empiece a crear su primera aplicación de WebView2 y obtenga 
 
 Asegúrese de haber instalado la siguiente lista de requisitos previos antes de continuar:  
 
-* [Canal Canarias de Microsoft Edge (cromo)](https://www.microsoftedgeinsider.com/download/) instalado en Windows 10, Windows 8,1 o Windows 7. 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2017 o posterior.
+* [Canal Canarias de Microsoft Edge (cromo)](https://www.microsoftedgeinsider.com/download) instalado en Windows 10, Windows 8,1 o Windows 7. 
+* [Visual Studio](https://visualstudio.microsoft.com) 2017 o posterior.
 
 > [!NOTE]
-> WebView2 actualmente no es compatible con el diseñador de .NET Core 3.0 [(versión preliminar)](https://visualstudio.microsoft.com/vs/preview/).
+> WebView2 actualmente no es compatible con el diseñador de .NET Core 3.0 [(versión preliminar)](https://visualstudio.microsoft.com/vs/preview).
 
 ## Paso 1: crear una aplicación de una sola ventana
 
@@ -35,15 +35,15 @@ Empiece con un proyecto de escritorio básico que contenga una única ventana pr
 
 1. Abra **Visual Studio.**
 
-2. Elija **aplicación de Windows Forms .NET Framework** y, a continuación, elija **siguiente**.
+1. Elija **aplicación de Windows Forms .NET Framework** y, a continuación, elija **siguiente**.
 
     ![NewProject](./media/winforms-newproject.png)
 
-3. Escriba los valores para **el nombre** y la **Ubicación**del proyecto.  Seleccione **.NET Framework 4.6.2** o posterior.  
+1. Escriba los valores para **el nombre** y la **Ubicación**del proyecto.  Seleccione **.NET Framework 4.6.2** o posterior.  
 
     ![startproject](./media/winforms-startproj.png)
 
-4. Elija **crear** para crear el proyecto.
+1. Elija **crear** para crear el proyecto.
 
 ## Paso 2: instalar el SDK de WebView2
 
@@ -54,9 +54,10 @@ A continuación, agregue el SDK de WebView2 al proyecto.  Para obtener la vista 
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
        Nuget :::image-end:::
 
-2. Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  
+1. Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  
 
-3. Marque la opción **incluir versión preliminar**, seleccione una versión de paquete de versión **preliminar** y, a continuación, elija **instalar**.  
+    > [!IMPORTANT]
+    > Asegúrese de que marca la opción **incluir**versión, seleccione un paquete de versión preliminar en **versión**y, a continuación, elija **instalar**.  
 
     ![Nuget](./media/installnuget.png)
 
@@ -69,15 +70,15 @@ Ya está todo listo para empezar a desarrollar aplicaciones con la API de WebVie
 A continuación, agregue una vista de vista a la aplicación.  
 
 1. Abra el **Diseñador de Windows Forms**.  
-2. Busque **WebView2** en el **cuadro de herramientas**. Arrastre y coloque el control **WebView2** en la aplicación Windows Forms
+1. Busque **WebView2** en el **cuadro de herramientas**. Arrastre y coloque el control **WebView2** en la aplicación Windows Forms
 
     ![prácticas](./media/winforms-toolbox.png)
 
-3. Cambie la `Name` propiedad a `webView` .
+1. Cambie la `Name` propiedad a `webView` .
 
     ![prácticas](./media/winforms-properties.png)
 
-4. La `Source` propiedad establece el URI inicial que se muestra en el control WebView2. Establezca la propiedad Source en <https://www.microsoft.com>
+1. La `Source` propiedad establece el URI inicial que se muestra en el control WebView2. Establezca la propiedad Source en <https://www.microsoft.com>
 
     ![prácticas](./media/winforms-source.png)
 
@@ -86,21 +87,21 @@ Seleccione `F5` para compilar y ejecutar el proyecto.  Confirme que se muestra e
 ![hellowebview](./media/winforms-hellowebview.png)
 
 > [!NOTE]
-> Si está trabajando en un monitor de alta definición de PPP, es posible que tenga que [configurar la aplicación de Windows Forms para una compatibilidad con alta definición de PPP](https://docs.microsoft.com/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+> Si está trabajando en un monitor de alta definición de PPP, es posible que tenga que [configurar la aplicación de Windows Forms para una compatibilidad con alta definición de PPP](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
 ## Paso 4: controlar los eventos de ajuste de tamaño de la ventana
 
 Agregue algunos controles más a sus formularios Windows Forms desde el cuadro de herramientas y, a continuación, administre los eventos de tamaño de ventana correctamente.
 
 1. En el **Diseñador de Windows Forms** , abra el **cuadro de herramientas**
-2. Arrastre y coloque un **cuadro de texto** en la aplicación de formularios Windows Forms. Asigne un nombre al **cuadro** `addressBar` de texto en la **pestaña propiedades**.
-3. Arrastre y coloque un **botón** en la aplicación Windows Forms. Cambie el texto del **botón** a `Go!` y asígnele el nombre **Button** `goButton` de la **pestaña propiedades**.
+1. Arrastre y coloque un **cuadro de texto** en la aplicación de formularios Windows Forms. Asigne un nombre al **cuadro** `addressBar` de texto en la **pestaña propiedades**.
+1. Arrastre y coloque un **botón** en la aplicación Windows Forms. Cambie el texto del **botón** a `Go!` y asígnele el nombre **Button** `goButton` de la **pestaña propiedades**.
 
-La aplicación debe tener un aspecto similar al siguiente en el diseñador:
+    La aplicación debe tener un aspecto similar al siguiente en el diseñador:
+    
+    ![diseñador](./media/winforms-designer.png)
 
-![diseñador](./media/winforms-designer.png)
-
-4. En **Form1.CS** define `Form_Resize` para mantener los controles en su lugar cuando se cambie el tamaño de la ventana de la aplicación.
+1. En **Form1.CS** define `Form_Resize` para mantener los controles en su lugar cuando se cambie el tamaño de la ventana de la aplicación.
 
 ```csharp
 public Form1()
@@ -131,7 +132,7 @@ Agregue una barra de direcciones a la aplicación para permitir a los usuarios q
     using Microsoft.Web.WebView2.Core;
     ```
 
-2. En el **Diseñador de Windows Forms**, haga doble clic en el `Go!` botón para crear el `goButton_Click` método `Form1.cs` . Copie y pegue el siguiente fragmento de código dentro de la función. Ahora, la `goButton_Click` función navega por la vista WebView a la dirección URL que se escribe en la barra de direcciones.
+1. En el **Diseñador de Windows Forms**, haga doble clic en el `Go!` botón para crear el `goButton_Click` método `Form1.cs` . Copie y pegue el siguiente fragmento de código dentro de la función. Ahora, la `goButton_Click` función navega por la vista WebView a la dirección URL que se escribe en la barra de direcciones.
 
     ```csharp
     private void goButton_Click(object sender, EventArgs e)
@@ -160,7 +161,7 @@ La aplicación que hospeda los controles WebView2 escucha los siguientes eventos
 * `HistoryChanged`  
 * `NavigationCompleted`  
 
-Para obtener más información, vea [eventos de navegación](../reference/win32/0-9-488/icorewebview2.md#navigation-events).  
+Para obtener más información, vea [eventos de navegación](../concepts/navigation-events.md).  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Eventos de navegación":::
    Eventos de navegación
@@ -251,7 +252,7 @@ En el proyecto, cuando el control WebView2 navega a una dirección URL, muestra 
     }
     ```  
 
-2. Después de inicializar **CoreWebView2** , registra un controlador de eventos para responder `WebMessageReceived` .  En `Form1.cs` Update `InitializeAsync` y Add, `UpdateAddressBar` use el siguiente fragmento de código.  
+1. Después de inicializar **CoreWebView2** , registra un controlador de eventos para responder `WebMessageReceived` .  En `Form1.cs` Update `InitializeAsync` y Add, `UpdateAddressBar` use el siguiente fragmento de código.  
 
     ```csharp
     async void InitializeAsync()
@@ -268,10 +269,10 @@ En el proyecto, cuando el control WebView2 navega a una dirección URL, muestra 
     }
     ```  
 
-3. Para que la vista Web pueda enviar y responder al mensaje Web, después de que `CoreWebView2` se inicialice, el anfitrión inyecta una secuencia de comandos en el contenido web a:  
+1. Para que la vista Web pueda enviar y responder al mensaje Web, después de que `CoreWebView2` se inicialice, el anfitrión inyecta una secuencia de comandos en el contenido web a:  
 
     1. Envíe la dirección URL al host mediante `postMessage` .
-    2. Registre un controlador de eventos para imprimir un mensaje enviado desde el host.  
+    1. Registre un controlador de eventos para imprimir un mensaje enviado desde el host.  
 
 En `Form1.cs` , actualice `InitializeAsync` tal como se muestra en el siguiente fragmento de código.  
 
