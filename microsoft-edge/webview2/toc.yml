@@ -16,10 +16,18 @@
       href: concepts/distribution.md
     - name: Administrar carpetas de datos de usuario
       href: concepts/userdatafolder.md
+    - name: Eventos de navegación
+      href: concepts/navigation-events.md
+    - name: Modelo de proceso
+      href: concepts/process-model.md
     - name: Procedimientos recomendados de seguridad
       href: concepts/security.md
     - name: Control de versiones
       href: concepts/versioning.md
+    - name: Modelo de subprocesamiento
+      href: concepts/threading-model.md
+    - name: Convenciones de la API de Win32
+      href: concepts/win32-api-conventions.md
 - name: Notas de la versión
   href: releasenotes.md
 - name: Guía básica
