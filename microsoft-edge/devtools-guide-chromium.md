@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0034e23885020aae5047c69219bd51235a5882b0
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+ms.openlocfilehash: b565f441ea6e6b3f2ae01ab251d7b9cae1aa815b
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684688"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898224"
 ---
 # Herramientas para desarrolladores de Microsoft Edge (cromo)  
 
@@ -54,12 +54,12 @@ Si deseas ver los registros desde el código de JavaScript de front-end o ejecut
 :::image-end:::
 
 La DevTools Microsoft Edge \ (cromo \) incluye los siguientes paneles.  
-*   Un panel **elementos** para editar HTML y CSS, inspeccionar propiedades de accesibilidad, ver detectores de eventos y establecer puntos de interrupción de mutación Dom  
-*   Una **consola** para ver y filtrar los mensajes de registro, inspeccionar objetos de JavaScript y nodos DOM y ejecutar JavaScript en el contexto de la ventana o el marco seleccionado  
+*   Un **panel de elementos** para editar HTML y CSS, inspeccionar propiedades de accesibilidad, visualizar escuchas de eventos y definir puntos de interrupción de mutación de DOM  
+*   Una **consola** para ver y filtrar los mensajes de registro, inspeccionar objetos de JavaScript y nodos de DOM y ejecutar JavaScript en el contexto de la ventana o marco seleccionados  
 *   Panel **orígenes** para abrir y editar en vivo el código, establecer puntos de interrupción, recorrer el código y ver el estado de su sitio web una línea de JavaScript a la vez  
-*   Panel de **red** para supervisar e inspeccionar solicitudes y respuestas desde la red y la caché del explorador   
-*   Un panel de **rendimiento** para perfilar el tiempo y los recursos del sistema que necesita su sitio  
-*   Panel **memoria** para medir el uso de los recursos de memoria y Comparar instantáneas de montones en diferentes Estados de tiempo de ejecución de código  
+*   Un panel de **red** para supervisar e inspeccionar las solicitudes y respuestas de la red y de la memoria caché del explorador   
+*   Un panel de **rendimiento** para generar perfiles de tiempo y de los recursos del sistema necesarios para su sitio  
+*   Un panel de **memoria** para medir su uso de los recursos de memoria y comparar instantáneas de pila en diferentes estados del tiempo de ejecución de código.  
 *   Un panel de **aplicación** para inspeccionar, modificar y depurar manifiestos de aplicaciones Web, trabajos de servicios y cachés de trabajos de servicios.  También puede inspeccionar y administrar almacenamiento, bases de datos y memorias caché desde el panel **aplicación** .  
 *   Un panel de **seguridad** para depurar problemas de seguridad y asegurarse de que ha implementado correctamente HTTPS en su sitio Web.  HTTPS proporciona seguridad crítica e integridad de datos tanto para el sitio como para los usuarios que proporcionen información personal en su sitio.  
 *   Un panel de **Auditoría** \ (ahora con el nombre **Lighthouse**\) para ejecutar una auditoría de tu sitio Web.  Los resultados de la auditoría le ayudan a mejorar la calidad de su sitio de la siguiente manera.  
@@ -98,7 +98,7 @@ Estos métodos abreviados controlan la ventana principal de DevTools, funcionan 
 
 | Acción | Windows | macOS |  
 |:--- |:--- | :--- |  
-| Mostrar u ocultar DevTools \ (se abre en el panel de última vista \) | `F12` ni`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Mostrar u ocultar DevTools \(se abre en el último panel visualizado\) | `F12` ni`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Mostrar el panel de consola | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
 | Mostrar la DevTools en el **modo de elemento de inspección** que le permite seleccionar un elemento del sitio y ver el código HTML y CSS en el panel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
 | Mostrar configuración | `?` ni`Fn`+`F1` | `?` ni`Fn`+`F1` |  
@@ -143,7 +143,7 @@ Si deseas obtener una vista previa de las [características más recientes que D
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para principiantes: Introducción a HTML y DOM | Microsoft docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools "Novedades de Microsoft Edge (cromo) DevTools | Microsoft docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools "Novedades de Microsoft Edge (cromo) DevTools | Microsoft docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo de DevTools Microsoft Edge (cromo) | Microsoft docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos de Microsoft Edge"  

@@ -1,17 +1,17 @@
 ---
-title: Servidores locales de Access
+title: Acceso a servidores locales
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c038e8b7f612f4c2185ae1c62a08d32b72f8aa0d
-ms.sourcegitcommit: 33663cd7838dddee86228dde469a5e9551bddb02
+ms.openlocfilehash: daa96b604d5ad48a9de49dd24dc38eab79de9c9b
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611829"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898217"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "10611829"
 
 
 
-# Servidores locales de Access   
+# Acceso a servidores locales   
 
 
 

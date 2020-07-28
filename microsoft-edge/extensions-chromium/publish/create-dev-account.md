@@ -1,76 +1,146 @@
 ---
-description: Los pasos para crear la cuenta de desarrollador de complementos de Microsoft Edge en el centro de socios.
-title: Abrir una nueva cuenta de desarrollador
+description: Obtenga información sobre cómo registrarse en una cuenta de desarrollador para publicar extensiones en el almacén de complementos de Microsoft Edge.
+title: Regístrate como programador de extensiones de Microsoft Edge para publicar extensiones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
-ms.topic: article
+ms.date: 07/15/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge-chromium
 keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: 2870e5e149630e9afa9824c927470a69b9c617ef
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: 55f3520526a97ebbd8eeacf1c46f801b94599694
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607394"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898210"
 ---
-# Abrir una nueva cuenta de desarrollador  
+# Regístrate como desarrollador de extensiones de Microsoft Edge  
 
-Abre una nueva cuenta de desarrollador de Microsoft Edge.  Antes de enviar la extensión, debe configurar una cuenta de desarrollador de Microsoft Edge en el [centro asociado][MicrosoftPartnerCenter]  
+Para enviar su extensión al sitio web de complementos de Microsoft Edge, debe estar registrado como desarrollador con el programa Microsoft Edge en el [centro del Partner][MicrosoftPartnerCenter].  No hay ningún cargo por inscripción en el envío de extensiones al programa Microsoft Edge.  
+
+## Antes de comenzar  
+
+Si no tiene una cuenta o si tiene una cuenta comercial existente con el centro de Partners, debe crear una nueva cuenta de [Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] para registrarse con el programa Microsoft Edge.  Para crear una cuenta de Microsoft \ (Outlook/Live/Hotmail \), visita [account.Microsoft.com][MicrosoftAccount] y selecciona **crear una cuenta de Microsoft**.  Si está registrado en el centro de socios con una cuenta de desarrollador, use la cuenta de Microsoft correspondiente \ (MSA \) para iniciar sesión y, a continuación, inscríbase en el programa Microsoft Edge.  
 
 > [!NOTE]
-> ¿Tienes una cuenta de Microsoft?  Para crear una cuenta de desarrollador de Microsoft Edge, debes tener una cuenta de Microsoft email \ (no puedes suscribirte a una dirección de correo electrónico del trabajo o de la escuela \).  Si no tiene una cuenta de Microsoft, vaya a [account.Microsoft.com][MicrosoftAccount], seleccione **iniciar sesión**y, a continuación, elija **crear una**.  
+> Hoy, el equipo de extensiones de Microsoft Edge no admite el registro con una cuenta profesional o educativa.  En el futuro, el equipo de extensiones de Microsoft Edge planea admitir la vinculación de inquilinos de AAD a cuentas de MSA para la administración de extensiones.  
+
+## Inscribirse en el programa Microsoft Edge en el centro del Partner  
 
 1.  Vaya a la [Página de desarrollador][MicrosoftPartnerCenter] y seleccione **ir al panel**.  
-1.  Si aún no ha iniciado sesión con una **cuenta de Microsoft**, inicie sesión ahora o cree una nueva cuenta de Microsoft.  Usa la misma cuenta de Microsoft que usas para iniciar sesión en tu cuenta de desarrollador.  Después de iniciar sesión, se muestra este formulario de registro:  
+1.  Si aún no ha iniciado sesión con una **cuenta de Microsoft**, inicie sesión ahora o cree una nueva cuenta de Microsoft.  Usa la misma cuenta de Microsoft que usas para iniciar sesión en tu cuenta de desarrollador.  Después de iniciar sesión, se muestra este formulario de registro.  
     
-1.  Rellene los siguientes campos.  
-    
-    | Campo | Descripción | Valores posibles |  
-    |:--- |:--- |:--- |  
-    | País o región | Dónde vives o dónde se encuentra tu empresa.  No podrás cambiar esto más adelante. |  |  
-    | Tipo de cuenta de desarrollador | El tipo de cuenta.  No podrás cambiar esto más adelante, así que asegúrate de elegir el tipo de cuenta adecuado.  Ver [tipos de cuenta](#account-types). | `Individual` o `Company` |  
-    | Nombre para mostrar del publicador | El nombre para usar \ (50 caracteres o menos \).  Seleccione esto con cuidado, los usuarios verán este nombre al examinar las extensiones.  Para las cuentas de empresa, asegúrese de usar el nombre de empresa registrado de su organización. |  |  
-    | Detalles de contacto | Para las cuentas de empresa, asegúrese de usar la dirección de correo electrónico registrada de su organización. |  |  
-    
-    > [!NOTE]
-    > Para **el nombre para mostrar del editor**, solo puede usar un nombre si está disponible y tiene los derechos de uso.  
-    
-    > [!NOTE]
-    > Para obtener **información de contacto**, Microsoft usa estos detalles para ponerse en contacto contigo acerca de los asuntos relacionados con la cuenta.  Por ejemplo, recibirás una confirmación por correo electrónico después de que completes tu registro.  Después de eso, le enviaremos mensajes si tiene problemas con su cuenta.  Si se está registrando como empresa, también debe especificar el **nombre**, la **dirección de correo electrónico**y el **número de teléfono** de la persona que aprueba la cuenta de la empresa.  
-    
-    Revisa los detalles de tu cuenta y verifica que todo sea correcto.  Después, lea y acepte las cláusulas y condiciones del [contrato de desarrollador de Microsoft Edge][MicrosoftAppDeveloperAgreement].  
-    
-1.  Haz clic en **Finalizar** para confirmar el registro.  
+    Para inscribirse en el programa Microsoft Edge, inicie sesión en su cuenta y complete el formulario.  
+    <!-- -->
+    :::row:::
+       :::column span="1":::
+          **País o región de la cuenta**  
+       :::column-end:::
+       :::column span="2":::
+          Este campo es el lugar donde vives o donde se encuentra tu empresa.  
+          
+          > [!IMPORTANT]
+          > Después de la inscripción, no podrá cambiar el valor de este campo.  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="1":::
+          **Tipo de cuenta**  
+       :::column-end:::
+       :::column span="2":::
+          El programa Microsoft Edge del [centro de Partners][MicrosoftPartnerCenter] ofrece cuentas individuales y de empresa, que se describen en detalle en la siguiente tabla.  Ambos tipos de cuenta le permiten publicar extensiones en el catálogo de complementos de Microsoft Edge.  
+          
+          > [!IMPORTANT]
+          > Después de la inscripción, no podrá cambiar el valor de este campo.  
+          
+          *   `Individual account`  
+              Una cuenta individual es adecuada para un desarrollador que no está asociado con una empresa.  El proceso de verificación de cuenta es más corto e implica comprobar que el nombre para mostrar del publicador está disponible.  
 
-## Tipos de cuentas  
+          *   `Company account`  
+              Una cuenta de empresa está asociada a una organización o empresa.  El proceso de verificación de cuenta es más largo e incluye una confirmación de que tienes autorización para crear la cuenta de tu empresa.  La duración del proceso puede variar de unos días a unas semanas.  Tu empresa puede recibir llamadas telefónicas de socios de verificación de Microsoft.  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="1":::
+          **Nombre para mostrar del publicador**  
+       :::column-end:::
+       :::column span="2":::
+          Este campo es el nombre que se muestra a los usuarios en el catálogo de complementos de Microsoft Edge.  Puede usar un nombre solo si está disponible y tiene los derechos para usarlo.  Las cuentas de la empresa deben usar el nombre comercial registrado de su organización.  
+          
+          > [!NOTE]
+          > La longitud máxima de este campo es de 50 caracteres.  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="1":::
+          **Detalles de contacto**  
+       :::column-end:::
+       :::column span="2":::
+          Este campo contiene cualquier información de contacto que Microsoft pueda usar para ponerse en contacto con usted en relación con cualquier problema con la cuenta.  Una vez completado el registro, se le enviará una confirmación por correo electrónico.  Para una cuenta de empresa, debe usar la dirección de correo electrónico registrada asociada a su organización.  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="1":::
+          **Aprobador de la compañía**  
+       :::column-end:::
+       :::column span="2":::
+          Para una cuenta de empresa, debe proporcionar la información de contacto del aprobador de la empresa \ (nombre, dirección de correo electrónico y número de teléfono \).  Microsoft se pone en contacto con el aprobador de la compañía especificado como parte del proceso de verificación para garantizar que la extensión pertenece a su organización.  
+       :::column-end:::
+    :::row-end:::  
+    <!-- -->
+    <!--
+    1.  The **Account country/region** field  
+        
+        This field is where you either live or your business is located.  
+        
+        > [!IMPORTANT]
+        > After enrollment, you are not able to change the value of this field.  
+        
+    1.  The **Account type** field  
+        
+        The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts, which are described in detail in the table that follows.  Both account types allow you to publish extensions to the Microsoft Edge add-ons catalog.  
+        
+        > [!IMPORTANT]
+        > After enrollment, you are not able to change the value of this field.  
+        
+        | Individual account | Company account |  
+        |:--- |:--- |  
+        | Individual accounts are appropriate for developers not associated with a company.  | Company accounts are associated with organizations and businesses.  |  
+        | The account verification process is shorter, and involves verifying that the publisher display name is available.  | The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process may range from a few days to a few weeks.  Your company may receive phone calls from Microsoft verification partners.  |  
+        
+    1.  The **Publisher display name** field  
+        
+        This field is the name shown to users in the Microsoft Edge add-ons catalog.  You may use a name only if it is available, and you have the rights to use it.  Company accounts must use the registered business name of your organization.  
+        
+        > [!NOTE]
+        > The maximum length for this field is 50 characters.  
+        
+    1.  The **Contact details** field  
+        
+        Any contact information that Microsoft may use to contact you regarding any account issues.  After registration is complete, an email confirmation is sent to you.  Company accounts must use the registered email address associated with your organization.  
+        
+    1.  The **Company approver** field  
+        
+        For company accounts, provide the contact information \(name, email address, and phone number\) of your company approver.  Microsoft contacts the company approver specified as a part of the verification process to ensure that the extensions belong to your organization.  
+        -->
+1. Antes de enviar su formulario de registro, lea y acepte las cláusulas y condiciones del [contrato para desarrolladores de Microsoft Edge][MicrosoftAppDeveloperAgreement].  
+1. Para completar la inscripción, seleccione **Finalizar**.  
 
-El programa Microsoft Edge del [centro asociado][MicrosoftPartnerCenter] ofrece cuentas individuales y de empresa.  Cada uno de los tipos de cuenta le proporciona acceso a las extensiones de publicación del catálogo \ (Microsoft Edge addons \) y para participar en cualquier programa de Microsoft.  
+## Pasos siguientes  
 
-Las cuentas de empresa están pensadas para empresas y organizaciones.  Para las cuentas de empresa, requerimos una mayor verificación para confirmar que tienes autorización para configurar la cuenta de tu empresa.  Por lo general, las cuentas individuales son adecuadas para un único programador que trabaja por sí solo.  
+Puede ver su estado de verificación en la página Configuración de la **cuenta** en el centro del partner.  Mientras espera a que se complete el proceso de verificación; puede continuar con la creación, prueba y preparación de los enviados.  
 
-> [!IMPORTANT]
-> No puede cambiar el tipo de cuenta después de realizar la selección, así que asegúrese de elegir el tipo correcto.  
-
-Estas son las diferencias fundamentales entre los dos tipos de cuentas.  
-
-| Cuenta individual | Cuenta de empresa |  
-|:--- |:--- |  
-| Por lo general, la cuenta individual es adecuada para el trabajo del desarrollador individual. | La cuenta de la empresa está pensada para organizaciones y empresas |  
-| Proceso de verificación de cuenta más corto | Comprobación de cuenta mayor para confirmar que tiene autorización para configurar la cuenta de su empresa |  
-
-## Verificación de cuenta  
-
-Después de completar el proceso de registro, se verifica tu cuenta.  Para cuentas individuales, verificamos la disponibilidad del nombre para mostrar del editor.  Para las cuentas de empresa, el proceso tarda un poco más, ya que también necesitamos confirmar que tienes autorización para configurar la cuenta de tu empresa.  La duración del proceso de verificación oscila entre unos días y un par de semanas, y tu empresa puede recibir una llamada telefónica de nuestro colaborador de verificación.  Debes verificar tu cuenta de empresa antes de enviar tu extensión.  Mientras espera la verificación; debe continuar con la compilación, probar y preparar los enviados.  
-
-Puede consultar el estado de verificación en la página Configuración de la **cuenta** .  
-
-<!-- image links -->  
+Para obtener más información, vea [publicar una extensión][ExtensionsChromiumPublishExtension].  Para obtener información sobre cómo comenzar a usar extensiones, consulte [Introducción a las extensiones de Microsoft Edge (cromo)][ExtensionsChromiumGettingStartedIndex].  
 
 <!-- links -->  
 
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "Acuerdo de desarrollador de aplicaciones | Microsoft docs"  
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Introducción a Microsoft Edge (cromo) | Microsoft docs"  
+[ExtensionsChromiumPublishExtension]:  ./publish-extension.md "Publicar una extensión | Microsoft docs"  
 
-[MicrosoftAccount]: https://account.microsoft.com/account/Account "Cuenta de Microsoft"  
+[MicrosoftAppDeveloperAgreement]:  /legal/windows/agreements/app-developer-agreement "Acuerdo de desarrollador de aplicaciones | Microsoft docs"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centro de socios"  
+[MicrosoftAccount]:  https://account.microsoft.com/account "Cuenta de Microsoft"  
+
+[MicrosoftPartnerCenter]:  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centro de socios"  
+
+[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Microsoft (o MSA)"  
