@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación Win32 con el control de We
 title: Introducción a WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2020
+ms.date: 07/30/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 7e35dc6ab84a32cfa7e020fa34ddfaa63818eda1
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 03c6f20b59dd6de2aa95e402f82ac3e2a3940839
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895521"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902846"
 ---
 # Introducción a WebView2 (vista previa para desarrolladores)  
 
@@ -299,7 +299,7 @@ Ayuda a crear una experiencia WebView2 más rica compartiendo tus comentarios.  
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentarios de WebView: MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample "Ejemplo de API de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "Ejemplo de API de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
 
 [GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Bibliotecas de implementación de Windows (superservicio)-Microsoft/| GitHub"  

@@ -3,19 +3,22 @@ description: Más información sobre cómo APIenables Microsoft Edge para actuar
 title: 'Guía de desarrollo: API de solicitud de pago'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador
-ms.openlocfilehash: 75c596570a222336a4ba0c371acb8770f97804ee
-ms.sourcegitcommit: e690bb4d1cb9e73c93b468c9f55d91ea6fb6c654
+ms.openlocfilehash: b082e311dcbe5cff3101f084e7ff2c145e6e83df
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "10574946"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902867"
 ---
-# API de solicitud de pago
+# API de solicitud de pago (EdgeHTML)
+
+> [!NOTE]
+> En este artículo se describe el flujo de trabajo admitido en la [versión heredada de Microsoft Edge][MicrosoftSupport44533505].  Microsoft Edge \ (cromo \) admite la API de solicitud de pago con una implementación diferente según el proyecto de cromo.  
 
 Las ventas de comercio electrónico continúan creciendo a un ritmo rápido. Según [eMarketer](https://www.emarketer.com/), las ventas digitales de 2018 se preparan para aumentar en un 23% a partir de los niveles medidos en 2013.  A pesar de que los consumidores y las empresas disfrutan de la comodidad de las ventas de comercio electrónico, los desafíos siguen.  Hoy, cada propietario de un sitio web de comercio electrónico debe invertir tiempo para desarrollar los flujos de pago y las reglas de validación de pago de alta calidad.  Los consumidores necesitan navegar por diferentes flujos de pago y volver a introducir la misma información de pago y envío en todos los sitios donde se tiendan.  Esto puede resultar lento y frustrante para los consumidores, lo que lleva a una alta tasa de abandono del carro de la compra y ha disminuido las ventas de comerciantes. Se abandona el [cálculo](http://baymard.com/lists/cart-abandonment-rate) de los comerciantes entre el 60% y el 70% de los carros de la compra.      
 
@@ -209,3 +212,9 @@ var options = {
 
 ## Estadístico
 [API de solicitud de pago](https://w3.org/TR/payment-request/)
+
+<!-- links -->  
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
+
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "¿Qué es Microsoft Edge heredado?"  

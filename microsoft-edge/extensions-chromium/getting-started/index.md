@@ -3,22 +3,22 @@ description: Aprenda qué es una extensión de cromo, así como crear una extens
 title: Introducción a Microsoft Edge (cromo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: Edge-cromo, desarrollo web, HTML, CSS, JavaScript, desarrollador, extensiones
-ms.openlocfilehash: a271514f39ed8bbe379116c33e23c973d3eb6adb
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: c2b24dc3d5535beeef6a4255b6fe2439fb67b77d
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573710"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902839"
 ---
 # Introducción a las extensiones de Microsoft Edge \ (cromo \)  
 
 Si desea ir directamente a la creación de la primera extensión, vaya a la parte 1 de la creación de una imagen de NASA de la extensión de día.  
 
-Si no está familiarizado con los conceptos y la arquitectura de extensión, continúe leyendo y obtenga información sobre qué son las extensiones.  Esta información te ayuda a crear extensiones mucho más fácilmente, ya que comprendes las motivaciones y la arquitectura que las sustentamos.  
+Si no está familiarizado con los conceptos y la arquitectura de extensión, continúe leyendo y obtenga información sobre qué son las extensiones.  Esta información te ayuda a compilar extensiones mucho más fácilmente porque comprendes las motivaciones y la arquitectura que las sustentamos.  
 
 ## Crear una imagen de NASA con la extensión de día  
 
@@ -51,7 +51,7 @@ Cada pestaña usa esencialmente la dirección URL \ (también conocida como loca
 
 ### Toda la comunicación de cada pestaña es a los servidores remotos  
 
-Comprender que cada pestaña se ejecuta en un entorno aislado significa que estas pestañas están aisladas entre sí, pero no la mayor Internet.  Normalmente, estas pestañas, que ejecutan JavaScript como un lenguaje de programación, se comunican con el servidor, que debe considerarse como el servidor de origen de la primera solicitud GET que se especificó en la barra de direcciones URL en la parte superior de la pestaña del explorador.  
+Comprender que cada pestaña se ejecuta en un entorno aislado significa que estas pestañas están aisladas entre sí, pero no la mayor Internet.  Normalmente, estas pestañas, que ejecutan JavaScript como el lenguaje de programación definido, se comunican con el servidor, que debe considerarse como el servidor de origen de la primera solicitud GET que se especificó en la barra de direcciones URL en la parte superior de la pestaña del explorador.  
 
 ## El modelo de extensión desactiva todo hacia arriba  
 
@@ -71,7 +71,7 @@ Ese archivo zip incluye HTML, CSS, JavaScript, imágenes y todos los activos nec
 
 ### Iniciar el servidor de extensiones  
 
-Al implementar en un servidor Web, ese servidor Web, ya sea Apache, IIS, NGINX o cualquier otro, contiene su paquete Web.  Cuando un explorador navega a una dirección URL en un servidor, `index.html` se descarga el archivo en el servidor Web.  El explorador navegó con certificados, archivos de configuración, etc.  El `index.html` archivo almacenado en una ubicación especial en el servidor Web.   ¿Cómo hace la extensión la misma cosa?  En concreto, ¿cuál es la ficha de la pestaña de su explorador para acceder a este archivo zip \ (extensión \)?  Eso es lo que hace el tiempo de ejecución de la extensión.  
+Al implementar en un servidor Web, ese servidor Web, ya sea Apache, IIS, NGINX o cualquier otro, contiene su paquete Web.  Cuando un explorador navega a una dirección URL en un servidor, `index.html` se descarga el archivo en el servidor Web.  El explorador navegó con certificados, archivos de configuración, etc.  El `index.html` archivo se almacena en una ubicación especial en el servidor Web.   ¿Cómo hace la extensión la misma cosa?  En concreto, ¿cuál es la página de ficha de su explorador capaz de acceder a este archivo zip \ (extensión \)?  Eso es lo que hace el tiempo de ejecución de la extensión.  
 
 La extensión da servicio a los archivos de la dirección URL \ (localizador de recursos uniforme \) en el nombre `extension://{some-long-unique-identifier}/index.html` .  El nombre que pongo entre corchetes `{some-long-unique-identifier}` es un identificador único que se asigna a la extensión que ha instalado.  Esto significa que si tiene 10 extensiones únicas instaladas en su explorador, cada extensión tiene un identificador único que señala al archivo zip \ (o paquete de extensión \) instalado en el explorador.  
 
@@ -81,7 +81,7 @@ La extensión da servicio a los archivos de la dirección URL \ (localizador de 
 
 ### Las extensiones se administran y se comunican con fichas y la barra de herramientas del explorador  
 
-Las extensiones interactúan con la barra de herramientas exploradores y cada una de ellas puede administrar todas las demás páginas de pestañas en ejecución de forma segura, así como manipular el DOM de todas esas páginas de pestañas.  Incorporado en el explorador de cromo es una API de mensaje que permite que las comunicaciones entre las extensiones y las páginas de fichas permitan que esto suceda correctamente.  Esta API, también conocida como API de extensiones, ofrece una gran cantidad de funciones, como la administración de notificaciones, la administración del almacenamiento y mucho más.  
+Las extensiones interactúan con la barra de herramientas del explorador, por lo que cada una puede administrar todas las demás páginas de pestañas en ejecución de forma segura, así como manipular el DOM de todas esas páginas de pestaña.  Incorporado en el explorador de cromo es una API de mensaje que permite que las comunicaciones entre las extensiones y las páginas de fichas permitan que esto suceda correctamente.  Esta API, también conocida como API de extensiones, ofrece una gran cantidad de funciones, como la administración de notificaciones, la administración del almacenamiento y mucho más.  
 
 Al igual que los servidores Web, las extensiones pueden ejecutar continuamente \ (o suspender la espera de notificaciones \) todo el tiempo que se ejecuta el explorador.  Puede pensar en una extensión como un Orchestrator para el explorador.  Una vez más, la extensión se ejecuta completamente aislada de las páginas de pestaña, pero a través de la API de extensiones y permisos de participación otorgados a la extensión, cada extensión puede controlar prácticamente todas las páginas de pestaña que se ejecutan en el explorador.  
 
