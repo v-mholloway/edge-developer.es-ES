@@ -3,16 +3,16 @@ description: Mejorar progresivamente su PWA para Windows con características de
 title: Personalizar su PWA (EdgeHTML) para Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
-ms.openlocfilehash: 296ae0a65481edd312e06b83c1554813ec2bffae
-ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
+ms.openlocfilehash: 70a675b1a4057326463fb63c6a93abf8f428c677
+ms.sourcegitcommit: 8510fdaa72c8940440133e4c5b36349997d94127
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894720"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905576"
 ---
 # Personalizar su PWA (EdgeHTML) para Windows  
 
@@ -44,9 +44,9 @@ Un PWA \ (EdgeHTML \) instalado como una aplicación de Windows 10 se ejecuta in
 Configure el entorno de desarrollo de aplicaciones de Windows en Visual Studio.  
 
 1.  En la configuración de Windows, activa el [modo de desarrollador][WindowsUWPGetStartedEnable].  \ (Escriba `developer mode` el SEARCHBAR de Windows para encontrarlo. \)  
-1.  Inicia Visual Studio y **crea un nuevo proyecto...**  
-1.  Seleccione la plantilla de **proyecto de empaquetado de aplicaciones** de C# para Windows.  Si está usando una versión anterior de Visual Studio, busque la plantilla equivalente en **aplicación web hospedada (universal Windows)** o **aplicación web progresiva (Windows universal)**.  
-1.  Seleccione la opción predeterminada Windows 10 `Target version` \ (versión más reciente \) y `Minimum version` \ (compilación 10586 o superior \) y haga clic en **Aceptar**.  
+1.  Inicie Visual Studio y seleccione **crear un nuevo proyecto...**.  
+1.  Elija **JavaScript**  >  **Windows universal** y seleccione **aplicación web progresiva (universal Windows)** en la lista de tipos de proyecto de Visual Studio 2017.  
+1.  Seleccione la opción predeterminada Windows 10 `Target version` \ (versión más reciente \) y `Minimum version` \ (compilación 10586 o superior \) y elija **Aceptar**.  
 
     ![Cuadro de diálogo de selección de Visual Studio para compilaciones de destino de proyecto para UWP](media/vs-target-min-version.png)  
 
@@ -99,7 +99,7 @@ Aquí se describe cómo configurar la depuración de su PWA \ \ (EdgeHTML \).
     
     De esta forma, se devuelve el `Windows Runtime` objeto global que contiene todos los [espacios de nombres WinRT de nivel superior](#find-windows-runtime-winrt-apis).  Este es tu punto de vista de PWA \ \ (EdgeHTML \) a la [plataforma universal de Windows][WindowsUWPIndex]y solo está expuesto a las aplicaciones web que se ejecutan como aplicaciones de Windows 10 (que se ejecutan fuera del explorador, en un `WWAHost.exe` proceso).  
     
-## Buscar API de Windows Runtime \ (WinRT \)  
+## Buscar API de Windows Runtime (WinRT)  
 
 Como una aplicación de Windows instalada, tu [PWA \ (EdgeHTML \) tiene acceso completo a las API nativas de Windows Runtime][WindowsRuntime]; Identifique lo que necesita usar, obtenga los permisos necesarios y use la detección de características para enviar esa solicitud de API en entornos admitidos.  Recorra este proceso para agregar una mejora progresiva para los usuarios de escritorio de Windows de su PWA.  
 
