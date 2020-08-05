@@ -97,7 +97,7 @@ La herramienta **problemas** del alimentador de DevTools presenta advertencias e
     
 1.  Seleccione los elementos de **recursos afectados** para ver los detalles.  En el siguiente ejemplo, la **marca de las cookies entre sitios como** un problema seguro afecta a una cookie y a dos solicitudes.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Recursos afectados abiertos en la pestaña "problemas"" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Recursos afectados abiertos en la pestaña problemas" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Figura 6.  Recursos afectados abiertos en la herramienta **problemas** del cajón de DevTools  
     :::image-end:::  
     
