@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilidad, plataforma web
-ms.openlocfilehash: 0785544d0245827f58f3f7c71edd5a18a3d12404
-ms.sourcegitcommit: d982699ee25e8704fcaad7a15b4d8d015aef2f12
+ms.openlocfilehash: 32b8d7ef4c34365a005fbcceec0097adbf08ea37
+ms.sourcegitcommit: aba52b35b832ba7a7dd6eb042807cd7c8e56e79f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "10868768"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10920245"
 ---
 # Cambios que afectan a la compatibilidad del sitio que llegan a Microsoft Edge  
 
@@ -20,8 +20,8 @@ La web está evolucionando constantemente para mejorar la experiencia, la seguri
 
 | Cambio | Canal estable | Experimentación | Información adicional |  
 |:--- |:--- |:--- |:--- |
-| Las cookies tienen como predeterminada `SameSite=Lax` | [Cromo o cromo + 1](#release-comments)  | Canarias V82, dev V82 | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, revise la entrada de estado de la [plataforma de cromo][ChromePlatformStatus5088147346030592].  |  
-| Directiva de referencia de sitios: predeterminada para `strict-origin-when-cross-origin` | [Cromo o cromo + 1](#release-comments)  | Canarias V79, dev V79 | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, revise la entrada de estado de la [plataforma de cromo][ChromePlatformStatus6251880185331712].  |  
+| Cookies de forma predeterminada `SameSite=Lax` y `SameSite=None-requires-Secure` | [Chrome + 1](#release-comments) \ (Edge V86 \)  | Canarias V82, dev V82 | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, revise la entrada de estado de la [plataforma de cromo][ChromePlatformStatus5088147346030592].  |  
+| Directiva de referencia de sitios: predeterminada para `strict-origin-when-cross-origin` | [Chrome + 1](#release-comments) \ (Edge V86 \)  | Canarias V79, dev V79 | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, revise la entrada de estado de la [plataforma de cromo][ChromePlatformStatus6251880185331712].  |  
 | No permitir XmlHttpRequest sincrónico en el descarte de página | [Chrome + 1](#release-comments) \ (Edge V83 \) |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  El cromo coincidente, Microsoft Edge ofrece una directiva de grupo para deshabilitar este cambio hasta que Edge V88.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, revise la entrada de estado de la [plataforma de cromo][ChromePlatformStatus4664843055398912].  |  
 | Mostrar sutil aviso de solicitudes de permisos de notificación | Edge v84 |  | Las solicitudes de notificación silenciosas muestran un icono de solicitud sutil en la barra de direcciones para permisos de notificación de sitio solicitados mediante la `Notifications` `Push` API o, reemplazando la interfaz de usuario del mensaje flotante de permiso completo o estándar.  Esta característica está actualmente habilitada para todos los usuarios.  Para no molestar las solicitudes de notificación, ve a `edge://settings/content/notifications` .  En el futuro, el equipo de Microsoft Edge puede explorar la reactivación del aviso de notificación de control flotante en algunos escenarios.  |  
 | Deshabilitar TLS/1.0 y TLS/1.1 de forma predeterminada | Edge v84 |  | Para ayudar a descubrir los sitios afectados, puedes establecer la `edge://flags/#display-legacy-tls-warnings` marca para hacer que Microsoft Edge muestre un aviso "no seguro" de no bloqueo al cargar páginas que requieran protocolos TLS heredados.  La Directiva de grupo [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] permite volver a habilitar TLS/1.0 y TLS/1.1; la política estará disponible hasta el borde 88.  |  
