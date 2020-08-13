@@ -3,17 +3,17 @@ description: Automatizar y probar el control WebView2 con el controlador Microso
 title: Automatizar y probar WebView2 con el controlador Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Edge, ICoreWebView2, ICoreWebView2Controller, Selenium, controlador Microsoft Edge
-ms.openlocfilehash: 15e9a0957047569a0832fbb6ea6e8bf280905b8d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: a91c01d1ad765dae45061e382daedc2295d70bb8
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697262"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926452"
 ---
 # Automatizar y probar WebView2 con el controlador Microsoft Edge
 
@@ -139,6 +139,6 @@ Para obtener más información:
 - Más información sobre el control de [WebView2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) y cómo usarlo al incrustar contenido web en la aplicación nativa
 - Consulta la [documentación del controlador de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/webdriver-chromium) para obtener más información sobre cómo automatizar Microsoft Edge (cromo)
 
-## Ponerse en contacto con el equipo de WebView2  
+## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  
 
-Ayúdanos a crear una experiencia WebView2 más rica compartiendo tus comentarios. Visita nuestro [repositorio de comentarios](https://github.com/MicrosoftEdge/WebViewFeedback) para enviar solicitudes de características o informes de errores, o para buscar problemas conocidos.
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

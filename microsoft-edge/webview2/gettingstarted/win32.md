@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación Win32 con el control de We
 title: Introducción a WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 03c6f20b59dd6de2aa95e402f82ac3e2a3940839
-ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
+ms.openlocfilehash: ec5144f911d5bf00f141d1e8e53718154f1cbb24
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902846"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926487"
 ---
 # Introducción a WebView2 (vista previa para desarrolladores)  
 
@@ -282,9 +282,9 @@ Muchas de las funcionalidades de WebView2 que no se cubren en esta página, la s
 *   Para obtener una aplicación de muestra creada con WebView2, consulte [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Para obtener información detallada sobre la API de WebView2, consulta referencia de la [API][Webview2ReferenceWin3209538].  
 
-## Ponerse en contacto con el equipo de WebView2  
+## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  
 
-Ayuda a crear una experiencia WebView2 más rica compartiendo tus comentarios.  Visite el [repositorio de comentarios][GithubMicrosoftedgeWebviewfeedback] de github para enviar solicitudes de características o informes de errores o buscar problemas conocidos.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 

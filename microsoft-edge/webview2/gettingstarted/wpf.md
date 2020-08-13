@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación WPF con el control de WebV
 title: Vista previa de Microsoft Edge 2 para aplicaciones de WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones WPF, WPF, Edge, CoreWebView2, control de explorador, código HTML de Edge, introducción, .NET
-ms.openlocfilehash: 304d79640bdf789eb0b822dc7ab8f260df637624
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: bfddfff03363b5149db3f7e9741730c8e8de2de0
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895493"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926585"
 ---
 # Introducción a WebView2 en WPF (vista previa)
 
@@ -338,4 +338,4 @@ En el proyecto, cuando el control WebView2 navega a una dirección URL, muestra 
 
 ## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  
 
-Ayuda a crear una experiencia WebView2 más rica compartiendo tus comentarios.  Visite el [repositorio de comentarios](https://github.com/MicrosoftEdge/WebViewFeedback) de WebView de Microsoft Edge para enviar solicitudes de características o informes de errores o buscar problemas conocidos.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

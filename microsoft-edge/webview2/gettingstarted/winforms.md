@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación de Windows Forms con el co
 title: Vista de WebView 2 de Microsoft Edge para aplicaciones de Windows Forms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones de WinForms, WinForms, Edge, CoreWebView2, control de explorador, ASP.net de Edge, introducción, introducción, .NET, Windows Forms
-ms.openlocfilehash: 634fbd74a94ea990bc3eb9c150760522a5c13ce1
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 7d7ddf445adee7b3d20d268ab1d53c0999fd54ce
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895528"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926459"
 ---
 # Introducción a WebView2 en las aplicaciones de Windows Forms (versión preliminar)  
 
@@ -302,4 +302,4 @@ Seleccione `F5` para compilar y ejecutar la aplicación.  Confirme que la barra 
 
 ## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  
 
-Ayuda a crear una experiencia WebView2 más rica compartiendo tus comentarios.  Visite el [repositorio de comentarios](https://aka.ms/webviewfeedback) de WebView de Microsoft Edge para enviar solicitudes de características o informes de errores o buscar problemas conocidos.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

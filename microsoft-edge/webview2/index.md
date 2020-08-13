@@ -3,17 +3,17 @@ description: Hospedar contenido web en la aplicación Win32 con el control de We
 title: Control WebView2 de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, control del explorador, HTML Edge, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: ea3d25d16aa9e8c182d564c68615b9643c9993b4
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888601"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926473"
 ---
 # Introducción a Microsoft Edge WebView2 (versión preliminar)  
 
@@ -103,7 +103,7 @@ Una vista previa para desarrolladores está disponible en los siguientes entorno
 *   C/C++ Win32  
 *   .NET Framework 4.6.2 o posterior  
 *   .NET Core 3,0 o posterior  
-*   [WinUI 3,0][UwpToolkitsWinui3]  
+*   [WinUI 3.0][UwpToolkitsWinui3]  
 
 Puede ejecutar aplicaciones de WebView2 en las siguientes versiones de Windows.  
 
@@ -132,12 +132,12 @@ Para obtener más información sobre cómo crear e implementar aplicaciones de W
 *   [Cómo depurar con WebView2][Webview2HowtoDebug]  
 *   [Automatizar y probar WebView2 con el controlador Microsoft Edge][Webview2HowtoWebdriver]  
 
-## Ponerse en contacto con el equipo de WebView2  
+## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  
 
-Ayuda a crear una experiencia WebView2 más rica compartiendo tus comentarios.  Para enviar solicitudes de características o informes de errores, vea [repositorio de comentarios de WebView][GithubMicrosoftedgeWebviewfeddback] .  También es un buen lugar para buscar problemas conocidos.  
+[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 > [!NOTE]
-> Durante la vista previa, recopilamos datos para ayudar a crear un producto mejor.  Para desactivar la recopilación de datos de WebView2, vaya a la `edge://settings/privacy` recopilación de datos del explorador y desactívela.  
+> Durante la vista previa, los datos recopilados ayudan a crear un producto mejor.  Para desactivar la recopilación de datos de WebView2, vaya a la `edge://settings/privacy` recopilación de datos del explorador y desactívela.  
 
 <!-- links -->  
 
