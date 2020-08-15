@@ -2,16 +2,16 @@
 title: Editar archivos con áreas de trabajo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/31/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7cafa2b186d151a478fa532cdac49ae46f2120c3
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926578"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931234"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,15 +32,16 @@ ms.locfileid: "10926578"
 > [!NOTE]
 > El objetivo de este tutorial es proporcionar práctica práctica para configurar y usar áreas de trabajo, de modo que pueda usar áreas de trabajo en sus propios proyectos.  Puede guardar los cambios en el código fuente, en el equipo local, que ha hecho dentro de DevTools después de habilitar las áreas de trabajo.  
 
-> [!CAUTION]
-> **Requisitos previos**: antes de comenzar con este tutorial, debe saber cómo:  
+> [!IMPORTANT]
+> **Requisitos previos**: antes de comenzar con este tutorial, debe saber cómo realizar las siguientes acciones.  
+> 
 > *   [Usar HTML, CSS y JavaScript para crear una página web][MDNWebGettingStarted]  
 > *   [Usar DevTools para realizar cambios básicos en CSS][DevToolsCssIndex]  
 > *   [Ejecutar un servidor Web HTTP local][MDNSimpleLocalHTTPServer]  
 
 ## Introducción  
 
-Las áreas de trabajo le permiten guardar un cambio que realiza en DevTools en una copia local del mismo archivo de su equipo.  Por ejemplo, supongamos que:  
+Las áreas de trabajo le permiten guardar un cambio que realiza en DevTools en una copia local del mismo archivo de su equipo.  Para este tutorial, debe tener la siguiente configuración en su equipo.  
 
 *   Tiene el código fuente de su sitio en el escritorio.  
 *   Está ejecutando un servidor Web local desde el directorio de código fuente, de modo que el sitio sea accesible en `localhost:8080` .  
@@ -51,9 +52,10 @@ Con las áreas de trabajo habilitadas, los cambios de CSS que realice dentro de 
 ## Limitaciones  
 
 Si está usando un marco moderno, probablemente transforme el código fuente desde un formato que sea fácil de mantener en un formato optimizado para ejecutarse lo antes posible.  
-Las áreas de trabajo suelen poder asignar el código optimizado de nuevo al código fuente original con la ayuda de [mapas de origen][TreehouseBlogSourceMaps].  Sin embargo, hay una gran variación entre los marcos sobre cómo usan mapas de origen.  DevTools simplemente no admite todas las variantes.  
 
-Las áreas de trabajo no funcionan con estos marcos:  
+Las áreas de trabajo suelen poder asignar el código optimizado de nuevo al código fuente original con la ayuda de [mapas de origen][TreehouseBlogSourceMaps].  Sin embargo, hay una gran variedad de variaciones entre marcos que usan mapas de origen.  DevTools simplemente admite todas las variantes.  
+
+Las áreas de trabajo no funcionan con el siguiente marco.  
 
 *   Crear una aplicación de reAct  
     
@@ -67,7 +69,7 @@ Los **reemplazos locales** son otra característica de DevTools similar a las á
 
 ## Paso 1: configurar  
 
-Complete este tutorial para obtener experiencia práctica con áreas de trabajo.  
+Complete las acciones siguientes para obtener experiencia práctica con áreas de trabajo.  
 
 ### Configurar la demostración  
 
@@ -77,17 +79,18 @@ Complete este tutorial para obtener experiencia práctica con áreas de trabajo.
        Un proyecto de problema  
     :::image-end:::  
     
-    <!--1.  Choose the project name.  -->
+    <!--1.  Choose the project name.  -->  
     <!--1.  Select **Advanced Options** > **Download Project**.  
     
     :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
     :::image-end:::  
-    -->
-    <!--1.  Close the tab.  -->
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
+
+    -->  
+    <!--1.  Close the tab.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
     
-1.  Cree un `app` directorio en el escritorio.  Guarde copias de los archivos en el `workspaces-demo` directorio.  Para el resto de este tutorial, este directorio se conoce como `~/Desktop/app` .  
+1.  Cree un `app` directorio en el escritorio.  Guarde copias de los archivos desde el `workspaces-demo` directorio en el `app` directorio.  En el resto del tutorial, se hace referencia al directorio como `~/Desktop/app` .  
 1.  Inicie un servidor Web local en `~/Desktop/app` .  A continuación encontrará código de ejemplo para el inicio `SimpleHTTPServer` , pero puede usar cualquier servidor que prefiera.  
     
     :::row:::
@@ -155,13 +158,14 @@ Complete este tutorial para obtener experiencia práctica con áreas de trabajo.
     :::image-end:::  
     
 1.  `styles.css`Vuelva a abrir en un editor de texto.  La `color` propiedad ya está configurada con su color favorito.  
-1.  Vuelva a cargar la página.  El color del `<h1>` elemento se mantiene establecido en el color que prefiera.  Esto funciona porque, al realizar el cambio, DevTools guardado el cambio en el disco.  Y después, cuando vuelva a cargar la página, el servidor local sirvió la copia modificada del archivo desde el disco.  
+1.  Actualiza la página.  El color del `<h1>` elemento se mantiene establecido en el color que prefiera.  El cambio en una actualización, porque cuando realizó el cambio DevTools guardó el cambio en el disco.  Y, después, cuando haya actualizado la página, el servidor local ha servido la copia modificada del archivo desde el disco.  
     
 ## Paso 3: guardar un cambio HTML en el disco  
 
 ### Cambiar HTML desde el panel elementos  
 
 Puede realizar cambios en el HTML desde el panel elemento, pero sus cambios en el árbol DOM no se guardan en el disco y solo afectan a la sesión actual del explorador.  
+
 El árbol DOM no es HTML.  
 
 <!--### Try changing HTML from the Elements panel  
@@ -170,25 +174,25 @@ El árbol DOM no es HTML.
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
 1.  Choose the **Elements** tab.  
-1.  Double-click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
+1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempting to change HTML from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
-       Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempt to change html from the DOM Tree of the **Elements** panel  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
-1.  Reload the page.  The page reverts to its original title.  
+1.  Refresh the page.  The page reverts to the original title.  
     
 #### Optional: Why it is not working  
 
 > [!NOTE]
-> This section describes why the workflow from [Try changing HTML from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
+> This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
 
 *   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
-*   To display a page, a browser fetches HTML over the network, parses the HTML, and then converts it into a tree of DOM nodes.  
+*   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.  
 *   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
-*   Therefore, the final state of the page that users see may be very different from the HTML that the browser fetched.  
+*   Therefore, the final state of the page that users see may be very different from the html that the browser fetched.  
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
@@ -203,10 +207,10 @@ Si desea guardar un cambio en el código HTML de la página, hágalo usando el p
 1.  Elija **(índice)**.  Se abrirá el código HTML de la página.  
 1.  Reemplazar `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Consulte la siguiente ilustración.  
 1.  Seleccione `Control` + `S` \ (Windows \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
-1.  Vuelva a cargar la página.  El `<h1>` elemento aún muestra el nuevo texto.  
+1.  Actualiza la página.  El `<h1>` elemento aún muestra el nuevo texto.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Cambiar HTML desde el panel orígenes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       La línea 12 se ha configurado en `I ❤️  Cake`  
+       La línea 12 está configurada como `I ❤️  Cake`  
     :::image-end:::  
     
 1.  Abra `~/Desktop/app/index.html` .  El `<h1>` elemento contiene el nuevo texto.  
@@ -219,8 +223,8 @@ El panel **orígenes** también es el lugar donde se pueden realizar cambios en 
 1.  Seleccione `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \).  Se abrirá el **menú de comandos** .  
 1.  Escriba `QS` y, a continuación, seleccione **Mostrar fuente rápida**.  En la parte inferior de la ventana de DevTools ahora hay una ficha de **fuente rápida** .  La pestaña muestra el contenido de `index.html` , que es el último archivo editado en el panel **fuentes** .  La pestaña **origen rápido** le ofrece el editor del panel **fuentes** , de modo que pueda editar archivos mientras tiene otros paneles abiertos.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abrir la pestaña de origen rápido mediante el menú de comandos" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Abrir la pestaña de **origen rápido** con el **menú de comandos**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abrir la pestaña origen rápido mediante el menú de comandos" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Abrir la pestaña **origen rápido** mediante el **menú de comandos**  
     :::image-end:::  
     
 1.  Seleccione `Control` + `P` \ (Windows \) o `Command` + `P` \ (MacOS \) para abrir el cuadro de diálogo **Abrir archivo** .  Consulte la siguiente ilustración.  
@@ -241,7 +245,7 @@ El panel **orígenes** también es el lugar donde se pueden realizar cambios en 
     ```  
     
 1.  Seleccione `Control` + `S` \ (Windows \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
-1.  Vuelva a cargar la página.  
+1.  Actualiza la página.  
     
     > [!NOTE]
     > El vínculo de la página está en cursiva.  
@@ -255,15 +259,15 @@ El panel **orígenes** también es el lugar donde se pueden realizar cambios en 
 Use lo que ha aprendido en este tutorial para configurar áreas de trabajo en su propio proyecto.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
-If you have more feedback on these topics or anything else, please use any of the channels below:  
+If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  
--->  
+    -->  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md# "Introducción a la visualización y el cambio de CSS | Microsoft docs"  
+[DevToolsCssIndex]: ../css/index.md "Introducción a la visualización y el cambio de CSS | Microsoft docs"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 

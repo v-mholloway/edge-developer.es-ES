@@ -3,17 +3,17 @@ description: Familiarizarse con las herramientas para desarrolladores de Microso
 title: Herramientas para desarrolladores de Microsoft Edge (cromo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: b565f441ea6e6b3f2ae01ab251d7b9cae1aa815b
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: cb51e16083e4798478817910e54c571721d094f8
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898224"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931227"
 ---
 # Herramientas para desarrolladores de Microsoft Edge (cromo)  
 
@@ -24,14 +24,15 @@ A medida que la web ha crecido de uso en una amplia variedad de tipos de disposi
 Si va a retirar Microsoft Edge y principalmente desarrolla en un explorador basado en cromo, debe sentirse bien en casa.  Las herramientas para desarrolladores de Microsoft Edge \ (cromo \) funcionan de la misma manera que las herramientas para desarrolladores que ya conoces y usas.  Para obtener más información, vea [novedades de la DevTools de Microsoft Edge (cromo)][DevtoolsGuideChromiumWhatsNewIndex].  
 
 :::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (cromo) DevTools":::
-   Microsoft Edge (cromo) DevTools
-:::image-end:::
+   Microsoft Edge (cromo) DevTools  
+:::image-end:::  
 
 Si estás desprotegiendo la siguiente versión de Microsoft Edge y ya desarrollaste en Microsoft Edge \ (EdgeHTML \), ahora tienes algunas fantásticas herramientas nuevas que hacen que sea más fácil y más rápido crear y probar tus sitios web en Microsoft Edge.  
 
 ## Abrir la DevTools  
 
 Si nunca antes usaste el DevTools, las herramientas para desarrolladores de Microsoft Edge son un conjunto de herramientas creadas directamente en el explorador Microsoft Edge.  Con estas DevTools, podrás hacer lo siguiente.  
+
 *   Inspeccionar y realizar cambios en el sitio web HTML  
 *   Editar CSS y ver al instante cómo se representa el sitio web  
 *   Consulta todas las `console.log()` instrucciones de tu código de JavaScript front-end  
@@ -40,20 +41,22 @@ Si nunca antes usaste el DevTools, las herramientas para desarrolladores de Micr
 todo directamente en el explorador.  Estos son solo ejemplos de algunas de las características que DevTools proporcionar para que sea más fácil y rápida crear y probar sus sitios web en Microsoft Edge.  
 
 Para abrir la DevTools  
+
 *   Mantenga `F12` 
 *   Pulse `Ctrl` + `Shift` + `I` Windows \ ( `Command` + `Option` + `I` en MacOS \)  
 
 Si desea ver el código HTML o CSS de un elemento de su sitio, haga clic con el botón derecho en el elemento y seleccione **inspeccionar** para ir al panel elementos.  También puede pulsar `Ctrl` + `Shift` + `C` en Windows \ ( `Command` + `Option` + `C` en MacOS \) para abrir la DevTools en el **modo de elemento de inspección** , que le permite seleccionar un elemento del sitio y ver el código HTML y CSS en el panel **elementos** .  
 
-Si deseas ver los registros desde el código de JavaScript de front-end o ejecutar rápidamente algún script, pulsa `Ctrl` + `Shift` + `J` en Windows \ ( `Command` + `Option` + `J` en MacOS \) para iniciar el panel de consola en el DevTools.  
+Si desea ver los registros del código de JavaScript de front-end o ejecutar rápidamente algún script, pulse `Ctrl` + `Shift` + `J` Windows o `Command` + `Option` + `J` en MacOS para iniciar el panel de consola en el DevTools.  
 
 ## Herramientas básicas  
 
 :::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Herramientas de Microsoft Edge (cromo) DevTools Core":::
-   Herramientas de Microsoft Edge (cromo) DevTools Core
-:::image-end:::
+   Herramientas de Microsoft Edge (cromo) DevTools Core  
+:::image-end::: 
 
 La DevTools Microsoft Edge \ (cromo \) incluye los siguientes paneles.  
+
 *   Un **panel de elementos** para editar HTML y CSS, inspeccionar propiedades de accesibilidad, visualizar escuchas de eventos y definir puntos de interrupción de mutación de DOM  
 *   Una **consola** para ver y filtrar los mensajes de registro, inspeccionar objetos de JavaScript y nodos de DOM y ejecutar JavaScript en el contexto de la ventana o marco seleccionados  
 *   Panel **orígenes** para abrir y editar en vivo el código, establecer puntos de interrupción, recorrer el código y ver el estado de su sitio web una línea de JavaScript a la vez  
@@ -69,7 +72,7 @@ La DevTools Microsoft Edge \ (cromo \) incluye los siguientes paneles.
 
 [!INCLUDE [audits-panel-note](./devtools-guide-chromium/includes/audits-panel-note.md)]  
 
-Envía tus [comentarios y tus solicitudes de características](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+Envía tus [comentarios y solicitudes de características](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
 ## Extensions  
 
@@ -78,8 +81,8 @@ Es posible que hayas usado las extensiones de la DevTools para ayudarte a diagno
 También puede Agregar extensiones desde la [tienda web de Chrome][GoogleChromeWebstoreExtensions].  
 
 :::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Tienda web de Chrome en Microsoft Edge":::
-   Tienda web de Chrome en Microsoft Edge
-:::image-end:::
+   Tienda web de Chrome en Microsoft Edge  
+:::image-end:::  
 
 En la parte superior, seleccione **permitir extensiones de otras tiendas** y, a continuación, seleccione **permitir** en el cuadro de diálogo que aparece.  
 
@@ -89,8 +92,8 @@ En la parte superior, seleccione **permitir extensiones de otras tiendas** y, a 
 Seleccione **Agregar a Chrome** para agregar la extensión de DevTools a Microsoft Edge.  
 
 :::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Agregar extensión de la tienda web de Chrome a Microsoft Edge":::
-   Agregar extensión de la tienda web de Chrome a Microsoft Edge
-:::image-end:::
+   Agregar extensión de la tienda web de Chrome a Microsoft Edge  
+:::image-end:::  
 
 ## Abreviados  
 
@@ -98,10 +101,10 @@ Estos métodos abreviados controlan la ventana principal de DevTools, funcionan 
 
 | Acción | Windows | macOS |  
 |:--- |:--- | :--- |  
-| Mostrar u ocultar DevTools \(se abre en el último panel visualizado\) | `F12` ni`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Mostrar u ocultar DevTools \(se abre en el último panel visualizado\) | `F12` ni `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Mostrar el panel de consola | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
 | Mostrar la DevTools en el **modo de elemento de inspección** que le permite seleccionar un elemento del sitio y ver el código HTML y CSS en el panel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
-| Mostrar configuración | `?` ni`Fn`+`F1` | `?` ni`Fn`+`F1` |  
+| Mostrar configuración | `?` ni `Fn`+`F1` | `?` ni `Fn`+`F1` |  
 | Mostrar el panel siguiente | `Ctrl`+`]` | `Command`+`]` |  
 | Mostrar el panel anterior | `Ctrl`+`[` | `Command`+`[` |  
 | Acople el DevTools en la última posición utilizada.  Si el DevTools permanece en la posición predeterminada para toda la sesión, este método abreviado desacopla el DevTools en una ventana independiente. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
@@ -109,11 +112,11 @@ Estos métodos abreviados controlan la ventana principal de DevTools, funcionan 
 | Activar o desactivar **inspeccionar el modo de elemento** que le permite seleccionar un elemento del sitio y ver el código HTML y CSS en el panel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Mostrar el menú de comandos | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Mostrar u ocultar el cajón | `Esc` | `Esc` |  
-| Fresca.  Esto actualiza la página con la memoria caché.  | `F5` ni`Ctrl`+`R` | `Command`+`R` |  
-| Actualización de hardware.  Esto obliga a Microsoft Edge a descargar los recursos de nuevo y a cargarse.  Es posible que los recursos usados puedan proceder de una versión almacenada en caché | `Ctrl`+`F5`ni`Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Fresca.  Esto actualiza la página con la memoria caché.  | `F5` ni `Ctrl`+`R` | `Command`+`R` |  
+| Actualización de hardware.  Esto obliga a Microsoft Edge a descargar los recursos de nuevo y a cargarse.  Es posible que los recursos usados puedan proceder de una versión almacenada en caché | `Ctrl`+`F5` ni `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Buscar texto en el panel actual.  No es compatible con los paneles auditoría, aplicación y seguridad | `Ctrl`+`F` | `Command`+`F` |  
 | Mostrar el panel de búsqueda en el cajón, que le permite buscar texto en todos los recursos cargados | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Abrir un archivo en el panel orígenes | `Ctrl`+`O`ni`Ctrl`+`P` | `Command`+`O`ni`Command`+`P` |  
+| Abrir un archivo en el panel orígenes | `Ctrl`+`O` ni `Ctrl`+`P` | `Command`+`O` ni `Command`+`P` |  
 | Acercar | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Alejar | `Ctrl`+`-` | `Command`+`-` |  
 | Restaurar el nivel de zoom predeterminado | `Ctrl`+`0` | `Command`+`0` |  
@@ -121,7 +124,7 @@ Estos métodos abreviados controlan la ventana principal de DevTools, funcionan 
 | Mostrar código fuente HTML no editable en una pestaña nueva | `Ctrl`+`U` | N/D |  
 
 > [!NOTE]
-> Si está depurando un punto de interrupción o pausado, el método abreviado de **actualización**reanuda primero el tiempo de ejecución.  
+> Si está depurando un punto de interrupción o pausado, el método abreviado de **actualización** reanuda primero el tiempo de ejecución.  
 
 ## Consulte también  
 
@@ -133,8 +136,8 @@ Estos métodos abreviados controlan la ventana principal de DevTools, funcionan 
 Envíenos sus comentarios para que el equipo de Microsoft Edge siga mejorando el DevTools de Microsoft Edge para usted.  Simplemente selecciona el icono de **comentarios** en el DevTools o pulsa `Alt` + `Shift` + `I` en Windows \ ( `Option` + `Shift` + `I` en MacOS \) y escribe las solicitudes de comentarios o características de la DevTools.  
 
 :::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Enviar comentarios sobre Microsoft Edge":::
-   Enviar comentarios sobre Microsoft Edge
-:::image-end:::
+   Enviar comentarios sobre Microsoft Edge  
+:::image-end:::  
 
 Si deseas obtener una vista previa de las [características más recientes que DevTools][DevtoolsGuideChromiumWhatsNewIndex], descarga [Microsoft Edge Canarias][MicrosoftedgeinsiderDownload], que se construye por la noche.  
 
