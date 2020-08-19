@@ -3,16 +3,16 @@ description: Encuentre información sobre las API actuales y futuras, así como 
 title: 'Extensiones: API compatibles'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador
-ms.openlocfilehash: b9f3764a65f2b27dc61e4e5ae8734820efb7fbd0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: fceba67f5fab1a223cfc94abf7f19a0a9d1bcdf0
+ms.sourcegitcommit: 0879b205aa88c6b73d84f106b4b435d5a0e8cadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573668"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10937185"
 ---
 # API compatibles  
 
@@ -111,7 +111,7 @@ Los siguientes problemas conocidos abarcan la plataforma de extensión y se corr
 [extensión. getURL](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/extension/getURL) | | |
 [extensión. getViews](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/getViews) | | |
 [extensión. isAllowedIncognitoAccess](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/isAllowedIncognitoAccess) | | | 
-[extensión. inIncognitoContext](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/inIncognitoContext) | | | 
+[extension.inIncognitoContext](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/inIncognitoContext) | | | 
 
 
 
@@ -210,7 +210,7 @@ API | Problemas conocidos | Incompatibilidades con Chrome
 [Storage. local. Set](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | |
 [almacenamiento. local. borrar](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/clear) | | |
 [Storage. local. getBytesInUse](https://developer.mozilla.org/Add-ons/WebExtensions/API/Storage/StorageArea/getBytesInUse) | | `storage.local` los datos se conservan en otro formato que el cromo, lo que hace que se devuelva un valor diferente al realizar la llamada `storage.local.getBytesInUse` .  <br/><br/>Por ejemplo: `storage.local.set({ "k": { "s": "âas" } }` devuelve 13 en Chrome y 50 en Microsoft Edge.|
-[Storage. Sync. get](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | | |
+[Storage. Sync. get](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | Si la cantidad combinada de caracteres de los `name` campos y del `author` manifiesto es superior a 31 caracteres, `storage.sync` es posible que el espacio de nombres no funcione. | |
 [Storage. Sync. Remove](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/remove) | | |
 [Storage. Sync. Set](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/set) | | |
 [almacenamiento. onchange](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/storage/onChanged) | | |
@@ -225,10 +225,10 @@ API | Problemas conocidos | Incompatibilidades con Chrome
 [Tabs. captureVisibleTab](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/captureVisibleTab) | | |
 [pestañas. crear](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/create) | | `selected`, `pinned` , y `openerTabId` no son compatibles. |
 [Tabs. detectLanguage](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/detectLanguage) | | |
-[Tabs. executeScript](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` se omite, aunque se haya activado. El script que se ejecuta en un marco específico aún no es compatible. | |
+[tabs.executeScript](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` se omite, aunque se haya activado. El script que se ejecuta en un marco específico aún no es compatible. | |
 [pestañas. get](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/get) | Las páginas de opciones, cuando se solicita una pestaña que no está en la ventana, fallan esta llamada. | |
 [Tabs. getCurrent](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/getCurrent) | | |
-[Tabs. insertCSS](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` se omite, aunque se haya activado. | |
+[Tabs. insertCSS](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` se omite, aunque se haya activado. | `cssOrigin` no es compatible. |
 [Tabs. Onactivated](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onActivated) | | |
 [pestañas. adjuntas](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onAttached) | | |
 [Tabs. Created](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onCreated) | | |
@@ -298,7 +298,7 @@ API | Problemas conocidos | Incompatibilidades con Chrome
 | [Windows. getAll](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/getAll)                       | `windows.getAll({populate: true})` falta la `tabs` propiedad. |                                                                                                                 |
 | [Windows. getCurrent](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/getCurrent)               |                                                                |                                                                                                                 |
 | [Windows. getLastFocused](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/getLastFocused)       |                                                                |                                                                                                                 |
-| [Windows. Update](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/update)                       | No se admite la especificación de la posición.                          | `"minimized"`/`"maximized"`/`"fullscreen"`y `drawAttention` no son compatibles con Microsoft Edge.             |
+| [Windows. Update](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/update)                       | No se admite la especificación de la posición.                          | `"minimized"`/`"maximized"`/`"fullscreen"` y `drawAttention` no son compatibles con Microsoft Edge.             |
 | [Windows. Created](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/windows/onCreated)                 |                                                                | `WindowType` no se admite el filtro.                                                                           |
 | [Windows. onFocusChanged](https://developer.mozilla.org/Add-ons/WebExtensions/API/windows/onFocusChanged)                    |                                                                | `WindowType` no se admite el filtro.                                                                           |
 | [ventana. WindowState](https://developer.mozilla.org/Add-ons/WebExtensions/API/windows/WindowState)                          | `"minimized"`, `"maximized"` , `"fullscreen"` no son compatibles. | `"docked"` no es compatible con Microsoft Edge.                                                                  |
