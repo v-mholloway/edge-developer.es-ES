@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 07/10/2020
+  ms.date: 08/20/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
-  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+  ms.openlocfilehash: 90d7547ebe6bde883a10826ea132d5d2050e3066
+  ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/13/2020
-  ms.locfileid: "10866060"
+  ms.lasthandoff: 08/20/2020
+  ms.locfileid: "10942201"
 highlightedContent:
   items:
   - title: Descargar Microsoft Edge (canal oficial estable)
@@ -273,9 +273,9 @@ additionalContent:
         url: /microsoft-edge/windows-runtime
   - title: Ayuda & soporte técnico
     items:
-    - title: Apoyo de la comunidad
-      summary: Obtén asesoramiento y respuestas de una comunidad de expertos a StackOverflow.
-      url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
+    - title: Asistencia de la comunidad de Microsoft Q&A
+      summary: Obtén consejos y respuestas de expertos de la comunidad en Microsoft Q&A
+      url: /answers/topics/ms-edge.html
     - title: Obtén ayuda sin cargo a través de asegurar la aplicación
       summary: Microsoft se compromete a garantizar que tus aplicaciones funcionen en Microsoft Edge.  Si tienes problemas con las aplicaciones empresariales o con el sitio web en la última versión de Microsoft Edge, Microsoft te ayudará a solucionarlos sin coste adicional. Consulta los detalles de la oferta para conocer los requisitos de elegibilidad.
       url: https://aka.ms/AppAssureEdge
