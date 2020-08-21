@@ -2,16 +2,16 @@
 title: Novedades de DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/24/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7b0193d25fb1d081e5746ec1271ca7b9f4e60c23
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: f569414a95336278c93b1bbafd57153ca902df12
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898359"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942195"
 ---
 # Novedades de DevTools (Microsoft Edge 85)  
 
@@ -184,7 +184,7 @@ DevTools ahora es una mejor compatibilidad para algunas de las características 
       Finalización automática de sintaxis de [encadenamiento opcional][V8DevOptionalChaining]  
    :::column-end:::
    :::column span="2":::
-      La finalización automática de la propiedad en la **consola** ahora admite la sintaxis de encadenamiento opcional; por ejemplo, `name?.` ahora funciona además de `name.` y `name[` .  
+      La finalización automática de la propiedad en la **consola** ahora admite la sintaxis de encadenamiento opcional; por ejemplo,  `name?.` ahora funciona además de `name.` y `name[` .  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -316,16 +316,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los [canales de Mi
 
 ## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-Use las siguientes opciones para discutir las nuevas características y cambios de la publicación, o cualquier otro tema relacionado con DevTools.  
-
-* Envíe sus comentarios con el icono de **comentarios** en el DevTools  
-* Tweet a [@EdgeDevTools][PostTweetEdgeDevTools]  
-* Enviar una sugerencia a [la web][TheWebWeWant] que queremos  
-* Archivar errores en esta página en el repositorio [Edge-desarrollador][GitHubMicrosoftDocsEdgeDeveloperNewIssue]  
-
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="El icono de comentarios en el DevTools de Microsoft Edge" lightbox="../../media/2020/05/feedback-icon.msft.png":::
-  El icono de **comentarios** en el DevTools de Microsoft Edge  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 

@@ -1,30 +1,32 @@
 ---
 title: Información de versión de JavaScript
 description: Comparar la compatibilidad con JavaScript en Microsoft Edge, en Microsoft Store y en Internet Explorer
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.prod: microsoft-edge
 ms.topic: language-reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 keywords: Edge, IE, Chakra, JScript, WWA, almacenar aplicaciones
 ms.custom: seodec18
-ms.openlocfilehash: 0edc5769cf80ae9a7ac741c0f478f9ca639d935f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 6041cd538c55303e68cadf3f740716b3c3637898
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573338"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941883"
 ---
 # Información de versión de JavaScript  
 
-La compatibilidad con JavaScript varía según Microsoft Edge, las aplicaciones de Microsoft Store y los distintos modos de documento de Internet Explorer. Para obtener más información sobre el control de versiones de código de documento de IE, consulte [*definir la compatibilidad de documentos*](https://go.microsoft.com/fwlink/p/?LinkId=208537).  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
+
+La compatibilidad con JavaScript varía según Microsoft Edge, las aplicaciones de Microsoft Store y los distintos modos de documento de Internet Explorer \ (IE \). Para obtener más información sobre el control de versiones de código de documento de IE, consulte [definir la compatibilidad de documentos](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 En la siguiente tabla se resume la compatibilidad de JavaScript en Internet Explorer, Microsoft Edge y las aplicaciones de Microsoft Store.  
   
 > [!IMPORTANT]
-> Las características experimentales \ (habilitado en *About: flags*\) están indicadas por "exp". En algunos casos, la compatibilidad de las aplicaciones de la *tienda* varía entre las aplicaciones Windows 8 \ (V8 \) y Windows 10 \ (V10 \), y el escritorio de Windows \ (Win \) y Windows Phone \ (teléfono \), tal como se indica.  
+> Las características experimentales \ (habilitadas en `about:flags` \) se indican `Exp.` en algunos casos; la compatibilidad de las aplicaciones de la tienda varía entre las aplicaciones Windows 8 \ (V8 \) y Windows 10 \ (V10 \), y el escritorio de Windows \ (Win \) y Windows Phone \ (teléfono \), tal como se indica.  
   
- | Elemento de lenguaje | Peculiaridades, estándares de Internet Explorer 6, estándares de Internet Explorer 7 | Estándares de Internet Explorer 8 | Estándares de Internet Explorer 9 | Estándares de Internet Explorer 10 | Estándares de Internet Explorer 11 | Microsoft Edge | Almacenar aplicaciones |  
+ | Elemento de lenguaje | Peculiaridades, estándares de IE 6, estándares de IE 7 | Estándares de IE 8 | Estándares de IE 9 | Estándares de IE 10 | Estándares de IE 11 | Microsoft Edge | Almacenar aplicaciones |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  
 | [__proto \ _ \ _ propiedad (objeto)](/scripting/javascript/reference/proto-property-object-javascript) | N | N | N | N | Y | Y | V8 (Win): N <br /> v 8.1 (Win): Y <br /> v 8.1 (teléfono): Y |  
 | [$1... $9 propiedades (RegExp)](/scripting/javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript) | Y | Y | Y | Y | Y | Y | Y |  

@@ -2,16 +2,16 @@
 title: Novedades de DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6de8f7b11edb476f2656dd6f16e02413b1873ed8
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+ms.openlocfilehash: 8e9e6885d04c7ad15a688b51cee4c16440d3ca1e
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684716"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942102"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,7 @@ ms.locfileid: "10684716"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-# Novedades de DevTools (Microsoft Edge 81)   
-
-
+# Novedades de DevTools (Microsoft Edge 81)  
 
 ## Anuncios del equipo de Microsoft Edge DevTools  
 
@@ -51,7 +43,7 @@ El equipo de DevTools ha contribuido a 170 cambios en cromo para solucionar prob
 
 ¿Desea saber cómo hacer que su página web sea accesible para todos los usuarios?  Descargue [Insight Insights][AccessibilityInsights] y extensiones [Webhint][WebhintBrowserExtension] para Microsoft Edge para comenzar.  
 
-Si usa lectores de pantalla o el teclado para desplazarse por la DevTools, envíenos sus comentarios con un [Tweet][PostTweetEdgeDevTools] o haga clic en el icono de [comentarios](#feedback) .  
+Si usa lectores de pantalla o el teclado para desplazarse por la DevTools, envíenos sus comentarios con un [Tweet][PostTweetEdgeDevTools] o haga clic en el icono para [Enviar comentarios](#getting-in-touch-with-microsoft-edge-devtools-team) .  
 
 [#963183][crbug963183] de problemas de cromo  
 
@@ -120,7 +112,7 @@ Si desea que Microsoft Edge esté en un idioma y que su DevTools permanezca en i
 
 Los mensajes de **consola** no se localizan.  Solo las cadenas usadas en la interfaz de usuario de DevTools se muestran en el idioma que usas para Microsoft Edge.  
 
-Si desea usar la DevTools en un idioma diferente al de los que están disponibles, [Tweet][PostTweetEdgeDevTools] o haga clic en el icono de [comentarios](#feedback) .  
+Si desea usar la DevTools en un idioma diferente al de los que están disponibles, [Tweet][PostTweetEdgeDevTools] o haga clic en el icono para [Enviar comentarios](#getting-in-touch-with-microsoft-edge-devtools-team) .  
 
 [#941561][crbug941561] de problemas de cromo  
 
@@ -144,7 +136,7 @@ Use la **vista 3D** para depurar la aplicación web desplazándose por el [model
 
 Para acceder a la vista 3D, pulse `Ctrl`  +  `Shift`  +  `P` , escriba en la **vista 3D** y seleccione **Mostrar vista en 3D**.  
 
-Trabajamos en la interfaz de usuario y agregamos más funcionalidad a la vista 3D; por lo tanto, envíanos tus [comentarios](#feedback).  
+Trabajamos en la interfaz de usuario y agregamos más funcionalidad a la vista 3D; por lo tanto, envíanos tus [comentarios](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
 [#987787][crbug987787] de problemas de cromo  
 
@@ -171,7 +163,7 @@ Con el [depurador para la extensión de código de Microsoft Edge][VisualStudioM
 
 Para obtener más información, consulte [Cómo depurar Microsoft Edge desde vs Code][VisualStudioCodeDebuggerEdgeExtension].  
 
-#### sugerencia  
+#### webhint  
 
 La extensión de código [webhint][VisualStudioMarketplaceWebhintExtension] de vs usa `webhint` para mejorar la página web mientras la escribes. Esta extensión ejecuta y notifica diagnósticos en los archivos de área de trabajo según el `webhint` análisis.  
 
@@ -199,15 +191,13 @@ La prevención de seguimiento es una característica exclusiva de Microsoft Edge
 > Mensajes en la consola cuando el seguimiento de prevención bloquea el acceso al almacenamiento de un rastreador  
 > ![Mensajes en la consola cuando el seguimiento de prevención bloquea el acceso al almacenamiento de un rastreador][ImageTrackingPrevention]  
 
-[Obtenga más información acerca de la prevención de seguimiento y el equilibrio entre privacidad y compatibilidad web][TrackingPrevention].
-
-
+[Obtenga más información acerca de la prevención de seguimiento y el equilibrio entre privacidad y compatibilidad web][TrackingPrevention].  
 
 ## Anuncios del proyecto de cromo  
 
 En las siguientes secciones se anuncian características adicionales disponibles en Microsoft Edge 81 que se han contribuido al proyecto de código abierto.  
 
-### Compatibilidad de moto G4 en el modo de dispositivo 
+### Compatibilidad de moto G4 en el modo de dispositivo  
 
 Después de [Habilitar la barra de herramientas del dispositivo][DeviceToolbar], simule las dimensiones de una ventanilla de moto G4 en la lista de **dispositivos** .  
 
@@ -228,9 +218,9 @@ Características relacionadas:
 
 [#924693][crbug924693] de problemas de cromo  
 
-### Actualizaciones relacionadas con cookies   
+### Actualizaciones relacionadas con cookies  
 
-#### Cookies bloqueados en el panel cookies   
+#### Cookies bloqueados en el panel cookies  
 
 El panel cookies en el panel de la aplicación ahora muestra las cookies bloqueadas con un fondo amarillo.  
 
@@ -240,7 +230,7 @@ El panel cookies en el panel de la aplicación ahora muestra las cookies bloquea
 
 [#1030258][crbug|::ref1::|] de problemas de cromo  
 
-#### Prioridad de la cookie en el panel de cookies   
+#### Prioridad de la cookie en el panel de cookies  
 
 Las tablas de cookies de los paneles red y aplicación ahora incluyen una columna de **prioridad** .  
 
@@ -249,7 +239,7 @@ Las tablas de cookies de los paneles red y aplicación ahora incluyen una column
 
 [#1026879][crbug1026879] de problemas de cromo  
 
-#### Editar todos los valores de cookies   
+#### Editar todos los valores de cookies  
 
 Ahora todas las celdas de las tablas de cookies se pueden editar, excepto las celdas de la columna **tamaño** , porque esa columna representa el tamaño de red de la cookie, en bytes.  Vea [los campos][CookiesFields] para obtener una explicación de cada columna.  
 
@@ -257,27 +247,27 @@ Ahora todas las celdas de las tablas de cookies se pueden editar, excepto las ce
 > Editar un valor de cookie  
 > ![Editar un valor de cookie][ImageEditCookie]  
 
-#### Copiar como la búsqueda de node. js para incluir datos de cookies   
+#### Copiar como Node.js fetch para incluir datos de cookies  
 
-Haga clic con el botón derecho en una solicitud de red y seleccione **copiar**  >  **copia como nodo. js fetch** para obtener una `fetch` expresión que incluya datos de cookies.  
+Haga clic con el botón secundario en una solicitud de red y seleccione **copiar**  >  **copia como Node.js fetch** para obtener una `fetch` expresión que incluya datos de cookies.  
 
 > ##### Imagen 14  
-> Copiar como fetch de node. js  
-> ![Copiar como fetch de node. js][ImageCopyFetch]  
+> Copiar como captura de Node.js  
+> ![Copiar como captura de Node.js][ImageCopyFetch]  
 
 [#1029826][crbug1029826] de problemas de cromo  
 
-### Iconos más exactos del manifiesto de la aplicación Web   
+### Iconos más exactos del manifiesto de la aplicación Web  
 
 Anteriormente, el panel manifiesto del panel de aplicaciones enviaba sus propias solicitudes para mostrar los iconos del manifiesto de la aplicación Web.  DevTools ahora muestra el mismo icono de manifiesto que usa Microsoft Edge.  
 
 > ##### Imagen 15  
 > Iconos en el panel manifiesto  
-> ![Iconos en el panel manifiesto][ImageManifestIcon]   
+> ![Iconos en el panel manifiesto][ImageManifestIcon]  
 
 [#985402][crbug985402] de problemas de cromo  
 
-### Mantenga el mouse sobre las propiedades de contenido CSS para ver valores sin escape   
+### Mantenga el mouse sobre las propiedades de contenido CSS para ver valores sin escape  
 
 Desplace el puntero sobre el valor de una `content` propiedad para ver la versión sin escape del valor.  
 
@@ -285,15 +275,15 @@ Por ejemplo, en esta [demostración][CSSContentDemo] , cuando Inspeccione el `p:
 
 > ##### Imagen 16  
 > La cadena de escape  
-> ![La cadena de escape][ImageEscapedString]   
+> ![La cadena de escape][ImageEscapedString]  
 
 Cuando pasa el puntero sobre el `content` valor, Ve el valor unescape:  
 
 > ##### Imagen 17  
 > Valor sin escape  
-> ![Valor sin escape][ImageUnescapedString]   
+> ![Valor sin escape][ImageUnescapedString]  
 
-### Errores de mapas de origen más detallados en la consola   
+### Errores de mapas de origen más detallados en la consola  
 
 La consola ahora proporciona más información sobre por qué no se pudo cargar o analizar un mapa de origen.  Anteriormente, se ha proporcionado un error sin explicar qué falló.  
 
@@ -301,7 +291,7 @@ La consola ahora proporciona más información sobre por qué no se pudo cargar 
 > Un error de carga del mapa de origen en la consola  
 > ![Un error de carga del mapa de origen en la consola][ImageSourcemapError]  
 
-### Configuración para deshabilitar el desplazamiento más allá del final de un archivo   
+### Configuración para deshabilitar el desplazamiento más allá del final de un archivo  
 
 Abrir [configuración][Settings] y deshabilitar **preferencias**  >  **orígenes**:  >  **permite desplazarse más allá del final del archivo** para deshabilitar el comportamiento predeterminado de la interfaz de usuario que permite desplazarse hasta el final de un archivo en el panel **fuentes** .  
 
@@ -313,33 +303,19 @@ Abrir [configuración][Settings] y deshabilitar **preferencias**  >  **orígenes
 > El desplazamiento más allá del final de un archivo ya está deshabilitado en el panel orígenes  
 > ![El desplazamiento más allá del final de un archivo ya está deshabilitado en el panel orígenes][ImageScroll]  
 
-## Comentarios   
-
-
-
-Para comentar las nuevas características y cambios de esta publicación, o cualquier otro tema relacionado con DevTools:  
-
-*   Envíe sus comentarios con el icono de **comentarios** en el DevTools  
-
-> ##### Ilustración 21  
-> El icono de **comentarios** en el DevTools de Microsoft Edge  
-> ![El icono * * comentarios * * en Microsoft Edge DevTools][ImageFeedbackIcon]  
-
-*   Tweet a [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Enviar una sugerencia a [la web][TheWebWeWant] que queremos  
-*   Archivar errores en este documento en el repositorio [Edge-desarrollador][GitHubMicrosoftDocsEdgeDeveloperNewIssue]  
-
-## Descargar los canales de Microsoft Edge Preview   
+## Descargar los canales de Microsoft Edge Preview  
 
 Si está en Windows o macOS, considere la posibilidad de usar los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] como su explorador de desarrollo predeterminado.  Los canales de previsualización proporcionan acceso a las características más recientes de DevTools.  
 
-<!-- <<../../_shared/devtools-feedback.md>>
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-<<../../_shared/canary.md>>
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
-<<../../_shared/discover.md>> -->
+<!-- <<../../_shared/devtools-feedback.md>>  
 
+<<../../_shared/canary.md>>  
 
+<<../../_shared/discover.md>> -->  
 
 <!-- image links -->  
 
@@ -356,15 +332,13 @@ Si está en Windows o macOS, considere la posibilidad de usar los [canales de Mi
 [ImageMotoG4Frame]: ../../images/2020/01/motog4frame.msft.png "Ilustración 11: mostrar el hardware de moto G4" 
 [ImageBlockedCookies]: ../../images/2020/01/blockedcookies.msft.png "Ilustración 12: cookies bloqueadas en el panel de cookies del panel de aplicaciones"
 [ImageEditCookie]: ../../images/2020/01/editcookie.msft.png "Ilustración 13: edición de un valor de cookie"
-[ImageCopyFetch]: ../../images/2020/01/fetchcookies.msft.png "Ilustración 14: copiar como fetch de node. js"
+[ImageCopyFetch]: ../../images/2020/01/fetchcookies.msft.png "Ilustración 14: copiar como fetch Node.js"
 [ImageManifestIcon]: ../../images/2020/01/manifesticons.msft.png "Ilustración 15: iconos en el panel manifiesto"
 [ImageEscapedString]: ../../images/2020/01/escapedstring.msft.png "Ilustración 16: la cadena de escape"
 [ImageUnescapedString]: ../../images/2020/01/unescapedstring.msft.png "Ilustración 17: el valor sin escape"
 [ImageSourcemapError]: ../../images/2020/01/sourcemap.msft.png "Ilustración 18: un error de carga del mapa de origen en la consola"
 [ImageSettings]: ../../images/2020/01/settings.msft.png "Ilustración 19: deshabilitar la opción permitir el desplazamiento más allá del final del archivo en configuración"
 [ImageScroll]: ../../images/2020/01/scrollingsources.msft.png "Ilustración 20: el desplazamiento más allá del final de un archivo ya está deshabilitado en el panel orígenes"
-[ImageFeedbackIcon]: ../../images/2020/01/feedback-icon.msft.png "Ilustración 21: el icono * * comentarios * * en el DevTools de Microsoft Edge."
-
 
 <!-- links -->  
 

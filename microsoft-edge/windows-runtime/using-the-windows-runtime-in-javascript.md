@@ -1,7 +1,7 @@
 ---
-title: Usar Windows Runtime en JavaScript
+title: Use Windows en tiempo de ejecución en JavaScript
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -15,14 +15,16 @@ caps.latest.revision: 16
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: bffde93aa973f492189aedcfcaa9c3694d9e61bc
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 444008598a2f7a2f5257544304bed87fbfaa203a
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10574913"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942172"
 ---
-# Usar Windows Runtime en JavaScript  
+# Use Windows en tiempo de ejecución en JavaScript  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 Al escribir una aplicación de la plataforma universal de Windows \ (UWP \), puedes usar las clases, los métodos y las propiedades de Windows Runtime de la misma manera en que usarías objetos, métodos y propiedades de JavaScript.  En este tema, se proporciona información introductoria y vínculos a temas que explican los conceptos básicos del uso de las API de Windows Runtime en JavaScript, incluida una explicación de cómo se representan los tipos de Windows Runtime, cómo usar métodos asíncronos de Windows Runtime y cómo escuchar y controlar eventos de Windows Runtime.  
 
@@ -61,26 +63,24 @@ Las convenciones de las mayúsculas y minúsculas de las características de Win
     dataTransferManager.ontargetapplicationchosen;
     ```  
 
-## Consulta también  
+## Consulte también  
 
 [Consideraciones al usar la API de Windows Runtime][WindowsRuntimeConsiderationsApi]  
-[Uso de los métodos asincrónicos de Windows Runtime][WindowsRuntimeAsynchronousMethods]   
-[Controlar eventos de Windows Runtime en JavaScript][WindowsRuntimeEventsJavascript]   
+[Usar métodos asíncronos en tiempo de ejecución de Windows Runtime][WindowsRuntimeAsynchronousMethods]   
+[Control de los eventos de Windows Runtime en JavaScript][WindowsRuntimeEventsJavascript]   
 [Representación de JavaScript de los tipos de Windows Runtime][WindowsRuntimeJavascriptTypes]   
 [Proyección de JavaScript de DateTime y TimeSpan de Windows Runtime][WindowsRuntimeDatetimeTimespan]  
- 
-<!-- image links -->  
 
 <!-- links  -->  
 
-[WindowsRuntimeConsiderationsApi]: /microsoft-edge/windows-runtime/considerations-when-using-the-windows-runtime-api "Consideraciones al usar la API de Windows Runtime"  
-[WindowsRuntimeEventsJavascript]: /microsoft-edge/windows-runtime/handling-windows-runtime-events-in-javascript "Controlar eventos de Windows Runtime en JavaScript"  
-[WindowsRuntimeJavascriptTypes]: /microsoft-edge/windows-runtime/javascript-representation-of-windows-runtime-types "Representación de JavaScript de los tipos de Windows Runtime"  
-[WindowsRuntimeAsynchronousMethods]: /microsoft-edge/windows-runtime/using-windows-runtime-asynchronous-methods "Uso de los métodos asincrónicos de Windows Runtime"  
-[WindowsRuntimeDatetimeTimespan]: /microsoft-edge/windows-runtime/windows-runtime-datetime-and-timespan-representations "Representaciones DateTime y TimeSpan de Windows Runtime"  
+[WindowsRuntimeConsiderationsApi]: ./considerations-when-using-the-windows-runtime-api.md "Consideraciones al usar la API de Windows Runtime | Microsoft docs"  
+[WindowsRuntimeEventsJavascript]: ./handling-windows-runtime-events-in-javascript.md "Controlar eventos de Windows Runtime en JavaScript | Microsoft docs"  
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "Representación de JavaScript de tipos de Windows Runtime | Microsoft docs"  
+[WindowsRuntimeAsynchronousMethods]: ./using-windows-runtime-asynchronous-methods.md "Uso de métodos asincrónicos de Windows Runtime | Microsoft docs"  
+[WindowsRuntimeDatetimeTimespan]: ./windows-runtime-datetime-and-timespan-representations.md "Representaciones DateTime y TimeSpan de Windows Runtime | Microsoft docs"  
 
-[UwpApiIndex]: /uwp/api/index "Espacios de nombres de Windows para UWP"  
-[WindowsUwpWinrtCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Componentes de Windows Runtime con C++/CX"  
-[WindowsUwpWinrtCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Componentes de Windows en tiempo de ejecución con C# y Visual Basic"  
+[UwpApiIndex]: /uwp/api/index "Espacios de nombres de Windows para UWP | Microsoft docs"  
+[WindowsUwpWinrtCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Componentes de Windows en tiempo de ejecución con C++/CX | Microsoft docs"  
+[WindowsUwpWinrtCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Componentes de Windows en tiempo de ejecución con C# y Visual Basic | Microsoft docs"  
 
 [MDNJavascriptReference]: https://developer.mozilla.org/docs/Web/JavaScript/Reference "Referencia de JavaScript | MDN"  

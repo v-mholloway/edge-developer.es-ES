@@ -1,68 +1,73 @@
 ---
 description: Garantizar que el contenido multimedia de su sitio se comparará como se pretendía
-title: 'Guía de desarrollo: directivas de reproducción automática'
+title: 'Directivas de reproducción automática: Guía de desarrollo'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 9/17/2018
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge, multimedia, vídeo, audio, reproducción automática
 ms.custom: seodec18
-ms.openlocfilehash: 397c6f0a22359dbfab7c44370b0429147b7c9834
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 39c9bd8e9921167dfc3a9ab1a4cc12b2157f0f6f
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572969"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942062"
 ---
-# Directivas de reproducción automática
+# Directivas de reproducción automática  
 
-Microsoft Edge proporciona a los clientes la posibilidad de personalizar sus preferencias de navegación en sitios web con sonido de reproducción automática con el fin de minimizar las distracciones en la web y ahorrar ancho de banda. Además, Microsoft Edge suprime automáticamente la reproducción automática de los elementos multimedia en las pestañas de fondo.
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Los usuarios pueden personalizar el comportamiento de los medios con controles de reproducción automática [globales](#global-media-autoplay-settings) y [por sitio](#per-site-media-autoplay-settings) , que proporcionan las siguientes opciones:
+Microsoft Edge proporciona a los clientes la posibilidad de personalizar sus preferencias de navegación en sitios web con sonido de reproducción automática con el fin de minimizar las distracciones en la web y ahorrar ancho de banda.  Además, Microsoft Edge elimina automáticamente la reproducción automática de los elementos multimedia en las pestañas de fondo.  
 
-- **Permitir** es el predeterminado y continuará reproduciendo vídeos cuando una pestaña se visualiza por primera vez en primer plano, a la discreción del sitio.
+Los usuarios pueden personalizar el comportamiento de los medios con controles de reproducción automática [globales](#global-media-autoplay-settings) y [por sitio](#per-site-media-autoplay-settings) , que proporcionan las siguientes opciones:  
 
-- **Límite** restringirá la reproducción automática para que solo funcionen los vídeos silenciados, de modo que los usuarios nunca se sorprendan por sonido. Una vez que el usuario hace clic en cualquier lugar de la página, la reproducción automática se vuelve a habilitar y seguirá estando permitida dentro de ese dominio en esa pestaña.
+*   `Allow`  El valor predeterminado y continuará reproduciendo vídeos cuando una pestaña se visualiza por primera vez en primer plano, a la discreción del sitio.  
 
-- **Bloquear** evitará la reproducción automática en todos los sitios hasta que los usuarios interactúen directamente con el contenido multimedia.
+*   `Limit`  Restringe la reproducción automática para que solo funcione cuando se silencian los vídeos, de modo que los usuarios nunca se sorprendan por sonido.  Una vez que el usuario hace clic en cualquier lugar de la página, la reproducción automática se vuelve a habilitar y seguirá estando permitida dentro de ese dominio en esa pestaña.  
 
-## Configuración de la reproducción automática de multimedia global
+*   `Block`  Evite sautoplay en todos los sitios hasta que los usuarios interactúen directamente con el contenido multimedia.  
 
-Los usuarios pueden controlar el comportamiento predeterminado de reproducción automática de todos los sitios en **Configuración avanzada**  >  **reproducción automática de multimedia**.
+## Configuración de la reproducción automática de multimedia global  
 
-![Configuración de la reproducción automática de multimedia global](../media/autoplay_global.png)
+Los usuarios pueden controlar el comportamiento predeterminado de reproducción automática de todos los sitios en **Configuración avanzada**  >  **reproducción automática de multimedia**.  
 
-## Configuración de reproducción automática multimedia por sitio
+:::image type="complex" source="../media/autoplay_global.png" alt-text="Configuración de la reproducción automática de multimedia global" lightbox="../media/autoplay_global.png":::
+   Configuración de la reproducción automática de multimedia global  
+:::image-end:::  
 
-Los usuarios pueden controlar el comportamiento de la reproducción automática en función de cada sitio en la sección **permisos de sitios web** del panel información del sitio Web. Para encontrar esta configuración, haga clic en el icono de información o en el icono de candado situado en el lado izquierdo de la barra de direcciones y haga clic en "configuración de reproducción automática de multimedia" para comenzar.
+## Configuración de reproducción automática multimedia por sitio  
 
-La configuración por sitio invalida la configuración global. Por ejemplo, si un usuario tiene su configuración global establecida en "permitir" pero cambia una configuración por sitio a "bloquear", la reproducción automática se bloqueará para ese sitio.
+Los usuarios pueden controlar el comportamiento de la reproducción automática en función de cada sitio en la sección **permisos de sitios web** del panel información del sitio Web.  Para encontrar esta configuración, haga clic en el icono de información o en el icono de candado situado en el lado izquierdo de la barra de direcciones y haga clic en **configuración de multimedia de reproducción automática** para comenzar.  
 
-![Configuración de reproducción automática multimedia por sitio](../media/autoplay_per-site.png)
- 
-## Procedimientos recomendados para desarrolladores web
+La configuración por sitio invalida la configuración global.  Por ejemplo, si un usuario tiene su configuración global establecida en `Allow` pero cambia una configuración por sitio a `Block` , la reproducción automática se bloqueará para ese sitio.  
 
-A continuación se explica cómo garantizar una buena experiencia de usuario con elementos multimedia hospedados en su sitio:
+:::image type="complex" source="../media/autoplay_per-site.png" alt-text="Configuración de reproducción automática multimedia por sitio" lightbox="../media/autoplay_per-site.png":::
+   Configuración de reproducción automática multimedia por sitio  
+:::image-end:::  
 
-- Supongamos que cada uso de un elemento multimedia se requiere un gesto del usuario para iniciar la reproducción (a medida que los usuarios pueden bloquear la reproducción automática en cualquier momento) y planificar según corresponda.  Las directivas de reproducción automática global y por sitio se aplican a todos los `<audio>` `<video>` elementos y, independientemente de cómo se usan en su sitio.
+## Procedimientos recomendados para desarrolladores web  
 
-- Asegúrate de que los controles multimedia estén siempre presentes tanto en los medios del sitio como en el contenido de Active Directory. Esto proporcionará a los usuarios la posibilidad de reiniciar la reproducción si la reproducción automática está bloqueada en la página.
+A continuación se explica cómo garantizar una buena experiencia de usuario con elementos multimedia hospedados en su sitio:  
 
-- Evalúe cómo la reproducción automática puede influir en la experiencia de los usuarios en su sitio web y considere la posibilidad de usar la reproducción automática para minimizar la reproducción de archivos multimedia no deseados. Si la reproducción automática es una parte crucial de su experiencia, considere la posibilidad de usar contenido silenciado para iniciar y permitir que el usuario reactive el audio. Para el contenido silenciado en la reproducción automática, el origen de audio debe estar silenciado o no se puede establecer. En caso contrario, el elemento no se considerará silenciado.
+*   Supongamos que cada uso de un elemento multimedia retiene un movimiento de usuario para iniciar la reproducción \ (a medida que los usuarios pueden bloquear la reproducción automática en cualquier momento \) y planificar según corresponda.  Las directivas de reproducción automática global y por sitio se aplican a todos los `<audio>` `<video>` elementos y, independientemente de cómo se usan en su sitio.  
 
-- A menos que sea absolutamente necesario hacer lo contrario, use los controles de explorador nativos para la reproducción de contenido multimedia. Esto asegurará una experiencia coherente para los usuarios. Si está creando controles personalizados en su lugar, asegúrese de que los controles multimedia estén siempre presentes y de que los controles respondan correctamente a la supresión de reproducción automática.
+*   Asegúrate de que los controles multimedia estén siempre presentes tanto en los medios del sitio como en el contenido de Active Directory.  Esto proporcionará a los usuarios la posibilidad de reiniciar la reproducción si la reproducción automática está bloqueada en la página.  
 
-### Delegación de iframe
+*   Evalúe cómo la reproducción automática puede influir en la experiencia de los usuarios en su sitio web y considere la posibilidad de usar la reproducción automática para minimizar la reproducción de archivos multimedia no deseados.  Si la reproducción automática es una parte crucial de su experiencia, considere la posibilidad de usar contenido silenciado para iniciar y permitir que el usuario reactive el audio.  Para el contenido silenciado en la reproducción automática, el origen de audio debe estar silenciado o no se puede establecer.  En caso contrario, el elemento no se considerará silenciado.  
 
-La reproducción automática en una `<iframe>` heredará el permiso de reproducción automática de la Página principal, independientemente del origen del contenido. En un escenario de lista de reproducción en el que cada archivo multimedia está hospedado por un iframe independiente, el usuario solo necesita iniciar la reproducción una vez para toda la lista de reproducción.
+*   A menos que sea absolutamente necesario hacer lo contrario, use los controles de explorador nativos para la reproducción de contenido multimedia.  Esto asegurará una experiencia coherente para los usuarios.  Si está creando controles personalizados en su lugar, asegúrese de que los controles multimedia estén siempre presentes y de que los controles respondan correctamente a la supresión de reproducción automática.  
 
-### Detectar cuándo está permitida la reproducción automática
+### Delegación de iframe  
 
-Puede ajustar los controles de reproducción para que muestren el estado correcto cuando se bloquea la reproducción automática examinando la promesa devuelta por la `play()` función en el elemento multimedia:
+La reproducción automática en una `<iframe>` heredará el permiso de reproducción automática de la Página principal, independientemente del origen del contenido.  En un escenario de lista de reproducción en el que cada archivo multimedia está hospedado por un iframe independiente, el usuario solo necesita iniciar la reproducción una vez para toda la lista de reproducción.  
 
-```Javascript
+### Detectar cuándo está permitida la reproducción automática  
 
+Puede ajustar los controles de reproducción para que muestren el estado correcto cuando se bloquea la reproducción automática examinando la promesa devuelta por la `play()` función en el elemento multimedia:  
+
+```javascript
 var promise = document.querySelector('video').play();
 
 if (promise !== undefined) { 
@@ -73,5 +78,4 @@ if (promise !== undefined) {
         // Autoplay started
     }); 
 }
-
-```
+```  

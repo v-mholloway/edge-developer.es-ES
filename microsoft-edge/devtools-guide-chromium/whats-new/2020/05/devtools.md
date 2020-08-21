@@ -2,16 +2,16 @@
 title: Novedades de DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: fc5dcc10ba3a79bd3f073e0e3504e551d7e23d70
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+ms.openlocfilehash: aa39e5d7811d4a614e055a8e0479c74278efbefd
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688181"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942187"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -270,24 +270,13 @@ Los accesos directos a aplicaciones ayudan a los usuarios a iniciar rápidamente
   Accesos directos a aplicaciones en el panel **manifiesto**  
 :::image-end:::  
 
-## Descargar los canales de Microsoft Edge Preview   
+## Descargar los canales de Microsoft Edge Preview  
 
 Si está en Windows o macOS, considere la posibilidad de usar los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] como su explorador de desarrollo predeterminado.  Los canales de previsualización proporcionan acceso a las características más recientes de DevTools.  
 
 ## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-  
-
-Para comentar las nuevas características y cambios de la publicación, o cualquier otro tema relacionado con DevTools:  
-
-*   Envíe sus comentarios con el icono de **comentarios** en el DevTools  
-*   Tweet a [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Enviar una sugerencia a [la web][TheWebWeWant] que queremos  
-*   Archivar errores en esta página en el repositorio [Edge-desarrollador][GitHubMicrosoftDocsEdgeDeveloperNewIssue]  
-
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="El icono de comentarios en el DevTools de Microsoft Edge" lightbox="../../media/2020/05/feedback-icon.msft.png":::
-  El icono de **comentarios** en el DevTools de Microsoft Edge  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- image links -->  
 

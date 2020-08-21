@@ -1,84 +1,165 @@
 ---
 ms.assetid: 2ecc762c-11a5-4b16-9aed-22606c1d4994
 description: Más información sobre cómo se puede usar la API de notificaciones web para permitir que los sitios web envíen notificaciones de usuario fuera del contexto del explorador Microsoft Edge.
-title: 'Guía para desarrolladores: API de notificaciones Web'
+title: 'API de notificaciones Web: Guía para desarrolladores'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/18/2017
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador
-ms.openlocfilehash: da563a333491ef699925adec6f97b3c21d3e54a0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 24b8a7b25fb3e0f0221f6d81b105d5d0374ea423
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573306"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941793"
 ---
-# API de notificaciones Web
+# API de notificaciones Web  
 
-La API de notificaciones web permite a los sitios web enviar notificaciones de usuarios fuera del contexto de una página web dentro del explorador Microsoft Edge. Un ejemplo de esta característica en acción sería con una aplicación de mensajería como Skype. Cuando un usuario recibe un mensaje nuevo, aparece una notificación en el escritorio para avisarle del mensaje. Las notificaciones Web se integran completamente con la plataforma de notificación y el centro de actividades de Windows 10. 
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-## Crear una notificación
+La API de notificaciones web permite a los sitios web enviar notificaciones de usuarios fuera del contexto de una página web dentro del explorador Microsoft Edge.  Un ejemplo de esta característica en acción sería con una aplicación de mensajería como Skype.  Cuando un usuario recibe un mensaje nuevo, aparece una notificación en el escritorio para avisarle del mensaje.  Las notificaciones Web se integran completamente con la plataforma de notificación y el centro de actividades de Windows 10.  
 
-En el CodePen siguiente se crea una notificación de Skype ficticia haciendo un [`Notification`](https://msdn.microsoft.com/library/mt710818) objeto con el [`title`](https://msdn.microsoft.com/library/mt710826) , el y el conjunto de [`icon`](https://msdn.microsoft.com/library/mt710814) [`body`](https://msdn.microsoft.com/library/mt710811) Opciones:
+## Crear una notificación  
 
+En el CodePen siguiente se crea una notificación de Skype ficticia haciendo que el objeto de [notificación](https://msdn.microsoft.com/library/mt710818) se establezca con las opciones de [título](https://msdn.microsoft.com/library/mt710826), [icono](https://msdn.microsoft.com/library/mt710814)y [cuerpo](https://msdn.microsoft.com/library/mt710811) :  
 
-<iframe height='295' scrolling='no' title='Notificaciones Web' src='//codepen.io/MicrosoftEdgeDocumentation/embed/RGbxWW/?height=295&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Vea las <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/RGbxWW/'> notificaciones web del lápiz de </a> documentos de Microsoft Edge ( <a href='https://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) en <a href='https://codepen.io'> CodePen </a> .
-</iframe>
+<iframe height='295' scrolling='no' title='Notificaciones Web' src='//codepen.io/MicrosoftEdgeDocumentation/embed/RGbxWW/?height=295&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Vea las <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/RGbxWW/'> notificaciones web del lápiz de </a> documentos de Microsoft Edge ( <a href='https://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) en <a href='https://codepen.io'> CodePen </a> .</iframe>  
 
-Se recomienda especificar un nombre `icon` para cada notificación. Esto no solo mejora una notificación desde un punto de vista de la interfaz de usuario, sino que también ayuda a alertar a los usuarios de dónde se envían las notificaciones.
+Es muy recomendable especificar un **icono** para cada notificación.  Esto no solo mejora una notificación desde un punto de vista de la interfaz de usuario, sino que también ayuda a alertar a los usuarios de dónde se envían las notificaciones.  
 
-Vea el siguiente vídeo para obtener un tutorial sobre la creación de una notificación web y para ver su comportamiento en Windows 10.
+Vea el siguiente vídeo para obtener un tutorial sobre la creación de una notificación web y para ver su comportamiento en Windows 10.  
 
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications/player]  
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications/player]
+### Propiedades de notificación  
 
-### Propiedades de notificación
+Las notificaciones se pueden establecer con las siguientes propiedades:  
 
-Las notificaciones se pueden establecer con las siguientes opciones:
+:::row:::
+   :::column span="1":::
+      [body](https://developer.mozilla.org/docs/Web/API/Notification/body)  
+   :::column-end:::
+   :::column span="2":::
+      Texto del cuerpo de la notificación.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [dir](https://developer.mozilla.org/docs/Web/API/Notification/dir)  
+   :::column-end:::
+   :::column span="2":::
+      La dirección del texto de la notificación.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [icon](https://developer.mozilla.org/docs/Web/API/Notification/icon)  
+   :::column-end:::
+   :::column span="2":::
+      La dirección URL de la notificación que se usa para su icono.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Moreno](https://developer.mozilla.org/docs/Web/API/Notification/lang)  
+   :::column-end:::
+   :::column span="2":::
+      El idioma de la notificación.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [permiso](https://developer.mozilla.org/docs/Web/API/Notification/permission)  
+   :::column-end:::
+   :::column span="2":::
+      El permiso para mostrar la notificación actual que el usuario ha concedido para el origen actual.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [tag](https://developer.mozilla.org/docs/Web/API/Notification/tag)  
+   :::column-end:::
+   :::column span="2":::
+      La etiqueta de la notificación.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [title](https://developer.mozilla.org/docs/Web/API/Notification/title)  
+   :::column-end:::
+   :::column span="2":::
+      El título de la notificación.  
+   :::column-end:::
+:::row-end:::  
 
-Propiedad | Descripción
-:-------- | :----------
-[body](https://msdn.microsoft.com/library/mt710811) | Texto del cuerpo de la notificación.
-[dir](https://msdn.microsoft.com/library/mt710813) | La dirección del texto de la notificación.
-[icon](https://msdn.microsoft.com/library/mt710814) | La dirección URL de la notificación que se usa para su icono.
-[Moreno](https://msdn.microsoft.com/library/mt710815) | El idioma de la notificación.
-[permiso](https://msdn.microsoft.com/library/mt670637) | El permiso para mostrar la notificación actual que el usuario ha concedido para el origen actual.
-[tag](https://msdn.microsoft.com/library/mt710825) | La etiqueta de la notificación.
-[title](https://msdn.microsoft.com/library/mt710826) | El título de la notificación.
+### Eventos de notificación  
 
-### Eventos de notificación
+Los eventos siguientes se usan con el objeto de [notificación](https://developer.mozilla.org/docs/Web/API/Notification) :  
 
-Los eventos siguientes se usan con el [`Notification`](https://msdn.microsoft.com/library/mt710818) objeto:
+:::row:::
+   :::column span="1":::
+      [OnClick](https://developer.mozilla.org/docs/Web/API/Element/click_event)  
+   :::column-end:::
+   :::column span="2":::
+      Se desencadena cuando el usuario hace clic en una notificación.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [OnClose](https://developer.mozilla.org/docs/Archive/Mozilla/XUL/Events/close_event)  
+   :::column-end:::
+   :::column span="2":::
+      Se desencadena cuando el usuario cierra una notificación o se produce un tiempo de espera automático.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [OnError](https://developer.mozilla.org/docs/Web/API/Element/error_event)  
+   :::column-end:::
+   :::column span="2":::
+      Se desencadena cuando se produce un error durante la administración de una notificación.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Mostrar](https://developer.mozilla.org/docs/Web/API/Element/show_event)  
+   :::column-end:::
+   :::column span="2":::
+      Se desencadena cuando se muestra una notificación.  
+   :::column-end:::
+:::row-end:::  
 
-Evento | Descripción
-:-------- | :----------
-[OnClick](https://msdn.microsoft.com/library/mt712180) | Se desencadena cuando el usuario hace clic en una notificación.
-[OnClose](https://msdn.microsoft.com/library/mt712178) | Se desencadena cuando el usuario cierra una notificación o se produce un tiempo de espera automático.
-[OnError](https://msdn.microsoft.com/library/mt712181) | Se desencadena cuando se produce un error durante la administración de una notificación.
-[Mostrar](https://msdn.microsoft.com/library/mt712182) | Se desencadena cuando se muestra una notificación.
+### Métodos de notificación  
 
-### Métodos de notificación
+Los métodos siguientes se usan con el objeto [Notification](https://developer.mozilla.org/docs/Web/API/Notification) :  
 
-Los métodos siguientes se usan con el [`Notification`](https://msdn.microsoft.com/library/mt710818) objeto:
+:::row:::
+   :::column span="1":::
+      [cerrar](https://developer.mozilla.org/docs/Web/API/Notification/close)  
+   :::column-end:::
+   :::column span="2":::
+      Cierra una notificación que se muestra.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [requestPermission](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission)  
+   :::column-end:::
+   :::column span="2":::
+      Solicita permiso al usuario para permitir que las notificaciones sean mostradas por el origen actual.  
+   :::column-end:::
+:::row-end:::  
 
-Método | Descripción
-:-------- | :----------
-[cerrar](https://msdn.microsoft.com/library/mt670636) | Cierra una notificación que se muestra.
-[requestPermission](https://msdn.microsoft.com/library/mt710824) | Solicita permiso al usuario para permitir que las notificaciones sean mostradas por el origen actual.
+## Permisos de notificación  
 
-## Permisos de notificación
+Microsoft Edge permite a los usuarios administrar los permisos de notificaciones para cada dominio de sitio web específico.  El usuario puede seleccionar **sí** o **no** cuando lo solicite el dominio para permitirle Mostrar notificaciones.  El método [requestPermission](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission) se usa para indicar el estado de los permisos como `granted` , `denied` o `default` .  Un valor de `default` indica que el usuario no ha tomado una decisión, que se ve como equivalente `denied` .  
 
-Microsoft Edge permite a los usuarios administrar los permisos de notificaciones para cada dominio de sitio web específico. El usuario puede seleccionar "sí" o "no" cuando el dominio lo solicite para permitirle Mostrar notificaciones. El [`requestPermission`](https://msdn.microsoft.com/library/mt710824) método se usa para indicar el estado de los permisos como `granted` , `denied` o `default` . Un valor de `default` indica que el usuario no ha tomado una decisión, que se ve como equivalente `denied` .
+## Referencia de la API  
 
+[Notificaciones Web](https://developer.mozilla.org/docs/Web/API/Notifications_API)  
 
+## Estadístico  
 
-
-## Referencia de la API
-
-[Notificaciones Web](https://msdn.microsoft.com/library/mt710827)
-
-## Estadístico
-
-[Notificaciones Web](https://notifications.spec.whatwg.org)
+[Notificaciones Web](https://notifications.spec.whatwg.org)  

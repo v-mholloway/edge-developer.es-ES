@@ -1,7 +1,7 @@
 ---
 title: Códigos de error para aplicaciones de Windows en tiempo de ejecución con JavaScript
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -36,14 +36,16 @@ caps.latest.revision: 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 7aad8577d79bc5612f526e4e2bf1ceb0f2c2929a
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7779da61da9f011e55eeb496c7332e5b7cd5a023
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10574925"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942155"
 ---
 # Códigos de error para aplicaciones de Windows en tiempo de ejecución con JavaScript  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 Estos son los códigos de error que se muestran en la consola de Microsoft Visual Studio al desarrollar aplicaciones de Windows en tiempo de ejecución con JavaScript.  
 
@@ -62,7 +64,7 @@ Estos son los códigos de error que se muestran en la consola de Microsoft Visua
 |:--- |:--- |  
 | APPHOST9610: "la aplicación encontró un error al prepararse para navegar a una página de error personalizada: *ErrorCode*." |  |  
 | APPHOST9611: "la aplicación no pudo navegar a una página de error personalizada debido a este error: *ErrorCode*." |  |  
-| APPHOST9613: "la aplicación no pudo navegar a *URI* por este error: *ErrorCode*." |  |  
+| APPHOST9613: "la aplicación no pudo navegar a *URI*  por este error: *ErrorCode*." |  |  
 | APPHOST9614: "un documento dentro de un iframe solicitó el modo de documento *requestedDocMode* , pero el sistema aplica el modo de documento *currentDocMode* .  El iframe usará el modo de documento de *currentDocMode* . " | Para obtener más información sobre cómo mostrar contenido Web remoto, consulte [cómo establecer un vínculo a páginas web externas][PreviousVersionsWindowsAppsHh780594].  |  
 | APPHOST9615: "la aplicación no puede descargar el archivo en el *URI* porque se invocó mediante programación fuera del contexto local". | Se produce cuando el contenido del contexto Web intenta descargar un archivo mediante programación.  |  
 | APPHOST9616: "este URI no puede usar las API de ubicación geográfica.  Las API de ubicación geográfica solo se pueden invocar desde un URI que forme parte del paquete o esté incluido en el elemento ApplicationContentUris del manifiesto. " | Para obtener más información sobre lo que se permite en el contexto Web, consulta [características y restricciones por contexto][PreviousVersionsWindowsAppsHh465373].  |  
@@ -77,25 +79,23 @@ Estos son los códigos de error que se muestran en la consola de Microsoft Visua
 | APPHOST9624: "la aplicación no puede usar el script para cargar la dirección URL de la *Dirección* URL porque la dirección URL inicia otra aplicación.  Solo la interacción directa del usuario puede iniciar otra aplicación. | Las aplicaciones no pueden iniciar otras aplicaciones directamente.  El usuario puede iniciar otras aplicaciones cuando la aplicación implementa determinados contratos.  Para más información, consulta el tema sobre las [extensiones y los contratos entre aplicaciones][PreviousVersionsWindowsAppsHh464906].  |  
 | APPHOST9626: "se detectó una referencia directa al archivo de recursos `ms-appx://1d33240b-0b00-40e4-a416-a4750c48787f/ja-jp\images\logo.scale-140.png` .  Esta referencia provoca errores cuando se usa fuera del entorno de depuración. " | Debido a la ruta de acceso del archivo `logo.scale-140.png` , este archivo PNG se trata como un recurso localizado, lo que provoca que no se pueda hacer referencia directamente al error en los recursos localizados.  Vea [globaling Your App (html)][PreviousVersionsWindowsAppsHh465006] si tiene previsto usar este archivo como recurso de idioma.  De lo contrario, intente cambiar el nombre del directorio problemático.  |  
 
-## Consulta también  
+## Consulte también  
 
-[Usar Windows Runtime en JavaScript][WindowsRuntimeJavascript]  
-
-<!-- image links -->  
+[Use Windows en tiempo de ejecución en JavaScript][WindowsRuntimeJavascript]  
 
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Usar Windows Runtime en JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Usar Windows Runtime en JavaScript | Microsoft docs"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Clase geolocator"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Clase geolocator | Microsoft docs"  
 
-[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "método addPublicLocalApplicationUri"  
+[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "método addPublicLocalApplicationUri | Microsoft docs"  
 
-[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "Cómo requerir una conexión HTTPS (HTML)"  
-[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "Contratos y extensiones de aplicaciones (aplicaciones de Windows en tiempo de ejecución)"  
-[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalización de la aplicación (HTML)"  
-[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Características y restricciones por contexto (HTML)"  
-[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Características y diferencias de HTML, CSS y JavaScript (HTML)"  
-[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "Cómo establecer un vínculo a páginas web externas (HTML)"  
+[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "Cómo requerir una conexión HTTPS (HTML) | Microsoft docs"  
+[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "Contratos y extensiones de aplicaciones (aplicaciones de Windows en tiempo de ejecución) | Microsoft docs"  
+[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalizar la aplicación (HTML) | Microsoft docs"  
+[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Características y restricciones por contexto (HTML) | Microsoft docs"  
+[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Características y diferencias de HTML, CSS y JavaScript (HTML) | Microsoft docs"  
+[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "Cómo establecer un vínculo a páginas web externas (HTML) | Microsoft docs"  
 
 [MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<> iframe: el elemento marco alineado | MDN"  
