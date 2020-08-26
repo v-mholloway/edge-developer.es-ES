@@ -3,16 +3,16 @@ description: Las últimas características experimentales de Microsoft Edge DevT
 title: Características experimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/21/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, experimento
-ms.openlocfilehash: 6b3e1c06d6b8ed79054c28df483fcca93e5751d6
-ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
+ms.openlocfilehash: 4c2541615700f2c637f293ee6a3fbacd9ccbc43a
+ms.sourcegitcommit: 5ed791ed5423a3a4b03e8a1c7927f026307a6673
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902857"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "10960726"
 ---
 # Características experimentales  
 
@@ -49,20 +49,21 @@ En las siguientes secciones, se describen las nuevas características experiment
 | [Habilitar la pestaña de configuración personalizada de métodos abreviados de teclado](#enable-custom-keyboard-shortcuts-settings-tab) | 84 o posterior |
 | [Habilitar nuevas características de depuración de cuadrícula CSS](#enable-new-css-grid-debugging-features) | 85 o posterior |  
 | [Habilitar la compatibilidad para mover pestañas entre paneles](#enable-support-to-move-tabs-between-panels) | 85 o posterior |  
-| [Habilitar webhint](#enable-webhint) | 85 o posterior | 
-| [Habilitar la consola de red](#enable-network-console) | 85 o posterior |
+| [Habilitar webhint](#enable-webhint) | 85 o posterior |  
+| [Habilitar la consola de red](#enable-network-console) | 85 o posterior |  
+| [Habilitar el visor de pedido de origen](#enable-source-order-viewer) | 86 o posterior |  
 
-### Habilitar la pestaña de configuración personalizada de métodos abreviados de teclado
+### Habilitar la pestaña de configuración personalizada de métodos abreviados de teclado  
 
-Proporciona una nueva página de **accesos directos** en la [configuración de DevTools][DevToolsCustomizeSettings] que permite que los [métodos abreviados de teclado][DevToolsShortcuts] coincidentes en el DevTools de [vs][VisualstudioCode].  
+Proporciona una nueva página de **métodos abreviados** en la [configuración de DevTools][DevToolsCustomizeSettings] que permite la coincidencia de [métodos abreviados de teclado][DevToolsShortcuts] en la DevTools a código de [Microsoft Visual Studio][VisualstudioCode].  
 
-Una vez que hayas habilitado el experimento, vuelve a abrir la [configuración de DevTools][DevToolsCustomizeSettings] con seleccionar `Shift` + `?` .  Vaya a la nueva página de **accesos directos** .  Seleccione **DevTools (valor predeterminado)** en la lista desplegable **coincidir con métodos abreviados preestablecidos** y seleccione **código de Visual Studio**.  Los métodos abreviados de teclado de la DevTools ahora coinciden con los métodos abreviados para acciones equivalentes en VS Code.  
+Una vez que hayas habilitado el experimento, vuelve a abrir la [configuración de DevTools][DevToolsCustomizeSettings] con seleccionar `Shift` + `?` .  Vaya a la nueva página de **accesos directos** .  Seleccione **DevTools (valor predeterminado)** en la lista desplegable **coincidir con métodos abreviados preestablecidos** y seleccione **código de Visual Studio**.  Los métodos abreviados de teclado de la DevTools ahora coinciden con los métodos abreviados para acciones equivalentes en el código de Visual Studio.  
 
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a VS" lightbox="./media/experiments-keyboard-shortcut.png":::
-   Hacer coincidir los métodos abreviados de teclado en el código de DevTools a VS
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio  
 :::image-end:::  
 
-Por ejemplo, en Windows, el método abreviado de teclado para pausar o seguir ejecutando un script en [vs Code][VisualstudioCodeShortcutsKeyboardWindows] es `F5` .  Con el ajuste preestablecido **DevTools (predeterminado)** , el mismo método abreviado de DevTools es `F8` .  Con el ajuste preestablecido de **Visual Studio** , también está el método abreviado `F5` .  
+Por ejemplo, en Windows, el método abreviado de teclado para pausar o seguir ejecutando un script en [Visual Studio Code][VisualstudioCodeShortcutsKeyboardWindows] es `F5` .  Con el ajuste preestablecido **DevTools (predeterminado)** , el mismo método abreviado de DevTools es `F8` .  Con el ajuste preestablecido de **Visual Studio** , también está el método abreviado `F5` .  
 
 ### Habilitar nuevas características de depuración de cuadrícula CSS  
 
@@ -89,27 +90,45 @@ Normalmente, las herramientas, como **los elementos** y la **red** , solo se pue
 [webhint][WebhintMain] es una herramienta de código abierto que proporciona comentarios en tiempo real sobre accesibilidad, compatibilidad entre exploradores, seguridad, rendimiento, PWAs y otros problemas comunes de desarrollo web de los sitios Web.  El experimento de [webhint][WebhintMain] lleva los comentarios de webhint en DevTools en el panel [problemas][DevtoolsIssues] .  Puede seleccionar el problema para ver documentación sobre cómo solucionar el problema y una lista de los recursos afectados de su sitio Web.  Seleccione un vínculo de recursos para abrir el panel de **redes**, **orígenes**o **elementos** correspondiente en DevTools.  
 
 :::image type="complex" source="./media/experiments-webhint.png" alt-text="Comentarios sobre webhint en el panel problemas" lightbox="./media/experiments-webhint.png":::
-   Comentarios sobre webhint en el panel problemas  
-:::image-end:::      
+   Comentarios sobre webhint en el panel **problemas**  
+:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Habilitar la consola de red
+### Habilitar la consola de red  
 
 La **consola de red** es el título de trabajo de un experimento para hacer solicitudes de red sintéticas a través de http.  Puede usar el experimento **consola de red** para enviar solicitudes de API Web.  
 
-Después de habilitar el experimento, asegúrate de reiniciar el DevTools. Para usar la consola de red:
-1.  Abra el panel **red** .
-1.  Busque la solicitud de red que desea cambiar y reenviar.
-1.  Abra el menú contextual \ (haga clic con el botón derecho \) y elija **Editar y reproducir**. 
-1.  Cuando se abra la **consola de red** , edite la información de solicitud de red.
+Después de habilitar el experimento, asegúrate de reiniciar el DevTools.  Para usar la consola de red:  
+
+1.  Abra el panel **red** .  
+1.  Busque la solicitud de red que desea cambiar y reenviar.  
+1.  Abra el menú contextual \ (haga clic con el botón derecho \) y elija **Editar y reproducir**.  
+1.  Cuando se abra la **consola de red** , edite la información de solicitud de red.  
 1.  Seleccione **Enviar**.  
 
 :::image type="complex" source="./media/network-network-console.png" alt-text="Consola de red en el cajón de consola" lightbox="./media/network-network-console.png":::
-Consola de red en el cajón de consola
-:::image-end::: 
+   **Consola de red** en el cajón de **consola**  
+:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  --> 
+
+### Habilitar el visor de pedido de origen  
+
+El **visor de pedidos de origen** es el título de trabajo de un experimento para mostrar el orden de los elementos en el origen de la página.  Puede usar el experimento de **visor de pedidos de origen** para encontrar problemas de accesibilidad en las páginas, ya que el orden de visualización en pantalla puede ser diferente del orden de origen, lo que confunde a los usuarios del lector de pantalla.  
+
+Después de habilitar el experimento, asegúrate de reiniciar el DevTools.  Para usar el visor de órdenes de origen:  
+
+1.  Abra el panel **elementos** .  
+1.  Abra el panel **accesibilidad** en el panel cajón \ (inferior \).  
+1.  En la sección **visor de pedido de origen** , active la casilla Mostrar el pedido de **origen** .  
+1.  Resalte cualquier elemento HTML para mostrar una superposición que sea el orden en el origen de la página.  
+
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Visor de pedidos de origen en el panel Accesibilidad" lightbox="./media/experiments-source-order-viewer.msft.png":::
+   **Visor de pedidos de origen** en el panel **accesibilidad**  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 86 and later.  -->  
 
 ## Características experimentales anteriores  
 
@@ -119,11 +138,11 @@ Consola de red en el cajón de consola
 
 Para proporcionar comentarios sobre experimentos con Microsoft Edge DevTools o sobre cualquier otro tema relacionado con DevTools.  
 
-*   Envíe sus comentarios con el icono de comentarios en el DevTools  
+*   Envíe sus comentarios con el icono para **Enviar comentarios** en la DevTools  
 *   Tweet a [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Icono de comentarios en el DevTools de Microsoft Edge" lightbox="./media/devtools-feedback.png":::
-   Icono de comentarios en el DevTools de Microsoft Edge  
+:::image type="complex" source="./media/devtools-feedback.png" alt-text="Icono enviar comentarios en el Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
+   Icono **Enviar comentarios** en el Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- links -->  
@@ -136,7 +155,7 @@ Para proporcionar comentarios sobre experimentos con Microsoft Edge DevTools o s
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Código de Visual Studio"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Métodos abreviados de teclado de código de Visual Studio para Windows | Código de Visual Studio"  
+[VisualstudioCode]: https://code.visualstudio.com "Código de Microsoft Visual Studio"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Métodos abreviados de teclado de código de Visual Studio para Windows | Código de Microsoft Visual Studio"  
 
 [WebhintMain]: https://webhint.io "sugerencia" 
