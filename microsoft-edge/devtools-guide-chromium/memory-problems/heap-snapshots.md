@@ -2,16 +2,16 @@
 title: Cómo grabar instantáneas de montones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e6f64b219bc2b28d01780c28cc605d56a07cb491
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+ms.openlocfilehash: bd46489d8a8a3fddbff60618b4997784294cccff
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611681"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985469"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -43,17 +43,17 @@ El analizador de montones de DevTools de Microsoft Edge muestra la distribución
 
 En el panel **memoria** , elija **tomar instantánea**y, a continuación, haga clic en **iniciar**.  También puede pulsar `Ctrl` + `E` \ (Windows \) o `Cmd` + `E` \ (MacOS \).  
 
-> ##### Figura 1  
-> Seleccionar tipo de generación de perfiles  
-> ![Seleccionar tipo de generación de perfiles][ImageProfilingType]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+   Seleccionar tipo de generación de perfiles  
+:::image-end:::  
 
 Las **instantáneas** se almacenan inicialmente en la memoria del proceso del representador.  Las instantáneas se transfieren a la DevTools a petición, al hacer clic en el icono de instantánea para verlo.  
 
 Una vez que la instantánea se ha cargado en DevTools y se ha analizado, aparece el número debajo del título de la instantánea, que muestra el [Tamaño total de los objetos de JavaScript accesibles][DevtoolsMemoryProblems101ObjectSizes].  
 
-> ##### Figura 2  
-> Tamaño total de objetos accesibles  
-> ![Tamaño total de objetos accesibles][ImageTotalSize]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Tamaño total de objetos accesibles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+   Tamaño total de objetos accesibles  
+:::image-end:::  
 
 > [!NOTE]
 > Solo los objetos accesibles se incluyen en las instantáneas.  Además, tomar una instantánea siempre comienza con una recolección de elementos no utilizados.  
@@ -62,9 +62,9 @@ Una vez que la instantánea se ha cargado en DevTools y se ha analizado, aparece
 
 Haga clic en el icono **borrar todos los perfiles** para quitar las instantáneas \ (tanto de DevTools como de cualquier memoria asociada al proceso de representación \).  
 
-> ##### Imagen 3  
-> Quitar instantáneas  
-> ![Quitar instantáneas][ImageRemoveSnapshots]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Quitar instantáneas" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+   Quitar instantáneas  
+:::image-end:::  
 
 Al cerrar la ventana DevTools, no se eliminan los perfiles de la memoria asociada con el proceso de representación.  Al volver a abrir DevTools, todas las instantáneas tomadas anteriormente volverán a aparecer en la lista de instantáneas.  
 
@@ -85,9 +85,9 @@ La **vista de Resumen** muestra los objetos agrupados por el nombre del construc
 
 Para cambiar entre las vistas, use el selector de la parte superior de la vista.  
 
-> ##### Imagen 4  
-> Cambiar el selector de vistas  
-> ![Cambiar el selector de vistas][ImageSwitchViews]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Cambiar el selector de vistas" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+   Cambiar el selector de vistas  
+:::image-end:::  
 
 > [!NOTE]
 > No todas las propiedades se almacenan en el montón de JavaScript.  Las propiedades implementadas mediante captadores que ejecutan código nativo no se capturan.  Además, no se capturan valores que no sean de cadena, como los números.  
@@ -96,9 +96,9 @@ Para cambiar entre las vistas, use el selector de la parte superior de la vista.
 
 Inicialmente, se abre una instantánea en la vista de Resumen, que muestra los totales de los objetos, que se pueden expandir para mostrar las instancias:  
 
-> ##### Imagen 5  
-> Vista de Resumen  
-> ![Vista de Resumen][ImageSummaryView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Vista de Resumen" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+   Vista de Resumen  
+:::image-end:::  
 
 Las entradas de nivel superior son líneas de "total".  
 
@@ -117,9 +117,9 @@ Recuerde que los objetos amarillos tienen referencias de JavaScript y los objeto
 
 **¿Para qué se corresponden las diversas entradas de constructor \ (grupo \) en el generador de perfiles del montón?**  
 
-> ##### Imagen 6  
-> Grupos de constructores  
-> ![Grupos de constructores][ImageConstructorGroups]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Grupos de constructores" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+   Grupos de constructores  
+:::image-end:::  
 
 | Entrada de constructor \ (grupo \) | Descripción |  
 |:--- |:--- |  
@@ -140,12 +140,12 @@ Busque objetos perdidos comparando varias instantáneas entre sí.  Para comprob
 1.  Realice una operación \ (interactúe con una página de alguna manera que considere que está causando una fuga \).  
 1.  Realizar una operación inversa \ (hacer la interacción opuesta y repetir varias veces \).  
 1.  Tomar una segunda instantánea del montón y cambiar la vista de esta para **compararla, comparándola**con la **instantánea 1**.  
-
+    
 En la vista **comparación** , se muestra la diferencia entre dos instantáneas.  Al expandir una entrada total, se muestran instancias de objeto eliminadas y agregadas.  
 
-> ##### Imagen 7  
-> Vista comparación  
-> ![Vista comparación][ImageComparisonView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Vista comparación" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+   Vista **comparación**  
+:::image-end:::  
 
 <!--todo: add HeapProfilingComparison section when available  -->  
 
@@ -159,9 +159,9 @@ La vista **contención** es esencialmente una "vista de pájaro" de la estructur
 | **Raíces de GC** | Las raíces de GC reales usadas por el uso de los elementos no usados de la máquina virtual.  Las raíces de GC se componen de mapas de objetos integrados, tablas de símbolos, pilas de subprocesos de VM, memorias caché de compilación, ámbitos de administración y identificadores globales.  |  
 | **Objetos nativos** | Los objetos del explorador "se insertan" dentro de la máquina virtual de JavaScript \ (Java VM \) para permitir la automatización, por ejemplo, los nodos DOM, las reglas CSS.  |  
 
-> ##### Imagen 8  
-> Vista de contención  
-> ![Vista de contención][ImageContainmentView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Vista de contención" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+   Vista de **contención**  
+:::image-end:::  
 
 <!--todo: add heap profiling containment section when available  -->  
 
@@ -178,7 +178,7 @@ La vista **contención** es esencialmente una "vista de pájaro" de la estructur
 > }
 > ```  
 > 
-> Este ejemplo usa funciones con nombre:  
+> El fragmento de followingcode usa funciones con nombre.  
 > 
 > ```javascript
 > function createLargeClosure() {
@@ -191,9 +191,9 @@ La vista **contención** es esencialmente una "vista de pájaro" de la estructur
 > ```  
 > 
 > <!--  
-> > ##### old Figure 9  
-> > Name functions to distinguish between closures  
-> > ![Name functions to distinguish between closures][ImageDomLeaks]  
+> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures" lightbox="../media/memory-problems-domleaks.msft.png":::
+>    Name functions to distinguish between closures  
+> :::image-end:::  
 > -->  
 > 
 > > [!NOTE]
@@ -240,9 +240,9 @@ leafRef = null;
 
 El `#leaf` mantiene una referencia a los elementos primarios \ (parentNode \) y, de forma recursiva, hasta el momento en que `#tree` el leafRef se ha anulado es todo el árbol bajo `#tree` un candidato para GC.  
 
-> ##### Imagen 9  
-> Subárboles DOM  
-> ! [Subárboles DOM] [ImageTreeGc]  
+:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="Subárboles DOM" lightbox="../media/memory-problems-tree-gc.msft.png":::
+   Subárboles DOM  
+:::image-end:::  
 
 > [!NOTE]
 > Ejemplos: Pruebe este ejemplo de un [nodo DOM de pérdida][GlitchDevtoolsMemoryExample06] de información para comprender dónde se puede filtrar y cómo detectarlo.  También puede ver este ejemplo de [fugas de Dom de mayor tamaño de lo esperado][GlitchDevtoolsMemoryExample09].  
@@ -256,27 +256,16 @@ Para obtener más información sobre las pérdidas de DOM y el análisis de memo
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--## Feedback   -->  
+<!--  
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageProfilingType]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png "Ilustración 1: seleccionar el tipo de generación de perfiles"  
-[ImageTotalSize]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png "Ilustración 2: tamaño total de los objetos que se puede alcanzar"  
-[ImageRemoveSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png "Ilustración 3: quitar instantáneas"  
-[ImageSwitchViews]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png "Ilustración 4: selector cambiar vistas"  
-[ImageSummaryView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png "Ilustración 5: vista de Resumen"  
-[ImageConstructorGroups]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png "Ilustración 6: grupos de constructores"  
-[ImageComparisonView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png "Ilustración 7: vista comparación"  
-[ImageContainmentView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png "Ilustración 8: vista de contención"  
-<!--[ImageDomLeaks]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-domleaks.msft.png "old Figure 9: Name functions to distinguish between closures"  -->  
-[ImageTreeGc]:/Microsoft-Edge/DevTools-Guide-Chromium/media/Memory-problems-Tree-GC.msft.png "Ilustración 9: subárboles DOM"  
+-->  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblems101ObjectSizes]: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101#object-sizes "Tamaños de objetos: terminología de memoria"  
-[DevtoolsMemoryProblems101ObjectsRetainingTree]: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101#objects-retaining-tree "Objetos que conservan la terminología de la memoria de árbol"  
+[DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "Tamaño de los objetos-terminología de la memoria | Microsoft docs"  
+[DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "Objetos que conservan la terminología de la memoria de árbol | Microsoft docs"  
 
 <!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->  
 <!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->  
@@ -284,12 +273,12 @@ Para obtener más información sobre las pérdidas de DOM y el análisis de memo
 <!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->  
 <!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->  
 
-[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "Example-03. html-Microsoft Edge (cromo) DevTools | Intento"  
-[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "Example-06. html-Microsoft Edge (cromo) DevTools | Intento"  
-[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "Example-07. html-Microsoft Edge (cromo) DevTools | Intento"  
-[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "Example-08. html-Microsoft Edge (cromo) DevTools | Intento"  
-[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "Example-09. html-Microsoft Edge (cromo) DevTools | Intento"  
-[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "Example-10. html-Microsoft Edge (cromo) DevTools | Intento"  
+[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html-Microsoft Edge (cromo) DevTools | Intento"  
+[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html-Microsoft Edge (cromo) DevTools | Intento"  
+[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html-Microsoft Edge (cromo) DevTools | Intento"  
+[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html-Microsoft Edge (cromo) DevTools | Intento"  
+[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html-Microsoft Edge (cromo) DevTools | Intento"  
+[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html-Microsoft Edge (cromo) DevTools | Intento"  
 
 [GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "memoria | Las"  
 

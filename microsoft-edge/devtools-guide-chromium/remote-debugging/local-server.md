@@ -2,16 +2,16 @@
 title: Acceso a servidores locales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: daa96b604d5ad48a9de49dd24dc38eab79de9c9b
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: fb8f8aabaf426685417f90e25295f3e8e7b08994
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898217"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984916"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "10898217"
 
 
 
-# Acceso a servidores locales   
+# Servidores locales de Access   
 
 
 
@@ -55,19 +55,19 @@ Para habilitar el reenvío de puerto:
 1.  En el cuadro de diálogo **inspeccionar dispositivos** de DevTools, habilite el **reenvío de Puerto**.  
 1.  Seleccione **Agregar regla**.  
     
-    > ##### Figura 1  
-    > Agregar una regla de reenvío de Puerto  
-    > ![Agregar una regla de reenvío de Puerto][ImageAddRule]  
+    :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Agregar una regla de reenvío de Puerto" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
+       Agregar una regla de reenvío de Puerto  
+    :::image-end:::  
     
 1.  En el cuadro de texto **Puerto de dispositivo** de la izquierda, escriba el `localhost` número de puerto desde el que desea poder obtener acceso al sitio en su dispositivo Android.  Por ejemplo, si desea obtener acceso al sitio desde `localhost:5000` entrar `5000` .  
 1.  En el cuadro de texto **dirección local** de la derecha, escriba la dirección IP o el nombre de host en el que su sitio está hospedado en el servidor Web que se ejecuta en el equipo de desarrollo, seguido del número de puerto.  Por ejemplo, si su sitio se ejecuta en `localhost:7331` entrar `localhost:7331` .  
 1.  Seleccione **Agregar**.  
-
+    
 El reenvío de puertos ya está configurado.  En el cuadro de diálogo **inspeccionar dispositivos** , vea el indicador de estado para el puerto hacia adelante en la ficha de su dispositivo.  
 
-> ##### Figura 2  
-> Estado de reenvío de Puerto  
-> ![Estado de reenvío de Puerto][ImagePortForwardingStatus]  
+:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Estado de reenvío de Puerto" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+   Estado de reenvío de Puerto  
+:::image-end:::  
 
 Para ver el contenido, abra Microsoft Edge en su dispositivo Android y vaya al `localhost` Puerto que especificó en el campo **Puerto del dispositivo** .  Por ejemplo, si escribió `5000` en el campo, visite `localhost:5000` .  
 
@@ -89,7 +89,7 @@ Para configurar el reenvío de puertos a un proxy:
     > El servidor proxy y el servidor Web deben ejecutarse en puertos diferentes.  
     
 1.  Configure el [reenvío de Puerto](#set-up-port-forwarding) a su dispositivo Android.  En el campo **dirección local** , escriba `localhost:` seguido del puerto en el que se está ejecutando el servidor proxy.  Por ejemplo, si se está ejecutando en el puerto `8000` , visite `localhost:8000` .  En el campo **Puerto del dispositivo** , escriba el número en el que desea que escuche el dispositivo Android, como `3333` .  
-
+    
 ### Establecer la configuración de proxy en el dispositivo  
 
 A continuación, debe configurar su dispositivo Android para comunicarse con el servidor proxy.  
@@ -106,7 +106,7 @@ A continuación, debe configurar su dispositivo Android para comunicarse con el 
 1.  En el campo **nombre de host del proxy** , escriba `localhost` .  
 1.  En el campo **Puerto proxy** , escriba el número de puerto que escribió para **Puerto de dispositivo** en la sección anterior.  
 1.  Selecciona **Guardar**.  
-
+    
 Con esta configuración, el dispositivo reenvía todas sus solicitudes al proxy en el equipo de desarrollo.  El proxy realiza solicitudes en nombre de su dispositivo, de modo que las solicitudes a su dominio local personalizado se resuelvan correctamente.  
 
 Ahora, obtenga acceso a los dominios personalizados de su dispositivo Android como en el equipo de desarrollo.  
@@ -116,18 +116,14 @@ Si su servidor Web se está ejecutando fuera de un puerto no estándar, recuerde
 > [!TIP]
 > Para reanudar la exploración normal, recuerde revertir la configuración del proxy en su dispositivo Android después de desconectarse de la máquina de desarrollo.  
 
-<!--  -->  
+<!--  
+  
 
 
-
-<!-- image links -->  
-
-[ImageAddRule]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png "Ilustración 1: agregar una regla de reenvío de Puerto"  
-[ImagePortForwardingStatus]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png "Ilustración 2: estado de reenvío de Puerto"  
-
+-->  
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Introducción a la depuración remota dispositivos Android"  
+[RemoteDebuggingGettingStarted]: ./index.md "Introducción a la depuración remota dispositivos Android | Microsoft docs"  
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Proxy de depuración web de Charles"  
 

@@ -2,16 +2,16 @@
 title: Introducción a la visualización y el cambio de DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4dee8b4e3ea927e72c0f98517f264b2c1d453013
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: c1cf84a9b3f5ce2363372e405071c2dfe1a19519
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607450"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985182"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -56,21 +56,21 @@ Cuando esté interesado en un nodo DOM determinado, **inspeccionar** es una form
 1.  [Abra ejemplos de Dom](#open-dom-examples).  
 1.  En **inspeccionar un nodo**, haga clic con el botón derecho en **Michelangelo** y seleccione **inspeccionar**.  
     
-    > ##### Figura 1  
-    > Inspeccionar un nodo  
-    > ![Inspeccionar un nodo][ImageInspectingNode]  
+    :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png" alt-text="Inspeccionar un nodo" lightbox="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png":::
+       Inspeccionar un nodo  
+    :::image-end:::  
     
     1.  Se abre el panel **elementos** de DevTools.  `<li>Michelangelo</li>` está resaltado en el **árbol DOM**.  
         
-        > ##### Figura 2  
-        > Resaltar el nodo Michelangelo  
-        > ![Resaltar el nodo Michelangelo][ImageHighlightingMichelangeloNode]  
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Resalte el nodo Michelangelo" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+           Resaltar el `Michelangelo` nodo  
+        :::image-end:::  
         
-        1.  Haga clic en el icono **inspeccionar** ![ inspección ][ImageInspectIcon] en la esquina superior izquierda de DevTools.  
+        1.  Haga clic en el icono de **inspeccionar** \ ( ![ inspeccionar ][ImageInspectIcon] \) en la esquina superior izquierda de DevTools.  
             
-            > ##### Imagen 3  
-            > Icono de inspección  
-            > ![Icono de inspección][ImageInspect]  
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Icono de inspección" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+               Icono de **inspección**  
+            :::image-end:::  
             
 1.  En **inspeccionar un nodo**, haga clic en el texto de **Tokio** .  Ahora, `<li>Tokyo</li>` está resaltado en el árbol DOM.  
 
@@ -83,15 +83,15 @@ Una vez que haya seleccionado un nodo en el árbol DOM, puede desplazarse por el
 1.  [Abra ejemplos de Dom](#open-dom-examples).  
 1.  En **navegar por el árbol DOM con un teclado**, haga clic con el botón derecho en **Ringo** y seleccione **inspeccionar**.  `<li>Ringo</li>` está seleccionado en el árbol DOM.  
     
-    > ##### Imagen 4  
-    > Inspeccionar el nodo Ringo  
-    > ![Inspeccionar el nodo Ringo][ImageInspectingRingoNode]  
+    :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="Inspeccionar el nodo Ringo" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
+       Inspeccionar el `Ringo` nodo  
+    :::image-end:::  
     
     1.  Presione la `Up` tecla de dirección dos veces.  `<ul>` .  
         
-        > ##### Imagen 5  
-        > Inspeccionar el nodo UL  
-        > ![Inspeccionar el nodo UL][ImageInspectingUlNode]  
+        :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="Inspeccionar el nodo UL" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
+           Inspeccionar el `ul` nodo  
+        :::image-end:::  
         
     1.  Presione la `Left` tecla de dirección.  La `<ul>` lista se contraerá.  
     1.  `Left`Vuelva a presionar la tecla de dirección.  Se selecciona el elemento primario del `<ul>` nodo.  En este caso, es el `<div>` con el identificador `navigate-the-dom-tree-with-a-keyboard-1` .  
@@ -108,9 +108,9 @@ Al ver el árbol DOM, es posible que te encuentres interesado en un nodo DOM que
 1.  El `<li>Magritte</li>` nodo debe seguir estando seleccionado en el árbol DOM.  Si no es así, vuelva a [desplazarse](#scroll-into-view) hacia la vista y volver a empezar.  
 1.  Haga clic con el botón derecho en el `<li>Magritte</li>` nodo y seleccione **desplazarse a la vista**.  Su ventanilla se desplaza hacia arriba para que pueda ver el nodo **Magritte** .  Consulte el [Apéndice: opciones que faltan](#appendix-missing-options) si no puede ver la opción **desplazarse a la vista** .
     
-    > ##### Imagen 6  
-    > Desplazarse en la vista  
-    > ![Desplazarse en la vista][ImageScrollView]  
+    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Desplazarse en la vista" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+       **Desplazarse en la vista**  
+    :::image-end:::  
 
 ### Buscar nodos   
 
@@ -120,9 +120,9 @@ Puede buscar en el árbol DOM por cadena, selector de CSS o selector XPath.
 1.  Pulse `Control` + `F` \ (Windows \) o `Command` + `F` \ (MacOS \).  La barra de búsqueda se abre en la parte inferior del árbol DOM.  
 1.  Escribe `The Moon is a Harsh Mistress`.  La última oración se resalta en el árbol DOM.  
     
-    > ##### Imagen 7  
-    > Resaltar la consulta en la barra de búsqueda  
-    > ![Resaltar la consulta en la barra de búsqueda][ImageHighlightingQuerySearchBar]  
+    :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Resaltar la consulta en la barra de búsqueda" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
+       Resaltar la consulta en la barra de búsqueda  
+    :::image-end:::  
     
 Como se mencionó anteriormente, la barra de búsqueda también admite los selectores CSS y CSS.  
 
@@ -138,9 +138,9 @@ Para editar el contenido de un nodo, haga doble clic en el contenido del árbol 
 1.  En **editar contenido**, haga clic con el botón derecho en **Michelle** y seleccione **inspeccionar**.  
     1.  En el árbol DOM, haga doble clic `Michelle` .  En otras palabras, haga doble clic en el texto entre `<li>` y `</li>` .  El texto se resalta para indicar que está seleccionado.  
         
-        > ##### Imagen 8  
-        > Editar el texto  
-        > ![Editar el texto][ImageEditingText]  
+        :::image type="complex" source="../media/dom-elements-highlighted-edit-content.msft.png" alt-text="Editar el texto" lightbox="../media/dom-elements-highlighted-edit-content.msft.png":::
+           Editar el texto  
+        :::image-end:::  
         
     1.  Eliminar `Michelle` , escriba `Leela` y, a continuación, pulse `Enter` para confirmar el cambio.  El texto del DOM cambia de **Michelle** a **Leela**.  
 
@@ -150,18 +150,17 @@ Para editar atributos, haga doble clic en el nombre o valor del atributo.  Siga 
 
 1.  [Abra ejemplos de Dom](#open-dom-examples).  
 1.  En **Editar atributos**, haga clic con el botón derecho en **Howard** y seleccione **inspeccionar**.  
-
 1.  Haga doble clic `<li>` .  El texto se resalta para indicar que el nodo está seleccionado.  
     
-    > ##### Imagen 9  
-    > Editar el nodo  
-    > ![Editar el nodo][ImageEditingNode]  
+    :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="Editar el nodo" lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
+       Editar el nodo  
+    :::image-end:::  
     
 1.  Presione la `Right` tecla de dirección, agregue un espacio, escriba `style="background-color:gold"` y, a continuación, presione `Enter` .  El color de fondo del nodo cambia a oro.  
     
-    > ##### Imagen 10  
-    > Agregar un atributo de estilo al nodo  
-    > ![Agregar un atributo de estilo al nodo][ImageAddingStyleAttributeNode]  
+    :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Agregar un atributo de estilo al nodo" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
+       Agregar un `style` atributo al nodo  
+    :::image-end:::  
     
 ### Editar tipo de nodo   
 
@@ -172,9 +171,9 @@ Para editar el tipo de un nodo, haga doble clic en el tipo y, a continuación, e
     1.  Haga doble clic `<li>` .  `li`Se resalta el texto.  
     1.  Eliminar `li` , escriba `button` y, a continuación, pulse `Enter` .  El `<li>` nodo cambia a un `<button>` nodo.  
         
-        > ##### Imagen 11  
-        > Cambiar el tipo de nodo a botón  
-        > ![Cambiar el tipo de nodo a botón][ImageChangingNodeButton]  
+        :::image type="complex" source="../media/dom-elements-highlighted-edit-node-type-button.msft.png" alt-text="Cambiar el tipo de nodo a botón" lightbox="../media/dom-elements-highlighted-edit-node-type-button.msft.png":::
+           Cambiar el tipo de nodo a `button`  
+        :::image-end:::  
         
 ### Reordenar los nodos DOM   
 
@@ -188,9 +187,9 @@ Arrastre los nodos para reordenarlos.
     
     1.  En el árbol DOM, arrastre `<li>Elvis Presley</li>` hasta la parte superior de la lista.  
         
-        > ##### Imagen 12  
-        > Arrastrar el nodo a la parte superior de la lista  
-        > ![Arrastrar el nodo a la parte superior de la lista][ImageDraggingNodeTopList]  
+        :::image type="complex" source="../media/dom-elements-reorder-dom-nodes.msft.png" alt-text="Arrastre el nodo a la parte superior de la lista" lightbox="../media/dom-elements-reorder-dom-nodes.msft.png":::
+           Arrastre el nodo a la parte superior de la lista  
+        :::image-end:::  
         
 ### Estado de fuerza   
 
@@ -209,9 +208,9 @@ Pulse `H` para ocultar un nodo.
 1.  En **ocultar un nodo**, haga clic con el botón derecho en **las estrellas mi destino** y seleccione **inspeccionar**.  
     1.  Presione la `H` tecla.  El nodo está oculto.  
         
-        > ##### Imagen 13  
-        > El aspecto del nodo en el árbol DOM después de ocultarlo  
-        > ![El aspecto del nodo en el árbol DOM después de ocultarlo][ImageNodeDomTreeAfterHidden]  
+        :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="El aspecto del nodo en el árbol DOM después de ocultarlo" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
+           El aspecto del nodo en el árbol DOM después de ocultarlo  
+        :::image-end:::  
         
     1.  `H`Vuelva a presionar la tecla.  Se vuelve a mostrar el nodo.  
 
@@ -237,15 +236,16 @@ Al inspeccionar un nodo, el `== $0` texto que se encuentra junto al nodo signifi
     1.  Presione la `Escape` tecla para abrir el cajón de consola.  
     1.  Escriba `$0` y presione la `Enter` tecla.  El resultado de la expresión muestra que `$0` se evalúa `<li>The Left Hand of Darkness</li>` .  
         
-        > ##### Imagen 14  
-        > El resultado de la primera `$0` expresión en la consola  
-        > ![El resultado de la primera expresión $0 en la consola][ImageFirstConsole]  
+        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="El resultado de la primera expresión $0 en la consola" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
+            El resultado de la primera `$0` expresión en la **consola**  
+        :::image-end:::  
         
     1.  Desplace el puntero sobre el resultado.  El nodo se resalta en la ventanilla.  
     1.  Haga clic `<li>Dune</li>` en el árbol DOM, escriba `$0` la consola de nuevo y, a continuación, vuelva a presionar `Enter` .  Ahora, `$0` evalúa a `<li>Dune</li>` .  
         
-        > ##### Imagen 15  
-        > Resultado de la segunda `$0` expresión en la consola ![ el resultado de la segunda expresión $0 en la consola][ImageSecondConsole]  
+        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="El resultado de la segunda expresión $0 en la consola" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
+           Resultado de la segunda `$0` expresión en la **consola**  
+        :::image-end:::  
         
 ### Almacenar como variable global   
 
@@ -256,9 +256,9 @@ Si necesita hacer referencia a un nodo varias veces, almacénelo como una variab
     1.  Haga clic con el botón derecho `<li>The Big Sleep</li>` en el árbol DOM y seleccione **almacenar como variable global**.  Consulte el [Apéndice: opciones que faltan](#appendix-missing-options) si no ve esta opción.  
     1.  Escriba `temp1` la consola y, a continuación, pulse `Enter` .  El resultado de la expresión muestra que la variable se evalúa en el nodo.  
         
-        > ##### Imagen 16  
-        > El resultado de la expresión temp1  
-        > ![El resultado de la expresión temp1][ImageResultTemp1]  
+        :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="El resultado de la expresión temp1" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
+           El resultado de la `temp1` expresión  
+        :::image-end:::  
         
 ### Copiar ruta JS   
 
@@ -270,9 +270,9 @@ Copie la ruta de acceso de JavaScript en un nodo cuando necesite hacer referenci
     1.  Pulse `Control` + `V` \ (Windows \) o `Command` + `V` \ (MacOS \) para pegar la expresión en la consola.  
     1.  Pulse `Enter` para evaluar la expresión.
         
-        > ##### Imagen 17  
-        > Resultado de la expresión de ruta de copia JS  
-        > ![Resultado de la expresión de ruta de copia JS][ImageResultCopyJSPath]  
+        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Resultado de la expresión de ruta de copia JS" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+           Resultado de la expresión de **ruta de copia JS**  
+        :::image-end:::  
         
 ## Interrupción en cambios de DOM   
 
@@ -286,18 +286,18 @@ Use puntos de interrupción de modificación de atributos cuando desee pausar el
 1.  En **interrupción en las modificaciones de atributos**, haga clic con el botón derecho en **sauerkraut** y seleccione **inspeccionar**.  
     1.  En el árbol DOM, haga clic con el botón derecho `<li id="target">Sauerkraut</li>` y seleccione **interrumpir**las  >  **modificaciones de atributos**.  Consulte el [Apéndice: opciones que faltan](#appendix-missing-options) si no puede ver esta opción.
         
-        > ##### Ilustración 18  
-        > Interrupciones en las modificaciones de atributos  
-        > ![Interrupciones en las modificaciones de atributos][ImageBreakAttributeModification]  
+        :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Interrupciones en las modificaciones de atributos" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
+           **Interrupciones en las modificaciones de atributos**  
+        :::image-end:::  
         
-    1.  En el siguiente paso, se le indicará que haga clic en un botón que pausa el código de la página.  Una vez que la página se haya pausado, ya no podrás desplazarse por la página.  Debe hacer clic en **reanudar** ![ script ][ImageResumeScriptIcon] de currículo para que la página se vuelva a desplazar.
+    1.  En el siguiente paso, se le indicará que haga clic en un botón que pausa el código de la página.  Una vez que la página se haya pausado, ya no podrás desplazarse por la página.  Debe hacer clic en **resume script** \ ( ![ resume script ][ImageResumeScriptIcon] \) para hacer que la página se vuelva a desplazar.
         
-        > ##### Ilustración 19  
-        > Dónde reanudar la secuencia de comandos que se ejecuta  
-        > ![Dónde reanudar la secuencia de comandos que se ejecuta][ImageResumeScript]  
+        :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Dónde reanudar la secuencia de comandos que se ejecuta" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
+           Dónde reanudar la secuencia de comandos que se ejecuta  
+        :::image-end:::  
         
     1.  Haga clic en el botón **establecer fondo** de arriba.  Esto establece el `style` atributo del nodo en `background-color:thistle` .  DevTools pausa la página y resalta el código que hizo que el atributo cambie.  
-    1.  Haga clic en **reanudar** script ![ ][ImageResumeScriptIcon] de currículo, como se mencionó anteriormente.  
+    1.  Haga clic en **reanudar script** \ ( ![ resume script ][ImageResumeScriptIcon] \), como se mencionó anteriormente.  
     
 ### Interrupción en eliminación de nodo   
 
@@ -307,7 +307,7 @@ Si desea hacer una pausa cuando se quita un nodo en particular, use los puntos d
 1.  En **interrupción en eliminación de nodo**, haga clic con el botón derecho en **Neuromancer** y seleccione **inspeccionar**.  
     1.  En el árbol DOM, haga clic con el botón derecho `<li id="target">Neuromancer</li>` y seleccione **interrumpir**  >  **eliminación de nodo**.  Consulte el [Apéndice: opciones que faltan](#appendix-missing-options) si no puede ver esta opción.  
     1.  Haga clic en el botón **eliminar** .  DevTools pausa la página y resalta el código que ha provocado la eliminación del nodo.  
-    1.  Haga clic en **reanudar** script de ![ currículo ][ImageResumeScriptIcon] .  
+    1.  Haga clic en **reanudar script** \ ( ![ resume script ][ImageResumeScriptIcon] \).  
     
 ### Saltos en las modificaciones del subárbol   
 
@@ -317,7 +317,7 @@ Después de poner un punto de interrupción de modificación de un subárbol en 
 1.  En **interrupciones en las modificaciones de subárbol**, haga clic con el botón derecho en **un incendio** y seleccione **inspeccionar**.  
     1.  En el árbol DOM, haga clic con el botón derecho `<ul id="target">` , que es el nodo de arriba `<li>A Fire Upon the Deep</li>` y seleccione **interrumpir en**las  >  **modificaciones del subárbol**.  Consulte el [Apéndice: opciones que faltan](#appendix-missing-options) si no puede ver esta opción.  
     1.  Haga clic en **Agregar hijo**.  El código se detiene porque `<li>` se ha agregado un nodo a la lista.  
-    1.  Haga clic en **reanudar** script de ![ currículo ][ImageResumeScriptIcon] .  
+    1.  Haga clic en **reanudar script** \ ( ![ resume script ][ImageResumeScriptIcon] \).  
     
 ## Pasos siguientes   
 
@@ -331,57 +331,69 @@ Visite la [Página principal de Microsoft Edge DevTools][MicrosoftEdgeDevTools] 
 
 ## Apéndice: HTML frente a DOM   
 
-Esta sección explica rápidamente la diferencia entre HTML y DOM.  
+En la siguiente sección se explica rápidamente la diferencia entre HTML y DOM.  
 
-Cuando se usa un explorador Web para solicitar una página, el servidor devuelve HTML como este:  
+:::row:::
+   :::column span="":::
+      Cuando se usa un explorador Web para solicitar una página, el servidor devuelve HTML como el siguiente fragmento de código.  
 
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is a hypertext document on the World Wide Web.</p>
-    <script src="/script.js" async></script>
-  </body>
-</html>
-```  
+      ```html
+      <!doctype html>
+      <html>
+          <head>
+              <title>Hello, world!</title>
+          </head>
+          <body>
+              <h1>Hello, world!</h1>
+              <p>This is a hypertext document on the World Wide Web.</p>
+              <script src="/script.js" async></script>
+          </body>
+      </html>
+      ```  
+   :::column-end:::
+   :::column span="":::
+      El explorador analiza el código HTML y crea un árbol de objetos como la siguiente lista.  
+      
+      ```dom
+      html
+          head
+              title
+          body
+              h1
+              p
+              script
+      ```  
+   :::column-end:::
+:::row-end:::  
 
-El explorador analiza el código HTML y crea un árbol de objetos como este:  
+Este árbol de objetos, o nodos, que representa el contenido de la página, se denomina DOM.  
 
-```dom
-html
-  head
-    title
-  body
-    h1
-    p
-    script
-```  
-
-Este árbol de objetos, o nodos, que representa el contenido de la página, se denomina DOM.  Ahora es lo mismo que el código HTML, pero Supongamos que la secuencia de comandos a la que se hace referencia en la parte inferior del HTML ejecuta este código:  
-
-```javascript
-const h1 = document.querySelector('h1');
-h1.parentElement.removeChild(h1);
-const p = document.createElement('p');
-p.textContent = 'Wildcard!';
-document.body.appendChild(p);
-```  
-
-Ese código quita el `h1` nodo y agrega otro `p` nodo al Dom.  El DOM completo ahora tiene el siguiente aspecto:  
-
-```dom
-html
-  head
-    title
-  body
-    p
-    script
-    p
-```  
+:::row:::
+   :::column span="":::
+      Ahora es lo mismo que el código HTML, pero Supongamos que la secuencia de comandos a la que se hace referencia en la parte inferior del HTML ejecuta el siguiente fragmento de código.  
+      
+      ```javascript
+      const h1 = document.querySelector('h1');
+      h1.parentElement.removeChild(h1);
+      const p = document.createElement('p');
+      p.textContent = 'Wildcard!';
+      document.body.appendChild(p);
+      ```  
+   :::column-end:::
+   :::column span="":::
+      Ese código quita el `h1` nodo y agrega otro `p` nodo al Dom.  El DOM completo ahora muestra la siguiente lista.  
+      
+      ```dom
+      html
+          head
+              title
+          body
+              p
+              script
+              p
+      ```  
+   :::column-end:::
+:::row-end:::  
 
 El código HTML de la página es ahora diferente al del DOM.  En otras palabras, HTML representa el contenido inicial de la página y DOM representa el contenido de la página actual.  Cuando JavaScript agrega, quita o modifica nodos, el DOM es diferente del HTML.  
 
@@ -397,48 +409,29 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
     
     > ##### Figure 19  
     > Scroll into view  
-    > ![Scroll into view][ImageScrollView]  
+    > :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Scroll into view" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+   Scroll into view  
+:::image-end:::  
     -->  
 
 ## Apéndice: opciones perdidas   
 
 Muchas de las instrucciones de este tutorial le indican que debe hacer clic con el botón secundario del mouse en un nodo del árbol DOM y, a continuación, seleccionar una opción en el menú contextual que aparece.  Si no ve la opción especificada en el menú contextual, intente hacer clic con el botón secundario del ratón fuera del texto del nodo.  
 
-> ##### Ilustración 20  
-> Dónde hacer clic si no ve todas las opciones  
-> ![Dónde hacer clic si no ve todas las opciones][ImageNotSeeingAllOptions]  
+:::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Dónde hacer clic si no ve todas las opciones" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
+   Dónde hacer clic si no ve todas las opciones  
+:::image-end:::  
 
 <!-- image links -->  
 
-[ImageInspectIcon]: /microsoft-edge/devtools-guide-chromium/media/inspect-icon.msft.png  
-[ImageResumeScriptIcon]: /microsoft-edge/devtools-guide-chromium/media/resume-script-icon.msft.png  
-
-[ImageInspectingNode]: /microsoft-edge/devtools-guide-chromium/media/dom-glitch-dom-examples-michelangelo-inspect.msft.png "Ilustración 1: inspeccionar un nodo"  
-[ImageHighlightingMichelangeloNode]: /microsoft-edge/devtools-guide-chromium/media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png "Ilustración 2: resaltado del nodo Michelangelo"  
-[ImageInspect]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-select-element-page-inspect.msft.png "Ilustración 3: el icono de inspección"  
-[ImageInspectingRingoNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png "Ilustración 4: inspeccionar el nodo Ringo"  
-[ImageInspectingUlNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png "Ilustración 5: inspeccionar el nodo UL"  
-[ImageScrollView]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png "Ilustración 6: desplazarse en la vista"  
-[ImageHighlightingQuerySearchBar]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-search-nodes-highlight.msft.png "Ilustración 7: resaltado de la consulta en la barra de búsqueda"  
-[ImageEditingText]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-content.msft.png "Ilustración 8: edición del texto"  
-[ImageEditingNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-attributes-highlighted.msft.png "Ilustración 9: edición del nodo"  
-[ImageAddingStyleAttributeNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-attributes-inline-css.msft.png "Ilustración 10: agregar un atributo de estilo al nodo"  
-[ImageChangingNodeButton]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-node-type-button.msft.png "Ilustración 11: cambiar el tipo de nodo a botón"  
-[ImageDraggingNodeTopList]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-reorder-dom-nodes.msft.png "Ilustración 12: arrastrar el nodo a la parte superior de la lista"  
-[ImageNodeDomTreeAfterHidden]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-hide-a-node.msft.png "Ilustración 13: el aspecto del nodo en el árbol DOM después de ocultarlo"  
-[ImageFirstConsole]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png "Ilustración 14: el resultado de la primera expresión $0 en la consola"  
-[ImageSecondConsole]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png "Ilustración 15: el resultado de la segunda expresión $0 en la consola"  
-[ImageResultTemp1]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png "Ilustración 16: el resultado de la expresión temp1"  
-[ImageResultCopyJSPath]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png "Ilustración 17: el resultado de la expresión de ruta de la copia JS"  
-[ImageBreakAttributeModification]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png "Ilustración 18: interrupciones en las modificaciones de atributos"  
-[ImageResumeScript]: /microsoft-edge/devtools-guide-chromium/media/dom-break-attribute-modifications-sources-paused-on.msft.png "Ilustración 19: Dónde reanudar la secuencia de comandos que se ejecuta"  
-[ImageNotSeeingAllOptions]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-right-click-right-side.msft.png "Ilustración 20: Dónde hacer clic si no ve todas las opciones"  
+[ImageInspectIcon]: ../media/inspect-icon.msft.png  
+[ImageResumeScriptIcon]: ../media/resume-script-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas de desarrollador de Microsoft Edge \ (cromo \)"  
-[DevToolsCssGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Introducción a la visualización y el cambio de CSS"  
-[DevToolsShortcutsElements]: /microsoft-edge/devtools-guide-chromium/shortcuts#elements-panel-keyboard-shortcuts "Métodos abreviados de teclado del panel elementos-métodos abreviados de teclado de Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Herramientas de desarrollador de Microsoft Edge \ (cromo \) | Microsoft docs"  
+[DevToolsCssGetStarted]: ../css/index.md "Introducción a la visualización y el cambio de CSS | Microsoft docs"  
+[DevToolsShortcutsElements]: ../shortcuts.md#elements-panel-keyboard-shortcuts "Métodos abreviados de teclado del panel elementos-métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft docs"  
 
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Ejemplo de DOM de DevTools Microsoft Edge (cromo) | Intento"
 

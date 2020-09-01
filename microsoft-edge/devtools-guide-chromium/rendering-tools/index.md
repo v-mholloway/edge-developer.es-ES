@@ -2,16 +2,16 @@
 title: Analizar el rendimiento en tiempo de ejecución
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7705428dba2ca368eb8f61b13bb96901756b081f
-ms.sourcegitcommit: 0342d99bf8d3212068890bab0e1e960afa507c02
+ms.openlocfilehash: 5f1a4125cfea1c582a76469ae7c9cd1ca75f0b00
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611867"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984937"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -44,7 +44,7 @@ Los usuarios esperan páginas interactivas y suaves.  Cada fase de la canalizaci
 *   No complica demasiado tu CSS.  Usa menos CSS y conserva tus selectores de CSS.  
 *   Evite el diseño tanto como sea posible.  Elija CSS que no desencadene el diseño.  
 *   La pintura puede tardar más tiempo que cualquier otra actividad de representación.  Mire los cuellos de botella de pintura.  
-
+    
 ## JavaScript  
 
 Los cálculos de JavaScript, especialmente aquellos que desencadenan cambios visuales extensivos, pueden detener el rendimiento de la aplicación.  No permita que los JavaScript con tiempos inesperados o de ejecución prolongada interfieran con las interacciones del usuario.  
@@ -90,15 +90,15 @@ Realizar una grabación en el panel **rendimiento** .  Compruebe la grabación d
 
 Haga clic en un `Recalculate Style` evento para ver más información sobre él en el panel de **detalles** .  Si los cambios de estilo están tardando mucho, eso es un impacto en el rendimiento.  Si los cálculos de estilo afectan a un gran número de elementos, se trata de otra área con espacio para mejorarlo.  
 
-> ##### Figura 1  
-> Recalcular largo estilo  
-> ![Recalcular largo estilo][ImageLongRecalculateStyle]
+:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Recalcular largo estilo" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+   Recalcular largo estilo  
+:::image-end:::  
 
 Para reducir el impacto de `Recalculate Style` los eventos:  
 
 *   Use los [desencadenadores de CSS][CssTriggers] para saber qué propiedades de CSS desencadenan diseño, pintura y composición.  Estas propiedades tienen el peor impacto en el rendimiento de la representación.  
 *   Cambiar a propiedades que tienen menos impacto.  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
-
+    
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
 ### Estilo: problemas  
@@ -137,11 +137,11 @@ Como regla general, si solicita un valor geométrico al DOM antes de que se comp
 
 El panel **rendimiento** identifica cuando una página provoca diseños sincrónicos forzados.  Estos `Layout` eventos se marcan con barras rojas.  
 
-> ##### Figura 2  
-> Diseño sincrónico forzado  
-> ![Diseño sincrónico forzado][ImageForcedSynchronousLayout]  
+:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Diseño sincrónico forzado" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+   Diseño sincrónico forzado  
+:::image-end:::  
 
-"La hiperpaginación de diseño" es una repetición de las condiciones de diseño sincrónico forzado.  Esto se produce cuando JavaScript escribe y Lee de forma repetida desde el DOM, lo que obliga al explorador a volver a calcular el diseño una y otra vez.  Para identificar la hiperpaginación de la distribución, busque un patrón de advertencias de diseño sincrónico forzado.  Consulte la [ilustración 2](#figure-2).  
+"La hiperpaginación de diseño" es una repetición de las condiciones de diseño sincrónico forzado.  Esto se produce cuando JavaScript escribe y Lee de forma repetida desde el DOM, lo que obliga al explorador a volver a calcular el diseño una y otra vez.  Para identificar la hiperpaginación de la distribución, busque un patrón de advertencias de diseño sincrónico forzado.  Vea la ilustración anterior.  
 
 ### Diseño: problemas  
 
@@ -167,9 +167,9 @@ La composición es el lugar donde se agrupan las partes pintadas de la página p
 ¿Quiere saber cuánto tarda el pintado o la frecuencia con la que se produce la pintura?  Active la opción [Habilitar el instrumental de pintura avanzada][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] en el panel **rendimiento** y, después, realice una grabación.  Si se gasta la mayor parte del tiempo de procesamiento, tiene problemas de pintura.  
 
 <!--
-> ##### Old Figure 3  
-> Long paint times in timeline recording  
-> ![Long paint times in timeline recording][ImageLongPaintTimes]  
+:::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
+   Long paint times in timeline recording  
+:::image-end:::  
 -->  
 
 <!--
@@ -189,29 +189,25 @@ En la siguiente tabla se describen algunos problemas comunes de Paint y compuest
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-<!--## Feedback   -->  
+<!--  
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageLongRecalculateStyle]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-performance-recalculate-style-summary.msft.png "Ilustración 1: estilo Long recalculate"  
-[ImageForcedSynchronousLayout]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-recalculate-style-summary.msft.png "Ilustración 2: diseño sincrónico forzado"  
-<!--[ImageLongPaintTimes]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png "Old Figure 3: Long paint times in timeline recording"  -->  
+-->  
 
 <!-- links -->  
 
-[DevtoolsRenderingToolsJavascriptRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Acelerar el tiempo de ejecución de JavaScript"  
+[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Acelerar el tiempo de ejecución de JavaScript | Microsoft docs"  
 
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#enable-advanced-paint-instrumentation "Habilitar el instrumental de pintura avanzado-referencia de análisis de rendimiento"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Habilitar instrumentación de pintura avanzada-referencia de análisis de rendimiento | Microsoft docs"
 
-<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: /microsoft-edge/devtools-guide-chromium/rendering-tools/forced-synchronous-layouts "Diagnose Forced Synchronous Layouts"  -->  
+<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
 <!-- The Timeline Tool page is deprecated  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-javascript "Profile JavaScript - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-painting "Profile painting - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#make-a-recording "Make a recording - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#rendering-settings "Rendering settings - How to Use the Timeline Tool"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: ../evaluate-performance/timeline-tool.md#profile-javascript "Profile JavaScript - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: ../evaluate-performance/timeline-tool.md#profile-painting "Profile painting - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: ../evaluate-performance/timeline-tool.md#make-a-recording "Make a recording - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: ../evaluate-performance/timeline-tool.md#rendering-settings "Rendering settings - How to Use the Timeline Tool | Microsoft Docs"  -->  
 
 <!--[WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing "Avoid Large, Complex Layouts, and Layout Thrashing"  -->  
 <!--[WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime]: /web/fundamentals/performance/rendering/optimize-javascript-execution "Optimize JavaScript Runtime"  -->  

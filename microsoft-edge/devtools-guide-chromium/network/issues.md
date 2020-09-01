@@ -2,16 +2,16 @@
 title: Guía de problemas de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 018a6ef89242d55cefaa974641be456f4501c557
-ms.sourcegitcommit: 33663cd7838dddee86228dde469a5e9551bddb02
+ms.openlocfilehash: a9a3234f3516bef16328102858363ffcb06251ec
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611808"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985399"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -38,97 +38,95 @@ ms.locfileid: "10611808"
 
 En esta guía se muestra cómo detectar problemas de red o oportunidades de optimización en el panel red de Microsoft Edge DevTools.  
 
-Consulte [Introducción][NetworkPerformance] a los conceptos básicos del panel red.  
+Consulte [Introducción][NetworkPerformance] a los conceptos básicos del panel **red** .  
 
 ## Solicitudes en cola o detenidas   
 
-### Síntomas  
+**Síntomas**  
 
 Se están descargando seis solicitudes al mismo tiempo.  Después de eso, una serie de solicitudes se ponen en cola o se detienen.  Una vez finalizada una de las primeras seis solicitudes, se inicia una de las solicitudes de la cola.  
 
-En la **cascada** de la [figura 1](#figure-1), las seis primeras solicitudes del `edge-iconx1024.msft.png` activo se inician simultáneamente.  Las siguientes solicitudes se detienen hasta que se haya completado una de seis originales.  
+En la **cascada** de la siguiente ilustración, las seis primeras solicitudes del `edge-iconx1024.msft.png` activo se inician simultáneamente.  Las siguientes solicitudes se detienen hasta que se haya completado una de seis originales.  
 
-> ##### Figura 1  
-> Ejemplo de una serie en cola o detenida en el panel red  
-> ![Ejemplo de una serie en cola o detenida en el panel red][ImageStalled]  
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Ejemplo de una serie en cola o detenida en el panel red" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+   Ejemplo de una serie en cola o detenida en el panel **red**  
+:::image-end:::  
 
-### Causas  
+**Causas**  
 
 Se están realizando demasiadas solicitudes en un solo dominio.  En las conexiones HTTP/1.0 o HTTP/1.1, Microsoft Edge permite un máximo de seis conexiones TCP simultáneas por host.  
 
-### Arreglos  
+**Arreglos**  
 
 *   Implemente la particionamiento del dominio si necesita usar HTTP/1.0 o HTTP/1.1.  
 *   Use HTTP/2.  No use el particionamiento del dominio con HTTP/2.  
 *   Quite o aplaza las solicitudes innecesarias para que las solicitudes críticas se descarguen anteriormente.  
-
+    
 ## Tiempo lento para el primer byte (TTFB)   
 
-### Síntomas  
+**Síntomas**  
 
 Una solicitud dedica mucho tiempo a esperar a recibir el primer byte del servidor.  
 
-En la [ilustración 2](#figure-2), la barra verde larga de la **cascada** indica que la solicitud estaba esperando mucho tiempo.  Esto se ha simulado usando un perfil para restringir la velocidad de la red y agregar un retraso.  
+En la siguiente ilustración, la larga barra verde en la **cascada** indica que la solicitud estaba esperando mucho tiempo.  Esto se ha simulado usando un perfil para restringir la velocidad de la red y agregar un retraso.  
 
-> ##### Figura 2  
-> Ejemplo de una solicitud con un tiempo lento para el primer byte  
-> ![Ejemplo de una solicitud con un tiempo lento para el primer byte][ImageSlowTimeToFirstByte]  
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Ejemplo de una solicitud con un tiempo lento para el primer byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+   Ejemplo de una solicitud con un tiempo lento para el primer byte  
+:::image-end:::  
 
-### Causas  
+**Causas**  
 
 *   La conexión entre el cliente y el servidor es lenta.  
 *   El servidor tarda en responder.  Aloje el servidor de forma local para determinar si es la conexión o el servidor que es lento.  Si sigue demorando el primer byte \ (TTFB \) durante el acceso a un servidor local, entonces el servidor es lento.  
-
-### Arreglos  
+    
+**Arreglos**  
 
 *   Si la conexión es lenta, considere la posibilidad de hospedar el contenido en una red CDN o de cambiar los proveedores de hospedaje.  
 *   Si el servidor es lento, considere la posibilidad de optimizar las consultas de la base de datos, implementar una caché o modificar la configuración del servidor.  
-
+    
 ## Descarga de contenido lento   
 
-### Síntomas  
+**Síntomas**  
 
 Una solicitud tarda mucho tiempo en descargarse.  
 
-En la [figura 3](#figure-3), la barra larga azul en la **cascada** que se encuentra junto al formato PNG significa que se ha tardado mucho tiempo en descargarlo.  
+En la siguiente ilustración, la larga barra azul en la **cascada** que se encuentra junto al formato PNG significa que se ha tardado mucho tiempo en descargarlo.  
 
-> ##### Imagen 3  
-> Ejemplo de una solicitud que tarda mucho tiempo en descargarse  
-> ![Ejemplo de una solicitud que tarda mucho tiempo en descargarse][ImageSlowContentDownload]  
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Ejemplo de una solicitud que tarda mucho tiempo en descargarse" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+   Ejemplo de una solicitud que tarda mucho tiempo en descargarse  
+:::image-end:::  
 
-### Causas  
+**Causas**  
 
 *   La conexión entre el cliente y el servidor es lenta.  
 *   Se está descargando una gran cantidad de contenido.  
-
-### Arreglos  
+    
+**Arreglos**  
 
 *   Considere la posibilidad de hospedar el contenido en una red CDN o de cambiar proveedores de hospedaje.  
 *   Reenvíes menos bytes optimizando las solicitudes.  
-
+    
 ## Conocimiento de colaboración  
 
 ¿Tiene un problema de red que debe agregarse a esta guía?  
 
 *   Envía un Tweet a [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Seleccione **Enviar** comentarios ![ envíe comentarios ][ImageSendFeedbackIcon] en la DevTools o pulse `Alt` + `Shift` + `I` \ (Windows \) o `Option` + `Shift` + `I` \ (MacOS \) para proporcionar respuestas o solicitudes de características.  
+*   Seleccione **Enviar comentarios** \ ( ![ Enviar comentarios ][ImageSendFeedbackIcon] \) en la DevTools o pulse `Alt` + `Shift` + `I` \ (Windows \) o `Option` + `Shift` + `I` \ (MacOS \) para proporcionar respuestas o solicitudes de características.  
 *   [Abra un problema][WebFundamentalsIssue] en el repositorio de docs.  
+    
+<!--  
+  
 
-<!--   -->  
 
-
+-->  
 
 <!-- image links -->  
 
-[ImageSendFeedbackIcon]: /microsoft-edge/devtools-guide-chromium/media/smile-icon.msft.png  
-
-[ImageStalled]: /microsoft-edge/devtools-guide-chromium/media/network-network-disabled-cache-resources-queue.msft.png "Ilustración 1: un ejemplo de una serie en cola o detenida en el panel red"  
-[ImageSlowTimeToFirstByte]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-using-dial-up-profile.msft.png "Ilustración 2: un ejemplo de una solicitud con un tiempo lento para el primer byte"  
-[ImageSlowContentDownload]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-edge-devtools.msft.png "Ilustración 3: un ejemplo de una solicitud que tarda mucho tiempo en descargarse"  
+[ImageSendFeedbackIcon]: ../media/smile-icon.msft.png  
 
 <!-- links -->  
 
-[NetworkPerformance]: /microsoft-edge/devtools-guide-chromium/network/index "Inspeccionar la actividad de la red en Microsoft Edge DevTools"  
+[NetworkPerformance]: ./index.md "Inspeccionar la actividad de la red en Microsoft Edge DevTools | Microsoft docs"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 

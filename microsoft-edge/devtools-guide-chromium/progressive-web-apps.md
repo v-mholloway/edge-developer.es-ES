@@ -2,16 +2,16 @@
 title: Depurar aplicaciones web progresivas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ce389ad10073efd318e5fa4df59d78fd40b7ebeb
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 6733d7823348bc02dd6f29ec218a33ab4073dbfc
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601883"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984972"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -53,7 +53,7 @@ Esta guía solo trata las características de la aplicación web progresiva del 
 *   Use el panel de **trabajos de servicio** para toda la gama de tareas relacionadas con los trabajos de los trabajadores, como la anulación del registro o la actualización de un servicio, la emulación de eventos de inserción, la desconexión o la detención de un trabajador de servicio.  
 *   Vea la caché de trabajos del servicio en el panel **almacenamiento en caché** .  
 *   Anula el registro de un trabajador del servicio y borra todo el almacenamiento y las memorias caché con un solo clic del botón en el panel **Borrar almacenamiento** .  
-
+    
 ## Manifiesto de la aplicación Web   
 
 Si quiere que los usuarios puedan agregar la aplicación a su homescreens móvil, necesita un manifiesto de la aplicación Web.  El manifiesto define cómo aparece la aplicación en la pantalla Android, dónde dirigir al usuario cuando se inicia desde pantalla Android y qué aspecto tiene la aplicación al iniciar.  
@@ -65,17 +65,17 @@ Si quiere que los usuarios puedan agregar la aplicación a su homescreens móvil
 
 <!--TODO:  Link to sections when available. -->
 
-Una vez que tengas configurado el manifiesto, puedes usar el panel de **manifiesto** del panel de **aplicaciones** para inspeccionarlo.  
+Una vez que tenga configurado el manifiesto, puede usar el panel de **manifiesto** del panel de **aplicaciones** para inspeccionarlo.  
 
-> ##### Figura 1  
-> El panel **manifiesto**  
-> ![El panel manifiesto][ImageManifest]  
+:::image type="complex" source="./media/manifest-pane.msft.png" alt-text="El panel manifiesto" lightbox="./media/manifest-pane.msft.png":::
+   El panel **manifiesto**  
+:::image-end:::  
 
-*   Para ver el origen del manifiesto, haga clic en el vínculo debajo de la etiqueta del manifiesto de la **aplicación** \ ( `https://airhorner.com/manifest.json` en la [**Ilustración 1**](#figure-1)] \).  
+*   Para ver el origen del manifiesto, haga clic en el vínculo debajo de la etiqueta de manifiesto de la **aplicación** \ ( `https://airhorner.com/manifest.json` en la figura anterior \).  
 <!-- *   Press the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
 *   Las secciones **identidad** y **presentación** solo muestran campos del origen del manifiesto en una pantalla más fácil de usar.  
 *   En la sección **iconos** se muestran todos los iconos que especificó.  
-
+    
 <!--### Simulate Add to Homescreen events   -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
@@ -83,7 +83,11 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
-<!--![add to desktop shelf][ImageDesktopShelf]  -->
+<!--  
+:::image type="complex" source="./media/io.msft.png" alt-text="Add to desktop shelf" lightbox="./media/io.msft.png":::
+   Add to desktop shelf  
+:::image-end:::
+-->  
 
 <!--
 > [!Tip]
@@ -105,16 +109,16 @@ Los trabajadores de servicios son una tecnología fundamental en la plataforma w
 
 *   [Intro to Service Workers](/web/fundamentals/primers/service-worker)  
 *   [Push Notifications: Timely, Relevant, and Precise](/web/fundamentals/push-notifications)  -->  
-
+    
 <!--TODO:  Link to sections when available. -->  
 
 El panel de **trabajos de servicios** del panel de **aplicaciones** es el lugar principal en el DevTools para inspeccionar y depurar trabajos de servicio.  
 
-> ##### Figura 2  
-> El panel de **trabajos de servicios**  
-> ! [El panel de trabajos de servicios] [ImageServiceWorkersPane]  
+:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="El panel de trabajos de servicios" lightbox="./media/service-workers-pane.msft.png":::
+   El panel de **trabajos de servicios**  
+:::image-end:::  
 
-*   Si un trabajador de servicio está instalado en la página abierta actualmente, aparecerá en este panel.  Por ejemplo, en la [**figura 2**](#figure-2) hay un trabajador de servicio instalado para el ámbito de `https://weather-pwa-sample.firebaseapp.com` .  
+*   Si un trabajador de servicio está instalado en la página abierta actualmente, aparecerá en este panel.  Por ejemplo, en la ilustración anterior, hay un trabajo de servicio instalado para el ámbito de `https://weather-pwa-sample.firebaseapp.com` .  
 *   La casilla de verificación **sin conexión** pone DevTools al modo sin conexión.  Es equivalente al modo sin conexión disponible en el panel **red** o a la `Go offline` opción en el [menú de comandos][DevtoolsCommandMenuIndex].  
 *   La casilla **actualizar al volver a cargar** fuerza al trabajador del servicio a actualizar en todas las cargas de páginas.  
 *   La casilla **omitir para red** evita el trabajo de servicio y obliga al explorador a ir a la red para obtener los recursos solicitados.  
@@ -123,12 +127,16 @@ El panel de **trabajos de servicios** del panel de **aplicaciones** es el lugar 
 *   El botón de **sincronización** emula un evento de sincronización en segundo plano.  
 *   El botón **anular registro** anula el registro del trabajo de servicio especificado.  Consulte [Borrar almacenamiento](#clear-storage) para una forma de anular el registro de un trabajador de servicio y de borrar almacenamiento y memorias caché con un solo clic de botón.  
 *   La línea de **origen** le indica cuándo se instaló el trabajo de servicio actualmente en ejecución.  El vínculo es el nombre del archivo de origen del trabajador del servicio.  Al hacer clic en el vínculo, se le envía a la fuente del trabajador del servicio.  
-*   La línea de **Estado** indica el estado del trabajador de servicio.  El número de identificación situado junto al indicador de estado verde \ ( `#36` en la [**figura 2**](#figure-2)\) es para el trabajo de servicio activo actualmente.  Junto al estado verás un botón **iniciar** \ (si el trabajo de servicio está detenido \) o un botón **detener** \ (si el trabajo de servicio se está ejecutando \).  Los trabajadores de servicios están diseñados para que el navegador los detenga y los inicie en cualquier momento.  Detener explícitamente el trabajo del servicio con el botón **detener** puede simularlo.  Detener el trabajo del servicio es una excelente forma de comprobar cómo se comporta el código cuando vuelve a iniciarse el trabajo del servicio.  Con frecuencia, revela errores a causa de suposiciones defectuosas sobre el estado global persistente.  
+*   La línea de **Estado** indica el estado del trabajador de servicio.  El número de identificación situado junto al indicador de estado verde \ ( `#36` en la figura anterior \) es para el trabajador de servicios actualmente activo.  Junto al estado verás un botón **iniciar** \ (si el trabajo de servicio está detenido \) o un botón **detener** \ (si el trabajo de servicio se está ejecutando \).  Los trabajadores de servicios están diseñados para que el navegador los detenga y los inicie en cualquier momento.  Detener explícitamente el trabajo del servicio con el botón **detener** puede simularlo.  Detener el trabajo del servicio es una excelente forma de comprobar cómo se comporta el código cuando vuelve a iniciarse el trabajo del servicio.  Con frecuencia, revela errores a causa de suposiciones defectuosas sobre el estado global persistente.  
 *   La línea **clientes** le indica el origen al que el trabajador de servicio está en el ámbito.  El botón **foco** es principalmente útil cuando se ha habilitado la casilla **Mostrar todo** .  Cuando esta casilla esté habilitada, todos los trabajos de servicio registrados aparecerán en la lista.  Si hace clic en el botón **foco** junto a un trabajador de servicio que se está ejecutando en una pestaña diferente, Microsoft Edge se centra en esa pestaña.  
-
+    
 Si el trabajo de servicio provoca errores, aparece una nueva etiqueta denominada **errores** .  
 
-<!--![service worker with errors][ImageServiceWorkerErrors]  -->
+<!--  
+:::image type="complex" source="./media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="./media/sw-error.msft.png":::
+   Service worker with errors  
+:::image-end:::
+-->  
 
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
@@ -137,27 +145,27 @@ Si el trabajo de servicio provoca errores, aparece una nueva etiqueta denominada
 
 El panel **almacenamiento en caché** proporciona una lista de solo lectura de los recursos que se han almacenado en caché con la [API de caché][MDNWebCacheAPI]\ (trabajo de servicio \).  
 
-> ##### Imagen 3  
-> Panel **almacenamiento en caché**  
-> ! [Panel de almacenamiento en caché] [ImageServiceWorkersCachePane]  
+:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="Panel almacenamiento en caché" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
+   Panel **almacenamiento en caché**  
+:::image-end:::  
 
 > [!NOTE]
 > La primera vez que abre una caché y le agrega un recurso, es posible que DevTools no detecte el cambio.  Vuelva a cargar la página y verá la memoria caché.  
 
 Si tiene dos o más memorias caché abiertas, las verá debajo de la lista desplegable **almacenamiento en caché** .  
 
-> ##### Imagen 4  
-> Lista desplegable de **almacenamiento en caché**  
-> ! [La lista desplegable almacenamiento en caché] [ImageMultipleCaches]  
+:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="Lista desplegable de almacenamiento en caché" lightbox="./media/cache-pane-cache-storage.msft.png":::
+   Lista desplegable de **almacenamiento en caché**  
+:::image-end:::  
 
 ## Uso de cuotas 
 
-Es posible que algunas respuestas dentro del panel almacenamiento en caché se marquen como "**opacas**".  Se refiere a una respuesta recuperada de un origen diferente, como en una **CDN** o una API remota, cuando [CORS][FetchHttpCorsProtocol] no está habilitado.  
+Es posible que algunas respuestas dentro del panel **almacenamiento en caché** se marquen como "opacas".  Se refiere a una respuesta recuperada de un origen diferente, como en una **CDN** o una API remota, cuando [CORS][FetchHttpCorsProtocol] no está habilitado.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
 
-Para evitar la pérdida de información entre dominios, se agrega un relleno significativo al tamaño de una respuesta opaca que se usa para calcular los límites de la cuota de almacenamiento \ (por ejemplo, si `QuotaExceeded` se inicia una excepción \) y la API informa de ello **`navigator.storage`** .  
+Para evitar la pérdida de información entre dominios, se agrega un relleno significativo al tamaño de una respuesta opaca que se usa para calcular los límites de la cuota de almacenamiento \ (por ejemplo, si `QuotaExceeded` se inicia una excepción \) y la API informa de ello `navigator.storage` .  
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
@@ -167,7 +175,7 @@ Guías relacionadas:
 
 *   [Desbordamiento de la pila: ¿Qué limitaciones se aplican a las respuestas opacas?][StackOverflowLimitationsForOpaqueResponses]  
 <!--*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
-
+    
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
 ## Borrar almacenamiento 
@@ -177,7 +185,7 @@ El panel **Borrar almacenamiento** es una característica muy útil al desarroll
 <!--Related Guides:  
 
 *   [Clear Storage](/iterate/manage-data/local-storage#clear-storage)  -->
-
+    
 <!--TODO:  Link to sections when available. -->
 
 <!--## Other Application panel guides 
@@ -188,25 +196,18 @@ Related Guides:
 
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
-
+    
 <!--TODO  -->
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/manifest-pane.msft.png "Ilustración 1: el panel manifiesto"  
-<!--[ImageDesktopShelf]: /microsoft-edge/devtools-guide-chromium/media/io.msft.png "Add to desktop shelf"  -->
-[ImageServiceWorkersPane]:/Microsoft-Edge/DevTools-Guide-Chromium/Media/Service-Workers-pane.msft.png "Ilustración 2: el panel de trabajos de servicios"  
-<!--[ImageServiceWorkerErrors]: /microsoft-edge/devtools-guide-chromium/media/sw-error.msft.png "Service worker with errors"  -->
-[ImageServiceWorkersCachePane]:/Microsoft-Edge/DevTools-Guide-Chromium/media/cache-pane-cache-Storage-Resources.msft.png "Ilustración 3: panel almacenamiento en caché"  
-[ImageMultipleCaches]:/Microsoft-Edge/DevTools-Guide-Chromium/media/cache-pane-cache-Storage.msft.png "Ilustración 4: lista desplegable de **almacenamiento en caché** "  
+-->  
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools"  
+[DevtoolsCommandMenuIndex]: ./command-menu/index.md "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools | Microsoft docs"  
 
 [ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Cromo problema 796060: el valor de almacenamiento en caché aumenta en cada actualización cuando el código de análisis está en HTML"  
 

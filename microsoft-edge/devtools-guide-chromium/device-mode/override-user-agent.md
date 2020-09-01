@@ -2,16 +2,16 @@
 title: Invalidar la cadena de agente de usuario de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 376e1550d0dc31f3b47b6badd6970076a8c13f91
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: 0ffea8f515a2d4ba0fa16b447a7d204c335dc7bb
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607310"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985000"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,27 +39,24 @@ Para invalidar la cadena de [agente de usuario][MDNUserAgent] de Microsoft Edge 
 
 1.  Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
     
-    > ##### Figura 1  
-    > El menú de comandos  
-    > ![El menú de comandos][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="El menú de comandos" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       El **menú de comandos**  
+    :::image-end:::  
     
 1.  Escriba `network conditions` , seleccione **Mostrar condiciones de red**y presione `Enter` para abrir la pestaña **condiciones de red** .  
 1.  En la sección **agente de usuario** , deshabilite la casilla **seleccionar automáticamente** .  
     
-    > ##### Figura 2  
-    > Deshabilitar **la selección automática**  
-    > ![Deshabilitar la selección automática][ImageUserAgentDisableSelectAutomatically]  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Deshabilitar selección automática" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       Deshabilitar **selección automática**  
+    :::image-end:::  
     
 1.  Seleccione una cadena de agente de usuario de la lista o escriba su propia cadena personalizada.  
+    
+<!--  
+## Feedback   
 
-<!--## Feedback   -->  
 
-
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Ilustración 1: el menú de comandos"  
-[ImageUserAgentDisableSelectAutomatically]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png "Ilustración 2: deshabilitar la selección automática"  
+-->  
 
 <!-- links -->  
 
