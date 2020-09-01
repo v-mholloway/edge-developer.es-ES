@@ -2,16 +2,16 @@
 title: Ver datos de web SQL con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2019
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7a1e3e47f6761cfdb23488683107ed0df6a8f4e2
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+ms.openlocfilehash: 8b2e6d1a117e401f9e579cb28f81da9676eea979
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612063"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983481"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,22 +44,22 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
 
 1.  Seleccione la pestaña **orígenes** para abrir el panel **fuentes** .  El panel **manifiesto** generalmente se abre de forma predeterminada.  
     
-    > ##### Figura 1  
-    > El panel manifiesto  
-    > ![El panel manifiesto][ImageManifestPane]  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-manifest.msft.png":::
+       El panel **manifiesto**  
+    :::image-end:::  
     
-1.  Expanda la sección **SQL web** para ver bases de datos y tablas.  En la [ilustración 2](#figure-2) , debajo de **html5meetup** hay una base de datos y **salas** es una tabla.  
+1.  Expanda la sección **SQL web** para ver bases de datos y tablas.  En la siguiente ilustración, debajo de **html5meetup** es una base de datos y **salas** es una tabla.  
     
-    > ##### Figura 2  
-    > El panel web SQL  
-    > ![El panel web SQL][ImageWebSQLPane]  
-
+    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="El panel web SQL" lightbox="../media/storage-application-storage-web-sql.msft.png":::
+       El panel **Web SQL**  
+    :::image-end:::  
+    
 1.  Seleccione una tabla para ver los datos de esa tabla.  
     
-    > ##### Imagen 3  
-    > Visualización de los datos de la tabla SQL Web **Rooms**  
-    > ![Ver los datos de una tabla de SQL Web][ImageWebSQLTable]  
-
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Ver los datos de una tabla de SQL Web" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
+       Ver los datos de una tabla de SQL Web  
+    :::image-end:::  
+    
 ## Editar datos de SQL Web   
 
 No puede editar datos de web SQL al ver una tabla de SQL Web, como en la **figura 3** anterior.  Pero puede ejecutar instrucciones de la consola de web SQL que modifican o eliminan tablas.  Consulte [ejecutar consultas Web de SQL](#run-web-sql-queries).  
@@ -67,63 +67,56 @@ No puede editar datos de web SQL al ver una tabla de SQL Web, como en la **figur
 ## Ejecutar consultas de web SQL   
 
 1.  Seleccione una base de datos para abrir una consola para esa base de datos.  
-
 1.  Escriba una instrucción SQL web y, después, presione `Enter` para ejecutarla.  
     
-    > ##### Imagen 4  
-    > Usar la consola SQL de web para eliminar una fila de la tabla **salas**  
-    > ![Usar la consola SQL de web para eliminar una fila de una tabla][ImageWebSQLEdit]  
-
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Usar la consola de web SQL para eliminar una fila de una tabla" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+       Usar la consola de web SQL para eliminar una fila de una tabla  
+    :::image-end:::  
+    
 ## Actualizar una tabla de SQL Web   
 
 DevTools no actualiza las tablas en tiempo real.  Para actualizar los datos de una tabla:  
 
 1.  [Ver los datos de una tabla Web SQL](#view-web-sql-data).  
-1.  Seleccione **Actualizar** ![ actualización ][ImageRefreshIcon] .  
-
+1.  Seleccione **Actualizar** \ ( ![ actualizar ][ImageRefreshIcon] \).  
+    
 ## Filtrar columnas en una tabla de SQL Web   
 
 1.  [Ver los datos de una tabla Web SQL](#view-web-sql-data).  
 1.  Use el cuadro de texto **columnas visibles** para especificar qué columnas desea mostrar.  Proporcione los nombres de columna como una lista CSV.  
     
-    > ##### Imagen 5  
-    > Usar el cuadro de texto **columnas visibles** para mostrar solo `room_name` las `last_updated` columnas y  
-    > ![Usar el cuadro de texto columnas visibles para reducir el número de columnas que se muestran][ImageWebSQLFilter]  
-
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Usar el cuadro de texto columnas visibles para reducir el número de columnas que se muestran" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+       Usar el cuadro de texto **columnas visibles** para reducir el número de columnas que se muestran  
+    :::image-end:::  
+    
 ## Eliminar todos los datos de SQL Web   
 
 1.  Abra el panel **Borrar almacenamiento** .  
 1.  Asegúrese de que la casilla de verificación **Web SQL** está habilitada.  
     
-    > ##### Imagen 6  
-    > La casilla de verificación **Web SQL**  
-    > ![La casilla de verificación Web SQL][ImageWebSQLCheckbox]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="La casilla de verificación Web SQL" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+       La casilla de verificación **Web SQL**  
+    :::image-end:::  
+    
 1.  Seleccione **Borrar datos del sitio**.  
     
-    > ##### Imagen 7  
-    > Botón **Borrar datos del sitio**  
-    > ![Botón Borrar datos del sitio][ImageClearWebSQL]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Botón Borrar datos del sitio" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+       Botón **Borrar datos del sitio**  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
-
-[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Ilustración 1: el panel manifiesto"  
-[ImageWebSQLPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-web-sql.msft.png "Ilustración 2: el panel web SQL"  
-[ImageWebSQLTable]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png "Ilustración 3: visualización de los datos de una tabla SQL Web"  
-[ImageWebSQLEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-web-sql-html5meetup-commands.msft.png "Ilustración 4: usar la consola SQL de web para eliminar una fila de una tabla"  
-[ImageWebSQLFilter]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png "Ilustración 5: usar el cuadro de texto columnas visibles para reducir el número de columnas que se muestran"  
-[ImageWebSQLCheckbox]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-web-sql.msft.png "Ilustración 6: la casilla de verificación Web SQL"  
-[ImageClearWebSQL]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-clear-site-data-button.msft.png "Ilustración 7: botón Borrar datos del sitio"  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (cromo)"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
 
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Base de datos Web SQL | RELATIVA"  
 

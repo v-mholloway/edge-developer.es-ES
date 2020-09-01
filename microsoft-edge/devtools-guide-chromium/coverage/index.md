@@ -2,16 +2,16 @@
 title: Buscar código JavaScript y CSS sin usar con la pestaña cobertura en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ebb8ae15a6888ce2227ec1dc18f307b03ddf9319
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 1c03140199b26bca39e69cdfbe33cd1c524257fe
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601722"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981885"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,9 +37,9 @@ ms.locfileid: "10601722"
 
 La pestaña cobertura de Microsoft Edge DevTools ayuda a buscar código de JavaScript y CSS no usado.  Quitar el código no usado puede acelerar la carga de la página y guardar los datos celulares de los usuarios móviles.  
 
-> ##### Figura 1  
-> Analizar la cobertura de código  
-> ![Analizar la cobertura de código][ImageExample]  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analizar la cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   Analizar la cobertura de código  
+:::image-end:::  
 
 > [!WARNING]
 > Encontrar un código no usado es relativamente fácil.  Pero refactorizar un código base para que cada página solo envíe el código JavaScript y CSS que necesita puede ser difícil.  En esta guía no se trata cómo refactorizar un código base para evitar el código no usado, ya que estos Refactores dependen enormemente de la pila tecnológica.  
@@ -62,7 +62,7 @@ Esta hoja de estilos no incluye simplemente el código del componente de botón.
 
 *   El código adicional ralentiza la carga de la página.  <!--See [Render-Blocking CSS][render].  -->  
 *   Si un usuario accede a la página en un dispositivo móvil, el código adicional usa sus datos móviles.  
-
+    
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
 ## Abrir la pestaña cobertura   
@@ -70,48 +70,46 @@ Esta hoja de estilos no incluye simplemente el código del componente de botón.
 1.  [Abrir el menú de comandos][DevToolsCommandMenu].  
 1.  Comience `coverage` a escribir, seleccione el comando **Mostrar cobertura** y, a continuación, presione `Enter` para ejecutar el comando.  La pestaña **cobertura** se abre en el **cajón**.  
 
-    > ##### Figura 2  
-    > La ficha **cobertura**  
-    > ![La ficha cobertura][ImageCoverage]  
-
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="La ficha cobertura" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       La ficha **cobertura**  
+    :::image-end:::  
+    
 ## Registrar la cobertura de código   
 
 1.  Haga clic en uno de los siguientes botones de la pestaña **cobertura** :  
-    *   Haga clic en **empezar a instrumentar cobertura y volver a cargar página** ![ iniciar la cobertura de instrumentación y recargar página ][ImageReloadIcon] si desea ver qué código se necesita para cargar la página.  
-    *   Haga clic en cobertura del instrumento de **cobertura del instrumento** ![ ][ImageRecordIcon] si desea ver qué código se usa después de interactuar con la página.  
-1.  Haga clic en **detener la cobertura de la instrumentación y mostrar resultados** ![ detener la instrumentación de la cobertura y mostrar resultados ][ImageStopIcon] cuando desee detener la grabación de la cobertura de código.  
-
+    *   Haga clic en **iniciar cobertura de instrumentación y recargar página** \ ( ![ iniciar la instrumentación de la cobertura y volver ][ImageReloadIcon] a cargar la página \) Si desea ver qué código se necesita para cargar la página.  
+    *   Haga clic en **cobertura del instrumento** \ ( ![ cobertura ][ImageRecordIcon] del instrumento \) Si desea ver qué código se usa después de interactuar con la página.  
+1.  Haga clic en **detener la cobertura de la instrumentación y mostrar resultados** \ ( ![ detener la instrumentación de la instrumentación y mostrar resultados ][ImageStopIcon] \) cuando desee detener la grabación de la cobertura de código.  
+    
 ## Analizar la cobertura de código   
 
-La tabla de la pestaña **cobertura** le muestra los recursos que se han analizado y la cantidad de código que se usa dentro de cada recurso. Haga clic en una fila para abrir ese recurso en el panel **orígenes** y ver un desglose línea por línea de código usado y código no usado.  
+La tabla de la pestaña **cobertura** le muestra los recursos que se han analizado y la cantidad de código que se usa dentro de cada recurso.  Haga clic en una fila para abrir ese recurso en el panel **orígenes** y ver un desglose línea por línea de código usado y código no usado.  
 
-> ##### Imagen 3  
-> Un informe de cobertura de código  
-> ![Un informe de cobertura de código][ImageExample]  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Un informe de cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   Un informe de cobertura de código  
+:::image-end:::  
 
 *   La columna **URL** es la dirección URL del recurso que se analizó.  
 *   En la columna **tipo** se indica si el recurso contiene CSS, JavaScript o ambos.  
 *   La columna **total bytes** es el tamaño total del recurso en bytes.  
 *   La columna **bytes no usados** es el número de bytes que no se han usado.  
 *   La última columna sin nombre es una visualización de las columnas bytes **totales** y **bytes no usados** .  La sección roja de la barra es bytes no usados.  La sección verde es bytes usados.  
-
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
-[ImageStopIcon]: /microsoft-edge/devtools-guide-chromium/media/stop-icon.msft.png  
-
-[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage.msft.png "Ilustración 1: analizar la cobertura de código"  
-[ImageCoverage]: /microsoft-edge/devtools-guide-chromium/media/coverage-console-drawer-coverage-empty.msft.png "Ilustración 2: la pestaña cobertura"  
-[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage-selected.msft.png "Ilustración 3: un informe de cobertura de código"  
+[ImageReloadIcon]: ../media/reload-icon.msft.png  
+[ImageRecordIcon]: ../media/record-icon.msft.png  
+[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools | Microsoft docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Botones: bootstrap"  
 

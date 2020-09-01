@@ -2,16 +2,16 @@
 title: Depurar servicios en segundo plano con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0ac2a057307a939069cbb3b48ecd38c9de71e5db
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+ms.openlocfilehash: 1fecd6f9c1dceb39482bf8c4ade71918e32dec00
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581834"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983327"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -42,13 +42,13 @@ Microsoft Edge DevTools considera que cada una de las siguientes API es un servi
 *   [Sincronización en segundo plano](#background-sync)  
 *   [Notificaciones](#notifications)  
 *   [Mensajes Push](#push-messages)  
-
+    
 Microsoft Edge DevTools puede registrar eventos de servicio en segundo plano durante 3 días, incluso cuando DevTools no está abierto.  
-Esto puede ayudarte a asegurarte de que los eventos se envían y reciben según lo previsto.  También puede inspeccionar los detalles de cada evento.  
+Esto puede ayudarte a asegurarte de que los eventos se envían y reciben según lo previsto.  También puedes inspeccionar los detalles de cada evento.  
 
-> ##### Figura 1  
-> Ver los detalles de un evento en el panel de mensajes Push  
-> ![Ver los detalles de un evento en el panel de mensajes Push][PushDetails]  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Ver los detalles de un evento en el panel de mensajes Push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   Ver los detalles de un evento en el panel de **mensajes Push**  
+:::image-end:::  
 
 ## Captura en segundo plano   
 
@@ -60,23 +60,23 @@ La *API de captura en segundo plano** permite a un **trabajador de servicio** de
 1.  Abra el panel de la **aplicación** .  
 1.  Abrir el panel de **captura en segundo plano** .  
     
-    > ##### Figura 2  
-    > El panel captura en segundo plano  
-    > ![El panel captura en segundo plano][FetchEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="El panel captura en segundo plano" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+       El panel **captura en segundo plano**  
+    :::image-end:::  
     
-1.  Haga **clic en grabar** ![ Registro ][ImageRecordIcon] .  
+1.  Haga clic en **grabar** \ ( ![ grabar ][ImageRecordIcon] \).  
    Después de desencadenar cierta actividad de captura en segundo plano, DevTools registra los eventos en la tabla.  
     
-    > ##### Imagen 3  
-    > Registro de eventos en el panel captura en segundo plano  
-    > ![Registro de eventos en el panel captura en segundo plano][FetchLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Registro de eventos en el panel captura en segundo plano" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+       Registro de eventos en el panel **captura en segundo plano**  
+    :::image-end:::  
     
 1.  Haga clic en un evento para ver sus detalles en el espacio situado debajo de la tabla.  
     
-    > ##### Imagen 4  
-    > Ver los detalles de un evento en el panel captura en segundo plano  
-    > ![Ver los detalles de un evento en el panel captura en segundo plano][FetchDetails]  
-
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Ver los detalles de un evento en el panel captura en segundo plano" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+       Ver los detalles de un evento en el panel **captura en segundo plano**  
+    :::image-end:::  
+    
 ## Sincronización en segundo plano   
 
 La **API de sincronización en segundo plano** permite a un **trabajador de servicios** sin conexión enviar datos a un servidor una vez que se ha restablecido una conexión de Internet confiable.  Para registrar eventos de sincronización en segundo plano durante 3 días, incluso cuando DevTools no está abierto:  
@@ -87,22 +87,22 @@ La **API de sincronización en segundo plano** permite a un **trabajador de serv
 1.  Abra el panel de la **aplicación** .  
 1.  Abrir el panel **sincronización en segundo plano** .  
     
-    > ##### Imagen 5  
-    > El panel sincronización en segundo plano  
-    > ![El panel sincronización en segundo plano][SyncEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="El panel sincronización en segundo plano" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+       El panel **sincronización en segundo plano**  
+    :::image-end:::  
     
-1.  Haga **clic en grabar** ![ Registro ][ImageRecordIcon] .  
+1.  Haga clic en **grabar** \ ( ![ grabar ][ImageRecordIcon] \).  
    Después de desencadenar cierta actividad de sincronización en segundo plano, DevTools registra los eventos en la tabla.  
     
-    > ##### Imagen 6  
-    > Registro de eventos en el panel de sincronización en segundo plano  
-    > ![Registro de eventos en el panel de sincronización en segundo plano][SyncLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Registro de eventos en el panel de sincronización en segundo plano" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+       Registro de eventos en el panel de **sincronización en segundo plano**  
+    :::image-end:::  
     
 1.  Haga clic en un evento para ver sus detalles en el espacio situado debajo de la tabla.  
     
-    > ##### Imagen 7  
-    > Ver los detalles de un evento en el panel de sincronización en segundo plano  
-    > ![Ver los detalles de un evento en el panel de sincronización en segundo plano][SyncDetails]  
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Ver los detalles de un evento en el panel de sincronización en segundo plano" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+       Ver los detalles de un evento en el panel de **sincronización en segundo plano**  
+    :::image-end:::  
     
 ## Notificaciones 
 
@@ -112,22 +112,22 @@ Después de que un **trabajador de servicio** ha recibido un [mensaje de inserci
 1.  Abra el panel de la **aplicación** .  
 1.  Abrir el panel **notificaciones** .  
     
-    > ##### Imagen 8  
-    > El panel notificaciones  
-    > ![El panel notificaciones][NotificationsEmpty]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="El panel notificaciones" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+       El panel **notificaciones**  
+    :::image-end:::  
     
-1.  Haga **clic en grabar** ![ Registro ][ImageRecordIcon] .  
+1.  Haga clic en **grabar** \ ( ![ grabar ][ImageRecordIcon] \).  
    Después de desencadenar cierta actividad de notificaciones, DevTools registra los eventos en la tabla.  
     
-    > ##### Imagen 9  
-    > Registro de eventos en el panel de notificaciones  
-    > ![Registro de eventos en el panel de notificaciones][NotificationsLog]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Registro de eventos en el panel de notificaciones" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+       Registro de eventos en el panel de **notificaciones**  
+    :::image-end:::  
     
 1.  Haga clic en un evento para ver sus detalles en el espacio situado debajo de la tabla.  
     
-    > ##### Imagen 10  
-    > Ver los detalles de un evento en el panel de notificaciones  
-    > ![Ver los detalles de un evento en el panel de notificaciones][NotificationsDetails]  
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Ver los detalles de un evento en el panel de notificaciones" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+       Ver los detalles de un evento en el panel de **notificaciones**  
+    :::image-end:::  
     
 ## Mensajes Push 
 
@@ -137,51 +137,39 @@ Para mostrar una notificación de inserción a un usuario, un **trabajador de se
 1.  Abra el panel de la **aplicación** .  
 1.  Abra el panel de **mensajes Push** .  
     
-    > ##### Imagen 11  
-    > El panel de mensajes Push  
-    > ![El panel de mensajes Push][PushEmpty]  
-
-1.  Haga **clic en grabar** ![ Registro ][ImageRecordIcon] .  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="El panel de mensajes Push" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+       El panel de **mensajes Push**  
+    :::image-end:::  
+    
+1.  Haga clic en **grabar** \ ( ![ grabar ][ImageRecordIcon] \).  
     Después de desencadenar cierta actividad de mensajes Push, DevTools registra los eventos en la tabla.  
     
-    > ##### Imagen 12  
-    > Registro de eventos en el panel mensajes Push  
-    > ![Registro de eventos en el panel mensajes Push][PushLog]  
-
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Registro de eventos en el panel mensajes Push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+       Registro de eventos en el panel **mensajes Push**  
+    :::image-end:::  
+    
 1.  Haga clic en un evento para ver sus detalles en el espacio situado debajo de la tabla.  
     
-    > ##### Imagen 13  
-    > Ver los detalles de un evento en el panel de mensajes Push  
-    > ![Ver los detalles de un evento en el panel de mensajes Push][PushDetails2]  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Ver los detalles de un evento en el panel de mensajes Push" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+       Ver los detalles de un evento en el panel de **mensajes Push**  
+    :::image-end:::  
     
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
-
-[PushDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging.msft.png "Ilustración 1: ver los detalles de un evento en el panel de mensajes Push"  
-[FetchEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch-empty.msft.png "Ilustración 2: el panel de captura en segundo plano"  
-[FetchLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch.msft.png "Ilustración 3: un registro de eventos en el panel captura en segundo plano"  
-[FetchDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch-details.msft.png "Figura 4: visualización de los detalles de un evento en el panel captura en segundo plano"  
-[SyncEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync-empty.msft.png "Ilustración 5: el panel de sincronización en segundo plano"  
-[SyncLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync.msft.png "Ilustración 6: un registro de eventos en el panel de sincronización en segundo plano"  
-[SyncDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync-details.msft.png "Ilustración 7: visualización de los detalles de un evento en el panel de sincronización en segundo plano"  
-[NotificationsEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications-empty.msft.png "Ilustración 8: el panel notificaciones"  
-[NotificationsLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications.msft.png "Ilustración 9: un registro de eventos en el panel de notificaciones"  
-[NotificationsDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications-details.msft.png "Ilustración 10: visualización de los detalles de un evento en el panel de notificaciones"  
-[PushEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging-empty.msft.png "Ilustración 11: el panel de mensajes Push"  
-[PushLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging.msft.png "Ilustración 12: un registro de eventos en el panel Push Messaging"  
-[PushDetails2]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging-details.msft.png "Ilustración 13: ver los detalles de un evento en el panel de mensajes Push"  
+[ImageRecordIcon]: ../media/record-icon.msft.png  
 
 <!-- links -->  
 
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 
-[OpenDevTools]: ../open.md "Abrir las herramientas para desarrolladores de Microsoft Edge (cromo)"  
+[OpenDevTools]: ../open.md "Abrir herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "API de notificaciones | MDN"  
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "API de inserción | MDN"  

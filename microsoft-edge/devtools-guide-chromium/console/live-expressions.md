@@ -2,16 +2,16 @@
 title: Ver valores de expresiones de JavaScript en tiempo real con expresiones en vivo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c388e44ca5507dd88ad9ad7b7ee985e658dfc569
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 39a7967a7dd1d0b34eb802d2879e04a64afd0dd0
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601743"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982242"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,11 +40,11 @@ Si se encuentra escribiendo la misma expresión de JavaScript en la consola vari
 ## Crear una expresión en directo   
 
 1.  [Abra la consola][DevToolsConsoleReferenceOpenConsole].  
-1.  Haga clic en crear expresión en **directo** ![ ][ImageCreateLiveExpressionIcon] .  Aparece el cuadro de texto de la **expresión en vivo** .  
+1.  Haga clic en **crear expresión en directo** \ ( ![ crear expresión en directo ][ImageCreateLiveExpressionIcon] \).  Aparece el cuadro de texto de la **expresión en vivo** .  
     
-    > ##### Figura 1  
-    > Escribir `document.activeElement` en el cuadro de texto de la **expresión en directo**  
-    > ![Escritura de Document. activeElement en el cuadro de texto de la expresión en directo][ImageLiveExpressionTextbox]  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Escritura de Document. activeElement en el cuadro de texto de la expresión en directo" lightbox="../media/console-create-live-expression.msft.png":::
+       Escribir `document.activeElement` en el cuadro de texto de la **expresión en directo**  
+    :::image-end:::  
     
 1.  Escriba `Control` + `Enter` \ (Windows \) o `Command` + `Enter` \ (MacOS \) para guardar la expresión o haga clic fuera del cuadro de texto de la **expresión en directo** .  
 
@@ -56,13 +56,11 @@ Si se encuentra escribiendo la misma expresión de JavaScript en la consola vari
 
 <!-- image links -->  
 
-[ImageCreateLiveExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpressionTextbox]: /microsoft-edge/devtools-guide-chromium/media/console-create-live-expression.msft.png "Ilustración 1: escribir Document. activeElement en el cuadro de texto de la expresión en directo"  
+[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console "Abrir la consola-referencia de consola"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Abra Consola-referencia de consola | Microsoft docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  

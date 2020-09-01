@@ -2,16 +2,16 @@
 title: Cambiar la ubicación de DevTools de Microsoft Edge (desacoplar, acoplar a la parte inferior, acoplar a la izquierda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f0be6243d4780e4ed49428ebaf2b6b37d9da323e
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+ms.openlocfilehash: aaa6ef03f6abea27c84fb46db3d2a2f0f894339c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601349"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981955"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,59 +37,63 @@ ms.locfileid: "10601349"
 
 De forma predeterminada DevTools se acopla a la derecha de la ventanilla.  También puede acoplar a la parte inferior, acoplar a la izquierda o desacoplar el DevTools en una ventana independiente.  
 
-> ##### Figura 1  
-> Acoplar a la izquierda  
-> ![Acoplar a la izquierda][ImageDockLeft]  
-
-> ##### Figura 2  
-> Acoplar a la parte inferior  
-> ![Acoplar a la parte inferior][ImageDockBottom]  
-
-> ##### Imagen 3  
-> Explorador en una ventana independiente  
-> ![Explorador en una ventana independiente][ImageUndockBrowser]  
-
-> ##### Imagen 4  
-> DevTools desacoplado en una ventana independiente  
-> ![DevTools desacoplado en una ventana independiente][ImageUndockDevTools]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Seleccionar acoplar a la izquierda" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Seleccionar `Dock To Left`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Seleccione acoplar a la parte inferior" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Seleccionar `Dock To Bottom`  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Explorador en una ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+         Explorador en una ventana independiente  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools desacoplado en una ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         DevTools desacoplado en una ventana independiente  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ## Cambiar la ubicación desde el menú principal   
 
-1.  Haga clic en **personalizar y controlar DevTools** `...` y seleccione **desacoplar en** ![ desacoplar ventana separada ][ImageUndockIcon] , **acoplar** a acoplar en la parte inferior ![ ][ImageBottomIcon] o en **acoplar a** la izquierda ![ acoplar a la izquierda ][ImageLeftIcon] .  
+1.  Haga clic en **personalizar y controlar DevTools** \ ( `...` \) y seleccione **desacoplar en ventana independiente** \ ( ![ desacoplar ][ImageUndockIcon] \), **acoplar en la parte inferior** \ ( ![ acoplar a la inferior ][ImageBottomIcon] \) o **acoplar** a la izquierda \ ( ![ acoplar a la izquierda ][ImageLeftIcon] \).  
     
-    > ##### Imagen 5  
-    > Seleccionar **desacoplar en una ventana independiente**  
-    > ![Seleccionar desacoplar en una ventana independiente][ImageUndockSettings]  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Seleccione desacoplar en ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Seleccione **desacoplar en ventana independiente**  
+    :::image-end:::  
     
 ## Cambiar la ubicación desde el menú de comandos   
 
 1.  [Abrir el menú de comandos][DevtoolsCommandMenu].  
 1.  Ejecute uno de los siguientes comandos: `Dock To Bottom` , `Undock Into Separate Window` .  Por el momento, no hay ningún comando para acoplar a la izquierda, pero puede acceder a él desde el [menú principal](#change-placement-from-the-main-menu).  
     
-    > ##### Imagen 6  
-    > El comando desacoplar  
-    > ![El comando desacoplar][ImageUndockCommand]  
-
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="El comando desacoplar" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       El comando desacoplar  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageUndockIcon]: /microsoft-edge/devtools-guide-chromium/media/undock-icon.msft.png  
-[ImageBottomIcon]: /microsoft-edge/devtools-guide-chromium/media/bottom-icon.msft.png  
-[ImageLeftIcon]: /microsoft-edge/devtools-guide-chromium/media/left-icon.msft.png  
-
-[ImageDockLeft]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-right-docked.msft.png "Ilustración 1: acoplar a la izquierda"  
-[ImageDockBottom]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-bottom-docked.msft.png "Ilustración 2: acoplar a la parte inferior"  
-[ImageUndockBrowser]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-browser.msft.png "Ilustración 3: explorador en una ventana independiente"  
-[ImageUndockDevTools]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png "Ilustración 4: DevTools desacoplado en una ventana independiente"  
-[ImageUndockSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight.msft.png "Ilustración 5: seleccionar desacoplar en una ventana independiente"  
-[ImageUndockCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-command-menu-undo.msft.png "Ilustración 6: el comando desacoplable"  
+[ImageUndockIcon]: ../media/undock-icon.msft.png  
+[ImageBottomIcon]: ../media/bottom-icon.msft.png  
+[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools | Microsoft docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  

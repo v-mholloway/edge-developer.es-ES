@@ -2,16 +2,16 @@
 title: Descripción general de la consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6062afb929a5d763c095d4915a2960993bc5ab4c
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 45e2eb9d66fa284b1326e7554b6897a1e1747561
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601792"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982298"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,52 +39,52 @@ Esta página explica cómo la consola de Microsoft Edge DevTools facilita el des
 
 ## Ver mensajes registrados   
 
-Los desarrolladores web suelen registrar mensajes en la consola para asegurarse de que su JavaScript funciona según lo esperado.  Para registrar un mensaje, debe insertar una expresión como `console.log('Hello, Console!')` en su código JavaScript.  Cuando el explorador ejecuta el JavaScript y ve una expresión como esta, registra el mensaje en la consola.  Por ejemplo, supongamos que está escribiendo HTML y JavaScript para una página:  
+Los desarrolladores web suelen registrar mensajes en la consola para asegurarse de que su JavaScript funciona según lo esperado.  Para registrar un mensaje, debe insertar una expresión como `console.log('Hello, Console!')` en su código JavaScript.  Cuando el explorador ejecuta el JavaScript y ve una expresión como esta, registra el mensaje en la consola.  
 
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>Console Demo</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <script>
-      console.log('Loading!');
-      const h1 = document.querySelector('h1');
-      console.log(h1.textContent);
-      console.assert(document.querySelector('h2'), 'h2 not found!');
-      const artists = [
-        {
-          first: 'René',
-          last: 'Magritte'
-        },
-        {
-          first: 'Chaim',
-          last: 'Soutine'
-        },
-        {
-          first: 'Henri',
-          last: 'Matisse'
-        }
-      ];
-      console.table(artists);
-      setTimeout(() => {
-        h1.textContent = 'Hello, Console!';
-        console.log(h1.textContent);
-      }, 3000);
-    </script>
-  </body>
-</html>
-```  
+:::row:::
+   :::column span="":::
+      El código HTML y JavaScript de la página.  
+      
+      ```html
+      <!doctype html>
+      <html>
+          <head>
+              <title>Console Demo</title>
+          </head>
+          <body>
+              <h1>Hello, World!</h1>
+              <script>
+                  console.log('Loading!');
+                  const h1 = document.querySelector('h1');
+                  console.log(h1.textContent);
+                  console.assert(document.querySelector('h2'), 'h2 not found!');
+                  const artists = [
+                      { first: 'René', last: 'Magritte' },
+                      { first: 'Chaim', last: 'Soutine' },
+                      { first: 'Henri', last: 'Matisse' }
+                  ];
+                  console.table(artists);
+                  setTimeout(() => {
+                      h1.textContent = 'Hello, Console!';
+                      console.log(h1.textContent);
+                  }, 3000);
+              </script>
+          </body>
+      </html>
+      ```  
+   :::column-end:::
+   :::column span="":::
+      En la siguiente ilustración, la **consola** muestra los resultados de cargar la página y esperar 3 segundos.  
+      
+      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Panel de consola" lightbox="../media/console-console-demo.msft.png":::
+         Panel de **consola**  
+      :::image-end:::  
+      
+      Intente determinar qué líneas de código hicieron que el explorador registre los mensajes.  
+   :::column-end:::
+:::row-end:::  
 
-En la [Ilustración 1](#figure-1) se muestra el aspecto que tiene la consola después de cargar la página y esperar 3 segundos.  Intenta averiguar qué líneas de código hicieron que el explorador registre los mensajes.  
-
-> ##### Figura 1  
-> Panel de consola  
-> ![Panel de consola][ImageConsole]  
-
-Los programadores web registran los mensajes por dos razones generales:  
+Los programadores de web registran los mensajes por las siguientes 2 razones generales.  
 
 *   Asegurarse de que el código se esté ejecutando en el orden correcto.  
 *   Inspeccionar los valores de variables en un momento determinado.  
@@ -93,39 +93,42 @@ Consulte Introducción al [registro de mensajes][DevtoolsConsoleLoggingMessages]
 
 ## Ejecutar JavaScript   
 
-La consola también es una [REPL][WikiREPLoop].  Puede ejecutar JavaScript en la consola para interactuar con la página que se está inspeccionando.  Por ejemplo, la [ilustración 2](#figure-2) muestra la consola junto a la página de inicio de DevTools, y la [figura 3](#figure-3) muestra la misma página después de usar la consola para cambiar el encabezado superior de la página.  
+La **consola** también es una [REPL][WikiREPLoop].  Puede ejecutar JavaScript en la **consola** para interactuar con la página que se está inspeccionando.   
 
-> ##### Figura 2  
-> Panel de consola junto a la Página principal de DevTools  
-> ![Panel de consola junto a la Página principal de DevTools][ImageConsoleOverview]  
+:::row:::
+   :::column span="":::
+      En la siguiente ilustración, la **consola** se muestra junto a la página de inicio de DevTools.  
+      
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Panel de consola junto a la Página principal de DevTools" lightbox="../media/devtools-console-empty.msft.png":::
+         Panel de **consola** junto a la Página principal de DevTools  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      En la siguiente ilustración, se muestra la misma página después de usar la **consola** para cambiar el encabezado superior de la página.
+      
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Usar la consola para cambiar el encabezado superior de la página" lightbox="../media/devtools-console-h1-changed.msft.png":::
+         Usar la **consola** para cambiar el encabezado superior de la página  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
-> ##### Imagen 3  
-> Usar la consola para cambiar el encabezado superior de la página  
-> ![Usar la consola para cambiar el encabezado superior de la página][ImageConsoleChangeTitle]  
+Es posible modificar la página desde la **consola** porque la **consola** tiene acceso completo a la [ventana][MDNWindow] de la página.  DevTools tiene varias funciones útiles que hacen que sea más fácil inspeccionar una página.  Por ejemplo, supongamos que su código JavaScript contiene una función llamada `hideModal` .  La ejecución `debug(hideModal)` pausa el código en la primera línea de `hideModal` la próxima vez que lo ejecute.  Para obtener más información sobre la lista completa de funciones de utilidades, consulte referencia de la [API de utilidades de consola][DevtoolsConsoleUtilitiesDebug].  
 
-Es posible modificar la página desde la consola porque la consola tiene acceso completo a la [ventana][MDNWindow] de la página.  DevTools tiene varias funciones útiles que hacen que sea más fácil inspeccionar una página.  Por ejemplo, supongamos que su código JavaScript contiene una función llamada `hideModal` .  La ejecución `debug(hideModal)` pausa el código en la primera línea de `hideModal` la próxima vez que lo ejecute.  Consulte [referencia][DevtoolsConsoleUtilitiesDebug] de la API de utilidades de consola para ver la lista completa de funciones de utilidades.  
-
-Al ejecutar JavaScript, no es necesario que interactúe con la página.  Puede usar la consola para probar código nuevo no relacionado con la página.  Por ejemplo, supongamos que acaba de conocer el método de asignación de matriz [()][MDNMap] integrado de JavaScript y quiere experimentar con él.  
+Al ejecutar JavaScript, no es necesario que interactúe con la página.  Puede usar la **consola** para probar código nuevo no relacionado con la página.  Por ejemplo, supongamos que acaba de conocer el método de asignación de matriz [()][MDNMap] integrado de JavaScript y quiere experimentar con él.  
 La **consola** es un buen lugar para probar la función.  
 
-Consulte Introducción a la [ejecución de JavaScript][ImageConsoleChangeTitle] para obtener experiencia práctica de ejecución de JavaScript en la consola.  
+Para obtener más experiencia práctica con la ejecución de JavaScript en la **consola**, consulte Introducción [a la ejecución de JavaScript][DevtoolsConsoleRunningJavascript].  
 
    
 
   
 
-<!-- image links -->  
-
-[ImageConsole]: /microsoft-edge/devtools-guide-chromium/media/console-console-demo.msft.png "Ilustración 1: panel de consola"  
-[ImageConsoleChangeTitle]: /microsoft-edge/devtools-guide-chromium/media/devtools-console-h1-changed.msft.png "Ilustración 3: usar la consola para cambiar el encabezado superior de la página"  
-[ImageConsoleOverview]: /microsoft-edge/devtools-guide-chromium/media/devtools-console-empty.msft.png "Ilustración 2: el panel de la consola junto a la Página principal de DevTools"  
-
 <!-- links -->  
 
-[DevToolsConsoleAPI]: /microsoft-edge/devtools-guide-chromium/console/api "Referencia de la API de consola"  
-[DevtoolsConsoleLoggingMessages]: /microsoft-edge/devtools-guide-chromium/console/log "Introducción al registro de mensajes en la consola"  
-[DevtoolsConsoleRunningJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Introducción a la ejecución de JavaScript en la consola"  
-[DevtoolsConsoleUtilitiesDebug]: /microsoft-edge/devtools-guide-chromium/console/utilities#debug "Debug: referencia de API de utilidades de consola"  
+[DevToolsConsoleAPI]: ./api.md "Referencia de la API de consola | Microsoft docs"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "Introducción a la creación de mensajes de registro en la consola | Microsoft docs"  
+[DevtoolsConsoleRunningJavascript]: ./javascript.md "Introducción a la ejecución de JavaScript en la consola | Microsoft docs"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "Debug: referencia de API de utilidades de consola | Microsoft docs"  
 
 [MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array. prototype. map () | MDN"  
 [MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Ventana | MDN"  

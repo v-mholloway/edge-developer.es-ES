@@ -2,16 +2,16 @@
 title: 'DevTools para principiantes: Introducción a HTML y el DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d992a6ca68de07c879ca8e319ee6c22782924a6b
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 50dfd8595c270a2532f55b71307b42c3636bba3c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882733"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983103"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -35,11 +35,11 @@ En este tutorial en particular, obtendrá información sobre HTML y DOM.  HTML e
 
 ## Principales   
 
-Va a aprender a usar el desarrollo web creando su propio sitio Web.  Cuando complete todos los tutoriales de la serie *DevTools para principiantes* , el sitio finalizado tendrá el aspecto que se muestra en la **Ilustración 1**.  
+Va a aprender a usar el desarrollo web creando su propio sitio Web.  Cuando complete todos los tutoriales de la serie *DevTools para principiantes* , el sitio finalizado se verá como en la siguiente ilustración.  
 
-> ##### Figura 1  
-> El sitio finalizado  
-> ![El sitio finalizado][ImageHtmlFinished]  
+:::image type="complex" source="../media/beginners-html-finished.msft.png" alt-text="El sitio finalizado" lightbox="../media/beginners-html-finished.msft.png":::
+   El sitio finalizado  
+:::image-end:::  
 
 Al final de este tutorial, comprenderá lo siguiente:  
 
@@ -61,28 +61,29 @@ Antes de intentar este tutorial, complete los siguientes requisitos previos:
 Va a crear su sitio en un editor de código en línea denominado problema.  
 
 1.  Abra el [código fuente][GlitchAlluringShockIndex].  Esta pestaña se denomina la **pestaña Editor** a lo largo de este tutorial.  
-    > ##### Figura 2  
-    > Ficha Editor  
-    > ![Ficha Editor][ImageHtmlSetup1]  
-
+    
+    :::image type="complex" source="../media/beginners-html-setup1.msft.png" alt-text="Ficha Editor" lightbox="../media/beginners-html-setup1.msft.png":::
+       Ficha Editor  
+    :::image-end:::  
+    
 1.  Haga clic en **alluring-shock**.  El menú opciones de proyecto se abre en la esquina superior izquierda.  
     
-    > #### Imagen 3  
-    > El menú opciones del proyecto  
-    > ![El menú opciones del proyecto][ImageHtmlSetup2]  
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="El menú opciones del proyecto" lightbox="../media/beginners-html-setup2.msft.png":::
+       El menú opciones del proyecto  
+    :::image-end:::  
     
 1.  Haga clic en **Remix proyecto**.  Problema crea una copia del proyecto que puede editar y genera de forma aleatoria un nombre nuevo para el proyecto.  El contenido es el mismo que antes.  
     
-    > ##### Imagen 4  
-    > El proyecto remixto  
-    > ![El proyecto remixto][ImageHtmlSetup3]  
+    :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="El proyecto remixto" lightbox="../media/beginners-html-setup3.msft.png":::
+       El proyecto remixto  
+    :::image-end:::  
     
 1.  Si planea completar el siguiente tutorial de esta serie, haga clic en **iniciar sesión** e inicie sesión en un problema con su cuenta de Github o Facebook.  Si no inicia sesión, perderá la posibilidad de editar este proyecto una vez que cierre la pestaña edición.  
 1.  Haga clic en **Mostrar** y seleccione **en una ventana nueva**.  Se abre una nueva pestaña, que muestra la página en vivo.  Esta pestaña se denominará **pestaña en vivo** en este tutorial.  
     
-    > ##### Imagen 5  
-    > La ficha en vivo  
-    > ![La ficha en vivo][ImageHtmlSetup4]  
+    :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="La ficha en vivo" lightbox="../media/beginners-html-setup4.msft.png":::
+       La ficha en vivo  
+    :::image-end:::  
     
 ## Agregar contenido   
 
@@ -90,77 +91,92 @@ Tu sitio está vacío.  Siga los pasos que se indican a continuación para agreg
 
 1.  En la **pestaña Editor**, reemplace `<!-- You're "About Me" will go here.  -->` con `<h1>About Me</h1>` .  
     
-    ```html
-    ...
-        ...
-        <body>
-            <p> Your site!</p>
-            <main>
-                <h1>About Me</h1>
-            </main>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Imagen 6  
-    > El nuevo código está resaltado en la pestaña Editor  
-    > ![El nuevo código está resaltado en la pestaña Editor][ImageHtmlAdd1]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+              <body>
+                  <p> Your site!</p>
+                  <main>
+                      <h1>About Me</h1>
+                  </main>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add1.msft.png" alt-text="El nuevo código está resaltado en la pestaña Editor" lightbox="../media/beginners-html-add1.msft.png":::
+             El nuevo código está resaltado en la pestaña Editor  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
 1.  Ver los cambios en la **ficha en vivo**.  El texto `About Me` está visible en la página.  Es más grande que el resto del texto, porque el `<h1>` elemento representa un encabezado de sección.  El explorador Web estilos automáticamente los títulos en tamaños de fuente mayores.  
     
-    > ##### Imagen 7  
-    > El nuevo título está visible en la pestaña en vivo  
-    > ![El nuevo título está visible en la pestaña en vivo][ImageHtmlAdd2]  
+    :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="El nuevo título está visible en la pestaña en vivo" lightbox="../media/beginners-html-add2.msft.png":::
+       El nuevo título está visible en la pestaña en vivo  
+    :::image-end:::  
     
 1.  De nuevo en la **pestaña Editor**, inserte `<p>I am learning HTML.  Recent accomplishments:</p>` en la línea debajo de la cual acaba de colocar `<h1>About Me</h1>` .  
     
-    ```html
-    ...
-        ...
-        <body>
-            <p> Your site!</p>
-            <main>
-                <h1>About Me</h1>
-                <p>I am learning web development.  Recent accomplishments:</p>
-            </main>
-            ...
-        ...
-    ...
-    ```  
-
-    > ##### Imagen 8  
-    > El nuevo código está resaltado en la pestaña Editor  
-    > ![El nuevo código está resaltado en la pestaña Editor][ImageHtmlAdd3]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+              <body>
+                  <p> Your site!</p>
+                  <main>
+                      <h1>About Me</h1>
+                      <p>I am learning web development.  Recent accomplishments:</p>
+                  </main>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="El nuevo código está resaltado en la pestaña Editor" lightbox="../media/beginners-html-add3.msft.png":::
+             El nuevo código está resaltado en la pestaña Editor  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
 1.  Ver el cambio en la **ficha en vivo**.  
 1.  En la **pestaña Editor**, agregue una lista de sus logros:  
     
-    ```html
-    ...
-        ...
-            ...
-            <p>I am learning web development.  Recent accomplishments:</p>
-            <ul>
-                <li>Learned how to set up my code in Glitch.</li>
-                <li>Added content to my HTML.</li>
-                <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
-                <li>TODO: Learn the difference between HTML and the DOM.</li>
-            </ul>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Imagen 9  
-    > El nuevo código está resaltado en la pestaña Editor  
-    > ![El nuevo código está resaltado en la pestaña Editor][ImageHtmlAdd4]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+                  ...
+                  <p>I am learning web development.  Recent accomplishments:</p>
+                  <ul>
+                      <li>Learned how to set up my code in Glitch.</li>
+                      <li>Added content to my HTML.</li>
+                      <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
+                      <li>TODO: Learn the difference between HTML and the DOM.</li>
+                  </ul>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="El nuevo código está resaltado en la pestaña Editor" lightbox="../media/beginners-html-add4.msft.png":::
+             El nuevo código está resaltado en la pestaña Editor  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
 1.  De nuevo, vuelva a la **pestaña en vivo** para asegurarse de que el nuevo contenido se muestra correctamente.  
     
-    > ##### Imagen 10  
-    > La nueva lista está visible en la pestaña en vivo  
-    > ![La nueva lista está visible en la pestaña en vivo][ImageHtmlAdd5]  
+    :::image type="complex" source="../media/beginners-html-add5.msft.png" alt-text="La nueva lista está visible en la pestaña en vivo" lightbox="../media/beginners-html-add5.msft.png":::
+       La nueva lista está visible en la pestaña en vivo  
+    :::image-end:::  
     
 ## Experimentar con los cambios de contenido en Microsoft Edge DevTools   
 
@@ -172,27 +188,27 @@ Antes de empezar a editar el contenido desde Microsoft Edge DevTools, resulta ú
 
 1.  Ir a la **ficha en vivo**.  En la parte inferior de la página verá el texto `A new element!?!` .  
     
-    > ###### Imagen 11  
-    > En la parte inferior de la página `A new element!?!` se puede ver el texto.  
-    > ![En la parte inferior de la página, el texto de un nuevo elemento!?! se puede ver][ImageHtmlDom1]  
+    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="En la parte inferior de la página, el texto de un nuevo elemento!?! se puede ver" lightbox="../media/beginners-html-dom1.msft.png":::
+       En la parte inferior de la página, el texto de un nuevo elemento!?! se puede ver  
+    :::image-end:::  
     
 1.  Vuelva a la **pestaña Editor** y busque este texto `index.html` .  ¡ No está allí!  
     
-    > ##### Imagen 12  
-    > El misterio `A new element!?!` no se encuentra en ningún `index.html`  
-    > ![El dedo texto un elemento nuevo!?! no se encuentra en index.html][ImageHtmlDom2]  
+    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="El dedo texto un elemento nuevo!?! no se encuentra en index.html" lightbox="../media/beginners-html-dom2.msft.png":::
+       El misterio `A new element!?!` no se encuentra en ningún `index.html`  
+    :::image-end:::  
     
 1.  Vuelva a la **ficha en vivo**, haga clic con el botón derecho `A new element!?!` y seleccione **inspeccionar**.  
     
-    > ##### Imagen 13  
-    > Inspeccionar texto  
-    > ![Inspeccionar texto][ImageHtmlDom3]  
+    :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="Inspeccionar texto" lightbox="../media/beginners-html-dom3.msft.png":::
+       Inspeccionar texto  
+    :::image-end:::  
     
     DevTools se abre junto a la página.  `<div>A new element!?!</div>` está resaltado en azul.  Aunque esta estructura de DevTools se parece al código HTML, realmente es el **árbol DOM**.  
     
-    > ##### Imagen 14  
-    > DevTools está abierto junto a la página  
-    > ![DevTools está abierto junto a la página][ImageHtmlDom4]  
+    :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="DevTools está abierto junto a la página" lightbox="../media/beginners-html-dom4.msft.png":::
+       DevTools está abierto junto a la página  
+    :::image-end:::  
     
 Cuando se carga la página, el explorador toma el código HTML para crear el contenido *inicial* de la página.  DOM representa el contenido *actual* de la página, que puede cambiar a lo largo del tiempo.  El `<div>A new element!?!</div>` contenido misterioso se agrega a tu página debido a la `<script src="new.js"></script>` etiqueta de la parte inferior de tu HTML.  Esta etiqueta hace que se ejecute código JavaScript.  Obtendrá más información sobre JavaScript en un tutorial posterior, pero por ahora piense en él como un lenguaje de programación que puede cambiar el contenido de la página.  En este caso en particular, el código de JavaScript `<div>A new element!?!</div>` se agrega a la página.  Este es el motivo por el que este texto de misterios está visible en tu página en vivo, pero no en tu HTML.  
 
@@ -201,35 +217,40 @@ Cuando se carga la página, el explorador toma el código HTML para crear el con
 Si desea experimentar rápidamente cambios de contenido sin salir de la pestaña en vivo, pruebe DevTools.  
 
 1.  En DevTools, haga clic con el botón derecho `Your site!` y seleccione **Editar como html**.  
-
-    > ##### Imagen 15  
-    > Editar el nodo como HTML  
-    > ![Editar el nodo como HTML][ImageHtmlEdit1]  
+    
+    :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="Editar el nodo como HTML" lightbox="../media/beginners-html-edit1.msft.png":::
+       Editar el nodo como HTML  
+    :::image-end:::  
     
 1.  Reemplaza `<p>Your site!</p>` con el código a continuación.  
     
-    ```html
-    ...
-        ...
-            ...
-            <header>
-                <p><b>Welcome to my site!</b></p>
-                <button>Download my resume</button>
-            </header>
-            ...
-        ...
-    ...
-    ```  
-    
-    > ##### Imagen 16  
-    > Editar el nodo como HTML  
-    > ![Editar el nodo como HTML][ImageHtmlEdit2]  
+    :::row:::
+       :::column span="":::
+          ```html
+          ...
+              ...
+                  ...
+                  <header>
+                      <p><b>Welcome to my site!</b></p>
+                      <button>Download my resume</button>
+                  </header>
+                  ...
+              ...
+          ...
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Editar el nodo como HTML" lightbox="../media/beginners-html-edit2.msft.png":::
+             Editar el nodo como HTML  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
 1.  Pulse `Control` + `Enter` \ (Windows \) o `Command` + `Enter` \ (MacOS \) para guardar los cambios, o haga clic fuera del cuadro.  Los cambios se muestran automáticamente en la vista en vivo de la página.  El texto `Your site!` ha sido reemplazado por el nuevo contenido.  
     
-    > ##### Imagen 17  
-    > El nuevo contenido se muestra inmediatamente en la página  
-    > ![El nuevo contenido se muestra inmediatamente en la página][ImageHtmlEdit3]  
+    :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="El nuevo contenido se muestra inmediatamente en la página" lightbox="../media/beginners-html-edit3.msft.png":::
+       El nuevo contenido se muestra inmediatamente en la página  
+    :::image-end:::  
     
 Este flujo de trabajo solo es adecuado para experimentar con cambios de contenido.  Si vuelve a cargar la página o cierra la pestaña, los cambios desaparecerán para siempre.  Si está usando este flujo de trabajo y quiere guardar los cambios, debe copiar manualmente esos cambios en el código HTML.  El siguiente par de secciones le muestran algunas formas más de cambiar el contenido del árbol DOM.  
 
@@ -239,20 +260,26 @@ También puede cambiar el orden de los nodos DOM.  Por ejemplo, en la página we
 
 1.  Busque el `<nav>` nodo en el **árbol DOM** de DevTools.  
     
-    > ##### Ilustración 18  
-    > El nodo NAV está resaltado en azul en DevTools  
-    > ![El nodo NAV está resaltado en azul en DevTools][ImageHtmlReorder1]  
+    :::image type="complex" source="../media/beginners-html-reorder1.msft.png" alt-text="El nodo NAV está resaltado en azul en DevTools" lightbox="../media/beginners-html-reorder1.msft.png":::
+       El nodo NAV está resaltado en azul en DevTools  
+    :::image-end:::  
     
 1.  Arrastre el `<nav>` nodo a la parte superior, de modo que sea el primer secundario debajo `<body>` del nodo.  
-    > ##### Ilustración 19  
-    > Arrastrar el nodo NAV a la parte superior  
-    > ![Arrastrar el nodo NAV a la parte superior][ImageHtmlReorder2]  
     
-    El `<nav>` nodo se muestra ahora en la parte superior de la página.  
-    
-    > ##### Ilustración 20  
-    > El nodo NAV está en la parte superior de la página  
-    > ![El nodo NAV está en la parte superior de la página][ImageHtmlReorder3]  
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Arrastrar el nodo NAV a la parte superior" lightbox="../media/beginners-html-reorder2.msft.png":::
+             Arrastrar el nodo NAV a la parte superior  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          El `<nav>` nodo se muestra ahora en la parte superior de la página.  
+          
+          :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="El nodo NAV está en la parte superior de la página" lightbox="../media/beginners-html-reorder3.msft.png":::
+             El nodo NAV está en la parte superior de la página  
+          :::image-end:::  
+       :::column-end:::
+   :::row-end:::  
     
 ### Eliminar un nodo   
 
@@ -260,15 +287,15 @@ También puede quitar nodos del árbol DOM.
 
 1.  En el **árbol DOM**, haga clic en `<div>A new element!?!</div>` .  DevTools resalta el nodo azul.  
     
-    > ##### Ilustración 21  
-    > Selección del nodo que se va a eliminar  
-    > ![Selección del nodo que se va a eliminar][ImageHtmlDelete1]  
+    :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="Selección del nodo que se va a eliminar" lightbox="../media/beginners-html-delete1.msft.png":::
+       Selección del nodo que se va a eliminar  
+    :::image-end:::  
     
 1.  Presione la `Delete` tecla del teclado.  El `<div>A new element!?!</div>` nodo se elimina del árbol DOM.  
     
-    > ##### Ilustración 22  
-    > El nodo ha sido eliminado  
-    > ![El nodo ha sido eliminado][ImageHtmlDelete2]  
+    :::image type="complex" source="../media/beginners-html-delete2.msft.png" alt-text="El nodo ha sido eliminado" lightbox="../media/beginners-html-delete2.msft.png":::
+       El nodo ha sido eliminado  
+    :::image-end:::  
     
 ## Copiar los cambios   
 
@@ -276,10 +303,10 @@ Ya casi lo ha hecho.  Ha realizado algunos cambios en la página en DevTools, pe
 
 1.  Actualice la **ficha en vivo**.  Los cambios que realizó en el árbol DOM desaparecen.  En concreto, el texto `Your site!` vuelve a la parte superior de la página y el texto `A new element!?!` vuelve a la parte inferior.  
     
-    > ##### Ilustración 23  
-    > Los cambios que ha realizado han desaparecido  
-    > ![Los cambios que ha realizado han desaparecido][ImageHtmlCopy1]  
-
+    :::image type="complex" source="../media/beginners-html-copy1.msft.png" alt-text="Los cambios que ha realizado han desaparecido" lightbox="../media/beginners-html-copy1.msft.png":::
+       Los cambios que ha realizado han desaparecido  
+    :::image-end:::  
+    
 1.  Copia el siguiente código.  
     
     ```html
@@ -313,12 +340,12 @@ Ya casi lo ha hecho.  Ha realizado algunos cambios en la página en DevTools, pe
         </body>
     </html>
     ```  
-      
+    
 1.  Vuelva a la **pestaña Editor** y reemplace el contenido del `index.html` archivo por el que acaba de copiar.  
     
-    > ##### Ilustración 24  
-    > Aspecto del `index.html` archivo  
-    > ![Cómo debería tener el archivo index.html][ImageHtmlCopy2]  
+    :::image type="complex" source="../media/beginners-html-copy2.msft.png" alt-text="Cómo debería tener el archivo index.html" lightbox="../media/beginners-html-copy2.msft.png":::
+       Aspecto del `index.html` archivo  
+    :::image-end:::  
     
 ## Pasos siguientes   
 
@@ -326,36 +353,9 @@ Ya casi lo ha hecho.  Ha realizado algunos cambios en la página en DevTools, pe
 *   Lea [la introducción al Dom][MDNIntroductionDom] para obtener más información sobre el Dom.  
 *   Consulta un curso como la [Introducción al desarrollo web][CourseraIntroductionToWebDevelopment] para obtener más experiencia de desarrollo web de manos libres.  
 
-<!--- image links --->  
-
-[ImageHtmlFinished]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-finished.msft.png "Ilustración 1: el sitio finalizado"  
-[ImageHtmlSetup1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup1.msft.png "Ilustración 2: la ficha Editor"  
-[ImageHtmlSetup2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup2.msft.png "Ilustración 3: el menú de opciones del proyecto"  
-[ImageHtmlSetup3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup3.msft.png "Ilustración 4: el proyecto remixto"  
-[ImageHtmlSetup4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-setup4.msft.png "Ilustración 5: la ficha en vivo"  
-[ImageHtmlAdd1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add1.msft.png "Ilustración 6: el nuevo código está resaltado en la pestaña Editor"  
-[ImageHtmlAdd2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add2.msft.png "Ilustración 7: el nuevo título está visible en la pestaña en vivo"  
-[ImageHtmlAdd3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add3.msft.png "Ilustración 8: el nuevo código está resaltado en la pestaña Editor"  
-[ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "Ilustración 9: el nuevo código está resaltado en la pestaña Editor"  
-[ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "Ilustración 10: la nueva lista está visible en la pestaña en vivo"  
-[ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "Ilustración 11: en la parte inferior de la página el texto de un nuevo elemento!?! se puede ver"  
-[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Ilustración 12: el dedo texto un elemento nuevo!?! no se encuentra en index.html"  
-[ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "Ilustración 13: inspeccionar texto"  
-[ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "Ilustración 14: DevTools está abierto junto a la página"  
-[ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "Ilustración 15: editar el nodo como HTML"  
-[ImageHtmlEdit2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit2.msft.png "Ilustración 16: editar el nodo como HTML"  
-[ImageHtmlEdit3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit3.msft.png "Ilustración 17: el nuevo contenido se muestra inmediatamente en la página"  
-[ImageHtmlReorder1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder1.msft.png "Ilustración 18: el nodo NAV está resaltado en azul en DevTools"  
-[ImageHtmlReorder2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder2.msft.png "Ilustración 19: arrastrar el nodo NAV a la parte superior"  
-[ImageHtmlReorder3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder3.msft.png "Ilustración 20: el nodo NAV se encuentra en la parte superior de la página"  
-[ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "Ilustración 21: selección del nodo que se va a eliminar"  
-[ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "Ilustración 22: el nodo se ha eliminado"  
-[ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "Ilustración 23: los cambios que ha realizado han desaparecido"  
-[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Ilustración 24: el aspecto que tendrá el archivo de index.html"  
-
 <!--- links --->  
 
-[DevToolsBeginnersCss]: /microsoft-edge/devtools-guide-chromium/beginners/css "DevTools para principiantes: Introducción a CSS"  
+[DevToolsBeginnersCss]: ./css.md "DevTools para principiantes: Introducción a CSS | Microsoft docs"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Insider de Microsoft Edge"  
 

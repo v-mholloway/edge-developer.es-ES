@@ -1,17 +1,17 @@
 ---
-title: Realizar un seguimiento del elemento que tiene el foco
+title: Rastrear qué elemento tiene el foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a1bcb7e97357d1348b363ecd4842d1b6a78feb45
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: 04091ddf7986b8554e4f615a92e0303446048eaa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581534"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981759"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,38 +31,36 @@ ms.locfileid: "10581534"
 
 
 
-# Realizar un seguimiento del elemento que tiene el foco   
+# Rastrear qué elemento tiene el foco   
 
 
 
 Suponga que está probando la accesibilidad de navegación por el teclado de una página.  Al navegar por la página con la `Tab` tecla, el anillo de foco desaparece a veces, porque el elemento que tiene el foco está oculto.  Para realizar un seguimiento del elemento que tiene el foco en DevTools:  
 
 1.  Abra la **consola**.  
-1.  Haga clic en crear expresión en **directo** ![ ][ImageCreateIcon] .  
-
-    > ##### Figura 1  
-    > Crear una **expresión en directo**  
-    > ![Crear una expresión en directo][ImageLiveExpression]  
+1.  Haga clic en **crear expresión en directo** \ ( ![ crear expresión en directo ][ImageCreateIcon] \).  
+    
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Crear una expresión en directo" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       Crear una expresión en directo  
+    :::image-end:::  
     
 1.  Escribe `document.activeElement`.
 1.  Haga clic fuera de la interfaz de usuario de **Live Expression** para guardar.
-
+    
 El valor que se ve a continuación `document.activeElement` es el resultado de la expresión.  
 Dado que esa expresión siempre representa el elemento que tiene el foco, ahora tienes una manera de realizar un seguimiento de qué elemento tiene el foco.  
 
 *   Desplace el puntero sobre el resultado para resaltar el elemento que tiene el foco en la ventanilla.  
 *   Haga clic con el botón derecho en el resultado y seleccione Mostrar **en el panel de elementos** para mostrar el elemento en el árbol DOM en el panel **elementos** .  
 *   Haga clic con el botón secundario en el resultado y seleccione **almacenar como variable global** para crear una referencia de variable al nodo que se puede usar en la **consola**.  
-
+    
 <!--## Feedback   -->  
 
 
 
 <!-- image links -->  
 
-[ImageCreateIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpression]: /microsoft-edge/devtools-guide-chromium/media/accessibility-console-create-live-expression-empty.msft.png "Ilustración 1: crear una expresión en directo"  
+[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

@@ -2,16 +2,16 @@
 title: Invalidar geolocalización con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 307064bedf992e528b6d79eed3a2ade3367830d4
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607443"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981836"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,29 +39,26 @@ Muchos sitios web aprovechan la ubicación del usuario para proporcionar una exp
 
 <!--todo: add link to user location section when available -->  
 
-Si estás creando una interfaz de usuario que varía según el lugar donde se encuentre el usuario, probablemente quieras asegurarte de que el sitio se comparará correctamente en diferentes lugares de todo el mundo.  Para invalidar su ubicación geográfica en Microsoft Edge DevTools:  
+Si estás creando una interfaz de usuario que varía según el lugar donde se encuentre el usuario, probablemente quieras asegurarte de que el sitio se comparará correctamente en diferentes lugares de todo el mundo.  Para invalidar su ubicación geográfica en Microsoft Edge DevTools, lleve a cabo las siguientes acciones.  
 
 1.  Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
     
-    > ##### Figura 1  
-    > El menú de comandos  
-    > ![El menú de comandos][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="El menú de comandos" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       El **menú de comandos**  
+    :::image-end:::  
     
 1.  Escriba `sensors` , seleccione **Mostrar sensores**y, a continuación, pulse `Enter` .  La ficha **sensores** se abre en la parte inferior de la ventana de DevTools.  
 1.  En la lista **geolocation** , seleccione una de las ciudades preconfiguradas, `Tokyo` o seleccione **ubicación personalizada** para especificar las coordenadas de longitud y latitud personalizadas, o seleccione **ubicación no disponible** para ver cómo se comporta su sitio cuando la ubicación del usuario no está disponible.  
     
-    > ##### Figura 2  
-    > Selección `Tokyo` de la lista de **ubicación geográfica**  
-    > ![Selección de Tokyo desde la lista de geolocalización][ImageGeolocationTokyo]  
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Seleccione Tokyo de la lista de almacenes" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+       Seleccione `Tokyo` de la lista **ubicación geográfica**  
+    :::image-end:::  
     
-<!--## Feedback   
+<!--  
+## Feedback   
 
-  -->  
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Ilustración 1: el menú de comandos"  
-[ImageGeolocationTokyo]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-geolocation-tokyo.msft.png "Ilustración 2: selección de Tokio de la lista de ubicación geográfica"  
+  
+-->  
 
 <!-- links -->  
 

@@ -2,16 +2,16 @@
 title: Habilitar tema oscuro en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 46a6d1aab30689a0d4b1f3fb20bf3521abd2017a
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+ms.openlocfilehash: cb5404ea088fa74890a6cb5027745cf59f4b2eac
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601342"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981815"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,47 +37,42 @@ ms.locfileid: "10601342"
 
 Puede habilitar el tema oscuro en [configuración](#set-up-dark-theme-from-settings) o en el [menú de comandos](#set-up-dark-theme-from-the-command-menu).  
 
-> ##### Figura 1  
-> El tema oscuro  
-> ![El tema oscuro][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="El tema oscuro" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
+   El tema oscuro  
+:::image-end:::  
 
 ## Configurar tema oscuro desde la configuración   
 
 1.  Haga clic en **personalizar y controlar DevTools** `...` y, a continuación, seleccione **configuración**.  También puede abrir la **configuración** pulsando `F1` .  
-
-> ##### Figura 2  
-> Configuración de la apertura  
-> ![Configuración de la apertura][ImageOpenSettings]  
+    
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Abrir Configuración" lightbox="../media/customize-options-settings.msft.png":::
+       Abrir **configuración**  
+    :::image-end:::  
 
 1.  En el panel **preferencias** , en **apariencia**, haga clic en la lista desplegable **tema** y seleccione **oscuro**.  
-
-> ##### Imagen 3  
-> Preferencias  
-> ![Preferencias][ImagePreferences]  
+    
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Preferencias" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+       **Preferencias**  
+    :::image-end:::  
 
 ## Configurar tema oscuro desde el menú de comandos   
 
-1.  [Abrir el menú de comandos][CommandMenu].  
+1.  [Abrir el menú de comandos][DevtoolsCommandMenu].  
 1.  Comience a escribir `dark` , seleccione el comando **cambiar a tema oscuro** y, a continuación, presione `Enter` para ejecutar el comando.  
-
-> ##### Imagen 4  
-> El comando tema oscuro  
-> ![El comando tema oscuro][ImageDarkThemeCommand]  
-
+    
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="El comando tema oscuro" lightbox="../media/customize-command-menu-dark.msft.png":::
+       El comando tema oscuro  
+    :::image-end:::  
+    
+<!--  
    
 
 
-
-<!-- image links -->  
-
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-console-dark-theme.msft.png "Ilustración 1: el tema oscuro"  
-[ImageOpenSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-options-settings.msft.png "Ilustración 2: abrir la configuración"  
-[ImagePreferences]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences-appearance-theme-dark.msft.png "Ilustración 3: preferencias"  
-[ImageDarkThemeCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-command-menu-dark.msft.png "Ilustración 4: el comando tema oscuro"  
+-->  
 
 <!-- links -->  
 
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Menú de comandos"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Menú comando | Microsoft docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  

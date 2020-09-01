@@ -2,16 +2,16 @@
 title: Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 748008b347a3498008748b9c3f9ecc1445c47f12
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 09adaadd6f62710b219911f69fbe39ba8edfb61a
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601750"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982564"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,46 +37,39 @@ ms.locfileid: "10601750"
 
 El menú de comandos proporciona una forma rápida de navegar por la interfaz de usuario de Microsoft Edge DevTools y realizar tareas comunes, como la [deshabilitación de JavaScript][JavascriptDisable].  Es posible que esté familiarizado con una característica similar de Visual Studio que se denomina [paleta de comandos][VisualStudioCodeUICommandPalette], que es la inspiración original para el menú de comandos.  
 
-> ##### Figura 1  
-> Usar el menú de comandos para deshabilitar JavaScript  
-> ![Usar el menú de comandos para deshabilitar JavaScript][ImageDisableJS]  
+:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
+   Usar el menú de comandos para deshabilitar JavaScript  
+:::image-end:::  
 
 ## Abrir el menú de comandos   
 
 Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \). O bien, haga clic en **personalizar y controlar DevTools** `...` y, a continuación, seleccione **Ejecutar comando**.  
 
-> ##### Figura 2  
-> Comando ejecutar  
-> ![Comando ejecutar][ImageRunCommand]  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Comando ejecutar" lightbox="../media/command-menu-options-run-command.msft.png":::
+   Comando ejecutar  
+:::image-end:::  
 
 ## Ver otras acciones disponibles   
 
-Si usa el flujo de trabajo esquematizado en [abrir el menú de comandos](#open-the-command-menu), el menú de comandos se abre con un `>` carácter antepuesto al cuadro de texto del menú de comandos.  
+Si usa el flujo de trabajo esquematizado en [abrir el menú de comandos](#open-the-command-menu), el menú comando se abre con un `>` carácter preestablecido en el cuadro de texto del menú de comandos.  
 
-> ##### Imagen 3  
-> El carácter de comando  
-> ![El carácter de comando][ImageCommandCharacter]  
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="El carácter de comando" lightbox="../media/command-menu-run-command.msft.png":::
+   El carácter de comando  
+:::image-end:::  
 
 Elimine el `>` carácter y escriba `?` para ver otras acciones disponibles en el menú de comandos.  
 
-> ##### Imagen 4  
-> Otras acciones disponibles  
-> ![Otras acciones disponibles][ImageActions]  
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Otras acciones disponibles" lightbox="../media/command-menu-help.msft.png":::
+   Otras acciones disponibles  
+:::image-end:::  
 
  
 
 
 
-<!-- image links -->  
-
-[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command-java.msft.png "Ilustración 1: usar el menú de comandos para deshabilitar JavaScript"  
-[ImageRunCommand]: /microsoft-edge/devtools-guide-chromium/media/command-menu-options-run-command.msft.png "Ilustración 2: comando ejecutar"  
-[ImageCommandCharacter]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command.msft.png "Ilustración 3: el carácter de comando"  
-[ImageActions]: /microsoft-edge/devtools-guide-chromium/media/command-menu-help.msft.png "Ilustración 4: otras acciones disponibles"  
-
 <!-- links -->  
 
-[JavascriptDisable]: /microsoft-edge/devtools-guide-chromium/javascript/disable "Deshabilitar JavaScript con Microsoft Edge DevTools"  
+[JavascriptDisable]: ../javascript/disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft docs"  
 
 [VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Paleta de comandos: interfaz de usuario de Visual Studio"  
 

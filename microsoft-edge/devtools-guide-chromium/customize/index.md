@@ -2,16 +2,16 @@
 title: Personalizar Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f34f2e3c02b0c66ee02f4810827f3adb51a60abc
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: e726b7f3f6245cb6f6798669c73fb14718542baa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882747"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982444"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -45,57 +45,57 @@ Para abrir la configuración, siga uno de estos procedimientos:
 
 *   Pulsa `F1` mientras DevTools el foco.  
 *   Abra el **menú principal** y, a continuación, seleccione **configuración**.  
-
-> ##### Figura 1  
-> Configuración  
-> ![Configuración][ImageSettings]  
-
+    
+    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Configuración" lightbox="../media/customize-settings-preferences.msft.png":::
+       **Configuración**  
+    :::image-end:::  
+    
 ## Ventana   
 
 El **cajón** contiene muchas características ocultas.  
 
-Pulse `Escape` para abrir o cerrar el cajón.  
+Pulse `Escape` para abrir o cerrar el **cajón**.  
 
-> ##### Figura 2  
-> El cajón  
-> ![El cajón][ImageDrawerExample]  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="El cajón" lightbox="../media/customize-drawer-open.msft.png":::
+   El **cajón**  
+:::image-end:::  
 
-Haga clic en **más** ![ ][ImageMoreIcon] para abrir las pestañas de otros cajón.  
+Haga clic en **más** \ ( ![ más ][ImageMoreIcon] \) para abrir otras pestañas de **cajón** .  
 
-> ##### Imagen 3  
-> El botón para abrir las pestañas de cajón  
-> ![El botón para abrir las pestañas de cajón][ImageMoreDrawerTabs]  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="El botón para abrir las pestañas de cajón" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   El botón para abrir las pestañas de **cajón**  
+:::image-end:::  
 
 ## Reordenar paneles   
 
 Haga clic y arrastre una pestaña de panel para cambiar su orden.  El orden de tabulación personalizado se conserva en todas las sesiones de DevTools.  
 
 > [!NOTE]
-> De forma predeterminada, la ficha panel de red suele ser la cuarta de la izquierda.  En la [figura 4](#figure-4), es la primera de la izquierda.  
+> De forma predeterminada, la ficha panel de **red** suele ser la cuarta de la izquierda.  En la siguiente ilustración, el panel **red** es el primero de la izquierda.  
 
-> ##### Imagen 4  
-> Una ventana de DevTools con un orden de tabulación personalizado    
-> ![Una ventana de DevTools con un orden de tabulación de panel personalizado][ImageCustomTabOrdering]  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Una ventana de DevTools con un orden de tabulación de panel personalizado" lightbox="../media/customize-network-first-position.msft.png":::
+   Una ventana de DevTools con un orden de tabulación de panel personalizado  
+:::image-end:::  
 
 ## Cambiar la ubicación de DevTools   
 
 Vea [Ubicación de Microsoft Edge DevTools][DevToolsPlacement].  
 
-> ##### Imagen 5  
-> DevTools desacoplado  
-> ![DevTools desacoplado][ImageUndock]  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools desacoplado" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   DevTools desacoplado  
+:::image-end:::  
 
 ## Tema oscuro   
 
 Consulte [Habilitar tema oscuro][DarkTheme].  
 
-> ##### Imagen 6  
-> El tema oscuro  
-> ![El tema oscuro][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="El tema oscuro" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+   El tema oscuro  
+:::image-end:::  
 
 ## Experimentos   
 
-Para habilitar los experimentos de DevTools:  
+Para habilitar experimentos DevTools, complete las siguientes acciones.  
 
 1.  Vaya a `edge://flags/#enable-devtools-experiments` .  
 1.  Haz clic en **Habilitar**.  
@@ -103,25 +103,20 @@ Para habilitar los experimentos de DevTools:
 
 La próxima vez que abras DevTools, se mostrará una página nueva llamada **experimentos** en [configuración](#settings).  
 
+<!--  
    
 
   
+-->  
 
 <!-- image links -->  
 
-[ImageMoreIcon]: /microsoft-edge/devtools-guide-chromium/media/more-icon.msft.png  
-
-[ImageSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences.msft.png "Ilustración 1: configuración"  
-[ImageDrawerExample]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open.msft.png "Ilustración 2: el cajón"  
-[ImageMoreDrawerTabs]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open-more-tools.msft.png "Ilustración 3: el botón para abrir las pestañas de un cajón"  
-[ImageCustomTabOrdering]: /microsoft-edge/devtools-guide-chromium/media/customize-network-first-position.msft.png "Ilustración 4: una ventana de DevTools con un orden de tabulación de panel personalizado"  
-[ImageUndock]: /microsoft-edge/devtools-guide-chromium/media/customize-dev-tools-dock-side.msft.png "Ilustración 5: DevTools desacoplado"  
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-appearance-theme.msft.png "Ilustración 6: el tema oscuro"  
+[ImageMoreIcon]: ../media/more-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Cambiar la ubicación de DevTools de Microsoft Edge (desacoplar, acoplar a la parte inferior, acoplar a la izquierda)"  
-[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "Habilitar tema oscuro en Microsoft Edge DevTools"  
+[DevToolsPlacement]: ./placement.md "Cambiar la ubicación de DevTools de Microsoft Edge | Microsoft docs"  
+[DarkTheme]: ./dark-theme.md "Habilitar tema oscuro en Microsoft Edge DevTools | Microsoft docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
