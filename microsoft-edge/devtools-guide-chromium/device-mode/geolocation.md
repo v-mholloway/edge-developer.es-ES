@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6cc690e7f2f93448c2facb01f0ca2f9b679a473a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981836"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986104"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,49 +27,41 @@ ms.locfileid: "10981836"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# <span data-ttu-id="1b609-103">Invalidar geolocalización con Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="1b609-103">Override geolocation with Microsoft Edge DevTools</span></span>  
 
-
-
-
-# <span data-ttu-id="d939e-103">Invalidar geolocalización con Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="d939e-103">Override geolocation with Microsoft Edge DevTools</span></span>   
-
-
-
-<span data-ttu-id="d939e-104">Muchos sitios web aprovechan la ubicación del usuario para proporcionar una experiencia más relevante a los usuarios.</span><span class="sxs-lookup"><span data-stu-id="d939e-104">Many websites take advantage of user location in order to provide a more relevant experience for the users.</span></span>  <span data-ttu-id="d939e-105">Por ejemplo, un sitio web de Meteorología puede mostrar la previsión local en el área de un usuario, después de que el usuario haya concedido permiso al sitio web para acceder a la ubicación del usuario actual.</span><span class="sxs-lookup"><span data-stu-id="d939e-105">For example, a weather website may show the local forecast in a user's area, after the user has granted the website permission to access the current user location.</span></span>  
+<span data-ttu-id="1b609-104">Muchos sitios web aprovechan la ubicación del usuario para proporcionar una experiencia más relevante a los usuarios.</span><span class="sxs-lookup"><span data-stu-id="1b609-104">Many websites take advantage of user location in order to provide a more relevant experience for the users.</span></span>  <span data-ttu-id="1b609-105">Por ejemplo, un sitio web de Meteorología puede mostrar la previsión local en el área de un usuario, después de que el usuario haya concedido permiso al sitio web para acceder a la ubicación del usuario actual.</span><span class="sxs-lookup"><span data-stu-id="1b609-105">For example, a weather website may show the local forecast in a user's area, after the user has granted the website permission to access the current user location.</span></span>  
 
 <!--todo: add link to user location section when available -->  
 
-<span data-ttu-id="d939e-106">Si estás creando una interfaz de usuario que varía según el lugar donde se encuentre el usuario, probablemente quieras asegurarte de que el sitio se comparará correctamente en diferentes lugares de todo el mundo.</span><span class="sxs-lookup"><span data-stu-id="d939e-106">If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.</span></span>  <span data-ttu-id="d939e-107">Para invalidar su ubicación geográfica en Microsoft Edge DevTools, lleve a cabo las siguientes acciones.</span><span class="sxs-lookup"><span data-stu-id="d939e-107">To override your geolocation in Microsoft Edge DevTools, complete the following actions.</span></span>  
+<span data-ttu-id="1b609-106">Si estás creando una interfaz de usuario que varía según el lugar donde se encuentre el usuario, probablemente quieras asegurarte de que el sitio se comparará correctamente en diferentes lugares de todo el mundo.</span><span class="sxs-lookup"><span data-stu-id="1b609-106">If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.</span></span>  <span data-ttu-id="1b609-107">Para invalidar su ubicación geográfica en Microsoft Edge DevTools, lleve a cabo las siguientes acciones.</span><span class="sxs-lookup"><span data-stu-id="1b609-107">To override your geolocation in Microsoft Edge DevTools, complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="d939e-108">Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.</span><span class="sxs-lookup"><span data-stu-id="d939e-108">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="1b609-108">Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.</span><span class="sxs-lookup"><span data-stu-id="1b609-108">Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="El menú de comandos" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       <span data-ttu-id="d939e-110">El **menú de comandos**</span><span class="sxs-lookup"><span data-stu-id="d939e-110">The **Command Menu**</span></span>  
+       <span data-ttu-id="1b609-110">El **menú de comandos**</span><span class="sxs-lookup"><span data-stu-id="1b609-110">The **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="d939e-111">Escriba `sensors` , seleccione **Mostrar sensores**y, a continuación, pulse `Enter` .</span><span class="sxs-lookup"><span data-stu-id="d939e-111">Type `sensors`, select **Show Sensors**, and press `Enter`.</span></span>  <span data-ttu-id="d939e-112">La ficha **sensores** se abre en la parte inferior de la ventana de DevTools.</span><span class="sxs-lookup"><span data-stu-id="d939e-112">The **Sensors** tab opens at the bottom of your DevTools window.</span></span>  
-1.  <span data-ttu-id="d939e-113">En la lista **geolocation** , seleccione una de las ciudades preconfiguradas, `Tokyo` o seleccione **ubicación personalizada** para especificar las coordenadas de longitud y latitud personalizadas, o seleccione **ubicación no disponible** para ver cómo se comporta su sitio cuando la ubicación del usuario no está disponible.</span><span class="sxs-lookup"><span data-stu-id="d939e-113">From the **Geolocation** list select one of the preset cities, like `Tokyo`, or select **Custom location** to enter custom longitude and latitude coordinates, or select **Location unavailable** to see how your site behaves when the user's location is not available.</span></span>  
+1.  <span data-ttu-id="1b609-111">Escriba `sensors` , seleccione **Mostrar sensores**y, a continuación, pulse `Enter` .</span><span class="sxs-lookup"><span data-stu-id="1b609-111">Type `sensors`, select **Show Sensors**, and press `Enter`.</span></span>  <span data-ttu-id="1b609-112">La ficha **sensores** se abre en la parte inferior de la ventana de DevTools.</span><span class="sxs-lookup"><span data-stu-id="1b609-112">The **Sensors** tab opens at the bottom of your DevTools window.</span></span>  
+1.  <span data-ttu-id="1b609-113">En la lista **geolocation** , seleccione una de las ciudades preconfiguradas, `Tokyo` o seleccione **ubicación personalizada** para especificar las coordenadas de longitud y latitud personalizadas, o seleccione **ubicación no disponible** para ver cómo se comporta su sitio cuando la ubicación del usuario no está disponible.</span><span class="sxs-lookup"><span data-stu-id="1b609-113">From the **Geolocation** list select one of the preset cities, like `Tokyo`, or select **Custom location** to enter custom longitude and latitude coordinates, or select **Location unavailable** to see how your site behaves when the user's location is not available.</span></span>  
     
     :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Seleccione Tokyo de la lista de almacenes" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
-       <span data-ttu-id="d939e-115">Seleccione `Tokyo` de la lista **ubicación geográfica**</span><span class="sxs-lookup"><span data-stu-id="d939e-115">Select `Tokyo` from the **Geolocation** list</span></span>  
+       <span data-ttu-id="1b609-115">Seleccione `Tokyo` de la lista **ubicación geográfica**</span><span class="sxs-lookup"><span data-stu-id="1b609-115">Select `Tokyo` from the **Geolocation** list</span></span>  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## <span data-ttu-id="1b609-116">Ponerse en contacto con el equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="1b609-116">Getting in touch with the Microsoft Edge DevTools team</span></span>
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 <!--[WebFundamentalsNativeHardwareUserLocationIndex]: /web/fundamentals/native-hardware/user-location/index "User Location"  -->  
 
 > [!NOTE]
-> <span data-ttu-id="d939e-116">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="d939e-116">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="d939e-117">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="d939e-117">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="1b609-117">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="1b609-117">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="1b609-118">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="1b609-118">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="d939e-119">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="d939e-119">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="1b609-120">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="1b609-120">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
