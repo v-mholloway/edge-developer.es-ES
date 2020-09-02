@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bd46489d8a8a3fddbff60618b4997784294cccff
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 183482660ed5fc50862dfd2cce7209384fee93e3
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985469"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986174"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985469"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Cómo grabar instantáneas de montones   
-
-
+# Cómo grabar instantáneas de montones  
 
 Obtenga información sobre cómo grabar instantáneas de montones con el analizador de montones de Microsoft Edge DevTools y buscar pérdidas de memoria.  
 
@@ -97,7 +91,7 @@ Para cambiar entre las vistas, use el selector de la parte superior de la vista.
 Inicialmente, se abre una instantánea en la vista de Resumen, que muestra los totales de los objetos, que se pueden expandir para mostrar las instancias:  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Vista de Resumen" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
-   Vista de Resumen  
+   Vista de **Resumen**  
 :::image-end:::  
 
 Las entradas de nivel superior son líneas de "total".  
@@ -118,7 +112,7 @@ Recuerde que los objetos amarillos tienen referencias de JavaScript y los objeto
 **¿Para qué se corresponden las diversas entradas de constructor \ (grupo \) en el generador de perfiles del montón?**  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Grupos de constructores" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
-   Grupos de constructores  
+   Grupos de **constructores**  
 :::image-end:::  
 
 | Entrada de constructor \ (grupo \) | Descripción |  
@@ -256,11 +250,9 @@ Para obtener más información sobre las pérdidas de DOM y el análisis de memo
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--  
-## Feedback   
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

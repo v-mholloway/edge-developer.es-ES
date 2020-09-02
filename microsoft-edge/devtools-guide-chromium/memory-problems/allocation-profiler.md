@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d0a7a66a9f061d1a5d98e57269ffbcc0a0afefa4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985763"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986167"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985763"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # Cómo usar el instrumental de asignación en la escala de tiempo  
-
-
 
 Use **instrumentación de asignación en la escala de tiempo** para buscar objetos que no se hayan recolectado correctamente y continúe manteniendo la memoria.  
 
@@ -44,7 +38,7 @@ La **instrumentación de asignación** de la escala de tiempo combina la informa
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-La **instrumentación de asignación de la escala de tiempo** toma instantáneas de montones de forma periódica en la grabación \ (con la frecuencia que cada 50 ms! \) y una instantánea final al final de la grabación.  
+La **instrumentación de asignación de la escala de tiempo** toma instantáneas de montones de forma periódica en la grabación \ (con una frecuencia de cada 50 ms \) y una instantánea final al final de la grabación.  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Instrumentación de asignación en la escala de tiempo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **Instrumentación de asignación en la escala de tiempo**  
@@ -55,7 +49,7 @@ La **instrumentación de asignación de la escala de tiempo** toma instantáneas
 
 ## Habilitar instrumentación de asignación en la escala de tiempo  
 
-Siga estos pasos para empezar a usar el **instrumental de asignación en la escala de tiempo**.  
+Complete las acciones siguientes para empezar a usar **instrumentación de asignación en la escala de tiempo**.  
 
 1.  [Abra el DevTools][DevtoolsOpenIndex].  
 1.  Abra el panel **memoria** y seleccione el botón **de opción instrumentación de asignación en la escala de tiempo** .  
@@ -86,15 +80,13 @@ Puede usar los controles deslizantes de la línea de tiempo anterior para acerca
 
 Al hacer clic en un objeto específico en el montón, se muestra el árbol de retención en la parte inferior de la instantánea del montón.  El examen de la retención de la ruta de acceso al objeto debe proporcionarle suficiente información para comprender por qué no se recopiló el objeto y debe realizar los cambios de código necesarios para quitar la referencia innecesaria.  
 
-## Ver asignación de memoria por función   
+## Ver asignación de memoria por función  
 
-Puede ver la asignación de memoria por función de JavaScript.  Para obtener más información [, consulte investigar la asignación de memoria por función][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] .  
+Puede ver la asignación de memoria por función de JavaScript.  Para obtener más información, consulte [investigar la asignación de memoria por función][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-<!--
-## Feedback   
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

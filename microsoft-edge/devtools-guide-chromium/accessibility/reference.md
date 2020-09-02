@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 190890b43cff97ae0f379426b68a688534ebda95
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a338e78957d664a4552e5882f1ae7882f0eee89a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983691"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986090"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10983691"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Referencia de accesibilidad   
-
-
+# Referencia de accesibilidad  
 
 Esta página es una referencia completa de las características de accesibilidad en Microsoft Edge DevTools.  Está destinada a los programadores web que:  
 
@@ -44,7 +38,7 @@ El propósito de esta referencia es ayudarle a descubrir todas las herramientas 
 
 Consulte [navegar por Microsoft Edge DevTools con tecnología de asistencia][DevtoolsAccessibilityNavigation] si necesita ayuda para navegar por DevTools con una tecnología de asistencia, como un lector de pantalla.  
 
-## Información general sobre las características de accesibilidad en Microsoft Edge DevTools   
+## Información general sobre las características de accesibilidad en Microsoft Edge DevTools  
 
 En esta sección se explica cómo DevTools encaja en el conjunto de herramientas general de accesibilidad.  
 
@@ -57,7 +51,7 @@ En general, DevTools debería ayudarle a corregir los errores relacionados con p
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Auditar la accesibilidad de una página   
+## Auditar la accesibilidad de una página  
 
 > [!NOTE]
 > El panel **Auditoría** proporciona vínculos a contenido hospedado en sitios web de terceros.  Microsoft no se responsabiliza y no tiene ningún control sobre el contenido de estos sitios y los datos que se pueden recopilar.  
@@ -65,8 +59,8 @@ En general, DevTools debería ayudarle a corregir los errores relacionados con p
 En general, use el panel auditorías para determinar si:  
 
 *   Una página se marcó correctamente para los lectores de pantalla.  
-*   Los elementos de texto de una página tienen relaciones de contraste suficientes. Consulte también [ver la relación de contraste de un elemento de texto en el selector de colores](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
-    
+*   Los elementos de texto de una página tienen relaciones de contraste suficientes.  Consulte [ver la relación de contraste de un elemento de texto en el selector de colores](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+
 Para auditar una página:  
 
 1.  Vaya a la dirección URL que desea auditar.  
@@ -95,13 +89,13 @@ Para auditar una página:
        Más información sobre una auditoría  
     :::image-end:::  
     
-1.  Haga clic en más **información** para ver la documentación de esa auditoría.
+1.  Haga clic en más **información** para ver la documentación de esa auditoría.  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Ver la documentación de una auditoría" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        Ver la documentación de una auditoría  
     :::image-end:::  
     
-### Vea también: extensión aXe   
+### Vea también: extensión aXe  
 
 Es posible que prefiera usar la [extensión de aXe][ChromeWebStoreAxe] en lugar del panel **auditorías** .  
 La extensión aXe generalmente proporciona la misma información, ya que es el motor subyacente que alimenta el panel auditorías.  La extensión de aXe tiene una interfaz de usuario diferente y describe las auditorías de forma ligeramente distinta.  
@@ -111,7 +105,7 @@ Una de las ventajas de que la extensión aXe está en el panel **Auditoría** es
    La extensión de aXe  
 :::image-end:::  
 
-## El panel Accesibilidad   
+## El panel Accesibilidad  
 
 El panel de **accesibilidad** es el lugar donde se ve el árbol de accesibilidad, los atributos de Aria y las propiedades de accesibilidad calculadas de los nodos DOM.  
 
@@ -119,13 +113,13 @@ Para abrir el panel **accesibilidad** :
 
 1.  Haga clic en la pestaña **elementos** .  
 1.  En el **árbol DOM**, seleccione el elemento que desea inspeccionar.  
-1.  Haga clic en la pestaña **accesibilidad** .  Es posible que esta pestaña esté oculta **detrás del** botón más pestañas más pestañas ![ ][ImageMoreTabsIcon] .  
+1.  Haga clic en la pestaña **accesibilidad** .  Es posible que esta pestaña esté oculta detrás del botón **más pestañas** \ ( ![ más pestañas ][ImageMoreTabsIcon] \).  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspeccionar el elemento H1 de la Página principal de DevTools en el panel Accesibilidad" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspeccionar el `h1` elemento de la Página principal de DevTools en el panel **accesibilidad**  
 :::image-end:::  
 
-### Ver la posición de un elemento en el árbol de accesibilidad   
+### Ver la posición de un elemento en el árbol de accesibilidad  
 
 El [árbol de accesibilidad][MDNAccessibilityTree] es un subconjunto del árbol DOM.  Solo contiene elementos del árbol DOM que son relevantes y útiles para mostrar el contenido de una página en un lector de pantalla.  
 
@@ -135,7 +129,7 @@ Inspeccione la posición de un elemento en el árbol de accesibilidad en el [pan
    Sección de **árbol de accesibilidad**  
 :::image-end:::  
 
-### Ver los atributos de ARIA de un elemento   
+### Ver los atributos de ARIA de un elemento  
 
 Los atributos de ARIA garantizan que los lectores de pantalla tengan toda la información que necesitan para representar correctamente el contenido de una página.  
 
@@ -145,7 +139,7 @@ Ver los atributos de ARIA de un elemento en el [Panel de accesibilidad](#the-acc
    La sección de **atributos de Aria**  
 :::image-end:::  
 
-### Ver las propiedades de accesibilidad calculadas de un elemento   
+### Ver las propiedades de accesibilidad calculadas de un elemento  
 
 > [!NOTE]
 > Si está buscando propiedades calculadas de CSS, consulte la [pestaña calculada][DevtoolsCssReferenceViewActuallyAppliedElements].  
@@ -158,9 +152,10 @@ Ver las propiedades de accesibilidad calculadas de un elemento en el [Panel de a
    Sección **propiedades calculadas** del panel **accesibilidad**  
 :::image-end:::  
 
-## Ver la relación de contraste de un elemento de texto en el selector de colores   
+## Ver la relación de contraste de un elemento de texto en el selector de colores  
 
 Algunas personas con deficiencias visuales no ven las áreas muy claras o muy oscuras.  Todo tiende a aparecer sobre el mismo brillo, lo que hace que sea difícil distinguir los esquemas y los bordes.  
+
 La relación de contraste mide la diferencia de brillo entre el primer plano y el fondo del texto.  Si el texto tiene una relación de contraste baja, es posible que los usuarios de estas deficiencias experimenten literalmente su sitio como pantalla en blanco.  
 
 El selector de colores le ayuda a comprobar que el texto cumple los niveles de proporción de contraste recomendados:  
@@ -168,8 +163,8 @@ El selector de colores le ayuda a comprobar que el texto cumple los niveles de p
 1.  Haga clic en la pestaña **elementos** .  
 1.  En el **árbol DOM**, seleccione el elemento de texto que desea inspeccionar.  
     
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspeccionar un párrafo en el árbol DOM" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Inspeccionar un párrafo en el árbol DOM  
+    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspeccionar un párrafo del árbol DOM" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+       Inspeccionar un párrafo del **árbol DOM**  
     :::image-end:::  
     
 1.  En el panel **estilos** , haga clic en el cuadrado de color situado junto al `color` valor del elemento.  
@@ -178,7 +173,7 @@ El selector de colores le ayuda a comprobar que el texto cumple los niveles de p
        La `color` propiedad del elemento  
     :::image-end:::  
     
-1.  Compruebe la sección **relación de contraste** del selector de colores.  Una marca de verificación significa que el elemento cumple con la [recomendación mínima][W3CContrastMinimum].  Dos marcas de verificación significa que cumple con la [Recomendación mejorada][W3CContrastEnhanced].
+1.  Compruebe la sección **relación de contraste** del selector de colores.  Una marca de verificación significa que el elemento cumple con la [recomendación mínima][W3CContrastMinimum].  Dos marcas de verificación significa que cumple con la [Recomendación mejorada][W3CContrastEnhanced].  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="La sección relación de contraste del selector de color muestra 2 marcas de verificación y un valor de 13,97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        La sección de **relación de contraste** del selector de color muestra 2 marcas de verificación y un valor de `13.97`  
@@ -187,12 +182,12 @@ El selector de colores le ayuda a comprobar que el texto cumple los niveles de p
 1.  Haga clic en la sección **relación de contraste** para ver más información.  Aparece una línea en el selector visual en la parte superior del selector de colores.  Si el color actual cumple con las recomendaciones, cualquier cosa en el mismo lado de la línea también se ajusta a las recomendaciones.  Si el color actual no cumple con las recomendaciones, entonces cualquier cosa en el mismo lado no cumple con las recomendaciones.  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="La línea de proporción de contraste en el selector visual" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       La línea de proporción de contraste en el selector visual  
+       La línea de **proporción de contraste** en el selector visual  
     :::image-end:::  
     
 <!--## Feedback   -->  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -200,7 +195,7 @@ El selector de colores le ayuda a comprobar que el texto cumple los niveles de p
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navegar por Microsoft Edge DevTools con tecnología de asistencia | Docs docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navegar por Microsoft Edge DevTools con tecnología de asistencia | Microsoft docs"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Ver solo la CSS que se aplica realmente a una referencia CSS de elemento | Microsoft docs"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "Axe-pruebas de accesibilidad web-tienda web de Chrome"  

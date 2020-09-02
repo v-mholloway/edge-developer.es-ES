@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 587f4780432b1b2b964462d2d7f5779f447f1313
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 829902ddd76800bb8d36268cb07a61361aa1a159
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982928"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986118"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,9 @@ ms.locfileid: "10982928"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Deshabilitar JavaScript con Microsoft Edge DevTools  
 
-
-
-
-# Deshabilitar JavaScript con Microsoft Edge DevTools   
-
-
-
-Para ver el aspecto y el comportamiento de una página web cuando JavaScript está deshabilitado.  
+Complete las acciones siguientes para ver el aspecto y el comportamiento de una página web cuando JavaScript está deshabilitado.  
 
 1.  [Abre Microsoft Edge DevTools][DevToolsOpen].  
 1.  Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
@@ -56,7 +50,7 @@ Para ver el aspecto y el comportamiento de una página web cuando JavaScript est
        Icono de advertencia junto a **orígenes**  
     :::image-end:::  
     
-JavaScript permanece deshabilitado en esta pestaña mientras haya DevTools abierto.  
+JavaScript permanece desactivado en la pestaña mientras haya DevTools abierto.  
 
 Es posible que desee volver a cargar la página para ver si la página depende de JavaScript mientras se carga.  
 
@@ -65,11 +59,9 @@ Para volver a Habilitar JavaScript, complete las siguientes acciones.
 *   Vuelva a abrir el **menú de comandos** y ejecute el `Enable JavaScript` comando.  
 *   Cierre DevTools.  
 
-<!--  
-## Feedback   
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -1,22 +1,22 @@
 ---
 description: Microsoft Edge (cromo) y Visual Studio
 title: Visual Studio
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/12/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 08/20/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, vs, Visual Studio, depurador
-ms.openlocfilehash: 27f4b7d4dc85e3cd5ba49497dec2d4658166794b
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3fc2e2c3dc21689d8c378ccbe33e4dff813ea12f
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10574855"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986195"
 ---
 # Visual Studio
 
-[Visual Studio](https://visualstudio.microsoft.com/vs/) es un entorno de desarrollo integrado (IDE) que puede usar para editar, depurar, generar y publicar aplicaciones Web. Es un programa con multitud de características que puede usar para muchos aspectos de su desarrollo web. Además del editor estándar y el depurador que proporcionan la mayoría de los IDE, Visual Studio incluye compiladores, herramientas de finalización de código, diseñadores gráficos y muchas otras características para facilitar el proceso de desarrollo. Vaya a [esta página](https://visualstudio.microsoft.com/downloads/) para descargar Visual Studio si aún no lo está usando.
+Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs/) es un entorno de desarrollo integrado (IDE) que puede usar para editar, depurar, generar y publicar aplicaciones Web. Es un programa con multitud de características que puede usar para muchos aspectos de su desarrollo web. Además del editor estándar y el depurador que proporcionan la mayoría de los IDE, Visual Studio incluye compiladores, herramientas de finalización de código, diseñadores gráficos y muchas otras características para facilitar el proceso de desarrollo. Vaya a [esta página](https://visualstudio.microsoft.com/downloads/) para descargar Visual Studio si aún no lo está usando.
 
 Por el momento, Visual Studio 2019 admite la depuración de JavaScript en Microsoft Edge para tus aplicaciones básicas de ASP\.NET y ASP\.NET. Siga los pasos que se indican a continuación para depurar Microsoft Edge desde Visual Studio.
 
@@ -30,11 +30,11 @@ Abra Visual Studio 2019 y seleccione **crear un nuevo proyecto**. En la siguient
 > ##### Figura 1  
 > Crear una nueva aplicación Web de ASP.NET Core ![ crear una nueva aplicación Web de ASP.net Core](./media/create-new-project.png)  
 
-Proporcione un **nombre de proyecto** para el nuevo proyecto y haga clic en **crear**. Para los fines de este ejemplo, seleccione **reAct. js** como la plantilla que muestra cómo integrar reAct. js en una aplicación de núcleo de ASP.net y haga clic en **crear**.
+Proporcione un **nombre de proyecto** para el nuevo proyecto y haga clic en **crear**. Para los fines de este ejemplo, seleccione **React.js** como la plantilla que muestra cómo integrar React.js con una aplicación de núcleo de ASP.net y haga clic en **crear**.
 
 ### Iniciar Microsoft Edge desde Visual Studio
 
-Una vez que se haya creado tu proyecto, abre **ClientApp/src/Components/Counter. js**. Ahora, indica a Visual Studio que depure JavaScript seleccionando la lista desplegable junto al botón verde de **reproducción** y a **IIS Express**. 
+Una vez que se haya creado tu proyecto, abre **ClientApp/src/Components/Counter.js**. Ahora, indica a Visual Studio que depure JavaScript seleccionando la lista desplegable junto al botón verde de **reproducción** y a **IIS Express**. 
 
 > ##### Figura 2  
 > La lista desplegable junto al botón verde de **reproducción** e **IIS Express**, 
@@ -53,25 +53,25 @@ En la misma lista desplegable, seleccione **explorador Web** y haga clic en el c
 > [!NOTE]
 > Si selecciona Microsoft Edge (EdgeHTML), Visual Studio lo iniciará en lugar de Microsoft Edge (cromo). [Instale los canales de vista previa de Microsoft Edge](https://www.microsoftedgeinsider.com/download) y selecciónelos o asegúrese de que la versión de Microsoft Edge instalada en su equipo sea Microsoft Edge (cromo) y no Microsoft Edge (EdgeHTML).
 
-Ahora que Visual Studio está configurado correctamente, haga clic en el botón verde de **reproducción** . Visual Studio compilará la aplicación, iniciará el servidor Web, iniciará Microsoft Edge y se desplazará a `https://localhost:44362/` o cualquier puerto que se especifique en **launchSettings. JSON**.
+Ahora que Visual Studio está configurado correctamente, haga clic en el botón verde de **reproducción** . Visual Studio compilará la aplicación, iniciará el servidor Web, iniciará Microsoft Edge y se desplazará a `https://localhost:44362/` o el puerto que se especifique en **launchSettings.js**.
 
 > ##### Imagen 5  
 > Microsoft Edge se ha iniciado desde Visual Studio ![ Microsoft Edge lanzado desde Visual Studio](./media/edge-launch.png)  
 
 ### Depurar JavaScript ejecutándose en Microsoft Edge
 
-Vuelva a Visual Studio. En **Counter. js**, establezca un punto de interrupción en la línea 13 haciendo clic en el medianil situado junto a la línea.
+Vuelva a Visual Studio. En **Counter.js**, para establecer un punto de interrupción en la línea 13, haga clic en el margen interno situado junto a la línea.
 
 > ##### Imagen 6
-> Para establecer un punto de interrupción en Visual Studio, haga clic en el medianil que se encuentra junto a la línea 13 en **Counter. js** 
-> ![ configurando un punto de interrupción en Visual Studio haciendo clic en el medianil junto a la línea 13 en Counter. js](./media/set-breakpoint.png)  
+> Para establecer un punto de interrupción en Visual Studio, haga clic en el medianil que se encuentra junto a la línea 13 en **Counter.js** 
+> ![ establecer un punto de interrupción en Visual Studio haciendo clic en el medianil junto a la línea 13 de Counter.js](./media/set-breakpoint.png)  
 
 Ahora, vuelve a la instancia de Microsoft Edge que iniciaste Visual Studio. Haga clic en el **contador** en el NavMenu a la izquierda de la página. Ahora, haga clic en **incremento**.
 
 > ##### Imagen 7
 > La página de contador de nuestra aplicación Web de ASP.NET Core ![ la página de contador de nuestra aplicación web principal de ASP.net](./media/edge-counter.png)  
 
-El depurador de JavaScript en Visual Studio va a hacer clic en el punto de interrupción que establecemos en **Counter. js**. Visual Studio ya ha pausado la ejecución de JavaScript en Microsoft Edge y puedes recorrer la secuencia línea a línea.
+El depurador de JavaScript en Visual Studio va a hacer clic en el punto de interrupción que establecemos en **Counter.js**. Visual Studio ya ha pausado la ejecución de JavaScript en Microsoft Edge y puedes recorrer la secuencia línea a línea.
 
 > ##### Imagen 8
 > Una pausa en Visual Studio en la ejecución de JavaScript en Microsoft Edge ![ Visual Studio con JavaScript ejecutándose en Microsoft Edge](./media/hit-breakpoint.png)  
@@ -101,8 +101,9 @@ Haga clic en **seleccionar...** y verifica **JavaScript (Microsoft Edge: cromo)*
 
 El depurador de Visual Studio se ha adjuntado a Microsoft Edge. Puede pausar JavaScript, establecer puntos de interrupción y ver `console.log()` las instrucciones directamente en la ventana de salida de depuración en Visual Studio.
 
-## Comentarios
-Estamos ansiosos por obtener más información sobre cómo trabajar con JavaScript en Visual Studio. Para enviarnos tus comentarios, haz clic en el icono de **comentarios** en Visual Studio o en tweets [@VisualStudio y @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).
+## Ponerse en contacto con el equipo de Microsoft Visual Studio  
+
+Estamos ansiosos por obtener más información sobre cómo trabajar con JavaScript en Visual Studio.  Para enviarnos tus comentarios, haz clic en el icono de **comentarios** en Visual Studio o en tweet [ @VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text= @VisualStudio + @EdgeDevTools).  
 
 > ##### Imagen 11
 > El icono de **comentarios** en Visual Studio ![ el icono de comentarios en Visual Studio](./media/feedback-icon.png)  

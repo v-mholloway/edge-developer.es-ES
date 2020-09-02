@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6cc690e7f2f93448c2facb01f0ca2f9b679a473a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981836"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986104"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10981836"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Invalidar geolocalización con Microsoft Edge DevTools   
-
-
+# Invalidar geolocalización con Microsoft Edge DevTools  
 
 Muchos sitios web aprovechan la ubicación del usuario para proporcionar una experiencia más relevante a los usuarios.  Por ejemplo, un sitio web de Meteorología puede mostrar la previsión local en el área de un usuario, después de que el usuario haya concedido permiso al sitio web para acceder a la ubicación del usuario actual.  
 
@@ -54,11 +48,9 @@ Si estás creando una interfaz de usuario que varía según el lugar donde se en
        Seleccione `Tokyo` de la lista **ubicación geográfica**  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

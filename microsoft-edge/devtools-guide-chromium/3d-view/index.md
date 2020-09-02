@@ -3,15 +3,16 @@ description: Todo sobre la vista 3D y cómo usarla.
 title: Vista 3D
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2019
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ce9f8a26ef991f141f1ee888e79bfbf3a93f2eca
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: ba1125654c46be6ef4da99efc9ba027ba5e40672
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858070"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986083"
 ---
 # Vista 3D  
 
@@ -107,9 +108,9 @@ Un control deslizante en el panel de control titulado **nivel de anidamiento par
 
 ### Tipo de color DOM  
 
-Además de los botones de **calor-púrpura a blanco**, **calor-azul a amarillo**, **calor-arco iris**y **usar color de fondo** , se **usa la textura**de la pantalla.  La textura de la pantalla agrega el contexto a la experiencia de depuración mostrando el contenido de la página web directamente en los elementos.  En el panel **Dom 3D** , la configuración de **tipo de color** sigue siendo un trabajo en curso, ya que algunos sitios web tienen una textura de pantalla de procesamiento de tiempo más difícil en la vista 3D.  
+Además de los botones de **calor-púrpura a blanco**, **calor-azul a amarillo**, **calor-arco iris**y **usar color de fondo** , se **usa la textura**de la pantalla.  La textura de la pantalla agrega el contexto a la experiencia de depuración mostrando el contenido de la página web directamente en los elementos.  En el panel **Dom 3D** , la configuración de  **tipo de color** sigue siendo un trabajo en curso, ya que algunos sitios web tienen una textura de pantalla de procesamiento de tiempo más difícil en la vista 3D.  
 
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools
 
 El equipo de Microsoft Edge DevTools está trabajando en la interfaz de usuario y agregando más funciones a la vista 3D basándose en las preguntas de los usuarios como usted.  Envíanos tus comentarios para ayudar a mejorar la DevTools de Microsoft Edge.  Simplemente selecciona el icono de comentarios en la DevTools o pulsa `Alt` + `Shift` + `I` \ (Windows \) o pulsa `Option` + `Shift` + `I` \ (MacOS \) e introduce las solicitudes de comentarios o características para el DevTools.  
 

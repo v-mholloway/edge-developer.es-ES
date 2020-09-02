@@ -3,19 +3,19 @@ description: Familiarizarse con las herramientas para desarrolladores de Microso
 title: Herramientas de desarrollo de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 experimental: false
 experiment_id: 51fe4b97-3e55-41
-ms.openlocfilehash: 47b7a3f4f523170f4dfb6f3ef674cecfdc0e157c
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+ms.openlocfilehash: 3aee2ab67c6e703a0a31b58b5bf985a23fcbb481
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645332"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986223"
 ---
 # Herramientas de desarrollo de Microsoft Edge  
 
@@ -40,18 +40,18 @@ La DevTools de Microsoft Edge incluye:
  - Panel [**memoria**](./devtools-guide/memory.md) para medir el uso de los recursos de memoria y Comparar instantáneas de montones en diferentes Estados de ejecución de código
  - Un panel de [**emulación**](./devtools-guide/emulation.md) para probar su sitio con diferentes perfiles de explorador, resoluciones de pantalla y coordenadas de ubicación GPS
 
-¡ Sigue enviando tus [comentarios y solicitudes de características](#feedback)!
+Sigue enviando tus [comentarios y solicitudes de características](#getting-in-touch-with-the-microsoft-edge-devtools-team).
 
 > [!TIP]
 > **[Prueba en Microsoft Edge sin cargo desde cualquier explorador](https://developer.microsoft.com/microsoft-edge/tools/remote/)**: nos asociamos con [BrowserStack](https://www.browserstack.com/test-on-microsoft-edge-browser#live-cloud) para ofrecer pruebas gratuitas en vivo y en tiempo real en Microsoft Edge.
 
 ## Aplicación de la Microsoft Store
 
-Los **DevTools de Microsoft Edge** [ya están disponibles para su vista previa](./devtools-guide/whats-new.md) como una [aplicación independiente de Windows 10 en Microsoft Store](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab), además de la experiencia de herramientas en el explorador ( `F12` ). La versión de la tienda viene con un panel de *selección* para adjuntar a destinos de página locales y remotos y un diseño con fichas para facilitar el cambio entre instancias de DevTools.
+Los **DevTools de Microsoft Edge** [ya están disponibles para su vista previa](./devtools-guide/whats-new.md) como una [aplicación independiente de Windows 10 en Microsoft Store](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab), además de la experiencia de herramientas en el explorador ( `F12` ). Con la versión de la tienda incluye un panel *selector* que permite adjuntar a destinos de página remotos y locales abiertos, así como un diseño con fichas para facilitar el cambio entre instancias de DevTools.
 
 ### Depuración local
 
-Para depurar una página de forma local, simplemente inicia la aplicación *Microsoft Edge DevTools* . El panel **local** de selector mostrará todos los procesos de contenido de Active EdgeHTML, incluidas las pestañas del explorador abierto, que ejecutan [PWAs](./progressive-web-apps-edgehtml/index.md) (procesos de*WWAHost. exe* ) y los controles de [WebView](./webview.md) . Haga clic en el destino deseado para adjuntar y abrir una nueva pestaña de la DevTools.
+Para depurar una página de forma local, simplemente inicia la aplicación *Microsoft Edge DevTools* . El panel **local** de selector mostrará todos los procesos de contenido de EdgeHTML activos, incluidas las pestañas del explorador abierto, la ejecución de [PWAs](./progressive-web-apps-edgehtml/index.md) (*WWAHost.exe* procesos) y los controles de [WebView](./webview.md) . Haga clic en el destino deseado para adjuntar y abrir una nueva pestaña de la DevTools.
 
 ![Panel local de la aplicación DevTools](./devtools-guide/media/chooser_local.png)
 
@@ -59,33 +59,27 @@ Para depurar una página de forma local, simplemente inicia la aplicación *Micr
 
 La aplicación *Microsoft Edge DevTools* presenta compatibilidad básica para la depuración de páginas en un equipo remoto a través de nuestro nuevo [**Protocolo de DevTools**](./devtools-protocol/index.md). En esta versión, se obtiene acceso remoto a la funcionalidad básica del panel [**depurador**](./devtools-guide/debugger.md) , menos inspección de la memoria caché (para almacenamiento Web, trabajo de servicio, API de caché y IndexedDB). La depuración remota está limitada a los hosts de *escritorio* con *Microsoft Edge* que se ejecutan en versiones futuras.
 
-Para comenzar, consulta la sección [*Microsoft Edge DevTools*](./devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) de los documentos de [Protocolo de DevTools](./devtools-protocol/index.md) .
+Para empezar, consulte la sección Microsoft Edge DevTools de los documentos del [Protocolo DevTools](./devtools-protocol/index.md).
 
-![Panel remoto de aplicaciones de DevTools](./devtools-guide/media/chooser_remote.png)
+![Panel remoto de la aplicación DevTools](./devtools-guide/media/chooser_remote.png)
 
-## Comentarios
-
-Envíanos tus comentarios para que podamos seguir mejorando el DevTools de Microsoft Edge para ti. Simplemente abre las herramientas ( `F12` ) y haz clic en el botón [**Enviar comentarios**](#microsoft-edge-developer-tools) .
-
-También puede Agregar y votar las solicitudes de herramientas a nuestro [Foro de UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/84475-f12-developer-tools) y convertirse en [Windows Insider](https://insider.windows.com/) para obtener una vista previa de las [características más recientes que van a DevTools](./devtools-guide/whats-new.md). Use la aplicación **Hub de comentarios** de Windows para publicar, votar, realizar un seguimiento y obtener soporte técnico para sugerencias y problemas generales de Windows.
-
-## Métodos abreviados generales
+## Accesos directos generales
 
 Estos métodos abreviados controlan la ventana principal de DevTools y/o funcionan en todas las herramientas.
 
-Acción | Método abreviado
+Acción | Acceso directo
 :------------ | :-------------
 Mostrar u ocultar DevTools (se abre en el panel de última vista) | F12, Ctrl + Mayús + I
 Activar o desactivar el acoplamiento (desacoplar/abajo/derecha) | Ctrl + Mayús + D 
-Mostrar código fuente HTML no modificable en el depurador | Ctrl + U
+Mostrar en el depurador el código fuente HTML no modificable | Ctrl + U
 Mostrar u ocultar consola en la parte inferior de cualquier otra herramienta  | Ctrl +**`**
 Cambiar a elementos (explorador DOM) | Ctrl + 1
 Cambiar a consola |  Ctrl + 2
 Cambiar a depurador | Ctrl + 3
 Cambiar a red | Ctrl + 4
-Cambiar al rendimiento | Ctrl + 5
+Cambiar a rendimiento | Ctrl + 5
 Cambiar a memoria | Ctrl + 6
-Cambiar a la emulación | Ctrl + 7
+Cambiar a emulación | Ctrl + 7
 Documento de ayuda | F1
 Siguiente herramienta | Ctrl + F6
 Herramienta anterior | Ctrl + Mayús + F6
@@ -93,10 +87,14 @@ Herramienta anterior (desde historial) | Ctrl + Mayús + [
 Herramienta siguiente (desde historial) | Ctrl + Mayús +]
 Submarco siguiente    | F6
 Submarco anterior | Mayús + F6
-Coincidencia siguiente en el cuadro de búsqueda | F3
+Siguiente coincidencia en el cuadro de búsqueda | F3
 Coincidencia anterior en el cuadro de búsqueda | MAYÚS + F3
 Buscar en el cuadro de búsqueda | Ctrl+F
-Dar el foco a la consola en la parte inferior | Alt + Mayús + I
+Establecer el foco en la consola en la parte inferior | Alt + Mayús + I
 Acoplar/desacoplar herramientas (alternar acoplamiento) | Ctrl+P  
-Iniciar DevTools a la consola | Ctrl + Mayús + J
+Iniciar DevTools en la consola | Ctrl + Mayús + J
 Actualiza la página. **Nota:** si está depurando un punto de interrupción o pausado, se reanudará la ejecución en primer lugar. | Ctrl + Mayús + F5 o Ctrl + R
+
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  

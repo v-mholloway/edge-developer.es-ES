@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2f05ef2911c855df39d60fa732ff5f784ab49473
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984895"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986188"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,19 +27,12 @@ ms.locfileid: "10984895"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Acelerar el tiempo de ejecución de JavaScript   
-
-
-
+# Acelerar el tiempo de ejecución de JavaScript  
 
 Identifica funciones caras usando el panel **memoria** .  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Perfiles de muestreo" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   Perfiles de muestreo  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Perfiles de ejemplo" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   Perfiles de ejemplo  
 :::image-end:::  
 
 ### Resumen  
@@ -66,7 +59,7 @@ Cuando termine de grabar, DevTools rellenará automáticamente el panel **memori
 
 La vista predeterminada es **gruesa \ (inferior arriba \)**.  Esta vista le permite ver qué funciones tuvieron el mayor impacto en el rendimiento y examinar las rutas de llamadas a esas funciones.  
 
-### Cambiar el criterio de ordenación   
+### Cambiar el criterio de ordenación  
 
 Para cambiar el orden de clasificación, seleccione el menú desplegable junto al icono **función seleccionada** \ ( ![ enfoque seleccionado de la función ][ImageFocusIcon] \) y, a continuación, elija una de las siguientes opciones.
 
@@ -88,13 +81,13 @@ Para cambiar el orden de clasificación, seleccione el menú desplegable junto a
    Gráfico de árbol  
 :::image-end:::  
 
-### Excluir funciones   
+### Excluir funciones  
 
-Para excluir una función de su perfil de muestreo, selecciónela para seleccionarla y, a continuación, seleccione el icono **excluir la función** seleccionada \ ( ![ excluir la función seleccionada ][ImageExcludeIcon] \).  La función de solicitud \ (primario \) de la función excluida \ (secundario \) se cobra con la memoria asignada a la función excluida \ (hijo \).  
+Para excluir una función de su perfil de muestreo, selecciónela y, a continuación, seleccione el botón **excluir la función** seleccionada \ ( ![ excluir función seleccionada ][ImageExcludeIcon] \).  La función de solicitud \ (primario \) de la función excluida \ (secundario \) se cobra con la memoria asignada a la función excluida \ (hijo \).  
 
-Seleccione el icono **restaurar todas las funciones** \ ( ![ restaurar todas las funciones ][ImageRestoreIcon] \) para volver a restaurar todas las funciones excluidas en la grabación.  
+Seleccione el botón **restaurar todas las funciones** \ ( ![ restaurar todas las funciones ][ImageRestoreIcon] \) para volver a restaurar todas las funciones excluidas en la grabación.  
 
-## Ver perfil de muestreo como gráfico   
+## Ver perfil de muestreo como gráfico  
 
 La vista de gráfico proporciona una representación visual del perfil de muestreo a lo largo del tiempo.  
 
@@ -106,7 +99,7 @@ Después de [grabar un perfil de muestreo](#record-a-sampling-profile), visualic
 
 El gráfico de llamas se divide en dos partes.  
 
-| | Elemento | Descripción |  
+| clasificación | Elemento | Descripción |  
 | --- |:--- |:--- |  
 | uno | Introducción | Una vista de las aves de toda la grabación.  El alto de las barras corresponde a la profundidad de la pila de llamadas.  Por lo tanto, cuanto más alto es la barra, más profunda es la pila de llamadas.  |  
 | 1 | Pilas de llamadas | Esta es una vista en profundidad de las funciones a las que se llamó durante la grabación.  El eje horizontal es tiempo y eje vertical es la pila de llamadas.  Las pilas están organizadas de arriba a abajo.  Por lo tanto, la función de la parte superior llamará a la que se encuentra debajo, y así sucesivamente.  |  
@@ -119,7 +112,7 @@ Las funciones están coloreadas de forma aleatoria.  No hay ninguna correlación
 
 Una pila de llamadas altas no es necesariamente importante, simplemente significa que se llamó a una gran cantidad de funciones.  Pero una barra amplia significa que una función tarda mucho tiempo en completarse.  Son candidatos para la optimización.  
 
-### Acercar partes específicas de la grabación   
+### Acercar partes específicas de la grabación  
 
 Seleccione, mantenga y arrastre el ratón a la izquierda y a la derecha en la información general para acercar determinadas partes de la pila de llamadas.  Después de aplicar el zoom, la pila de llamadas muestra automáticamente la parte de la grabación que seleccionó.  
 
@@ -127,7 +120,7 @@ Seleccione, mantenga y arrastre el ratón a la izquierda y a la derecha en la in
    Gráfico ampliado  
 :::image-end:::  
 
-### Ver detalles de la función   
+### Ver detalles de la función  
 
 Seleccione en una función para ver la definición en el panel **fuentes** .  
 
@@ -143,15 +136,13 @@ Pase el puntero sobre una función para mostrar el nombre y los datos de tiempo.
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Ver detalles de funciones en el gráfico" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
-   Ver detalles de funciones en el gráfico  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Ver detalles de las funciones en el gráfico" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+   Ver detalles de las funciones en el gráfico  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

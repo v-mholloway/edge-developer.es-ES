@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0ffea8f515a2d4ba0fa16b447a7d204c335dc7bb
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 0dedfcd8d00035ed1c4c02ef8a2ec0f1643d0687
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985000"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991169"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985000"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Invalidar la cadena de agente de usuario de Microsoft Edge DevTools   
-
-
+# Invalidar la cadena de agente de usuario de Microsoft Edge DevTools  
 
 Para invalidar la cadena de [agente de usuario][MDNUserAgent] de Microsoft Edge DevTools:  
 
@@ -51,12 +45,10 @@ Para invalidar la cadena de [agente de usuario][MDNUserAgent] de Microsoft Edge 
     :::image-end:::  
     
 1.  Seleccione una cadena de agente de usuario de la lista o escriba su propia cadena personalizada.  
-    
-<!--  
-## Feedback   
 
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

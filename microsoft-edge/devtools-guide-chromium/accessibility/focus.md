@@ -2,16 +2,16 @@
 title: Rastrear qué elemento tiene el foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 04091ddf7986b8554e4f615a92e0303446048eaa
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 5261824b725384240453f216071255494e88e98d
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981759"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991172"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,11 @@ ms.locfileid: "10981759"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# Rastrear qué elemento tiene el foco  
 
+Suponga que está probando la accesibilidad de navegación por el teclado de una página.  Al navegar por la página con la `Tab` tecla, el anillo de foco desaparece a veces, porque el elemento que tiene el foco está oculto.  
 
-
-
-# Rastrear qué elemento tiene el foco   
-
-
-
-Suponga que está probando la accesibilidad de navegación por el teclado de una página.  Al navegar por la página con la `Tab` tecla, el anillo de foco desaparece a veces, porque el elemento que tiene el foco está oculto.  Para realizar un seguimiento del elemento que tiene el foco en DevTools:  
+Complete las acciones siguientes para realizar un seguimiento del elemento que tiene el foco en DevTools.  
 
 1.  Abra la **consola**.  
 1.  Haga clic en **crear expresión en directo** \ ( ![ crear expresión en directo ][ImageCreateIcon] \).  
@@ -44,19 +40,20 @@ Suponga que está probando la accesibilidad de navegación por el teclado de una
        Crear una expresión en directo  
     :::image-end:::  
     
-1.  Escribe `document.activeElement`.
-1.  Haga clic fuera de la interfaz de usuario de **Live Expression** para guardar.
+1.  Escribe `document.activeElement`.  
+1.  Haga clic fuera de la interfaz de usuario de **Live Expression** para guardar.  
     
 El valor que se ve a continuación `document.activeElement` es el resultado de la expresión.  
+
 Dado que esa expresión siempre representa el elemento que tiene el foco, ahora tienes una manera de realizar un seguimiento de qué elemento tiene el foco.  
 
 *   Desplace el puntero sobre el resultado para resaltar el elemento que tiene el foco en la ventanilla.  
 *   Haga clic con el botón derecho en el resultado y seleccione Mostrar **en el panel de elementos** para mostrar el elemento en el árbol DOM en el panel **elementos** .  
 *   Haga clic con el botón secundario en el resultado y seleccione **almacenar como variable global** para crear una referencia de variable al nodo que se puede usar en la **consola**.  
-    
-<!--## Feedback   -->  
 
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -66,7 +63,7 @@ Dado que esa expresión siempre representa el elemento que tiene el foco, ahora 
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) y está creada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools & Lighthouse \).  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

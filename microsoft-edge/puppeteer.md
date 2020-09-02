@@ -3,17 +3,17 @@ description: Usar puppeteer para automatizar y probar en Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, desarrollador, herramientas, automatización, prueba
-ms.openlocfilehash: ccca46426a006651a417a22e54c8b528834b5f81
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+ms.openlocfilehash: bef3f0d7472f7bc595998829546fb540041f20fc
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10844015"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986160"
 ---
 # Puppeteer  
 
@@ -100,13 +100,13 @@ node example.js
 
 Este es solo un ejemplo sencillo de los escenarios de automatización y pruebas habilitados por puppeteer y `puppeteer-core` .  Para obtener más información sobre puppeteer y cómo funciona, consulte [puppeteer][|::ref2::|Main].  
 
-## Enviar comentarios  
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-El equipo de desarrollo de Edge está ansioso por escuchar tus comentarios sobre el uso de puppeteer, `puppeteer-core` y Microsoft Edge.  Use el icono para **Enviar comentarios** de las [@EdgeDevTools][TwitterIntentTweetEdgedevtools] de Microsoft Edge DevTools o Tweet para permitir que el equipo de Microsoft Edge sepa cuál es su opinión.  
+El equipo de desarrollador de Microsoft Edge está ansioso por escuchar tus comentarios sobre el uso de puppeteer, `puppeteer-core` y Microsoft Edge.  Use el icono para **Enviar comentarios** de las [@EdgeDevTools][TwitterIntentTweetEdgedevtools] de Microsoft Edge DevTools o Tweet para permitir que el equipo de Microsoft Edge sepa cuál es su opinión.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="El icono de comentarios en el DevTools de Microsoft Edge":::
-   Ilustración 2: el icono de **comentarios** en el Microsoft Edge DevTools  
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="El icono enviar comentarios en el DevTools de Microsoft Edge":::
+   El icono **Enviar comentarios** en el DevTools de Microsoft Edge  
 :::image-end:::  
 
 <!--  

@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 26f7272534e0834e0fb302a40b7f0ebfc817c88e
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a6ec2438457c81ed527154af30c9642d5c287d3c
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982228"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991213"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,41 +27,31 @@ ms.locfileid: "10982228"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Referencia de febugging de JavaScript  
 
-
-
-
-
-
-# Referencia de depuración de JavaScript   
-
-
-
-Descubra nuevos flujos de trabajo de depuración con esta referencia completa de las características de depuración de Microsoft Edge DevTools.  
+Descubra nuevos flujos de trabajo de depuración con la siguiente referencia completa de las características de depuración de Microsoft Edge DevTools.  
 
 Consulta Introducción a la [depuración de JavaScript en Microsoft Edge DevTools][DevToolsJavascriptGetStarted] para conocer los conceptos básicos de la depuración.  
 
-## Pausar código con puntos de interrupción   
+## Pausar código con puntos de interrupción  
 
 Establezca un punto de interrupción para que pueda pausar el código en el medio del Runtime.  
 
 Vea [pausar el código con puntos de interrupción][DevToolsJavascriptBreakpoints] para obtener información sobre cómo establecer puntos de interrupción.  
 
-[DevToolsJavascriptBreakpoints]: breakpoints.md "Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools"  
-
-## Recorrer el código   
+## Recorrer el código  
 
 Una vez que el código esté pausado, recorralo, de una línea a la vez, investigando el flujo de control y los valores de propiedad durante el proceso.  
 
-### Paso a paso por la línea de código   
+### Paso a paso por la línea de código  
 
-Cuando esté pausado en una línea de código que contenga una función que no sea relevante para el problema que está depurando, haga clic en el icono **\ (** ![ paso a paso por procedimientos ][ImageStepOverIcon] ) para ejecutar la función sin entrar en él.  
+Cuando esté pausado en una línea de código que contenga una función que no sea relevante para el problema que está depurando, haga clic en el botón **paso a paso por procedimientos** \ ( ![ paso a paso por procedimientos ][ImageStepOverIcon] ) para ejecutar la función sin entrar en ella.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Seleccione recorrer" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    Seleccione **recorrer**  
 :::image-end:::  
 
-Por ejemplo, supongamos que está depurando el código siguiente:  
+Por ejemplo, supongamos que está depurando el siguiente fragmento de código.  
 
 ```javascript
 function updateHeader() {
@@ -77,15 +67,15 @@ function getName() {
 
 Estás pausado el `A` .  Si pulsas **paso a paso**, DevTools ejecuta todo el código de la función que estás recorriendo, que `B` es `C` y.  DevTools, luego, se detiene en `D` .  
 
-### Ir a la línea de código   
+### Ir a la línea de código  
 
-Cuando esté pausado en una línea de código que contenga una llamada de función que esté relacionada con el problema que está depurando, haga clic en el icono **de \ (** ![ paso a paso ][ImageStepIntoIcon] \) para investigar la función más.  
+Cuando esté pausado en una línea de código que contenga una llamada de función relacionada con el problema que está depurando, haga clic en el botón **ir al paso** \ ( ![ paso a paso ][ImageStepIntoIcon] \) para investigar la función más.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Seleccione ir a" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    Seleccione **ir a**  
 :::image-end:::  
 
-Por ejemplo, supongamos que está depurando el código siguiente:  
+Por ejemplo, supongamos que está depurando el siguiente fragmento de código.  
 
 ```javascript
 function updateHeader() {
@@ -101,9 +91,9 @@ function getName() {
 
 Estás pausado el `A` .  Al presionar **paso a paso por instrucciones**, DevTools ejecuta esta línea de código y luego detiene el `B` .  
 
-### Paso fuera de la línea de código   
+### Paso fuera de la línea de código  
 
-Cuando esté pausado dentro de una función que no esté relacionada con el problema que está depurando, haga clic en el icono **\ (** ![ paso salir ][ImageStepOutIcon] \) para ejecutar el resto del código de la función.  
+Cuando esté pausado dentro de una función que no esté relacionada con el problema que está depurando, haga clic en el botón **\ (** ![ paso salir ][ImageStepOutIcon] \) para ejecutar el resto del código de la función.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Seleccione salir" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    Seleccione **salir**  
@@ -125,11 +115,11 @@ function getName() {
 
 Estás pausado el `A` .  Si pulsas **paso a paso**, DevTools ejecuta el resto del código de `getName()` , que se encuentra `B` en este ejemplo, y luego realiza una pausa en `C` .  
 
-### Ejecutar todo el código hasta una línea específica   
+### Ejecutar todo el código hasta una línea específica  
 
 Cuando se depura una función Long, puede haber una gran cantidad de código que no está relacionado con el problema que se está depurando.  
 
-Puede elegir recorrer todas las líneas, pero eso es tedioso.  Puede optar por establecer un punto de interrupción de línea de código en la línea en la que está interesado y, a continuación, hacer clic en el icono de **ejecución de script de reanudación** \ ( ![ resume script Execution ][ImageResumeScriptExecutionIcon] \), pero hay una forma más rápida.  
+Puede elegir recorrer todas las líneas, pero eso es tedioso.  Puede optar por establecer un punto de interrupción de línea de código en la línea en la que está interesado y, a continuación, hacer clic en el botón **reanudar ejecución de script** \ ( ![ resume script Execution ][ImageResumeScriptExecutionIcon] \), pero hay una forma más rápida.  
 
 Haga clic con el botón derecho en la línea de código en la que está interesado y seleccione **continuar aquí**.  DevTools ejecuta todo el código hasta ese punto y, después, se detiene en esa línea.  
 
@@ -137,11 +127,11 @@ Haga clic con el botón derecho en la línea de código en la que está interesa
    Seleccione **continuar aquí**  
 :::image-end:::  
 
-### Reiniciar la función superior de la pila de llamadas   
+### Reiniciar la función superior de la pila de llamadas  
 
 Mientras esté pausado en una línea de código, haga clic con el botón secundario en cualquier lugar del panel **pila de llamadas** y seleccione **reiniciar marco** para hacer una pausa en la primera línea de la función superior de la pila de llamadas.  La función Top es la última función que se ejecutó.  
 
-Por ejemplo, supongamos que está recorriendo el siguiente fragmento de código.  
+El siguiente fragmento de código es un ejemplo de paso a paso.  
 
 ```javascript
 function factorial(n) {
@@ -159,23 +149,23 @@ Estás pausado el `A` .  Después de hacer clic en **Restarted Frame**, debe est
    Seleccionar el **marco de reinicio**  
 :::image-end:::  
 
-### Reanudar script Runtime   
+### Reanudar script Runtime  
 
-Para continuar el tiempo de ejecución después de una pausa de la secuencia de comandos, haga clic en el icono de **ejecución de script de reanudación** \ ( ![ resume script Execution ][ImageResumeScriptExecutionIcon] \).  DevTools ejecuta la secuencia de comandos hasta el siguiente punto de interrupción, si existe.  
+Para continuar el tiempo de ejecución después de una pausa de la secuencia de comandos, haga clic en el botón **reanudar ejecución** de script \ ( ![ resume script Execution ][ImageResumeScriptExecutionIcon] \).  DevTools ejecuta la secuencia de comandos hasta el siguiente punto de interrupción, si existe.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Seleccione reanudar script Execution" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Seleccione **reanudar script Execution**  
 :::image-end:::  
 
-#### Tiempo de ejecución de script forzado   
+#### Tiempo de ejecución de script forzado  
 
-Para ignorar todos los puntos de interrupción y forzar la reanudación de su script, haga clic y mantenga presionado el icono de **ejecución de script de reanudación** \ ( ![ reanudar ejecución de script ][ImageResumeScriptExecutionIcon] \) y, después, seleccione **forzar ejecución** de script \ ( ![ forzar ejecución de script ][ImageForceScriptExecutionIcon] \).  
+Para ignorar todos los puntos de interrupción y forzar la reanudación de su script, haga clic y mantenga presionado el botón **reanudar** ejecución de script \ ( ![ reanudar ejecución de script \ ][ImageResumeScriptExecutionIcon] ) y, a continuación, seleccione el botón **forzar** ejecución de script \ ( ![ forzar ejecución de scripts ][ImageForceScriptExecutionIcon] \).  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Seleccione forzar ejecución de script" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Seleccione **forzar ejecución de script**  
 :::image-end:::  
 
-### Cambiar el contexto del hilo   
+### Cambiar el contexto del hilo  
 
 Cuando trabaje con trabajadores web o trabajos de servicio, haga clic en el contexto que aparece en el panel de **subprocesos** para cambiar a ese contexto.  El icono de flecha azul representa el contexto que está seleccionado actualmente.  
 
@@ -185,7 +175,7 @@ Cuando trabaje con trabajadores web o trabajos de servicio, haga clic en el cont
 
 Por ejemplo, supongamos que está pausado en un punto de interrupción tanto en el script principal como en el script de trabajo de servicio.  Desea ver las propiedades locales y globales del contexto de trabajo de servicio, pero el panel **orígenes** muestra el contexto de script principal.  Al hacer clic en la entrada de trabajador de servicio en el panel de **subprocesos** , debería poder cambiar a ese contexto.  
 
-## Ver y editar propiedades locales, de cierre y globales   
+## Ver y editar propiedades locales, de cierre y globales  
 
 Mientras esté pausado en una línea de código, use el panel **ámbito** para ver y editar los valores de las propiedades y variables de los ámbitos local, de cierre y global.  
 
@@ -196,7 +186,7 @@ Mientras esté pausado en una línea de código, use el panel **ámbito** para v
    El panel **ámbito**  
 :::image-end:::  
 
-## Ver la pila de llamadas actual   
+## Ver la pila de llamadas actual  
 
 Mientras esté pausado en una línea de código, use el panel **pila de llamadas** para ver la pila de llamadas que le han llegado a este punto.  
 
@@ -211,7 +201,7 @@ Haga clic en una entrada para ir a la línea de código donde se llamó a esa fu
 > [!NOTE]
 > Cuando no está pausado en una línea de código, el panel **pila de llamadas** está vacío.  
 
-### Copiar seguimiento de pila   
+### Copiar seguimiento de pila  
 
 <!--
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
@@ -223,7 +213,7 @@ Haga clic con el botón secundario en cualquier lugar del panel de la **pila de 
    Seleccione **copiar seguimiento de pila**  
 :::image-end:::  
 
-A continuación se muestra un ejemplo del resultado:  
+El siguiente fragmento de código es un ejemplo de la salida.  
 
 ```javascript
 getNumber1 (get-started.js:35)
@@ -235,7 +225,7 @@ onClick (get-started.js:15)
 
 Marque un script como código de biblioteca cuando desee omitir ese script durante la depuración.  Cuando se marca como código de biblioteca, un script se oculta en el panel **pila de llamadas** y nunca se le detallan las funciones de la secuencia de comandos cuando pasa por el código.  
 
-Por ejemplo, supongamos que está recorriendo el siguiente fragmento de código.  
+El siguiente fragmento de código es un ejemplo de paso a paso.  
 
 ```javascript
 function animate() {
@@ -249,7 +239,7 @@ function animate() {
 
 ### Marcar un script como código de biblioteca desde el panel Editor  
 
-Para marcar un script como **código de biblioteca** desde el panel **Editor** :  
+Complete las acciones siguientes para marcar un script como **código de biblioteca** desde el panel **Editor** .  
 
 1.  Abra el archivo.  
 1.  Haga clic con el botón derecho en cualquier parte.  
@@ -261,18 +251,18 @@ Para marcar un script como **código de biblioteca** desde el panel **Editor** :
     
 ### Marcar un script como código de biblioteca desde el panel de pila de llamadas  
 
-Para marcar un script como **código de biblioteca** desde el panel **pila de llamadas** :  
+Compelte las acciones de folliwng para marcar un script como **código de biblioteca** desde el panel pila de **llamadas** .  
 
 1.  Haga clic con el botón derecho en una función de la secuencia de comandos.  
 1.  Seleccione **marcar como código de biblioteca**.  
     
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Marcar un script como código de biblioteca desde el panel pila de llamadas" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
-       Marcar un script como **código de biblioteca** desde el panel **pila de llamadas**  
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Marcar un script como código de biblioteca desde el panel de pila de llamadas" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+       Marcar un script como **código de biblioteca** desde el panel de **pila de llamadas**  
     :::image-end:::  
     
 ### Marcar un script como código de biblioteca desde la configuración  
 
-Para marcar un único script o patrón de scripts de la configuración:  
+Complete las siguientes acciones para marcar un único script o patrón de scripts de la **configuración**.  
 
 1.  Abra [configuración][DevToolsCustomize].  
 1.  Vaya a la pestaña **código de biblioteca** .  
@@ -290,7 +280,7 @@ Si se encuentra ejecutando el mismo código de depuración en la consola una y o
 
 Vea [Ejecutar fragmentos de código desde cualquier página][DevToolsJavascriptSnippets] para obtener más información.  
 
-## Ver los valores de las expresiones de JavaScript personalizadas   
+## Ver los valores de las expresiones de JavaScript personalizadas  
 
 Use el panel **inspección** para ver los valores de expresiones personalizadas.  Puede ver cualquier expresión válida de JavaScript.  
 
@@ -298,13 +288,13 @@ Use el panel **inspección** para ver los valores de expresiones personalizadas.
    Panel de **inspección**  
 :::image-end:::  
 
-*   Haga clic en el icono **Agregar expresión** \ ( ![ Agregar expresión ][ImageAddExpressionIcon] \) para crear una nueva expresión de inspección.  
-*   Haga clic en el icono **Actualizar** \ ( ![ actualizar ][ImageRefreshIcon] \) para actualizar los valores de todas las expresiones existentes.  Los valores se actualizan automáticamente al recorrer el código.  
-*   Mueva el puntero sobre una expresión y haga clic en el icono **eliminar expresión** \ ( ![ eliminar expresión ][ImageDeleteExpressionIcon] \) para eliminarla.  
-    
-## Hacer que un archivo minified sea legible   
+*   Haga clic en el botón **Agregar expresión** \ ( ![ Agregar expresión ][ImageAddExpressionIcon] \) para crear una nueva expresión de inspección.  
+*   Haga clic en el botón **Actualizar** \ ( ![ actualizar ][ImageRefreshIcon] \) para actualizar los valores de todas las expresiones existentes.  Los valores se actualizan automáticamente al recorrer el código.  
+*   Mueva el puntero sobre una expresión y haga clic en el botón **eliminar expresión** \ ( ![ eliminar expresión ][ImageDeleteExpressionIcon] \) para eliminarla.  
 
-Haga clic en el icono **formato** \ ( ![ formato ][ImageFormatIcon] \) para hacer que un archivo minified sea legible para el usuario.  
+## Hacer que un archivo minified sea legible  
+
+Haga clic **en el** botón \ ( ![ formato ][ImageFormatIcon] \) para hacer que un archivo minified sea legible para el usuario.  
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="El botón formato" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    El botón **formato**  
@@ -314,7 +304,7 @@ Haga clic en el icono **formato** \ ( ![ formato ][ImageFormatIcon] \) para hace
 
 Al corregir un error, a menudo desearás probar algunos cambios en el código de JavaScript.  No es necesario realizar los cambios en un editor externo o IDE y, a continuación, volver a cargar la página.  Puede editar su script en DevTools.  
 
-Para editar un script:  
+Complete las acciones siguientes para editar un script.  
 
 1.  Abra el archivo en el panel **Editor** del panel **fuentes** .  
 1.  Realice los cambios en el panel **Editor** .  
@@ -328,9 +318,9 @@ Para editar un script:
 
 Consulte [deshabilitar JavaScript con Microsoft Edge DevTools][DevToolsJavascriptDisable].  
 
-<!--## Feedback   -->  
+## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -346,6 +336,7 @@ Consulte [deshabilitar JavaScript con Microsoft Edge DevTools][DevToolsJavascrip
 
 <!-- links -->  
 
+[DevToolsJavascriptBreakpoints]: ./breakpoints.md "Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft docs"  
 [DevToolsJavascriptDisable]: ./disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft docs"  
 [DevToolsJavascriptGetStarted]: ./index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft docs"  
 [DevToolsJavascriptSnippets]: ./snippets.md "Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools | Microsoft docs"  
