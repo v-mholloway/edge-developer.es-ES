@@ -1,17 +1,18 @@
 ---
+description: Obtenga información sobre cómo guardar los cambios realizados en DevTools en el disco.
 title: Editar archivos con áreas de trabajo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 8a31dd9fbfe492cf8eaacc654f7d501925f730f2
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.openlocfilehash: fd72021e75c536fa38c27ae17e4b1678eb4ca85f
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10942178"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992725"
 ---
 <!-- Copyright Kayce Basques 
 

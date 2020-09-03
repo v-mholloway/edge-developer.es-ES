@@ -1,17 +1,18 @@
 ---
-title: Referencia de evento de escala de tiempo
+description: El modo eventos de escala de tiempo muestra todos los eventos desencadenados mientras se realiza una grabación.  Use la referencia de evento de escala de tiempo para obtener más información sobre cada tipo de evento de escala de tiempo.
+title: Referencia de evento de línea de tiempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e5f0807204877ce034fd52ea4535795ea80ba394
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611723"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992851"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -31,7 +32,7 @@ ms.locfileid: "10611723"
 
 
 
-# Referencia de evento de escala de tiempo   
+# Referencia de evento de línea de tiempo   
 
 
 

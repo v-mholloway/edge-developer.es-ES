@@ -1,17 +1,18 @@
 ---
+description: Use el DevTools en el modo de contraste alto de Windows, coincidir los métodos abreviados de teclado del DevTools al código de VS y mucho más.
 title: Novedades de DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: aa39e5d7811d4a614e055a8e0479c74278efbefd
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.openlocfilehash: 62f261b381b0382561e166bca67f77f37225b764
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10942187"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992893"
 ---
 <!-- Copyright Kayce Basques 
 

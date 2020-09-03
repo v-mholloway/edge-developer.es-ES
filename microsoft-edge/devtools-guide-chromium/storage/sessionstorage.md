@@ -1,17 +1,18 @@
 ---
+description: Cómo ver y editar sessionStorage con el panel almacenamiento de la sesión y la consola.
 title: Ver y editar el almacenamiento de sesión con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d0631f69a082a2a73c51e4359c21cf94636d665e
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 24fca3fd3a068f3b2ffbe4ec1c23e6b80b968953
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983593"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993551"
 ---
 <!-- Copyright Kayce Basques 
 

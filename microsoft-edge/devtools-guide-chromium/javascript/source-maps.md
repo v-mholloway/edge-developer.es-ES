@@ -1,17 +1,18 @@
 ---
+description: Mantenga el código de cliente legible y depurable incluso después de combinarlo, minifylo o compilarlo.
 title: Asignar código preprocesado al código fuente
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 35aa864c20def5f5cd11979d6239e8316c1acbca
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: bd04c7bae6f57d4fe3f9b293d70775aa99db3dd1
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986146"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993236"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 

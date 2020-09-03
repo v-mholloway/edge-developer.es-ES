@@ -1,17 +1,18 @@
 ---
+description: Los usos principales de la consola de Microsoft Edge DevTools son el registro de mensajes y la ejecución de JavaScript.
 title: Descripción general de la consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 45e2eb9d66fa284b1326e7554b6897a1e1747561
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 0cdce953b22d22f9a2bf8048a6eff89388aa6e2e
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982298"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993159"
 ---
 <!-- Copyright Kayce Basques 
 

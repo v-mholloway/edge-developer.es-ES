@@ -1,17 +1,18 @@
 ---
+description: Cómo mover Microsoft Edge DevTools a la parte inferior o a la izquierda de la ventanilla o a una ventana independiente.
 title: Cambiar la ubicación de DevTools de Microsoft Edge (desacoplar, acoplar a la parte inferior, acoplar a la izquierda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: aaa6ef03f6abea27c84fb46db3d2a2f0f894339c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: da7bd4ed23c54faac6d9fef9afbc78128f8cfd3c
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981955"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993012"
 ---
 <!-- Copyright Kayce Basques 
 

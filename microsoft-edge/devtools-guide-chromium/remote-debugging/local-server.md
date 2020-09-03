@@ -1,17 +1,18 @@
 ---
+description: Hospede un sitio en un servidor Web de equipo de desarrollo y, a continuación, obtenga acceso al contenido desde un dispositivo Android.
 title: Acceso a servidores locales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: fb8f8aabaf426685417f90e25295f3e8e7b08994
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 373cd7ce5cd262bad9fa5460bb2187241246cd75
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984916"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993488"
 ---
 <!-- Copyright Kayce Basques 
 

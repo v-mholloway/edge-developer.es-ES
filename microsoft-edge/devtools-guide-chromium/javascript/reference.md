@@ -1,17 +1,18 @@
 ---
+description: Descubra nuevos flujos de trabajo de depuración en esta referencia completa de las características de depuración de Microsoft Edge DevTools.
 title: Referencia de depuración de JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a6ec2438457c81ed527154af30c9642d5c287d3c
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: f11dfb52e97dcec20d1e6c4f3adeee7010857a33
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991213"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993425"
 ---
 <!-- Copyright Kayce Basques 
 

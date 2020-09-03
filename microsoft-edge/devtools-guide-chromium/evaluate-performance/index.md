@@ -1,17 +1,18 @@
 ---
+description: Obtenga información sobre cómo evaluar el rendimiento en tiempo de ejecución en Microsoft Edge DevTools.
 title: Empezar a analizar el rendimiento en tiempo de ejecución
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 94753c7024c2f4f4c96d560c815d310b1f9643a1
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 65351f3846ed76ef8a27dbff2cfb08c497282d15
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931192"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992949"
 ---
 <!-- Copyright Kayce Basques 
 

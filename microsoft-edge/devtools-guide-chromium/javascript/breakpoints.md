@@ -1,4 +1,5 @@
 ---
+description: Obtén más información sobre las formas en que puedes pausar tu código en Microsoft Edge DevTools.
 title: Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 8eefea3fad894af6b66a6d7f595c5b663c03a0dc
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 95aba99c2cfe87f26704faa20964ace5d2abdf51
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991184"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992815"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");

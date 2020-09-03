@@ -1,17 +1,18 @@
 ---
+description: Use la API de consola para escribir mensajes en la consola.
 title: Referencia de la API de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/09/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 19545759ede4252f2e7ba21329d482f4eb96f0c6
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: 684c0a1e42357ceca0a0295859e64447251f191a
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708532"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993257"
 ---
 <!-- Copyright Kayce Basques 
 

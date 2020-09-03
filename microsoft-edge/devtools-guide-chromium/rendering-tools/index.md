@@ -1,17 +1,18 @@
 ---
+description: Los usuarios esperan páginas interactivas y suaves.  Cada fase de la canalización de píxeles representa una oportunidad de introducir Jank.  Obtenga más información sobre las herramientas y estrategias para identificar y solucionar problemas comunes que ralentizan el rendimiento del tiempo de ejecución.
 title: Analizar el rendimiento en tiempo de ejecución
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0fc576703a9760a3306e74da3521f93bf2d5d9cd
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: f7ca848712268110700fac2c5fb75fe1751812bf
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986181"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992711"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 

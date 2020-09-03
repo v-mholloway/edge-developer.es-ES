@@ -1,17 +1,18 @@
 ---
+description: Use instrumentación de asignación en la escala de tiempo para buscar objetos que no se hayan recolectado correctamente y continúe manteniendo la memoria.
 title: Cómo usar el instrumental de asignación en la escala de tiempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986167"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993509"
 ---
 <!-- Copyright Meggin Kearney 
 

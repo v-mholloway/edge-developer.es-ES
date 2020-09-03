@@ -1,17 +1,18 @@
 ---
+description: Aprenda a ver, editar y eliminar las cookies HTTP de una página con Microsoft Edge DevTools.
 title: Ver, editar y eliminar cookies con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: eaaf4663504fc674fd70dc1ca9e0357febb529e0
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710374"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993243"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -80,13 +81,13 @@ Haga doble clic en un campo para modificarlo.
 
 ## Eliminar cookies  
 
-Seleccione una cookie y seleccione **eliminar** selección de ![ eliminación seleccionada ][ImageDeleteIcon] para eliminarla.  
+Seleccione una cookie y seleccione **eliminar** selección de ![ eliminación seleccionada ][ImageDeleteIcon]  para eliminarla.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Eliminar una cookie específica" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Ilustración 5: eliminar una cookie específica  
 :::image-end:::  
 
-Seleccione **Borrar** todo ![ Borrar todo ][ImageClearIcon] para eliminar todas las cookies.  
+Seleccione **Borrar** todo ![ Borrar todo ][ImageClearIcon]  para eliminar todas las cookies.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Borrar todas las cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Ilustración 6: borrar todas las cookies  

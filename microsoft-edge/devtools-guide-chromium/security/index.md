@@ -1,17 +1,18 @@
 ---
+description: Use el panel seguridad para asegurarse de que una página está totalmente protegida por HTTPS.
 title: Comprender los problemas de seguridad con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 850dde157a673a84a3e603f22a5e54abd90bde5d
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 2538f80b08c8162d27f075775075a8b81c5f7725
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984328"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993579"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,4 +1,5 @@
 ---
+description: Cómo ver nodos, buscar nodos, editar nodos, hacer referencia a nodos de la consola, interrumpir cambios de nodo y mucho más.
 title: Introducción a la visualización y el cambio de DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6d41b072a8bd19ae728cc02b43eb2f843d91b332
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 555e627b70f0cc5e50c0676cf90067c2709a9ae3
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991207"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992956"
 ---
 <!-- Copyright Kayce Basques 
 

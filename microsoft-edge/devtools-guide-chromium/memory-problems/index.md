@@ -1,17 +1,18 @@
 ---
+description: Obtenga información sobre cómo usar Microsoft Edge y DevTools para buscar problemas de memoria que afecten al rendimiento de la página, como pérdidas de memoria, recarga de memoria y recolecciones de elementos no utilizados frecuentes.
 title: Solucionar problemas de memoria
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: b9e6e2af333257f0cbe0a4a354dcd1d7b862af9c
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+ms.openlocfilehash: ef820353f81eb3fd791433e9c53434dff3b10a60
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751992"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992781"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -113,7 +114,7 @@ Cada vez que se presiona el botón al que se hace referencia en el código, `div
 
 En primer lugar, una explicación de la interfaz de usuario.  El gráfico de **montones** en el panel de **información general** \ (debajo de **net**\) representa el montón de JS.  Debajo del panel de **información general** se encuentra el panel de **contador** .  Aquí puede ver el uso de memoria desglosado por montones de JS \ (igual al gráfico de **montón** en el panel de **información general** \), documentos, nodos DOM, oyentes y memoria de GPU.  Al deshabilitar una casilla, la oculta del gráfico.  
 
-Ahora, un análisis del código comparado con la ilustración anterior.  Si miras el contador de nodos \ (el gráfico verde \), podrás ver que coincide perfectamente con el código.  El número de nodos aumenta en pasos discretos.  Puede dar por supuesto que cada aumento en el recuento de nodos es una llamada a `grow()` .  El gráfico de montón JS \ (gráfico azul \) no es tan sencillo.  Siguiendo los procedimientos recomendados, la primera DIP es, en realidad, una recolección forzada de elementos no utilizados \ (que se consigue al **presionar el** botón de recolección de elementos no ![ utilizados ][ImageForceGarbageCollectionIcon] \).  A medida que la grabación se progrese, podrá ver que el tamaño del montón de JS es demasiado bajo.  Esto es natural y se espera: el código JavaScript crea los nodos DOM en cada pulsador de botón y realiza una gran cantidad de trabajo cuando crea la cadena de 1 millón caracteres.  Lo fundamental aquí es el hecho de que el montón JS finaliza más de lo que comenzó \ (el "comienzo" aquí es el punto después de la recolección de elementos no utilizados forzada \).  En el mundo real, si viera este patrón de aumento del tamaño de la pila de JS o del tamaño del nodo, puede definir potencialmente una pérdida de memoria.  
+Ahora, un análisis del código comparado con la ilustración anterior.  Si miras el contador de nodos \ (el gráfico verde \), podrás ver que coincide perfectamente con el código.  El número de nodos aumenta en pasos discretos.  Puede dar por supuesto que cada aumento en el recuento de nodos es una llamada a `grow()` .  El gráfico de montón JS \ (gráfico azul \) no es tan sencillo.  Siguiendo los procedimientos recomendados, la primera DIP es, en realidad, una recolección forzada de elementos no utilizados \ (que se consigue al  **presionar el** botón de recolección de elementos no ![ utilizados ][ImageForceGarbageCollectionIcon] \).  A medida que la grabación se progrese, podrá ver que el tamaño del montón de JS es demasiado bajo.  Esto es natural y se espera: el código JavaScript crea los nodos DOM en cada pulsador de botón y realiza una gran cantidad de trabajo cuando crea la cadena de 1 millón caracteres.  Lo fundamental aquí es el hecho de que el montón JS finaliza más de lo que comenzó \ (el "comienzo" aquí es el punto después de la recolección de elementos no utilizados forzada \).  En el mundo real, si viera este patrón de aumento del tamaño de la pila de JS o del tamaño del nodo, puede definir potencialmente una pérdida de memoria.  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
 
@@ -163,7 +164,7 @@ Expanda el carats para investigar un árbol desvinculado.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Seleccione un nodo para investigarlo más a la vez.  En el panel **objetos** puede ver más información sobre el código que hace referencia.  Por ejemplo, en la siguiente ilustración se puede ver que la `detachedNodes` variable hace referencia al nodo.  Para corregir esta pérdida de memoria determinada, debe estudiar el código que usa la `detachedNodes` variable y asegurarse de que la referencia al nodo se quita cuando ya no es necesaria.  
+Seleccione un nodo para investigarlo más a la vez.  En el panel **objetos** puede ver más información sobre el código que hace referencia.  Por ejemplo, en la siguiente ilustración se puede ver que la `detachedNodes` variable hace referencia al nodo.  Para corregir esta pérdida de memoria determinada, debe estudiar el código que usa la `detachedUNode` variable y asegurarse de que la referencia al nodo se quita cuando ya no es necesaria.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigar un nodo" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Ilustración 7: investigar un nodo  
@@ -175,7 +176,7 @@ Seleccione un nodo para investigarlo más a la vez.  En el panel **objetos** pue
 
 La **instrumentación de asignación de la escala de tiempo** es otra herramienta que puede ayudarle a realizar un seguimiento de las pérdidas de memoria en el montón de JS.  
 
-Muestre la **instrumentación de asignación en la escala de tiempo** con el código siguiente.  
+Muestre la **instrumentación de asignación en la escala de tiempo**  con el código siguiente.  
 
 ```javascript
 var x = [];

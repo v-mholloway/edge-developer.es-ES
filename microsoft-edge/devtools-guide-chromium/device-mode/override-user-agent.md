@@ -1,17 +1,18 @@
 ---
+description: Abra la pestaña condiciones de red, desactive la opción seleccionar automáticamente y elija de la lista o escriba una cadena personalizada.
 title: Invalidar la cadena de agente de usuario de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0dedfcd8d00035ed1c4c02ef8a2ec0f1643d0687
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: ecaa1247824e5c3acb07a2c631feab30d25aba8d
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991169"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992928"
 ---
 <!-- Copyright Kayce Basques 
 

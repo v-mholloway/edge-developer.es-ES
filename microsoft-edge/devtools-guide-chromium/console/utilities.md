@@ -1,17 +1,18 @@
 ---
+description: Una referencia de los comandos de comodidad disponibles en la consola de Microsoft Edge DevTools.
 title: Referencia de API de utilidades de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: efa03e02813d718514f73445bc0dceb3a1a83f39
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: 2882d980e6da45072cab4b028ceb1838a9078064
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708903"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993110"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,13 +48,13 @@ Devuelve el valor de la expresión evaluada más reciente.
 En la siguiente ilustración, se evalúa una expresión simple \ ( `2 + 2` \).  `$_`A continuación, se evalúa la propiedad, que contiene el mismo valor.  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$ _ es la expresión evaluada más recientemente" lightbox="../media/console-arithmatic.msft.png":::
-   Ilustración 1: `$_` es la expresión evaluada más reciente  
+   Ilustración 1:  `$_` es la expresión evaluada más reciente  
 :::image-end:::  
 
 En la siguiente ilustración, la expresión evaluada inicialmente contiene una matriz de nombres.  Si se evalúa `$_.length` para encontrar la longitud de la matriz, el valor almacenado en `$_` los cambios se convertirá en la última expresión evaluada, `4` .  
 
 :::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ cambios cuando se evalúan nuevos comandos" lightbox="../media/console-array-length.msft.png":::
-   Ilustración 2: `$_` cambios cuando se evalúan nuevos comandos  
+   Ilustración 2:  `$_` cambios cuando se evalúan nuevos comandos  
 :::image-end:::  
 
 ## Elemento o objeto JavaScript recientemente seleccionados  

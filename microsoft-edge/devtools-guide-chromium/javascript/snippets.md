@@ -1,17 +1,18 @@
 ---
+description: Los fragmentos de código son pequeños scripts que puede crear y ejecutar en el panel orígenes de Microsoft Edge DevTools.  Puede acceder a ellos desde cualquier página y ejecutarlos.  Cuando se ejecuta un fragmento de código, se ejecuta desde el contexto de la página abierta en ese momento.
 title: Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3a5ae986e3080a0b6a8b1bf34b0e0efc44c90303
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 5f6284179aacb471116a2d732507b010c37ef235
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982046"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993390"
 ---
 <!-- Copyright Kayce Basques 
 
