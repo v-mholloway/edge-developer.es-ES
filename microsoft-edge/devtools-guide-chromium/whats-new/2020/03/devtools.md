@@ -1,5 +1,5 @@
 ---
-description: Depure Microsoft Edge de forma remota en dispositivos con Windows 10, nuevas maneras de obtener acceso a la configuración y mucho más.
+description: Emular las deficiencias de la visión del color, acoplar a la izquierda en el menú de comandos y mucho más.
 title: Novedades de DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 94b8d067738a1749f136edf2a562652bece183a9
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 8ce8979a7128217b72aee42c05a0048b511f9cae
+ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993432"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "11004331"
 ---
 <!-- Copyright Kayce Basques 
 
