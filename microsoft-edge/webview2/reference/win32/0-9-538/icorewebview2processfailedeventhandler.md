@@ -1,40 +1,42 @@
 ---
 description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicaciones nativas con el control Microsoft Edge WebView2
-title: WebView2 Win32 C++ ICoreWebView2ProcessFailedEventHandler
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2ProcessFailedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge, ICoreWebView2ProcessFailedEventHandler
-ms.openlocfilehash: 5ae5a64bfbcd0692d7c284974e960f9ed6249e50
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d65c6ae63f5c79540587f99e3ff42c4ebb3e409e
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877402"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010834"
 ---
-# <span data-ttu-id="1ccb0-104">interfaz ICoreWebView2ProcessFailedEventHandler</span><span class="sxs-lookup"><span data-stu-id="1ccb0-104">interface ICoreWebView2ProcessFailedEventHandler</span></span> 
+# <span data-ttu-id="d42f9-104">0.9.579: ICoreWebView2ProcessFailedEventHandler</span><span class="sxs-lookup"><span data-stu-id="d42f9-104">0.9.579 - interface ICoreWebView2ProcessFailedEventHandler</span></span> 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ProcessFailedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="1ccb0-105">La persona que llama implementa esta interfaz para recibir eventos ProcessFailed.</span><span class="sxs-lookup"><span data-stu-id="1ccb0-105">The caller implements this interface to receive ProcessFailed events.</span></span>
+<span data-ttu-id="d42f9-105">La persona que llama implementa esta interfaz para recibir eventos ProcessFailed.</span><span class="sxs-lookup"><span data-stu-id="d42f9-105">The caller implements this interface to receive ProcessFailed events.</span></span>
 
-## <span data-ttu-id="1ccb0-106">Resumen</span><span class="sxs-lookup"><span data-stu-id="1ccb0-106">Summary</span></span>
+## <span data-ttu-id="d42f9-106">Resumen</span><span class="sxs-lookup"><span data-stu-id="d42f9-106">Summary</span></span>
 
- <span data-ttu-id="1ccb0-107">Miembros</span><span class="sxs-lookup"><span data-stu-id="1ccb0-107">Members</span></span>                        | <span data-ttu-id="1ccb0-108">Descripciones</span><span class="sxs-lookup"><span data-stu-id="1ccb0-108">Descriptions</span></span>
+ <span data-ttu-id="d42f9-107">Miembros</span><span class="sxs-lookup"><span data-stu-id="d42f9-107">Members</span></span>                        | <span data-ttu-id="d42f9-108">Descripciones</span><span class="sxs-lookup"><span data-stu-id="d42f9-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="1ccb0-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="1ccb0-109">Invoke</span></span>](#invoke) | <span data-ttu-id="1ccb0-110">Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.</span><span class="sxs-lookup"><span data-stu-id="1ccb0-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="d42f9-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="d42f9-109">Invoke</span></span>](#invoke) | <span data-ttu-id="d42f9-110">Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.</span><span class="sxs-lookup"><span data-stu-id="d42f9-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="1ccb0-111">Miembros</span><span class="sxs-lookup"><span data-stu-id="1ccb0-111">Members</span></span>
+## <span data-ttu-id="d42f9-111">Miembros</span><span class="sxs-lookup"><span data-stu-id="d42f9-111">Members</span></span>
 
-#### <span data-ttu-id="1ccb0-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="1ccb0-112">Invoke</span></span> 
+#### <span data-ttu-id="d42f9-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="d42f9-112">Invoke</span></span> 
 
-<span data-ttu-id="1ccb0-113">Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.</span><span class="sxs-lookup"><span data-stu-id="1ccb0-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="d42f9-113">Se llama para proporcionar al implementador los argumentos del evento para el evento correspondiente.</span><span class="sxs-lookup"><span data-stu-id="d42f9-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="1ccb0-114">invocación [Invoke](#invoke)pública de HRESULT ([ICoreWebView2](icorewebview2.md) \* Sender, [ICoreWebView2ProcessFailedEventArgs](icorewebview2processfailedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="1ccb0-114">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2ProcessFailedEventArgs](icorewebview2processfailedeventargs.md) \* args)</span></span>
+> <span data-ttu-id="d42f9-114">invocación [Invoke](#invoke)pública de HRESULT ([ICoreWebView2](icorewebview2.md) \* Sender, [ICoreWebView2ProcessFailedEventArgs](icorewebview2processfailedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="d42f9-114">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2ProcessFailedEventArgs](icorewebview2processfailedeventargs.md) \* args)</span></span>
 

@@ -1,21 +1,23 @@
 ---
 description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicaciones nativas con el control Microsoft Edge WebView2
-title: WebView2 Win32 C++ ICoreWebView2ExperimentalEnvironment
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2ExperimentalEnvironment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge, ICoreWebView2ExperimentalEnvironment
-ms.openlocfilehash: 70e2ceab124b60c355f94161d2d25e49953520ca
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: e7ccb108c137e54635c6e5b69f9bc615ff8ff018
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10886463"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011140"
 ---
-# <span data-ttu-id="25847-104">interfaz ICoreWebView2ExperimentalEnvironment</span><span class="sxs-lookup"><span data-stu-id="25847-104">interface ICoreWebView2ExperimentalEnvironment</span></span> 
+# <span data-ttu-id="45efe-104">0.9.579: ICoreWebView2ExperimentalEnvironment</span><span class="sxs-lookup"><span data-stu-id="45efe-104">0.9.579 - interface ICoreWebView2ExperimentalEnvironment</span></span> 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
@@ -24,31 +26,31 @@ interface ICoreWebView2ExperimentalEnvironment
   : public IUnknown
 ```
 
-<span data-ttu-id="25847-105">Esta interfaz es una extensión de la [ICoreWebView2Environment](icorewebview2environment.md).</span><span class="sxs-lookup"><span data-stu-id="25847-105">This interface is an extension of the [ICoreWebView2Environment](icorewebview2environment.md).</span></span>
+<span data-ttu-id="45efe-105">Esta interfaz es una extensión de la [ICoreWebView2Environment](icorewebview2environment.md).</span><span class="sxs-lookup"><span data-stu-id="45efe-105">This interface is an extension of the [ICoreWebView2Environment](icorewebview2environment.md).</span></span>
 
-## <span data-ttu-id="25847-106">Resumen</span><span class="sxs-lookup"><span data-stu-id="25847-106">Summary</span></span>
+## <span data-ttu-id="45efe-106">Resumen</span><span class="sxs-lookup"><span data-stu-id="45efe-106">Summary</span></span>
 
- <span data-ttu-id="25847-107">Miembros</span><span class="sxs-lookup"><span data-stu-id="25847-107">Members</span></span>                        | <span data-ttu-id="25847-108">Descripciones</span><span class="sxs-lookup"><span data-stu-id="25847-108">Descriptions</span></span>
+ <span data-ttu-id="45efe-107">Miembros</span><span class="sxs-lookup"><span data-stu-id="45efe-107">Members</span></span>                        | <span data-ttu-id="45efe-108">Descripciones</span><span class="sxs-lookup"><span data-stu-id="45efe-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="25847-109">CreateCoreWebView2CompositionController</span><span class="sxs-lookup"><span data-stu-id="25847-109">CreateCoreWebView2CompositionController</span></span>](#createcorewebview2compositioncontroller) | <span data-ttu-id="25847-110">Cree de forma asincrónica una nueva vista de vista para usarla con el hospedaje visual.</span><span class="sxs-lookup"><span data-stu-id="25847-110">Asynchronously create a new WebView for use with visual hosting.</span></span>
-[<span data-ttu-id="25847-111">CreateCoreWebView2PointerInfo</span><span class="sxs-lookup"><span data-stu-id="25847-111">CreateCoreWebView2PointerInfo</span></span>](#createcorewebview2pointerinfo) | <span data-ttu-id="25847-112">Cree un [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)vacío.</span><span class="sxs-lookup"><span data-stu-id="25847-112">Create an empty [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).</span></span>
-[<span data-ttu-id="25847-113">GetProviderForHwnd</span><span class="sxs-lookup"><span data-stu-id="25847-113">GetProviderForHwnd</span></span>](#getproviderforhwnd) | <span data-ttu-id="25847-114">Devuelve el proveedor de automatización de la interfaz de usuario de la ICoreWebView2CompositionController que se corresponde con el HWND dado.</span><span class="sxs-lookup"><span data-stu-id="25847-114">Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.</span></span>
+[<span data-ttu-id="45efe-109">CreateCoreWebView2CompositionController</span><span class="sxs-lookup"><span data-stu-id="45efe-109">CreateCoreWebView2CompositionController</span></span>](#createcorewebview2compositioncontroller) | <span data-ttu-id="45efe-110">Cree de forma asincrónica una nueva vista de vista para usarla con el hospedaje visual.</span><span class="sxs-lookup"><span data-stu-id="45efe-110">Asynchronously create a new WebView for use with visual hosting.</span></span>
+[<span data-ttu-id="45efe-111">CreateCoreWebView2PointerInfo</span><span class="sxs-lookup"><span data-stu-id="45efe-111">CreateCoreWebView2PointerInfo</span></span>](#createcorewebview2pointerinfo) | <span data-ttu-id="45efe-112">Cree un [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)vacío.</span><span class="sxs-lookup"><span data-stu-id="45efe-112">Create an empty [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).</span></span>
+[<span data-ttu-id="45efe-113">GetProviderForHwnd</span><span class="sxs-lookup"><span data-stu-id="45efe-113">GetProviderForHwnd</span></span>](#getproviderforhwnd) | <span data-ttu-id="45efe-114">Devuelve el proveedor de automatización de la interfaz de usuario de la ICoreWebView2CompositionController que se corresponde con el HWND dado.</span><span class="sxs-lookup"><span data-stu-id="45efe-114">Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.</span></span>
 
-<span data-ttu-id="25847-115">Un objeto que implementa la interfaz [ICoreWebView2ExperimentalEnvironment]() también implementará [ICoreWebView2Environment](icorewebview2environment.md).</span><span class="sxs-lookup"><span data-stu-id="25847-115">An object implementing the [ICoreWebView2ExperimentalEnvironment]() interface will also implement [ICoreWebView2Environment](icorewebview2environment.md).</span></span>
+<span data-ttu-id="45efe-115">Un objeto que implementa la interfaz [ICoreWebView2ExperimentalEnvironment]() también implementará [ICoreWebView2Environment](icorewebview2environment.md).</span><span class="sxs-lookup"><span data-stu-id="45efe-115">An object implementing the [ICoreWebView2ExperimentalEnvironment]() interface will also implement [ICoreWebView2Environment](icorewebview2environment.md).</span></span>
 
-## <span data-ttu-id="25847-116">Miembros</span><span class="sxs-lookup"><span data-stu-id="25847-116">Members</span></span>
+## <span data-ttu-id="45efe-116">Miembros</span><span class="sxs-lookup"><span data-stu-id="45efe-116">Members</span></span>
 
-#### <span data-ttu-id="25847-117">CreateCoreWebView2CompositionController</span><span class="sxs-lookup"><span data-stu-id="25847-117">CreateCoreWebView2CompositionController</span></span> 
+#### <span data-ttu-id="45efe-117">CreateCoreWebView2CompositionController</span><span class="sxs-lookup"><span data-stu-id="45efe-117">CreateCoreWebView2CompositionController</span></span> 
 
-<span data-ttu-id="25847-118">Cree de forma asincrónica una nueva vista de vista para usarla con el hospedaje visual.</span><span class="sxs-lookup"><span data-stu-id="25847-118">Asynchronously create a new WebView for use with visual hosting.</span></span>
+<span data-ttu-id="45efe-118">Cree de forma asincrónica una nueva vista de vista para usarla con el hospedaje visual.</span><span class="sxs-lookup"><span data-stu-id="45efe-118">Asynchronously create a new WebView for use with visual hosting.</span></span>
 
-> <span data-ttu-id="25847-119">[CREATECOREWEBVIEW2COMPOSITIONCONTROLLER](#createcorewebview2compositioncontroller)HRESULT público (HWND ParentWindow, [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) \* handler)</span><span class="sxs-lookup"><span data-stu-id="25847-119">public HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)(HWND parentWindow, [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) \* handler)</span></span>
+> <span data-ttu-id="45efe-119">[CREATECOREWEBVIEW2COMPOSITIONCONTROLLER](#createcorewebview2compositioncontroller)HRESULT público (HWND ParentWindow, [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) \* handler)</span><span class="sxs-lookup"><span data-stu-id="45efe-119">public HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)(HWND parentWindow, [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) \* handler)</span></span>
 
-<span data-ttu-id="25847-120">parentWindow es el HWND en el que la aplicación se conectará al árbol visual de la vista de ventana.</span><span class="sxs-lookup"><span data-stu-id="25847-120">parentWindow is the HWND in which the app will connect the visual tree of the WebView.</span></span> <span data-ttu-id="25847-121">Este es el HWND que la aplicación recibirá una entrada de puntero o de mouse para la vista de ventana (y deberá usar SendMouseInput/SendPointerInput para reenviar).</span><span class="sxs-lookup"><span data-stu-id="25847-121">This will be the HWND that the app will receive pointer/ mouse input meant for the WebView (and will need to use SendMouseInput/ SendPointerInput to forward).</span></span> <span data-ttu-id="25847-122">Si la aplicación mueve el árbol visual WebView a una ventana distinta de otra, debe llamar a put_ParentWindow para actualizar el nuevo HWND primario del árbol visual.</span><span class="sxs-lookup"><span data-stu-id="25847-122">If the app moves the WebView visual tree to underneath a different window, then it needs to call put_ParentWindow to update the new parent HWND of the visual tree.</span></span>
+<span data-ttu-id="45efe-120">parentWindow es el HWND en el que la aplicación se conectará al árbol visual de la vista de ventana.</span><span class="sxs-lookup"><span data-stu-id="45efe-120">parentWindow is the HWND in which the app will connect the visual tree of the WebView.</span></span> <span data-ttu-id="45efe-121">Este es el HWND que la aplicación recibirá una entrada de puntero o de mouse para la vista de ventana (y deberá usar SendMouseInput/SendPointerInput para reenviar).</span><span class="sxs-lookup"><span data-stu-id="45efe-121">This will be the HWND that the app will receive pointer/ mouse input meant for the WebView (and will need to use SendMouseInput/ SendPointerInput to forward).</span></span> <span data-ttu-id="45efe-122">Si la aplicación mueve el árbol visual WebView a una ventana distinta de otra, debe llamar a put_ParentWindow para actualizar el nuevo HWND primario del árbol visual.</span><span class="sxs-lookup"><span data-stu-id="45efe-122">If the app moves the WebView visual tree to underneath a different window, then it needs to call put_ParentWindow to update the new parent HWND of the visual tree.</span></span>
 
-<span data-ttu-id="25847-123">Usa put_RootVisualTarget en el CoreWebView2CompositionController creado para proporcionar un objeto visual que hospede el árbol visual del explorador.</span><span class="sxs-lookup"><span data-stu-id="25847-123">Use put_RootVisualTarget on the created CoreWebView2CompositionController to provide a visual to host the browser's visual tree.</span></span>
+<span data-ttu-id="45efe-123">Usa put_RootVisualTarget en el CoreWebView2CompositionController creado para proporcionar un objeto visual que hospede el árbol visual del explorador.</span><span class="sxs-lookup"><span data-stu-id="45efe-123">Use put_RootVisualTarget on the created CoreWebView2CompositionController to provide a visual to host the browser's visual tree.</span></span>
 
-<span data-ttu-id="25847-124">Se recomienda que el identificador de modelo de usuario de la aplicación conjunto de aplicaciones para el proceso o la ventana de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="25847-124">It is recommended that the application set Application User Model ID for the process or the application window.</span></span> <span data-ttu-id="25847-125">Si no se establece ninguna, durante la creación de WebView un identificador de modelo de usuario de aplicación generado se establece en la ventana raíz de parentWindow.</span><span class="sxs-lookup"><span data-stu-id="25847-125">If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow.</span></span> 
+<span data-ttu-id="45efe-124">Se recomienda que el identificador de modelo de usuario de la aplicación conjunto de aplicaciones para el proceso o la ventana de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="45efe-124">It is recommended that the application set Application User Model ID for the process or the application window.</span></span> <span data-ttu-id="45efe-125">Si no se establece ninguna, durante la creación de WebView un identificador de modelo de usuario de aplicación generado se establece en la ventana raíz de parentWindow.</span><span class="sxs-lookup"><span data-stu-id="45efe-125">If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow.</span></span> 
 ```cpp
 // Create or recreate the WebView and its environment.
 void AppWindow::InitializeWebView()
@@ -153,7 +155,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
     return S_OK;
 }
 ```
- <span data-ttu-id="25847-126">Se recomienda que la aplicación se ocupe de los mensajes del administrador de reinicio para que se pueda reiniciar correctamente en el caso de que la aplicación esté usando Edge para WebView desde una instalación determinada y que la instalación se está desinstalando.</span><span class="sxs-lookup"><span data-stu-id="25847-126">It is recommended that the application handles restart manager messages so that it can be restarted gracefully in the case when the app is using Edge for webview from a certain installation and that installation is being uninstalled.</span></span> <span data-ttu-id="25847-127">Por ejemplo, si un usuario instala Edge desde el canal de desarrollo y opta por usar Edge de ese canal para probar la aplicación y, después, desinstala Edge de ese canal sin cerrar la aplicación, se reiniciará la aplicación para permitir que la desinstalación del canal de desarrollo se realice correctamente.</span><span class="sxs-lookup"><span data-stu-id="25847-127">For example, if a user installs Edge from Dev channel and opts to use Edge from that channel for testing the app, and then uninstalls Edge from that channel without closing the app, the app will be restarted to allow uninstallation of the dev channel to succeed.</span></span> 
+ <span data-ttu-id="45efe-126">Se recomienda que la aplicación se ocupe de los mensajes del administrador de reinicio para que se pueda reiniciar correctamente en el caso de que la aplicación esté usando Edge para WebView desde una instalación determinada y que la instalación se está desinstalando.</span><span class="sxs-lookup"><span data-stu-id="45efe-126">It is recommended that the application handles restart manager messages so that it can be restarted gracefully in the case when the app is using Edge for webview from a certain installation and that installation is being uninstalled.</span></span> <span data-ttu-id="45efe-127">Por ejemplo, si un usuario instala Edge desde el canal de desarrollo y opta por usar Edge de ese canal para probar la aplicación y, después, desinstala Edge de ese canal sin cerrar la aplicación, se reiniciará la aplicación para permitir que la desinstalación del canal de desarrollo se realice correctamente.</span><span class="sxs-lookup"><span data-stu-id="45efe-127">For example, if a user installs Edge from Dev channel and opts to use Edge from that channel for testing the app, and then uninstalls Edge from that channel without closing the app, the app will be restarted to allow uninstallation of the dev channel to succeed.</span></span> 
 ```cpp
     case WM_QUERYENDSESSION:
     {
@@ -176,17 +178,17 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
     break;
 ```
 
-#### <span data-ttu-id="25847-128">CreateCoreWebView2PointerInfo</span><span class="sxs-lookup"><span data-stu-id="25847-128">CreateCoreWebView2PointerInfo</span></span> 
+#### <span data-ttu-id="45efe-128">CreateCoreWebView2PointerInfo</span><span class="sxs-lookup"><span data-stu-id="45efe-128">CreateCoreWebView2PointerInfo</span></span> 
 
-<span data-ttu-id="25847-129">Cree un [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)vacío.</span><span class="sxs-lookup"><span data-stu-id="25847-129">Create an empty [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).</span></span>
+<span data-ttu-id="45efe-129">Cree un [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md)vacío.</span><span class="sxs-lookup"><span data-stu-id="45efe-129">Create an empty [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).</span></span>
 
-> <span data-ttu-id="25847-130">HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)([ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) \* \* pointerInfo)</span><span class="sxs-lookup"><span data-stu-id="25847-130">public HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)([ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) \*\* pointerInfo)</span></span>
+> <span data-ttu-id="45efe-130">HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)([ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) \* \* pointerInfo)</span><span class="sxs-lookup"><span data-stu-id="45efe-130">public HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)([ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) \*\* pointerInfo)</span></span>
 
-<span data-ttu-id="25847-131">La [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) devuelta debe rellenarse con toda la información relevante antes de llamar a SendPointerInput.</span><span class="sxs-lookup"><span data-stu-id="25847-131">The returned [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) needs to be populated with all of the relevant info before calling SendPointerInput.</span></span>
+<span data-ttu-id="45efe-131">La [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) devuelta debe rellenarse con toda la información relevante antes de llamar a SendPointerInput.</span><span class="sxs-lookup"><span data-stu-id="45efe-131">The returned [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) needs to be populated with all of the relevant info before calling SendPointerInput.</span></span>
 
-#### <span data-ttu-id="25847-132">GetProviderForHwnd</span><span class="sxs-lookup"><span data-stu-id="25847-132">GetProviderForHwnd</span></span> 
+#### <span data-ttu-id="45efe-132">GetProviderForHwnd</span><span class="sxs-lookup"><span data-stu-id="45efe-132">GetProviderForHwnd</span></span> 
 
-<span data-ttu-id="25847-133">Devuelve el proveedor de automatización de la interfaz de usuario de la ICoreWebView2CompositionController que se corresponde con el HWND dado.</span><span class="sxs-lookup"><span data-stu-id="25847-133">Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.</span></span>
+<span data-ttu-id="45efe-133">Devuelve el proveedor de automatización de la interfaz de usuario de la ICoreWebView2CompositionController que se corresponde con el HWND dado.</span><span class="sxs-lookup"><span data-stu-id="45efe-133">Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.</span></span>
 
-> <span data-ttu-id="25847-134">[GETPROVIDERFORHWND](#getproviderforhwnd)HRESULT público (HWND HWND, IUnknown \* \* Provider)</span><span class="sxs-lookup"><span data-stu-id="25847-134">public HRESULT [GetProviderForHwnd](#getproviderforhwnd)(HWND hwnd, IUnknown \*\* provider)</span></span>
+> <span data-ttu-id="45efe-134">[GETPROVIDERFORHWND](#getproviderforhwnd)HRESULT público (HWND HWND, IUnknown \* \* Provider)</span><span class="sxs-lookup"><span data-stu-id="45efe-134">public HRESULT [GetProviderForHwnd](#getproviderforhwnd)(HWND hwnd, IUnknown \*\* provider)</span></span>
 
