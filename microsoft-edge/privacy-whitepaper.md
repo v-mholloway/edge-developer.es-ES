@@ -3,21 +3,20 @@ description: notas del producto sobre la privacidad de Microsoft Edge
 title: notas del producto sobre la privacidad de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2020
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
-ms.technology: browser
 keywords: Microsoft Edge, privacidad, notas del producto, confianza
 ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: ff4d2b9a10e225478aaacbe0b70604a730172187
-ms.sourcegitcommit: 01940d5708339b03debc14001596f560cc9ab75a
+ms.openlocfilehash: 35227178a909ae6b378c4a17f578bac364f551c7
+ms.sourcegitcommit: ad02b0a3159eb9f111a580d1c229cb4297467210
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903876"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009248"
 ---
 # notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -76,6 +75,8 @@ Puede recopilar sitios, texto e imágenes en la Web y organizar el contenido con
 Cada 24 horas, Microsoft Edge descarga una lista de los sitios admitidos para los que existe una plantilla de extracción de entidad especial.  Las plantillas son específicas de cada sitio web.  Cuando se crea un elemento nuevo en la colección, Microsoft Edge comprueba que el sitio desde el que se está creando el nuevo elemento de colección se encuentra en la lista de sitios admitidos.  Si el sitio se encuentra en la lista, Microsoft Edge hace ping al servicio de extracción de entidades para la plantilla del sitio específico.  No hay ningún identificador de usuario asociado a la solicitud al servicio.  La plantilla intenta identificar el nombre, el precio, las calificaciones, la imagen principal y otros datos sobre el elemento que se va a recopilar.  Si el sitio desde el que va a crear un nuevo elemento de colección no se encuentra en el sitio de lista admitido, Microsoft Edge no descarga una plantilla.  Las plantillas permiten la creación de todos los elementos de colección de forma local en el dispositivo.  No se envían datos sobre los elementos de colección al servicio para crear la colección.  
 
 Para eliminar las plantillas almacenadas en el dispositivo y borrar los datos de la caché, vaya a `edge://settings/privacy` y, en **Borrar datos de exploración** junto a **Borrar los datos de exploración ahora** seleccione el botón **Elegir lo que se debe borrar**, seleccione el intervalo de tiempo y el tipo de datos que quiera y, después, seleccione el botón **Borrar ahora**.  Otro método para eliminar datos almacenados en caché es ir a `edge://settings/clearBrowserData`, seleccionar el intervalo de tiempo y el tipo de datos que desee y seleccionar el botón **Borrar ahora**.  
+
+Para ayudarle a obtener la mejor oferta al comprar y usar Colecciones, si agrega productos a sus Colecciones, Microsoft Edge ofrece la posibilidad de comparar el precio del producto con el de otros minoristas.  Si selecciona Comparar precio con el de otros minoristas, Microsoft Edge enviará el nombre del producto, el dominio de compra, el precio y otros detalles del producto a Bing para comparar los precios con los de otros minoristas.  La información del producto en Colecciones se enviará por HTTPS. Estas llamadas HTTPS no contienen ningún identificador de usuario.  
 
 Si activa la opción **Mostrar sugerencias de Pinterest en Colecciones**, Colecciones realiza una búsqueda de Microsoft Bing con el título de la colección para encontrar páginas de tema relevantes de Pinterest.  Microsoft Edge no envía datos sobre sus colecciones a Pinterest.  Para quitar las sugerencias y detener las búsquedas de las páginas de tema de Pinterest, vaya a `edge://settings/privacy` y desactive la opción **Mostrar sugerencias de Pinterest en Colecciones**.  
 
@@ -257,7 +258,9 @@ Microsoft Edge usa un servicio de hora de la red de Microsoft para realizar un s
 
 ## Página de nueva pestaña  
 
-Microsoft Edge ofrece una experiencia atractiva y centrada en el usuario para la página de la nueva pestaña con un cuadro de búsqueda con la tecnología de [Bing][|::ref2::|Main], iconos de vínculos rápidos para los sitios que visita con mayor frecuencia y contenido relevante de Microsoft News u Office 365.  Personalice la apariencia de la página de pestaña nueva seleccionando el botón Personalizar.  Las preferencias de la página de nueva pestaña se establecen para cada perfil y se almacenan de forma local en el dispositivo. Las preferencias no se sincronizan entre dispositivos.  
+Microsoft Edge ofrece una experiencia atractiva y centrada en el usuario para la página de la nueva pestaña con un cuadro de búsqueda con la tecnología de [Bing][|::ref2::|Main], iconos de vínculos rápidos para los sitios que visita con mayor frecuencia y contenido relevante de Microsoft News u Office 365.  Personalice la apariencia de la página de pestaña nueva seleccionando el botón Personalizar.  Las preferencias de la página de nueva pestaña se establecen para cada perfil y se almacenan de forma local en el dispositivo. Las preferencias no se sincronizan entre dispositivos.
+
+Para mejorar los tiempos de carga de la página de la nueva pestaña, es posible que la página de la nueva pestaña de Microsoft se cargue en segundo plano para acelerarla. Si permite las cookies, es posible que el contenido cargado incluya cookies. Para deshabilitar la carga en segundo plano de la página de la nueva pestaña de Microsoft, vaya a `edge://settings/newTabPage` y deshabilite la configuración de **Precargar la página de la nueva pestaña para obtener una experiencia más rápida**. 
 
 :::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="Página de nueva pestaña" lightbox="./media/whitepaper-media/n-t-p1.png":::
    Página de nueva pestaña  
@@ -417,8 +420,8 @@ Para ayudar a resolver los errores de escritura de URL en la barra de direccione
 
 Iniciar sesión en Microsoft Edge con una cuenta de Microsoft le permite sincronizar los datos de exploración en todas las versiones con sesión iniciada de Microsoft Edge.  Puede sincronizar los favoritos, la configuración, los datos de relleno de formularios \(direcciones y más\), contraseñas, extensiones y colecciones.  Debe permitir activar la sincronización en Microsoft Edge y todos los tipos de datos sincronizados se pueden activar o desactivar por separado.  Favoritos contiene todas las pestañas que ha reservado anteriormente en la versión heredada de Microsoft Edge, que se sincronizan con el resto de los favoritos.  Los favoritos u otros datos eliminados o modificados de una versión con sesión iniciada de Microsoft Edge se sincronizan con todas las versiones con sesión iniciada de Microsoft Edge en las que la sincronización está activada.  Para administrar las configuraciones de sincronización, vaya a `edge://settings/profiles/sync`.  Su organización puede administrar la configuración de sincronización.
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Sincronización" lightbox="./media/whitepaper-media/sync.png":::
-   Sincronización  
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Activando la imagen de la configuración de sincronización" lightbox="./media/whitepaper-media/sync.png":::
+   La configuración de la sincronización está activada
 :::image-end:::  
 
 Para que la sincronización funcione, se envían los datos de conectividad y configuración del dispositivo adicionales necesarios para ofrecer la experiencia de sincronización, como el nombre del dispositivo, la marca y el modelo.  Es posible que se eliminen los datos de del [panel de dispositivos de Microsoft][MicrosoftAccountDevices].  Para administrar sus favoritos sincronizados, vaya a `edge://favorites`.  Para administrar el resto de los tipos de datos, vaya a `edge://settings/profiles`.  
@@ -426,6 +429,12 @@ Para que la sincronización funcione, se envían los datos de conectividad y con
 Todos los datos sincronizados se cifran en tránsito mediante HTTPS cuando se transfieren entre el explorador y los servidores de Microsoft.  Los datos sincronizados también se almacenan en un estado cifrado en servidores de Microsoft.  Los tipos de datos confidenciales, como las direcciones y las contraseñas, se cifran en el dispositivo antes de sincronizarse.  Si usa una cuenta profesional o educativa, se cifran aún más todos los tipos de datos antes de sincronizarlos con Microsoft Information Protection.  El resto de los tipos de datos sincronizados se almacenan hasta que elimine los datos, se elimine la cuenta o la cuenta se vuelva inactiva.  Un identificador de cuenta se adjunta a todos los datos sincronizados, ya que el identificador es necesario para realizar la sincronización entre varios dispositivos. 
 
 Los datos de exploración del modo invitado y de InPrivate no se sincronizan con su cuenta de Microsoft.  Sin embargo, los favoritos creados durante sesiones de InPrivate se sincronizan en las versiones con sesión iniciada de Microsoft Edge en que la sincronización está activada.  
+
+## Sugerencias y recomendaciones
+
+Microsoft Edge desea ofrecerle sugerencias y recomendaciones relevantes para obtener la mejor experiencia con el explorador.  Microsoft Edge usa la conectividad de dispositivos disponibles y los datos de configuración para ofrecer sugerencias y recomendaciones relevantes.  Estos datos son el sistema operativo, la configuración regional, la configuración del navegador y otros datos de configuración y conectividad del dispositivo.  Estos datos se envían mediante una conexión segura HTTPS con un identificador reconfigurable único para el navegador.  Para los dispositivos con Windows 10 en los que se configura Microsoft Edge, respetamos las experiencias personalizadas de Windows.  [Obtenga más información sobre las experiencias adaptadas en Windows] [https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy].  
+
+Estos datos no se envían durante la exploración InPrivate o en el Modo Invitado.  
 
 ## Prevención de seguimiento  
 
