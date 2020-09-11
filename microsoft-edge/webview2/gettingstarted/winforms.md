@@ -3,21 +3,21 @@ description: Hospedar contenido web en la aplicación de Windows Forms con el co
 title: Vista de WebView 2 de Microsoft Edge para aplicaciones de Windows Forms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones de WinForms, WinForms, Edge, CoreWebView2, control de explorador, ASP.net de Edge, introducción, introducción, .NET, Windows Forms
-ms.openlocfilehash: 7d7ddf445adee7b3d20d268ab1d53c0999fd54ce
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 885524581112a208e1e5134ecd7a6f7446e331ce
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926459"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010736"
 ---
 # Introducción a WebView2 en las aplicaciones de Windows Forms (versión preliminar)  
 
-En este artículo, empiece a crear su primera aplicación de WebView2 y obtenga información sobre las características principales de [WebView2 (versión preliminar)](/microsoft-edge/hosting/webview2/index).  Para obtener más información sobre las API individuales, consulta referencia de la [API](../reference/dotnet/0-9-515-reference-webview2.md).  
+En este artículo, empiece a crear su primera aplicación de WebView2 y obtenga información sobre las características principales de [WebView2 (versión preliminar)](/microsoft-edge/hosting/webview2/index).  Para obtener más información sobre las API individuales, consulta referencia de la [API](../reference/dotnet/0-9-628-reference-webview2.md).  
 
 ## Requisitos previos  
 

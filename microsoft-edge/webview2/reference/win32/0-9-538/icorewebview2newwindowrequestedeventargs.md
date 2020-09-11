@@ -1,21 +1,23 @@
 ---
 description: Insertar tecnologías web (HTML, CSS y JavaScript) en las aplicaciones nativas con el control Microsoft Edge WebView2
-title: WebView2 Win32 C++ ICoreWebView2NewWindowRequestedEventArgs
+title: 0.9.579-WebView2 Win32 C++ ICoreWebView2NewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge, ICoreWebView2NewWindowRequestedEventArgs
-ms.openlocfilehash: bb18b6662fd5921406e19b3c333c97f8a1cd0dbc
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 5486aa66e39e220e819bb00211a79bd449a25bfe
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879439"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010064"
 ---
-# interfaz ICoreWebView2NewWindowRequestedEventArgs 
+# 0.9.579: ICoreWebView2NewWindowRequestedEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2NewWindowRequestedEventArgs

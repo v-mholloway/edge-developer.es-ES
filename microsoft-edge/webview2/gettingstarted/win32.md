@@ -3,21 +3,21 @@ description: Hospedar contenido web en la aplicación Win32 con el control de We
 title: Introducción a WebView2 para aplicaciones Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: ec5144f911d5bf00f141d1e8e53718154f1cbb24
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 5bb2d8a1ec0d75c2cbb1d426bae6bf1cd8298592
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926487"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010715"
 ---
 # Introducción a WebView2 (vista previa para desarrolladores)  
 
-El siguiente contenido le muestra las funciones más comunes de [WebView2 (Developer Preview)][Webview2Index] y proporciona un punto de partida para crear su primera aplicación de WebView2.  Para obtener más información sobre las API de WebView2 individuales, consulta referencia de la [API][Webview2ReferenceWin3209538].  
+El siguiente contenido le muestra las funciones más comunes de [WebView2 (Developer Preview)][Webview2Index] y proporciona un punto de partida para crear su primera aplicación de WebView2.  Para obtener más información sobre las API de WebView2 individuales, consulta referencia de la [API][Webview2ReferenceWin3209622].  
 
 ## Requisitos previos  
 
@@ -280,7 +280,7 @@ Muchas de las funcionalidades de WebView2 que no se cubren en esta página, la s
 
 *   Para obtener un ejemplo completo de las capacidades de WebView2, consulta la [muestra de API de WebView2][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Para obtener una aplicación de muestra creada con WebView2, consulte [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
-*   Para obtener información detallada sobre la API de WebView2, consulta referencia de la [API][Webview2ReferenceWin3209538].  
+*   Para obtener información detallada sobre la API de WebView2, consulta referencia de la [API][Webview2ReferenceWin3209622].  
 
 ## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  
 
@@ -289,7 +289,7 @@ Muchas de las funcionalidades de WebView2 que no se cubren en esta página, la s
 <!-- links -->  
 
 [Webview2Index]: ../index.md "Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft docs"  
-[Webview2ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Referencia (WebView2) | Microsoft docs"  
+[Webview2ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Referencia (WebView2) | Microsoft docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegación | Microsoft docs"  
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Biblioteca de plantillas C++ de Windows en tiempo de ejecución (WRL) | Microsoft docs"  

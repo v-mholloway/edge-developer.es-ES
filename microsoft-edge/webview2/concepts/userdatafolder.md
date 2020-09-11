@@ -3,17 +3,17 @@ description: Más información sobre cómo administrar carpetas de datos de usua
 title: Administrar la carpeta de datos de usuario en aplicaciones de WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control browser, HTML Edge, carpeta de datos de usuario
-ms.openlocfilehash: 4e10f589bc7866cd06e007d70c0dff941afc35cb
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 5f341458a85bfab93bd2618b4d274ad6a1edefa2
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895507"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010743"
 ---
 # Administrar la carpeta de datos de usuario  
 
@@ -28,7 +28,7 @@ Las carpetas de datos de usuario se crean automáticamente mediante WebView2.  L
 
 ## Crear carpetas de datos de usuario  
 
-Para especificar la ubicación de la carpeta de datos de usuario, incluya el `userDataFolder` parámetro al llamar a [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) \ (Win32 \) o [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \).  Después de la creación, los datos del explorador del control WebView2 se almacenan en una subcarpeta de `userDataFolder` .  Cuando `userDataFolder` no se especifica, WebView2 crea carpetas de datos de usuario en ubicaciones predeterminadas de la siguiente manera:  
+Para especificar la ubicación de la carpeta de datos de usuario, incluya el `userDataFolder` parámetro al llamar a [ICoreWebView2Environment](../reference/win32/0-9-622/icorewebview2environment.md) \ (Win32 \) o [CoreWebView2Environment](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \).  Después de la creación, los datos del explorador del control WebView2 se almacenan en una subcarpeta de `userDataFolder` .  Cuando `userDataFolder` no se especifica, WebView2 crea carpetas de datos de usuario en ubicaciones predeterminadas de la siguiente manera:  
 
 *   Para las aplicaciones empaquetadas de la tienda Windows, la carpeta de usuario predeterminada es la subcarpeta `ApplicationData\LocalFolder` de la carpeta del paquete.  
 *   Para las aplicaciones de escritorio existentes, la carpeta datos de usuario predeterminada es la ruta de acceso de archivo exe de la aplicación + `.WebView2` .  En lugar de usar el valor predeterminado, le recomendamos que especifique una carpeta de datos de usuario y que la cree en la misma carpeta en la que se almacenan todos los demás datos de la aplicación.  
@@ -54,9 +54,9 @@ Es posible que los controles WebView2 compartan las mismas carpetas de datos de 
 
 Tenga en cuenta lo siguiente al compartir carpetas de datos de usuario:  
 
-1.  Al volver a crear los controles de WebView2 para actualizar las versiones del explorador con los eventos [add_NewBrowserVersionAvailable](../reference/win32/0-9-538/icorewebview2environment.md#add_newbrowserversionavailable) \ (Win32 \) o [NewBrowserVersionAvailable](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) \ (.net \), asegúrese de que los procesos del explorador cierran y cierran WebView2 controles que comparten la misma carpeta de datos de usuario.  Para recuperar el identificador de proceso del proceso del explorador, use la `BrowserProcessId` propiedad del control WebView2.  
+1.  Al volver a crear los controles de WebView2 para actualizar las versiones del explorador con los eventos [add_NewBrowserVersionAvailable](../reference/win32/0-9-622/icorewebview2environment.md#add_newbrowserversionavailable) \ (Win32 \) o [NewBrowserVersionAvailable](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) \ (.net \), asegúrese de que los procesos del explorador cierran y cierran WebView2 controles que comparten la misma carpeta de datos de usuario.  Para recuperar el identificador de proceso del proceso del explorador, use la `BrowserProcessId` propiedad del control WebView2.  
 
-2.  Los controles de WebView2 que comparten la misma carpeta de datos de usuario deben usar las mismas opciones para [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) \ (Win32 \) o [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \).  De lo contrario, se producirá un error en la creación de WebView2 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
+2.  Los controles de WebView2 que comparten la misma carpeta de datos de usuario deben usar las mismas opciones para [ICoreWebView2Environment](../reference/win32/0-9-622/icorewebview2environment.md) \ (Win32 \) o [CoreWebView2Environment](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \).  De lo contrario, se producirá un error en la creación de WebView2 `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
 
 Para aislar las distintas partes de la aplicación o cuando no es necesario compartir datos entre controles WebView2, puede optar por usar carpetas de datos de usuario diferentes.  Por ejemplo, una aplicación puede constar de dos controles WebView2, uno para mostrar un anuncio y el otro para mostrar el contenido de la aplicación.  En este caso, los desarrolladores pueden optar por usar distintas carpetas de datos de usuario para cada control de WebView2.  
 
