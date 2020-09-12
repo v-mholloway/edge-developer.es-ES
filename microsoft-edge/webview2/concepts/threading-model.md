@@ -1,6 +1,6 @@
 ---
-description: Modelo de subprocesos
-title: Modelo de subprocesos
+description: Modelo de subprocesamiento
+title: Modelo de subprocesamiento
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/23/2020
@@ -8,14 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: ad51afee97d3cc3e913ecdd73c4f0c2a99c70564
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 61e3b7fc8d25e2a1ce9c60fb84f5f39ba43f281b
+ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895592"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "11013740"
 ---
-# Modelo de subprocesos  
+# Modelo de subprocesamiento 
+
+El control WebView2 se basa en el [modelo de objetos componentes (com)](https://docs.microsoft.com/windows/win32/com/the-component-object-model) y debe ejecutarse en un único subproceso [apartamentos (STA)](https://docs.microsoft.com/windows/win32/com/single-threaded-apartments) .
 
 ## Seguridad de los subprocesos  
 
