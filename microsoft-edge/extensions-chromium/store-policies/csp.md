@@ -3,16 +3,16 @@ description: Directiva de seguridad de contenido para las extensiones de Edge (c
 title: Directiva de seguridad de contenido (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: 52d6d0afb38401250183788726013d521a269f06
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573674"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015719"
 ---
 # Directiva de seguridad de contenido \ (CSP \)  
 
@@ -194,7 +194,7 @@ Descargar el archivo, incluirlo en el paquete y escribir:
 
 As of Chrome 46, -->  
 
-Los scripts en línea pueden permitirse especificando el hash codificado en base64 del código fuente de la Directiva.  Este hash debe ir precedido por el algoritmo hash usado \ (SHA256, SHA384 o SHA512 \).  Para obtener un ejemplo, consulta el [uso de hash para \ <script \ > elementos][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] .  
+Los scripts en línea pueden permitirse especificando el hash codificado en base64 del código fuente de la Directiva.  Este hash debe ir precedido por el algoritmo hash usado \ (SHA256, SHA384 o SHA512 \).  Consulta el [uso de hash de \<script\> los elementos][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] para obtener un ejemplo.  
 
 **Script remoto**  
 

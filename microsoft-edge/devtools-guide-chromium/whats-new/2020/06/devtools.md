@@ -3,22 +3,22 @@ description: Características de depuración de la cuadrícula CSS, editar y rep
 title: Novedades de DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 96ad9a4f21c36135013033fa4de31281fe6c4e83
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993614"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015464"
 ---
 # Novedades de DevTools (Microsoft Edge 85)  
 
 ## Anuncios del equipo de Microsoft Edge DevTools  
 
-Las secciones siguientes son una lista de anuncios que puede haber perdido del equipo Microsoft Edge DevTools.  Vea los anuncios para probar nuevas características de la DevTools, extensiones de código de VS y mucho más.  Para estar al día de las características más recientes y las más recientes de las herramientas para desarrolladores, descargue los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] y [siga el equipo de Microsoft Edge DevTools en Twitter][EdgeDevToolsTwitterAccount].  
+Las secciones siguientes son una lista de anuncios que puede haber perdido del equipo Microsoft Edge DevTools.  Consulta los anuncios para probar nuevas características de DevTools, Visual Studio Code Extensions y mucho más.  Para estar al día de las características más recientes y las más recientes de las herramientas para desarrolladores, descargue los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] y [siga el equipo de Microsoft Edge DevTools en Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Características de depuración de cuadrícula CSS  
 
@@ -245,8 +245,8 @@ Los números de línea marcan más claramente que estás buscando datos binarios
 
 Al realizar una operación de copiar o cortar sin selección en el [Editor del panel orígenes][DevtoolsSourcesEditCssJavascript], DevTools copia o corta la línea de contenido actual.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Con el cursor al final de la línea 5, copiando toda la línea desde pen.js en el DevTools y pegando en VS" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   Con el cursor al final de la línea 5, copiando toda la línea desde **pen.js** en el DevTools y pegando en [vs Code][VSCode].
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Con el cursor al final de la línea 5, copiando toda la línea desde pen.js en el DevTools y pegando en Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   Con el cursor al final de la línea 5, copiando toda la línea desde **pen.js** en el DevTools y pegando en [Visual Studio Code][VSCode].
 :::image-end:::  
 
 [#800028][CR800028] de problemas de cromo
@@ -260,7 +260,7 @@ El botón de alternancia **similar** en la configuración de la consola se aplic
 Por ejemplo, anteriormente, DevTools no desagrupaba los `hello` mensajes aunque el **grupo es similar** .  Ahora, los `hello` mensajes están desagrupados.  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Cuando agrupar similares está desactivado, los mensajes de saludo no se agrupan" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   Cuando **agrupar similares** está desactivado, los `hello` mensajes no se agrupan.
+   Cuando **agrupar similares** está desactivado, los `hello` mensajes no se agrupan
 :::image-end:::  
 
 Proporciona a esta característica una prueba con un [ejemplo que envía mensajes duplicados a la consola][CodepenZoherghadyaliZyrjgdJ].  
@@ -303,7 +303,7 @@ Las horas de `DOMContentLoaded` , primera pintura con control de contenido y los
 
 ### Nuevos iconos para puntos de interrupción, puntos de interrupción condicionales y logpoints  
 
-El panel **orígenes** tiene nuevos diseños para puntos de interrupción, puntos de interrupción condicionales y logpoints.  Los puntos de interrupción están representados por un círculo rojo, como [vs Code][VSCode] y [Visual Studio][VS].  Se agregan iconos para diferenciar los puntos de interrupción y logpoints.  
+El panel **orígenes** tiene nuevos diseños para puntos de interrupción, puntos de interrupción condicionales y logpoints.  Los puntos de interrupción están representados por un círculo rojo, como [Visual Studio Code][VSCode] y [Visual Studio][VS].  Se agregan iconos para diferenciar los puntos de interrupción y logpoints.  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Puntos de interrupción" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Puntos de interrupción  

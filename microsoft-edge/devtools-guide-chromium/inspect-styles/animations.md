@@ -3,16 +3,16 @@ description: Inspeccione y modifique las animaciones con el inspector de animaci
 title: Inspeccionar animaciones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a74a401edf5331f2dd3c1bf574110241f616d9f6
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992830"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015775"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10992830"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Inspeccionar animaciones   
-
-
+# Inspeccionar animaciones  
 
 Inspeccione y modifique las animaciones con el inspector de animación de Microsoft Edge DevTools.  
 
@@ -48,7 +42,7 @@ Inspeccione y modifique las animaciones con el inspector de animación de Micros
 *   Inspeccione las animaciones y reduzca la velocidad de cada una de ellas, reproduzca cada una o vea el código de origen.  
 *   Modifique las animaciones cambiando los intervalos, el retraso, la duración o los desplazamientos de los fotogramas clave.  
 
-## Introducción   
+## Introducción  
 
 El inspector de animación de Microsoft Edge DevTools tiene dos propósitos principales.  
 
@@ -85,8 +79,8 @@ El inspector de animación se abre como una pestaña junto al cajón de consola.
 
 El inspector de animación se agrupa en cuatro secciones principales \ (o paneles \).  En esta guía se hace referencia a cada panel de la siguiente manera:  
 
-| | Panel | Descripción |  
-| --- |:--- |:--- |  
+| Índice | Panel | Descripción |  
+|:--- |:--- |:--- |  
 | uno | **Controles** | Desde aquí puede borrar todos los grupos de animación capturados actualmente o cambiar la velocidad del grupo de animación seleccionado actualmente. |  
 | 1 | **Introducción** | Seleccione un grupo de animación aquí para inspeccionarlo y modificarlo en el panel de **detalles** . |  
 | 2 | **Línea de tiempo** | PAUSE e inicie una animación desde aquí, o vaya a un punto específico de la animación. |  
@@ -104,7 +98,7 @@ Para capturar una animación, solo tiene que realizar la interacción que desenc
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## Inspeccionar animaciones   
+## Inspeccionar animaciones  
 
 Una vez capturada una animación, hay varias maneras de reproducirla:  
 
@@ -138,7 +132,7 @@ Si se aplica la misma animación a dos elementos, el inspector de animación asi
    Animaciones con códigos de color  
 :::image-end:::  
 
-## Modificar animaciones   
+## Modificar animaciones  
 
 Hay tres maneras en las que puede modificar una animación con el inspector de animación.  
 
@@ -170,11 +164,9 @@ Para agregar un retraso a una animación, haga clic en él y arrástrelo a cualq
    Retraso modificado  
 :::image-end:::  
 
-<!--  
-  
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: Los pasos para crear la cuenta de desarrollador de complementos de 
 title: Información general y Estados de presentación de extensión
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: 3bb648ee9db062bcb12f7592df752ab25d8322b5
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 028112f958656a705c7b52fa3a7bbfa49a1a0f79
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882649"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015739"
 ---
 # Información general y Estados de presentación de extensión  
 
@@ -26,7 +26,7 @@ La página de Descripción general del centro de Partners muestra el estado de l
 | cuatro|  En la tienda |  Una vez completada la revisión y que la extensión se publique en Microsoft Store, el estado cambiará a este estado.  <br />  Su extensión está disponible en Microsoft Store en los mercados que especificó.  |  
 | 4 |  En la tienda.  Actualizar en revisión |  Su extensión está publicada en Microsoft Store y ha enviado una actualización que está revisando Microsoft.  |  
 | 6 |  Error al revisar |  Si se produce un error en la extensión, el estado cambia a este estado.  <br />  Una revisión fallida puede producirse durante la revisión inicial o durante una actualización.  <br />  Se espera que realice una acción correctiva y que vuelva a enviar su extensión para publicar en Microsoft Store.  |  
-| siete |  No disponible en la tienda |  Hay tres escenarios posibles cuando la extensión muestra este estado: no **publicado en el almacén** , **eliminado de Store**y **bloqueado**.  A continuación se especifica la descripción de cada una de estas tres.  |  
+| siete |  No disponible en la tienda |  Hay tres escenarios posibles cuando la extensión muestra este estado: no  **publicado en el almacén** , **eliminado de Store**y **bloqueado**.  A continuación se especifica la descripción de cada una de estas tres.  |  
 | 4,8 |  No publicado en el almacén |  Has anulado la publicación de tu extensión desde Microsoft Store en el centro de Partners.  <br />  En el centro asociado, en la página de entrega de extensión, hizo clic en el botón anular la publicación.  <br />  Después de la anulación de la publicación, la extensión ya no está disponible en Microsoft Store para que los usuarios nuevos la descarguen, pero los usuarios existentes pueden seguir usando sus copias de la extensión.  |  
 | 99,999 |  Eliminado de Store |  Si se detecta que la extensión infringe las cláusulas y condiciones de Microsoft Store, Microsoft puede quitarla de Microsoft Store y el estado cambiará a este estado.  <br />  Después de quitar la extensión por parte de Microsoft, la extensión ya no está disponible en Microsoft Store para que los usuarios nuevos la descarguen, pero los usuarios existentes pueden seguir usando sus copias de la extensión.  |  
 | base10 |  Bloqueado |  Si su extensión es malintencionada y pone en peligro la seguridad y la privacidad de los usuarios, Microsoft tiene el derecho de bloquear su extensión de Microsoft Store y de los cambios de estado de este estado.  <br />  Si la extensión está bloqueada, la extensión se quitará de Microsoft Store, la extensión también se quitará de los dispositivos de usuario.  |  

@@ -1,24 +1,24 @@
 ---
 description: Extensions documentación de Enterprise para extensiones de Edge (cromo).
-title: Alojamiento y actualización
+title: Hospedaje y actualización
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: eb1f9921d503d25557fc9efb1517537e7a90f4aa
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573716"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015705"
 ---
 # Hospedaje y actualización de tiendas web  
 
 La mayoría de las extensiones se hospedan en el [Catálogo de complementos de Microsoft Edge Insider \ (Microsoft Edge Insider addons \)][MicrosoftStoreExtensions] para proteger mejor a los usuarios de las extensiones malintencionadas.  
 
-## Alojamiento  
+## Hospedaje  
 
 Todas las extensiones se distribuyen a los usuarios como un archivo ZIP especial con un sufijo. CRX.  Las extensiones hospedadas en los complementos de Microsoft Edge se cargan como archivos. zip. El proceso de publicación convierte automáticamente el archivo. zip en un archivo. CRX.  
 

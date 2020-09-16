@@ -1,18 +1,18 @@
 ---
-description: Use el DevTools en el modo de contraste alto de Windows, coincidir los métodos abreviados de teclado del DevTools al código de VS y mucho más.
+description: Use el DevTools en el modo de contraste alto de Windows, coincidir los métodos abreviados de teclado del DevTools al código Visual Studio y mucho más.
 title: Novedades de DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 62f261b381b0382561e166bca67f77f37225b764
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2752dec8bc7c4eec34ddde05a7dedff7bebef05f
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992893"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015492"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,7 +32,7 @@ ms.locfileid: "10992893"
 
 ## Anuncios del equipo de Microsoft Edge DevTools  
 
-Las siguientes secciones son una lista de anuncios que puede haber perdido del equipo de DevTools de Microsoft Edge. Compruébelos para probar las nuevas características de la DevTools, las extensiones de código de VS y mucho más.  Para mantenerte al tanto de las últimas y mejores características de las herramientas para desarrolladores, descarga los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] y mantente [en Twitter][EdgeDevToolsTwitterAccount].  
+Las siguientes secciones son una lista de anuncios que puede haber perdido del equipo de DevTools de Microsoft Edge. Compruébelos para probar nuevas características en DevTools, Visual Studio Code Extensions y mucho más.  Para mantenerte al tanto de las últimas y mejores características de las herramientas para desarrolladores, descarga los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] y mantente [en Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Usar el DevTools en el modo de contraste alto de Windows
 
@@ -49,19 +49,19 @@ Ahora, los DevTools de Microsoft Edge se muestran en el modo contraste alto cuan
 
 [#1048378][CR1048378] de problemas de cromo  
 
-### Hacer coincidir los métodos abreviados de teclado en el código de DevTools a VS  
+### Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio  
 
-En su [opinión](#getting-in-touch-with-microsoft-edge-devtools-team) y el [rastreador de problemas públicos de cromo][CRIssuesList], el equipo de DevTools de Microsoft Edge aprendió que desea poder personalizar los métodos abreviados de teclado en el DevTools.  En Microsoft Edge 84, ahora puede hacer coincidir los métodos abreviados de teclado del DevTools con el [código de vs][VSCode], que es solo una de las características en las que está trabajando el equipo para la personalización de los accesos directos.  
+En su [opinión](#getting-in-touch-with-microsoft-edge-devtools-team) y el [rastreador de problemas públicos de cromo][CRIssuesList], el equipo de DevTools de Microsoft Edge aprendió que desea poder personalizar los métodos abreviados de teclado en el DevTools.  En Microsoft Edge 84, ahora puedes hacer coincidir los métodos abreviados de teclado del código DevTools con [Visual Studio][VSCode], que es solo una de las características en las que está trabajando el equipo para personalizarlo.  
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a VS" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    Microsoft Edge DevTools en el modo contraste alto  
 :::image-end:::  
 
 Para probar el experimento, abre DevTools configuración pulsando `?` o seleccionando el icono del ![ icono ][ImageSettingsIcon] de configuración de DevTools en la esquina superior derecha de la DevTools.  Vaya a la sección **experimentos** y active la casilla **Habilitar la opción de configuración personalizada de métodos abreviados de teclado (se necesita volver a cargar)**.  Ahora vuelva a cargar el DevTools, abra la configuración de nuevo y vaya a la sección **accesos directos** .  
 
-Seleccione **DevTools (valor predeterminado)** en la lista desplegable **coincidir con métodos abreviados preestablecidos** y seleccione **código de Visual Studio**.  Los métodos abreviados de teclado de la DevTools ahora coinciden con los métodos abreviados para acciones equivalentes en VS Code.  
+Seleccione **DevTools (valor predeterminado)** en la lista desplegable **coincidir con métodos abreviados preestablecidos** y seleccione **código de Visual Studio**.  Los métodos abreviados de teclado de la DevTools ahora coinciden con los métodos abreviados para acciones equivalentes en el código de Visual Studio.  
 
-Por ejemplo, el método abreviado de teclado para pausar o seguir ejecutando un script en [vs Code][VSCodeShortcuts] es `F5` .  Con el valor preestablecido **DevTools (predeterminado)** , ese mismo método abreviado de DevTools es, `F8` pero con el prefijo de código de **Visual Studio** , ese método abreviado también está ahora `F5` .  
+Por ejemplo, el método abreviado de teclado para pausar o seguir ejecutando un script en [Visual Studio Code][VSCodeShortcuts] es `F5` .  Con el valor preestablecido **DevTools (predeterminado)** , ese mismo método abreviado de DevTools es, `F8` pero con el prefijo de código de **Visual Studio** , ese método abreviado también está ahora `F5` .  
 
 La característica está actualmente disponible en Microsoft Edge 84 como experimento, por lo tanto, comparte tus [comentarios](#getting-in-touch-with-microsoft-edge-devtools-team) con el equipo.  
 
@@ -281,10 +281,10 @@ Si está en Windows o macOS, considere la posibilidad de usar los [canales de Mi
 
 <!-- image links -->  
 
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "Icono configuración de DevTools"
-[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png "Botón de alternancia de DevTools"
-[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png "Icono de página de actualización del panel de rendimiento de DevTools"
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png "Icono de registro del panel de rendimiento de DevTools"
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/settings-icon.msft.png  
+[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/toggle-screencast-icon.msft.png  
+[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/refresh-page-icon.msft.png  
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/record-icon.msft.png  
 
 <!-- links -->  
 

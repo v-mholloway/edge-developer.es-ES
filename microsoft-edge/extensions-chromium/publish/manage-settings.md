@@ -1,20 +1,20 @@
 ---
 description: Guía de administración de la cuenta del centro de Partners de Microsoft Edge.
-title: Administrar la configuración de la cuenta
+title: Actualizar la configuración de la cuenta
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/21/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: c5dbc4d05dcb91d57ef90553fdf97dae2813ebb4
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+ms.openlocfilehash: 2d7bfa3c33bb7f32745fac13b8f5765c122e975d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607387"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015740"
 ---
-# Administrar la configuración de la cuenta  
+# Actualizar la configuración de la cuenta  
 
 Administra la configuración de la cuenta de Microsoft Edge Developer.  Puedes ver y actualizar la configuración de tu cuenta y los detalles de tu perfil en la sección configuración de la cuenta del [centro de Partners][MicrosoftPartnerCenter].  
 

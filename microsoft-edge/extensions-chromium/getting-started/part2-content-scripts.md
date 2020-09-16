@@ -1,22 +1,24 @@
 ---
-description: Extensiones Introducción a la parte 1
+description: Extensiones Introducción a la parte 2
 title: Insertar dinámicamente la imagen de la NASA debajo de la etiqueta cuerpo de página con scripts de contenido
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-cromo, desarrollo web, HTML, CSS, JavaScript, desarrollador, extensiones
-ms.openlocfilehash: b37184f0188b72ec868ab3de3f2341c0694ee42c
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683647"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015761"
 ---
 # Insertar dinámicamente la imagen de la NASA debajo de la etiqueta cuerpo de página con scripts de contenido  
-  
-[Origen del paquete de extensión completado para este elemento][ArchiveExtensionGettingStartedPart2]  
+
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
+-->  
 
 ## Introducción  
 
@@ -61,8 +63,8 @@ En primer lugar, actualice el `popup.html` archivo con una marca hacia adelante 
 
 Después de actualizar la extensión y seleccionar el icono de inicio de la extensión, el tiene la siguiente ventana emergente incluye un botón Mostrar.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="visualización de Popup. html después de presionar el icono de extensión":::
-   visualización de Popup. html después de presionar el icono de extensión
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html Mostrar después de pulsar el icono de extensión":::
+   popup.html Mostrar después de pulsar el icono de extensión
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
@@ -139,7 +141,7 @@ Para ello, debe agregar otra entrada en el `manifest.json` archivo.  Debe declar
 
 Ya ha escrito el código en el `popup.js` archivo para enviar un mensaje a la página de contenido que está insertada en la página de la pestaña activa actual, pero no ha creado e insertado esa página de contenido.  Hágalo ahora.  
 
-## Actualización del manifiesto. JSON para contenido y acceso web  
+## Actualizar su manifest.jspara contenido y acceso web  
 
 La actualización `manifest.json` que incluye el `content-scripts` y `web_accessible_resources` es la siguiente.  
 
@@ -219,8 +221,8 @@ Cuando el agente de escucha procesa un evento, se ejecuta la función que es el 
 
 Ahora, cuando vaya a cualquier página y seleccione el icono de **extensión** , el menú emergente aparecerá de la siguiente manera.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="visualización de Popup. html después de presionar el icono de extensión":::
-   visualización de Popup. html después de presionar el icono de extensión
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html Mostrar después de pulsar el icono de extensión":::
+   popup.html Mostrar después de pulsar el icono de extensión
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
