@@ -7,12 +7,12 @@ ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-cromo, desarrollo web, HTML, CSS, JavaScript, desarrollador, extensiones
-ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fd2276c069116a7f69f06ae50f201e284b60f3ea
+ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015761"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016732"
 ---
 # Insertar dinámicamente la imagen de la NASA debajo de la etiqueta cuerpo de página con scripts de contenido  
 
@@ -32,7 +32,7 @@ En la parte 2, aprenderá a actualizar el menú emergente para no mostrar la ima
 
 ## Quitar la imagen de la ventana emergente y reemplazarla por un botón  
 
-En primer lugar, actualice el `popup.html` archivo con una marca hacia adelante recta que muestre un título y un botón.  En breve puedes programar ese botón, pero por ahora solo tienes que incluir una referencia a un archivo de JavaScript vacío `popup.js` .  Aquí es Update HTML.  
+En primer lugar, actualice el `popup.html` archivo con una marca hacia adelante recta que muestre un título y un botón.  Podrás programar ese botón muy pronto, pero por ahora, solo debes incluir una referencia a un archivo de JavaScript vacío `popup.js` .  Aquí es Update HTML.  
 
 ```html
 <html>
