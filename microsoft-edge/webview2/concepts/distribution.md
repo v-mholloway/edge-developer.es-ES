@@ -1,80 +1,90 @@
 ---
 description: Opciones de distribución al publicar una aplicación con Microsoft Edge WebView2
-title: Distribución de la aplicación Microsoft Edge WebView2
+title: Distribución de aplicaciones de Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: 3536b749c8a3389b5e247e42f53abf74a9e3281e
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 7db610ff1133b1b5b380372422f1f2f10981e583
+ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010771"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052189"
 ---
 # Distribución de aplicaciones con WebView2  
 
-El control WebView2 usa la plataforma Microsoft Edge \ (cromo \).  Cuando empaquete y distribuyas tu aplicación, asegúrate de que haya una copia de la plataforma o el tiempo de ejecución de WebView2 antes de que se inicie la aplicación.  En la siguiente página se describe cómo \ (el desarrollador \) puede asegurarse de que se ha instalado el tiempo de ejecución de WebView2 y el uso de los dos modos de distribución para su aplicación de WebView2:  [hoja perenne](#evergreen-distribution-mode) y [versión fija](#fixed-version-distribution-mode).  
+Al distribuir tu aplicación de WebView2, asegúrate de que la plataforma web de respaldo (el [tiempo de ejecución de WebView2](#understanding-the-webview2-runtime) está presente antes de que se inicie la aplicación).  En este artículo se describe cómo los programadores pueden instalar el tiempo de ejecución de WebView2 y usar los dos modos de distribución para su aplicación de WebView2:  [hoja perenne](#evergreen-distribution-mode) y [versión corregida](#fixed-version-distribution-mode).  
 
 ## Modo de distribución de hoja perenne  
 
-El modo de distribución de hoja perenne garantiza que tu aplicación esté aprovechando las últimas características y actualizaciones de seguridad.  El modo de distribución de hoja perenne tiene las siguientes características:  
-
-*   La plataforma web se actualiza automáticamente sin ningún esfuerzo adicional por parte del usuario.  
-*   Todas las aplicaciones que aprovechan el modo de distribución de hoja perenne usan una copia compartida de los binarios de la plataforma, lo que ahorra espacio en el disco.  
-
-Hay varios canales WebView2 que las aplicaciones pueden usar como plataforma Web.  De forma predeterminada, WebView2 se destina al canal más estable disponible en el dispositivo que cumple los requisitos de versión mínima del SDK de WebView2.  Los canales siguientes aparecen ordenados en orden desde el canal más estable al menos estable.  
-
-1.  WebView2 Runtime \ (versión preliminar \)  
-1.  Canal Microsoft Edge Beta  
-1.  Canal Microsoft Edge Dev  
-1.  Canal Microsoft Edge Canary    
-
 > [!NOTE]
-> Se recomienda usar el modelo de distribución de hoja perenne para la mayoría de los programadores.  
+> Se recomienda el modo de distribución de hoja perenne para la mayoría de los programadores.  
 
-> [!IMPORTANT]
-> El canal estable de Microsoft Edge no es un objetivo válido para WebView2, y las razones se describen más adelante.  
+El modo de distribución de hoja perenne garantiza que tu aplicación esté aprovechando las últimas características y actualizaciones de seguridad.  Tiene las siguientes características:  
 
-Para obtener más información sobre el control de versiones, consulte el apartado sobre el [control de versiones][ConceptsVersioning] y [globales][ReferenceWin3209622WebviewIdl].  
+*   La plataforma web subyacente \ (WebView2 Runtime \) se actualiza automáticamente sin esfuerzos adicionales por parte de los programadores.  
+*   Todas las aplicaciones que usan el modo de distribución de hoja perenne usan una copia compartida del tiempo de ejecución de WebView2 perenne, que ahorra espacio en el disco.  
 
-### Comprender el programa de instalación y el tiempo de ejecución de WebView2 (vista previa)  
+### Descripción del tiempo de ejecución de WebView2  
 
-Es posible que el canal estable de Microsoft Edge no se instale en todos los equipos de usuario en los que se ejecuta la aplicación.  En lugar de requerir que los usuarios instalen Microsoft Edge, la aplicación puede usar el tiempo de ejecución de WebView2 perenne y el instalador \ (versión preliminar \).  El tiempo de ejecución de WebView2 es una copia personalizada de los binarios de Microsoft Edge que se usa para ejecutar las aplicaciones de WebView2.  Cuando se instala el motor en tiempo de ejecución de WebView2, los usuarios no pueden usarlo como un explorador normal.  Por ejemplo, no hay ningún acceso directo de escritorio, entrada del menú Inicio, los usuarios no pueden abrir una ventana del explorador con los binarios de tiempo de ejecución, etc.  Todas las aplicaciones de WebView2 de hoja perenne del dispositivo pueden usar una única instalación de hoja de WebView2 en tiempo de ejecución.  
+El tiempo de ejecución de WebView2 es un Runtime redistribuible y actúa como la plataforma web de respaldo para aplicaciones de WebView2.  Este concepto es similar a VC + + o .NET Runtime para aplicaciones de/.NET de C++.  En el tiempo de ejecución, el motor en tiempo de ejecución modifica los binarios de Microsoft Edge \ (cromo \) que se han optimizado y probado para las aplicaciones.  El motor en tiempo de ejecución no aparecerá como un explorador visible para el usuario durante la instalación; por ejemplo, los usuarios no tendrán un acceso directo al escritorio del explorador ni una entrada del menú Inicio.  
 
-Hoy, durante la vista previa, el tiempo de ejecución de WebView2 perenne y el canal de desarrollo de Microsoft Edge se actualizan al mismo tiempo y tienen la misma compilación.  En el futuro, durante la versión preliminar, el equipo de WebView2 planea actualizar el tiempo de ejecución de WebView2 y hacer coincidir la misma compilación que el canal de Microsoft Edge beta.  En el futuro, cuando WebView2 alcance la disponibilidad general \ (GA \), el equipo de WebView2 planea actualizar el tiempo de ejecución de WebView2 y coincidir con la misma compilación que el canal estable de Microsoft Edge.  Después de GA, las aplicaciones deben usar el tiempo de ejecución de WebView2 en producción.  
+Para el desarrollo y las pruebas, los desarrolladores pueden usar el motor en tiempo de ejecución o cualquier canal de explorador de Microsoft Edge \ (cromo \) no estable para la plataforma web de respaldo.  En los entornos de producción, los desarrolladores deben asegurarse de que el tiempo de ejecución está presente en los dispositivos de usuario antes de que se inicie la aplicación.  El canal estable de Microsoft Edge no está disponible para que el uso de WebView2 impida que las aplicaciones tomen una dependencia en el explorador en producción.  
 
-> [!IMPORTANT]
-> No envíe aplicaciones de WebView2 en producción durante la versión preliminar.  
+Los desarrolladores no deben tomar una dependencia en el explorador porque:  
 
-Se recomienda a los desarrolladores asegurarse de que el tiempo de ejecución de WebView2 de perenne se instala antes de que se inicie la aplicación. A continuación se muestra un flujo de trabajo de ejemplo.  
+*   No se garantiza que Microsoft Edge \ (cromo \) esté presente en todos los dispositivos de usuario.  Por ejemplo, los dispositivos desconectados de Windows Update o no administrados por Microsoft directamente \ (una gran parte del mercado Enterprise/EDU \) pueden no tener el explorador.  Permitir a los desarrolladores distribuir el tiempo de ejecución de WebView2 evita tener que tomar una dependencia en el explorador como requisito previo para las aplicaciones.
+*   Los exploradores y las aplicaciones tienen diferentes casos de uso, por lo que tomar una dependencia en un explorador puede tener efectos secundarios no deseados en las aplicaciones.  Por ejemplo, los administradores de TI pueden controlar el control de versiones del explorador para la compatibilidad con sitios Web internos.  WebView2 Runtime permite a las aplicaciones mantener la hoja perenne mientras se administran activamente las actualizaciones del explorador.  
+*   A diferencia del explorador, el motor en tiempo de ejecución se desarrolla y se prueba para escenarios de aplicación y, en algunos casos, puede incluir correcciones de errores que aún no estén disponibles en el explorador.  
 
-1.  Descargue el último [instalador de WebView2 de perenne][Webview2Installer].  
-1.  Incluya el instalador en el instalador o actualizador de la aplicación.  
-1.  Durante la instalación o actualización de la aplicación, compruebe si el tiempo de ejecución de WebView2 perenne ya está instalado en el equipo del usuario mediante la API de [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) y comprobar si versionInfo es NULL. Si no se instala, el instalador o actualizador de aplicaciones puede invocar silenciosamente el instalador en tiempo de ejecución desde un proceso o símbolo del sistema con privilegios elevados `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+El tiempo de ejecución de WebView2 de perenne está planeado para enviar la bandeja de entrada en versiones futuras de Windows.  Antes de que el tiempo de ejecución esté más disponible universalmente, se recomienda a los programadores implementar el motor de tiempo de ejecución junto con su aplicación de producción.  
 
-Según el escenario, es posible que tenga que cambiar el flujo de trabajo anterior.  Por ejemplo, el instalador de la aplicación puede descargar el instalador de tiempo de ejecución de WebView2 de perenne en lugar de incluirlo en el paquete de la aplicación.  
+### Implementar el tiempo de ejecución de WebView2 de hoja perenne  
 
-> [!NOTE]
-> Tanto el Runtime de WebView2 como el instalador de tiempo de ejecución de WebView2 están en versión preliminar.  La vista previa tiene un ámbito inicial limitado y solo está disponible como una instalación independiente por máquina en Windows 10 en x64.  En el futuro, se planea el soporte técnico para Windows 7, x86 y ARM64.  
+Solo se necesita una instalación del tiempo de ejecución de WebView2 de perenne para todas las aplicaciones de hoja perenne del dispositivo.  Hay varias herramientas disponibles en la [Página de descarga de tiempo de ejecución de WebView2][Webview2Installer] para ayudar a los desarrolladores a implementar el tiempo de ejecución de hoja perenne, como:  
 
-### Procedimientos recomendados para usar WebView2 Runtime y canales de Microsoft Edge no estables  
+*   El programa previo en tiempo de ejecución de WebView2 \ (que se publicará pronto \) es un pequeño \ (aproximadamente 2 MB \) instalador.  Este instalador descarga e instala el tiempo de ejecución de perenne de los servidores de Microsoft que coincidan con la arquitectura de dispositivo del usuario.  
+*   Vínculo para descargar el programa previo \ (que se publicará pronto \) es un vínculo para que los desarrolladores descarguen el programa previo mediante programación.
+*   El instalador independiente de WebView2 en tiempo de ejecución es un instalador completo que puede instalar el Runtime de WebView2 de perennes en entornos sin conexión.  
 
-Tenga en cuenta las siguientes recomendaciones durante la vista previa.  
+Actualmente, el programa previo y el instalador independiente solo admiten la instalación por máquina, que requiere elevación.  Cuando se ejecuta sin elevación, aparece un mensaje de control de cuenta de usuario de Windows para pedir a los usuarios que eleven los permisos.  
 
-*   Asegúrese de usar el [programa de instalación y el tiempo de ejecución de WebView2 de hoja perenne][Webview2Installer] para desarrollar o probar la canalización de empaquetado y distribución.  En el futuro, la aplicación de producción debe incluir el instalador.  
-*   Para desarrollar la aplicación, puede usar el tiempo de ejecución de WebView2 perenne.  Sin embargo, a medida que el tiempo de ejecución se desplaza del canal de desarrollo al canal de versión beta o al canal estable, es posible que el número de compilación de tiempo de ejecución no cumpla los requisitos de versión mínimos del SDK de WebView2 Preview.  Si desea usar el SDK más reciente, instale el canal Canarias de Microsoft Edge para asegurarse de que haya una compilación compatible disponible en el dispositivo.  Para obtener más información sobre el control de versiones, consulte [control de versiones][ConceptsVersioning].  
-*   Para comprobar la compatibilidad de su contenido web con los cambios de la plataforma que no está disponible en el canal estable, use el canal no estable adecuado según sea necesario.  
+Recomendamos los siguientes flujos de trabajo para garantizar que el tiempo de ejecución ya esté instalado antes de que se inicie la aplicación.  Puede ajustar el flujo de trabajo en función de su escenario.  También proporcionaremos código de ejemplo en el futuro.  
+
+#### Implementación solo en línea  
+
+Si tiene un escenario de implementación solo en línea donde se supone que los usuarios finales tienen acceso a Internet, siga estos pasos:  
+
+*   Durante la configuración de la aplicación, compruebe si el motor en tiempo de ejecución ya lo ha instalado:  
+    *   Inspeccionar si existe la clave `pv (REG_SZ)` de aplicación en `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` o  
+    *   Llamar a la API de WebView2 [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) y comprobar si versionInfo es NULL.  
+*   Si el motor en tiempo de ejecución no está instalado, usa el vínculo para descargar el programa previo mediante programación.  
+*   Invocar el programa previo desde un proceso o símbolo del sistema elevado con `MicrosoftEdgeWebview2Setup.exe /silent /install` para la instalación silenciosa.  
+
+Este flujo de trabajo le asegura que instale el Runtime solo cuando sea necesario, no es necesario que Empaquete los instaladores o detecte la arquitectura de los dispositivos de usuario, y puede instalar el motor en tiempo de ejecución de forma silenciosa.  También puede optar por empaquetar el programa previo con la aplicación en lugar de descargarlo mediante programación a petición.  
+
+#### Implementación sin conexión  
+
+Si tiene un escenario de implementación sin conexión en el que la implementación de aplicaciones debe trabajar sin conexión, realice los siguientes pasos:  
+
+*   Descargue el [instalador independiente][Webview2Installer].  
+*   Incluya el instalador en el instalador o actualizador de la aplicación.  
+*   Durante la configuración de la aplicación, compruebe si el motor en tiempo de ejecución ya lo ha instalado:  
+    *   Inspeccionar si existe la clave `pv (REG_SZ)` de aplicación en `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` o  
+    *   Llamar a la API de WebView2 [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) y comprobar si versionInfo es NULL.  
+*   Si el motor en tiempo de ejecución no está instalado, invoque el instalador independiente desde un proceso con privilegios elevados o un símbolo del sistema con `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` para una instalación silenciosa.  
 
 ## Modo de distribución de versiones fijas  
 
 > [!NOTE]
-> El modelo de distribución de versiones fijo no está disponible en este momento.  
+> El modo de distribución de versiones fijas aún no está disponible.  
 
-En el caso de entornos restringidos, hay planes para admitir un modo de distribución de versión corregido \ (denominado "poner en servicio").  El modo de distribución de versiones fijo le permite seleccionar y empaquetar una versión específica del tiempo de ejecución de WebView2.  El modo de distribución de versiones fijo le permite controlar qué versión de tiempo de ejecución de WebView2 usa la aplicación, y cuándo se actualizan los equipos de usuario.  El modo de distribución de versiones fijo no recibe actualizaciones automáticas y debe planear la aplicación manual de actualizaciones.  
+En el caso de entornos restringidos, hay planes para admitir una versión fija, previamente denominada traiga-Your-Own, modo de distribución.  El modo de distribución de versiones fijo permite a los desarrolladores seleccionar y empaquetar una versión específica del tiempo de ejecución de WebView2.  El modo de distribución de versiones fijo le permite controlar qué versión de tiempo de ejecución de WebView2 usa la aplicación, y cuándo se actualizan los equipos de usuario.  El modo de distribución de versiones fijo no recibe actualizaciones automáticas y los desarrolladores deben planear la aplicación de las actualizaciones.  
+
 
 <!-- links -->  
 
