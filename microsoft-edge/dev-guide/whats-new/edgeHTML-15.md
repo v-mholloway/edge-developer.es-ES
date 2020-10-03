@@ -1,35 +1,35 @@
 ---
-description: Esta guía proporciona una descripción general de las características y los estándares para desarrolladores incluidos en EdgeHTML 15.
-title: Nuevas características y API de EdgeHTML 15
+description: This guide provides an overview of the developer features and standards included in EdgeHTML 15.
+title: New features and APIs in EdgeHTML 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador
+keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
-ms.openlocfilehash: 4febe4be1fce29207de7a57b61d96eae0a5c02ab
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.openlocfilehash: 4fd0bbc06d27bace424ea99cfe9941aabc737fee
+ms.sourcegitcommit: 204a284e21bf2da5cdc862c5e8b5839245abbbbc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10941918"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "11094364"
 ---
-# Novedades de EdgeHTML 15  
+# What's new in EdgeHTML 15  
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Estos son los cambios que se incluyen en la versión actual de la plataforma Microsoft Edge, a partir de la [actualización de Windows 10 Creators](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \ (04/2017, compilación 15063 \).  Para obtener información general sobre los cambios en el explorador general de Microsoft Edge, consulte [novedades de Microsoft Edge en Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11).  
+Here are the changes shipped with the current release of the Microsoft Edge platform, as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \(04/2017, Build 15063\).  For an overview of changes to the overall Microsoft Edge browser, see [What's new in Microsoft Edge in the Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11).  
 
-Para obtener información sobre los cambios en versiones posteriores de Windows Insider Preview, vea [novedades de EdgeHTML](../whats-new.md).  
+For changes in subsequent Windows Insider Preview builds, see [What's New in EdgeHTML](../whats-new.md).  
 
-Este es el vínculo permanente de la siguiente lista de cambios:  [https://aka.ms/devguide_edgehtml_15](./edgehtml-15.md) .  
+Here's the permalink for the following list of changes:  [https://aka.ms/devguide_edgehtml_15](./edgehtml-15.md).  
 
-## Nuevas características  
+## New features  
 
-### Propiedades personalizadas de CSS  
+### CSS Custom Properties  
 
-Microsoft Edge ahora es compatible con [las propiedades personalizadas CSS](https://drafts.csswg.org/css-variables), a. k. a variables de CSS.  Las variables CSS permiten crear propiedades CSS personalizadas que se pueden volver a usar en las hojas de estilo para ayudar a reducir la cantidad de datos duplicados, como los colores repetidos.  El uso de variables CSS es simple:  
+Microsoft Edge now supports [CSS Custom Properties](https://drafts.csswg.org/css-variables), a.k.a CSS Variables.  CSS Variables allow you to create custom CSS properties that can be reused throughout stylesheets to help reduce the amount of duplicate data, like repeated colors.  Using CSS Variables is simple:  
 
 ```css
 /* define a custom property by using two dashes and assign it a value */
@@ -43,135 +43,135 @@ h1 {
 }
 ```  
 
-### Observador de intersección  
+### Intersection Observer  
 
-EdgeHTML 15 presenta la especificación de la [API de intersección de Observer](https://w3c.github.io/IntersectionObserver) .  La API de Intersection Observer le permite consultar de forma asincrónica la posición y visibilidad de los elementos DOM en relación con otros elementos o la ventanilla global.  Esta API elimina la necesidad de códigos caros personalizados creando un método para notificar a los elementos de forma eficaz cuando están en vista.  
+EdgeHTML 15 introduces the [Intersection Observer API](https://w3c.github.io/IntersectionObserver) specification.  The Intersection Observer API allows you to asynchronously query the position and visibility of DOM elements relative to other elements or the global viewport.  This API eliminates the need for custom expensive code by creating a method to efficiently notify elements when they are in view.  
 
 ### JavaScript  
 
-Las optimizaciones de rendimiento llevan la fase central con el EdgeHTML 15 Rev del motor de JavaScript de Chakra.  Con Windows 10 Creators Update, Chakra ahorra memoria reduciendo las funciones y optimizando los argumentos del montón y mejora el rendimiento del código minified.  
+Performance optimizations take center stage with the EdgeHTML 15 rev of the Chakra JavaScript engine.  With the Windows 10 Creators Update, Chakra saves memory by re-deferring functions and optimizing away heap arguments and improves performance for minified code.  
 
-Además, EdgeHTML 15 presenta las siguientes vistas previas de características:  
+Additionally, EdgeHTML 15 introduces the following feature previews:  
 
-#### Características experimentales de JavaScript  
+#### Experimental JavaScript features  
 
-Habilitado con `about:flags`  
+Enabled with `about:flags`  
 
-*   [Webassembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \ ([Demo](https://webassembly.org/demo)\)  
-*   [Memoria compartida y atómicas](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
+*   [WebAssembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \([demo](https://webassembly.org/demo)\)  
+*   [Shared Memory and Atomics](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
 
-Para obtener más información, consulta el [rendimiento, el ensamblado Webassembly y la memoria compartida de JavaScript mejorados en Microsoft Edge](https://blogs.windows.com/msedgedev/2017/04/20) .  
+See [Improved JavaScript performance, WebAssembly, and Shared Memory in Microsoft Edge](https://blogs.windows.com/msedgedev/2017/04/20) for further details.  
 
-### API de solicitud de pago  
+### Payment Request API  
 
-Ahora se admite la [API de solicitud de pago](https://w3.org/TR/payment-request) , lo que permite una desprotección y pagos más sencillos en la web en equipos y teléfonos con Windows 10.  Esta API permite que Microsoft Edge actúe como intermediario entre comerciantes, consumidores y las formas de pago \ (como tarjetas de crédito \) que los consumidores han almacenado en la nube.  Para obtener más información sobre la API de solicitud de pago, consulta [pagos Web más sencillos: Presentamos la API de solicitud](https://blogs.windows.com/msedgedev/2016/12/15) de pago y la guía para desarrolladores de la [API de solicitud de pago](/microsoft-edge/dev-guide/device/payment-request-api) .  
+The [Payment Request API](https://w3.org/TR/payment-request) is now supported, enabling simpler checkout and payments on the web on Windows 10 PCs and Phones.  This API enables Microsoft Edge to act as an intermediary between merchants, consumers, and the payment methods \(such as credit cards\) that consumers have stored in the cloud.  For more information on the Payment Request API, check out [Simpler web payments: Introducing the Payment Request API](https://blogs.windows.com/msedgedev/2016/12/15) and the [Payment Request API](/microsoft-edge/dev-guide/device/payment-request-api) developer guide.  
 
 ### TCP Fast Open (TFO)  
-TCP Fast Open es una característica que reduce el número de viajes de ida y vuelta necesarios para abrir una conexión TCP, lo que mejora el rendimiento de la red del explorador.  Para obtener más información, consulte [creación de una web más rápida y segura con TCP Fast Open](https://blogs.windows.com/msedgedev/2016/06/15).  Debido a diferencias de interoperabilidad en varias topologías de red, esta característica no está habilitada de forma predeterminada en Microsoft Edge.  Para habilitarlo, escriba `about:flags` la barra de direcciones y seleccione la casilla **Habilitar TCP Fast Open** en la sección **redes** .  
+TCP Fast Open is a feature that reduces the number of round trips required to open a TCP connection, improving browser networking performance.  For more details, see [Building a faster and more secure web with TCP Fast Open](https://blogs.windows.com/msedgedev/2016/06/15).  Due to interoperability differences in various network topologies, this features is not enabled by default in Microsoft Edge.  To enable it, type `about:flags` in your address bar, and select the checkbox for **Enable TCP Fast Open** under the **Networking** section.  
 
-### WebRTC e interoperabilidad compatible con códecs de vídeo de RTC  
+### WebRTC and interoperable RTC video codec support  
 
-EdgeHTML 15 es compatible con un subconjunto de la API de WebRTC 1,0 para la interoperabilidad con aplicaciones creadas con versiones anteriores de la API W3C WebRTC-PC, que incluye 2015.  Para obtener más información, consulta la referencia de la [API de WebRTC](/previous-versions//mt806139(v=vs.85)) .  
+EdgeHTML 15 supports a subset of the WebRTC 1.0 API for interoperability with applications built with earlier versions of the W3C WebRTC-PC API circa 2015.  See the [WebRTC API reference](/previous-versions//mt806139(v=vs.85)) for details.  
 
-Para aprovechar las características más avanzadas de la comunicación de audio y vídeo de punto a punto, recomendamos usar la [API de comunicación en tiempo real](https://ortc.org).  La API de ORTC es más adecuada para situaciones en las que desees configurar llamadas de audio y videollamadas grupales, o para controlar directamente los objetos de transporte, remitente y receptor individual.  
+To take advantage of our most advanced features in peer-to-peer audio and video communication, we recommend using the [Object Real-Time Communication) API](https://ortc.org).  The ORTC API is better suited for situations where you want to set up group audio and video calls, or directly control individual transport, sender, and receiver objects.  
 
-Microsoft Edge admite el vídeo H. 264/AVC y VP8 con ORTC y WebRTC 1,0, y ofrece las siguientes características en apoyo de ambos tipos de códec: [ABS-Send-Time](https://webrtc.org/experiments/rtp-hdrext/abs-send-time), [GOOG-Remb](https://tools.ietf.org/html/draft-alvestrand-rmcat-remb-03), [indicación de pérdida de imagen y comentarios genéricos de Nack](https://tools.ietf.org/html/rfc4585), [retransmisión de RTP](https://tools.ietf.org/html/rfc4588).  
+The Microsoft Edge supports both H.264/AVC and VP8 video with ORTC and WebRTC 1.0, and provides the following features in support of both codec types: [abs-send-time](https://webrtc.org/experiments/rtp-hdrext/abs-send-time), [goog-remb](https://tools.ietf.org/html/draft-alvestrand-rmcat-remb-03), [Picture Loss Indication and Generic NACK feedback](https://tools.ietf.org/html/rfc4585), [RTP Retransmission](https://tools.ietf.org/html/rfc4588).  
 
-Para obtener más información, consulta [Introducción a WebRTC 1,0 y comunicaciones interoperables en tiempo real en Microsoft Edge](https://blogs.windows.com/msedgedev/2017/01/31).  
+For more info, see [Introducing WebRTC 1.0 and interoperable real-time communications in Microsoft Edge](https://blogs.windows.com/msedgedev/2017/01/31).  
 
 ### WebVR  
 
-Microsoft Edge ahora tiene compatibilidad con [WebVR](https://immersive-web.github.io/webxr), una API experimental que conecta las pantallas montadas de Windows Mixed Reality y Microsoft Edge.  Esta conexión permite que el contenido de VR se pueda experimentar en un sitio web, lo que significa que las experiencias de VR envolventes ya no se limitan a las aplicaciones de escritorio.  
+Microsoft Edge now has support for [WebVR](https://immersive-web.github.io/webxr), an experimental API that connects Windows Mixed Reality head mounted displays and Microsoft Edge.  This connection enables VR content to be experienced within a website, meaning immersive VR experiences are no longer limited to desktop applications.  
 
-La realidad virtual de Microsoft Edge es powered by WebGL, una API de JavaScript para representar gráficos 3D y 2D.  Las aplicaciones de WebGL y las aplicaciones creadas con bibliotecas de WebGL como BabylonJS son compatibles.  Una vez conectado, WebVR envía objetos visuales que corresponden a la posición y la información del sensor en los auriculares con micrófono.  La API de WebVR también admite controladores espaciales gracias a una extensión de la [API del controlador para juegos](../dom/gamepad-api.md).  Esta API está activada de forma predeterminada, por lo que no es necesario activar una marca.  
+Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics.  WebGL applications and applications built with WebGL libraries like BabylonJS are supported.  Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset.  The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](../dom/gamepad-api.md).  This API is on by default, so no need to toggle a flag.  
 
-Consulta la referencia de la [API de WebVR](/previous-versions//mt806281(v=vs.85)) y la referencia de la [API de controlador](https://developer.mozilla.org/docs/Web/API/Gamepad_API) para obtener más información.  
+See the [WebVR API reference](/previous-versions//mt806281(v=vs.85)) and [Gamepad API reference](https://developer.mozilla.org/docs/Web/API/Gamepad_API) for details.  
 
  > [!NOTE] 
- > Puesto que la especificación de WebVR aún está en desarrollo, la implementación de Microsoft Edge puede cambiar más adelante en la línea.  
+ > Since the WebVR spec is still in development, Microsoft Edge's implementation may change later down the line.  
 
-## Características actualizadas  
+## Updated features  
 
-### Directiva de seguridad de contenido (nivel 2)  
+### Content Security Policy (Level 2)  
 
-Los sitios que ya usan CSP 1 deberían seguir funcionando con el soporte técnico de Microsoft Edge para CSP 2, pero es mejor cambiar cualquier directiva `frame-src` que cargue scripts de trabajo a la nueva `child-src` Directiva para mejorar el sitio en el futuro.  \ (En el CSP 3, ya `frame-src` no se aplicará a los trabajadores. \) CSP 2 también agrega lo siguiente:  
+Sites already using CSP 1 should continue to work with Microsoft Edge support for CSP 2, however it's best to switch any `frame-src` directives that load worker scripts to the new `child-src` directive to future-proof your site.  \(In CSP 3, `frame-src` will no longer apply to workers.\) CSP 2 also adds the following:  
 
 :::row:::
    :::column span="1":::
-      Nuevas directivas  
+      New directives  
    :::column-end:::
    :::column span="2":::
-      `base-uri`, `child-src` , `form-action` , `frame-ancestors` y `plugin-types` .  Para obtener más información, consulta las [directivas de CSP compatibles con Microsoft Edge](../security/content-security-policy.md) .  
+      `base-uri`, `child-src`, `form-action`, `frame-ancestors` and `plugin-types`.  See [Microsoft Edge supported CSP directives](../security/content-security-policy.md) for more.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Asistencia para trabajadores  
+      Workers support  
    :::column-end:::
    :::column span="2":::
-      Los scripts de trabajo en segundo plano se rigen por su propia Directiva, aparte de la Directiva del documento que los carga.  Al igual que con los documentos host, puede establecer el CSP para un trabajador en el encabezado de respuesta.  Otra novedad en el CSP 2 es  `allow-scripts` que `allow-same-origin` los indicadores de la `sandbox` Directiva afectan ahora a la creación de subprocesos de trabajo.  
+      Background worker scripts are governed by their own policy, separate from the policy of the document loading them.  As with host documents, you can set the CSP for a worker in the response header.  Also new in CSP 2 is that  `allow-scripts` and `allow-same-origin` flags of the `sandbox` directive now affect worker thread creation.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Scripts y estilos en línea  
+      Inline scripts and styles  
    :::column-end:::
    :::column span="2":::
-      CSP 2 permite la ejecución de scripts y bloques de estilos en línea proporcionando nonces y hash como mecanismo de lista blanca.  Nonces son valores base aleatorios de 64 que se generan en cada carga de página que aparece en la Directiva de CSP y en las etiquetas de script de la página.  Cuando la página se genera dinámicamente durante la carga, el servidor genera un valor nonce, la inserta en la NonceToken de la página y también la declara en el encabezado HTTP de la Directiva de seguridad de contenido.  Los valores hash son valores estáticos generados \ (a través de algoritmos SHA256, SHA384 o SHA512 \) del contenido de un `<script>` `<style>` elemento o que después se especifican \ (Via `script-src` o `style-src` directivas \) en la Directiva de CSP.  
+      CSP 2 allows for the execution of inline scripts and style blocks by providing nonces and hashes as a allow-listing mechanism.  Nonces are random base-64 values generated on each page load that appears in both the CSP policy and in the script tags in the page.  When the page is dynamically generated on load, the server generates a nonce value, inserts it into the NonceToken in the page and also declares it in the Content Security Policy HTTP header.  Hashes are static values generated \(using sha256, sha384 or sha512 algorithms\) from the content of a `<script>` or `<style>` element that are then specified \(using `script-src` or `style-src` directives\) in the CSP policy.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      Informe de infracción de CSP  
+      CSP violation reporting  
    :::column-end:::
    :::column span="2":::
-      Ahora se desencadena un evento nuevo en las `SecurityPolicyViolationEvent` infracciones de CSP.  El mecanismo anterior para los informes de CSP, `report-uri` sigue siendo compatible.  Se han agregado varios campos nuevos a los informes de infracción comunes a ambos, incluyendo `effectiveDirective` \ (la Directiva que se ha infringido \), `statusCode` \ (el código de respuesta http \), `sourceFile` \ (la dirección URL del recurso infractor \), `lineNumber` , y `columnNumber` .  
+      A new event, `SecurityPolicyViolationEvent` is now fired upon CSP violations.  The earlier mechanism for CSP reporting, `report-uri`, continues to be supported.  Several new fields have been added to the violation reports common to both, including `effectiveDirective` \(the policy that was violated\), `statusCode` \(the HTTP response code\), `sourceFile` \(the URL of the offending resource\), `lineNumber`, and `columnNumber`.  
    :::column-end:::
 :::row-end:::  
 
-### Autenticación Web  
+### Web Authentication  
 
-La compatibilidad de Microsoft Edge para la [API de autenticación Web](../device/web-authentication.md) emergente con [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometría se ha actualizado con los siguientes cambios:  
+Microsoft Edge support for the emerging [Web Authentication API](../device/web-authentication.md) using [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics has been updated with the following changes:  
 
-*   La implementación inicial de la API experimental de autenticación Web introducida en [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04) \ (actualización de aniversario de Windows 10, compilación 10240, 7/2016 \) se expuso a través de las API prefijadas \ (la interfaz [MSCredentials](/previous-versions//mt697639(v=vs.85)) \).  Aunque estas API siguen estando disponibles en el EdgeHTML 15, ahora se han dejado de utilizar en favor de las API y comportamientos no prefijos y basados en estándares definidos en una [instantánea más reciente](https://w3.org/TR/2016/WD-webauthn-20160928) de la especificación, y es probable que sigan cambiando a medida que la especificación madura de la estandarización.  
+*   The initial implementation of the experimental Web Authentication API introduced in [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04) \(Windows 10 Anniversary Update, build 10240, 7/2016\) was exposed through MS- prefixed APIs \(the [MSCredentials](/previous-versions//mt697639(v=vs.85)) interface\).  While these APIs are still available in EdgeHTML 15, they are now deprecated in favor of the non-prefixed, standards-based APIs and behaviors defined in a more [recent snapshot](https://w3.org/TR/2016/WD-webauthn-20160928) of the specification, and are likely to continue changing as the spec matures toward standardization.  
 
-*   La implementación más reciente de Microsoft Edge está desactivada de forma predeterminada y se envía detrás de una marca \ (escriba `about:flags` en la barra de direcciones para activar la característica \).  
+*   The latest Microsoft Edge implementation is turned off by default and ships behind a flag \(type `about:flags` in your address bar to turn on the feature\).  
 
-*   Microsoft Edge aún no admite credenciales externas como SerialKeys o dispositivos Bluetooth.  La API actual está limitada a las credenciales incrustadas almacenadas en el TPM.  Se usa una reserva de software si el TPM no está disponible en el dispositivo.  
+*   Microsoft Edge does not yet support external credentials like USB keys or Bluetooth devices.  The current API is limited to embedded credentials stored in the TPM.  A software fallback is used if TPM is not available on the device.  
 
-*   La cuenta de usuario de Windows actualmente conectada debe estar configurada para admitir al menos un PIN y, preferiblemente, una cara o una biometría de huellas digitales.  Esto garantiza que Windows pueda autenticar el acceso al TPM.  
+*   The currently logged in Windows user account must be configured to support at least a PIN, and preferably face or fingerprint biometrics.  This is to ensure that Windows can authenticate the access to the TPM.  
 
-*   De las [extensiones predefinidas](https://w3.org/TR/webauthn/#extension-predef) que se describen en las especificaciones, Microsoft Edge solo admite el [Fido AppID](https://w3.org/TR/webauthn/#extension-appid) \ ( `webauthn_txAuthSimple` \) en este momento.  
+*   Of the [predefined extensions](https://w3.org/TR/webauthn/#extension-predef) described in the spec, Microsoft Edge only supports the [FIDO AppId](https://w3.org/TR/webauthn/#extension-appid) \(`webauthn_txAuthSimple`\) at this time.  
 
-*  La `timeoutSeconds` opción no se evalúa actualmente  
+*  The `timeoutSeconds` option is not currently evaluated  
 
 ### WebDriver  
 
-EdgeHTML 15 trae una serie de actualizaciones de Webdriver, entre las que se incluyen compatibilidad con la marca de la línea de comandos silenciosa y nuevos puntos de conexión:  
+EdgeHTML 15 brings a handful of WebDriver updates including support for the silent command line flag and new command endpoints:  
 
-| Método | Plantilla URI | Comando |  
+| Method | URI Template | Command |  
 |:--- |:---  |:--- |    
-| POST | /Session/{Session ID}/Alert/Accept | [Aceptar alerta](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-accept-alert) |  
-| POST | /Session/{Session ID}/Alert/Dismiss | [Descartar alerta](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-dismiss-alert) |  
-| GET | /Session/{Session ID}/Alert/Text | [Obtener texto de alerta](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-alert-text) |  
-| POST | /Session/{Session ID}/Alert/Text | [Enviar mensaje de alerta](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-send-alert-text) |  
-| POST | /Session/{Session ID}/Execute/Async | [Ejecutar script asincrónico](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-async-script) |  
-| POST | /Session/{Session ID}/Execute/Sync | [Ejecutar script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-script) |  
-| GET | /Session/{Session ID}/window | [Controlador de la ventana obtener](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle) |  
-| GET | /Session/{Session ID}/window/handles | [Obtener identificadores de ventana](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles) |  
+| POST | /session/{session id}/alert/accept | [Accept Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-accept-alert) |  
+| POST | /session/{session id}/alert/dismiss | [Dismiss Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-dismiss-alert) |  
+| GET | /session/{session id}/alert/text | [Get Alert Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-alert-text) |  
+| POST | /session/{session id}/alert/text | [Send Alert Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-send-alert-text) |  
+| POST | /session/{session id}/execute/async | [Execute Async Script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-async-script) |  
+| POST | /session/{session id}/execute/sync | [Execute Script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-script) |  
+| GET | /session/{session id}/window | [Get Window Handle](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle) |  
+| GET | /session/{session id}/window/handles | [Get Window Handles](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles) |  
 
-Para obtener más información y el estado de otras características de Webdriver, consulte [Webdriver](../../webdriver.md).  
+For more info and the status of other WebDriver features, check out [WebDriver](../../webdriver.md).  
 
-## Nuevas API en EdgeHTML 15  
+## New APIs in EdgeHTML 15  
 
-Esta es la lista completa de las API nuevas de EdgeHTML 15.  Se muestran en el formato de `[interface name].[api name]` .  
+Here's the full list of new APIs in EdgeHTML 15.  They are listed in the format of `[interface name].[api name]`.  
 
-<iframe height='582' scrolling='no' title='Nuevas API de EdgeHTML15' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>Consulta las <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'> nuevas API de EdgeHTML15 </a> en Microsoft Edge Docs ( <a href='http://codepen.io/MicrosoftEdgeDocumentation'> @MicrosoftEdgeDocumentation </a> ) en <a href='http://codepen.io'> CodePen </a> .</iframe>  
+<iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'>New EdgeHTML15 APIs</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  
 
-## Versiones anteriores de EdgeHTML  
+## Previous EdgeHTML releases  
 
-[EdgeHTML 12/Windows compilación 10240 (7/2015)](./edgehtml-12.md)  
+[EdgeHTML 12 / Windows build 10240 (7/2015)](./edgehtml-12.md)  
 
-[EdgeHTML 13/Windows compilación 10586 (11/2015)](./edgehtml-13.md)  
+[EdgeHTML 13 / Windows build 10586 (11/2015)](./edgehtml-13.md)  
 
-[EdgeHTML 14/Windows compilación 14393 (8/2016)](./edgehtml-14.md)  
+[EdgeHTML 14 / Windows build 14393 (8/2016)](./edgehtml-14.md)  
