@@ -1,33 +1,33 @@
 ---
-description: Documentación de mensajería nativa
-title: Mensajería nativa
+description: Native messaging documentation
+title: Native Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/28/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: 9d33fc4e8c9449d539b6ea82cca87c3aad4d564e
-ms.sourcegitcommit: 39636248d0266730089aa2e57b9cf04d9feb363d
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+ms.openlocfilehash: c5da9acf79225c88ad5829c2b7f57d1d833ca49b
+ms.sourcegitcommit: 75c200a029d19fe372c1505c0006dbfbfad90bf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088558"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "11100255"
 ---
-# Mensajería nativa  
+# Native messaging  
 
-Las extensiones pueden comunicarse con una aplicación Win32 nativa instalada en el dispositivo de un usuario mediante las API de paso de mensajes. El host de aplicaciones nativas puede enviar y recibir mensajes con extensiones que usan la entrada estándar y la salida estándar. Las extensiones que usan mensajería nativa se instalan en Microsoft Edge de forma similar a cualquier otra extensión. Sin embargo, Microsoft Edge no instala ni administra las aplicaciones nativas.
+Extensions communicate with a native Win32 application installed on a user's device using message passing APIs.  The native application host sends and receives messages with extensions using standard input and standard output.  Extensions using native messaging are installed in Microsoft Edge similar to any other extension.  However, native applications are not installed or managed by Microsoft Edge.  
 
-Para adquirir la extensión y el host de aplicación nativa, puede hacer lo siguiente:
+To acquire the extension and native application host, you have two distribution models.  
 
-1. Empaquetar la extensión y el hospedaje juntos. Cuando los usuarios instalan el paquete, se instalan la extensión y el host.
-1. Instale la extensión desde el [almacén de complementos de Microsoft Edge][EdgeAddons]y pida a los usuarios que instalen el host. 
+*   Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.
+*   Install your extension using the [Microsoft Edge Add-ons store][EdgeAddons], and your extension prompts users to install the host.  
 
-Consulte los pasos siguientes para configurar la extensión para enviar y recibir mensajes con hosts de aplicaciones nativas.
+To create your extension to send and receive messages with native application hosts, refer to the following steps.  
 
-### Paso 1: agregar permisos al manifiesto de la extensión
+## Step 1 - Add permissions to the extension manifest  
 
-Agregue el permiso nativeMessaging a la **manifest.jsde** la extensión. A continuación se muestra un ejemplo de manifest.jsen:
+Add the `nativeMessaging` permission to the **manifest.json** file of the extension.  The following code snippet is an example of **manifest.json**.  
 
 ```json
     {
@@ -43,13 +43,12 @@ Agregue el permiso nativeMessaging a la **manifest.jsde** la extensión. A conti
               "128": "icon-128.png"}, 
           "permissions": ["nativeMessaging"] 
     }
-```
+```  
 
-### Paso 2: crear el archivo de manifiesto de host de mensajería nativa
-    
-Las aplicaciones nativas deben proporcionar un archivo de manifiesto de host de mensajería nativo. Este archivo de manifiesto contiene la ruta de acceso al archivo ejecutable de host de mensajería nativa, el método de comunicación con la extensión y una lista de extensiones permitidas con la que se puede comunicar. Los exploradores leen y validan el manifiesto de host de mensajería original, pero nunca lo instala ni administra el explorador. El archivo de manifiesto de host debe ser un archivo JSON válido que contenga los siguientes campos.
+## Step 2 - Create your native messaging host manifest file  
 
-    
+Native applications must provide a native messaging host manifest file.  The manifest file contains the path to the native messaging host runtime, the method of communication with the extension, and a list of allowed extensions to which it communicates.  The browser reads and validates the native messaging host manifest.  The browser does not install or manage the native messaging host manifest file.  
+
 ```json
     {
         "name": "com.my_company.my_application",
@@ -62,90 +61,174 @@ Las aplicaciones nativas deben proporcionar un archivo de manifiesto de host de 
     }
 ```  
 
+The host manifest file must be a valid JSON file that contains the following keys.  
 
+:::row:::
+   :::column span="1":::
+      `name`  
+   :::column-end:::
+   :::column span="2":::
+      Specifies the name of the native messaging host.  Clients pass this string to `runtime.connectNative` or `runtime.sendNativeMessage`.  
+      
+      *   This value must only contain lowercase alphanumeric characters, underscores, and dots.  
+      *   This value must not start or end with a dot, and a dot must not be followed by another dot.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `description`  
+   :::column-end:::
+   :::column span="2":::
+      Describes the application.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `path`  
+   :::column-end:::
+   :::column span="2":::
+      Specifies the path to the native messaging host binary.  
+      
+      *   On Windows devices, you may use relative paths to the directory that contains the manifest file.  
+      *   On macOS and Linux, the path must be absolute.  
+      
+      The host process starts with the current directory set to the directory that contains the host binary.  For example \(Windows\), if this parameter is set to `C:\Application\nm_host.exe`, the binary is started using the current directory \(`C:\Application\`\).  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `type`  
+   :::column-end:::
+   :::column span="2":::
+      Specifies the type of the interface used to communicate with the native messaging host.  This value instructs Microsoft Edge to use `stdin` and `stdout` to communicate with the host.  
+      The only acceptable value is `stdio`.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      `allowed_origins` 
+   :::column-end:::
+   :::column span="2":::
+      Specifies the list of extensions that have access to the native messaging host.  To enable your application to identify and communicate with an extension, in your native messaging host manifest file set the following value.  
+      
+      ```json
+      "allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]
+      ```  
+   :::column-end:::
+:::row-end:::  
 
+Sideload your extension to test native messaging with the host.  
+To sideload your extension during development and retrieve `microsoft_catalog_extension_id`, complete the following steps.  
 
-| Nombre | Descripción |  
-|:--- |:--- |  
-| `name` | Nombre del host de mensajería nativo. Los clientes pasan esta cadena a `runtime.connectNative` o `runtime.sendNativeMessage` .  Este nombre solo debe contener caracteres alfanuméricos en minúsculas, guiones bajos y puntos.  El nombre no debe empezar ni terminar con un punto, y un punto no debe ir seguido de otro punto. |  
-| `description` | Breve descripción de la aplicación. |  
-| `path` | Ruta de acceso al archivo binario de host de mensajería nativo. En dispositivos con Windows, puede usar rutas relativas al directorio que contiene el archivo de manifiesto. En macOS y Linux, la ruta de acceso debe ser absoluta. El proceso de host se inicia con el directorio actual configurado en el directorio que contiene el binario de host. Por ejemplo, si este parámetro se establece en `C:\Application\nm_host.exe` , el binario se inicia con el directorio actual `C:\Application\` . |  
-| `type` | Tipo de la interfaz usada para comunicarse con el host de mensajería nativo.  Actualmente solo hay un valor posible para este parámetro: `stdio` .  Este valor indica que Microsoft Edge debe usarse `stdin` y `stdout` comunicarse con el host. |  
-| `allowed_origins` |  Lista de extensiones que pueden tener acceso al host de mensajería nativo.  Para permitir que la aplicación identifique y se comunique con una extensión, `allowed_origins` establezca `chrome-extension://[Microsoft-Catalog-extensionID]` en el archivo de manifiesto de host de mensajería nativa. |  
+1.  Navigate to `edge://extensions`, and then turn on the Developer mode toggle button.  
+1.  Choose **Load unpacked**, and then select your extension package to sideload.  
+1.  Choose **OK**.
+1.  Navigate to `edge://extensions` page and verify your extension is listed.  
+1.  Copy the key from `microsoft_catalog_extension_id` \(ID\) from the extension listing on the page.
 
+When you are ready to distribute your extension to users, publish your extension to the Microsoft Edge add-ons store.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.  
 
-Mientras desarrolla, puede transferir su extensión para probar la mensajería nativa con el host:
-1. Navegue a `edge://extensions` y, a continuación, active el botón de alternancia modo de programador. 
-1. Elija cargar Desempaquetado y, a continuación, seleccione el paquete de extensión para transferirlo a la misma.  
-1. Elige Aceptar.
-1. Compruebe que la `edge://extensions` página ahora incluye su extensión. 
-1. Copie la clave desde el identificador de la lista de extensiones de la página.
+## Step 3 - Copy the native messaging host manifest file to your system  
 
-Cuando esté listo para distribuir la extensión a los usuarios, publique la extensión en el almacén de complementos de Microsoft Edge. El identificador de extensión de la extensión publicada puede ser diferente al identificador usado durante la transferencia local de la extensión. Si el identificador ha cambiado, actualiza `allowed_origins` en el archivo de manifiesto de host con el identificador de la extensión publicada. 
+The final step involves copying the native messaging host manifest file to your computer, and ensuring it is configured correctly.  To ensure your manifest file is placed in the expected location, complete the following the steps.  The location varies by platform.  
 
+### [Windows](#tab/windows/)  
 
+<a id="copy-manifest-file"></a>  
 
-### Paso 3: Copie el archivo de manifiesto de host de mensajería nativa en el sistema
+The manifest file may be located anywhere in the file system.  The application installer must create a registry key and set the default value of that key to the full path of the manifest file.  The following commands are examples of registry keys.  
 
-El paso final implica copiar el archivo de manifiesto de host de mensajería nativa en el equipo y asegurarse de que esté configurado correctamente. Siga los pasos que se indican a continuación para asegurarse de que el archivo de host de mensajería nativo se coloca en la ubicación esperada porque varía según la plataforma.
+```text
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application
+```
+
+```text
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application
+```
+
+To add a registry key to the directory with the manifest key.  
+
+*   Run command in command prompt.    
     
-**Windows**. El archivo de manifiesto puede encontrarse en cualquier lugar del sistema de archivos. El instalador de la aplicación debe crear una clave del registro y establecer el valor predeterminado de esa clave en la ruta de acceso completa del archivo de manifiesto. Los siguientes comandos son ejemplos de claves de registro.
+    1.  Run the following command.  
+        
+        ```shell
+        REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
+        ```  
     
-`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`  
-    o  
-`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`,  
+*   Create a `.reg` file and run it.  
     
-Ejecute el comando siguiente en un símbolo del sistema para agregar una clave del registro a la carpeta con el archivo de manifiesto.
+    1.  Copy the following command into a `.reg` file.  
+        
+        ```shell
+        Windows Registry Editor Version 5.00
+        [HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application]
+        @="C:\\path\\to\\nmh-manifest.json"
+        ```  
+        
+    1.  Run the `.reg` file.  
     
-```shell
-REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
-```  
+Microsoft Edge queries the 32-bit registry first, and then the 64-bit registry to identify native messaging hosts.  If you run the above `.reg` file as part of a batch script, ensure you run it using an administrator command prompt.  
+
+### [macOS](#tab/macos/)  
+
+<a id="copy-manifest-file"></a>  
+
+To store the manifest file, complete one of the following actions.  
+
+*   System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the manifest file must be stored in following location. 
     
-Como alternativa, copie el comando siguiente en un archivo. reg y ejecútelo para agregar la clave del registro. 
+    ```bash
+    /Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json
+    ```  
     
-```shell
-Windows Registry Editor Version 5.00
-[HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application]
-@="C:\\path\\to\\nmh-manifest.json"
-``` 
+*   User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user profile directory.  For example, the manifest file must be stored in following location.  
+    
+    ```bash
+    ~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/com.my_company.my_application.json
+    ```  
+    
+    The  `{Channel_Name}` in `Microsoft Edge {Channel_Name}` must be one of the following values.  
+    
+    *   Canary  
+    *   Dev  
+    *   Beta  
 
-  Microsoft Edge consulta primero el registro de 32 bits y, a continuación, el registro de 64 bits para identificar los hosts de mensajería nativos. Si ejecuta el archivo. reg anterior como parte de una secuencia de comandos por lotes, asegúrese de ejecutarlo con un símbolo del sistema de administrador.
+    When using the Stable channel, `{Channel_Name}` is not required.  
 
+### [Linux](#tab/linux/)  
 
-**MacOS**. El archivo de manifiesto debe almacenarse de la siguiente manera:
+<a id="copy-manifest-file"></a>  
 
-1. Los hosts de mensajería instantánea de todo el sistema, que están disponibles para todos los usuarios, se almacenan en una ubicación fija. Por ejemplo, el archivo de manifiesto debe almacenarse en `/Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json`
+To store the manifest file, complete one of the following actions.  
 
-1. Los hosts de mensajería nativa específicos del usuario, que solo están disponibles para el usuario actual, se encuentran en el subdirectorio NativeMessagingHosts en el directorio del perfil de usuario. Por ejemplo, el archivo de manifiesto debe almacenarse en  
-    `~/Library/Application Support/Microsoft Edge <ChannelName>/NativeMessagingHosts/com.my_company.my_application.json`
-
-    Dónde `ChannelName` puede estar, dev o beta. Cuando se usa el canal estable, `ChannelName` no es necesario.
-
-
-**Linux** El archivo de manifiesto debe almacenarse de la siguiente manera:
-
-1. Hosts de mensajería instantánea en todo el sistema:  `~/.config/microsoft-edge/NativeMessagingHosts`
-
-1. Hosts de mensajería nativa específicos del usuario:  `/etc/opt/edge/native-messaging-hosts`
-
+*   System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  The manifest file must be stored in following location.  
+    
+    ```bash
+    /etc/opt/edge/native-messaging-hosts
+    ```
+    
+*   User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user profile directory.  The manifest file must be stored in following location.  
+    
+    ```bash
+    ~/.config/microsoft-edge/NativeMessagingHosts
+    ```  
+    
+* * *  
 
 > [!NOTE]
-> Asegúrese de que proporciona permisos de lectura en el archivo de manifiesto y ejecute permisos en el ejecutable de host.
-
-
-> [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developer.chrome.com/extensions/nativeMessaging).  
-
-[![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-
-
-<!-- image links -->  
+> Ensure that you provide read permissions on the manifest file, and run permissions on the host runtime.  
 
 <!-- links -->  
 
-[EdgeAddons]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Complementos de Microsoft Edge"
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developer.chrome.com/extensions/nativeMessaging).  
+
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+[EdgeAddons]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge Add-ons"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
