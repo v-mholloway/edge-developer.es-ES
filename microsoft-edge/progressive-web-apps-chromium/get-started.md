@@ -1,38 +1,38 @@
 ---
-description: Esta guía le ofrece información general sobre los conceptos básicos de PWA y herramientas para crear aplicaciones web progresivas en Windows.
+description: Esta guía le ofrece información general sobre los conceptos básicos de PWA y herramientas para crear aplicaciones web progresivas (cromo) en Windows.
 title: Introducción a las aplicaciones web progresivas (cromo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 10/01/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, PWABuilder, manifiesto Web, trabajo de servicio, inserción
-ms.openlocfilehash: a9a0cad2d771e52b783053e36f0f23dec5d8e70c
-ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
+ms.openlocfilehash: 065ced3afa8ecd4165325fd4f10a673d86c72fa7
+ms.sourcegitcommit: be76feed0d616a96c77ea2748a9f0d6c0c06284b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894713"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11103927"
 ---
-# <span data-ttu-id="2af25-104">Introducción a las aplicaciones web progresivas (cromo)</span><span class="sxs-lookup"><span data-stu-id="2af25-104">Get started with Progressive Web Apps (Chromium)</span></span>  
+# <span data-ttu-id="7936b-104">Introducción a las aplicaciones web progresivas (cromo)</span><span class="sxs-lookup"><span data-stu-id="7936b-104">Get started with Progressive Web Apps (Chromium)</span></span>  
 
-<span data-ttu-id="2af25-105">Las aplicaciones web progresivas \ (PWAs \) son aplicaciones web que se han [mejorado progresivamente][WikiProgressiveEnhancement] con características de tipo aplicación, como la instalación, el soporte técnico sin conexión y las notificaciones Push.</span><span class="sxs-lookup"><span data-stu-id="2af25-105">Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement] with app-like features, such as installation, offline support, and push notifications.</span></span>  <span data-ttu-id="2af25-106">También puede haber empaquetado su PWA para los almacenes de aplicaciones, incluyendo Microsoft Store, así como Google Play, Mac App Store y mucho más.</span><span class="sxs-lookup"><span data-stu-id="2af25-106">You may also packaged your PWA for app stores, including the Microsoft Store as well as Google Play, Mac App Store and more.</span></span>  <span data-ttu-id="2af25-107">Microsoft Store es el almacén de aplicaciones comerciales integrado en Windows 10.</span><span class="sxs-lookup"><span data-stu-id="2af25-107">The Microsoft Store is the commercial app store built into Windows 10.</span></span>  
+<span data-ttu-id="7936b-105">Las aplicaciones web progresivas \ (PWAs \) son aplicaciones web que se han [mejorado progresivamente][WikiProgressiveEnhancement].</span><span class="sxs-lookup"><span data-stu-id="7936b-105">Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].</span></span>  <span data-ttu-id="7936b-106">Las mejoras progresivas incluyen características similares a las de la aplicación, como la instalación, el soporte técnico sin conexión y las notificaciones Push.</span><span class="sxs-lookup"><span data-stu-id="7936b-106">The progressive enhancements include app-like features, such as installation, offline support, and push notifications.</span></span>  <span data-ttu-id="7936b-107">También puede empaquetar su PWA para los almacenes de aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="7936b-107">You may also package your PWA for app stores.</span></span>  <span data-ttu-id="7936b-108">Entre los posibles almacenes de aplicaciones se incluyen Microsoft Store, Google Play, Mac App Store y mucho más.</span><span class="sxs-lookup"><span data-stu-id="7936b-108">Possible app stores include the Microsoft Store, Google Play, Mac App Store, and more.</span></span>  <span data-ttu-id="7936b-109">Microsoft Store es el almacén de aplicaciones comerciales integrado en Windows 10.</span><span class="sxs-lookup"><span data-stu-id="7936b-109">The Microsoft Store is the commercial app store built into Windows 10.</span></span>  
 
-<span data-ttu-id="2af25-108">La siguiente guía le ofrece una descripción general de los conceptos básicos de PWA mediante la creación de una aplicación web simple y su extensión como PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-108">The following guide gives you an overview of PWA basics by creating a simple web app and extending it as a PWA.</span></span>  <span data-ttu-id="2af25-109">El proyecto finalizado funciona en exploradores modernos.</span><span class="sxs-lookup"><span data-stu-id="2af25-109">The finished project works across modern browsers.</span></span>  
+<span data-ttu-id="7936b-110">La siguiente guía le ofrece una descripción general de los conceptos básicos de PWA mediante la creación de una aplicación web simple y su extensión como PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-110">The following guide gives you an overview of PWA basics by creating a simple web app and extending it as a PWA.</span></span>  <span data-ttu-id="7936b-111">El proyecto finalizado funciona en exploradores modernos.</span><span class="sxs-lookup"><span data-stu-id="7936b-111">The finished project works across modern browsers.</span></span>  
 
 > [!TIP]
-> <span data-ttu-id="2af25-110">Puede usar [PWABuilder][PwaBuilder] para crear un nuevo PWA, mejorar su PWA existente o empaquetar su PWA para los almacenes de aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="2af25-110">You may use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.</span></span>  
+> <span data-ttu-id="7936b-112">Puede usar [PWABuilder][PwaBuilder] para crear un nuevo PWA, mejorar su PWA existente o empaquetar su PWA para los almacenes de aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="7936b-112">You may use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.</span></span>  
 
-## <span data-ttu-id="2af25-111">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="2af25-111">Prerequisites</span></span>  
+## <span data-ttu-id="7936b-113">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="7936b-113">Prerequisites</span></span>  
 
-*   <span data-ttu-id="2af25-112">Use [código de vs][VisualstudioCodeMain] para editar el código fuente de PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-112">Use [VS Code][VisualstudioCodeMain] to edit your PWA source code.</span></span>  
-*   <span data-ttu-id="2af25-113">Use [Node.js][NodejsMain] como su servidor Web local.</span><span class="sxs-lookup"><span data-stu-id="2af25-113">Use [Node.js][NodejsMain] as your local web server.</span></span>  
+*   <span data-ttu-id="7936b-114">Use [código de Visual Studio][VisualstudioCodeMain] para editar el código fuente de PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-114">Use [Visual Studio Code][VisualstudioCodeMain] to edit your PWA source code.</span></span>  
+*   <span data-ttu-id="7936b-115">Use [Node.js][NodejsMain] como su servidor Web local.</span><span class="sxs-lookup"><span data-stu-id="7936b-115">Use [Node.js][NodejsMain] as your local web server.</span></span>  
 
-## <span data-ttu-id="2af25-114">Configurar una aplicación web básica</span><span class="sxs-lookup"><span data-stu-id="2af25-114">Set up a basic web app</span></span>  
+## <span data-ttu-id="7936b-116">Crear una aplicación web básica</span><span class="sxs-lookup"><span data-stu-id="7936b-116">Create a basic web app</span></span>  
 
-<span data-ttu-id="2af25-115">Para crear una aplicación Web vacía, siga los pasos que se indican en el [generador de aplicaciones de node Express][ExpressjsApplicationGenerator]y asigne un nombre a la aplicación `MySamplePwa` .</span><span class="sxs-lookup"><span data-stu-id="2af25-115">To create an empty web app, follow the steps in [Node Express App Generator][ExpressjsApplicationGenerator], and name your app `MySamplePwa`.</span></span>  
+<span data-ttu-id="7936b-117">Para crear una aplicación Web vacía, siga los pasos que se indican en el [generador de aplicaciones de node Express][ExpressjsApplicationGenerator]y asigne un nombre a la aplicación `MySamplePwa` .</span><span class="sxs-lookup"><span data-stu-id="7936b-117">To create an empty web app, follow the steps in [Node Express App Generator][ExpressjsApplicationGenerator], and name your app `MySamplePwa`.</span></span>  
 
-<span data-ttu-id="2af25-116">En el símbolo del sistema, ejecute los siguientes comandos.</span><span class="sxs-lookup"><span data-stu-id="2af25-116">In the prompt, run the following commands.</span></span>  
+<span data-ttu-id="7936b-118">En el símbolo del sistema, ejecute los siguientes comandos.</span><span class="sxs-lookup"><span data-stu-id="7936b-118">In the prompt, run the following commands.</span></span>  
 
 ```shell
 npx express-generator --no-view
@@ -42,42 +42,42 @@ npx express-generator --no-view
 npm install
 ```  
 
-<span data-ttu-id="2af25-117">Los comandos crean una aplicación Web vacía e instalan cualquier dependencia.</span><span class="sxs-lookup"><span data-stu-id="2af25-117">The commands creates an empty web app and install any dependencies.</span></span>  
+<span data-ttu-id="7936b-119">Los comandos crean una aplicación Web vacía e instalan cualquier dependencia.</span><span class="sxs-lookup"><span data-stu-id="7936b-119">The commands create an empty web app and install any dependencies.</span></span>  
 
-<span data-ttu-id="2af25-118">Ahora tiene una aplicación web simple y funcional.</span><span class="sxs-lookup"><span data-stu-id="2af25-118">Now you have a simple, functional web app.</span></span>  <span data-ttu-id="2af25-119">Para iniciarlo, ejecute el siguiente comando.</span><span class="sxs-lookup"><span data-stu-id="2af25-119">To start it, run the following command.</span></span>  
+<span data-ttu-id="7936b-120">Ahora tiene una aplicación web simple y funcional.</span><span class="sxs-lookup"><span data-stu-id="7936b-120">You now have a simple, functional web app.</span></span>  <span data-ttu-id="7936b-121">Para iniciar la aplicación Web, ejecute el siguiente comando.</span><span class="sxs-lookup"><span data-stu-id="7936b-121">To start your web app, run the following command.</span></span>  
 
 ```shell
 npm start
 ```  
 
-<span data-ttu-id="2af25-120">Ahora, vaya a `http://localhost:3000` ver su nueva aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="2af25-120">Now browse to `http://localhost:3000` to view your new web app.</span></span>  
+<span data-ttu-id="7936b-122">Ahora, vaya a `http://localhost:3000` ver su nueva aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="7936b-122">Now browse to `http://localhost:3000` to view your new web app.</span></span>  
 
-:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Ejecutar su nuevo PWA en localhost":::
-   <span data-ttu-id="2af25-122">Ejecutar su nuevo PWA en localhost</span><span class="sxs-lookup"><span data-stu-id="2af25-122">Running your new PWA on localhost</span></span>
+:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/vs-nodejs-express-index.png":::
+   <span data-ttu-id="7936b-124">Ejecutar su nuevo PWA en localhost</span><span class="sxs-lookup"><span data-stu-id="7936b-124">Running your new PWA on localhost</span></span>
 :::image-end:::
 
-## <span data-ttu-id="2af25-123">Empezar a crear un PWA</span><span class="sxs-lookup"><span data-stu-id="2af25-123">Get started building a PWA</span></span>  
+## <span data-ttu-id="7936b-125">Empezar a crear un PWA</span><span class="sxs-lookup"><span data-stu-id="7936b-125">Get started building a PWA</span></span>  
 
-<span data-ttu-id="2af25-124">Ahora que tiene una aplicación web simple, amplíela como PWA agregando los 3 requisitos para PWAs</span><span class="sxs-lookup"><span data-stu-id="2af25-124">Now that you have a simple web app, extend it as a PWA by adding the 3 requirements for PWAs</span></span><!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]--><span data-ttu-id="2af25-125">: [Https](#step-1---use-https), un [manifiesto de la aplicación web](#step-2---create-a-web-app-manifest)y un [trabajador de servicio](#step-3---add-a-service-worker).</span><span class="sxs-lookup"><span data-stu-id="2af25-125">: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).</span></span>  
+<span data-ttu-id="7936b-126">Ahora que tiene una aplicación web simple, amplíela como PWA agregando los tres requisitos para PWAs</span><span class="sxs-lookup"><span data-stu-id="7936b-126">Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs</span></span><!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]--><span data-ttu-id="7936b-127">: [Https](#step-1---use-https), un [manifiesto de la aplicación web](#step-2---create-a-web-app-manifest)y un [trabajador de servicio](#step-3---add-a-service-worker).</span><span class="sxs-lookup"><span data-stu-id="7936b-127">: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).</span></span>  
 
-### <span data-ttu-id="2af25-126">Paso 1: usar HTTPS</span><span class="sxs-lookup"><span data-stu-id="2af25-126">Step 1 - Use HTTPS</span></span>  
+### <span data-ttu-id="7936b-128">Paso 1: usar HTTPS</span><span class="sxs-lookup"><span data-stu-id="7936b-128">Step 1 - Use HTTPS</span></span>  
 
-<span data-ttu-id="2af25-127">Las partes clave de la plataforma PWA, como los [trabajos de servicio][MDNServiceWorkerApi], requieren el uso de HTTPS.</span><span class="sxs-lookup"><span data-stu-id="2af25-127">Key parts of the PWA platform, such as [Service Workers][MDNServiceWorkerApi], require the use of HTTPS.</span></span>  <span data-ttu-id="2af25-128">Cuando su PWA se activa, debe publicarlo en una dirección URL HTTPS.</span><span class="sxs-lookup"><span data-stu-id="2af25-128">When your PWA goes live, you must publish it to an HTTPS URL.</span></span>  
+<span data-ttu-id="7936b-129">Las partes clave de la plataforma PWA, como los [trabajos de servicio][MDNServiceWorkerApi], requieren el uso de HTTPS.</span><span class="sxs-lookup"><span data-stu-id="7936b-129">Key parts of the PWA platform, such as [Service Workers][MDNServiceWorkerApi], require the use of HTTPS.</span></span>  <span data-ttu-id="7936b-130">Cuando su PWA se activa, debe publicarlo en una dirección URL HTTPS.</span><span class="sxs-lookup"><span data-stu-id="7936b-130">When your PWA goes live, you must publish it to an HTTPS URL.</span></span>  
 
-<span data-ttu-id="2af25-129">Para fines de depuración, Microsoft Edge también permite `http://localhost` el uso de las API de PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-129">For debugging purposes, Microsoft Edge also permits `http://localhost` to use the PWA APIs.</span></span>  
+<span data-ttu-id="7936b-131">Para fines de depuración, Microsoft Edge también permite `http://localhost` el uso de las API de PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-131">For debugging purposes, Microsoft Edge also permits `http://localhost` to use the PWA APIs.</span></span>  
 
-<span data-ttu-id="2af25-130">Si [publica la aplicación web como un sitio activo][VisualStudioNodejsTutorialPublishAzureAppService] \ (por ejemplo, al configurar una [cuenta gratuita de Azure][AzureCreateFreeAccount]), debe asegurarse de que su servidor está configurado para HTTPS.</span><span class="sxs-lookup"><span data-stu-id="2af25-130">If you [publish your web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService] \(for example, by setting up an [Azure free account][AzureCreateFreeAccount]\), you must ensure your server is configured for HTTPS.</span></span>  <span data-ttu-id="2af25-131">Si usa el [servicio de aplicaciones de Microsoft Azure][AzureWebApps] para hospedar su sitio, se ofrece a través de HTTPS de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="2af25-131">If you use the [Microsoft Azure App Service][AzureWebApps] to host your site, it is served over HTTPS by default.</span></span>  
+<span data-ttu-id="7936b-132">[Publique la aplicación web como un sitio activo][VisualStudioNodejsTutorialPublishAzureAppService], pero asegúrese de que su servidor está configurado para HTTPS.</span><span class="sxs-lookup"><span data-stu-id="7936b-132">[Publish your web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService], but ensure your server is configured for HTTPS.</span></span>  <span data-ttu-id="7936b-133">Por ejemplo, puede crear una [cuenta gratuita de Azure][AzureCreateFreeAccount].</span><span class="sxs-lookup"><span data-stu-id="7936b-133">For example, you may create an [Azure free account][AzureCreateFreeAccount].</span></span>  <span data-ttu-id="7936b-134">Hospede su sitio en el [servicio de aplicaciones de Microsoft Azure][AzureWebApps] y se ofrece a través de HTTPS de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="7936b-134">Host your site on the [Microsoft Azure App Service][AzureWebApps] and it is served over HTTPS by default.</span></span>  
 
-<span data-ttu-id="2af25-132">La guía siguiente, `http://localhost` que se usa para crear su PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-132">The following guide, use `http://localhost` to build your PWA.</span></span>  
+<span data-ttu-id="7936b-135">La guía siguiente, `http://localhost` que se usa para crear su PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-135">The following guide, use `http://localhost` to build your PWA.</span></span>  
 
-### <span data-ttu-id="2af25-133">Paso 2: crear un manifiesto de la aplicación Web</span><span class="sxs-lookup"><span data-stu-id="2af25-133">Step 2 - Create a Web App Manifest</span></span>  
+### <span data-ttu-id="7936b-136">Paso 2: crear un manifiesto de la aplicación Web</span><span class="sxs-lookup"><span data-stu-id="7936b-136">Step 2 - Create a Web App Manifest</span></span>  
 
-<span data-ttu-id="2af25-134">Un [manifiesto de la aplicación web][MDNWebAppManifest] es un archivo JSON que contiene metadatos sobre la aplicación, como el nombre, la descripción, los iconos, etc.</span><span class="sxs-lookup"><span data-stu-id="2af25-134">A [Web App Manifest][MDNWebAppManifest] is a JSON file containing metadata about your app, such as name, description, icons, and more.</span></span>  
+<span data-ttu-id="7936b-137">Un [manifiesto de la aplicación web][MDNWebAppManifest] es un archivo JSON que contiene metadatos sobre la aplicación, como el nombre, la descripción, los iconos, etc.</span><span class="sxs-lookup"><span data-stu-id="7936b-137">A [Web App Manifest][MDNWebAppManifest] is a JSON file containing metadata about your app, such as name, description, icons, and more.</span></span>  
 
-<span data-ttu-id="2af25-135">Para agregar un manifiesto de la aplicación a la aplicación web:</span><span class="sxs-lookup"><span data-stu-id="2af25-135">To add an app manifest to the web app:</span></span>  
+<span data-ttu-id="7936b-138">Para agregar un manifiesto de la aplicación a la aplicación web:</span><span class="sxs-lookup"><span data-stu-id="7936b-138">To add an app manifest to the web app:</span></span>  
 
-1.  <span data-ttu-id="2af25-136">En vs Code, vaya **File**  >  a la**carpeta abrir** archivo y elija el `MySamplePwa` directorio que creó anteriormente.</span><span class="sxs-lookup"><span data-stu-id="2af25-136">In VS Code, go **File** > **Open Folder** and choose the `MySamplePwa` directory you created earlier.</span></span>  
-1.  <span data-ttu-id="2af25-137">Presione `Ctrl` + `N` para crear un archivo nuevo y péguelo en el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="2af25-137">Press `Ctrl`+`N` to create a new file, and paste in the following code snippet.</span></span>  
+1.  <span data-ttu-id="7936b-139">En Visual Studio Code, seleccione **archivo**  >  **Abrir carpeta** y elija el `MySamplePwa` directorio que creó anteriormente.</span><span class="sxs-lookup"><span data-stu-id="7936b-139">In Visual Studio Code, choose **File** > **Open Folder** and choose the `MySamplePwa` directory you created earlier.</span></span>  
+1.  <span data-ttu-id="7936b-140">Seleccione `Ctrl` + `N` para crear un archivo nuevo y péguelo en el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="7936b-140">Select `Ctrl`+`N` to create a new file, and paste in the following code snippet.</span></span>  
     
     ```json
     {
@@ -99,95 +99,103 @@ npm start
     }
     ```  
     
-1.  <span data-ttu-id="2af25-138">Guarde el archivo como `/MySamplePwa/public/manifest.json` .</span><span class="sxs-lookup"><span data-stu-id="2af25-138">Save the file as `/MySamplePwa/public/manifest.json`.</span></span>  
-1.  <span data-ttu-id="2af25-139">Agregue una imagen del icono de la aplicación de 512x512 con el nombre `icon512.png` a `/MySamplePwa/public/images` .</span><span class="sxs-lookup"><span data-stu-id="2af25-139">Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.</span></span>  <span data-ttu-id="2af25-140">Puede usar la [imagen de ejemplo][ImagePwa] para realizar pruebas.</span><span class="sxs-lookup"><span data-stu-id="2af25-140">You may use the [sample image][ImagePwa] for testing purposes.</span></span>  
-1.  <span data-ttu-id="2af25-141">En VS Code, Abra `/public/index.html` y agregue el siguiente fragmento de código dentro de la `<head>` etiqueta.</span><span class="sxs-lookup"><span data-stu-id="2af25-141">In VS Code, open `/public/index.html`, and add the following code snippet inside the `<head>` tag.</span></span>  
+1.  <span data-ttu-id="7936b-141">Guarde el archivo como `/MySamplePwa/public/manifest.json` .</span><span class="sxs-lookup"><span data-stu-id="7936b-141">Save the file as `/MySamplePwa/public/manifest.json`.</span></span>  
+1.  <span data-ttu-id="7936b-142">Agregue una imagen del icono de la aplicación de 512x512 con el nombre `icon512.png` a `/MySamplePwa/public/images` .</span><span class="sxs-lookup"><span data-stu-id="7936b-142">Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.</span></span>  <span data-ttu-id="7936b-143">Puede usar la [imagen de ejemplo][ImagePwa] para realizar pruebas.</span><span class="sxs-lookup"><span data-stu-id="7936b-143">You may use the [sample image][ImagePwa] for testing purposes.</span></span>  
+1.  <span data-ttu-id="7936b-144">En Visual Studio Code, abre `/public/index.html` y agrega el siguiente fragmento de código dentro de la `<head>` etiqueta.</span><span class="sxs-lookup"><span data-stu-id="7936b-144">In Visual Studio Code, open `/public/index.html`, and add the following code snippet inside the `<head>` tag.</span></span>  
     
     ```html
     <link rel="manifest" href="/manifest.json">
     ```   
     
-### <span data-ttu-id="2af25-142">Paso 3: agregar un trabajo de servicio</span><span class="sxs-lookup"><span data-stu-id="2af25-142">Step 3 - Add a Service Worker</span></span>  
+### <span data-ttu-id="7936b-145">Paso 3: agregar un trabajo de servicio</span><span class="sxs-lookup"><span data-stu-id="7936b-145">Step 3 - Add a Service Worker</span></span>  
 
-<span data-ttu-id="2af25-143">Los trabajadores de servicios son la tecnología clave que subyace a PWAs, habilita escenarios como la compatibilidad sin conexión, el almacenamiento avanzado y la ejecución de tareas en segundo plano previamente limitadas a aplicaciones nativas.</span><span class="sxs-lookup"><span data-stu-id="2af25-143">Service workers are the key technology behind PWAs, enabling scenarios like offline support, advanced caching, and running background tasks previously limited to native apps.</span></span>  
+<span data-ttu-id="7936b-146">Los trabajadores de servicios son la tecnología clave que subyace a PWAs, habilita escenarios como la compatibilidad sin conexión, el almacenamiento avanzado y la ejecución de tareas en segundo plano previamente limitadas a aplicaciones nativas.</span><span class="sxs-lookup"><span data-stu-id="7936b-146">Service workers are the key technology behind PWAs, enabling scenarios like offline support, advanced caching, and running background tasks previously limited to native apps.</span></span>  
 
-<span data-ttu-id="2af25-144">Los trabajos de servicio son tareas en segundo plano que interceptan solicitudes de red de la aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="2af25-144">Service workers are background tasks that intercept network requests from your web app.</span></span>  <span data-ttu-id="2af25-145">Realizan tareas, incluso si su PWA no se está ejecutando, como servir recursos solicitados de una caché, enviar notificaciones push, ejecutar tareas de captura en segundo plano, iconos de distintivos, etc.</span><span class="sxs-lookup"><span data-stu-id="2af25-145">They perform tasks, even when your PWA is not running, such as serving requested resources from a cache, sending push notifications, running background fetch tasks, badging icons, and so on.</span></span>  <span data-ttu-id="2af25-146">Los trabajadores del servicio se definen en un archivo especial de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="2af25-146">Service workers are defined in a special JavaScript file.</span></span>  <span data-ttu-id="2af25-147">Para obtener más información, vea [usar trabajadores de servicio][MDNUsingServiceWorkers] y [API de trabajo de servicio][MDNServiceWorkerApi].</span><span class="sxs-lookup"><span data-stu-id="2af25-147">For more information, see [Using Service Workers][MDNUsingServiceWorkers] and [Service Worker API][MDNServiceWorkerApi].</span></span>  
+<span data-ttu-id="7936b-147">Los trabajos de servicio son tareas en segundo plano que interceptan solicitudes de red de la aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="7936b-147">Service workers are background tasks that intercept network requests from your web app.</span></span>  <span data-ttu-id="7936b-148">Los trabajadores de servicio intentan completar las tareas, incluso cuando su PWA no se está ejecutando.</span><span class="sxs-lookup"><span data-stu-id="7936b-148">Service workers attempt to complete tasks, even when your PWA is not running.</span></span>  <span data-ttu-id="7936b-149">Las tareas incluyen las siguientes acciones.</span><span class="sxs-lookup"><span data-stu-id="7936b-149">Tasks include the following actions.</span></span>  
 
-<span data-ttu-id="2af25-148">Para compilar un trabajo de servicio en el proyecto, use la receta de trabajo de servicio de red en la **memoria caché** del [creador de PWA][PwaBuilderServiceWorker].</span><span class="sxs-lookup"><span data-stu-id="2af25-148">To build a service worker in your project, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].</span></span>  
+*   <span data-ttu-id="7936b-150">Dar servicio a los recursos solicitados desde una caché</span><span class="sxs-lookup"><span data-stu-id="7936b-150">Serving requested resources from a cache</span></span>  
+*   <span data-ttu-id="7936b-151">Enviar notificaciones push</span><span class="sxs-lookup"><span data-stu-id="7936b-151">Sending push notifications</span></span>  
+*   <span data-ttu-id="7936b-152">Ejecución de tareas de captura en segundo plano</span><span class="sxs-lookup"><span data-stu-id="7936b-152">Running background fetch tasks</span></span>  
+*   <span data-ttu-id="7936b-153">Iconos de distintivos</span><span class="sxs-lookup"><span data-stu-id="7936b-153">Badging icons</span></span>  
+*   <span data-ttu-id="7936b-154">y mucho más</span><span class="sxs-lookup"><span data-stu-id="7936b-154">and more</span></span>  
 
-1.  <span data-ttu-id="2af25-149">Vaya a [pwabuilder.com/serviceworker][PwaBuilderServiceWorker], seleccione el trabajo **de servicio caché-primer** servicio de red y seleccione el botón **Descargar** .</span><span class="sxs-lookup"><span data-stu-id="2af25-149">Navigate to [pwabuilder.com/serviceworker][PwaBuilderServiceWorker], select the **Cache-first network** service worker, and select the **Download** button.</span></span>  <span data-ttu-id="2af25-150">El archivo descargado contiene los siguientes archivos:</span><span class="sxs-lookup"><span data-stu-id="2af25-150">The downloaded file contains the following files:</span></span>
+<span data-ttu-id="7936b-155">Los trabajadores del servicio se definen en un archivo especial de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="7936b-155">Service workers are defined in a special JavaScript file.</span></span>  <span data-ttu-id="7936b-156">Para obtener más información, vaya a [usar los trabajos de servicio][MDNUsingServiceWorkers] y la API de trabajo de [servicio][MDNServiceWorkerApi].</span><span class="sxs-lookup"><span data-stu-id="7936b-156">For more information, navigate to [Using Service Workers][MDNUsingServiceWorkers] and [Service Worker API][MDNServiceWorkerApi].</span></span>  
+
+<span data-ttu-id="7936b-157">Para compilar un trabajo de servicio en el proyecto, use la receta de trabajo de servicio de red en la **memoria caché** del [creador de PWA][PwaBuilderServiceWorker].</span><span class="sxs-lookup"><span data-stu-id="7936b-157">To build a service worker in your project, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].</span></span>  
+
+1.  <span data-ttu-id="7936b-158">Vaya a [pwabuilder.com/serviceworker][PwaBuilderServiceWorker], seleccione el trabajo **de servicio caché-primer** servicio de red y seleccione el botón **Descargar** .</span><span class="sxs-lookup"><span data-stu-id="7936b-158">Navigate to [pwabuilder.com/serviceworker][PwaBuilderServiceWorker], select the **Cache-first network** service worker, and select the **Download** button.</span></span>  <span data-ttu-id="7936b-159">El archivo descargado contiene los siguientes archivos:</span><span class="sxs-lookup"><span data-stu-id="7936b-159">The downloaded file contains the following files:</span></span>
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
     
-1.  <span data-ttu-id="2af25-151">Copie los archivos descargados en la `public` carpeta del proyecto de la aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="2af25-151">Copy the downloaded files to the `public` folder in your web app project.</span></span>  
+1.  <span data-ttu-id="7936b-160">Copie los archivos descargados en la `public` carpeta del proyecto de la aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="7936b-160">Copy the downloaded files to the `public` folder in your web app project.</span></span>  
     
-1.  <span data-ttu-id="2af25-152">En VS Code, Abra `/public/index.html` y agregue el siguiente fragmento de código dentro de la `<head>` etiqueta.</span><span class="sxs-lookup"><span data-stu-id="2af25-152">In VS Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.</span></span>  
+1.  <span data-ttu-id="7936b-161">En Visual Studio Code, abre `/public/index.html` y agrega el siguiente fragmento de código dentro de la `<head>` etiqueta.</span><span class="sxs-lookup"><span data-stu-id="7936b-161">In Visual Studio Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.</span></span>  
     
     ```html
     <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
-<span data-ttu-id="2af25-153">Su aplicación web ahora tiene un trabajador de servicio que usa la primera estrategia de almacenamiento en caché, que recupera los recursos como imágenes, JS, CSS y HTML en primer lugar de la caché, y retrocede a la red según sea necesario.</span><span class="sxs-lookup"><span data-stu-id="2af25-153">Your web app now has a service worker that uses the cache-first strategy, which fetches resources like images, JS, CSS, and HTML from the cache first, and falls back to the network as needed.</span></span>  
+<span data-ttu-id="7936b-162">Su aplicación web ahora tiene un trabajador de servicio que usa la primera estrategia de almacenamiento en caché.</span><span class="sxs-lookup"><span data-stu-id="7936b-162">Your web app now has a service worker that uses the cache-first strategy.</span></span>  <span data-ttu-id="7936b-163">El trabajador de servicio nuevo primero obtiene los recursos de la caché y de la red solo según sea necesario.</span><span class="sxs-lookup"><span data-stu-id="7936b-163">You new service worker fetches resources from the cache first, and from the network only as needed.</span></span>  <span data-ttu-id="7936b-164">Entre los recursos almacenados en caché se incluyen imágenes, JavaScript, CSS y HTML.</span><span class="sxs-lookup"><span data-stu-id="7936b-164">Cached resources include images, JavaScript, CSS, and HTML.</span></span>
 
-<span data-ttu-id="2af25-154">Use los siguientes pasos para confirmar que el trabajo de servicio se ejecuta.</span><span class="sxs-lookup"><span data-stu-id="2af25-154">Use the following steps to confirm that your service worker runs.</span></span>  
+<span data-ttu-id="7936b-165">Use los siguientes pasos para confirmar que el trabajo de servicio se ejecuta.</span><span class="sxs-lookup"><span data-stu-id="7936b-165">Use the following steps to confirm that your service worker runs.</span></span>  
 
-1.  <span data-ttu-id="2af25-155">Vaya a su aplicación web con `http://localhost:3000` .</span><span class="sxs-lookup"><span data-stu-id="2af25-155">Navigate to your web app using `http://localhost:3000`.</span></span>  <span data-ttu-id="2af25-156">Si la aplicación web no está disponible, ejecute el siguiente comando.</span><span class="sxs-lookup"><span data-stu-id="2af25-156">If your web app is not available, run the following command.</span></span>   
+1.  <span data-ttu-id="7936b-166">Vaya a su aplicación web con `http://localhost:3000` .</span><span class="sxs-lookup"><span data-stu-id="7936b-166">Navigate to your web app using `http://localhost:3000`.</span></span>  <span data-ttu-id="7936b-167">Si la aplicación web no está disponible, ejecute el siguiente comando.</span><span class="sxs-lookup"><span data-stu-id="7936b-167">If your web app is not available, run the following command.</span></span>   
     
     ```shell
     npm start
     ```
     
-1.  <span data-ttu-id="2af25-157">En Microsoft Edge, seleccione `F12` para abrir la DevTools de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="2af25-157">In Microsoft Edge, select `F12` to open the Microsoft Edge DevTools.</span></span>  <span data-ttu-id="2af25-158">Seleccione la **aplicación**y, a continuación, los **trabajadores del servicio** para ver los trabajadores del servicio.</span><span class="sxs-lookup"><span data-stu-id="2af25-158">Select **Application**, then **Service Workers** to view the service workers.</span></span>  <span data-ttu-id="2af25-159">Si no ve el trabajo de servicio, es posible que tenga que actualizar la página.</span><span class="sxs-lookup"><span data-stu-id="2af25-159">If you do not see the service worker, you may need to refresh the page.</span></span>  
+1.  <span data-ttu-id="7936b-168">En Microsoft Edge, seleccione `F12` para abrir la DevTools de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="7936b-168">In Microsoft Edge, select `F12` to open the Microsoft Edge DevTools.</span></span>  <span data-ttu-id="7936b-169">Seleccione la **aplicación**y, a continuación, los **trabajadores del servicio** para ver los trabajadores del servicio.</span><span class="sxs-lookup"><span data-stu-id="7936b-169">Select **Application**, then **Service Workers** to view the service workers.</span></span>  <span data-ttu-id="7936b-170">Si el trabajo de servicio no se muestra, actualice la página.</span><span class="sxs-lookup"><span data-stu-id="7936b-170">If the service worker is not displayed, refresh the page.</span></span>  
      
-    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Información general del trabajo del servicio Microsoft Edge DevTools":::
-       <span data-ttu-id="2af25-161">Información general del trabajo del servicio Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="2af25-161">Microsoft Edge DevTools Service Worker overview</span></span>
+    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/devtools-sw-overview.png":::
+       <span data-ttu-id="7936b-172">Información general del trabajo del servicio Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="7936b-172">Microsoft Edge DevTools Service Worker overview</span></span>
     :::image-end:::
     
-1.  <span data-ttu-id="2af25-162">Visualice la caché de trabajos del servicio expandiendo el **almacenamiento en caché** y seleccione **pwabuilder-precache**.</span><span class="sxs-lookup"><span data-stu-id="2af25-162">View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.</span></span>  <span data-ttu-id="2af25-163">Debería ver todos los recursos almacenados en caché por el trabajo del servicio, como el icono de la aplicación, el manifiesto de la aplicación, los archivos CSS y JavaScript.</span><span class="sxs-lookup"><span data-stu-id="2af25-163">You should see all the resources cached by the service worker, such as the app icon, app manifest, CSS and JavaScript files.</span></span>  
+1.  <span data-ttu-id="7936b-173">Visualice la caché de trabajos del servicio expandiendo el **almacenamiento en caché** y seleccione **pwabuilder-precache**.</span><span class="sxs-lookup"><span data-stu-id="7936b-173">View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.</span></span>  <span data-ttu-id="7936b-174">Deben mostrarse todos los recursos almacenados en la caché por el trabajo del servicio.</span><span class="sxs-lookup"><span data-stu-id="7936b-174">All of the resources cached by the service worker should be displayed.</span></span>  <span data-ttu-id="7936b-175">Los recursos almacenados en caché por el trabajo del servicio incluyen el icono de la aplicación, el manifiesto de la aplicación, los archivos CSS y JavaScript.</span><span class="sxs-lookup"><span data-stu-id="7936b-175">The resources cached by the service worker include the app icon, app manifest, CSS, and JavaScript files.</span></span>  
     
-    :::image type="complex" source="./media/devtools-cache.png" alt-text="Caché de trabajo de servicio en Microsoft Edge DevTools":::
-       <span data-ttu-id="2af25-165">Caché de trabajo de servicio en Microsoft Edge DevTools (F12)</span><span class="sxs-lookup"><span data-stu-id="2af25-165">Service Worker cache in Microsoft Edge DevTools (F12)</span></span>
+    :::image type="complex" source="./media/devtools-cache.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/devtools-cache.png":::
+       <span data-ttu-id="7936b-177">Caché de trabajo de servicio en Microsoft Edge DevTools (F12)</span><span class="sxs-lookup"><span data-stu-id="7936b-177">Service Worker cache in Microsoft Edge DevTools (F12)</span></span>
     :::image-end:::
     
-1.  <span data-ttu-id="2af25-166">Pruebe su PWA como una aplicación sin conexión.</span><span class="sxs-lookup"><span data-stu-id="2af25-166">Try your PWA as an offline app.</span></span>  <span data-ttu-id="2af25-167">En Microsoft Edge DevTools \ ( `F12` \), seleccione **red** y, a continuación, cambie el estado de **conexión** a **sin conexión**.</span><span class="sxs-lookup"><span data-stu-id="2af25-167">In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.</span></span>  
+1.  <span data-ttu-id="7936b-178">Pruebe su PWA como una aplicación sin conexión.</span><span class="sxs-lookup"><span data-stu-id="7936b-178">Try your PWA as an offline app.</span></span>  <span data-ttu-id="7936b-179">En Microsoft Edge DevTools \ ( `F12` \), seleccione **red** y, a continuación, cambie el estado de **conexión** a **sin conexión**.</span><span class="sxs-lookup"><span data-stu-id="7936b-179">In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.</span></span>  
     
-    :::image type="complex" source="./media/devtools-offline.png" alt-text="Establecer la aplicación en el modo sin conexión en Microsoft Edge DevTools":::
-       <span data-ttu-id="2af25-169">Establecer la aplicación en el modo sin conexión en Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="2af25-169">Setting app to offline mode in Microsoft Edge DevTools</span></span>
+    :::image type="complex" source="./media/devtools-offline.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/devtools-offline.png":::
+       <span data-ttu-id="7936b-181">Establecer la aplicación en el modo sin conexión en Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="7936b-181">Setting app to offline mode in Microsoft Edge DevTools</span></span>
     :::image-end:::
     
-1.  <span data-ttu-id="2af25-170">Actualice la aplicación y verá que se está trabajando sin conexión atendiendo los recursos de la aplicación desde la memoria caché.</span><span class="sxs-lookup"><span data-stu-id="2af25-170">Refresh your app and you should see it working offline by serving the resources of your app from the cache.</span></span>  
+1.  <span data-ttu-id="7936b-182">Actualice la aplicación y debería mostrar el mecanismo sin conexión para servir los recursos de la aplicación desde la memoria caché.</span><span class="sxs-lookup"><span data-stu-id="7936b-182">Refresh your app and it should display the offline mechanism for serving the resources of your app from the cache.</span></span>  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA que se ejecuta sin conexión":::
-       <span data-ttu-id="2af25-172">PWA que se ejecuta sin conexión</span><span class="sxs-lookup"><span data-stu-id="2af25-172">PWA running offline</span></span>
+    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/vs-nodejs-express-index.png":::
+       <span data-ttu-id="7936b-184">PWA que se ejecuta sin conexión</span><span class="sxs-lookup"><span data-stu-id="7936b-184">PWA running offline</span></span>
     :::image-end:::
     
-## <span data-ttu-id="2af25-173">Agregar notificaciones Push a su PWA</span><span class="sxs-lookup"><span data-stu-id="2af25-173">Add push notifications to your PWA</span></span>  
+## <span data-ttu-id="7936b-185">Agregar notificaciones Push a su PWA</span><span class="sxs-lookup"><span data-stu-id="7936b-185">Add push notifications to your PWA</span></span>  
 
-<span data-ttu-id="2af25-174">Puede crear PWAs que admitan las notificaciones de inserción completando las siguientes tareas.</span><span class="sxs-lookup"><span data-stu-id="2af25-174">You may create PWAs that support push notifications by completing the following tasks.</span></span>  
+<span data-ttu-id="7936b-186">Puede crear PWAs que admitan las notificaciones de inserción completando las siguientes tareas.</span><span class="sxs-lookup"><span data-stu-id="7936b-186">You may create PWAs that support push notifications by completing the following tasks.</span></span>  
 
-1.  <span data-ttu-id="2af25-175">Suscribirse a un servicio de mensajería mediante la [API de inserción][MDNPushApi]</span><span class="sxs-lookup"><span data-stu-id="2af25-175">Subscribe to a messaging service using the [Push API][MDNPushApi]</span></span>  
-1.  <span data-ttu-id="2af25-176">Mostrar un mensaje de notificación del sistema cuando se recibe un mensaje del servicio con la [API de notificaciones][MDNNotificationsApi]</span><span class="sxs-lookup"><span data-stu-id="2af25-176">Display a toast messages when a message is received from the service using the [Notifications API][MDNNotificationsApi]</span></span>  
+1.  <span data-ttu-id="7936b-187">Suscribirse a un servicio de mensajería mediante la [API de inserción][MDNPushApi]</span><span class="sxs-lookup"><span data-stu-id="7936b-187">Subscribe to a messaging service using the [Push API][MDNPushApi]</span></span>  
+1.  <span data-ttu-id="7936b-188">Mostrar un mensaje de notificación del sistema cuando se recibe un mensaje del servicio con la [API de notificaciones][MDNNotificationsApi]</span><span class="sxs-lookup"><span data-stu-id="7936b-188">Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi]</span></span>  
+    
+<span data-ttu-id="7936b-189">Al igual que con los trabajadores del servicio, las API de notificaciones push son API basadas en estándares.</span><span class="sxs-lookup"><span data-stu-id="7936b-189">Just like with Service Workers, the push notification APIs are standards-based APIs.</span></span>  <span data-ttu-id="7936b-190">Las API de notificaciones push funcionan en todos los exploradores, por lo que el código debería funcionar siempre que se admitan PWAs.</span><span class="sxs-lookup"><span data-stu-id="7936b-190">The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.</span></span>  <span data-ttu-id="7936b-191">Para obtener más información sobre cómo enviar mensajes Push a diferentes exploradores de su servidor, vaya a inserción en la [Web][NPMWebPush].</span><span class="sxs-lookup"><span data-stu-id="7936b-191">For more information about delivering push messages to different browsers on your server, navigate to [Web-Push][NPMWebPush].</span></span>  
 
-<span data-ttu-id="2af25-177">Al igual que con los trabajadores del servicio, estas son API basadas en estándares que funcionan en exploradores, de modo que solo tienes que escribir el código una vez para que funcione en todos los casos en que PWAs sea compatible.</span><span class="sxs-lookup"><span data-stu-id="2af25-177">As with Service Workers, these are standards-based APIs that work across browsers, so you only have to write the code once for it to work everywhere that PWAs are supported.</span></span>  <span data-ttu-id="2af25-178">Para obtener más información sobre cómo entregar mensajes Push a diferentes exploradores de su servidor, use la biblioteca de código abierto de [inserción web][NPMWebPush] .</span><span class="sxs-lookup"><span data-stu-id="2af25-178">For more information on delivering push messages to different browsers on your server, use the [Web-Push][NPMWebPush] open-source library.</span></span>  
+<span data-ttu-id="7936b-192">Los siguientes pasos han sido adaptados desde la demostración de inserción enriquecida en el [manual de trabajos de trabajo][ServiceWorkerCookbookPushRichDemo] de Mozilla, que tiene varias otras recetas útiles de inserción de web y de trabajadores de servicios.</span><span class="sxs-lookup"><span data-stu-id="7936b-192">The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has a number of other useful Web Push and service worker recipes.</span></span>  
 
-<span data-ttu-id="2af25-179">Los siguientes pasos han sido adaptados desde la demostración de inserción enriquecida en el [manual de trabajos de trabajo][ServiceWorkerCookbookPushRichDemo] de Mozilla, que tiene varias otras recetas útiles de inserción de web y de trabajadores de servicios.</span><span class="sxs-lookup"><span data-stu-id="2af25-179">The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has a number of other useful Web Push and service worker recipes.</span></span>  
+### <span data-ttu-id="7936b-193">Paso 1: generar claves VAPID</span><span class="sxs-lookup"><span data-stu-id="7936b-193">Step 1 - Generate VAPID keys</span></span>  
 
-### <span data-ttu-id="2af25-180">Paso 1: generar claves VAPID</span><span class="sxs-lookup"><span data-stu-id="2af25-180">Step 1 - Generate VAPID keys</span></span>  
+<span data-ttu-id="7936b-194">Las notificaciones push requieren claves de VAPID \ (identificación de servidor de aplicaciones voluntaria \) para poder enviar mensajes Push al cliente de PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-194">Push notifications require VAPID \(Voluntary Application Server Identification\) keys in order to send push messages to the PWA client.</span></span>  <span data-ttu-id="7936b-195">Hay varios generadores de claves de VAPID disponibles en línea \ (por ejemplo, [vapidkeys.com][VapidkeysMain]\).</span><span class="sxs-lookup"><span data-stu-id="7936b-195">There are several VAPID key generators available online \(for example, [vapidkeys.com][VapidkeysMain]\).</span></span>  <span data-ttu-id="7936b-196">Después de la generación, debe obtener un objeto JSON que contenga una clave pública y privada.</span><span class="sxs-lookup"><span data-stu-id="7936b-196">After generation, you should get a JSON object containing a public and private key.</span></span>  <span data-ttu-id="7936b-197">Guarde las teclas para pasos posteriores en el siguiente tutorial.</span><span class="sxs-lookup"><span data-stu-id="7936b-197">Save the keys for later steps in the following tutorial.</span></span>  <span data-ttu-id="7936b-198">Para obtener más información sobre VAPID y webpush, vaya al [envío de VAPID de notificaciones de webpush identificadas con el servicio de inserción de Mozilla][MozillaServicesSendingVapidWebPushNotificationsPush].</span><span class="sxs-lookup"><span data-stu-id="7936b-198">For information about VAPID and WebPush, navigate to [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].</span></span>  
 
-<span data-ttu-id="2af25-181">Las notificaciones push requieren claves de VAPID \ (identificación de servidor de aplicaciones voluntaria \) para poder enviar mensajes Push al cliente de PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-181">Push notifications require VAPID \(Voluntary Application Server Identification\) keys in order to send push messages to the PWA client.</span></span>  <span data-ttu-id="2af25-182">Hay varios generadores de claves de VAPID disponibles en línea \ (por ejemplo, [vapidkeys.com][VapidkeysMain]\).</span><span class="sxs-lookup"><span data-stu-id="2af25-182">There are several VAPID key generators available online \(for example, [vapidkeys.com][VapidkeysMain]\).</span></span>  <span data-ttu-id="2af25-183">Después de la generación, debe obtener un objeto JSON que contenga una clave pública y privada.</span><span class="sxs-lookup"><span data-stu-id="2af25-183">After generation, you should get a JSON object containing a public and private key.</span></span>  <span data-ttu-id="2af25-184">Guarde las claves para los pasos siguientes en el siguiente tutorial.</span><span class="sxs-lookup"><span data-stu-id="2af25-184">Save the keys for subsequent steps in the following tutorial.</span></span>  <span data-ttu-id="2af25-185">Para obtener información sobre el funcionamiento de VAPID y webpush, consulte [envío de notificaciones de webpush identificadas por el servicio de inserción de VAPID][MozillaServicesSendingVapidWebPushNotificationsPush].</span><span class="sxs-lookup"><span data-stu-id="2af25-185">For information on how VAPID and WebPush works, see [Sending VAPID identified WebPush Notifications via Mozilla's Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].</span></span>  
+### <span data-ttu-id="7936b-199">Paso 2: suscribirse a notificaciones push</span><span class="sxs-lookup"><span data-stu-id="7936b-199">Step 2 - Subscribe to push notifications</span></span>  
 
-### <span data-ttu-id="2af25-186">Paso 2: suscribirse a notificaciones push</span><span class="sxs-lookup"><span data-stu-id="2af25-186">Step 2 - Subscribe to push notifications</span></span>  
+<span data-ttu-id="7936b-200">Los trabajos del servicio controlan los eventos Push y las interacciones de notificaciones del sistema en tu PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-200">Service workers handle push events and toast notification interactions in your PWA.</span></span>  <span data-ttu-id="7936b-201">Para suscribir las notificaciones push de PWA a Server, asegúrese de que se cumplan las siguientes condiciones.</span><span class="sxs-lookup"><span data-stu-id="7936b-201">To subscribe the PWA to server push notifications, ensure the following conditions are met.</span></span>  
 
-<span data-ttu-id="2af25-187">Los trabajos del servicio controlan los eventos Push y las interacciones de notificaciones del sistema en tu PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-187">Service workers handle push events and toast notification interactions in your PWA.</span></span>  <span data-ttu-id="2af25-188">Para suscribir las notificaciones push de PWA a Server, asegúrese de que se cumplan las siguientes condiciones.</span><span class="sxs-lookup"><span data-stu-id="2af25-188">To subscribe the PWA to server push notifications, ensure the following conditions are met.</span></span>  
+*   <span data-ttu-id="7936b-202">PWA está instalado, activo y registrado</span><span class="sxs-lookup"><span data-stu-id="7936b-202">Your PWA is installed, active, and registered</span></span>  
+*   <span data-ttu-id="7936b-203">El código para completar la tarea de suscripción se encuentra en el subproceso de la interfaz de usuario principal del PWA</span><span class="sxs-lookup"><span data-stu-id="7936b-203">Your code to complete the subscription task is on the main UI thread of the PWA</span></span>  
+*   <span data-ttu-id="7936b-204">Tiene conectividad de red</span><span class="sxs-lookup"><span data-stu-id="7936b-204">You have network connectivity</span></span>  
+    
+<span data-ttu-id="7936b-205">Antes de crear una nueva suscripción de inserción, Microsoft Edge comprueba si el usuario ha concedido permiso de PWA para recibir notificaciones.</span><span class="sxs-lookup"><span data-stu-id="7936b-205">Before a new push subscription is created, Microsoft Edge verifies if the user granted the PWA permission to receive notifications.</span></span>  <span data-ttu-id="7936b-206">En caso contrario, el explorador le pide permiso para el usuario.</span><span class="sxs-lookup"><span data-stu-id="7936b-206">If not, the user is prompted by the browser for permission.</span></span>  <span data-ttu-id="7936b-207">Si el permiso es denegado, la solicitud para `registration.pushManager.subscribe` iniciar una `DOMException` , que se debe controlar.</span><span class="sxs-lookup"><span data-stu-id="7936b-207">If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.</span></span>  <span data-ttu-id="7936b-208">Para obtener más información sobre la administración de permisos, vaya a [notificaciones Push en Microsoft Edge][WindowsBlogsWebNotificationsEdge].</span><span class="sxs-lookup"><span data-stu-id="7936b-208">For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].</span></span>  
 
-*   <span data-ttu-id="2af25-189">PWA está instalado, activo y registrado</span><span class="sxs-lookup"><span data-stu-id="2af25-189">Your PWA is installed, active and registered</span></span>  
-*   <span data-ttu-id="2af25-190">El código que realiza la tarea de suscripción se encuentra en el subproceso de la interfaz de usuario principal del PWA</span><span class="sxs-lookup"><span data-stu-id="2af25-190">Your code that performs the subscription task is on the main UI thread of the PWA</span></span>  
-*   <span data-ttu-id="2af25-191">Tiene conectividad de red</span><span class="sxs-lookup"><span data-stu-id="2af25-191">You have network connectivity</span></span>  
-
-<span data-ttu-id="2af25-192">Antes de crear una nueva suscripción de inserción, Microsoft Edge comprueba si el usuario ha concedido permiso de PWA para recibir notificaciones.</span><span class="sxs-lookup"><span data-stu-id="2af25-192">Before a new push subscription is created, Microsoft Edge checks if the user granted the PWA permission to receive notifications.</span></span>  <span data-ttu-id="2af25-193">En caso contrario, el explorador le pide permiso para el usuario.</span><span class="sxs-lookup"><span data-stu-id="2af25-193">If not, the user is prompted by the browser for permission.</span></span>  <span data-ttu-id="2af25-194">Si el permiso es denegado, la solicitud para `registration.pushManager.subscribe` iniciar una `DOMException` , que se debe controlar.</span><span class="sxs-lookup"><span data-stu-id="2af25-194">If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.</span></span>  <span data-ttu-id="2af25-195">Para obtener más información sobre la administración de permisos, vea [notificaciones Push en Microsoft Edge][WindowsBlogsWebNotificationsEdge].</span><span class="sxs-lookup"><span data-stu-id="2af25-195">For more on permission management, see [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].</span></span>  
-
-<span data-ttu-id="2af25-196">En el `pwabuilder-sw-register.js` archivo, Anexe el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="2af25-196">In your `pwabuilder-sw-register.js` file, append the following code snippet.</span></span>  
+<span data-ttu-id="7936b-209">En el `pwabuilder-sw-register.js` archivo, Anexe el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="7936b-209">In your `pwabuilder-sw-register.js` file, append the following code snippet.</span></span>  
 
 ```javascript
 // Ask the user for permission to send push notifications.
@@ -225,16 +233,17 @@ function urlBase64ToUint8Array(base64String) {
 }
 ```  
 
-<span data-ttu-id="2af25-197">Para obtener más información, consulte [PushManager][MDNPushManager] y [inserción web][NPMWebPushUsage].</span><span class="sxs-lookup"><span data-stu-id="2af25-197">For more information, see [PushManager][MDNPushManager] and [Web-Push][NPMWebPushUsage].</span></span>  
+<span data-ttu-id="7936b-210">Para obtener más información, vaya a [PushManager][MDNPushManager] y [inserción web][NPMWebPushUsage].</span><span class="sxs-lookup"><span data-stu-id="7936b-210">For more information, navigate to [PushManager][MDNPushManager] and [Web-Push][NPMWebPushUsage].</span></span>  
 
-### <span data-ttu-id="2af25-198">Paso 3: escuchar las notificaciones push</span><span class="sxs-lookup"><span data-stu-id="2af25-198">Step 3 - Listen for push notifications</span></span>  
+### <span data-ttu-id="7936b-211">Paso 3: escuchar las notificaciones push</span><span class="sxs-lookup"><span data-stu-id="7936b-211">Step 3 - Listen for push notifications</span></span>  
 
-<span data-ttu-id="2af25-199">Ahora que se ha configurado una suscripción en PWA, agregue controladores al trabajo del servicio para responder a los eventos Push \ (enviados desde el servidor \) para mostrar las notificaciones del sistema con los datos de un mensaje recibido.</span><span class="sxs-lookup"><span data-stu-id="2af25-199">Now that a subscription is set up in your PWA, add handlers to the service worker to respond to push events \(sent from the server\) to display toast notifications with the data of a received message.</span></span>  <span data-ttu-id="2af25-200">Debes agregar un controlador de clics para realizar cualquiera de las siguientes tareas.</span><span class="sxs-lookup"><span data-stu-id="2af25-200">You must add a click handler to perform the any of the following tasks.</span></span>  
-*   <span data-ttu-id="2af25-201">descartar la notificación del sistema</span><span class="sxs-lookup"><span data-stu-id="2af25-201">dismiss the toast notification</span></span>  
-*   <span data-ttu-id="2af25-202">abrir, enfocar o abrir y enfocar cualquier ventana abierta</span><span class="sxs-lookup"><span data-stu-id="2af25-202">open, focus, or open and focus any open windows</span></span>  
-*   <span data-ttu-id="2af25-203">abrir y enfocar una nueva ventana para mostrar una página de cliente de PWA</span><span class="sxs-lookup"><span data-stu-id="2af25-203">open and focus a new window to display a PWA client page</span></span>  
+<span data-ttu-id="7936b-212">Después de crear una suscripción en PWA, agregue controladores al trabajo del servicio para responder a los eventos Push.</span><span class="sxs-lookup"><span data-stu-id="7936b-212">After a subscription is created in your PWA, add handlers to the service worker to respond to push events.</span></span>  <span data-ttu-id="7936b-213">El evento Push se envía desde el servidor para mostrar las notificaciones del sistema.</span><span class="sxs-lookup"><span data-stu-id="7936b-213">Push event are sent from the server to display toast notifications.</span></span>  <span data-ttu-id="7936b-214">Las notificaciones del sistema muestran los datos de un mensaje recibido.</span><span class="sxs-lookup"><span data-stu-id="7936b-214">Toast notifications display data for a received message.</span></span>  <span data-ttu-id="7936b-215">Para completar las siguientes tareas, debe agregar un controlador de clics.</span><span class="sxs-lookup"><span data-stu-id="7936b-215">To complete the following tasks, you must add a click handler.</span></span>  
 
-<span data-ttu-id="2af25-204">En el `pwabuilder-sw.js` archivo, agregue los siguientes controladores.</span><span class="sxs-lookup"><span data-stu-id="2af25-204">In your `pwabuilder-sw.js` file, add the following handlers.</span></span>  
+*   <span data-ttu-id="7936b-216">Descartar la notificación del sistema</span><span class="sxs-lookup"><span data-stu-id="7936b-216">Dismiss the toast notification</span></span>  
+*   <span data-ttu-id="7936b-217">Abrir, enfocar o abrir y enfocar cualquier ventana abierta</span><span class="sxs-lookup"><span data-stu-id="7936b-217">Open, focus, or open and focus any open windows</span></span>  
+*   <span data-ttu-id="7936b-218">Abrir y enfocar una nueva ventana para mostrar una página de cliente de PWA</span><span class="sxs-lookup"><span data-stu-id="7936b-218">Open and focus a new window to display a PWA client page</span></span>  
+    
+<span data-ttu-id="7936b-219">En el `pwabuilder-sw.js` archivo, agregue los siguientes controladores.</span><span class="sxs-lookup"><span data-stu-id="7936b-219">In your `pwabuilder-sw.js` file, add the following handlers.</span></span>  
 
 ```javascript
 // Respond to a server push with a user notification.
@@ -255,7 +264,7 @@ self.addEventListener('notificationclick', function (event) {
     console.log('On notification click: ', event.notification.tag);
     event.notification.close();
     
-    // This looks to see if the current notification is already open and focuses it.
+    // This attempts to display the current notification if it is already open and then focuses on it.
     event.waitUntil(clients.matchAll({
         type: 'window'
     }).then(function (clientList) {
@@ -270,47 +279,59 @@ self.addEventListener('notificationclick', function (event) {
 });
 ```  
 
-### <span data-ttu-id="2af25-205">Paso 4: pruébelo</span><span class="sxs-lookup"><span data-stu-id="2af25-205">Step 4 - Try it out</span></span>  
+### <span data-ttu-id="7936b-220">Paso 4: pruébelo</span><span class="sxs-lookup"><span data-stu-id="7936b-220">Step 4 - Try it out</span></span>  
 
-<span data-ttu-id="2af25-206">Realice los siguientes pasos para probar las notificaciones Push en su PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-206">Perform the following steps to test push notifications in your PWA.</span></span>  
+<span data-ttu-id="7936b-221">Siga los pasos que se indican a continuación para probar las notificaciones push para su PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-221">To test push notifications for your PWA, complete the following steps.</span></span>  
 
-1.  <span data-ttu-id="2af25-207">Vaya a su PWA en `http://localhost:3000` .</span><span class="sxs-lookup"><span data-stu-id="2af25-207">Navigate to your PWA at `http://localhost:3000`.</span></span>  <span data-ttu-id="2af25-208">Cuando el trabajador de servicio se activa e intenta suscribirse a las notificaciones push de PWA, Microsoft Edge le pide que permita a su PWA Mostrar notificaciones.</span><span class="sxs-lookup"><span data-stu-id="2af25-208">When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.</span></span>  <span data-ttu-id="2af25-209">Seleccione **permitir**.</span><span class="sxs-lookup"><span data-stu-id="2af25-209">Select **Allow**.</span></span>  
+1.  <span data-ttu-id="7936b-222">Vaya a su PWA en `http://localhost:3000` .</span><span class="sxs-lookup"><span data-stu-id="7936b-222">Navigate to your PWA at `http://localhost:3000`.</span></span>  <span data-ttu-id="7936b-223">Cuando el trabajador de servicio se activa e intenta suscribirse a las notificaciones push de PWA, Microsoft Edge le pide que permita a su PWA Mostrar notificaciones.</span><span class="sxs-lookup"><span data-stu-id="7936b-223">When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.</span></span>  <span data-ttu-id="7936b-224">Seleccione **permitir**.</span><span class="sxs-lookup"><span data-stu-id="7936b-224">Select **Allow**.</span></span>  
     
-    :::image type="complex" source="./media/notification-permission.png" alt-text="Cuadro de diálogo de permisos para habilitar las notificaciones":::
-       <span data-ttu-id="2af25-211">Cuadro de diálogo de permisos para habilitar las notificaciones</span><span class="sxs-lookup"><span data-stu-id="2af25-211">Permission dialog for enabling notifications</span></span>
+    :::image type="complex" source="./media/notification-permission.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/notification-permission.png":::
+       <span data-ttu-id="7936b-226">Cuadro de diálogo de permisos para habilitar las notificaciones</span><span class="sxs-lookup"><span data-stu-id="7936b-226">Permission dialog for enabling notifications</span></span>
     :::image-end:::
     
+1.  <span data-ttu-id="7936b-227">Simular una notificación de inserción del servidor.</span><span class="sxs-lookup"><span data-stu-id="7936b-227">Simulate a server-side push notification.</span></span>  <span data-ttu-id="7936b-228">Con el PWA abierto en `http://localhost:3000` en el explorador, seleccione `F12` para abrir el DevTools.</span><span class="sxs-lookup"><span data-stu-id="7936b-228">With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open the DevTools.</span></span>  <span data-ttu-id="7936b-229">Elija **Application**  >  **Service Worker**  >  **Push** de trabajo de servicio de aplicaciones para enviar una notificación de inserción de prueba a su PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-229">Choose **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.</span></span>  
+    :::row:::
+       :::column span="":::
+          <span data-ttu-id="7936b-230">Una notificación de inserción debe mostrarse cerca de la barra de tareas.</span><span class="sxs-lookup"><span data-stu-id="7936b-230">A push notification should display near the taskbar.</span></span>  
+          
+          :::image type="complex" source="./media/devtools-push.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/devtools-push.png":::
+             <span data-ttu-id="7936b-232">Insertar una notificación desde DevTools</span><span class="sxs-lookup"><span data-stu-id="7936b-232">Push a notification from DevTools</span></span>  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          <span data-ttu-id="7936b-233">Si no selecciona \ (o activa \) una notificación del sistema, el sistema la descarta automáticamente después de varios segundos y la coloca en la cola del centro de actividades de Windows.</span><span class="sxs-lookup"><span data-stu-id="7936b-233">If you do not select \(or activate\) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.</span></span>  
+          
+          :::image type="complex" source="./media/windows-action-center.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/windows-action-center.png":::
+             <span data-ttu-id="7936b-235">Notificaciones en el centro de actividades de Windows</span><span class="sxs-lookup"><span data-stu-id="7936b-235">Notifications in Windows Action Center</span></span> :::image-end:::
+       :::column-end:::
+    :::row-end:::  
     
-1.  <span data-ttu-id="2af25-212">Simular una notificación de inserción del servidor.</span><span class="sxs-lookup"><span data-stu-id="2af25-212">Simulate a server-side push notification.</span></span>  <span data-ttu-id="2af25-213">Con el PWA abierto en `http://localhost:3000` en el explorador, seleccione `F12` para abrir el DevTools.</span><span class="sxs-lookup"><span data-stu-id="2af25-213">With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open the DevTools.</span></span>  <span data-ttu-id="2af25-214">Elija **Application**  >  **Service Worker**  >  **Push** de trabajo de servicio de aplicaciones para enviar una notificación de inserción de prueba a su PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-214">Choose **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.</span></span>  <span data-ttu-id="2af25-215">Debería ver una notificación de inserción cerca de la barra de tareas.</span><span class="sxs-lookup"><span data-stu-id="2af25-215">You should see a push notification appear near the taskbar.</span></span>  
+## <span data-ttu-id="7936b-236">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="7936b-236">Next steps</span></span>  
+
+<span data-ttu-id="7936b-237">Los pasos siguientes incluyen tareas adicionales para ayudarle a comprender la creación de PWAs del mundo real.</span><span class="sxs-lookup"><span data-stu-id="7936b-237">The following steps include additional tasks to help you understand building real-world PWAs.</span></span>  
+
+*   <span data-ttu-id="7936b-238">Administrar y almacenar suscripciones de inserción</span><span class="sxs-lookup"><span data-stu-id="7936b-238">Manage and store push subscriptions</span></span>  
+*   <span data-ttu-id="7936b-239">[Cifrar][NPMWebPushEncrypt] datos de carga</span><span class="sxs-lookup"><span data-stu-id="7936b-239">[Encrypt][NPMWebPushEncrypt] payload data</span></span>  
+*   <span data-ttu-id="7936b-240">Diseño adaptativo</span><span class="sxs-lookup"><span data-stu-id="7936b-240">Responsive design</span></span>  
+*   <span data-ttu-id="7936b-241">Vínculos profundos</span><span class="sxs-lookup"><span data-stu-id="7936b-241">Deep-linking</span></span>  
+*   [<span data-ttu-id="7936b-242">Pruebas entre exploradores</span><span class="sxs-lookup"><span data-stu-id="7936b-242">Cross-browser testing</span></span>][BrowserStackTestEdgeBrowser]  
+*   <span data-ttu-id="7936b-243">Implementar procedimientos de validación y pruebas, como [webhint][Webhint]</span><span class="sxs-lookup"><span data-stu-id="7936b-243">Implement validation and testing practices such as [Webhint][Webhint]</span></span>  
+   
+## <span data-ttu-id="7936b-244">Consulte también</span><span class="sxs-lookup"><span data-stu-id="7936b-244">See also</span></span>  
+
+*   [<span data-ttu-id="7936b-245">Aplicaciones web progresivas en documentos web de MDN</span><span class="sxs-lookup"><span data-stu-id="7936b-245">Progressive Web Apps on MDN web docs</span></span>][MDNProgressiveWebApps]  
+*   [<span data-ttu-id="7936b-246">Aplicaciones web progresivas en Web. dev</span><span class="sxs-lookup"><span data-stu-id="7936b-246">Progressive Web Apps on web.dev</span></span>][WebDevProgressiveWebApps]  
+*   <span data-ttu-id="7936b-247">[Lectores de noticias de piratas informáticos como aplicaciones web progresivas][HackerNewsProgressiveWebApps] : compara diferentes marcos de trabajo y patrones de rendimiento para implementar un ejemplo \ (lector de noticias de hacker \) PWA.</span><span class="sxs-lookup"><span data-stu-id="7936b-247">[Hacker News readers as Progressive Web Apps][HackerNewsProgressiveWebApps] - Compares different frameworks and performance patterns for implementing a sample \(Hacker News reader\) PWA.</span></span>  
+*   [<span data-ttu-id="7936b-248">PWAs de mitos</span><span class="sxs-lookup"><span data-stu-id="7936b-248">Myth Busting PWAs</span></span>][Davrous20191018MythBustingPwasNewEdgeEdition]  
+*   [<span data-ttu-id="7936b-249">Una guía básica para la aplicación web progresiva</span><span class="sxs-lookup"><span data-stu-id="7936b-249">A Progressive Roadmap for your Progressive Web App</span></span>][CloudfourThinksProgressiveRoadmapYourWebApp]  
+*   [<span data-ttu-id="7936b-250">Publicaciones sin conexión con aplicaciones web progresivas</span><span class="sxs-lookup"><span data-stu-id="7936b-250">Offline POSTs with Progressive Web Apps</span></span>][MediumWebEdgeOfflinePostsProgressiveWebApps]  
+*   [<span data-ttu-id="7936b-251">Q&A DE PWA</span><span class="sxs-lookup"><span data-stu-id="7936b-251">PWA Q&A</span></span>][AaronGustafsonNotebookPwaQa]  
+*   [<span data-ttu-id="7936b-252">Apuestas en la web</span><span class="sxs-lookup"><span data-stu-id="7936b-252">Betting on the Web</span></span>][JoretegBlogBettingWeb]  
+*   [<span data-ttu-id="7936b-253">Asignar nombres a aplicaciones web progresivas</span><span class="sxs-lookup"><span data-stu-id="7936b-253">Naming Progressive Web Apps</span></span>][Fberriman20170626NamingProgressiveWebApps]  
+*   [<span data-ttu-id="7936b-254">Diseñar y crear una aplicación web progresiva sin un marco (parte 1)</span><span class="sxs-lookup"><span data-stu-id="7936b-254">Designing And Building A Progressive Web Application Without A Framework (Part 1)</span></span>][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
+*   [<span data-ttu-id="7936b-255">Diseñar y crear una aplicación web progresiva sin un marco (parte 2)</span><span class="sxs-lookup"><span data-stu-id="7936b-255">Designing And Building A Progressive Web Application Without A Framework (Part 2)</span></span>][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
+*   [<span data-ttu-id="7936b-256">Diseñar y crear una aplicación web progresiva sin un marco (parte 3)</span><span class="sxs-lookup"><span data-stu-id="7936b-256">Designing And Building A Progressive Web Application Without A Framework (Part 3)</span></span>][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
     
-    :::image type="complex" source="./media/devtools-push.png" alt-text="Insertar una notificación desde DevTools":::
-       <span data-ttu-id="2af25-217">Insertar una notificación desde DevTools</span><span class="sxs-lookup"><span data-stu-id="2af25-217">Push a notification from DevTools</span></span>
-    :::image-end:::
-     
-    <span data-ttu-id="2af25-218">Si no selecciona \ (o activa \) una notificación del sistema, se descarta después de varios segundos y se pone en cola en el centro de actividades de Windows.</span><span class="sxs-lookup"><span data-stu-id="2af25-218">If you do not select \(or activate\) a toast notification, it is dismissed after several seconds and queues up in your Windows Action Center.</span></span>  
-    
-    :::image type="complex" source="./media/windows-action-center.png" alt-text="Notificaciones en el centro de actividades de Windows":::
-       <span data-ttu-id="2af25-220">Notificaciones en el centro de actividades de Windows</span><span class="sxs-lookup"><span data-stu-id="2af25-220">Notifications in Windows Action Center</span></span>
-    :::image-end:::
-    
-    
-## <span data-ttu-id="2af25-221">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="2af25-221">Next steps</span></span>  
-
-<span data-ttu-id="2af25-222">A continuación se muestra una lista de tareas adicionales para aprender a crear PWAs del mundo real:</span><span class="sxs-lookup"><span data-stu-id="2af25-222">The following is a list of additional tasks to learn when building real-world PWAs:</span></span>  
-
-*  <span data-ttu-id="2af25-223">Administrar y almacenar suscripciones de inserción</span><span class="sxs-lookup"><span data-stu-id="2af25-223">Manage and store push subscriptions</span></span>  
-*  <span data-ttu-id="2af25-224">[Cifrar][NPMWebPushEncrypt] datos de carga</span><span class="sxs-lookup"><span data-stu-id="2af25-224">[Encrypt][NPMWebPushEncrypt] payload data</span></span>  
-*  <span data-ttu-id="2af25-225">Diseño adaptativo</span><span class="sxs-lookup"><span data-stu-id="2af25-225">Responsive design</span></span>  
-*  <span data-ttu-id="2af25-226">Vínculos profundos</span><span class="sxs-lookup"><span data-stu-id="2af25-226">Deep-linking</span></span>  
-*  [<span data-ttu-id="2af25-227">Pruebas entre exploradores</span><span class="sxs-lookup"><span data-stu-id="2af25-227">Cross-browser testing</span></span>][BrowserStackTestEdgeBrowser]  
-*  <span data-ttu-id="2af25-228">Implementar procedimientos recomendados, como [webhint][Webhint]</span><span class="sxs-lookup"><span data-stu-id="2af25-228">Implement best practices such as [Webhint][Webhint]</span></span>  
-
-## <span data-ttu-id="2af25-229">Consulte también</span><span class="sxs-lookup"><span data-stu-id="2af25-229">See also</span></span>  
-
-*   <span data-ttu-id="2af25-230">[Aplicaciones web progresivas en documentos web de MDN][MDNProgressiveWebApps].</span><span class="sxs-lookup"><span data-stu-id="2af25-230">[Progressive Web Apps on MDN web docs][MDNProgressiveWebApps].</span></span>  
-*   <span data-ttu-id="2af25-231">[Aplicaciones web progresivas en Web. dev][WebDevProgressiveWebApps].</span><span class="sxs-lookup"><span data-stu-id="2af25-231">[Progressive Web Apps on web.dev][WebDevProgressiveWebApps].</span></span>  
-*   <span data-ttu-id="2af25-232">[Lectores de noticias de piratas informáticos como aplicaciones web progresivas][HackerNewsProgressiveWebApps] : compara diferentes marcos de trabajo y patrones de rendimiento para implementar un ejemplo \ (lector de noticias de hacker \) PWA.</span><span class="sxs-lookup"><span data-stu-id="2af25-232">[Hacker News readers as Progressive Web Apps][HackerNewsProgressiveWebApps] - Compares different frameworks and performance patterns for implementing a sample \(Hacker News reader\) PWA.</span></span>  
-
 <!-- image links -->  
 
 [ImagePwa]: ./media/pwa.png  
@@ -319,7 +340,7 @@ self.addEventListener('notificationclick', function (event) {
 
 <!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
-[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Implementar una aplicación de Node.js en Azure con VS Code | Microsoft docs"  
+[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Implementar una aplicación de Node.js en Azure con Visual Studio Code | Microsoft docs"  
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "Crear cuenta gratuita de Azure Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Aplicaciones Web | Microsoft Azure"  
@@ -328,11 +349,21 @@ self.addEventListener('notificationclick', function (event) {
 
 [VisualstudioCodeMain]: https://code.visualstudio.com "Código de Visual Studio"  
 
+[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "Q&A DE PWA"  
+
 [BrowserStackTestEdgeBrowser]: https://www.browserstack.com/test-on-microsoft-edge-browser "Pruebas gratuitas del navegador Microsoft Edge en Windows 10 | BrowserStack"  
+
+[CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "Una guía básica para la aplicación web progresiva"  
+
+[Davrous20191018MythBustingPwasNewEdgeEdition]: https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition "PWAs de mitos: la nueva edición de Edge"  
 
 [ExpressjsApplicationGenerator]: https://expressjs.com/starter/generator.html "Generador de aplicaciones Express | Explícita" 
 
+[Fberriman20170626NamingProgressiveWebApps]: https://fberriman.com/2017/06/26/naming-progressive-web-apps "Asignar nombres a aplicaciones web progresivas"  
+
 [HackerNewsProgressiveWebApps]: https://hnpwa.com "Lectores de noticias de piratas informáticos como aplicaciones web progresivas"  
+
+[JoretegBlogBettingWeb]: https://joreteg.com/blog/betting-on-the-web "Apuestas en la web"  
 
 [MDNDedicatedWorkerGlobalScopePostMessage]: https://developer.mozilla.org/docs/Web/API/
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "API de notificaciones | MDN"  
@@ -342,6 +373,8 @@ self.addEventListener('notificationclick', function (event) {
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "API de trabajo de servicio | MDN"  
 [MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "Usar trabajadores de servicio | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Manifiesto de la aplicación Web | MDN"  
+
+[MediumWebEdgeOfflinePostsProgressiveWebApps]: https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895 "Publicaciones sin conexión con aplicaciones web progresivas"  
 
 [MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Envío de notificaciones por inserción de VAPID identificadas por el servicio de inserción de Mozilla | Servicios de Mozilla"  
 
@@ -358,9 +391,15 @@ self.addEventListener('notificationclick', function (event) {
 
 [ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "Demostración de inserción enriquecida | ServiceWorker"  
 
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "Diseñar y crear una aplicación web progresiva sin un marco (parte 1)"  
+
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "Diseñar y crear una aplicación web progresiva sin un marco (parte 2)"  
+
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "Diseñar y crear una aplicación web progresiva sin un marco (parte 3)"  
+
 [VapidkeysMain]: https://vapidkeys.com "Generador de claves de VAPID seguro | VapidKeys" 
 
-[Webhint]: https://sonarwhal.com "webhint, el motor de sugerencias para los procedimientos recomendados para Web"  
+[Webhint]: https://webhint.io "sugerencia"  
 
 [WebDevProgressiveWebApps]: https://developers.google.com/web/progressive-web-apps "Aplicaciones web progresivas | Web. dev"  
 

@@ -54,7 +54,7 @@ ms.locfileid: "10992823"
        :::column span="":::
           <span data-ttu-id="aec1d-117">También puede seleccionar **problemas** en el menú **más herramientas** .</span><span class="sxs-lookup"><span data-stu-id="aec1d-117">Alternatively, select **Issues** from the **More tools** menu.</span></span>  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Herramienta problemas en el menú más herramientas" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media//issues-more-tools-menu.msft.png":::
              <span data-ttu-id="aec1d-119">Herramienta **problemas** en el menú **más herramientas**</span><span class="sxs-lookup"><span data-stu-id="aec1d-119">**Issues** tool in **More tools** menu</span></span>  
           :::image-end:::  
        :::column-end:::
@@ -62,13 +62,13 @@ ms.locfileid: "10992823"
     
 1.  <span data-ttu-id="aec1d-120">Seleccione el botón **volver a cargar la página** , si es necesario.</span><span class="sxs-lookup"><span data-stu-id="aec1d-120">Select the **Reload page** button, if necessary.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Herramienta problemas del cajón de DevTools con el botón volver a cargar página" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-before-refresh.msft.png":::
        <span data-ttu-id="aec1d-122">Herramienta **problemas** del cajón de DevTools con el botón **volver a cargar página**</span><span class="sxs-lookup"><span data-stu-id="aec1d-122">**Issues** tool in the DevTools Drawer with **Reload page** button</span></span>  
     :::image-end:::  
 
     <span data-ttu-id="aec1d-123">Los problemas notificados en la **consola** son difíciles de comprender, como las advertencias de cookie en la siguiente imagen.</span><span class="sxs-lookup"><span data-stu-id="aec1d-123">The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.</span></span>  <span data-ttu-id="aec1d-124">En función de los problemas que se hayan informado, es posible que no tenga claro lo que debe hacer.</span><span class="sxs-lookup"><span data-stu-id="aec1d-124">Based upon the reported issues, it may not be clear what you must do.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Herramienta problemas en el cajón de DevTools con tres problemas de cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-after-refresh.msft.png":::
        <span data-ttu-id="aec1d-126">Herramienta **problemas** en el cajón de DevTools con tres problemas de cookies</span><span class="sxs-lookup"><span data-stu-id="aec1d-126">**Issues** tool in the DevTools Drawer with three cookie issues</span></span>  
     :::image-end:::  
     
@@ -78,7 +78,7 @@ ms.locfileid: "10992823"
 
 1.  <span data-ttu-id="aec1d-129">Seleccione un elemento de la herramienta **problemas** para obtener información sobre cómo corregir el problema y encontrar los recursos afectados.</span><span class="sxs-lookup"><span data-stu-id="aec1d-129">Select an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Marcar las cookies entre sitios como un problema seguro abierto en la herramienta problemas" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-issue-open.msft.png":::
        <span data-ttu-id="aec1d-131">**Marcar las cookies entre sitios como** un problema seguro abierto en la herramienta **problemas**</span><span class="sxs-lookup"><span data-stu-id="aec1d-131">**Mark cross-site cookies as Secure** issue open in the **Issues** tool</span></span>  
     :::image-end:::  
     
@@ -91,7 +91,7 @@ ms.locfileid: "10992823"
     
 1.  <span data-ttu-id="aec1d-137">Seleccione los elementos de **recursos afectados** para ver los detalles.</span><span class="sxs-lookup"><span data-stu-id="aec1d-137">Select items in **AFFECTED RESOURCES** to view details.</span></span>  <span data-ttu-id="aec1d-138">En el siguiente ejemplo, la **marca de las cookies entre sitios como** un problema seguro afecta a una cookie y a dos solicitudes.</span><span class="sxs-lookup"><span data-stu-id="aec1d-138">In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Recursos afectados abiertos en la pestaña "problemas"" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-affected-resources.msft.png":::
        <span data-ttu-id="aec1d-140">Recursos afectados abiertos en la herramienta **problemas** del cajón de DevTools</span><span class="sxs-lookup"><span data-stu-id="aec1d-140">Affected resources open in the **Issues** tool in the DevTools Drawer</span></span>  
     :::image-end:::  
     
@@ -99,13 +99,13 @@ ms.locfileid: "10992823"
 
 1.  <span data-ttu-id="aec1d-142">Seleccione un vínculo de recursos para ver el elemento en el contexto adecuado dentro de DevTools.</span><span class="sxs-lookup"><span data-stu-id="aec1d-142">Select a resource link to view the item in the appropriate context within DevTools.</span></span>  <span data-ttu-id="aec1d-143">En el ejemplo siguiente, seleccione `samesite-sandbox.glitch.me` en **solicitudes** para mostrar las cookies adjuntas a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="aec1d-143">In the following example, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Ver la cookie afectada en el panel de red DevTools" lightbox="../media/issues-tab-view-request.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-view-request.msft.png":::
        <span data-ttu-id="aec1d-145">Ver la cookie afectada en el panel de **red** DevTools</span><span class="sxs-lookup"><span data-stu-id="aec1d-145">View the affected cookie in the DevTools **Network** panel</span></span>  
     :::image-end:::  
 
 1.  <span data-ttu-id="aec1d-146">Desplácese para ver el elemento con un problema: en el ejemplo siguiente, la `ck02` cookie.</span><span class="sxs-lookup"><span data-stu-id="aec1d-146">Scroll to view the item with a problem: for the following example, the `ck02` cookie.</span></span>  <span data-ttu-id="aec1d-147">Desplace el puntero sobre la columna **SameSite** para ver el `None` valor detectado por el problema.</span><span class="sxs-lookup"><span data-stu-id="aec1d-147">Hover over the **SameSite** column to see the `None` value that the issue detected.</span></span>  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Valor NONE en la columna SameSite de la cookie CK02 en el panel DevTools red" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` <span data-ttu-id="aec1d-149">valor de la columna **SameSite** de la `ck02` cookie en el panel de **red** DevTools</span><span class="sxs-lookup"><span data-stu-id="aec1d-149">value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** panel</span></span>  
     :::image-end:::  
 
