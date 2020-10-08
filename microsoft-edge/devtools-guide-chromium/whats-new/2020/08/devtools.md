@@ -36,7 +36,7 @@ Por ejemplo, el método abreviado de teclado para pausar o seguir ejecutando un 
 
 ### Emula Surface Duo y Samsung Galaxy Fold  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio":::
    Característica experimental  
 :::image-end:::  
 
@@ -48,7 +48,7 @@ Para ayudar a mejorar el sitio web o la aplicación para los dispositivos de ple
 *   [Representando la costura][DualScreenIntroductionHowWorkSeam], que es el espacio entre las dos pantallas.
 *   [Habilitar las API experimentales de la plataforma web][DevtoolsExperimentalFeaturesEnableExperimentalApis] para acceder a la nueva [característica de expansión de pantalla multimedia de CSS][DualScreenWebCssMediaSpanning] y [API de getWindowSegments de JavaScript][DualScreenWebJavascriptGetwindowsegments].  
 
-:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Emulación de dispositivos para Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
+:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Emulación de dispositivos para Surface Duo  
 :::image-end:::  
 
@@ -62,7 +62,7 @@ Problema de cromo: [#1054281][CR1054281]
 
 Agradecemos tus comentarios positivos sobre las superposiciones de cuadrícula CSS mejoradas.  Las superposiciones de cuadrícula CSS ahora están habilitadas de forma predeterminada y no requieren que se active un experimento.  
 
-:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Superposición de cuadrícula CSS para elemento de artículo" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
+:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
    Superposición de cuadrícula CSS para `article` elemento  
 :::image-end:::  
 
@@ -83,12 +83,12 @@ En Microsoft Edge 85 o versiones anteriores, se perdió el formato de una copiad
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="salida de API de consola de tabla en Microsoft Edge 85 o versiones anteriores" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/console-table-beta.msft.png":::
          `table` Salida de la API de consola en Microsoft Edge 85 o versiones anteriores  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="salida de la API de consola de tabla de Microsoft Edge 85 o versiones anteriores pegadas en código de Visual Studio" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
          `table` Salida de la API de consola de Microsoft Edge 85 o versiones anteriores pegadas en código de Visual Studio  
       :::image-end:::  
    :::column-end:::
@@ -98,12 +98,12 @@ En Microsoft Edge 86 o posterior, al copiar una tabla desde la **consola**, se c
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="salida de API de consola de tabla en Microsoft Edge 86 o posterior" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/console-table-canary.msft.png":::
          `table` Salida de la API de consola en Microsoft Edge 86 o posterior  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="salida de la API de consola de tabla de Microsoft Edge 86 o posterior pegada en el código de Visual Studio" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
          `table` Salida de la API de consola de Microsoft Edge 86 o posterior pegada en el código de Visual Studio  
       :::image-end:::  
    :::column-end:::
@@ -113,13 +113,13 @@ Error de cromo: [#1115011] [CR1115011]
 
 ### Visor de pedidos de origen para realizar pruebas de accesibilidad más sencillas  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio":::
    Característica experimental  
 :::image-end:::  
 
 La nueva aplicación auxiliar de accesibilidad muestra el orden de los elementos en el origen.  
 
-:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Activar Mostrar orden de origen" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
+:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
    Activar **Mostrar orden de origen**  
 :::image-end:::  
 
@@ -138,12 +138,12 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
          Microsoft Edge DevTools 85 and earlier in Traditional Chinese  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
          Microsoft Edge DevTools 86  or later in Traditional Chinese  
       :::image-end:::  
    :::column-end:::
@@ -160,7 +160,7 @@ En Microsoft Edge 84 y 85, el primer resultado de búsqueda en el panel **elemen
 
 Gracias por enviar tus comentarios y de mejorar el cromo.  Su comentario no cubierto [#1103316][CR1103316] problema en el proyecto de cromo de código abierto.  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Primer resultado de búsqueda resaltado en el panel elementos en Microsoft Edge 84 o posterior" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
    Primer resultado de búsqueda resaltado en el panel **elementos** en Microsoft Edge 84 o posterior  
 :::image-end:::  
 
@@ -180,7 +180,7 @@ Para abrir el nuevo panel **multimedia** , complete el paso siguiente.
 
 1.  Elija **personalizar y controlar DevTools** \ ( `...` \) > **más**  >  **medios**de herramientas.  
     
-    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Nuevo panel multimedia" lightbox="../../media/2020/08/media-panel.msft.png":::
+    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/media-panel.msft.png":::
        Nuevo panel **multimedia**  
     :::image-end:::  
 
@@ -197,7 +197,7 @@ Ahora puede capturar capturas de pantalla de nodo usando el menú contextual en 
 
 Por ejemplo, para tomar una captura de pantalla de la tabla de contenido, mantenga el puntero sobre el elemento, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **capturar nodo captura de pantalla**.  
 
-:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Capturar capturas de nodo" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    Capturar capturas de nodo  
 :::image-end:::  
 
@@ -209,13 +209,13 @@ La barra de advertencias de problemas del panel de la **consola** se reemplaza p
 
 <!--todo: this figure need to be updated  -->  
 
-:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Problemas en el mensaje de consola" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
+:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
    Problemas en el mensaje de consola  
 :::image-end:::  
 
 Los problemas de cookies de terceros ahora están ocultos de forma predeterminada en la herramienta **problemas** .  Active la casilla **incluir problemas de cookie de terceros** para ver los problemas.  
 
-:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="casilla de verificación de problemas de cookies de terceros" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
+:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
    casilla de verificación de problemas de cookies de terceros  
 :::image-end:::  
 
@@ -229,7 +229,7 @@ Por ejemplo, cuando la `Rubik` fuente está instalada en el dispositivo y la `@f
 
 Cuando **deshabilitar fuentes locales** está habilitado, DevTools ignora las `local()` fuentes y las recupera desde la red.  
 
-:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Emular las fuentes locales que faltan" lightbox="../../media/2020/08/disable-font.msft.png":::
+:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/disable-font.msft.png":::
    Emular las fuentes locales que faltan  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ Problema de cromo: [#384968][CR384968]
 
 La [API de detección de inactividad][WebDevIdleDetection] permite a los programadores detectar usuarios inactivos y reaccionar según los cambios de estado de inactividad.  Ahora puede usar DevTools para emular los cambios de estado de inactividad en la herramienta **sensores** para el estado del usuario y el estado de la pantalla en lugar de esperar a que cambie el estado real de inactividad.  Puede abrir la herramienta de **sensores** desde el [cajón][DevtoolsCustomizeIndexDrawer].  
 
-:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Emular usuarios inactivos" lightbox="../../media/2020/08/emulate-idle.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/emulate-idle.msft.png":::
    Emular usuarios inactivos  
 :::image-end:::  
 
@@ -265,7 +265,7 @@ La consulta de medios de [datos preferidos-datos][CsswgDraftsMediaqueries5Descde
 
 Ahora puede usar DevTools para emular la `prefers-reduced-data` consulta multimedia.  
 
-:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Emular preferidos: datos reducidos" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
    Emular preferidos: datos reducidos  
 :::image-end:::  
 
@@ -294,7 +294,7 @@ DevTools ahora proporciona un vínculo desde el panel de **trabajo de servicios*
 
 Anteriormente, DevTools mostrado una lista anidada en el panel de **aplicaciones** > panel de **trabajo de servicios** .  
 
-:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Vincular a otros orígenes" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
+:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
    Vincular a otros orígenes  
 :::image-end:::  
 
@@ -308,12 +308,12 @@ En la primera de las siguientes figuras, el resumen se muestra inicialmente `344
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Resumen de la cobertura" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/coverage-compare.msft.png":::
          Resumen de la cobertura  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Resumen de la cobertura de los elementos filtrados" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
+      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
          Resumen de la cobertura de los elementos filtrados  
       :::image-end:::  
    :::column-end:::
@@ -325,7 +325,7 @@ Problema de cromo: [#1061385][CR1090802]
 
 DevTools ahora mostrar una vista detallada de cada marco.  Para acceder a ella, elija un marco en el menú **Marcos** en el panel **aplicación** .  
 
-:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Nueva vista detallada de un marco en el panel de aplicaciones" lightbox="../../media/2020/08/frame-details.msft.png":::
+:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/frame-details.msft.png":::
    Nueva vista detallada de un marco en el panel de **aplicaciones**  
 :::image-end:::  
 
@@ -335,7 +335,7 @@ Problema de cromo: [#1093247][CR1093247]
 
 Las ventanas abiertas y las ventanas emergentes se muestran ahora también en el árbol de Marcos.  La vista detallada de las ventanas abiertas incluye información de seguridad adicional.  
 
-:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Vista detallada de nuevo marco para ventanas abiertas" lightbox="../../media/2020/08/window-opener.msft.png":::
+:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/window-opener.msft.png":::
    Vista detallada de nuevo marco para ventanas abiertas  
 :::image-end:::  
 
@@ -345,7 +345,7 @@ Error de cromo: [#1107766] [CR1107766]
 
 En los detalles de la trama, ahora se muestra el contexto seguro, la [Directiva de origen cruzado-Embedder (COEP)][WebDevCoopCoep]y las [directivas de apertura cruzada entre orígenes (COOP)][WebDevCoopCoep] .  
 
-:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Información de seguridad y aislamiento" lightbox="../../media/2020/08/coep-coop.msft.png":::
+:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/coep-coop.msft.png":::
    Información de seguridad y aislamiento  
 :::image-end:::  
 
@@ -361,7 +361,7 @@ DevTools ahora ofrece sugerencias de color para el texto de contraste de color b
 
 En el ejemplo siguiente, `h1` hay texto de bajo contraste.  Para corregirlo, abra el selector de color de la `color` propiedad en el panel **estilos** .  Después de expandir la sección **relación de contraste** , DevTools ofrece sugerencias de color AA y AAA.  Seleccione el color sugerido para aplicar el color.  
 
-:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="El selector de colores sugiere sugerencias de color AA y AAA" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
+:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
    El selector de colores sugiere sugerencias de color AA y AAA  
 :::image-end:::  
 
@@ -371,7 +371,7 @@ Problema de cromo: [#1093227][CR1093227]
 
 El panel **propiedades** está atrás.  Quedó [obsoleto en Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  El equipo de Microsoft Edge DevTools y el equipo de Chrome DevTools están planeando las mejoras para inspeccionar las propiedades de los elementos.  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Panel de propiedades en el panel elementos" lightbox="../../media/2020/08/properties-pane.msft.png":::
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/properties-pane.msft.png":::
    Panel de **propiedades** en el panel **elementos**  
 :::image-end:::  
 
@@ -384,7 +384,7 @@ When inspecting a network resource in the Network panel, DevTools now formats an
 
 The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft Edge flags that are enabled in your browser.  The raw header values look like opaque strings since the values are `base-64-encoded`, serialized [protocol buffers][GoogleDevelopersProtocolBuffers].  To make the contents more transparent to developers, DevTools now shows the decoded values.  
 
-:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Human-readable `X-Client-Data` header values" lightbox="../../media/2020/08/x-client-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/x-client-data.msft.png":::
    Human-readable `X-Client-Data` header values  
 :::image-end:::  
 
@@ -397,7 +397,7 @@ Las caras de las fuentes importadas se agregan ahora a la lista de autocompletar
 
 Por ejemplo, si `monospace` es una fuente personalizada instalada en la máquina local, se muestra en la lista de finalización de CSS. En versiones anteriores de Microsoft Edge, no se mostraba la fuente.
 
-:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Autocompletar fuentes personalizadas" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
+:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
    Autocompletar fuentes personalizadas  
 :::image-end:::  
 
@@ -409,7 +409,7 @@ DevTools ahora muestra el mismo tipo de recurso que la solicitud de red original
 
 Anteriormente DevTools cambiado el tipo a `Other` veces.  
 
-:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Mostrar tipo de recurso de redirección" lightbox="../../media/2020/08/network-redirect.msft.png":::
+:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/network-redirect.msft.png":::
    Mostrar tipo de recurso de redirección  
 :::image-end:::  
 
@@ -426,12 +426,12 @@ Haga clic en el botón **Borrar** para quitar el texto de la imagen.
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Botones Borrar de los paneles elementos" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
          Botones Borrar de los paneles **elementos**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Botones borrar en los paneles de red" lightbox="../../media/2020/08/clear-button-network.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../../media/2020/08/clear-button-network.msft.png":::
          Botones borrar en los paneles de **red**  
       :::image-end:::  
    :::column-end:::

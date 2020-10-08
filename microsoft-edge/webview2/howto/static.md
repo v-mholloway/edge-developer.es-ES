@@ -1,13 +1,13 @@
 ---
-description: Learn how to statically link the WebView2 loader library.
-title: How to Statically link the WebView2 loader library
+description: Obtenga información sobre cómo vincular estáticamente la biblioteca del cargador de WebView2.
+title: Cómo vincular estáticamente la biblioteca del cargador de WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/01/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
 ms.openlocfilehash: b7e0ec70cb00f318d4eb67254f37fcec79a5fcf6
 ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
 ms.translationtype: MT
@@ -15,33 +15,33 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/06/2020
 ms.locfileid: "11100322"
 ---
-# How to Statically link the WebView2 loader library  
+# Cómo vincular estáticamente la biblioteca del cargador de WebView2  
 
-## Context  
+## Contexto  
 
-What is the WebView2Loader.dll?  
+¿Qué es el WebView2Loader.dll?  
 
-*   The WebView2 SDK contains a header file, `WebView2Loader.dll.`, and the `IDL` file. `WebView2Loader.dll` is a small component that helps apps locate the WebView2 Runtime (or non-stable Microsoft Edge channels) on the device.  
+*   El SDK de WebView2 contiene un archivo de encabezado, `WebView2Loader.dll.` y el `IDL` archivo. `WebView2Loader.dll` es un pequeño componente que ayuda a que las aplicaciones encuentren el tiempo de ejecución de WebView2 (o canales de Microsoft Edge no estables) en el dispositivo.  
 
-For apps that have a single runtime, and do not want to ship a `WebView2Loader.dll`, complete the following **Procedure** steps.  
+Para las aplicaciones que tienen un único tiempo de ejecución y no desean enviar un `WebView2Loader.dll` , complete los siguientes pasos de **procedimiento** .  
 
-## Procedure  
+## Procedimiento  
 
-1.  Open the `.vcxproj` project file for your app in a text editor, such as Visual Studio Code.  
+1.  Abra el `.vcxproj` archivo de proyecto de la aplicación en un editor de texto, como código de Visual Studio.  
     
     > [!NOTE]
-    > The `.vcproj` project file may be a hidden file, meaning it does not display in Visual Studio.  Use the command-line to find a hidden file.  
+    > El `.vcproj` archivo de proyecto puede ser un archivo oculto, lo que significa que no se muestra en Visual Studio.  Use la línea de comandos para buscar un archivo oculto.  
     
-1.  Locate the section in the code where you include the WebView2 NuGet package target files.  The location in the code is highlighted in the following figure.  
+1.  Busca la sección en el código en la que incluyes los archivos de destino del paquete NuGet de WebView2.  La ubicación en el código se resalta en la siguiente ilustración.  
     
-    :::image type="complex" source="./media/inserthere.png" alt-text="Project Files code snippet" lightbox="./media/inserthere.png"::: 
-       Project Files code snippet  
+    :::image type="complex" source="./media/inserthere.png" alt-text="Fragmentos de código de archivos de proyecto" lightbox="./media/inserthere.png"::: 
+       Fragmentos de código de archivos de proyecto  
     :::image-end:::  
     
-1.  Copy the following code snippet and paste it everywhere the `Microsoft.Web.WebView2.targets` is included.  
+1.  Copie el siguiente fragmento de código y péguelo donde `Microsoft.Web.WebView2.targets` esté incluido.  
 
     > [!NOTE]
-    > For example, include it after the following code block.  
+    > Por ejemplo, lo incluye después del bloque de código siguiente.  
     > 
     > ```csharp
     > <Import Project="..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets')" />
@@ -51,46 +51,46 @@ For apps that have a single runtime, and do not want to ship a `WebView2Loader.d
     <PropertyGroup> <WebView2LoaderPreference>Static</WebView2LoaderPreference> </PropertyGroup>
     ```
     
-    :::image type="complex" source="./media/staticlib.png" alt-text="Project Files code snippet" lightbox="./media/staticlib.png"::: 
-       Inserted code snippet  
+    :::image type="complex" source="./media/staticlib.png" alt-text="Fragmentos de código de archivos de proyecto" lightbox="./media/staticlib.png"::: 
+       Fragmento de código insertado  
     :::image-end:::  
     
-1.  Edit the additional dependencies of the build configuration for your app.  To begin, find all of the `<AdditionalDependencies>` tags.  
-1.  Add `version.lib` as an additional dependency to every different build configuration in the `.vcxproj` file for your app.  
+1.  Edite las dependencias adicionales de la configuración de compilación de la aplicación.  Para empezar, busque todas las `<AdditionalDependencies>` etiquetas.  
+1.  Agregue `version.lib` como una dependencia adicional a cada configuración de compilación distinta en el `.vcxproj` archivo de la aplicación.  
     
-    :::image type="complex" source="./media/versionlib.png" alt-text="Project Files code snippet" lightbox="./media/versionlib.png"::: 
-       Adding `version.lib` to `ItemDefinitionGroups`  
+    :::image type="complex" source="./media/versionlib.png" alt-text="Fragmentos de código de archivos de proyecto" lightbox="./media/versionlib.png"::: 
+       Agregar `version.lib` a `ItemDefinitionGroups`  
     :::image-end:::  
     
     > [!NOTE]
-    > The WebView2 team aims to automate the additional dependency step in future releases.  
+    > El equipo de WebView2 se propone automatizar el paso de dependencia adicional en futuras versiones.  
     
-Compile and deploy your app.  Success.  
+Compile e implemente la aplicación.  Intentos.  
 
-## See also  
+## Consulte también  
 
-*   To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samples] on GitHub.
-*   For more detailed information about WebView2 APIs, navigate to [API reference][Webview2ApiReference].
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].
+*   Para comenzar a usar WebView2, vaya a [WebView2 guías de introducción][Webview2MainGettingStarted].  
+*   Para obtener un ejemplo completo de las capacidades de WebView2, vaya a [WebView2Samples][GithubMicrosoftedgeWebview2samples] en github.
+*   Para obtener información más detallada sobre las API de WebView2, vaya a referencia de la [API][Webview2ApiReference].
+*   Para obtener más información sobre WebView2, vaya a [recursos WebView2][Webview2MainNextSteps].
 
-## Getting in touch with the WebView2 team  
+## Ponerse en contacto con el equipo de WebView2  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
 
-[Webview2ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md#additionalbrowserarguments "AdditionalBrowserArguments - 0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions class | Microsoft Docs"  
-[Webview2ReferenceWin3209622Webview2IdlParameters]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environment  "CreateCoreWebView2Environment - Globals | Microsoft Docs"  
-[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2MainGettingStarted]: ../index.md#getting-started "Getting started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md#additionalbrowserarguments "AdditionalBrowserArguments-0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions clase | Microsoft docs"  
+[Webview2ReferenceWin3209622Webview2IdlParameters]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environment  "CreateCoreWebView2Environment-Globals | Microsoft docs"  
+[Webview2ApiReference]: ../webview2-api-reference.md "Referencia de la API de Microsoft Edge WebView2 | Microsoft docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft docs"  
+[Webview2MainGettingStarted]: ../index.md#getting-started "Introducción: Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft docs"  
 
-[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentarios de WebView: MicrosoftEdge/WebViewFeedback | GitHub"  
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
 
-[GithubMicrosoftVscodeJSDebugWhatsNew]: https://github.com/microsoft/vscode-js-debug#whats-new "What's new? - JavaScript debugger for Visual Studio Code - microsoft/vscode-js-debug | GitHub"  
+[GithubMicrosoftVscodeJSDebugWhatsNew]: https://github.com/microsoft/vscode-js-debug#whats-new "¿Qué novedades hay? -Depurador de JavaScript para Visual Studio Code-Microsoft/vscode-JS-Debug | GitHub"  
 
-[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chromium) WebView applications - Visual Studio Code - Debugger for Microsoft Edge - microsoft/vscode-edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Aplicaciones de WebView de Microsoft Edge (cromo): depurador de código de Visual Studio para Microsoft Edge-Microsoft/vscode-Edge-debug2 | GitHub"  

@@ -54,7 +54,7 @@ La herramienta **problemas** de Microsoft Edge DevTools reduce la fatiga de las 
        :::column span="":::
           También puede seleccionar **problemas** en el menú **más herramientas** .  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Herramienta problemas en el menú más herramientas" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media//issues-more-tools-menu.msft.png":::
              Herramienta **problemas** en el menú **más herramientas**  
           :::image-end:::  
        :::column-end:::
@@ -62,13 +62,13 @@ La herramienta **problemas** de Microsoft Edge DevTools reduce la fatiga de las 
     
 1.  Seleccione el botón **volver a cargar la página** , si es necesario.  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Herramienta problemas del cajón de DevTools con el botón volver a cargar página" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-before-refresh.msft.png":::
        Herramienta **problemas** del cajón de DevTools con el botón **volver a cargar página**  
     :::image-end:::  
 
     Los problemas notificados en la **consola** son difíciles de comprender, como las advertencias de cookie en la siguiente imagen.  En función de los problemas que se hayan informado, es posible que no tenga claro lo que debe hacer.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Herramienta problemas en el cajón de DevTools con tres problemas de cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-after-refresh.msft.png":::
        Herramienta **problemas** en el cajón de DevTools con tres problemas de cookies  
     :::image-end:::  
     
@@ -78,7 +78,7 @@ La herramienta **problemas** del alimentador de DevTools presenta advertencias e
 
 1.  Seleccione un elemento de la herramienta **problemas** para obtener información sobre cómo corregir el problema y encontrar los recursos afectados.  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Marcar las cookies entre sitios como un problema seguro abierto en la herramienta problemas" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-issue-open.msft.png":::
        **Marcar las cookies entre sitios como** un problema seguro abierto en la herramienta **problemas**  
     :::image-end:::  
     
@@ -91,7 +91,7 @@ La herramienta **problemas** del alimentador de DevTools presenta advertencias e
     
 1.  Seleccione los elementos de **recursos afectados** para ver los detalles.  En el siguiente ejemplo, la **marca de las cookies entre sitios como** un problema seguro afecta a una cookie y a dos solicitudes.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Recursos afectados abiertos en la pestaña "problemas"" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Recursos afectados abiertos en la herramienta **problemas** del cajón de DevTools  
     :::image-end:::  
     
@@ -99,13 +99,13 @@ La herramienta **problemas** del alimentador de DevTools presenta advertencias e
 
 1.  Seleccione un vínculo de recursos para ver el elemento en el contexto adecuado dentro de DevTools.  En el ejemplo siguiente, seleccione `samesite-sandbox.glitch.me` en **solicitudes** para mostrar las cookies adjuntas a la solicitud.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Ver la cookie afectada en el panel de red DevTools" lightbox="../media/issues-tab-view-request.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-view-request.msft.png":::
        Ver la cookie afectada en el panel de **red** DevTools  
     :::image-end:::  
 
 1.  Desplácese para ver el elemento con un problema: en el ejemplo siguiente, la `ck02` cookie.  Desplace el puntero sobre la columna **SameSite** para ver el `None` valor detectado por el problema.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Valor NONE en la columna SameSite de la cookie CK02 en el panel DevTools red" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` valor de la columna **SameSite** de la `ck02` cookie en el panel de **red** DevTools  
     :::image-end:::  
 
