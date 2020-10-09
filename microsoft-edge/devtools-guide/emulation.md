@@ -3,77 +3,110 @@ description: Use el panel de emulación para probar diferentes perfiles de explo
 title: 'DevTools: emulación'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, emulación de dispositivos, diseño dinámico, ubicación geográfica, resolución
 ms.custom: seodec18
-ms.openlocfilehash: d66646600aeaac279acaf622527f829c69f33286
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 6eaa8d79cfd64473dcc52beff5659b39054e2a48
+ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573838"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104850"
 ---
-# <span data-ttu-id="95906-104">Emulación</span><span class="sxs-lookup"><span data-stu-id="95906-104">Emulation</span></span>
+# <span data-ttu-id="cc004-104">Emulación</span><span class="sxs-lookup"><span data-stu-id="cc004-104">Emulation</span></span>  
 
-<span data-ttu-id="95906-105">El panel de *emulación* le ayuda a:</span><span class="sxs-lookup"><span data-stu-id="95906-105">The *Emulation* panel helps you to:</span></span>
- - <span data-ttu-id="95906-106">Simular diversos [perfiles de dispositivos](#device), [exploradores](#browser-profile), [tamaños de pantalla y resoluciones](#display)</span><span class="sxs-lookup"><span data-stu-id="95906-106">Simulate various [device profiles](#device), [browsers](#browser-profile), [screen sizes and resolutions](#display)</span></span>
- - <span data-ttu-id="95906-107">Probar distintas [configuraciones y coordenadas geolocales](#geolocation)</span><span class="sxs-lookup"><span data-stu-id="95906-107">Test different [geolocation settings and coordinates](#geolocation)</span></span>
+> [!NOTE]
+> <span data-ttu-id="cc004-105">El nuevo Microsoft Edge se ha creado con cromo y comienza en la versión 75.</span><span class="sxs-lookup"><span data-stu-id="cc004-105">The new Microsoft Edge is built using Chromium, and starts at version 75.</span></span>  <span data-ttu-id="cc004-106">Para obtener más información, [descarga el nuevo Microsoft Edge][MicrosoftNewEdge]y prueba las nuevas [herramientas para desarrolladores de Microsoft Edge (cromo)][DevtoolsGuideChromium].</span><span class="sxs-lookup"><span data-stu-id="cc004-106">For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromium].</span></span>  
+> 
+> <span data-ttu-id="cc004-107">Para emular diferentes dispositivos, exploradores, tamaños de pantalla y resoluciones en el nuevo DevTools, vaya a [emular dispositivos móviles en Microsoft Edge \ (cromo \) DevTools][DevtoolsGuideChromiumDeviceMode].</span><span class="sxs-lookup"><span data-stu-id="cc004-107">To emulate different devices, browsers, screen sizes, and resolutions in the new DevTools, navigate to [Emulate Mobile Devices in Microsoft Edge \(Chromium\) DevTools][DevtoolsGuideChromiumDeviceMode].</span></span>  
 
-![El panel de emulación DevTools de Microsoft Edge](./media/emulation.png)
+<span data-ttu-id="cc004-108">El panel de **emulación** ayuda a realizar las siguientes actividades.</span><span class="sxs-lookup"><span data-stu-id="cc004-108">The **Emulation** panel helps with the following activities.</span></span>    
 
-1. <span data-ttu-id="95906-109">El botón **conservar la configuración de emulación** guardará los cambios que haya realizado desde la configuración de emulación de escritorio predeterminada, incluso cuando cierra y vuelve a abrir la DevTools.</span><span class="sxs-lookup"><span data-stu-id="95906-109">The **Persist Emulation settings** button will save any changes you made from the default desktop emulation settings, even when you close and reopen the DevTools.</span></span> 
+*   <span data-ttu-id="cc004-109">Simular diversos [perfiles de dispositivos](#device), [exploradores](#browser-profile), [tamaños de pantalla y resoluciones](#display)</span><span class="sxs-lookup"><span data-stu-id="cc004-109">Simulate various [device profiles](#device), [browsers](#browser-profile), and [screen sizes and resolutions](#display)</span></span>  
+*   <span data-ttu-id="cc004-110">Probar distintas [configuraciones y coordenadas geolocales](#geolocation)</span><span class="sxs-lookup"><span data-stu-id="cc004-110">Test different [geolocation settings and coordinates](#geolocation)</span></span>  
 
-2. <span data-ttu-id="95906-110">El botón **restablecer configuración de emulación** restablecerá la configuración de emulación al perfil de explorador de *escritorio* predeterminado y a la cadena de agente de usuario de Microsoft Edge con GPS desactivado.</span><span class="sxs-lookup"><span data-stu-id="95906-110">The **Reset Emulation settings** button will reset your emulation settings back to the default *Desktop* browser profile and Microsoft Edge user agent string with GPS turned off.</span></span>
+:::image type="complex" source="./media/emulation.png" alt-text="El panel de emulación DevTools de Microsoft Edge" lightbox="./media/emulation.png":::
+   <span data-ttu-id="cc004-112">El panel de **emulación** DevTools de Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="cc004-112">The Microsoft Edge DevTools **Emulation** panel</span></span>  
+:::image-end:::  
 
-3. <span data-ttu-id="95906-111">Cuando se cambia la configuración predeterminada de cualquiera de estas opciones, la pestaña **emulación** mostrará una alerta informativa para indicar que se está emulando algún aspecto del comportamiento del explorador.</span><span class="sxs-lookup"><span data-stu-id="95906-111">When any of these options are changed from the default, the **Emulation** tab will show an informational alert to indicate that some aspect of your browser's behavior is being emulated.</span></span>
+1.  <span data-ttu-id="cc004-113">El botón **conservar la configuración de emulación** guarda los cambios realizados en la configuración de emulación de escritorio predeterminada, incluso cuando se cierra y vuelve a abrir la DevTools.</span><span class="sxs-lookup"><span data-stu-id="cc004-113">The **Persist Emulation settings** button saves any changes you made from the default desktop emulation settings, even when you close and reopen the DevTools.</span></span>  
 
-## <span data-ttu-id="95906-112">Dispositivo</span><span class="sxs-lookup"><span data-stu-id="95906-112">Device</span></span>
+1.  <span data-ttu-id="cc004-114">El botón **restablecer configuración de emulación** restablece la configuración de emulación al perfil de explorador de escritorio predeterminado y a la cadena de agente de usuario de Microsoft Edge con GPS desactivado.</span><span class="sxs-lookup"><span data-stu-id="cc004-114">The **Reset Emulation settings** button resets your emulation settings back to the default Desktop browser profile and Microsoft Edge user agent string with GPS turned off.</span></span>  
 
-<span data-ttu-id="95906-113">Elija entre una lista preestablecida de perfiles de dispositivo de Windows que configure automáticamente las demás opciones de emulación o especifique su propia configuración *personalizada* .</span><span class="sxs-lookup"><span data-stu-id="95906-113">Pick from a preset list of Windows device profiles which  automatically configure the other emulation options or specify your own *Custom* configuation.</span></span> <span data-ttu-id="95906-114">Cambie de nuevo a *predeterminado* para restablecer todas las herramientas de emulación.</span><span class="sxs-lookup"><span data-stu-id="95906-114">Switch back to *Default* to reset all the emulation tools.</span></span>
+1.  <span data-ttu-id="cc004-115">Cuando se cambia la configuración predeterminada de cualquiera de estas opciones, la pestaña **emulación** muestra una alerta informativa para indicar que se está emulando algún aspecto del comportamiento de su explorador.</span><span class="sxs-lookup"><span data-stu-id="cc004-115">When any of these options are changed from the default, the **Emulation** tab displays an informational alert to indicate that some aspect of the behavior of your browser is being emulated.</span></span>  
 
-## <span data-ttu-id="95906-115">Modo</span><span class="sxs-lookup"><span data-stu-id="95906-115">Mode</span></span>
+## <span data-ttu-id="cc004-116">Dispositivo</span><span class="sxs-lookup"><span data-stu-id="cc004-116">Device</span></span>  
 
-### <span data-ttu-id="95906-116">Perfil de explorador</span><span class="sxs-lookup"><span data-stu-id="95906-116">Browser profile</span></span>
-<span data-ttu-id="95906-117">Una forma rápida de simular una página en un dispositivo Windows Phone es cambiar la configuración del **Perfil del explorador** a *Windows Phone*.</span><span class="sxs-lookup"><span data-stu-id="95906-117">A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to *Windows Phone*.</span></span>
+<span data-ttu-id="cc004-117">Elija entre una lista preestablecida de perfiles de dispositivo de Windows que configure automáticamente las demás opciones de emulación o especifique su propia configuración **personalizada** .</span><span class="sxs-lookup"><span data-stu-id="cc004-117">Pick from a preset list of Windows device profiles that automatically configure the other emulation options or specify your own **Custom** configuration.</span></span>  <span data-ttu-id="cc004-118">Cambie de nuevo a **predeterminado** para restablecer todas las herramientas de emulación.</span><span class="sxs-lookup"><span data-stu-id="cc004-118">Switch back to **Default** to reset all the emulation tools.</span></span>  
 
-#### <span data-ttu-id="95906-118">Cadena de agente de usuario</span><span class="sxs-lookup"><span data-stu-id="95906-118">User agent string</span></span>
+## <span data-ttu-id="cc004-119">Modo</span><span class="sxs-lookup"><span data-stu-id="cc004-119">Mode</span></span>  
 
-<span data-ttu-id="95906-119">Modificar la cadena de agente de usuario para imitar a otro explorador es un buen primer paso en la depuración de errores que solo ocurren en Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="95906-119">Modifying your user agent string to mimic another browser is a good first step in debugging errors that are only happening in Microsoft Edge.</span></span> 
+### <span data-ttu-id="cc004-120">Perfil de explorador</span><span class="sxs-lookup"><span data-stu-id="cc004-120">Browser profile</span></span>  
 
-<span data-ttu-id="95906-120">Los scripts de front-end y/o back-end a veces usan la cadena de agente de usuario para detectar qué explorador está usando.</span><span class="sxs-lookup"><span data-stu-id="95906-120">Front end and/or back end scripts sometimes use the user agent string  to detect which browser you're using.</span></span> <span data-ttu-id="95906-121">Y incluso si no usa la detección del explorador en su propio código, es posible que esté usando una biblioteca de JavaScript de terceros o una secuencia de comandos del servidor que sí lo hace.</span><span class="sxs-lookup"><span data-stu-id="95906-121">And even when you're not using browser detection in your own code, you may be using a third-party JavaScript library or server-side script that does.</span></span>
+<span data-ttu-id="cc004-121">Una forma rápida de simular una página en un dispositivo Windows Phone es cambiar la configuración del **Perfil del explorador** a **Windows Phone**.</span><span class="sxs-lookup"><span data-stu-id="cc004-121">A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to **Windows Phone**.</span></span>  
 
-<span data-ttu-id="95906-122">El problema con la detección de explorador es que a menudo se usa para cambiar de tamaño o cambiar las características de una página web en función de lo que el desarrollador que escribe la secuencia de comandos cree que su explorador puede hacer, en lugar de detectar qué es lo que su explorador puede hacer realmente usando la detección de características.</span><span class="sxs-lookup"><span data-stu-id="95906-122">The problem with browser detection is that it's often used to scale back or change the features in a webpage based on what the developer writing the script thinks your browser can do, rather than detecting what your browser can actually do using feature detection.</span></span> <span data-ttu-id="95906-123">Esto puede provocar un comportamiento inesperado, ya que el código destinado a Windows Internet Explorer 8 puede ejecutarse de forma muy diferente en Microsoft Edge. o una característica que el explorador sea perfectamente capaz de admitir puede estar deshabilitada debido a una suposición realizada por el desarrollador.</span><span class="sxs-lookup"><span data-stu-id="95906-123">This can cause unexpected behavior, because code targeted at Windows Internet Explorer 8 can run very differently in Microsoft Edge; or a feature your browser is perfectly capable of supporting might be disabled because of an assumption made by the developer.</span></span>
+#### <span data-ttu-id="cc004-122">Cadena de agente de usuario</span><span class="sxs-lookup"><span data-stu-id="cc004-122">User agent string</span></span>  
 
-<span data-ttu-id="95906-124">Si al cambiar la cadena de agente de usuario se elimina el problema, es probable que la detección del explorador causase.</span><span class="sxs-lookup"><span data-stu-id="95906-124">If changing your user agent string clears up the problem, browser detection is likely culprit.</span></span>
+<span data-ttu-id="cc004-123">Modificar la cadena de agente de usuario para imitar a otro explorador es un buen primer paso en la depuración de errores que solo ocurren en Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="cc004-123">Modifying your user agent string to mimic another browser is a good first step in debugging errors that are only happening in Microsoft Edge.</span></span>  
 
-## <span data-ttu-id="95906-125">Pantalla</span><span class="sxs-lookup"><span data-stu-id="95906-125">Display</span></span>
+<span data-ttu-id="cc004-124">Los scripts usan la cadena de agente de usuario para detectar qué explorador se usa.</span><span class="sxs-lookup"><span data-stu-id="cc004-124">Scripts use the user agent string to detect which browser is used.</span></span>  <span data-ttu-id="cc004-125">El script puede ser front-end, back-end o front-end y back-end.</span><span class="sxs-lookup"><span data-stu-id="cc004-125">Script may be front-end, back-end, or front-end and back-end.</span></span>  <span data-ttu-id="cc004-126">Aunque el código no usa la detección del explorador, el código puede heredarlo de una biblioteca de JavaScript de terceros o de una secuencia de comandos del servidor.</span><span class="sxs-lookup"><span data-stu-id="cc004-126">Although your code does not use browser detection, your code may inherit it from a third-party JavaScript library or server-side script.</span></span>  
 
-<span data-ttu-id="95906-126">La emulación de pantalla le permite obtener una vista previa del sitio en diferentes tamaños y resoluciones de pantalla: desde monitores de escritorio convencionales hasta pantallas móviles más pequeñas o pantallas de alta resolución más recientes.</span><span class="sxs-lookup"><span data-stu-id="95906-126">Display emulation lets you preview your site on different screen sizes and resolutions: from conventional desktop monitors to smaller mobile screens or newer high-resolution displays.</span></span>
+<span data-ttu-id="cc004-127">El problema con la detección de explorador es que puede escalar \ (o cambiar \) características en la página web con suposiciones acerca de las capacidades del explorador.</span><span class="sxs-lookup"><span data-stu-id="cc004-127">The problem with browser detection is that you may scale-back \(or change\) features in your webpage using assumptions about browser capabilities.</span></span> <span data-ttu-id="cc004-128">En su lugar, debe considerar la posibilidad de usar la detección de características para detectar las capacidades de su explorador.</span><span class="sxs-lookup"><span data-stu-id="cc004-128">Instead, you should consider using feature detection to detect the capabilities of your browser.</span></span>  <span data-ttu-id="cc004-129">Se puede producir un comportamiento inesperado debido a una de las siguientes situaciones:</span><span class="sxs-lookup"><span data-stu-id="cc004-129">Unexpected behavior may occur because of one of the following situations.</span></span>  
 
-<span data-ttu-id="95906-127">Las emulaciones están adaptadas para probar y hacer coincidir las dimensiones físicas de las pantallas que se están emulando.</span><span class="sxs-lookup"><span data-stu-id="95906-127">Emulations are adapted to try and match the physical dimensions of the screens being emulated.</span></span> <span data-ttu-id="95906-128">Es posible que los píxeles emulados parezcan comprimidos o expandidos, y no se recomienda la emulación si necesita probar la posición perfecta de los elementos HTML en píxeles.</span><span class="sxs-lookup"><span data-stu-id="95906-128">Emulated pixels might appear compressed or expanded, and emulation is not recommended if you need to test pixel-perfect positioning of HTML elements.</span></span> <span data-ttu-id="95906-129">La emulación es, no obstante, adecuada para probar diseños con capacidad de respuesta e identificar problemas de posicionamiento de elementos más grandes.</span><span class="sxs-lookup"><span data-stu-id="95906-129">Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.</span></span>
+*   <span data-ttu-id="cc004-130">El código dirigido a Windows Internet Explorer 8 puede ejecutarse de forma diferente en Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="cc004-130">Code targeted at Windows Internet Explorer 8 may run differently in Microsoft Edge.</span></span>  
+*   <span data-ttu-id="cc004-131">Una característica que el explorador debe admitir está deshabilitada debido a una suposición realizada por el desarrollador.</span><span class="sxs-lookup"><span data-stu-id="cc004-131">A feature that your browser should support is disabled, because of an assumption made by the developer.</span></span>  
 
-### <span data-ttu-id="95906-130">Orientación</span><span class="sxs-lookup"><span data-stu-id="95906-130">Orientation</span></span>
+<span data-ttu-id="cc004-132">Si al cambiar la cadena de agente de usuario se elimina el problema, es probable que la detección del explorador causase.</span><span class="sxs-lookup"><span data-stu-id="cc004-132">If changing your user agent string clears up the problem, browser detection is likely culprit.</span></span>  
 
-<span data-ttu-id="95906-131">Elija entre el modo *horizontal* o el *vertical* .</span><span class="sxs-lookup"><span data-stu-id="95906-131">Choose from *Landscape* or *Portrait* mode.</span></span>
+## <span data-ttu-id="cc004-133">Pantalla</span><span class="sxs-lookup"><span data-stu-id="cc004-133">Display</span></span>  
 
-### <span data-ttu-id="95906-132">Resolución</span><span class="sxs-lookup"><span data-stu-id="95906-132">Resolution</span></span>
+<span data-ttu-id="cc004-134">Emulación de pantalla para obtener una vista previa del sitio en diferentes tamaños y resoluciones de pantalla.</span><span class="sxs-lookup"><span data-stu-id="cc004-134">Display emulation to preview your site on different screen sizes and resolutions.</span></span>  
 
-<span data-ttu-id="95906-133">Elija una lista preestablecida de resoluciones de dispositivos populares o especifique su propia configuración *personalizada* . Se admiten resoluciones de hasta 80 pulgadas y 3820 x 2160.</span><span class="sxs-lookup"><span data-stu-id="95906-133">Choose from a preset list of popular device resolutions, or specify your own *Custom* config. Resolutions of up to 80 inches and 3820 x 2160 are supported.</span></span>
+*   <span data-ttu-id="cc004-135">monitores de escritorio convencionales</span><span class="sxs-lookup"><span data-stu-id="cc004-135">conventional desktop monitors</span></span>  
+*   <span data-ttu-id="cc004-136">pantallas móviles más pequeñas</span><span class="sxs-lookup"><span data-stu-id="cc004-136">smaller mobile screens</span></span>  
+*   <span data-ttu-id="cc004-137">pantallas más recientes de alta resolución</span><span class="sxs-lookup"><span data-stu-id="cc004-137">newer high-resolution displays</span></span>  
 
-## <span data-ttu-id="95906-134">Geolocalización</span><span class="sxs-lookup"><span data-stu-id="95906-134">Geolocation</span></span>
+<span data-ttu-id="cc004-138">Las emulaciones están adaptadas para intentar coincidir las dimensiones físicas de las pantallas que se están emulando.</span><span class="sxs-lookup"><span data-stu-id="cc004-138">Emulations are adapted to try to match the physical dimensions of the screens being emulated.</span></span>  <span data-ttu-id="cc004-139">Los píxeles emulados pueden parecer comprimidos o expandidos.</span><span class="sxs-lookup"><span data-stu-id="cc004-139">Emulated pixels may appear compressed or expanded.</span></span> <span data-ttu-id="cc004-140">No se recomienda la emulación si necesita probar la posición perfecta de los elementos HTML en píxeles.</span><span class="sxs-lookup"><span data-stu-id="cc004-140">Emulation is not recommended if you need to test pixel-perfect positioning of HTML elements.</span></span>  <span data-ttu-id="cc004-141">La emulación es, no obstante, adecuada para probar diseños con capacidad de respuesta e identificar problemas de posicionamiento de elementos más grandes.</span><span class="sxs-lookup"><span data-stu-id="cc004-141">Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.</span></span>  
 
-<span data-ttu-id="95906-135">Si su sitio usa la [API de ubicación](https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation) geográfica para proporcionar servicios basados en la ubicación, puede probar fácilmente distintas coordenadas GPS y Estados de los sensores desde la comodidad de su escritorio.</span><span class="sxs-lookup"><span data-stu-id="95906-135">If your site uses the [Geolocation API](https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation) to provide location-based services, you can easily test different GPS coordinates and sensor states from the convenience of your desktop.</span></span> <span data-ttu-id="95906-136">Esta configuración invalidará las coordenadas de GPS reales y el estado de sensor en los equipos que admitan geolocalización.</span><span class="sxs-lookup"><span data-stu-id="95906-136">These settings will override any actual GPS coordinates and the sensor state on machines that support geolocation.</span></span> 
+### <span data-ttu-id="cc004-142">Orientación</span><span class="sxs-lookup"><span data-stu-id="cc004-142">Orientation</span></span>  
 
-<span data-ttu-id="95906-137">Al igual que con el uso de datos personales en la web, los usuarios primero tendrán que conceder permiso a su sitio para usar su ubicación.</span><span class="sxs-lookup"><span data-stu-id="95906-137">As with any usage of personal data on the web, your users will first need to grant your site permission to use their location.</span></span> <span data-ttu-id="95906-138">Puede probar cómo se comporta su sitio con y sin permisos de ubicación en el panel de *configuración* de Microsoft Edge:</span><span class="sxs-lookup"><span data-stu-id="95906-138">You can test how your site behaves with and without location permissions from the Microsoft Edge *Settings* panel:</span></span>
+<span data-ttu-id="cc004-143">Elija entre el modo **horizontal** o el **vertical** .</span><span class="sxs-lookup"><span data-stu-id="cc004-143">Choose from **Landscape** or **Portrait** mode.</span></span>  
 
-<span data-ttu-id="95906-139">**...** >  **Configuración**  >  **Ver configuración avanzada**  >  Permisos de sitio **Web**  >  **Administrar**</span><span class="sxs-lookup"><span data-stu-id="95906-139">**...** > **Settings** > **View advanced settings** > **Website permissions** > **Manage**</span></span>
+### <span data-ttu-id="cc004-144">Resolución</span><span class="sxs-lookup"><span data-stu-id="cc004-144">Resolution</span></span>  
 
-![Administrar permisos de sitio web desde el panel de configuración de Microsoft Edge](./media/settings_manage_permissions.png)
+<span data-ttu-id="cc004-145">Elija una lista preestablecida de resoluciones de dispositivos populares o especifique su propia configuración **personalizada** .  Se admiten resoluciones de hasta 80 pulgadas y 3820 x 2160.</span><span class="sxs-lookup"><span data-stu-id="cc004-145">Choose from a preset list of popular device resolutions, or specify your own **Custom** config.  Resolutions of up to 80 inches and 3820 x 2160 are supported.</span></span>  
 
-## <span data-ttu-id="95906-141">Abreviados</span><span class="sxs-lookup"><span data-stu-id="95906-141">Shortcuts</span></span>
+## <span data-ttu-id="cc004-146">Geolocalización</span><span class="sxs-lookup"><span data-stu-id="cc004-146">Geolocation</span></span>  
 
-| <span data-ttu-id="95906-142">Acción</span><span class="sxs-lookup"><span data-stu-id="95906-142">Action</span></span>                   | <span data-ttu-id="95906-143">Método abreviado</span><span class="sxs-lookup"><span data-stu-id="95906-143">Shortcut</span></span>               |
-|:-------------------------|:-----------------------|
-| <span data-ttu-id="95906-144">Restablecer la configuración de emulación</span><span class="sxs-lookup"><span data-stu-id="95906-144">Reset Emulation settings</span></span> | `CTRL` + `SHIFT` + `L` |
+<span data-ttu-id="cc004-147">Si su sitio Web usa la [API de ubicación geográfica][MdnGeolocationUsing] para proporcionar servicios basados en la ubicación, las siguientes actividades estarán disponibles desde la comodidad de su escritorio.</span><span class="sxs-lookup"><span data-stu-id="cc004-147">If your website uses the [Geolocation API][MdnGeolocationUsing] to provide location-based services, the following activities are available from the convenience of your desktop.</span></span>  
+
+*   <span data-ttu-id="cc004-148">Pruebe fácilmente distintas coordenadas GPS</span><span class="sxs-lookup"><span data-stu-id="cc004-148">easily test different GPS coordinates</span></span>  
+*   <span data-ttu-id="cc004-149">prueba fácilmente diferentes Estados de los sensores</span><span class="sxs-lookup"><span data-stu-id="cc004-149">easily test different sensor states</span></span>  
+
+<span data-ttu-id="cc004-150">La configuración suplanta las coordenadas de GPS reales y el estado de sensor en dispositivos que admiten geolocalización.</span><span class="sxs-lookup"><span data-stu-id="cc004-150">The settings override any actual GPS coordinates and the sensor state on devices that support geolocation.</span></span>  
+
+<span data-ttu-id="cc004-151">Tu sitio web debe solicitar y tener permiso de un usuario antes de usar la ubicación del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="cc004-151">Your website must request and be granted permission from a user before using the device location.</span></span>  <span data-ttu-id="cc004-152">Pruebe cómo se comporta su sitio con y sin permisos de ubicación en el panel de **configuración** de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="cc004-152">Test how your site behaves with and without location permissions from the Microsoft Edge **Settings** panel.</span></span>  
+
+<span data-ttu-id="cc004-153">**...** >  **Configuración**  >  **Ver configuración avanzada**  >  Permisos de sitio **Web**  >  **Administrar**</span><span class="sxs-lookup"><span data-stu-id="cc004-153">**...** > **Settings** > **View advanced settings** > **Website permissions** > **Manage**</span></span>  
+
+:::image type="complex" source="./media/settings_manage_permissions.png" alt-text="El panel de emulación DevTools de Microsoft Edge" lightbox="./media/settings_manage_permissions.png":::
+   <span data-ttu-id="cc004-155">Administrar permisos de sitio web desde el panel de **configuración** de Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="cc004-155">Manage website permissions from the Microsoft Edge **Settings** panel</span></span>  
+:::image-end:::  
+
+## <span data-ttu-id="cc004-156">Accesos directos</span><span class="sxs-lookup"><span data-stu-id="cc004-156">Shortcuts</span></span>
+
+| <span data-ttu-id="cc004-157">Acción</span><span class="sxs-lookup"><span data-stu-id="cc004-157">Action</span></span>  | <span data-ttu-id="cc004-158">Acceso directo</span><span class="sxs-lookup"><span data-stu-id="cc004-158">Shortcut</span></span>  |  
+|:--- |:--- |  
+| <span data-ttu-id="cc004-159">Restablecer la configuración de emulación</span><span class="sxs-lookup"><span data-stu-id="cc004-159">Reset Emulation settings</span></span> | `Ctrl`+`Shift`+`L` |  
+
+<!-- links -->  
+
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
+[DevtoolsGuideChromiumDeviceMode]: /microsoft-edge/devtools-guide-chromium/device-mode "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft docs"  
+
+[MicrosoftNewEdge]: https://www.microsoft.com/edge "Descargar nuevo explorador Microsoft Edge"  
+
+[MdnGeolocationUsing]: https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation "API de ubicación geográfica | MDN"  
