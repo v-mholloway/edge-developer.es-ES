@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.date: 01/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: c4c54273d123c605181ee4b53aa441768a8711bf
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: c4959d2905f95c2bcf98cb78ad67bb88ecfec959
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573725"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104745"
 ---
 # Notas de la versión 0,2 del protocolo DevTools
 
@@ -24,6 +24,6 @@ Los objetivos del protocolo DevTools son tres veces:
 
  - Proporciona una API pública para que nuestra aplicación de DevTools se adjunte a Microsoft Edge
  - Expandir el acceso de la funcionalidad de DevTools a los clientes de herramientas externas
- - Habilitar la depuración remota en la gama de dispositivos con Windows 10 que ejecutan Micrsoft Edge 
+ - Habilitar la depuración remota en la gama de dispositivos con Windows 10 que ejecutan Microsoft Edge 
 
-La versión 0,2 del protocolo DevTools incluye dominios nuevos para el estilo y el diseño (solo lectura) de depuración y API de consola, además de la funcionalidad de depuración básica de scripts introducida en la versión 0,1. En la interfaz de usuario de Edge DevTools, esto se traduce en la funcionalidad disponible en los paneles [**elementos**](../../devtools-guide/elements.md), [**consola**](../../devtools-guide/console.md) y [**depuración**](../../devtools-guide/debugger.md) .
+La versión 0,2 del protocolo DevTools incluye dominios nuevos para el estilo y el diseño (solo lectura) de depuración y API de consola, además de la funcionalidad de depuración básica de scripts introducida en la versión 0,1. En la interfaz de usuario de Edge DevTools, esto se traduce en la funcionalidad disponible en los paneles [**elementos**](../../devtools-guide/elements.md), [**consola**](../../devtools-guide/console.md) y [**depuración**](../../devtools-guide/debugger.md)  .

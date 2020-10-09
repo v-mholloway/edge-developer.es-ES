@@ -3,77 +3,110 @@ description: Use el panel de emulación para probar diferentes perfiles de explo
 title: 'DevTools: emulación'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, emulación de dispositivos, diseño dinámico, ubicación geográfica, resolución
 ms.custom: seodec18
-ms.openlocfilehash: d66646600aeaac279acaf622527f829c69f33286
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 6eaa8d79cfd64473dcc52beff5659b39054e2a48
+ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573838"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104850"
 ---
-# Emulación
+# Emulación  
 
-El panel de *emulación* le ayuda a:
- - Simular diversos [perfiles de dispositivos](#device), [exploradores](#browser-profile), [tamaños de pantalla y resoluciones](#display)
- - Probar distintas [configuraciones y coordenadas geolocales](#geolocation)
+> [!NOTE]
+> El nuevo Microsoft Edge se ha creado con cromo y comienza en la versión 75.  Para obtener más información, [descarga el nuevo Microsoft Edge][MicrosoftNewEdge]y prueba las nuevas [herramientas para desarrolladores de Microsoft Edge (cromo)][DevtoolsGuideChromium].  
+> 
+> Para emular diferentes dispositivos, exploradores, tamaños de pantalla y resoluciones en el nuevo DevTools, vaya a [emular dispositivos móviles en Microsoft Edge \ (cromo \) DevTools][DevtoolsGuideChromiumDeviceMode].  
 
-![El panel de emulación DevTools de Microsoft Edge](./media/emulation.png)
+El panel de **emulación** ayuda a realizar las siguientes actividades.    
 
-1. El botón **conservar la configuración de emulación** guardará los cambios que haya realizado desde la configuración de emulación de escritorio predeterminada, incluso cuando cierra y vuelve a abrir la DevTools. 
+*   Simular diversos [perfiles de dispositivos](#device), [exploradores](#browser-profile), [tamaños de pantalla y resoluciones](#display)  
+*   Probar distintas [configuraciones y coordenadas geolocales](#geolocation)  
 
-2. El botón **restablecer configuración de emulación** restablecerá la configuración de emulación al perfil de explorador de *escritorio* predeterminado y a la cadena de agente de usuario de Microsoft Edge con GPS desactivado.
+:::image type="complex" source="./media/emulation.png" alt-text="El panel de emulación DevTools de Microsoft Edge" lightbox="./media/emulation.png":::
+   El panel de **emulación** DevTools de Microsoft Edge  
+:::image-end:::  
 
-3. Cuando se cambia la configuración predeterminada de cualquiera de estas opciones, la pestaña **emulación** mostrará una alerta informativa para indicar que se está emulando algún aspecto del comportamiento del explorador.
+1.  El botón **conservar la configuración de emulación** guarda los cambios realizados en la configuración de emulación de escritorio predeterminada, incluso cuando se cierra y vuelve a abrir la DevTools.  
 
-## Dispositivo
+1.  El botón **restablecer configuración de emulación** restablece la configuración de emulación al perfil de explorador de escritorio predeterminado y a la cadena de agente de usuario de Microsoft Edge con GPS desactivado.  
 
-Elija entre una lista preestablecida de perfiles de dispositivo de Windows que configure automáticamente las demás opciones de emulación o especifique su propia configuración *personalizada* . Cambie de nuevo a *predeterminado* para restablecer todas las herramientas de emulación.
+1.  Cuando se cambia la configuración predeterminada de cualquiera de estas opciones, la pestaña **emulación** muestra una alerta informativa para indicar que se está emulando algún aspecto del comportamiento de su explorador.  
 
-## Modo
+## Dispositivo  
 
-### Perfil de explorador
-Una forma rápida de simular una página en un dispositivo Windows Phone es cambiar la configuración del **Perfil del explorador** a *Windows Phone*.
+Elija entre una lista preestablecida de perfiles de dispositivo de Windows que configure automáticamente las demás opciones de emulación o especifique su propia configuración **personalizada** .  Cambie de nuevo a **predeterminado** para restablecer todas las herramientas de emulación.  
 
-#### Cadena de agente de usuario
+## Modo  
 
-Modificar la cadena de agente de usuario para imitar a otro explorador es un buen primer paso en la depuración de errores que solo ocurren en Microsoft Edge. 
+### Perfil de explorador  
 
-Los scripts de front-end y/o back-end a veces usan la cadena de agente de usuario para detectar qué explorador está usando. Y incluso si no usa la detección del explorador en su propio código, es posible que esté usando una biblioteca de JavaScript de terceros o una secuencia de comandos del servidor que sí lo hace.
+Una forma rápida de simular una página en un dispositivo Windows Phone es cambiar la configuración del **Perfil del explorador** a **Windows Phone**.  
 
-El problema con la detección de explorador es que a menudo se usa para cambiar de tamaño o cambiar las características de una página web en función de lo que el desarrollador que escribe la secuencia de comandos cree que su explorador puede hacer, en lugar de detectar qué es lo que su explorador puede hacer realmente usando la detección de características. Esto puede provocar un comportamiento inesperado, ya que el código destinado a Windows Internet Explorer 8 puede ejecutarse de forma muy diferente en Microsoft Edge. o una característica que el explorador sea perfectamente capaz de admitir puede estar deshabilitada debido a una suposición realizada por el desarrollador.
+#### Cadena de agente de usuario  
 
-Si al cambiar la cadena de agente de usuario se elimina el problema, es probable que la detección del explorador causase.
+Modificar la cadena de agente de usuario para imitar a otro explorador es un buen primer paso en la depuración de errores que solo ocurren en Microsoft Edge.  
 
-## Pantalla
+Los scripts usan la cadena de agente de usuario para detectar qué explorador se usa.  El script puede ser front-end, back-end o front-end y back-end.  Aunque el código no usa la detección del explorador, el código puede heredarlo de una biblioteca de JavaScript de terceros o de una secuencia de comandos del servidor.  
 
-La emulación de pantalla le permite obtener una vista previa del sitio en diferentes tamaños y resoluciones de pantalla: desde monitores de escritorio convencionales hasta pantallas móviles más pequeñas o pantallas de alta resolución más recientes.
+El problema con la detección de explorador es que puede escalar \ (o cambiar \) características en la página web con suposiciones acerca de las capacidades del explorador. En su lugar, debe considerar la posibilidad de usar la detección de características para detectar las capacidades de su explorador.  Se puede producir un comportamiento inesperado debido a una de las siguientes situaciones:  
 
-Las emulaciones están adaptadas para probar y hacer coincidir las dimensiones físicas de las pantallas que se están emulando. Es posible que los píxeles emulados parezcan comprimidos o expandidos, y no se recomienda la emulación si necesita probar la posición perfecta de los elementos HTML en píxeles. La emulación es, no obstante, adecuada para probar diseños con capacidad de respuesta e identificar problemas de posicionamiento de elementos más grandes.
+*   El código dirigido a Windows Internet Explorer 8 puede ejecutarse de forma diferente en Microsoft Edge.  
+*   Una característica que el explorador debe admitir está deshabilitada debido a una suposición realizada por el desarrollador.  
 
-### Orientación
+Si al cambiar la cadena de agente de usuario se elimina el problema, es probable que la detección del explorador causase.  
 
-Elija entre el modo *horizontal* o el *vertical* .
+## Pantalla  
 
-### Resolución
+Emulación de pantalla para obtener una vista previa del sitio en diferentes tamaños y resoluciones de pantalla.  
 
-Elija una lista preestablecida de resoluciones de dispositivos populares o especifique su propia configuración *personalizada* . Se admiten resoluciones de hasta 80 pulgadas y 3820 x 2160.
+*   monitores de escritorio convencionales  
+*   pantallas móviles más pequeñas  
+*   pantallas más recientes de alta resolución  
 
-## Geolocalización
+Las emulaciones están adaptadas para intentar coincidir las dimensiones físicas de las pantallas que se están emulando.  Los píxeles emulados pueden parecer comprimidos o expandidos. No se recomienda la emulación si necesita probar la posición perfecta de los elementos HTML en píxeles.  La emulación es, no obstante, adecuada para probar diseños con capacidad de respuesta e identificar problemas de posicionamiento de elementos más grandes.  
 
-Si su sitio usa la [API de ubicación](https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation) geográfica para proporcionar servicios basados en la ubicación, puede probar fácilmente distintas coordenadas GPS y Estados de los sensores desde la comodidad de su escritorio. Esta configuración invalidará las coordenadas de GPS reales y el estado de sensor en los equipos que admitan geolocalización. 
+### Orientación  
 
-Al igual que con el uso de datos personales en la web, los usuarios primero tendrán que conceder permiso a su sitio para usar su ubicación. Puede probar cómo se comporta su sitio con y sin permisos de ubicación en el panel de *configuración* de Microsoft Edge:
+Elija entre el modo **horizontal** o el **vertical** .  
 
-**...** >  **Configuración**  >  **Ver configuración avanzada**  >  Permisos de sitio **Web**  >  **Administrar**
+### Resolución  
 
-![Administrar permisos de sitio web desde el panel de configuración de Microsoft Edge](./media/settings_manage_permissions.png)
+Elija una lista preestablecida de resoluciones de dispositivos populares o especifique su propia configuración **personalizada** .  Se admiten resoluciones de hasta 80 pulgadas y 3820 x 2160.  
 
-## Abreviados
+## Geolocalización  
 
-| Acción                   | Método abreviado               |
-|:-------------------------|:-----------------------|
-| Restablecer la configuración de emulación | `CTRL` + `SHIFT` + `L` |
+Si su sitio Web usa la [API de ubicación geográfica][MdnGeolocationUsing] para proporcionar servicios basados en la ubicación, las siguientes actividades estarán disponibles desde la comodidad de su escritorio.  
+
+*   Pruebe fácilmente distintas coordenadas GPS  
+*   prueba fácilmente diferentes Estados de los sensores  
+
+La configuración suplanta las coordenadas de GPS reales y el estado de sensor en dispositivos que admiten geolocalización.  
+
+Tu sitio web debe solicitar y tener permiso de un usuario antes de usar la ubicación del dispositivo.  Pruebe cómo se comporta su sitio con y sin permisos de ubicación en el panel de **configuración** de Microsoft Edge.  
+
+**...** >  **Configuración**  >  **Ver configuración avanzada**  >  Permisos de sitio **Web**  >  **Administrar**  
+
+:::image type="complex" source="./media/settings_manage_permissions.png" alt-text="El panel de emulación DevTools de Microsoft Edge" lightbox="./media/settings_manage_permissions.png":::
+   Administrar permisos de sitio web desde el panel de **configuración** de Microsoft Edge  
+:::image-end:::  
+
+## Accesos directos
+
+| Acción  | Acceso directo  |  
+|:--- |:--- |  
+| Restablecer la configuración de emulación | `Ctrl`+`Shift`+`L` |  
+
+<!-- links -->  
+
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
+[DevtoolsGuideChromiumDeviceMode]: /microsoft-edge/devtools-guide-chromium/device-mode "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft docs"  
+
+[MicrosoftNewEdge]: https://www.microsoft.com/edge "Descargar nuevo explorador Microsoft Edge"  
+
+[MdnGeolocationUsing]: https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation "API de ubicación geográfica | MDN"  
