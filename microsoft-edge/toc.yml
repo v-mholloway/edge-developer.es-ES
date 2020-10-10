@@ -360,13 +360,16 @@
     - name: Extensiones (Chromium)
       href: extensions-chromium/index.md
       items:
-        - name: Tutorial de introducción
-          href: extensions-chromium/getting-started/index.md
+        - name: Introducción
           items:
-            - name: 'Crear una extensión simple: Parte I'
+            - name: Arquitectura de extensión de RIS
+              href: extensions-chromium/getting-started/index.md
+            - name: 'Crear un tutorial de extensión, parte 1'
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: 'Crear una extensión simple: Parte II'
+            - name: 'Crear un tutorial de extensión, parte 2'
               href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: Transferir localmente una extensión
+              href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Guía para desarrollador
           items:
             - name: Migrar extensión de Chromium a Microsoft Edge
