@@ -8,12 +8,12 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge, ICoreWebView2Environment
-ms.openlocfilehash: 3552de59b8b349c62d61ca165141d9adddd2a5a9
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: edf573bc7c4c83c7882005937db29a068ab7b015
+ms.sourcegitcommit: 2d57b515d6ccbbe24cb3a8c8f44f9c3a26fc17a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11012599"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "11115788"
 ---
 # interfaz ICoreWebView2Environment 
 
@@ -224,7 +224,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 ```
  Cuando la aplicación vuelve a intentar CreateCoreWebView2Controller cuando se produce un error, se recomienda que la aplicación se reinicie a partir de la creación de un nuevo entorno de WebView2. Si se produce una actualización perimetral, la versión asociada a un entorno de WebView2 se podría haber quitado y provocar que el objeto deje de funcionar. La creación de un nuevo entorno de WebView2 funcionará porque usa la versión más reciente.
 
-La creación de WebView generará un error si ya hay una instancia en ejecución con la misma carpeta datos de usuario y los objetos de entorno tienen diferentes EnvironmentOptions. Por ejemplo, si ya hay una vista previa creada con un idioma, se producirá un error al intentar crear una vista previa con un idioma diferente con la misma carpeta de datos de usuario.
+Se producirá un error en la creación de WebView si ya hay una instancia en ejecución que usa la misma carpeta datos de usuario y los objetos de entorno tienen diferentes EnvironmentOptions o el HWND parentWindows tienen un conocimiento de PPP diferente. Por ejemplo, si ya hay una vista previa creada con un idioma, se producirá un error al intentar crear una vista previa con un idioma diferente con la misma carpeta de datos de usuario.
 
 #### CreateWebResourceResponse 
 
