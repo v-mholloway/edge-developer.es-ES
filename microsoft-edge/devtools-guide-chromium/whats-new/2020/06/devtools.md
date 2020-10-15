@@ -28,7 +28,7 @@ Las secciones siguientes son una lista de anuncios que puede haber perdido del e
 
 El equipo de DevTools de Microsoft Edge está colaborando con el equipo de Chrome DevTools y la comunidad de cromo para agregar nuevas características de depuración de cuadrícula CSS a DevTools.  Ahora puede mostrar los números de línea de la cuadrícula, los huecos de cuadrícula y las líneas de cuadrícula extendidas como una superposición en la página.  Además, pronto estarán disponibles otras mejoras en las herramientas de cuadrícula.  
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Características de depuración de cuadrícula CSS" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    Características de depuración de cuadrícula CSS
 :::image-end:::  
 
@@ -47,7 +47,7 @@ El equipo de DevTools de Microsoft Edge está colaborando con el equipo de Chrom
 
 Ahora puede usar **Editar y reproducir** en las solicitudes en el [registro de red][DevtoolsNetworkIndexLogActivity] con la consola de **red**.  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Editar y reproducir una solicitud en el NetworkLog con la consola de red" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    Editar y reproducir una solicitud en el [NetworkLog][DevtoolsNetworkIndexLogActivity] con la **consola de red**  
 :::image-end:::  
 
@@ -55,7 +55,7 @@ Un panel nuevo, la **consola de red** se abre en el [cajón de DevTools][Devtool
 
 También puede usar la **consola de red** para crear y enviar solicitudes HTTP directamente desde el DevTools.  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Panel de consola de red" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
    Panel de **consola de red**  
 :::image-end:::  
 
@@ -73,13 +73,13 @@ También puede usar la **consola de red** para crear y enviar solicitudes HTTP d
 
 La ficha **intervalos** del panel **red** ahora incluye `respondWith` eventos de trabajo de servicio.  El `respondWith` evento de trabajo de servicio muestra la duración desde el momento en que el `fetch` controlador de eventos de trabajo de servicio comienza a ejecutarse hasta el momento en que `respondWith` se liquida la promesa del `fetch` controlador.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="El evento de trabajo del servicio respondWith en la ficha intervalos del panel red" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/timing-tab.msft.png":::
    El `respondWith` evento de trabajo de servicio en la pestaña **intervalos** del panel **red**  
 :::image-end:::  
 
 Expanda la **respuesta recibida** para ver información adicional de la `fetch` respuesta como `CacheStorageCacheName` , `serviceWorkerResponseSource` y `ResponseTime` .  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expandir respuesta recibida para ver información adicional de la respuesta de Fetch" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/timing-tab2.msft.png":::
    Expandir **respuesta recibida** para ver información adicional de la `fetch` respuesta  
 :::image-end:::  
 
@@ -93,7 +93,7 @@ Expanda la **respuesta recibida** para ver información adicional de la `fetch` 
 
 [webhint][WebhintMain] es una herramienta de código abierto que proporciona comentarios en tiempo real sobre accesibilidad, compatibilidad entre exploradores, seguridad, rendimiento, PWAs y otros problemas comunes de desarrollo web de los sitios Web.  Ahora puede ver comentarios sobre webhint en el panel [problemas][DevtoolsIssues] .  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Comentarios sobre webhint en el panel problemas" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    Comentarios sobre webhint en el panel problemas  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ Expanda la **respuesta recibida** para ver información adicional de la `fetch` 
 
 Normalmente, las herramientas, como **los elementos** y la **red** , solo se pueden abrir en el panel \ (parte superior \) de DevTools.  De forma similar, las herramientas, como la **vista 3D** y los **problemas** , solo se pueden abrir en el panel del cajón \ (inferior \) de DevTools.  Ahora puede personalizar el diseño de DevTools moviendo las herramientas entre los paneles superior e inferior.  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Mover pestañas entre paneles" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    Mover pestañas entre paneles  
 :::image-end:::  
 
@@ -125,13 +125,13 @@ Normalmente, las herramientas, como **los elementos** y la **red** , solo se pue
 
 En Microsoft Edge 83 y 84, información sobre herramientas para la columna Initiator, que muestra la causa de la solicitud de recursos, en el [registro de red][DevtoolsNetworkIndexLogActivity] que se muestra con una barra de desplazamiento horizontal.  Solo pudimos ver la pila de llamadas que inició la solicitud desplazándose horizontalmente en la información sobre herramientas.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Información sobre herramientas de iniciador en Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    Información sobre herramientas de iniciador en Microsoft Edge 84  
 :::image-end:::  
 
 A partir de Microsoft Edge 85, ahora puedes ver la pila de llamadas de iniciador en la información sobre herramientas sin tener que desplazarse horizontalmente.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Información sobre herramientas de iniciador en Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    Información sobre herramientas de iniciador en Microsoft Edge 85
 :::image-end:::  
 
@@ -149,7 +149,7 @@ Ahora puede editar los estilos agregados en JavaScript con [hojas de estilo cons
 
 Por ejemplo, los `h1` estilos agregados con `CSSStyleSheet` \ (API de CSSOM \) no se podían modificar anteriormente.  Ahora los estilos se pueden editar en el panel **estilos** .  
 
-:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Cambiar la propiedad Background de los estilos H1 agregados con CSSStyleSheet de rosa a lightblue" lightbox="../../media/2020/06/css-in-js.msft.png":::
+:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/css-in-js.msft.png":::
    Cambiar la `background` propiedad de los `h1` estilos agregados con `CSSStyleSheet` from `pink` a `lightblue` .
 :::image-end:::  
 
@@ -218,7 +218,7 @@ En el panel **manifiesto** ahora se muestran advertencias para las siguientes co
 * Los iconos de acceso directo de la aplicación son menores que 96 píxeles  
 * Los iconos de acceso directo de la aplicación y los iconos de manifiesto no son cuadrados \ (porque los iconos se ignoran \)  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Advertencias de acceso directo a la aplicación" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    Advertencias de acceso directo a la aplicación  
 :::image-end:::  
 
@@ -228,7 +228,7 @@ En el panel **manifiesto** ahora se muestran advertencias para las siguientes co
 
 El panel **calculado** del panel **elementos** se muestra ahora de forma coherente en todos los tamaños de la ventanilla.  Anteriormente el panel **calculado** se combinó en el panel **estilos** cuando el ancho de la ventanilla de DevTools era estrecho.  
 
-:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="El panel calculado se muestra de forma coherente como un panel independiente incluso cuando el DevTools es estrecho." lightbox="../../media/2020/06/computed-pane.msft.png":::
+:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/computed-pane.msft.png":::
    El panel **calculado** se muestra de forma coherente como un panel independiente incluso cuando el DevTools es estrecho.
 :::image-end:::  
 
@@ -245,7 +245,7 @@ Los números de línea marcan más claramente que estás buscando datos binarios
 
 Al realizar una operación de copiar o cortar sin selección en el [Editor del panel orígenes][DevtoolsSourcesEditCssJavascript], DevTools copia o corta la línea de contenido actual.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Con el cursor al final de la línea 5, copiando toda la línea desde pen.js en el DevTools y pegando en Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    Con el cursor al final de la línea 5, copiando toda la línea desde **pen.js** en el DevTools y pegando en [Visual Studio Code][VSCode].
 :::image-end:::  
 
@@ -259,7 +259,7 @@ El botón de alternancia **similar** en la configuración de la consola se aplic
 
 Por ejemplo, anteriormente, DevTools no desagrupaba los `hello` mensajes aunque el **grupo es similar** .  Ahora, los `hello` mensajes están desagrupados.  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Cuando agrupar similares está desactivado, los mensajes de saludo no se agrupan" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    Cuando **agrupar similares** está desactivado, los `hello` mensajes no se agrupan
 :::image-end:::  
 
@@ -271,7 +271,7 @@ Proporciona a esta característica una prueba con un [ejemplo que envía mensaje
 
 La configuración de **contexto seleccionada solo** en la configuración de la consola se conserva.  Anteriormente, la configuración se restableció cada vez que cerraste y reabros DevTools.  El cambio hace que el ajuste del comportamiento sea coherente con otras opciones de configuración de la consola.  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Configuración de contexto seleccionado únicamente" lightbox="../../media/2020/06/selected-context.msft.png":::
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/selected-context.msft.png":::
    Configuración de **contexto seleccionado únicamente**  
 :::image-end:::  
 
@@ -283,7 +283,7 @@ La configuración de **contexto seleccionada solo** en la configuración de la c
 
 La información de la [caché de compilación de JavaScript][V8DevCodeCaching] se muestra ahora siempre en la pestaña Resumen del panel rendimiento.  Anteriormente, DevTools no mostraba nada relacionado con el almacenamiento en caché del código si no se produjera el almacenamiento en caché de código.  
 
-:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Información de caché de compilación de JavaScript" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
+:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
    Información de caché de compilación de JavaScript  
 :::image-end:::  
 
@@ -293,7 +293,7 @@ La información de la [caché de compilación de JavaScript][V8DevCodeCaching] s
 
 El panel de **rendimiento** que se usa para mostrar las horas en las reglas en función del inicio de la grabación.  Ahora se ha cambiado el intervalo de tiempo para las grabaciones en las que el usuario navega, donde DevTools ahora muestra las horas relacionadas con la navegación.  
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Alinear los intervalos de navegación en el panel rendimiento" lightbox="../../media/2020/06/nav-timing.msft.png":::
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/nav-timing.msft.png":::
    Alinear los intervalos de navegación en el panel **rendimiento**  
 :::image-end:::  
 
@@ -305,7 +305,7 @@ Las horas de `DOMContentLoaded` , primera pintura con control de contenido y los
 
 El panel **orígenes** tiene nuevos diseños para puntos de interrupción, puntos de interrupción condicionales y logpoints.  Los puntos de interrupción están representados por un círculo rojo, como [Visual Studio Code][VSCode] y [Visual Studio][VS].  Se agregan iconos para diferenciar los puntos de interrupción y logpoints.  
 
-:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Puntos de interrupción" lightbox="../../media/2020/06/breakpoints.msft.png":::
+:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Puntos de interrupción  
 :::image-end:::  
 
