@@ -1,23 +1,23 @@
 ---
-description: Hospedar contenido web en la aplicación de Windows Forms con el control de WebView 2 de Microsoft Edge
-title: Vista de WebView 2 de Microsoft Edge para aplicaciones de Windows Forms
+description: Guía de introducción a WebView2 para aplicaciones de WinForms
+title: Introducción a WebView2 para aplicaciones de WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones de WinForms, WinForms, Edge, CoreWebView2, control de explorador, ASP.net de Edge, introducción, introducción, .NET, Windows Forms
-ms.openlocfilehash: 885524581112a208e1e5134ecd7a6f7446e331ce
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: e9451d4bfafacf78f723be75379e57400d0ba914
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010736"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119083"
 ---
-# Introducción a WebView2 en las aplicaciones de Windows Forms (versión preliminar)  
+# Introducción a WebView2 en Windows Forms (versión preliminar)  
 
-En este artículo, empiece a crear su primera aplicación de WebView2 y obtenga información sobre las características principales de [WebView2 (versión preliminar)](/microsoft-edge/hosting/webview2/index).  Para obtener más información sobre las API individuales, consulta referencia de la [API](../reference/dotnet/0-9-628-reference-webview2.md).  
+En este artículo, empiece a crear su primera aplicación de WebView2 y obtenga información sobre las características principales de [WebView2 (versión preliminar)](/microsoft-edge/webview2/index).  Para obtener más información sobre las API individuales, consulta referencia de la [API](/dotnet/api/microsoft.web.webview2.winforms).  
 
 ## Requisitos previos  
 
@@ -51,8 +51,8 @@ A continuación, agregue el SDK de WebView2 al proyecto.  Para obtener la vista 
 
 1. Abra el menú contextual en el proyecto \ (haga clic con el botón derecho \) y elija **administrar paquetes NuGet...**.  
 
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
-       Nuget :::image-end:::
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Administrar paquetes NuGet":::
+       Administrar paquetes NuGet :::image-end:::
 
 1. Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  
 
@@ -70,17 +70,20 @@ Ya está todo listo para empezar a desarrollar aplicaciones con la API de WebVie
 A continuación, agregue una vista de vista a la aplicación.  
 
 1. Abra el **Diseñador de Windows Forms**.  
-1. Busque **WebView2** en el **cuadro de herramientas**. Arrastre y coloque el control **WebView2** en la aplicación Windows Forms
-
-    ![prácticas](./media/winforms-toolbox.png)
+1. Busque **WebView2** en el **cuadro de herramientas**. Arrastre y coloque el control **WebView2** en la aplicación Windows Forms.
+    
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Administrar paquetes NuGet":::
+       Cuadro de herramientas que muestra WebView2 :::image-end:::  
 
 1. Cambie la `Name` propiedad a `webView` .
-
-    ![prácticas](./media/winforms-properties.png)
+    
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="Administrar paquetes NuGet":::
+       Propiedades del control WebView2 :::image-end:::
 
 1. La `Source` propiedad establece el URI inicial que se muestra en el control WebView2. Establezca la propiedad Source en <https://www.microsoft.com>
-
-    ![prácticas](./media/winforms-source.png)
+    
+    :::image type="complex" source="./media/winforms-source.png" alt-text="Administrar paquetes NuGet":::
+       Propiedad Source del control WebView2 :::image-end:::
 
 Seleccione `F5` para compilar y ejecutar el proyecto.  Confirme que se muestra el control WebView2 [https://www.microsoft.com](https://www.microsoft.com) .
 
@@ -163,7 +166,7 @@ La aplicación que hospeda los controles WebView2 escucha los siguientes eventos
 
 Para obtener más información, vea [eventos de navegación](../concepts/navigation-events.md).  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Eventos de navegación":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="Administrar paquetes NuGet":::
    Eventos de navegación
 :::image-end:::
 
@@ -296,7 +299,7 @@ Seleccione `F5` para compilar y ejecutar la aplicación.  Confirme que la barra 
 ## Pasos siguientes 
 
 * Desproteja el [repositorio de WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) para obtener un ejemplo completo de las capacidades de WebView2's
-* [Consulta la referencia](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) de la API para obtener información más detallada sobre nuestras API
+* [Consulta la referencia](/dotnet/api/microsoft.web.webview2.winformswebview2) de la API para obtener información más detallada sobre nuestras API
 * Desproteja una lista de [recursos de WebView2](../index.md#next-steps) para obtener más información sobre WebView2
 
 

@@ -3,17 +3,17 @@ description: Opciones de distribución al publicar una aplicación con Microsoft
 title: Distribución de aplicaciones de Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: 7db610ff1133b1b5b380372422f1f2f10981e583
-ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
+ms.openlocfilehash: e96ca2b26feb3883b51ad468db1fabe68ed8ad1f
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052189"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119005"
 ---
 # Distribución de aplicaciones con WebView2  
 
@@ -61,7 +61,7 @@ Si tiene un escenario de implementación solo en línea donde se supone que los 
 
 *   Durante la configuración de la aplicación, compruebe si el motor en tiempo de ejecución ya lo ha instalado:  
     *   Inspeccionar si existe la clave `pv (REG_SZ)` de aplicación en `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` o  
-    *   Llamar a la API de WebView2 [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) y comprobar si versionInfo es NULL.  
+    *   Llamar a la API de WebView2 [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) y comprobar si versionInfo es NULL.  
 *   Si el motor en tiempo de ejecución no está instalado, usa el vínculo para descargar el programa previo mediante programación.  
 *   Invocar el programa previo desde un proceso o símbolo del sistema elevado con `MicrosoftEdgeWebview2Setup.exe /silent /install` para la instalación silenciosa.  
 
@@ -75,7 +75,7 @@ Si tiene un escenario de implementación sin conexión en el que la implementaci
 *   Incluya el instalador en el instalador o actualizador de la aplicación.  
 *   Durante la configuración de la aplicación, compruebe si el motor en tiempo de ejecución ya lo ha instalado:  
     *   Inspeccionar si existe la clave `pv (REG_SZ)` de aplicación en `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}` o  
-    *   Llamar a la API de WebView2 [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) y comprobar si versionInfo es NULL.  
+    *   Llamar a la API de WebView2 [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) y comprobar si versionInfo es NULL.  
 *   Si el motor en tiempo de ejecución no está instalado, invoque el instalador independiente desde un proceso con privilegios elevados o un símbolo del sistema con `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` para una instalación silenciosa.  
 
 ## Modo de distribución de versiones fijas  
@@ -89,6 +89,5 @@ En el caso de entornos restringidos, hay planes para admitir una versión fija, 
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Descripción de las versiones de explorador y WebView2 | Microsoft docs"  
-[ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "GLOBALS | Microsoft docs"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Instalador de WebView2"  
