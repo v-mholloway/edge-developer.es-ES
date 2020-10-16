@@ -3,17 +3,17 @@ description: Notas de la versión para el SDK de Microsoft Edge WebView2
 title: Notas de la versión de Microsoft Edge WebView2 para Win32, WPF y WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 67380670d2eb499c182d0cc2b53d6d3938c171f1
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 96ceb12dc5cdf51a1ca254f52e967fd78b9dc15d
+ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119090"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11120098"
 ---
 # Notas de la versión para el SDK de WebView2  
 
@@ -324,9 +324,9 @@ Versión inicial de Developer Preview.
 [ReferenceWin3209488Icorewebview2AddNewwindowrequested]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#add_newwindowrequested "interfaz de add_NewWindowRequested ICoreWebView2 | Microsoft docs"  
 [ReferenceWin3209488Icorewebview2environmentGetBrowserversionstring]: /microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-0.9.488&preserve-view=true#get_browserversionstring " | Microsoft docs"  
 [ReferenceWin3209488Icorewebview2environmentoptions]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.488&preserve-view=true "interfaz ICoreWebView2EnvironmentOptions | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2experimentalcompositioncontroller]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller?view=webview2-0.9.488&preserve-view=true "interfaz ICoreWebView2ExperimentalCompositionController | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2experimentalcursorchangedeventhandler]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcursorchangedeventhandler?view=webview2-0.9.488&preserve-view=true "interfaz ICoreWebView2ExperimentalCursorChangedEventHandler | Microsoft docs"  
-[ReferenceWin3209488Icorewebview2experimentalpointerinfo]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalpointerinfo?view=webview2-0.9.488&preserve-view=true "interfaz ICoreWebView2ExperimentalPointerInfo | Microsoft docs"  
+[ReferenceWin3209488Icorewebview2experimentalcompositioncontroller]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller?view=webview2-0.9.488-prerelease&preserve-view=true "interfaz ICoreWebView2ExperimentalCompositionController | Microsoft docs"  
+[ReferenceWin3209488Icorewebview2experimentalcursorchangedeventhandler]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcursorchangedeventhandler?view=webview2-0.9.488-prerelease&preserve-view=true "interfaz ICoreWebView2ExperimentalCursorChangedEventHandler | Microsoft docs"  
+[ReferenceWin3209488Icorewebview2experimentalpointerinfo]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalpointerinfo?view=webview2-0.9.488-prerelease&preserve-view=true "interfaz ICoreWebView2ExperimentalPointerInfo | Microsoft docs"  
 [ReferenceWin3209488Icorewebview2Removehostobjectfromscript]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#removehostobjectfromscript "RemoveHostObjectFromScript: ICoreWebView2 | Microsoft docs"  
 [ReferenceWin3209488Icorewebview2settingsGetAreremoteobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_areremoteobjectsallowed "interfaz de get_AreRemoteObjectsAllowed ICoreWebView2Settings | Microsoft docs"  
 [ReferenceWin3209488Icorewebview2settingsGetIsbuiltinerrorpageenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_isbuiltinerrorpageenabled " | Microsoft docs"  
@@ -349,17 +349,17 @@ Versión inicial de Developer Preview.
 [ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httpresponseheaders]: /dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders "Clase CoreWebView2HttpResponseHeaders (Microsoft. Web. WebView2. Core) | Microsoft docs"  
 
 [ReferenceWin3209538Icorewebview2Addhostobjecttoscript]: /microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript?view=webview2-0.9.538&preserve-view=true "AddHostObjectToScript: ICoreWebView2 | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-0.9.538&preserve-view=true#add_webresourceresponsereceived "interfaz de add_WebResourceResponseReceived ICoreWebView2Experimental | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-0.9.538&preserve-view=true#get_issinglesignonusingosprimaryaccountenabled "interfaz de get_IsSingleSignOnUsingOSPrimaryAccountEnabled ICoreWebView2ExperimentalEnvironmentOptions | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-0.9.538&preserve-view=true#get_windowfeatures "interfaz de get_WindowFeatures ICoreWebView2ExperimentalNewWindowRequestedEventArgs | Microsoft docs"  
-[ReferenceWin3209538Icorewebview2experimentalwindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwindowfeatures?view=webview2-0.9.538&preserve-view=true "interfaz ICoreWebView2ExperimentalWindowFeatures | Microsoft docs"  
+[ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-0.9.538-prerelease&preserve-view=true#add_webresourceresponsereceived "interfaz de add_WebResourceResponseReceived ICoreWebView2Experimental | Microsoft docs"  
+[ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-0.9.538-prerelease&preserve-view=true#get_issinglesignonusingosprimaryaccountenabled "interfaz de get_IsSingleSignOnUsingOSPrimaryAccountEnabled ICoreWebView2ExperimentalEnvironmentOptions | Microsoft docs"  
+[ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-0.9.538-prerelease&preserve-view=true#get_windowfeatures "interfaz de get_WindowFeatures ICoreWebView2ExperimentalNewWindowRequestedEventArgs | Microsoft docs"  
+[ReferenceWin3209538Icorewebview2experimentalwindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwindowfeatures?view=webview2-0.9.538-prerelease&preserve-view=true "interfaz ICoreWebView2ExperimentalWindowFeatures | Microsoft docs"  
 [ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs?view=webview2-0.9.538&preserve-view=true#get_isuserinitiated "interfaz de get_IsUserInitiated ICoreWebView2NewWindowRequestedEventArgs | Microsoft docs"  
 [ReferenceWin3209538Icorewebview2settingsGetArehostobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.538&preserve-view=true#get_arehostobjectsallowed "interfaz de get_AreHostObjectsAllowed ICoreWebView2Settings | Microsoft docs"  
 [ReferenceWin3209538IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.538&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft docs"  
 
 [ReferenceWin3209622Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.622&preserve-view=true#get_allowsinglesignonusingosprimaryaccount "interfaz de get_AllowSingleSignOnUsingOSPrimaryAccount ICoreWebView2EnvironmentOptions | Microsoft docs"  
 [ReferenceWin3209622Icorewebview2environmentoptionsPutAdditionalbrowserarguments]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.622&preserve-view=true#put_additionalbrowserarguments "interfaz de put_AdditionalBrowserArguments ICoreWebView2EnvironmentOptions | Microsoft docs"  
-[ReferenceWin3209622Icorewebview2experimentalenvironment]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-0.9.622&preserve-view=true "interfaz ICoreWebView2ExperimentalEnvironment | Microsoft docs"  
+[ReferenceWin3209622Icorewebview2experimentalenvironment]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-0.9.622-prerelease&preserve-view=true "interfaz ICoreWebView2ExperimentalEnvironment | Microsoft docs"  
 [ReferenceWin3209622Icorewebview2newwindowrequestedeventargsGetWindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs?view=webview2-0.9.622&preserve-view=true#get_windowfeatures "interfaz de get_WindowFeatures ICoreWebView2NewWindowRequestedEventArgs | Microsoft docs"  
 [ReferenceWin3209622Icorewebview2windowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures?view=webview2-0.9.622&preserve-view=true "interfaz ICoreWebView2WindowFeatures | Microsoft docs"  
 [ReferenceWin3209622IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.622&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft Edge"  

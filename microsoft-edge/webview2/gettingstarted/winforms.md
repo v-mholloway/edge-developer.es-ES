@@ -3,17 +3,17 @@ description: Guía de introducción a WebView2 para aplicaciones de WinForms
 title: Introducción a WebView2 para aplicaciones de WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones de WinForms, WinForms, Edge, CoreWebView2, control de explorador, ASP.net de Edge, introducción, introducción, .NET, Windows Forms
-ms.openlocfilehash: e9451d4bfafacf78f723be75379e57400d0ba914
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 90d25816b862d6096856faf439436706c98f7dbe
+ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119083"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11120091"
 ---
 # Introducción a WebView2 en Windows Forms (versión preliminar)  
 
@@ -299,7 +299,7 @@ Seleccione `F5` para compilar y ejecutar la aplicación.  Confirme que la barra 
 ## Pasos siguientes 
 
 * Desproteja el [repositorio de WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) para obtener un ejemplo completo de las capacidades de WebView2's
-* [Consulta la referencia](/dotnet/api/microsoft.web.webview2.winformswebview2) de la API para obtener información más detallada sobre nuestras API
+* [Consulta la referencia](/dotnet/api/microsoft.web.webview2.winforms.webview2) de la API para obtener información más detallada sobre nuestras API
 * Desproteja una lista de [recursos de WebView2](../index.md#next-steps) para obtener más información sobre WebView2
 
 

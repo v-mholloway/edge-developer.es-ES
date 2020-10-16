@@ -51,7 +51,7 @@
           items:
             - name: API de solicitud de pago
               href: dev-guide/windows-integration/Payment-Request-API.md
-            - name: Autenticación Web
+            - name: Autenticación web
               href: dev-guide/windows-integration/web-authentication.md
             - name: API de notificaciones Web
               href: dev-guide/windows-integration/web-Notifications-API.md
@@ -96,10 +96,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspeccionar animaciones
               href: devtools-guide-chromium/inspect-styles/animations.md
-            - name: Guías
-              items:
-                - name: Forzar DevTools en el modo de vista previa de impresión
-                  href: devtools-guide-chromium/css/print-preview.md
+            - name: Forzar DevTools en el modo de vista previa de impresión
+              href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items:
             - name: Introducción
@@ -110,9 +108,9 @@
               href: devtools-guide-chromium/console/javascript.md
             - name: Referencia
               href: devtools-guide-chromium/console/reference.md
-            - name: Referencia de API
+            - name: Referencia de las API
               href: devtools-guide-chromium/console/api.md
-            - name: Referencia de API de Utilidades
+            - name: Referencia de API de utilidades
               href: devtools-guide-chromium/console/utilities.md
             - name: Expresiones en directo
               href: devtools-guide-chromium/console/live-expressions.md
@@ -154,7 +152,7 @@
               items:
                 - name: Reemplazar la cadena de agente de usuario
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
-                - name: Reemplazar ubicación geográfica
+                - name: Reemplazar geolocalización
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: Simular la orientación del dispositivo
                   href: devtools-guide-chromium/device-mode/orientation.md
@@ -244,7 +242,7 @@
           href: devtools-guide-chromium/progressive-web-apps.md
         - name: Seguridad
           href: devtools-guide-chromium/security/index.md
-        - name: Métodos abreviados de teclado.
+        - name: Accesos rápidos de teclado
           href: devtools-guide-chromium/shortcuts.md
         - name: Recursos
           href: devtools-guide-chromium/resources/index.md
@@ -256,7 +254,7 @@
               href: devtools-guide-chromium/customize/dark-theme.md
             - name: Cambiar colocación
               href: devtools-guide-chromium/customize/placement.md
-            - name: Coincidir con el idioma del explorador
+            - name: Hacer coincidir con el idioma del explorador
               href: devtools-guide-chromium/customize/localization.md
             - name: Accesos directos
               href: devtools-guide-chromium/customize/shortcuts.md
@@ -306,7 +304,7 @@
           href: devtools-guide/memory.md
         - name: Almacenamiento
           href: devtools-guide/storage.md
-        - name: Trabajos de servicio
+        - name: Trabajadores de servicio
           href: devtools-guide/service-workers.md
         - name: Emulación
           href: devtools-guide/emulation.md
@@ -366,16 +364,18 @@
           items:
             - name: Arquitectura de extensión de RIS
               href: extensions-chromium/getting-started/index.md
-            - name: 'Crear un tutorial de extensión, parte 1'
+            - name: Crear un tutorial de extensión (parte 1)
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: 'Crear un tutorial de extensión, parte 2'
+            - name: Crear un tutorial de extensión (parte 2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
             - name: Transferir localmente una extensión
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Guía para desarrollador
           items:
-            - name: Migrar extensión de Chromium a Microsoft Edge
+            - name: Migrar extensiones de Chromium a Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
+            - name: Migrar la extensión del manifiesto v2 al v3
+              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
             - name: Alternar métodos de distribución de extensiones
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Mensajería nativa
@@ -398,11 +398,11 @@
               href: extensions-chromium/store-policies/csp.md
             - name: Anexo ADA de desarrollador de Microsoft Edge
               href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Directivas para desarrolladores de catálogo de complementos de Microsoft Edge
+            - name: Directivas para desarrolladores del catálogo de complementos de Microsoft Edge
               href: extensions-chromium/store-policies/developer-policies.md
         - name: Extensiones para empresas
           items:
-            - name: Patrones de coincidencia
+            - name: Hacer coincidir con patrones
               href: extensions-chromium/enterprise/match-patterns.md
             - name: Hospedaje y actualización
               href: extensions-chromium/enterprise/hosting-and-updating.md
