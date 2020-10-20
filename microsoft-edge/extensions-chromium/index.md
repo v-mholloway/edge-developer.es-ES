@@ -22,7 +22,7 @@ Puede crear extensiones si su idea o producto depende de la disponibilidad de un
 
 Una extensión está estructurada de forma similar a una aplicación web normal.  Como mínimo, incluye un archivo JSON del manifiesto de la aplicación que contiene información básica de la plataforma, un archivo JavaScript para definir la funcionalidad y un archivo HTML y CSS para determinar el aspecto de la interfaz de usuario \ (como se requiere).  Para trabajar directamente con parte del explorador, como una ventana o una pestaña, debe enviar solicitudes de API y, a menudo, hacer referencia al explorador por nombre.  
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Extensión de Microsoft Edge (cromo)&quot;:::
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Extensión de Microsoft Edge (cromo)&quot;":::
   Una extensión de Microsoft Edge \ (cromo \)  
 :::image-end:::  
 
