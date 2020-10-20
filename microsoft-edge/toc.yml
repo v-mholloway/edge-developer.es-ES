@@ -372,7 +372,9 @@
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Guía para desarrollador
           items:
-            - name: Migrar extensiones de Chromium a Microsoft Edge
+            - name: Compatibilidad con API
+              href: extensions-chromium/developer-guide/api-support.md
+            - name: Migrar extensión de Chromium a Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: Migrar la extensión del manifiesto v2 al v3
               href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
@@ -519,7 +521,7 @@
           href: web-platform/tracking-prevention.md
         - name: Cadena del agente de usuario de Microsoft Edge
           href: web-platform/user-agent-string.md
-    - name: WebView2 (Chromium) (vista previa)
+    - name: WebView2 (Chromium)
       href: webview2/toc.yml
     - name: Guía para desarrolladores de WebVR
       href: /microsoft-edge/webvr/index
