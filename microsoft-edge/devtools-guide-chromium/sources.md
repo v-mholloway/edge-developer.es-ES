@@ -3,16 +3,16 @@ description: Vea y edite archivos, cree fragmentos, depure JavaScript y configur
 title: Información general del panel orígenes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 029693ba27665a556446f4349c1517c53ff39b02
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 971ee6e112daaba828a8b754b63eee73ea51e99e
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993544"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125331"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,9 @@ ms.locfileid: "10993544"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Información general del panel orígenes  
 
-
-
-
-
-
-# Información general del panel orígenes 
-
-
-
-Use el panel de **orígenes** de Microsoft Edge DevTools para realizar las acciones que se deparan a continuación.  
+Use el panel de **orígenes** de Microsoft Edge DevTools para realizar las siguientes acciones.  
 
 *   [Ver archivos](#view-files).  
 *   [Edite CSS y JavaScript](#edit-css-and-javascript).  
@@ -46,7 +38,7 @@ Use el panel de **orígenes** de Microsoft Edge DevTools para realizar las accio
 *   [Depure JavaScript](#debug-javascript).  
 *   [Configure un área de trabajo](#set-up-a-workspace)para que los cambios que realice en DevTools se guarden en el código de su sistema de archivos.  
     
-## Ver archivos 
+## Ver archivos  
 
 Use el panel de **páginas** para ver todos los recursos que la página ha cargado.
 
@@ -59,13 +51,13 @@ Organización del panel de **páginas** :
 *   El segundo nivel, como `docs.microsoft.com` en la figura anterior, representa un [origen][HtmlstandardOrigin].  
 *   El tercer nivel, el cuarto nivel, etc., representan los directorios y recursos que se cargaron desde ese origen.  Por ejemplo, en la ilustración anterior, la ruta de acceso completa al recurso `devtools-guide-chromium` es `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-Haga clic en un archivo en el panel de **páginas** para ver el contenido en el panel del **Editor** .  Puede ver cualquier tipo de archivo.  Para las imágenes, verá una vista previa de la imagen.  
+Haga clic en un archivo en el panel de **páginas** para ver el contenido en el panel del **Editor** .  Puede ver cualquier tipo de archivo.  Para las imágenes, se muestra una vista previa de la imagen.  
 
-:::image type="complex" source="./media/sources-editor-pane.msft.png" alt-text="Ver el contenido de a4d10f71.index-docs.js en el panel Editor" lightbox="./media/sources-editor-pane.msft.png":::
+:::image type="complex" source="./media/sources-editor-pane.msft.png" alt-text="El panel de páginas" lightbox="./media/sources-editor-pane.msft.png":::
    Ver el contenido de `a4d10f71.index-docs.js` en el panel **Editor**  
 :::image-end:::  
 
-## Editar CSS y JavaScript 
+## Editar CSS y JavaScript  
 
 Use el panel **Editor** para editar CSS y JavaScript.  DevTools actualiza la página para ejecutar el nuevo código.  Por ejemplo, Si edita un archivo CSS agregando la regla de estilo a continuación:
 
@@ -75,21 +67,21 @@ Use el panel **Editor** para editar CSS y JavaScript.  DevTools actualiza la pá
 }
 ```
 
-Verá que el cambio se aplicará inmediatamente.
+Ese cambio debe surtir efecto inmediatamente.
 
-:::image type="complex" source="./media/edit-css.msft.png" alt-text="Editar CSS en el panel del editor para cambiar el color del texto del subtítulo a rojo" lightbox="./media/edit-css.msft.png":::
+:::image type="complex" source="./media/edit-css.msft.png" alt-text="El panel de páginas" lightbox="./media/edit-css.msft.png":::
    Editar CSS en el panel del **Editor** para cambiar el color del texto del subtítulo a rojo  
 :::image-end:::  
 
-Los cambios de CSS se aplican inmediatamente, no es necesario guardar.  Para que los cambios de JavaScript surtan efecto, pulse `Control` + `S` \ (Windows \) o `Command` + `S` \ (MacOS \).  DevTools no vuelve a ejecutar un script, por lo que los únicos cambios de JavaScript que se aplican son los que realiza dentro de las funciones.  Por ejemplo, en la siguiente ilustración, observe cómo `console.log('A')` no se ejecuta, pero `console.log('B')` sí.  Si DevTools vuelve a ejecutar la secuencia de comandos completa después de realizar el cambio, el texto `A` se habría grabado en la **consola**.  
+Los cambios de CSS se aplican inmediatamente, no es necesario guardar.  Para que los cambios de JavaScript surtan efecto, seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \).  DevTools no vuelve a ejecutar un script, por lo que los únicos cambios de JavaScript que se aplican son los que realiza dentro de las funciones.  Por ejemplo, en la siguiente ilustración, observe cómo `console.log('A')` no se ejecuta, pero `console.log('B')` sí.  Si DevTools vuelve a ejecutar la secuencia de comandos completa después de realizar el cambio, el texto `A` se habría grabado en la **consola**.  
 
-:::image type="complex" source="./media/edit-js.msft.png" alt-text="Edición de JavaScript en el panel Editor" lightbox="./media/edit-js.msft.png":::
+:::image type="complex" source="./media/edit-js.msft.png" alt-text="El panel de páginas" lightbox="./media/edit-js.msft.png":::
    Edición de JavaScript en el panel **Editor**  
 :::image-end:::  
 
-DevTools borra los cambios de CSS y JavaScript al volver a cargar la página.  Vea [configurar un área de trabajo](#set-up-a-workspace) para obtener información sobre cómo guardar los cambios en el sistema de archivos.  
+DevTools borra los cambios de CSS y JavaScript al volver a cargar la página.  Vaya a [configurar un área de trabajo](#set-up-a-workspace) para obtener información sobre cómo guardar los cambios en el sistema de archivos.  
 
-## Crear, guardar y ejecutar fragmentos de código 
+## Crear, guardar y ejecutar fragmentos de código  
 
 Los fragmentos de código son scripts que se pueden ejecutar en cualquier página.  Suponga que escribe repetidamente el siguiente código en la **consola**, para insertar la biblioteca de jQuery en una página, de modo que pueda ejecutar comandos de jQuery desde la **consola**:  
 
@@ -103,38 +95,36 @@ document.head.appendChild(script);
 
 En su lugar, puede guardar este código en un **fragmento** de código y ejecutarlo con un par de clics de botón, cada vez que lo necesite.  DevTools guarda el **fragmento de código** en el sistema de archivos.  
 
-:::image type="complex" source="./media/snippet.msft.png" alt-text="Un fragmento de código que inserta la biblioteca jQuery en una página" lightbox="./media/snippet.msft.png":::
+:::image type="complex" source="./media/snippet.msft.png" alt-text="El panel de páginas" lightbox="./media/snippet.msft.png":::
    Un **fragmento de código** que inserta la biblioteca jQuery en una página  
 :::image-end:::  
 
 Para ejecutar un **fragmento de código**:
 
-*   Abra el archivo con el panel **fragmentos de código** y haga clic en **Ejecutar** \ ( ![ el botón ejecutar ][ImageRunIcon] \).  
-*   Abra el **[menú de comandos][DevtoolsGuideChromiumCommandMenuIndex]**, elimine el `>` carácter, escriba `!` , escriba el nombre del **fragmento**y, a continuación, pulse `Enter` .  
+*   Abra el archivo con el panel **fragmentos de código** y elija **Ejecutar** \ ( ![ el botón ejecutar ][ImageRunIcon] \).  
+*   Abra el **[menú de comandos][DevtoolsGuideChromiumCommandMenuIndex]**, elimine el `>` carácter, escriba `!` , escriba el nombre del **fragmento**y, a continuación, seleccione `Enter` .  
     
-Vea [Ejecutar fragmentos de código desde cualquier página][DevtoolsGuideChromiumJavascriptSnippets] para obtener más información.
+Navegue para [Ejecutar fragmentos de código desde cualquier página][DevtoolsGuideChromiumJavascriptSnippets] para obtener más información.
 
-## Depurar JavaScript 
+## Depurar JavaScript  
 
 En lugar de usar `console.log()` para inferir Dónde está el error de JavaScript, considere la posibilidad de usar las herramientas de depuración de Microsoft Edge DevTools en su lugar.  La idea general es establecer un punto de interrupción, que es un lugar de detención intencionado en el código, y, a continuación, pasar por el tiempo de ejecución del código, de línea en línea.  Mientras recorres el código, puedes ver y cambiar los valores de todas las propiedades y variables definidas actualmente, ejecutar JavaScript en la **consola**y mucho más.
 
-Consulte Introducción a la [depuración de JavaScript][DevtoolsGuideChromiumJavascriptIndex] para conocer los conceptos básicos de la depuración en DevTools.
+Vaya a introducción a la [depuración de JavaScript][DevtoolsGuideChromiumJavascriptIndex] para conocer los conceptos básicos de la depuración en DevTools.
 
-:::image type="complex" source="./media/debugging.msft.png" alt-text="Depurar JavaScript" lightbox="./media/debugging.msft.png":::
+:::image type="complex" source="./media/debugging.msft.png" alt-text="El panel de páginas" lightbox="./media/debugging.msft.png":::
    Depurar JavaScript  
 :::image-end:::  
 
-## Configurar un área de trabajo 
+## Configurar un área de trabajo  
 
 De forma predeterminada, al editar un archivo en el panel **orígenes** , esos cambios se pierden al volver a cargar la página.  Las **áreas de trabajo** le permiten guardar los cambios que realice en DevTools en el sistema de archivos.  Esencialmente, DevTools puede usarse como editor de código.
 
-Consulte [editar archivos con áreas de trabajo][DevtoolsGuideChromiumWorkspacesIndex] para comenzar.
+Desplácese hasta [editar archivos con áreas de trabajo][DevtoolsGuideChromiumWorkspacesIndex] para comenzar.
 
-<!--  
- 
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: Cómo activar el tema oscuro en Microsoft Edge DevTools.
 title: Habilitar tema oscuro en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4369d06fff8372677910e2807daa3b23c2c0e333
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 7eaedc59bf1b8ab592612f3a2006a0aac1dfbe9e
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993026"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125100"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993026"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Habilitar tema oscuro en Microsoft Edge DevTools   
-
-  
+# Habilitar tema oscuro en Microsoft Edge DevTools  
 
 Puede habilitar el tema oscuro en [configuración](#set-up-dark-theme-from-settings) o en el [menú de comandos](#set-up-dark-theme-from-the-command-menu).  
 
@@ -42,34 +36,32 @@ Puede habilitar el tema oscuro en [configuración](#set-up-dark-theme-from-setti
    El tema oscuro  
 :::image-end:::  
 
-## Configurar tema oscuro desde la configuración   
+## Configurar tema oscuro desde la configuración  
 
-1.  Haga clic en **personalizar y controlar DevTools** `...` y, a continuación, seleccione **configuración**.  También puede abrir la **configuración** pulsando `F1` .  
+1.  Elija **personalizar y controlar DevTools** \ ( `...` \) y, a continuación, elija **configuración**.  También puede abrir la **configuración** pulsando `F1` .  
     
-    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Abrir Configuración" lightbox="../media/customize-options-settings.msft.png":::
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="El tema oscuro" lightbox="../media/customize-options-settings.msft.png":::
        Abrir **configuración**  
     :::image-end:::  
 
 1.  En el panel **preferencias** , en **apariencia**, haga clic en la lista desplegable **tema** y seleccione **oscuro**.  
     
-    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Preferencias" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="El tema oscuro" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
        **Preferencias**  
     :::image-end:::  
 
-## Configurar tema oscuro desde el menú de comandos   
+## Configurar tema oscuro desde el menú de comandos  
 
 1.  [Abrir el menú de comandos][DevtoolsCommandMenu].  
-1.  Comience a escribir `dark` , seleccione el comando **cambiar a tema oscuro** y, a continuación, presione `Enter` para ejecutar el comando.  
+1.  Comience a escribir `dark` , seleccione el comando **cambiar a tema oscuro** y, a continuación, seleccione `Enter` para ejecutar el comando.  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="El comando tema oscuro" lightbox="../media/customize-command-menu-dark.msft.png":::
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="El tema oscuro" lightbox="../media/customize-command-menu-dark.msft.png":::
        El comando tema oscuro  
     :::image-end:::  
     
-<!--  
-   
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

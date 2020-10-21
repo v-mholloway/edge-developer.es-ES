@@ -3,16 +3,16 @@ description: Los fragmentos de código son pequeños scripts que puede crear y e
 title: Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 5f6284179aacb471116a2d732507b010c37ef235
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: e353da76a5c354d834b69708c8a8c9e8dbdf9934
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993390"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124743"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993390"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools   
-
-
+# Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools  
 
 Si tienes que ejecutar el mismo código de forma repetida en la [consola][DevtoolsConsoleIndex] , considera la posibilidad de guardar el código como un fragmento de código.  Los fragmentos de código son scripts que se crean en el panel [fuentes][DevToolsSourcesPanel] .  Tienen acceso al contexto de JavaScript de la página y puede ejecutarlos en cualquier página.  Los fragmentos de código son una alternativa a [bookmarklets][WikiBookmarklet].  
 Firefox DevTools tiene una característica similar a la de los fragmentos de código denominado [Bloc][MDNScratchpad]dedo.  
@@ -57,113 +51,111 @@ document.body.appendChild(p);
 
 En la siguiente ilustración, la página aparece después de ejecutar el fragmento de código.  El **cajón de consola** emerge para mostrar el `Hello, Snippets!` mensaje que indica que el recorte y el contenido de la página cambian por completo.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Aspecto de la página después de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
    Aspecto de la página después de ejecutar el fragmento de código  
 :::image-end:::  
 
-## Abrir el panel de fragmentos   
+## Abrir el panel de fragmentos  
 
 El panel de **fragmentos de código** muestra los fragmentos de código.  Cuando desee editar un fragmento de código, tendrá que abrirlo desde el panel **fragmentos de código** .  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="El panel de fragmentos" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    El panel de **fragmentos**  
 :::image-end:::  
 
-### Abrir el panel de fragmentos de código con un mouse   
+### Abrir el panel de fragmentos de código con un mouse  
 
 1.  Haga clic en la pestaña **orígenes** para abrir el panel **fuentes** .  El panel de **páginas** suele abrirse de forma predeterminada.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Panel orígenes con el panel de páginas abierto a la izquierda" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-page-pane.msft.png":::
        Panel **orígenes** con el panel de **páginas** abierto a la izquierda  
     :::image-end:::  
     
-1.  Haga clic en la pestaña **fragmentos** para abrir el panel **fragmentos de código** .  Es posible que tenga que hacer clic en **más pestañas** \ ( ![ más pestañas ][ImageMoreTabsIcon] \) para acceder a la opción **fragmentos** .  
+1.  Haga clic en la pestaña **fragmentos** para abrir el panel **fragmentos de código** .  Es posible que tenga que elegir **más pestañas** \ ( ![ más pestañas ][ImageMoreTabsIcon] \) para acceder a la opción **fragmentos** .  
     
-### Abrir el panel de fragmentos de código con el menú de comandos   
+### Abrir el panel de fragmentos de código con el menú de comandos  
 
 1.  Centre el cursor en algún lugar dentro de DevTools.  
-1.  Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
-1.  Comience `Snippets` a escribir, seleccione **Mostrar fragmentos**y, a continuación, presione `Enter` para ejecutar el comando.  
+1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
+1.  Comience `Snippets` a escribir, elija **Mostrar fragmentos**y, a continuación, seleccione `Enter` para ejecutar el comando.  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="El comando Mostrar fragmentos" lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-show-snippets.msft.png":::
        El comando **Mostrar fragmentos**  
     :::image-end:::  
     
-## Crear fragmentos   
+## Crear fragmentos  
 
-### Crear un fragmento de código a través del panel orígenes   
+### Crear un fragmento de código a través del panel orígenes  
 
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
-1.  Haga clic en **nuevo fragmento de código**.  
-1.  Escriba un nombre para el fragmento de código y, a continuación, presione `Enter` para guardar.  
+1.  Elija **nuevo fragmento de código**.  
+1.  Escriba un nombre para el fragmento de código y, después, seleccione `Enter` Guardar.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Nombrar un fragmento de código" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Nombrar un fragmento de código  
     :::image-end:::  
     
-### Crear un fragmento de código mediante el menú de comandos   
+### Crear un fragmento de código mediante el menú de comandos  
 
 1.  Centre el cursor en algún lugar dentro de DevTools.  
-1.  Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
-1.  Comience `Snippet` a escribir, seleccione **crear nuevo fragmento**y, a continuación, presione `Enter` para ejecutar el comando.  
+1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
+1.  Comience `Snippet` a escribir, elija **crear nuevo fragmento de código**y, a continuación, seleccione `Enter` para ejecutar el comando.  
     
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Comando para crear un nuevo fragmento de código" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        Comando para crear un nuevo fragmento de código  
     :::image-end:::  
     
 Consulte cambiar [el nombre](#rename-snippets) de los fragmentos de código si desea asignar un nombre personalizado al nuevo fragmento de código.  
 
-## Editar fragmentos de código   
+## Editar fragmentos de código  
 
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
 1.  En el panel **fragmentos** de código, haga clic en el nombre del fragmento de código que desea editar para abrirlo en el **Editor de código**.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="El editor de código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        El **Editor de código**  
     :::image-end:::  
     
 1.  Use el **Editor de código** para agregar JavaScript al fragmento de código.  
-1.  Cuando aparece un asterisco junto al nombre del fragmento de código, significa que tiene código no guardado. Pulse `Control` + `S` \ (Windows \) o `Command` + `S` \ (MacOS \) para guardar.  
+1.  Cuando aparece un asterisco junto al nombre del fragmento de código, significa que tiene código no guardado. Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Un asterisco junto al nombre del fragmento de código, que indica código no guardado" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        Un asterisco junto al nombre del fragmento de código, que indica código no guardado  
     :::image-end:::  
     
-## Ejecutar fragmentos de código   
+## Ejecutar fragmentos de código  
 
-### Ejecutar un recorte desde el panel fuentes   
+### Ejecutar un recorte desde el panel fuentes  
 
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
 1.  Haga clic en el nombre del fragmento de código que desea ejecutar.  El fragmento de código se abre en el **Editor de código**.  
-1.  Haga clic en **Ejecutar fragmento** \ ( ![ Ejecutar fragmento ][ImageRunSnippetIcon] \) o `Control` + `Enter` \ (Windows \) o `Command` + `Enter` \ (MacOS \).  
+1.  Elija **Ejecutar fragmento** \ ( ![ Ejecutar miniprograma ][ImageRunSnippetIcon] \) o seleccione `Control` + `Enter` \ (Windows, Linux \) o `Command` + `Enter` \ (MacOS \).  
     
-### Ejecutar un fragmento de código con el menú de comandos   
+### Ejecutar un fragmento de código con el menú de comandos  
 
 1.  Centre el cursor en algún lugar dentro de DevTools.  
-1.  Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
+1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
 1.  Elimine el `>` carácter y escriba el `!` carácter seguido del nombre del fragmento de código que desea ejecutar.  
     
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Ejecución de un fragmento de código desde el menú de comandos" lightbox="../media/javascript-search-run-command.msft.png":::
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-run-command.msft.png":::
        Ejecución de un fragmento de código desde el **menú de comandos**  
     :::image-end:::  
     
-1.  Pulse `Enter` para ejecutar el fragmento de código.  
+1.  Seleccione `Enter` para ejecutar el fragmento de código.  
 
-## Cambiar el nombre de los fragmentos de código   
-
-1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
-1.  Haga clic con el botón derecho en el nombre del fragmento y seleccione cambiar **nombre**.  
-    
-## Eliminar fragmentos de código   
+## Cambiar el nombre de los fragmentos de código  
 
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
-1.  Haga clic con el botón derecho en el nombre del fragmento y seleccione **quitar**.  
+1.  Haga clic con el botón derecho en el nombre del fragmento y seleccione **cambiar nombre**.  
     
-<!--  
- 
+## Eliminar fragmentos de código  
 
+1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
+1.  Haga clic con el botón derecho en el nombre del fragmento y elija **quitar**.  
+    
+## Contactar al equipo de Microsoft Edge DevTools  
 
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

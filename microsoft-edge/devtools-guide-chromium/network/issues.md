@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo detectar problemas de red en el pa
 title: Guía de problemas de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ccd78c34a50bf235416df58aad28df9253b1b24e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4713dc252d428abbf5b60ee5f74a7316a102dab6
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993376"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125380"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -28,20 +28,13 @@ ms.locfileid: "10993376"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Guía de problemas de red   
-
-
-
+# Guía de problemas de red  
 
 En esta guía se muestra cómo detectar problemas de red o oportunidades de optimización en el panel red de Microsoft Edge DevTools.  
 
 Consulte [Introducción][NetworkPerformance] a los conceptos básicos del panel **red** .  
 
-## Solicitudes en cola o detenidas   
+## Solicitudes en cola o detenidas  
 
 **Síntomas**  
 
@@ -63,7 +56,7 @@ Se están realizando demasiadas solicitudes en un solo dominio.  En las conexion
 *   Use HTTP/2.  No use el particionamiento del dominio con HTTP/2.  
 *   Quite o aplaza las solicitudes innecesarias para que las solicitudes críticas se descarguen anteriormente.  
     
-## Tiempo lento para el primer byte (TTFB)   
+## Tiempo lento para el primer byte (TTFB)  
 
 **Síntomas**  
 
@@ -71,7 +64,7 @@ Una solicitud dedica mucho tiempo a esperar a recibir el primer byte del servido
 
 En la siguiente ilustración, la larga barra verde en la **cascada** indica que la solicitud estaba esperando mucho tiempo.  Esto se ha simulado usando un perfil para restringir la velocidad de la red y agregar un retraso.  
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Ejemplo de una solicitud con un tiempo lento para el primer byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Ejemplo de una serie en cola o detenida en el panel red" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
    Ejemplo de una solicitud con un tiempo lento para el primer byte  
 :::image-end:::  
 
@@ -85,7 +78,7 @@ En la siguiente ilustración, la larga barra verde en la **cascada** indica que 
 *   Si la conexión es lenta, considere la posibilidad de hospedar el contenido en una red CDN o de cambiar los proveedores de hospedaje.  
 *   Si el servidor es lento, considere la posibilidad de optimizar las consultas de la base de datos, implementar una caché o modificar la configuración del servidor.  
     
-## Descarga de contenido lento   
+## Descarga de contenido lento  
 
 **Síntomas**  
 
@@ -93,7 +86,7 @@ Una solicitud tarda mucho tiempo en descargarse.
 
 En la siguiente ilustración, la larga barra azul en la **cascada** que se encuentra junto al formato PNG significa que se ha tardado mucho tiempo en descargarlo.  
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Ejemplo de una solicitud que tarda mucho tiempo en descargarse" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Ejemplo de una serie en cola o detenida en el panel red" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
    Ejemplo de una solicitud que tarda mucho tiempo en descargarse  
 :::image-end:::  
 
@@ -107,19 +100,17 @@ En la siguiente ilustración, la larga barra azul en la **cascada** que se encue
 *   Considere la posibilidad de hospedar el contenido en una red CDN o de cambiar proveedores de hospedaje.  
 *   Reenvíes menos bytes optimizando las solicitudes.  
     
-## Conocimiento de colaboración  
+<!--   ## Contribute knowledge  
 
-¿Tiene un problema de red que debe agregarse a esta guía?  
+Do you have a network issue that should be added to this guide?  
 
-*   Envía un Tweet a [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Seleccione **Enviar comentarios** \ ( ![ Enviar comentarios ][ImageSendFeedbackIcon] \) en la DevTools o pulse `Alt` + `Shift` + `I` \ (Windows \) o `Option` + `Shift` + `I` \ (MacOS \) para proporcionar respuestas o solicitudes de características.  
-*   [Abra un problema][WebFundamentalsIssue] en el repositorio de docs.  
+*   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
+*   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-<!--  
-  
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

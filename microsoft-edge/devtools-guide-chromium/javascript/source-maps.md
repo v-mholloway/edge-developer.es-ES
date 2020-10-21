@@ -3,16 +3,16 @@ description: Mantenga el código de cliente legible y depurable incluso después
 title: Asignar código preprocesado al código fuente
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bd04c7bae6f57d4fe3f9b293d70775aa99db3dd1
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: c16f59658217ab9dfb905bd814f96af21f95130d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993236"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124687"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -50,7 +50,7 @@ En este artículo se explica cómo interactuar con mapas de origen de JavaScript
 
 ## Usar un preprocesador admitido  
 
-Debe usar un minifier que sea capaz de crear mapas de origen.  <!--For the most popular options, see the preprocessor support section.  -->  Para obtener una vista extendida, consulte la página de [mapas de origen: idiomas, herramientas y otra información][GitHubWikiSourceMapsLanguagesTools] .  
+Debe usar un minifier que sea capaz de crear mapas de origen.  <!--For the most popular options, navigate to preprocessor support section.  -->  Para ver una vista extendida, vaya a [mapas de origen: idiomas, herramientas y otra][GitHubWikiSourceMapsLanguagesTools] página wiki de información.  
 
 <!--todo: add link to see the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
@@ -108,11 +108,11 @@ Complete las siguientes acciones.
     
 Si expande el subpanel **orígenes** , ahora verá un nuevo archivo con el nombre de archivo personalizado que escribió anteriormente.  Si hace doble clic para ver este archivo, contiene el JavaScript compilado para el origen original.  En la última línea, sin embargo, es un `// @sourceURL` comentario que indica el archivo de origen original.  Esto puede ayudarle a realizar la depuración mientras trabaja con abstracciones de lenguaje.  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Trabajar con sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Habilitar mapas de origen" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
    Trabajar con `sourceURL`  
 :::image-end:::  
 
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools
+## Contactar al equipo de Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

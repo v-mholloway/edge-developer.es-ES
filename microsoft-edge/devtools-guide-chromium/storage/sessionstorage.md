@@ -3,16 +3,16 @@ description: Cómo ver y editar sessionStorage con el panel almacenamiento de la
 title: Ver y editar el almacenamiento de sesión con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 24fca3fd3a068f3b2ffbe4ec1c23e6b80b968953
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 6543c03f04ff80b1bba1d244598a901d066db13a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993551"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125478"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993551"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Ver y editar el almacenamiento de sesión con Microsoft Edge DevTools   
-
-  
+# Ver y editar el almacenamiento de sesión con Microsoft Edge DevTools  
 
 En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para ver, editar y eliminar [`sessionStorage`][MDNSessionStorage] pares clave-valor.  
 
-## Ver las claves y los valores de sessionStorage   
+## Ver las claves y los valores de sessionStorage  
 
 1.  Seleccione la pestaña **aplicación** para abrir el panel de **aplicaciones** .  El panel **manifiesto** se muestra de forma predeterminada.  
     
@@ -48,72 +42,70 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
     
 1.  Expanda el menú almacenamiento de la **sesión** .  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="El menú de almacenamiento de sesión" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-session-storage.msft.png":::
        El menú de **almacenamiento de sesión**  
     :::image-end:::  
     
 1.  Seleccione un dominio para ver los pares de clave y valor.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Pares clave-valor ' sessionStorage '" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
        `sessionStorage`Pares de clave y valor  
     :::image-end:::  
     
 1.  Seleccione una fila de la tabla para ver el valor en el visor debajo de la tabla.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Ver el valor de la clave x-SID" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
        Ver el valor de la `x-sid` clave  
     :::image-end:::  
     
-## Crear un nuevo par clave-valor de sessionStorage   
+## Crear un nuevo par clave-valor de sessionStorage  
 
 1.  [Ver los `sessionStorage` pares clave-valor de un dominio](#view-sessionstorage-keys-and-values).  
 1.  Haga doble clic en la parte vacía de la tabla.  DevTools crea una fila nueva y centra el cursor en la columna de **clave** .  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="La parte vacía de la tabla para hacer doble clic para crear un nuevo par clave-valor" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
        La parte vacía de la tabla para hacer doble clic para crear un nuevo par clave-valor  
     :::image-end:::  
     
-## Editar claves o valores de sessionStorage   
+## Editar claves o valores de sessionStorage  
 
 1.  [Ver los `sessionStorage` pares clave-valor de un dominio](#view-sessionstorage-keys-and-values).  
 1.  Haga doble clic en una celda de la columna **clave** o **valor** para editar esa clave o valor.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Editar una clave de sessionStorage" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
        Modificar una `sessionStorage` tecla  
     :::image-end:::  
     
-## Eliminar pares de clave y valor de sessionStorage   
+## Eliminar pares de clave y valor de sessionStorage  
 
 1.  [Ver los `sessionStorage` pares clave-valor de un dominio](#view-sessionstorage-keys-and-values).  
 1.  Seleccione el par de clave y valor que desea eliminar.  DevTools lo resalta azul para indicar que está seleccionado.  
-1.  Presione la `Delete` tecla o haga clic en **eliminar seleccionada** \ ( ![ eliminar seleccionado ][ImageDeleteIcon] \).  
+1.  Presione la `Delete` tecla o elija **eliminar seleccionado** \ ( ![ eliminar seleccionado ][ImageDeleteIcon] \).  
     
-## Eliminar todas las parejas de clave y valor de sessionStorage para un dominio   
+## Eliminar todas las parejas de clave y valor de sessionStorage para un dominio  
 
 1.  [Ver los `sessionStorage` pares clave-valor de un dominio](#view-sessionstorage-keys-and-values).  
-1.  Seleccione **Borrar todo** \ ( ![ Borrar todo ][ImageClearIcon] \).  
+1.  Elija **Borrar todo** \ ( ![ Borrar todo ][ImageClearIcon] \).  
     
-## Interactuar con sessionStorage desde la consola   
+## Interactuar con sessionStorage desde la consola  
 
 Dado que puede ejecutar JavaScript en la **consola**y que la **consola** tiene acceso a los contextos de JavaScript de la página, es posible interactuar con él `sessionStorage` en la **consola**.  
 
 1.  Use el menú **contextos de JavaScript** para cambiar el contexto de JavaScript de la **consola** si desea acceder a los `sessionStorage` pares clave-valor de un dominio que no sea la página en la que se encuentre.  
     
-    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Cambiar el contexto de JavaScript de la consola" lightbox="../media/storage-console-domain-selection.msft.png":::
+    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-console-domain-selection.msft.png":::
        Cambiar el contexto de JavaScript de la consola  
     :::image-end:::  
     
 1.  Ejecuta tus `sessionStorage` expresiones en la consola, de la misma manera en que lo harías en tu código JavaScript.  
     
-    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interactuar con sessionStorage desde la consola" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-console-session-storage-keys.msft.png":::
        Interactuar con `sessionStorage` desde la **consola**  
     :::image-end:::  
     
-<!--  
-   
+## Contactar al equipo de Microsoft Edge DevTools  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

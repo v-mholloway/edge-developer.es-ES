@@ -1,17 +1,18 @@
 ---
+description: Use la herramienta problemas para encontrar y corregir problemas con el sitio Web.
 title: Buscar y solucionar problemas con la herramienta problemas de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bad9e9d99f0d2f3179784920fc334823289b9f99
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4691db9542ecff93d1b59e243844109e0c730d23
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992823"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124729"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -52,7 +53,7 @@ La herramienta **problemas** de Microsoft Edge DevTools reduce la fatiga de las 
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          También puede seleccionar **problemas** en el menú **más herramientas** .  
+          También puede elegir **problemas** en el menú **más herramientas** .  
           
           :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Botón ir a problemas de la barra de advertencia amarilla cuando se detectan problemas" lightbox="../media//issues-more-tools-menu.msft.png":::
              Herramienta **problemas** en el menú **más herramientas**  
@@ -109,7 +110,7 @@ La herramienta **problemas** del alimentador de DevTools presenta advertencias e
        `None` valor de la columna **SameSite** de la `ck02` cookie en el panel de **red** DevTools  
     :::image-end:::  
 
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

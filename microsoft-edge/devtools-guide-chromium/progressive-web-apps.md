@@ -7,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7eb71d0d57d8a9227a54b921f15dfe434ad6e65b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 80475ebcbbdd3fb04fd0196e993c933e0bdcf090
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993607"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125394"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993607"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Depurar aplicaciones web progresivas   
-
-
+# Depurar aplicaciones web progresivas  
 
 Use el panel de **aplicaciones** para inspeccionar, modificar y depurar manifiestos de aplicaciones Web, trabajos de servicios y cachés de trabajos de servicios.  
 
@@ -55,7 +49,7 @@ Esta guía solo trata las características de la aplicación web progresiva del 
 *   Vea la caché de trabajos del servicio en el panel **almacenamiento en caché** .  
 *   Anula el registro de un trabajador del servicio y borra todo el almacenamiento y las memorias caché con un solo clic del botón en el panel **Borrar almacenamiento** .  
     
-## Manifiesto de la aplicación Web   
+## Manifiesto de la aplicación Web  
 
 Si quiere que los usuarios puedan agregar la aplicación a su homescreens móvil, necesita un manifiesto de la aplicación Web.  El manifiesto define cómo aparece la aplicación en la pantalla Android, dónde dirigir al usuario cuando se inicia desde pantalla Android y qué aspecto tiene la aplicación al iniciar.  
 
@@ -77,7 +71,7 @@ Una vez que tenga configurado el manifiesto, puede usar el panel de **manifiesto
 *   Las secciones **identidad** y **presentación** solo muestran campos del origen del manifiesto en una pantalla más fácil de usar.  
 *   En la sección **iconos** se muestran todos los iconos que especificó.  
     
-<!--### Simulate Add to Homescreen events   -->
+<!--### Simulate Add to Homescreen events  -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -85,7 +79,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--  
-:::image type="complex" source="./media/io.msft.png" alt-text="Add to desktop shelf" lightbox="./media/io.msft.png":::
+:::image type="complex" source="./media/io.msft.png" alt-text="El panel manifiesto" lightbox="./media/io.msft.png":::
    Add to desktop shelf  
 :::image-end:::
 -->  
@@ -102,7 +96,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Trabajadores de servicio   
+## Trabajadores de servicio  
 
 Los trabajadores de servicios son una tecnología fundamental en la plataforma web futura.  Son scripts que el explorador ejecuta en segundo plano, independientes de una página web.  Estas secuencias de comandos le permiten acceder a las características que no necesitan una página web o interacción del usuario, como las notificaciones de inserción, la sincronización en segundo plano y las experiencias sin conexión.  
 
@@ -115,7 +109,7 @@ Los trabajadores de servicios son una tecnología fundamental en la plataforma w
 
 El panel de **trabajos de servicios** del panel de **aplicaciones** es el lugar principal en el DevTools para inspeccionar y depurar trabajos de servicio.  
 
-:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="El panel de trabajos de servicios" lightbox="./media/service-workers-pane.msft.png":::
+:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="El panel manifiesto" lightbox="./media/service-workers-pane.msft.png":::
    El panel de **trabajos de servicios**  
 :::image-end:::  
 
@@ -134,7 +128,7 @@ El panel de **trabajos de servicios** del panel de **aplicaciones** es el lugar 
 Si el trabajo de servicio provoca errores, aparece una nueva etiqueta denominada **errores** .  
 
 <!--  
-:::image type="complex" source="./media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="./media/sw-error.msft.png":::
+:::image type="complex" source="./media/sw-error.msft.png" alt-text="El panel manifiesto" lightbox="./media/sw-error.msft.png":::
    Service worker with errors  
 :::image-end:::
 -->  
@@ -142,11 +136,11 @@ Si el trabajo de servicio provoca errores, aparece una nueva etiqueta denominada
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## Cachés de trabajos del servicio 
+## Cachés de trabajos del servicio  
 
 El panel **almacenamiento en caché** proporciona una lista de solo lectura de los recursos que se han almacenado en caché con la [API de caché][MDNWebCacheAPI]\ (trabajo de servicio \).  
 
-:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="Panel almacenamiento en caché" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
+:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="El panel manifiesto" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
    Panel **almacenamiento en caché**  
 :::image-end:::  
 
@@ -155,11 +149,11 @@ El panel **almacenamiento en caché** proporciona una lista de solo lectura de l
 
 Si tiene dos o más memorias caché abiertas, las verá debajo de la lista desplegable **almacenamiento en caché** .  
 
-:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="Lista desplegable de almacenamiento en caché" lightbox="./media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="El panel manifiesto" lightbox="./media/cache-pane-cache-storage.msft.png":::
    Lista desplegable de **almacenamiento en caché**  
 :::image-end:::  
 
-## Uso de cuotas 
+## Uso de cuotas  
 
 Es posible que algunas respuestas dentro del panel **almacenamiento en caché** se marquen como "opacas".  Se refiere a una respuesta recuperada de un origen diferente, como en una **CDN** o una API remota, cuando [CORS][FetchHttpCorsProtocol] no está habilitado.  
 
@@ -179,7 +173,7 @@ Guías relacionadas:
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## Borrar almacenamiento 
+## Borrar almacenamiento  
 
 El panel **Borrar almacenamiento** es una característica muy útil al desarrollar aplicaciones web progresivas.  Este panel le permite anular el registro de los trabajadores de los servicios y borrar todas las cachés y almacenamiento con un solo clic de botón.  <!--Check out the section below to learn more.  -->
 
@@ -189,7 +183,7 @@ El panel **Borrar almacenamiento** es una característica muy útil al desarroll
     
 <!--TODO:  Link to sections when available. -->
 
-<!--## Other Application panel guides 
+<!--## Other Application panel guides   
 
 Check out the guides below for more help on the other panes of the **Application** panel.  
 
@@ -198,13 +192,9 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
-<!--TODO  -->
+## Contactar al equipo de Microsoft Edge DevTools  
 
-<!--  
- 
-
-
--->  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

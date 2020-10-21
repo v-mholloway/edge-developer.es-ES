@@ -3,16 +3,16 @@ description: Cómo mover Microsoft Edge DevTools a la parte inferior o a la izqu
 title: Cambiar la ubicación de DevTools de Microsoft Edge (desacoplar, acoplar a la parte inferior, acoplar a la izquierda)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: da7bd4ed23c54faac6d9fef9afbc78128f8cfd3c
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 65c0849af5da671bb0d76397d6d9395bc249eaac
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993012"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125051"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993012"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Cambiar la ubicación de DevTools de Microsoft Edge (desacoplar, acoplar a la parte inferior, acoplar a la izquierda)   
-
-
+# Cambiar la ubicación de DevTools de Microsoft Edge (desacoplar, acoplar a la parte inferior, acoplar a la izquierda)  
 
 De forma predeterminada DevTools se acopla a la derecha de la ventanilla.  También puede acoplar a la parte inferior, acoplar a la izquierda o desacoplar el DevTools en una ventana independiente.  
 
@@ -45,46 +39,44 @@ De forma predeterminada DevTools se acopla a la derecha de la ventanilla.  Tambi
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Seleccione acoplar a la parte inferior" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Seleccionar acoplar a la izquierda" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
          Seleccionar `Dock To Bottom`  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Explorador en una ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Seleccionar acoplar a la izquierda" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
          Explorador en una ventana independiente  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools desacoplado en una ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Seleccionar acoplar a la izquierda" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
          DevTools desacoplado en una ventana independiente  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## Cambiar la ubicación desde el menú principal   
+## Cambiar la ubicación desde el menú principal  
 
-1.  Haga clic en **personalizar y controlar DevTools** \ ( `...` \) y seleccione **desacoplar en ventana independiente** \ ( ![ desacoplar ][ImageUndockIcon] \), **acoplar en la parte inferior** \ ( ![ acoplar a la inferior ][ImageBottomIcon] \) o **acoplar** a la izquierda \ ( ![ acoplar a la izquierda ][ImageLeftIcon] \).  
+1.  Elija **personalizar y controlar DevTools** \ ( `...` \) y seleccione **desacoplar en ventana independiente** \ ( ![ desacoplar ][ImageUndockIcon] \), **acoplar en la parte inferior** \ ( ![ acoplar a la inferior ][ImageBottomIcon] \) o **acoplar** a la izquierda \ ( ![ acoplar a la izquierda ][ImageLeftIcon] \).  
     
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Seleccione desacoplar en ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Seleccionar acoplar a la izquierda" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Seleccione **desacoplar en ventana independiente**  
     :::image-end:::  
     
-## Cambiar la ubicación desde el menú de comandos   
+## Cambiar la ubicación desde el menú de comandos  
 
 1.  [Abrir el menú de comandos][DevtoolsCommandMenu].  
 1.  Ejecute uno de los siguientes comandos: `Dock To Bottom` , `Undock Into Separate Window` .  Por el momento, no hay ningún comando para acoplar a la izquierda, pero puede acceder a él desde el [menú principal](#change-placement-from-the-main-menu).  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="El comando desacoplar" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Seleccionar acoplar a la izquierda" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        El comando desacoplar  
     :::image-end:::  
     
-<!--  
- 
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

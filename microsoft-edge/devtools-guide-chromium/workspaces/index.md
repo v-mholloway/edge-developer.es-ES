@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo guardar los cambios realizados en 
 title: Editar archivos con áreas de trabajo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: fd72021e75c536fa38c27ae17e4b1678eb4ca85f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 496bbbb34cdf900d36aa7ebfbf79ad63cdf3e6e7
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992725"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125352"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -81,9 +81,9 @@ Complete las acciones siguientes para obtener experiencia práctica con áreas d
     :::image-end:::  
     
     <!--1.  Choose the project name.  -->  
-    <!--1.  Select **Advanced Options** > **Download Project**.  
+    <!--1.  Choose **Advanced Options** > **Download Project**.  
     
-    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
+    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
     :::image-end:::  
 
@@ -111,22 +111,22 @@ Complete las acciones siguientes para obtener experiencia práctica con áreas d
     
 1.  Abra una pestaña en Microsoft Edge y vaya a la versión hospedada localmente del sitio.  Debería poder acceder a ella usando una dirección URL como `localhost:8080` o `http://0.0.0.0:8080` .  El [número de Puerto][WikiPortURLs] exacto puede ser diferente.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="La demostración" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        La demostración  
     :::image-end:::  
     
 ### Configurar DevTools  
 
-1.  Seleccione `Control` + `Shift` + `J` \ (Windows \) o `Command` + `Option` + `J` \ (MacOS \) para abrir el panel de **consola** de DevTools.  
+1.  Seleccione `Control` + `Shift` + `J` \ (Windows, Linux \) o `Command` + `Option` + `J` \ (MacOS \) para abrir el panel de **consola** de DevTools.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Panel de consola" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        Panel de **consola**  
     :::image-end:::  
     
 1.  Elija la pestaña **orígenes** .  
 1.  Elija la ficha **filesystem** .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Ficha filesystem" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        Ficha **filesystem**  
     :::image-end:::  
     
@@ -135,7 +135,7 @@ Complete las acciones siguientes para obtener experiencia práctica con áreas d
 1.  Elija **permitir** para dar a DevTools permiso de lectura y escritura en el directorio.  
     En la ficha **filesystem** , ahora hay un punto verde junto a `index.html` , `script.js` y `styles.css` .  Estos puntos verdes indican que DevTools ha establecido una asignación entre los recursos de red de la página y los archivos de `~/Desktop/app` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="La ficha filesystem ahora muestra una asignación entre los archivos locales y los de red" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
        La ficha **filesystem** ahora muestra una asignación entre los archivos locales y los de red  
     :::image-end:::  
     
@@ -146,7 +146,7 @@ Complete las acciones siguientes para obtener experiencia práctica con áreas d
     > [!NOTE]
     > La `color` propiedad de `h1` elementos se establece en `fuchsia` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Ver estilos. CSS en un editor de texto" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
        Ver `styles.css` en un editor de texto  
     :::image-end:::  
     
@@ -154,7 +154,7 @@ Complete las acciones siguientes para obtener experiencia práctica con áreas d
 1.  Cambie el valor de la `color` propiedad del `<h1>` elemento a su color favorito.  
     Recuerde que debe elegir el `<h1>` elemento en el **árbol DOM** para ver las reglas CSS que se aplican en el panel **estilos** .  El punto verde junto a `styles.css:1` significa que todos los cambios que realice se asignan a `~/Desktop/app/styles.css` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="El indicador verde indica que el archivo está vinculado" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
        El indicador verde indica que el archivo está vinculado  
     :::image-end:::  
     
@@ -177,7 +177,7 @@ El árbol DOM no es HTML.
 1.  Choose the **Elements** tab.  
 1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
        Attempt to change html from the DOM Tree of the **Elements** panel  
     :::image-end:::  
     
@@ -207,10 +207,10 @@ Si desea guardar un cambio en el código HTML de la página, hágalo usando el p
 1.  Elija la pestaña **Página** .  
 1.  Elija **(índice)**.  Se abrirá el código HTML de la página.  
 1.  Reemplazar `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Consulte la siguiente ilustración.  
-1.  Seleccione `Control` + `S` \ (Windows \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
+1.  Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
 1.  Actualiza la página.  El `<h1>` elemento aún muestra el nuevo texto.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Cambiar HTML desde el panel orígenes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        Cambiar HTML desde el panel **orígenes**  
     :::image-end:::  
     
@@ -221,17 +221,17 @@ Si desea guardar un cambio en el código HTML de la página, hágalo usando el p
 El panel **orígenes** también es el lugar donde se pueden realizar cambios en JavaScript.  Sin embargo, a veces necesita acceder a otros paneles, como el panel **elementos** o el panel de **consola** , mientras realiza cambios en su sitio.  Hay una forma de abrir el panel **fuentes** junto con otros paneles.  
 
 1.  Elija la pestaña **elementos** .  
-1.  Seleccione `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \).  Se abrirá el **menú de comandos** .  
-1.  Escriba `QS` y, a continuación, seleccione **Mostrar fuente rápida**.  En la parte inferior de la ventana de DevTools ahora hay una ficha de **fuente rápida** .  La pestaña muestra el contenido de `index.html` , que es el último archivo editado en el panel **fuentes** .  La pestaña **origen rápido** le ofrece el editor del panel **fuentes** , de modo que pueda editar archivos mientras tiene otros paneles abiertos.  
+1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \).  Se abrirá el **menú de comandos** .  
+1.  Escriba `QS` y, a continuación, elija **Mostrar fuente rápida**.  En la parte inferior de la ventana de DevTools ahora hay una ficha de **fuente rápida** .  La pestaña muestra el contenido de `index.html` , que es el último archivo editado en el panel **fuentes** .  La pestaña **origen rápido** le ofrece el editor del panel **fuentes** , de modo que pueda editar archivos mientras tiene otros paneles abiertos.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abrir la pestaña origen rápido mediante el menú de comandos" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Abrir la pestaña **origen rápido** mediante el **menú de comandos**  
     :::image-end:::  
     
-1.  Seleccione `Control` + `P` \ (Windows \) o `Command` + `P` \ (MacOS \) para abrir el cuadro de diálogo **Abrir archivo** .  Consulte la siguiente ilustración.  
-1.  Escriba `script` y, a continuación, seleccione **app/script.js**.  
+1.  Seleccione `Control` + `P` \ (Windows, Linux \) o `Command` + `P` \ (MacOS \) para abrir el cuadro de diálogo **Abrir archivo** .  Consulte la siguiente ilustración.  
+1.  Escriba `script` y, a continuación, elija **aplicación/script.js**.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Abrir script.js con el cuadro de diálogo Abrir archivo" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        Abrir `script.js` con el cuadro de diálogo **Abrir archivo**  
     :::image-end:::  
     
@@ -245,13 +245,13 @@ El panel **orígenes** también es el lugar donde se pueden realizar cambios en 
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  Seleccione `Control` + `S` \ (Windows \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
+1.  Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
 1.  Actualiza la página.  
     
     > [!NOTE]
     > El vínculo de la página está en cursiva.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="El vínculo de la página se ha en cursiva" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
        El vínculo de la página se ha en cursiva  
     :::image-end:::  
     
@@ -263,8 +263,11 @@ Use lo que ha aprendido en este tutorial para configurar áreas de trabajo en su
 If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
-*   [Twitter][TwitterAlphabetBrowserDevTools]  
-    -->  
+*   [Twitter][TwitterAlphabetBrowserDevTools]  -->  
+
+## Contactar al equipo de Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

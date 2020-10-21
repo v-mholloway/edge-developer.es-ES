@@ -3,16 +3,16 @@ description: Cómo buscar y analizar código JavaScript y CSS sin usar en Micros
 title: Buscar código JavaScript y CSS sin usar con la pestaña cobertura en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 19bc15578e00e5a9f3389529f589e9790280a0e4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 08c4daaabd30296b53ad57a81caa0e7b155a4fc9
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993096"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125191"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993096"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Buscar código JavaScript y CSS sin usar con la pestaña cobertura en Microsoft Edge DevTools   
-
-
+# Buscar código JavaScript y CSS sin usar con la pestaña cobertura en Microsoft Edge DevTools  
 
 La pestaña cobertura de Microsoft Edge DevTools ayuda a buscar código de JavaScript y CSS no usado.  Quitar el código no usado puede acelerar la carga de la página y guardar los datos celulares de los usuarios móviles.  
 
@@ -45,7 +39,7 @@ La pestaña cobertura de Microsoft Edge DevTools ayuda a buscar código de JavaS
 > [!WARNING]
 > Encontrar un código no usado es relativamente fácil.  Pero refactorizar un código base para que cada página solo envíe el código JavaScript y CSS que necesita puede ser difícil.  En esta guía no se trata cómo refactorizar un código base para evitar el código no usado, ya que estos Refactores dependen enormemente de la pila tecnológica.  
 
-## Introducción   
+## Introducción  
 
 El envío de código JavaScript o CSS sin usar es un problema común en el desarrollo web.  Por ejemplo, supongamos que desea usar el [componente del botón bootstrap][BootstrapButtons] en la página.  Para usar el componente Button, necesita agregar un vínculo a la hoja de estilos bootstrap en el código HTML, como este:  
 
@@ -66,27 +60,27 @@ Esta hoja de estilos no incluye simplemente el código del componente de botón.
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## Abrir la pestaña cobertura   
+## Abrir la pestaña cobertura  
 
 1.  [Abrir el menú de comandos][DevToolsCommandMenu].  
-1.  Comience `coverage` a escribir, seleccione el comando **Mostrar cobertura** y, a continuación, presione `Enter` para ejecutar el comando.  La pestaña **cobertura** se abre en el **cajón**.  
+1.  Comience `coverage` a escribir, seleccione el comando **Mostrar cobertura** y, a continuación, seleccione `Enter` para ejecutar el comando.  La pestaña **cobertura** se abre en el **cajón**.  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="La ficha cobertura" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Analizar la cobertura de código" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        La ficha **cobertura**  
     :::image-end:::  
     
-## Registrar la cobertura de código   
+## Registrar la cobertura de código  
 
 1.  Haga clic en uno de los siguientes botones de la pestaña **cobertura** :  
-    *   Haga clic en **iniciar cobertura de instrumentación y recargar página** \ ( ![ iniciar la instrumentación de la cobertura y volver ][ImageReloadIcon] a cargar la página \) Si desea ver qué código se necesita para cargar la página.  
-    *   Haga clic en **cobertura del instrumento** \ ( ![ cobertura ][ImageRecordIcon] del instrumento \) Si desea ver qué código se usa después de interactuar con la página.  
-1.  Haga clic en **detener la cobertura de la instrumentación y mostrar resultados** \ ( ![ detener la instrumentación de la instrumentación y mostrar resultados ][ImageStopIcon] \) cuando desee detener la grabación de la cobertura de código.  
+    *   Elija **iniciar la cobertura de la instrumentación y volver a cargar la página** \ ( ![ iniciar la cobertura de la instrumentación y volver a cargar página ][ImageReloadIcon] \) Si desea ver qué código se necesita para cargar la página.  
+    *   Elija **cobertura de instrumento** \ ( ![ cobertura ][ImageRecordIcon] del instrumento \) Si desea ver qué código se usa después de interactuar con la página.  
+1.  Elija **detener la cobertura de la instrumentación y mostrar resultados** \ ( ![ detener la instrumentación de la cobertura y resultados de la presentación ][ImageStopIcon] \) cuando desee detener la grabación de la cobertura de código.  
     
-## Analizar la cobertura de código   
+## Analizar la cobertura de código  
 
 La tabla de la pestaña **cobertura** le muestra los recursos que se han analizado y la cantidad de código que se usa dentro de cada recurso.  Haga clic en una fila para abrir ese recurso en el panel **orígenes** y ver un desglose línea por línea de código usado y código no usado.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Un informe de cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Analizar la cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    Un informe de cobertura de código  
 :::image-end:::  
 
@@ -96,11 +90,9 @@ La tabla de la pestaña **cobertura** le muestra los recursos que se han analiza
 *   La columna **bytes no usados** es el número de bytes que no se han usado.  
 *   La última columna sin nombre es una visualización de las columnas bytes **totales** y **bytes no usados** .  La sección roja de la barra es bytes no usados.  La sección verde es bytes usados.  
     
-<!--  
- 
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

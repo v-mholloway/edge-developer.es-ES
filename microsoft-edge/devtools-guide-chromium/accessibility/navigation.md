@@ -3,16 +3,16 @@ description: Guía para navegar por Microsoft Edge DevTools usando tecnología d
 title: Navegar por Microsoft Edge DevTools con tecnología de asistencia
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 9a9accd043d05d1c55b1e79ce580f7b45711118f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f4ec63a0d432925b7db99ce695db66dd61f8bcf1
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993194"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125296"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -46,20 +46,20 @@ Por ejemplo:
 Dentro del área de contenido de cada panel hay varias herramientas diferentes, a menudo denominadas fichas o paneles en la documentación.  
 Por ejemplo, el panel **elementos** contiene pestañas adicionales para inspeccionar detectores de eventos, el árbol de accesibilidad y mucho más.  La distinción entre las pestañas y los paneles es algo arbitrario.  El único motivo por el que puedes ver un término u otro es mantener la coherencia con el resto de la documentación oficial de DevTools.  
 
-## Métodos abreviados de teclado  
+## Accesos rápidos de teclado  
 
 La [referencia de métodos abreviados de teclado de DevTools] [DevtoolsShortcuts] es una Cheatsheet útil.  Asegúrese de marcarlo y hacer referencia a él mientras explora los distintos paneles.  
 
 ## Abrir DevTools  
 
-Para empezar, consulte [Open Microsoft Edge DevTools] [DevtoolsOpen].  Hay varias maneras de abrir DevTools, ya sea mediante métodos abreviados de teclado o elementos de menú.  
+Para empezar, vaya a [Open Microsoft Edge DevTools] [DevtoolsOpen].  Hay varias maneras de abrir DevTools, ya sea mediante métodos abreviados de teclado o elementos de menú.  
 
 ## Navegar entre paneles  
 
 ### Navegar por el teclado  
 
-*   Con DevTools abierto, selecciona `Control` + `]` \ (Windows \) o `Command` + `]` \ (MacOS \) para centrar la atención en el siguiente panel.  
-*   Seleccione `Control` + `[` \ (Windows \) o `Command` + `[` \ (MacOS \) para centrarse en el panel anterior.  
+*   Con DevTools abierto, selecciona `Control` + `]` \ (Windows, Linux \) o `Command` + `]` \ (MacOS \) para centrar la atención en el siguiente panel.  
+*   Seleccione `Control` + `[` \ (Windows, Linux \) o `Command` + `[` \ (MacOS \) para centrarse en el panel anterior.  
 *   También se puede usar `Shift` + `Tab` para mover el foco a la [Tablist Aria][W3CWaiAriaTablist] de un panel y usar las teclas de dirección para cambiar los paneles, aunque es más rápido usar los métodos abreviados mencionados anteriormente.  
 
 **Problemas conocidos**  
@@ -71,7 +71,7 @@ Para empezar, consulte [Open Microsoft Edge DevTools] [DevtoolsOpen].  Hay varia
 
 Para centrar un panel específico, use el [menú de comandos][DevtoolsCommandMenuIndex]:  
 
-1.  Con DevTools abierto, seleccione `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
+1.  Con DevTools abierto, seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
     El **menú comando** es un ComboBox de autocompletar de búsqueda.  
 1.  Escriba el nombre del panel que desea abrir y, después, use el `Down Arrow` teclado para desplazarse a la opción correcta.  
 1.  Seleccione `Enter` para ejecutar un comando.  
@@ -92,13 +92,13 @@ Abrir un panel de esta forma dirige el foco al contenido del panel.  En el caso 
 1.  Simular un clic con el botón secundario del mouse con un mouse en el elemento para abrir el menú contextual.  
 1.  Elija la opción **inspeccionar** .  Esto [abre el panel de elementos y se centra en el elemento del árbol DOM] [DevtoolsDomIndexViewDomNodes].  
 
-El **árbol DOM** se coloca como un [árbol Aria][W3CWaiAriaTree].  Para obtener un ejemplo, consulte [navegar por el **árbol DOM** con un teclado] [DevtoolsDomIndexNavigateDomTreeKeyboard].  
+El **árbol DOM** se coloca como un [árbol Aria][W3CWaiAriaTree].  Para obtener un ejemplo, vaya a [navegar por el **árbol DOM** con un teclado] [DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
 ### Copiar el código de un elemento en el árbol DOM  
 
 1.  Con el foco en un nodo del **árbol DOM**, coloque el puntero sobre el nodo y abra el menú contextual \ (haga clic con el botón derecho \).  
 1.  Expanda la opción **copiar** .  
-1.  Seleccione **copiar outerHTML**.  
+1.  Elija **copiar outerHTML**.  
 
 **Problemas conocidos**  
 
@@ -108,7 +108,7 @@ El **árbol DOM** se coloca como un [árbol Aria][W3CWaiAriaTree].  Para obtener
 
 *   Con el foco en un nodo del **árbol DOM**, seleccione `Enter` esta para que sea editable.  
 *   Seleccione `Tab` para moverse entre los valores de atributo.  Cuando escuche "Space", se encuentra dentro de una entrada de texto vacía y puede escribir un nuevo valor de atributo.  
-*   Seleccione `Control` + `Enter` \ (Windows \) o `Command` + `Enter` \ (MacOS \) para aceptar el cambio y oír todo el contenido del elemento.  
+*   Seleccione `Control` + `Enter` \ (Windows, Linux \) o `Command` + `Enter` \ (MacOS \) para aceptar el cambio y oír todo el contenido del elemento.  
 
 **Problemas conocidos**  
 
@@ -118,9 +118,9 @@ El **árbol DOM** se coloca como un [árbol Aria][W3CWaiAriaTree].  Para obtener
 
 *   Con el foco en un nodo del **árbol DOM**, seleccione `Enter` esta para que sea editable.  
 *   Seleccione `Tab` para moverse entre los valores de atributo.  Al oír el nombre del elemento, por ejemplo, `h2` se encuentra dentro de una entrada de texto y puede cambiar el tipo de elemento.  
-*   Seleccione `Control` + `Enter` \ (Windows \) o `Command` + `Enter` \ (MacOS \) para aceptar el cambio.  
+*   Seleccione `Control` + `Enter` \ (Windows, Linux \) o `Command` + `Enter` \ (MacOS \) para aceptar el cambio.  
 
-Por ejemplo, cuando escribe `h3` y selecciona `Control` + `Enter` \ (Windows \) o `Command` + `Enter` \ (MacOS \), las etiquetas inicial y final del `h3` elemento cambian.  
+Por ejemplo, cuando escribe `h3` y selecciona `Control` + `Enter` \ (Windows, Linux \) o `Command` + `Enter` \ (MacOS \), las etiquetas iniciales y finales del cambio de `h3` elemento.  
 
 ## Pestañas del panel elementos  
 
@@ -152,7 +152,7 @@ Puesto que todas las herramientas de estilo se conectan de una forma u otra al p
 *   Seleccione `Tab` esta opciones para desplazarse entre las versiones editables de cada propiedad de CSS y los valores correspondientes.  Al final de cada bloque de estilo hay un campo de texto editable en blanco que puede usar para agregar propiedades de CSS adicionales.  
 *   Puede seleccionar `Tab` desplazarse por la lista de estilos, o bien, seleccionar `Escape` para salir del modo y volver a navegar por las teclas de dirección.  
 
-Para obtener métodos abreviados adicionales, consulte [Referencia del teclado del panel de estilos] [DevtoolsShortcutsStylesPaneKeyboard].  
+Para obtener más métodos abreviados, vaya a [Referencia del teclado del panel de estilos] [DevtoolsShortcutsStylesPaneKeyboard].  
 
 **Problemas conocidos**  
 
@@ -236,7 +236,7 @@ El informe de auditoría se organiza en secciones que corresponden a cada una de
 
 Para ejecutar una nueva auditoría, use `Shift` + `Tab` para salir del informe y busque el botón **realizar una auditoría** .  
 
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools
+## Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

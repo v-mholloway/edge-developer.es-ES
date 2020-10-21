@@ -3,16 +3,16 @@ description: Aprenda a ver, editar y eliminar las cookies HTTP de una página co
 title: Ver, editar y eliminar cookies con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: eaaf4663504fc674fd70dc1ca9e0357febb529e0
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 328771aa254dac1f851535a44126ea220dc95a9c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993243"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125485"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -43,7 +43,7 @@ Las [cookies http][MDNHTTPCookies] se usan principalmente para administrar sesio
 
 1.  En **almacenamiento** , expanda **cookies**y, a continuación, seleccione un origen.  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="El panel cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        Ilustración 2: el panel cookies  
     :::image-end:::  
 
@@ -66,7 +66,7 @@ La tabla **cookies** contiene los siguientes campos.
 
 Use el cuadro de texto **filtrar** para filtrar las cookies por **nombre** o **valor**.  No se admite el filtrado por otros campos.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Filtrar las cookies que no contienen el identificador de texto" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
    Ilustración 3: filtrar las cookies que no contienen el texto `ID`  
 :::image-end:::  
 
@@ -75,23 +75,27 @@ Use el cuadro de texto **filtrar** para filtrar las cookies por **nombre** o **v
 Los campos **nombre**, **valor**, **dominio**, **ruta**y **vencimiento/edad máxima** son editables.  
 Haga doble clic en un campo para modificarlo.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Establecer el nombre de una cookie en DEVTOOLSme!" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
    Ilustración 4: establecer el nombre de una cookie en `DEVTOOLS!`  
 :::image-end:::  
 
 ## Eliminar cookies  
 
-Seleccione una cookie y seleccione **eliminar** selección de ![ eliminación seleccionada ][ImageDeleteIcon]  para eliminarla.  
+Seleccione una cookie y elija **eliminar** selección de ![ eliminación seleccionada ][ImageDeleteIcon]  para eliminarla.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Eliminar una cookie específica" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Ilustración 5: eliminar una cookie específica  
 :::image-end:::  
 
-Seleccione **Borrar** todo ![ Borrar todo ][ImageClearIcon]  para eliminar todas las cookies.  
+Elija **Borrar** todo ![ Borrar todo ][ImageClearIcon]  para eliminar todas las cookies.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Borrar todas las cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Ilustración 6: borrar todas las cookies  
 :::image-end:::  
+
+## Contactar al equipo de Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

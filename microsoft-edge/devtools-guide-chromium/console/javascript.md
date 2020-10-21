@@ -3,16 +3,16 @@ description: Más información sobre cómo ejecutar JavaScript en la consola.
 title: Introducción a la ejecución de JavaScript en la consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d31bcfbdf728e656c9a6fff882f939f8c24cd897
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 6537cb07b52ef6b8be4b1ea7d9420bf2307d3fd5
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993124"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125247"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,65 +28,57 @@ ms.locfileid: "10993124"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Introducción a la ejecución de JavaScript en la consola  
 
-
-
-
-
-
-# Introducción a la ejecución de JavaScript en la consola   
-
-
-
-Este tutorial interactivo muestra cómo ejecutar JavaScript en la **consola**de Microsoft Edge DevTools.  Para obtener más información sobre cómo registrar mensajes en la **consola**, consulte Introducción a [los mensajes de registro][DevToolsConsoleLoggingMessages].  Para obtener más información sobre cómo pausar código JavaScript y resaltarlo de línea en línea, consulte Introducción a la [depuración de JavaScript][DevToolsJavascriptIndex].  
+Este tutorial interactivo muestra cómo ejecutar JavaScript en la **consola**de Microsoft Edge DevTools.  Para obtener más información sobre cómo registrar mensajes en la **consola**, vaya a introducción a la creación [de mensajes de registro][DevToolsConsoleLoggingMessages].  Para obtener más información sobre cómo pausar el código de JavaScript y resaltarlo de línea en línea, vaya a introducción a la [depuración de JavaScript][DevToolsJavascriptIndex].  
 
 :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-playground.msft.png":::
    La **consola**  
 :::image-end:::  
 
-## Introducción   
+## Introducción  
 
 La **consola** es una [REPL][WikiReadEvalPrintLoop], lo que significa lectura, evaluación, impresión y bucle.  Lee el código JavaScript que escribe en él, evalúa el código, imprime el resultado de la [expresión][2alityExpressionsVersusStatements]y, a continuación, retrocede al primer paso.  
 
-## Configurar DevTools   
+## Configurar DevTools  
 
 Este tutorial está diseñado para que abras la demostración y pruebe todos los flujos de trabajo.  Cuando sigues físicamente, es más probable que recuerdes los flujos de trabajo más adelante.
 
-1.  Pulse `Control` + `Shift` + `J` \ (Windows \) o `Command` + `Option` + `J` \ (MacOS \) para abrir la **consola**.  
-1.  Mantenga `Control` \ (Windows \) o `Command` \ (MacOS \) y haga clic en **ejemplo de JavaScript de consola** para abrirlo en una ventana nueva.  
+1.  Seleccione `Control` + `Shift` + `J` \ (Windows, Linux \) o `Command` + `Option` + `J` \ (MacOS \) para abrir la **consola**.  
+1.  Espere `Control` \ (Windows, Linux \) o `Command` \ (MacOS \) y elija **ejemplo de JavaScript de consola** para abrirlo en una ventana nueva.  
     
     *   [Ejemplo de JavaScript de consola][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="La página de ejemplo de JavaScript de la consola de la izquierda y DevTools a la derecha" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-empty.msft.png":::
        La página de ejemplo de JavaScript de la consola de la izquierda y DevTools a la derecha  
     :::image-end:::  
     
-## Ver y cambiar el JavaScript o el DOM de la página   
+## Ver y cambiar el JavaScript o el DOM de la página  
 
 Al crear o depurar una página, a menudo es útil ejecutar instrucciones en la **consola** para cambiar el aspecto o la ejecución de la página.  
     
 1.  Observe el texto en el botón.  
-1.  Escriba `document.getElementById('hello').textContent = 'Hello, Console!'` la **consola** y, a continuación, pulse `Enter` para evaluar la expresión.  Observe cómo cambia el texto que se encuentra dentro del botón.  
+1.  Escriba `document.getElementById('hello').textContent = 'Hello, Console!'` la **consola** y, después, seleccione `Enter` para evaluar la expresión.  Observe cómo cambia el texto que se encuentra dentro del botón.  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Aspecto de la consola después de la evaluación de la expresión" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
        Aspecto de la **consola** después de la evaluación de la expresión  
     :::image-end:::  
     
     Debajo del código que hayas evaluado verás `"Hello, Console!"` .  Recupere los cuatro pasos de REPL: leer, evaluar, imprimir, repetir.  Después de evaluar el código, una REPL imprime el resultado de la expresión.  Por lo tanto, `"Hello, Console!"` debe ser el resultado de la evaluación `document.getElementById('hello').textContent = 'Hello, Console!'` .  
     
-## Ejecutar JavaScript arbitrario que no está relacionado con la página   
+## Ejecutar JavaScript arbitrario que no está relacionado con la página  
 
 A veces, solo deseas un código de animación donde puedas probar algún código o probar nuevas características de JavaScript con las que no estás familiarizado.  La consola es un lugar ideal para estos tipos de experimentos.  
 
-1.  Escriba `5 + 15` la consola y pulse `Enter` para evaluar la expresión. La consola imprime el resultado de la expresión que está debajo del código.  En la siguiente ilustración, la **consola** debería mostrar el resultado después de evaluar la expresión.  
+1.  Escriba `5 + 15` la consola y seleccione `Enter` para evaluar la expresión. La consola imprime el resultado de la expresión que está debajo del código.  En la siguiente ilustración, la **consola** debería mostrar el resultado después de evaluar la expresión.  
 
 1.  Escriba el código siguiente en la **consola**.  Pruebe a escribirla, carácter a carácter, en lugar de pegarla.  
     
     ```javascript
-    function add(a, b=20) { return a + b; }
+    function add(a, b=20)
     ```  
     
-    Si no está familiarizado con la `b=20` sintaxis, consulte [definir valores predeterminados para los argumentos de una función][Esma6DefaultParameterValues].  
+    Si no está familiarizado con la `b=20` sintaxis, navegue para [definir los valores predeterminados de los argumentos de la función][Esma6DefaultParameterValues].  
     
 1.  Ahora, ejecute la función que acaba de definir.  
     
@@ -97,7 +89,7 @@ A veces, solo deseas un código de animación donde puedas probar algún código
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola se muestra después de evaluar las expresiones en el fragmento de código." lightbox="../media/console-javascript-example-console-playground.msft.png":::
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-playground.msft.png":::
              La **consola** se muestra después de evaluar las expresiones en el fragmento de código.  
           :::image-end:::  
        :::column-end:::
@@ -105,13 +97,13 @@ A veces, solo deseas un código de animación donde puedas probar algún código
     
     `add(25)` se evalúa como `45` porque cuando `add` se llama a la función sin un segundo argumento, el `b` valor predeterminado es `20` .  
 
-## Pasos siguientes   
+## Pasos siguientes  
 
 <!--See [Run JavaScript][DevToolsConsoleReference] to explore more features related to running JavaScript in the Console.  -->  
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools le permite pausar un script en mitad de la ejecución.  Mientras está pausado, puede usar la **consola** para ver y cambiar la `window` o `DOM` de la página en ese momento.  El flujo de trabajo hace que el flujo de trabajo de depuración sea eficaz.  Para obtener un tutorial interactivo, consulte [Introducción a la depuración de JavaScript][DevToolsJavascriptIndex].  
+DevTools le permite pausar un script en mitad de la ejecución.  Mientras está pausado, puede usar la **consola** para ver y cambiar la `window` o `DOM` de la página en ese momento.  El flujo de trabajo hace que el flujo de trabajo de depuración sea eficaz.  Para obtener un tutorial interactivo, vaya a introducción a la [depuración de JavaScript][DevToolsJavascriptIndex].  
 
 La **consola** también tiene un conjunto de funciones de comodidad que hacen que sea más fácil interactuar con una página.  Por ejemplo:  
 
@@ -119,13 +111,11 @@ La **consola** también tiene un conjunto de funciones de comodidad que hacen qu
 *   `debug(function)` establece de forma eficaz un punto de interrupción en la primera línea de esa función.  
 *   `keys(object)` Devuelve una matriz que contiene las claves del objeto especificado.  
 
-<!--See [Console Utilities API Reference][DevToolsConsoleUtilities] to explore all the convenience functions.  -->  
+Para obtener más información sobre las funciones de conveniencia, vaya a referencia de la [API de utilidades de consola][DevToolsConsoleUtilities].  
 
-<!--todo: add console utilities api reference section when available  -->  
+## Contactar al equipo de Microsoft Edge DevTools  
 
- 
-
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

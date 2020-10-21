@@ -3,16 +3,16 @@ description: Use la API de consola para escribir mensajes en la consola.
 title: Referencia de la API de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 684c0a1e42357ceca0a0295859e64447251f191a
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 38fb3ee2345530775423ac3ec8e53e0d8de76eaf
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993257"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125289"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,7 +30,7 @@ ms.locfileid: "10993257"
 
 # Referencia de la API de consola  
 
-Usa los métodos de la API de consola para escribir mensajes en la consola desde tu JavaScript.  Para obtener una introducción interactiva al tema, consulte Introducción al [registro de mensajes en la consola][DevtoolsConsoleLog].  Para obtener los métodos útiles como `debug()` o `monitorEvents()` que solo están disponibles en el panel de **consola** , consulte referencia de API de utilidades de [consola][DevtoolConsoleUtilities].  
+Usa los métodos de la API de consola para escribir mensajes en la consola desde tu JavaScript.  Para obtener una introducción interactiva al tema, vaya a introducción al [registro de mensajes en la consola][DevtoolsConsoleLog].  Para obtener los métodos útiles como `debug()` o `monitorEvents()` que solo están disponibles en el panel de la **consola** , vaya a referencia de la API de [utilidades de consola][DevtoolConsoleUtilities].  
 
 ---  
 
@@ -96,7 +96,7 @@ console.count();
 console.count();
 ```  
 
-:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="El resultado del ejemplo de Console. Count ()" lightbox="../media/console-demo-count-button.msft.png":::
+:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-count-button.msft.png":::
    Ilustración 2: el resultado del `console.count()` ejemplo  
 :::image-end:::  
 
@@ -131,7 +131,7 @@ Es idéntico a [log](#log) , excepto el nivel de registro diferente.
 console.debug('debug');  
 ```  
 
-:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="El resultado del ejemplo de Console. debug ()" lightbox="../media/console-demo-debug-button.msft.png":::
+:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-debug-button.msft.png":::
    Ilustración 3: el resultado del `console.debug()` ejemplo  
 :::image-end:::  
 
@@ -151,7 +151,7 @@ Imprime una representación JSON del objeto especificado.
 console.dir(document.head);
 ```  
 
-:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="El resultado del ejemplo de Console. dir ()" lightbox="../media/console-demo-dir-button.msft.png":::
+:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-dir-button.msft.png":::
    Ilustración 4: el resultado del `console.dir()` ejemplo  
 :::image-end:::  
 
@@ -171,7 +171,7 @@ Imprime una representación XML de los descendientes de `node` .
 console.dirxml(document);
 ```  
 
-:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="El resultado del ejemplo de Console. dirxml ()" lightbox="../media/console-demo-dirxml-button.msft.png":::
+:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-dirxml-button.msft.png":::
    Ilustración 5: el resultado del `console.dirxml()` ejemplo  
 :::image-end:::  
 
@@ -191,7 +191,7 @@ Imprime `object` en la consola, le da formato de error e incluye un seguimiento 
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 ```  
 
-:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="El resultado de la consola. ejemplo de error ()" lightbox="../media/console-demo-error-button.msft.png":::
+:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-error-button.msft.png":::
    Ilustración 6: el resultado del `console.error()` ejemplo  
 :::image-end:::  
 
@@ -215,7 +215,7 @@ console.info('Raph');
 console.groupEnd(label);
 ```  
 
-:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="El resultado del ejemplo de Console. Group ()" lightbox="../media/console-demo-group-button.msft.png":::
+:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-group-button.msft.png":::
    Ilustración 7: el resultado del `console.group()` ejemplo  
 :::image-end:::  
 
@@ -255,7 +255,7 @@ Es idéntico al método de [registro](#log) .
 console.info('info');
 ```  
 
-:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="El resultado del ejemplo console.info ()" lightbox="../media/console-demo-info-button.msft.png":::
+:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-info-button.msft.png":::
    Ilustración 8: el resultado del `console.info()` ejemplo  
 :::image-end:::  
 
@@ -275,7 +275,7 @@ Imprime un mensaje en la consola.
 console.log('log');
 ```  
 
-:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="El resultado del ejemplo de Console. log ()" lightbox="../media/console-demo-log-button.msft.png":::
+:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-log-button.msft.png":::
    Ilustración 9: el resultado del `console.log()` ejemplo  
 :::image-end:::  
 
@@ -309,7 +309,7 @@ console.table([
 ]);
 ```  
 
-:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="El resultado del ejemplo de Console. Table ()" lightbox="../media/console-demo-table-button.msft.png":::
+:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-table-button.msft.png":::
    Ilustración 10: el resultado del `console.table()` ejemplo  
 :::image-end:::  
 
@@ -331,7 +331,7 @@ for (var i = 0; i < 100000; i++) {
 console.timeEnd();
 ```  
 
-:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="El resultado del ejemplo de Console. Time ()" lightbox="../media/console-demo-time-button.msft.png":::
+:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-time-button.msft.png":::
    Ilustración 11: el resultado del `console.time()` ejemplo  
 :::image-end:::  
 
@@ -367,7 +367,7 @@ const fourth = () => { console.trace(); };
 first();
 ```  
 
-:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="El resultado del ejemplo de Console. Trace ()" lightbox="../media/console-demo-trace-button.msft.png":::
+:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-trace-button.msft.png":::
    Ilustración 12: el resultado del `console.trace()` ejemplo  
 :::image-end:::  
 
@@ -387,9 +387,13 @@ Imprime una advertencia en la consola.
 console.warn('warn');
 ```  
 
-:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="El resultado del ejemplo de Console. WARN ()" lightbox="../media/console-demo-warn-button.msft.png":::
+:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-warn-button.msft.png":::
    Ilustración 13: el resultado del `console.warn()` ejemplo  
 :::image-end:::  
+
+## Contactar al equipo de Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

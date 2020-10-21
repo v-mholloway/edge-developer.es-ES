@@ -3,16 +3,16 @@ description: Las últimas características experimentales de Microsoft Edge DevT
 title: Características experimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/05/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, experimento
-ms.openlocfilehash: f885201ddfb7553a2b9c58a07dd52b7a77c4137a
-ms.sourcegitcommit: 0326a4082064e9cdfa602736f3f9ce7d8d294604
+ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094937"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124897"
 ---
 # Características experimentales  
 
@@ -25,7 +25,7 @@ Aunque las características experimentales están disponibles en todos los canal
 Para activar las características experimentales \ (o desactivada \) en Microsoft Edge, siga estos pasos.  
 
 1.  [Abra DevTools][DevtoolsOpen].  
-     *   Seleccione `Control` + `Shift` + `I` \ (Windows \) o `Command` + `Option` + `I` \ (MacOS \).  Para obtener más información, vaya a [métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
+     *   Seleccione `Control` + `Shift` + `I` \ (Windows, Linux \) o `Command` + `Option` + `I` \ (MacOS \).  Para obtener más información, vaya a [métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
 1.  Abra el panel [configuración][DevToolsCustomizeSettings] .  
     *   Seleccione `Shift` + `?` .  Para obtener más información, vaya a [métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
 1.  En el lado izquierdo del panel **configuración** , elija la sección **experimentos** .  
@@ -195,7 +195,7 @@ Después de habilitar el experimento, asegúrate de reiniciar el DevTools.  Para
 1.  Busque la solicitud de red que desea cambiar y reenviar.  
 1.  Abra el menú contextual \ (haga clic con el botón derecho \) y elija **Editar y reproducir**.  
 1.  Cuando se abra la **consola de red** , edite la información de solicitud de red.  
-1.  Seleccione **Enviar**.  
+1.  Elija **Enviar**.  
 
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/network-network-console.msft.png":::
    **Consola de red** en el cajón de **consola**  

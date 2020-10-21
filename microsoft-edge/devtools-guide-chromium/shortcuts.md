@@ -3,16 +3,16 @@ description: La documentación canónica de los métodos abreviados de teclado d
 title: Métodos abreviados de teclado de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ab2e162af9b59e2ed92abc0cebf8e9fa2ac3a3d2
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 78e96fa3ae927a8aee24dfc18d4fa6ee515556a8
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003953"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125345"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ También puede encontrar métodos abreviados en la información sobre herramient
 
 Para abrir DevTools, seleccione los siguientes métodos abreviados de teclado mientras el cursor se centra en la ventanilla del explorador.
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Abrir el panel que usó en último lugar | `F12` ni `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Abrir el panel de **consola** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
@@ -48,7 +48,7 @@ Para abrir DevTools, seleccione los siguientes métodos abreviados de teclado mi
 
 Los siguientes métodos abreviados de teclado están disponibles en la mayoría de los paneles DevTools.
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Mostrar **configuración** | `?` o `F1` | `?` ni `Function`+`F1` |  
 | Centrar el panel siguiente | `Control`+`]` | `Command`+`]` |  
@@ -73,7 +73,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 
 ## Métodos abreviados de teclado del panel elementos  
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Deshacer el cambio | `Control`+`Z` | `Command`+`Z` |  
 | Rehacer cambiar | `Control`+`Y` | `Command`+`Shift`+`Z` |  
@@ -88,7 +88,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 
 ### Métodos abreviados de teclado del panel estilos  
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Ir a la línea donde se declara un valor de propiedad | Espera `Control` y, después, seleccione el valor de la propiedad | Espera `Command` y, después, seleccione el valor de la propiedad |  
 | Recorrer las representaciones RBGA, HSLA y hexadecimales de un valor de color | Espera `Shift` y, a continuación, elija el cuadro **vista previa de color** junto al valor. | Espera `Shift` y, a continuación, elija el cuadro **vista previa de color** junto al valor. |  
@@ -100,7 +100,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 
 ## Métodos abreviados de teclado del panel orígenes  
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | PAUSE script Runtime \ (si se está ejecutando \) o resume \ (si está en pausa \) | `F8` ni `Control`+`\` | `F8` ni `Command`+`\` |  
 | Paso a paso por la siguiente llamada de función | `F10` ni `Control`+`'` | `F10` ni `Command`+`'` |  
@@ -118,7 +118,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 
 ### Métodos abreviados de teclado del editor de código  
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Eliminar todos los caracteres de la última palabra, hasta el cursor | `Control`+`Delete` | `Option`+`Delete` |  
 | Agregar o quitar un [punto de interrupción de línea de código][DevtoolsJavascriptBreakpointsLOC] | Centre el cursor en la línea y, a continuación, seleccione `Control`+`B` | Centre el cursor en la línea y, a continuación, seleccione `Command`+`B` |  
@@ -128,7 +128,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 
 ## Métodos abreviados de teclado del panel de rendimiento  
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Iniciar o detener grabación | `Control`+`E` | `Command`+`E` |  
 | Guardar grabación | `Control`+`S` | `Command`+`S` |  
@@ -136,13 +136,13 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 
 ## Métodos abreviados de teclado del panel memoria  
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Iniciar o detener grabación | `Control`+`E` | `Command`+`E` |  
 
 ## Métodos abreviados de teclado del panel de consola  
 
-| Acción | Windows | macOS |  
+| Acción | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Aceptar sugerencia de autocompletar | `Right Arrow` o `Tab` | `Right Arrow` o `Tab` |  
 | Rechazar sugerencia de autocompletar | `Escape` | `Escape` |  
@@ -152,7 +152,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 | Borrar la **consola** | `Control`+`L` | `Command`+`K` ni `Option`+`L` |  
 | Forzar una entrada con varias líneas.  Este acceso directo es principalmente innecesario porque DevTools debería detectar escenarios de varias líneas de forma predeterminada | `Shift`+`Enter` | `Command`+`Return` |  
 | Ejecutar | `Enter` | `Return` |  
-| Expandir todas las subpropiedades de un objeto que se han registrado en la consola | Espera `Alt` y, a continuación, seleccione **expandir** \ ( ![ expandir ][ImageExpandIcon] \) | Espera `Alt` y, a continuación, seleccione **expandir** \ ( ![ expandir ][ImageExpandIcon] \) |  
+| Expandir todas las subpropiedades de un objeto que se han registrado en la consola | Espera `Alt` y, a continuación, elija **expandir** \ ( ![ expandir ][ImageExpandIcon] \) | Espera `Alt` y, a continuación, elija **expandir** \ ( ![ expandir ][ImageExpandIcon] \) |  
 
 ## Contactar al equipo de Microsoft Edge DevTools  
 

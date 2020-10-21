@@ -3,16 +3,16 @@ description: Cómo ver los datos de la caché desde el panel de aplicaciones de 
 title: Ver datos de la caché con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c920a171ec89925cc79ab741eed01e11d749bf1b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 5ab5fd0b3b504443e495f1d5108907a4551e6ac6
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993299"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125443"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,19 +28,13 @@ ms.locfileid: "10993299"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Ver datos de la caché con Microsoft Edge DevTools   
-
-
+# Ver datos de la caché con Microsoft Edge DevTools  
 
 En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para inspeccionar los datos de [caché][MDNCache] .  
 
 Si intenta inspeccionar los datos de [caché http][MDNHTTPCaching] , esta no es la guía que desea.  Busque la información en la columna **tamaño** del registro de **red**.  Consulte [Registrar actividad de red][DevtoolsNetworkLogActivity].  
 
-## Ver datos de caché   
+## Ver datos de caché  
 
 1.  Seleccione la pestaña **aplicación** para abrir el panel de **aplicaciones** .  El panel **manifiesto** generalmente se abre de forma predeterminada.  
     
@@ -50,79 +44,77 @@ Si intenta inspeccionar los datos de [caché http][MDNHTTPCaching] , esta no es 
     
 1.  Expanda la sección **almacenamiento en caché** para ver las memorias caché disponibles.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Cachés disponibles" lightbox="../media/storage-application-cache-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-cache-storage.msft.png":::
        Cachés disponibles  
     :::image-end:::  
     
 1.  Seleccione una caché para ver el contenido.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="Ver el contenido de una caché" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
        Ver el contenido de una caché  
     :::image-end:::  
     
 1.  Seleccione un recurso para ver los encabezados HTTP en la sección debajo de la tabla.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Ver los encabezados HTTP de un recurso" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
        Ver los encabezados HTTP de un recurso  
     :::image-end:::  
     
-1.  Seleccione **vista previa** para ver el contenido de un recurso.  
+1.  Elija **vista previa** para ver el contenido de un recurso.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="Ver el contenido de un recurso" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
        Ver el contenido de un recurso  
     :::image-end:::  
     
-## Actualizar un recurso   
+## Actualizar un recurso  
 
 1.  [Ver los datos de una memoria caché](#view-cache-data).  
 1.  Seleccione el recurso que desea actualizar.  DevTools lo resalta para indicar que está seleccionado.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Seleccionar un recurso" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       Seleccionar un recurso  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       Seleccionar un recurso para actualizarlo  
     :::image-end:::  
     
-1.  Seleccione **Actualizar** \ ( ![ actualizar ][ImageRefreshIcon] \).  
+1.  Elija **Actualizar** \ ( ![ actualizar ][ImageRefreshIcon] \).  
     
-## Filtrar recursos   
+## Filtrar recursos  
 
 1.  [Ver los datos de una memoria caché](#view-cache-data).  
 1.  Use el cuadro de texto **filtrar por ruta** para filtrar los recursos que no coincidan con la ruta de acceso que proporciona.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Filtrar recursos que no coincidan con la ruta de acceso especificada" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
        Filtrar recursos que no coincidan con la ruta de acceso especificada  
     :::image-end:::  
     
-## Eliminar un recurso   
+## Eliminar un recurso  
 
 1.  [Ver los datos de una memoria caché](#view-cache-data).  
 1.  Seleccione el recurso que desea eliminar.  DevTools lo resalta para indicar que está seleccionado.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Seleccionar un recurso" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       Seleccionar un recurso  
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       Seleccionar un recurso para eliminarlo  
     :::image-end:::  
     
-1.  Seleccione **eliminar seleccionado** \ ( ![ eliminar seleccionado ][ImageDeleteIcon] \).  
+1.  Elija **eliminar seleccionado** \ ( ![ eliminar seleccionado ][ImageDeleteIcon] \).  
     
-## Eliminar todos los datos de caché   
+## Eliminar todos los datos de caché  
 
 1.  **Application**  >  **Almacenamiento borrado**de aplicaciones abiertas.  
 1.  Asegúrese de que la casilla **almacenamiento en caché** está habilitada.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Casilla de almacenamiento en caché" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
        Casilla de **almacenamiento en caché**  
     :::image-end:::  
     
-1.  Seleccione **Borrar datos del sitio**.  
+1.  Elija **Borrar datos del sitio**.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Botón Borrar datos del sitio" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
        Botón **Borrar datos del sitio**  
     :::image-end:::  
     
-<!--  
-  
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

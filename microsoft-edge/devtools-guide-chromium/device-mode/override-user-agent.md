@@ -3,16 +3,16 @@ description: Abra la pestaña condiciones de red, desactive la opción seleccion
 title: Invalidar la cadena de agente de usuario de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ecaa1247824e5c3acb07a2c631feab30d25aba8d
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: befbe186a5992c651f877a18f1c3232bf212394a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992928"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124953"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,22 +32,22 @@ ms.locfileid: "10992928"
 
 Para invalidar la cadena de [agente de usuario][MDNUserAgent] de Microsoft Edge DevTools:  
 
-1.  Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="El menú de comandos" lightbox="../media/device-mode-console-command-menu.msft.png":::
        El **menú de comandos**  
     :::image-end:::  
     
-1.  Escriba `network conditions` , seleccione **Mostrar condiciones de red**y presione `Enter` para abrir la pestaña **condiciones de red** .  
+1.  Escriba `network conditions` , elija **Mostrar condiciones de red**y seleccione `Enter` para abrir la pestaña **condiciones de red** .  
 1.  En la sección **agente de usuario** , deshabilite la casilla **seleccionar automáticamente** .  
     
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Deshabilitar selección automática" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="El menú de comandos" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
        Deshabilitar **selección automática**  
     :::image-end:::  
     
 1.  Seleccione una cadena de agente de usuario de la lista o escriba su propia cadena personalizada.  
-
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+    
+## Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

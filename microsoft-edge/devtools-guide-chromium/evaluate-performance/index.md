@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo evaluar el rendimiento en tiempo d
 title: Empezar a analizar el rendimiento en tiempo de ejecución
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 65351f3846ed76ef8a27dbff2cfb08c497282d15
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 7cb1d8f073cdb8a43093514dd7dea86d72102011
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992949"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124988"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "10992949"
 # Empezar a analizar el rendimiento en tiempo de ejecución  
 
 > [!NOTE]
-> Para obtener más información sobre cómo hacer que las páginas se carguen más rápido, consulte [optimizar la velocidad del sitio web][DevtoolsSpeedGetStarted].  
+> Para obtener más información sobre cómo agilizar la carga de las páginas, navegue para [optimizar la velocidad del sitio web][DevtoolsSpeedGetStarted].  
 
 El rendimiento en tiempo de ejecución es el funcionamiento de la página cuando se está ejecutando, en lugar de cargarlo.  En el siguiente artículo de tutorial aprenderá a usar el panel de rendimiento de Microsoft Edge DevTools para analizar el rendimiento en tiempo de ejecución.  En cuanto al modelo de **raíl** , las habilidades que aprende en este tutorial son útiles para analizar la respuesta, la animación y las fases inactivas de la página.  
 
@@ -51,7 +51,7 @@ En el siguiente tutorial, abra DevTools en una página en vivo y use el panel **
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```  
     
-1.  Seleccione `Control` + `Shift` + `I` \ (Windows \) o `Command` + `Option` + `I` \ (MacOS \) para abrir DevTools.  
+1.  Seleccione `Control` + `Shift` + `I` \ (Windows, Linux \) o `Command` + `Option` + `I` \ (MacOS \) para abrir DevTools.  
     
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        La demostración de la izquierda y DevTools a la derecha  
@@ -67,9 +67,9 @@ Los dispositivos móviles tienen mucha menos energía de CPU que los equipos de 
 1.  En DevTools, elija la pestaña **rendimiento** .  
 1.  Asegúrese de que la casilla **capturas de pantallas** esté habilitada.  
 1.  Elija **configuración de captura** \ (! [ Configuración de capturas] [ImageCaptureSettingsIcon] \).  DevTools revela la configuración relacionada con el modo en que captura las métricas de rendimiento.  
-1.  En **CPU**, seleccione **deceleración 4**.  DevTools acelera tu CPU para que sea cuatro veces más lenta de lo normal.  
+1.  Para **CPU**, elija **aceleración 4x**.  DevTools acelera tu CPU para que sea cuatro veces más lenta de lo normal.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="Limitación de CPU" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
        Limitación de CPU  
     :::image-end:::  
     
@@ -95,14 +95,14 @@ Cuando ejecutó la versión optimizada de la página, los iconos azules se mueve
 
 1.  En DevTools, elija **grabar** \ (! [ Record] [ImageRecordIcon] \).  DevTools captura métricas de rendimiento a medida que se ejecuta la página.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Perfilar la página" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        Perfilar la página  
     :::image-end:::  
     
 1.  Espere unos segundos.  
 1.  Elija **detener**.  DevTools detiene la grabación, procesa los datos y, a continuación, muestra los resultados en el panel rendimiento.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="Los resultados del perfil" lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
        Los resultados del perfil  
     :::image-end:::  
     
@@ -118,25 +118,25 @@ La métrica principal para medir el rendimiento de cualquier animación es fotog
 
 1.  Fíjese en el gráfico de **fps** .  Cada vez que vea una barra roja encima de **fps**, significa que la velocidad de la fotogramas se ha colocado tan poco que es probable que dañe la experiencia del usuario.  En general, cuanto más alto sea la barra verde, mayor será el valor de FPS.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="El gráfico de FPS" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
        El gráfico de **fps**  
     :::image-end:::  
     
 1.  Debajo del gráfico de **fps** , verá el gráfico de **CPU** .  Los colores del gráfico de la **CPU** se corresponden con los colores de la pestaña **Resumen** , en la parte inferior del panel rendimiento.  El hecho de que el gráfico de la **CPU** esté lleno de color significa que la CPU se ha agotado durante el tiempo de grabación.  Cada vez que se agote la CPU durante períodos prolongados, es una señal para encontrar formas de realizar menos trabajo.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="Pestaña gráfico de CPU y Resumen" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
        Pestaña gráfico de **CPU** y **Resumen**  
     :::image-end:::  
     
 1.  Mantenga el mouse sobre los gráficos de **fps**, **CPU**o **net** .  DevTools muestra una captura de pantalla de la página en ese momento.  Mueva el mouse hacia la izquierda y la derecha para reproducir la grabación.  Se hace referencia a la acción como limpieza y es útil para analizar manualmente el avance de las animaciones.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="Ver una captura de pantalla de la página en la marca de 2500ms de la grabación" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
        Ver una captura de pantalla de la página en la marca de 2500ms de la grabación  
     :::image-end:::  
     
 1.  En la sección **Marcos** , desplace el puntero sobre uno de los cuadrados verdes.  DevTools muestra los FPS para ese fotograma en particular.  Es probable que cada fotograma sea muy bajo el objetivo de 60 FPS.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="Desplazar el puntero sobre un marco" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
        Desplazar el puntero sobre un marco  
     :::image-end:::  
     
@@ -146,11 +146,11 @@ Por supuesto, debería ver que la página no funciona bien.  Pero en escenarios 
 
 Otra herramienta útil es el medidor de FPS, que proporciona estimaciones en tiempo real para FPS a medida que se ejecuta la página.  
 
-1.  Seleccione `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
-1.  Empiece `Rendering` a escribir en el **menú de comandos** y seleccione **Mostrar procesamiento**.  
+1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
+1.  Empiece `Rendering` a escribir en el **menú de comandos** y elija **Mostrar procesamiento**.  
 1.  En la pestaña **representación** , habilita el **medidor de fps**.  Aparece una nueva superposición en la parte superior derecha de la ventanilla.  
     
-    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="El medidor de FPS" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        El **medidor de fps**  
         :::image-end:::  
     
@@ -162,19 +162,19 @@ Después de medir y verificar que la animación no se realiza correctamente, el 
 
 1.  Cuando no se selecciona ningún evento, la pestaña **Resumen** muestra un desglose de actividad.  La página dedicó la mayor parte de la representación de tiempo.  Puesto que el rendimiento es el arte de hacer menos trabajo, su objetivo es reducir la cantidad de tiempo dedicado al trabajo de representación.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="La pestaña Resumen" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
        La pestaña **Resumen**  
     :::image-end:::  
     
 1.  Expanda la sección **principal** .  DevTools muestra un gráfico de llamas de la actividad en el hilo principal, a lo largo del tiempo.  El eje x representa la grabación, a lo largo del tiempo.  Cada barra representa un evento.  Una barra más ancha significa que el evento ha tardado más tiempo.  El eje y representa la pila de llamadas.  Cuando ve eventos apilados unos sobre otros, significa que los eventos superiores provocan los eventos menores.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="La sección principal" lightbox="../media/evaluate-performance-performance-main.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-main.msft.png":::
        La sección **principal**  
     :::image-end:::  
     
 1.  Hay una gran cantidad de datos en la grabación.  Para acercar un solo evento; Elija, mantenga presionado y arrastre el cursor sobre la **información general**, que es la sección que incluye los gráficos de **fps**, **CPU**y **net** .  En la sección **principal** y en la pestaña **Resumen** solo se muestra información de la parte seleccionada de la grabación.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Acercar un evento" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
        Acercar un evento  
     :::image-end:::  
     
@@ -188,7 +188,7 @@ Después de medir y verificar que la animación no se realiza correctamente, el 
     
 1.  Elija el evento de **fotograma de animación desencadenado** .  La pestaña **Resumen** ahora muestra información sobre el evento.  Observe el vínculo **Mostrar** .  Después de elegirlo, DevTools para resaltar el evento que inició el evento de **fotograma de animación desencadenado** .  Además, céntrese en el vínculo **app.js:95** .  Después de elegirlo, se muestra la línea correspondiente en el código fuente.
     
-    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="Más información sobre el evento de marco de animación desencadenado" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
        Más información sobre el evento de **marco de animación desencadenado**  
     :::image-end:::  
     
@@ -200,7 +200,7 @@ Después de medir y verificar que la animación no se realiza correctamente, el 
     
 1.  En la pestaña **Resumen** , elija el vínculo **app.js:71** en **diseño forzado**.  DevTools le lleva a la línea de código que forzó el diseño.  
     
-    :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="La línea de código que causó el diseño forzado" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
        La línea de código que causó el diseño forzado  
     :::image-end:::  
     
@@ -225,9 +225,9 @@ Usando los flujos de trabajo y las herramientas que acaba de aprender, elija **o
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->  
 
-Para estar más familiarizado con el panel rendimiento, la práctica es ideal.  Pruebe a generar perfiles de las páginas y analizar los resultados.  Si tiene preguntas sobre los resultados, use el icono para **Enviar comentarios** , seleccione `Alt` + `Shift` + `I` \ (Windows \), seleccione `Option` + `Shift` + `I` \ (MacOS \) o [Tweet el equipo de DevTools][TwitterEdgeDevtools].  Incluya capturas de pantallas o vínculos a páginas reproducibles, si es posible.  
+Para estar más familiarizado con el panel rendimiento, la práctica es ideal.  Pruebe a generar perfiles de las páginas y analizar los resultados.  Si tiene alguna pregunta sobre los resultados, use el icono para **Enviar comentarios** , seleccione `Alt` + `Shift` + `I` \ (Windows, Linux \), seleccione `Option` + `Shift` + `I` \ (MacOS \) o [Tweet el equipo de DevTools][TwitterEdgeDevtools].  Incluya capturas de pantallas o vínculos a páginas reproducibles, si es posible.  
 
-:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="El icono * * comentarios * * en Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="La demostración de la izquierda y DevTools a la derecha" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    El icono **Enviar comentarios** en el DevTools de Microsoft Edge  
 :::image-end:::  
 
@@ -243,6 +243,10 @@ Por último, hay muchas maneras de mejorar el rendimiento en tiempo de ejecució
 *   [Stick To Compositor-Only Properties And Manage Layer Count][RenderingManageLayers]  
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]  
 -->
+
+## Contactar al equipo de Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 

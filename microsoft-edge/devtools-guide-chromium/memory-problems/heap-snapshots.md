@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo grabar instantáneas de montones c
 title: Cómo grabar instantáneas de montones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 15692b0258de6db66c0b58a2659348a6e849aaca
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 9762cb1d4932ce1a5d0b1c3944aa0b85d78b1060
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993474"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125464"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -36,7 +36,7 @@ El analizador de montones de DevTools de Microsoft Edge muestra la distribución
 
 ## Tomar una instantánea  
 
-En el panel **memoria** , elija **tomar instantánea**y, a continuación, haga clic en **iniciar**.  También puede pulsar `Ctrl` + `E` \ (Windows \) o `Cmd` + `E` \ (MacOS \).  
+En el panel **memoria** , elija **tomar instantánea**y, a continuación, elija **Inicio**.  También puede seleccionar `Ctrl` + `E` \ (Windows, Linux \) o `Cmd` + `E` \ (MacOS \).  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
    Seleccionar tipo de generación de perfiles  
@@ -46,7 +46,7 @@ Las **instantáneas** se almacenan inicialmente en la memoria del proceso del re
 
 Una vez que la instantánea se ha cargado en DevTools y se ha analizado, aparece el número debajo del título de la instantánea, que muestra el [Tamaño total de los objetos de JavaScript accesibles][DevtoolsMemoryProblems101ObjectSizes].  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Tamaño total de objetos accesibles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
    Tamaño total de objetos accesibles  
 :::image-end:::  
 
@@ -55,9 +55,9 @@ Una vez que la instantánea se ha cargado en DevTools y se ha analizado, aparece
 
 ## Borrar instantáneas  
 
-Haga clic en el icono **borrar todos los perfiles** para quitar las instantáneas \ (tanto de DevTools como de cualquier memoria asociada al proceso de representación \).  
+Elija **borrar todos los perfiles** para quitar las instantáneas \ (tanto de DevTools como de cualquier memoria asociada al proceso de representación \).  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Quitar instantáneas" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
    Quitar instantáneas  
 :::image-end:::  
 
@@ -80,7 +80,7 @@ La **vista de Resumen** muestra los objetos agrupados por el nombre del construc
 
 Para cambiar entre las vistas, use el selector de la parte superior de la vista.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Cambiar el selector de vistas" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
    Cambiar el selector de vistas  
 :::image-end:::  
 
@@ -91,7 +91,7 @@ Para cambiar entre las vistas, use el selector de la parte superior de la vista.
 
 Inicialmente, se abre una instantánea en la vista de Resumen, que muestra los totales de los objetos, que se pueden expandir para mostrar las instancias:  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Vista de Resumen" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
    Vista de **Resumen**  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ Recuerde que los objetos amarillos tienen referencias de JavaScript y los objeto
 
 **¿Para qué se corresponden las diversas entradas de constructor \ (grupo \) en el generador de perfiles del montón?**  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Grupos de constructores" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
    Grupos de **constructores**  
 :::image-end:::  
 
@@ -138,7 +138,7 @@ Busque objetos perdidos comparando varias instantáneas entre sí.  Para comprob
     
 En la vista **comparación** , se muestra la diferencia entre dos instantáneas.  Al expandir una entrada total, se muestran instancias de objeto eliminadas y agregadas.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Vista comparación" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
    Vista **comparación**  
 :::image-end:::  
 
@@ -154,7 +154,7 @@ La vista **contención** es esencialmente una "vista de pájaro" de la estructur
 | **Raíces de GC** | Las raíces de GC reales usadas por el uso de los elementos no usados de la máquina virtual.  Las raíces de GC se componen de mapas de objetos integrados, tablas de símbolos, pilas de subprocesos de VM, memorias caché de compilación, ámbitos de administración y identificadores globales.  |  
 | **Objetos nativos** | Los objetos del explorador "se insertan" dentro de la máquina virtual de JavaScript \ (Java VM \) para permitir la automatización, por ejemplo, los nodos DOM, las reglas CSS.  |  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Vista de contención" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
    Vista de **contención**  
 :::image-end:::  
 
@@ -186,7 +186,7 @@ La vista **contención** es esencialmente una "vista de pájaro" de la estructur
 > ```  
 > 
 > <!--  
-> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures" lightbox="../media/memory-problems-domleaks.msft.png":::
+> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-domleaks.msft.png":::
 >    Name functions to distinguish between closures  
 > :::image-end:::  
 > -->  
@@ -235,7 +235,7 @@ leafRef = null;
 
 El `#leaf` mantiene una referencia a los elementos primarios \ (parentNode \) y, de forma recursiva, hasta el momento en que `#tree` el leafRef se ha anulado es todo el árbol bajo `#tree` un candidato para GC.  
 
-:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="Subárboles DOM" lightbox="../media/memory-problems-tree-gc.msft.png":::
+:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="Seleccionar tipo de generación de perfiles" lightbox="../media/memory-problems-tree-gc.msft.png":::
    Subárboles DOM  
 :::image-end:::  
 
@@ -251,7 +251,7 @@ Para obtener más información sobre las pérdidas de DOM y el análisis de memo
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

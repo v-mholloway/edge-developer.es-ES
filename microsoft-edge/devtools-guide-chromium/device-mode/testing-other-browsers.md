@@ -3,16 +3,16 @@ description: Su trabajo no finaliza con la garantía de que su sitio funciona de
 title: Emular y probar otros exploradores
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1b76447aa86837abac88bc4727eb7f4ee082342a
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1a7cc1c7e0a49760f30afdc16921824372b3a1aa
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992914"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124946"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,14 +28,7 @@ ms.locfileid: "10992914"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Emular y probar otros exploradores   
-
-
-
+# Emular y probar otros exploradores  
 
 Su trabajo no finaliza con la garantía de que su sitio funciona de forma excelente en Microsoft Edge y Android.  Aunque el modo de dispositivo pueda simular una variedad de dispositivos como iPhone, le recomendamos que consulte las soluciones para la emulación proporcionadas por otros exploradores.  
 
@@ -79,7 +72,7 @@ Una vez que se haya arrancado el emulador, haga clic en el icono del explorador 
 #### Shell de contenido de cromo en Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
    Android Emulator Content Shell  
 :::image-end:::  
 -->  
@@ -97,7 +90,7 @@ Ahora puede probar su sitio con el shell de contenido de cromo.
 #### Firefox en Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
    Firefox Icon on Android Emulator  
 :::image-end:::  
 -->  
@@ -119,11 +112,11 @@ El simulador iOS para Mac OS X viene con Xcode, que se [instala desde la App Sto
 Cuando haya terminado, obtenga información sobre cómo trabajar con el simulador a través de la [documentación para desarrolladores de Apple][AppleSimulatorHelp].  
 
 > [!NOTE]
-> Para evitar tener que abrir Xcode cada vez que desee usar el simulador iOS, ábralo, luego haga clic con el botón derecho en el icono del simulador iOS en el Dock y seleccione **mantener en Dock**.  Ahora solo tienes que hacer clic en este icono cuando lo necesites.  
+> Para evitar tener que abrir Xcode cada vez que desee usar el simulador iOS, ábralo y, a continuación, haga clic con el botón derecho en el icono del simulador iOS en el Dock y seleccione **mantener en Dock**.  Ahora solo tienes que hacer clic en este icono cuando lo necesites.  
 
 ###  Microsoft Edge (EdgeHTML)  
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="VM moderna de IE" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
    VM moderna de IE  
 :::image-end:::  
 
@@ -137,11 +130,9 @@ Si no puede usar los emuladores y no tiene acceso a dispositivos reales, los emu
 *   [SauceLabs (Commercial)][SauceLabs] le permite ejecutar pruebas unitarias dentro de un emulador, que pueden ser muy útiles para crear secuencias de comandos en su sitio y observar la grabación de vídeo de este después en varios dispositivos.  También puede realizar pruebas manuales con su sitio.  
 *   El [dispositivo en cualquier lugar (comercial)][AppExperience] no usa emuladores pero dispositivos reales que puedas controlar de forma remota.  Esto es muy útil en el caso de que necesite reproducir un problema en un dispositivo específico y no pueda ver el error utilizando cualquiera de las opciones de las guías anteriores.  
 
-<!--  
- 
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

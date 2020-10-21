@@ -3,16 +3,16 @@ description: Abra la consola, cree una expresión en vivo y establezca la expres
 title: Rastrear qué elemento tiene el foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993208"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125310"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Suponga que está probando la accesibilidad de navegación por el teclado de una
 Complete las acciones siguientes para realizar un seguimiento del elemento que tiene el foco en DevTools.  
 
 1.  Abra la **consola**.  
-1.  Haga clic en **crear expresión en directo** \ ( ![ crear expresión en directo ][ImageCreateIcon] \).  
+1.  Elija **crear expresión en directo** \ ( ![ crear expresión en directo ][ImageCreateIcon] \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Crear una expresión en directo" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Crear una expresión en directo  
@@ -49,10 +49,10 @@ El valor que se ve a continuación `document.activeElement` es el resultado de l
 Dado que esa expresión siempre representa el elemento que tiene el foco, ahora tienes una manera de realizar un seguimiento de qué elemento tiene el foco.  
 
 *   Desplace el puntero sobre el resultado para resaltar el elemento que tiene el foco en la ventanilla.  
-*   Haga clic con el botón derecho en el resultado y seleccione Mostrar **en el panel de elementos** para mostrar el elemento en el árbol DOM en el panel **elementos** .  
-*   Haga clic con el botón secundario en el resultado y seleccione **almacenar como variable global** para crear una referencia de variable al nodo que se puede usar en la **consola**.  
+*   Haga clic con el botón derecho en el resultado y elija Mostrar **en el panel elementos** para mostrar el elemento en el árbol DOM en el panel **elementos** .  
+*   Haga clic con el botón secundario en el resultado y elija **almacenar como variable global** para crear una referencia de variable al nodo que se puede usar en la **consola**.  
 
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

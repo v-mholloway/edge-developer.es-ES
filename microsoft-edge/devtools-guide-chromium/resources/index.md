@@ -3,16 +3,16 @@ description: Organice los recursos por marco, dominio, tipo u otros criterios.
 title: Ver recursos de página con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4f90927cc4044c722d9a62ab4b0427aa2753e4c5
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a243a400dd85b587a8f299a6b8bc3d3d463796b0
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993593"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125401"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993593"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Ver recursos de página con Microsoft Edge DevTools   
+# Ver recursos de página con Microsoft Edge DevTools  
 
   
 
@@ -40,56 +36,56 @@ Esta guía le enseña cómo usar Microsoft Edge DevTools para ver los recursos d
 
 En esta guía se presupone que está familiarizado con los conceptos básicos de [desarrollo web][MDNLearnWebDevelopment] y [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
-## Abrir recursos   
+## Abrir recursos  
 
 Cuando conoce el nombre del recurso que quiere inspeccionar, el **menú de comandos** proporciona una forma rápida de abrir el recurso.  
 
-1.  Pulse `Control` + `P` \ (Windows \) o `Command` + `P` \ (MacOS \).  Se abrirá el cuadro de diálogo **Abrir archivo** .  
+1.  Seleccione `Control` + `P` \ (Windows, Linux \) o `Command` + `P` \ (MacOS \).  Se abrirá el cuadro de diálogo **Abrir archivo** .  
     
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-command-menu-empty.msft.png":::
        Cuadro de diálogo **Abrir archivo**  
     :::image-end:::  
     
-1.  Seleccione el archivo de la lista desplegable o empiece a escribir el nombre de archivo y presione `Enter` una vez que el archivo correcto esté resaltado en el cuadro Autocompletar.  
+1.  Seleccione el archivo de la lista desplegable o empiece a escribir el nombre de archivo y seleccione `Enter` una vez resaltado el archivo correcto en el cuadro Autocompletar.  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Escribir un nombre de archivo en el cuadro de diálogo Abrir archivo" lightbox="../media/resources-command-menu-file-search.msft.png":::
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-command-menu-file-search.msft.png":::
        Escribir un nombre de archivo en el cuadro de diálogo **Abrir archivo**  
     :::image-end:::  
     
-### Abrir recursos en el panel red   
+### Abrir recursos en el panel red  
 
-Consulte [inspeccionar los detalles de un recurso][DevtoolsNetworkInspectDetailsResource].  
+Desplácese para [inspeccionar los detalles de un recurso][DevtoolsNetworkInspectDetailsResource].  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Inspeccionar un recurso en el panel red" lightbox="../media/resources-network-response.msft.png":::
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-network-response.msft.png":::
    Inspeccionar un recurso en el panel **red**  
 :::image-end:::  
 
-### Mostrar recursos en el panel de red de otros paneles   
+### Mostrar recursos en el panel de red de otros paneles  
 
-En la sección [examinar recursos](#browse-resources) que se muestra a continuación se muestra cómo ver los recursos de varias partes de la interfaz de usuario de DevTools.  Si alguna vez desea inspeccionar un recurso en el panel **red** , haga clic con el botón derecho en el recurso y seleccione **Mostrar en el panel de red**.  
+En la sección [examinar recursos](#browse-resources) que se muestra a continuación se muestra cómo ver los recursos de varias partes de la interfaz de usuario de DevTools.  Si alguna vez desea inspeccionar un recurso en el panel **red** , haga clic con el botón derecho en el recurso y elija **Mostrar en el panel red**.  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Mostrar en el panel red" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Mostrar en el panel red**  
 :::image-end:::  
 
-## Examinar recursos   
+## Examinar recursos  
 
-### Examinar recursos en el panel red   
+### Examinar recursos en el panel red  
 
-Consulte [Registrar actividad de red][DevtoolsNetworkLogActivity].  
+Desplácese hasta [Registrar actividad de red][DevtoolsNetworkLogActivity].  
 
-:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Recursos de página en el registro de red" lightbox="../media/resources-network-resources.msft.png":::
+:::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-network-resources.msft.png":::
    Recursos de página en el registro de **red**  
 :::image-end:::  
 
-### Examinar por directorio   
+### Examinar por directorio  
 
 Para ver los recursos de una página organizada por directorio:  
 
 1.  Haga clic en la pestaña **orígenes** para abrir el panel **fuentes** .  
 1.  Haga clic en la pestaña de la **Página** para mostrar los recursos de la página.  Se abre el panel de **páginas** .  
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="El panel de páginas" lightbox="../media/resources-sources-page-empty.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-sources-page-empty.msft.png":::
        El panel de **páginas**  
     :::image-end:::  
     
@@ -105,63 +101,61 @@ Para ver los recursos de una página organizada por directorio:
     
 1.  Haga clic en un recurso para verlo en el **Editor**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Ver un archivo en el editor" lightbox="../media/resources-sources-page-resource.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-sources-page-resource.msft.png":::
        Ver un archivo en el **Editor**  
     :::image-end:::  
     
-### Examinar por nombre de archivo   
+### Examinar por nombre de archivo  
 
 De forma predeterminada, el panel de **páginas** agrupa los recursos por directorio.  Para deshabilitar esta agrupación y ver los recursos de cada dominio como una lista plana:  
 
-1.  Abra el panel de **páginas** .  Consulte [examinar por directorio](#browse-by-directory).  
-1.  Haga clic en **más opciones** `...` y deshabilite **Agrupar por carpeta**.  
+1.  Abra el panel de **páginas** .  Vaya a [Buscar por directorio](#browse-by-directory).  
+1.  Elija **más opciones** `...` y deshabilite **Agrupar por carpeta**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="La opción agrupar por carpeta" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        La opción **Agrupar por carpeta**  
     :::image-end:::  
     
     Los recursos están organizados por tipo de archivo.  Dentro de cada tipo de archivo, los recursos están organizados alfabéticamente.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="El panel de páginas después de deshabilitar agrupar por carpeta" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
        El panel de **páginas** después de deshabilitar **Agrupar por carpeta**  
     :::image-end:::  
     
-### Examinar por tipo de archivo   
+### Examinar por tipo de archivo  
 
 Para agrupar recursos en función de su tipo de archivo:  
 
 1.  Haga clic en la pestaña **aplicación** .  Se abre el panel de la **aplicación** .  De forma predeterminada, el panel **manifiesto** generalmente se abre en primer lugar.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="El panel de aplicaciones" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
        El panel de **aplicaciones**  
     :::image-end:::  
     
 1.  Desplácese hacia abajo hasta el panel **Marcos** .  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="El panel marcos" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
        El panel **Marcos**  
     :::image-end:::  
     
 1.  Expanda las secciones en las que esté interesado.  
 1.  Haga clic en un recurso para verlo.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Ver un recurso en el panel de aplicaciones" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        Ver un recurso en el panel de **aplicaciones**  
     :::image-end:::  
     
-#### Examinar archivos por tipo en el panel red   
+#### Examinar archivos por tipo en el panel red  
 
-Consulte [filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].  
+Vaya a [filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].  
 
-:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filtrar por CSS en el registro de red" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    Filtrar por CSS en el registro de **red**  
 :::image-end:::  
 
-<!--  
-  
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

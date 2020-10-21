@@ -3,16 +3,16 @@ description: Una referencia completa de las características del panel de red de
 title: Referencia de análisis de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 758623482ab2179987c6467f8e30c72d8893d710
-ms.sourcegitcommit: addfd27bb765c92880a59f259dc702f6e4e1bf28
+ms.openlocfilehash: 8123fbebadf1d43fd1460ecebf91190cac793e19
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "11092317"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125373"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,12 +49,12 @@ De forma predeterminada, DevTools graba todas las solicitudes de red en el panel
 
 Siga los pasos que se indican a continuación para detener la grabación de solicitudes.  
 
-1.  Seleccione **Detener grabación de registro de red** \ ( ![ Detener grabación ][ImageRecordOnIcon] de registro de red \) en el panel **red** .  Se vuelve gris para indicar que DevTools ya no graba solicitudes.  
-1.  Pulse `Control` + `E` \ (Windows \) o `Command` + `E` \ (MacOS \) mientras el panel **red** está en el foco.  
+1.  Elija **Detener grabación registro de red** ![ detener la grabación del registro ][ImageRecordOnIcon] de red en el panel **red** .  Se vuelve gris para indicar que DevTools ya no graba solicitudes.  
+1.  Seleccione `Control` + `E` \ (Windows, Linux \) o `Command` + `E` \ (MacOS \) mientras el panel **red** está en el foco.  
 
 ### Borrar solicitudes  
 
-Seleccione **Borrar** \ ( ![ Borrar ][ImageClearIcon] \) en el panel red para borrar todas las solicitudes de la tabla solicitudes.  
+Elija **Borrar** \ ( ![ Borrar ][ImageClearIcon] \) en el panel red para borrar todas las solicitudes de la tabla solicitudes.  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Panel red" lightbox="../media/network-network-clear-button.msft.png":::
    Botón **Borrar**  
@@ -72,7 +72,7 @@ Para guardar las solicitudes en la carga de la página, active la casilla **cons
 
 Capture las capturas de pantallas para analizar qué se muestra para los usuarios mientras esperan la página que desea cargar.  
 
-Para habilitar capturas de pantalla, seleccione **configuración de red** y marque la casilla **capturar capturas** de pantalla en el panel **red** .  
+Para habilitar las capturas de pantalla, elija **configuración de red** y seleccione **capturar capturas** de pantalla en el panel **red** .  
 
 Actualice la página mientras el panel **red** está enfocado para capturar capturas de pantalla.  
 
@@ -88,7 +88,7 @@ Después de capturar una captura de pantalla, puede interactuar con ella de las 
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and choose **Replay XHR**.  -->
 
 <!--  
 :::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Panel red" lightbox="../media/network-replay-xhr.msft.png":::
@@ -129,7 +129,7 @@ Una nueva clase de aplicaciones Web, denominada [aplicaciones web progresivas][D
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Seleccione el menú desplegable **en línea** , búsqueda en **preestablecidos**y seleccione **sin conexión** para simular una experiencia de red sin conexión.  
+Seleccione el menú desplegable **en línea** , búsqueda en **preestablecidos**y elija **sin conexión** para simular una experiencia de red sin conexión.  
 
 :::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Panel red" lightbox="../media/network-network-offline-dropdown.msft.png":::
    Menú desplegable **desconectado**  
@@ -294,7 +294,7 @@ Para filtrar las solicitudes por tipo de solicitud, seleccione uno de los siguie
 Si los botones no se muestran, es posible que el panel **filtros** esté oculto.  
 Para obtener más información, vaya a [ocultar el panel de filtros](#hide-the-filters-pane).  
 
-Para habilitar varios filtros de tipo al mismo tiempo, mantenga `Control` \ (Windows \) o `Command` \ (MacOS \) y, a continuación, seleccione.  
+Para habilitar varios filtros de tipo simultáneamente, mantenga `Control` \ (Windows, Linux \) o `Command` \ (MacOS \) y, a continuación, seleccione.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Panel red" lightbox="../media/network-network-type-filters.msft.png":::
    Usar los filtros de tipo para mostrar los recursos JS, CSS y Document  
@@ -464,7 +464,7 @@ Desplace el puntero en el encabezado de la tabla solicitudes, abra el menú cont
 
 #### Agregar columnas personalizadas  
 
-Para agregar una columna personalizada a la tabla solicitudes, desplace el puntero sobre el encabezado de la tabla solicitudes, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **encabezados de respuesta**para  >  **administrar columnas de encabezado**.  
+Para agregar una columna personalizada a la tabla solicitudes, desplace el puntero sobre el encabezado de la tabla solicitudes, abra el menú contextual \ (haga clic con el botón derecho \) y elija **encabezados de respuesta**para  >  **administrar columnas de encabezado**.  
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Panel red" lightbox="../media/network-network-requests-add-custom.msft.png":::
    Agregar una columna personalizada a la tabla solicitudes  
@@ -550,7 +550,7 @@ Para ver los datos del encabezado HTTP sobre una solicitud, siga estos pasos.
 De forma predeterminada, la pestaña encabezados muestra los nombres de encabezado alfabéticamente.  Para ver los nombres de encabezados HTTP en el orden recibido, siga estos pasos.  
 
 1.  Abre la pestaña **encabezados** para la solicitud que te interese.  Para obtener más información, vaya a [Ver encabezados HTTP](#view-http-headers).  
-1.  Seleccione **Ver origen**, junto a la sección **solicitar** encabezado o **respuesta de encabezado** .  
+1.  Elija **Ver origen**, junto a la sección **solicitar encabezado** o **respuesta de encabezado** .  
 
 ### Ver parámetros de cadena de consulta  
 
@@ -568,14 +568,14 @@ Para ver los parámetros de cadena de consulta de una dirección URL en un forma
 Para ver el origen de parámetro de cadena de consulta de una solicitud, realice los siguientes pasos.  
 
 1.  Vaya a la sección parámetros de cadena de consulta.  Para obtener más información, vaya a [ver parámetros de cadena de consulta](#view-query-string-parameters).  
-1.  Seleccione **Ver origen**.  
+1.  Elija **Ver origen**.  
 
 #### Ver parámetros de cadena de consulta con codificación URL  
 
 Para ver los parámetros de cadena de consulta en un formato legible, pero con las codificaciones conservadas, siga estos pasos.  
 
 1.  Vaya a la sección parámetros de cadena de consulta.  Para obtener más información, vaya a [ver parámetros de cadena de consulta](#view-query-string-parameters).  
-1.  Seleccione **Ver dirección URL codificada**.  
+1.  Elija **Ver dirección URL codificada**.  
 
 ### Ver cookies  
 
@@ -807,7 +807,7 @@ Seleccione la casilla **usar filas de solicitudes grandes** y, a continuación, 
 Para guardar todas las solicitudes de red en un archivo HAR, siga los pasos que se indican a continuación.  
 
 1.  Mantenga el mouse sobre cualquier solicitud de la tabla solicitudes y abra el menú contextual \ (haga clic con el botón derecho \).  
-1.  Seleccione **Guardar como Har with Content**.  DevTools guarda todas las solicitudes que se han producido desde que abrió DevTools en el archivo HAR.  No puedes filtrar solicitudes.  Tampoco puedes guardar una sola solicitud.  
+1.  Elija **Guardar como Har with Content**.  DevTools guarda todas las solicitudes que se han producido desde que abrió DevTools en el archivo HAR.  No puedes filtrar solicitudes.  Tampoco puedes guardar una sola solicitud.  
 
 Una vez que haya guardado un archivo HAR, podrá volver a importarlo en DevTools para analizarlo.  Simplemente arrastre y coloque el archivo HAR en la tabla solicitudes.  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
@@ -891,7 +891,7 @@ Puede expandir o contraer secciones de la interfaz de usuario del panel red para
 ### Ocultar el panel de filtros  
 
 De forma predeterminada, DevTools muestra el **Panel filtros**.  
-Seleccione **filtro** \ ( ![ filtro ][ImageFilterIcon] \) para ocultarlo.  
+Elija **filtro** \ ( ![ filtro ][ImageFilterIcon] \) para ocultarlo.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Panel red" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    El botón ocultar filtros  
@@ -918,6 +918,10 @@ De forma predeterminada, DevTools muestra el **Panel de información general**. 
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Panel red" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    La casilla **Mostrar información general**  
 :::image-end:::  
+
+## Contactar al equipo de Microsoft Edge DevTools  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,16 +3,16 @@ description: El modo eventos de escala de tiempo muestra todos los eventos desen
 title: Referencia de evento de línea de tiempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 989d4d84345fedc1c5aef2cb8d893db3c0e1634b
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992851"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124904"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -28,14 +28,7 @@ ms.locfileid: "10992851"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Referencia de evento de línea de tiempo   
-
-
-
+# Referencia de evento de línea de tiempo  
 
 El modo eventos de escala de tiempo muestra todos los eventos desencadenados mientras se realiza una grabación.  Use la referencia de evento de escala de tiempo para obtener más información sobre cada tipo de evento de escala de tiempo.  
 
@@ -149,11 +142,9 @@ En esta sección se enumeran los eventos que pertenecen a la categoría de pintu
 | Ubicación | Para eventos de pintura, las coordenadas x e y del rectángulo de pintura. |  
 | Dimensiones | Para eventos de pintura, el alto y el ancho de la región pintada. |  
 
- 
+## Contactar al equipo de Microsoft Edge DevTools  
 
-
-
-<!-- image links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 
