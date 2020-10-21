@@ -3,16 +3,16 @@ description: Más información sobre cómo ejecutar JavaScript en la consola.
 title: Introducción a la ejecución de JavaScript en la consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d31bcfbdf728e656c9a6fff882f939f8c24cd897
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 6537cb07b52ef6b8be4b1ea7d9420bf2307d3fd5
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993124"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125247"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,67 +28,59 @@ ms.locfileid: "10993124"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# <span data-ttu-id="b734f-104">Introducción a la ejecución de JavaScript en la consola</span><span class="sxs-lookup"><span data-stu-id="b734f-104">Get Started With Running JavaScript In The Console</span></span>  
 
-
-
-
-
-
-# <span data-ttu-id="51a30-104">Introducción a la ejecución de JavaScript en la consola</span><span class="sxs-lookup"><span data-stu-id="51a30-104">Get Started With Running JavaScript In The Console</span></span>   
-
-
-
-<span data-ttu-id="51a30-105">Este tutorial interactivo muestra cómo ejecutar JavaScript en la **consola**de Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="51a30-105">This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools **Console**.</span></span>  <span data-ttu-id="51a30-106">Para obtener más información sobre cómo registrar mensajes en la **consola**, consulte Introducción a [los mensajes de registro][DevToolsConsoleLoggingMessages].</span><span class="sxs-lookup"><span data-stu-id="51a30-106">For more information about how to log messages to the **Console**, see [Get Started With Logging Messages][DevToolsConsoleLoggingMessages].</span></span>  <span data-ttu-id="51a30-107">Para obtener más información sobre cómo pausar código JavaScript y resaltarlo de línea en línea, consulte Introducción a la [depuración de JavaScript][DevToolsJavascriptIndex].</span><span class="sxs-lookup"><span data-stu-id="51a30-107">For more information about how to pause JavaScript code and step through it one line at a time, see [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].</span></span>  
+<span data-ttu-id="b734f-105">Este tutorial interactivo muestra cómo ejecutar JavaScript en la **consola**de Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="b734f-105">This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools **Console**.</span></span>  <span data-ttu-id="b734f-106">Para obtener más información sobre cómo registrar mensajes en la **consola**, vaya a introducción a la creación [de mensajes de registro][DevToolsConsoleLoggingMessages].</span><span class="sxs-lookup"><span data-stu-id="b734f-106">For more information about how to log messages to the **Console**, navigate to [Get Started With Logging Messages][DevToolsConsoleLoggingMessages].</span></span>  <span data-ttu-id="b734f-107">Para obtener más información sobre cómo pausar el código de JavaScript y resaltarlo de línea en línea, vaya a introducción a la [depuración de JavaScript][DevToolsJavascriptIndex].</span><span class="sxs-lookup"><span data-stu-id="b734f-107">For more information about how to pause JavaScript code and step through it one line at a time, navigate to [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].</span></span>  
 
 :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-playground.msft.png":::
-   <span data-ttu-id="51a30-109">La **consola**</span><span class="sxs-lookup"><span data-stu-id="51a30-109">The **Console**</span></span>  
+   <span data-ttu-id="b734f-109">La **consola**</span><span class="sxs-lookup"><span data-stu-id="b734f-109">The **Console**</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="51a30-110">Introducción</span><span class="sxs-lookup"><span data-stu-id="51a30-110">Overview</span></span>   
+## <span data-ttu-id="b734f-110">Introducción</span><span class="sxs-lookup"><span data-stu-id="b734f-110">Overview</span></span>  
 
-<span data-ttu-id="51a30-111">La **consola** es una [REPL][WikiReadEvalPrintLoop], lo que significa lectura, evaluación, impresión y bucle.</span><span class="sxs-lookup"><span data-stu-id="51a30-111">The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evaluate, Print, and Loop.</span></span>  <span data-ttu-id="51a30-112">Lee el código JavaScript que escribe en él, evalúa el código, imprime el resultado de la [expresión][2alityExpressionsVersusStatements]y, a continuación, retrocede al primer paso.</span><span class="sxs-lookup"><span data-stu-id="51a30-112">It reads the JavaScript that you type into it, evaluates your code, prints out the result of your [expression][2alityExpressionsVersusStatements], and then loops back to the first step.</span></span>  
+<span data-ttu-id="b734f-111">La **consola** es una [REPL][WikiReadEvalPrintLoop], lo que significa lectura, evaluación, impresión y bucle.</span><span class="sxs-lookup"><span data-stu-id="b734f-111">The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evaluate, Print, and Loop.</span></span>  <span data-ttu-id="b734f-112">Lee el código JavaScript que escribe en él, evalúa el código, imprime el resultado de la [expresión][2alityExpressionsVersusStatements]y, a continuación, retrocede al primer paso.</span><span class="sxs-lookup"><span data-stu-id="b734f-112">It reads the JavaScript that you type into it, evaluates your code, prints out the result of your [expression][2alityExpressionsVersusStatements], and then loops back to the first step.</span></span>  
 
-## <span data-ttu-id="51a30-113">Configurar DevTools</span><span class="sxs-lookup"><span data-stu-id="51a30-113">Set up DevTools</span></span>   
+## <span data-ttu-id="b734f-113">Configurar DevTools</span><span class="sxs-lookup"><span data-stu-id="b734f-113">Set up DevTools</span></span>  
 
-<span data-ttu-id="51a30-114">Este tutorial está diseñado para que abras la demostración y pruebe todos los flujos de trabajo.</span><span class="sxs-lookup"><span data-stu-id="51a30-114">This tutorial is designed for you to open up the demo and try all the workflows yourself.</span></span>  <span data-ttu-id="51a30-115">Cuando sigues físicamente, es más probable que recuerdes los flujos de trabajo más adelante.</span><span class="sxs-lookup"><span data-stu-id="51a30-115">When you physically follow along, you are more likely to remember the workflows later.</span></span>
+<span data-ttu-id="b734f-114">Este tutorial está diseñado para que abras la demostración y pruebe todos los flujos de trabajo.</span><span class="sxs-lookup"><span data-stu-id="b734f-114">This tutorial is designed for you to open up the demo and try all the workflows yourself.</span></span>  <span data-ttu-id="b734f-115">Cuando sigues físicamente, es más probable que recuerdes los flujos de trabajo más adelante.</span><span class="sxs-lookup"><span data-stu-id="b734f-115">When you physically follow along, you are more likely to remember the workflows later.</span></span>
 
-1.  <span data-ttu-id="51a30-116">Pulse `Control` + `Shift` + `J` \ (Windows \) o `Command` + `Option` + `J` \ (MacOS \) para abrir la **consola**.</span><span class="sxs-lookup"><span data-stu-id="51a30-116">Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.</span></span>  
-1.  <span data-ttu-id="51a30-117">Mantenga `Control` \ (Windows \) o `Command` \ (MacOS \) y haga clic en **ejemplo de JavaScript de consola** para abrirlo en una ventana nueva.</span><span class="sxs-lookup"><span data-stu-id="51a30-117">Hold `Control` \(Windows\) or `Command` \(macOS\) and click **Console Javascript Example** to open in a new window.</span></span>  
+1.  <span data-ttu-id="b734f-116">Seleccione `Control` + `Shift` + `J` \ (Windows, Linux \) o `Command` + `Option` + `J` \ (MacOS \) para abrir la **consola**.</span><span class="sxs-lookup"><span data-stu-id="b734f-116">Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.</span></span>  
+1.  <span data-ttu-id="b734f-117">Espere `Control` \ (Windows, Linux \) o `Command` \ (MacOS \) y elija **ejemplo de JavaScript de consola** para abrirlo en una ventana nueva.</span><span class="sxs-lookup"><span data-stu-id="b734f-117">Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **Console Javascript Example** to open in a new window.</span></span>  
     
-    *   [<span data-ttu-id="51a30-118">Ejemplo de JavaScript de consola</span><span class="sxs-lookup"><span data-stu-id="51a30-118">Console Javascript Example</span></span>][GlitchConsoleJavascriptExample]  
+    *   [<span data-ttu-id="b734f-118">Ejemplo de JavaScript de consola</span><span class="sxs-lookup"><span data-stu-id="b734f-118">Console Javascript Example</span></span>][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="La página de ejemplo de JavaScript de la consola de la izquierda y DevTools a la derecha" lightbox="../media/console-javascript-example-console-empty.msft.png":::
-       <span data-ttu-id="51a30-120">La página de ejemplo de JavaScript de la consola de la izquierda y DevTools a la derecha</span><span class="sxs-lookup"><span data-stu-id="51a30-120">The Console JavaScript Example page on the left, and DevTools on the right</span></span>  
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       <span data-ttu-id="b734f-120">La página de ejemplo de JavaScript de la consola de la izquierda y DevTools a la derecha</span><span class="sxs-lookup"><span data-stu-id="b734f-120">The Console JavaScript Example page on the left, and DevTools on the right</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="51a30-121">Ver y cambiar el JavaScript o el DOM de la página</span><span class="sxs-lookup"><span data-stu-id="51a30-121">View and change the JavaScript or DOM of the page</span></span>   
+## <span data-ttu-id="b734f-121">Ver y cambiar el JavaScript o el DOM de la página</span><span class="sxs-lookup"><span data-stu-id="b734f-121">View and change the JavaScript or DOM of the page</span></span>  
 
-<span data-ttu-id="51a30-122">Al crear o depurar una página, a menudo es útil ejecutar instrucciones en la **consola** para cambiar el aspecto o la ejecución de la página.</span><span class="sxs-lookup"><span data-stu-id="51a30-122">When building or debugging a page, it is often useful to run statements in the **Console** in order to change how the page looks or runs.</span></span>  
+<span data-ttu-id="b734f-122">Al crear o depurar una página, a menudo es útil ejecutar instrucciones en la **consola** para cambiar el aspecto o la ejecución de la página.</span><span class="sxs-lookup"><span data-stu-id="b734f-122">When building or debugging a page, it is often useful to run statements in the **Console** in order to change how the page looks or runs.</span></span>  
     
-1.  <span data-ttu-id="51a30-123">Observe el texto en el botón.</span><span class="sxs-lookup"><span data-stu-id="51a30-123">Notice the text in the button.</span></span>  
-1.  <span data-ttu-id="51a30-124">Escriba `document.getElementById('hello').textContent = 'Hello, Console!'` la **consola** y, a continuación, pulse `Enter` para evaluar la expresión.</span><span class="sxs-lookup"><span data-stu-id="51a30-124">Type `document.getElementById('hello').textContent = 'Hello, Console!'` in the **Console** and then press `Enter` to evaluate the expression.</span></span>  <span data-ttu-id="51a30-125">Observe cómo cambia el texto que se encuentra dentro del botón.</span><span class="sxs-lookup"><span data-stu-id="51a30-125">Notice how the text inside the button changes.</span></span>  
+1.  <span data-ttu-id="b734f-123">Observe el texto en el botón.</span><span class="sxs-lookup"><span data-stu-id="b734f-123">Notice the text in the button.</span></span>  
+1.  <span data-ttu-id="b734f-124">Escriba `document.getElementById('hello').textContent = 'Hello, Console!'` la **consola** y, después, seleccione `Enter` para evaluar la expresión.</span><span class="sxs-lookup"><span data-stu-id="b734f-124">Type `document.getElementById('hello').textContent = 'Hello, Console!'` in the **Console** and then select `Enter` to evaluate the expression.</span></span>  <span data-ttu-id="b734f-125">Observe cómo cambia el texto que se encuentra dentro del botón.</span><span class="sxs-lookup"><span data-stu-id="b734f-125">Notice how the text inside the button changes.</span></span>  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Aspecto de la consola después de la evaluación de la expresión" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
-       <span data-ttu-id="51a30-127">Aspecto de la **consola** después de la evaluación de la expresión</span><span class="sxs-lookup"><span data-stu-id="51a30-127">How the **Console** looks after evaluating the expression</span></span>  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       <span data-ttu-id="b734f-127">Aspecto de la **consola** después de la evaluación de la expresión</span><span class="sxs-lookup"><span data-stu-id="b734f-127">How the **Console** looks after evaluating the expression</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="51a30-128">Debajo del código que hayas evaluado verás `"Hello, Console!"` .</span><span class="sxs-lookup"><span data-stu-id="51a30-128">Below the code that you evaluated you see `"Hello, Console!"`.</span></span>  <span data-ttu-id="51a30-129">Recupere los cuatro pasos de REPL: leer, evaluar, imprimir, repetir.</span><span class="sxs-lookup"><span data-stu-id="51a30-129">Recall the 4 steps of REPL: read, evaluate, print, loop.</span></span>  <span data-ttu-id="51a30-130">Después de evaluar el código, una REPL imprime el resultado de la expresión.</span><span class="sxs-lookup"><span data-stu-id="51a30-130">After evaluating your code, a REPL prints the result of the expression.</span></span>  <span data-ttu-id="51a30-131">Por lo tanto, `"Hello, Console!"` debe ser el resultado de la evaluación `document.getElementById('hello').textContent = 'Hello, Console!'` .</span><span class="sxs-lookup"><span data-stu-id="51a30-131">So `"Hello, Console!"` must be the result of evaluating `document.getElementById('hello').textContent = 'Hello, Console!'`.</span></span>  
+    <span data-ttu-id="b734f-128">Debajo del código que hayas evaluado verás `"Hello, Console!"` .</span><span class="sxs-lookup"><span data-stu-id="b734f-128">Below the code that you evaluated you see `"Hello, Console!"`.</span></span>  <span data-ttu-id="b734f-129">Recupere los cuatro pasos de REPL: leer, evaluar, imprimir, repetir.</span><span class="sxs-lookup"><span data-stu-id="b734f-129">Recall the 4 steps of REPL: read, evaluate, print, loop.</span></span>  <span data-ttu-id="b734f-130">Después de evaluar el código, una REPL imprime el resultado de la expresión.</span><span class="sxs-lookup"><span data-stu-id="b734f-130">After evaluating your code, a REPL prints the result of the expression.</span></span>  <span data-ttu-id="b734f-131">Por lo tanto, `"Hello, Console!"` debe ser el resultado de la evaluación `document.getElementById('hello').textContent = 'Hello, Console!'` .</span><span class="sxs-lookup"><span data-stu-id="b734f-131">So `"Hello, Console!"` must be the result of evaluating `document.getElementById('hello').textContent = 'Hello, Console!'`.</span></span>  
     
-## <span data-ttu-id="51a30-132">Ejecutar JavaScript arbitrario que no está relacionado con la página</span><span class="sxs-lookup"><span data-stu-id="51a30-132">Run arbitrary JavaScript that is not related to the page</span></span>   
+## <span data-ttu-id="b734f-132">Ejecutar JavaScript arbitrario que no está relacionado con la página</span><span class="sxs-lookup"><span data-stu-id="b734f-132">Run arbitrary JavaScript that is not related to the page</span></span>  
 
-<span data-ttu-id="51a30-133">A veces, solo deseas un código de animación donde puedas probar algún código o probar nuevas características de JavaScript con las que no estás familiarizado.</span><span class="sxs-lookup"><span data-stu-id="51a30-133">Sometimes, you just want a code playground where you are able to test some code, or try out new JavaScript features you are not familiar with.</span></span>  <span data-ttu-id="51a30-134">La consola es un lugar ideal para estos tipos de experimentos.</span><span class="sxs-lookup"><span data-stu-id="51a30-134">The Console is a perfect place for these kinds of experiments.</span></span>  
+<span data-ttu-id="b734f-133">A veces, solo deseas un código de animación donde puedas probar algún código o probar nuevas características de JavaScript con las que no estás familiarizado.</span><span class="sxs-lookup"><span data-stu-id="b734f-133">Sometimes, you just want a code playground where you are able to test some code, or try out new JavaScript features you are not familiar with.</span></span>  <span data-ttu-id="b734f-134">La consola es un lugar ideal para estos tipos de experimentos.</span><span class="sxs-lookup"><span data-stu-id="b734f-134">The Console is a perfect place for these kinds of experiments.</span></span>  
 
-1.  <span data-ttu-id="51a30-135">Escriba `5 + 15` la consola y pulse `Enter` para evaluar la expresión.</span><span class="sxs-lookup"><span data-stu-id="51a30-135">Type `5 + 15` in the Console and press `Enter` to evaluate the expression.</span></span> <span data-ttu-id="51a30-136">La consola imprime el resultado de la expresión que está debajo del código.</span><span class="sxs-lookup"><span data-stu-id="51a30-136">The Console prints out the result of the expression below your code.</span></span>  <span data-ttu-id="51a30-137">En la siguiente ilustración, la **consola** debería mostrar el resultado después de evaluar la expresión.</span><span class="sxs-lookup"><span data-stu-id="51a30-137">In the following figure, your **Console** should display the result after evaluating the expression.</span></span>  
+1.  <span data-ttu-id="b734f-135">Escriba `5 + 15` la consola y seleccione `Enter` para evaluar la expresión.</span><span class="sxs-lookup"><span data-stu-id="b734f-135">Type `5 + 15` in the Console and select `Enter` to evaluate the expression.</span></span> <span data-ttu-id="b734f-136">La consola imprime el resultado de la expresión que está debajo del código.</span><span class="sxs-lookup"><span data-stu-id="b734f-136">The Console prints out the result of the expression below your code.</span></span>  <span data-ttu-id="b734f-137">En la siguiente ilustración, la **consola** debería mostrar el resultado después de evaluar la expresión.</span><span class="sxs-lookup"><span data-stu-id="b734f-137">In the following figure, your **Console** should display the result after evaluating the expression.</span></span>  
 
-1.  <span data-ttu-id="51a30-138">Escriba el código siguiente en la **consola**.</span><span class="sxs-lookup"><span data-stu-id="51a30-138">Type the following code into the **Console**.</span></span>  <span data-ttu-id="51a30-139">Pruebe a escribirla, carácter a carácter, en lugar de pegarla.</span><span class="sxs-lookup"><span data-stu-id="51a30-139">Try typing it out, character-by-character, rather than copy-pasting it.</span></span>  
+1.  <span data-ttu-id="b734f-138">Escriba el código siguiente en la **consola**.</span><span class="sxs-lookup"><span data-stu-id="b734f-138">Type the following code into the **Console**.</span></span>  <span data-ttu-id="b734f-139">Pruebe a escribirla, carácter a carácter, en lugar de pegarla.</span><span class="sxs-lookup"><span data-stu-id="b734f-139">Try typing it out, character-by-character, rather than copy-pasting it.</span></span>  
     
     ```javascript
-    function add(a, b=20) { return a + b; }
+    function add(a, b=20)
     ```  
     
-    <span data-ttu-id="51a30-140">Si no está familiarizado con la `b=20` sintaxis, consulte [definir valores predeterminados para los argumentos de una función][Esma6DefaultParameterValues].</span><span class="sxs-lookup"><span data-stu-id="51a30-140">If you are unfamiliar with the `b=20` syntax, see [define default values for function arguments][Esma6DefaultParameterValues].</span></span>  
+    <span data-ttu-id="b734f-140">Si no está familiarizado con la `b=20` sintaxis, navegue para [definir los valores predeterminados de los argumentos de la función][Esma6DefaultParameterValues].</span><span class="sxs-lookup"><span data-stu-id="b734f-140">If you are unfamiliar with the `b=20` syntax, navigate to [define default values for function arguments][Esma6DefaultParameterValues].</span></span>  
     
-1.  <span data-ttu-id="51a30-141">Ahora, ejecute la función que acaba de definir.</span><span class="sxs-lookup"><span data-stu-id="51a30-141">Now, run the function that you just defined.</span></span>  
+1.  <span data-ttu-id="b734f-141">Ahora, ejecute la función que acaba de definir.</span><span class="sxs-lookup"><span data-stu-id="b734f-141">Now, run the function that you just defined.</span></span>  
     
     :::row:::
        :::column span="":::
@@ -97,35 +89,33 @@ ms.locfileid: "10993124"
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola se muestra después de evaluar las expresiones en el fragmento de código." lightbox="../media/console-javascript-example-console-playground.msft.png":::
-             <span data-ttu-id="51a30-143">La **consola** se muestra después de evaluar las expresiones en el fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="51a30-143">The **Console** displays after evaluating the expressions in the code snippet</span></span>  
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+             <span data-ttu-id="b734f-143">La **consola** se muestra después de evaluar las expresiones en el fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="b734f-143">The **Console** displays after evaluating the expressions in the code snippet</span></span>  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-    `add(25)` <span data-ttu-id="51a30-144">se evalúa como `45` porque cuando `add` se llama a la función sin un segundo argumento, el `b` valor predeterminado es `20` .</span><span class="sxs-lookup"><span data-stu-id="51a30-144">evaluates to `45` because when the `add` function is called without a second argument, `b` defaults to `20`.</span></span>  
+    `add(25)` <span data-ttu-id="b734f-144">se evalúa como `45` porque cuando `add` se llama a la función sin un segundo argumento, el `b` valor predeterminado es `20` .</span><span class="sxs-lookup"><span data-stu-id="b734f-144">evaluates to `45` because when the `add` function is called without a second argument, `b` defaults to `20`.</span></span>  
 
-## <span data-ttu-id="51a30-145">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="51a30-145">Next steps</span></span>   
+## <span data-ttu-id="b734f-145">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="b734f-145">Next steps</span></span>  
 
 <!--See [Run JavaScript][DevToolsConsoleReference] to explore more features related to running JavaScript in the Console.  -->  
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-<span data-ttu-id="51a30-146">DevTools le permite pausar un script en mitad de la ejecución.</span><span class="sxs-lookup"><span data-stu-id="51a30-146">DevTools lets you pause a script in the middle of running.</span></span>  <span data-ttu-id="51a30-147">Mientras está pausado, puede usar la **consola** para ver y cambiar la `window` o `DOM` de la página en ese momento.</span><span class="sxs-lookup"><span data-stu-id="51a30-147">While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.</span></span>  <span data-ttu-id="51a30-148">El flujo de trabajo hace que el flujo de trabajo de depuración sea eficaz.</span><span class="sxs-lookup"><span data-stu-id="51a30-148">The workflow makes for a powerful debugging workflow.</span></span>  <span data-ttu-id="51a30-149">Para obtener un tutorial interactivo, consulte [Introducción a la depuración de JavaScript][DevToolsJavascriptIndex].</span><span class="sxs-lookup"><span data-stu-id="51a30-149">For an interactive tutorial, see [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].</span></span>  
+<span data-ttu-id="b734f-146">DevTools le permite pausar un script en mitad de la ejecución.</span><span class="sxs-lookup"><span data-stu-id="b734f-146">DevTools lets you pause a script in the middle of running.</span></span>  <span data-ttu-id="b734f-147">Mientras está pausado, puede usar la **consola** para ver y cambiar la `window` o `DOM` de la página en ese momento.</span><span class="sxs-lookup"><span data-stu-id="b734f-147">While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.</span></span>  <span data-ttu-id="b734f-148">El flujo de trabajo hace que el flujo de trabajo de depuración sea eficaz.</span><span class="sxs-lookup"><span data-stu-id="b734f-148">The workflow makes for a powerful debugging workflow.</span></span>  <span data-ttu-id="b734f-149">Para obtener un tutorial interactivo, vaya a introducción a la [depuración de JavaScript][DevToolsJavascriptIndex].</span><span class="sxs-lookup"><span data-stu-id="b734f-149">For an interactive tutorial, navigate to [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].</span></span>  
 
-<span data-ttu-id="51a30-150">La **consola** también tiene un conjunto de funciones de comodidad que hacen que sea más fácil interactuar con una página.</span><span class="sxs-lookup"><span data-stu-id="51a30-150">The **Console** also has a set of convenience functions that make it easier to interact with a page.</span></span>  <span data-ttu-id="51a30-151">Por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="51a30-151">For example:</span></span>  
+<span data-ttu-id="b734f-150">La **consola** también tiene un conjunto de funciones de comodidad que hacen que sea más fácil interactuar con una página.</span><span class="sxs-lookup"><span data-stu-id="b734f-150">The **Console** also has a set of convenience functions that make it easier to interact with a page.</span></span>  <span data-ttu-id="b734f-151">Por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="b734f-151">For example:</span></span>  
 
-*   <span data-ttu-id="51a30-152">En lugar de escribir `document.querySelector()` para seleccionar un elemento, escriba `$()` .</span><span class="sxs-lookup"><span data-stu-id="51a30-152">Rather than typing `document.querySelector()` to select an element, type `$()`.</span></span>  <span data-ttu-id="51a30-153">Esta sintaxis está inspirada en jQuery, pero en realidad no es jQuery.</span><span class="sxs-lookup"><span data-stu-id="51a30-153">This syntax is inspired by jQuery, but it is not actually jQuery.</span></span>  <span data-ttu-id="51a30-154">Es solo un alias para `document.querySelector()` .</span><span class="sxs-lookup"><span data-stu-id="51a30-154">It is just an alias for `document.querySelector()`.</span></span>  
-*   `debug(function)` <span data-ttu-id="51a30-155">establece de forma eficaz un punto de interrupción en la primera línea de esa función.</span><span class="sxs-lookup"><span data-stu-id="51a30-155">effectively sets a breakpoint on the first line of that function.</span></span>  
-*   `keys(object)` <span data-ttu-id="51a30-156">Devuelve una matriz que contiene las claves del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="51a30-156">returns an array containing the keys of the specified object.</span></span>  
+*   <span data-ttu-id="b734f-152">En lugar de escribir `document.querySelector()` para seleccionar un elemento, escriba `$()` .</span><span class="sxs-lookup"><span data-stu-id="b734f-152">Rather than typing `document.querySelector()` to select an element, type `$()`.</span></span>  <span data-ttu-id="b734f-153">Esta sintaxis está inspirada en jQuery, pero en realidad no es jQuery.</span><span class="sxs-lookup"><span data-stu-id="b734f-153">This syntax is inspired by jQuery, but it is not actually jQuery.</span></span>  <span data-ttu-id="b734f-154">Es solo un alias para `document.querySelector()` .</span><span class="sxs-lookup"><span data-stu-id="b734f-154">It is just an alias for `document.querySelector()`.</span></span>  
+*   `debug(function)` <span data-ttu-id="b734f-155">establece de forma eficaz un punto de interrupción en la primera línea de esa función.</span><span class="sxs-lookup"><span data-stu-id="b734f-155">effectively sets a breakpoint on the first line of that function.</span></span>  
+*   `keys(object)` <span data-ttu-id="b734f-156">Devuelve una matriz que contiene las claves del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="b734f-156">returns an array containing the keys of the specified object.</span></span>  
 
-<!--See [Console Utilities API Reference][DevToolsConsoleUtilities] to explore all the convenience functions.  -->  
+<span data-ttu-id="b734f-157">Para obtener más información sobre las funciones de conveniencia, vaya a referencia de la [API de utilidades de consola][DevToolsConsoleUtilities].</span><span class="sxs-lookup"><span data-stu-id="b734f-157">For more information about the convenience functions, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].</span></span>  
 
-<!--todo: add console utilities api reference section when available  -->  
+## <span data-ttu-id="b734f-158">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="b734f-158">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
- 
-
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
@@ -143,11 +133,11 @@ ms.locfileid: "10993124"
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Lectura: eval – imprimir bucle-Wikipedia"  
 
 > [!NOTE]
-> <span data-ttu-id="51a30-165">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="51a30-165">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="51a30-166">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/console/javascript) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="51a30-166">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/javascript) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="b734f-167">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b734f-167">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="b734f-168">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/console/javascript) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="b734f-168">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/javascript) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="51a30-168">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="51a30-168">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="b734f-170">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b734f-170">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

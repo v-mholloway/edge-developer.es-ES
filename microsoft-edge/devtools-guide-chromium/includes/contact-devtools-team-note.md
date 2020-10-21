@@ -4,22 +4,22 @@ ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
 ms.date: 09/01/2020
-ms.openlocfilehash: 52fab56b92ffd19d4db1968e337ab2c5f93f6ae7
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: abd837417098aa6d665bb112f99085ff2473b4ca
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992710"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124686"
 ---
-<span data-ttu-id="4df06-101">Use las siguientes opciones para discutir las nuevas características y cambios de la publicación, o cualquier otro tema relacionado con DevTools.</span><span class="sxs-lookup"><span data-stu-id="4df06-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span></span>  
+<span data-ttu-id="27664-101">Use las siguientes opciones para discutir las nuevas características y cambios de la publicación, o cualquier otro tema relacionado con DevTools.</span><span class="sxs-lookup"><span data-stu-id="27664-101">Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.</span></span>  
 
-*   <span data-ttu-id="4df06-102">Envíe sus comentarios con el icono para **Enviar comentarios** o seleccione `Alt` + `Shift` + `I` \ (Windows \) o `Option` + `Shift` + `I` \ (MacOS \) en DevTools.</span><span class="sxs-lookup"><span data-stu-id="4df06-102">Send your feedback using the **Send Feedback** icon or select `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) in DevTools.</span></span>  
-*   <span data-ttu-id="4df06-103">Tweet a [@EdgeDevTools][PostTweetEdgeDevTools].</span><span class="sxs-lookup"><span data-stu-id="4df06-103">Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].</span></span>  
-*   <span data-ttu-id="4df06-104">Enviar una sugerencia a [la web][TheWebWeWant]que queremos.</span><span class="sxs-lookup"><span data-stu-id="4df06-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span></span>  
-*   <span data-ttu-id="4df06-105">Archivar errores en este artículo con la sección [comentarios](#feedback) .</span><span class="sxs-lookup"><span data-stu-id="4df06-105">File bugs on this article using the [Feedback](#feedback) section.</span></span>  
+*   <span data-ttu-id="27664-102">Envíe sus comentarios con el icono **Enviar comentarios** o seleccione `Alt` + `Shift` + `I` \ (Windows, Linux \) o `Option` + `Shift` + `I` \ (MacOS \) en DevTools.</span><span class="sxs-lookup"><span data-stu-id="27664-102">Send your feedback using the **Send Feedback** icon or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) in DevTools.</span></span>  
+*   <span data-ttu-id="27664-103">Tweet a [@EdgeDevTools][PostTweetEdgeDevTools].</span><span class="sxs-lookup"><span data-stu-id="27664-103">Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].</span></span>  
+*   <span data-ttu-id="27664-104">Enviar una sugerencia a [la web][TheWebWeWant]que queremos.</span><span class="sxs-lookup"><span data-stu-id="27664-104">Submit a suggestion to [The Web We Want][TheWebWeWant].</span></span>  
+*   <span data-ttu-id="27664-105">Archivar errores en este artículo con la sección [comentarios](#feedback) .</span><span class="sxs-lookup"><span data-stu-id="27664-105">File bugs on this article using the [Feedback](#feedback) section.</span></span>  
 
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="El icono enviar comentarios en el DevTools de Microsoft Edge" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   <span data-ttu-id="4df06-107">El icono **Enviar comentarios** en Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="4df06-107">The **Send Feedback** icon in Microsoft Edge DevTools</span></span>  
+   <span data-ttu-id="27664-107">El icono **Enviar comentarios** en Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="27664-107">The **Send Feedback** icon in Microsoft Edge DevTools</span></span>  
 :::image-end:::  
 
 <!-- links -->  
