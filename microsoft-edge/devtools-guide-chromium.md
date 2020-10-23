@@ -3,17 +3,17 @@ description: Familiarizarse con las herramientas para desarrolladores de Microso
 title: Herramientas para desarrolladores de Microsoft Edge (cromo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 50c4fa578ffa1738649496176cda2611625908b8
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 9f035df5bc80aa6a1df0464eb326e4185e2205d2
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125324"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133907"
 ---
 # Herramientas para desarrolladores de Microsoft Edge (cromo)  
 

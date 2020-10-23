@@ -3,16 +3,16 @@ description: Las últimas características experimentales de Microsoft Edge DevT
 title: Características experimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, experimento
-ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: b620388df309109e28ab8b9c010dfd448ca906f7
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124897"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133882"
 ---
 # Características experimentales  
 
@@ -31,7 +31,7 @@ Para activar las características experimentales \ (o desactivada \) en Microsof
 1.  En el lado izquierdo del panel **configuración** , elija la sección **experimentos** .  
     
     :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/experiments-devtools.msft.png":::
-       Lista de experimentos en la configuración de DevTools  
+       Lista de experimentos en la **configuración** de DevTools  
     :::image-end:::  
     
 1.  En la página **experimentos** , desplácese por la lista de todas las características experimentales disponibles y seleccione la casilla junto a cada característica que quiera probar.  
@@ -52,6 +52,7 @@ En las siguientes secciones, se describen las nuevas características experiment
 | [Habilitar webhint](#enable-webhint) | 85 o posterior |  
 | [Habilitar la consola de red](#enable-network-console) | 85 o posterior |  
 | [Visor de pedido de origen](#source-order-viewer) | 86 o posterior |  
+| [Habilitar el editor de métodos abreviados de teclado](#enable-keyboard-shortcut-editor) | 87 o posterior |  
 
 ### Emulación: modo de pantalla dual  
 
@@ -92,7 +93,7 @@ Para usar la [característica de expansión de pantalla multimedia de CSS][DualS
 
 Cuando se emula la [Surface Duo][SurfaceDevicesDuo] en una postura de pantalla doble en Microsoft Edge, los marinos \ (el espacio entre las dos pantallas \) se dibuja sobre el sitio web o la aplicación.  
 
-La pantalla emulada coincide con el modo en que tu sitio web \ (o aplicación \) se representa en la [aplicación Microsoft Edge Android][GooglePlayMicrosoftEdge] en [Surface Duo][SurfaceDevicesDuo].  Es posible que tengas que actualizar tu sitio web \ (o aplicación \) para que se muestre mejor a lo largo de la costura.  Para obtener más información sobre cómo adaptar su sitio web \ (o aplicación \) a la costura, desplácese hasta [Cómo trabajar con las costuras][DualScreenIntroductionHowWorkSeam] en la documentación de Surface Duo.  
+La pantalla emulada coincide con el modo en que tu sitio web \ (o aplicación \) se representa en la [aplicación Microsoft Edge Android][GooglePlayMicrosoftEdge] que se ejecuta en [Surface Duo][SurfaceDevicesDuo].  Es posible que tengas que actualizar tu sitio web \ (o aplicación \) para que se muestre mejor a lo largo de la costura.  Para obtener más información sobre cómo adaptar su sitio web \ (o aplicación \) a la costura, vaya a [Cómo trabajar con la costura][DualScreenIntroductionHowWorkSeam].  
 
 La [barra de herramientas del dispositivo][DevtoolsDeviceModeIndexSimulateMobileViewport] tiene características adicionales que te ayudan a probar el sitio web o la aplicación en varias posturas y orientaciones.  Elija **girar** \ ( ![ girar ][ImageRotateIcon] \) para girar la ventanilla a orientación horizontal. Combine la función con **span** \ ( ![ span ][ImageSpanIcon] \) para alternar entre las posturas de una pantalla o de doble cara o sin plegar.  Juntas, las características permiten probar el sitio web o la aplicación en las cuatro posturas y orientaciones posibles.  
 
@@ -105,7 +106,8 @@ El icono de **características de plataforma web experimental** \ ( ![ Experimen
 <!-- Commenting out until the icon issue is fixed in Edge Canary
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
 
-Estos son otros recursos adicionales que pueden ayudarte a mejorar tu sitio web \ (o aplicación \) para dispositivos de dos pantallas:
+Estos son otros recursos adicionales que pueden ayudarte a mejorar tu sitio web \ (o aplicación \) para dispositivos de dos pantallas.  
+
 *   Para obtener más información sobre el desarrollo web en dispositivos de doble pantalla, vaya a [experiencias Web en dos pantallas][DualScreenWebIndex].  
 *   Instala el [emulador Surface Duo][DualScreenAndroidUseEmulator].  Es diferente al emulador en Microsoft Edge, emula la Surface Duo con Android y se integra con [Android Studio][AndroidDeveloperStudio].  Para obtener más información, vaya a [obtener el SDK Surface Duo][DualScreenAndroidGetDuoSdk].  
 
@@ -116,7 +118,7 @@ Estos son otros recursos adicionales que pueden ayudarte a mejorar tu sitio web 
 
 ### Habilitar nuevas características de depuración de cuadrícula CSS  
 
-Esta característica experimental ofrece una serie de nuevas visualizaciones que te ayudarán a depurar diseños de cuadrícula CSS.  Para obtener una vista previa de las últimas características experimentales, [habilita este experimento](#turn-on-experimental-features) y recarga DevTools.  Este experimento está activado de forma predeterminada en Edge 87 y versiones posteriores.  
+Esta característica experimental ofrece una serie de nuevas visualizaciones que te ayudarán a depurar diseños de cuadrícula CSS.  Para obtener una vista previa de las últimas características experimentales, [habilita este experimento](#turn-on-experimental-features) y recarga DevTools.  Este experimento está activado de forma predeterminada en Microsoft Edge versión 87 o posterior.  
 
 #### Visualización de superposiciones de cuadrículas activadas con la herramienta inspeccionar  
 
@@ -128,29 +130,29 @@ La herramienta **inspeccionar** ofrece una manera rápida de identificar y visua
 
 #### Visualización de superposiciones de cuadrícula persistentes  
 
-En Edge 86 y versiones posteriores, la característica de cuadrícula de CSS experimental también ofrece la opción de habilitar las superposiciones de cuadrícula persistentes.  Las superposiciones persistentes ofrecen varias ventajas.  
+En Microsoft Edge versión 86 o posterior, la característica de cuadrícula de CSS experimental también ofrece la opción de habilitar las superposiciones de cuadrícula persistentes.  Las superposiciones persistentes ofrecen varias ventajas.  
 
 *   Las superposiciones persistentes permanecen visibles en la página mientras se desplaza, mueve el mouse y usan otras características de la DevTools.  
-*   Se pueden habilitar varias superposiciones persistentes al mismo tiempo, lo que le permite revisar numerosos diseños de cuadrícula a la vez.  
-*   Las superposiciones persistentes ofrecen muchas opciones de configuración, como ocultar o mostrar nombres de área de cuadrícula, espacios de la cuadrícula, tamaños de pista y más.  
+*   Se pueden habilitar varias superposiciones persistentes al mismo tiempo, lo que le permite revisar varias distribuciones de cuadrícula a la vez.  
+*   Las superposiciones persistentes ofrecen muchas opciones de configuración, como ocultar o mostrar nombres en el área de cuadrícula, lagunas de cuadrícula, tamaños de pista, etc.  
 
 Las dos formas de alternar una superposición de cuadrícula persistente.  
 
-*   Elija el rombo de **cuadrícula** junto a cualquier elemento de la cuadrícula que se muestra en el árbol DOM de la herramienta **elementos** .  
+*   Elija el icono de óvalo de **cuadrícula** junto a cualquier elemento de la cuadrícula que se muestra en el árbol DOM de la herramienta **elementos** .  
     
     :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/grid-adorner.msft.png":::
-       Rombo de cuadrícula en la herramienta elementos  
+       Icono de óvalo de cuadrícula en la herramienta **elementos**  
     :::image-end:::  
     
 *   Abra el nuevo panel de **diseño** que se encuentra en la herramienta elementos y seleccione la casilla junto a cada elemento de la cuadrícula que desee resaltar.  
     
     :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
-       Panel de diseño  
+       Panel de **diseño** en DevTools  
     :::image-end:::  
     
 #### Configurar superposiciones persistentes  
 
-El nuevo panel de **diseño** , ubicado en la herramienta **elementos** , junto a los **estilos** y las pestañas **calculadas** en Edge 86 y versiones posteriores, opciones de configuración de superficies para las superposiciones persistentes.  
+En Microsoft Edge versión 86 o posterior, el nuevo panel de **diseño** se encuentra en la herramienta **elementos** , junto a los **estilos** y las pestañas **calculadas** .  Las opciones de configuración de superficies del panel de **diseño** para las superposiciones persistentes.  
 
 :::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/experiments-grid.msft.png":::
    Característica de depuración de cuadrícula CSS  
@@ -177,7 +179,7 @@ Normalmente, las herramientas, como **los elementos** y la **red** , solo se pue
 *   PWA  
 *   otros problemas comunes de desarrollo web  
 
-El experimento [webhint][WebhintMain] muestra los comentarios de webhint en el panel [problemas][DevtoolsIssues] .  Seleccione un problema para mostrar la documentación de la solución y una lista de los recursos afectados de su sitio Web.  Seleccione un vínculo de recursos para abrir el panel de **redes**, **orígenes**o **elementos** correspondiente en DevTools.  
+El experimento [webhint][WebhintMain] muestra los comentarios de webhint en el panel [problemas][DevtoolsIssues] .  Elija un problema para mostrar la documentación de la solución y una lista de los recursos afectados de su sitio Web.  Elija un vínculo de recursos para abrir el panel de **redes**, **orígenes**o **elementos** correspondiente en DevTools.  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/experiments-webhint.msft.png":::
    Comentarios sobre webhint en el panel **problemas**  
@@ -211,7 +213,7 @@ Después de habilitar el experimento, asegúrate de reiniciar el DevTools.  Para
 
 1.  Abra el panel **elementos** .  
 1.  Abra el panel **accesibilidad** en el panel cajón \ (inferior \).  
-1.  En la sección **visor de pedido de origen** , active la casilla Mostrar el pedido de **origen** .  
+1.  En la sección **visor de pedido de origen** , seleccione la casilla Mostrar el pedido de **origen** .  
 1.  Resalte cualquier elemento HTML para mostrar una superposición que sea el orden en el origen de la página.  
 
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/experiments-source-order-viewer.msft.png":::
@@ -219,6 +221,42 @@ Después de habilitar el experimento, asegúrate de reiniciar el DevTools.  Para
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
+
+### Habilitar el editor de métodos abreviados de teclado
+
+Con el experimento **Habilitar editor de métodos abreviados de teclado** activado, ya puede personalizar los métodos abreviados de teclado para cualquier acción en el DevTools.  Siga los pasos que se indican a continuación para personalizar el método abreviado de teclado para una acción específica.  
+
+1.  [Abra DevTools][DevtoolsOpenMain].  
+1.  Abra [configuración][DevToolsCustomizeSettings].
+    *   Seleccione `Shift` + `?` .  
+1.  Vaya a la página de **accesos directos** .  
+1.  Elija la acción que desea personalizar.  
+1.  Elija el icono **Edit** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \).  
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       Elija la acción que desea personalizar en la página **accesos directos** de [configuración][DevToolsCustomizeSettings] .
+    :::image-end:::  
+    
+1.  En el teclado, seleccione las teclas que desea enlazar a la acción.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Seleccione las teclas que desea asignar a la acción.
+    :::image-end:::  
+    
+1.  Para guardar el nuevo método abreviado de teclado, seleccione la marca de verificación \ (![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\).
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Lista de experimentos en la configuración de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Elija el icono de marca de verificación para guardar el nuevo método abreviado de teclado
+    :::image-end:::  
+    
+1.  Seleccione el nuevo método abreviado de teclado para desencadenar la acción en el DevTools.  
+    
+En la página de **accesos directos** , el icono del **método abreviado de teclado personalizado** \ ( ![ CustomKeyboardShortcut ][ImageCustomKeyboardShortcutIcon] \) muestra los métodos abreviados de teclado que ha personalizado.  Para restablecer todos los métodos abreviados, elija **restaurar accesos directos predeterminados**.  
+
+Si está editando los métodos abreviados de teclado de una acción, para descartar los cambios, elija el icono X \ ( ![ XKeyboardShortcut ][ImageXKeyboardShortcutIcon] \).  Para quitar los métodos abreviados de una acción específica, elija el icono **eliminar acceso directo** \ ( ![ DeleteKeyboardShortcut ][ImageDeleteKeyboardShortcutIcon] \).  Para agregar varios métodos abreviados para una acción, elija **Agregar un acceso directo**.
+
+> [!NOTE]
+> Si un método abreviado de teclado está actualmente asignado a otra acción, no podrá guardarlo para una nueva acción.  Primero debe eliminar el método abreviado de teclado de la acción anterior y, a continuación, agregarla a la nueva acción.  
 
 ## Características experimentales anteriores  
 
@@ -247,6 +285,11 @@ Para proporcionar comentarios sobre experimentos con Microsoft Edge DevTools o s
 [ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
 [ImageSpanIcon]: ./media/span-dark-icon.msft.png  
 [ImageExperimentalApisIcon]: ./media/experimental-apis-dark-icon.msft.png  
+[ImageEditKeyboardShortcutIcon]: ./media/edit-keyboard-shortcut-icon.msft.png  
+[ImageCheckmarkKeyboardShortcutIcon]: ./media/checkmark-keyboard-shortcut-icon.msft.png  
+[ImageCustomKeyboardShortcutIcon]: ./media/custom-keyboard-shortcut-icon.msft.png  
+[ImageDeleteKeyboardShortcutIcon]: ./media/delete-keyboard-shortcut-icon.msft.png  
+[ImageXKeyboardShortcutIcon]: ./media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
 
@@ -256,7 +299,8 @@ Para proporcionar comentarios sobre experimentos con Microsoft Edge DevTools o s
 [DevtoolsIssues]: ./issues/index.md "Buscar y solucionar problemas con la herramienta de problemas de Microsoft Edge DevTools | Microsoft docs"  
 [DevToolsShortcuts]: ./shortcuts.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft docs"  
 [DevtoolsOpen]: ./open.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
-[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft docs"
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft docs"  
+[DevtoolsOpenMain]: ./open.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Experiencias Web en pantalla dual | Microsoft docs"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Obtén el emulador Surface Duo | Microsoft docs"  

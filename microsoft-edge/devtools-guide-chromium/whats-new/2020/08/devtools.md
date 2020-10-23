@@ -7,12 +7,12 @@ ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 74fb4e276547d9f653a5bcbdcab9c4406d09a81a
-ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
+ms.openlocfilehash: 0e759c18b5ef547bfd490f4d525930f92809a6a1
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104864"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133914"
 ---
 # Novedades de DevTools (Microsoft Edge 86)  
 
@@ -490,7 +490,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los [canales de Mi
 [CR772558]: https://crbug.com/772558 "DevTools: actualizar a la última versión de Lighthouse | Errores de cromo"  
 [CR807440]: https://crbug.com/807440 "Chrome se bloquea con grandes cantidades de SWs | Errores de cromo"  
 [CR997694]: https://crbug.com/997694 "Las solicitudes de XHR con el estado 302 no se muestran en el filtro \ "XHR \" en el panel red | Errores de cromo"  
-[CR1047356]: https://crbug.com/1047356 "Herramientas CSS/Flexbox/Table de CSS"  
+[CR1047356]: https://crbug.com/1047356 "Herramientas CSS/Flexbox/tables de CSS | Errores de cromo"  
 [CR1051466]: https://crbug.com/1051466 "Compatibilidad con COOP/depuración COEP en DevTools | Errores de cromo"  
 [CR1054281]: https://crbug.com/1054281 "Solicitud de característica: DevTools debe emular plegable y dispositivos de pantalla dual | Errores de cromo"  
 [CR1067184]: https://crbug.com/1067184 "Solicitud de característica: botón Borrar filtro en los elementos del & de red: entradas del filtro de estilo de > | Errores de cromo"  
