@@ -1,18 +1,18 @@
 ---
-description: Los fragmentos de código son pequeños scripts que puede crear y ejecutar en el panel orígenes de Microsoft Edge DevTools.  Puede acceder a ellos desde cualquier página y ejecutarlos.  Cuando se ejecuta un fragmento de código, se ejecuta desde el contexto de la página abierta en ese momento.
+description: Los fragmentos de código son pequeños scripts que puede crear y ejecutar en la herramienta de orígenes de Microsoft Edge DevTools.  Puede obtener acceso a los recursos de cualquier página web y ejecutarlos.  Al ejecutar un fragmento de código, se ejecuta desde el contexto de la página web abierta actualmente.
 title: Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e353da76a5c354d834b69708c8a8c9e8dbdf9934
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 3542243f7fa886865ced47d47991cd9b11001e2e
+ms.sourcegitcommit: 9dcaf598f3930bcfab9f93ff63463beb98274de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124743"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145123"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,58 +28,66 @@ ms.locfileid: "11124743"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools  
+# Ejecutar fragmentos de código de JavaScript en cualquier página web con Microsoft Edge DevTools  
 
-Si tienes que ejecutar el mismo código de forma repetida en la [consola][DevtoolsConsoleIndex] , considera la posibilidad de guardar el código como un fragmento de código.  Los fragmentos de código son scripts que se crean en el panel [fuentes][DevToolsSourcesPanel] .  Tienen acceso al contexto de JavaScript de la página y puede ejecutarlos en cualquier página.  Los fragmentos de código son una alternativa a [bookmarklets][WikiBookmarklet].  
-Firefox DevTools tiene una característica similar a la de los fragmentos de código denominado [Bloc][MDNScratchpad]dedo.  
+Si ejecutas el mismo código de la [consola][DevtoolsConsoleIndex] varias veces, te recomendamos que guardes el código como un fragmento de código.  Los fragmentos de código son scripts que se crean en la herramienta [orígenes][DevToolsSourcesTool] .  Los fragmentos de código tienen acceso al contexto de JavaScript de la página web y puede ejecutar fragmentos de código en cualquier página web.  La configuración de seguridad de la mayoría de las páginas web impide que se carguen otros scripts en los fragmentos.  Por ese motivo, debes incluir todo tu código en un archivo.  
 
-Por ejemplo, en la siguiente ilustración se muestra la Página principal de DevTools a la izquierda y algún código fuente de fragmento de código a la derecha.  
+Los fragmentos de código son una alternativa a [bookmarklets][WikiBookmarklet] con la diferencia de que los fragmentos de código solo se ejecutan en DevTools y no se limitan a la longitud permitida de una dirección URL.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
-   Aspecto de la página antes de ejecutar el fragmento de código  
-:::image-end:::  
+El uso de recortes es una excelente manera de cambiar algunas cosas en una página web de terceros.  Los cambios de código en los fragmentos se agregan a la página web actual y se ejecutan en el mismo contexto.  Para obtener más información sobre cómo cambiar el código existente de una página web, vaya a [invalidaciones][DevtoolsJavascriptOverrides].  
 
-El código fuente del fragmento de la ilustración anterior.  
+:::row:::
+   :::column span="":::
+      Por ejemplo, en la siguiente ilustración se muestra la Página principal de DevTools a la izquierda y algún código fuente de fragmento de código a la derecha.  
+      
+      :::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+         La Página Web antes de ejecutar el fragmento de código  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      El código fuente del fragmento de código de la Página Web antes de ejecutar el fragmento.  
+      
+      ```javascript
+      console.log('Hello, Snippets!');
+      document.body.innerHTML = '';
+      var p = document.createElement('p');
+      p.textContent = 'Hello, Snippets!';
+      document.body.appendChild(p);
+      ```
+   :::column-end:::
+:::row-end:::  
 
-```javascript
-console.log('Hello, Snippets!');
-document.body.innerHTML = '';
-var p = document.createElement('p');
-p.textContent = 'Hello, Snippets!';
-document.body.appendChild(p);
-```  
+En la siguiente ilustración, la página web aparece después de ejecutar el fragmento de código.  El **cajón de consola** emerge para mostrar el `Hello, Snippets!` mensaje que indica que el fragmento de código registra y el contenido de la página web cambia por completo.  
 
-En la siguiente ilustración, la página aparece después de ejecutar el fragmento de código.  El **cajón de consola** emerge para mostrar el `Hello, Snippets!` mensaje que indica que el recorte y el contenido de la página cambian por completo.  
-
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
-   Aspecto de la página después de ejecutar el fragmento de código  
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+   La página web después de ejecutar el fragmento de código  
 :::image-end:::  
 
 ## Abrir el panel de fragmentos  
 
 El panel de **fragmentos de código** muestra los fragmentos de código.  Cuando desee editar un fragmento de código, tendrá que abrirlo desde el panel **fragmentos de código** .  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    El panel de **fragmentos**  
 :::image-end:::  
 
 ### Abrir el panel de fragmentos de código con un mouse  
 
-1.  Haga clic en la pestaña **orígenes** para abrir el panel **fuentes** .  El panel de **páginas** suele abrirse de forma predeterminada.  
+1.  Elija la pestaña **orígenes** para abrir la herramienta **orígenes** .  El panel de **páginas** suele abrirse de forma predeterminada.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-page-pane.msft.png":::
-       Panel **orígenes** con el panel de **páginas** abierto a la izquierda  
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-page-pane.msft.png":::
+       La herramienta **orígenes** con el panel de **páginas** abierto a la izquierda  
     :::image-end:::  
     
-1.  Haga clic en la pestaña **fragmentos** para abrir el panel **fragmentos de código** .  Es posible que tenga que elegir **más pestañas** \ ( ![ más pestañas ][ImageMoreTabsIcon] \) para acceder a la opción **fragmentos** .  
+1.  Elija la pestaña **fragmentos** para abrir el panel **fragmentos de código** .  Es posible que tenga que elegir **más pestañas** \ ( ![ más pestañas ][ImageMoreTabsIcon] \) para acceder a la opción **fragmentos de código** .  
     
 ### Abrir el panel de fragmentos de código con el menú de comandos  
 
-1.  Centre el cursor en algún lugar dentro de DevTools.  
+1.  Centre el cursor en algún lugar de DevTools.  
 1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
-1.  Comience `Snippets` a escribir, elija **Mostrar fragmentos**y, a continuación, seleccione `Enter` para ejecutar el comando.  
+1.  Escriba `Snippets` , elija **Mostrar fragmentos**y, a continuación, seleccione `Enter` para ejecutar el comando.  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-show-snippets.msft.png":::
        El comando **Mostrar fragmentos**  
     :::image-end:::  
     
@@ -91,36 +99,36 @@ El panel de **fragmentos de código** muestra los fragmentos de código.  Cuando
 1.  Elija **nuevo fragmento de código**.  
 1.  Escriba un nombre para el fragmento de código y, después, seleccione `Enter` Guardar.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Nombrar un fragmento de código  
     :::image-end:::  
     
 ### Crear un fragmento de código mediante el menú de comandos  
 
-1.  Centre el cursor en algún lugar dentro de DevTools.  
+1.  Centre el cursor en algún lugar de DevTools.  
 1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
-1.  Comience `Snippet` a escribir, elija **crear nuevo fragmento de código**y, a continuación, seleccione `Enter` para ejecutar el comando.  
+1.  Escriba `Snippet` , elija **crear nuevo fragmento de código**y, a continuación, seleccione `Enter` para ejecutar el comando.  
     
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        Comando para crear un nuevo fragmento de código  
     :::image-end:::  
     
-Consulte cambiar [el nombre](#rename-snippets) de los fragmentos de código si desea asignar un nombre personalizado al nuevo fragmento de código.  
+Para cambiar el nombre de un nuevo fragmento con un nombre personalizado, navegue hasta [cambiar el nombre](#rename-snippets)de los fragmentos.  
 
 ## Editar fragmentos de código  
 
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
-1.  En el panel **fragmentos** de código, haga clic en el nombre del fragmento de código que desea editar para abrirlo en el **Editor de código**.  
+1.  En el panel **fragmentos** , elija el nombre del fragmento de código que desea editar.  Se abre en el **Editor de código**.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        El **Editor de código**  
     :::image-end:::  
     
 1.  Use el **Editor de código** para agregar JavaScript al fragmento de código.  
-1.  Cuando aparece un asterisco junto al nombre del fragmento de código, significa que tiene código no guardado. Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar.  
+1.  Cuando aparece un asterisco junto al nombre del fragmento, significa que tiene código no guardado.  Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
-       Un asterisco junto al nombre del fragmento de código, que indica código no guardado  
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+       Un asterisco junto al nombre del fragmento de código indica que el código no se ha guardado  
     :::image-end:::  
     
 ## Ejecutar fragmentos de código  
@@ -128,16 +136,16 @@ Consulte cambiar [el nombre](#rename-snippets) de los fragmentos de código si d
 ### Ejecutar un recorte desde el panel fuentes  
 
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
-1.  Haga clic en el nombre del fragmento de código que desea ejecutar.  El fragmento de código se abre en el **Editor de código**.  
+1.  Elija el nombre del fragmento de código que desea ejecutar.  El fragmento de código se abre en el **Editor de código**.  
 1.  Elija **Ejecutar fragmento** \ ( ![ Ejecutar miniprograma ][ImageRunSnippetIcon] \) o seleccione `Control` + `Enter` \ (Windows, Linux \) o `Command` + `Enter` \ (MacOS \).  
     
 ### Ejecutar un fragmento de código con el menú de comandos  
 
-1.  Centre el cursor en algún lugar dentro de DevTools.  
+1.  Centre el cursor en algún lugar de DevTools.  
 1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
 1.  Elimine el `>` carácter y escriba el `!` carácter seguido del nombre del fragmento de código que desea ejecutar.  
     
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Aspecto de la página antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-run-command.msft.png":::
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-run-command.msft.png":::
        Ejecución de un fragmento de código desde el **menú de comandos**  
     :::image-end:::  
     
@@ -146,12 +154,12 @@ Consulte cambiar [el nombre](#rename-snippets) de los fragmentos de código si d
 ## Cambiar el nombre de los fragmentos de código  
 
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
-1.  Haga clic con el botón derecho en el nombre del fragmento y seleccione **cambiar nombre**.  
+1.  Desplace el puntero sobre el nombre del fragmento de código, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **cambiar nombre**.  
     
 ## Eliminar fragmentos de código  
 
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
-1.  Haga clic con el botón derecho en el nombre del fragmento y elija **quitar**.  
+1.  Desplace el puntero sobre el nombre del fragmento de código, abra el menú contextual \ (haga clic con el botón derecho \) y elija **quitar**.  
     
 ## Contactar al equipo de Microsoft Edge DevTools  
 
@@ -165,10 +173,11 @@ Consulte cambiar [el nombre](#rename-snippets) de los fragmentos de código si d
 <!-- links -->  
 
 [DevtoolsConsoleIndex]: ../console/index.md "Descripción general de la consola | Microsoft docs"  
-[DevToolsSourcesPanel]: ../sources.md "Información general del panel orígenes | Microsoft docs"  
+[DevToolsSourcesTool]: ../sources.md "Información general de la herramienta orígenes | Microsoft docs"  
+[DevtoolsJavascriptOverrides]: ./overrides.md "Invalidaciones | Microsoft docs"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Bloc de la | MDN"  
-[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet, Wikipedia"  
+[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipedia"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
