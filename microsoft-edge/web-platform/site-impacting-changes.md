@@ -3,16 +3,16 @@ description: Proporciona un resumen de los cambios de alto impacto que pueden af
 title: Cambios que afectan a la compatibilidad del sitio que llegan a Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 11/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilidad, plataforma web
-ms.openlocfilehash: 49fbedb2fe979a52b771539c7ceedce8968c2fb4
-ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
+ms.openlocfilehash: bb4d67bf1ab6274a10a83ee750fa9db52ab85464
+ms.sourcegitcommit: 4497b399a6ddfa34163b7d3db4f76423d4da3c12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100291"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11156351"
 ---
 # Cambios que afectan a la compatibilidad del sitio que llegan a Microsoft Edge  
 
@@ -28,7 +28,7 @@ La web evoluciona constantemente para mejorar la experiencia del usuario, la seg
 | Bloquear descargas de contenido mixto | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, incluida la escala de tiempo planeada por Google para este cambio, vaya a la [entrada de blog seguridad de Google][GoogleBlogSecurity20200206].  La programación de lanzamiento de Microsoft sobre tipos de archivo para advertir o bloquear está planificada para una versión posterior a Chrome.  |  
 | Desuso AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, vaya a la [documentación del WebDev][WebDevAppCacheRemoval].  La programación de lanzamiento de Microsoft para la degradación está planificada para una versión posterior a Chrome.  Solicitar un [token de OriginTrial de AppCache][AppCacheOriginTrial] permite a los sitios continuar usando la API obsoleta hasta que es Edge V90.  |  
 | Eliminación de Adobe Flash | Edge V88  |  | Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, vaya a la [Guía básica de cromo de Adobe Flash][ChromiumFlashRoadmapSupportRemoved].  | 
-| Desactivar y quitar FTP | Edge V88  | Edge V87 | En Edge V87, la compatibilidad con FTP está desactivada de forma predeterminada.  En Edge V88, se elimina la compatibilidad con FTP.  Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, vaya a la entrada de estado de la [plataforma de cromo][ChromePlatformStatus6246151319715840].  |   
+| Desactivar y quitar FTP | Edge V88  | Versión beta de Edge V87 | En Edge beta V87, la compatibilidad con FTP está desactivada de forma predeterminada; en la V87 de borde estable, permanecerá habilitado.  En Edge V88, la compatibilidad con FTP se ha eliminado por completo.  Este cambio sucede en el proyecto de cromo, en el que se basa Microsoft Edge.  Para obtener más información, vaya a la entrada de estado de la [plataforma de cromo][ChromePlatformStatus6246151319715840].  Las empresas que dispongan de sitios que aún necesiten compatibilidad con FTP pueden seguir usando el FTP configurando el sitio para usar el [modo IE](https://docs.microsoft.com/deployedge/edge-ie-mode).  |   
 
 ##### Publicar comentarios  
 
@@ -64,3 +64,5 @@ La web evoluciona constantemente para mejorar la experiencia del usuario, la seg
 
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal/ "Desinstalación de AppCache"
 [AppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache OriginTrial token)"
+
+<!--todo:  cleanup links  -->  
