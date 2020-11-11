@@ -2,16 +2,16 @@
 description: Mover usuarios a Microsoft Edge desde Internet Explorer
 title: Mover usuarios a Microsoft Edge desde Internet Explorer
 author: MSEdgeTeam
-ms.date: 11/04/2020
+ms.date: 11/06/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilidad, plataforma web, Internet Explorer
-ms.openlocfilehash: 48f0f4121fb444d80603dcbb408397679c64753d
-ms.sourcegitcommit: 7b4441b7656c8317139650f904b70cc87797d37e
+ms.openlocfilehash: 2e1488359e405247e290ad8f6300c480a7e20af6
+ms.sourcegitcommit: 6ef48c8cda392c6bf8217cff5f696ac620d10739
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154338"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163211"
 ---
 # Mover usuarios a Microsoft Edge desde Internet Explorer 
 
@@ -20,8 +20,7 @@ Muchos sitios web modernos tienen diseños incompatibles con Internet Explorer \
 En este artículo se describen los siguientes conceptos:  
 
 *   La experiencia de usuario para el redireccionamiento  
-*   Cómo agregar su sitio web a la lista de compatibilidad de IE  
-*   Cómo quitar su sitio web de la lista de compatibilidad de IE  
+*   Cómo solicitar una actualización a la lista  
     
 ## ¿Por qué se agrega un sitio web a la lista de compatibilidad de IE?  
 
@@ -32,7 +31,7 @@ La lista de compatibilidad de IE solo agrega un sitio web cuando se producen las
     
 ## Actualizar la lista de compatibilidad de IE  
 
-La lista de compatibilidad de IE es un archivo XML en [Microsoft.com][MicrosoftOfficialHome].  La lista se actualiza regularmente en respuesta a las solicitudes de los programadores de los usuarios y sitios web para agregar o quitar sitios Web.  Las actualizaciones de la lista se descargan automáticamente en los equipos de los usuarios.  
+La lista de compatibilidad de IE es un archivo XML en [Microsoft.com][MicrosoftOfficialHome].  La lista se actualiza regularmente en respuesta a las solicitudes de los programadores de usuarios y sitios web para agregar o quitar sitios Web.  Las actualizaciones de la lista se descargan automáticamente en los equipos de los usuarios.  
 
 Envíe por correo electrónico la siguiente información a [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] para que su sitio web se agregue o se quite de la lista de compatibilidad de IE.    
 
@@ -42,9 +41,10 @@ Envíe por correo electrónico la siguiente información a [ietoedge@microsoft.c
 *   Nombre de la empresa  
 *   Dirección  
 *   Dirección del sitio web  
-<!--  *   Telephone number  -->  
-<!--  *   Target platform \(desktop, phone, Xbox\)  -->  
     
+> [!NOTE]
+> La lista de compatibilidad de IE está diseñada para trabajar solo con sitios públicos.  
+
 <!-- links -->  
 
 [MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Enviar un correo electrónico a ietoedge@microsoft.com"  
