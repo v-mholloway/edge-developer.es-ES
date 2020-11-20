@@ -3,17 +3,17 @@ description: Hospedar contenido web en tus aplicaciones Win32, .NET y UWP con el
 title: Control WebView2 de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge, Windows Forms, WinForms, WPF, .NET, WinUI, Project reunion
-ms.openlocfilehash: 412ff112ab0eed69b63316b2916f849a32196363
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 9e5cc3a26f07a11c9fd5c21d62ecafc3ed5103f4
+ms.sourcegitcommit: c619168deea44cdec8ebc80ef9ddf1d91d5f726d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120378"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182186"
 ---
 # Introducción a Microsoft Edge WebView2  
 
@@ -27,15 +27,15 @@ El control Microsoft Edge WebView2 permite incrustar tecnologías web \ (HTML, C
 
 Los programadores suelen decidir entre crear una aplicación web o una aplicación nativa.  La decisión depende del equilibrio entre el alcance y el potencial de energía.  Las aplicaciones web permiten un amplio alcance.  Como desarrollador web, puede volver a usar la mayoría, si no todo el código, en todas las plataformas.  Las aplicaciones nativas, sin embargo, usan las capacidades de toda la plataforma nativa.  
 
-:::image type="complex" source="./media/WebView2/webnative.png" alt-text="¿Qué es la vista previa?" lightbox="./media/WebView2/webnative.png":::
+:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web Native" lightbox="./media/WebView2/webnative.png":::
    Web Native  
 :::image-end:::  
 
 Las aplicaciones híbridas permiten a los desarrolladores disfrutar de lo mejor de ambos mundos.  Los programadores de aplicaciones híbridas se benefician de la Ubiquity y fortaleza de la plataforma web, así como de la potencia y capacidades completas de la plataforma nativa.  
 
-## Beneficios de WebView2   
+## Beneficios de WebView2  
 
-:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="¿Qué es la vista previa?" lightbox="./media/WebView2/webviewreasons.png":::
+:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Motivos de la vista en vista previa" lightbox="./media/WebView2/webviewreasons.png":::
    Motivos de la vista en vista previa  
 :::image-end:::  
 
@@ -97,22 +97,24 @@ El repositorio de [muestras de WebView2][GithubMicrosoftedgeWebview2samples] con
 
 Una disponibilidad general \ (GA \) o versión preliminar está disponible en los siguientes entornos de programación.  
 
-*   C/C++ \ (GA \) Win32
-*   .NET Framework 4.6.2 o versiones posteriores \ (versión preliminar \) 
-*   .NET Core 3,0 o posterior \ (versión preliminar \)
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (versión preliminar \)
+*   C/C++ \ (GA \) Win32  
+*   .NET Framework 4.6.2 o versiones posteriores \ (versión preliminar \)  
+*   .NET Core 3,0 o posterior \ (versión preliminar \)  
+*   [WinUI 3,0][UwpToolkitsWinui3] \ (versión preliminar \)  
 
 Puede ejecutar aplicaciones de WebView2 en las siguientes versiones de Windows.  
 
 *   Windows 10  
 *   Windows 8.1  
-*   Windows8  
-*   Windows7  
+*   Windows 7 \ * \ *  
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
-*   Windows Server 2012R2  
-*   Windows Server 2008 R2  
+*   Windows Server2012R2  
+*   Windows Server 2008 R2 \ * \ *  
+
+> [!IMPORTANT]
+> \ * \ * WebView2 soporte técnico para Windows 7 y Windows Server 2008 R2 tiene el mismo ciclo de soporte que Microsoft Edge.  Para obtener más información, vaya a [sistemas operativos compatibles con Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].  
 
 ## Pasos siguientes  
 
@@ -140,7 +142,7 @@ Para obtener más información sobre cómo crear e implementar aplicaciones de W
 [Webview2ConceptsSecurity]: ./concepts/security.md "Procedimientos recomendados para desarrollar aplicaciones de WebView2 seguras | Microsoft docs"  
 [Webview2ConceptsUserdatafolder]: ./concepts/userdatafolder.md "Administración de la carpeta datos de usuario | Microsoft docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Comprender las versiones de SDK de WebView2 | Microsoft docs"  
-[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Introducción a WebView2 | Microsoft docs"   
+[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Introducción a WebView2 | Microsoft docs"  
 [Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Introducción a WebView2 en las aplicaciones de Windows Forms (versión preliminar) | Microsoft docs"  
 [Webview2GettingstartedWinui]: ./gettingstarted/winui.md "Introducción a WebView2 en WinUI3 (vista previa) | Microsoft docs"  
 [Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "Introducción a WebView2 en WPF (vista previa) | Microsoft docs"  
@@ -148,7 +150,9 @@ Para obtener más información sobre cómo crear e implementar aplicaciones de W
 [Webview2HowtoWebdriver]: ./howto/webdriver.md "Automatizar y probar WebView2 con el controlador Microsoft Edge | Microsoft docs"  
 [Webview2Releasenotes]: ./releasenotes.md "Notas de la versión para el SDK de WebView2 | Microsoft docs"  
 
-[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Biblioteca de interfaces de usuario de Windows 3 Preview 2 (2020 de julio) | Microsoft docs"  
+[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "Biblioteca de interfaces de usuario de Windows 3 Preview 2 (2020 de julio) | Microsoft docs"  
+
+[DeployedgeMicrosoftEdgeSupportedOS]: /deployedge/microsoft-edge-supported-operating-systems "Sistemas operativos compatibles con Microsoft Edge | Microsoft docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentarios de WebView: MicrosoftEdge/WebViewFeedback | GitHub" 
