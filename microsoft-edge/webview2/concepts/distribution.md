@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: 89e53c43c3550d0a7a3707381cc4c76be111db28
-ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
+ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182296"
+ms.locfileid: "11182412"
 ---
 # Distribución de aplicaciones con WebView2  
 
@@ -125,14 +125,12 @@ La web está evolucionando constantemente.  El tiempo de ejecución de WebView2 
 
 Canales de Microsoft Edge no stable \ (beta/dev/Canarias \) brindan una ojeada a lo que viene próximamente en WebView2 Runtime.  Al igual que en el desarrollo de sitios web para Microsoft Edge, deberías probar tu aplicación de WebView2 regularmente.  Prueba tu aplicación de WebView2 en uno de los canales no estables y actualiza la aplicación o [informa de problemas][GithubMicrosoftedgeWebviewfeedback] si surgen problemas. Por lo general, el desarrollo y la versión beta son los canales recomendados.  Para ayudarle a decidir cuál es el canal adecuado, vaya a [información general de los canales de Microsoft Edge][DeployEdgeMicrosoftEdgeChannels].  Puede descargar el [canal de Microsoft Edge no estable][DownloadNonstableEdge] en su entorno de prueba, y usar `regkey` variables de entorno o para indicar la preferencia de canal para su aplicación de pruebas.  Para obtener más información, vaya a [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  También puede usar [Webdriver][HowtoWebdriver] para automatizar las pruebas de WebView2.
 
-## Modo de distribución de versiones fijas  
-
-> [!NOTE]
-> El modo de distribución de la versión corregido está en versión preliminar pública.  
-
-El modo de distribución de la versión corregido ya tenía el nombre trae a tu cuenta.  
+## Modo de distribución de versiones fijas   
 
 Para entornos restringidos con requisitos de compatibilidad estrictos, considere la posibilidad de usar el modo de distribución de versiones fijas.  Elija y empaquete una versión específica del tiempo de ejecución de WebView2 usando el modo de distribución de versiones fijas.  Puede especificar los intervalos de actualizaciones de tiempo de ejecución para la aplicación.  El modo de distribución de versiones fijo no recibe actualizaciones automáticas. Planear la actualización de la aplicación y el motor en tiempo de ejecución.  
+
+> [!NOTE] 
+> El modo de distribución de versiones fijas se llamaba previamente.  
 
 Para usar el modo de versión corregido, complete las siguientes acciones:
 

@@ -3,21 +3,21 @@ description: Guía de introducción a WebView2 para aplicaciones de WPF
 title: Introducción a WebView2 para las aplicaciones de WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones WPF, WPF, Edge, CoreWebView2, control de explorador, código HTML de Edge, introducción, .NET
-ms.openlocfilehash: 9977fad5f0462372eaa863fd740cbba6c92f6354
-ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
+ms.openlocfilehash: e928dae0aa63f15ca5fa21860c83fa5529e905df
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162635"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182377"
 ---
-# Introducción a WebView2 en WPF (vista previa)
+# Introducción a WebView2 en WPF
 
-En este artículo, empiece a crear su primera aplicación de WebView2 y obtenga información sobre las características principales de [WebView2 (versión preliminar)](../index.md).  Para obtener más información sobre las API individuales, consulta referencia de la [API](/dotnet/api/microsoft.web.webview2.wpf).  
+En este artículo, empiece a crear su primera aplicación de WebView2 y conozca las características principales de [WebView2](../index.md).  Para obtener más información sobre las API individuales, consulta referencia de la [API](/dotnet/api/microsoft.web.webview2.wpf).  
 
 ## Requisitos previos  
 
@@ -61,19 +61,16 @@ Empiece con un proyecto de escritorio básico que contenga una única ventana pr
     
 ## Paso 2: instalar el SDK de WebView2  
 
-A continuación, agregue el SDK de WebView2 al proyecto.  Para obtener la vista previa, instala el SDK de WebView2 con Nuget.  
+A continuación, agregue el SDK de WebView2 al proyecto con NuGet.  
 
 1.  Abra el menú contextual en el proyecto \ (haga clic con el botón derecho \) y seleccione **administrar paquetes NuGet...**.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
-       Nuget
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
+       NuGet
     :::image-end:::
     
 1.  Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  
-
-    > [!IMPORTANT]
-    > Asegúrese de que marca la opción **incluir**versión, seleccione un paquete de versión preliminar en **versión**y, a continuación, elija **instalar**.  
-  
+   
      ![Nuget](./media/installnuget.PNG)
     
     Ya está todo listo para empezar a desarrollar aplicaciones con la API de WebView2.  Seleccione `F5` para compilar y ejecutar el proyecto.  El proyecto en ejecución muestra una ventana vacía.  
@@ -189,7 +186,7 @@ Agregue una barra de direcciones a la aplicación para permitir a los usuarios q
     
 ## Paso 5: eventos de navegación  
 
-La aplicación que hospeda los controles WebView2 escucha los siguientes eventos provocados por el control WebView2 durante la navegación a páginas Web.  
+Durante la navegación de páginas web, el control WebView2 desencadena eventos. La aplicación que hospeda los controles WebView2 escucha los siguientes eventos.  
 
 *   `NavigationStarting`  
 *   `SourceChanged`  
@@ -238,7 +235,7 @@ Pulse `F5` para compilar y ejecutar el proyecto.  Confirme que, al navegar a un 
 
 ## Paso 6: scripting  
 
-Puede usar aplicaciones host para inyectar código JavaScript en controles WebView2 en tiempo de ejecución.  El JavaScript insertado se aplica a todos los nuevos documentos de nivel superior y a los fotogramas secundarios hasta que se quite el JavaScript.  El código JavaScript insertado se ejecuta después de la creación del objeto global y antes de que se ejecute cualquier otro script incluido en el documento HTML.  
+Puede usar aplicaciones host para inyectar código JavaScript en controles WebView2 en tiempo de ejecución.  El JavaScript insertado se aplica a todos los nuevos documentos de nivel superior y a cualquier fotograma secundario, hasta que se quite el JavaScript.  El código JavaScript insertado se ejecuta después de la creación del objeto global y antes de los scripts incluidos en el documento HTML.  
 
 Puede usar scripting para avisar al usuario cuando navegue a un sitio que no es HTTPS.  Modifique la `EnsureHttps` función para que inserte el script en el contenido web con el método [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) .  
 
@@ -254,7 +251,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-Pulse `F5` para compilar y ejecutar el proyecto.  Confirme que la aplicación muestra una alerta cuando se desplaza a un sitio que no usa HTTPS.  
+Pulse `F5` para compilar y ejecutar el proyecto.  Confirme que la aplicación muestra una alerta cuando navegue a un sitio que no usa HTTPS.  
 
 :::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
    HTTPS
@@ -287,7 +284,7 @@ En el proyecto, cuando el control WebView2 navega a una dirección URL, muestra 
     }
     ```  
     
-1.  Después de inicializar **CoreWebView2** , registra un controlador de eventos para responder `WebMessageReceived` .  En la actualización de **MainWindow.Xaml.CS** `InitializeAsync` y agregue `UpdateAddressBar` con el siguiente fragmento de código.  
+1.  Después de inicializar **CoreWebView2** , registra un controlador de eventos para responder `WebMessageReceived` .  En **MainWindow.Xaml.CS**, actualice `InitializeAsync` y agregue `UpdateAddressBar` con el siguiente fragmento de código.  
     
     ```csharp
     async void InitializeAsync()
@@ -322,7 +319,7 @@ En el proyecto, cuando el control WebView2 navega a una dirección URL, muestra 
     }
     ```  
     
-    Pulse `F5` para compilar y ejecutar la aplicación.  Ahora la barra de direcciones muestra el URI en la vista de vista previa y, al navegar correctamente a un nuevo URI, la WebView alerta al usuario del URI que se muestra en la vista de vista en WebView.  
+    Pulse `F5` para compilar y ejecutar la aplicación.  Ahora, la barra de direcciones muestra el URI en el control WebView2. Cuando navegue correctamente a un nuevo URI, el control WebView2 alerta al usuario del URI que se muestra en el control de WebView2.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="Direcciones":::
        Direcciones

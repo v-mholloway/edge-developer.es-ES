@@ -3,21 +3,21 @@ description: Guía de introducción a WebView2 para aplicaciones de WinForms
 title: Introducción a WebView2 para aplicaciones de WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, aplicaciones de WinForms, WinForms, Edge, CoreWebView2, control de explorador, ASP.net de Edge, introducción, introducción, .NET, Windows Forms
-ms.openlocfilehash: c4092c545c24bf09667a5090251b51b96259efc2
-ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
+ms.openlocfilehash: f4768c38f293d1931e625136ea7068a61176541e
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162637"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182391"
 ---
-# Introducción a WebView2 en Windows Forms (versión preliminar)  
+# Introducción a WebView2 en Windows Forms
 
-En este artículo, empiece a crear su primera aplicación de WebView2 y obtenga información sobre las características principales de [WebView2 (versión preliminar)](/microsoft-edge/webview2/index).  Para obtener más información sobre las API individuales, consulta referencia de la [API](/dotnet/api/microsoft.web.webview2.winforms).  
+En este artículo, empiece a crear su primera aplicación de WebView2 y conozca las características principales de [WebView2](/microsoft-edge/webview2/index).  Para obtener más información sobre las API individuales, consulta referencia de la [API](/dotnet/api/microsoft.web.webview2.winforms).  
 
 ## Requisitos previos  
 
@@ -47,7 +47,7 @@ Empiece con un proyecto de escritorio básico que contenga una única ventana pr
 
 ## Paso 2: instalar el SDK de WebView2
 
-A continuación, agregue el SDK de WebView2 al proyecto.  Para obtener la vista previa, instala el SDK de WebView2 con Nuget.  
+A continuación, agregue el SDK de WebView2 al proyecto con NuGet.
 
 1. Abra el menú contextual en el proyecto \ (haga clic con el botón derecho \) y elija **administrar paquetes NuGet...**.  
 
@@ -55,9 +55,6 @@ A continuación, agregue el SDK de WebView2 al proyecto.  Para obtener la vista 
        Administrar paquetes NuGet :::image-end:::
 
 1. Escriba `Microsoft.Web.WebView2` en la barra de búsqueda.  Seleccione **Microsoft. Web. WebView2** en los resultados de la búsqueda.  
-
-    > [!IMPORTANT]
-    > Asegúrese de que marca la opción **incluir**versión, seleccione un paquete de versión preliminar en **versión**y, a continuación, elija **instalar**.  
 
     ![Nuget](./media/installnuget.png)
 
@@ -96,11 +93,11 @@ Seleccione `F5` para compilar y ejecutar el proyecto.  Confirme que se muestra e
 
 Agregue algunos controles más a sus formularios Windows Forms desde el cuadro de herramientas y, a continuación, administre los eventos de tamaño de ventana correctamente.
 
-1. En el **Diseñador de Windows Forms** , abra el **cuadro de herramientas**
+1. En el **Diseñador de Windows Forms**, abra el **cuadro de herramientas**
 1. Arrastre y coloque un **cuadro de texto** en la aplicación de formularios Windows Forms. Asigne un nombre al **cuadro** `addressBar` de texto en la **pestaña propiedades**.
 1. Arrastre y coloque un **botón** en la aplicación Windows Forms. Cambie el texto del **botón** a `Go!` y asígnele el nombre **Button** `goButton` de la **pestaña propiedades**.
 
-    La aplicación debe tener un aspecto similar al siguiente en el diseñador:
+    La aplicación debe ser similar a la de la siguiente imagen en el diseñador.
     
     ![diseñador](./media/winforms-designer.png)
 
@@ -147,7 +144,7 @@ Agregue una barra de direcciones a la aplicación para permitir a los usuarios q
     }
     ```  
 
-Seleccione `F5` para compilar y ejecutar el proyecto.  Escriba una nueva dirección URL en la barra de direcciones y haga clic en **ir**.  Por ejemplo, escriba `https://www.bing.com` .  Confirme que el control WebView2 se desplaza hasta la dirección URL.  
+Seleccione `F5` para compilar y ejecutar el proyecto.  Escriba una nueva dirección URL en la barra de direcciones y seleccione **ir**.  Por ejemplo, escriba `https://www.bing.com` .  Confirme que el control WebView2 se desplaza hasta la dirección URL.  
 
 > [!NOTE]
 > Asegúrese de que se escribe una dirección URL completa en la barra de direcciones. `ArgumentException`Se inicia una si la dirección URL no comienza con `http://` o `https://`
@@ -156,7 +153,7 @@ Seleccione `F5` para compilar y ejecutar el proyecto.  Escriba una nueva direcci
 
 ## Paso 6: eventos de navegación  
 
-La aplicación que hospeda los controles WebView2 escucha los siguientes eventos provocados por el control WebView2 durante la navegación a páginas Web.  
+Durante la navegación de páginas web, el control WebView2 desencadena eventos. La aplicación que hospeda los controles WebView2 escucha los siguientes eventos.  
 
 * `NavigationStarting`  
 * `SourceChanged`  
@@ -207,7 +204,7 @@ Seleccione `F5` para compilar y ejecutar el proyecto. Confirme que, al navegar a
 
 ## Paso 7: scripting  
 
-Puede usar aplicaciones host para inyectar código JavaScript en controles WebView2 en tiempo de ejecución.  El JavaScript insertado se aplica a todos los nuevos documentos de nivel superior y a los fotogramas secundarios hasta que se quite el JavaScript.  El código JavaScript insertado se ejecuta después de la creación del objeto global y antes de que se ejecute cualquier otro script incluido en el documento HTML.  
+Puede usar aplicaciones host para inyectar código JavaScript en controles WebView2 en tiempo de ejecución.  El JavaScript insertado se aplica a todos los nuevos documentos de nivel superior y a cualquier fotograma secundario, hasta que se quite el JavaScript.  El código JavaScript insertado se ejecuta después de la creación del objeto global y antes de los scripts incluidos en el documento HTML.  
 
 Puede usar scripting para avisar al usuario cuando navegue a un sitio que no es HTTPS.  Modifique la `EnsureHttps` función para que inserte el script en el contenido web con el método [ExecuteScriptAsync]() .  
 
@@ -223,7 +220,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-Seleccione `F5` para compilar y ejecutar el proyecto.  Confirme que la aplicación muestra una alerta cuando se desplaza a un sitio que no usa HTTPS.  
+Seleccione `F5` para compilar y ejecutar el proyecto.  Confirme que la aplicación muestra una alerta cuando navegue a un sitio que no usa HTTPS.  
 
 ![https](./media/winforms-https.png)
 
@@ -255,7 +252,7 @@ En el proyecto, cuando el control WebView2 navega a una dirección URL, muestra 
     }
     ```  
 
-1. Después de inicializar **CoreWebView2** , registra un controlador de eventos para responder `WebMessageReceived` .  En `Form1.cs` Update `InitializeAsync` y Add, `UpdateAddressBar` use el siguiente fragmento de código.  
+1. Después de inicializar **CoreWebView2** , registra un controlador de eventos para responder `WebMessageReceived` .  En `Form1.cs` , actualice `InitializeAsync` y agregue `UpdateAddressBar` con el siguiente fragmento de código.  
 
     ```csharp
     async void InitializeAsync()
@@ -298,9 +295,11 @@ Seleccione `F5` para compilar y ejecutar la aplicación.  Confirme que la barra 
 
 ## Pasos siguientes 
 
-* Desproteja el [repositorio de WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) para obtener un ejemplo completo de las capacidades de WebView2's
-* [Consulta la referencia](/dotnet/api/microsoft.web.webview2.winforms.webview2) de la API para obtener información más detallada sobre nuestras API
-* Desproteja una lista de [recursos de WebView2](../index.md#next-steps) para obtener más información sobre WebView2
+Para continuar aprendiendo más acerca de WebView2, vaya a los siguientes recursos.
+
+* El [repositorio de WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) tiene un ejemplo completo de las capacidades de WebView2's.
+* La [referencia](/dotnet/api/microsoft.web.webview2.winforms.webview2) de la API para obtener información más detallada sobre nuestras API.
+* [Recursos de WebView2](../index.md#next-steps).
 
 
 ## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  

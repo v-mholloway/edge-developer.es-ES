@@ -3,21 +3,21 @@ description: Más información sobre lo que viene a continuación para WebView2
 title: Guía básica para la vista de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: 52a2f6d9ef3447955554a5507c3eaab39e6b6a9e
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120371"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182363"
 ---
 # Guía básica de WebView2 de Microsoft Edge  
 
-##### Última actualización: 2020 de octubre  
+##### Última actualización: 2020 de noviembre  
 
 El control WebView2 permite a los programadores incrustar tecnologías web en sus aplicaciones nativas.  En la siguiente página se describe la guía básica para WebView2.  
 
@@ -38,7 +38,7 @@ El equipo de WebView2 está planeando los siguientes esfuerzos importantes para 
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Versión fija  
+      Versión corregida  
    :::column-end:::
    :::column span="2":::
       *   Cuarto trimestre de 2020  
@@ -61,7 +61,7 @@ El [modelo de distribución de hoja perenne][ConceptDistributionEvergreenModel] 
 
 ## Versión fija  
 
-El [modelo de distribución de versiones fijo][ConceptsDistributionFixedVersionModel] le permite empaquetar los archivos binarios de Microsoft Edge dentro de su aplicación nativa.  Actualmente se encuentra en vista previa y destinada a GA Q4 2020.  
+El [modelo de distribución de versiones fijo][ConceptsDistributionFixedVersionModel] le permite empaquetar los archivos binarios de Microsoft Edge dentro de su aplicación nativa.  La versión corregida alcanzó la disponibilidad general \ (GA \).  
 
 ## Disponibilidad general  
 
@@ -71,11 +71,11 @@ El SDK Win32 C/C++ ha llegado a GA.
 
 ### .NET  
 
-El SDK de .NET contiene el SDK de Win32 C/C++.  Se espera que el SDK de .NET esté disponible poco después de Win32 C/C++ GA en el cuarto trimestre de 2020.  
+El SDK de .NET ha llegado a GA. 
 
 ### WinUI 3.0  
 
-Puedes acceder a WebView2 en tus aplicaciones para UWP usando la [interfaz de usuario de 3,0][UwpToolkitsWinui3Index], actualmente en Alpha.  Para obtener más información sobre cómo mantenerse al día, consulte [Guía básica de la biblioteca de Windows UI][GithubMicrosoftUiXamlRoadmap].  
+Puede acceder a WebView2 en sus aplicaciones para UWP usando la [interfaz de usuario de 3,0][UwpToolkitsWinui3Index], que se encuentra en Alpha.  Para obtener más información sobre cómo mantenerse al día, consulte [Guía básica de la biblioteca de Windows UI][GithubMicrosoftUiXamlRoadmap].  
 
 <!-- links -->  
 
