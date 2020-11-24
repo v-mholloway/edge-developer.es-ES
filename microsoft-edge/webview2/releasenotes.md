@@ -3,17 +3,17 @@ description: Notas de la versión para el SDK de Microsoft Edge WebView2
 title: Notas de la versión de Microsoft Edge WebView2 para Win32, WPF y WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 70b405666e9ba916501285ff488a749b4fa043c0
-ms.sourcegitcommit: 2f7673090fbab7016f912940468fc07f1a6fe607
+ms.openlocfilehash: f0be7602bd5fe5cf8ede5158b12cb0b957247c20
+ms.sourcegitcommit: 2d2cef9046f85ae731f8aa80b565546fcfe72e90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182431"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "11182845"
 ---
 # Notas de la versión para el SDK de WebView2  
 
@@ -22,45 +22,43 @@ El equipo de WebView2 actualiza el [SDK de WebView2][NuGetGallery] en una cadenc
 > [!NOTE]
 > Vuelve a compilar la aplicación después de actualizar el paquete de NuGet.  
 
-<!-- 
-## 1.0.702-prerelease  
+## 1.0.707-versión preliminar  
 
-Release Date: November 20, 2020  
+Fecha de lanzamiento: 23 de noviembre de 2020  
 
-[NuGet package][NuGetGallery1.0.702-prerelease] \| minimum Microsoft Edge version 88.0.702.0.  
+[Paquete NuGet][NuGetGallery1.0.707-prerelease] \ | versión mínima de Microsoft Edge 89.0.707.0.  
 
 #### General  
 
-###### Features  
+###### Características  
 
-*   Added [WebView2 Group Policies][DeployedgeMicrosoftEdgeWebviewPolicies].  For more information on recommended practices, navigate to [group policies for WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2].  
+*   Se agregaron [directivas de grupo WebView2][DeployedgeMicrosoftEdgeWebviewPolicies].  Para obtener más información sobre las prácticas recomendadas, vaya a [directivas de grupo para WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2].  
 *   > [!IMPORTANT]
-    > **Breaking Change**:  Deprecated the old registry location.  
+    > **Cambio importante**: desuso de la ubicación del registro anterior.  
     > 
     > ```text
     > {Root}\Software\Policies\Microsoft\EmbeddedBrowserWebView\LoaderOverride\{AppId}
     > ```  
      
-*   Added support for [Drag & Drop][ReferenceWin32Icorewebview2experimentalcompositioncontroller3] within WebView2.  
-*   Added APIs to handle DPI support.  
-    *   Added [RasterizationScale][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210702PrereleaseGetRasterizationscale] property to change the DPI scale for WebView content and UI popups, and associated [RasterizationScaleChanged][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210702PrereleaseAddRasterizationscalechanged] event.  
-    *   Added [ShouldDetectMonitorScaleChanges][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210702PrereleaseGetShouldDetectMonitorScaleChanges] property to automatically update `RasterizationScale` property if needed.  
-    *   Added [BoundsMode property][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210702PrereleaseGetBoundsMode] to specify that the bounds are logic pixels and allow WebView to use the `RasterizationScale` for WebView2 pixel display, and have WebView apply the `RasterizationScale` to the `Bounds` to get the physical size.
-*   Updated `NewWindowRequested` event to handle `Ctrl`+`click` and `Shift`+`click`.  \([\#168][GithubMicrosoftedgeWebviewfeedbackIssue168] and [\#371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
+*   Se ha agregado compatibilidad con [arrastrar & colocar][ReferenceWin32Icorewebview2experimentalcompositioncontroller3] dentro de WebView2.  
+*   API agregadas para admitir la compatibilidad con DPI.  
+    *   Se ha agregado la propiedad [RasterizationScale][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetRasterizationscale] para cambiar la escala de PPP del contenido de WebView y los elementos emergentes de interfaz de usuario y el evento asociado [RasterizationScaleChanged][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseAddRasterizationscalechanged] .  
+    *   Se ha agregado la propiedad [ShouldDetectMonitorScaleChanges][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetShouldDetectMonitorScaleChanges] para actualizar automáticamente la `RasterizationScale` propiedad si es necesario.  
+    *   Se ha agregado la [propiedad BoundsMode][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetBoundsMode] para especificar que los límites son píxeles lógicos y permitir que la vista en pantalla use la `RasterizationScale` pantalla para WebView2 píxeles, y hacer que la vista de pantalla aplique el `RasterizationScale` a `Bounds` para obtener el tamaño físico.
+*   Evento Updated `NewWindowRequested` para controlar `Ctrl` + `click` y `Shift` + `click` .  \ ([\ #168][GithubMicrosoftedgeWebviewfeedbackIssue168] y [\ #371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
 
 #### .NET  
 
-###### Features  
+###### Características  
 
-* Enabled WinForms designer in .NET Core 3.1+ and .NET 5.  
-* Improved .NET cookie management.  \([\#611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+* Diseñador de WinForms habilitado en .NET Core 3.1 + y .NET 5.  
+* Administración de cookies de .NET mejorada.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
 
-###### Bug fixes
+###### Correcciones de errores
 
-*   Added [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed] event to support AcceleratorKey press in WebView2.  \([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
-*   Removed unnecessary files from being output to WebView2 folders.  \([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
-*   Improved host object API.  \([\#335][GithubMicrosoftedgeWebviewfeedbackIssue335] and [\#525][GithubMicrosoftedgeWebviewfeedbackIssue525]\).  
--->  
+*   Se ha agregado el evento [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed] para admitir AcceleratorKey Presione en WebView2.  \ ([\ #288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
+*   Elimine los archivos innecesarios de la salida a las carpetas WebView2.  \ ([\ #461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
+*   API de objeto host mejorada.  \ ([\ #335][GithubMicrosoftedgeWebviewfeedbackIssue335] y [\ #525][GithubMicrosoftedgeWebviewfeedbackIssue525]\).  
 
 ## 1.0.664.37  
 
@@ -441,10 +439,10 @@ Versión inicial de Developer Preview.
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions09488]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions-Globals | Microsoft docs"  
 [ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring09488]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString-Globals | Microsoft docs"  
 
-[ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210702PrereleaseAddRasterizationscalechanged]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#add_rasterizationscalechanged "Add_rasterizationscalechanged-icorewebview2experimentalcontroller | Microsoft docs"  
-[ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210702PrereleaseGetBoundsMode]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#get_BoundsMode "Get_BoundsMode-icorewebview2experimentalcontroller | Microsoft docs"  
-[ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210702PrereleaseGetRasterizationscale]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#get_rasterizationscale "Get_rasterizationscale-icorewebview2experimentalcontroller | Microsoft docs"  
-[ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210702PrereleaseGetShouldDetectMonitorScaleChanges]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#get_ShouldDetectMonitorScaleChanges "Get_ShouldDetectMonitorScaleChanges-icorewebview2experimentalcontroller | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseAddRasterizationscalechanged]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.707-prerelease&preserve-view=true#add_rasterizationscalechanged "interfaz de add_RasterizationScaleChanged ICoreWebView2ExperimentalController | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetBoundsMode]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.707-prerelease&preserve-view=true#get_boundsmode "interfaz de get_BoundsMode ICoreWebView2ExperimentalController | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetRasterizationscale]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.707-prerelease&preserve-view=true#get_rasterizationscale "interfaz de get_RasterizationScale ICoreWebView2ExperimentalController | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210707PrereleaseGetShouldDetectMonitorScaleChanges]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.707-prerelease&preserve-view=true#get_shoulddetectmonitorscalechanges "interfaz de get_ShouldDetectMonitorScaleChanges ICoreWebView2ExperimentalController | Microsoft docs"  
 
 [DotnetApiMicrosoftWebWebview2Core]: /dotnet/api/microsoft.web.webview2.core "Espacio de nombres Microsoft. Web. WebView2. Core | Microsoft docs"  
 [DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Espacio de nombres Microsoft. Web. WebView2. WPF | Microsoft docs"  
@@ -496,7 +494,7 @@ Versión inicial de Developer Preview.
 [ReferenceWin32Icorewebview2experimentalwebresourceresponseview10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponseview?view=webview2-1.0.674-prerelease&preserve-view=true "interfaz ICoreWebView2ExperimentalWebResourceResponseView | Microsoft docs"  
 [ReferenceWin32Icorewebview2experimentalwebresourceresponseviewGetcontent10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponseview?view=webview2-1.0.674-prerelease&preserve-view=true#getcontent "GetContent-interface ICoreWebView2ExperimentalWebResourceResponseView | Microsoft docs"  
 
-[ReferenceWin32Icorewebview2experimentalcompositioncontroller3]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller3?view=webview2-1.0.702-prerelease&preserve-view=true "interfaz ICoreWebView2ExperimentalCompositionController3 | Microsoft docs"  
+[ReferenceWin32Icorewebview2experimentalcompositioncontroller3]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller3?view=webview2-1.0.707-prerelease&preserve-view=true "interfaz ICoreWebView2ExperimentalCompositionController3 | Microsoft docs"  
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge-directivas | Microsoft docs"  
 [DeployedgeMicrosoftEdgeWebviewPolicies]: /deployedge/microsoft-edge-webview-policies "Microsoft Edge WebView2-Policies | Microsoft docs"  
@@ -583,6 +581,6 @@ Versión inicial de Developer Preview.
 [NuGetGallery1.0.664.37]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.37 "Galería de NuGet | Microsoft. Web. WebView2 v 1.0.664.37"
 [NuGetGallery0.9.628-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "Galería de NuGet | Versión preliminar de Microsoft. Web. WebView2 v 0.9.628"  
 [NuGetGallery1.0.674-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "Galería de NuGet | Versión preliminar de Microsoft. Web. WebView2 v 1.0.674"  
-[NuGetGallery1.0.702-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.702-prerelease "Galería de NuGet | Versión preliminar de Microsoft. Web. WebView2 v 1.0.702"  
+[NuGetGallery1.0.707-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.707-prerelease "Galería de NuGet | Versión preliminar de Microsoft. Web. WebView2 v 1.0.707"  
 
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Anunciando Microsoft Edge WebView2 disponibilidad general | Blog de Microsoft Edge"  

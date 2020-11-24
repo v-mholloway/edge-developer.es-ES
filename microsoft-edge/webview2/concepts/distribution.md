@@ -3,17 +3,17 @@ description: Opciones de distribución al publicar una aplicación con Microsoft
 title: Distribución de las aplicaciones de Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+ms.openlocfilehash: 0cbaaeade03feac766647c55bb5edabfe8e8456e
+ms.sourcegitcommit: 7b16c3e6eb458e0b2458279c2498597fb227bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182412"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "11182912"
 ---
 # Distribución de aplicaciones con WebView2  
 
@@ -58,7 +58,7 @@ Solo se necesita una instalación del tiempo de ejecución de WebView2 de perenn
     
 En la actualidad, el programa previo y el instalador independiente solo admiten instalaciones por máquina, que requieren elevación.  Si se ejecuta un instalador sin elevación, se pide al usuario que eleve los permisos.  
 
-Usa los siguientes flujos de trabajo para asegurarte de que el tiempo de ejecución ya esté instalado antes de que se inicie la aplicación.  Puede ajustar el flujo de trabajo en función de su escenario.  El código de ejemplo está disponible en el [repositorio de ejemplos] [GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
+Usa los siguientes flujos de trabajo para asegurarte de que el tiempo de ejecución ya esté instalado antes de que se inicie la aplicación.  Puede ajustar el flujo de trabajo en función de su escenario.  El código de ejemplo está disponible en el [repositorio de ejemplos][GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
 
 #### Implementación solo en línea  
 
@@ -195,6 +195,6 @@ En comparación con el tiempo de ejecución de hoja perenne, la versión corregi
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentarios de WebView | GitHub"  
 
-[GitHubMicrosoftMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "Implementación de WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
+[GitHubMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "Implementación de WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftPlayReady]: https://www.microsoft.com/playready "Microsoft PlayReady"  
