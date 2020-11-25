@@ -3,17 +3,17 @@ description: Notas de la versión para el SDK de Microsoft Edge WebView2
 title: Notas de la versión de Microsoft Edge WebView2 para Win32, WPF y WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020
+ms.date: 11/24/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: f0be7602bd5fe5cf8ede5158b12cb0b957247c20
-ms.sourcegitcommit: 2d2cef9046f85ae731f8aa80b565546fcfe72e90
+ms.openlocfilehash: f0ddcbfe2d72c1285e6d4a42c3cb796b93495c55
+ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "11182845"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191446"
 ---
 # Notas de la versión para el SDK de WebView2  
 
@@ -26,7 +26,7 @@ El equipo de WebView2 actualiza el [SDK de WebView2][NuGetGallery] en una cadenc
 
 Fecha de lanzamiento: 23 de noviembre de 2020  
 
-[Paquete NuGet][NuGetGallery1.0.707-prerelease] \ | versión mínima de Microsoft Edge 89.0.707.0.  
+[Paquete NuGet][NuGetGallery1.0.707-prerelease] \ | versión mínima de Microsoft Edge 86.0.616.0.  
 
 #### General  
 
@@ -51,8 +51,9 @@ Fecha de lanzamiento: 23 de noviembre de 2020
 
 ###### Características  
 
-* Diseñador de WinForms habilitado en .NET Core 3.1 + y .NET 5.  
-* Administración de cookies de .NET mejorada.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+*   Diseñador de WinForms habilitado en .NET Core 3.1 + y .NET 5.  
+*   Administración de cookies de .NET mejorada.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+*   Se cambió el nombre `CoreWebView2Ready` a [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].
 
 ###### Correcciones de errores
 
@@ -64,7 +65,7 @@ Fecha de lanzamiento: 23 de noviembre de 2020
 
 Fecha de publicación: 20 de noviembre de 2020  
 
-[Paquete NuGet][NuGetGallery1.0.664.37] \ | WebView2 mínimo de versión de tiempo de ejecución 86.0.664.37.  
+[Paquete NuGet][NuGetGallery1.0.664.37] \ | WebView2 mínimo de versión de tiempo de ejecución 86.0.616.0.  
 
 #### General  
 
@@ -467,6 +468,8 @@ Versión inicial de Developer Preview.
 [DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore]: /dotnet/api/microsoft.web.webview2.wpf.webview2.destroywindowcore "WebView2. DestroyWindowCore (HandleRef) (Microsoft. Web. WebView2. WPF) | Microsoft docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed]: /dotnet/api/microsoft.web.webview2.wpf.webview2.acceleratorkeypressed "Microsoft. Web. webview2. WPF. webview2. acceleratorkeypressed | Microsoft docs"  
+
+[DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]: /dotnet/api/microsoft.web.webview2.core.corewebview2initializationcompletedeventargs "Clase CoreWebView2InitializationCompletedEventArgs | Microsoft docs"  
 
 [ReferenceWin32Icorewebview2Addhostobjecttoscript09538]: /microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript?view=webview2-0.9.538&preserve-view=true "AddHostObjectToScript: ICoreWebView2 | Microsoft docs"  
 [ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-0.9.538-prerelease&preserve-view=true#add_webresourceresponsereceived "interfaz de add_WebResourceResponseReceived ICoreWebView2Experimental | Microsoft docs"  

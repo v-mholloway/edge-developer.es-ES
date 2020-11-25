@@ -7,12 +7,12 @@ ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0e4b1972918797d69e2068236f6d1336c54cc858
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: b972468ad21f3a64985a00aecbe29836032b3334
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134197"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190008"
 ---
 # Novedades de DevTools (Microsoft Edge 87)  
 
@@ -41,14 +41,14 @@ DevTools ahora es compatible con las herramientas de movimiento entre los panele
    :::column span="":::
       Para mover cualquier herramienta superior a la parte inferior, desplace el puntero sobre una pestaña, abra el menú contextual \ (haga clic con el botón derecho \) y elija **mover a la parte inferior**.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Mover a la parte inferior" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          Mover a la parte inferior  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Para mover cualquier herramienta inferior a la parte superior, desplace el puntero sobre una pestaña, abra el menú contextual \ (haga clic con el botón derecho \) y elija **mover a la parte superior**.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/move-to-top.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Mover al principio" lightbox="../../media/2020/10/move-to-top.msft.png":::
          Mover al principio  
       :::image-end:::  
    :::column-end:::
@@ -56,7 +56,7 @@ DevTools ahora es compatible con las herramientas de movimiento entre los panele
 
 ## Guardar y exportar con la consola de red  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Herramienta de red con filtros no localizados":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
    Característica experimental  
 :::image-end:::  
 
@@ -69,12 +69,12 @@ Para revisar las actualizaciones en tiempo real de esta característica en el pr
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Escriba un nombre para el nuevo entorno" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
          Escriba un nombre para el nuevo entorno  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Elegir formato para el nuevo entorno" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
          Elegir formato para el nuevo entorno  
       :::image-end:::  
    :::column-end:::
@@ -82,7 +82,7 @@ Para revisar las actualizaciones en tiempo real de esta característica en el pr
 
 ## Herramientas de cuadrícula CSS mejoradas  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Herramienta de red con filtros no localizados":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
    Característica experimental  
 :::image-end:::  
 
@@ -95,13 +95,13 @@ Ahora, Microsoft Edge DevTools es compatible con las siguientes características
     
 Las características están activadas de forma predeterminada.  Para obtener más información sobre las características, vaya a [cuadrículas de CSS][DevtoolsCssGrid].  Para revisar el historial de esta característica en el proyecto de origen abierto de cromo, navegue hasta el [#1047356][CR1047356]de problemas.  Además, el equipo de Microsoft Edge DevTools está colaborando con el equipo de Chrome DevTools y la comunidad de cromo para agregar nuevas características de herramientas de Flexbox a DevTools.  Para obtener las actualizaciones de las herramientas de Flexbox en el proyecto de origen abierto de cromo, navegue hasta el [#1136394][CR1136394]de problemas.  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Herramienta de diseño con cuadrículas" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    Herramienta de **diseño** con cuadrículas  
 :::image-end:::  
 
 ## Personalizar métodos abreviados de teclado en la configuración  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Herramienta de red con filtros no localizados":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
    Característica experimental  
 :::image-end:::  
 
@@ -109,7 +109,7 @@ Ahora puede personalizar el método abreviado de teclado para cualquier acción 
 
 Para habilitar el experimento, navegue para [activar las características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla situada junto a **Habilitar el editor de métodos abreviados de teclado**.  Para obtener más información sobre la personalización y la edición de accesos directos, vaya a [Habilitar la característica experimental editor de método abreviado de teclado][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de origen abierto de cromo, vaya a [#174309][CR174309]de problemas.  
 
-:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Acceso directo personalizado para pausar un script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Acceso directo personalizado para pausar un script  
 :::image-end:::  
 
@@ -125,12 +125,12 @@ Con la extensión, Inicie Microsoft Edge, conéctese a una instancia existente d
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Uso de la extensión en el modo de navegador completo" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
          Uso de la extensión en el modo de navegador completo  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Uso de la extensión en modo de pantalla desatendida" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
          Uso de la extensión en modo de pantalla desatendida  
       :::image-end:::  
    :::column-end:::
@@ -154,12 +154,12 @@ Puede emular autenticadores y depurar la [API de autenticación Web][GithubW3cWe
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Abrir la herramienta webauthn" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
          Abrir la herramienta **Webauthn**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
+      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Herramienta webauthn" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
          Herramienta **Webauthn**  
       :::image-end:::  
    :::column-end:::
@@ -173,12 +173,12 @@ Activar o desactivar el panel **calculado** en el panel **estilos** .  El panel 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Abrir el panel de la barra lateral calculado" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Abrir el panel de la **barra lateral calculado**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Panel de barra lateral calculado" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
          Panel de **barra lateral calculado**  
       :::image-end:::  
    :::column-end:::
@@ -188,7 +188,7 @@ Activar o desactivar el panel **calculado** en el panel **estilos** .  El panel 
 
 Para ver la CSS aplicada con menos desplazamiento, Agrupe las propiedades de CSS por categorías en el panel **calculado** .  También puede concentrarse selectivamente en un conjunto de propiedades relacionadas mientras inspecciona su CSS.  Desde la herramienta **elementos** , elija un elemento.  Para agrupar \ (o desagrupar \) las propiedades de CSS, marque la casilla de verificación de **Grupo** .  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de origen abierto de cromo, vaya a problemas [#1096230][CR1096230], [#1084673][CR1084673]y [#1106251][CR1106251].  
 
-:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
+:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Agrupar propiedades CSS" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Agrupar propiedades CSS  
 :::image-end:::  
 
@@ -210,7 +210,7 @@ performance.mark('end');
 
 Después, abra la herramienta [rendimiento][DevtoolsGuideChromiumEvaluatePerformanceReference] y vaya a la **sección intervalos** para grabar el código JavaScript.  Los `performance.mark()` eventos que ha agregado se muestran ahora en la grabación.  
 
-:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/perf-mark.msft.png":::
+:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Rendimiento. marcar eventos" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` ceso  
 :::image-end:::  
 
@@ -218,7 +218,7 @@ Después, abra la herramienta [rendimiento][DevtoolsGuideChromiumEvaluatePerform
 
 Use las `resource-type` `url` palabras clave New y keyword de la herramienta **red** para filtrar solicitudes de red.  Por ejemplo, use `resource-type:image` para centrarse en las solicitudes de red que son imágenes.  
 
-:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
+:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="filtro de tipo de recurso" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    filtro de tipo de recurso  
 :::image-end:::  
 
@@ -230,7 +230,7 @@ Para descubrir más palabras clave especiales como `resource-type` y `url` , vay
 
 Ver la Directiva de Embedder de origen cruzado \ (COEP \) y la Directiva de apertura cruzada de origen \ (COOP \) `reporting to` en la sección **aislamiento del & de seguridad** .  La [API de informes][MdnReportingApi] define `Report-To` , un nuevo encabezado HTTP, que le ofrece una manera de especificar los puntos de conexión de servidor para que el explorador envíe advertencias y errores.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de origen abierto de cromo, vaya a [#1051466][CR1051466]de problemas.  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="El reporting al punto de conexión" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    El `reporting to` punto final  
 :::image-end:::  
 
@@ -238,13 +238,13 @@ Ver la Directiva de Embedder de origen cruzado \ (COEP \) y la Directiva de aper
 
 DevTools ahora Mostrar la `report-only` etiqueta de COEP y Coop que están establecidas en `report-only` mode.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de origen abierto de cromo, vaya a [#1051466][CR1051466]de problemas.  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Etiqueta de modo de solo informe" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    La `report-only` etiqueta de modo  
 :::image-end:::  
 
 ### Ver y corregir problemas de contraste de color en la herramienta de información general de CSS  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Herramienta de red con filtros no localizados":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
    Característica experimental  
 :::image-end:::  
 
@@ -254,7 +254,7 @@ La herramienta de **información general de CSS** ahora muestra una lista de ele
 
 Para habilitar este experimento, en **Settings**  >  **experimentos**de configuración, seleccione la casilla de verificación **Descripción general de CSS** .  Para ver una lista de elementos que tienen un problema de contraste de color, en **problemas de contraste**, elija **texto**.  Para abrir el elemento en la herramienta **elementos** , elija un elemento de la lista.  Para ayudar a solucionar los problemas de contraste, Microsoft Edge DevTools [ofrece automáticamente sugerencias de color][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de origen abierto de cromo, vaya a [#1120316][CR1120316]de problemas.  
 
-:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/css-overview.msft.png":::
+:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Problemas de contraste de color bajo" lightbox="../../media/2020/10/css-overview.msft.png":::
    Problemas de contraste de color bajo  
 :::image-end:::  
 
