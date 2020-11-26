@@ -1,20 +1,20 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 description: Recorra la forma en que las mejores prácticas y las aplicaciones de Internet enriquecidas accesibles (ARIA) pueden reunirse para crear un sitio web accesible.
-title: Accesibilidad-compilación
+title: Crear | Accesibilidad
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accesibilidad, accesibilidad para desarrolladores, sitios web accesibles, Edge, desarrollo web, ARIA, desarrollador, UIA, automatización de la interfaz de usuario
 ms.custom: seodec18
-ms.openlocfilehash: 4412fef6bb78b5a393ccafd5a2cfa79aba223141
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7a8ff5082132ec3270a6e01af594a5bd9fb35389
+ms.sourcegitcommit: 5d3802721036dc7cd90e9e6f7ac90dc3acc24eec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572946"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191559"
 ---
 # Creación de sitios web accesibles
 La web está rellenada con sitios web dinámicos y complejos, aplicaciones e interfaces de usuario generadas con una combinación de HTML, CSS y JavaScript.  Sin embargo, cuando se diseñan y se crean sin problemas de accesibilidad, los usuarios que dependen de las tecnologías de [asistencia](https://webaim.org/articles/motor/assistive) para explorar la web son difíciles de usar. La creación de sitios web que sean accesibles para personas con discapacidades requiere información semántica acerca de la interfaz de usuario. Esto permite que las tecnologías de asistencia, como los lectores de pantalla, transmitan la información necesaria para ayudar a las personas con una amplia variedad de funciones a usar el sitio Web.
@@ -57,6 +57,44 @@ Vaya al [modelo de roles](https://www.w3.org/TR/wai-aria-1.1/#roles) de W3C para
 
 Para obtener más información sobre ARIA, vea ARIA en la sección de [recursos](#resources) .
 
+## Pruebas de compatibilidad de tecnología de asistencia  
+
+Comprobar que el sitio web que está creando funciona con tecnologías de asistencia reales es la mejor manera de garantizar una buena experiencia para los usuarios con discapacidades.  Dado que muchas tecnologías de asistencia hacen uso del teclado, probar la accesibilidad del teclado de tu sitio web es un buen lugar para comenzar.  La [prueba de compatibilidad del teclado][W3cPerspectiveVideosKeyboard] valida que los usuarios tengan acceso a todos los controles interactivos sin necesidad de un mouse.  Microsoft [Accessibility Insights para web][AccessibilityinsightsWebOverview] es una extensión de explorador para Microsoft Edge y Chrome que le guía y revela varios problemas comunes.  
+
+Una vez que tenga la seguridad de que su sitio web funciona bien con un teclado, pruébelo con otras tecnologías de asistencia, como los lectores de pantalla.  Descubre problemas en los siguientes.
+
+*   Su HTML, ARIA y CSS.  
+*   El nivel de compatibilidad de una tecnología de asistencia para una característica o técnica.  
+    
+Los distintos exploradores pueden asignar elementos a las API de accesibilidad de la plataforma de forma diferente a Microsoft Edge.  Al crear la interfaz, es importante considerar cada diferencia.  
+
+WebAIM realiza encuestas con [lectores de pantalla][WebaimProjectsScreenreadersurvey8] y usuarios con deficiencias [visuales][WebaimProjectsLowvisionsurvey2] que le ayudan a decidir qué exploradores y tecnologías de asistencia desea probar.  
+
+### Aprender a probar  
+
+Las tecnologías de asistencia son herramientas sofisticadas.  No dé por supuesto que puede comenzar inmediatamente las pruebas con una tecnología de asistencia sin conocer primero cómo funciona.  Aprender a probar con un lector de pantalla tiene una curva de aprendizaje especialmente pronunciada.  Un usuario del lector de pantalla inexperto puede suponer que se ha producido un error de lector de pantalla mientras el problema está relacionado con el uso incorrecto del lector de pantalla.  
+
+Para obtener más información sobre cómo aprender a probar las tecnologías de asistencia, vaya a [pruebas con lectores de pantalla][WebaimArticlesScreenreaderTesting] en webaim.  
+
+### Comprobación local  
+
+La mayoría de los dispositivos incluye tecnología de asistencia que está integrada en el sistema operativo.  Microsoft Windows incluye el lector de pantalla [narrador de Windows][MicrosoftSupport22798] y el [ampliador de Windows][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  las tecnologías de asistencia de terceros, como [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws]y [ZoomText][FreedomscientificSoftwareZoomtext] , están disponibles para su descarga.  Apple macOS incluye el lector de pantalla [VoiceOver][AppleAccessibilityMacVision] .  Además, iOS, Android y Linux admiten una variedad de tecnologías de asistencia.  
+
+### Pruebas en máquinas virtuales y emuladores  
+
+En macOS, si desea probar con una tecnología de asistencia que solo está disponible para Windows, como narrador de Windows o NVDA, cree una máquina virtual de Windows.  Las máquinas virtuales con Microsoft Edge \ (EdgeHTML \) e IE están disponibles para VirtualBox y VMWare en la [Página de descarga de máquinas virtuales][MicrosoftDeveloperEdgeVms].  
+
+[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] incluye un emulador que para que pruebe las tecnologías de asistencia del [conjunto de accesibilidad de Android][GooglePlayStoreAndroidAccessibilitySuite].  Siga las instrucciones para [configurar un dispositivo virtual][AndroidDeveloperDevicesManagingAvdsHtml] e [iniciar el emulador][AndroidDeveloperDevicesEmulatorHtml], a continuación, instale el [conjunto de accesibilidad de Android][GooglePlayStoreAndroidAccessibilitySuite] desde la tienda GooglePlay.  
+
+> [!NOTE]
+> En este momento, el simulador iOS no incluye VoiceOver.  
+
+### Herramientas de prueba basadas en la nube  
+
+Si la tecnología de asistencia no está disponible en el sistema operativo o no es posible instalar una en una máquina virtual o un emulador, las herramientas de prueba de tecnología de asistencia basadas en la nube son la mejor opción.  
+
+*   [Assistiv Labs (Commercial)][AssistivlabsMain] le permite probar manualmente con tecnologías de asistencia a través de cualquier explorador web moderno.  Elija una tecnología de asistencia y un explorador y se lo conectará a una máquina virtual, un emulador o un dispositivo real con el que puede interactuar.  
+
 ## Recursos
 
 ### Conceptos básicos sobre accesibilidad
@@ -77,7 +115,7 @@ Simplemente accesible es un equipo de especialistas en accesibilidad que proporc
 El grupo SSB Jesús es una empresa de accesibilidad digital que apoya a sus clientes en el desarrollo e implementación de productos y servicios accesibles. Su blog aborda temas como procedimientos recomendados de ARIA, tendencias de accesibilidad, seminarios por Web, etc.
 
 ### Ejemplos accesibles
-#### [Ally. js: Tutoriales](http://allyjs.io/tutorials/)
+#### [Tutoriales de ally.js](http://allyjs.io/tutorials/)
 Biblioteca de JavaScript para ayudar a las aplicaciones web modernas a tener dificultades de accesibilidad, simplificando la accesibilidad.
 
 #### [Ejemplos de Heydonworks-ARIA](http://heydonworks.com/practical_aria_examples/)
@@ -141,3 +179,35 @@ Una lista de herramientas de evaluación de accesibilidad web para determinar si
 
 #### [Perspectivas de accesibilidad web: Explore el impacto y las ventajas para todos los usuarios](https://w3.org/WAI/perspectives/)
 Una serie de vídeos a corto plazo de W3C sobre el impacto de la accesibilidad y los beneficios para todos.
+
+<!-- links -->  
+
+<!--todo: link updates and acrolinx  -->  
+
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Máquinas virtuales | Desarrollador de Microsoft Edge"  
+
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guía completa para narrador | Soporte técnico de Microsoft"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Use la lupa para facilitar la visualización de los elementos de la pantalla | Soporte técnico de Microsoft"  
+
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Información de accesibilidad para Web | Información de accesibilidad"  
+
+[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Crear y administrar dispositivos virtuales | Desarrolladores de Android"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Ejecutar aplicaciones en el emulador de Android | Desarrolladores de Android"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Descargar Android Studio | Desarrolladores de Android"  
+
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Accesibilidad de la vista-Mac | Apple"  
+
+[AssistivlabsMain]: https://assistivlabs.com "Laboratorios de assistiv"  
+
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "Jaws® | Freedom Scientific"  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Freedom Scientific"  
+
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Conjunto de accesibilidad de Android | Tienda GooglePlay"  
+
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "Acerca de NVDA | Acceso NV"  
+
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Compatibilidad del teclado | RELATIVA"  
+
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Encuesta de usuarios con problemas de visión con deficiencias visuales \ #2 | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Reconocimiento de usuario de lector de pantalla \ #8 resultados | WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Pruebas con lectores de pantalla | WebAIM"  

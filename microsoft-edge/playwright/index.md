@@ -3,17 +3,17 @@ description: Usar Playwright para automatizar y probar en Microsoft Edge
 title: Playwright
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 11/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, desarrollador, herramientas, automatización, prueba, playwright, nodo, JavaScript, NPM
-ms.openlocfilehash: 419d534b3757609528f05bac50ce55bad9dafec4
-ms.sourcegitcommit: 5af0ba56a93871eb4890d1aa7c56c3524c2261de
+ms.openlocfilehash: ac03923fb25da00f07cb70e81ac06b106a6e1452
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160180"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11192215"
 ---
 # Playwright  
 
@@ -100,7 +100,7 @@ Para obtener más información sobre Playwright, vaya al [sitio web de Playwrigh
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ../webdriver-chromium.md "Controlador WebDrive (cromo) | Microsoft docs"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "Controlador WebDrive (cromo) | Microsoft docs"  
 [PuppeteerMain]: ../puppeteer.md "Puppeteer | Microsoft docs"  
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: cómo mejorar la eficacia de la web mediante una colaboración de código abierto | Blog de experiencia de Microsoft"  
@@ -109,11 +109,11 @@ Para obtener más información sobre Playwright, vaya al [sitio web de Playwrigh
 
 [ChromiumHome]: https://www.chromium.org/Home "Cromo | Proyectos de cromo"  
 
-[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"
+[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "rutas de borde | NPM"
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "rutas de borde | NPM"  
 
 [PlaywrightMain]: https://playwright.dev "Playwright"  
 [PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Referencia de la API de Playwright"  
@@ -123,6 +123,6 @@ Para obtener más información sobre Playwright, vaya al [sitio web de Playwrigh
 [PlaywrightRepo]: https://github.com/microsoft/playwright "Playwright | GitHub"  
 [PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Nuevo problema en el repositorio de Playwright | GitHub"  
 
-[WebKitMain]: https://webkit.org "WebKit"
+[WebKitMain]: https://webkit.org "WebKit"  
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Explorador sin periféricos | Wikipedia"  
