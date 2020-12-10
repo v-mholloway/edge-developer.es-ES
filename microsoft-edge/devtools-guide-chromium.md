@@ -3,17 +3,17 @@ description: Familiarizarse con las herramientas para desarrolladores de Microso
 title: Herramientas para desarrolladores de Microsoft Edge (cromo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/23/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ffc31dad9e641adfb9f1ae0b5b88b29192ea4152
-ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
+ms.openlocfilehash: 8f773db3d175f8b5128e1558809334c8f2de4bd7
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182501"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204008"
 ---
 # Herramientas para desarrolladores de Microsoft Edge (cromo)  
 
@@ -112,7 +112,7 @@ Estos métodos abreviados controlan la ventana principal de DevTools, funcionan 
 | Activar o desactivar **inspeccionar el modo de elemento** que le permite seleccionar un elemento del sitio y ver el código HTML y CSS en el panel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Mostrar el menú de comandos | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Mostrar u ocultar el cajón | `Esc` | `Esc` |  
-| Fresca.  Esto actualiza la página con la memoria caché.  | `F5` ni `Ctrl`+`R` | `Command`+`R` |  
+| Actualizar  Esto actualiza la página con la memoria caché.  | `F5` ni `Ctrl`+`R` | `Command`+`R` |  
 | Actualización de hardware.  Esto obliga a Microsoft Edge a descargar los recursos de nuevo y a cargarse.  Es posible que los recursos usados puedan proceder de una versión almacenada en caché | `Ctrl`+`F5` ni `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Buscar texto en el panel actual.  No es compatible con los paneles auditoría, aplicación y seguridad | `Ctrl`+`F` | `Command`+`F` |  
 | Mostrar el panel de búsqueda en el cajón, que le permite buscar texto en todos los recursos cargados | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
@@ -140,7 +140,7 @@ Si deseas obtener una vista previa de las [características más recientes que D
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para principiantes: Introducción a HTML y DOM | Microsoft docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools "Novedades de Microsoft Edge (cromo) DevTools | Microsoft docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Novedades de Microsoft Edge (cromo) DevTools | Microsoft docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo de DevTools Microsoft Edge (cromo) | Microsoft docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos de Microsoft Edge"  

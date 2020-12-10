@@ -3,64 +3,66 @@ description: Todo sobre la vista 3D y cómo usarla.
 title: Vista 3D
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ba1125654c46be6ef4da99efc9ba027ba5e40672
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: bd91939a19f02a426834a85ef92eca388f8f1eda
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986083"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203973"
 ---
 # Vista 3D  
 
-Use la **vista 3D** para depurar la aplicación web desplazándose por el [modelo de objetos de documento (dom)][MDNDocumentObjectModel] o el contexto de apilamiento [de índice z][MDNZIndex] .  Con él podrás realizar las siguientes tareas:  
+Use la **vista 3D** para depurar la aplicación web desplazándose por el [modelo de objetos de documento (dom)][MDNDocumentObjectModel] o el contexto de apilamiento [de índice z][MDNZIndex] .  Con ella, puede completar las siguientes tareas.  
 
 *   [Explorar la Página Web traducida a una perspectiva 3D](#3d-dom)  
 *   [Depuración basada en el contexto de apilamiento de índice z](#z-index)  
+*   [Obtener acceso a la funcionalidad de la herramienta capas desde la vista 3D con capas compuestas](#composited-layers)  
 *   [Borrar parte del desorden en el panel Dom o en](#changing-your-view) el [Panel de índice z](#change-the-scope-of-your-exploration)  
 *   [Elegir la combinación de colores para la mejor depuración de problemas de Dom](#dom-color-type) o [de índice z](#z-index-color-type)  
 
-Si desea explorar un prototipo temprano de proyecto de vista 3D y ejecutar el código usted mismo, consulte [muestra de vista 3D][GithubMicrosoftedgeDevtoolssamples3dview].   
+Si desea explorar un prototipo temprano de proyecto de vista 3D y ejecutar el código usted mismo, vaya a [muestra de vista 3D][GithubMicrosoftedgeDevtoolssamples3dview].  
 
-En el lado izquierdo, hay dos paneles que puede usar para su experiencia de depuración.  
+En el lado izquierdo, hay tres paneles que puede usar para su experiencia de depuración.  
 
-1.  El panel [Índice Z](#z-index) .  Desplácese por los distintos elementos de la aplicación web con el contexto de índice z en mente.  El panel **Índice Z** es el panel predeterminado.  
-1.  El panel [3D Dom](#3d-dom) .  Explore el DOM como un todo con todos los elementos a su alcance.  Para obtener acceso al panel, seleccione en el panel **Dom** situado junto al panel **Índice Z** .  
+*   El panel [Índice Z](#z-index) .  Navegue por los diferentes elementos de la aplicación web con el contexto de índice z en mente.  El panel **Índice Z** es el panel predeterminado.  
+*   El panel [3D Dom](#3d-dom) .  Explore el DOM como un todo con todos los elementos accesibles fácilmente.  Para obtener acceso al panel, elija el panel **Dom** situado junto al panel **Índice Z** .  
+*   Panel [capas compuestas](#composited-layers) .  Agregue otro elemento 3D para crear una experiencia más completa desde una perspectiva de capas.  Para obtener acceso al panel, seleccione el panel **capas compuestas** junto al panel **Dom** .  
     
-En la parte derecha, el lienzo muestra las selecciones del [Índice Z](#z-index) o del [Dom 3D](#3d-dom).  
+En la parte derecha, el lienzo muestra las selecciones del [Índice Z](#z-index), del [Dom 3D](#3d-dom)o de las [capas compuestas](#composited-layers).  
 
 ## Navegar por el lienzo  
 
-:::image type="complex" source="../media/canvas.png" alt-text="Lienzo de vista 3D" lightbox="../media/canvas.png":::
+:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Lienzo de vista 3D" lightbox="../media/3d-view-canvas.msft.png":::
    Lienzo de vista 3D  
 :::image-end:::  
 
-### Métodos abreviados de teclado  
+### Accesos rápidos de teclado  
 
-*   Girar el DOM: para girar horizontalmente, presione las `left-arrow` `right-arrow` teclas y.  Para girar verticalmente, presione las `up-arrow` `down-arrow` teclas y.  
-*   Navegar por el DOM: para desplazarse por los elementos adyacentes, seleccione un elemento y presione las `up-arrow` `down-arrow` teclas y.  
+*   Girar el DOM: para girar horizontalmente, seleccione las `left-arrow` `right-arrow` teclas y.  Para girar verticalmente, seleccione las `up-arrow` `down-arrow` teclas y.  
+*   Navegar por el DOM: para desplazarse por los elementos adyacentes, seleccione un elemento y seleccione las `up-arrow` `down-arrow` teclas y.  
 
 ### Controles del ratón  
 
-*   Girar el DOM: seleccione y arrastre alrededor del espacio del lienzo.  
+*   Girar el DOM: elija y arrastre alrededor del espacio del lienzo.  
 *   Desplácese por el DOM: Abra el menú contextual \ (haga clic con el botón secundario del ratón) y arrastre en la dirección en la que desea que se mueva el DOM.  
 *   Zoom: arrastre dos dedos por el panel táctil o use la rueda de desplazamiento del mouse.  
 
 ### Controles en pantalla  
 
-:::image type="complex" source="../media/controls-small.png" alt-text="Controles en pantalla" lightbox="../media/controls-small.png":::
+:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="Controles en pantalla" lightbox="../media/3d-view-controls-small.msft.png":::
    Controles en pantalla  
 :::image-end:::  
 
-*   Restablezca la vista original en la vista de lienzo: seleccione el botón **restablecer la cámara** , o bien, seleccione el botón **restablecer elementos en la vista y vuelva a centrar la cámara** \ (en el icono de actualización lateral \).  
-*   Actualice el lienzo \ (por ejemplo, si el explorador cambió o cambió a una vista emulador de dispositivos \): seleccione el botón volver a **tomar instantánea** o seleccione el botón **tomar nueva instantánea** \ (icono Actualizar \).  
+*   Restablezca la vista de lienzo a la vista original: seleccione el botón **restablecer cámara** o elija el botón **restablecer elementos en la vista y volver a centrar la cámara** \ (en el icono de actualización de un lado).  
+*   Actualice el lienzo \ (por ejemplo, si el explorador cambió o cambió a una vista emulador de dispositivos \): elija el botón volver a **tomar instantánea** o elija el botón **tomar nueva instantánea** \ (icono Actualizar \).  
 
 ## Índice Z  
 
-:::image type="complex" source="../media/z-index-view-box.png" alt-text="Vista de índice Z" lightbox="../media/z-index-view-box.png":::
+:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Vista de índice Z" lightbox="../media/3d-view-z-index-view-box.msft.png":::
    Vista de índice Z  
 :::image-end:::  
 
@@ -68,33 +70,33 @@ Mientras que el panel **Índice Z** tiene características compartidas con el pa
 
 ### Resaltar elementos con contexto de apilamiento  
 
-La configuración **resaltar elementos con el contexto de apilamiento** permite activar las etiquetas de índice z de los elementos del lienzo \ (y desactivar \).  La casilla está seleccionada de forma predeterminada.  
+La configuración **resaltar elementos con el contexto de apilamiento** permite activar las etiquetas de índice z de los elementos del lienzo \ (y desactivar \).  La casilla de verificación está seleccionada de forma predeterminada.  
 
 ### Cambiar el ámbito de exploración  
 
-El botón **Mostrar todos los elementos** es la forma más rápida de Mostrar todos los elementos del DOM después de cambiar la configuración a continuación.  
+El botón **Mostrar todos los elementos** es la manera más rápida de Mostrar todos los elementos del DOM después de cambiar la configuración que está debajo.  
 
 El botón **Mostrar solo los elementos con el contexto de apilamiento** quita elementos sin contexto de apilamiento y alisa el Dom para facilitar la navegación.  
 
 El botón **aislar elemento seleccionado** es esencialmente tres botones en uno.  Hay dos casillas debajo del botón **aislar elemento seleccionado** : la casilla **Mostrar todos los padres** y **mantener solo los padres con la casilla de verificación de nuevo contexto de apilamiento** .  
 
-La casilla **Mostrar todos los padres** está seleccionada de forma predeterminada.  Si selecciona un elemento en el panel de lienzo y selecciona el botón de **elemento seleccionado** , el lienzo solo muestra el elemento y los elementos primarios.  
+La casilla **Mostrar todos los padres** está activada de forma predeterminada.  Para mostrar el elemento y los elementos primarios en el lienzo, seleccione un elemento y elija el botón **aislar elemento seleccionado** .  
 
-Si selecciona la casilla **mantener solo los padres con el nuevo contexto de apilamiento** y selecciona el botón **aislar elemento seleccionado** , el lienzo solo muestra el elemento y los elementos primarios que tienen un nuevo contexto de apilamiento.  
+Para mostrar el elemento y los padres que tienen un nuevo contexto de apilamiento en el lienzo, active la opción **conservar solo los padres con el nuevo contexto de apilamiento** y seleccione el botón **aislar elemento seleccionado** .  
 
-Si anula la selección de las casillas de verificación y selecciona el botón de **elemento seleccionado** , el lienzo solo muestra el elemento que haya elegido en primer lugar.  
+Para mostrar el elemento que ha elegido en el lienzo, desactive la configuración y elija el botón **aislar elemento seleccionado** .  
 
-En la parte inferior del panel **Dom 3D** , ubique los **elementos ocultos con el mismo orden de pintura que** la casilla principal.  Al seleccionar y anular la selección de la casilla, se actualizan los elementos en función de la selección.  Si se selecciona, los elementos que comparten el orden de pintura se acoplan al elemento primario.  
+En la parte inferior del panel **3D Dom** , ubique los **elementos ocultos con el mismo orden de pintura que** la casilla principal.  Al seleccionar y anular la selección de la casilla, se renuevan los elementos según su elección.  Si se elige, los elementos que comparten el orden de pintura se acoplan al elemento primario.  
 
 Las opciones pretenden borrar algunos de los desordens que las páginas web más complejas crean en el lienzo.  
 
 ### Tipo de color de índice Z  
 
-Las son las diferentes visualizaciones que puede usar para el DOM de su lienzo.  Independientemente de si lo usas para divertirse o porque las visualizaciones te ayudan a visualizar mejor el DOM, la DevTools tiene tres colorways diferentes, así como una configuración de **color de fondo** .  Los botones de radio le permiten alternar entre las opciones y seleccionar el tipo de color más adecuado para el proyecto \ (o que le gusten más).  
+Las son las diferentes visualizaciones que puede usar para el DOM de su lienzo.  Independientemente de si lo usas para divertirse o porque las visualizaciones te ayudan a visualizar mejor el DOM, el DevTools tiene colorways diferentes y una opción **usar color de fondo** .  El panel **Índice Z** comparte el **púrpura** con el blanco y el **color de fondo** con el panel **3D Dom** .  Dado el elemento visual agregado de las etiquetas de índice z, los comentarios que llevaron a una reducción del número de opciones de color.  La nueva simplicidad mejora la experiencia de depuración de índice z.  Los botones de radio permiten alternar entre las opciones y seleccionar el tipo de color.  El tipo de color es el más adecuado para el proyecto o uno que le guste más.  
 
 ## DOM 3D  
 
-:::image type="complex" source="../media/dom-purple-box.png" alt-text="Vista DOM" lightbox="../media/dom-purple-box.png":::
+:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="Vista DOM" lightbox="../media/3d-view-dom-purple-box.msft.png":::
    Vista DOM  
 :::image-end:::  
 
@@ -102,17 +104,34 @@ Si desea tomar más de una vista de depuración general, en lugar de la experien
 
 ### Cambiar la vista  
 
-En el panel **3D Dom** , el botón **aislar elemento seleccionado** tiene las casillas de verificación incluir **elementos secundarios** e **incluir padres** .  De forma predeterminada, se seleccionan las dos casillas, lo que significa que al seleccionar el botón **aislar elemento seleccionado** después de seleccionar un elemento en el lienzo, se mostrará el elemento elegido, los elementos primarios del elemento y los elementos secundarios del elemento.  Si se anula la selección de la casilla de verificación **incluir hijos** y se vuelve a seleccionar el botón **aislar elemento seleccionado** , se mostrará el elemento seleccionado y los elementos primarios del elemento.  Si selecciona la casilla **incluir hijos** y desmarca la casilla **incluir padres** antes de seleccionar el botón **aislar elemento seleccionado** , el lienzo muestra el elemento y los elementos secundarios.  Si desmarca las casillas de verificación y selecciona el botón **aislar elemento seleccionado** , el lienzo solo muestra el elemento que seleccionó previamente.  
+En el panel **3D Dom** , el botón **aislar elemento seleccionado** tiene las casillas de verificación incluir **elementos secundarios** e **incluir padres** .  Ambas casillas están activadas de forma predeterminada.  Esto significa que si elige el botón **aislar elemento seleccionado** después de elegir un elemento, el lienzo muestra el elemento elegido, los elementos primarios del elemento y los elementos secundarios del elemento.  Desactive la opción **incluir elementos secundarios** y seleccione de nuevo el botón **aislar elemento seleccionado** para mostrar el elemento elegido y los elementos primarios del elemento.  Si activa la opción **incluir elementos secundarios** y desactiva la opción **incluir padres** y, a continuación, elige el botón **aislar elemento seleccionado** , el lienzo muestra el elemento y los elementos secundarios.  Si desactiva la configuración y elige el botón **aislar elemento seleccionado** , el lienzo solo muestra el elemento que haya elegido previamente.  
 
-Un control deslizante en el panel de control titulado **nivel de anidamiento para la página** con un número al lado.  El número indica el número de capas del documento.  Si arrastra el control deslizante hacia la izquierda, las capas exteriores desaparecerán hasta que quede con un nivel de anidamiento establecido en 1, que solo muestra el elemento posterior más lejano en el DOM.  Arrastrar el control deslizante le permite quitar algunos de los desorden si está intentando obtener más información sobre lo que sucede en los niveles inferiores.  
+Control deslizante en el panel de control denominado **nivel de anidamiento de la página** con un número al lado.  El número indica el número de capas del documento.  Si arrastra el control deslizante hacia la izquierda, las capas exteriores desaparecerán hasta que quede con un nivel de anidamiento establecido en `1` , que solo muestra el elemento posterior más lejano en el Dom.  Para quitar parte del desorden, arrastre el control deslizante.  Le ayuda a tener una visión más detallada de lo que sucede en los niveles inferiores.  
 
 ### Tipo de color DOM  
 
-Además de los botones de **calor-púrpura a blanco**, **calor-azul a amarillo**, **calor-arco iris**y **usar color de fondo** , se **usa la textura**de la pantalla.  La textura de la pantalla agrega el contexto a la experiencia de depuración mostrando el contenido de la página web directamente en los elementos.  En el panel **Dom 3D** , la configuración de  **tipo de color** sigue siendo un trabajo en curso, ya que algunos sitios web tienen una textura de pantalla de procesamiento de tiempo más difícil en la vista 3D.  
+En el panel **3D Dom** se muestran las siguientes opciones.  
 
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools
+*   Tres colorways diferentes.  
+    *   **Calor-púrpura a blanco**  
+    *   **Calor: azul a amarillo**  
+    *   **Calor: arco iris**  
+*   **Usar color de fondo**  
+*   **Usar textura de pantalla**  
+    
+La opción **usar textura de pantalla** agrega el contexto a la experiencia de depuración.  Muestra directamente el contenido de la página web en los elementos.  
 
-El equipo de Microsoft Edge DevTools está trabajando en la interfaz de usuario y agregando más funciones a la vista 3D basándose en las preguntas de los usuarios como usted.  Envíanos tus comentarios para ayudar a mejorar la DevTools de Microsoft Edge.  Simplemente selecciona el icono de comentarios en la DevTools o pulsa `Alt` + `Shift` + `I` \ (Windows \) o pulsa `Option` + `Shift` + `I` \ (MacOS \) e introduce las solicitudes de comentarios o características para el DevTools.  
+## Capas compuestas
+
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Panel capas compuestas" lightbox="../media/experiments-layers.msft.png":::
+   Panel **capas compuestas**
+:::image-end:::  
+
+El panel **capas compuestas** abre los elementos de la herramienta **capas** sin cambiar los contextos.  Aún puede acceder a los detalles de cada una de las capas y tener las **imágenes o los** **rects de desplazamiento lentos** .
+
+## Contactar al equipo de Microsoft Edge DevTools  
+
+El equipo de Microsoft Edge DevTools está trabajando en la interfaz de usuario y agregando más funciones a la vista 3D en función de los comentarios.  Envíe sus comentarios para ayudar a mejorar el DevTools de Microsoft Edge.  Seleccione el icono **Enviar comentarios** en la DevTools o seleccione `Alt` + `Shift` + `I` en Windows/Linux o `Option` + `Shift` + `I` en MacOS y escriba las solicitudes de comentarios o características que tenga para el DevTools.  
 
 <!-- links -->  
 

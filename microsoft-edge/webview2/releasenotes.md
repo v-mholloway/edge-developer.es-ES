@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 34063aee7bec324464cf592e6aab8ca499e9c944
-ms.sourcegitcommit: 1a35a0d52c412c503d742e66f25c4e97286a3919
+ms.openlocfilehash: 2859f931aea8963e8a50835110914a216811c191
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203626"
+ms.locfileid: "11204022"
 ---
 # Notas de la versión para el SDK de WebView2  
 
@@ -53,7 +53,7 @@ Fecha de lanzamiento: 8 de diciembre de 2020
 
 *   Diseñador de WinForms habilitado en .NET Core 3.1 + y .NET 5.  
 *   Administración de cookies de .NET mejorada.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
-*   Se cambió el nombre `CoreWebView2Ready` a [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].  
+*   Reemplazado `CoreWebView2Ready` por [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].  
 
 ###### Correcciones de errores
 

@@ -3,16 +3,16 @@ description: Las últimas características experimentales de Microsoft Edge DevT
 title: Características experimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, experimento
-ms.openlocfilehash: ddedf62ff27023751c511a7d2e34b6ea14461db5
-ms.sourcegitcommit: be42902c404e9f9ac2d661df9c55de3db4d956a5
+ms.openlocfilehash: b2b2e591834f1c75d51ec98523e2752d67a2d354
+ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160372"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203902"
 ---
 # Características experimentales  
 
@@ -25,7 +25,7 @@ Aunque las características experimentales están disponibles en todos los canal
 Para activar las características experimentales \ (o desactivada \) en Microsoft Edge, siga los pasos que se indican a continuación.  
 
 1.  [Abra DevTools][DevtoolsOpen].  
-     *   Seleccione `Control` + `Shift` + `I` \ (Windows, Linux \) o `Command` + `Option` + `I` \ (MacOS \).  Para obtener más información, vaya a [métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
+    *   Seleccione `Control` + `Shift` + `I` \ (Windows, Linux \) o `Command` + `Option` + `I` \ (MacOS \).  Para obtener más información, vaya a [métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
 1.  Abra el panel [configuración][DevToolsCustomizeSettings] .  
     *   Seleccione `Shift` + `?` .  Para obtener más información, vaya a [métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
 1.  En el lado izquierdo del panel **configuración** , elija la sección **experimentos** .  
@@ -36,7 +36,7 @@ Para activar las características experimentales \ (o desactivada \) en Microsof
     
 1.  En la página **experimentos** , desplácese por la lista de todas las características experimentales disponibles y seleccione la casilla junto a cada característica que quiera probar.  
 1.  Cierre y vuelva a abrir Microsoft Edge DevTools.  
-
+    
 > [!NOTE]
 > Las características experimentales se actualizan constantemente y pueden causar problemas de rendimiento.  Para desactivar una característica experimental, abra la página **experimentos** y desmarque la casilla de verificación de la característica experimental que desea desactivar.  
 
@@ -61,7 +61,7 @@ Proporciona características adicionales para emular dos nuevos dispositivos de 
 
 *   [Surface Duo][SurfaceDevicesDuo]  
 *   [Doblado de Samsung Galaxy][SamsungMobileGalaxyFold]  
-
+    
 Emular los dispositivos y alternar entre las siguientes posturas.  
 
 *   postura de pantalla única o plegada  
@@ -80,7 +80,7 @@ Para usar la [característica de expansión de pantalla multimedia de CSS][DualS
 1.  Vaya a `edge://flags` .  
 1.  En el cuadro de texto **marcas de búsqueda** , escriba `Experimental Web Platform features` , elija el marcador de **características de plataforma web experimentales** y cambie **deshabilitado** a **habilitado**.  
 1.  Reiniciar MicrosoftEdge.  
-
+    
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Habilitar la marca experimental de características de plataforma web" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Habilitar la marca experimental de características de plataforma web  
 :::image-end:::  
@@ -111,7 +111,7 @@ Estos son otros recursos adicionales que pueden ayudarte a mejorar tu sitio web 
 
 *   Para obtener más información sobre el desarrollo web en dispositivos de doble pantalla, vaya a [experiencias Web en dos pantallas][DualScreenWebIndex].  
 *   Instala el [emulador Surface Duo][DualScreenAndroidUseEmulator].  Es diferente al emulador en Microsoft Edge, emula la Surface Duo con Android y se integra con [Android Studio][AndroidDeveloperStudio].  Para obtener más información, vaya a [obtener el SDK Surface Duo][DualScreenAndroidGetDuoSdk].  
-
+    
 > [!NOTE]
 > A continuación se muestra una lista de los problemas conocidos actuales.  
 > 
@@ -136,7 +136,7 @@ En Microsoft Edge versión 86 o posterior, la característica de cuadrícula de 
 *   Las superposiciones persistentes permanecen visibles en la página mientras se desplaza, mueve el mouse y usan otras características de la DevTools.  
 *   Se pueden habilitar varias superposiciones persistentes al mismo tiempo, lo que le permite revisar varias distribuciones de cuadrícula a la vez.  
 *   Las superposiciones persistentes ofrecen muchas opciones de configuración, como ocultar o mostrar nombres en el área de cuadrícula, lagunas de cuadrícula, tamaños de pista, etc.  
-
+    
 Las dos formas de alternar una superposición de cuadrícula persistente.  
 
 *   Elija el icono de óvalo de **cuadrícula** junto a cualquier elemento de la cuadrícula que se muestra en el árbol DOM de la herramienta **elementos** .  
@@ -179,7 +179,7 @@ Normalmente, las herramientas, como **los elementos** y la **red** , solo se pue
 *   comportamiento  
 *   Aplicaciones web progresivas (PWAs)  
 *   otros problemas comunes de desarrollo web  
-
+    
 El experimento [webhint][WebhintMain] muestra los comentarios de webhint en el panel [problemas][DevtoolsIssues] .  Elija un problema para mostrar la documentación de la solución y una lista de los recursos afectados de su sitio Web.  Elija un vínculo de recursos para abrir el panel de **redes**, **orígenes**o **elementos** correspondiente en DevTools.  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Comentarios sobre webhint en el panel problemas" lightbox="./media/experiments-webhint.msft.png":::
@@ -199,7 +199,7 @@ Después de habilitar el experimento, asegúrate de reiniciar el DevTools.  Siga
 1.  Abra el menú contextual \ (haga clic con el botón derecho \) y elija **Editar y reproducir**.  
 1.  Cuando se abra la **consola de red** , edite la información de solicitud de red.  
 1.  Elija **Enviar**.  
-
+    
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Consola de red en el cajón de consola" lightbox="./media/network-network-console.msft.png":::
    **Consola de red** en el cajón de **consola**  
 :::image-end:::  
@@ -216,7 +216,7 @@ Después de habilitar el experimento, asegúrate de reiniciar el DevTools.  Siga
 1.  Abra el panel **accesibilidad** en el panel cajón \ (inferior \).  
 1.  En la sección **visor de pedido de origen** , seleccione la casilla Mostrar el pedido de **origen** .  
 1.  Resalte cualquier elemento HTML para mostrar una superposición que sea el orden en el origen de la página.  
-
+    
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Visor de pedidos de origen en el panel Accesibilidad" lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Visor de pedidos de origen** en el panel **accesibilidad**  
 :::image-end:::  
@@ -265,13 +265,10 @@ Si está editando los métodos abreviados de teclado de una acción, para descar
 
 Ahora puede visualizar las capas junto a los índices z y el Document Object Model \ (DOM \).  Esta característica le ayuda a depurar sin contextos de conmutación con frecuencia.  Usted identificó que la reducción del cambio de contexto fue un importante pain point.  No siempre está claro cómo el código que escribe afecta a la aplicación Web.  Para obtener una experiencia de depuración visual completa, ahora se combinan la vista 3D y las capas compuestas.  Después de habilitar el experimento, asegúrate de reiniciar el DevTools.  Para usar **capas compuestas**, siga los pasos que se indican a continuación.  
 
-<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
-1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
-1.  Open the Devtools.  -->  
 1.  En el cajón, elija la herramienta **vista 3D** .  
 1.  Abra el panel **capas compuestas** .  
 1.  Se muestran todas las capas pintadas de la aplicación.  Pruebe esta característica con sus propias aplicaciones Web.  
-
+    
 :::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Panel capas compuestas" lightbox="./media/experiments-layers.msft.png":::
    Panel **capas compuestas**  
 :::image-end:::  
