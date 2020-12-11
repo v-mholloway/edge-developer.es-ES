@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 10/14/2020
+  ms.date: 12/10/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 9400bf4be62a4050b7d6511386ee5e66777b18fd
-  ms.sourcegitcommit: 1ad087b00df16fd7718a5d95226de57e29b335e1
+  ms.openlocfilehash: 29518882f80892eb5799a2cda7991963aa55ba60
+  ms.sourcegitcommit: 92e1fa81efe2d176353b5e81098b0761c3539d55
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/14/2020
-  ms.locfileid: "11117815"
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "11205752"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal estable oficial)
@@ -108,7 +108,7 @@ additionalContent:
         url: /microsoft-edge/devtools-guide-chromium
       - text: DevTools para principiantes
         url: /microsoft-edge/devtools-guide-chromium/beginners/html
-      - text: Métodos abreviados de teclado
+      - text: Accesos rápidos de teclado
         url: /microsoft-edge/devtools-guide-chromium/shortcuts
       - text: Menú de comandos
         url: /microsoft-edge/devtools-guide-chromium/command-menu/index
@@ -144,7 +144,7 @@ additionalContent:
       links:
       - text: Portabilidad de la extensión de cromo a Microsoft Edge
         url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
-      - text: Métodos alternativos de distribución de extensiones
+      - text: Alternar métodos de distribución de extensiones
         url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
       - text: Mensajería nativa
         url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
@@ -156,7 +156,7 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/publish/create-dev-account
       - text: Actualizar la lista de extensiones
         url: /microsoft-edge/extensions-chromium/publish/update
-      - text: Administrar la configuración de la cuenta
+      - text: Actualizar la configuración de la cuenta
         url: /microsoft-edge/extensions-chromium/publish/manage-settings
     - title: 'Extensiones: directivas de complementos de Microsoft Edge'
       links:
@@ -197,7 +197,7 @@ additionalContent:
       url: /answers/topics/ms-edge.html
     - summary: Microsoft se compromete a garantizar que tus aplicaciones funcionen en Microsoft Edge.  Si tiene problemas con sus aplicaciones empresariales o sitios web en la última versión de Edge, Microsoft le ayuda a corregir sus aplicaciones y sitios web sin costo adicional.  Consulta los detalles de la oferta para conocer los requisitos de elegibilidad.
       title: Obtén ayuda gratuita usando la aplicación
-      url: /fasttrack/win-10-microsoft-edge
+      url: https://fasttrack.microsoft.com/portal
     - summary: Si tu empresa necesita soporte técnico inmediato para Microsoft Edge, la asistencia de 1:1 de Microsoft está disponible mediante una variedad de planes que te ayudarán a obtener tu nivel de asistencia requerido.
       title: Soporte técnico de Microsoft para empresas
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
