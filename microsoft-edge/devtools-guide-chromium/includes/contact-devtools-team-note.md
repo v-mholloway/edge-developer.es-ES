@@ -3,20 +3,20 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 09/01/2020
-ms.openlocfilehash: abd837417098aa6d665bb112f99085ff2473b4ca
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.date: 12/09/2020
+ms.openlocfilehash: 8c0d978497b443701d8db3f694f89cd92f79c524
+ms.sourcegitcommit: ae1e6a7db70b97dc0f7f12feafd3ea88bfdca7ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124686"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205639"
 ---
 Use las siguientes opciones para discutir las nuevas características y cambios de la publicación, o cualquier otro tema relacionado con DevTools.  
 
 *   Envíe sus comentarios con el icono **Enviar comentarios** o seleccione `Alt` + `Shift` + `I` \ (Windows, Linux \) o `Option` + `Shift` + `I` \ (MacOS \) en DevTools.  
 *   Tweet a [@EdgeDevTools][PostTweetEdgeDevTools].  
 *   Enviar una sugerencia a [la web][TheWebWeWant]que queremos.  
-*   Archivar errores en este artículo con la sección [comentarios](#feedback) .  
+*   Para archivar errores sobre este artículo, use la siguiente sección de **comentarios** .  
 
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="El icono enviar comentarios en el DevTools de Microsoft Edge" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    El icono **Enviar comentarios** en Microsoft Edge DevTools  
