@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 2859f931aea8963e8a50835110914a216811c191
-ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
+ms.openlocfilehash: a1509b7e82ffa05168f2836da6cf0c121d85aabb
+ms.sourcegitcommit: c06a4ece7bcbfeae4677d15fca677ca42a0373b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11204022"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "11229469"
 ---
 # Notas de la versión para el SDK de WebView2  
 
@@ -29,6 +29,9 @@ Fecha de lanzamiento: 8 de diciembre de 2020
 [Paquete NuGet][NuGetGallery1.0.721-prerelease] \ | versión mínima de Microsoft Edge 86.0.616.0.  
 
 #### General  
+
+> [!IMPORTANT]
+>  **Cambio importante**: los paquetes de versión preliminar de WebView2 1.0.707 y 0.9.628 han quedado obsoletos. Antes de continuar con el desarrollo de estos paquetes.  
 
 ###### Características  
 
@@ -46,6 +49,12 @@ Fecha de lanzamiento: 8 de diciembre de 2020
     *   Se ha agregado la propiedad [ShouldDetectMonitorScaleChanges][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShouldDetectMonitorScaleChanges] para actualizar automáticamente la `RasterizationScale` propiedad si es necesario.  
     *   Se ha agregado la [propiedad BoundsMode][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsMode] para especificar que los límites son píxeles lógicos y permitir que la vista en pantalla use la `RasterizationScale` pantalla para WebView2 píxeles, y hacer que la vista de pantalla aplique el `RasterizationScale` a `Bounds` para obtener el tamaño físico.
 *   Evento Updated `NewWindowRequested` para controlar `Ctrl` + `click` y `Shift` + `click` .  \ ([\ #168][GithubMicrosoftedgeWebviewfeedbackIssue168] y [\ #371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
+*   Ha promocionado los siguientes cambios experimentales a estable:
+    * [API de WebResourceResponseReceived][WebResourceResponseReceivedAPI]
+    * [API de NavigateWithWebResourceRequest][NavigateWithWebResourceRequestAPI]
+    * [API de administración de cookies][CookiemanagementAPI]
+    * [API de DOMContentLoaded][DOMContentLoadedAPI]
+    * [Propiedad de entorno WebView][WebViewEnvironmentproperty]
 
 #### .NET  
 
@@ -75,7 +84,7 @@ Fecha de publicación: 20 de noviembre de 2020
 ###### Características  
 
 *   .NET WPF/WinForms WebView2 está disponible generalmente \ (GA \).  
-*   El modo de distribución fija \ (traiga su propietario \) ha llegado a GA.  
+*   El modo de distribución fija \ (traiga su propietario \) ha llegado a GA. 
 
 #### .NET  
 
@@ -128,25 +137,26 @@ Fecha de lanzamiento: 19 de octubre de 2020
 *  El [tiempo de ejecución de WebView2 perenne y el instalador][Webview2ConceptsDistributionUnderstandRuntimeInstaller] son GA.  Programa previo, vínculo enlace descendente para el programa previo y el instalador independiente para el tiempo de ejecución de hoja perenne está disponible en [Microsoft Edge WebView2][MicrosoftDeveloperMicrosoftEdgeWebView2].  El código de ejemplo para el flujo de trabajo de instalación también está disponible en el [repositorio de WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
 *  El [modo de versión corregido][Webview2ConceptsDistributionFixedVersionMode] está disponible para Developer Preview.  
 
-## 0.9.628-versión preliminar  
+<!-- 
+## 0.9.628-prerelease  
 
-Fecha de publicación: 10 de septiembre de 2020  
+Release Date: September 10, 2020  
 
-[Paquete NuGet][NuGetGallery0.9.628-prerelease] \ | versión mínima de Microsoft Edge 86.0.616.0.  
+[NuGet package][NuGetGallery0.9.628-prerelease] \| minimum Microsoft Edge version 86.0.616.0.  
 
 > [!IMPORTANT]
-> **Anuncio**: esta versión preliminar continúa la publicación en función de la rama Microsoft Edge 87.  En el futuro, la versión del SDK de la versión preliminar coincide con la compilación Canarias de Microsoft Edge y la versión normal se sincroniza con Microsoft Edge estable.  
+> **Announcement**:  This prerelease continues to release based upon the Microsoft Edge 87 Branch.  In the future, the prerelease SDK release matches the Microsoft Edge Canary build and the normal release is synchronized with Microsoft Edge Stable.  
 
 #### General  
 
 *   > [!IMPORTANT]
-    > **Anuncio**: las API de hospedaje visual ya están en vista previa.  WebView2 usa hospedaje visual para ejecutarse junto con los elementos visuales de WinComp/DComp, en lugar de HWNDs.  Las interfaces están en experimental.  Para obtener más información, vaya a [ICoreWebView2ExperimentalEnvironment][ReferenceWin32Icorewebview2experimentalenvironment09628].  
+    > **Announcement**:  Visual Hosting APIs are now under preview.  WebView2 uses Visual Hosting to run alongside WinComp/DComp visuals as opposed to HWNDs.  The interfaces are in Experimental.  For more information, navigate to [ICoreWebView2ExperimentalEnvironment][ReferenceWin32Icorewebview2experimentalenvironment09628].  
 
 #### .NET  
 
-*   Los binarios de .NET ahora tienen [un nombre seguro][DotnetStandardAssemblyStrongNamed].  \ ([\ #181][GithubMicrosoftedgeWebviewfeedbackIssue181]\).  
-*   Destino de NuGet actualizado que se incluirá `WebViewLoader2.dll` .  \ ([\ #228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) y \ ([\ #183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).  
-*   Se ha actualizado `WebResourceRequested` para exponer las API de [HttpRequestHeaders][DotnetApiMicrosoftWebWebview2CoreCorewebview2httprequestheaders] y [HttpResponseHeaders][DotnetApiMicrosoftWebWebview2CoreCorewebview2httpresponseheaders] en .net.  \ ([\ #131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).  
+*   .NET Binaries are now [strongly-named][DotnetStandardAssemblyStrongNamed].  \([\#181][GithubMicrosoftedgeWebviewfeedbackIssue181]\).  
+*   Updated NuGet Target to include `WebViewLoader2.dll`.  \([\#228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) and \([\#183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).  
+*   Updated `WebResourceRequested` to expose [HttpRequestHeaders][DotnetApiMicrosoftWebWebview2CoreCorewebview2httprequestheaders] and [HttpResponseHeaders][DotnetApiMicrosoftWebWebview2CoreCorewebview2httpresponseheaders] APIs in .NET.  \([\#131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).   -->
 
 ## 0.9.622.11  
 
@@ -587,3 +597,10 @@ Versión inicial de Developer Preview.
 [NuGetGallery1.0.721-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.721-prerelease "Galería de NuGet | Versión preliminar de Microsoft. Web. WebView2 v 1.0.721"  
 
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Anunciando Microsoft Edge WebView2 disponibilidad general | Blog de Microsoft Edge"  
+
+[WebResourceResponseReceivedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_webresourceresponsereceived&preserve-view=true "interfaz de add_WebResourceResponseReceived ICoreWebView2 | Microsoft docs"
+[NavigateWithWebResourceRequestAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2environment2?view=webview2-1.0.721-prerelease#createwebresourcerequest&preserve-view=true "CreateWebResourceRequest: ICoreWebView2Environment | Microsoft docs"
+[CookiemanagementAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager?view=webview2-1.0.721-prerelease&preserve-view=true "ICoreWebView2CookieManager | Microsoft docs"
+[DOMContentLoadedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_domcontentloaded&preserve-view=true "interfaz de add_DOMContentLoaded ICoreWebView2_2 | Microsoft docs"
+[WebViewEnvironmentproperty]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#get_environment&preserve-view=true "ICoreWebView2CookieManager | Microsoft docs"
+
