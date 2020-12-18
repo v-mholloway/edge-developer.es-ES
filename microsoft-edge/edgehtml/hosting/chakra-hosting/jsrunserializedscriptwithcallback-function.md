@@ -1,0 +1,72 @@
+---
+description: Ejecuta una secuencia de comandos serializada. Proporciona la capacidad de cargar de forma diferida el origen del script solo si se necesita o cuando lo necesite.
+title: Función JsRunSerializedScriptWithCallback | Microsoft docs
+ms.prod: microsoft-edge
+ms.topic: reference
+ms.assetid: 0608d778-f65b-4dc5-a745-364aac57ef59
+caps.latest.revision: 4
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
+ms.openlocfilehash: ac9ac08357cd479f78e3500bc5eef151fb8e4e6c
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11236574"
+---
+# <span data-ttu-id="2d587-104">Función JsRunSerializedScriptWithCallback</span><span class="sxs-lookup"><span data-stu-id="2d587-104">JsRunSerializedScriptWithCallback Function</span></span>
+
+<span data-ttu-id="2d587-105">Ejecuta una secuencia de comandos serializada.</span><span class="sxs-lookup"><span data-stu-id="2d587-105">Runs a serialized script.</span></span> <span data-ttu-id="2d587-106">Proporciona la capacidad de cargar de forma diferida el origen del script solo si se necesita o cuando lo necesite.</span><span class="sxs-lookup"><span data-stu-id="2d587-106">Provides the ability to lazy load the script source only if/when it is needed.</span></span>  
+  
+## <span data-ttu-id="2d587-107">Sintaxis</span><span class="sxs-lookup"><span data-stu-id="2d587-107">Syntax</span></span>  
+  
+```cpp  
+STDAPI_(JsErrorCode) JsRunSerializedScriptWithCallback(  
+  _In_ JsSerializedScriptLoadSourceCallback scriptLoadCallback,  
+  _In_ JsSerializedScriptUnloadCallback scriptUnloadCallback,  
+  _In_ BYTE *buffer,  
+  _In_ JsSourceContext sourceContext,  
+  _In_z_ const wchar_t *sourceUrl,  
+  _Out_opt_ JsValueRef *result  
+);  
+  
+```  
+  
+#### <span data-ttu-id="2d587-108">Parámetros</span><span class="sxs-lookup"><span data-stu-id="2d587-108">Parameters</span></span>  
+ `scriptLoadCallback`  
+ <span data-ttu-id="2d587-109">Devolución de llamada llamada cuando es necesario cargar el código fuente del script.</span><span class="sxs-lookup"><span data-stu-id="2d587-109">Callback called when the source code of the script needs to be loaded.</span></span>  
+  
+ `scriptUnloadCallback`  
+ <span data-ttu-id="2d587-110">Devolución de llamada llamada cuando ya no se necesita el script y el código de origen serializados.</span><span class="sxs-lookup"><span data-stu-id="2d587-110">Callback called when the serialized script and source code are no longer needed.</span></span>  
+  
+ `buffer`  
+ <span data-ttu-id="2d587-111">El script serializado.</span><span class="sxs-lookup"><span data-stu-id="2d587-111">The serialized script.</span></span>  
+  
+ `sourceContext`  
+ <span data-ttu-id="2d587-112">Una cookie que identifica el script que puede ser usado por contextos de scripts depurables.</span><span class="sxs-lookup"><span data-stu-id="2d587-112">A cookie identifying the script that can be used by debuggable script contexts.</span></span>     <span data-ttu-id="2d587-113">Este contexto se transmitirá a scriptLoadCallback y scriptUnloadCallback.</span><span class="sxs-lookup"><span data-stu-id="2d587-113">This context will passed into scriptLoadCallback and scriptUnloadCallback.</span></span>  
+  
+ `sourceUrl`  
+ <span data-ttu-id="2d587-114">La ubicación de la que procede la secuencia de comandos.</span><span class="sxs-lookup"><span data-stu-id="2d587-114">The location the script came from.</span></span>  
+  
+ `result`  
+ <span data-ttu-id="2d587-115">El resultado de ejecutar el script, si existe.</span><span class="sxs-lookup"><span data-stu-id="2d587-115">The result of running the script, if any.</span></span> <span data-ttu-id="2d587-116">Este parámetro puede ser null.</span><span class="sxs-lookup"><span data-stu-id="2d587-116">This parameter can be null.</span></span>  
+  
+## <span data-ttu-id="2d587-117">Valor devuelto</span><span class="sxs-lookup"><span data-stu-id="2d587-117">Return Value</span></span>  
+ <span data-ttu-id="2d587-118">El código `JsNoError` si la operación se realizó correctamente; de lo contrario, un código de error.</span><span class="sxs-lookup"><span data-stu-id="2d587-118">The code `JsNoError` if the operation succeeded, a failure code otherwise.</span></span>  
+  
+## <span data-ttu-id="2d587-119">Observaciones</span><span class="sxs-lookup"><span data-stu-id="2d587-119">Remarks</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="2d587-120">Esta API aún no está disponible para las aplicaciones de la tienda.</span><span class="sxs-lookup"><span data-stu-id="2d587-120">This API is not yet available for Store apps.</span></span>  
+  
+ <span data-ttu-id="2d587-121">Requiere un contexto de script activo.</span><span class="sxs-lookup"><span data-stu-id="2d587-121">Requires an active script context.</span></span>  
+  
+ <span data-ttu-id="2d587-122">El motor en tiempo de ejecución retendrá el búfer hasta que se hayan recolectado como no utilizados todas las instancias de las funciones creadas desde el búfer.</span><span class="sxs-lookup"><span data-stu-id="2d587-122">The runtime will hold on to the buffer until all instances of any functions created from     the buffer are garbage collected.</span></span>  <span data-ttu-id="2d587-123">A continuación, llamará a scriptUnloadCallback para informar al autor de la llamada de que es seguro liberarlo.</span><span class="sxs-lookup"><span data-stu-id="2d587-123">It will then call scriptUnloadCallback to inform the     caller that it is safe to release.</span></span>  
+  
+## <span data-ttu-id="2d587-124">Requisitos</span><span class="sxs-lookup"><span data-stu-id="2d587-124">Requirements</span></span>  
+ <span data-ttu-id="2d587-125">**Encabezado:** jsrt. h</span><span class="sxs-lookup"><span data-stu-id="2d587-125">**Header:** jsrt.h</span></span>  
+  
+## <span data-ttu-id="2d587-126">Consulta también</span><span class="sxs-lookup"><span data-stu-id="2d587-126">See Also</span></span>  
+ [<span data-ttu-id="2d587-127">Referencia (tiempo de ejecución de JavaScript)</span><span class="sxs-lookup"><span data-stu-id="2d587-127">Reference (JavaScript Runtime)</span></span>](../chakra-hosting/reference-javascript-runtime.md)
