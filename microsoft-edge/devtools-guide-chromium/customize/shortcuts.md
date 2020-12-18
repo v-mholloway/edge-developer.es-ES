@@ -3,16 +3,16 @@ description: Hacer coincidir los métodos abreviados de teclado en el código de
 title: Personalizar los métodos abreviados de teclado en el DevTools de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, personalizado, métodos abreviados, teclado, código de Visual Studio
-ms.openlocfilehash: 2af2ea5c17e699ded6f2163d08a74d1f094ea4e8
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: d7cae5a7718c48f9665b17e59bd006bacd27d4ee
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133893"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230911"
 ---
 # Personalizar los métodos abreviados de teclado en el DevTools de Microsoft Edge  
 
@@ -34,7 +34,7 @@ Siga los pasos que se indican a continuación para buscar coincidencias entre lo
 1.  Abra la página de **accesos directos** .
 1.  Elija el cuadro desplegable **coincidir con métodos abreviados de preestablecidos** y cambie **DevTools (valor predeterminado)** a **Visual Studio**.  
     
-    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Página de accesos directos de configuración" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
+    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
        Hacer coincidir los métodos abreviados de teclado en el código de DevTools a Visual Studio  
     :::image-end:::  
     
@@ -44,8 +44,9 @@ Por ejemplo, para pausar o continuar ejecutando un script en [código de Visual 
 
 <!-- links -->  
 
-[DevToolsCustomizeSettings]: ./index.md#settings "Configuración-personalizar Microsoft Edge DevTools | Microsoft docs"  
-[DevtoolsOpenMain]: ../open.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
-[DevToolsShortcuts]: ../shortcuts.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft docs"  
+[DevToolsCustomizeSettings]: ./index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpenMain]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
+[DevToolsShortcuts]: ../shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft docs"  
+
 [VisualStudioCode]: https://code.visualstudio.com "Código de Microsoft Visual Studio"  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Métodos abreviados de teclado de código de Visual Studio para Windows | Código de Microsoft Visual Studio"  

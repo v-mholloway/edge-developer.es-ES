@@ -3,16 +3,16 @@ description: Emular autenticadores y depurar webauthn en Microsoft Edge DevTools
 title: Emular autenticadores y depurar webauthn en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6727e9aeea1a51689a80570a2f1c9df880a8c9db
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: 3200f22485bfd642a37a7d34ac727b8da4500d06
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134234"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231184"
 ---
 # Emular autenticadores y depurar webauthn en Microsoft Edge DevTools  
 
@@ -36,10 +36,10 @@ Un buen lugar para empezar a usar la autenticación Web es la [especificación d
        Herramienta **Webauthn**  
     :::image-end:::  
     
-1.  En la herramienta **Webauthn** , elija la casilla que se encuentra junto a **Habilitar el entorno de autenticador virtual**.  
+1.  En la herramienta **Webauthn** , active la casilla de verificación **Habilitar entorno de autenticación virtual** .  
 1.  Una vez que se haya habilitado, aparecerá una nueva sección llamada **nuevo autenticador** .  
     
-    :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
+    :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="Habilitar el entorno de autenticador virtual" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
         **Habilitar el entorno de autenticador virtual**  
     :::image-end:::  
     
@@ -55,13 +55,13 @@ Un buen lugar para empezar a usar la autenticación Web es la [especificación d
 1.  Elija el botón **Agregar** .  
 1.  Aparece una nueva sección del autenticador recién creado.  
     
-    :::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-authenticator.msft.png":::
+    :::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Authenticator" lightbox="../media/webauthn-authenticator.msft.png":::
        Authenticator  
     :::image-end:::  
     
 La sección **Authenticator** incluye una tabla de **credenciales** .  La tabla está vacía hasta que se registra una credencial para el autenticador.  
 
-:::image type="complex" source="../media/webauthn-no-cred.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-no-cred.msft.png":::
+:::image type="complex" source="../media/webauthn-no-cred.msft.png" alt-text="No hay credenciales" lightbox="../media/webauthn-no-cred.msft.png":::
    No hay credenciales  
 :::image-end:::  
 
@@ -72,7 +72,7 @@ Siga los pasos que se indican a continuación para registrar una nueva credencia
 1.  En el sitio web de demostración, elija **registrar nueva credencial**.  
 1.  Ahora se agrega una nueva credencial a la tabla de **credenciales** en la herramienta webauthn.  
     
-    :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-view-cred.msft.png":::
+    :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="Ver credenciales" lightbox="../media/webauthn-view-cred.msft.png":::
        Ver credenciales  
     :::image-end:::  
     
@@ -82,7 +82,7 @@ En el sitio web de demostración, elija el botón **autenticar** .  Compruebe qu
 
 Para exportar o quitar una credencial, seleccione el botón **exportar** o **quitar** .  
 
-:::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-export-remove.msft.png":::
+:::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="Exportar o quitar una credencial" lightbox="../media/webauthn-export-remove.msft.png":::
    Exportar o quitar una credencial  
 :::image-end:::  
 
@@ -93,7 +93,7 @@ Para cambiar el nombre de un autenticador, siga los pasos que se indican a conti
 1.  Junto al nombre de autenticador, seleccione el botón **Editar** .  
 1.  Edite el nombre y, a continuación, elija **entrar** para guardar los cambios.  
 
-:::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-rename.msft.png":::
+:::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="Cambiar el nombre de un autenticador" lightbox="../media/webauthn-rename.msft.png":::
    Cambiar el nombre de un autenticador  
 :::image-end:::  
 
@@ -104,7 +104,7 @@ Un autenticador recién creado se activa automáticamente.  Para usar otro auten
 > [!NOTE]
 > DevTools solo admite autenticadores virtuales activos en cualquier momento.  Si quita el autenticador activo, otro autenticador no se activará automáticamente.  
 
-:::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-set-active.msft.png":::
+:::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="Establecer autenticador activo" lightbox="../media/webauthn-set-active.msft.png":::
    Establecer autenticador activo  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ Un autenticador recién creado se activa automáticamente.  Para usar otro auten
 
 Para quitar un autenticador virtual, junto al autenticador, seleccione el botón **quitar** .  
 
-:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-remove-authenticator.msft.png":::
+:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="Quitar autenticador" lightbox="../media/webauthn-remove-authenticator.msft.png":::
    Quitar autenticador  
 :::image-end:::  
 
@@ -122,7 +122,7 @@ Para quitar un autenticador virtual, junto al autenticador, seleccione el botón
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
 
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Demostración de webauthn | Appspot"  
 
@@ -138,8 +138,8 @@ Para quitar un autenticador virtual, junto al autenticador, seleccione el botón
 [GithubW3cWebauthnSctnSignCounter]: https://w3c.github.io/webauthn/#sctn-sign-counter "Consideraciones del contador de firmas: autenticación Web: una API para el acceso a las credenciales de clave pública nivel 2 | GitHub"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) y está creada por [Jecelyn Yeen][JecelynYeen] \ (defensor para desarrolladores, Chrome DevTools \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

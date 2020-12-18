@@ -3,16 +3,16 @@ description: Los fragmentos de código son pequeños scripts que puede crear y e
 title: Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3542243f7fa886865ced47d47991cd9b11001e2e
-ms.sourcegitcommit: 9dcaf598f3930bcfab9f93ff63463beb98274de0
+ms.openlocfilehash: 89b028177016a9194a67bbbe44d08572e5755f95
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145123"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230960"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ El uso de recortes es una excelente manera de cambiar algunas cosas en una pági
 
 En la siguiente ilustración, la página web aparece después de ejecutar el fragmento de código.  El **cajón de consola** emerge para mostrar el `Hello, Snippets!` mensaje que indica que el fragmento de código registra y el contenido de la página web cambia por completo.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="La página web después de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
    La página web después de ejecutar el fragmento de código  
 :::image-end:::  
 
@@ -67,7 +67,7 @@ En la siguiente ilustración, la página web aparece después de ejecutar el fra
 
 El panel de **fragmentos de código** muestra los fragmentos de código.  Cuando desee editar un fragmento de código, tendrá que abrirlo desde el panel **fragmentos de código** .  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="El panel de fragmentos" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    El panel de **fragmentos**  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ El panel de **fragmentos de código** muestra los fragmentos de código.  Cuando
 
 1.  Elija la pestaña **orígenes** para abrir la herramienta **orígenes** .  El panel de **páginas** suele abrirse de forma predeterminada.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="La herramienta orígenes con el panel de páginas abierto a la izquierda" lightbox="../media/javascript-sources-page-pane.msft.png":::
        La herramienta **orígenes** con el panel de **páginas** abierto a la izquierda  
     :::image-end:::  
     
@@ -87,7 +87,7 @@ El panel de **fragmentos de código** muestra los fragmentos de código.  Cuando
 1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
 1.  Escriba `Snippets` , elija **Mostrar fragmentos**y, a continuación, seleccione `Enter` para ejecutar el comando.  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="El comando Mostrar fragmentos" lightbox="../media/javascript-search-show-snippets.msft.png":::
        El comando **Mostrar fragmentos**  
     :::image-end:::  
     
@@ -99,7 +99,7 @@ El panel de **fragmentos de código** muestra los fragmentos de código.  Cuando
 1.  Elija **nuevo fragmento de código**.  
 1.  Escriba un nombre para el fragmento de código y, después, seleccione `Enter` Guardar.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Nombrar un fragmento de código" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Nombrar un fragmento de código  
     :::image-end:::  
     
@@ -109,7 +109,7 @@ El panel de **fragmentos de código** muestra los fragmentos de código.  Cuando
 1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
 1.  Escriba `Snippet` , elija **crear nuevo fragmento de código**y, a continuación, seleccione `Enter` para ejecutar el comando.  
     
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Comando para crear un nuevo fragmento de código" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        Comando para crear un nuevo fragmento de código  
     :::image-end:::  
     
@@ -120,14 +120,14 @@ Para cambiar el nombre de un nuevo fragmento con un nombre personalizado, navegu
 1.  [Abra el panel **fragmentos de código** ](#open-the-snippets-pane).  
 1.  En el panel **fragmentos** , elija el nombre del fragmento de código que desea editar.  Se abre en el **Editor de código**.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="El editor de código" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        El **Editor de código**  
     :::image-end:::  
     
 1.  Use el **Editor de código** para agregar JavaScript al fragmento de código.  
 1.  Cuando aparece un asterisco junto al nombre del fragmento, significa que tiene código no guardado.  Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Un asterisco junto al nombre del fragmento de código indica que el código no se ha guardado" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        Un asterisco junto al nombre del fragmento de código indica que el código no se ha guardado  
     :::image-end:::  
     
@@ -145,7 +145,7 @@ Para cambiar el nombre de un nuevo fragmento con un nombre personalizado, navegu
 1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el menú de comandos.  
 1.  Elimine el `>` carácter y escriba el `!` carácter seguido del nombre del fragmento de código que desea ejecutar.  
     
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Antes de ejecutar el fragmento de código" lightbox="../media/javascript-search-run-command.msft.png":::
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Ejecución de un fragmento de código desde el menú de comandos" lightbox="../media/javascript-search-run-command.msft.png":::
        Ejecución de un fragmento de código desde el **menú de comandos**  
     :::image-end:::  
     
@@ -173,14 +173,14 @@ Para cambiar el nombre de un nuevo fragmento con un nombre personalizado, navegu
 <!-- links -->  
 
 [DevtoolsConsoleIndex]: ../console/index.md "Descripción general de la consola | Microsoft docs"  
-[DevToolsSourcesTool]: ../sources.md "Información general de la herramienta orígenes | Microsoft docs"  
+[DevToolsSourcesTool]: ../sources/index.md "Información general de la herramienta orígenes | Microsoft docs"  
 [DevtoolsJavascriptOverrides]: ./overrides.md "Invalidaciones | Microsoft docs"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Bloc de la | MDN"  
 [WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipedia"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 > La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  

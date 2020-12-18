@@ -3,16 +3,16 @@ description: Use instrumentación de asignación en la escala de tiempo para bus
 title: Cómo usar el instrumental de asignación en la escala de tiempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125450"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230918"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -56,7 +56,7 @@ Complete las acciones siguientes para empezar a usar **instrumentación de asign
 1.  Abra el panel **memoria** y seleccione el botón **de opción instrumentación de asignación en la escala de tiempo** .  
 1.  Iniciar grabación.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Instrumentación de asignación en la escala de tiempo" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Generador de perfiles de asignaciones del montón de grabación" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
        Generador de perfiles de asignaciones del montón de grabación  
     :::image-end:::  
     
@@ -66,7 +66,7 @@ La escala de tiempo de asignación del montón muestra dónde se crean los objet
 
 El alto de cada barra corresponde al tamaño de los objetos asignados recientemente, y el color de las barras indica si esos objetos siguen estando activos en la instantánea de la pila final.  Las barras azules indican que los objetos que aún están activos al final de la escala de tiempo, las barras grises indican los objetos que se asignaron durante la escala de tiempo, pero que se han recolectado como basura.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentación de asignación en la escala de tiempo" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentación de asignación en instantánea de escala de tiempo" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
    **Instrumentación de asignación en instantánea de escala de tiempo**  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ El alto de cada barra corresponde al tamaño de los objetos asignados recienteme
 
 Puede usar los controles deslizantes de la línea de tiempo anterior para acercar esa instantánea en particular y revisar los objetos que se asignaron recientemente en ese punto:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Instrumentación de asignación en la escala de tiempo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Acercar instantánea" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
    Acercar instantánea  
 :::image-end:::  
 
@@ -91,7 +91,7 @@ Puede ver la asignación de memoria por función de JavaScript.  Para obtener m�
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open.md "Abrir Microsoft Edge (cromo) DevTools | Microsoft docs"
+[DevToolsOpenIndex]: ../open/index.md "Abrir Microsoft Edge (cromo) DevTools | Microsoft docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigar la asignación de memoria por función: corrección de problemas de memoria | Microsoft docs"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
@@ -100,7 +100,7 @@ Puede ver la asignación de memoria por función de JavaScript.  Para obtener m�
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Descargar un canal de Microsoft Edge"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 > La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) y está creada por [Meggin Kearney][MegginKearney] \ (editor técnico \).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  

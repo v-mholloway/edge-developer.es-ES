@@ -3,16 +3,16 @@ description: Una referencia sobre todas las formas de registrar y analizar el re
 title: Referencia de análisis de rendimiento
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d135f83273842a1e128df0bb346f0f126e2fbe8d
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: d5b6be92c1419ba880a94c62c3f586a740816622
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125142"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230764"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,7 +41,7 @@ Navegue para empezar a [analizar el rendimiento en tiempo de ejecución][Devtool
 Grabe el rendimiento en tiempo de ejecución cuando desee analizar el rendimiento de una página mientras se está ejecutando, en lugar de cargarlo.  
 
 1.  Vaya a la página que desea analizar.  
-1.  Haga clic en la pestaña **rendimiento** en DevTools.  
+1.  Elija la pestaña **rendimiento** en DevTools.  
 1.  Elija **grabar** \ ( ![ icono de registro ][ImageRecordIcon] \).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
@@ -59,13 +59,13 @@ Registre el rendimiento de la carga cuando desee analizar el rendimiento de una 
 1.  Abra el panel **rendimiento** de DevTools.  
 1.  Elija **Actualizar página** \ ( ![ Actualizar página ][ImageRefreshPageIcon] \).  DevTools registra las métricas de rendimiento mientras se actualiza la página y, a continuación, detiene automáticamente la grabación un par de segundos después de que finalice la carga.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="Actualizar página" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
        **Actualizar página**  
     :::image-end:::  
     
 DevTools automáticamente acerca de la parte de la grabación donde se produjo la mayor parte de la actividad.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-refreshed.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-refreshed.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-refreshed.msft.png" alt-text="Una grabación de página" lightbox="../media/evaluate-performance-performance-refreshed.msft.png":::
    Una grabación de página  
 :::image-end:::  
 
@@ -73,7 +73,7 @@ DevTools automáticamente acerca de la parte de la grabación donde se produjo l
 
 Active la casilla **capturas** de pantalla para capturar una captura de pantalla de cada fotograma mientras graba.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png" alt-text="La casilla de verificación capturas de pantallas" lightbox="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png":::
    La casilla de verificación **capturas de pantallas**  
 :::image-end:::  
 
@@ -83,7 +83,7 @@ Desplácese hasta [ver una captura de pantalla](#view-a-screenshot) para obtener
 
 Mientras graba una página, elija **recopilar basura** \ ( ![ recopilar icono de basura ][ImageCollectGarbageIcon] \) para forzar la recolección de elementos no utilizados.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Recopilar basura" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    Recopilar basura  
 :::image-end:::  
 
@@ -91,7 +91,7 @@ Mientras graba una página, elija **recopilar basura** \ ( ![ recopilar icono de
 
 Elija **configuración de captura** \ ( ![ configuración de captura ][ImageCaptureSettingsIcon] \) para exponer más opciones de configuración relacionadas con el modo en que DevTools captura las grabaciones de rendimiento.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="La sección configuración de captura" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    La sección **configuración de captura**  
 :::image-end:::  
 
@@ -107,13 +107,13 @@ Las 2 figuras siguientes muestran la diferencia entre deshabilitar y habilitar m
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png":::
+      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png" alt-text="Ejemplo de una grabación cuando se deshabilitan los ejemplos de JS" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png":::
          Ejemplo de una grabación cuando se deshabilitan los ejemplos de JS  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png":::
-         Ejemplo de una grabación cuando se habilitan ejemplos de JS  
+      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png" alt-text="Ejemplo de una grabación cuando se activan los ejemplos de JS" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png":::
+         Ejemplo de una grabación cuando se activan los ejemplos de JS  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
@@ -134,7 +134,7 @@ Para limitar la CPU durante la grabación:
     
 El límite es relativo a las capacidades de su equipo.  Por ejemplo, la opción **2x ralentización** hace que la CPU funcione 2 veces más lentas de lo normal.  DevTools no simulan verdaderamente las CPU de los dispositivos móviles, porque la arquitectura de los dispositivos móviles es muy diferente de la de los equipos de escritorio y portátiles.  
 
-### Habilitar la instrumentación avanzada de pintura  
+### Activar la instrumentación avanzada de pintura  
 
 Para ver la instrumentación de pintura detallada:  
 
@@ -145,17 +145,17 @@ Para obtener información sobre cómo interactuar con la información de las pin
 
 ## Guardar una grabación  
 
-Para guardar una grabación, haga clic con el botón derecho y elija **Guardar perfil**.  
+Para guardar una grabación, abra el menú contextual \ (haga clic con el botón derecho \) y elija **Guardar perfil**.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="Guardar perfil" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
    **Guardar perfil**  
 :::image-end:::  
 
 ## Cargar una grabación  
 
-Para cargar una grabación, haga clic con el botón derecho y elija **cargar perfil**.  
+Para cargar una grabación, abra el menú contextual \ (haga clic con el botón derecho \) y elija **cargar perfil**.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="Cargar perfil" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
    **Cargar perfil**  
 :::image-end:::  
 
@@ -163,7 +163,7 @@ Para cargar una grabación, haga clic con el botón derecho y elija **cargar per
 
 Después de realizar una grabación, pulse **Borrar grabación** \ ( ![ Borrar icono ][ImageClearRecordingIcon] de grabación \) para borrar esa grabación del panel **rendimiento** .  
 
-:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Borrar grabación" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **Borrar grabación**  
 :::image-end:::  
 
@@ -175,33 +175,33 @@ Después de [grabar el rendimiento en tiempo de ejecución](#record-runtime-perf
 
 Arrastre el ratón hacia la izquierda o hacia la derecha en la **información general** para seleccionar una parte de una grabación.  La **información general** es la sección que contiene los gráficos de **fps**, **CPU**y **net** .  
 
-:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Arrastre el mouse por la información general para aplicar zoom" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
    Arrastre el mouse por la **información general** para aplicar zoom  
 :::image-end:::  
 
 Para seleccionar una parte con el teclado:  
 
-1.  Haga clic en el fondo de la sección **principal** o en cualquiera de las secciones que hay junto a ella, como **interacciones**, **red**o **GPU**.  Este flujo de trabajo de teclado solo funciona cuando una de estas secciones está en el foco.  
+1.  Elija el fondo de la sección **principal** o cualquiera de las secciones que hay junto a él, como **interacciones**, **red**o **GPU**.  Este flujo de trabajo de teclado solo funciona cuando una de estas secciones está en el foco.  
 1.  Use las `W` teclas,, `A` `S` , `D` para acercar, mover a la izquierda, alejar y desplazar a la derecha, respectivamente.  
 
-Para seleccionar una parte con un panel táctil:  
+Para seleccionar una parte con un panel táctil, complete las siguientes acciones.  
 
 1.  Mantenga el mouse sobre la sección **Descripción general** o en la sección de **detalles** .  La sección de **información general** es el área que contiene los gráficos de **fps**, **CPU**y **net** .  La sección de **detalles** es el área que contiene la sección **principal** , la sección **interacciones** , etc.  
 1.  Con dos dedos, deslice el dedo hacia arriba para alejar, deslice el dedo hacia la izquierda, deslice el dedo hacia abajo y deslice el dedo hacia la derecha para desplazarse hacia la derecha.  
 
-Para desplazarse por un gráfico de llamas largo en la sección **principal** o en cualquiera de los vecinos, haga clic y mantenga presionado mientras arrastra hacia arriba o hacia abajo.  Arrastre hacia la izquierda y hacia la derecha para mover qué parte de la grabación está seleccionada.  
+Para desplazarse por un gráfico de llamas largo en la sección **principal** o en cualquiera de los vecinos, seleccione y mantenga presionado mientras arrastra hacia arriba y hacia abajo.  Arrastre hacia la izquierda y hacia la derecha para mover la parte de la grabación elegida.  
 
 ### Buscar actividades  
 
 Seleccione `Control` + `F` \ (Windows, Linux \) o `Command` + `F` \ (MacOS \) para abrir el cuadro de búsqueda en la parte inferior del panel **rendimiento** .  
 
-:::image type="complex" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="El cuadro de búsqueda" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
    El cuadro de búsqueda  
 :::image-end:::  
 
 Para navegar por las actividades que coinciden con la consulta:  
 
-*   Use los **Previous** botones \ ( ![ anterior ][ImagePreviousIcon] \) y **siguiente** \ ( ![ siguiente ][ImageNextIcon] \) anteriores.  
+*   Use los **** botones \ ( ![ anterior ][ImagePreviousIcon] \) y **siguiente** \ ( ![ siguiente ][ImageNextIcon] \) anteriores.  
 *   Seleccione `Shift` + `Enter` para seleccionar la anterior o `Enter` para seleccionar la siguiente.  
 
 Para modificar la configuración de la consulta:  
@@ -215,27 +215,27 @@ Para ocultar el cuadro de búsqueda, presione **Cancelar**.
 
 Use la sección **principal** para ver la actividad que se produjo en el subproceso principal de la página.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="La sección principal" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
    La sección **principal**  
 :::image-end:::  
 
-Haga clic en un evento para ver más información sobre él en la pestaña **Resumen** .  DevTools describe el evento seleccionado.  
+Elija un evento para ver más información sobre él en la pestaña **Resumen** .  DevTools describe el evento seleccionado.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="Más información sobre la función anónima en la pestaña Resumen" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
    Más información sobre la `anonymous` función en la pestaña **Resumen**  
 :::image-end:::  
 
 DevTools representa la actividad principal del subproceso con un gráfico de llama.  El eje x representa la grabación a lo largo del tiempo.  El eje y representa la pila de llamadas.  Los eventos en la parte superior provocan los eventos que se encuentran por debajo.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-flame-chart.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-main-flame-chart.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-main-flame-chart.msft.png" alt-text="Un gráfico de llamas" lightbox="../media/evaluate-performance-performance-main-flame-chart.msft.png":::
    Un gráfico de llamas  
 :::image-end:::  
 
-En la ilustración anterior, un `click` evento produjo un `Function Call` en `activitytabs.js` en la línea 53.  A continuación `Function Call` , verá que se llamó a una función anónima.  La función anónima a la que se llamó, a la que llamó `a` `wait` `Minor GC` .  
+En la ilustración anterior, un `click` evento produjo un `Function Call` en `activitytabs.js` en la línea 53.  A continuación `Function Call` , revise que se ejecutó una función anónima.  La función anónima solicitada, que solicitó `a` `wait` `Minor GC` .  
 
-DevTools asigna scripts a colores aleatorios.  En la ilustración anterior, las llamadas de función de un script se muestran coloreadas en verde.  Las llamadas desde otra secuencia de comandos tienen color beige.  El amarillo más oscuro representa la actividad de scripting y el evento morado representa la actividad de representación.  Estos eventos amarillos y amarillos más oscuros son coherentes en todas las grabaciones.  
+DevTools asigna scripts a colores aleatorios.  En la ilustración anterior, las solicitudes de función de un script se muestran coloreadas en verde.  Las solicitudes de otra secuencia de comandos tienen colores beige.  El amarillo más oscuro representa la actividad de scripting y el evento morado representa la actividad de representación.  Estos eventos amarillos y amarillos más oscuros son coherentes en todas las grabaciones.  
 
-Navegue a [deshabilitar muestras de JavaScript](#disable-javascript-samples) si desea ocultar el gráfico detallado de llamadas de JavaScript.  Cuando se deshabilitan los ejemplos de JS, solo verá eventos de alto nivel, como `Event: click` y `Function Call` de la ilustración anterior.  
+Navegue a [deshabilitar muestras de JavaScript](#disable-javascript-samples) si desea ocultar el gráfico detallado de llamas de solicitudes de JavaScript.  Cuando se deshabilitan los ejemplos de JS, solo se muestran los eventos de alto nivel, como `Event: click` y `Function Call` de la ilustración anterior `str` .  
 
 ### Ver actividades en una tabla  
 
@@ -252,7 +252,7 @@ Después de grabar una página, no es necesario basarse únicamente en la secci�
 
 A continuación se explica el concepto de **actividades raíz** que se menciona en las secciones **árbol de llamadas** , pestaña **ascendente** y registro de **eventos** .  
 
-Las actividades raíz son aquellas que hacen que el explorador realice algún trabajo.  Por ejemplo, al hacer clic en una página, el explorador desencadena una `Event` actividad como la actividad raíz.  Esto `Event` puede hacer que se ejecute un controlador, y así sucesivamente.  
+Las actividades raíz son aquellas que hacen que el explorador realice algún trabajo.  Por ejemplo, cuando elige una página web, el explorador ejecuta una `Event` actividad como actividad raíz.  Esto `Event` puede hacer que se ejecute un controlador, y así sucesivamente.  
 
 En el gráfico de llamas de la sección **principal** , las actividades raíz se encuentran en la parte superior del gráfico.  En las pestañas **árbol de llamadas** y **registro de eventos** , las actividades raíz son los elementos de nivel superior.  
 
@@ -264,7 +264,7 @@ Use la pestaña **árbol de llamadas** para ver qué actividades de [raíz](#roo
 
 La pestaña **árbol de llamadas** solo muestra actividades durante la parte seleccionada de la grabación.  Desplácese para [seleccionar una parte de una grabación](#select-a-portion-of-a-recording) para obtener información sobre cómo seleccionar partes.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-call-tree.msft.png" alt-text="La ficha árbol de llamadas" lightbox="../media/evaluate-performance-performance-call-tree.msft.png":::
    La ficha **árbol de llamadas**  
 :::image-end:::  
 
@@ -278,7 +278,7 @@ Use el cuadro de texto **filtrar** para filtrar eventos por nombre de actividad.
 
 De forma predeterminada, el menú **agrupar** se establece en **sin agrupar**.  Use el menú **agrupar** para ordenar la tabla actividad según varios criterios.  
 
-Elija **Mostrar pila más pesada** \ ( ![ Mostrar pila más pesada ][ImageShowHeaviestStackIcon] \) para mostrar otra tabla a la derecha de la tabla **actividad** .  Haga clic en una actividad para rellenar la tabla de **pila más intensa** .  La tabla **pila más pesada** muestra qué elementos secundarios de la actividad seleccionada tardaron más tiempo en ejecutarse.  
+Elija **Mostrar pila más pesada** \ ( ![ Mostrar pila más pesada ][ImageShowHeaviestStackIcon] \) para mostrar otra tabla a la derecha de la tabla **actividad** .  Elija una actividad para rellenar la tabla de **pila más pesada** .  La tabla de **pilas más pesada** muestra qué elementos secundarios de la actividad seleccionada tardaron más tiempo en ejecutarse.  
 
 #### La ficha Bottom-Up  
 
@@ -286,11 +286,11 @@ Use la pestaña **de abajo** para ver las actividades que se ocuparon directamen
 
 La pestaña de la **parte inferior** solo muestra actividades durante la parte seleccionada de la grabación.  Desplácese para [seleccionar una parte de una grabación](#select-a-portion-of-a-recording) para obtener información sobre cómo seleccionar partes.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-bottoms-up.msft.png" alt-text="La ficha Bottom-Up" lightbox="../media/evaluate-performance-performance-bottoms-up.msft.png":::
    La pestaña **abajo**  
 :::image-end:::  
 
-En la sección **principal** , diagrama de llamas de la ilustración anterior, navegue hasta que casi prácticamente todo el tiempo se dedicó a ejecutarse `Parse HTML` .  La actividad superior de la pestaña de la **parte inferior** de la figura anterior es `Parse HTML` .  <!--In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  En la pestaña general, vaya **a la siguiente** actividad más costosa `Layout` .  
+En la sección **principal** , diagrama de llamas de la ilustración anterior, navegue hasta que casi prácticamente todo el tiempo se dedicó a ejecutarse `Parse HTML` .  La actividad superior de la pestaña de la **parte inferior** de la figura anterior es `Parse HTML` .  <!--In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  Vaya a la pestaña **de la parte inferior** , la actividad más costosa es `Layout` .  
 
 La columna **Self Time** representa el tiempo agregado directamente en esa actividad, en todas las apariciones.  
 
@@ -302,7 +302,7 @@ Use la pestaña **registro de eventos** para ver las actividades en el orden en 
 
 La pestaña **registro de eventos** solo muestra actividades durante la parte seleccionada de la grabación.  Desplácese para [seleccionar una parte de una grabación](#select-a-portion-of-a-recording) para obtener información sobre cómo seleccionar partes.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="La ficha registro de eventos" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
    La ficha **registro de eventos**  
 :::image-end:::  
 
@@ -324,7 +324,7 @@ Deshabilite las casillas de verificación **cargar**, **scripting**, **procesami
 
 Ver la actividad de la GPU en la sección **GPU** .  
 
-:::image type="complex" source="../media/evaluate-performance-performance-gpu-zoomed.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-gpu-zoomed.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-gpu-zoomed.msft.png" alt-text="La sección GPU" lightbox="../media/evaluate-performance-performance-gpu-zoomed.msft.png":::
    La sección **GPU**  
 :::image-end:::  
 
@@ -332,7 +332,7 @@ Ver la actividad de la GPU en la sección **GPU** .
 
 Ver la actividad rasterizada en la sección de **trama** .  
 
-:::image type="complex" source="../media/evaluate-performance-performance-raster.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-raster.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-raster.msft.png" alt-text="La sección trama" lightbox="../media/evaluate-performance-performance-raster.msft.png":::
    La sección **trama**  
 :::image-end:::  
 
@@ -340,13 +340,13 @@ Ver la actividad rasterizada en la sección de **trama** .
 
 Use la sección **interacciones** para buscar y analizar las interacciones del usuario que se produjeron durante la grabación.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-interactions-animation.msft.png" alt-text="La sección interacciones" lightbox="../media/evaluate-performance-performance-interactions-animation.msft.png":::
    La sección **interacciones**  
 :::image-end:::  
 
 Una línea roja en la parte inferior de una interacción representa el tiempo dedicado a esperar el subproceso principal.  
 
-Haga clic en una interacción para ver más información sobre ella en la pestaña **Resumen** .  
+Elija una interacción para ver más información sobre ella en la pestaña **Resumen** .  
 
 ### Analizar fotogramas por segundo (FPS)  
 
@@ -362,7 +362,7 @@ El gráfico **fps** proporciona una descripción general de la velocidad de foto
 
 Una barra roja encima del gráfico de **fps** es una advertencia de que la velocidad de fotogramas ha disminuido tan poco que probablemente se ha dañado la experiencia del usuario.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-fps-highlight.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-fps-highlight.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-fps-highlight.msft.png" alt-text="El gráfico de FPS" lightbox="../media/evaluate-performance-performance-fps-highlight.msft.png":::
    El gráfico de **fps**  
 :::image-end:::  
 
@@ -372,13 +372,13 @@ La sección **Marcos** le indica exactamente cuánto tarda un marco en particula
 
 Mantenga el mouse sobre un marco para ver una información sobre herramientas con más información sobre ella.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-hover.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-frames-hover.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-frames-hover.msft.png" alt-text="Desplazar el puntero sobre un marco" lightbox="../media/evaluate-performance-performance-frames-hover.msft.png":::
    Desplazar el puntero sobre un marco  
 :::image-end:::  
 
-Haga clic en un marco para ver más información sobre el marco en la pestaña **Resumen** .  DevTools esquematiza el fotograma seleccionado en azul.  
+Elija un marco para ver más información sobre el marco en la pestaña **Resumen** .  DevTools esquematiza el fotograma seleccionado en azul.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="Ver un marco en la pestaña Resumen" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
    Ver un marco en la pestaña **Resumen**  
 :::image-end:::  
 
@@ -386,7 +386,7 @@ Haga clic en un marco para ver más información sobre el marco en la pestaña *
 
 Expanda la sección **red** para ver una cascada de solicitudes de red que se produjeron durante la grabación.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-network.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-network.msft.png" alt-text="La sección red" lightbox="../media/evaluate-performance-performance-network.msft.png":::
    La sección **red**  
 :::image-end:::  
 
@@ -397,7 +397,7 @@ Las solicitudes se codifican en colores de la siguiente manera:
 *   JS: amarillo  
 *   Imágenes: verde  
     
-Haga clic en una solicitud para ver más información sobre ella en la pestaña **Resumen** .  Por ejemplo, en la ilustración anterior, la pestaña **Resumen** muestra más información sobre la solicitud azul seleccionada en la sección **red** .  
+Elija una solicitud para ver más información sobre ella en la pestaña **Resumen** .  Por ejemplo, en la ilustración anterior, la pestaña **Resumen** muestra más información sobre la solicitud azul seleccionada en la sección **red** .  
 
 Un cuadrado de color azul más oscuro en la parte superior izquierda de una solicitud significa que es una solicitud de mayor prioridad.  Un cuadrado más claro significa menor prioridad.  Por ejemplo, en la ilustración anterior, el azul, la solicitud seleccionada es de mayor prioridad y el verde que está debajo es de menor prioridad.  
 
@@ -410,12 +410,12 @@ En el 1º de los siguientes valores, la solicitud de `www.bing.com` se represent
     
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-bing-performance-network.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-bing-performance-network.msft.png":::
+      :::image type="complex" source="../media/evaluate-performance-bing-performance-network.msft.png" alt-text="La representación de barra de línea de la solicitud www.bing.com" lightbox="../media/evaluate-performance-bing-performance-network.msft.png":::
          Representación de barra de línea de la `www.bing.com` solicitud  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
+      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="La herramienta red" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
          La herramienta **red**  
 ::: Image-end:::  
    :::column-end:::
@@ -425,13 +425,13 @@ En el 1º de los siguientes valores, la solicitud de `www.bing.com` se represent
 
 Active la casilla **memoria** para ver las métricas de memoria de la última grabación.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-memory-highlight.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-memory-highlight.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-memory-highlight.msft.png" alt-text="La casilla memoria" lightbox="../media/evaluate-performance-performance-memory-highlight.msft.png":::
    La casilla **memoria**  
 :::image-end:::  
 
 DevTools muestra un nuevo gráfico de **memoria** , encima de la pestaña **Resumen** .  También hay un nuevo gráfico debajo del gráfico **net** , denominado **montón**.  El gráfico de **montones** proporciona la misma información que la línea de **montón JS** en el gráfico de **memoria** .  
 
-:::image type="complex" source="../media/evaluate-performance-performance-memory-chart.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-memory-chart.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-memory-chart.msft.png" alt-text="Métricas de memoria" lightbox="../media/evaluate-performance-performance-memory-chart.msft.png":::
    Métricas de memoria  
 :::image-end:::  
 
@@ -442,31 +442,31 @@ El gráfico solo muestra la región de la grabación que está seleccionada actu
 
 ### Ver la duración de una parte de una grabación  
 
-Al analizar una sección como la **red** o **Main**, a veces necesitarás una estimación más precisa de cuánto tiempo han tardado determinados eventos.  Espera `Shift` , haga clic y mantenga presionado y arrastre hacia la izquierda o la derecha para seleccionar una parte de la grabación.  En la parte inferior de la selección, DevTools muestra cuánto tiempo duró esa parte.  
+Al analizar una sección como la **red** o **Main**, a veces necesitarás una estimación más precisa de cuánto tiempo han tardado determinados eventos.  Espera `Shift` , elige y mantén presionado, y arrastra hacia la izquierda o la derecha para seleccionar una parte de la grabación.  En la parte inferior de la selección, DevTools muestra cuánto tiempo duró esa parte.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-duration.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-main-duration.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-main-duration.msft.png" alt-text="Ver la duración de una parte de una grabación" lightbox="../media/evaluate-performance-performance-main-duration.msft.png":::
    Ver la duración de una parte de una grabación  
 :::image-end:::  
 
 ### Ver una captura de pantalla  
 
-Vaya a capturar capturas de [pantallas mientras graba](#capture-screenshots-while-recording) para obtener información sobre cómo habilitar capturas de pantallas.  
+Vaya a capturar capturas de [pantallas mientras graba](#capture-screenshots-while-recording) para obtener información sobre cómo activar las capturas de pantallas.  
 
 Pase el puntero por la **información general** para ver una captura de pantalla de cómo se vio la página durante ese momento de la grabación.  La **información general** es la sección que contiene los gráficos de **CPU**, **fps**y **net** .  
 
-:::image type="complex" source="../media/evaluate-performance-performance-screenshots-hover.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-screenshots-hover.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-screenshots-hover.msft.png" alt-text="Ver una captura de pantalla" lightbox="../media/evaluate-performance-performance-screenshots-hover.msft.png":::
    Ver una captura de pantalla  
 :::image-end:::  
 
-También puede ver capturas de pantallas haciendo clic en un marco de la sección **Marcos** .  DevTools muestra una versión reducida de la captura de pantalla en la pestaña **Resumen** .  
+También puede ver capturas de pantallas si elige un marco en la sección **Marcos** .  DevTools muestra una versión reducida de la captura de pantalla en la pestaña **Resumen** .  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Ver una captura de pantalla en la pestaña Resumen" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
    Ver una captura de pantalla en la pestaña **Resumen**  
 :::image-end:::  
 
-Para acercar la captura de pantalla, haga clic en la miniatura de la pestaña **Resumen** .  
+Elija la miniatura en la pestaña **Resumen** para acercar la captura de pantalla.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Ampliar la captura de pantalla desde la pestaña Resumen" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
    Ampliar la captura de pantalla desde la pestaña **Resumen**  
 :::image-end:::  
 
@@ -474,16 +474,16 @@ Para acercar la captura de pantalla, haga clic en la miniatura de la pestaña **
 
 Para ver la información sobre las capas avanzadas de un marco:  
 
-1.  [Habilitar la instrumentación avanzada de pintura](#enable-advanced-paint-instrumentation).  
+1.  [Activar el instrumental de pintura avanzado](#turn-on-advanced-paint-instrumentation).  
 1.  Seleccione un marco de la sección **Marcos** .  DevTools muestra información sobre las capas en la ficha nuevas **capas** , junto a la ficha **registro de eventos** .  
     
-    :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-layers-all.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text="El panel capas" lightbox="../media/evaluate-performance-layers-all.msft.png":::
        El panel **capas**  
     :::image-end:::  
     
 Desplace el puntero sobre una capa para resaltarla en el diagrama.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Resaltar una capa" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
    Resaltar una capa  
 :::image-end:::  
 
@@ -497,10 +497,10 @@ Para mover el diagrama:
 
 Para ver información avanzada sobre un evento de pintura:  
 
-1.  [Habilitar la instrumentación avanzada de pintura](#enable-advanced-paint-instrumentation).  
+1.  [Activar](#turn-on-advanced-paint-instrumentation).  
 1.  Seleccione un evento de **pintura** en la sección **principal** .  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Pestaña generador de perfiles de pintura" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
        Pestaña **generador de perfiles de pintura**  
     :::image-end:::  
     
@@ -513,7 +513,7 @@ Para abrir la pestaña **representación** :
 1.  [Abrir el menú de comandos][DevToolsCommandMenu].  
 1.  Empiece `Rendering` a escribir y seleccione `Show Rendering` .  DevTools muestra la ficha **representación** en la parte inferior de la ventana de DevTools.  
     
-    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="La pestaña representación" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
        La pestaña **representación**  
     :::image-end:::  
     
@@ -524,7 +524,7 @@ El **medidor de fps** es una superposición que aparece en la esquina superior d
 1.  Abra la pestaña **representación** .  Na [analiza el rendimiento de la representación con la pestaña representación](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Active la casilla de verificación de **medidor de fps** .  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="El medidor de FPS" lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
        El **medidor de fps**  
     :::image-end:::  
     
@@ -532,12 +532,12 @@ El **medidor de fps** es una superposición que aparece en la esquina superior d
 
 Use las intermitencias de pintura para obtener una vista en tiempo real de todos los eventos de pintura en la página.  Cada vez que se vuelve a pintar una parte de la página, DevTools esquematiza esa sección en verde.  
 
-Para habilitar los parpadeos de pintura:  
+Para activar los parpadeos de pintura, complete las siguientes acciones.  
 
 1.  Abra la pestaña **representación** .  Desplácese hasta [analizar el rendimiento de la representación con la pestaña representación](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Active la casilla de **pintura parpadeante** .  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Pintura parpadeante" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
        **Pintura parpadeante**  
     :::image-end:::  
     
@@ -545,12 +545,12 @@ Para habilitar los parpadeos de pintura:
 
 Use **bordes de capas** para ver una superposición de los bordes de la capa y los mosaicos en la parte superior de la página.  
 
-Para habilitar los bordes de capas:  
+Para activar los bordes de capas, complete las siguientes acciones:  
 
 1.  Abra la pestaña **representación** .  Desplácese hasta [analizar el rendimiento de la representación con la pestaña representación](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Active la casilla **bordes de capas** .  
     
-    :::image type="complex" source="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png" alt-text="Bordes de capas" lightbox="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png":::
        **Bordes de capas**  
     :::image-end:::  
     
@@ -561,12 +561,12 @@ Navegue hasta los comentarios de [debug_colors. CC][ChromiumDebugColors] para ob
 Use los problemas de rendimiento de desplazamiento para identificar los elementos de la página que tienen detectores de eventos relacionados con el desplazamiento que pueden dañar el rendimiento de la página.  
 DevTools subraya los elementos potencialmente problemáticos de verde azulado.  
 
-Para ver los problemas de rendimiento del desplazamiento:  
+Para ver los problemas de rendimiento del desplazamiento, complete las siguientes acciones. 
 
 1.  Abra la pestaña **representación** .  Desplácese hasta [analizar el rendimiento de la representación con la pestaña representación](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Active la casilla de verificación de **problemas de rendimiento de desplazamiento** .  
     
-    :::image type="complex" source="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png" alt-text="Los problemas de rendimiento de desplazamiento indican que los objetos restringidos de ventanilla sin capas pueden dañar el rendimiento del desplazamiento" lightbox="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png":::
        Los **problemas de rendimiento de desplazamiento** indican que los objetos restringidos de ventanilla sin capas pueden dañar el rendimiento del desplazamiento  
     :::image-end:::  
     
@@ -592,7 +592,7 @@ Para ver los problemas de rendimiento del desplazamiento:
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
 [DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Abrir el menú de comandos: ejecutar comandos con el menú de comandos de Microsoft Edge DevTools | Microsoft docs"  
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Introducción al análisis de rendimiento en tiempo de ejecución | Microsoft docs"  
 
@@ -601,7 +601,7 @@ Para ver los problemas de rendimiento del desplazamiento:
 [ChromiumDebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors. cc: búsqueda de código"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 > La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  

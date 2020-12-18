@@ -1,21 +1,22 @@
 ---
+description: Emular las deficiencias de la visión en Microsoft Edge DevTools.
 title: Emular deficiencias de la visión en Microsoft Edge DevTools (daltonismo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/29/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: b70499fa189d162fa7589966bab183f4c12f68f7
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+ms.openlocfilehash: 5343d32992880f8c60501a86db6cb3a92f417331
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843924"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230827"
 ---
-# Emular deficiencias de la visión
+# Emular deficiencias visuales
 
-Para satisfacer mejor las necesidades de los usuarios con [deficiencia][ColorblindawarenessMain] de la visión del color \ (daltonismo \), [Microsoft Edge DevTools][MicrosoftEdgeDevTools] le permite simular determinadas deficiencias de la visión del color.  La herramienta **emular deficiencias** de la visión simula las siguientes categorías.  
+Para satisfacer mejor las necesidades de los usuarios con [deficiencia][ColorblindawarenessMain] de la visión del color \ (daltonismo \), [Microsoft Edge DevTools][DevtoolsIndex] le permite simular determinadas deficiencias de la visión del color.  La herramienta **emular deficiencias** de la visión simula las siguientes categorías.  
 
 | Deficiencia de la visión del color | Detalles |  
 |:--- |:--- |  
@@ -27,11 +28,11 @@ Para satisfacer mejor las necesidades de los usuarios con [deficiencia][Colorbli
 
 ## Ir a las herramientas de representación  
 
-Para simular una deficiencia de la visión que se aplica a su producto Web, abra las [herramientas de representación][RenderingTools].  
+Para simular una deficiencia de la visión que se aplica a su producto Web, abra las [herramientas de representación][DevtoolsRenderingToolsIndex].  
 
-1.  Abrir las herramientas de representación seleccionando el `...` elemento de menú de la barra de herramientas  
-1.  Seleccionar `More tools`  
-1.  Seleccionar `Rendering`  
+1.  Para abrir las herramientas de representación, elija el `...` elemento de menú de la barra de herramientas  
+1.  Elegir `More tools`  
+1.  Elegir `Rendering`  
     
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Abrir las herramientas de representación" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        Abrir las **herramientas de representación**  
@@ -39,7 +40,7 @@ Para simular una deficiencia de la visión que se aplica a su producto Web, abra
 
 El menú de **fotorrealismo** aparece en el cajón.  
 
-1.  Desplácese hacia abajo hasta el `Emulate vision deficiencies` elemento de menú y seleccione el menú desplegable para mostrar las opciones.  
+1.  Desplácese hacia abajo hasta el `Emulate vision deficiencies` elemento de menú y elija el menú desplegable para mostrar las opciones.  
     
     :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="El menú emular deficiencias de la visión en el alimentador de representación" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        El menú **emular deficiencias** de la visión en el alimentador de **representación**  
@@ -51,7 +52,7 @@ El menú de **fotorrealismo** aparece en el cajón.
        Las opciones del menú **emular deficiencias de visión**  
     :::image-end:::  
     
-1.  En la ventana principal se muestra la simulación de la opción seleccionada que se ha aplicado a la página actual.  
+1.  En la ventana principal, se muestra la simulación de la opción que ha elegido aplicada a la página actual.  
     
     :::row:::
        :::column span="":::
@@ -69,13 +70,13 @@ El menú de **fotorrealismo** aparece en el cajón.
 
 También puede usar el **menú de comandos** para acceder a las distintas simulaciones.  
 
-1.  Pulse `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="El menú de comandos" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        El **menú de comandos**  
     :::image-end:::  
     
-1.  Escriba `emulate` , elija lo que desea simular y presione `Enter` .  
+1.  Escriba `emulate` , elija lo que desea simular y seleccione `Enter` .  
     
     :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Las diferentes opciones de simulación disponibles en el menú de comandos" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
        Las diferentes opciones de simulación disponibles en el **menú de comandos**  
@@ -86,7 +87,10 @@ También puede usar el **menú de comandos** para acceder a las distintas simula
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (cromo)"  
+[DevtoolsIndex]: ../index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
+[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analizar rendimiento en tiempo de ejecución | Microsoft docs"  
+
 [ColorblindawarenessMain]: http://www.colourblindawareness.org "La organización de conocimiento de colores ciegos"  
+
 [AmfcbMain]: https://www.amfcb.org "American Foundation para el color Blind (AFCB)"  
-[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Herramientas de representación de Microsoft Edge (cromo)"  
+

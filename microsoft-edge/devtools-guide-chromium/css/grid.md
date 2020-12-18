@@ -3,16 +3,16 @@ description: Aprenda a usar Microsoft Edge DevTools para ver y cambiar la CSS de
 title: Inspeccionar cuadrícula CSS en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 150aea57aa676580b554cc74292671ed567a0a2c
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: 1fe6bd1c8efd244315fb9a38777df6ea3e9b1a4d
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134199"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231100"
 ---
 # Inspeccionar cuadrícula CSS  
 
@@ -37,13 +37,13 @@ Cuando un elemento HTML de la página se tiene o se le `display: grid` `display:
 
 Seleccione el distintivo para alternar la visualización de una superposición de cuadrícula en la página.  La superposición aparece sobre el elemento, dispuestos como una cuadrícula para mostrar la posición de las líneas de la cuadrícula y las pistas:  
 
-:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-highlight-grid.msft.png":::
+:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Activar distintivo de cuadrícula" lightbox="../media/grid-highlight-grid.msft.png":::
    Activar distintivo de cuadrícula  
 :::image-end:::  
 
 Abrir el panel **diseño** .  Cuando se incluyen cuadrículas en una página, el panel de **diseño** incluye una sección de **cuadrícula** que contiene varias opciones para ver las cuadrículas.  
 
-:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-layout-pane.msft.png":::
+:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Panel de diseño" lightbox="../media/grid-layout-pane.msft.png":::
    Panel de **diseño**  
 :::image-end:::  
 
@@ -82,7 +82,7 @@ De forma predeterminada, los números de línea positivos y negativos se muestra
 
 Para obtener más información sobre números negativos en la superposición de cuadrícula, vaya a [ubicación basada en líneas con cuadrícula CSS][MdnLineBasedPlacementCssGrid].  
 
-:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-show-line-numbers.msft.png":::
+:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Mostrar números de línea" lightbox="../media/grid-show-line-numbers.msft.png":::
    Mostrar números de línea  
 :::image-end:::  
 
@@ -90,20 +90,19 @@ Para obtener más información sobre números negativos en la superposición de 
 
 Seleccione **ocultar etiquetas de línea** para ocultar los números de línea.  
 
-:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-hide-line-labels.msft.png":::
+:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Ocultar etiquetas de línea" lightbox="../media/grid-hide-line-labels.msft.png":::
    Ocultar etiquetas de línea  
 :::image-end:::  
 
 ### Mostrar nombres de línea  
 
-<!--todo: @rachel verify the link and text for line name -->  
 Para obtener más información sobre los nombres de línea en la superposición de cuadrícula, desplácese al [diseño mediante líneas de cuadrícula con nombre][MdnLayoutUsingNamedGridLines].  
 
 Seleccione **Mostrar nombres de línea** para ver los nombres de línea en lugar de los números.  En el ejemplo, cuatro líneas tienen nombres: `left` , `middle1` , `middle2` y `right` .  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
-:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-show-line-names.msft.png":::
+:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Mostrar nombres de línea" lightbox="../media/grid-show-line-names.msft.png":::
    **Mostrar nombres de línea**  
 :::image-end:::  
 
@@ -132,7 +131,7 @@ Las etiquetas de línea de fila muestran solo los tamaños calculados, ya que no
 | **80px** | &nbsp;| 80px |  
 | **80px** | &nbsp;| 80px |  
 
-:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-show-track-sizes.msft.png":::
+:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Mostrar tamaños de seguimiento" lightbox="../media/grid-show-track-sizes.msft.png":::
    **Mostrar tamaños de seguimiento**  
 :::image-end:::  
 
@@ -140,7 +139,7 @@ Las etiquetas de línea de fila muestran solo los tamaños calculados, ya que no
 
 Para ver los nombres de las áreas, active la casilla **Mostrar nombres de área** .  En el ejemplo, hay 3 áreas en la cuadrícula: **Top**, **bottom1** y **bottom2**.  
 
-:::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-show-area-names.msft.png":::
+:::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Mostrar nombres de área" lightbox="../media/grid-show-area-names.msft.png":::
    **Mostrar nombres de área**  
 :::image-end:::  
 
@@ -148,7 +147,7 @@ Para ver los nombres de las áreas, active la casilla **Mostrar nombres de área
 
 Active la casilla **extender líneas de cuadrícula** para extender las líneas de la cuadrícula al borde de la ventanilla a lo largo de cada eje.  
 
-:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-extend-grid-lines.msft.png":::
+:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Extender las líneas de la cuadrícula" lightbox="../media/grid-extend-grid-lines.msft.png":::
    **Extender las líneas de la cuadrícula**  
 :::image-end:::  
 
@@ -158,14 +157,12 @@ La sección de **superposiciones de cuadrícula** contiene una lista de cuadríc
 
 ### Habilitar vistas superpuestas de varias cuadrículas  
 
-<!--todo: @zoher verify and provide updates -->  
-
 Para mostrar la cuadrícula de superposición para varias cuadrículas, seleccione la casilla junto a cada nombre de la cuadrícula.  En el ejemplo, se han habilitado dos superposiciones de cuadrícula que se representan con distintos colores.  
 
 *   `main`  
 *   `div.snack-box`  
     
-:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-grid-overlays.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Habilitar vistas superpuestas de varias cuadrículas" lightbox="../media/grid-grid-overlays.msft.png":::
    Habilitar vistas superpuestas de varias cuadrículas  
 :::image-end:::  
 
@@ -173,7 +170,7 @@ Para mostrar la cuadrícula de superposición para varias cuadrículas, seleccio
 
 Para abrir el selector de colores y personalizar el color de superposición de cuadrícula, seleccione el cuadro situado junto al nombre de la superposición de cuadrícula.  
 
-:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-grid-overlays-color.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Personalizar el color de superposición de cuadrícula" lightbox="../media/grid-grid-overlays-color.msft.png":::
    Personalizar el color de superposición de cuadrícula  
 :::image-end:::  
 
@@ -181,7 +178,7 @@ Para abrir el selector de colores y personalizar el color de superposición de c
 
 Para resaltar el elemento HTML en el panel **elementos** y desplazarse hasta él en la página web, elija el **elemento Mostrar en el panel elementos** \ ( ![ elemento Mostrar en el icono del panel elementos ][ImageShowElementInElementsPanelIcon] ).  
 
-:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Resaltar la cuadrícula" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Resaltar la cuadrícula  
 :::image-end:::  
 
@@ -195,7 +192,7 @@ Para resaltar el elemento HTML en el panel **elementos** y desplazarse hasta él
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "Cuadrícula CSS | JEC. FYI"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Cuadrícula CSS | JEC. FYI"  
@@ -205,8 +202,8 @@ Para resaltar el elemento HTML en el panel **elementos** y desplazarse hasta él
 [MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Ubicación basada en líneas con CSS Grid | MDN"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/grid) y está creada por [Jecelyn Yeen][JecelynYeen] \ (defensor para desarrolladores, Chrome DevTools \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/grid) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

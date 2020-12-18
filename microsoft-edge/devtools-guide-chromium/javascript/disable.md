@@ -3,16 +3,16 @@ description: Abre el menú de comandos y ejecuta el comando "deshabilitar JavaSc
 title: Deshabilitar JavaScript con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4a200e2faa303a12d46fe2daf7ba89226a985b1f
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: f7aafee4b05f843319a4a744e6cba148d4642667
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124722"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230673"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,13 +41,13 @@ Complete las acciones siguientes para ver el aspecto y el comportamiento de una 
     
 1.  Comience `javascript` a escribir, elija **deshabilitar JavaScript**y, a continuación, seleccione `Enter` para ejecutar el comando.  Ahora JavaScript está deshabilitado.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="El menú de comandos" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Seleccione deshabilitar JavaScript en el menú de comandos" lightbox="../media/javascript-console-command-javascript.msft.png":::
        Elija **deshabilitar JavaScript** en el **menú de comandos**  
     :::image-end:::  
     
     El icono amarillo que aparece junto a los **orígenes** recuerda que JavaScript está deshabilitado.  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="El menú de comandos" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Icono de advertencia junto a orígenes" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        Icono de advertencia junto a **orígenes**  
     :::image-end:::  
     
@@ -66,10 +66,10 @@ Para volver a Habilitar JavaScript, complete las siguientes acciones.
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
+[DevToolsOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 > La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  

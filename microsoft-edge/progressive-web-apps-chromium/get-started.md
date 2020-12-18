@@ -3,16 +3,16 @@ description: Esta guía le ofrece información general sobre los conceptos bási
 title: Introducción a las aplicaciones web progresivas (cromo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, PWABuilder, manifiesto Web, trabajo de servicio, inserción
-ms.openlocfilehash: 065ced3afa8ecd4165325fd4f10a673d86c72fa7
-ms.sourcegitcommit: be76feed0d616a96c77ea2748a9f0d6c0c06284b
+ms.openlocfilehash: 7ad13f98f54c52891681d7591b21503c9d5825ff
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103927"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231226"
 ---
 # Introducción a las aplicaciones web progresivas (cromo)  
 
@@ -27,7 +27,7 @@ La siguiente guía le ofrece una descripción general de los conceptos básicos 
 
 *   Use [código de Visual Studio][VisualstudioCodeMain] para editar el código fuente de PWA.  
 *   Use [Node.js][NodejsMain] como su servidor Web local.  
-
+    
 ## Crear una aplicación web básica  
 
 Para crear una aplicación Web vacía, siga los pasos que se indican en el [generador de aplicaciones de node Express][ExpressjsApplicationGenerator]y asigne un nombre a la aplicación `MySamplePwa` .  
@@ -118,7 +118,7 @@ Los trabajos de servicio son tareas en segundo plano que interceptan solicitudes
 *   Ejecución de tareas de captura en segundo plano  
 *   Iconos de distintivos  
 *   y mucho más  
-
+    
 Los trabajadores del servicio se definen en un archivo especial de JavaScript.  Para obtener más información, vaya a [usar los trabajos de servicio][MDNUsingServiceWorkers] y la API de trabajo de [servicio][MDNServiceWorkerApi].  
 
 Para compilar un trabajo de servicio en el proyecto, use la receta de trabajo de servicio de red en la **memoria caché** del [creador de PWA][PwaBuilderServiceWorker].  
@@ -127,9 +127,8 @@ Para compilar un trabajo de servicio en el proyecto, use la receta de trabajo de
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
-    
+        
 1.  Copie los archivos descargados en la `public` carpeta del proyecto de la aplicación Web.  
-    
 1.  En Visual Studio Code, abre `/public/index.html` y agrega el siguiente fragmento de código dentro de la `<head>` etiqueta.  
     
     ```html
@@ -147,26 +146,26 @@ Use los siguientes pasos para confirmar que el trabajo de servicio se ejecuta.
     ```
     
 1.  En Microsoft Edge, seleccione `F12` para abrir la DevTools de Microsoft Edge.  Seleccione la **aplicación**y, a continuación, los **trabajadores del servicio** para ver los trabajadores del servicio.  Si el trabajo de servicio no se muestra, actualice la página.  
-     
-    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/devtools-sw-overview.png":::
+    
+    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Información general del trabajo del servicio Microsoft Edge DevTools" lightbox="./media/devtools-sw-overview.png":::
        Información general del trabajo del servicio Microsoft Edge DevTools
     :::image-end:::
     
 1.  Visualice la caché de trabajos del servicio expandiendo el **almacenamiento en caché** y seleccione **pwabuilder-precache**.  Deben mostrarse todos los recursos almacenados en la caché por el trabajo del servicio.  Los recursos almacenados en caché por el trabajo del servicio incluyen el icono de la aplicación, el manifiesto de la aplicación, los archivos CSS y JavaScript.  
     
-    :::image type="complex" source="./media/devtools-cache.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/devtools-cache.png":::
+    :::image type="complex" source="./media/devtools-cache.png" alt-text="Caché de trabajo de servicio en Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
        Caché de trabajo de servicio en Microsoft Edge DevTools (F12)
     :::image-end:::
     
 1.  Pruebe su PWA como una aplicación sin conexión.  En Microsoft Edge DevTools \ ( `F12` \), seleccione **red** y, a continuación, cambie el estado de **conexión** a **sin conexión**.  
     
-    :::image type="complex" source="./media/devtools-offline.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/devtools-offline.png":::
+    :::image type="complex" source="./media/devtools-offline.png" alt-text="Establecer la aplicación en el modo sin conexión en Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
        Establecer la aplicación en el modo sin conexión en Microsoft Edge DevTools
     :::image-end:::
     
 1.  Actualice la aplicación y debería mostrar el mecanismo sin conexión para servir los recursos de la aplicación desde la memoria caché.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/vs-nodejs-express-index.png":::
+    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA que se ejecuta sin conexión" lightbox="./media/vs-nodejs-express-index.png":::
        PWA que se ejecuta sin conexión
     :::image-end:::
     
@@ -285,23 +284,24 @@ Siga los pasos que se indican a continuación para probar las notificaciones pus
 
 1.  Vaya a su PWA en `http://localhost:3000` .  Cuando el trabajador de servicio se activa e intenta suscribirse a las notificaciones push de PWA, Microsoft Edge le pide que permita a su PWA Mostrar notificaciones.  Seleccione **permitir**.  
     
-    :::image type="complex" source="./media/notification-permission.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/notification-permission.png":::
+    :::image type="complex" source="./media/notification-permission.png" alt-text="Cuadro de diálogo de permisos para habilitar las notificaciones" lightbox="./media/notification-permission.png":::
        Cuadro de diálogo de permisos para habilitar las notificaciones
     :::image-end:::
     
-1.  Simular una notificación de inserción del servidor.  Con el PWA abierto en `http://localhost:3000` en el explorador, seleccione `F12` para abrir el DevTools.  Elija **Application**  >  **Service Worker**  >  **Push** de trabajo de servicio de aplicaciones para enviar una notificación de inserción de prueba a su PWA.  
+1.  Simular una notificación de inserción del servidor.  Con el PWA abierto en `http://localhost:3000` en el explorador, seleccione `F12` para abrir el DevTools.  Elija ****  >  ****  >  **Push** de trabajo de servicio de aplicaciones para enviar una notificación de inserción de prueba a su PWA.  
+    
     :::row:::
        :::column span="":::
           Una notificación de inserción debe mostrarse cerca de la barra de tareas.  
           
-          :::image type="complex" source="./media/devtools-push.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/devtools-push.png":::
+          :::image type="complex" source="./media/devtools-push.png" alt-text="Insertar una notificación desde DevTools" lightbox="./media/devtools-push.png":::
              Insertar una notificación desde DevTools  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           Si no selecciona \ (o activa \) una notificación del sistema, el sistema la descarta automáticamente después de varios segundos y la coloca en la cola del centro de actividades de Windows.  
           
-          :::image type="complex" source="./media/windows-action-center.png" alt-text="Ejecutar su nuevo PWA en localhost" lightbox="./media/windows-action-center.png":::
+          :::image type="complex" source="./media/windows-action-center.png" alt-text="Notificaciones en el centro de actividades de Windows" lightbox="./media/windows-action-center.png":::
              Notificaciones en el centro de actividades de Windows :::image-end:::
        :::column-end:::
     :::row-end:::  
@@ -316,7 +316,7 @@ Los pasos siguientes incluyen tareas adicionales para ayudarle a comprender la c
 *   Vínculos profundos  
 *   [Pruebas entre exploradores][BrowserStackTestEdgeBrowser]  
 *   Implementar procedimientos de validación y pruebas, como [webhint][Webhint]  
-   
+    
 ## Consulte también  
 
 *   [Aplicaciones web progresivas en documentos web de MDN][MDNProgressiveWebApps]  
@@ -338,7 +338,7 @@ Los pasos siguientes incluyen tareas adicionales para ayudarle a comprender la c
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Implementar una aplicación de Node.js en Azure con Visual Studio Code | Microsoft docs"  
 
@@ -347,7 +347,7 @@ Los pasos siguientes incluyen tareas adicionales para ayudarle a comprender la c
 
 [WindowsBlogsWebNotificationsEdge]: https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97 "Notificaciones Web en Microsoft Edge | Blogs de Windows"  
 
-[VisualstudioCodeMain]: https://code.visualstudio.com "Código de Visual Studio"  
+[VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 
 [AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "Q&A DE PWA"  
 
@@ -399,7 +399,7 @@ Los pasos siguientes incluyen tareas adicionales para ayudarle a comprender la c
 
 [VapidkeysMain]: https://vapidkeys.com "Generador de claves de VAPID seguro | VapidKeys" 
 
-[Webhint]: https://webhint.io "sugerencia"  
+[Webhint]: https://webhint.io "webhint"  
 
 [WebDevProgressiveWebApps]: https://developers.google.com/web/progressive-web-apps "Aplicaciones web progresivas | Web. dev"  
 

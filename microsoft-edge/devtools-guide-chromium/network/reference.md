@@ -3,16 +3,16 @@ description: Una referencia completa de las características del panel de red de
 title: Referencia de análisis de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/08/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4d4dc8ad5102766f3ad3c8322dbf9342a69e9097
-ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
+ms.openlocfilehash: c600197ffa0e415fe42aecc704a523d1b23f8260
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203909"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230757"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -138,7 +138,7 @@ Emular 3G lento, 3G rápido y otras velocidades de conexión en el menú despleg
    El menú desplegable **limitación de peticiones**  
 :::image-end:::  
 
-Puedes elegir entre diferentes ajustes preestablecidos, como 3G lento o 3G rápido.  Para agregar sus propios ajustes preestablecidos personalizados, abra el menú de limitación y **Custom**elija  >  **Agregar**personalizado.  
+Puedes elegir entre diferentes ajustes preestablecidos, como 3G lento o 3G rápido.  Para agregar sus propios ajustes preestablecidos personalizados, abra el menú de limitación y **** elija  >  **Agregar**personalizado.  
 
 DevTools muestra un icono de advertencia junto a la pestaña **red** para recordarle que la limitación está habilitada.  
 
@@ -972,7 +972,7 @@ De forma predeterminada, DevTools muestra el panel de **información general** .
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Depurar aplicaciones web progresivas | Microsoft docs"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Depurar aplicaciones web progresivas | Microsoft docs"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
@@ -981,7 +981,7 @@ De forma predeterminada, DevTools muestra el panel de **información general** .
 [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Servidor proxy-Wikipedia"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 > La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/network/reference) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  

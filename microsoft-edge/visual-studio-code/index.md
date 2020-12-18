@@ -7,18 +7,18 @@ ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, código de vs, código de Visual Studio, depurador, webhint
-ms.openlocfilehash: 0d13c6eb9411f89e3a681176ade0caf8d59d46d8
-ms.sourcegitcommit: 02c602379537ab3b9d0a355cea7fcf96fdbd8870
+ms.openlocfilehash: 1aa5b66043e87ebb0f1b848dcd60e2553b378f36
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "11182755"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230694"
 ---
-# Visual Studio Code  
+# Información general sobre Visual Studio Code  
 
 El [código de Visual Studio][VisualStudioCodeDocs] es un editor de código fuente ligero pero eficaz.  El [código de Visual Studio][VisualStudioCodeDocs] está disponible para Windows, Linux y MacOS.  Incluye compatibilidad integrada para JavaScript, TypeScript y Node.js, por lo que es una excelente herramienta para los desarrolladores web antes de personalizarla.  Si aún no lo usas, descarga el [código de Visual Studio][VisualstudioCode].  
 
-## Extensions  
+## Extensiones  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
@@ -110,5 +110,5 @@ Para obtener más información, vaya a [Cómo usar webhint en Visual Studio Code
 
 [VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Marketplace de Visual Studio"  
 
-[WebhintMain]:  https://webhint.io "sugerencia"  
+[WebhintMain]:  https://webhint.io "webhint"  
 [OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  

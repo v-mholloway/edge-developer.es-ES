@@ -3,19 +3,19 @@ description: Obtenga información sobre cómo probar su sitio web o aplicación 
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador, WebDrive, Selenium, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: 3c197a83dbf16c68102ff6e9a4ee6f33b0573af2
-ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
+ms.openlocfilehash: 5e881eec59c966fd4fa6d35118032a3a51e7b9e5
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "11192263"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231140"
 ---
-# Usar Webdriver (cromo) para automatización de prueba  
+# Introducción a la automatización de prueba de Webdriver (cromo)  
 
 El controlador WebDrive le permite \ (programadores \) para crear pruebas automatizadas que simulen la interacción del usuario.  Las pruebas y simuladores de WebDrive se diferencian de las pruebas unitarias de JavaScript por las siguientes razones:  
 
@@ -36,19 +36,21 @@ Para empezar a automatizar las pruebas, siga estos pasos para asegurarse de que 
 
 1.  Vaya a `edge://settings/help` para obtener la versión de Microsoft Edge.  
     
-    :::image type="complex" source="../media/webdriver-chromium/edge-version.png" alt-text="El número de compilación para Microsoft Edge Canarias el 14 de enero de 2020" lightbox="../media/webdriver-chromium/edge-version.png":::
-       El número de compilación para Microsoft Edge Canarias el 14 de enero de 2020  
+    :::image type="complex" source="./media/edge-version.png" alt-text="El número de compilación para Microsoft Edge Canarias el 14 de enero de 2020":::
+       El número de compilación para Microsoft Edge Canarias el 14 de enero de 2020
     :::image-end:::  
     
 1.  Vaya a la página de [descargas del controlador de Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads] y descargue el controlador que coincida con el número de versión de Microsoft Edge.  
     
-    :::image type="complex" source="../media/webdriver-chromium/edge-driver-install.png" alt-text="Sección de descargas de la página del controlador de Microsoft Edge" lightbox="../media/webdriver-chromium/edge-driver-install.png":::
-       Sección de descargas de la página del [controlador de Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]  
+    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Sección de descargas de la página del controlador de Microsoft Edge":::
+       Sección de descargas de la página del [controlador de Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]
     :::image-end:::  
     
+    <!--  
     > [!NOTE] 
-    > Para obtener más información sobre la automatización de prueba con Microsoft Edge \ (EdgeHTML \), vea [Microsoft Webdriver para Microsoft Edge (EdgeHTML)][Webdriver].  
-    
+    > For more information about test automation using Microsoft Edge (EdgeHTML), see [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
+    -->  
+
 ## Elegir un enlace de idioma de controlador  
 
 El último componente que debe descargar es un controlador de cliente específico del idioma para traducir su código \ (Python, Java, C \ #, Ruby, JavaScript \) en comandos el controlador de Microsoft Edge se ejecuta en Microsoft Edge \ (cromo \).  
@@ -166,7 +168,7 @@ let driver = edge.Driver.createSession(options);
 * * *  
 
 > [!NOTE]
-> Si su administrador de ti ha establecido [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] la Directiva DeveloperToolsAvailability `2` , el [controlador Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver] no podrá conducir a [Microsoft Edge (cromo)][MicrosoftEdge] porque el controlador usa la [DevTools de Microsoft Edge][DevToolsMain].  Asegúrate de que la política de [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] esté configurada en `0` o `1` para automatizar [Microsoft Edge (cromo)][MicrosoftEdge].  
+> Si su administrador de ti ha establecido [][DeployedgePoliciesDevelopertoolsavailability] la Directiva DeveloperToolsAvailability `2` , el [controlador Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver] no podrá conducir a [Microsoft Edge (cromo)][MicrosoftEdge] porque el controlador usa la [DevTools de Microsoft Edge][DevToolsMain].  Asegúrate de que la política de [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] esté configurada en `0` o `1` para automatizar [Microsoft Edge (cromo)][MicrosoftEdge].  
 
 ### Elección de archivos binarios de explorador específicos (solo cromo)  
 
@@ -332,8 +334,8 @@ El equipo de Microsoft Edge está ansioso por escuchar tus comentarios sobre el 
 
 <!-- links -->  
 
-[DevToolsMain]: ../devtools-guide-chromium.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"
-[Webdriver]: ../webdriver.md "Webdriver (EdgeHTML) | Microsoft docs"  
+[DevToolsMain]: ../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"
+[Webdriver]: ../webdriver/index.md "Webdriver (EdgeHTML) | Microsoft docs"  
 
 [DeployedgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability-Microsoft Edge-Policies | Microsoft docs"  
 
@@ -355,7 +357,7 @@ El equipo de Microsoft Edge está ansioso por escuchar tus comentarios sobre el 
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Descargar nuevo explorador Microsoft Edge"  
 
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar los canales de Insider de Microsoft Edge"  
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider Channels"  
 
 [NugetCLI]:https://www.nuget.org/packages/NuGet.CommandLine/ "NuGet. CommandLine | Galería de NuGet"  
 [NugetPackagesMicrosoftEdgeSeleniumtools]: https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools "Microsoft. Edge. SeleniumTools | Galería de NuGet"  

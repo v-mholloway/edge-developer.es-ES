@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, desarrollador, herramientas, automatización, prueba, playwright, nodo, JavaScript, NPM
-ms.openlocfilehash: ac03923fb25da00f07cb70e81ac06b106a6e1452
-ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
+ms.openlocfilehash: 5ce51864177731dd1bafb845466abb00cce1e0aa
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "11192215"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231086"
 ---
 # Playwright  
 
@@ -101,7 +101,7 @@ Para obtener más información sobre Playwright, vaya al [sitio web de Playwrigh
 <!-- links -->  
 
 [WebdriverChromiumMain]: ../webdriver-chromium/index.md "Controlador WebDrive (cromo) | Microsoft docs"  
-[PuppeteerMain]: ../puppeteer.md "Puppeteer | Microsoft docs"  
+[PuppeteerMain]: ../puppeteer/index.md "Puppeteer | Microsoft docs"  
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: cómo mejorar la eficacia de la web mediante una colaboración de código abierto | Blog de experiencia de Microsoft"  
 

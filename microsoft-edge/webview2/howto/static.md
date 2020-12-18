@@ -3,17 +3,17 @@ description: Obtenga información sobre cómo vincular estáticamente la bibliot
 title: Cómo vincular estáticamente la biblioteca del cargador de WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: 880e9ed809dc268ee0b30b6ee3b5996711f54300
-ms.sourcegitcommit: 0ded671914aae231493f418dd7645a04361dca1b
+ms.openlocfilehash: 397c226eb958d1e656fb0ecb6dd8f1e2fe300746
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120127"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230932"
 ---
 # Vincular estáticamente la biblioteca del cargador de WebView2  
 
@@ -40,13 +40,13 @@ Para las aplicaciones que no deseen enviar un `WebView2Loader.dll` , complete lo
     </PropertyGroup>
     ```
       
-    :::image type="complex" source="./media/staticlib.png" alt-text="Fragmentos de código de archivos de proyecto" lightbox="./media/staticlib.png":::
+    :::image type="complex" source="./media/staticlib.png" alt-text="Fragmento de código insertado" lightbox="./media/staticlib.png":::
        Fragmento de código insertado  
     :::image-end:::  
     
 1.  Edite las dependencias adicionales de la configuración de compilación de la aplicación.  Para empezar, busque todas las `<AdditionalDependencies>` etiquetas. Para cada uno, agregue `version.lib` como una dependencia adicional a cada configuración de compilación distinta del `.vcxproj` archivo.  
     
-    :::image type="complex" source="./media/versionlib.png" alt-text="Fragmentos de código de archivos de proyecto" lightbox="./media/versionlib.png":::
+    :::image type="complex" source="./media/versionlib.png" alt-text="Agregar version. lib a ItemDefinitionGroups" lightbox="./media/versionlib.png":::
        Agregar `version.lib` a `ItemDefinitionGroups`  
     :::image-end:::  
     
@@ -68,7 +68,7 @@ Para las aplicaciones que no deseen enviar un `WebView2Loader.dll` , complete lo
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
+[DevtoolsGuideChromiumMain]: ../index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Referencia de la API de Microsoft Edge WebView2 | Microsoft docs"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft docs"  

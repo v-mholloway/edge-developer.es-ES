@@ -3,16 +3,16 @@ description: Esta página proporciona documentación sobre la característica pr
 title: Prevención de rastreo en Microsoft Edge (cromo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilidad, plataforma web, prevención de rastreo, rastreadores, cookies, almacenamiento, bloqueo de ad, bloqueo de Tracker, protección de rastreo
-ms.openlocfilehash: 2648f05c112a00e66eae85ed44adf22632a0524a
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a767e55a44c4d416b6d40ca12eb49f2c3a722010
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10574937"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231161"
 ---
 # Prevención de rastreo en Microsoft Edge (cromo)  
 
@@ -71,15 +71,15 @@ La forma en que se aplican las fuerzas depende del nivel de prevención de segui
 
 Para asegurarse de que la compatibilidad Web se mantenga todo lo posible, Microsoft Edge tiene tres factores atenuantes para ayudar a equilibrar las fuerzas en situaciones específicas.  Estas son la [mitigación](#org-relationship-mitigation)de la relación de organización, la [mitigación del compromiso](#org-engagement-mitigation)de la organización y la [lista CompatExceptions](#the-compatexceptions-list).  
 
-Antes de profundizar en los factores atenuantes, merece la pena definir el concepto de "organización" o "org" para abreviar.  [Disconnect][|::ref3::|Main] también mantiene una lista denominada [Entities. JSON][GitHubDisconnectMeTrackingProtectionEntitiesJson] que define grupos de direcciones URL que pertenecen a la misma empresa o organización principal.  La característica prevención de rastreo de Microsoft Edge usa esta lista tanto en la [mitigación](#org-relationship-mitigation) de la relación empresarial como en la [mitigación del compromiso](#org-engagement-mitigation) de la organización para minimizar la ocurrencia de problemas de compatibilidad causados por la prevención del seguimiento que afecta a las solicitudes entre organizaciones.  
+Antes de profundizar en los factores atenuantes, merece la pena definir el concepto de "organización" o "org" para abreviar.  [Desconectar][|::ref3::|Main] también mantiene una lista denominada [entities.jsen][GitHubDisconnectMeTrackingProtectionEntitiesJson] que define grupos de direcciones URL que pertenecen a la misma organización o empresa principal.  La característica prevención de rastreo de Microsoft Edge usa esta lista tanto en la [mitigación](#org-relationship-mitigation) de la relación empresarial como en la [mitigación del compromiso](#org-engagement-mitigation) de la organización para minimizar la ocurrencia de problemas de compatibilidad causados por la prevención del seguimiento que afecta a las solicitudes entre organizaciones.  
 
 ### Mitigación de la relación org.  
 
-Varios sitios web populares mantienen sitios web y redes de entrega de contenido \ (CDN \) para servir contenido y recursos estáticos a dichos sitios.  Para asegurarse de que estos tipos de escenarios no se vean afectados por la prevención de rastreo, Microsoft Edge exime de un sitio de la prevención de seguimiento cuando el sitio hace solicitudes de terceros a otros sitios que pertenecen a la misma organización principal \ (según se define en [desconectar entidades. lista de JSON][GitHubDisconnectMeTrackingProtectionEntitiesJson]\).  Esto se ilustra mejor con un ejemplo.  
+Varios sitios web populares mantienen sitios web y redes de entrega de contenido \ (CDN \) para servir contenido y recursos estáticos a dichos sitios.  Para asegurarse de que estos tipos de escenarios no se vean afectados por la prevención de rastreo, Microsoft Edge exime de un sitio de la prevención de seguimiento cuando el sitio hace solicitudes de terceros a otros sitios que pertenecen a la misma organización principal \ (según se define en la [lista de desconexión entities.jsde][GitHubDisconnectMeTrackingProtectionEntitiesJson]\).  Esto se ilustra mejor con un ejemplo.  
 
 > **Por ejemplo:**
 > 
-> Una organización denominada Org1 es propietaria de los dominios `org1.test` y `org1-cdn.test` , según se define en la [lista desconectar entidades. JSON][GitHubDisconnectMeTrackingProtectionEntitiesJson].  Imagínese que `org1-cdn.test` está clasificado como un rastreador y que normalmente se le aplicarán las fuerzas de prevención de rastreo.  Si un usuario visita `https://org1.test` y el sitio intenta cargar un recurso de `https://org1-cdn.test` , Microsoft Edge no toma ninguna acción de aplicación en las solicitudes hechas a `org1-cdn.test` aunque no sea una dirección URL de origen.  Sin embargo, si otra dirección URL que no forma parte de la organización de Org1 intenta cargar el mismo recurso, la solicitud estaría sujeta a la aplicación de las mismas porque no forma parte de la misma organización.  
+> Una organización llamada Org1 es propietaria de los dominios `org1.test` y `org1-cdn.test` , según se define en la [lista desconectar entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson].  Imagínese que `org1-cdn.test` está clasificado como un rastreador y que normalmente se le aplicarán las fuerzas de prevención de rastreo.  Si un usuario visita `https://org1.test` y el sitio intenta cargar un recurso de `https://org1-cdn.test` , Microsoft Edge no toma ninguna acción de aplicación en las solicitudes hechas a `org1-cdn.test` aunque no sea una dirección URL de origen.  Sin embargo, si otra dirección URL que no forma parte de la organización de Org1 intenta cargar el mismo recurso, la solicitud estaría sujeta a la aplicación de las mismas porque no forma parte de la misma organización.  
 > 
 > A pesar de que esto relaja las fuerzas de prevención de rastreo para los sitios que pertenecen a la misma organización, no es probable que esto presente una gran cantidad de riesgos de privacidad, ya que estas organizaciones pueden determinar los sitios/recursos a los que ha tenido acceso además de los `https://org1.test` `https://org1-cdn.test` datos internos de back-end.  
 
@@ -120,7 +120,7 @@ En la tabla siguiente se muestran las acciones de aplicación y las mitigaciones
 | | Publicidad | Análisis | Contenido | Cryptomining | Rastro digital | Redes sociales | Otros | Mitigación de la misma organización | Mitigación del compromiso de la organización |  
 | - | - | - | - | - | - | - | - | - | - | - |  
 | **Básico** | - | - | - | B | B | - | - | Habilitado | N/D |  
-| **Cuadrada** | S | - | S | B | B | S | S | Habilitado | Habilitada |  
+| **Cuadrada** | S | - | S | B | B | S | S | Habilitada | Habilitada |  
 | **Estricta** | B | B | S | B | B | B | B | Habilitada | Deshabilitada |  
 
 > [!NOTE]
@@ -145,7 +145,7 @@ La forma más sencilla de determinar si una dirección URL específica se clasif
     1.  Es posible que desee borrar las **cookies y otros datos del sitio** para restablecer las puntuaciones del compromiso del sitio y garantizar una tableta completa completamente limpia.  
 1.  Busque cualquier mensaje que lea `Tracking Prevention blocked access to storage for <URL>` .  
     1.  Puede expandir los mensajes para ver las URL individuales que se han bloqueado.  
-1.  Si necesita determinar la categoría en la que está un sitio bloqueado específico, la manera más fácil de hacerlo es buscarlo en la [lista Disconnect Services. JSON][GitHubDisconnectTrackingProtectionCategories].  Las entradas se ordenan alfabéticamente, por lo que el desplazamiento hasta la parte superior de un bloque de entradas de sitio le permite buscar la categoría específica de un sitio en particular.  
+1.  Si necesita determinar la categoría en la que se encuentra un sitio bloqueado específico, la manera más fácil de hacerlo es buscarlo en la [lista desconectar services.js][GitHubDisconnectTrackingProtectionCategories].  Las entradas se ordenan alfabéticamente, por lo que el desplazamiento hasta la parte superior de un bloque de entradas de sitio le permite buscar la categoría específica de un sitio en particular.  
 
 > [!TIP]
 > Si necesita acceder a las listas de prevención de rastreo almacenadas en el disco, cada una puede encontrarse en una de las dos ubicaciones.  
@@ -174,8 +174,8 @@ Tal como se dice, las opciones **bloquear** y **permitir** de la `edge://setting
 
 <!-- image links -->  
 
-[ImageThreeSettingsTrackingPrevention]: ../media/web-platform/tracking-prevention/tracking-prevention-settings.png  
-[ImageBlockedTrackersPageInfoFlyout]: ../media/web-platform/tracking-prevention/page-info-flyout.png  
+[ImageThreeSettingsTrackingPrevention]: ./media/tracking-prevention-settings.png  
+[ImageBlockedTrackersPageInfoFlyout]: ./media/page-info-flyout.png  
 
 <!-- links -->  
 
@@ -186,7 +186,7 @@ Tal como se dice, las opciones **bloquear** y **permitir** de la `edge://setting
 [DisconnectMain]: https://disconnect.me "Terminar"  
 
 [GitHubDisconnectMeTrackingProtection]: https://github.com/disconnectme/disconnect-tracking-protection "disconnectme/Disconnect-Tracking-protección | Github"  
-[GitHubDisconnectTrackingProtectionCategories]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json "Services. JSON-disconnectme/Disconnect-Tracking-Protection | Github"  
-[GitHubDisconnectMeTrackingProtectionEntitiesJson]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json "entidades. JSON-disconnectme/Disconnect-Tracking-Protection | Github"  
+[GitHubDisconnectTrackingProtectionCategories]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json "services.json-disconnectme/Disconnect-Tracking | Github"  
+[GitHubDisconnectMeTrackingProtectionEntitiesJson]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json "entities.json-disconnectme/Disconnect-Tracking | Github"  
 
 [GitHubMsExplainersStorageAccessApi]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md "Explicación de API de acceso de almacenamiento de información: MSEdgeExplainers/StorageAccessAPI | GitHub"
