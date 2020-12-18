@@ -3,16 +3,16 @@ description: Cómo ver y editar localStorage con el panel almacenamiento local y
 title: Ver y editar el almacenamiento local con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 25404e454187db941dc12d356dfe5ae7437d833b
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: c68f11b8ba2c10a0792f10acf5c5ededf2ad8e8d
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125422"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231191"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,82 +28,82 @@ ms.locfileid: "11125422"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="f4b87-104">Ver y editar el almacenamiento local con Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="f4b87-104">View and edit local storage with Microsoft Edge DevTools</span></span>  
+# <span data-ttu-id="fd262-104">Ver y editar el almacenamiento local con Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="fd262-104">View and edit local storage with Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="f4b87-105">En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para ver, editar y eliminar [localStorage][MDNWindowsLocalStorage] pares clave-valor.</span><span class="sxs-lookup"><span data-stu-id="f4b87-105">This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [localStorage][MDNWindowsLocalStorage] key-value pairs.</span></span>  
+<span data-ttu-id="fd262-105">En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para ver, editar y eliminar [localStorage][MDNWindowsLocalStorage] pares clave-valor.</span><span class="sxs-lookup"><span data-stu-id="fd262-105">This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [localStorage][MDNWindowsLocalStorage] key-value pairs.</span></span>  
 
-## <span data-ttu-id="f4b87-106">Ver las claves y los valores de localStorage</span><span class="sxs-lookup"><span data-stu-id="f4b87-106">View localStorage keys and values</span></span>  
+## <span data-ttu-id="fd262-106">Ver las claves y los valores de localStorage</span><span class="sxs-lookup"><span data-stu-id="fd262-106">View localStorage keys and values</span></span>  
 
-1.  <span data-ttu-id="f4b87-107">Seleccione la pestaña **aplicación** para abrir el panel de **aplicaciones** .</span><span class="sxs-lookup"><span data-stu-id="f4b87-107">Select the **Application** tab to open the **Application** panel.</span></span>  <span data-ttu-id="f4b87-108">El panel **manifiesto** se muestra de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="f4b87-108">The **Manifest** pane is shown by default.</span></span>  
+1.  <span data-ttu-id="fd262-107">Elija la pestaña **aplicación** para abrir la herramienta **aplicación** .</span><span class="sxs-lookup"><span data-stu-id="fd262-107">Choose the **Application** tab to open the **Application** tool.</span></span>  <span data-ttu-id="fd262-108">El panel **manifiesto** se muestra de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="fd262-108">The **Manifest** pane is shown by default.</span></span>  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-manifest.msft.png":::
-       <span data-ttu-id="f4b87-110">El panel **manifiesto**</span><span class="sxs-lookup"><span data-stu-id="f4b87-110">The **Manifest** pane</span></span>  
+       <span data-ttu-id="fd262-110">El panel **manifiesto**</span><span class="sxs-lookup"><span data-stu-id="fd262-110">The **Manifest** pane</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="f4b87-111">Expanda el menú **almacenamiento local** .</span><span class="sxs-lookup"><span data-stu-id="f4b87-111">Expand the **Local Storage** menu.</span></span>  
+1.  <span data-ttu-id="fd262-111">Expanda el menú **almacenamiento local** .</span><span class="sxs-lookup"><span data-stu-id="fd262-111">Expand the **Local Storage** menu.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-local-storage.msft.png":::
-       <span data-ttu-id="f4b87-113">El menú **almacenamiento local**</span><span class="sxs-lookup"><span data-stu-id="f4b87-113">The **Local Storage** menu</span></span>  
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="El menú almacenamiento local" lightbox="../media/storage-application-local-storage.msft.png":::
+       <span data-ttu-id="fd262-113">El menú **almacenamiento local**</span><span class="sxs-lookup"><span data-stu-id="fd262-113">The **Local Storage** menu</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="f4b87-114">Seleccione un dominio para ver los pares de clave y valor.</span><span class="sxs-lookup"><span data-stu-id="f4b87-114">Select a domain to view the key-value pairs.</span></span>  
+1.  <span data-ttu-id="fd262-114">Elija un dominio para ver los pares de clave y valor.</span><span class="sxs-lookup"><span data-stu-id="fd262-114">Choose a domain to view the key-value pairs.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
-       <span data-ttu-id="f4b87-116">`localStorage`Pares clave-valor para el `https://www.bing.com` dominio</span><span class="sxs-lookup"><span data-stu-id="f4b87-116">The `localStorage` key-value pairs for the `https://www.bing.com` domain</span></span>  
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="Pares de clave y valor de localStorage para el https://www.bing.com dominio" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+       <span data-ttu-id="fd262-116">`localStorage`Pares clave-valor para el `https://www.bing.com` dominio</span><span class="sxs-lookup"><span data-stu-id="fd262-116">The `localStorage` key-value pairs for the `https://www.bing.com` domain</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="f4b87-117">Seleccione una fila de la tabla para ver el valor en el visor debajo de la tabla.</span><span class="sxs-lookup"><span data-stu-id="f4b87-117">Select a row of the table to view the value in the viewer below the table.</span></span>  
+1.  <span data-ttu-id="fd262-117">Elija una fila de la tabla para ver el valor en el visor debajo de la tabla.</span><span class="sxs-lookup"><span data-stu-id="fd262-117">Choose a row of the table to view the value in the viewer below the table.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
-       <span data-ttu-id="f4b87-119">Ver el valor de la `eventLogQueue_Online` clave</span><span class="sxs-lookup"><span data-stu-id="f4b87-119">View the value of the `eventLogQueue_Online` key</span></span>  
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="Ver el valor de la clave eventLogQueue_Online" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
+       <span data-ttu-id="fd262-119">Ver el valor de la `eventLogQueue_Online` clave</span><span class="sxs-lookup"><span data-stu-id="fd262-119">View the value of the `eventLogQueue_Online` key</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="f4b87-120">Crear un nuevo par clave-valor de localStorage</span><span class="sxs-lookup"><span data-stu-id="f4b87-120">Create a new localStorage key-value pair</span></span>  
+## <span data-ttu-id="fd262-120">Crear un nuevo par clave-valor de localStorage</span><span class="sxs-lookup"><span data-stu-id="fd262-120">Create a new localStorage key-value pair</span></span>  
 
-1.  <span data-ttu-id="f4b87-121">[Ver los `localStorage` pares clave-valor de un dominio](#view-localstorage-keys-and-values).</span><span class="sxs-lookup"><span data-stu-id="f4b87-121">[View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
-1.  <span data-ttu-id="f4b87-122">Haga doble clic en la parte vacía de la tabla.</span><span class="sxs-lookup"><span data-stu-id="f4b87-122">Double-click the empty part of the table.</span></span>  <span data-ttu-id="f4b87-123">DevTools crea una fila nueva y centra el cursor en la columna de **clave** .</span><span class="sxs-lookup"><span data-stu-id="f4b87-123">DevTools creates a new row and focuses your cursor in the **Key** column.</span></span>  
+1.  <span data-ttu-id="fd262-121">[Ver los pares clave-valor localStorage de un dominio](#view-localstorage-keys-and-values).</span><span class="sxs-lookup"><span data-stu-id="fd262-121">[View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
+1.  <span data-ttu-id="fd262-122">Haga doble clic en la parte vacía de la tabla.</span><span class="sxs-lookup"><span data-stu-id="fd262-122">Double-click the empty part of the table.</span></span>  <span data-ttu-id="fd262-123">DevTools crea una fila nueva y centra el cursor en la columna de **clave** .</span><span class="sxs-lookup"><span data-stu-id="fd262-123">DevTools creates a new row and focuses your cursor in the **Key** column.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
-       <span data-ttu-id="f4b87-125">La parte vacía de la tabla para hacer doble clic para crear un nuevo par clave-valor</span><span class="sxs-lookup"><span data-stu-id="f4b87-125">The empty part of the table to double-click in order to create a new key-value pair</span></span>  
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="La parte vacía de la tabla para hacer doble clic para crear un nuevo par clave-valor" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+       <span data-ttu-id="fd262-125">La parte vacía de la tabla para hacer doble clic para crear un nuevo par clave-valor</span><span class="sxs-lookup"><span data-stu-id="fd262-125">The empty part of the table to double-click in order to create a new key-value pair</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="f4b87-126">Editar claves o valores de localStorage</span><span class="sxs-lookup"><span data-stu-id="f4b87-126">Edit localStorage keys or values</span></span>  
+## <span data-ttu-id="fd262-126">Editar claves o valores de localStorage</span><span class="sxs-lookup"><span data-stu-id="fd262-126">Edit localStorage keys or values</span></span>  
 
-1.  <span data-ttu-id="f4b87-127">[Ver los `localStorage` pares clave-valor de un dominio](#view-localstorage-keys-and-values).</span><span class="sxs-lookup"><span data-stu-id="f4b87-127">[View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
-1.  <span data-ttu-id="f4b87-128">Haga doble clic en una celda de la columna **clave** o **valor** para editar esa clave o valor.</span><span class="sxs-lookup"><span data-stu-id="f4b87-128">Double-click a cell in the **Key** or **Value** column to edit that key or value.</span></span>  
+1.  <span data-ttu-id="fd262-127">[Ver los pares clave-valor localStorage de un dominio](#view-localstorage-keys-and-values).</span><span class="sxs-lookup"><span data-stu-id="fd262-127">[View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
+1.  <span data-ttu-id="fd262-128">Haga doble clic en una celda de la columna **clave** o **valor** para editar esa clave o valor.</span><span class="sxs-lookup"><span data-stu-id="fd262-128">Double-click a cell in the **Key** or **Value** column to edit that key or value.</span></span>  
     
-    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
-       <span data-ttu-id="f4b87-130">Modificar una `localStorage` tecla</span><span class="sxs-lookup"><span data-stu-id="f4b87-130">Edit a `localStorage` key</span></span>  
+    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Editar una clave de localStorage" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+       <span data-ttu-id="fd262-130">Modificar una `localStorage` tecla</span><span class="sxs-lookup"><span data-stu-id="fd262-130">Edit a `localStorage` key</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="f4b87-131">Eliminar pares de clave y valor de localStorage</span><span class="sxs-lookup"><span data-stu-id="f4b87-131">Delete localStorage key-value pairs</span></span>  
+## <span data-ttu-id="fd262-131">Eliminar pares de clave y valor de localStorage</span><span class="sxs-lookup"><span data-stu-id="fd262-131">Delete localStorage key-value pairs</span></span>  
 
-1.  <span data-ttu-id="f4b87-132">[Ver los `localStorage` pares clave-valor de un dominio](#view-localstorage-keys-and-values).</span><span class="sxs-lookup"><span data-stu-id="f4b87-132">[View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
-1.  <span data-ttu-id="f4b87-133">Seleccione el par de clave y valor que desea eliminar.</span><span class="sxs-lookup"><span data-stu-id="f4b87-133">Select the key-value pair that you want to delete.</span></span>  <span data-ttu-id="f4b87-134">DevTools lo resalta azul para indicar que está seleccionado.</span><span class="sxs-lookup"><span data-stu-id="f4b87-134">DevTools highlights it blue to indicate that it is selected.</span></span>  
-1.  <span data-ttu-id="f4b87-135">Presione la `Delete` tecla o elija **eliminar seleccionado** \ ( ![ eliminar seleccionado ][ImageDeleteIcon] \).</span><span class="sxs-lookup"><span data-stu-id="f4b87-135">Press the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).</span></span>  
+1.  <span data-ttu-id="fd262-132">[Ver los `localStorage` pares clave-valor de un dominio](#view-localstorage-keys-and-values).</span><span class="sxs-lookup"><span data-stu-id="fd262-132">[View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
+1.  <span data-ttu-id="fd262-133">Elija el par de clave y valor que desea eliminar.</span><span class="sxs-lookup"><span data-stu-id="fd262-133">Choose the key-value pair that you want to delete.</span></span>  <span data-ttu-id="fd262-134">DevTools lo resalta azul para indicar que está seleccionado.</span><span class="sxs-lookup"><span data-stu-id="fd262-134">DevTools highlights it blue to indicate that it is selected.</span></span>  
+1.  <span data-ttu-id="fd262-135">Seleccione la `Delete` tecla o elija **eliminar seleccionada** \ ( ![ eliminar seleccionado ][ImageDeleteIcon] \).</span><span class="sxs-lookup"><span data-stu-id="fd262-135">Select the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).</span></span>  
     
-## <span data-ttu-id="f4b87-136">Eliminar todos los `localStorage` pares clave-valor para un dominio</span><span class="sxs-lookup"><span data-stu-id="f4b87-136">Delete all `localStorage` key-value pairs for a domain</span></span>  
+## <span data-ttu-id="fd262-136">Eliminar todos los `localStorage` pares clave-valor para un dominio</span><span class="sxs-lookup"><span data-stu-id="fd262-136">Delete all `localStorage` key-value pairs for a domain</span></span>  
 
-1.  <span data-ttu-id="f4b87-137">[Ver los `localStorage` pares clave-valor de un dominio](#view-localstorage-keys-and-values).</span><span class="sxs-lookup"><span data-stu-id="f4b87-137">[View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
-1.  <span data-ttu-id="f4b87-138">Elija **Borrar todo** \ ( ![ Borrar todo ][ImageClearIcon] \).</span><span class="sxs-lookup"><span data-stu-id="f4b87-138">Choose **Clear All** \(![Clear All][ImageClearIcon]\).</span></span>  
+1.  <span data-ttu-id="fd262-137">[Ver los `localStorage` pares clave-valor de un dominio](#view-localstorage-keys-and-values).</span><span class="sxs-lookup"><span data-stu-id="fd262-137">[View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
+1.  <span data-ttu-id="fd262-138">Elija **Borrar todo** \ ( ![ Borrar todo ][ImageClearIcon] \).</span><span class="sxs-lookup"><span data-stu-id="fd262-138">Choose **Clear All** \(![Clear All][ImageClearIcon]\).</span></span>  
     
-## <span data-ttu-id="f4b87-139">Interactuar con localStorage desde la consola</span><span class="sxs-lookup"><span data-stu-id="f4b87-139">Interact with localStorage from the Console</span></span>  
+## <span data-ttu-id="fd262-139">Interactuar con localStorage desde la consola</span><span class="sxs-lookup"><span data-stu-id="fd262-139">Interact with localStorage from the Console</span></span>  
 
-<span data-ttu-id="f4b87-140">Dado que puede ejecutar JavaScript en la **consola**y que la **consola** tiene acceso a los contextos de JavaScript de la página, es posible interactuar con ella `localStorage` en la **consola**.</span><span class="sxs-lookup"><span data-stu-id="f4b87-140">Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.</span></span>  
+<span data-ttu-id="fd262-140">Dado que puede ejecutar JavaScript en la **consola**y que la **consola** tiene acceso a los contextos de JavaScript de la página, es posible interactuar con ella `localStorage` en la **consola**.</span><span class="sxs-lookup"><span data-stu-id="fd262-140">Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.</span></span>  
 
-1.  <span data-ttu-id="f4b87-141">Use el menú **contextos de JavaScript** para cambiar el contexto de JavaScript de la **consola** si desea obtener acceso a los `localStorage` pares clave-valor de un dominio que no sea la página que se muestra.</span><span class="sxs-lookup"><span data-stu-id="f4b87-141">Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.</span></span>  
+1.  <span data-ttu-id="fd262-141">Use el menú **contextos de JavaScript** para cambiar el contexto de JavaScript de la **consola** si desea obtener acceso a los `localStorage` pares clave-valor de un dominio que no sea la página que se muestra.</span><span class="sxs-lookup"><span data-stu-id="fd262-141">Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.</span></span>  
     
-    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-console-local-storage.msft.png":::
-       <span data-ttu-id="f4b87-143">Cambiar el contexto de JavaScript de la consola</span><span class="sxs-lookup"><span data-stu-id="f4b87-143">Change the JavaScript context of the Console</span></span>  
+    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="Cambiar el contexto de JavaScript de la consola" lightbox="../media/storage-console-local-storage.msft.png":::
+       <span data-ttu-id="fd262-143">Cambiar el contexto de JavaScript de la consola</span><span class="sxs-lookup"><span data-stu-id="fd262-143">Change the JavaScript context of the Console</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="f4b87-144">Ejecuta tus `localStorage` expresiones en la consola, de la misma forma en que lo haces en tu JavaScript.</span><span class="sxs-lookup"><span data-stu-id="f4b87-144">Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.</span></span>  
+1.  <span data-ttu-id="fd262-144">Ejecuta tus `localStorage` expresiones en la consola, de la misma forma en que lo haces en tu JavaScript.</span><span class="sxs-lookup"><span data-stu-id="fd262-144">Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.</span></span>  
     
-    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
-       <span data-ttu-id="f4b87-146">Interactuar con `localStorage` desde la **consola**</span><span class="sxs-lookup"><span data-stu-id="f4b87-146">Interact with `localStorage` from the **Console**</span></span>  
+    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interactuar con localStorage desde la consola" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
+       <span data-ttu-id="fd262-146">Interactuar con `localStorage` desde la **consola**</span><span class="sxs-lookup"><span data-stu-id="fd262-146">Interact with `localStorage` from the **Console**</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="f4b87-147">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="f4b87-147">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <span data-ttu-id="fd262-147">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="fd262-147">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -114,16 +114,16 @@ ms.locfileid: "11125422"
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window. localStorage | MDN"  
 
 > [!NOTE]
-> <span data-ttu-id="f4b87-150">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="f4b87-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="f4b87-151">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="f4b87-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="fd262-150">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fd262-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="fd262-151">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="fd262-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="f4b87-153">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="f4b87-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="fd262-153">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fd262-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
