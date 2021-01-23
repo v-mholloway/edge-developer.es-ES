@@ -1,21 +1,21 @@
 ### YamlMime:Hub
 title: Documentación de Microsoft Edge
-summary: Explorar la documentación de Microsoft Edge.  Aprenda a usar Microsoft Edge mediante la navegación en la documentación, los tutoriales y los ejemplos para desarrolladores, administradores y usuarios.
+summary: Explore la documentación de Microsoft Edge.  Aprenda a usar Microsoft Edge explorando documentación, tutoriales y ejemplos para desarrolladores, administradores y usuarios.
 brand: m365
 metadata:
   title: Documentación de Microsoft Edge
-  description: Información de Microsoft Edge para desarrolladores, administradores de ti y usuarios del explorador; como DevTools, Extensions, PWAs, Webdriver y mucho más.
+  description: Información de Microsoft Edge para desarrolladores, administradores de TI y usuarios del explorador; incluyendo DevTools, Extensions, PWAs, WebDriver y mucho más.
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 12/10/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 815394fd9d3f548f511c1c015e8a7ce5e8c2ba89
-  ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+  ms.openlocfilehash: 787e80a0db6754d9d2046084f601294aa68a62a5
+  ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/17/2020
-  ms.locfileid: "11231170"
+  ms.lasthandoff: 01/23/2021
+  ms.locfileid: "11297726"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal estable oficial)
@@ -24,7 +24,7 @@ highlightedContent:
   - title: Microsoft Edge Insider Channels
     itemType: download
     url: https://www.microsoft.com/edge/business/download
-  - title: Descubrir las novedades
+  - title: Descubra las novedades
     itemType: learn
     url: https://www.microsoftedgeinsider.com/whats-new
   - title: Obtener soporte técnico
@@ -36,7 +36,7 @@ highlightedContent:
   - title: Administrar Microsoft Edge en la empresa
     itemType: learn
     url: /deployedge/index
-  - title: Descubra las características para desarrolladores web
+  - title: Descubrir características para desarrolladores web
     itemType: learn
     url: /microsoft-edge/index#microsoft-edge-for-developers
 conceptualContent:
@@ -73,7 +73,7 @@ conceptualContent:
     links:
     - itemType: reference
       text: Seguridad
-      url: /deployedge/security-overview
+      url: /deployedge/ms-edge-security-for-business
     - itemType: reference
       text: Privacidad
       url: /deployedge/microsoft-edge-enterprise-privacy-settings
@@ -85,10 +85,10 @@ conceptualContent:
     - itemType: reference
       text: Actualizar referencia de directiva
       url: /deployedge/microsoft-edge-update-policies
-  - title: Participar en la comunidad empresarial
+  - title: Interactuar con la comunidad empresarial
     links:
     - itemType: reference
-      text: Comunidad tecnológica empresarial (centrado en el Insider)
+      text: Comunidad tecnológica empresarial (Insider Focused)
       url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
   - title: Extensiones para empresas
     links:
@@ -116,7 +116,7 @@ additionalContent:
         url: /microsoft-edge/devtools-guide-chromium/open
       - text: CSS
         url: /microsoft-edge/devtools-guide-chromium/css/index
-    - title: Probar la automatización de &
+    - title: Prueba de & automatización
       links:
       - text: Accesibilidad
         url: /microsoft-edge/accessibility
@@ -126,7 +126,7 @@ additionalContent:
         url: /microsoft-edge/webdriver-chromium
       - text: Puppeteer
         url: /microsoft-edge/puppeteer
-      - text: Compatibilidad del sitio
+      - text: Compatibilidad de sitios
         url: /microsoft-edge/web-platform/site-impacting-changes
       - text: webhint
         url: https://webhint.io/docs/user-guide
@@ -134,7 +134,7 @@ additionalContent:
         url: /microsoft-edge/performance-analysis
     - title: Introducción a las extensiones
       links:
-      - text: Descripción general de extensiones
+      - text: Información general sobre extensiones
         url: /microsoft-edge/extensions-chromium/index
       - text: Tutorial de introducción
         url: /microsoft-edge/extensions-chromium/getting-started/index
@@ -142,7 +142,7 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
     - title: 'Extensiones: Guía para desarrolladores'
       links:
-      - text: Portabilidad de la extensión de cromo a Microsoft Edge
+      - text: Portabilidad de la extensión Chromium a Microsoft Edge
         url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
       - text: Alternar métodos de distribución de extensiones
         url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
@@ -158,7 +158,7 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/publish/update
       - text: Actualizar la configuración de la cuenta
         url: /microsoft-edge/extensions-chromium/publish/manage-settings
-    - title: 'Extensiones: directivas de complementos de Microsoft Edge'
+    - title: 'Extensiones: Directivas de complementos de Microsoft Edge'
       links:
       - text: Directiva de seguridad de contenido
         url: /microsoft-edge/extensions-chromium/store-policies/csp
@@ -166,9 +166,9 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
     - title: Aplicaciones web progresivas
       links:
-      - text: Información general (cromo)
+      - text: Información general (Chromium)
         url: /microsoft-edge/progressive-web-apps-chromium/index
-      - text: Introducción a las aplicaciones web progresivas (cromo)
+      - text: Introducción a Las aplicaciones web progresivas (Chromium)
         url: /microsoft-edge/progressive-web-apps-chromium/get-started
       - text: Uso de DevTools con aplicaciones web progresivas
         url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
@@ -186,25 +186,25 @@ additionalContent:
         url: /microsoft-edge/webview2/gettingstarted/win32
       - text: Introducción a WebView2 en WPF
         url: /microsoft-edge/webview2/gettingstarted/wpf
-      - text: Introducción a WebView2 en las aplicaciones de Windows Forms
+      - text: Introducción a WebView2 en aplicaciones de Windows Forms
         url: /microsoft-edge/webview2/gettingstarted/winforms
       - text: Referencia
         url: /microsoft-edge/webview2/webview2-api-reference
   - title: Ayuda y soporte técnico
     items:
-    - summary: Obtén consejos y respuestas de expertos de la comunidad en Microsoft Q&A
-      title: Asistencia de la comunidad de Microsoft Q&A
+    - summary: Obtener consejos y respuestas de expertos de la comunidad sobre preguntas&A de Microsoft
+      title: Soporte técnico de la comunidad en preguntas&A de Microsoft
       url: /answers/topics/ms-edge.html
-    - summary: Microsoft se compromete a garantizar que tus aplicaciones funcionen en Microsoft Edge.  Si tiene problemas con sus aplicaciones empresariales o sitios web en la última versión de Edge, Microsoft le ayuda a corregir sus aplicaciones y sitios web sin costo adicional.  Consulta los detalles de la oferta para conocer los requisitos de elegibilidad.
-      title: Obtén ayuda gratuita usando la aplicación
+    - summary: Microsoft se compromete a garantizar que las aplicaciones funcionen en Microsoft Edge.  Si tiene problemas con sus aplicaciones o sitios web empresariales en la versión más reciente de Edge, Microsoft le ayudará a corregir sus aplicaciones y sitios web sin coste adicional.  Consulta los detalles de la oferta para conocer los requisitos de elegibilidad.
+      title: Obtener ayuda sin costo con App Assure
       url: https://fasttrack.microsoft.com/portal
-    - summary: Si tu empresa necesita soporte técnico inmediato para Microsoft Edge, la asistencia de 1:1 de Microsoft está disponible mediante una variedad de planes que te ayudarán a obtener tu nivel de asistencia requerido.
+    - summary: Si su empresa necesita soporte técnico inmediato para Microsoft Edge, el soporte técnico 1:1 de Microsoft está disponible con una variedad de planes para ayudarle a obtener el nivel de soporte técnico necesario.
       title: Soporte técnico de Microsoft para empresas
       url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-    - summary: Encontrará recursos útiles de soporte técnico para los usuarios.
-      title: Soporte técnico para usuarios
+    - summary: Hay disponibles recursos de soporte técnico útiles para los usuarios.
+      title: Compatibilidad con usuarios
       url: https://support.microsoft.com/microsoft-edge
-  - title: Documentos de referencia y heredados
+  - title: Referencia y documentos heredados
     items:
     - title: Referencia
       links:
