@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 86981c0ab9dcce7069c7da7b3bdaaee6bf93077e
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e34228f7b094fbf11320da7d9523f04d2a550aae
+ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235955"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "11297740"
 ---
 # notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -149,7 +149,7 @@ Cuando devuelve la licencia multimedia, se crea un identificador del contenido m
 Para desactivar todas las protecciones DRM y de contenido, vaya a `edge://settings/content/protectedContent` y desactive las opciones **Permitir que los sitios reproduzcan contenido protegido (recomendado)** y **Permitir el uso de identificadores para contenido protegido (es posible que se requiera reiniciar el equipo)**.  
 
 *   La desactivación de la opción **Permitir que los sitios puedan reproducir contenido protegido** deshabilita la reproducción de los sistemas DRM basados en CDM, como PlayReady y Widevine, pero no en los sistemas no basados en CDM, como DRM de Flash Access.  Para administrar los permisos del sitio de Flash, vaya a `edge://settings/content/flash`.  Si desactiva la configuración, la funcionalidad multimedia dejará de funcionar correctamente.  
-*   Desactivar la opción **Permitir identificadores de contenido protegido** impide la creación de identificadores para la DRM de Flash Access y evita que Widevine recupere periódicamente las actualizaciones de Google.  Si la configuración está desactivada, es posible que la funcionalidad multimedia de algunos sitios deje de funcionar correctamente.  
+*   Desactivar la opción **Permitir identificadores de contenido protegido** impide la creación de identificadores para la DRM de Flash Access y evita que Widevine recupere periódicamente las actualizaciones de Google.  Si se desactiva la configuración, es posible que la funcionalidad multimedia de algunos sitios deje de funcionar correctamente.  
 
 ## No realizar seguimiento  
 
