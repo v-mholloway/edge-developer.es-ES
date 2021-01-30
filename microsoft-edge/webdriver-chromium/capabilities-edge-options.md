@@ -1,29 +1,29 @@
 ---
-description: Una referencia para las capacidades de Webdriver y las opciones específicas de Microsoft Edge compatibles con EdgeDriver (cromo).
-title: Capacidades y EdgeOptions
+description: Una referencia para las funcionalidades de WebDriver y las opciones específicas de Microsoft Edge admitidas por EdgeDriver (Chromium).
+title: Funciones y EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2020
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador, WebDrive, Selenium, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: 1f6dca1b7ce3eb4fab3aaaab6450eee7cbf3eae5
-ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
+keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, se sintaxis, pruebas, herramientas, automatización, prueba
+ms.openlocfilehash: c2842740dfc6d902d1727634e00565f8e556969d
+ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "11192261"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "11306237"
 ---
-# Capacidades y EdgeOptions  
+# Funciones y EdgeOptions  
 
-Las funciones son opciones que puede usar para personalizar y configurar una `EdgeDriver` sesión.  Para iniciar una `EdgeDriver` sesión, vaya a [conducir Microsoft Edge][DrivingEdgeWebDriverIndex].  En este artículo se documentan todas las capacidades admitidas para [Microsoft Edge][DownloadEdgeWebDriverIndex] y detalles adicionales para pasar las capacidades a una `EdgeDriver` sesión.  
+Las funcionalidades son opciones que puede usar para personalizar y configurar una `EdgeDriver` sesión.  Para obtener información sobre cómo iniciar una nueva sesión, vaya a `EdgeDriver` Automatización de Microsoft [Edge.][WebdriverIndexDrivingMicrosoftEdgeChromium]  En este artículo se describen todas las funcionalidades compatibles con [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] y detalles sobre cómo pasar las funcionalidades a `EdgeDriver` las sesiones.  
 
-Los enlaces de idioma de WebDrive proporcionan formas de pasar las funciones `EdgeDriver` .  El mecanismo exacto depende del [enlace de idioma que elija][ChooseLanguageBindingWebDriverIndex].  En [Selenium][SeleniumMain], las capacidades se proporcionan a través de la `EdgeOptions` clase.  
+Las funcionalidades se pasan a una sesión de WebDriver como un mapa JSON.  Los enlaces de idioma de WebDriver suelen proporcionar métodos de comodidad seguras para que no necesite configurar el mapa JSON usted mismo.  Los distintos enlaces de idioma de WebDriver usan diferentes mecanismos para configurar funcionalidades.  Navegue a la documentación de su [enlace de idioma preferido][WebdriverIndexChooseWebdriverLanguageBinding] para obtener más información sobre cómo configurar funcionalidades.  [Se siné][SeleniumMain] configura las funcionalidades a través de la `EdgeOptions` clase.  
 
 ## Uso de la clase EdgeOptions  
 
-Crear una instancia de `EdgeOptions` , que tiene métodos cómodos para configurar capacidades específicas de Microsoft Edge.  Una vez que haya configurado el `EdgeOptions` objeto, pase al `EdgeOptions` `EdgeDriver` constructor.  
+Cree una instancia de `EdgeOptions` , que proporciona métodos de comodidad para establecer funcionalidades específicas de Microsoft Edge.  Después de configurar el `EdgeOptions` objeto, pasa `EdgeOptions` al `EdgeDriver` constructor.  
 
 ```csharp
 var options = new EdgeOptions();
@@ -32,7 +32,7 @@ options.AddExtensions("/path/to/extension.crx");
 var driver = new EdgeDriver(options);
 ```  
 
-Para las funciones que aún no tienen un método práctico, use el `AddAdditionalCapability` método.  Debe conocer el nombre de la capacidad y el tipo de valor que acepta.  Para revisar la lista completa, navegue hasta el [objeto EdgeOptions](#edgeoptions-object).  
+Para usar funcionalidades que no tienen un método de comodidad asociado, use el `AddAdditionalCapability` método.  Debe pasar el nombre completo de la funcionalidad y un valor con el tipo correcto.  Para revisar la lista completa de las capacidades aceptadas y los tipos de valor, vaya al [objeto EdgeOptions](#edgeoptions-object).  
 
 ```csharp
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
@@ -40,59 +40,59 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 ## Capacidades reconocidas  
 
-Para las capacidades estándar que `EdgeDriver` aceptan, navegue a la [documentación de Selenium][SharedCapabilitiesSeleniumDocumentation] y al [estándar Webdriver de W3C][CapabilitiesW3cWebdriver].  En este artículo solo se enumeran las capacidades específicas de Microsoft Edge.  
+Para obtener las funcionalidades estándar que acepta, vaya a la documentación `EdgeDriver` [de Sejunio][SharedCapabilitiesSeleniumDocumentation] y al estándar [W3C WebDriver][CapabilitiesW3cWebdriver].  En este artículo solo se enumeran las funcionalidades específicas de Microsoft Edge.  
 
-## Objeto EdgeOptions  
+## EdgeOptions (objeto)  
 
-La mayoría de las capacidades específicas de Microsoft Edge se exponen a través del `EdgeOptions` objeto.  En algunos idiomas, la clase implementa las funciones `EdgeOptions` .  En otros idiomas, las capacidades se almacenan en el `ms:edgeOptions` Diccionario en `DesiredCapabilities` .  
+La mayoría de las funcionalidades específicas de Microsoft Edge se exponen a través del `EdgeOptions` objeto.  En algunos idiomas, la clase implementa las `EdgeOptions` capacidades.  En otros idiomas, las capacidades se almacenan en el `ms:edgeOptions` diccionario en `DesiredCapabilities` .  
 
 | Funcionalidad | Tipo | Valor predeterminado | Detalles |  
 |:--- |:--- |:--- |:--- |  
-| EventArgs | lista de cadenas |  | Lista de los argumentos de la línea de comandos que se van a usar al iniciar Microsoft Edge.  Los argumentos con un valor asociado deberían estar separados por un `=` signo \ (por ejemplo, `['start-maximized', 'user-data-dir=/tmp/temp_profile']` \).  |  
-| Binary | string |  | Ruta de acceso al binario de Microsoft Edge para usar \ (en macOS, la ruta de acceso debe ser el binario real, no solo la aplicación.  por ejemplo, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` \).  |  
-| prórroga | lista de cadenas |  | Una lista de extensiones para instalar al inicio.  Cada elemento de la lista debe ser una extensión empaquetada en base 64 \ ( `.crx` \).  |  
-| localState | diccionario |  | Un diccionario con cada entrada con el nombre de la preferencia y su valor.  Las preferencias se aplican al archivo de estado local de la carpeta datos de usuario.  |  
-| Prefs | diccionario |  | Un diccionario con cada entrada con el nombre de la preferencia y su valor.  Las preferencias solo se aplican al perfil de usuario en uso.  Para ver ejemplos, navegue hasta el `Preferences` archivo en el directorio de datos de usuario de Microsoft Edge.  |  
-| prender | boolean | false | Si es falso, Microsoft Edge se cierra al `EdgeDriver` finalizar, tanto si la sesión se cierra como si no.  Si es true, Microsoft Edge solo se cierra si la sesión se cierra \ (o cerrada \).  **Nota**: si es verdadero y la sesión no se cierra, no `EdgeDriver` limpia el directorio de datos de usuario temporal que usa la instancia de Microsoft Edge.  |  
-| debuggerAddress | string |  | Una dirección de un servidor de depuración al que conectarse, en forma de <hostname/IP: Port>, por ejemplo  `127.0.0.1:38947` .  |
-| excludeSwitches | lista de cadenas |  | Lista de modificadores de la línea de comandos de Microsoft Edge para excluir que EdgeDriver pase de forma predeterminada al iniciar Microsoft Edge.  No anteponga modificadores `--` .  |  
-| minidumpPath | string |  | Directorio para almacenar minivolcados de Microsoft Edge.  \ (Compatible solamente con Linux. \) |  
-| mobileEmulation | diccionario |  | Un diccionario con un valor `deviceName` o valores para `deviceMetrics` y `userAgent` .  |  
-| perfLoggingPrefs | diccionario |  | Un diccionario opcional que especifica las preferencias de registro de rendimiento.  para obtener más información, vaya al [objeto perfLoggingPrefs](#perfloggingprefs-object).  |  
-| windowTypes | lista de cadenas |  | Una lista de los tipos de ventanas que se muestran en la lista de identificadores de ventana.  Para acceder a los elementos de WebView de Android, incluya `webview` en la lista.  |  
-| wdpAddress | string |  | Dirección de un servidor de Windows Device portal al que se conecta, en forma de `hostname/ip:port` , por ejemplo,  `127.0.0.1:50080` .  Para obtener más información, vaya a [depuración remota-dispositivos con Windows 10][DevtoolsRemoteDebuggingWindows].  |  
-| wdpUsername | string |  | Nombre de usuario opcional para usar al conectarse a un servidor de Windows Device portal.  Necesario si el servidor tiene habilitada la autenticación.  |  
-| wdpPassword | string |  | Contraseña opcional que se usa al conectarse a un servidor de Windows Device portal.  Necesario si el servidor tiene habilitada la autenticación.  |  
-| windowsApp | string |  | IDENTIFICADOR de modelo de usuario de la aplicación de un paquete de aplicación de Microsoft Edge para iniciarlo, por ejemplo `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` .  Use `windowsApp` en lugar de `binary` cuando se conecte a un dispositivo con Windows 10x o un emulador con Windows Device portal.  |  
+| args | lista de cadenas |  | Lista de argumentos de línea de comandos que se usarán al iniciar Microsoft Edge.  Los argumentos con un valor asociado deben estar separados por un `=` signo \(por ejemplo, `['start-maximized', 'user-data-dir=/tmp/temp_profile']` \). |  
+| binario | string |  | Ruta de acceso al binario de Microsoft Edge para usar \(en macOS, la ruta de acceso debe ser el binario real, no solo la aplicación.  por ejemplo, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` \). |  
+| debuggerAddress | string |  | Una dirección de un servidor depurador al que se va a conectar, por `hostname/ip:port` ejemplo, en forma de . `127.0.0.1:38947` |
+| desasoyen | booleano | `false` | Si , Microsoft Edge se cierra cuando se cierra el servicio WebDriver, incluso si el extremo local de `false` WebDriver no ha cerrado la sesión.  Si `true` , Microsoft Edge solo se cierra si el final local de WebDriver cierra la sesión.  Si , y el final local de WebDriver no cierra la sesión, no limpia la carpeta de datos de usuario temporal usada por la instancia `true` `EdgeDriver` de Microsoft Edge. |  
+| excludeSwitches | lista de cadenas |  | Lista de modificadores de la línea de comandos de Microsoft Edge para excluir que EdgeDriver pasa de forma predeterminada al iniciar Microsoft Edge.  Evite el `--` prefijo de modificadores. |  
+| extensions | lista de cadenas |  | Una lista de extensiones para instalar en el inicio.  Cada elemento de la lista debe ser una extensión empaquetada codificada en base 64 \( `.crx` \). |  
+| localState | diccionario |  | Diccionario con cada entrada que consta del nombre de la preferencia y el valor.  Las preferencias se aplican al archivo de estado local en la carpeta de datos de usuario. |  
+| minidumpPath | string |  | Directorio para almacenar minidumps de Microsoft Edge.  \(Compatible solo en Linux.\) |  
+| mobileEmulation | diccionario |  | Un diccionario con un valor para `deviceName` , o valores para y `deviceMetrics` `userAgent` . |  
+| perfLoggingPrefs | diccionario |  | Un diccionario opcional que especifica las preferencias de registro de rendimiento.  para obtener más información, vaya al [objeto perfLoggingPrefs](#perfloggingprefs-object). |  
+| prefs | diccionario |  | Diccionario con cada entrada que consta del nombre de la preferencia y el valor.  Las preferencias solo se aplican al perfil de usuario en uso.  Para obtener ejemplos, vaya al `Preferences` archivo en la carpeta de datos de usuario de Microsoft Edge. |  
+| wdpAddress | string |  | Una dirección de un servidor de Windows Device Portal al que se conecta, en forma de `hostname/ip:port` , por  `127.0.0.1:50080` ejemplo.  Para obtener más información, ve [a Depuración remota : dispositivos con Windows 10.][DevtoolsRemoteDebuggingWindows] |  
+| wdpPassword | string |  | Contraseña opcional que se usará al conectarse a un servidor de Windows Device Portal.  Obligatorio si el servidor tiene habilitada la autenticación. |  
+| wdpUsername | string |  | Nombre de usuario opcional que se usará al conectarse a un servidor de Windows Device Portal.  Obligatorio si el servidor tiene habilitada la autenticación. |  
+| windowsApp | string |  | Identificador de modelo de usuario de aplicación de un paquete de aplicación de Microsoft Edge para iniciar, por `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` ejemplo.  Se `windowsApp` usa en lugar de conectarse a un dispositivo o emulador de Windows `binary` 10X mediante Windows Device Portal. |  
+| windowTypes | lista de cadenas |  | Una lista de tipos de ventana que se muestran en la lista de identificadores de ventana.  Para obtener acceso a los elementos de vista web de Android, `webview` incluya en la lista. |  
 
-## objeto perfLoggingPrefs  
+## perfLoggingPrefs (objeto)  
 
-El `perfLoggingPrefs` Diccionario tiene el siguiente formato \ (todas las teclas son opcionales \).  
+El `perfLoggingPrefs` diccionario tiene el siguiente formato \(todas las claves son opcionales\).  
 
 | Tecla | Tipo | Valor predeterminado | Detalles |  
 |:--- |:--- |:--- |:--- |  
-| enableNetwork | booleano | true | Para recopilar \ (o no recopilar \) eventos del dominio de red.  |  
-| enablePage | booleano | true | Para recopilar \ (o no recopilar \) eventos del dominio de la página.  |  
-| traceCategories | string | \ (vacío \) | Una cadena separada por comas de categorías de seguimiento de Microsoft Edge para las que se deben recopilar eventos de seguimiento.  Una cadena sin especificar o vacía deshabilita el seguimiento.  |  
-| bufferUsageReportingInterval | entero positivo | 1000 | Número de milisegundos solicitado entre los eventos de uso de búfer de seguimiento de DevTools.  Por ejemplo, si 1000, una vez por segundo, DevTools informa de cuánto está lleno el búfer de seguimiento.  Si un informe indica que el uso del búfer es de 100%, se emite una advertencia.  |  
+| bufferUsageReportingInterval | entero positivo | 1000 | El número solicitado de milisegundos entre los eventos de uso del búfer de seguimiento de DevTools.  Por ejemplo, si es 1000, una vez por segundo, DevTools informa de lo lleno que está el búfer de seguimiento.  Si un informe indica que el uso del búfer es del 100%, se emite una advertencia. |  
+| enableNetwork | booleano | true | Para recopilar eventos \(o no collect\) del dominio de red. |  
+| enablePage | booleano | true | Para recopilar eventos \(o no collect\) del dominio page. |  
+| traceCategories | string | \(empty\) | Una cadena separada por comas de categorías de seguimiento de Microsoft Edge para las que se deben recopilar eventos de seguimiento.  Una cadena no especificada o vacía deshabilita el seguimiento. |  
 
-## Capacidades devueltas  
+## Funcionalidades devueltas  
 
-La siguiente lista contiene todas las funciones específicas de Microsoft Edge que `EdgeDriver` se devuelven al crear una sesión nueva.  
+La siguiente lista contiene todas las funcionalidades específicas de Microsoft Edge que `EdgeDriver` se devuelven al crear una nueva sesión.  
 
 | Funcionalidad | Tipo | Detalles |  
 |:--- |:--- |:--- |  
 | msedge.msedgedriverVersion | string | La versión de EdgeDriver. |  
-| msedge.userDataDir | string | La ruta de acceso al directorio de datos de usuario que usa la instancia de Microsoft Edge. |  
+| msedge.userDataDir | string | Ruta de acceso a la carpeta de datos de usuario usada por la instancia de Microsoft Edge. |  
 
 <!-- links -->  
 
-[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Introducción a la depuración remota dispositivos con Windows 10 | Microsoft docs"  
-[DrivingEdgeWebDriverIndex]: ./index.md#driving-microsoft-edge-chromium "Conduciendo Microsoft Edge (cromo) | Microsoft docs"    
-[DownloadEdgeWebDriverIndex]: ./index.md#install-microsoft-edge-chromium "Instalar Microsoft Edge (cromo) | Microsoft docs"  
-[ChooseLanguageBindingWebDriverIndex]: ./index.md#choose-a-webdriver-language-binding "Elija un enlace de idioma WebDrive | Microsoft docs"
+[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Introducción a la depuración remota de dispositivos Windows 10 | Microsoft Docs"  
+[WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Choose a WebDriver language binding - WebDriver (Chromium) | Microsoft Docs"
+[WebdriverIndexDrivingMicrosoftEdgeChromium]: ./index.md#automating-microsoft-edge-chromium "Automatización de Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
+[WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Instalar Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"  
 
-[SeleniumMain]: https://www.selenium.dev "Automatización de explorador SeleniumHQ"  
-[SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Capacidades compartidas | Documentación de Selenium"   
+[SeleniumMain]: https://www.selenium.dev "SeesisHQ Browser Automation"  
+[SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Capacidades compartidas | Documentación de Seyán"   
 
-[CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver/#capabilities "Capacidades: especificación de Webdriver | RELATIVA"   
+[CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver#capabilities "Funcionalidades: especificación de WebDriver | W3C"   
