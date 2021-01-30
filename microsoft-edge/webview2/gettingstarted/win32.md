@@ -1,76 +1,84 @@
 ---
-description: Guía de introducción a WebView2 para aplicaciones Win32
-title: Introducción a WebView2 para aplicaciones Win32
+description: Guía de introducción a WebView2 para aplicaciones de Win32
+title: Introducción a WebView2 para aplicaciones de Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 01/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, HTML Edge
-ms.openlocfilehash: 20d830e2c8b95213b223da46f9afd9f69a137946
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, edge html
+ms.openlocfilehash: 19bc0c5600ebd072ad9a6aa61d2a965e999865ce
+ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120385"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "11306162"
 ---
-# <span data-ttu-id="a3e92-104">Introducción a WebView2</span><span class="sxs-lookup"><span data-stu-id="a3e92-104">Getting started with WebView2</span></span>  
+# <span data-ttu-id="5113b-104">Introducción a WebView2</span><span class="sxs-lookup"><span data-stu-id="5113b-104">Getting started with WebView2</span></span>  
 
-<span data-ttu-id="a3e92-105">El siguiente contenido le guiará por las funciones más comunes de [WebView2][Webview2Index] y proporciona un punto de partida para crear su primera aplicación de WebView2.</span><span class="sxs-lookup"><span data-stu-id="a3e92-105">The following content walks you through the commonly used functionalities of [WebView2][Webview2Index] and provides a starting point for creating your first WebView2 app.</span></span>  <span data-ttu-id="a3e92-106">Para obtener más información sobre las API de WebView2 individuales, consulta referencia de la [API][Webview2ReferenceWin32].</span><span class="sxs-lookup"><span data-stu-id="a3e92-106">For more information about individual WebView2 APIs, see [API reference][Webview2ReferenceWin32].</span></span>  
+<span data-ttu-id="5113b-105">En este artículo, empieza a crear tu primera aplicación WebView2 y obtén información sobre las características principales [de WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].</span><span class="sxs-lookup"><span data-stu-id="5113b-105">In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].</span></span>  <span data-ttu-id="5113b-106">Para obtener más información acerca de las API webView2 individuales, vaya a la [referencia de la API.][Webview2ReferenceWin32]</span><span class="sxs-lookup"><span data-stu-id="5113b-106">For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].</span></span>  
 
-## <span data-ttu-id="a3e92-107">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="a3e92-107">Prerequisites</span></span>  
+## <span data-ttu-id="5113b-107">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="5113b-107">Prerequisites</span></span>  
 
-*   <span data-ttu-id="a3e92-108">[WebView2 Runtime][Webview2Installer] o cualquier [canal no estable de Microsoft Edge (cromo)][MicrosoftedgeinsiderDownload] instalado en el SO compatible \ (actualmente windows 10, Windows 8,1 y Windows 7 \).</span><span class="sxs-lookup"><span data-stu-id="a3e92-108">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
+<span data-ttu-id="5113b-108">Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.</span><span class="sxs-lookup"><span data-stu-id="5113b-108">Ensure you install the following list of pre-requisites before proceeding.</span></span>  
+
+*   <span data-ttu-id="5113b-109">[WebView2 Runtime][Webview2Installer] o cualquier canal no estable de [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).</span><span class="sxs-lookup"><span data-stu-id="5113b-109">[WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="a3e92-109">El equipo de WebView recomienda usar el canal Canarias y la versión mínima requerida es 82.0.488.0.</span><span class="sxs-lookup"><span data-stu-id="a3e92-109">The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.</span></span>  
+    > <span data-ttu-id="5113b-110">El equipo de WebView recomienda usar el canal Canary y la versión mínima necesaria es 82.0.488.0.</span><span class="sxs-lookup"><span data-stu-id="5113b-110">The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.</span></span>  
     
-*   <span data-ttu-id="a3e92-110">[Visual Studio][MicrosoftVisualstudioMain] 2015 o posterior con compatibilidad con C++ instalado.</span><span class="sxs-lookup"><span data-stu-id="a3e92-110">[Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.</span></span>  
+*   <span data-ttu-id="5113b-111">[Visual Studio][MicrosoftVisualstudioMain] 2015 o posterior con compatibilidad con C++ instalada.</span><span class="sxs-lookup"><span data-stu-id="5113b-111">[Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.</span></span>  
+    
+## <span data-ttu-id="5113b-112">Paso 1: Crear una aplicación de una sola ventana</span><span class="sxs-lookup"><span data-stu-id="5113b-112">Step 1 - Create a single-window app</span></span>  
 
-## <span data-ttu-id="a3e92-111">Paso 1: crear una aplicación Win32 de una sola ventana</span><span class="sxs-lookup"><span data-stu-id="a3e92-111">Step 1 - Create a single-window win32 app</span></span>  
+<span data-ttu-id="5113b-113">Comience con un proyecto de escritorio básico que contenga una sola ventana principal.</span><span class="sxs-lookup"><span data-stu-id="5113b-113">Start with a basic desktop project that contains a single main window.</span></span>  
 
-<span data-ttu-id="a3e92-112">Empiece con un proyecto de escritorio básico que contenga una sola ventana principal.</span><span class="sxs-lookup"><span data-stu-id="a3e92-112">Start with a basic desktop project that contains a single main window.</span></span>  <span data-ttu-id="a3e92-113">Para centrar mejor el tutorial, está usando código de ejemplo modificado de [Tutorial: crear una aplicación de escritorio de Windows tradicional (C++)][CppWindowsWalkthroughCreatingDesktopApplication] para la aplicación de ejemplo.</span><span class="sxs-lookup"><span data-stu-id="a3e92-113">To better focus the walkthrough, you are using modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.</span></span>  <span data-ttu-id="a3e92-114">Para descargar el ejemplo modificado y empezar, vaya a [ejemplos de WebView2][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].</span><span class="sxs-lookup"><span data-stu-id="a3e92-114">To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].</span></span>  
+> [!IMPORTANT]
+> <span data-ttu-id="5113b-114">Para centrar mejor el tutorial, usa código de ejemplo modificado de [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.</span><span class="sxs-lookup"><span data-stu-id="5113b-114">To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.</span></span>  <span data-ttu-id="5113b-115">Para descargar el ejemplo modificado y empezar a trabajar, vaya a [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].</span><span class="sxs-lookup"><span data-stu-id="5113b-115">To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].</span></span>  
 
-<span data-ttu-id="a3e92-115">En Visual Studio, Abra `WebView2GettingStarted.sln` .</span><span class="sxs-lookup"><span data-stu-id="a3e92-115">In Visual Studio, open `WebView2GettingStarted.sln`.</span></span>  <span data-ttu-id="a3e92-116">Si está usando una versión anterior de Visual Studio, mantenga el puntero sobre el proyecto **WebView2GettingStarted** , abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **propiedades**.</span><span class="sxs-lookup"><span data-stu-id="a3e92-116">If you are using an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu \(right-click\), and select **Properties**.</span></span>  <span data-ttu-id="a3e92-117">En **propiedades de configuración**  >  **General**, modifique la **versión del SDK de Windows** y el conjunto de herramientas de **plataforma** para usar el SDK de Win10 y el conjunto de herramientas de Visual Studio \ (vs Toolset \) que tiene a su disposición.</span><span class="sxs-lookup"><span data-stu-id="a3e92-117">Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset \(VS toolset\) available to you.</span></span>  
+1.  <span data-ttu-id="5113b-116">En Visual Studio, abra `WebView2GettingStarted.sln` .</span><span class="sxs-lookup"><span data-stu-id="5113b-116">In Visual Studio, open `WebView2GettingStarted.sln`.</span></span>  
+    <span data-ttu-id="5113b-117">Si usa una versión anterior de Visual Studio, mantenga el puntero sobre el proyecto **WebView2GettingStarted,** abra el menú contextual \(haga clic con el botón secundario\) y elija **Propiedades**.</span><span class="sxs-lookup"><span data-stu-id="5113b-117">If you use an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu \(right-click\), and choose **Properties**.</span></span>  <span data-ttu-id="5113b-118">En **Propiedades de configuración**general, modifica la versión de Windows SDK y el conjunto de herramientas de plataforma para usar el SDK de Win10 y Visual Studio herramientas disponibles para  >  \*\*\*\* ti. \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="5113b-118">Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset available to you.</span></span>  
 
 :::image type="complex" source="../media/tool-version.png" alt-text="Versión de la herramienta" lightbox="../media/tool-version.png":::
-   <span data-ttu-id="a3e92-119">Versión de la herramienta</span><span class="sxs-lookup"><span data-stu-id="a3e92-119">Tool version</span></span>  
+   <span data-ttu-id="5113b-120">Versión de la herramienta</span><span class="sxs-lookup"><span data-stu-id="5113b-120">Tool version</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="a3e92-120">Visual Studio puede mostrar algunos errores debido a que falta el archivo de encabezado WebView2, que debería desaparecer después de completar el paso 2.</span><span class="sxs-lookup"><span data-stu-id="a3e92-120">Visual Studio may show some errors because of the missing WebView2 header file, which should go away after Step 2 is completed.</span></span>  
+<span data-ttu-id="5113b-121">Visual Studio pueden mostrar errores, porque al proyecto le falta el archivo de encabezado WebView2.</span><span class="sxs-lookup"><span data-stu-id="5113b-121">Visual Studio may display errors, because your project is missing the WebView2 header file.</span></span>  <span data-ttu-id="5113b-122">Los errores deben corregirse después [del paso 2.](#step-2---install-webview2-sdk)</span><span class="sxs-lookup"><span data-stu-id="5113b-122">The errors should be fixed after [Step 2](#step-2---install-webview2-sdk).</span></span>  
 
-## <span data-ttu-id="a3e92-121">Paso 2: instalar el SDK de WebView2</span><span class="sxs-lookup"><span data-stu-id="a3e92-121">Step 2 - Install WebView2 SDK</span></span>  
+## <span data-ttu-id="5113b-123">Paso 2: Instalar el SDK de WebView2</span><span class="sxs-lookup"><span data-stu-id="5113b-123">Step 2 - Install WebView2 SDK</span></span>  
 
-<span data-ttu-id="a3e92-122">Agregue el SDK de WebView2 al proyecto.</span><span class="sxs-lookup"><span data-stu-id="a3e92-122">Add the WebView2 SDK into the project.</span></span>  <span data-ttu-id="a3e92-123">Puede instalar el SDK de Win32 con NuGet.</span><span class="sxs-lookup"><span data-stu-id="a3e92-123">You may install the Win32 SDK using NuGet.</span></span>  
+<span data-ttu-id="5113b-124">Agregue el SDK de WebView2 al proyecto.</span><span class="sxs-lookup"><span data-stu-id="5113b-124">Add the WebView2 SDK into the project.</span></span>  <span data-ttu-id="5113b-125">Usa NuGet para instalar el SDK de Win32.</span><span class="sxs-lookup"><span data-stu-id="5113b-125">Use NuGet to install the Win32 SDK.</span></span>  
 
-1.  <span data-ttu-id="a3e92-124">Mantenga el puntero sobre el proyecto, abra el menú contextual \ (haga clic con el botón derecho \) y seleccione **administrar paquetes NuGet**.</span><span class="sxs-lookup"><span data-stu-id="a3e92-124">Hover on the project, open the contextual menu \(right-click\), and select **Manage NuGet Packages**.</span></span>  
+1.  <span data-ttu-id="5113b-126">Mantenga el puntero sobre el proyecto, abra el menú contextual \(right-click\) y elija **Administrar paquetes NuGet**.</span><span class="sxs-lookup"><span data-stu-id="5113b-126">Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages**.</span></span>  
     
-    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Versión de la herramienta" lightbox="../media/manage-nuget-packages.png":::
-       <span data-ttu-id="a3e92-126">Administrar paquetes NuGet</span><span class="sxs-lookup"><span data-stu-id="a3e92-126">Manage NuGet packages</span></span>  
+    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Administrar paquetes NuGet" lightbox="../media/manage-nuget-packages.png":::
+       <span data-ttu-id="5113b-128">Administrar paquetes NuGet</span><span class="sxs-lookup"><span data-stu-id="5113b-128">Manage NuGet packages</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="a3e92-127">Instale la biblioteca de implementación de Windows.</span><span class="sxs-lookup"><span data-stu-id="a3e92-127">Install the Windows Implementation Library.</span></span>  
-    1.  <span data-ttu-id="a3e92-128">Escriba `Microsoft.Windows.ImplementationLibrary` en la barra de búsqueda, seleccione **Microsoft. Windows. ImplementationLibrary** de los resultados y seleccione **instalar** en la ventana de la derecha.</span><span class="sxs-lookup"><span data-stu-id="a3e92-128">Enter `Microsoft.Windows.ImplementationLibrary` in the search bar, select **Microsoft.Windows.ImplementationLibrary** from the results, and select **Install** in the right-hand side window.</span></span>  <span data-ttu-id="a3e92-129">NuGet descarga el SDK en tu equipo.</span><span class="sxs-lookup"><span data-stu-id="a3e92-129">NuGet downloads the SDK to your machine.</span></span>  
+1.  <span data-ttu-id="5113b-129">Instala la biblioteca de implementación de Windows.</span><span class="sxs-lookup"><span data-stu-id="5113b-129">Install the Windows Implementation Library.</span></span>  
+    1.  <span data-ttu-id="5113b-130">En la barra de búsqueda, `Microsoft.Windows.ImplementationLibrary` escriba > **Microsoft.Windows.ImplementationLibrary**.</span><span class="sxs-lookup"><span data-stu-id="5113b-130">In the search bar, type `Microsoft.Windows.ImplementationLibrary` > choose **Microsoft.Windows.ImplementationLibrary**.</span></span>  
+    1.  <span data-ttu-id="5113b-131">En la ventana del lado derecho, elija **Instalar**.</span><span class="sxs-lookup"><span data-stu-id="5113b-131">In the right-hand side window, choose **Install**.</span></span>  <span data-ttu-id="5113b-132">NuGet descarga la biblioteca en el equipo.</span><span class="sxs-lookup"><span data-stu-id="5113b-132">NuGet downloads the library to your machine.</span></span>  
         
-        > [!NOTE] 
-        > <span data-ttu-id="a3e92-130">La biblioteca de [implementación de Windows][GithubMicrosoftWilMain] y la biblioteca de plantillas de [C++ de Windows Runtime][CppCxWrlTemplateLibraryVS2019] son opcionales y se han agregado para facilitar el trabajo con com.</span><span class="sxs-lookup"><span data-stu-id="a3e92-130">The [Windows Implementation Library][GithubMicrosoftWilMain] and [Windows Runtime C++ Template Library][CppCxWrlTemplateLibraryVS2019] are optional and were added to make working with COM easier for the example.</span></span>  
+        > [!NOTE]
+        > <span data-ttu-id="5113b-133">La [biblioteca de implementación de Windows][GithubMicrosoftWilMain] y la biblioteca de plantillas [C++][CppCxWrlTemplateLibraryVS2019] de Windows Runtime son opcionales y facilitan el trabajo con COM para el ejemplo.</span><span class="sxs-lookup"><span data-stu-id="5113b-133">The [Windows Implementation Library][GithubMicrosoftWilMain] and [Windows Runtime C++ Template Library][CppCxWrlTemplateLibraryVS2019] are optional and make working with COM easier for the example.</span></span>  
         
-        :::image type="complex" source="../media/wil.png" alt-text="Versión de la herramienta" lightbox="../media/wil.png":::
-           <span data-ttu-id="a3e92-132">Biblioteca de implementación de Windows</span><span class="sxs-lookup"><span data-stu-id="a3e92-132">Windows Implementation Library</span></span>  
+        :::image type="complex" source="../media/wil.png" alt-text="Biblioteca de implementación de Windows" lightbox="../media/wil.png":::
+           <span data-ttu-id="5113b-135">Biblioteca de implementación de Windows</span><span class="sxs-lookup"><span data-stu-id="5113b-135">Windows Implementation Library</span></span>  
         :::image-end:::  
         
-1.  <span data-ttu-id="a3e92-133">Instale el SDK de WebView2.</span><span class="sxs-lookup"><span data-stu-id="a3e92-133">Install the WebView2 SDK.</span></span>  
-    1.  <span data-ttu-id="a3e92-134">Escriba `Microsoft.Web.WebView2` en la barra de búsqueda, seleccione **Microsoft. Web. WebView2** de los resultados y seleccione **instalar** en la ventana de la derecha.</span><span class="sxs-lookup"><span data-stu-id="a3e92-134">Enter `Microsoft.Web.WebView2` in the search bar, select **Microsoft.Web.WebView2** from the results, and select **Install** in the right-hand side window.</span></span>  <span data-ttu-id="a3e92-135">NuGet descarga el SDK en tu equipo.</span><span class="sxs-lookup"><span data-stu-id="a3e92-135">NuGet downloads the SDK to your machine.</span></span>  
+1.  <span data-ttu-id="5113b-136">Instale el SDK de WebView2.</span><span class="sxs-lookup"><span data-stu-id="5113b-136">Install the WebView2 SDK.</span></span>  
+    1.  <span data-ttu-id="5113b-137">En la barra de búsqueda, `Microsoft.Web.WebView2` escriba > **seleccione Microsoft.Web.WebView2**.</span><span class="sxs-lookup"><span data-stu-id="5113b-137">In the search bar, type `Microsoft.Web.WebView2` > choose **Microsoft.Web.WebView2**.</span></span>  
+    1.  <span data-ttu-id="5113b-138">En la ventana del lado derecho, elija **Instalar**.</span><span class="sxs-lookup"><span data-stu-id="5113b-138">In the right-hand side window, choose **Install**.</span></span>  <span data-ttu-id="5113b-139">NuGet descarga el SDK en el equipo.</span><span class="sxs-lookup"><span data-stu-id="5113b-139">NuGet downloads the SDK to your machine.</span></span>  
         
-        :::image type="complex" source="../media/nuget.png" alt-text="Versión de la herramienta" lightbox="../media/nuget.png":::
-           <span data-ttu-id="a3e92-137">Administrador de paquetes Nuget</span><span class="sxs-lookup"><span data-stu-id="a3e92-137">Nuget Package Manager</span></span>
+        :::image type="complex" source="../media/nuget.png" alt-text="NuGet Administrador de paquetes" lightbox="../media/nuget.png":::
+           <span data-ttu-id="5113b-141">NuGet Administrador de paquetes</span><span class="sxs-lookup"><span data-stu-id="5113b-141">NuGet Package Manager</span></span>
         :::image-end:::  
         
-1.  <span data-ttu-id="a3e92-138">Agregue el encabezado WebView2 al proyecto.</span><span class="sxs-lookup"><span data-stu-id="a3e92-138">Add WebView2 header to your project.</span></span>  
+1.  <span data-ttu-id="5113b-142">Agregue el encabezado WebView2 al proyecto.</span><span class="sxs-lookup"><span data-stu-id="5113b-142">Add WebView2 header to your project.</span></span>  
     :::row:::
        :::column span="1":::
-          <span data-ttu-id="a3e92-139">Abra `HelloWebView.cpp` , copie el siguiente fragmento de código y péguelo `HelloWebView.cpp` después de la última `#include` línea.</span><span class="sxs-lookup"><span data-stu-id="a3e92-139">Open `HelloWebView.cpp`, copy the following code snippet and paste into `HelloWebView.cpp` after last `#include` line.</span></span>  
+          <span data-ttu-id="5113b-143">En el `HelloWebView.cpp` archivo, copie el siguiente fragmento de código y péguelo después de la última `#include` línea.</span><span class="sxs-lookup"><span data-stu-id="5113b-143">In the `HelloWebView.cpp` file, copy the following code snippet and paste it after the last `#include` line.</span></span>  
           
           ```cpp
           // include WebView2 header
@@ -78,7 +86,7 @@ ms.locfileid: "11120385"
           ```  
        :::column-end:::
        :::column span="1":::
-          <span data-ttu-id="a3e92-140">La sección de inclusión debe tener un aspecto similar al siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="a3e92-140">The include section should look similar to the following code snippet.</span></span>  
+          <span data-ttu-id="5113b-144">La sección include debe ser similar al siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="5113b-144">The include section should look similar to the following code snippet.</span></span>  
           
           ```cpp
           ...
@@ -90,23 +98,25 @@ ms.locfileid: "11120385"
        :::column-end:::
     :::row-end:::
     
-<span data-ttu-id="a3e92-141">Estás listo para usar y compilar en la API de WebView2.</span><span class="sxs-lookup"><span data-stu-id="a3e92-141">You are all set to use and build against the WebView2 API.</span></span>  
+<span data-ttu-id="5113b-145">Listo para usarse y compilarse con la API de WebView2.</span><span class="sxs-lookup"><span data-stu-id="5113b-145">Ready to use and build against the WebView2 API.</span></span>  
 
-### <span data-ttu-id="a3e92-142">Crear la aplicación de ejemplo vacía</span><span class="sxs-lookup"><span data-stu-id="a3e92-142">Build your empty sample app</span></span>  
+### <span data-ttu-id="5113b-146">Crear una aplicación de ejemplo vacía</span><span class="sxs-lookup"><span data-stu-id="5113b-146">Build your empty sample app</span></span>  
 
-<span data-ttu-id="a3e92-143">Seleccione `F5` para compilar y ejecutar la aplicación de ejemplo.</span><span class="sxs-lookup"><span data-stu-id="a3e92-143">Select `F5` to build and run the sample app.</span></span>  <span data-ttu-id="a3e92-144">Aparece una aplicación que muestra una ventana vacía.</span><span class="sxs-lookup"><span data-stu-id="a3e92-144">An app displaying an empty window appears.</span></span>  
+<span data-ttu-id="5113b-147">Para compilar y ejecutar la aplicación de ejemplo, seleccione `F5` .</span><span class="sxs-lookup"><span data-stu-id="5113b-147">To build and run the sample app, select `F5`.</span></span>  <span data-ttu-id="5113b-148">La aplicación muestra una ventana vacía.</span><span class="sxs-lookup"><span data-stu-id="5113b-148">Your app displays an empty window.</span></span>  
 
-:::image type="complex" source="../media/empty-app.png" alt-text="Versión de la herramienta" lightbox="../media/empty-app.png":::
-   <span data-ttu-id="a3e92-146">Aplicación vacía</span><span class="sxs-lookup"><span data-stu-id="a3e92-146">Empty app</span></span>  
+:::image type="complex" source="../media/empty-app.png" alt-text="Aplicación vacía" lightbox="../media/empty-app.png":::
+   <span data-ttu-id="5113b-150">Aplicación vacía</span><span class="sxs-lookup"><span data-stu-id="5113b-150">Empty app</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="a3e92-147">Paso 3: crear un único WebView en la ventana principal</span><span class="sxs-lookup"><span data-stu-id="a3e92-147">Step 3 - Create a single WebView within the parent window</span></span>  
+## <span data-ttu-id="5113b-151">Paso 3: Crear una sola vista web dentro de la ventana primaria</span><span class="sxs-lookup"><span data-stu-id="5113b-151">Step 3 - Create a single WebView within the parent window</span></span>  
 
-<span data-ttu-id="a3e92-148">Agregue una vista previa a la ventana principal.</span><span class="sxs-lookup"><span data-stu-id="a3e92-148">Add a WebView to the main window.</span></span>  <span data-ttu-id="a3e92-149">Use el `CreateCoreWebView2Environment` método para configurar el entorno y busque el explorador Microsoft Edge \ (cromo \) encendido del control.</span><span class="sxs-lookup"><span data-stu-id="a3e92-149">Use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge \(Chromium\) browser powering the control.</span></span>  <span data-ttu-id="a3e92-150">También puede usar el `CreateCoreWebView2EnvironmentWithOptions` método si desea especificar la ubicación del explorador, la carpeta de usuario, las marcas del explorador, etc., en lugar de usar la configuración predeterminada.</span><span class="sxs-lookup"><span data-stu-id="a3e92-150">You may also use the `CreateCoreWebView2EnvironmentWithOptions` method if you want to specify browser location, user folder, browser flags, and so on, instead of using the default setting.</span></span>  <span data-ttu-id="a3e92-151">Una vez finalizado el `CreateCoreWebView2Environment` método, podrá ejecutar el `ICoreWebView2Environment::CreateCoreWebView2Controller` método dentro de la devolución de `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` llamada y ejecutar el `ICoreWebView2Controller::get_CoreWebView2` método para obtener la vista previa asociada.</span><span class="sxs-lookup"><span data-stu-id="a3e92-151">Upon the completion of the `CreateCoreWebView2Environment` method, you are able to run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.</span></span>  
+<span data-ttu-id="5113b-152">Agrega una vista web a la ventana principal.</span><span class="sxs-lookup"><span data-stu-id="5113b-152">Add a WebView to the main window.</span></span>  
 
-<span data-ttu-id="a3e92-152">En la devolución de llamada, establezca algunas opciones de configuración adicionales, cambie el tamaño de la vista de sitio para que tome el 100% de la ventana primaria y vaya a Bing.</span><span class="sxs-lookup"><span data-stu-id="a3e92-152">In the callback, set a few additional settings, resize the WebView to take 100% of the parent window, and navigate to Bing.</span></span>  
+ <span data-ttu-id="5113b-153">Usa el método para configurar el entorno y localizar el `CreateCoreWebView2Environment` explorador Microsoft Edge \(Chromium\) que encienda el control.</span><span class="sxs-lookup"><span data-stu-id="5113b-153">Use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge \(Chromium\) browser powering the control.</span></span>  <span data-ttu-id="5113b-154">También puede usar el método si desea especificar la ubicación del explorador, la carpeta de usuario, las marcas del explorador, entre otros, en lugar de usar `CreateCoreWebView2EnvironmentWithOptions` la configuración predeterminada.</span><span class="sxs-lookup"><span data-stu-id="5113b-154">You may also use the `CreateCoreWebView2EnvironmentWithOptions` method if you want to specify browser location, user folder, browser flags, and so on, instead of using the default setting.</span></span>  <span data-ttu-id="5113b-155">Una vez completado el método, ejecute el método dentro de la devolución de llamada y ejecute el `CreateCoreWebView2Environment` método para obtener la vista web `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` asociada.</span><span class="sxs-lookup"><span data-stu-id="5113b-155">Upon the completion of the `CreateCoreWebView2Environment` method, run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.</span></span>  
 
-<span data-ttu-id="a3e92-153">Copie el siguiente fragmento de código y péguelo `HelloWebView.cpp` después de la `// <-- WebView2 sample code starts here -->` Nota y antes de la `// <-- WebView2 sample code ends here -->` Nota.</span><span class="sxs-lookup"><span data-stu-id="a3e92-153">Copy the following code snippet and paste into `HelloWebView.cpp` after the `// <-- WebView2 sample code starts here -->` note and before the `// <-- WebView2 sample code ends here -->` note.</span></span>  
+<span data-ttu-id="5113b-156">En la devolución de llamada, establece algunas opciones más, cambia el tamaño de WebView para que tome el 100 % de la ventana principal y navega a Bing.</span><span class="sxs-lookup"><span data-stu-id="5113b-156">In the callback, set a few more settings, resize the WebView to take 100% of the parent window, and navigate to Bing.</span></span>  
+
+<span data-ttu-id="5113b-157">Copie el siguiente fragmento de código y péguelo `HelloWebView.cpp` después del comentario y antes del `// <-- WebView2 sample code starts here -->` `// <-- WebView2 sample code ends here -->` comentario.</span><span class="sxs-lookup"><span data-stu-id="5113b-157">Copy the following code snippet and paste into `HelloWebView.cpp` after the `// <-- WebView2 sample code starts here -->` comment and before the `// <-- WebView2 sample code ends here -->` comment.</span></span>  
 
 ```cpp
 // Step 3 - Create a single WebView within the parent window
@@ -151,17 +161,17 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
     }).Get());
 ```  
 
-### <span data-ttu-id="a3e92-154">Crear la aplicación de ejemplo de Bing</span><span class="sxs-lookup"><span data-stu-id="a3e92-154">Build your Bing sample app</span></span>  
+### <span data-ttu-id="5113b-158">Crear una aplicación de ejemplo de Bing</span><span class="sxs-lookup"><span data-stu-id="5113b-158">Build your Bing sample app</span></span>  
 
-<span data-ttu-id="a3e92-155">Seleccione `F5` para compilar y ejecutar la aplicación.</span><span class="sxs-lookup"><span data-stu-id="a3e92-155">Select `F5` to build and run the app.</span></span>  <span data-ttu-id="a3e92-156">Ahora tiene una ventana de vista Web que muestra la página de Bing.</span><span class="sxs-lookup"><span data-stu-id="a3e92-156">Now you have a WebView window displaying the Bing page.</span></span>  
+<span data-ttu-id="5113b-159">Para compilar y ejecutar la aplicación, seleccione `F5` .</span><span class="sxs-lookup"><span data-stu-id="5113b-159">To build and run the app, select `F5`.</span></span>  <span data-ttu-id="5113b-160">Ahora tiene una ventana WebView que muestra la página de Bing.</span><span class="sxs-lookup"><span data-stu-id="5113b-160">Now you have a WebView window displaying the Bing page.</span></span>  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Versión de la herramienta" lightbox="../media/bing-window.png":::
-   <span data-ttu-id="a3e92-158">Ventana de Bing</span><span class="sxs-lookup"><span data-stu-id="a3e92-158">Bing window</span></span>  
+:::image type="complex" source="../media/bing-window.png" alt-text="Ventana de Bing" lightbox="../media/bing-window.png":::
+   <span data-ttu-id="5113b-162">Ventana de Bing</span><span class="sxs-lookup"><span data-stu-id="5113b-162">Bing window</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="a3e92-159">Paso 4: eventos de navegación</span><span class="sxs-lookup"><span data-stu-id="a3e92-159">Step 4 - Navigation events</span></span>  
+## <span data-ttu-id="5113b-163">Paso 4: Eventos de navegación</span><span class="sxs-lookup"><span data-stu-id="5113b-163">Step 4 - Navigation events</span></span>  
 
-<span data-ttu-id="a3e92-160">El equipo de WebView ya cubre la navegación a la dirección URL con el `ICoreWebView2::Navigate` método del último paso.</span><span class="sxs-lookup"><span data-stu-id="a3e92-160">The WebView team already covered navigating to URL using the `ICoreWebView2::Navigate` method in the last step.</span></span>  <span data-ttu-id="a3e92-161">Durante la navegación, WebView desencadena una secuencia de eventos a los que puede escuchar el host.</span><span class="sxs-lookup"><span data-stu-id="a3e92-161">During navigation, WebView fires a sequence of events to which the host may listen.</span></span>  
+<span data-ttu-id="5113b-164">El equipo de WebView ya ha cubierto la navegación a la dirección URL mediante `ICoreWebView2::Navigate` el método en el último paso.</span><span class="sxs-lookup"><span data-stu-id="5113b-164">The WebView team already covered navigating to URL using the `ICoreWebView2::Navigate` method in the last step.</span></span>  <span data-ttu-id="5113b-165">Durante la navegación, WebView dispara una secuencia de eventos a los que el host puede escuchar.</span><span class="sxs-lookup"><span data-stu-id="5113b-165">During navigation, WebView fires a sequence of events to which the host may listen.</span></span>  
 
 1.  `NavigationStarting`  
 1.  `SourceChanged`  
@@ -169,21 +179,22 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 1.  `HistoryChanged`   
 1.  `NavigationCompleted`   
 
-<span data-ttu-id="a3e92-162">Para obtener más información, vaya a [eventos de navegación][Webview2ConceptsNavigationEvents].</span><span class="sxs-lookup"><span data-stu-id="a3e92-162">For more information, navigate to [Navigation events][Webview2ConceptsNavigationEvents].</span></span>  
+<span data-ttu-id="5113b-166">Para obtener más información, vaya a [Eventos de navegación.][Webview2ConceptsNavigationEvents]</span><span class="sxs-lookup"><span data-stu-id="5113b-166">For more information, navigate to [Navigation events][Webview2ConceptsNavigationEvents].</span></span>  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Versión de la herramienta" lightbox="../media/navigation-events.png":::
-   <span data-ttu-id="a3e92-164">Eventos de navegación</span><span class="sxs-lookup"><span data-stu-id="a3e92-164">Navigation events</span></span>  
+:::image type="complex" source="../media/navigation-events.png" alt-text="Eventos de navegación" lightbox="../media/navigation-events.png":::
+   <span data-ttu-id="5113b-168">Eventos de navegación</span><span class="sxs-lookup"><span data-stu-id="5113b-168">Navigation events</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="a3e92-165">En casos de error, pueden producirse uno o varios de los siguientes eventos dependiendo de si la navegación continúa en una página de error.</span><span class="sxs-lookup"><span data-stu-id="a3e92-165">In error cases, one or more of the following events may occur depending on whether the navigation is continued to an error page.</span></span>  
+<span data-ttu-id="5113b-169">En los casos de error, uno o varios de los siguientes eventos pueden producirse en función de si la navegación continúa hacia una página web de error.</span><span class="sxs-lookup"><span data-stu-id="5113b-169">In error cases, one or more of the following events may occur depending on whether the navigation is continued to an error webpage.</span></span>  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`
 
-<span data-ttu-id="a3e92-166">Si se produce una redirección HTTP, hay varios `NavigationStarting` eventos en una fila.</span><span class="sxs-lookup"><span data-stu-id="a3e92-166">If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.</span></span>  
+> [!NOTE]
+> <span data-ttu-id="5113b-170">Si se produce un redireccionamiento HTTP, hay varios `NavigationStarting` eventos en una fila.</span><span class="sxs-lookup"><span data-stu-id="5113b-170">If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.</span></span>  
 
-<span data-ttu-id="a3e92-167">Como ejemplo de uso de los eventos, registra un controlador para el `NavigationStarting` evento y cancela las solicitudes que no sean https.</span><span class="sxs-lookup"><span data-stu-id="a3e92-167">As an example of using the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.</span></span>  <span data-ttu-id="a3e92-168">Copie el siguiente fragmento de código y péguelo en él `HelloWebView.cpp` .</span><span class="sxs-lookup"><span data-stu-id="a3e92-168">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
+<span data-ttu-id="5113b-171">Como ejemplo de uso de los eventos, registre un controlador para el evento para cancelar las solicitudes `NavigationStarting` que no son https.</span><span class="sxs-lookup"><span data-stu-id="5113b-171">As an example of using the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.</span></span>  <span data-ttu-id="5113b-172">Copie el siguiente fragmento de código y péguelo en `HelloWebView.cpp` .</span><span class="sxs-lookup"><span data-stu-id="5113b-172">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
 
 ```cpp
 // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
@@ -201,13 +212,16 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
     }).Get(), &token);
 ```  
 
-<span data-ttu-id="a3e92-169">Ahora la aplicación no está navegando a ningún sitio que no sea HTTPS.</span><span class="sxs-lookup"><span data-stu-id="a3e92-169">Now the app is not navigating to any non-https sites.</span></span>  <span data-ttu-id="a3e92-170">Puede usar un mecanismo similar para realizar otras tareas, como restringir la navegación a dentro de su propio dominio.</span><span class="sxs-lookup"><span data-stu-id="a3e92-170">You may use similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.</span></span>  
+<span data-ttu-id="5113b-173">Ahora, la aplicación no navega a ningún sitio que no sea https.</span><span class="sxs-lookup"><span data-stu-id="5113b-173">Now the app does not navigate to any non-https sites.</span></span>  <span data-ttu-id="5113b-174">Puede usar un mecanismo similar para realizar otras tareas, como restringir la navegación a su propio dominio.</span><span class="sxs-lookup"><span data-stu-id="5113b-174">You may use similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.</span></span>  
 
-## <span data-ttu-id="a3e92-171">Paso 5: scripting</span><span class="sxs-lookup"><span data-stu-id="a3e92-171">Step 5 - Scripting</span></span>  
+## <span data-ttu-id="5113b-175">Paso 5: Scripting</span><span class="sxs-lookup"><span data-stu-id="5113b-175">Step 5 - Scripting</span></span>  
 
-<span data-ttu-id="a3e92-172">La aplicación de hospedaje también puede inyectar JavaScript en WebView.</span><span class="sxs-lookup"><span data-stu-id="a3e92-172">The hosting app may also inject JavaScript into WebView.</span></span>  <span data-ttu-id="a3e92-173">Puede usar la vista previa de tareas para ejecutar JavaScript arbitrario o agregar scripts de inicialización.</span><span class="sxs-lookup"><span data-stu-id="a3e92-173">You may task WebView to run arbitrary JavaScript or add initialization scripts.</span></span>  <span data-ttu-id="a3e92-174">Los scripts de inicialización agregados se aplican a todos los futuros documentos de nivel superior y navegación de Marcos secundarios hasta que se eliminen.</span><span class="sxs-lookup"><span data-stu-id="a3e92-174">Added initialization scripts apply to all future top-level document and child frame navigation until removed.</span></span>  <span data-ttu-id="a3e92-175">Los scripts de inicialización se ejecutan después de crear el objeto global y antes de ejecutar cualquier otro script incluido en el documento HTML.</span><span class="sxs-lookup"><span data-stu-id="a3e92-175">The initialization scripts run after creating the global object and before running any other script included by the HTML document.</span></span>  
+<span data-ttu-id="5113b-176">Puedes usar aplicaciones host para insertar código JavaScript en controles WebView2 en tiempo de ejecución.</span><span class="sxs-lookup"><span data-stu-id="5113b-176">You may use host apps to inject JavaScript code into WebView2 controls at runtime.</span></span>  <span data-ttu-id="5113b-177">Puede hacer que WebView ejecute JavaScript arbitrario o agregue scripts de inicialización.</span><span class="sxs-lookup"><span data-stu-id="5113b-177">You may task WebView to run arbitrary JavaScript or add initialization scripts.</span></span>  <span data-ttu-id="5113b-178">El JavaScript insertado se aplica a todos los nuevos documentos de nivel superior y a todos los fotogramas secundarios hasta que se quite el JavaScript.</span><span class="sxs-lookup"><span data-stu-id="5113b-178">The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.</span></span>  <span data-ttu-id="5113b-179">El JavaScript inyectado se ejecuta con intervalos específicos.</span><span class="sxs-lookup"><span data-stu-id="5113b-179">The injected JavaScript is run with specific timing.</span></span>  
 
-<span data-ttu-id="a3e92-176">Copie el siguiente fragmento de código y péguelo en él `HelloWebView.cpp` .</span><span class="sxs-lookup"><span data-stu-id="a3e92-176">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
+*   <span data-ttu-id="5113b-180">Ejecutarlo después de la creación del objeto global.</span><span class="sxs-lookup"><span data-stu-id="5113b-180">Run it after the creation of the global object.</span></span>  
+*   <span data-ttu-id="5113b-181">Ejecutarlo antes de ejecutar cualquier otro script incluido en el documento HTML.</span><span class="sxs-lookup"><span data-stu-id="5113b-181">Run it before any other script included in the HTML document is run.</span></span>  
+
+<span data-ttu-id="5113b-182">Copie el siguiente fragmento de código y péguelo en `HelloWebView.cpp` .</span><span class="sxs-lookup"><span data-stu-id="5113b-182">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
 
 ```cpp
 // Schedule an async task to add initialization script that freezes the Object object
@@ -221,24 +235,24 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
     }).Get());
 ```  
 
-<span data-ttu-id="a3e92-177">Ahora, WebView siempre debe inmovilizar el `Object` objeto y devuelve el documento de página una vez.</span><span class="sxs-lookup"><span data-stu-id="a3e92-177">Now, WebView should always freeze the `Object` object and returns the page document once.</span></span>  
+<span data-ttu-id="5113b-183">Ahora, WebView siempre debe inmovilizar el `Object` objeto y devuelve el documento de página una vez.</span><span class="sxs-lookup"><span data-stu-id="5113b-183">Now, WebView should always freeze the `Object` object and returns the page document once.</span></span>  
 
 > [!NOTE] 
-> <span data-ttu-id="a3e92-178">Las API de inyección de script \ (y otras API de WebView2 \) son asincrónicas, por lo que debe usar devoluciones de llamada si el código debe ejecutarse en un orden específico.</span><span class="sxs-lookup"><span data-stu-id="a3e92-178">The script injection APIs \(and some other WebView2 APIs\) are asynchronous, you should use callbacks if code is must be run in a specific order.</span></span>  
+> <span data-ttu-id="5113b-184">Las API de inserción de scripts \(y algunas otras API de WebView2\) son asincrónicas, debes usar devoluciones de llamada si el código debe ejecutarse en un orden específico.</span><span class="sxs-lookup"><span data-stu-id="5113b-184">The script injection APIs \(and some other WebView2 APIs\) are asynchronous, you should use callbacks if code is must be run in a specific order.</span></span>  
 
-## <span data-ttu-id="a3e92-179">Paso 6: comunicación entre el host y el contenido web</span><span class="sxs-lookup"><span data-stu-id="a3e92-179">Step 6 - Communication between host and web content</span></span>  
+## <span data-ttu-id="5113b-185">Paso 6: Comunicación entre contenido de host y web</span><span class="sxs-lookup"><span data-stu-id="5113b-185">Step 6 - Communication between host and web content</span></span>  
 
-<span data-ttu-id="a3e92-180">El host y el contenido web también pueden comunicarse con ellos a través del `postMessage` método.</span><span class="sxs-lookup"><span data-stu-id="a3e92-180">The host and the web content may also communicate with each other through the `postMessage` method.</span></span>  <span data-ttu-id="a3e92-181">El contenido web que se ejecuta en una vista Web puede publicarse en el host mediante el `window.chrome.webview.postMessage` método y cualquier otro registro del `ICoreWebView2WebMessageReceivedEventHandler` controlador de eventos registrado en el host controla el mensaje.</span><span class="sxs-lookup"><span data-stu-id="a3e92-181">The web content running within a WebView may post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.</span></span>  <span data-ttu-id="a3e92-182">Del mismo modo, el anfitrión puede enviar un mensaje a través de la web mediante `ICoreWebView2::PostWebMessageAsString` o `ICoreWebView2::PostWebMessageAsJSON` método, que los controladores han agregado desde la `window.chrome.webview.addEventListener` escucha.</span><span class="sxs-lookup"><span data-stu-id="a3e92-182">Likewise, the host may message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.</span></span>  <span data-ttu-id="a3e92-183">El mecanismo de comunicación permite que el contenido web use capacidades nativas al pasar mensajes para solicitar al host que ejecute las API nativas.</span><span class="sxs-lookup"><span data-stu-id="a3e92-183">The communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.</span></span>  
+<span data-ttu-id="5113b-186">El host y el contenido web también pueden comunicarse entre sí a través del `postMessage` método.</span><span class="sxs-lookup"><span data-stu-id="5113b-186">The host and the web content may also communicate with each other through the `postMessage` method.</span></span>  <span data-ttu-id="5113b-187">El contenido web que se ejecuta en una vista web puede publicarse en el host a través del método y el mensaje lo controla cualquier controlador de eventos registrado `window.chrome.webview.postMessage` `ICoreWebView2WebMessageReceivedEventHandler` en el host.</span><span class="sxs-lookup"><span data-stu-id="5113b-187">The web content running within a WebView may post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.</span></span>  <span data-ttu-id="5113b-188">Del mismo modo, el host puede enviar mensajes al contenido web a través o al método, que son capturados por `ICoreWebView2::PostWebMessageAsString` `ICoreWebView2::PostWebMessageAsJSON` controladores agregados desde el agente de `window.chrome.webview.addEventListener` escucha.</span><span class="sxs-lookup"><span data-stu-id="5113b-188">Likewise, the host may message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.</span></span>  <span data-ttu-id="5113b-189">El mecanismo de comunicación permite que el contenido web use funcionalidades nativas pasando mensajes para pedir al host que ejecute API nativas.</span><span class="sxs-lookup"><span data-stu-id="5113b-189">The communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.</span></span>  
 
-<span data-ttu-id="a3e92-184">Como ejemplo para comprender el mecanismo, los pasos siguientes se producen al intentar imprimir la dirección URL del documento en WebView.</span><span class="sxs-lookup"><span data-stu-id="a3e92-184">As an example to understand the mechanism, the following steps occur when you try printing out the document URL in WebView.</span></span>  
+<span data-ttu-id="5113b-190">Como ejemplo para comprender el mecanismo, se producen los siguientes pasos al intentar generar la dirección URL del documento en WebView.</span><span class="sxs-lookup"><span data-stu-id="5113b-190">As an example to understand the mechanism, the following steps occur when you try to output the document URL in WebView.</span></span>  
 
-1.  <span data-ttu-id="a3e92-185">El anfitrión registra un controlador para devolver el mensaje recibido al contenido web</span><span class="sxs-lookup"><span data-stu-id="a3e92-185">The host registers a handler to return received message back to the web content</span></span>  
-1.  <span data-ttu-id="a3e92-186">El anfitrión inyecta un script en el contenido web que registra un controlador para imprimir el mensaje desde el host</span><span class="sxs-lookup"><span data-stu-id="a3e92-186">The host injects a script to the web content that registers a handler to print message from the host</span></span>  
-1.  <span data-ttu-id="a3e92-187">El anfitrión inyecta un script en el contenido web que publica la dirección URL en el host.</span><span class="sxs-lookup"><span data-stu-id="a3e92-187">The host injects a script to the web content that posts the URL to the host</span></span>  
-1.  <span data-ttu-id="a3e92-188">El controlador del host se desencadena y devuelve el mensaje \ (la dirección URL \) en el contenido Web.</span><span class="sxs-lookup"><span data-stu-id="a3e92-188">The handler of the host is triggered and returns the message \(the URL\) to the web content</span></span>  
-1.  <span data-ttu-id="a3e92-189">El controlador del contenido web se desencadena e imprime un mensaje desde el host \ (la dirección URL \)</span><span class="sxs-lookup"><span data-stu-id="a3e92-189">The handler of the web content is triggered and prints message from the host \(the URL\)</span></span>  
+1.  <span data-ttu-id="5113b-191">El host registra un controlador para devolver el mensaje recibido al contenido web</span><span class="sxs-lookup"><span data-stu-id="5113b-191">The host registers a handler to return received message back to the web content</span></span>  
+1.  <span data-ttu-id="5113b-192">El host inserta un script en el contenido web que registra un controlador para imprimir el mensaje del host</span><span class="sxs-lookup"><span data-stu-id="5113b-192">The host injects a script to the web content that registers a handler to print message from the host</span></span>  
+1.  <span data-ttu-id="5113b-193">El host inserta un script en el contenido web que publica la dirección URL en el host</span><span class="sxs-lookup"><span data-stu-id="5113b-193">The host injects a script to the web content that posts the URL to the host</span></span>  
+1.  <span data-ttu-id="5113b-194">El controlador del host se desencadena y devuelve el mensaje \(la dirección URL\) al contenido web</span><span class="sxs-lookup"><span data-stu-id="5113b-194">The handler of the host is triggered and returns the message \(the URL\) to the web content</span></span>  
+1.  <span data-ttu-id="5113b-195">El controlador del contenido web se desencadena e imprime el mensaje desde el host \(la dirección URL\)</span><span class="sxs-lookup"><span data-stu-id="5113b-195">The handler of the web content is triggered and prints message from the host \(the URL\)</span></span>  
 
-<span data-ttu-id="a3e92-190">Copie el siguiente fragmento de código y péguelo en él `HelloWebView.cpp` .</span><span class="sxs-lookup"><span data-stu-id="a3e92-190">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>    
+<span data-ttu-id="5113b-196">Copie el siguiente fragmento de código y péguelo en `HelloWebView.cpp` .</span><span class="sxs-lookup"><span data-stu-id="5113b-196">Copy the following code snippet and paste into `HelloWebView.cpp`.</span></span>  
 
 ```cpp
 // Set an event handler for the host to return received message back to the web content
@@ -261,49 +275,52 @@ webviewWindow->AddScriptToExecuteOnDocumentCreated(
 nullptr);
 ```  
 
-### <span data-ttu-id="a3e92-191">Crear la aplicación Mostrar URL de muestra</span><span class="sxs-lookup"><span data-stu-id="a3e92-191">Build your show URL sample app</span></span>  
+### <span data-ttu-id="5113b-197">Crear una aplicación de ejemplo de dirección URL para mostrar</span><span class="sxs-lookup"><span data-stu-id="5113b-197">Build your display URL sample app</span></span>  
 
-<span data-ttu-id="a3e92-192">Seleccione `F5` para compilar y ejecutar la aplicación.</span><span class="sxs-lookup"><span data-stu-id="a3e92-192">Select `F5` to build and run the app.</span></span>  <span data-ttu-id="a3e92-193">La dirección URL aparece en una ventana emergente antes de desplazarse a una página.</span><span class="sxs-lookup"><span data-stu-id="a3e92-193">The URL appears in a pop-up window before navigating to a page.</span></span>  
+<span data-ttu-id="5113b-198">Para compilar y ejecutar la aplicación, seleccione `F5` .</span><span class="sxs-lookup"><span data-stu-id="5113b-198">To build and run the app, select `F5`.</span></span>  <span data-ttu-id="5113b-199">La dirección URL aparece en una ventana emergente antes de navegar a una página web.</span><span class="sxs-lookup"><span data-stu-id="5113b-199">The URL appears in a pop-up window before navigating to a webpage.</span></span>  
 
-:::image type="complex" source="../media/show-url.png" alt-text="Versión de la herramienta" lightbox="../media/show-url.png":::
-   <span data-ttu-id="a3e92-195">Mostrar URL</span><span class="sxs-lookup"><span data-stu-id="a3e92-195">Show url</span></span>  
+:::image type="complex" source="../media/show-url.png" alt-text="Url para mostrar" lightbox="../media/show-url.png":::
+   <span data-ttu-id="5113b-201">Url para mostrar</span><span class="sxs-lookup"><span data-stu-id="5113b-201">Display url</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="a3e92-196">Enhorabuena, acabas de crear tu primera WebView2 aplicación.</span><span class="sxs-lookup"><span data-stu-id="a3e92-196">Congratulations, you just built your first WebView2 app.</span></span>  
+<span data-ttu-id="5113b-202">Enhorabuena, has creado tu primera aplicación WebView2.</span><span class="sxs-lookup"><span data-stu-id="5113b-202">Congratulations, you built your first WebView2 app.</span></span>  
 
-## <span data-ttu-id="a3e92-197">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="a3e92-197">Next steps</span></span>  
+## <span data-ttu-id="5113b-203">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="5113b-203">Next steps</span></span>  
 
-<span data-ttu-id="a3e92-198">Muchas de las funcionalidades de WebView2 que no se cubren en esta página, la siguiente sección proporcionaba recursos adicionales.</span><span class="sxs-lookup"><span data-stu-id="a3e92-198">Many of the WebView2 functionalities that are not covered on this page, the following section provided additional resources.</span></span>  
+<span data-ttu-id="5113b-204">Muchas de las funcionalidades de WebView2 no se tratan en este artículo, la siguiente sección proporciona más recursos.</span><span class="sxs-lookup"><span data-stu-id="5113b-204">Many of the WebView2 functionalities are not covered on this article, the following section provides more resources.</span></span>  
 
-### <span data-ttu-id="a3e92-199">Consulte también</span><span class="sxs-lookup"><span data-stu-id="a3e92-199">See also</span></span>  
+### <span data-ttu-id="5113b-205">Consulte también</span><span class="sxs-lookup"><span data-stu-id="5113b-205">See also</span></span>  
 
-*   <span data-ttu-id="a3e92-200">Para obtener un ejemplo completo de las capacidades de WebView2, ve a [WEBVIEW2 API de ejemplo][GithubMicrosoftedgeWebview2samplesApisample].</span><span class="sxs-lookup"><span data-stu-id="a3e92-200">For a comprehensive example of WebView2 capabilities, navigate to [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].</span></span>  
-*   <span data-ttu-id="a3e92-201">Para obtener una aplicación de muestra creada con WebView2, vaya a [WebView2Browser][GithubMicrosoftedgeWebview2browser].</span><span class="sxs-lookup"><span data-stu-id="a3e92-201">For a sample application built using WebView2, navigate to [WebView2Browser][GithubMicrosoftedgeWebview2browser].</span></span>  
-*   <span data-ttu-id="a3e92-202">Para obtener información detallada sobre la API de WebView2, vaya a referencia de la [API][Webview2ReferenceWin32].</span><span class="sxs-lookup"><span data-stu-id="a3e92-202">For detailed information about the WebView2 API, navigate to [API reference][Webview2ReferenceWin32].</span></span>  
+*   <span data-ttu-id="5113b-206">Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a la muestra [de API de WebView2.][GithubMicrosoftedgeWebview2samplesApisample]</span><span class="sxs-lookup"><span data-stu-id="5113b-206">For a comprehensive example of WebView2 capabilities, navigate to [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].</span></span>  
+*   <span data-ttu-id="5113b-207">Para obtener una aplicación de ejemplo creada con WebView2, vaya a [WebView2Browser][GithubMicrosoftedgeWebview2browser].</span><span class="sxs-lookup"><span data-stu-id="5113b-207">For a sample app built using WebView2, navigate to [WebView2Browser][GithubMicrosoftedgeWebview2browser].</span></span>  
+*   <span data-ttu-id="5113b-208">Para obtener información detallada sobre la API de WebView2, vaya a la [referencia de la API.][Webview2ReferenceWin32]</span><span class="sxs-lookup"><span data-stu-id="5113b-208">For detailed information about the WebView2 API, navigate to [API reference][Webview2ReferenceWin32].</span></span>  
 
-## <span data-ttu-id="a3e92-203">Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="a3e92-203">Getting in touch with the Microsoft Edge WebView team</span></span>  
+## <span data-ttu-id="5113b-209">Introducción al equipo de Microsoft Edge WebView</span><span class="sxs-lookup"><span data-stu-id="5113b-209">Getting in touch with the Microsoft Edge WebView team</span></span>  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[Webview2Index]: ../index.md "Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft docs"  
-[Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "Referencia de C++ de WebView2 Win32 | Microsoft docs"  
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegación | Microsoft docs"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Desarrollador de Microsoft Edge"  
 
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Biblioteca de plantillas C++ de Windows en tiempo de ejecución (WRL) | Microsoft docs"  
-[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Tutorial: crear una aplicación de escritorio de Windows tradicional (C++) | Microsoft docs"  
+[Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"  
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegación | Microsoft Docs"  
 
-[GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser-MicrosoftEdge/WebView2Browser | GitHub"  
+[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Biblioteca de plantillas C++ de Windows Runtime (WRL) | Microsoft Docs"  
+[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser | GitHub"  
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentarios de WebView: MicrosoftEdge/WebViewFeedback | GitHub"  
 
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
+
 [GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "Ejemplo de API de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
-[GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 
-[GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Bibliotecas de implementación de Windows (superservicio)-Microsoft/| GitHub"  
+[GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Bibliotecas de implementación de Windows (WIL): microsoft/wil | GitHub"  
 
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar los canales de Insider de Microsoft Edge"  
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider Channels"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
