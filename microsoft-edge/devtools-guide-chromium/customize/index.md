@@ -3,16 +3,16 @@ description: Una lista de formas de personalizar Microsoft Edge DevTools
 title: Personalizar Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 682ff78b6a5272c1f6462648d64241448838edac
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+ms.openlocfilehash: 5822fa087244fdfafdefe040709058411040ea45
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11189997"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313026"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,46 +30,46 @@ ms.locfileid: "11189997"
 
 # Personalizar Microsoft Edge DevTools  
 
-Esta página muestra las formas de personalizar Microsoft Edge DevTools.  
+En esta página se enumeran las formas de personalizar Microsoft Edge DevTools.  
 
 ## Configuración  
 
-**Configuración**  >  **Preferencias** contiene muchas opciones para personalizar DevTools.  
+**Configuración**  >  **Las** preferencias contienen muchas opciones para personalizar DevTools.  
 
-Para abrir la configuración, complete una de las siguientes acciones.  
+Para abrir Configuración, complete una de las siguientes acciones.  
 
-*   Seleccione `F1` mientras la DevTools está en el foco.  
-*   Abra el **menú principal** y, a continuación, elija **configuración**.  
+*   Selecciona `F1` mientras DevTools está en el foco.  
+*   Abra el **menú principal y,** a continuación, **elija Configuración.**  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Configuración" lightbox="../media/customize-settings-preferences.msft.png":::
    **Configuración**  
 :::image-end:::  
 
-## Ventana  
+## Cajón  
 
-El **cajón** es un segundo panel en el que se muestran las herramientas de su elección.  
+El **cajón** es un segundo panel donde se muestran las herramientas que elija.  
 
-Para abrir \ (o cerrar \) el **cajón**, seleccione `Escape` .  
+Para abrir \(o cerrar\) el **cajón**, seleccione `Escape` .  
 
 :::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="El cajón" lightbox="../media/customize-drawer-open.msft.png":::
    El **cajón**  
 :::image-end:::  
 
-De forma predeterminada, algunas herramientas se abren en el panel principal, mientras que otras aparecen en el **cajón**.  Elija **más** \ ( `...` ) para abrir una herramienta en el **cajón**.  
+De forma predeterminada, algunas herramientas se abren en el panel principal, mientras que otras aparecen en el **cajón.**  Elija **Más** \( `...` \) para abrir una herramienta en el **cajón.**  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Botón para abrir el cajón" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    Botón para abrir el **cajón**  
 :::image-end:::  
 
-Puede mover herramientas entre el panel principal y el alimentador.  
+Puede mover herramientas entre el panel principal y el cajón.  
 
-*   Para mover una herramienta del cajón al panel principal, desplace el puntero sobre una herramienta, abra el menú contextual \ (haga clic con el botón derecho \) y elija **mover a la parte superior**.  
+*   Para mover una herramienta del cajón al panel principal, mantenga el puntero sobre una herramienta, abra el menú contextual \(haga clic con el botón secundario\) y elija Mover **a la parte superior.**  
     
-    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Mover la herramienta del cajón al panel principal" lightbox="../media/move-from-drawer.msft.png":::
-       Mover la herramienta del **cajón** al panel principal  
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Herramienta de movimiento del cajón al panel principal" lightbox="../media/move-from-drawer.msft.png":::
+       Herramienta de movimiento del **cajón** al panel principal  
     :::image-end:::  
     
-*   Para mover una herramienta del panel principal al cajón, desplace el puntero sobre una herramienta, abra el menú contextual \ (haga clic con el botón derecho \) y elija **mover a la parte inferior**.  
+*   Para mover una herramienta del panel principal al cajón, mantenga el puntero sobre una herramienta, abra el menú contextual \(haga clic con el botón secundario\) y elija Mover **a la parte inferior.**  
     
     :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Mover la herramienta del panel principal al cajón" lightbox="../media/move-to-drawer.msft.png":::
        Mover la herramienta del panel principal al **cajón**
@@ -78,26 +78,26 @@ Puede mover herramientas entre el panel principal y el alimentador.
 
 ## Reordenar paneles  
 
-Elija y arrastre una herramienta para cambiar el orden.  El orden de la herramienta personalizada se conserva en todas las sesiones de DevTools.  
+Elija y arrastre una herramienta para cambiar el orden.  El orden de las herramientas personalizadas persiste en todas las sesiones de DevTools.  
 
 > [!NOTE]
-> De forma predeterminada, la herramienta **red** suele ser la cuarta de la izquierda.  En la siguiente ilustración, el panel **red** es el primero de la izquierda.  
+> De forma predeterminada, la **herramienta** Red suele ser la cuarta desde la izquierda.  En la figura siguiente, **el** panel Red es el primero de la izquierda.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Orden personalizado de DevTools en un panel" lightbox="../media/customize-network-first-position.msft.png":::
-   Orden personalizado de DevTools en un panel  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Orden personalizado de Devtools en un panel" lightbox="../media/customize-network-first-position.msft.png":::
+   Orden personalizado de Devtools en un panel  
 :::image-end:::  
 
 ## Cambiar la ubicación de DevTools  
 
-Vea [Ubicación de Microsoft Edge DevTools][DevToolsPlacement].  
+Consulta [Colocación de DevTools de Microsoft Edge.][DevToolsPlacement]  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools desacoplado" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
-   DevTools desacoplado  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools sin desacoplar" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   DevTools sin desacoplar  
 :::image-end:::  
 
 ## Tema oscuro  
 
-Consulte [Habilitar tema oscuro][DarkTheme].  
+Vea [Habilitar tema oscuro.][DarkTheme]  
 
 :::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="El tema oscuro" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    El tema oscuro  
@@ -105,13 +105,13 @@ Consulte [Habilitar tema oscuro][DarkTheme].
 
 ## Experimentos  
 
-Para habilitar experimentos DevTools, complete las siguientes acciones.  
+Para habilitar los experimentos de DevTools, completa las siguientes acciones.  
 
 1.  Vaya a `edge://flags/#enable-devtools-experiments` .  
 1.  Elija **Habilitar**.  
-1.  Seleccione volver a **iniciar ahora**, en la parte inferior de la página.  
+1.  Elija **Volver a iniciar ahora,** en la parte inferior de la página.  
 
-La próxima vez que abras DevTools, aparecerá en [configuración](#settings)una nueva página con el nombre **experimentos** .  
+La próxima vez que abras DevTools, se mostrará una nueva página denominada **Experimentos** en [Configuración.](#settings)  
 
 ## Contactar al equipo de Microsoft Edge DevTools  
 
@@ -123,12 +123,12 @@ La próxima vez que abras DevTools, aparecerá en [configuración](#settings)una
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Cambiar la ubicación de DevTools de Microsoft Edge | Microsoft docs"  
-[DarkTheme]: ./dark-theme.md "Habilitar tema oscuro en Microsoft Edge DevTools | Microsoft docs"  
+[DevToolsPlacement]: ./placement.md "Cambiar la ubicación de Microsoft Edge DevTools | Microsoft Docs"  
+[DarkTheme]: ./dark-theme.md "Habilitar el tema oscuro en Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/customize/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/customize/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
