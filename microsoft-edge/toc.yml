@@ -23,6 +23,8 @@
           href: devtools-guide-chromium/open/index.md
         - name: Novedades
           items:
+            - name: Microsoft Edge 89
+              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
             - name: Microsoft Edge 87
@@ -63,6 +65,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspeccionar animaciones
               href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Editar configuración y estilos de fuente CSS
+              href: devtools-guide-chromium/inspect-styles/edit-fonts.md
             - name: Inspeccionar cuadrícula CSS
               href: devtools-guide-chromium/css/grid.md
             - name: Forzar DevTools en el modo de vista previa de impresión
@@ -115,6 +119,8 @@
           items:
             - name: Información general sobre emulación
               href: devtools-guide-chromium/device-mode/index.md
+            - name: Emular dispositivos plegables y de doble pantalla
+              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
             - name: Emular y probar otros exploradores
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
             - name: Guías
