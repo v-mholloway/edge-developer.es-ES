@@ -3,16 +3,16 @@ description: Las últimas características experimentales de Microsoft Edge DevT
 title: Características experimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, experiment
-ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 32eaa3e8d41efefa669142297891e7c62cf4eb5b
+ms.sourcegitcommit: d53421b7219ad87fa9d58f601d9c61ee44c2e43a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313076"
+ms.locfileid: "11313468"
 ---
 # <span data-ttu-id="b69d3-104">Características experimentales</span><span class="sxs-lookup"><span data-stu-id="b69d3-104">Experimental features</span></span>  
 
@@ -51,7 +51,7 @@ ms.locfileid: "11313076"
 | [<span data-ttu-id="b69d3-131">Visor de pedidos de origen</span><span class="sxs-lookup"><span data-stu-id="b69d3-131">Source Order Viewer</span></span>](#source-order-viewer) | <span data-ttu-id="b69d3-132">86 o posterior</span><span class="sxs-lookup"><span data-stu-id="b69d3-132">86 or later</span></span> |  
 | [<span data-ttu-id="b69d3-133">Habilitar el editor de métodos abreviados de teclado</span><span class="sxs-lookup"><span data-stu-id="b69d3-133">Enable keyboard shortcut editor</span></span>](#enable-keyboard-shortcut-editor) | <span data-ttu-id="b69d3-134">87 o posterior</span><span class="sxs-lookup"><span data-stu-id="b69d3-134">87 or later</span></span> |  
 | [<span data-ttu-id="b69d3-135">Habilitar capas compuestas en la vista 3D</span><span class="sxs-lookup"><span data-stu-id="b69d3-135">Enable Composited Layers in 3D View</span></span>](#enable-composited-layers-in-3d-view) | <span data-ttu-id="b69d3-136">87 o posterior</span><span class="sxs-lookup"><span data-stu-id="b69d3-136">87 or later</span></span> |  
-| [<span data-ttu-id="b69d3-137">Habilitar la nueva herramienta Editor de fuentes en el panel Estilos</span><span class="sxs-lookup"><span data-stu-id="b69d3-137">Enable new Font Editor tool within the Styles pane</span></span>](#) | <span data-ttu-id="b69d3-138">89 o posterior</span><span class="sxs-lookup"><span data-stu-id="b69d3-138">89 or later</span></span> |  
+| [<span data-ttu-id="b69d3-137">Habilitar la nueva herramienta Editor de fuentes en el panel Estilos</span><span class="sxs-lookup"><span data-stu-id="b69d3-137">Enable new Font Editor tool within the Styles pane</span></span>](#enable-new-font-editor-tool-within-the-styles-pane) | <span data-ttu-id="b69d3-138">89 o posterior</span><span class="sxs-lookup"><span data-stu-id="b69d3-138">89 or later</span></span> |  
 | [<span data-ttu-id="b69d3-139">Habilitar nuevas características de depuración de CSS Flexbox</span><span class="sxs-lookup"><span data-stu-id="b69d3-139">Enable new CSS Flexbox debugging features</span></span>](#enable-new-css-flexbox-debugging-features) | <span data-ttu-id="b69d3-140">89 o posterior</span><span class="sxs-lookup"><span data-stu-id="b69d3-140">89 or later</span></span> |  
 | [<span data-ttu-id="b69d3-141">Habilitar los menús de la pestaña + botón para abrir más herramientas</span><span class="sxs-lookup"><span data-stu-id="b69d3-141">Enable + button tab menus to open more tools</span></span>](#enable--button-tab-menus-to-open-more-tools) | <span data-ttu-id="b69d3-142">89 o posterior</span><span class="sxs-lookup"><span data-stu-id="b69d3-142">89 or later</span></span> |  
 | [<span data-ttu-id="b69d3-143">Habilitar la pestaña de bienvenida</span><span class="sxs-lookup"><span data-stu-id="b69d3-143">Enable Welcome tab</span></span>](#enable-welcome-tool) | <span data-ttu-id="b69d3-144">89 o posterior</span><span class="sxs-lookup"><span data-stu-id="b69d3-144">89 or later</span></span> |  
