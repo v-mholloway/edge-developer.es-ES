@@ -3,16 +3,16 @@ description: La herramienta Novedades ahora es Welcome, Visual Font Editor en el
 title: Novedades de DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: cfaee927d2d914cf0d816505ea2cf6b36a225d64
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 0a8a5e69281ced9421733059b554bd8cb997c7cd
+ms.sourcegitcommit: 085046a5885c68243b763aaf6809fea43452403a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313350"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313779"
 ---
 # Novedades de DevTools (Microsoft Edge 89)  
 
@@ -53,7 +53,7 @@ Para activar este experimento, [][DevtoolsCustomizeIndexSettings]ve a Experiment
 
 ## Herramientas de depuración de CSS Flexbox  
 
-Las características de depuración de Flexbox están en desarrollo activo.  Para activar el experimento para las dos [][DevtoolsCustomizeIndexSettings]características siguientes, ve a Experimentos de configuración y elige la casilla junto a Habilitar nuevas características  >  **** **de depuración de CSS Flexbox**.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya a Problemas [1136394][CR1136394] y [1139949][CR1139949].  
+Las características de depuración de Flexbox están en desarrollo activo.  Para activar el experimento para las dos [][DevtoolsCustomizeIndexSettings]características siguientes, ve a Experimentos de configuración y elige la casilla junto a Habilitar nuevas características  >  **** **de depuración de CSS Flexbox**.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya a los problemas [1136394][CR1136394] y [1139949.][CR1139949]  
 
 ### El nuevo icono de Flexbox (flex) ayuda a identificar y mostrar contenedores flex  
 
@@ -132,13 +132,13 @@ Ahora tienes una nueva forma de abrir más herramientas en Microsoft Edge DevToo
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->  
 <!--  Subtitle: CSS suggestions are now easier to navigate using screen readers -->  
 
-Cuando edita CSS, obtiene un desplegable de características.  Esta característica no estaba disponible para los usuarios de tecnologías de asistencia, ya que se anuncia en la versión 89 de Microsoft Edge.  Un usuario de tecnologías de asistencia ahora puede navegar por sugerencias css en el **panel** Estilos.  En La versión 88 de Microsoft Edge y versiones anteriores, la tecnología de asistencia anunciada como un usuario navegaba por la lista de sugerencias al editar CSS en el panel `Suggestion` Estilos. ****  En la versión 89 de Microsoft Edge, un usuario de tecnología de asistencia ahora escucha la posición y el recuento de la sugerencia actual.  Cada sugerencia se anuncia a medida que el usuario navega por la lista de sugerencias, como sugerencia 3 de 5.  Para obtener más información sobre cómo escribir CSS en DevTools, vaya [a Cambiar CSS.][DevtoolsCssReferenceChangeCss]  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1157329][CR1157329].  
+Cuando edita CSS, obtiene un desplegable de características.  Esta característica no estaba disponible para los usuarios de tecnologías de asistencia, ya que se anuncia en la versión 89 de Microsoft Edge.  Un usuario de tecnologías de asistencia ahora puede navegar por sugerencias css en el **panel** Estilos.  En La versión 88 de Microsoft Edge y versiones anteriores, la tecnología de asistencia anunciada como un usuario navegaba por la lista de sugerencias al editar CSS en el panel `Suggestion` Estilos. ****  En la versión 89 de Microsoft Edge, un usuario de tecnología de asistencia ahora escucha la posición y el recuento de la sugerencia actual.  Cada sugerencia se anuncia a medida que el usuario navega por la lista de sugerencias, como sugerencia 3 de 5.  Para obtener más información sobre cómo escribir CSS en DevTools, vaya [a Cambiar CSS.][DevtoolsCssReferenceChangeCss]  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1157329.][CR1157329]  
 
-<!--To view a video that displays and reads aloud several suggestions with this experiment turned on, navigate to [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.  -->  
+Para ver un vídeo que muestra y lee en voz alta varias sugerencias con este experimento activado, ve a Voiceover anunciando opciones [de devtools](https://youtu.be/9TcUpleEwwA) en YouTube.  
 
-El siguiente vínculo de vídeo muestra y lee en voz alta varias sugerencias con este experimento activado.  
-
-> [!VIDEO https://youtu.be/9TcUpleEwwA]  
+:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="Sugerencia resaltada en el panel Estilos" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+   La `suggestion` lista resaltada en el panel **Estilos**  
+:::image-end:::  
 
 ## Emular Surface Duo y El plegado Desaplicación de Samsung  
 
@@ -178,7 +178,7 @@ You may file issues and contribute to the extension on the [vscode-edge-devtools
 
 ### Captura de pantalla de nodo más allá de la ventanilla  
 
-En La versión 89 de Microsoft Edge, las capturas de pantalla de nodo son más precisas, capturando el nodo completo incluso si el contenido del nodo no está visible en la ventanilla.  En la **herramienta Elementos,** mantenga el mouse sobre un elemento, abra el menú contextual \(haga clic con el botón secundario\) y elija **Captura de pantalla del nodo**.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1003629][CR1003629].  
+En La versión 89 de Microsoft Edge, las capturas de pantalla de nodo son más precisas, capturando el nodo completo incluso si el contenido del nodo no está visible en la ventanilla.  En la **herramienta Elementos,** mantenga el mouse sobre un elemento, abra el menú contextual \(haga clic con el botón secundario\) y elija **Captura de pantalla del nodo**.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1003629.][CR1003629]  
 
 :::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Captura de pantalla de nodo resaltada en el menú contextual de la herramienta Elementos" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    **Captura de pantalla de nodo** resaltada en el menú contextual de la **herramienta** Elementos  
@@ -188,7 +188,7 @@ En La versión 89 de Microsoft Edge, las capturas de pantalla de nodo son más p
 
 #### Compatibilidad con la fuerza del estado CSS :target  
 
-Ahora puedes usar DevTools para forzar la pseudo-clase CSS [:target.][MdnDocsWebCssTarget]  La pseudo class se desencadena cuando un elemento único \(el elemento de destino\) tiene un fragmento de `:target` `id` la dirección URL.  Por ejemplo, la `http://www.example.com/index.html#section1` dirección URL desencadena la pseudo class en un elemento HTML con `:target` `id="section1"` .  Para probar una demostración con la sección 1 resaltada, vaya a [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1].  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1156628][CR1156628].  
+Ahora puedes usar DevTools para forzar la pseudo-clase CSS [:target.][MdnDocsWebCssTarget]  La pseudo class se desencadena cuando un elemento único \(el elemento de destino\) tiene un fragmento de `:target` `id` la dirección URL.  Por ejemplo, la `http://www.example.com/index.html#section1` dirección URL desencadena la pseudo class en un elemento HTML con `:target` `id="section1"` .  Para probar una demostración con la sección 1 resaltada, vaya a [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1].  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1156628.][CR1156628]  
 
 :::row:::
    :::column span="":::
@@ -205,7 +205,7 @@ Ahora puedes usar DevTools para forzar la pseudo-clase CSS [:target.][MdnDocsWeb
 
 #### Usar elementos duplicados para copiar elementos  
 
-Usa el nuevo **acceso directo de elemento duplicado** para clonar un elemento.  En la **herramienta Elementos,** mantenga el mouse sobre un elemento, abra el menú contextual \(haga clic con el botón secundario\), elija **Duplicar elemento**.  Se crea un nuevo elemento en el elemento seleccionado.  Para duplicar el elemento con un método abreviado de teclado, selecciona `Shift` + `Alt` + `Down Arrow` \(Windows/Linux\) o `Shift` + `Option` + `Down Arrow` \(macOS\).  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1150797][CR1150797].  
+Usa el nuevo **acceso directo de elemento duplicado** para clonar un elemento.  En la **herramienta Elementos,** mantenga el mouse sobre un elemento, abra el menú contextual \(haga clic con el botón secundario\), elija **Duplicar elemento**.  Se crea un nuevo elemento en el elemento seleccionado.  Para duplicar el elemento con un método abreviado de teclado, selecciona `Shift` + `Alt` + `Down Arrow` \(Windows/Linux\) o `Shift` + `Option` + `Down Arrow` \(macOS\).  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1150797.][CR1150797]  
 
 :::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="El elemento Duplicado se resalta en el menú contextual de un elemento de la herramienta Elementos" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    El **elemento Duplicado** se resalta en el menú contextual de un elemento de la **herramienta** Elementos  
@@ -213,7 +213,7 @@ Usa el nuevo **acceso directo de elemento duplicado** para clonar un elemento.  
 
 #### Selectores de colores para propiedades CSS personalizadas  
 
-El **panel Estilos** ahora muestra los selectores de color para las propiedades CSS personalizadas.  Para recorrer los formatos RGBA, HSLA y Hexadecimal del valor de color, mantenga presionado y `Shift` elija el selector de color.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1147016][CR1147016].  
+El **panel Estilos** ahora muestra los selectores de color para las propiedades CSS personalizadas.  Para recorrer los formatos RGBA, HSLA y Hexadecimal del valor de color, mantenga presionado y `Shift` elija el selector de color.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1147016.][CR1147016]  
 
 :::image type="complex" source="../../media/2021/01/elements-styles-change-color-format.msft.png" alt-text="Selectores de colores para propiedades CSS personalizadas" lightbox="../../media/2021/01/elements-styles-change-color-format.msft.png":::
    Selectores de colores para propiedades CSS personalizadas  
@@ -256,13 +256,13 @@ Ahora puede copiar las propiedades CSS más rápido con algunas opciones nuevas 
    :::column-end:::
 :::row-end:::  
 
-Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1152391][CR1152391].  
+Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1152391.][CR1152391]  
 
 ### Actualizaciones de cookies  
 
 #### Nueva opción para mostrar cookies descodificadas por URL  
 
-Ahora puede optar por mostrar el valor de cookies descodificadas por URL en el **panel Cookies.**  Para mostrar la cookie descodificada, vaya al panel **** Cookies de aplicación, elija cualquier cookie de la lista y seleccione la casilla situada junto a  >  **** Mostrar url **descodificada.**  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [997625][CR997625].  
+Ahora puede optar por mostrar el valor de cookies descodificadas por URL en el **panel Cookies.**  Para mostrar la cookie descodificada, vaya al panel **** Cookies de aplicación, elija cualquier cookie de la lista y seleccione la casilla situada junto a  >  **** Mostrar url **descodificada.**  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [997625.][CR997625]  
 
 :::image type="complex" source="../../media/2021/01/application-cookies-show-url-decoded.msft.png" alt-text="Opción para mostrar cookies descodificadas por URL" lightbox="../../media/2021/01/application-cookies-show-url-decoded.msft.png":::
    Opción para mostrar cookies descodificadas de url  
@@ -300,7 +300,7 @@ En Microsoft Edge versión 88 o anterior, DevTools restablece la configuración 
 
 #### La opción en línea ahora no es ninguna opción de limitación  
 
-La opción de emulación de red **Online** ahora se ha cambiado a **Sin limitación.**  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1028078][CR1028078].  
+La opción de emulación de red **Online** ahora se ha cambiado a **Sin limitación.**  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1028078.][CR1028078]  
 
 :::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="Sin opción de limitación" lightbox="../../media/2021/01/network-no-throttling.msft.png":::
    **Sin opción de limitación**  
@@ -310,7 +310,7 @@ La opción de emulación de red **Online** ahora se ha cambiado a **Sin limitaci
 
 #### Copiar objeto en la herramienta Consola y orígenes  
 
-Ahora puede copiar los valores de objeto en las **herramientas Consola** **y** Orígenes.  La capacidad de copiar valores de objeto es útil cuando se trabaja con objetos grandes.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya a Problemas [1148353][CR1148353] y [1149859][CR1149859].  
+Ahora puede copiar los valores de objeto en las **herramientas Consola** **y** Orígenes.  La capacidad de copiar valores de objeto es útil cuando se trabaja con objetos grandes.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya a los problemas [1148353][CR1148353] y [1149859][CR1149859].  
 
 :::row:::
    :::column span="":::
@@ -362,7 +362,7 @@ Ahora puede copiar un nombre de archivo mediante el menú contextual.  Para revi
 
 #### Información de los trabajadores de servicio en los detalles de Frame  
 
-DevTools ahora muestra un trabajador de servicio dedicado en el marco primario.  En la figura siguiente, se muestran los detalles del trabajador del servicio.  Para mostrar los detalles del trabajador del servicio, vaya a **Trabajadores de**servicio de marcos de  >  ****  >  `top`  >  **** aplicación y, a continuación, elija un trabajador de servicio.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1122507][CR1122507].  
+DevTools ahora muestra un trabajador de servicio dedicado en el marco primario.  En la figura siguiente, se muestran los detalles del trabajador del servicio.  Para mostrar los detalles del trabajador del servicio, vaya a **Trabajadores de**servicio de marcos de  >  ****  >  `top`  >  **** aplicación y, a continuación, elija un trabajador de servicio.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1122507.][CR1122507]  
 
 :::image type="complex" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="Información de los trabajadores de servicio en los detalles de marcos" lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
    **Información de los trabajadores** de servicio en los **detalles de marcos**  
@@ -370,7 +370,7 @@ DevTools ahora muestra un trabajador de servicio dedicado en el marco primario. 
 
 #### Medir la información de memoria en detalles del marco  
 
-El `performance.measureMemory()` estado de la API ahora se muestra en la sección de disponibilidad de la **API.**  La nueva `performance.measureMemory()` API calcula el uso de memoria de toda la página web.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1139899][CR1139899].  
+El `performance.measureMemory()` estado de la API ahora se muestra en la sección de disponibilidad de la **API.**  La nueva `performance.measureMemory()` API calcula el uso de memoria de toda la página web.  Para revisar el historial de esta característica en el proyecto de código abierto chromium, vaya al problema [1139899.][CR1139899]  
 
 :::image type="complex" source="../../media/2021/01/application-frames-measure-memory.msft.png" alt-text="Medir memoria" lightbox="../../media/2021/01/application-frames-measure-memory.msft.png":::
    Medir memoria  
@@ -446,37 +446,27 @@ Si está en Windows, Linux o macOS, considere la posibilidad de usar los canales
 [VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Depurador de microsoft edge | Visual Studio Marketplace"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Errores de Chromium"  
-
-<!--[CR174309]: https://crbug.com/174309 "Issue 174309: DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"  -->  
-<!--[CR772558]: https://crbug.com/772558 "Issue 772558: DevTools: Update to latest version of Lighthouse | Chromium bugs"  -->  
-[CR978059]: "Problema 978059: Eliminar cookies al filtrarlas, eliminar todas las cookies no solo las filtradas https://crbug.com/978059 | Errores de Chromium"  
-[CR997625]: https://crbug.com/997625 "Problema 997625: Nueva característica | Opción de necesidad para ver el valor descodificado de url en las cookies | Errores de Chromium"  
-[CR1003629]: "Problema 1003629: Capture Node ya no captura de pantalla el nodo https://crbug.com/1003629 debajo del plegado. | Errores de Chromium"  
-[CR1012337]: "Problema 1012337: Borrar datos del sitio destruye la sesión de Google en sitios que no https://crbug.com/1012337 son de Google | Errores de Chromium"  
-[CR1028078]: "Problema 1028078: Poner en línea y sin conexión entre sí en la lista https://crbug.com/1028078 | Errores de Chromium"  
-[CR1054281]: https://crbug.com/1054281 "Problema 1054281: Solicitud de característica: DevTools debe emular dispositivos de doble pantalla y | Errores de Chromium"  
-<!--[CR1073909]: https://crbug.com/1073909 "Issue 1073909: BLOCKED | Chromium bugs"  -->  
-[CR1075865]: "Problema 1075865: Mostrar fotogramas descartados en la escala de tiempo https://crbug.com/1075865 de las devtools | Errores de Chromium"  
+[CR978059]: https://crbug.com/978059 "Problema 978059: Eliminar cookies al filtrarlas, eliminar todas las cookies no solo las filtradas | Errores de Chromium"  
+[CR997625]: https://crbug.com/997625 "Problema 997625: Nueva solicitud de | Opción de necesidad para ver el valor descodificado de url en las cookies | Errores de Chromium"  
+[CR1003629]: https://crbug.com/1003629 "Problema 1003629: Capture Node ya no captura de pantalla el nodo debajo del plegado. | Errores de Chromium"  
+[CR1012337]: https://crbug.com/1012337 "Problema 1012337: Borrar datos del sitio destruye la sesión de Google en sitios que no son de Google | Errores de Chromium"  
+[CR1028078]: https://crbug.com/1028078 "Problema 1028078: Poner en línea y sin conexión entre sí en la lista | Errores de Chromium"  
+[CR1054281]: https://crbug.com/1054281 "Problema 1054281: Solicitud de característica: DevTools debe emular dispositivos de doble pantalla y plegados | Errores de Chromium"  
+[CR1075865]: https://crbug.com/1075865 "Problema 1075865: Mostrar fotogramas descartados en la escala de tiempo de las devtools | Errores de Chromium"  
 [CR1093229]: https://crbug.com/1093229 "Problema 1093229: DevTools: ofrecer una interfaz de usuario de editor de tipo de letra especializada | Errores de Chromium"  
 [CR1121900]: https://crbug.com/1121900 "Problema 1121900: DevTools: actualizar la lógica de cálculo de contraste por cada nueva especificación | Errores de Chromium"  
-[CR1122507]: "Problema 1122507: Información de trabajo de Surface en la vista de árbol https://crbug.com/1122507 de marco | Errores de Chromium"  
-[CR1122580]: "Problema 1122580: Imposible deshabilitar la grabación de red al volver https://crbug.com/1122580 a cargar | Errores de Chromium"  
-<!--[CR1126824]: https://crbug.com/1126824 "Issue 1126824: ☂ Support Trust Token debugging in DevTools | Chromium bugs"  -->  
-[CR1136394]: https://crbug.com/1136394 "Problema 1136394: Herramientas de Flexbox | Errores de Chromium"  
-<!--[CR1137837]: https://crbug.com/1137837 "Issue 1137837: ☂ Improve Trusted Types support in DevTools | Chromium bugs"  -->  
-[CR1139899]: "Problema 1139899: Notificar la disponibilidad de la API privada en la vista de detalles del https://crbug.com/1139899 marco | Errores de Chromium"  
+[CR1122507]: https://crbug.com/1122507 "Problema 1122507: información de los trabajos superficiales en la vista de árbol de marcos | Errores de Chromium"  
+[CR1122580]: https://crbug.com/1122580 "Problema 1122580: Imposible deshabilitar la grabación de red al volver a cargar | Errores de Chromium"  
+[CR1136394]: https://crbug.com/1136394 "Problema 1136394: herramientas de la caja flexible | Errores de Chromium"  
+[CR1139899]: https://crbug.com/1139899 "Problema 1139899: informar la disponibilidad de la API validada en la vista detalles del marco | Errores de Chromium"  
 [CR1139949]: https://crbug.com/1139949 "Problema 1139949: Superposición de Flexbox | Errores de Chromium"  
-<!--[CR1142804]: https://crbug.com/1142804 "Issue 1142804: Implement break-on-trusted-type-violation | Chromium bugs"  -->  
-<!--[CR1144127]: https://crbug.com/1144127 "Issue 1144127: BLOCKED | Chromium bugs"  -->  
-[CR1147016]: "Problema 1147016: el selector de colores no se muestra en la https://crbug.com/1147016 función var(). | Errores de Chromium"  
-[CR1148353]: "Problema 1148353: Solicitud de característica: Copiar objeto desde la consola https://crbug.com/1148353 de devtools | Errores de Chromium"  
+[CR1147016]: https://crbug.com/1147016 "Problema 1147016: El selector de colores no se muestra en la función var(). | Errores de Chromium"  
+[CR1148353]: https://crbug.com/1148353 "Problema 1148353: Solicitud de característica: Copiar objeto desde la consola de devtools | Errores de Chromium"  
 [CR1149859]: https://crbug.com/1149859 "Problema 1149859: [solicitud de característica][Consola] agregar objeto de copia al elemento del Portapapeles al menú contextual | Errores de Chromium"  
-[CR1150797]: "Problema 1150797: Agregar menú contextual de elemento duplicado en el panel de https://crbug.com/1150797 elementos | Errores de Chromium"  
-<!--[CR1150883]: https://crbug.com/1150883 "Issue 1150883: Remove TT messages from the console but keep underlining in the sources tab | Chromium bugs"  -->  
-<!--[CR1152290]: https://crbug.com/1152290 "Issue 1152290: Devtools support for QuicTransport | Chromium bugs"  -->  
-[CR1152391]: "Problema 1152391: Compatibilidad con la copia del menú contextual CSS en el panel de https://crbug.com/1152391 estilos | Errores de Chromium"  
+[CR1150797]: https://crbug.com/1150797 "Problema 1150797: Agregar menú contextual de elemento duplicado en el panel de | Errores de Chromium"  
+[CR1152391]: https://crbug.com/1152391 "Problema 1152391: Compatibilidad con copiar el menú contextual CSS en el panel de estilos | Errores de Chromium"  
 [CR1155120]: https://crbug.com/1155120 "Problema 1155120: [FR]Support copy file name and line number | Errores de Chromium"  
-[CR1156628]: https://crbug.com/1156628 "Problema 1156628: DevTools: agregar compatibilidad con la característica de estado de elemento :target in force | Errores de Chromium"  
+[CR1156628]: https://crbug.com/1156628 "Problema 1156628: DevTools: agregar compatibilidad para la característica de estado de elemento :target in force | Errores de Chromium"  
 [CR1157329]: https://crbug.com/1157329 "Problema 1157329: Accesibilidad - Narrador: Narrador no anuncia el recuento y la posición de las sugerencias disponibles para el código en la pestaña Estilos | Errores de Chromium"  
 
 [MdnDocsWebCssTarget]: https://developer.mozilla.org/docs/web/css/:target ":target | MDN"  

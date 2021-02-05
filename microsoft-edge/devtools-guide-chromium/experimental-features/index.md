@@ -3,16 +3,16 @@ description: Las últimas características experimentales de Microsoft Edge DevT
 title: Características experimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, experiment
-ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 32eaa3e8d41efefa669142297891e7c62cf4eb5b
+ms.sourcegitcommit: d53421b7219ad87fa9d58f601d9c61ee44c2e43a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313076"
+ms.locfileid: "11313468"
 ---
 # Características experimentales  
 
@@ -51,7 +51,7 @@ En las secciones siguientes se describen las nuevas características experimenta
 | [Visor de pedidos de origen](#source-order-viewer) | 86 o posterior |  
 | [Habilitar el editor de métodos abreviados de teclado](#enable-keyboard-shortcut-editor) | 87 o posterior |  
 | [Habilitar capas compuestas en la vista 3D](#enable-composited-layers-in-3d-view) | 87 o posterior |  
-| [Habilitar la nueva herramienta Editor de fuentes en el panel Estilos](#) | 89 o posterior |  
+| [Habilitar la nueva herramienta Editor de fuentes en el panel Estilos](#enable-new-font-editor-tool-within-the-styles-pane) | 89 o posterior |  
 | [Habilitar nuevas características de depuración de CSS Flexbox](#enable-new-css-flexbox-debugging-features) | 89 o posterior |  
 | [Habilitar los menús de la pestaña + botón para abrir más herramientas](#enable--button-tab-menus-to-open-more-tools) | 89 o posterior |  
 | [Habilitar la pestaña de bienvenida](#enable-welcome-tool) | 89 o posterior |  
