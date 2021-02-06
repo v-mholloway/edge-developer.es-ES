@@ -277,6 +277,8 @@
               href: extensions-chromium/publish/submission-states.md
             - name: Actualizar la configuración de la cuenta
               href: extensions-chromium/publish/manage-settings.md
+            - name: Ponte en contacto con nosotros
+              href: extensions-chromium/publish/contact-us.md
         - name: Directivas de complementos de Microsoft Edge
           items:
             - name: Directiva de seguridad de contenido
