@@ -3,47 +3,47 @@ description: Navegación
 title: Navegación
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 02/05/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge
-ms.openlocfilehash: 0df8e12acb11824006515ac711250d776d276e36
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, edge html
+ms.openlocfilehash: ac15b9f32a29c64bbdc2a7886fa654a2d71a5453
+ms.sourcegitcommit: 4cea8cf99b5f12db9d2daba99bbf48f3ccc537fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895598"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314800"
 ---
 # Eventos de navegación  
 
-La secuencia normal de eventos de navegación es `NavigationStarting` , `SourceChanged` ,, `ContentLoading` `HistoryChanged` y, a continuación, `NavigationCompleted` .  Los siguientes eventos describen el estado de WebView2 durante cada navegación.  
+La secuencia normal de eventos de navegación `NavigationStarting` es `SourceChanged` , , `ContentLoading` `HistoryChanged` y, a `NavigationCompleted` continuación, .  Los siguientes eventos describen el estado de WebView2 durante cada navegación.  
 
-| Serie | Nombre del evento | Detalles |  
+| Secuencia | Nombre del evento | Detalles |  
 |:--- |:--- |:--- |  
-| uno | `NavigationStarting`  |  WebView2 comienza a navegar y el resultado de la navegación es una solicitud de red.  El anfitrión puede impedir la solicitud durante el evento.  |  
-| 1 | `SourceChanged`  |  El origen de WebView2 cambia a una nueva dirección URL.  El evento puede ser el resultado de una navegación que no produce una solicitud de red, como la navegación de fragmentos.  |  
-| 2 | `HistoryChanged`  |  El historial de las actualizaciones de WebView2 como resultado de la navegación.  |  
-| cuatro | `ContentLoading`  |  La vista Web comienza a cargar el contenido de la página nueva.  |  
-| 4 | `NavigationCompleted`  |  WebView2 completa la carga de contenido en la página nueva.  |  
+| 1 | `NavigationStarting`  |  WebView2 comienza a navegar y la navegación da como resultado una solicitud de red.  El host puede no permitir la solicitud durante el evento.  |  
+| 2 | `SourceChanged`  |  El origen de WebView2 cambia a una nueva dirección URL.  El evento puede ser el resultado de una navegación que no provoca una solicitud de red, como una navegación por fragmentos.  |  
+| 3 | `HistoryChanged`  |  El historial de actualizaciones de WebView2 como resultado de la navegación.  |  
+| 4 | `ContentLoading`  |  WebView2 comienza a cargar contenido para la nueva página.  |  
+| 5 | `NavigationCompleted`  |  WebView2 completa la carga de contenido en la nueva página.  |  
 
-Realice un seguimiento `navigations` de cada nuevo documento con el identificador de navegación \ ( `NavigationId` \).  El `NavigationId` de WebView cambia cada vez que se produce una navegación correcta a un documento nuevo.
+Realiza `navigations` un seguimiento de cada nuevo documento con el identificador de navegación \( `NavigationId` \).  El `NavigationId` elemento WebView cambia cada vez que hay una navegación correcta a un nuevo documento.
 
-:::image type="complex" source="../media/navigation-graph.png" alt-text="Los eventos de navegación de Microsoft Edge WebView2" lightbox="../media/navigation-graph.png":::
-   Los eventos de navegación de Microsoft Edge WebView2  
+:::image type="complex" source="../media/navigation-graph.png" alt-text="Eventos de navegación de Microsoft Edge WebView2" lightbox="../media/navigation-graph.png":::
+   Eventos de navegación de Microsoft Edge WebView2  
 :::image-end:::  
 
 > [!NOTE]
-> La figura anterior representa los eventos de navegación con la misma `NavigationId` propiedad en el respectivo argumento de evento.  
+> La figura anterior representa los eventos de navegación con la misma `NavigationId` propiedad en el argumento de evento respectivo.  
 
- `Navigations` se pueden superponer eventos con diferentes instancias de `NavigationId` evento.  Por ejemplo, cuando inicias una navegación, debes esperar el `NavigationStarting` evento relacionado.  Si después inicia otra navegación, debería ver el evento del `NavigationStarting` primer Navigate seguido por el `NavigationStarting` evento para el segundo Navigate, seguido del `NavigationCompleted` evento de la primera navegación y, a continuación, el resto de los eventos de navegación correspondientes de la segunda navegación.  
+ `Navigations` los eventos con diferentes instancias de `NavigationId` evento pueden superponerse.  Por ejemplo, al iniciar una navegación, debe esperar al evento `NavigationStarting` relacionado.  Si, a continuación, inicia otra navegación, debería ver el evento de la primera navegación seguido del evento para la segunda navegación, seguido del evento para la primera navegación y, a continuación, todos los demás eventos de navegación adecuados para la segunda `NavigationStarting` `NavigationStarting` `NavigationCompleted` navegación.  
  
- En casos de error puede o no ser un `ContentLoading` evento dependiendo de si la navegación continúa o no en una página de error.  
+ En los casos de error puede haber o no un evento dependiendo de si la `ContentLoading` navegación continúa a una página de error.  
  
- En el caso de una redirección HTTP, hay varios `NavigationStarting` eventos en una fila, donde los argumentos de evento posteriores tienen la `IsRedirect` propiedad establecida; sin embargo, el `NavigationId` sigue siendo el mismo.  
+ En el caso de un redireccionamiento HTTP, hay varios eventos en una fila, donde los argumentos de eventos posteriores tienen la propiedad establecida, pero el `NavigationStarting` `IsRedirect` resto permanece `NavigationId` igual.  
  
- El mismo documento `navigations` , como navegar hasta un fragmento, no produce el `NavigationStarting` evento y no incrementa el `NavigationId` .  
+ El mismo documento, como navegar a un fragmento, no produce el `navigations` evento y no incrementa el archivo `NavigationStarting` `NavigationId` .  
 
-Para supervisar o cancelar `navigations` dentro de los submarcos en la vista de vistas de contenido, use el `FrameNavigationStarting` y los `FrameNavigationCompleted` eventos que actúan del mismo modo que los eventos equivalentes sin marcos.  
+Para supervisar o cancelar dentro de subframes en webView, usa los eventos que actúan igual que los eventos equivalentes que no son `navigations` `FrameNavigationStarting` `FrameNavigationCompleted` equivalentes a fotogramas.  
 
 <!-- links -->  
