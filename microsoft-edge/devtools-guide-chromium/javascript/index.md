@@ -1,18 +1,18 @@
 ---
-description: Obtenga información sobre cómo usar Microsoft Edge DevTools para buscar y corregir errores de JavaScript.
+description: Aprende a usar Microsoft Edge DevTools para buscar y corregir errores de JavaScript.
 title: Introducción a la depuración de JavaScript en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bff87ca36c484689134f284514bbab353b8b99b6
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: b036fc87149d13446ab1bc05afc8fc8631d27c8d
+ms.sourcegitcommit: e737277744dd25a7585c113eef22a2aa4d4c167f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124792"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "11325954"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -26,57 +26,56 @@ ms.locfileid: "11124792"
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  -->
-
+   limitations under the License.  -->  
 # Introducción a la depuración de JavaScript en Microsoft Edge DevTools  
 
-Este tutorial le enseña el flujo de trabajo básico para la depuración de cualquier problema de JavaScript en DevTools.  
+Este artículo le enseña el flujo de trabajo básico para depurar cualquier problema de JavaScript en DevTools.  
 
-## Paso 1: reproducir el error  
+## Paso 1: Reproducir el error  
 
-Encontrar una serie de acciones que reproduce sistemáticamente un error siempre es el primer paso para la depuración.  
+Encontrar una serie de acciones que reproduzcan de forma coherente un error siempre es el primer paso para la depuración.  
 
-1.  Elija **abrir demostración**.  Espere `Control` \ (Windows, Linux \) o `Command` \ (MacOS \) y abra la demostración en una pestaña nueva.  
+1.  Elija **Abrir demostración.**  Espera `Control` \(Windows, Linux\) o \(macOS\) y abre la `Command` demostración en una nueva pestaña del explorador.  
     
-    [Abrir demo][OpenDebugJSDemo]  
+    [Demostración abierta][OpenDebugJSDemo]  
     
-1.  Escriba `5` en el cuadro de texto **número 1** .  
-1.  Escriba `1` en el cuadro de texto **número 2** .  
-1.  Elija **Agregar número 1 y número 2**.  La etiqueta que se encuentra debajo del botón dice `5 + 1 = 51` .  El resultado debería ser `6` .  Este es el error que va a corregir.  
+1.  Escriba `5` en el cuadro de texto Número **1.**  
+1.  Escriba `1` en el cuadro de texto Número **2.**  
+1.  Elija **Agregar número 1 y Número 2.**  La etiqueta debajo del botón indica `5 + 1 = 51` .  El resultado debe ser `6` .  A continuación, corrija el error de adición que es el error.  
     
-    :::image type="complex" source="../media/javascript-js-demo-bad.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-js-demo-bad.msft.png":::
-       El resultado de `5 + 1` es `51` , pero debe ser `6`  
+    :::image type="complex" source="../media/javascript-js-demo-bad.msft.png" alt-text="5 + 1 da como resultado 51, pero debe ser 6" lightbox="../media/javascript-js-demo-bad.msft.png":::
+       `5 + 1` da como `51` resultado , pero debe ser `6`  
     :::image-end:::  
     
-## Paso 2: Familiarícese con la interfaz de usuario del panel de orígenes  
+## Paso 2: Familiarizarse con la interfaz de usuario del panel Orígenes  
 
-DevTools proporciona una gran variedad de herramientas para diferentes tareas, como, por ejemplo, el cambio de CSS, la generación de perfiles de rendimiento de carga de páginas y la supervisión de solicitudes de red.  El panel **orígenes** es donde se depura JavaScript.  
+DevTools proporciona muchas herramientas diferentes para diferentes tareas.  Entre las distintas tareas se incluyen el cambio de CSS, la generación de perfiles de rendimiento de la carga de páginas y la supervisión de solicitudes de red.  El **** panel Orígenes es donde se depura JavaScript.  
 
-1.  Abra DevTools presionando `Control` + `Shift` + `J` \ (Windows, Linux \) o `Command` + `Option` + `J` \ (MacOS \).  Este método abreviado de teclado abre el panel de **consola** .  
+1.  Abre DevTools presionando `Control` + `Shift` + `J` \(Windows, Linux\) o `Command` + `Option` + `J` \(macOS\).  Este acceso directo abre el panel **Consola.**  
     
-    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-console-empty.msft.png":::
-       Panel de **consola**  
+    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="Panel de consola" lightbox="../media/javascript-console-empty.msft.png":::
+       La **herramienta consola**  
     :::image-end:::  
     
-1.  Haga clic en la pestaña **orígenes** .  
+1.  Elija la **herramienta Orígenes.**  
     
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-sources-sections.msft.png":::
-       Panel **orígenes**  
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Panel Orígenes" lightbox="../media/javascript-sources-sections.msft.png":::
+       Panel **Orígenes**  
     :::image-end:::  
     
-La interfaz de usuario del panel de **orígenes** tiene 3 partes.  
+La **interfaz de** usuario del panel Orígenes tiene tres partes.  
 
-:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
-   Las 3 partes de la interfaz de usuario del panel de **fuentes**  
+:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="Las 3 partes de la interfaz de usuario del panel Orígenes" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
+   Las 3 partes de la interfaz de usuario **del** panel Orígenes  
 :::image-end:::  
 
-1.  El panel **Explorador de archivos** \ (sección 1 de la figura anterior \).  Todos los archivos que solicita la página se muestran aquí.  
-1.  El panel del **Editor de código** \ (sección 2 de la figura anterior \).  Después de seleccionar un archivo en el panel **Explorador de archivos** , el contenido de ese archivo se muestra aquí.  
-1.  El panel de **depuración de JavaScript** \ (sección 3 de la figura anterior \).  Varias herramientas para inspeccionar el JavaScript de la página.  Si la ventana de DevTools es ancha, este panel se muestra a la derecha del panel del **Editor de código** .  
+1.  El **panel Navegador de** archivos \(Sección 1 de la figura anterior\).  Todos los archivos que solicita la página web se enumeran aquí.  
+1.  El **panel Editor** de código \(Sección 2 de la figura anterior\).  Después de seleccionar un archivo en el panel Navegador **de** archivos, el contenido de ese archivo se muestra aquí.  
+1.  El **panel depuración de JavaScript** \(Sección 3 de la figura anterior\).  Varias herramientas para inspeccionar el JavaScript de la página web.  Si la ventana de DevTools es ancha, este panel se muestra a la derecha del **panel Editor de** código.  
     
-## Paso 3: pausar el código con un punto de interrupción  
+## Paso 3: Pausar el código con un punto de interrupción  
 
-Un método común para depurar un problema como este es insertar muchas instrucciones en `console.log()` el código, para poder inspeccionar valores a medida que se ejecuta el script.  Por ejemplo:  
+Un método común para depurar este tipo de problema es insertar varias instrucciones en el código y, a continuación, inspeccionar los valores a medida que `console.log()` se ejecuta el script.  Por ejemplo:  
 
 ```javascript
 function updateLabel() {
@@ -90,140 +89,140 @@ function updateLabel() {
 }
 ```  
 
-El `console.log()` método puede realizar el trabajo, pero los **puntos de interrupción** pueden hacerlo más rápido.  Un punto de interrupción le permite pausar el código en el medio del tiempo de ejecución y examinar todos los valores en ese momento.  Los puntos de interrupción tienen algunas ventajas en comparación con el `console.log()` método:  
+El `console.log()` método puede realizar el trabajo, pero los puntos de **interrupción** lo hacen más rápido.  Un punto de interrupción le permite pausar el código en medio del tiempo de ejecución y examinar todos los valores en ese momento.  Los puntos de interrupción tienen algunas ventajas sobre el `console.log()` método:  
 
-*   Con `console.log()` , debe abrir manualmente el código fuente, buscar el código correspondiente, insertar las `console.log()` instrucciones y, a continuación, volver a cargar la página para ver los mensajes en la consola.  Con los puntos de interrupción, puedes hacer una pausa en el código relevante sin necesidad de saber cómo se estructura el código.  
-*   En las `console.log()` instrucciones debe especificar explícitamente cada valor que desee inspeccionar.  Con los puntos de interrupción, DevTools muestra los valores de todas las variables en ese momento.  A veces, hay variables que afectan al código que aún no se tiene en cuenta.  
-
-En Resumen, los puntos de interrupción pueden ayudarle a encontrar y corregir errores más rápidamente que el `console.log()` método.  
-
-Si toma un paso atrás y piensa en cómo funciona la aplicación, puede hacer una conjetura educada de que la suma incorrecta ( `5 + 1 = 51` ) se calcula en el `click` agente de escucha de eventos asociado al botón **Agregar número 1 y número 2** .  Por lo tanto, es probable que desee pausar el código en el momento en que `click` se ejecuta el agente de escucha.  Los **puntos de interrupción de escucha de eventos** te permiten hacer exactamente eso:  
-
-1.  En el panel de **depuración de JavaScript** , seleccione **puntos de interrupción de escucha de eventos** para expandir la sección.  DevTools revela una lista de categorías de eventos expansibles, como la **animación** y el **portapapeles**.  
-1.  Junto a la categoría de evento **del mouse** , elija **expandir** \ ( ![ expandir icono ][ImageExpandIcon] \).  DevTools revela una lista de los eventos del mouse, como **click** y **MouseDown**.  Cada evento tiene una casilla al lado.  
-1.  Active la casilla **click** .  DevTools está configurado para pausarse automáticamente cuando *any* `click` se ejecuta cualquier detector de eventos.  
+*   With `console.log()` , you need to manually open the source code, find the relevant code, insert the `console.log()` statements, and then refresh the webpage to display the messages in the **Console**.  Con los puntos de interrupción, puede pausar el código relevante sin saber cómo está estructurado el código.  
+*   En las `console.log()` instrucciones, debe especificar explícitamente cada valor que desee inspeccionar.  Con los puntos de interrupción, DevTools muestra los valores de todas las variables en ese momento en el tiempo.  A veces, las variables que afectan al código están ocultas y ocultas.  
     
-    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
-       La casilla **click** está habilitada  
+En resumen, los puntos de interrupción pueden ayudarle a encontrar y corregir errores más rápido que el `console.log()` método.  
+
+Si retroces y piensa en cómo funciona la aplicación, puedes hacer una suposición informada de que la suma incorrecta \( \) se calcula en el agente de escucha de eventos asociado con el botón Agregar número 1 y Número `5 + 1 = 51` `click` **2.**  Por lo tanto, probablemente quieras pausar el código en el momento en que se ejecuta `click` el agente de escucha.  **Los puntos de interrupción del agente** de escucha de eventos le permiten hacer exactamente lo siguiente:  
+
+1.  En el **panel Depuración de JavaScript,** elija Puntos de interrupción de escucha **de eventos** para expandir la sección.  DevTools muestra una lista de categorías de eventos expandibles, como **animación** y **portapapeles.**  
+1.  Junto a la **categoría de eventos del mouse,** elija **Expandir** \( Icono ![ Expandir ][ImageExpandIcon] \).  DevTools muestra una lista de eventos de mouse, **como** hacer clic y pasar **el mouse.**  Cada evento tiene una casilla al lado.  
+1.  Seleccione la casilla situada junto a **.**  DevTools ahora está configurado para pausar automáticamente cuando se ejecuta cualquier escucha `click` de eventos.  
+    
+    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Elegir la casilla junto a hacer clic" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
+       Seleccione la casilla al lado para **hacer clic**  
     :::image-end:::  
     
-1.  Nuevamente en la demostración, elija **Agregar el número 1 y el número 2 de** nuevo.  DevTools en pausa la demostración y resalta una línea de código en el panel **orígenes** .  DevTools se debe pausar en la línea 16 `get-started.js` .  
+1.  De nuevo en la demostración, elija **Agregar número 1 y Número 2** de nuevo.  DevTools pausa la demostración y resalta una línea de código en **el** panel Orígenes.  DevTools debe pausar en la línea 16 in `get-started.js` .  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
     
-    Si se detiene en una línea de código diferente, presione **reanudar script Execution** \ ( ![ resume script Execution ][ImageResumeIcon] \) hasta que se detenga en la línea correcta.  
+    Si hace una pausa en una línea de código diferente, presione Reanudar ejecución de **script** \( Reanudar ejecución de script \) hasta que se detenga ![ en la línea ][ImageResumeIcon] correcta.  
     
     > [!NOTE]
-    > Si ha pausado en una línea diferente, tiene una extensión de explorador que registra un `click` detector de eventos en cada página que visite.  Se pausó en la `click` escucha de la extensión.  Si usa el modo de InPrivate para **explorar en privado**, lo que deshabilita todas las extensiones, es posible que vea que se detiene en la línea de código deseada cada vez.  
+    > Si ha pausado en una línea diferente, tiene una extensión de explorador que registra un agente de escucha de eventos en todas las páginas `click` web que visite.  Se ha pausado en el `click` agente de escucha de la extensión.  Si usas el modo InPrivate para navegar en **privado,** lo que deshabilita todas las extensiones, es posible que veas que pausas en la línea de código deseada cada vez.  
 
 <!--todo: add inprivate section when available -->  
 
-Los puntos de interrupción de **escucha de eventos** son solo uno de los muchos tipos de puntos de interrupción disponibles en DevTools.  Merece la pena memorizar todos los tipos diferentes, ya que cada tipo en último término le ayuda a depurar diferentes escenarios lo antes posible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**Los puntos de interrupción del agente de** escucha de eventos son solo uno de los muchos tipos de puntos de interrupción disponibles en DevTools.  Memoriza todos los tipos diferentes para ayudarte a depurar diferentes escenarios lo antes posible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
 
-## Paso 4: recorrer el código  
+## Paso 4: Paso a paso por el código  
 
-Una causa común de los errores es cuando un script se ejecuta en el orden equivocado.  Al recorrer el código, podrás recorrer el motor en tiempo de ejecución de tu código, de línea en línea, y averiguar exactamente dónde se está ejecutando en un orden diferente del esperado.  Pruébelo ahora:  
+Una causa común de errores es cuando un script se ejecuta en un orden incorrecto.  El paso a través del código te permite recorrer el tiempo de ejecución del código.  Puede recorrer una línea cada vez para averiguar exactamente dónde se ejecuta el código en un orden diferente del esperado.  Pruébalo ahora:  
 
-1.  Seleccione **repasar llamada de función siguiente** \ ( ![ paso a paso por la siguiente llamada de función ][ImageOverIcon] \).  DevTools ejecuta el siguiente código sin entrar en él.  
+1.  Choose **Step over next function call** \( Step over next function call ![ ][ImageOverIcon] \).  DevTools ejecuta el siguiente código sin entrar en él.  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
     
     > [!NOTE]
-    > DevTools omite unas líneas de código.  Esto se debe `inputsAreEmpty()` a que evalúa como falso, por lo que el bloque de código para la instrucción no se `if` ejecuta.  
+    > DevTools omite algunas líneas de código.  Esto se debe a que se evalúa como false, por lo que no se ejecuta el bloque de código de `inputsAreEmpty()` `if` la instrucción.  
     
-1.  En el panel **orígenes** de DevTools, seleccione **ir a la siguiente función llamada** \ ( ![ ir a la siguiente función llamada ][ImageIntoIcon] \) para recorrer el motor en tiempo de ejecución de la `updateLabel()` función, de línea en línea.  
+1.  En **el** panel Orígenes de DevTools, elija Paso a paso en la siguiente llamada de función **\(** Paso a siguiente llamada de función \) para pasar por el tiempo de ejecución de la función, una línea ![ cada ][ImageIntoIcon] `updateLabel()` vez.  
     
-Es la idea básica de recorrer el código.  Si miras el código de `get-started.js` , verás que el error probablemente esté en algún lugar de la `updateLabel()` función.  En lugar de ir pasando por todas las líneas de código, puede usar otro tipo de punto de interrupción para pausar el código más cerca de la ubicación probable del error.  
+Revisar una línea a la vez es la idea básica de pasar por el código.  Si observa el código en , verá que el error probablemente se encuentra en `get-started.js` algún lugar de la `updateLabel()` función.  En lugar de pasar por cada línea de código, puede usar otro tipo de punto de interrupción para pausar el código más cerca de la ubicación probable del error.  
 
-## Paso 5: establecer un punto de interrupción de línea de código  
+## Paso 5: Establecer un punto de interrupción de línea de código  
 
-Los puntos de interrupción de línea de código son el tipo más común de punto de interrupción.  Cuando obtenga la línea de código específica en la que desea hacer una pausa, use un punto de interrupción de línea de código:  
+Los puntos de interrupción de línea de código son el tipo más común de punto de interrupción.  Cuando llegue a la línea de código específica que desea pausar, use un punto de interrupción de línea de código.  
 
-1.  Mire la última línea de código de `updateLabel()` :  
+1.  Mire la última línea de código `updateLabel()` en:  
     
     ```javascript
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```  
     
-1.  A la izquierda del código verás el número de línea de esta línea de código en particular, que es **33**.  Haga clic en **33**.  DevTools coloca un icono rojo a la izquierda de **33**.  Esto significa que hay un punto de interrupción de línea de código en esta línea.  DevTools ahora siempre pausa antes de que se ejecute esta línea de código.  
-1.  Elija **reanudar script Execution** \ ( ![ resume script Execution ][ImageResumeIcon] \).  El script continúa ejecutándose hasta que llega a la línea 33.  En las líneas 30, 31 y 32, DevTools imprime los valores de `addend1` , `addend2` y `sum` a la derecha del punto y coma de cada línea.  
+1.  A la izquierda, el número de esta línea de código en particular se muestra como **34**.  Elija la **línea 34.**  DevTools coloca un icono rojo a la izquierda de **34**.  El icono rojo indica que hay un punto de interrupción de línea de código en esta línea.  DevTools siempre hace una pausa antes de ejecutar esta línea de código.  
+1.  Choose **Resume script execution** \( Resume script execution ![ ][ImageResumeIcon] \).  El script continúa ejecutándose hasta que llega a la línea 33.  En las líneas 31, 32 y 33, DevTools imprime los valores de , y a la derecha del punto y coma `addend1` `addend2` en cada `sum` línea.  
     
-    :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
-       DevTools pausa en el punto de interrupción de línea de código en la línea 32  
+    :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools se pausa en el punto de interrupción de línea de código en la línea 34" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
+       DevTools se pausa en el punto de interrupción de línea de código en la línea 34  
     :::image-end:::  
     
-## Paso 6: comprobar los valores de las variables  
+## Paso 6: Comprobar los valores de las variables  
 
-Los valores de `addend1` , `addend2` y `sum` parecen sospechosos.  Se escriben entre comillas, lo que significa que son cadenas.  Esta es una buena hipótesis para explicar la causa del error.  Ahora es el momento de recopilar más información.  DevTools proporciona una gran cantidad de herramientas para examinar valores de variables.  
+Los valores de `addend1` , `addend2` y parecen `sum` sospechosos.  Los valores se encapsulan entre comillas.  Las comillas significan que el valor es una cadena, que es una buena hipótesis para explicar la causa del error.  Recopila más información sobre la situación.  DevTools proporciona muchas herramientas para examinar valores de variables.  
 
-### Método 1: el panel ámbito  
+### Método 1: el panel Ámbito  
 
-Al pausar una línea de código, el panel **ámbito** muestra qué variables locales y globales están definidas actualmente, junto con el valor de cada variable.  También muestra las variables de cierre, cuando corresponda.  Haga doble clic en un valor de variable para modificarlo.  Cuando no se ha pausado en una línea de código, el panel de **ámbito** está vacío.  
+Si hace una pausa en **** una línea de código, el panel Ámbito muestra las variables locales y globales que están definidas actualmente, junto con el valor de cada variable.  También muestra variables de cierre, según corresponda.  Haga doble clic en un valor de variable para editarlo.  Si no pausa una línea de código, el **panel** Ámbito está vacío.  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
-   El panel **ámbito**  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="Panel Ámbito" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
+   Panel **Ámbito**  
 :::image-end:::  
 
-### Método 2: ver expresiones  
+### Método 2: Expresiones de reloj  
 
-La pestaña **inspección de expresiones** le permite supervisar los valores de variables a lo largo del tiempo.  Como su nombre implica, las expresiones de inspección no se limitan solo a variables.  Puedes almacenar cualquier expresión de JavaScript válida en una expresión de inspección.  Pruébelo ahora:  
+El **panel Expresiones de supervisión** permite supervisar los valores de las variables a lo largo del tiempo.  Como su nombre indica, **las expresiones de** watch no están limitadas a variables.  Puede almacenar cualquier expresión de JavaScript válida en una **expresión watch**.  Pruébalo ahora.  
 
-1.  Haga clic en la pestaña **inspección** .  
-1.  Elija **Agregar expresión** \ ( ![ Agregar expresión ][ImageAddIcon] \).  
+1.  Elija el **panel** Ver.  
+1.  Elija **Agregar expresión** \( Agregar expresión ![ ][ImageAddIcon] \).  
 1.  Escribe `typeof sum`.  
-1.  Seleccione `Enter` .  DevTools `typeof sum: "string"` .  El valor a la derecha de los dos puntos es el resultado de la expresión de inspección.  
+1.  Seleccione `Enter` .  DevTools muestra `typeof sum: "string"` .  El valor a la derecha de los dos puntos es el resultado de la expresión de reloj.  
     
 > [!NOTE]
-> En el panel de expresiones de inspección \ (inferior derecha \) en la siguiente ilustración, `typeof sum` se muestra la expresión de inspección.  Si la ventana de DevTools es grande, el panel de expresiones de inspección se encuentra a la derecha sobre el panel de **puntos de interrupción de escucha de eventos** .  
+> En el **panel Expresión de** reloj \(abajo a la derecha\) de la siguiente figura, se muestra la expresión de la `typeof sum` vista.  Si la ventana DevTools **** es grande, el panel Expresión de reloj se encuentra a la derecha sobre el panel Puntos de interrupción de escucha **de eventos.**  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
-   Panel de **expresiones de inspección**  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Panel De expresiones de reloj" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+   Panel **De expresiones de** reloj  
 :::image-end:::  
 
-Como se sospecha, `sum` se evalúa como una cadena, cuando debería ser un número.  Ya ha confirmado que esta es la causa del error.  
+Como se sospecha, `sum` se está evaluando como una cadena, cuando debe ser un número.  Ahora ha confirmado que el tipo de valor es la causa del error.  
 
-### Método 3: la consola  
+### Método 3: La consola  
 
-Además de ver `console.log()` los mensajes, también puede usar la consola para evaluar instrucciones de JavaScript arbitrarias.  En términos de depuración, puede usar la consola para probar posibles soluciones para errores.  Pruébelo ahora:  
+La **consola** le permite ver mensajes y también puede usarlos para evaluar `console.log()` instrucciones arbitrarias de JavaScript.  Para la depuración, puede usar la **consola para** probar posibles correcciones de errores.  Pruébalo ahora.  
 
-1.  Si no tiene abierto el cajón de consola, seleccione `Escape` para abrirlo.  Se abre en la parte inferior de la ventana de DevTools.  
-1.  En la consola, escriba `parseInt(addend1) + parseInt(addend2)` .  Esta instrucción funciona porque se ha pausado en una línea de código en la que `addend1` `addend2` se encuentran en el ámbito.  
-1.  Seleccione `Enter` .  DevTools evalúa la instrucción e imprime `6` , que es el resultado que espera que la demostración produzca.  
+1.  Si el **cajón** de la consola está cerrado, `Escape` selecciónelo para abrirlo.  El **cajón** de la consola se abre en el panel inferior de la ventana DevTools.  
+1.  En la **consola,** escriba `parseInt(addend1) + parseInt(addend2)` .  La instrucción que la herramienta se pausa en una línea de código donde `addend1` y están en el `addend2` ámbito.  
+1.  Seleccione `Enter` .  DevTools evalúa la instrucción e imprime, que es el `6` resultado que esperas que produzca la demostración.  
     
-    :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="El resultado de 5 + 1 es 51, pero debe ser 6" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
-       El cajón de **consola** , después de la evaluación `parseInt(addend1) + parseInt(addend2)`  
+    :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="El cajón de la consola, después de evaluar parseInt(addend1) + parseInt(addend2)" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
+       El **cajón de** la consola, después de evaluar `parseInt(addend1) + parseInt(addend2)`  
     :::image-end:::  
     
-## Paso 7: aplicar una corrección  
+## Paso 7: Aplicar una corrección  
 
-Si encuentra una corrección para el error, pruebe su corrección editando el código y volviendo a ejecutar la demostración.  No es necesario dejar DevTools para aplicar la corrección.  Puedes editar código JavaScript directamente dentro de la interfaz de usuario de DevTools.  Pruébelo ahora:  
+Si encuentras una corrección para el error, prueba la corrección editando el código y rerunning la demostración.  Puedes editar código JavaScript directamente en la interfaz de usuario de DevTools y aplicar la corrección.  Pruébalo ahora.  
 
-1.  Elija **reanudar script Execution** \ ( ![ resume script Execution ][ImageResumeIcon] \).  
-1.  En el **Editor de código**, cambie la línea 32, `var sum = addend1 + addend2` con `var sum = parseInt(addend1) + parseInt(addend2)` .  
-1.  Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
-1.  Elija **desactivar puntos de interrupción** \ ( ![ desactivar puntos de interrupción ][ImageDeactivateIcon] \).  Cambia de color azul para indicar que está activo.  Aunque está establecido, DevTools omite los puntos de interrupción que haya establecido.  
-1.  Pruebe la demostración con diferentes valores.  La demostración ahora se calcula correctamente.  
+1.  Choose **Resume script execution** \( Resume script execution ![ ][ImageResumeIcon] \).  
+1.  En el **Editor de**código, reemplace la línea 32, , `var sum = addend1 + addend2` por `var sum = parseInt(addend1) + parseInt(addend2)` .  
+1.  Seleccione `Control` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar el cambio.  
+1.  Elija **Desactivar puntos de interrupción** \( Desactivar puntos de ![ ][ImageDeactivateIcon] interrupción \).  Cambia de color azul para indicar que la opción está activa.  Mientras **se establecen los puntos de interrupción** Deactivate, DevTools omite los puntos de interrupción que establezca.  
+1.  Pruebe la demostración con diferentes valores.  La demostración ahora calcula correctamente.  
     
 > [!CAUTION]
-> Este flujo de trabajo solo aplica una corrección para el código que se ejecuta en el explorador.  No se corrige el código de todos los usuarios que visitan la página.  Para ello, debe corregir el código que está en los servidores.  
+> Este flujo de trabajo solo aplica una corrección al código que se ejecuta en el explorador.  No corrige el código de todos los usuarios que visitan la página web.  Para ello, debe corregir el código que se encuentra en los servidores.  
 
 ## Pasos siguientes  
 
-¡Enhorabuena!  Ahora sabes cómo sacar el máximo provecho de Microsoft Edge DevTools al depurar JavaScript.  Las herramientas y métodos que aprendió en este tutorial pueden ahorrar innumerables horas.  
+¡Enhorabuena!  Ahora ya sabes cómo obtener el máximo partido de Microsoft Edge DevTools al depurar JavaScript.  Las herramientas y los métodos que aprendió en este artículo pueden ahorrarle incontables horas.  
 
-En este tutorial, solo se mostraron dos formas de establecer puntos de interrupción.  DevTools ofrece muchas otras formas, entre las que se incluyen las siguientes.  
+En este artículo solo se le enseñaron dos formas de establecer puntos de interrupción.  DevTools ofrece muchas otras formas, incluida la siguiente configuración.  
 
-*   Puntos de interrupción condicionales que solo se desencadenan cuando la condición que proporciona es verdadera.  
-*   Puntos de interrupción en excepciones detectadas o no capturadas.  
-*   XHRlos puntos de interrupción que se desencadenan cuando la dirección URL solicitada coincide con una subcadena que proporciona.  
+*   Puntos de interrupción condicionales que solo se desencadenan cuando la condición que se proporciona es verdadera.  
+*   Puntos de interrupción en excepciones detectadas o no detectadas.  
+*   Puntos de interrupción XHR que se desencadenan cuando la dirección URL solicitada coincide con una subcadena que se proporciona.  
     
-Para obtener más información sobre cuándo y cómo usar cada tipo, vaya a [pausar el código con puntos de interrupción][DevtoolsJavscriptBreakpoints].  
+Para obtener más información sobre cuándo y cómo usar cada tipo, vaya a [Pausar el código con puntos de interrupción.][DevtoolsJavscriptBreakpoints]  
 
-Hay un par de controles de versión de paso que no se han explicado en este tutorial.  Para obtener más información, vaya a [paso a paso por la línea de código][DevtoolsJavascriptReferenceStepThroughCode].  
+En este artículo no se explica un par de controles paso a paso de código.  Para obtener más información, vaya [a Paso a través de la línea de código.][DevtoolsJavascriptReferenceStepThroughCode]  
 
 ## Contactar al equipo de Microsoft Edge DevTools  
 
@@ -240,16 +239,16 @@ Hay un par de controles de versión de paso que no se han explicado en este tuto
 
 <!-- links -->  
 
-[DevtoolsJavscriptBreakpoints]: ./breakpoints.md "Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft docs"
-[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Paso a paso por el código: referencia de la depuración de JavaScript | Microsoft docs"
+[DevtoolsJavscriptBreakpoints]: ./breakpoints.md "Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Código paso a paso: referencia de depuración de JavaScript | Microsoft Docs"
 
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->  
 
-[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Abrir demo | Intento"  
+[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Abra el archivo de demostración | Problemas"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
