@@ -1,32 +1,32 @@
 ---
-description: Los pasos para crear la cuenta de desarrollador de complementos de Microsoft Edge en el centro de socios.
-title: Información general y Estados de presentación de extensión
+description: Obtenga información sobre los diferentes estados al enviar extensiones a la tienda.
+title: Estados de envío para extensiones en la tienda
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: 028112f958656a705c7b52fa3a7bbfa49a1a0f79
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
+ms.openlocfilehash: e6ed0381f7de186500d8fe910f367716a8368d10
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015739"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327655"
 ---
-# Información general y Estados de presentación de extensión  
+# Estados de envío de extensiones en el almacén de complementos perimetrales  
 
-La página de Descripción general del centro de Partners muestra el estado de la extensión en el flujo de envío general.  
+La página de información general del Centro de partners muestra el estado de la extensión en el flujo de envío general.  En este artículo se describen los diferentes estados en los que puede encontrarse la extensión en cualquier momento durante el proceso de envío y certificación.  
 
-| # |  Estado |  Descripción y detalles |  
+| # |  Estado |  Detalles |  
 |:--- |:--- |:--- |  
-| uno |  En borrador |  Después de crear el envío y guardarlo en su cuenta, el estado cambiará a este estado.  <br />  No has enviado el paquete de extensión ni los detalles del formulario de envío para publicarlo en Microsoft Store.  <br />  La extensión no está disponible para los usuarios de este estado.  |  
-| 1|  En revisión |  Después de enviar la extensión, el estado cambia a este estado.  <br />  Tu paquete de extensión y los detalles del formulario de envío están revisados por Microsoft.  <br />  La extensión no está disponible para los usuarios de este estado.  |  
-| 2|  Esperando para publicar |  Después de que la revisión de extensión se haya completado correctamente y mientras se prepara la extensión para publicar en Microsoft Store, el estado cambiará a este estado.  <br />  Este es un estado intermedio entre `In review` y `In the store` .  <br />  Este estado no puede aparecer en todos los enviados.  |  
-| cuatro|  En la tienda |  Una vez completada la revisión y que la extensión se publique en Microsoft Store, el estado cambiará a este estado.  <br />  Su extensión está disponible en Microsoft Store en los mercados que especificó.  |  
-| 4 |  En la tienda.  Actualizar en revisión |  Su extensión está publicada en Microsoft Store y ha enviado una actualización que está revisando Microsoft.  |  
-| 6 |  Error al revisar |  Si se produce un error en la extensión, el estado cambia a este estado.  <br />  Una revisión fallida puede producirse durante la revisión inicial o durante una actualización.  <br />  Se espera que realice una acción correctiva y que vuelva a enviar su extensión para publicar en Microsoft Store.  |  
-| siete |  No disponible en la tienda |  Hay tres escenarios posibles cuando la extensión muestra este estado: no  **publicado en el almacén** , **eliminado de Store**y **bloqueado**.  A continuación se especifica la descripción de cada una de estas tres.  |  
-| 4,8 |  No publicado en el almacén |  Has anulado la publicación de tu extensión desde Microsoft Store en el centro de Partners.  <br />  En el centro asociado, en la página de entrega de extensión, hizo clic en el botón anular la publicación.  <br />  Después de la anulación de la publicación, la extensión ya no está disponible en Microsoft Store para que los usuarios nuevos la descarguen, pero los usuarios existentes pueden seguir usando sus copias de la extensión.  |  
-| 99,999 |  Eliminado de Store |  Si se detecta que la extensión infringe las cláusulas y condiciones de Microsoft Store, Microsoft puede quitarla de Microsoft Store y el estado cambiará a este estado.  <br />  Después de quitar la extensión por parte de Microsoft, la extensión ya no está disponible en Microsoft Store para que los usuarios nuevos la descarguen, pero los usuarios existentes pueden seguir usando sus copias de la extensión.  |  
-| base10 |  Bloqueado |  Si su extensión es malintencionada y pone en peligro la seguridad y la privacidad de los usuarios, Microsoft tiene el derecho de bloquear su extensión de Microsoft Store y de los cambios de estado de este estado.  <br />  Si la extensión está bloqueada, la extensión se quitará de Microsoft Store, la extensión también se quitará de los dispositivos de usuario.  |  
+| 1 |  En borrador |  Creas el envío y guardas un borrador en tu cuenta.  No has enviado el paquete de extensión ni los detalles del formulario de envío para publicarlos en la tienda de complementos de Microsoft Edge.  La extensión no está disponible para los usuarios en este estado.  |  
+| 2|  En revisión |  Ha enviado la extensión.  Microsoft revisa los detalles del paquete de extensión y del formulario de envío.  La extensión no está disponible para los usuarios en este estado.  |  
+| 3|  En espera de publicar |  El envío se encuentra en este estado una vez completada la revisión de la extensión y la extensión se prepara para su publicación en Microsoft Store.  Este estado es un estado intermedio entre `In review` y `In the store` .  Es posible que este estado no aparezca para todos los envíos.  |  
+| 4|  En la tienda |  La revisión ya está completa y la extensión se publica en la tienda de complementos de Microsoft Edge.  La extensión está disponible en Microsoft Store en los mercados que especificaste.  |  
+| 5 |  En la tienda.  Actualizar en revisión |  La extensión se publica en la tienda de complementos de Microsoft Edge y has enviado una actualización que Microsoft está revisando.  |  
+| 6 |  Error de revisión |  El envío está en este estado si la extensión no puede revisarse.  Puede producirse un error de revisión durante la revisión inicial o durante una actualización.  Debe tomar medidas correctivas y volver a enviar la extensión.  |  
+| 7 |  No disponible en la tienda |  Existen tres escenarios posibles cuando la extensión muestra este estado:  **Unpublished from store**, **Removed from store**y **Blocked**.  La descripción de cada uno de los tres estados se especifica en 8, 9 y 10.  |  
+| 8 |  Unpublished from store |  Has publicado la extensión de la tienda de complementos de Microsoft Edge en el Centro de partners.  En el Centro de partners, has **elegido anular la publicación** en la página de envío de extensión.  Después de anular la publicación de la extensión, ya no está disponible en la tienda de complementos de Microsoft Edge para que los usuarios nuevos puedan descargar, pero los usuarios existentes pueden seguir usando sus copias de la extensión.  |  
+| 9 |  Se quitó del almacén |  Si se encuentra que la extensión infringe los términos y condiciones del almacén de complementos de Microsoft Edge, Microsoft puede quitarla del almacén de complementos de Edge y el estado cambia a este estado.  <br />  Después de quitar la extensión por parte de Microsoft, la extensión ya no está disponible en la tienda de complementos de Microsoft Edge para que los descarguen los nuevos usuarios, pero los usuarios existentes pueden seguir usando sus copias de la extensión.  |  
+| 10 |  Bloqueado |  Si se encuentra que la extensión es malintencionada y pone en peligro la seguridad y privacidad de los usuarios, Microsoft tiene derecho a bloquear la extensión del almacén de complementos de Edge y el estado cambia a este estado.  Si la extensión está bloqueada, se quita del almacén de complementos perimetrales y de todos los dispositivos de usuario.  |  

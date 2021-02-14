@@ -1,46 +1,55 @@
 ---
-description: Obtenga información sobre cómo registrarse en una cuenta de desarrollador para publicar extensiones en el almacén de complementos de Microsoft Edge.
-title: Regístrate como programador de extensiones de Microsoft Edge para publicar extensiones
+description: Aprende a registrarte en una cuenta de desarrollador para publicar extensiones en la tienda de complementos de Microsoft Edge.
+title: Registrarse como desarrollador de extensiones de Microsoft Edge para publicar extensiones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/05/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: 87c5dbfdec65ae3957724ae846a06480a2488084
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
+ms.openlocfilehash: 8277390bb78e6692345e9c30ef26f60528655374
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015747"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327522"
 ---
-# Regístrate como desarrollador de extensiones de Microsoft Edge  
+# Registrarse como desarrollador de extensiones de Microsoft Edge  
 
-Para enviar su extensión al sitio web de complementos de Microsoft Edge, debe estar registrado como desarrollador con el programa Microsoft Edge en el [centro del Partner][MicrosoftPartnerCenter].  No hay ningún cargo por inscripción en el envío de extensiones al programa Microsoft Edge.  
+Para enviar la extensión al catálogo de complementos de Microsoft Edge, debes estar registrado como desarrollador con el programa Microsoft Edge.  El programa Microsoft Edge se encuentra en el [Centro de partners.][MicrosoftPartnerCenter]  
+
+> [!IMPORTANT]
+> No hay ninguna cuota de registro implicada en el envío de extensiones al programa Microsoft Edge.  
 
 ## Antes de comenzar  
 
-Si no tiene una cuenta o si tiene una cuenta comercial existente con el centro de Partners, debe crear una nueva cuenta de [Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] para registrarse con el programa Microsoft Edge.  Para crear una cuenta de Microsoft \ (Outlook/Live/Hotmail \), visita [account.Microsoft.com][MicrosoftAccount] y selecciona **crear una cuenta de Microsoft**.  Si está registrado en el centro de socios con una cuenta de desarrollador, use la cuenta de Microsoft correspondiente \ (MSA \) para iniciar sesión y, a continuación, inscríbase en el programa Microsoft Edge.  
+Si no tienes una cuenta o si tienes una cuenta comercial existente con el Centro de partners, crea una nueva cuenta [de Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] para registrarte con el programa Microsoft Edge.  Para crear una cuenta de Microsoft \(Outlook/live/Hotmail\), complete las siguientes acciones.  
+
+1.  Vaya a [account.microsoft.com][MicrosoftAccount].  
+1.  Elija **Crear una cuenta de Microsoft.**  
+    
+Si tienes una cuenta de desarrollador registrada en el Centro de partners, usa la cuenta microsoft correspondiente \(MSA\) para iniciar sesión en tu cuenta de desarrollador y, a continuación, inscríbete en el programa Microsoft Edge.  
 
 > [!NOTE]
-> Hoy, el equipo de extensiones de Microsoft Edge no admite el registro con una cuenta profesional o educativa.  En el futuro, el equipo de extensiones de Microsoft Edge planea admitir la vinculación de inquilinos de AAD a cuentas de MSA para la administración de extensiones.  
+> Hoy en día, las extensiones de Microsoft Edge no admiten el registro con una cuenta laboral o educativa.  En el futuro, el equipo de extensiones de Microsoft Edge planea admitir la vinculación de inquilinos de Azure AD a cuentas de MSA para la administración de extensiones.  
 
-## Inscribirse en el programa Microsoft Edge en el centro del Partner  
+## Inscribirse en el programa Microsoft Edge en el Centro de partners  
 
-1.  Vaya a la [Página de desarrollador][MicrosoftPartnerCenter] y seleccione **ir al panel**.  
-1.  Si aún no ha iniciado sesión con una **cuenta de Microsoft**, inicie sesión ahora o cree una nueva cuenta de Microsoft.  Usa la misma cuenta de Microsoft que usas para iniciar sesión en tu cuenta de desarrollador.  Después de iniciar sesión, se muestra este formulario de registro.  
+1.  Vaya a la [página del desarrollador][MicrosoftPartnerCenter] y elija IR AL **PANEL.**  
+1.  Si tienes una cuenta de Microsoft, inicia sesión en ella ahora.  Si no es así, cree una nueva cuenta de Microsoft.  Usa la misma cuenta de Microsoft que usas para iniciar sesión en tu cuenta de desarrollador.  Después de iniciar sesión, se muestra un formulario de registro. En la tabla siguiente se describen los campos del formulario de registro.  
     
     Para inscribirse en el programa Microsoft Edge, inicie sesión en su cuenta y complete el formulario.  
-    <!-- -->
+    
     :::row:::
        :::column span="1":::
           **País o región de la cuenta**  
        :::column-end:::
        :::column span="2":::
-          Este campo es el lugar donde vives o donde se encuentra tu empresa.  
+          Este campo es donde se encuentra o donde se encuentra su empresa.  
           
           > [!IMPORTANT]
-          > Después de la inscripción, no podrá cambiar el valor de este campo.  
+          > Después de la inscripción, el valor de este campo es de solo lectura.  
+          
        :::column-end:::
     :::row-end:::  
     :::row:::
@@ -48,27 +57,29 @@ Si no tiene una cuenta o si tiene una cuenta comercial existente con el centro d
           **Tipo de cuenta**  
        :::column-end:::
        :::column span="2":::
-          El programa Microsoft Edge del [centro de Partners][MicrosoftPartnerCenter] ofrece cuentas individuales y de empresa, que se describen en detalle en la siguiente tabla.  Ambos tipos de cuenta le permiten publicar extensiones en el catálogo de complementos de Microsoft Edge.  
+          El programa Microsoft Edge del [Centro de partners][MicrosoftPartnerCenter] ofrece cuentas individuales y de empresa.  Las cuentas se describen en detalle en las siguientes viñetas.  Ambos tipos de cuenta te permiten publicar extensiones en el catálogo de complementos de Microsoft Edge.  
           
           > [!IMPORTANT]
           > Después de la inscripción, no podrá cambiar el valor de este campo.  
           
           *   `Individual account`  
-              Una cuenta individual es adecuada para un desarrollador que no está asociado con una empresa.  El proceso de verificación de cuenta es más corto e implica comprobar que el nombre para mostrar del publicador está disponible.  
+              Una cuenta individual es adecuada para un desarrollador que no está asociado a una empresa.  El proceso de comprobación de la cuenta es más corto e implica comprobar que el nombre para mostrar del editor está disponible.  
 
           *   `Company account`  
-              Una cuenta de empresa está asociada a una organización o empresa.  El proceso de verificación de cuenta es más largo e incluye una confirmación de que tienes autorización para crear la cuenta de tu empresa.  La duración del proceso puede variar de unos días a unas semanas.  Tu empresa puede recibir llamadas telefónicas de socios de verificación de Microsoft.  
+              Una cuenta de empresa está asociada a una organización o empresa.  El proceso de verificación de la cuenta es más largo e implica la confirmación de que estás autorizado a crear la cuenta para tu empresa.  La duración del proceso puede oscilar entre unos días y unas pocas semanas.  Su empresa puede recibir llamadas telefónicas de socios de verificación de Microsoft.  
+              
        :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="1":::
-          **Nombre para mostrar del publicador**  
+          **Nombre para mostrar del editor**  
        :::column-end:::
        :::column span="2":::
-          Este campo es el nombre que se muestra a los usuarios en el catálogo de complementos de Microsoft Edge.  Puede usar un nombre solo si está disponible y tiene los derechos para usarlo.  Las cuentas de la empresa deben usar el nombre comercial registrado de su organización.  
+          Este campo contiene el nombre que se muestra en el catálogo de complementos de Microsoft Edge.  Puede usar un nombre solo si está disponible y tiene los derechos para usarlo.  Las cuentas de empresa deben usar el nombre comercial registrado de la organización.  
           
           > [!NOTE]
           > La longitud máxima de este campo es de 50 caracteres.  
+          
        :::column-end:::
     :::row-end:::  
     :::row:::
@@ -76,71 +87,36 @@ Si no tiene una cuenta o si tiene una cuenta comercial existente con el centro d
           **Detalles de contacto**  
        :::column-end:::
        :::column span="2":::
-          Este campo contiene cualquier información de contacto que Microsoft pueda usar para ponerse en contacto con usted en relación con cualquier problema con la cuenta.  Una vez completado el registro, se le enviará una confirmación por correo electrónico.  Para una cuenta de empresa, debe usar la dirección de correo electrónico registrada asociada a su organización.  
+          Este campo contiene cualquier información de contacto que Microsoft use para ponerse en contacto con usted sobre los problemas de la cuenta.  Una vez completado el registro, se le enviará una confirmación por correo electrónico.  Para una cuenta de empresa, debe usar la dirección de correo electrónico registrada asociada a su organización.  
        :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="1":::
-          **Aprobador de la compañía**  
+          **Aprobador de la empresa**  
        :::column-end:::
        :::column span="2":::
-          Para una cuenta de empresa, debe proporcionar la información de contacto del aprobador de la empresa \ (nombre, dirección de correo electrónico y número de teléfono \).  Microsoft se pone en contacto con el aprobador de la compañía especificado como parte del proceso de verificación para garantizar que la extensión pertenece a su organización.  
+          Para una cuenta de empresa, debe proporcionar la información de contacto del aprobador de la empresa.  La información de contacto incluye el nombre, la dirección de correo electrónico y el número de teléfono.  Microsoft se pone en contacto con el aprobador de la empresa especificado como parte del proceso de comprobación para asegurarse de que la extensión pertenece a su organización.  
        :::column-end:::
     :::row-end:::  
-    <!-- -->
-    <!--
-    1.  The **Account country/region** field  
-        
-        This field is where you either live or your business is located.  
-        
-        > [!IMPORTANT]
-        > After enrollment, you are not able to change the value of this field.  
-        
-    1.  The **Account type** field  
-        
-        The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts, which are described in detail in the table that follows.  Both account types allow you to publish extensions to the Microsoft Edge add-ons catalog.  
-        
-        > [!IMPORTANT]
-        > After enrollment, you are not able to change the value of this field.  
-        
-        | Individual account | Company account |  
-        |:--- |:--- |  
-        | Individual accounts are appropriate for developers not associated with a company.  | Company accounts are associated with organizations and businesses.  |  
-        | The account verification process is shorter, and involves verifying that the publisher display name is available.  | The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process may range from a few days to a few weeks.  Your company may receive phone calls from Microsoft verification partners.  |  
-        
-    1.  The **Publisher display name** field  
-        
-        This field is the name shown to users in the Microsoft Edge add-ons catalog.  You may use a name only if it is available, and you have the rights to use it.  Company accounts must use the registered business name of your organization.  
-        
-        > [!NOTE]
-        > The maximum length for this field is 50 characters.  
-        
-    1.  The **Contact details** field  
-        
-        Any contact information that Microsoft may use to contact you regarding any account issues.  After registration is complete, an email confirmation is sent to you.  Company accounts must use the registered email address associated with your organization.  
-        
-    1.  The **Company approver** field  
-        
-        For company accounts, provide the contact information \(name, email address, and phone number\) of your company approver.  Microsoft contacts the company approver specified as a part of the verification process to ensure that the extensions belong to your organization.  
-        -->
-1. Antes de enviar su formulario de registro, lea y acepte las cláusulas y condiciones del [contrato para desarrolladores de Microsoft Edge][MicrosoftAppDeveloperAgreement].  
-1. Para completar la inscripción, seleccione **Finalizar**.  
-
+    
+1.  Antes de enviar el formulario de registro, lea y acepte los términos y condiciones del Contrato para desarrolladores [de Microsoft Edge.][MicrosoftAppDeveloperAgreement]  
+1.  Para completar la inscripción, elija **Finalizar**.  
+    
 ## Pasos siguientes  
 
-Puede ver su estado de verificación en la página Configuración de la **cuenta** en el centro del partner.  Mientras espera a que se complete el proceso de verificación; puede continuar con la creación, prueba y preparación de los enviados.  
+Para mostrar el estado de verificación, ve al Centro de partners > **configuración de la cuenta.**  Mientras esperas a que se complete el proceso de comprobación, continúa compilando, probar y preparar los envíos.  
 
-Para obtener más información, vea [publicar una extensión][ExtensionsChromiumPublishExtension].  Para obtener información sobre cómo comenzar a usar extensiones, consulte [Introducción a las extensiones de Microsoft Edge (cromo)][ExtensionsChromiumGettingStartedIndex].  
+Para obtener más información, vaya [a Publicar una extensión.][ExtensionsChromiumPublishExtension]  Para obtener información sobre cómo empezar a usar extensiones, vaya a Introducción a las extensiones de [Microsoft Edge (Chromium).][ExtensionsChromiumGettingStartedIndex]  
 
 <!-- links -->  
 
-[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Introducción a Microsoft Edge (cromo) | Microsoft docs"  
-[ExtensionsChromiumPublishExtension]:  ./publish-extension.md "Publicar una extensión | Microsoft docs"  
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Introducción a las extensiones de Microsoft Edge (Chromium) | Microsoft Docs"  
+[ExtensionsChromiumPublishExtension]:  ./publish-extension.md "Publicar una extensión | Microsoft Docs"  
 
-[MicrosoftAppDeveloperAgreement]:  /legal/windows/agreements/app-developer-agreement "Acuerdo de desarrollador de aplicaciones | Microsoft docs"  
+[MicrosoftAppDeveloperAgreement]:  /legal/windows/agreements/app-developer-agreement "Acuerdo para desarrolladores de aplicaciones | Microsoft Docs"  
 
 [MicrosoftAccount]:  https://account.microsoft.com/account "Cuenta de Microsoft"  
 
-[MicrosoftPartnerCenter]:  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centro de socios"  
+[MicrosoftPartnerCenter]:  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centro de partners"  
 
-[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Microsoft (o MSA)"  
+[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Todo lo que necesita saber sobre las cuentas de Microsoft | Comunidad de Windows"  

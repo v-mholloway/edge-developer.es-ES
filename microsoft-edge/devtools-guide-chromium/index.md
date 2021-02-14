@@ -1,150 +1,150 @@
 ---
-description: Familiarizarse con las herramientas para desarrolladores de Microsoft Edge (cromo)
-title: Herramientas para desarrolladores de Microsoft Edge (cromo)
+description: Conozca las herramientas de desarrollo de Microsoft Edge (Chromium)
+title: Herramientas para desarrolladores de Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: fcae8f0974244e87ba781b94221cb5d8a1bb3dce
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 05b757b7cb399815d072b9d6038873cfd118a59d
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235932"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327494"
 ---
-# Información general de las herramientas de desarrollo de Microsoft Edge (cromo)  
+# Introducción a las herramientas de desarrollo de Microsoft Edge (Chromium)  
 
-Microsoft Edge ha adoptado el proyecto de código abierto de cromo para mejorar la compatibilidad web y la fragmentación de las distintas plataformas web subyacentes.  Este cambio debe facilitar la creación y la prueba de tus sitios web en Microsoft Edge y asegurarte de que cada uno funcione según lo esperado, aunque se vea en otro explorador basado en cromo \ (como Google Chrome, Vivaldi, opera o Brave \).  
+Microsoft Edge ha adoptado el proyecto de código abierto chromium.  El nuevo explorador Microsoft Edge crea una mejor compatibilidad web y reduce la fragmentación de distintas plataformas web.  El cambio debe facilitar la compilación y prueba de las páginas web en Microsoft Edge.  El nuevo Microsoft Edge debe ayudar a que las páginas web funcionen según lo esperado cuando se abran en otros exploradores basados en Chromium.  Entre los exploradores basados en Chromium se incluyen Google Chrome, Vivaldi, Opera, Despericio y el nuevo Microsoft Edge.  
 
-A medida que la web ha crecido de uso en una amplia variedad de tipos de dispositivos, la complejidad y la carga de trabajo de los sitios web se han expandido. Como los programadores web \ (especialmente aquellos de pequeñas empresas \) deben probar muchos sistemas diferentes, puede que sea casi imposible garantizar que los sitios funcionen bien en todos los tipos de dispositivos y en todos los exploradores.  Ahora que Microsoft Edge está basado en cromo, el equipo de Microsoft Edge ha simplificado la matriz alineando la plataforma Microsoft Edge web con otros exploradores de cromo y proporcionó una experiencia de herramientas para programadores de la mejor calidad, tanto dentro del explorador como con las otras herramientas de desarrollador que usa todos los días \ (como Visual Studio Code \).  
+La web ha aumentado su uso en una matriz cada vez más amplia de tipos de dispositivos.  La complejidad y la sobrecarga implicadas en las pruebas de páginas web han aumentado rápidamente.  Los desarrolladores web como usted necesitan probar con muchos sistemas diferentes.  Para asegurarse de que las páginas web funcionan bien en todos los tipos de dispositivos y exploradores, es posible que le sea casi imposible, especialmente si trabaja en una pequeña empresa.  El nuevo Microsoft Edge ahora se basa en Chromium.  El equipo de Microsoft Edge ha simplificado la matriz alineando la plataforma web de Microsoft Edge con otros exploradores basados en Chromium.  El nuevo Microsoft Edge proporciona la mejor experiencia de desarrollo de su clase.  La experiencia se realiza dentro del explorador y junto con las otras herramientas de desarrollo que usas todos los días, como Visual Studio código.  
 
-Si va a retirar Microsoft Edge y principalmente desarrolla en un explorador basado en cromo, debe sentirse bien en casa.  Las herramientas para desarrolladores de Microsoft Edge \ (cromo \) funcionan de la misma manera que las herramientas para desarrolladores que ya conoces y usas.  Para obtener más información, vaya a [novedades de la DevTools Microsoft Edge (cromo)][DevtoolsGuideChromiumWhatsNewIndex].  
+Como desarrollador de exploradores basados en Chromium, debería sentirse cómodo con el nuevo explorador Microsoft Edge.  Las DevTools de Microsoft Edge \(Chromium\) funcionan igual que las herramientas para desarrolladores que ya conoces y usas.  Las herramientas de desarrollo de Microsoft Edge \(Chromium\) a menudo se denominan Microsoft Edge \(Chromium\) DevTools o DevTools.  Para obtener más información, vaya a Novedades [de Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromiumWhatsNewIndex].  
 
-:::image type="complex" source="./media/devtools.png" alt-text="Microsoft Edge (cromo) DevTools" lightbox="./media/devtools.png":::
-   Microsoft Edge (cromo) DevTools  
+:::image type="complex" source="./media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools" lightbox="./media/devtools.png":::
+   Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
-Si desproteges el nuevo Microsoft Edge y ya desarrollaste en Microsoft Edge \ (EdgeHTML \), ahora tienes algunas fantásticas herramientas nuevas que hacen que sea más fácil y rápido crear y probar tus sitios web en Microsoft Edge.  
+Si anteriormente desarrollaste para Microsoft Edge \(EdgeHTML\) y estás evaluando el nuevo Microsoft Edge, ahora proporciona nuevas y excelentes herramientas para crear y probar tus páginas web de forma más fácil y rápida.  
 
-## Abrir la DevTools  
+## Abrir DevTools  
 
-Si nunca antes usaste el DevTools, las herramientas para desarrolladores de Microsoft Edge son un conjunto de herramientas creadas directamente en el explorador Microsoft Edge.  Con el DevTools, podrás hacer lo siguiente.  
+Las DevTools de Microsoft Edge son un conjunto de herramientas integradas directamente en el explorador Microsoft Edge.  DevTools te permite realizar las siguientes tareas directamente en el explorador.  
 
-*   Inspeccionar y realizar cambios en el sitio web HTML  
-*   Editar CSS y ver al instante cómo se representa el sitio web  
-*   Consulta todas las `console.log()` instrucciones de tu código de JavaScript front-end  
-*   Depure su script mediante la configuración de puntos de interrupción y su paso por línea  
+*   Inspeccionar y realizar cambios en la página web HTML  
+*   Editar CSS y ver al instante la vista previa de cómo se representa la página web  
+*   Revisar todas las `console.log()` instrucciones del código JavaScript front-end  
+*   Depurar el script, establecer puntos de interrupción y paso a paso por el código línea por línea  
     
-Todo directamente en el explorador.  Estos son solo ejemplos de algunas de las características que DevTools proporcionar para que sea más fácil y rápida crear y probar sus sitios web en Microsoft Edge.  
+Más ejemplos de las características que DevTools proporciona para que sea más fácil y rápido compilar y probar tu página web en Microsoft Edge.  
 
-Para abrir la DevTools  
+Para abrir DevTools  
 
 *   Seleccionar `F12` 
-*   Seleccione `Ctrl` + `Shift` + `I` on Windows/Linux \ ( `Command` + `Option` + `I` en MacOS \)  
+*   Seleccione `Ctrl` + `Shift` + `I` \(Windows/Linux\) o `Command` + `Option` + `I` \(macOS\)  
     
-Si desea ver el código HTML o CSS de un elemento de su sitio, haga clic con el botón derecho en el elemento y seleccione **inspeccionar** para ir al panel elementos.  También puede pulsar `Ctrl` + `Shift` + `C` en Windows/Linux \ ( `Command` + `Option` + `C` en MacOS \) para abrir la DevTools en el **modo de elemento de inspección** que le permite seleccionar un elemento del sitio y ver el código HTML y CSS en el panel **elementos** .  
+Si desea ver el CÓDIGO HTML o CSS de un elemento en el sitio, haga clic con el botón secundario en el elemento y elija **Inspeccionar** para saltar a la **herramienta** Elementos.  Para abrir Las DevTools **en**modo inspeccionar elemento, selecciona `Ctrl` + `Shift` + `C` \(Windows/Linux\) o `Command` + `Option` + `C` \(macOS\). El **modo inspeccionar elemento** le permite elegir un elemento en la página web y mostrar el CÓDIGO HTML y CSS en la **herramienta** Elementos.  
 
-Si desea ver los registros del código de JavaScript de front-end o ejecutar rápidamente algún script, seleccione `Ctrl` + `Shift` + `J` en Windows/Linux o `Command` + `Option` + `J` en MacOS para iniciar el panel de **consola** en el DevTools.  
+Si desea revisar los registros del código javaScript front-end o ejecutar rápidamente algún script, abra la **consola.**   Para iniciar la **herramienta de** consola en DevTools, selecciona `Ctrl` + `Shift` + `J` \(Windows/Linux\) o `Command` + `Option` + `J` \(macOS\).  
 
 ## Herramientas básicas  
 
-:::image type="complex" source="./media/devtools-core-tools.png" alt-text="Herramientas de Microsoft Edge (cromo) DevTools Core" lightbox="./media/devtools-core-tools.png":::
-   Herramientas de Microsoft Edge (cromo) DevTools Core  
+:::image type="complex" source="./media/devtools-core-tools.png" alt-text="Herramientas principales de Microsoft Edge (Chromium) DevTools" lightbox="./media/devtools-core-tools.png":::
+   Herramientas principales de Microsoft Edge (Chromium) DevTools  
 :::image-end::: 
 
-La DevTools Microsoft Edge \ (cromo \) incluye los siguientes paneles.  
+Las DevTools de Microsoft Edge \(Chromium\) incluyen las siguientes herramientas.  
 
-*   Un **panel de elementos** para editar HTML y CSS, inspeccionar propiedades de accesibilidad, visualizar escuchas de eventos y definir puntos de interrupción de mutación de DOM  
-*   Una **consola** para ver y filtrar los mensajes de registro, inspeccionar objetos de JavaScript y nodos de DOM y ejecutar JavaScript en el contexto de la ventana o marco seleccionados  
-*   Panel **orígenes** para abrir y editar en vivo el código, establecer puntos de interrupción, recorrer el código y ver el estado de su sitio web una línea de JavaScript a la vez  
-*   Un panel de **red** para supervisar e inspeccionar las solicitudes y respuestas de la red y de la memoria caché del explorador   
-*   Un panel de **rendimiento** para generar perfiles de tiempo y de los recursos del sistema necesarios para su sitio  
-*   Un panel de **memoria** para medir su uso de los recursos de memoria y comparar instantáneas de pila en diferentes estados del tiempo de ejecución de código.  
-*   Un panel de **aplicación** para inspeccionar, modificar y depurar manifiestos de aplicaciones Web, trabajos de servicios y cachés de trabajos de servicios.  También puede inspeccionar y administrar almacenamiento, bases de datos y memorias caché desde el panel **aplicación** .  
-*   Un panel de **seguridad** para depurar problemas de seguridad y asegurarse de que ha implementado correctamente HTTPS en su sitio Web.  HTTPS proporciona seguridad crítica e integridad de datos tanto para el sitio como para los usuarios que proporcionen información personal en su sitio.  
-*   Un panel de **Auditoría** \ (ahora con el nombre **Lighthouse**\) para ejecutar una auditoría de tu sitio Web.  Los resultados de la auditoría le ayudan a mejorar la calidad de su sitio de la siguiente manera.  
-    *   Detecta errores comunes relacionados con hacer que tu sitio web sea accesible, seguro, de rendimiento, etc.  
-    *   Corrija cada error.  
+*   Una **herramienta Elements** para editar HTML y CSS, inspeccionar las propiedades de accesibilidad, ver agentes de escucha de eventos y establecer puntos de interrupción de mutación dom  
+*   Una **consola** para revisar y filtrar mensajes de registro, inspeccionar objetos JavaScript y nodos DOM y ejecutar JavaScript en el contexto de la ventana o el marco seleccionados  
+*   Una **herramienta De** orígenes para abrir y editar el código, establecer puntos de interrupción, pasar por el código y mostrar el estado de la página web
+*   Una **herramienta de** red para supervisar e inspeccionar solicitudes y respuestas de la memoria caché de la red y del explorador   
+*   Una **herramienta de** rendimiento para perfiles de la hora y los recursos del sistema que necesita el sitio  
+*   Una **herramienta de** memoria para medir el uso de recursos de memoria y comparar instantáneas de montón en diferentes estados de tiempo de ejecución de código  
+*   Una **herramienta de** aplicación para inspeccionar, modificar y depurar manifiestos de aplicaciones web, trabajadores de servicio y cachés de trabajadores de servicio.  También puede inspeccionar y administrar el almacenamiento, las bases de datos y las memorias caché desde la **herramienta de** aplicación.  
+*   Una **herramienta de** seguridad para depurar problemas de seguridad y asegurarse de que ha implementado correctamente HTTPS en su página web.  HTTPS proporciona seguridad crítica e integridad de datos tanto para el sitio como para los usuarios que proporcionan información personal en el sitio.  
+*   Una **herramienta de** auditoría \(ahora se ha cambiado el nombre de **Lugar**\) para ejecutar una auditoría de la página web.  Los resultados de la auditoría le ayudarán a mejorar la calidad del sitio de las siguientes maneras.  
+    *   Detectar errores comunes relacionados con hacer que su página web sea accesible, segura, con rendimiento, y así sucesivamente.  
+    *   Se soluciona cada error.  
     *   Crear un PWA.  
         
 [!INCLUDE [audits-panel-note](./includes/audits-panel-note.md)]  
 
-Envía tus [comentarios y solicitudes de características](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+Envíe sus [comentarios y solicitudes de características.](#getting-in-touch-with-the-microsoft-edge-devtools-team)  
 
 ## Extensiones  
 
-Es posible que hayas usado las extensiones de la DevTools para ayudarte a diagnosticar y depurar problemas al crear sitios web o aplicaciones.  Puede adquirir las extensiones para Microsoft Edge desde la página de [Complementos de Microsoft Edge][MicrosoftEdgeAddonsExtensions] .  Desde la página de [Complementos de Microsoft Edge][MicrosoftEdgeAddonsExtensions] , puede examinar las extensiones de DevTools desde la categoría **herramientas de desarrollo** o buscar una extensión específica.  
+Es posible que haya accedido a DevTools con extensiones al diagnosticar y depurar problemas mientras creó sus páginas web \(o aplicaciones\). Microsoft Edge extensions are acquired from [Microsoft Edge Add-ons][MicrosoftEdgeAddonsExtensions].  En [los complementos de Microsoft Edge,][MicrosoftEdgeAddonsExtensions]examine las extensiones de DevTools de la categoría **herramientas** para desarrolladores o busque una extensión específica.  
 
-También puede Agregar extensiones desde la [tienda web de Chrome][GoogleChromeWebstoreExtensions].  
+También puede agregar extensiones de [Chrome Web Store.][GoogleChromeWebstoreExtensions]  
 
-:::image type="complex" source="./media/allow-extensions-from-stores.png" alt-text="Tienda web de Chrome en Microsoft Edge" lightbox="./media/allow-extensions-from-stores.png":::
-   Tienda web de Chrome en Microsoft Edge  
+:::image type="complex" source="./media/allow-extensions-from-stores.png" alt-text="Chrome Web Store en Microsoft Edge" lightbox="./media/allow-extensions-from-stores.png":::
+   Chrome Web Store en Microsoft Edge  
 :::image-end:::  
 
-En la parte superior, elija **permitir extensiones de otras tiendas** y, a continuación, elija **permitir** en el cuadro de diálogo que aparece.  
+En la parte superior, elija **Permitir extensiones de otros** almacenes y, a continuación, elija **Permitir** en el cuadro de diálogo que aparece.  
 
 > [!NOTE]
-> Las extensiones instaladas desde orígenes distintos de Microsoft Store no se han verificado y pueden afectar al rendimiento del explorador.  
+> Las extensiones instaladas desde orígenes distintos de Microsoft Store no se han confirmado y pueden afectar al rendimiento del explorador.  
 
-Elija **Agregar a Chrome** para agregar la extensión de DevTools a Microsoft Edge.  
+Elige **Agregar a Chrome** para agregar la extensión DevTools a Microsoft Edge.  
 
-:::image type="complex" source="./media/install-extension-from-chrome-store.png" alt-text="Agregar extensión de la tienda web de Chrome a Microsoft Edge" lightbox="./media/install-extension-from-chrome-store.png":::
-   Agregar extensión de la tienda web de Chrome a Microsoft Edge  
+:::image type="complex" source="./media/install-extension-from-chrome-store.png" alt-text="Agregar extensión de Chrome Web Store a Microsoft Edge" lightbox="./media/install-extension-from-chrome-store.png":::
+   Agregar extensión de Chrome Web Store a Microsoft Edge  
 :::image-end:::  
 
 ## Accesos directos  
 
-Estos métodos abreviados controlan la ventana principal de DevTools, funcionan en todas las herramientas, o ambas.  
+Los siguientes accesos directos controlan la ventana principal de DevTools, funcionan en todas las herramientas o en ambas.  
 
 | Acción | Windows/Linux | macOS |  
 |:--- |:--- | :--- |  
-| Mostrar u ocultar DevTools \(se abre en el último panel visualizado\) | `F12` ni `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
-| Mostrar el panel de consola | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Mostrar la DevTools en el **modo de elemento de inspección** que le permite elegir un elemento del sitio y ver el código HTML y CSS en el panel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
-| Mostrar configuración | `?` ni `Fn`+`F1` | `?` ni `Fn`+`F1` |  
+| Mostrar u ocultar DevTools \(se abre en la última herramienta vista\) | `F12` o `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Mostrar la consola | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
+| Mostrar las DevTools en modo **inspeccionar** elemento que te permite elegir un elemento y mostrar el CÓDIGO HTML y CSS en la **herramienta** Elementos | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
+| Mostrar configuración | `?` o `Fn`+`F1` | `?` o `Fn`+`F1` |  
 | Mostrar el panel siguiente | `Ctrl`+`]` | `Command`+`]` |  
 | Mostrar el panel anterior | `Ctrl`+`[` | `Command`+`[` |  
-| Acople el DevTools en la última posición utilizada.  Si el DevTools permanece en la posición predeterminada para toda la sesión, el acceso directo desacopla la DevTools en una ventana independiente. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
-| Activar o desactivar el **modo de dispositivo** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
-| Activar o desactivar **inspeccionar el modo de elemento** que le permite seleccionar un elemento del sitio y ver el código HTML y CSS en el panel **elementos** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
+| Acopla las DevTools en la última posición usada.  Si Las DevTools permanecen en la posición predeterminada para toda la sesión, el acceso directo desacopla Las DevTools en una ventana independiente | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Alternar **modo de dispositivo** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
+| Alternar **el modo de inspección de** elementos que le permite elegir un elemento y mostrar el CÓDIGO HTML y CSS en la **herramienta** Elementos | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Mostrar el menú de comandos | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Mostrar u ocultar el cajón | `Esc` | `Esc` |  
-| Actualizar  Fefreshes la página con la memoria caché.  | `F5` ni `Ctrl`+`R` | `Command`+`R` |  
-| Actualización de hardware.  Fuerza a que Microsoft Edge Descargue los recursos de nuevo y vuelve a cargarlos.  Es posible que los recursos usados puedan proceder de una versión almacenada en caché | `Ctrl`+`F5` ni `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| Buscar texto en el panel actual.  No es compatible con los paneles auditoría, aplicación y seguridad | `Ctrl`+`F` | `Command`+`F` |  
-| Mostrar el panel de búsqueda en el cajón, que le permite buscar texto en todos los recursos cargados | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Abrir un archivo en el panel orígenes | `Ctrl`+`O` ni `Ctrl`+`P` | `Command`+`O` ni `Command`+`P` |  
+| Actualizar  Actualiza la página web mediante la memoria caché.  | `F5` o `Ctrl`+`R` | `Command`+`R` |  
+| Actualización de forma automática.  Fuerza a Microsoft Edge a descargar recursos de nuevo y volver a cargarlos.  Los recursos que se usan pueden provienen de una versión almacenada en caché | `Ctrl`+`F5` o `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Busque texto en el panel actual.  No se admite en las herramientas auditorías, aplicaciones y seguridad | `Ctrl`+`F` | `Command`+`F` |  
+| Mostrar la herramienta de búsqueda en el cajón, que le permite buscar texto en todos los recursos cargados | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
+| Abrir un archivo en el panel Orígenes | `Ctrl`+`O` o `Ctrl`+`P` | `Command`+`O` o `Command`+`P` |  
 | Acercar | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Alejar | `Ctrl`+`-` | `Command`+`-` |  
 | Restaurar el nivel de zoom predeterminado | `Ctrl`+`0` | `Command`+`0` |  
-| Ejecutar fragmento de código | `Ctrl`+`O`o bien `Ctrl` + `P` , escriba `!` seguido del nombre del script y, a continuación, pulse `Enter` | Presione `Command` + `O` o `Command` + `P` , escriba `!` seguido del nombre del script y, a continuación, pulse `Enter` |  
+| Ejecutar fragmento de código | `Ctrl`+`O`o `Ctrl` + `P` , escriba `!` seguido del nombre del script y, a continuación, presione `Enter` | Presione `Command` + `O` o `Command` + `P` , escriba seguido del `!` nombre del script y, a continuación, presione `Enter` |  
 | Mostrar código fuente HTML no editable en una pestaña nueva | `Ctrl`+`U` | N/D |  
 
 > [!NOTE]
-> Si está depurando un punto de interrupción o pausado, el método abreviado de **actualización** reanuda primero el tiempo de ejecución.  
+> Si está depurando y pausado en un punto de interrupción, el **acceso** directo Actualizar reanuda primero el tiempo de ejecución.  
 
 ## Consulte también  
 
-*   [DevTools para principiantes: Introducción a HTML y el DOM][DevtoolsGuideChromiumBeginnersHtml]  
-*   [Protocolo de DevTools Microsoft Edge (cromo)][DevtoolsProtocolChromiumIndex]  
+*   [DevTools para principiantes: Introducción a HTML y DOM][DevtoolsGuideChromiumBeginnersHtml]  
+*   [Protocolo DevTools de Microsoft Edge (Chromium)][DevtoolsProtocolChromiumIndex]  
     
 ## Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
-Si deseas obtener una vista previa de las [características más recientes que DevTools][DevtoolsGuideChromiumWhatsNewIndex], descarga [Microsoft Edge Canarias][MicrosoftedgeinsiderDownload], que se construye por la noche.  
+Si quieres obtener una vista previa de las características más recientes que vienen a [DevTools,][DevtoolsGuideChromiumWhatsNewIndex]descarga [Microsoft Edge Canary,][MicrosoftedgeinsiderDownload]que se compila todas las noches.  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para principiantes: Introducción a HTML y DOM | Microsoft docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Novedades de Microsoft Edge (cromo) DevTools | Microsoft docs"  
-[DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo de DevTools Microsoft Edge (cromo) | Microsoft docs"  
+[DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para principiantes: Introducción a HTML y dom | Microsoft Docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Novedades de Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo DevTools de Microsoft Edge (Chromium) | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos de Microsoft Edge"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider Channels"  
 
-[GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensiones | Tienda web de Chrome"  
+[GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensiones | Chrome Web Store"  
