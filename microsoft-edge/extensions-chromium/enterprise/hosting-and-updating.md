@@ -1,51 +1,46 @@
 ---
-description: Extensions documentación de Enterprise para extensiones de Edge (cromo).
-title: Hospedaje y actualización
+description: Hospedar y publicar extensiones en la empresa para Microsoft Edge (Chromium).
+title: Publicar y actualizar extensiones en el almacén de complementos de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
+ms.openlocfilehash: 91fdd5c2f625890653085e8999da3e513b072348
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015705"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327690"
 ---
-# <span data-ttu-id="6eb08-104">Hospedaje y actualización de tiendas web</span><span class="sxs-lookup"><span data-stu-id="6eb08-104">Web Store Hosting and Updating</span></span>  
+# <span data-ttu-id="65c69-104">Publicar y actualizar extensiones en el almacén de complementos de Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="65c69-104">Publish and update extensions in the Microsoft Edge Add-ons store</span></span>  
 
-<span data-ttu-id="6eb08-105">La mayoría de las extensiones se hospedan en el [Catálogo de complementos de Microsoft Edge Insider \ (Microsoft Edge Insider addons \)][MicrosoftStoreExtensions] para proteger mejor a los usuarios de las extensiones malintencionadas.</span><span class="sxs-lookup"><span data-stu-id="6eb08-105">Most Extensions are hosted in the [Microsoft Edge Insider Addons catalog \(Microsoft Edge Insider Addons\)][MicrosoftStoreExtensions] to best protect users from malicious Extensions.</span></span>  
+<span data-ttu-id="65c69-105">La mayoría de las extensiones se publican en el almacén de complementos de [Microsoft Edge][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] para proteger a los usuarios de extensiones malintencionadas.</span><span class="sxs-lookup"><span data-stu-id="65c69-105">Most extensions are published to the [Microsoft Edge Add-ons store][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] to protect users from malicious extensions.</span></span>  
 
-## <span data-ttu-id="6eb08-106">Hospedaje</span><span class="sxs-lookup"><span data-stu-id="6eb08-106">Hosting</span></span>  
+## <span data-ttu-id="65c69-106">Opciones de publicación para extensiones</span><span class="sxs-lookup"><span data-stu-id="65c69-106">Publish options for extensions</span></span>  
 
-<span data-ttu-id="6eb08-107">Todas las extensiones se distribuyen a los usuarios como un archivo ZIP especial con un sufijo. CRX.</span><span class="sxs-lookup"><span data-stu-id="6eb08-107">All Extensions are distributed to users as a special ZIP file with a .crx suffix.</span></span>  <span data-ttu-id="6eb08-108">Las extensiones hospedadas en los complementos de Microsoft Edge se cargan como archivos. zip.</span><span class="sxs-lookup"><span data-stu-id="6eb08-108">Extensions hosted in the Microsoft Edge Addons are uploaded as .zip files.</span></span> <span data-ttu-id="6eb08-109">El proceso de publicación convierte automáticamente el archivo. zip en un archivo. CRX.</span><span class="sxs-lookup"><span data-stu-id="6eb08-109">The publishing process automatically converts the .zip into a .crx file.</span></span>  
+<span data-ttu-id="65c69-107">Todas las extensiones se distribuyen a los usuarios como un archivo especial \( `.zip` \) con un `.crx` sufijo.</span><span class="sxs-lookup"><span data-stu-id="65c69-107">All extensions are distributed to users as a special archive \(`.zip`\) file with a `.crx` suffix.</span></span>  <span data-ttu-id="65c69-108">Las extensiones publicadas en el almacén de complementos de Microsoft Edge se cargan como `.zip` archivos.</span><span class="sxs-lookup"><span data-stu-id="65c69-108">Extensions published to the Microsoft Edge Add-ons store are uploaded as `.zip` files.</span></span>  <span data-ttu-id="65c69-109">El proceso de publicación convierte automáticamente el `.zip` archivo en un `.crx` archivo.</span><span class="sxs-lookup"><span data-stu-id="65c69-109">The publishing process automatically converts the `.zip` file into a `.crx` file.</span></span>  
 
-<span data-ttu-id="6eb08-110">Hay dos excepciones a la regla de hospedaje de complementos de Microsoft Edge:</span><span class="sxs-lookup"><span data-stu-id="6eb08-110">There are two exceptions to the Microsoft Edge Addons hosting rule:</span></span>  
+<span data-ttu-id="65c69-110">Los dos escenarios siguientes no requieren que publiques la extensión en el almacén de complementos de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="65c69-110">The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons store.</span></span>  
 
-1.  <span data-ttu-id="6eb08-111">Extensiones que se distribuyen a través de la Directiva de empresa.</span><span class="sxs-lookup"><span data-stu-id="6eb08-111">Extensions that are distributed through the Enterprise policy.</span></span>  
-1.  <span data-ttu-id="6eb08-112">Directorios de extensión sin empaquetar desde un equipo local mientras está en el modo de programador.</span><span class="sxs-lookup"><span data-stu-id="6eb08-112">Unpacked Extension directories from a local machine while in developer mode.</span></span>  
+*   <span data-ttu-id="65c69-111">Extensiones distribuidas mediante la directiva enterprise.</span><span class="sxs-lookup"><span data-stu-id="65c69-111">Extensions distributed using Enterprise policy.</span></span>  
+*   <span data-ttu-id="65c69-112">Usar directorios de extensión desempaquetar en un equipo local cuando Microsoft Edge está en modo de desarrollador.</span><span class="sxs-lookup"><span data-stu-id="65c69-112">Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.</span></span>  
 
-## <span data-ttu-id="6eb08-113">Actualizándose</span><span class="sxs-lookup"><span data-stu-id="6eb08-113">Updating</span></span>  
+## <span data-ttu-id="65c69-113">Actualizaciones de extensiones</span><span class="sxs-lookup"><span data-stu-id="65c69-113">Updates to extensions</span></span>
 
-<span data-ttu-id="6eb08-114">El explorador de Microsoft Edge comprueba periódicamente si hay nuevas versiones de las extensiones instaladas y las actualizaciones sin la intervención del usuario.</span><span class="sxs-lookup"><span data-stu-id="6eb08-114">The Microsoft Edge browser periodically checks for new versions of installed Extensions and updates each without user intervention.</span></span>  
-
-> [!NOTE]
-> <span data-ttu-id="6eb08-115">Se agregarán los pasos para actualizar una extensión en los complementos de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="6eb08-115">Steps to update an Extension on Microsoft Edge Addons are planned be added.</span></span>  
-
-<!-- image links -->
+<span data-ttu-id="65c69-114">El explorador Microsoft Edge comprueba periódicamente si hay nuevas versiones de extensiones instaladas y actualiza cada una de ellas sin la intervención del usuario.</span><span class="sxs-lookup"><span data-stu-id="65c69-114">The Microsoft Edge browser periodically checks for new versions of installed extensions and updates each without user intervention.</span></span>  
 
 <!-- links -->  
 
-[MicrosoftStoreExtensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Extensiones-complementos de Insider de Microsoft Edge"  
+[MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Extensiones: complementos de Microsoft Edge Insider | Microsoft"  
 
 > [!NOTE]
-> <span data-ttu-id="6eb08-117">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="6eb08-117">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="6eb08-118">La página original se encuentra [aquí](https://developer.chrome.com/extensions/hosting).</span><span class="sxs-lookup"><span data-stu-id="6eb08-118">The original page is found [here](https://developer.chrome.com/extensions/hosting).</span></span>  
+> <span data-ttu-id="65c69-116">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="65c69-116">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="65c69-117">La página original se encuentra [aquí.](https://developer.chrome.com/extensions/hosting)</span><span class="sxs-lookup"><span data-stu-id="65c69-117">The original page is found [here](https://developer.chrome.com/extensions/hosting).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="6eb08-120">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="6eb08-120">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="65c69-119">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="65c69-119">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

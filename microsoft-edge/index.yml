@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/10/2020
+  ms.date: 02/04/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 787e80a0db6754d9d2046084f601294aa68a62a5
-  ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+  ms.openlocfilehash: 150dcdf1a5d4f5ac06a4d0b105f89a05907d7ddb
+  ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 01/23/2021
-  ms.locfileid: "11297726"
+  ms.lasthandoff: 02/13/2021
+  ms.locfileid: "11327634"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal estable oficial)
@@ -142,7 +142,7 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
     - title: 'Extensiones: Guía para desarrolladores'
       links:
-      - text: Portabilidad de la extensión Chromium a Microsoft Edge
+      - text: Extensión port Chromium a Microsoft Edge
         url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
       - text: Alternar métodos de distribución de extensiones
         url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
@@ -162,7 +162,7 @@ additionalContent:
       links:
       - text: Directiva de seguridad de contenido
         url: /microsoft-edge/extensions-chromium/store-policies/csp
-      - text: Directivas para desarrolladores de catálogo de complementos de Microsoft Edge
+      - text: Directivas para desarrolladores del catálogo de complementos de Microsoft Edge
         url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
     - title: Aplicaciones web progresivas
       links:

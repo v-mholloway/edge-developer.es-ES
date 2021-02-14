@@ -1,146 +1,122 @@
 ---
-description: Obtenga información sobre cómo registrarse en una cuenta de desarrollador para publicar extensiones en el almacén de complementos de Microsoft Edge.
-title: Regístrate como programador de extensiones de Microsoft Edge para publicar extensiones
+description: Aprende a registrarte en una cuenta de desarrollador para publicar extensiones en la tienda de complementos de Microsoft Edge.
+title: Registrarse como desarrollador de extensiones de Microsoft Edge para publicar extensiones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/05/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: 87c5dbfdec65ae3957724ae846a06480a2488084
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
+ms.openlocfilehash: 8277390bb78e6692345e9c30ef26f60528655374
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015747"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327522"
 ---
-# <span data-ttu-id="8090f-104">Regístrate como desarrollador de extensiones de Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="8090f-104">Register as a Microsoft Edge extension developer</span></span>  
+# <span data-ttu-id="f5ef0-104">Registrarse como desarrollador de extensiones de Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="f5ef0-104">Register as a Microsoft Edge extension developer</span></span>  
 
-<span data-ttu-id="8090f-105">Para enviar su extensión al sitio web de complementos de Microsoft Edge, debe estar registrado como desarrollador con el programa Microsoft Edge en el [centro del Partner][MicrosoftPartnerCenter].</span><span class="sxs-lookup"><span data-stu-id="8090f-105">To submit your extension to the Microsoft Edge add-ons website, you must be registered as a developer with the Microsoft Edge program on [Partner Center][MicrosoftPartnerCenter].</span></span>  <span data-ttu-id="8090f-106">No hay ningún cargo por inscripción en el envío de extensiones al programa Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="8090f-106">There is no registration fee involved in submitting extensions to the Microsoft Edge program.</span></span>  
+<span data-ttu-id="f5ef0-105">Para enviar la extensión al catálogo de complementos de Microsoft Edge, debes estar registrado como desarrollador con el programa Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-105">To submit your extension to the Microsoft Edge Add-ons catalog, you must be registered as a developer with the Microsoft Edge program.</span></span>  <span data-ttu-id="f5ef0-106">El programa Microsoft Edge se encuentra en el [Centro de partners.][MicrosoftPartnerCenter]</span><span class="sxs-lookup"><span data-stu-id="f5ef0-106">The Microsoft Edge program is located on [Partner Center][MicrosoftPartnerCenter].</span></span>  
 
-## <span data-ttu-id="8090f-107">Antes de comenzar</span><span class="sxs-lookup"><span data-stu-id="8090f-107">Before you begin</span></span>  
+> [!IMPORTANT]
+> <span data-ttu-id="f5ef0-107">No hay ninguna cuota de registro implicada en el envío de extensiones al programa Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-107">There is no registration fee involved in submitting extensions to the Microsoft Edge program.</span></span>  
 
-<span data-ttu-id="8090f-108">Si no tiene una cuenta o si tiene una cuenta comercial existente con el centro de Partners, debe crear una nueva cuenta de [Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] para registrarse con el programa Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="8090f-108">If you do not have an account or if you have an existing commercial account with Partner Center, you must create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] to register with the Microsoft Edge program.</span></span>  <span data-ttu-id="8090f-109">Para crear una cuenta de Microsoft \ (Outlook/Live/Hotmail \), visita [account.Microsoft.com][MicrosoftAccount] y selecciona **crear una cuenta de Microsoft**.</span><span class="sxs-lookup"><span data-stu-id="8090f-109">To create a Microsoft account \(Outlook/live/Hotmail\), visit [account.microsoft.com][MicrosoftAccount] and select **Create a Microsoft account**.</span></span>  <span data-ttu-id="8090f-110">Si está registrado en el centro de socios con una cuenta de desarrollador, use la cuenta de Microsoft correspondiente \ (MSA \) para iniciar sesión y, a continuación, inscríbase en el programa Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="8090f-110">If you are registered on the Partner center with a developer account, use the corresponding Microsoft account \(MSA\) to sign-in, and then enroll in the Microsoft Edge program.</span></span>  
+## <span data-ttu-id="f5ef0-108">Antes de comenzar</span><span class="sxs-lookup"><span data-stu-id="f5ef0-108">Before you begin</span></span>  
+
+<span data-ttu-id="f5ef0-109">Si no tienes una cuenta o si tienes una cuenta comercial existente con el Centro de partners, crea una nueva cuenta [de Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] para registrarte con el programa Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-109">If you don't have an account or if you have an existing commercial account with Partner Center, create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] to register with the Microsoft Edge program.</span></span>  <span data-ttu-id="f5ef0-110">Para crear una cuenta de Microsoft \(Outlook/live/Hotmail\), complete las siguientes acciones.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-110">To create a Microsoft account \(Outlook/live/Hotmail\), complete the following actions.</span></span>  
+
+1.  <span data-ttu-id="f5ef0-111">Vaya a [account.microsoft.com][MicrosoftAccount].</span><span class="sxs-lookup"><span data-stu-id="f5ef0-111">Navigate to [account.microsoft.com][MicrosoftAccount].</span></span>  
+1.  <span data-ttu-id="f5ef0-112">Elija **Crear una cuenta de Microsoft.**</span><span class="sxs-lookup"><span data-stu-id="f5ef0-112">Choose **Create a Microsoft account**.</span></span>  
+    
+<span data-ttu-id="f5ef0-113">Si tienes una cuenta de desarrollador registrada en el Centro de partners, usa la cuenta microsoft correspondiente \(MSA\) para iniciar sesión en tu cuenta de desarrollador y, a continuación, inscríbete en el programa Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-113">If you have a developer account registered on Partner center, use the corresponding Microsoft account \(MSA\) to sign into your developer account, and then enroll in the Microsoft Edge program.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="8090f-111">Hoy, el equipo de extensiones de Microsoft Edge no admite el registro con una cuenta profesional o educativa.</span><span class="sxs-lookup"><span data-stu-id="8090f-111">Today the Microsoft Edge extensions team does not support signing up with a work or school account.</span></span>  <span data-ttu-id="8090f-112">En el futuro, el equipo de extensiones de Microsoft Edge planea admitir la vinculación de inquilinos de AAD a cuentas de MSA para la administración de extensiones.</span><span class="sxs-lookup"><span data-stu-id="8090f-112">In the future, the Microsoft Edge extensions team plans to support linking AAD tenants to MSA accounts for extension management.</span></span>  
+> <span data-ttu-id="f5ef0-114">Hoy en día, las extensiones de Microsoft Edge no admiten el registro con una cuenta laboral o educativa.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-114">Today the Microsoft Edge extensions does not support signing up with a work or school account.</span></span>  <span data-ttu-id="f5ef0-115">En el futuro, el equipo de extensiones de Microsoft Edge planea admitir la vinculación de inquilinos de Azure AD a cuentas de MSA para la administración de extensiones.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-115">In the future, the Microsoft Edge extensions team plans to support linking Azure AD tenants to MSA accounts for extension management.</span></span>  
 
-## <span data-ttu-id="8090f-113">Inscribirse en el programa Microsoft Edge en el centro del Partner</span><span class="sxs-lookup"><span data-stu-id="8090f-113">Enroll in the Microsoft Edge program on Partner Center</span></span>  
+## <span data-ttu-id="f5ef0-116">Inscribirse en el programa Microsoft Edge en el Centro de partners</span><span class="sxs-lookup"><span data-stu-id="f5ef0-116">Enroll in the Microsoft Edge program on Partner Center</span></span>  
 
-1.  <span data-ttu-id="8090f-114">Vaya a la [Página de desarrollador][MicrosoftPartnerCenter] y seleccione **ir al panel**.</span><span class="sxs-lookup"><span data-stu-id="8090f-114">Go to the [developer page][MicrosoftPartnerCenter] and select **GO TO DASHBOARD**.</span></span>  
-1.  <span data-ttu-id="8090f-115">Si aún no ha iniciado sesión con una **cuenta de Microsoft**, inicie sesión ahora o cree una nueva cuenta de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="8090f-115">If you are not already signed in with a **Microsoft account**, sign-in now, or create a new Microsoft account.</span></span>  <span data-ttu-id="8090f-116">Usa la misma cuenta de Microsoft que usas para iniciar sesión en tu cuenta de desarrollador.</span><span class="sxs-lookup"><span data-stu-id="8090f-116">You use the same Microsoft account that you use to sign into your developer account.</span></span>  <span data-ttu-id="8090f-117">Después de iniciar sesión, se muestra este formulario de registro.</span><span class="sxs-lookup"><span data-stu-id="8090f-117">After you sign-in, this registration form is displayed.</span></span>  
+1.  <span data-ttu-id="f5ef0-117">Vaya a la [página del desarrollador][MicrosoftPartnerCenter] y elija IR AL **PANEL.**</span><span class="sxs-lookup"><span data-stu-id="f5ef0-117">Navigate to the [developer page][MicrosoftPartnerCenter] and choose **GO TO DASHBOARD**.</span></span>  
+1.  <span data-ttu-id="f5ef0-118">Si tienes una cuenta de Microsoft, inicia sesión en ella ahora.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-118">If you have a Microsoft account, sign into it now.</span></span>  <span data-ttu-id="f5ef0-119">Si no es así, cree una nueva cuenta de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-119">If not, create a new Microsoft account.</span></span>  <span data-ttu-id="f5ef0-120">Usa la misma cuenta de Microsoft que usas para iniciar sesión en tu cuenta de desarrollador.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-120">Use the same Microsoft account that you use to sign into your developer account.</span></span>  <span data-ttu-id="f5ef0-121">Después de iniciar sesión, se muestra un formulario de registro.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-121">After you sign in, a registration form is displayed.</span></span> <span data-ttu-id="f5ef0-122">En la tabla siguiente se describen los campos del formulario de registro.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-122">The following table describes the fields on the registration form.</span></span>  
     
-    <span data-ttu-id="8090f-118">Para inscribirse en el programa Microsoft Edge, inicie sesión en su cuenta y complete el formulario.</span><span class="sxs-lookup"><span data-stu-id="8090f-118">To enroll in the Microsoft Edge program, sign in-to your account, and complete the form.</span></span>  
-    <!-- -->
+    <span data-ttu-id="f5ef0-123">Para inscribirse en el programa Microsoft Edge, inicie sesión en su cuenta y complete el formulario.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-123">To enroll in the Microsoft Edge program, sign in-to your account, and complete the form.</span></span>  
+    
     :::row:::
        :::column span="1":::
-          **<span data-ttu-id="8090f-119">País o región de la cuenta</span><span class="sxs-lookup"><span data-stu-id="8090f-119">Account country/region</span></span>**  
+          **<span data-ttu-id="f5ef0-124">País o región de la cuenta</span><span class="sxs-lookup"><span data-stu-id="f5ef0-124">Account country/region</span></span>**  
        :::column-end:::
        :::column span="2":::
-          <span data-ttu-id="8090f-120">Este campo es el lugar donde vives o donde se encuentra tu empresa.</span><span class="sxs-lookup"><span data-stu-id="8090f-120">This field is where you either live or your business is located.</span></span>  
+          <span data-ttu-id="f5ef0-125">Este campo es donde se encuentra o donde se encuentra su empresa.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-125">This field is where you either live or your business is located.</span></span>  
           
           > [!IMPORTANT]
-          > <span data-ttu-id="8090f-121">Después de la inscripción, no podrá cambiar el valor de este campo.</span><span class="sxs-lookup"><span data-stu-id="8090f-121">After enrollment, you are not able to change the value of this field.</span></span>  
+          > <span data-ttu-id="f5ef0-126">Después de la inscripción, el valor de este campo es de solo lectura.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-126">After enrollment, the value of this field is read-only.</span></span>  
+          
        :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="1":::
-          **<span data-ttu-id="8090f-122">Tipo de cuenta</span><span class="sxs-lookup"><span data-stu-id="8090f-122">Account type</span></span>**  
+          **<span data-ttu-id="f5ef0-127">Tipo de cuenta</span><span class="sxs-lookup"><span data-stu-id="f5ef0-127">Account type</span></span>**  
        :::column-end:::
        :::column span="2":::
-          <span data-ttu-id="8090f-123">El programa Microsoft Edge del [centro de Partners][MicrosoftPartnerCenter] ofrece cuentas individuales y de empresa, que se describen en detalle en la siguiente tabla.</span><span class="sxs-lookup"><span data-stu-id="8090f-123">The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts, which are described in detail in the table that follows.</span></span>  <span data-ttu-id="8090f-124">Ambos tipos de cuenta le permiten publicar extensiones en el catálogo de complementos de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="8090f-124">Both account types allow you to publish extensions to the Microsoft Edge add-ons catalog.</span></span>  
+          <span data-ttu-id="f5ef0-128">El programa Microsoft Edge del [Centro de partners][MicrosoftPartnerCenter] ofrece cuentas individuales y de empresa.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-128">The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts.</span></span>  <span data-ttu-id="f5ef0-129">Las cuentas se describen en detalle en las siguientes viñetas.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-129">The accounts are described in detail in the following bullets.</span></span>  <span data-ttu-id="f5ef0-130">Ambos tipos de cuenta te permiten publicar extensiones en el catálogo de complementos de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-130">Both account types allow you to publish extensions to the Microsoft Edge Add-ons catalog.</span></span>  
           
           > [!IMPORTANT]
-          > <span data-ttu-id="8090f-125">Después de la inscripción, no podrá cambiar el valor de este campo.</span><span class="sxs-lookup"><span data-stu-id="8090f-125">After enrollment, you are not able to change the value of this field.</span></span>  
+          > <span data-ttu-id="f5ef0-131">Después de la inscripción, no podrá cambiar el valor de este campo.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-131">After enrollment, you are not able to change the value of this field.</span></span>  
           
           *   `Individual account`  
-              <span data-ttu-id="8090f-126">Una cuenta individual es adecuada para un desarrollador que no está asociado con una empresa.</span><span class="sxs-lookup"><span data-stu-id="8090f-126">An individual account is appropriate for a developer not associated with a company.</span></span>  <span data-ttu-id="8090f-127">El proceso de verificación de cuenta es más corto e implica comprobar que el nombre para mostrar del publicador está disponible.</span><span class="sxs-lookup"><span data-stu-id="8090f-127">The account verification process is shorter, and involves verifying that the publisher display name is available.</span></span>  
+              <span data-ttu-id="f5ef0-132">Una cuenta individual es adecuada para un desarrollador que no está asociado a una empresa.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-132">An individual account is appropriate for a developer not associated with a company.</span></span>  <span data-ttu-id="f5ef0-133">El proceso de comprobación de la cuenta es más corto e implica comprobar que el nombre para mostrar del editor está disponible.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-133">The account verification process is shorter, and involves verifying that the publisher display name is available.</span></span>  
 
           *   `Company account`  
-              <span data-ttu-id="8090f-128">Una cuenta de empresa está asociada a una organización o empresa.</span><span class="sxs-lookup"><span data-stu-id="8090f-128">A company account is associated with an organization or business.</span></span>  <span data-ttu-id="8090f-129">El proceso de verificación de cuenta es más largo e incluye una confirmación de que tienes autorización para crear la cuenta de tu empresa.</span><span class="sxs-lookup"><span data-stu-id="8090f-129">The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.</span></span>  <span data-ttu-id="8090f-130">La duración del proceso puede variar de unos días a unas semanas.</span><span class="sxs-lookup"><span data-stu-id="8090f-130">The duration of the process may range from a few days to a few weeks.</span></span>  <span data-ttu-id="8090f-131">Tu empresa puede recibir llamadas telefónicas de socios de verificación de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="8090f-131">Your company may receive phone calls from Microsoft verification partners.</span></span>  
+              <span data-ttu-id="f5ef0-134">Una cuenta de empresa está asociada a una organización o empresa.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-134">A company account is associated with an organization or business.</span></span>  <span data-ttu-id="f5ef0-135">El proceso de verificación de la cuenta es más largo e implica la confirmación de que estás autorizado a crear la cuenta para tu empresa.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-135">The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.</span></span>  <span data-ttu-id="f5ef0-136">La duración del proceso puede oscilar entre unos días y unas pocas semanas.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-136">The duration of the process may range from a few days to a few weeks.</span></span>  <span data-ttu-id="f5ef0-137">Su empresa puede recibir llamadas telefónicas de socios de verificación de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-137">Your company may receive phone calls from Microsoft verification partners.</span></span>  
+              
        :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="1":::
-          **<span data-ttu-id="8090f-132">Nombre para mostrar del publicador</span><span class="sxs-lookup"><span data-stu-id="8090f-132">Publisher display name</span></span>**  
+          **<span data-ttu-id="f5ef0-138">Nombre para mostrar del editor</span><span class="sxs-lookup"><span data-stu-id="f5ef0-138">Publisher display name</span></span>**  
        :::column-end:::
        :::column span="2":::
-          <span data-ttu-id="8090f-133">Este campo es el nombre que se muestra a los usuarios en el catálogo de complementos de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="8090f-133">This field is the name shown to users in the Microsoft Edge add-ons catalog.</span></span>  <span data-ttu-id="8090f-134">Puede usar un nombre solo si está disponible y tiene los derechos para usarlo.</span><span class="sxs-lookup"><span data-stu-id="8090f-134">You may use a name only if it is available, and you have the rights to use it.</span></span>  <span data-ttu-id="8090f-135">Las cuentas de la empresa deben usar el nombre comercial registrado de su organización.</span><span class="sxs-lookup"><span data-stu-id="8090f-135">Company accounts must use the registered business name of your organization.</span></span>  
+          <span data-ttu-id="f5ef0-139">Este campo contiene el nombre que se muestra en el catálogo de complementos de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-139">This field contains the name that displays in the Microsoft Edge Add-ons catalog.</span></span>  <span data-ttu-id="f5ef0-140">Puede usar un nombre solo si está disponible y tiene los derechos para usarlo.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-140">You may use a name only if it's available, and you have the rights to use it.</span></span>  <span data-ttu-id="f5ef0-141">Las cuentas de empresa deben usar el nombre comercial registrado de la organización.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-141">Company accounts must use the registered business name of your organization.</span></span>  
           
           > [!NOTE]
-          > <span data-ttu-id="8090f-136">La longitud máxima de este campo es de 50 caracteres.</span><span class="sxs-lookup"><span data-stu-id="8090f-136">The maximum length for this field is 50 characters.</span></span>  
+          > <span data-ttu-id="f5ef0-142">La longitud máxima de este campo es de 50 caracteres.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-142">The maximum length for this field is 50 characters.</span></span>  
+          
        :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="1":::
-          **<span data-ttu-id="8090f-137">Detalles de contacto</span><span class="sxs-lookup"><span data-stu-id="8090f-137">Contact details</span></span>**  
+          **<span data-ttu-id="f5ef0-143">Detalles de contacto</span><span class="sxs-lookup"><span data-stu-id="f5ef0-143">Contact details</span></span>**  
        :::column-end:::
        :::column span="2":::
-          <span data-ttu-id="8090f-138">Este campo contiene cualquier información de contacto que Microsoft pueda usar para ponerse en contacto con usted en relación con cualquier problema con la cuenta.</span><span class="sxs-lookup"><span data-stu-id="8090f-138">This field contains any contact information that Microsoft may use to contact you regarding any account issues.</span></span>  <span data-ttu-id="8090f-139">Una vez completado el registro, se le enviará una confirmación por correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="8090f-139">After registration is complete, an email confirmation is sent to you.</span></span>  <span data-ttu-id="8090f-140">Para una cuenta de empresa, debe usar la dirección de correo electrónico registrada asociada a su organización.</span><span class="sxs-lookup"><span data-stu-id="8090f-140">For a company account, you must use the registered email address associated with your organization.</span></span>  
+          <span data-ttu-id="f5ef0-144">Este campo contiene cualquier información de contacto que Microsoft use para ponerse en contacto con usted sobre los problemas de la cuenta.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-144">This field contains any contact information that Microsoft uses to contact you about any account issues.</span></span>  <span data-ttu-id="f5ef0-145">Una vez completado el registro, se le enviará una confirmación por correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-145">After registration is complete, an email confirmation is sent to you.</span></span>  <span data-ttu-id="f5ef0-146">Para una cuenta de empresa, debe usar la dirección de correo electrónico registrada asociada a su organización.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-146">For a company account, you must use the registered email address associated with your organization.</span></span>  
        :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="1":::
-          **<span data-ttu-id="8090f-141">Aprobador de la compañía</span><span class="sxs-lookup"><span data-stu-id="8090f-141">Company approver</span></span>**  
+          **<span data-ttu-id="f5ef0-147">Aprobador de la empresa</span><span class="sxs-lookup"><span data-stu-id="f5ef0-147">Company approver</span></span>**  
        :::column-end:::
        :::column span="2":::
-          <span data-ttu-id="8090f-142">Para una cuenta de empresa, debe proporcionar la información de contacto del aprobador de la empresa \ (nombre, dirección de correo electrónico y número de teléfono \).</span><span class="sxs-lookup"><span data-stu-id="8090f-142">For a company account, you must provide the contact information of your company approver \(name, email address, and phone number\).</span></span>  <span data-ttu-id="8090f-143">Microsoft se pone en contacto con el aprobador de la compañía especificado como parte del proceso de verificación para garantizar que la extensión pertenece a su organización.</span><span class="sxs-lookup"><span data-stu-id="8090f-143">Microsoft contacts the company approver specified as a part of the verification process to ensure that the extension belong to your organization.</span></span>  
+          <span data-ttu-id="f5ef0-148">Para una cuenta de empresa, debe proporcionar la información de contacto del aprobador de la empresa.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-148">For a company account, you must provide the contact information of your company approver.</span></span>  <span data-ttu-id="f5ef0-149">La información de contacto incluye el nombre, la dirección de correo electrónico y el número de teléfono.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-149">The contact information includes name, email address, and phone number.</span></span>  <span data-ttu-id="f5ef0-150">Microsoft se pone en contacto con el aprobador de la empresa especificado como parte del proceso de comprobación para asegurarse de que la extensión pertenece a su organización.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-150">Microsoft contacts the company approver specified as a part of the verification process to ensure your extension belongs to your organization.</span></span>  
        :::column-end:::
     :::row-end:::  
-    <!-- -->
-    <!--
-    1.  The **Account country/region** field  
-        
-        This field is where you either live or your business is located.  
-        
-        > [!IMPORTANT]
-        > After enrollment, you are not able to change the value of this field.  
-        
-    1.  The **Account type** field  
-        
-        The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts, which are described in detail in the table that follows.  Both account types allow you to publish extensions to the Microsoft Edge add-ons catalog.  
-        
-        > [!IMPORTANT]
-        > After enrollment, you are not able to change the value of this field.  
-        
-        | Individual account | Company account |  
-        |:--- |:--- |  
-        | Individual accounts are appropriate for developers not associated with a company.  | Company accounts are associated with organizations and businesses.  |  
-        | The account verification process is shorter, and involves verifying that the publisher display name is available.  | The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process may range from a few days to a few weeks.  Your company may receive phone calls from Microsoft verification partners.  |  
-        
-    1.  The **Publisher display name** field  
-        
-        This field is the name shown to users in the Microsoft Edge add-ons catalog.  You may use a name only if it is available, and you have the rights to use it.  Company accounts must use the registered business name of your organization.  
-        
-        > [!NOTE]
-        > The maximum length for this field is 50 characters.  
-        
-    1.  The **Contact details** field  
-        
-        Any contact information that Microsoft may use to contact you regarding any account issues.  After registration is complete, an email confirmation is sent to you.  Company accounts must use the registered email address associated with your organization.  
-        
-    1.  The **Company approver** field  
-        
-        For company accounts, provide the contact information \(name, email address, and phone number\) of your company approver.  Microsoft contacts the company approver specified as a part of the verification process to ensure that the extensions belong to your organization.  
-        -->
-1. <span data-ttu-id="8090f-144">Antes de enviar su formulario de registro, lea y acepte las cláusulas y condiciones del [contrato para desarrolladores de Microsoft Edge][MicrosoftAppDeveloperAgreement].</span><span class="sxs-lookup"><span data-stu-id="8090f-144">Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].</span></span>  
-1. <span data-ttu-id="8090f-145">Para completar la inscripción, seleccione **Finalizar**.</span><span class="sxs-lookup"><span data-stu-id="8090f-145">To complete your enrollment, select **Finish**.</span></span>  
+    
+1.  <span data-ttu-id="f5ef0-151">Antes de enviar el formulario de registro, lea y acepte los términos y condiciones del Contrato para desarrolladores [de Microsoft Edge.][MicrosoftAppDeveloperAgreement]</span><span class="sxs-lookup"><span data-stu-id="f5ef0-151">Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].</span></span>  
+1.  <span data-ttu-id="f5ef0-152">Para completar la inscripción, elija **Finalizar**.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-152">To complete your enrollment, choose **Finish**.</span></span>  
+    
+## <span data-ttu-id="f5ef0-153">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="f5ef0-153">Next steps</span></span>  
 
-## <span data-ttu-id="8090f-146">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="8090f-146">Next steps</span></span>  
+<span data-ttu-id="f5ef0-154">Para mostrar el estado de verificación, ve al Centro de partners > **configuración de la cuenta.**</span><span class="sxs-lookup"><span data-stu-id="f5ef0-154">To display your verification status, navigate to Partner Center > **Account settings**.</span></span>  <span data-ttu-id="f5ef0-155">Mientras esperas a que se complete el proceso de comprobación, continúa compilando, probar y preparar los envíos.</span><span class="sxs-lookup"><span data-stu-id="f5ef0-155">While you wait for the verification process to complete, continue to build, test, and prepare your submissions.</span></span>  
 
-<span data-ttu-id="8090f-147">Puede ver su estado de verificación en la página Configuración de la **cuenta** en el centro del partner.</span><span class="sxs-lookup"><span data-stu-id="8090f-147">You may view your verification status on the **Account settings** page in Partner Center.</span></span>  <span data-ttu-id="8090f-148">Mientras espera a que se complete el proceso de verificación; puede continuar con la creación, prueba y preparación de los enviados.</span><span class="sxs-lookup"><span data-stu-id="8090f-148">While you wait for the verification process to complete; you may continue to build, test, and prepare your submissions.</span></span>  
-
-<span data-ttu-id="8090f-149">Para obtener más información, vea [publicar una extensión][ExtensionsChromiumPublishExtension].</span><span class="sxs-lookup"><span data-stu-id="8090f-149">For more information, see [Publish an extension][ExtensionsChromiumPublishExtension].</span></span>  <span data-ttu-id="8090f-150">Para obtener información sobre cómo comenzar a usar extensiones, consulte [Introducción a las extensiones de Microsoft Edge (cromo)][ExtensionsChromiumGettingStartedIndex].</span><span class="sxs-lookup"><span data-stu-id="8090f-150">For information on getting started with extensions, see [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex].</span></span>  
+<span data-ttu-id="f5ef0-156">Para obtener más información, vaya [a Publicar una extensión.][ExtensionsChromiumPublishExtension]</span><span class="sxs-lookup"><span data-stu-id="f5ef0-156">For more information, navigate to [Publish an extension][ExtensionsChromiumPublishExtension].</span></span>  <span data-ttu-id="f5ef0-157">Para obtener información sobre cómo empezar a usar extensiones, vaya a Introducción a las extensiones de [Microsoft Edge (Chromium).][ExtensionsChromiumGettingStartedIndex]</span><span class="sxs-lookup"><span data-stu-id="f5ef0-157">For information on getting started with extensions, navigate to [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex].</span></span>  
 
 <!-- links -->  
 
-[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Introducción a Microsoft Edge (cromo) | Microsoft docs"  
-[ExtensionsChromiumPublishExtension]:  ./publish-extension.md "Publicar una extensión | Microsoft docs"  
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Introducción a las extensiones de Microsoft Edge (Chromium) | Microsoft Docs"  
+[ExtensionsChromiumPublishExtension]:  ./publish-extension.md "Publicar una extensión | Microsoft Docs"  
 
-[MicrosoftAppDeveloperAgreement]:  /legal/windows/agreements/app-developer-agreement "Acuerdo de desarrollador de aplicaciones | Microsoft docs"  
+[MicrosoftAppDeveloperAgreement]:  /legal/windows/agreements/app-developer-agreement "Acuerdo para desarrolladores de aplicaciones | Microsoft Docs"  
 
 [MicrosoftAccount]:  https://account.microsoft.com/account "Cuenta de Microsoft"  
 
-[MicrosoftPartnerCenter]:  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centro de socios"  
+[MicrosoftPartnerCenter]:  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centro de partners"  
 
-[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Microsoft (o MSA)"  
+[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Todo lo que necesita saber sobre las cuentas de Microsoft | Comunidad de Windows"  
