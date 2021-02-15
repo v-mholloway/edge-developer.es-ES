@@ -3,7 +3,7 @@ description: notas del producto sobre la privacidad de Microsoft Edge
 title: notas del producto sobre la privacidad de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, privacidad, notas del producto, confianza
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: e34228f7b094fbf11320da7d9523f04d2a550aae
-ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+ms.openlocfilehash: f62fae09c5d52dd2bdb67f0bbceb0ee394c97ea3
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297740"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327669"
 ---
 # notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -227,7 +227,7 @@ Puede importar datos desde otro navegador en cualquier momento en `edge://settin
 
 Puede descargar e instalar Microsoft Edge en plataformas como Windows y macOS.  Microsoft Edge usa el servicio de actualización para mantener la versión de Microsoft Edge actualizada y protegida.  
 
-Al descargar e instalar Microsoft Edge, la información sobre el dispositivo, como el canal de lanzamiento, información básica de hardware, identificadores de actualización, un identificador único para el dispositivo y un identificador configurable único para su explorador se enviarán a Microsoft durante el proceso de instalación.  La dirección IP del dispositivo se envía al servicio de actualización, pero el último decimal se borra para las protecciones de privacidad agregadas.  Durante cada sesión de exploración, se creará un nuevo token generado al azar para instalar las versiones actualizadas de Microsoft Edge.  El token no está asociado a ninguna información personal y solo se usa para el proceso de instalación y actualización, y para mejorar el servicio del actualizador.  
+Al descargar, instalar o actualizar Microsoft Edge, la información sobre el dispositivo, como el canal de lanzamiento, información básica de hardware, identificadores de actualización, un identificador único para el dispositivo y un identificador configurable único para su explorador se enviarán a Microsoft durante el proceso de instalación.  La dirección IP del dispositivo se envía al servicio de actualización, pero el último decimal se borra para las protecciones de privacidad agregadas.  Durante cada sesión de exploración, se creará un nuevo token generado al azar para instalar las versiones actualizadas de Microsoft Edge.  El token no está asociado a ninguna información personal y solo se usa para el proceso de instalación y actualización, y para mejorar el servicio del actualizador.  
 
 Microsoft Edge hace ping al servicio del actualizador de Microsoft Edge sobre el progreso de la instalación y la actualización.  Si se produce un error de instalación o actualización y está activado el informe de bloqueo, se creará un registro y se enviará a Microsoft.  Para obtener más información sobre el envío de informes de bloqueos a Microsoft, vea la sección [Bloqueos](#crashes).  Microsoft recopila información sobre cómo descargó Microsoft Edge, el éxito de la instalación y cualquier desinstalación para comprender mejor el éxito de las descargas de Microsoft Edge.  
 
@@ -387,7 +387,9 @@ Al aplicar los cupones, se almacenarán cookies en su dispositivo para atribuir 
    Compras y cupones  
 :::image-end:::  
 
-Para ayudarle a encontrar el mejor precio al comprar en línea y usar las Colecciones, Microsoft Edge determina localmente si la página o el artículo de la colección que está viendo es una página de detalles del producto.  Si está viendo la página de detalles del producto, Microsoft Edge envía los detalles del producto al servicio de compra, incluyendo la dirección URL con la información de identificación personal eliminada. También enviamos el precio del producto, la imagen del producto, el nombre del producto, las calificaciones y las reseñas, junto con información sobre Microsoft Edge y su versión del sistema operativo al servicio.  Estos datos se envían a través de HTTPS con un identificador generado aleatoriamente.  El servicio de compras de Microsoft devolverá los precios de otras tiendas minoristas para el mismo producto.  
+Para ayudarle a encontrar el mejor precio al comprar en línea, Microsoft Edge determina localmente si la página o el artículo de la colección que está viendo es una página de detalles del producto.  Si está viendo la página de detalles del producto, Microsoft Edge envía los detalles del producto al servicio de compra, incluyendo la dirección URL con la información de identificación personal eliminada. También enviamos el precio del producto, la imagen del producto, el nombre del producto, las calificaciones y las reseñas, junto con información sobre Microsoft Edge y su versión del sistema operativo al servicio.  Estos datos se envían a través de HTTPS con un identificador generado aleatoriamente.  El servicio de compras de Microsoft devolverá los precios de otras tiendas minoristas para el mismo producto.  
+
+Si visita un dominio de compras y es un usuario existente de Reembolsos de Bing, Microsoft Edge enviará el dominio junto con cookies al servicio de compras de Microsoft para recuperar su perfil de Reembolsos de Bing y las ofertas de reembolso en efectivo para el dominio. Si decide activar el reembolso en efectivo, Microsoft Edge enviará su dirección URL al servicio de compras de Microsoft para recibir una dirección URL de afiliado. Pueden almacenarse cookies en su dispositivo para asignar correctamente el proveedor de reembolsos. 
 
 El servicio de compras está activado de forma predeterminada para todos los usuarios.  Para cambiar la configuración de compra en Microsoft Edge, vaya a `edge://settings/privacy`, y a continuación, desactive **Ahorrar tiempo y dinero con Compras en Microsoft Edge**.  La navegación de InPrivate usa la configuración de compra del perfil que inició la sesión de InPrivate.  
 
@@ -445,7 +447,7 @@ Para ayudar a resolver los errores de escritura de URL en la barra de direccione
 
 ## Sincronización  
 
-Iniciar sesión en Microsoft Edge con una cuenta de Microsoft le permite sincronizar sus datos de exploración en todas las versiones con la sesión iniciada de Microsoft Edge.  Puede sincronizar su historial de exploración, los favoritos, la configuración y los datos de relleno de formularios \(direcciones y más \), contraseñas, extensiones y colecciones.  Debe permitir activar la sincronización en Microsoft Edge y todos los tipos de datos sincronizados se pueden activar o desactivar por separado.  Favoritos contiene todas las pestañas que ha reservado anteriormente en la versión heredada de Microsoft Edge, que se sincronizan con el resto de los favoritos.  Los favoritos u otros datos eliminados o modificados de una versión con sesión iniciada de Microsoft Edge se sincronizan con todas las versiones con sesión iniciada de Microsoft Edge en las que la sincronización está activada.  Para administrar las configuraciones de sincronización, vaya a `edge://settings/profiles/sync`.  Su organización puede administrar la configuración de sincronización.
+Iniciar sesión en Microsoft Edge con una cuenta de Microsoft le permite sincronizar sus datos de exploración en todas las versiones con la sesión iniciada de Microsoft Edge.  Puede sincronizar su historial de exploración, los favoritos, la configuración y los datos de relleno de formularios \(direcciones y más\), contraseñas, extensiones, pestañas abiertas y colecciones.  Debe permitir activar la sincronización en Microsoft Edge y todos los tipos de datos sincronizados se pueden activar o desactivar por separado.  Favoritos contiene todas las pestañas que ha reservado anteriormente en la versión heredada de Microsoft Edge, que se sincronizan con el resto de los favoritos.  Los favoritos u otros datos eliminados o modificados de una versión con sesión iniciada de Microsoft Edge se sincronizan con todas las versiones con sesión iniciada de Microsoft Edge en las que la sincronización está activada.  Para administrar las configuraciones de sincronización, vaya a `edge://settings/profiles/sync`.  Su organización puede administrar la configuración de sincronización.
 
 :::image type="complex" source="./media/sync.png" alt-text="Activando la imagen de la configuración de sincronización" lightbox="./media/sync.png":::
    La configuración de la sincronización está activada
