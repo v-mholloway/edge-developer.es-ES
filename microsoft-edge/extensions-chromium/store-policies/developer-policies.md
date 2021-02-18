@@ -1,30 +1,30 @@
 ---
-description: Directivas de desarrollador del catálogo de complementos de Microsoft Edge.
-title: Directivas para desarrolladores del catálogo de complementos de Microsoft Edge
+description: Directivas para desarrolladores del tienda de complementos de Microsoft Edge
+title: Directivas para desarrolladores del tienda de complementos de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 5c2a8dd816a28a35b6e7b725d5106814e401f6ec
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: cc34a95e08d01ebee54581222d0eb9fefa3dc458
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327648"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343083"
 ---
-# Directivas para desarrolladores del catálogo de complementos de Microsoft Edge  
+# Directivas para desarrolladores del tienda de complementos de Microsoft Edge  
 
 ## Introducción y objetivo de este documento  
 
-Gracias por su interés en desarrollar extensiones para el catálogo de complementos de Microsoft Edge.  Las directivas de desarrollador del catálogo de complementos de Microsoft Edge \(Addons Catalog Developer Policies\) se aplican a las extensiones, incluido el envío de extensiones a través del Centro de partners y el aprovisionamiento de dichas extensiones a través de los complementos de Microsoft Edge. [][MicrosoftPartnerCenter]  
+Gracias por su interés en desarrollar extensiones para la tienda de complementos de Microsoft Edge.  Las directivas de desarrollador de la tienda de complementos de Microsoft Edge \(Directivas de desarrollador de [][MicrosoftPartnerCenter] la tienda de complementos\) se aplican a las extensiones, incluido el envío de extensiones a través del Centro de partners y el aprovisionamiento de dichas extensiones a través de los complementos de Microsoft Edge.  
 
 ## Principios  
 
 Algunos principios para empezar:  
 
-*   Debes ofrecer un valor único y distinto dentro de las extensiones para Microsoft Edge.  Proporciona una razón atractiva para descargar las extensiones del catálogo de complementos de Microsoft Edge \(Complementos de Microsoft Edge\).  
+*   Debes ofrecer un valor único y distinto dentro de las extensiones para Microsoft Edge.  Proporciona una razón atractiva para descargar las extensiones de la Tienda de complementos de Microsoft Edge \(Complementos de Microsoft Edge\).  
 *   No debe confundir a nuestros usuarios conjuntos sobre lo que hace su extensión, quién la ofrece, y así sucesivamente.  
 *   No debe intentar engañar a los usuarios, el sistema o el ecosistema.  No hay lugar en nuestros complementos de Microsoft Edge para ningún tipo de fraude; ya sea la manipulación de clasificaciones y revisión, el fraude con tarjetas de crédito u otra actividad fraudulenta.  
     
@@ -68,11 +68,11 @@ No se permiten las extensiones con código ofuscado.  Esto incluye código dentr
 
 #### 1.1.8 Modificar la configuración del explorador  
 
-La extensión no debe, sin el consentimiento del usuario adecuado, modificar o parecer que altera, la funcionalidad o la configuración del explorador, incluidos, entre otros: el proveedor de búsqueda de la barra de direcciones y sugerencias, la página de inicio o inicio, la página de la nueva pestaña y agregar o quitar favoritos.  
+La extensión no debe, sin el consentimiento del usuario adecuado, modificar o parecer que altera, la funcionalidad o la configuración del explorador, incluidos, entre otros: el proveedor y sugerencias de búsqueda de la barra de direcciones, la página de inicio o inicio, la página de la nueva pestaña y agregar o quitar favoritos.  
 
-Cualquier modificación de la configuración del explorador debe documentarse explícitamente en la descripción de la extensión.  
+Cualquier modificación de la configuración del explorador debe estar explícitamente documentada en la descripción de la extensión.  
 
-La extensión solo puede revisar la configuración clave para reemplazar una página web o un servicio de Microsoft con el de un \(como requerir el uso de un motor de búsqueda de terceros o establecer la página principal en una propiedad web de terceros\) si está empleado por o asociado a dicho tercero.  
+La extensión solo puede revisar la configuración clave para reemplazar una página web o un servicio de Microsoft por el de un tercero \(por ejemplo, requerir el uso de un motor de búsqueda de terceros o establecer la página principal en una propiedad web de terceros\) si está empleado o asociado a dicho tercero.  
 
 ### 1.2 Seguridad  
 
@@ -85,7 +85,7 @@ La extensión no debe poner en peligro ni poner en peligro la seguridad del usua
 
 #### 1.2.2 Software no deseado y malintencionado  
 
-La extensión no debe contener ni habilitar malware según los criterios de Microsoft para software [no deseado y malintencionado.][MicrosoftIdentifiesMalwareUnwantedApplications]  
+La extensión no debe contener ni habilitar el malware según los criterios de Microsoft para el [software no deseado y malintencionado.][MicrosoftIdentifiesMalwareUnwantedApplications]  
 
 #### 1.2.3 Dependencia de otro software  
 
@@ -109,11 +109,11 @@ Si la extensión requiere acceso a un servidor, el servidor debe ser funcional p
 
 ### 1.4 Facilidad de uso  
 
-La extensión debe cumplir los estándares de la tienda de complementos de Microsoft Edge para el uso, incluidos, entre otros, los que se enumeran en las subsecciones siguientes.  
+La extensión debe cumplir con los estándares de la tienda de complementos de Microsoft Edge para su uso, incluidos, entre otros, los que se enumeran en las subsecciones siguientes.  
 
 #### 1.4.1 Compatibilidad entre plataformas  
 
-La extensión debe ser compatible con Microsoft Edge en todos los dispositivos y plataformas en los que se pueden descargar.  Si se descarga una extensión en un dispositivo con el que no es compatible, debe detectarla al iniciarse y mostrar un mensaje al usuario detallando los requisitos que los dispositivos deben cumplir para ser compatibles con la extensión.  
+La extensión debe ser compatible con Microsoft Edge en todos los dispositivos y plataformas en los que se pueden descargar.  Si una extensión se descarga en un dispositivo con el que no es compatible, debe detectarla al iniciarse y mostrar un mensaje al usuario detallando los requisitos que los dispositivos deben cumplir para ser compatibles con la extensión.  
 
 #### 1.4.2 Experiencia del usuario  
 
@@ -175,7 +175,7 @@ Si el producto incluye compras desde el producto, suscripciones, moneda virtual,
 
 La extensión puede permitir a los usuarios consumir contenido digital o servicios comprados a través de un mecanismo de compra de terceros o API.  
 
-Debe usar una API de compra segura de terceros para las compras de bienes o servicios físicos.  Debe usar una API de compra de terceros segura para los pagos realizados en relación con cualquier otro servicio, incluidos los juegos de azar del mundo real o las contribuciones caritativas.  
+Debe usar una API de compra segura de terceros para las compras de bienes o servicios físicos.  Debe usar una API de compra de terceros segura para los pagos realizados en relación con cualquier otro servicio, incluidos los juegos de azar reales o las contribuciones caritativas.  
 
 *   Si la extensión se usa para facilitar o recopilar contribuciones caritativas o para llevar a cabo un barrido promocional o un certamen, debes hacerlo en cumplimiento de la legislación aplicable.  
 *   También debe especificar claramente que Microsoft no es el patrocinador o el patrocinador de la promoción.  
@@ -193,7 +193,7 @@ La extensión y los metadatos asociados deben proporcionar información sobre lo
 
 ### 1.9 Notificaciones  
 
-La extensión debe respetar la configuración del sistema para las notificaciones.  Esto significa que cualquier presentación de anuncios y notificaciones para los usuarios debe ser coherente con las preferencias del usuario, independientemente de si las notificaciones las proporciona el servicio de notificaciones de inserción de Microsoft \(MPNS\), el servicio de notificaciones de inserción de Windows \(WNS\) o cualquier otro servicio.  Si el usuario deshabilita las notificaciones, ya sea en un producto específico o en todo el sistema, la extensión debe seguir funcionando.  
+La extensión debe respetar la configuración del sistema para las notificaciones.  Esto significa que cualquier presentación de anuncios y notificaciones para los usuarios debe ser coherente con las preferencias del usuario, independientemente de si las notificaciones las proporciona el servicio de notificaciones de inserción de Microsoft \(MPNS\), el servicio de notificaciones de inserción de Windows \(WNS\) o cualquier otro servicio.  Si el usuario deshabilita las notificaciones, ya sea por producto específico o por todo el sistema, la extensión debe seguir funcionando.  
 
 Si el producto usa MPNS o WNS para transmitir notificaciones, debe cumplir los siguientes requisitos:  
 
@@ -203,7 +203,7 @@ Las notificaciones proporcionadas a través de WNS o MPNS se consideran contenid
 
 #### 1.9.2 Propiedad de las notificaciones  
 
-No debes ocultar ni intentar ocultar el origen de cualquier notificación iniciada desde la extensión.  
+No debes ocultar ni intentar ocultar el origen de las notificaciones iniciadas desde la extensión.  
 
 #### 1.9.3 Sin información confidencial o confidencial  
 
@@ -211,7 +211,7 @@ No debe incluir en una notificación ninguna información que los usuarios pueda
 
 #### 1.9.4 Finalidad de las notificaciones  
 
-Las notificaciones enviadas desde la extensión deben estar relacionadas con esa extensión o con otras extensiones que publiques en el catálogo de complementos de Microsoft Edge y no deben incluir mensajes promocionales de ningún tipo que no estén relacionados con las extensiones.  
+Las notificaciones enviadas desde la extensión deben estar relacionadas con esa extensión o con otras extensiones que publiques en la tienda de complementos de Microsoft Edge y no deben incluir mensajes promocionales de ningún tipo que no estén relacionados con las extensiones.  
 
 ### 1.10 Conducta y contenido de publicidad  
 
@@ -224,7 +224,7 @@ El contenido principal de la extensión no debe ser publicidad y la publicidad d
 #### 1.10.2 Directivas y acuerdos  
 
 Cualquier contenido de publicidad que muestre la extensión debe cumplir con la [Directiva de aceptación creadora de Microsoft.][MicrosoftAdvertisingCreativeAcceptancePolicies]  
-Si la extensión muestra anuncios, todo el contenido mostrado debe cumplir los requisitos de publicidad del Acuerdo para desarrolladores de aplicaciones [y][MicrosoftAppDeveloperAgreement] esta Directiva.  
+Si la extensión muestra anuncios, todo el contenido mostrado debe cumplir los requisitos de publicidad del Acuerdo para desarrolladores de aplicaciones [y][MicrosoftAppDeveloperAgreement] esta directiva.  
 
 #### 1.10.3 Calidad de la publicidad  
 
@@ -237,7 +237,7 @@ Si compras o creas campañas de anuncios promocionales para promocionar tus exte
 
 #### 1.10.5 Notificar a los usuarios Opt-Out para Interest-Based Publicidad  
 
-La declaración de privacidad o los términos de uso deben informarse a los usuarios de que tienes previsto enviar información personal al proveedor de servicios de anuncios y deben decir a los usuarios cómo pueden optar por no participar en la publicidad basada en intereses.  
+La declaración de privacidad o los términos de uso deben permitir a los usuarios saber que tienes previsto enviar información personal al proveedor de servicios de anuncios y deben decir a los usuarios cómo pueden optar por no participar en la publicidad basada en intereses.  
 
 #### 1.10.6 Otras directrices  
 
@@ -245,12 +245,12 @@ Si la extensión se dirige a niños menores de 13 años, tal como se define en l
 
 ## 2 Directivas de contenido  
 
-Las siguientes directivas se aplican al contenido y a los metadatos \(incluido el nombre del editor, el nombre de la extensión, el icono de extensión, la descripción de la extensión, las capturas de pantalla de extensión, los tráileres de extensión y las miniaturas de los tráileres, y cualquier otro metadato de extensión\) que se ofrece para su distribución en complementos de Microsoft Edge.  El contenido significa las imágenes, sonidos, vídeos y texto contenidos en la extensión, los iconos, las notificaciones, los mensajes de error o los anuncios expuestos a través de la extensión, y todo lo que se entregue desde un servidor o al que se conecte la extensión.  Dado que las extensiones y los complementos de Microsoft Edge se usan en todo el mundo, estos requisitos se interpretan y aplican en el contexto de las normas regionales y culturales.  
+Las siguientes directivas se aplican al contenido y a los metadatos \(incluido el nombre del editor, el nombre de extensión, el icono de extensión, la descripción de la extensión, las capturas de pantalla de extensión, los tráileres de extensión y las miniaturas de tráiler, y cualquier otro metadato de extensión\) que se ofrece para su distribución en complementos de Microsoft Edge.  El contenido significa las imágenes, sonidos, vídeos y texto contenidos en la extensión, los iconos, las notificaciones, los mensajes de error o los anuncios expuestos a través de la extensión, y todo lo que se entregue desde un servidor o al que se conecte la extensión.  Dado que las extensiones y los complementos de Microsoft Edge se usan en todo el mundo, estos requisitos se interpretan y se aplican en el contexto de las normas regionales y culturales.  
 
 ### 2.1 Requisitos de contenido para la descripción del catálogo de complementos de Microsoft Edge  
 
 Es posible que los metadatos y otros contenidos que envíe para que acompañen a la extensión no contengan contenido para adultos.  
-Los envíos que no cumplen los requisitos de las de listas de la tienda de complementos de Microsoft Edge se rechazan o se eliminan rápidamente.  
+Los envíos que no cumplen con los requisitos de las de listas de la tienda de complementos de Microsoft Edge se rechazan o se eliminan rápidamente.  
 
 ### 2.2 Contenido incluidos nombres, logotipos, originales y de terceros  
 
@@ -260,15 +260,15 @@ Todo el contenido de la extensión y los metadatos asociados deben ser creados o
 
 #### 2.3.1 Requisitos  
 
-La extensión no debe contener ningún contenido que facilite o consorte las siguientes actividades reales: \(a\) violencia extrema o gratuita; \(b\) violaciones de derechos humanos; \(c\) la creación de armas ilegales; o \(d\) el uso de armas contra una persona, individuo o propiedad real o personal.  
+La extensión no debe contener ningún contenido que facilite o consorice las siguientes actividades reales: \(a\) violencia extrema o gratuita; \(b\) violaciones de derechos humanos; \(c\) la creación de armas ilegales; o \(d\) el uso de armas contra una persona, individuo o propiedad real o personal.  
 
 #### 2.3.2 Responsabilidad  
 
-La extensión no debe: \(a\) suponer un riesgo para la seguridad ni causar molestias, daños o cualquier otro daño a los usuarios finales o a cualquier otra persona o persona; o \(b\) suponen un riesgo o resultan en daños a la propiedad real o personal.  Eres el único responsable de todas las pruebas de seguridad de extensiones, la adquisición de certificados y la implementación de las protecciones de características adecuadas.  No debe deshabilitar ninguna característica de seguridad o comodidad de la plataforma y debe incluir todas las advertencias, avisos y avisos estándar del sector aplicables en su extensión.  
+La extensión no debe: \(a\) suponer un riesgo para la seguridad, ni causar molestias, daños o cualquier otro daño a los usuarios finales o a cualquier otra persona o persona; o \(b\) suponen un riesgo o resultan en daños a la propiedad real o personal.  Eres el único responsable de todas las pruebas de seguridad de extensiones, la adquisición de certificados y la implementación de las protecciones de características adecuadas.  No debe deshabilitar ninguna característica de seguridad o comodidad de la plataforma y debe incluir todas las advertencias, avisos y avisos estándar del sector aplicables en su extensión.  
 
 ### 2.4 Defamatory, Libelous, Slanderous, and Defamatory  
 
-La extensión no debe contener ningún contenido que sea calumnioso, calumnioso o amenazante.  
+La extensión no debe contener ningún contenido que sea calumnioso, calumnioso o calumnioso.  
 
 ### 2.5 Contenido ofensivo  
 
@@ -276,7 +276,7 @@ La extensión y los metadatos asociados no deben contener contenido potencialmen
 
 ### 2.6 Consumo de alcohol, tabacalera y drogas  
 
-La extensión no debe contener ningún contenido que facilite o consorice el uso excesivo o irresponsable de consumo excesivo o irresponsable de consumo de alcohol, productos de tabacalera o drogas.  
+La extensión no debe contener ningún contenido que facilite o consorte el uso excesivo o irresponsable de consumo excesivo o irresponsable de consumo de alcohol, productos de tabacalera o drogas.  
 
 ### 2.7 Contenido para adultos  
 
@@ -289,13 +289,13 @@ La extensión debe cumplir las siguientes condiciones.
 *   La extensión no debe contener contenido ni proporcionar servicios que faciliten el juego en línea.  Las partidas en línea incluyen, entre otras cosas, juegos en línea, actividades deportivas, lonjas o juegos de habilidades que ofrecen reembolsos de dinero en efectivo u otro valor.  
 *   La extensión no debe proporcionar acceso no autorizado al contenido del sitio web, por ejemplo, sorteando los paneles de pago o las restricciones de inicio de sesión.  
 *   La extensión no debe proporcionar, fomentar ni habilitar el acceso, descarga o transmisión no autorizados de contenido o medios protegidos por derechos de autor.  
-*   La extensión no debe extraer una criptovisa.  
+*   La extensión no debe extraer una criptodivisa.  
     
 ### 2.9 Actividad ilegal  
 
 La extensión no debe contener contenido o funcionalidad que fomente, facilite o anime actividades ilegales en el mundo real.  
 
-### 2.10 Contenido excesivo y poco apropiado  
+### 2.10 Contenido excesivo de blasfismo e inapropiado  
 
 *   La extensión no debe contener una blasfedad excesiva o gratuita.  
 *   La extensión no debe contener ni mostrar contenido que una persona razonable considere obscenas.  
@@ -314,7 +314,7 @@ No se permite el contenido ofensivo en cualquier país o región al que esté de
 
 #### 2.12.1 Contenido para adultos  
 
-Cuando envíes la extensión al [Centro de partners,][MicrosoftPartnerCenter]debes indicar si la extensión muestra contenido que debe marcarse como "Madurez".  Al determinar la clasificación de la extensión, ten en cuenta todo el contenido de la aplicación, incluido el contenido y los anuncios generados por el usuario, y con el contenido que vincula la extensión.  Si indicas que la extensión no contiene ningún contenido "Madurez", eres responsable de mantener la precisión de esta clasificación.  Independientemente de la clasificación que se le da a la extensión, aún debe cumplir todos los requisitos de contenido de las directivas de desarrollador de complementos de Microsoft Edge  
+Al enviar la extensión al [Centro de][MicrosoftPartnerCenter]partners, debes indicar si la extensión muestra contenido que debe marcarse como "Madurez".  Al determinar la clasificación de la extensión, ten en cuenta todo el contenido de la aplicación, incluido el contenido y los anuncios generados por el usuario, y con el contenido que vincula la extensión.  Si indicas que la extensión no contiene ningún contenido "Madurez", eres responsable de mantener la precisión de esta clasificación.  Independientemente de la clasificación que se le da a la extensión, aún debe cumplir todos los requisitos de contenido de las directivas de desarrollador de complementos de Microsoft Edge  
 
 #### 2.12.2 Cambio de clasificación  
 

@@ -1,22 +1,22 @@
 ---
-description: Aprende a registrarte en una cuenta de desarrollador para publicar extensiones en la tienda de complementos de Microsoft Edge.
+description: Aprende a registrarte en una cuenta de desarrollador para publicar extensiones en la tienda de complementos de Microsoft Edge
 title: Registrarse como desarrollador de extensiones de Microsoft Edge para publicar extensiones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 8277390bb78e6692345e9c30ef26f60528655374
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 0c3b4d70da214a171b7a6ebb308e89bad2ab16c2
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327522"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343062"
 ---
 # Registrarse como desarrollador de extensiones de Microsoft Edge  
 
-Para enviar la extensión al catálogo de complementos de Microsoft Edge, debes estar registrado como desarrollador con el programa Microsoft Edge.  El programa Microsoft Edge se encuentra en el [Centro de partners.][MicrosoftPartnerCenter]  
+Para enviar la extensión a la tienda de complementos de Microsoft Edge, debes estar registrado como desarrollador con el programa Microsoft Edge.  El programa Microsoft Edge se encuentra en el [Centro de partners.][MicrosoftPartnerCenter]  
 
 > [!IMPORTANT]
 > No hay ninguna cuota de registro implicada en el envío de extensiones al programa Microsoft Edge.  
@@ -57,7 +57,7 @@ Si tienes una cuenta de desarrollador registrada en el Centro de partners, usa l
           **Tipo de cuenta**  
        :::column-end:::
        :::column span="2":::
-          El programa Microsoft Edge del [Centro de partners][MicrosoftPartnerCenter] ofrece cuentas individuales y de empresa.  Las cuentas se describen en detalle en las siguientes viñetas.  Ambos tipos de cuenta te permiten publicar extensiones en el catálogo de complementos de Microsoft Edge.  
+          El programa Microsoft Edge del [Centro de partners][MicrosoftPartnerCenter] ofrece cuentas individuales y de empresa.  Las cuentas se describen detalladamente en las siguientes viñetas.  Ambos tipos de cuenta te permiten publicar extensiones en el almacén de complementos de Microsoft Edge.  
           
           > [!IMPORTANT]
           > Después de la inscripción, no podrá cambiar el valor de este campo.  
@@ -75,7 +75,7 @@ Si tienes una cuenta de desarrollador registrada en el Centro de partners, usa l
           **Nombre para mostrar del editor**  
        :::column-end:::
        :::column span="2":::
-          Este campo contiene el nombre que se muestra en el catálogo de complementos de Microsoft Edge.  Puede usar un nombre solo si está disponible y tiene los derechos para usarlo.  Las cuentas de empresa deben usar el nombre comercial registrado de la organización.  
+          Este campo contiene el nombre que se muestra en el almacén de complementos de Microsoft Edge.  Puede usar un nombre solo si está disponible y tiene los derechos para usarlo.  Las cuentas de empresa deben usar el nombre comercial registrado de la organización.  
           
           > [!NOTE]
           > La longitud máxima de este campo es de 50 caracteres.  
@@ -95,7 +95,7 @@ Si tienes una cuenta de desarrollador registrada en el Centro de partners, usa l
           **Aprobador de la empresa**  
        :::column-end:::
        :::column span="2":::
-          Para una cuenta de empresa, debe proporcionar la información de contacto del aprobador de la empresa.  La información de contacto incluye el nombre, la dirección de correo electrónico y el número de teléfono.  Microsoft se pone en contacto con el aprobador de la empresa especificado como parte del proceso de comprobación para asegurarse de que la extensión pertenece a su organización.  
+          Para una cuenta de empresa, debes proporcionar la información de contacto del aprobador de la empresa.  La información de contacto incluye el nombre, la dirección de correo electrónico y el número de teléfono.  Microsoft se pone en contacto con el aprobador de la empresa especificado como parte del proceso de comprobación para asegurarse de que la extensión pertenece a su organización.  
        :::column-end:::
     :::row-end:::  
     

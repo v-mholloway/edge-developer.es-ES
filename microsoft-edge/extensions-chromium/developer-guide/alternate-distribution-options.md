@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo distribuir extensiones mediante m�
 title: Método alternativo para distribuir extensiones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 9232b8912acaa52c8d97fdd5f13b82ec33c865d4
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 3b2c72e13488632e2fadea2a7e8eb95888f67170
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327633"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343153"
 ---
 # Métodos de distribución de extensión alternativos  
 
@@ -21,7 +21,7 @@ Por lo general, las extensiones se distribuyen a través de la tienda de complem
 1.  La extensión está asociada a otro software y debe instalarse junto con el resto del software agrupado.   
 1.  Los administradores de red desean distribuir una extensión en toda la organización.   
 
-Las extensiones que no se cargan desde el almacén de complementos perimetrales se denominan extensiones instaladas externamente. En la lista siguiente se proporcionan métodos alternativos para distribuir extensiones instaladas externamente. 
+Las extensiones que no se cargan desde el almacén de complementos perimetrales se denominan extensiones instaladas externamente. En la siguiente lista se proporcionan métodos alternativos para distribuir extensiones instaladas externamente. 
 
 *   Usa el Registro de Windows (solo Windows).  
 *   Usa un archivo JSON de preferencias (macOS y Linux).  
@@ -64,7 +64,7 @@ Para distribuir la extensión mediante el Registro de Windows, realiza los sigui
 
 Para distribuir la extensión mediante un archivo JSON de preferencias, siga estos pasos.
 
-1.  Al usar Linux, asegúrate de que el archivo de extensión esté disponible en el equipo en el que `.crx` se instalará la extensión. Copia el archivo de extensión en un directorio local o usa un recurso compartido de red al que se `.crx` pueda acceder desde el equipo. 
+1.  Al usar Linux, asegúrate de que el archivo de extensión esté disponible en el equipo en el que `.crx` se instalará la extensión. Copia el archivo de extensión en un directorio local o usa un recurso compartido de red al que se pueda acceder `.crx` desde el equipo. 
 1.  Cree un archivo JSON donde el nombre del archivo se corresponda con el identificador de la extensión. Por ejemplo, cree un archivo JSON con el nombre de archivo `aaaaaaaaaabbbbbbbbbbcccccccccc.json` .  
 1.  Según el sistema operativo, guarde el archivo JSON en una de las carpetas siguientes.   
     *   **macOS**  
@@ -109,7 +109,7 @@ Para distribuir la extensión mediante un archivo JSON de preferencias, siga est
         }
         ```  
     
-1.  Para instalar extensiones para configuraciones regionales específicas, enume las configuraciones regionales admitidas mediante `supported_locale` .  También puede especificar configuraciones regionales primarias para instalar la extensión para todas las configuraciones regionales de idioma que usan ese elemento primario. Por ejemplo, al usar la configuración regional primaria, la extensión se instala para todas las configuraciones regionales en inglés, como `en` `en-US` , y así `en-GB` sucesivamente.  Cuando los usuarios cambian su configuración regional en el explorador, se desinstalan las extensiones instaladas externamente.  Para instalar la extensión para cualquier configuración regional, no use `supported_locales` .  
+1.  Para instalar extensiones para configuraciones regionales específicas, enume las configuraciones regionales admitidas mediante `supported_locale` .  También puede especificar configuraciones regionales primarias para instalar la extensión para todas las configuraciones regionales de idioma que usan esa configuración regional principal. Por ejemplo, al usar la configuración regional primaria, la extensión se instala para todas las configuraciones regionales en inglés, como `en` `en-US` , y así `en-GB` sucesivamente.  Cuando los usuarios cambian su configuración regional en el explorador, se desinstalan las extensiones instaladas externamente.  Para instalar la extensión para cualquier configuración regional, no use `supported_locales` .  
 
     ```json
     {

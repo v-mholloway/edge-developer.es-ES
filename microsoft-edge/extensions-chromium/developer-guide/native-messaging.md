@@ -3,16 +3,16 @@ description: Documentación de mensajería nativa
 title: Mensajería nativa
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 2d629762d4c7c75832905cfbf8c2d5311191092d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: d9c2370d6a4f9f7cd25001c1c58ce266423af19a
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327704"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343069"
 ---
 # Mensajería nativa  
 
@@ -21,7 +21,7 @@ Las extensiones se comunican con una aplicación nativa de Win32 instalada en el
 Para adquirir la extensión y el host de la aplicación nativa, tiene dos modelos de distribución.  
 
 *   Empaquetar la extensión y el host juntos.  Cuando un usuario instala el paquete, se instalan tanto la extensión como el host.  
-*   Instala la extensión con [el almacén de] [MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]complementos de Microsoft Edge y la extensión pide a los usuarios que instalen el host.  
+*   Instale la extensión con el almacén de complementos de [Microsoft Edge] [MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]y la extensión pedirá a los usuarios que instalen el host.  
 
 Para crear la extensión para enviar y recibir mensajes con hosts de aplicaciones nativas, consulte los pasos siguientes.  
 
@@ -124,7 +124,7 @@ El archivo de manifiesto de host debe ser un archivo JSON válido que contenga l
 :::row-end:::  
 
 Realizar una instalación de prueba de la extensión para probar la mensajería nativa con el host.  
-Para realizar una instalación de instalación local de la extensión durante el desarrollo y `microsoft_catalog_extension_id` recuperarla, siga estos pasos.  
+Para realizar una instalación de instalación de instalación local de la extensión durante el desarrollo y `microsoft_catalog_extension_id` recuperarla, siga estos pasos.  
 
 1.  Navegue hasta `edge://extensions` y, a continuación, active el botón de alternancia del modo de desarrollador.  
 1.  Elija **Cargar desempaquetar**y, a continuación, seleccione el paquete de extensión para la instalación de prueba.  
@@ -132,7 +132,7 @@ Para realizar una instalación de instalación local de la extensión durante el
 1.  Vaya a `edge://extensions` la página y compruebe que la extensión aparece en la lista.  
 1.  Copia la clave `microsoft_catalog_extension_id` de \(ID\) de la lista de extensiones de la página.  
 
-Cuando estés listo para distribuir la extensión a los usuarios, publica la extensión en la tienda de complementos de Microsoft Edge.  El identificador de extensión de la extensión publicada puede ser diferente del identificador usado durante la instalación de la instalación de la extensión.  Si el identificador ha cambiado, actualice `allowed_origins` el archivo de manifiesto de host con el identificador de la extensión publicada.  
+Cuando estés listo para distribuir la extensión a los usuarios, publica la extensión en la tienda de complementos de Microsoft Edge.  El identificador de extensión de la extensión publicada puede ser diferente del identificador usado al cargar localmente la extensión.  Si el identificador ha cambiado, actualice `allowed_origins` el archivo de manifiesto de host con el identificador de la extensión publicada.  
 
 ## Paso 3: Copiar el archivo de manifiesto del host de mensajería nativa en el sistema  
 

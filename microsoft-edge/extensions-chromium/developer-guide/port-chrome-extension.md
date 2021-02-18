@@ -1,26 +1,26 @@
 ---
-description: Proceso de porte de la extensión de Chrome a Microsoft Edge.
+description: Proceso de porte de la extensión de Chrome a Microsoft Edge
 title: Extensión port Chrome a Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones de explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 64a92927b9fe7658562f87f326bb9ac148991031
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 6be7d788ac22232475e278ae9a5b04de9b6e17f7
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327697"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343139"
 ---
 # Portabilidad de la extensión  
 
-Microsoft Edge le permite portabilidad de la extensión de Chrome con cambios mínimos.  Las API de extensión y las claves de manifiesto compatibles con Chrome son compatibles con código con Microsoft Edge.  Para obtener una lista de las API admitidas por Microsoft Edge, vaya al [soporte técnico de la API.][ExtensionApiSupport]  
+Microsoft Edge le permite portabilidad de la extensión de Chrome con cambios mínimos.  Las API de extensión y las claves de manifiesto compatibles con Chrome son compatibles con código con Microsoft Edge.  Para obtener una lista de las API admitidas por Microsoft Edge, vaya a [compatibilidad con api.][ExtensionApiSupport]  
 
 Para portabilidad de la extensión de Chrome, siga estos pasos.  
 
-1.  Revisa las API de extensión de Chrome que se usan en las extensiones con la lista de API compatibles con [extensiones de][ExtensionApiSupport] Microsoft Edge.  
+1.  Revise las API de extensión de Chrome que se usan en las extensiones con la lista de API compatibles con [extensiones de][ExtensionApiSupport] Microsoft Edge.  
     
     > [!NOTE]
     > Si la extensión usa API que no son compatibles con Microsoft Edge, es posible que no se porte directamente.  
@@ -36,7 +36,7 @@ Para portabilidad de la extensión de Chrome, siga estos pasos.
     
 ## Pasos siguientes  
 
-Cuando el paquete de extensión esté listo para publicarse en la tienda de complementos de Microsoft [Edge,][ExtensionsPublishCreateDevAccount] cree una cuenta de desarrollador y [publique la extensión.][ExtensionsPublishPublishExtension]  
+Cuando el paquete de extensión esté listo para publicarse en la Tienda de complementos de Microsoft [Edge,][ExtensionsPublishCreateDevAccount] cree una cuenta de desarrollador y [publique la extensión.][ExtensionsPublishPublishExtension]  
 
 <!-- links -->  
 

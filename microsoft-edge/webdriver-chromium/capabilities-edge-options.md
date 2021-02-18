@@ -3,21 +3,21 @@ description: Una referencia para las funcionalidades de WebDriver y las opciones
 title: Funciones y EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, se sintaxis, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: c2842740dfc6d902d1727634e00565f8e556969d
-ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
+ms.openlocfilehash: 5a48ca34e46b56fa60bcacfade2add23026be144
+ms.sourcegitcommit: f95812c4e1b7277f67c6c4891be2779cc1b5bdf1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "11306237"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "11343782"
 ---
 # Funciones y EdgeOptions  
 
-Las funcionalidades son opciones que puede usar para personalizar y configurar una `EdgeDriver` sesión.  Para obtener información sobre cómo iniciar una nueva sesión, vaya a `EdgeDriver` Automatización de Microsoft [Edge.][WebdriverIndexDrivingMicrosoftEdgeChromium]  En este artículo se describen todas las funcionalidades compatibles con [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] y detalles sobre cómo pasar las funcionalidades a `EdgeDriver` las sesiones.  
+Las funcionalidades son opciones que puede usar para personalizar y configurar una `EdgeDriver` sesión.  Para obtener información sobre cómo iniciar una nueva sesión, vaya a `EdgeDriver` Automatización de Microsoft [Edge.][WebdriverIndexAutomateMicrosoftEdgeChromium]  En este artículo se describen todas las funcionalidades admitidas [para Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] y detalles sobre cómo pasar las funcionalidades a las `EdgeDriver` sesiones.  
 
 Las funcionalidades se pasan a una sesión de WebDriver como un mapa JSON.  Los enlaces de idioma de WebDriver suelen proporcionar métodos de comodidad seguras para que no necesite configurar el mapa JSON usted mismo.  Los distintos enlaces de idioma de WebDriver usan diferentes mecanismos para configurar funcionalidades.  Navegue a la documentación de su [enlace de idioma preferido][WebdriverIndexChooseWebdriverLanguageBinding] para obtener más información sobre cómo configurar funcionalidades.  [Se siné][SeleniumMain] configura las funcionalidades a través de la `EdgeOptions` clase.  
 
@@ -49,17 +49,17 @@ La mayoría de las funcionalidades específicas de Microsoft Edge se exponen a t
 | Funcionalidad | Tipo | Valor predeterminado | Detalles |  
 |:--- |:--- |:--- |:--- |  
 | args | lista de cadenas |  | Lista de argumentos de línea de comandos que se usarán al iniciar Microsoft Edge.  Los argumentos con un valor asociado deben estar separados por un `=` signo \(por ejemplo, `['start-maximized', 'user-data-dir=/tmp/temp_profile']` \). |  
-| binario | string |  | Ruta de acceso al binario de Microsoft Edge para usar \(en macOS, la ruta de acceso debe ser el binario real, no solo la aplicación.  por ejemplo, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` \). |  
+| binary | string |  | Ruta de acceso al binario de Microsoft Edge para usar \(en macOS, la ruta de acceso debe ser el binario real, no solo la aplicación.  por ejemplo, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` \). |  
 | debuggerAddress | string |  | Una dirección de un servidor depurador al que se va a conectar, por `hostname/ip:port` ejemplo, en forma de . `127.0.0.1:38947` |
 | desasoyen | booleano | `false` | Si , Microsoft Edge se cierra cuando se cierra el servicio WebDriver, incluso si el extremo local de `false` WebDriver no ha cerrado la sesión.  Si `true` , Microsoft Edge solo se cierra si el final local de WebDriver cierra la sesión.  Si , y el final local de WebDriver no cierra la sesión, no limpia la carpeta de datos de usuario temporal usada por la instancia `true` `EdgeDriver` de Microsoft Edge. |  
 | excludeSwitches | lista de cadenas |  | Lista de modificadores de la línea de comandos de Microsoft Edge para excluir que EdgeDriver pasa de forma predeterminada al iniciar Microsoft Edge.  Evite el `--` prefijo de modificadores. |  
 | extensions | lista de cadenas |  | Una lista de extensiones para instalar en el inicio.  Cada elemento de la lista debe ser una extensión empaquetada codificada en base 64 \( `.crx` \). |  
-| localState | diccionario |  | Diccionario con cada entrada que consta del nombre de la preferencia y el valor.  Las preferencias se aplican al archivo de estado local en la carpeta de datos de usuario. |  
+| localState | diccionario |  | Un diccionario con cada entrada que consta del nombre de la preferencia y el valor.  Las preferencias se aplican al archivo de estado local en la carpeta de datos de usuario. |  
 | minidumpPath | string |  | Directorio para almacenar minidumps de Microsoft Edge.  \(Compatible solo en Linux.\) |  
 | mobileEmulation | diccionario |  | Un diccionario con un valor para `deviceName` , o valores para y `deviceMetrics` `userAgent` . |  
 | perfLoggingPrefs | diccionario |  | Un diccionario opcional que especifica las preferencias de registro de rendimiento.  para obtener más información, vaya al [objeto perfLoggingPrefs](#perfloggingprefs-object). |  
-| prefs | diccionario |  | Diccionario con cada entrada que consta del nombre de la preferencia y el valor.  Las preferencias solo se aplican al perfil de usuario en uso.  Para obtener ejemplos, vaya al `Preferences` archivo en la carpeta de datos de usuario de Microsoft Edge. |  
-| wdpAddress | string |  | Una dirección de un servidor de Windows Device Portal al que se conecta, en forma de `hostname/ip:port` , por  `127.0.0.1:50080` ejemplo.  Para obtener más información, ve [a Depuración remota : dispositivos con Windows 10.][DevtoolsRemoteDebuggingWindows] |  
+| prefs | diccionario |  | Un diccionario con cada entrada que consta del nombre de la preferencia y el valor.  Las preferencias solo se aplican al perfil de usuario en uso.  Para obtener ejemplos, vaya al `Preferences` archivo en la carpeta de datos de usuario de Microsoft Edge. |  
+| wdpAddress | string |  | Una dirección de un servidor de Windows Device Portal al que se conecta, en forma de `hostname/ip:port` , por  `127.0.0.1:50080` ejemplo.  Para obtener más información, ve [a Depuración remota : dispositivos Con Windows 10.][DevtoolsRemoteDebuggingWindows] |  
 | wdpPassword | string |  | Contraseña opcional que se usará al conectarse a un servidor de Windows Device Portal.  Obligatorio si el servidor tiene habilitada la autenticación. |  
 | wdpUsername | string |  | Nombre de usuario opcional que se usará al conectarse a un servidor de Windows Device Portal.  Obligatorio si el servidor tiene habilitada la autenticación. |  
 | windowsApp | string |  | Identificador de modelo de usuario de aplicación de un paquete de aplicación de Microsoft Edge para iniciar, por `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` ejemplo.  Se `windowsApp` usa en lugar de conectarse a un dispositivo o emulador de Windows `binary` 10X mediante Windows Device Portal. |  
@@ -89,10 +89,10 @@ La siguiente lista contiene todas las funcionalidades específicas de Microsoft 
 
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Introducción a la depuración remota de dispositivos Windows 10 | Microsoft Docs"  
 [WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Choose a WebDriver language binding - WebDriver (Chromium) | Microsoft Docs"
-[WebdriverIndexDrivingMicrosoftEdgeChromium]: ./index.md#automating-microsoft-edge-chromium "Automatización de Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
+[WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automatizar Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
 [WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Instalar Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"  
 
-[SeleniumMain]: https://www.selenium.dev "SeesisHQ Browser Automation"  
+[SeleniumMain]: https://www.selenium.dev "Automatización del explorador Se automationHQ"  
 [SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Capacidades compartidas | Documentación de Seyán"   
 
 [CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver#capabilities "Funcionalidades: especificación de WebDriver | W3C"   
