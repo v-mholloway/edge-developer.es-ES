@@ -1,67 +1,63 @@
 ---
-description: Obtenga información sobre las extensiones de cromo y los conceptos básicos para crear extensiones.
-title: Conceptos y arquitectura de las extensiones de Microsoft Edge (cromo)
+description: Obtenga información sobre las extensiones de Chromium y los conceptos básicos para crear extensiones.
+title: Conceptos y arquitectura de extensiones de Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: Edge-cromo, desarrollo web, HTML, CSS, JavaScript, desarrollador, extensiones
-ms.openlocfilehash: 8ffdd19e1a1e36a4d10fdd80bd7dd5654d543527
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
+ms.openlocfilehash: 05732287bc1a782ed5830d5e7028cf5580f3b605
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104731"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397928"
 ---
-# Conceptos y arquitectura de extensión
+# <a name="extension-concepts-and-architecture"></a>Conceptos de extensión y arquitectura  
 
-Este artículo proporciona una breve introducción a los conceptos que ayudan al crear extensiones. Para comprender las extensiones de Microsoft Edge \ (cromo \), veremos cómo funcionan los exploradores de varias pestañas.
+En este artículo se proporciona una breve introducción a los conceptos que le ayudarán a crear una extensión.  Para comprender las extensiones de Microsoft Edge \(Chromium\), siga las instrucciones para comprender cómo funcionan los exploradores de varias pestañas.  
 
+## <a name="understand-how-browsers-work"></a>Comprender cómo funcionan los exploradores  
 
-## Comprender cómo funcionan los exploradores
+En la siguiente lista se describe información útil para comprender antes de crear la extensión.  
 
-En la siguiente lista se describe información útil para comprender antes de crear la extensión.
-
-1.  Cada pestaña del explorador está aislada de cada una de las pestañas.  Cada pestaña se ejecuta en su propio subproceso que está aislado de otras pestañas y subprocesos del explorador.
-
-    ![Un hilo por ficha de explorador](media/index-image1-browsertabs.png)  
-
-2.  Cada pestaña administra una solicitud GET.  Cada pestaña usa una dirección URL para obtener una única secuencia de datos, que normalmente es un documento HTML.  Esa secuencia o página en un solo paso incluye instrucciones como, por ejemplo, las etiquetas, referencias de imagen, referencias CSS y mucho más.  Todos los recursos se descargan en una página de pestaña y, a continuación, se representa la página en la pestaña.  
-
-3.  La comunicación se produce entre cada pestaña y los servidores remotos.  Cada pestaña se ejecuta en un entorno aislado. Aún están conectados a Internet, pero están aislados de otras pestañas.  Las tabulaciones pueden ejecutar JavaScript para comunicarse con los servidores. Estos servidores son el servidor de origen de la primera solicitud GET que se especificó en la barra de direcciones URL de la pestaña.  
-
-4.  El modelo de extensión usa un modelo de comunicación diferente.  De forma similar a las páginas de pestañas, las extensiones se ejecutan en subprocesos individuales que están aislados de todos los subprocesos de la página  Las pestañas emiten una sola solicitud GET a los servidores remotos y, a continuación, procesa la página. Sin embargo, Extensions funciona de forma similar a un servidor remoto. La instalación de extensiones en el explorador crea un servidor web independiente en el explorador. La extensión está aislada de todas las páginas de pestañas.  
-
-    ![Las extensiones usan un modelo de comunicación diferente](media/index-image3-upsidedown.png)  
-
-## Arquitectura de extensión
+1.  Cada pestaña del explorador está aislada de todas las demás pestañas.  Cada pestaña se ejecuta en un subproceso independiente que está aislado de otras pestañas y subprocesos del explorador.  
+    
+    :::image type="complex" source="./media/index-image1-browsertabs.png" alt-text="Una pestaña de un subproceso por explorador" lightbox="./media/index-image1-browsertabs.png":::
+       Una pestaña de un subproceso por explorador  
+    :::image-end:::  
+    
+1.  Cada pestaña controla una solicitud GET.  Cada pestaña usa una dirección URL para obtener una sola secuencia de datos, que normalmente es un documento HTML.  Esa única secuencia o página incluye instrucciones como JavaScript, etiquetas, referencias de imagen, referencias CSS y mucho más.  Todos los recursos se descargan en esa página de una pestaña y, a continuación, la página se representa en la pestaña.  
+1.  La comunicación se produce entre cada pestaña y un servidor remoto.  Cada pestaña se ejecuta en un entorno aislado.  Cada pestaña todavía está conectada a Internet, pero cada una está aislada de otras pestañas.  Una pestaña puede ejecutar JavaScript para comunicarse con un servidor.  El servidor es el servidor de origen de la primera solicitud GET que se introdujo en la barra de direcciones URL de la pestaña.  
+1.  El modelo de extensión usa un modelo de comunicación diferente.  De forma similar a una página de pestaña, una extensión se ejecuta en un subproceso individual que está aislado de otros subprocesos de página de pestañas.  Una pestaña envía solicitudes GET únicas a servidores remotos y, a continuación, representa la página.  Sin embargo, una extensión funciona de forma similar a un servidor remoto.  Al instalar una extensión en un explorador, se crea un servidor web independiente en el explorador.  La extensión está aislada de todas las páginas de pestañas.  
+    
+    :::image type="complex" source="./media/index-image3-upsidedown.png" alt-text="Las extensiones usan un modelo de comunicación diferente" lightbox="./media/index-image3-upsidedown.png":::
+       Las extensiones usan un modelo de comunicación diferente  
+    :::image-end:::  
+    
+## <a name="extension-architecture"></a>Arquitectura de extensión de RIS  
 
 En la siguiente lista se describe información útil en relación con la arquitectura de una extensión.  
 
-1.  El paquete de servidor Web de extensión.  Una extensión es un paquete de recursos Web. Estos recursos web son similares a otros recursos que los desarrolladores web publican en servidores Web. Los desarrolladores empaquetan estos recursos Web en un archivo zip al crear una extensión.
+1.  El paquete del servidor web de extensión.  Una extensión es un conjunto de recursos web.  Los recursos web son similares a otros recursos que \(el desarrollador web\) publica en servidores web.  Los recursos web se agrupan en un archivo zip al compilar una extensión.  
     
-    El archivo zip incluye archivos HTML, CSS, JavaScript e imágenes.  Hay un archivo adicional necesario en la raíz del archivo zip. Este archivo es el archivo de manifiesto y se denomina `manifest.json` .  Es el Blueprint de tu extensión e incluye la versión de tu extensión, el título, los permisos necesarios para que se ejecute la extensión y así sucesivamente.
+    El archivo zip incluye html, CSS, JavaScript y archivos de imagen.  Se requiere un archivo más en la raíz del archivo zip.  El otro archivo es el archivo de manifiesto denominado `manifest.json` .  El archivo de manifiesto es el plano de la extensión e incluye la versión de la extensión, el título, los permisos necesarios para que se ejecute la extensión, y así sucesivamente.  
+    
+1.  Iniciar el servidor de extensión.  Los servidores web contienen el paquete web.  Un explorador navega a las direcciones URL del servidor y descarga el archivo para representarlo en el explorador.  Un explorador navega con certificados, archivos de configuración, y así sucesivamente.  Si se `index.html` especifica un archivo, el archivo se almacena en una ubicación especial en el servidor web.  
+    
+    Cuando se usa una extensión, la página de pestañas del explorador llega al paquete web de la extensión mediante el tiempo de ejecución de extensión.  El tiempo de ejecución de extensión sirve los archivos desde la dirección URL, donde es un identificador `extension://{some-long-unique-identifier}/index.html` único asignado a la extensión durante la `{some-long-unique-identifier}` instalación.  Cada extensión usa un identificador único diferente.  Cada identificador apunta a la agrupación web que está instalada en el explorador.  
+    
+1.  Una extensión puede comunicarse con pestañas y la barra de herramientas del explorador.  Una extensión puede interactuar con la barra de herramientas del explorador.  Cada extensión administra las páginas de tabulación en ejecución en subprocesos independientes y la manipulación de DOM en cada página de pestaña está aislada.  Una extensión usa la API de extensiones para comunicarse entre las páginas de la extensión y la pestaña.  La API de extensiones proporciona capacidades adicionales que incluyen administración de notificaciones, administración de almacenamiento, entre otras.  
+    
+    Al igual que los servidores web, una extensión espera las notificaciones cuando el explorador está abierto.  Las páginas de extensión y tabulación se ejecutan en subprocesos aislados entre sí.  Para permitir que una extensión funcione con cualquier página de pestaña, use la API de extensiones y establezca los permisos en el archivo de manifiesto.  
+    
+1.  Una extensión proporciona permisos de suscripción en el momento de la instalación.  Especifique los permisos de extensión en el `manifest.json` archivo.  Cuando un usuario instala una extensión, se muestra información sobre los permisos que requiere la extensión.  En función del tipo de permiso requerido, la extensión puede extraer y usar información del explorador.  
+    
+## <a name="next-steps"></a>Pasos siguientes  
 
-2.  Iniciar el servidor de extensiones.  Los servidores web contienen tu paquete Web. Los exploradores navegan a las direcciones URL en el servidor y descargan el archivo para representarlo en el explorador. Los exploradores navegan mediante certificados, archivos de configuración, etc.  Si hay un `index.html` archivo, se almacena en una ubicación especial en el servidor Web.  
-
-    Cuando usamos extensiones, la página de pestañas de tu explorador llega al conjunto Web de tu extensión con el tiempo de ejecución de la extensión.  La extensión Runtime da servicio a los archivos de la dirección URL `extension://{some-long-unique-identifier}/index.html` , donde `{some-long-unique-identifier}` es un identificador único asignado a la extensión cuando se instala.  Cada extensión usa un identificador único diferente. Cada identificador apunta al paquete web que está instalado en el explorador.   
-
-3.  Las extensiones pueden comunicarse con pestañas y la barra de herramientas del explorador.   Las extensiones pueden interactuar con la barra de herramientas de tu explorador. Cada extensión administra páginas de pestañas en ejecución en subprocesos independientes y aísla la manipulación de DOM en cada página de pestaña.  Las extensiones usan la API de extensiones para comunicarse entre la extensión y las páginas de pestañas.  Esta API de extensión proporciona capacidades adicionales que incluyen administración de notificaciones, administración de almacenamiento, etc.  
-
-    Al igual que los servidores Web, las extensiones esperan en las notificaciones cuando el explorador está abierto.  Las páginas de extensiones y fichas se ejecutan en subprocesos que están aislados entre sí. Sin embargo, los desarrolladores pueden usar la API de extensiones y permisos en el archivo de manifiesto para permitir que una extensión funcione con cualquier página de pestaña.  
-
-4. Las extensiones proporcionan permisos de participación en el momento de la instalación.  El desarrollador especifica los permisos de extensión en el `manifest.json` archivo. Al instalar extensiones, se muestra a los usuarios información sobre los permisos que la extensión necesita para ejecutarse. Según el tipo de permiso requerido, la extensión puede extraer y usar información del explorador.
-
-
-## Pasos siguientes
-
- Para obtener información sobre cómo empezar a usar extensiones, vea [crear un tutorial de extensión][CreateAnExtensionPart1]. 
-
-
-
-<!-- image links -->  
+Para obtener información sobre cómo empezar a usar la extensión, vaya [a Crear un tutorial de extensión][CreateAnExtensionPart1].  
 
 <!-- links -->  
 
-[CreateAnExtensionPart1]: ./part1-simple-extension.md "Crear un tutorial de extensión: parte 1 | Microsoft docs"  
+[CreateAnExtensionPart1]: ./part1-simple-extension.md "Crear un tutorial de extensión: parte 1 | Microsoft Docs"  

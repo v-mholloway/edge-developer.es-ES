@@ -1,18 +1,18 @@
 ---
 description: Cómo buscar y analizar código JavaScript y CSS sin usar en Microsoft Edge DevTools.
-title: Buscar código JavaScript y CSS sin usar con la pestaña cobertura en Microsoft Edge DevTools
+title: Buscar código JavaScript y CSS sin usar con el panel Cobertura en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 08c4daaabd30296b53ad57a81caa0e7b155a4fc9
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 092788606347352876483b1a8282fbb75b2bff66
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125191"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398766"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,20 @@ ms.locfileid: "11125191"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Buscar código JavaScript y CSS sin usar con la pestaña cobertura en Microsoft Edge DevTools  
+# <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>Buscar código JavaScript y CSS sin usar con el panel Cobertura en Microsoft Edge DevTools  
 
-La pestaña cobertura de Microsoft Edge DevTools ayuda a buscar código de JavaScript y CSS no usado.  Quitar el código no usado puede acelerar la carga de la página y guardar los datos celulares de los usuarios móviles.  
+El panel **Cobertura** de Microsoft Edge DevTools le ayuda a encontrar código JavaScript y CSS sin usar.  La eliminación de código no usado puede acelerar la carga de la página y guardar los datos móviles de los usuarios móviles.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analizar la cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
-   Analizar la cobertura de código  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Análisis de la cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   Análisis de la cobertura de código  
 :::image-end:::  
 
 > [!WARNING]
-> Encontrar un código no usado es relativamente fácil.  Pero refactorizar un código base para que cada página solo envíe el código JavaScript y CSS que necesita puede ser difícil.  En esta guía no se trata cómo refactorizar un código base para evitar el código no usado, ya que estos Refactores dependen enormemente de la pila tecnológica.  
+> Encontrar código sin usar es relativamente fácil.  Pero refactorizar una base de código para que cada página solo incluye el JavaScript y CSS que necesita puede resultar difícil.  En esta guía no se explica cómo refactorizar una base de código para evitar el código no usado, ya que estos refactores dependen en gran medida de la pila de tecnología.  
 
-## Introducción  
+## <a name="overview"></a>Introducción  
 
-El envío de código JavaScript o CSS sin usar es un problema común en el desarrollo web.  Por ejemplo, supongamos que desea usar el [componente del botón bootstrap][BootstrapButtons] en la página.  Para usar el componente Button, necesita agregar un vínculo a la hoja de estilos bootstrap en el código HTML, como este:  
+El envío de JavaScript o CSS sin usar es un problema común en el desarrollo web.  Por ejemplo, supongamos que desea usar el componente [de botón Bootstrap][BootstrapButtons] en la página.  Para usar el componente de botón, debe agregar un vínculo a la hoja de estilos de Bootstrap en su HTML, de esta forma:  
 
 ```html
 ...
@@ -53,44 +53,44 @@ El envío de código JavaScript o CSS sin usar es un problema común en el desar
 ...
 ```  
 
-Esta hoja de estilos no incluye simplemente el código del componente de botón.  Contiene la CSS de **todos** los componentes de bootstrap.  Pero no usa ninguno de los otros componentes de bootstrap.  Por lo tanto, la página está descargando un montón de CSS que no necesita.  Esta CSS adicional es un problema por los siguientes motivos:  
+Esta hoja de estilos no solo incluye el código del componente de botón.  Contiene el CSS para **todos los** componentes de Bootstrap.  Pero no está usando ninguno de los demás componentes de Bootstrap.  Por lo tanto, la página está descargando un montón de CSS que no necesita.  Este CSS adicional es un problema por los siguientes motivos.  
 
-*   El código adicional ralentiza la carga de la página.  <!--See [Render-Blocking CSS][render].  -->  
+*   El código adicional ralentiza la carga de la página.  <!--Navigate to [Render-Blocking CSS][render].  -->  
 *   Si un usuario accede a la página en un dispositivo móvil, el código adicional usa sus datos móviles.  
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## Abrir la pestaña cobertura  
+## <a name="open-the-coverage-panel"></a>Abrir el panel Cobertura  
 
-1.  [Abrir el menú de comandos][DevToolsCommandMenu].  
-1.  Comience `coverage` a escribir, seleccione el comando **Mostrar cobertura** y, a continuación, seleccione `Enter` para ejecutar el comando.  La pestaña **cobertura** se abre en el **cajón**.  
+1.  [Abra el menú de comandos][DevToolsCommandMenu].  
+1.  Empiece a `coverage` escribir , seleccione el comando Mostrar **cobertura** y, a continuación, seleccione para ejecutar `Enter` el comando.  El panel **Cobertura** se abre en el **cajón**.  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Analizar la cobertura de código" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
-       La ficha **cobertura**  
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="El panel Cobertura" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       El panel **Cobertura**  
     :::image-end:::  
     
-## Registrar la cobertura de código  
+## <a name="record-code-coverage"></a>Cobertura de código de registro  
 
-1.  Haga clic en uno de los siguientes botones de la pestaña **cobertura** :  
-    *   Elija **iniciar la cobertura de la instrumentación y volver a cargar la página** \ ( ![ iniciar la cobertura de la instrumentación y volver a cargar página ][ImageReloadIcon] \) Si desea ver qué código se necesita para cargar la página.  
-    *   Elija **cobertura de instrumento** \ ( ![ cobertura ][ImageRecordIcon] del instrumento \) Si desea ver qué código se usa después de interactuar con la página.  
-1.  Elija **detener la cobertura de la instrumentación y mostrar resultados** \ ( ![ detener la instrumentación de la cobertura y resultados de la presentación ][ImageStopIcon] \) cuando desee detener la grabación de la cobertura de código.  
+1.  Elija uno de los botones siguientes en **el** panel Cobertura.  
+    *   Elija **Start Instrumenting Coverage and Reload Page** \( Start Instrumenting Coverage and Reload Page \) si desea revisar qué código es necesario ![ para cargar la ][ImageReloadIcon] página.  
+    *   Elija **Cobertura de instrumento** \( Cobertura de instrumento \) si desea revisar qué código se usa después de interactuar con la ![ ][ImageRecordIcon] página.  
+1.  Elija **Detener la cobertura de instrumentación y Mostrar** resultados \( Detener la cobertura de instrumentación y Mostrar ![ resultados \) cuando desee detener la grabación de la cobertura de ][ImageStopIcon] código.  
     
-## Analizar la cobertura de código  
+## <a name="analyze-code-coverage"></a>Analizar la cobertura de código  
 
-La tabla de la pestaña **cobertura** le muestra los recursos que se han analizado y la cantidad de código que se usa dentro de cada recurso.  Haga clic en una fila para abrir ese recurso en el panel **orígenes** y ver un desglose línea por línea de código usado y código no usado.  
+La tabla del panel **Cobertura** muestra los recursos analizados y la cantidad de código que se usa en cada recurso.  Elija una fila para abrir ese recurso en el panel **Orígenes** y revise un desglose línea por línea del código usado y el código no usado.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Analizar la cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Un informe de cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    Un informe de cobertura de código  
 :::image-end:::  
 
-*   La columna **URL** es la dirección URL del recurso que se analizó.  
-*   En la columna **tipo** se indica si el recurso contiene CSS, JavaScript o ambos.  
-*   La columna **total bytes** es el tamaño total del recurso en bytes.  
-*   La columna **bytes no usados** es el número de bytes que no se han usado.  
-*   La última columna sin nombre es una visualización de las columnas bytes **totales** y **bytes no usados** .  La sección roja de la barra es bytes no usados.  La sección verde es bytes usados.  
+*   La **columna URL** es la dirección URL del recurso analizado.  
+*   La **columna Tipo** indica si el recurso contiene CSS, JavaScript o ambos.  
+*   La **columna Bytes totales** es el tamaño total del recurso en bytes.  
+*   La **columna Bytes sin** usar es el número de bytes que no se usaron.  
+*   La última columna sin nombre es una visualización de las columnas **Bytes totales** y **Bytes no** usados.  La sección roja de la barra es bytes no usados.  La sección verde se usa bytes.  
     
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -102,13 +102,13 @@ La tabla de la pestaña **cobertura** le muestra los recursos que se han analiza
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools | Microsoft docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Comando de Microsoft Edge DevTools | Microsoft Docs"  
 
-[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Botones: bootstrap"  
+[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Botones - Bootstrap"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/coverage/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/coverage/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

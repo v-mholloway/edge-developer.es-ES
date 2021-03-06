@@ -1,18 +1,18 @@
 ---
-description: Más información sobre cómo ejecutar JavaScript en la consola.
+description: Obtenga información sobre cómo ejecutar JavaScript en la consola.
 title: Introducción a la ejecución de JavaScript en la consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ecd1a2fffb311990b6e743e99d038f1f2a519ee4
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: c1d6c393b6278f4622cf80576ccc8f9c70bdb6b5
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231093"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398822"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,57 +28,57 @@ ms.locfileid: "11231093"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Introducción a la ejecución de JavaScript en la consola  
+# <a name="get-started-with-running-javascript-in-the-console"></a>Introducción a la ejecución de JavaScript en la consola  
 
-Este tutorial interactivo muestra cómo ejecutar JavaScript en la **consola**de Microsoft Edge DevTools.  Para obtener más información sobre cómo registrar mensajes en la **consola**, vaya a introducción a la creación [de mensajes de registro][DevToolsConsoleLoggingMessages].  Para obtener más información sobre cómo pausar el código de JavaScript y resaltarlo de línea en línea, vaya a introducción a la [depuración de JavaScript][DevToolsJavascriptIndex].  
+En este tutorial interactivo se muestra cómo ejecutar JavaScript en la consola de Microsoft Edge **DevTools**.  Para obtener más información acerca de cómo registrar mensajes en la **consola,** vaya a [Introducción al registro de mensajes][DevToolsConsoleLoggingMessages].  Para obtener más información acerca de cómo pausar código JavaScript y recorrerlo de una línea a la vez, vaya a Introducción a [La depuración de JavaScript][DevToolsJavascriptIndex].  
 
 :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola" lightbox="../media/console-javascript-example-console-playground.msft.png":::
    La **consola**  
 :::image-end:::  
 
-## Introducción  
+## <a name="overview"></a>Introducción  
 
-La **consola** es una [REPL][WikiReadEvalPrintLoop], lo que significa lectura, evaluación, impresión y bucle.  Lee el código JavaScript que escribe en él, evalúa el código, imprime el resultado de la [expresión][2alityExpressionsVersusStatements]y, a continuación, retrocede al primer paso.  
+La **consola** es [una REPL][WikiReadEvalPrintLoop], que significa Leer, Evaluar, Imprimir y Bucle.  Lee el JavaScript que escribe en él, evalúa el código, imprime [][2alityExpressionsVersusStatements]el resultado de la expresión y, a continuación, vuelve al primer paso.  
 
-## Configurar DevTools  
+## <a name="set-up-devtools"></a>Configurar DevTools  
 
-Este tutorial está diseñado para que abras la demostración y pruebe todos los flujos de trabajo.  Cuando sigues físicamente, es más probable que recuerdes los flujos de trabajo más adelante.
+Este tutorial está diseñado para que abra la demostración y pruebe todos los flujos de trabajo usted mismo.  Cuando se sigue físicamente, es más probable que recuerde los flujos de trabajo más adelante.
 
-1.  Seleccione `Control` + `Shift` + `J` \ (Windows, Linux \) o `Command` + `Option` + `J` \ (MacOS \) para abrir la **consola**.  
-1.  Espere `Control` \ (Windows, Linux \) o `Command` \ (MacOS \) y elija **ejemplo de JavaScript de consola** para abrirlo en una ventana nueva.  
+1.  Seleccione `Control` + `Shift` + `J` \(Windows, Linux\) o `Command` + `Option` + `J` \(macOS\) para abrir la **consola**.  
+1.  Mantenga `Control` presionado \(Windows, Linux\) o `Command` \(macOS\) y elija Ejemplo **de Javascript** de consola para abrir en una nueva ventana.  
     
-    *   [Ejemplo de JavaScript de consola][GlitchConsoleJavascriptExample]  
+    *   [Ejemplo de Javascript de consola][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="La página de ejemplo de JavaScript de la consola de la izquierda y DevTools a la derecha" lightbox="../media/console-javascript-example-console-empty.msft.png":::
-       La página de ejemplo de JavaScript de la consola de la izquierda y DevTools a la derecha  
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Página ejemplo de JavaScript de consola a la izquierda y DevTools a la derecha" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       Página ejemplo de JavaScript de consola a la izquierda y DevTools a la derecha  
     :::image-end:::  
     
-## Ver y cambiar el JavaScript o el DOM de la página  
+## <a name="view-and-change-the-javascript-or-dom-of-the-page"></a>Ver y cambiar javascript o DOM de la página  
 
-Al crear o depurar una página, a menudo es útil ejecutar instrucciones en la **consola** para cambiar el aspecto o la ejecución de la página.  
+Al compilar o depurar una página, a menudo resulta **** útil ejecutar instrucciones en la consola para cambiar el aspecto o la ejecución de la página.  
     
-1.  Observe el texto en el botón.  
-1.  Escriba `document.getElementById('hello').textContent = 'Hello, Console!'` la **consola** y, después, seleccione `Enter` para evaluar la expresión.  Observe cómo cambia el texto que se encuentra dentro del botón.  
+1.  Observe el texto del botón.  
+1.  Escriba `document.getElementById('hello').textContent = 'Hello, Console!'` la **consola y,** a continuación, `Enter` seleccione para evaluar la expresión.  Observe cómo cambia el texto dentro del botón.  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Aspecto de la consola después de la evaluación de la expresión" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
-       Aspecto de la **consola** después de la evaluación de la expresión  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Cómo se ve la consola después de evaluar la expresión" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       Cómo se **ve la consola** después de evaluar la expresión  
     :::image-end:::  
     
-    Debajo del código que hayas evaluado verás `"Hello, Console!"` .  Recupere los cuatro pasos de REPL: leer, evaluar, imprimir, repetir.  Después de evaluar el código, una REPL imprime el resultado de la expresión.  Por lo tanto, `"Hello, Console!"` debe ser el resultado de la evaluación `document.getElementById('hello').textContent = 'Hello, Console!'` .  
+    `"Hello, Console!"`, se muestra debajo del código que ha evaluado.  Recuerde los 4 pasos de REPL: leer, evaluar, imprimir, bucle.  Después de evaluar el código, una REPL imprime el resultado de la expresión.  Por `"Hello, Console!"` lo tanto, debe ser el resultado de la evaluación `document.getElementById('hello').textContent = 'Hello, Console!'` .  
     
-## Ejecutar JavaScript arbitrario que no está relacionado con la página  
+## <a name="run-arbitrary-javascript-that-is-not-related-to-the-page"></a>Ejecutar JavaScript arbitrario que no esté relacionado con la página  
 
-A veces, solo deseas un código de animación donde puedas probar algún código o probar nuevas características de JavaScript con las que no estás familiarizado.  La **consola** es un lugar ideal para estos tipos de experimentos.  
+A veces, solo quieres un área de juegos de código donde puedas probar código o probar nuevas características de JavaScript con las que no estás familiarizado.  La **consola** es un lugar perfecto para este tipo de experimentos.  
 
-1.  Escriba `5 + 15` la consola y seleccione `Enter` para evaluar la expresión. La consola imprime el resultado de la expresión que está debajo del código.  En la siguiente ilustración, la **consola** debería mostrar el resultado después de evaluar la expresión.  
+1.  Escriba `5 + 15` la consola y seleccione para evaluar la `Enter` expresión. La consola imprime el resultado de la expresión debajo del código.  En la siguiente figura, la **consola** debe mostrar el resultado después de evaluar la expresión.  
 
-1.  Escriba el código siguiente en la **consola**.  Pruebe a escribirla, carácter a carácter, en lugar de pegarla.  
+1.  Escriba el siguiente código en la **consola**.  Intenta escribirlo, carácter por carácter, en lugar de copiarlo.  
     
     ```javascript
     function add(a, b=20)
     ```  
     
-    Si no está familiarizado con la `b=20` sintaxis, navegue para [definir los valores predeterminados de los argumentos de la función][Esma6DefaultParameterValues].  
+    Si no está familiarizado con la sintaxis, navegue para definir los `b=20` valores predeterminados de los [argumentos de función][Esma6DefaultParameterValues].  
     
 1.  Ahora, ejecute la función que acaba de definir.  
     
@@ -89,52 +89,52 @@ A veces, solo deseas un código de animación donde puedas probar algún código
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola se muestra después de evaluar las expresiones en el fragmento de código." lightbox="../media/console-javascript-example-console-playground.msft.png":::
-             La **consola** se muestra después de evaluar las expresiones en el fragmento de código.  
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La consola se muestra después de evaluar las expresiones del fragmento de código" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+             La **consola** se muestra después de evaluar las expresiones del fragmento de código  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-    `add(25)` se evalúa como `45` porque cuando `add` se llama a la función sin un segundo argumento, el `b` valor predeterminado es `20` .  
+    `add(25)` se evalúa porque cuando se llama a la `45` función sin un segundo `add` argumento, el valor predeterminado es `b` `20` .  
 
-## Pasos siguientes  
+## <a name="next-steps"></a>Pasos siguientes  
 
-<!--See [Run JavaScript][DevToolsConsoleReference] to explore more features related to running JavaScript in the Console.  -->  
+<!--To explore more features related to running JavaScript in the **Console**, navigate to [Run JavaScript][DevToolsConsoleReference].  -->  
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools le permite pausar un script en mitad de la ejecución.  Mientras está pausado, puede usar la **consola** para ver y cambiar la `window` o `DOM` de la página en ese momento.  El flujo de trabajo hace que el flujo de trabajo de depuración sea eficaz.  Para obtener un tutorial interactivo, vaya a introducción a la [depuración de JavaScript][DevToolsJavascriptIndex].  
+DevTools te permite pausar un script en medio de la ejecución.  Mientras está en pausa, puede **** usar la consola para ver y cambiar la página en `window` ese `DOM` momento.  El flujo de trabajo crea un flujo de trabajo de depuración eficaz.  Para obtener un tutorial interactivo, vaya a [Introducción a La depuración de JavaScript][DevToolsJavascriptIndex].  
 
-La **consola** también tiene un conjunto de funciones de comodidad que hacen que sea más fácil interactuar con una página.  Por ejemplo:  
+La **consola** también tiene un conjunto de funciones de comodidad que facilitan la interacción con una página.  Por ejemplo:  
 
-*   En lugar de escribir `document.querySelector()` para seleccionar un elemento, escriba `$()` .  Esta sintaxis está inspirada en jQuery, pero en realidad no es jQuery.  Es solo un alias para `document.querySelector()` .  
+*   En lugar de escribir `document.querySelector()` para seleccionar un elemento, escriba `$()` .  Esta sintaxis se inspira en jQuery, pero en realidad no es jQuery.  Es solo un alias para `document.querySelector()` .  
 *   `debug(function)` establece de forma eficaz un punto de interrupción en la primera línea de esa función.  
-*   `keys(object)` Devuelve una matriz que contiene las claves del objeto especificado.  
+*   `keys(object)` devuelve una matriz que contiene las claves del objeto especificado.  
 
-Para obtener más información sobre las funciones de conveniencia, vaya a referencia de la [API de utilidades de consola][DevToolsConsoleUtilities].  
+Para obtener más información acerca de las funciones de comodidad, vaya a [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleLoggingMessages]: ./log.md "Introducción a la creación de mensajes de registro en la consola | Microsoft docs"  
-[DevToolsConsoleReference]: ./reference.md#run-javascript "Referencia de consola | Microsoft docs"  
-[DevToolsConsoleUtilities]: ./utilities.md "Referencia de API de utilidades de consola | Microsoft docs"  
-[DevToolsJavascriptIndex]: ../javascript/index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft docs"  
+[DevToolsConsoleLoggingMessages]: ./log.md "Introducción al registro de mensajes en la consola | Microsoft Docs"  
+[DevToolsConsoleReference]: ./reference.md#run-javascript "Referencia de consola | Microsoft Docs"  
+[DevToolsConsoleUtilities]: ./utilities.md "Referencia de api de utilidades de consola | Microsoft Docs"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft Docs"  
 
 [2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expresiones frente a instrucciones en JavaScript"  
 
-[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Valores de parámetro predeterminados: administración de parámetros ampliada-ECMAScript 6 — características nuevas: información general & la comparación"  
+[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Valores de parámetros predeterminados : control de parámetros extendidos - ECMAScript 6 : nuevas características: información general & comparación"  
 
-[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Ejemplo de JavaScript de la consola | Intento"  
+[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Ejemplo de Javascript de consola | Glitch"  
 
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Lectura: eval – imprimir bucle-Wikipedia"  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Bucle read-eval-print - Wikipedia"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/console/javascript) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/console/javascript) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

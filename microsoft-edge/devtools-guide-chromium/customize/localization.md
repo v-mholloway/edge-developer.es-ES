@@ -1,69 +1,70 @@
 ---
-title: Cambiar la configuración de idioma de DevTools
+description: Cambiar la configuración del idioma de DevTools.
+title: Cambiar la configuración del idioma de DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, localización, ubicación, idioma
-ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools, localización, loc, idioma
+ms.openlocfilehash: 14975c8b1807565eb45c38cbc9e6a6049171bb95
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882726"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398996"
 ---
-# Cambiar la configuración de idioma de DevTools  
+# <a name="change-devtools-language-settings"></a>Cambiar la configuración del idioma de DevTools  
 
-Las herramientas de desarrollo coinciden con el idioma del explorador de forma predeterminada, si es uno de los diez idiomas admitidos actualmente \ (además del inglés \).  
+Las Herramientas de desarrollador coinciden con el idioma del explorador de forma predeterminada, si es uno de los diez idiomas admitidos actualmente \(además de inglés\).  
 
 :::row:::
    :::column span="":::
-      Chino \ (simplificado \)- &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;  
+      Chino \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;  
    :::column-end:::
    :::column span="":::
-      Chino (tradicional \)- &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Francés: Francisco&#231;AIS  
-   :::column-end:::
-   :::column span="":::
-      Alemán-Deutsch  
+      Chino \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Italiano-Italiano  
+      Francés : fran&#231;ais  
    :::column-end:::
    :::column span="":::
-       &#26085;&#26412;&#35486; japonés  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Coreano:  &#54620;&#44397;&#50612;  
-   :::column-end:::
-   :::column span="":::
-      Portugués-Portugu&#234;s  
+      Alemán - deutsch  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Ruso:  &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;  
+      Italiano - italiano  
    :::column-end:::
    :::column span="":::
-      Español-Espa&#241;ol  
+      Japonés - &#26085;&#26412;&#35486;  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Coreano - &#54620;&#44397;&#50612;  
+   :::column-end:::
+   :::column span="":::
+      Portugués : portugu&#234;s  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Ruso – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;  
+   :::column-end:::
+   :::column span="":::
+      Español - espa&#241;ol  
    :::column-end:::
 :::row-end:::  
 
-:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools en Japonés" lightbox="./media/localization-jp.png":::
-   DevTools en Japonés  
+:::image type="complex" source="../media/localization-jp.msft.png" alt-text="DevTools en japonés" lightbox="../media/localization-jp.msft.png":::
+   DevTools en japonés  
 :::image-end:::  
 
-Si desea revertir DevTools al inglés, vaya a configuración de [DevTools][DevtoolschromiumCustomizeIndexSettings] o pulse `F1`  >  **preferencias** y desactive la casilla de verificación **coincidir con el idioma del explorador** .  
+Si desea revertir DevTools al inglés, vaya a [Configuración de DevTools][DevtoolsCustomizeIndexSettings] o seleccione , elija Preferencias y desactive la casilla Coincidir idioma `F1` del **explorador.** ****  
 
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Configuración-personalizar Microsoft Edge DevTools | Microsoft docs"  
+[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  

@@ -1,51 +1,51 @@
 ---
-Description: Forzar que Microsoft Edge DevTools en el modo de vista previa de combinación de colores.
-title: Forzar el modo de vista previa de la combinación de colores de Microsoft Edge DevTools (CSS prefiere la combinación de colores)
+description: Forzar Microsoft Edge DevTools al modo de vista previa de esquema de colores.
+title: Forzar Microsoft Edge DevTools al modo de vista previa de esquema de colores (CSS prefiere la combinación de colores)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 29b0121a616a037fa11b61799efeffd201eb1821
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 84f482605acd6edab6829e00d5fa31f927ebc032
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230799"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398304"
 ---
-# Simulación de combinación de colores oscuro o claro  
+# <a name="dark-or-light-color-scheme-simulation"></a>Simulación de combinación de colores claros o oscuros  
 
-Los sistemas operativos tienen una manera de mostrar cualquier aplicación en colores más oscuros o claros.  Tener un producto Web con un tema claro en un sistema operativo de modo oscuro es Grating y puede ser un problema de accesibilidad para algunos usuarios.  En la web, puede usar la consulta de medios [preferidas-combinación de colores][MDNPrefersColorScheme] de CSS para detectar si los usuarios prefieren ver su producto en una combinación más oscura o más clara.  Use [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] para simular un cambio de modo oscuro a claro sin tener que cambiar todo el sistema operativo.  
+Los sistemas operativos tienen una forma de mostrar cualquier aplicación en colores más oscuros o más claros.  Tener un producto web que tenga un tema claro en un sistema operativo en modo oscuro es una rejilla y puede ser un problema de accesibilidad para algunos usuarios.  En la web, puede usar la consulta multimedia CSS [prefers-color-scheme][MDNPrefersColorScheme] para detectar si los usuarios prefieren mostrar el producto en una combinación de colores más oscura o más clara.  Usa [Microsoft Edge DevTools para][DevtoolsIndex] simular un cambio del modo oscuro a el modo claro sin tener que cambiar todo el sistema operativo.  
 
-1.  Abrir el **menú de comandos**.  
-    1.  Seleccione `Control` + `Shift` + `P` en Windows/Linux o `Command` + `Shift` + `P` en MacOS.  
+1.  Abra el **menú de comandos**.  
+    1.  Seleccione `Control` + `Shift` + `P` \(Windows/Linux\) o `Command` + `Shift` + `P` \(macOS\).  
         
-        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="El menú de comandos" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           El **menú de comandos**  
+        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+           Menú **comando**  
         :::image-end:::  
         
-1.  `emulate color`En tipo, elija **EMULAr CSS preferentemente-esquema de color: oscuro** o **emular CSS preferentes-esquema de color: Light** y, a continuación, seleccione `Enter` .  
+1.  Type `emulate color` , choose either Emulate CSS **prefers-color-scheme: dark** or Emulate CSS **prefers-color-scheme: light** and then select `Enter` .  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="Opción de combinación de colores del menú comando" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
-       Opción de combinación de colores del menú **comando**  
+    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="Opción combinación de colores del menú comando" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
+       Opción combinación de colores del **menú** comando  
     :::image-end:::  
     
     > [!IMPORTANT]
-    > Simplemente escribe `dark` o `light` no revela la herramienta adecuada, ya que también hay una forma de [elegir un tema para DevTools][DevtoolsGuideChromiumCustomizeDarkTheme].  Si se pregunta qué elegir, asegúrese de que está seleccionando un elemento de menú de **representación** , no un elemento de menú de **apariencia** .  
+    > Simplemente escribiendo o no revela la herramienta adecuada, ya que también hay una forma de `dark` elegir un tema para `light` [DevTools][DevtoolsCustomizeDarkTheme].  Si se pregunta qué elegir, asegúrese de elegir **** un elemento de menú de representación, no un **elemento de** menú de apariencia.  
 
-1.  Después de elegir una combinación de colores, vuelva a cargar el documento actual para ver el modo simulado.  
+1.  Después de elegir una combinación de colores, actualice el documento actual para mostrar el modo simulado.  
     
     :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Modo de luz simulada dentro de Microsoft Edge DevTools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
        Modo de luz simulada dentro de Microsoft Edge DevTools  
     :::image-end:::  
     
-    Ver y cambiar su CSS, como cualquier otra página web.  Para obtener más información, consulte Introducción [a la visualización y el cambio de CSS][DevtoolsGuideChromiumCssIndex].  
+    Ver y cambiar el CSS como cualquier otra página web.  Para obtener más información, vaya [a Introducción a Ver y cambiar CSS][DevtoolsCssIndex].  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
-[DevtoolsGuideChromiumCustomizeDarkTheme]: ../customize/dark-theme.md "Habilitar tema oscuro en Microsoft Edge DevTools | Microsoft docs"
-[DevtoolsGuideChromiumCssIndex]: ../css/index.md "Introducción a la visualización y el cambio de CSS | Microsoft docs"  
+[DevtoolsIndex]: ../index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Habilitar tema oscuro en Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsCssIndex]: ../css/index.md "Introducción a la visualización y cambio de css | Microsoft Docs"  
 
-[MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "preferida-combinación de colores | MDN"  
+[MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  

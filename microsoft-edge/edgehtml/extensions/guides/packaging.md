@@ -1,65 +1,63 @@
 ---
-ms.assetid: f3560505-e01f-47e5-9ad6-7a419f060fc2
-description: Más información sobre cómo empaquetar tu extensión.
+description: Obtenga información sobre cómo empaquetar la extensión .
 title: 'Extensiones: empaquetado'
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador
-ms.date: 12/15/2020
+ms.assetid: f3560505-e01f-47e5-9ad6-7a419f060fc2
+keywords: edge, web development, html, css, javascript, developer
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 0ea4d6a4450d47d116164fd8481fdfb0f79bd30b
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 62c7858c38cf0c06e24c25938a885b10b391fd8f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11236496"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398500"
 ---
-# Empaquetar las extensiones de Microsoft Edge  
+# <a name="packaging-microsoft-edge-extensions"></a>Empaquetar extensiones de Microsoft Edge  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Por eso, finalizaste la ampliación y estás listo para empaquetarla. Es posible que se pregunte cuál es el procedimiento siguiente para obtener esta información en manos de posibles usuarios. La finalidad de esta guía es enseñarle a hacerlo.
+Por lo tanto, por fin ha completado la extensión y está listo para empaquetar. Es posible que se pregunte cuáles son los pasos siguientes para obtener esto en manos de los usuarios potenciales. Esta guía está diseñada para enseñarte a hacerlo.  
 
-La guía de empaquetado de la extensión es completa, ya que cubre todo lo que necesita saber sobre el embalaje, incluso los detalles más precisos. Si no deseas conocer todo lo que hay que saber sobre cómo empaquetar tu extensión, ya estás de suerte. Hemos agregado compatibilidad con extensiones a ManifoldJS, una herramienta de código abierto Node.js que toma la mayoría de tus woess de embalaje.
-
-> [!NOTE]
-> El envío de una extensión de Microsoft Edge a Microsoft Store es actualmente una función restringida. Póngase en [contacto con nosotros](https://aka.ms/extension-request) con sus solicitudes para formar parte de Microsoft Store y le daremos una actualización futura.
-
-
-Usa el siguiente Resumen de proceso para diseñar la aventura de empaquetar.
-
-
-## [Extensiones en el centro de desarrollo de Windows](./packaging/extensions-in-the-windows-dev-center.md)
-
-Independientemente del camino de creación de paquetes que elija, manual o ManifoldJS, el primer paso es registrarse para una cuenta de Windows Developer y reservar el nombre o los nombres de la extensión.
-
-Una vez que lo haya hecho, puede continuar con la [creación y la prueba de paquetes de extensión](./packaging/creating-and-testing-extension-packages.md) para obtener información sobre cómo se crean AppXs y empaquetar manualmente la extensión, o ir a la ruta de acceso más sencilla y saltarse a [usar ManifoldJS para empaquetar extensiones](./packaging/using-ManifoldJS-to-package-extensions.md).
+La guía de empaquetado de extensiones es completa, ya que cubre todo lo que quieres saber sobre el empaquetado, incluso los detalles más finos y ingeniosos. Si no quieres aprender todo lo que hay que saber sobre empaquetar la extensión, tienes suerte. Hemos agregado compatibilidad con extensiones a ManifoldJS, una herramienta de código Node.js de código abierto que quita la mayoría de los problemas de empaquetado.  
 
 > [!NOTE]
-> Una vez que haya llegado a nosotros y haya sido aprobado para tener su extensión en Microsoft Store, consulte la lista de [comprobación de envío](https://docs.microsoft.com/windows/uwp/publish/app-submissions)de la aplicación.
+> Enviar una extensión de Microsoft Edge a la Microsoft Store es actualmente una funcionalidad restringida. [Llámenos con](https://developer.microsoft.com/en-us/microsoft-edge/extensions/requests) sus solicitudes para formar parte de Microsoft Store y le consideraremos para una actualización futura.  
+
+Usa el esquema de proceso siguiente para asignar la aventura de empaquetado.  
+
+## [<a name="extensions-in-the-windows-dev-center"></a>Extensiones en el centro de desarrollo de Windows](./packaging/extensions-in-the-windows-dev-center.md)  
+
+Independientemente de la ruta de creación de paquetes que elijas, manual o ManifoldJS, el primer paso es registrarte para una cuenta de Desarrollador de Windows y reservar los nombres de la extensión.  
+
+Una vez hecho esto, puede pasar [](./packaging/creating-and-testing-extension-packages.md) a Crear y probar paquetes de extensión para obtener información sobre cómo se crean los AppX y empaquetan manualmente la extensión, o bien ir a la ruta más fácil y saltar a [Usar ManifoldJS](./packaging/using-ManifoldJS-to-package-extensions.md)para empaquetar extensiones .  
+
+> [!NOTE]
+> Una vez que te hayas puesto en contacto con nosotros y hayas recibido la aprobación para tener la extensión en microsoft Store, consulta la lista de comprobación [de envío de aplicaciones](https://docs.microsoft.com/windows/uwp/publish/app-submissions).  
 
 
-## [Crear y probar paquetes de extensión](./packaging/creating-and-testing-extension-packages.md)
+## [<a name="creating-and-testing-extension-packages"></a>Crear y probar paquetes de extensión](./packaging/creating-and-testing-extension-packages.md)  
 
-En esta sección de la guía se recorre la creación de paquetes de extensión manual una vez [que haya configurado su cuenta de desarrollador de Windows y reservado los nombres de extensión](./packaging/extensions-in-the-windows-Dev-Center.md). Si tienes curiosidad sobre los detalles más precisos de empaquetar una extensión, dales una lectura.
+En esta sección de la guía se muestra la creación manual de paquetes de extensión una vez que hayas configurado tu cuenta de Desarrollador de Windows y reservados los nombres de [extensión.](./packaging/extensions-in-the-windows-Dev-Center.md) Si tienes curiosidad por los detalles más finos de empaquetar una extensión, dale una lectura.  
 
-También se incluye información sobre cómo [probar y desempaquetar una extensión empaquetada](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package). Esta información es relevante incluso si has salido de la ruta de empaquetado de ManifoldJS.
+También se incluye información sobre cómo [probar y desempaquetar una extensión empaquetada.](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) Esta información es relevante incluso si has pasado la ruta de empaquetado manifoldJS.  
 
-## [Localizar paquetes de extensión](./packaging/localizing-extension-packages.md)
-El paso de localización del paquete se encuentra entre la creación de tu appxmanifest.xml archivo y el comando final para empaquetar tu extensión.
-Esto le permite indicar qué idiomas son compatibles con las extensiones en la descripción de Microsoft Store y en qué idioma aparece el nombre de la extensión en Windows.
+## [<a name="localizing-extension-packages"></a>Localizar paquetes de extensión](./packaging/localizing-extension-packages.md)  
 
-Puede saltar a [localizar el nombre y la descripción de Microsoft Store](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) en esta sección de la guía si la extensión no es compatible con varios idiomas.
+El paso de localización del paquete se encuentra entre crear el archivo appxmanifest.xml y ejecutar el comando final para empaquetar la extensión.  
+Esto te permite indicar qué idiomas admiten tus extensiones en la descripción de Microsoft Store y qué idioma aparece el nombre de la extensión en Windows.  
 
-## [Usar ManifoldJS para empaquetar extensiones](./packaging/using-ManifoldJS-to-package-extensions.md)
+Puedes ir a [Localizing name and description for the Microsoft Store](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) en esta sección de la guía si la extensión no admite varios idiomas.  
 
-La ruta de la herramienta para embalar tu extensión, ManifoldJS empaquetará tu extensión en un instante con un esfuerzo mínimo para tu fin. Proporciona algunos activos de Windows/Microsoft Store después de rellenar algunas propiedades de AppXManifest y tu extensión se empaquetará en un momento.
+## [<a name="using-manifoldjs-to-package-extensions"></a>Usar ManifoldJS para empaquetar extensiones](./packaging/using-ManifoldJS-to-package-extensions.md)  
 
-Una vez empaquetada la extensión, consulte la sección de [pruebas](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) de creación y prueba de la extensión de Microsoft Edge para obtener información sobre cómo realizar la transferencia o desempaquetar.
+La ruta de herramientas para empaquetar la extensión, ManifoldJS empaquetará la extensión en un instante con el mínimo esfuerzo en el extremo. Proporciona algunos activos de Windows/Microsoft Store después de rellenar algunas propiedades de AppXManifest y la extensión se empaquetará en poco tiempo.  
 
+Una vez empaquetada la [](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) extensión, consulta la sección de pruebas de Crear y probar la extensión de Microsoft Edge para obtener información sobre cómo descargarla o desempaquetarla.  
 
-## [Ejecutar el kit para la certificación de aplicaciones en Windows](./packaging/running-the-windows-app-certification-kit.md)
+## [<a name="running-the-windows-app-certification-kit"></a>Ejecutar el kit para la certificación de aplicaciones en Windows](./packaging/running-the-windows-app-certification-kit.md)  
 
-Una vez que tenga una extensión empaquetada, puede ejecutarla a través del kit para la certificación de aplicaciones en Windows. Al hacerlo, se ejecutará una serie de pruebas en el paquete de extensión para asegurarse de que esté listo para Microsoft Store.
+Una vez que tenga una extensión empaquetada, puede ejecutarla a través del Kit de certificación de aplicaciones de Windows. Al hacerlo, se ejecutarán varias pruebas en el paquete de extensión para asegurarse de que está listo para la Microsoft Store.  

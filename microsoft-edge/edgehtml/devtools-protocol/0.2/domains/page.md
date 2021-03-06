@@ -1,322 +1,164 @@
 ---
-description: DevTools Protocol versión 0,2 (EdgeHTML) Reference para el dominio de la página. Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de la página.
-title: 'Dominio de la página: DevTools Protocol versión 0,2 (EdgeHTML)'
+description: Referencia del protocolo DevTools versión 0.2 (EdgeHTML) para el dominio de página. Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de página.
+title: 'Dominio de página: protocolo DevTools versión 0.2 (EdgeHTML)'
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 2f1849a2e2aa2f53cef9dff5d03ac991d368a6f3
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d969dd100164ace61445a4618174cfa943dcfd2b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235963"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398850"
 ---
-# Dominio de la página: DevTools Protocol versión 0,2 (EdgeHTML)  
+# <a name="page-domain---devtools-protocol-version-02-edgehtml"></a>Dominio de página: protocolo DevTools versión 0.2 (EdgeHTML)  
 
-Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de la página.
+Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de página.  
 
-| | |
-|-|-|
-| [**Métodos**](#methods) | [Habilitar](#enable), [deshabilitar](#disable), [navegar](#navigate), [getFrameTree](#getframetree) |
-| [**Eventos**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |
-| [**Tipos**](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |
-## Métodos
+| Clasificación | Miembros |  
+|:--- |:--- |  
+| [Métodos](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate), [getFrameTree](#getframetree) |  
+| [Eventos](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |  
+| [Tipos](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |  
 
-### habilitar
-Habilita las notificaciones de dominio de página.
+## <a name="methods"></a>Métodos  
 
-</p>
+### <a name="enable"></a>habilitar  
 
----
+Habilita las notificaciones de dominio de página.  
 
-### deshabilitar 
-Deshabilita las notificaciones de dominio de página.
+&nbsp;  
 
-</p>
+---  
 
----
+### <a name="disable"></a>deshabilitar   
 
-### navegar
-Desplaza la página actual a la dirección URL dada.
+Deshabilita las notificaciones de dominio de página.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>Dirección URL para navegar por la página.</td>
-        </tr>
-        <tr>
-            <td>frameId <br/> <i>opcional</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador de trama para navegar. Si no se especifica, se desplazará por la página superior.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Devuelve</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador del fotograma en el que se va a navegar.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+&nbsp;  
 
----
+---  
 
-### getFrameTree
-Devuelve la estructura de árbol de fotogramas actual.
+### <a name="navigate"></a>navegar  
 
-<table>
-    <thead>
-        <tr>
-            <th>Devuelve</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameTree</td>
-            <td><a href="#frametree"><code class="flyout">FrameTree</code></a></td>
-            <td>Presentar estructura de árbol de fotogramas.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+Navega a la página actual a la dirección URL determinada.  
 
----
+| Parameters | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| url | `string` | DIRECCIÓN URL para navegar por la página. |  
+| frameId \(optional\) | [FrameId](#frameid) | Id. de marco para navegar.  Si no se especifica, navegará por la página superior. |  
 
-## Eventos
+| Devuelve | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | Identificador de marco que se navegará. |  
 
-### frameAttached
-Se desencadena cuando el marco se ha adjuntado a su elemento primario.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador de la trama que se ha adjuntado.</td>
-        </tr>
-        <tr>
-            <td>parentFrameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador de marco primario.</td>
-        </tr>
-        <tr>
-            <td>apilable <br/> <i>opcional</i></td>
-            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
-            <td>Seguimiento de la pila de JavaScript del momento en que se asoció el marco, establecido solo si el marco se inició desde el script.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="getframetree"></a>getFrameTree  
 
----
+Devuelve la estructura del árbol de marco actual.  
 
-### frameDetached
-Se desencadena cuando se ha desvinculado el marco de su elemento primario.
+| Devuelve | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| frameTree | [FrameTree](#frametree) | Presentar estructura de árbol de marco. |  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador de la trama que se ha desvinculado.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+## <a name="events"></a>Eventos  
 
-### frameNavigated
-Se activa una vez que se ha completado la navegación del marco.
+### <a name="frameattached"></a>frameAttached  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>bastidor</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Objeto Frame.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+Se desencadena cuando el marco se ha unido a su elemento primario.  
 
----
+| Parameters | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | Id. del marco que se ha adjuntado. |  
+| parentFrameId | [FrameId](#frameid) | Identificador de fotograma primario. |  
+| stack \(optional\) | [Runtime.StackTrace](./runtime.md#stacktrace) | Seguimiento de pila de JavaScript de cuándo se adjunta el marco, solo se establece si el marco se inicia desde el script. |  
 
-### loadEventFired
-Corresponde al evento Window. onload.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>marca</td>
-            <td><code class="flyout">number</code></td>
-            <td>Número de milisegundos desde la época.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="framedetached"></a>frameDetached  
 
----
+Se desencadena cuando se ha desasociado el marco de su elemento primario.  
 
-### domContentEventFired
-Corresponde al evento document. onDOMContentLoaded.
+| Parameters | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | Identificador del marco que se ha desasociado. |  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>marca</td>
-            <td><code class="flyout">number</code></td>
-            <td>Número de milisegundos desde la época.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+### <a name="framenavigated"></a>frameNavigated  
 
-## Tipos
+Se desencadena una vez completada la navegación del marco.  
 
-### <a name="frameid"></a> FrameId `string`
+| Parameters | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| marco | [Marco](#frame) | Frame (objeto). |  
 
-Identificador de trama único.
+---  
 
-</p>
+### <a name="loadeventfired"></a>loadEventFired  
 
----
+Corresponde al `window.onload` evento.  
 
-### <a name="frame"></a> Marco `object`
+| Parameters | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| marca de tiempo | `number` | Número de milisegundos desde la época. |  
 
-Información sobre el marco de la página.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Propiedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador único de marco.</td>
-        </tr>
-        <tr>
-            <td>parentId <br/> <i>opcional</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificador único del marco primario.</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>opcional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Nombre del marco según se especifica en la etiqueta.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>Dirección URL del documento de marco.</td>
-        </tr>
-        <tr>
-            <td>securityOrigin</td>
-            <td><code class="flyout">string</code></td>
-            <td>Origen del documento de marco.</td>
-        </tr>
-        <tr>
-            <td>mimeType</td>
-            <td><code class="flyout">string</code></td>
-            <td>MIME del marco según lo determine el explorador.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="domcontenteventfired"></a>domContentEventFired  
 
----
+Corresponde al `document.onDOMContentLoaded` evento.  
 
-### <a name="frametree"></a> FrameTree `object`
+| Parameters | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| marca de tiempo | `number` | Número de milisegundos desde la época. |  
 
-Información sobre la jerarquía de Marcos.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Propiedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>bastidor</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Información de fotograma para este elemento de árbol.</td>
-        </tr>
-        <tr>
-            <td>childFrames <br/> <i>opcional</i></td>
-            <td><a href="#frametree"><code class="flyout">FrameTree[]</code></a></td>
-            <td>Marcos secundarios.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+## <a name="types"></a>Tipos  
 
----
+### <a name="frameid-string"></a>Cadena FrameId  
+
+<a name="frameid"></a>  
+
+Identificador de fotograma único.  
+
+&nbsp;  
+
+---  
+
+### <a name="frame-object"></a>Frame (objeto)  
+
+<a name="frame"></a>  
+
+Información sobre el marco de la página.  
+
+| Propiedades | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| id | [FrameId](#frameid) | Identificador único de marco. |  
+| parentId \(optional\) | [FrameId](#frameid) | Identificador único del marco primario. |  
+| nombre \(optional\) | `string` | Nombre del marco tal como se especifica en la etiqueta. |  
+| url | `string` | Dirección URL del documento de marco. |  
+| securityOrigin | `string` | Origen de seguridad del documento de marco. |  
+| mimeType | `string` | Frame mimeType del documento según lo determinado por el explorador. |  
+
+---  
+
+### <a name="frametree-object"></a>FrameTree (objeto)  
+
+<a name="frametree"></a>  
+
+Información sobre la jerarquía frame.  
+
+| Propiedades | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| marco | [Marco](#frame) | Información de marco para este elemento de árbol. |  
+| childFrames \(optional\) | [FrameTree[]](#frametree) | Fotogramas secundarios. |  
+
+---  

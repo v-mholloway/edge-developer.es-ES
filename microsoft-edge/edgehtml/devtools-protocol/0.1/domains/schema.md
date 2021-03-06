@@ -1,78 +1,52 @@
 ---
-description: DevTools Protocol versión 0,1 (EdgeHTML) Reference para el dominio de esquema. Proporciona información sobre el esquema de protocolo.
-title: Dominio de esquema-DevTools Protocol versión 0,1 (EdgeHTML)
+description: Referencia del protocolo DevTools versión 0.1 (EdgeHTML) para el dominio de esquema. Proporciona información sobre el esquema de protocolo.
+title: 'Dominio de esquema: protocolo DevTools versión 0.1 (EdgeHTML)'
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 7b4ec71b7799ae099c673bd81fa5b15a8ddd5d27
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e89f4269b4984ee49e83a23fcab9679485c49040
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11236346"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398864"
 ---
-# Dominio de esquema-DevTools Protocol versión 0,1 (EdgeHTML)  
+# <a name="schema-domain---devtools-protocol-version-01-edgehtml"></a>Dominio de esquema: protocolo DevTools versión 0.1 (EdgeHTML)  
 
-Proporciona información sobre el esquema de protocolo.
+Proporciona información sobre el esquema de protocolo.  
 
-| | |
-|-|-|
-| [**Métodos**](#methods) | [getDomains](#getdomains) |
-| [**Tipos**](#types) | [Dominio](#domain) |
-## Métodos
+| Clasificación | Miembros |  
+|:--- |:--- |  
+| [Métodos](#methods) | [getDomains](#getdomains) |  
+| [Tipos](#types) | [Dominio](#domain) |  
 
-### getDomains
-Devuelve los dominios admitidos.
+## <a name="methods"></a>Métodos  
 
-<table>
-    <thead>
-        <tr>
-            <th>Devuelve</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Confíe</td>
-            <td><a href="#domain"><code class="flyout">Domain[]</code></a></td>
-            <td>Lista de dominios admitidos.</td>
-        </tr>
-    </tbody>
-</table>
+### <a name="getdomains"></a>getDomains  
 
----
+Devuelve dominios admitidos.  
 
-## Tipos
+| Devuelve | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| dominios | [Dominio[]](#domain) | Lista de dominios admitidos. |  
 
-### <a name="domain"></a> Dominio `object`
+---  
 
-Descripción del dominio de protocolo.
+## <a name="types"></a>Tipos  
 
-<table>
-    <thead>
-        <tr>
-            <th>Propiedades</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>name</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nombre de dominio.</td>
-        </tr>
-        <tr>
-            <td>version</td>
-            <td><code class="flyout">string</code></td>
-            <td>Versión del dominio.</td>
-        </tr>
-    </tbody>
-</table>
+### <a name="domain-object"></a>Domain (objeto)  
 
----
+<a name="domain"></a>  
+
+Descripción del dominio de protocolo.  
+
+| Propiedades | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| name | `string` | Nombre de dominio. |  
+| version | `string` | Versión de dominio. |  
+
+---  

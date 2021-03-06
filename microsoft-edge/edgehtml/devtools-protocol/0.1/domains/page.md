@@ -1,85 +1,69 @@
 ---
-description: DevTools Protocol versión 0,1 (EdgeHTML) Reference para el dominio de la página. Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de la página.
-title: 'Dominio de la página: DevTools Protocol versión 0,1 (EdgeHTML)'
+description: Referencia del protocolo DevTools versión 0.1 (EdgeHTML) para el dominio de página. Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de página.
+title: 'Dominio de página: protocolo DevTools versión 0.1 (EdgeHTML)'
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 55575e54b9125d7ff544c23c81da4b15d3b56fb1
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: b04b0685a6b465d40e999a2a48d370573a3058d8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11236353"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399151"
 ---
-# Dominio de la página: DevTools Protocol versión 0,1 (EdgeHTML)  
+# <a name="page-domain---devtools-protocol-version-01-edgehtml"></a>Dominio de página: protocolo DevTools versión 0.1 (EdgeHTML)  
 
-Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de la página.
+Las acciones y eventos relacionados con la página inspeccionada pertenecen al dominio de página.  
 
-| | |
-|-|-|
-| [**Métodos**](#methods) | [Habilitar](#enable), [deshabilitar](#disable), [navegar](#navigate) |
-| [**Tipos**](#types) | [FrameId](#frameid) |
-## Métodos
+| Clasificación | Miembros |  
+|:--- |:--- |  
+| [**Métodos**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate) |  
+| [**Tipos**](#types) | [FrameId](#frameid) |  
 
-### habilitar
-Habilita las notificaciones de dominio de página.
+## <a name="methods"></a>Métodos  
 
+### <a name="enable"></a>habilitar  
 
----
+Habilita las notificaciones de dominio de página.  
 
-### deshabilitar 
-Deshabilita las notificaciones de dominio de página.
+&nbsp;  
 
+---  
 
----
+### <a name="disable"></a>deshabilitar   
 
-### navegar
-Desplaza la página actual a la dirección URL dada.
+Deshabilita las notificaciones de dominio de página.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>Dirección URL para navegar por la página.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Devuelve</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td><span><b>Montaje. </b></span>Identificador del fotograma en el que se va a navegar.</td>
-        </tr>
-    </tbody>
-</table>
+&nbsp;  
 
----
+---  
 
-## Tipos
+### <a name="navigate"></a>navegar  
 
-### <a name="frameid"></a> FrameId `string`
+Navega a la página actual a la dirección URL determinada.  
 
-Identificador de trama único.
+| Parameters | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| url | `string` | DIRECCIÓN URL para navegar por la página. |  
 
+| Devuelve | Tipo | Detalles |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | **Experimental**.  Identificador de fotograma que se navegará. |  
 
----
+---  
+
+## <a name="types"></a>Tipos  
+
+### <a name="frameid-string"></a>Cadena FrameId  
+
+<a name="frameid"></a>  
+
+Identificador de fotograma único.  
+
+&nbsp;  
+
+---  

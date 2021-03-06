@@ -1,32 +1,32 @@
 ---
-description: Cómo depurar Microsoft Edge (cromo) y Microsoft Edge (EdgeHTML) desde código de Visual Studio
-title: Depurar Microsoft Edge (cromo) desde el código de Visual Studio
+description: Cómo depurar Microsoft Edge (Chromium) y Microsoft Edge (EdgeHTML) desde Visual Studio código
+title: Depurar Microsoft Edge (Chromium) desde Visual Studio código
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, código de vs, código de Visual Studio, depurador
-ms.openlocfilehash: df15b76cc26ad01d3b8508362aa4b86998f8b41b
-ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools, vs code, visual studio code, depurador
+ms.openlocfilehash: e36348fc1ef5e30a511e6eda73c7646a85d8717e
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182508"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399298"
 ---
-# Depurador para la extensión de código de Microsoft Edge Visual Studio  
+# <a name="debugger-for-microsoft-edge-visual-studio-code-extension"></a>Depurador para Microsoft Edge Visual Studio de código  
 
-Con el [depurador de la extensión de código de Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio, depura tu código de JavaScript front-end por línea y consulta las `console.log()` instrucciones directamente desde [Visual Studio Code][VisualstudioCode]!  
+Con la extensión de código Visual Studio depurador de [Microsoft Edge,][VisualstudioMarketplaceDebuggerMicrosoftEdge] depura la línea de código JavaScript front-end y consulta instrucciones directamente desde `console.log()` Visual Studio [Code][VisualstudioCode]!  
 
-:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Depurador para la extensión de código de Visual Studio Edge en el trabajo" lightbox="./media/debugger-for-edge.gif":::
-   Depurador para la extensión de código de Visual Studio Edge en el trabajo  
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Depurador para la extensión Visual Studio código perimetral en el trabajo" lightbox="./media/debugger-for-edge.gif":::
+   Depurador para la extensión Visual Studio código perimetral en el trabajo  
 :::image-end:::
 
 <!--![Debugger for Edge Visual Studio Code extension at work][ImageGifDebuggerEdge]  -->  
 
-## Iniciar Microsoft Edge  
+## <a name="launching-microsoft-edge"></a>Iniciar Microsoft Edge  
 
-Vaya a la vista de depuración \ ( `Ctrl` + `Shift` + `D` en Windows o `Command` + `Shift` + `D` en MacOS \) en la **barra de actividades**.  Si no tiene ninguna configuración en Visual Studio Code, presione `F5` Windows o MacOS o seleccione el botón verde de **reproducción** .  Seleccione **borde** en la lista desplegable.  Debería ver un `launch.json` archivo con la configuración siguiente.  
+Vaya a la vista Depurar \( `Ctrl` + `Shift` + `D` en Windows o `Command` + `Shift` + `D` en macOS\) en la barra **de actividades**.  Si no tienes ninguna configuración en el código Visual Studio, selecciona en Windows o `F5` macOS o selecciona el botón **verde Reproducir.**  Seleccione **Edge** en el desplegable.  Debería ver un `launch.json` archivo con la siguiente configuración.  
 
 ```json
 {
@@ -43,11 +43,11 @@ Vaya a la vista de depuración \ ( `Ctrl` + `Shift` + `D` en Windows o `Command`
 }
 ```  
 
-Si pulsa `F5` en Windows o Mac OS o vuelve a seleccionar el botón verde **reproducir** , Visual Studio Code inicia Microsoft Edge \ (EdgeHTML \) y podrá depurar cualquier proyecto web que se ejecute en el puerto `8080` directamente desde Visual Studio Code.  
+Si seleccionas en Windows o macOS o vuelves a seleccionar el botón verde Reproducir, Visual Studio Code inicia `F5` Microsoft Edge \(EdgeHTML\) y puedes depurar cualquier proyecto web que se ejecute en el puerto directamente desde Visual Studio **** `8080` Code.  
 
-### Microsoft Edge (Chromium)  
+### <a name="microsoft-edge-chromium"></a>Microsoft Edge (Chromium)  
 
-Si deseas iniciar Microsoft Edge \ (cromo \), el nuevo Microsoft Edge, en lugar de Microsoft Edge \ (EdgeHTML \), simplemente agrega un `version` atributo a la configuración existente con la versión de Microsoft Edge \ (cromo \) que deseas iniciar \ ( `dev` , `beta` o `canary` \).  La siguiente configuración inicia la versión Canarias de Microsoft Edge \ (cromo \).  
+Si desea iniciar Microsoft Edge \(Chromium\), el nuevo Microsoft Edge, en lugar de Microsoft Edge \(EdgeHTML\), simplemente agregue un atributo a la configuración existente con la versión de Microsoft Edge \(Chromium\) que desea iniciar `version` \( , , o `dev` `beta` `canary` \).  La siguiente configuración inicia la versión canary de Microsoft Edge \(Chromium\).  
 
 ```json
 {
@@ -60,15 +60,15 @@ Si deseas iniciar Microsoft Edge \ (cromo \), el nuevo Microsoft Edge, en lugar 
 }
 ```  
 
-## Adjuntar a Microsoft Edge  
+## <a name="attaching-to-microsoft-edge"></a>Adjuntar a Microsoft Edge  
 
-Adjunte código de Visual Studio a Microsoft Edge \ (cromo \).  Desde el terminal, ejecute el siguiente comando.  
+Adjuntar Visual Studio código a Microsoft Edge \(Chromium\).  Desde el terminal, ejecute el siguiente comando.  
 
 ```shell
 start msedge --remote-debugging-port=9222
 ```  
 
-Agregue la configuración que se muestra a continuación al `launch.json` archivo.   
+Agregue la configuración siguiente al `launch.json` archivo.   
 
 ```json
 {
@@ -79,26 +79,26 @@ Agregue la configuración que se muestra a continuación al `launch.json` archiv
 }
 ```  
 
-Si ahora ejecuta esta configuración, Visual Studio Code se conecta a Microsoft Edge \ (cromo \) y comienza a depurar.  
+Si ahora ejecuta esta configuración, Visual Studio code se adjunta a Microsoft Edge \(Chromium\) y comienza la depuración.  
 
-## Ponerse en contacto con los elementos del equipo de extensión de código de Microsoft Edge Visual Studio    
+## <a name="getting-in-touch-with-the-elements-for-microsoft-edge-visual-studio-code-extension-team"></a>Getting in touch with the Elements for Microsoft Edge Visual Studio Code extension team    
 
-Envíe sus comentarios [archivando un problema][GithubMicrosoftVscodeEdgeDebug2NewIssue] en el [repositorio de github][GithubMicrosoftVscodeEdgeDebug2] de la extensión.  Incluya el archivo de registro del adaptador de depuración, que se crea para cada ejecución en el `%temp%` directorio con el nombre `vscode-edge-debug2.txt` .  Arrastre este archivo a un Comentario de problema para cargarlo en GitHub.  
+Envíe sus comentarios mediante [la presentación de un problema][GithubMicrosoftVscodeEdgeDebug2NewIssue] en el repositorio de [GitHub][GithubMicrosoftVscodeEdgeDebug2] de la extensión.  Incluya el archivo de registro del adaptador de depuración, que se crea para cada ejecución en el `%temp%` directorio con el nombre `vscode-edge-debug2.txt` .  Arrastre este archivo a un comentario de problema para cargarlo en GitHub.  
 
-Para ayudar a que los elementos de la extensión de código Microsoft Edge Visual Studio sean mejores, tus contribuciones son bienvenidos.  Encuentre todo lo que necesita para empezar a trabajar en el [repositorio de github][GithubMicrosoftVscodeEdgeDebug2] de la extensión.  
+Para ayudar a mejorar la extensión elements for Microsoft Edge Visual Studio Code, sus contribuciones son bienvenidas.  Busca todo lo que necesitas para empezar en [github repositorio][GithubMicrosoftVscodeEdgeDebug2] de la extensión.  
 
 
 <!-- image links -->  
 
 <!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge Visual Studio Code extension in action"  -->  
-[ImagePngDebuggerEdge]:./Media/debugger-for-edge.png "depurador para la extensión de código perimetral de Visual Studio en acción"  
+[ImagePngDebuggerEdge]: ./media/debugger-for-edge.png "Debugger for Edge Visual Studio Code extension in action"  
 
 <!--links -->  
 
-[VisualstudioCode]: https://code.visualstudio.com "Código de Visual Studio"  
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentación | Código de Visual Studio"   
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio código"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentación | Visual Studio código"   
 
-[GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "Microsoft/vscode-Edge-debug2 | GitHub"  
-[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "Nuevo problema-Microsoft/vscode-Edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2]: https://github.com/Microsoft/vscode-edge-debug2 "microsoft/vscode-edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2NewIssue]: https://github.com/Microsoft/vscode-edge-debug2/issues/new "Nuevo problema: microsoft/vscode-edge-debug2 | GitHub"  
 
-[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Depurador para Microsoft Edge | Marketplace de Visual Studio"  
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Depurador para Microsoft Edge | Visual Studio Marketplace"  

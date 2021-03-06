@@ -1,18 +1,18 @@
 ---
-description: Su trabajo no finaliza con la garantía de que su sitio funciona de forma excelente en Microsoft Edge y Android.  Aunque el modo de dispositivo pueda simular una variedad de dispositivos como iPhone, le recomendamos que consulte las soluciones para la emulación proporcionadas por otros exploradores.
+description: El trabajo no termina asegurando que el sitio se ejecute bien en Microsoft Edge y Android.  Aunque el modo dispositivo es capaz de simular una variedad de otros dispositivos como iPhones, te recomendamos que consultes las soluciones de emulación proporcionadas por otros exploradores.
 title: Emular y probar otros exploradores
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1a7cc1c7e0a49760f30afdc16921824372b3a1aa
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 6b1239db373bd13d798ac90ac47a10878d07cdcb
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124946"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398689"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,35 +28,35 @@ ms.locfileid: "11124946"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Emular y probar otros exploradores  
+# <a name="emulate-and-test-other-browsers"></a>Emular y probar otros exploradores  
 
-Su trabajo no finaliza con la garantía de que su sitio funciona de forma excelente en Microsoft Edge y Android.  Aunque el modo de dispositivo pueda simular una variedad de dispositivos como iPhone, le recomendamos que consulte las soluciones para la emulación proporcionadas por otros exploradores.  
+El trabajo no termina asegurando que el sitio se ejecute bien en Microsoft Edge y Android.  Aunque el modo dispositivo es capaz de simular una variedad de otros dispositivos como iPhones, te recomendamos que consultes las soluciones de emulación proporcionadas por otros exploradores.  
 
-### Resumen  
+### <a name="summary"></a>Resumen  
 
-*   Si no tiene un dispositivo en particular o desea realizar una comprobación puntual en algo, la mejor opción es emular el dispositivo directamente en el explorador.  
-*   Los emuladores y simuladores de dispositivos le permiten imitar su sitio de desarrollo en un intervalo de dispositivos de su estación de trabajo.  
-*   Los emuladores basados en la nube permiten automatizar las pruebas unitarias de su sitio a través de diferentes plataformas.  
+*   Cuando no tienes un dispositivo en particular o quieres hacer una comprobación de puntos en algo, la mejor opción es emular el dispositivo directamente dentro del explorador.  
+*   Los emuladores y simuladores de dispositivos te permiten imitar el sitio de desarrollo en una amplia variedad de dispositivos de la estación de trabajo.  
+*   Los emuladores basados en la nube permiten automatizar las pruebas unitarias de su sitio en diferentes plataformas.  
 
-## Emuladores del explorador  
+## <a name="browser-emulators"></a>Emuladores de explorador  
 
-Los emuladores de explorador son ideales para probar la capacidad de respuesta de un sitio, pero cada uno de ellos no emula las diferencias en la API, la compatibilidad con CSS y determinados comportamientos que se pueden ver en un explorador móvil.  Pruebe su sitio en exploradores que se ejecutan en dispositivos reales para asegurarse de que todo funciona como se espera.  
+Los emuladores de explorador son excelentes para probar la capacidad de respuesta de un sitio, pero cada uno no emula las diferencias en api, compatibilidad con CSS y determinados comportamientos que se muestran en un explorador móvil.  Pruebe el sitio en exploradores que se ejecutan en dispositivos reales para que todo se comporte como se esperaba.  
 
-### Vista diseño dinámico de Firefox  
+### <a name="firefox-responsive-design-view"></a>Vista Diseño dinámico de Firefox  
 
-Firefox tiene una [vista de diseño con capacidad de respuesta][MDNResponsiveDesignMode] que le anima a dejar de pensar en términos de dispositivos específicos y, en su lugar, explorar cómo cambia el diseño en tamaños de pantalla comunes o su propio tamaño arrastrando los bordes.  
+Firefox tiene una [vista de][MDNResponsiveDesignMode] diseño adaptable que te anima a dejar de pensar en términos de dispositivos específicos y, en su lugar, explorar cómo cambia el diseño en tamaños de pantalla comunes o tu propio tamaño arrastrando los bordes.  
 
-### Emulación de EdgeHTML  
+### <a name="edgehtml-emulation"></a>Emulación edgeHTML  
 
-Para emular teléfonos con Windows, use la [emulación integrada][DevToolsEdgeHtmlEmulation]Microsoft Edge \ (EdgeHTML \).  
+Para emular Windows Phones, usa la [emulación][DevToolsEdgeHtmlEmulation]integrada de Microsoft Edge \(EdgeHTML\).  
 
-Use la [emulación de IE 11][Ie11DevToolsEmulation] para simular el aspecto que tendrá la página en versiones anteriores de Internet Explorer.  
+Usa [la emulación de IE 11][Ie11DevToolsEmulation] para simular el aspecto de tu página en versiones anteriores de Internet Explorer.  
 
-## Emuladores y simuladores de dispositivos  
+## <a name="device-emulators-and-simulators"></a>Emuladores y simuladores de dispositivos  
 
-Los simuladores y simuladores de dispositivos simulan no solo el entorno del explorador, sino el dispositivo completo.  Cada uno es útil para probar las cosas que requieren integración del sistema operativo, por ejemplo, la entrada de datos con teclados virtuales.  
+Los simuladores y emuladores de dispositivo simulan no solo el entorno del explorador, sino todo el dispositivo.  Cada uno es útil para probar cosas que requieren la integración del sistema operativo, por ejemplo, la entrada de formulario con teclados virtuales.  
 
-### Emulador de Android  
+### <a name="android-emulator"></a>Emulador de Android  
 
 <!--  
 :::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
@@ -64,20 +64,20 @@ Los simuladores y simuladores de dispositivos simulan no solo el entorno del exp
 :::image-end:::  
 -->  
 
-Por el momento, no hay ninguna forma de instalar Microsoft Edge en un emulador Android.  Sin embargo, puede usar el explorador Android, el shell de contenido de cromo y Firefox para Android que revisamos más adelante en esta guía.  El shell de contenido de cromo ejecuta el mismo motor de procesamiento de cromo que Microsoft Edge, pero sin ninguna de las características específicas del explorador.  
+Por el momento, no hay forma de instalar Microsoft Edge en un emulador de Android.  Sin embargo, puede usar el Explorador de Android, el Shell de contenido chromium y Firefox para Android que revisaremos más adelante en esta guía.  Chromium Content Shell ejecuta el mismo motor de representación de Chromium que Microsoft Edge, pero viene sin ninguna de las características específicas del explorador.  
 
-El emulador de Android viene con el SDK de Android que necesita descargar como parte de [Android Studio][AndroidStudioDownload].  A continuación, siga las instrucciones para [configurar un dispositivo virtual][AndroidStudioCreateManageVirtualDevices] e [iniciar el emulador][AndroidStudioRunAppsAndroidEmulator].  
-Una vez que se haya arrancado el emulador, haga clic en el icono del explorador y pruebe su sitio en el antiguo explorador de cotizaciones para Android.  
+El emulador de Android viene con el SDK de Android que necesitas descargar como parte de [Android Studio][AndroidStudioDownload].  A continuación, siga [las instrucciones para configurar un dispositivo virtual e][AndroidStudioCreateManageVirtualDevices] iniciar el [emulador][AndroidStudioRunAppsAndroidEmulator].  
+Una vez que se inicie el emulador, elija en el icono Explorador y pruebe el sitio en el antiguo Explorador de acciones para Android.  
 
-#### Shell de contenido de cromo en Android  
+#### <a name="chromium-content-shell-on-android"></a>Shell de contenido chromium en Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
    Android Emulator Content Shell  
 :::image-end:::  
 -->  
 
-Para instalar el shell de contenido de cromo para Android, deje el emulador ejecutándose y ejecute el siguiente comando.  
+Para instalar el Shell de contenido de Chromium para Android, deje el emulador en ejecución y ejecute el siguiente comando.  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -85,60 +85,60 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```  
 
-Ahora puede probar su sitio con el shell de contenido de cromo.  
+Ahora puede probar su sitio con el Shell de contenido de Chromium.  
 
-#### Firefox en Android  
+#### <a name="firefox-on-android"></a>Firefox en Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
    Firefox Icon on Android Emulator  
 :::image-end:::  
 -->  
 
-Al igual que el shell de contenido de cromo, puede obtener una APK para instalar Firefox en el emulador.  
+Al igual que el Shell de contenido de Chromium, puedes obtener un APK para instalar Firefox en el emulador.  
 
-[Descargue el archivo. apk correcto][MozillaFirefoxDownload].  
+[Descargue el archivo .apk correcto.][MozillaFirefoxDownload]  
 
-Para instalar el archivo en un emulador abierto o en un dispositivo Android conectado, ejecute el siguiente comando.  
+Para instalar el archivo en un emulador abierto o un dispositivo Android conectado, ejecute el siguiente comando.  
 
 ```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```  
 
-### simulador iOS  
+### <a name="ios-simulator"></a>Simulador de iOS  
 
-El simulador iOS para Mac OS X viene con Xcode, que se [instala desde la App Store][MacAppStoreXcode].  
+El simulador de iOS para Mac OS X viene con Xcode, que se [instala desde la Tienda de aplicaciones.][MacAppStoreXcode]  
 
-Cuando haya terminado, obtenga información sobre cómo trabajar con el simulador a través de la [documentación para desarrolladores de Apple][AppleSimulatorHelp].  
+Cuando haya terminado, obtenga información sobre cómo trabajar con el simulador a través de la [documentación del desarrollador de Apple][AppleSimulatorHelp].  
 
 > [!NOTE]
-> Para evitar tener que abrir Xcode cada vez que desee usar el simulador iOS, ábralo y, a continuación, haga clic con el botón derecho en el icono del simulador iOS en el Dock y seleccione **mantener en Dock**.  Ahora solo tienes que hacer clic en este icono cuando lo necesites.  
+> Para evitar tener que abrir Xcode cada vez que quiera usar el simulador de iOS, ábralo, mantenga el mouse en el icono simulador de iOS en el dock, abra el menú contextual \(haga clic con el botón secundario\) y elija Mantener en **dock**.  Ahora solo tienes que elegir el icono siempre que lo necesites.  
 
-###  Microsoft Edge (EdgeHTML)  
+###  <a name="microsoft-edge-edgehtml"></a>Microsoft Edge (EdgeHTML)  
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
-   VM moderna de IE  
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Máquina virtual IE moderna" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+   Máquina virtual IE moderna  
 :::image-end:::  
 
-Microsoft Edge \ (EdgeHTML \) las máquinas virtuales \ (VMs \) te permiten acceder a diferentes versiones de EdgeHTML e IE en tu equipo a través de VirtualBox \ (o VMWare \).  Elija una [máquina virtual en la página de descarga][MicrosoftDeveloperEdgeVms].  
+Las máquinas virtuales \(VM\) de Microsoft Edge \(EdgeHTML\) permiten tener acceso a diferentes versiones de EdgeHTML e IE en el equipo a través de VirtualBox \(o VMWare\).  Elija una [máquina virtual en la página de descarga][MicrosoftDeveloperEdgeVms].  
 
-## Emuladores y simuladores basados en la nube  
+## <a name="cloud-based-emulators-and-simulators"></a>Emuladores y simuladores basados en la nube  
 
-Si no puede usar los emuladores y no tiene acceso a dispositivos reales, los emuladores basados en la nube son la mejor opción.  Una gran ventaja de los emuladores basados en la nube en los dispositivos reales y en los emuladores locales es que puede automatizar las pruebas unitarias de su sitio a través de distintas plataformas.  
+Si no puedes usar los emuladores y no tienes acceso a dispositivos reales, los emuladores basados en la nube son lo siguiente mejor.  Una gran ventaja de los emuladores basados en la nube sobre dispositivos reales y emuladores locales es que puede automatizar las pruebas unitarias de su sitio en diferentes plataformas.  
 
-*   [BrowserStack (comercial)][|::ref1::|] es el más fácil de usar para pruebas manuales.  Seleccione un sistema operativo, seleccione la versión del explorador y el tipo de dispositivo, seleccione una dirección URL para explorar y una máquina virtual hospedada con la que pueda interactuar.  También puedes ejecutar varios emuladores en la misma pantalla, lo que te permite probar la apariencia de la aplicación en varios dispositivos al mismo tiempo.  
-*   [SauceLabs (Commercial)][SauceLabs] le permite ejecutar pruebas unitarias dentro de un emulador, que pueden ser muy útiles para crear secuencias de comandos en su sitio y observar la grabación de vídeo de este después en varios dispositivos.  También puede realizar pruebas manuales con su sitio.  
-*   El [dispositivo en cualquier lugar (comercial)][AppExperience] no usa emuladores pero dispositivos reales que puedas controlar de forma remota.  Esto es muy útil en el caso de que necesite reproducir un problema en un dispositivo específico y no pueda ver el error utilizando cualquiera de las opciones de las guías anteriores.  
+*   [BrowserStack (comercial)][|::ref1::|] es el más fácil de usar para pruebas manuales.  Seleccionas un sistema operativo, seleccionas la versión del explorador y el tipo de dispositivo, seleccionas una dirección URL para examinar y gira hacia arriba una máquina virtual hospedada con la que puedes interactuar.  También puedes ejecutar varios emuladores en la misma pantalla, lo que te permite probar la apariencia de la aplicación en varios dispositivos al mismo tiempo.  
+*   [SauceLabs (comercial)][SauceLabs] permite ejecutar pruebas unitarias dentro de un emulador, lo que puede ser realmente útil para secuencias de comandos de un flujo a través del sitio y ver la grabación de vídeo de esto después en varios dispositivos.  También puede realizar pruebas manuales con su sitio.  
+*   [Device Anywhere (comercial)][AppExperience] no usa emuladores, sino dispositivos reales que puedes controlar de forma remota.  Esto es muy útil en caso de que necesites reproducir un problema en un dispositivo específico y puede que no muestres el error con ninguna de las opciones de las guías anteriores.  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML): emulación | Microsoft docs"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML): emulación | Microsoft Docs"  
 
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emular exploradores, tamaños de pantalla y ubicaciones GPS | Microsoft docs"  
+[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emular exploradores, tamaños de pantalla y ubicaciones DE GPS | Microsoft Docs"  
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Descargar máquinas virtuales"  
 
@@ -147,16 +147,16 @@ Si no puede usar los emuladores y no tiene acceso a dispositivos reales, los emu
 [AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Ejecutar aplicaciones en el emulador de Android | Desarrolladores de Android"  
 
 [AppExperience]: https://www.sigos.com/app-experience/ "Experiencia de la aplicación"  
-[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Ayuda del simulador: actual | Apple"  
+[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Ayuda del simulador: configuración | manzana"  
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"  
-[MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode en la tienda de aplicaciones para Mac"  
+[MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode en la Mac App Store"  
 [MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Modo de diseño dinámico | MDN"  
 [MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Descargar el explorador Firefox"  
-[SauceLabs]: https://saucelabs.com "Prácticas de salsa"  
+[SauceLabs]: https://saucelabs.com "Laboratorios de salsa"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) y está creada por [Meggin Kearney][MegginKearney] \ (Tech Write \) y [Paul Bakaus][PaulBakaus] \ (abrir el sitio web para desarrolladores de Google | Herramientas, rendimiento, animación, UX \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original [](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) se encuentra aquí y es creado por [Meggin Kearney][MegginKearney] \(Tech Writer\) y [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate en Google | Herramientas, Rendimiento, Animación, UX\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

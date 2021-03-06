@@ -1,18 +1,18 @@
 ---
-description: Use instrumentación de asignación en la escala de tiempo para buscar objetos que no se hayan recolectado correctamente y continúe manteniendo la memoria.
-title: Cómo usar el instrumental de asignación en la escala de tiempo
+description: Use instrumentación de asignación en la escala de tiempo para buscar objetos que no se están recopilando correctamente y seguir conservando la memoria.
+title: Cómo usar instrumentación de asignación en escala de tiempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 374b7f0ad80b8975319b2b0ec5cecf42ce4bde82
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230918"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397821"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,71 +28,71 @@ ms.locfileid: "11230918"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Cómo usar el instrumental de asignación en la escala de tiempo  
+# <a name="how-to-use-allocation-instrumentation-on-timeline"></a>Cómo usar instrumentación de asignación en escala de tiempo  
 
-Use **instrumentación de asignación en la escala de tiempo** para buscar objetos que no se hayan recolectado correctamente y continúe manteniendo la memoria.  
+Use **instrumentación de asignación en** la escala de tiempo para buscar objetos que no se están recopilando correctamente y seguir conservando la memoria.  
 
-## Cómo funciona el instrumental de asignación en la escala de tiempo  
+## <a name="how-allocation-instrumentation-on-timeline-works"></a>Cómo funciona la instrumentación de asignación en la escala de tiempo  
 
-La **instrumentación de asignación** de la escala de tiempo combina la información detallada de instantáneas del generador de perfiles del **montón** con la actualización incremental y el seguimiento del panel **rendimiento** .  Del mismo modo, el seguimiento de la asignación de montones para objetos implica el inicio de una grabación, la realización de una secuencia de acciones y la detención de la grabación para su análisis.  
+**La instrumentación de** asignación en la **** escala de tiempo combina la información detallada de instantáneas del perfilador de montón con la actualización incremental y el seguimiento del panel **Rendimiento.**  Del mismo modo, el seguimiento de la asignación de montón de objetos implica iniciar una grabación, realizar una secuencia de acciones y detener la grabación para su análisis.  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-La **instrumentación de asignación de la escala de tiempo** toma instantáneas de montones de forma periódica en la grabación \ (con una frecuencia de cada 50 ms \) y una instantánea final al final de la grabación.  
+**La instrumentación** de asignación en la escala de tiempo toma instantáneas de montón periódicamente a lo largo de la grabación \(con la frecuencia que cada 50 ms\) y una instantánea final al final de la grabación.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Instrumentación de asignación en la escala de tiempo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
-   **Instrumentación de asignación en la escala de tiempo**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Instrumentación de asignación en escala de tiempo" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **Instrumentación de asignación en escala de tiempo**  
 :::image-end:::  
 
 > [!NOTE]
-> El número después del `@` es un identificador de objeto que se conserva en varias instantáneas tomadas durante la sesión de grabación.  El identificador de objeto persistente permite una comparación precisa entre los Estados de la pila.  Los objetos se mueven durante la recolección de elementos no utilizados, por lo que no tiene sentido Mostrar la dirección de un objeto.  
+> El número después del es un identificador de objeto que persiste en las `@` varias instantáneas tomadas durante la sesión de grabación.  El identificador de objeto persistente permite una comparación precisa entre los estados de montón.  Los objetos se mueven durante las colecciones de elementos no utilizados, por lo que mostrar la dirección de un objeto no tiene sentido.  
 
-## Habilitar instrumentación de asignación en la escala de tiempo  
+## <a name="enable-allocation-instrumentation-on-timeline"></a>Habilitar instrumentación de asignación en escala de tiempo  
 
-Complete las acciones siguientes para empezar a usar **instrumentación de asignación en la escala de tiempo**.  
+Complete las siguientes acciones para empezar a usar **instrumentación de asignación en la escala de tiempo**.  
 
-1.  [Abra el DevTools][DevtoolsOpenIndex].  
-1.  Abra el panel **memoria** y seleccione el botón **de opción instrumentación de asignación en la escala de tiempo** .  
+1.  [Abra DevTools][DevtoolsOpenIndex].  
+1.  Abra el panel **Memoria,** seleccione el botón de radio **Instrumentación de asignación en la** escala de tiempo.  
 1.  Iniciar grabación.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Generador de perfiles de asignaciones del montón de grabación" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       Generador de perfiles de asignaciones del montón de grabación  
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Registrador de asignaciones de montón" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Registrador de asignaciones de montón  
     :::image-end:::  
     
-## Leer una escala de tiempo de asignación del montón  
+## <a name="read-a-heap-allocation-timeline"></a>Leer una escala de tiempo de asignación de montón  
 
-La escala de tiempo de asignación del montón muestra dónde se crean los objetos e identifica la ruta de acceso de retención.  En la siguiente ilustración, las barras de la parte superior indican cuándo se encuentran nuevos objetos en el montón.  
+La escala de tiempo de asignación de montón muestra dónde se crean los objetos e identifica la ruta de retención.  En la siguiente figura, las barras de la parte superior indican cuándo se encuentran objetos nuevos en el montón.  
 
-El alto de cada barra corresponde al tamaño de los objetos asignados recientemente, y el color de las barras indica si esos objetos siguen estando activos en la instantánea de la pila final.  Las barras azules indican que los objetos que aún están activos al final de la escala de tiempo, las barras grises indican los objetos que se asignaron durante la escala de tiempo, pero que se han recolectado como basura.  
+El alto de cada barra corresponde al tamaño de los objetos asignados recientemente y el color de las barras indica si esos objetos aún están en la instantánea de montón final.  Las barras azules indican objetos que aún están en vida al final de la escala de tiempo, las barras grises indican objetos que se asignaron durante la escala de tiempo, pero que desde entonces se han recopilado como elementos no utilizados.  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentación de asignación en instantánea de escala de tiempo" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   **Instrumentación de asignación en instantánea de escala de tiempo**  
+   **Instrumentación de asignación en instantánea de escala de** tiempo  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
-<!--todo: redo figure 4 with multiple click actions  -->  
+<!--todo: redo figure 4 with multiple choose actions  -->  
 
-Puede usar los controles deslizantes de la línea de tiempo anterior para acercar esa instantánea en particular y revisar los objetos que se asignaron recientemente en ese punto:  
+Puedes usar los controles deslizantes de la escala de tiempo anterior para acercar esa instantánea en particular y revisar los objetos que se asignaron recientemente en ese momento:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Acercar instantánea" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
-   Acercar instantánea  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Acercar instantáneas" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   Acercar instantáneas  
 :::image-end:::  
 
-Al hacer clic en un objeto específico en el montón, se muestra el árbol de retención en la parte inferior de la instantánea del montón.  El examen de la retención de la ruta de acceso al objeto debe proporcionarle suficiente información para comprender por qué no se recopiló el objeto y debe realizar los cambios de código necesarios para quitar la referencia innecesaria.  
+Al elegir en un objeto específico del montón se muestra el árbol de retención en la parte inferior de la instantánea de montón.  Examinar la ruta de retención del objeto debe proporcionar suficiente información para comprender por qué no se recopiló el objeto y debe realizar los cambios de código necesarios para quitar la referencia innecesaria.  
 
-## Ver asignación de memoria por función  
+## <a name="view-memory-allocation-by-function"></a>Ver asignación de memoria por función  
 
-Puede ver la asignación de memoria por función de JavaScript.  Para obtener más información, navegue para [investigar la asignación de memoria por función][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
+Puede ver la asignación de memoria mediante la función JavaScript.  Para obtener más información, vaya [a Investigar asignación de memoria por función][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open/index.md "Abrir Microsoft Edge (cromo) DevTools | Microsoft docs"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigar la asignación de memoria por función: corrección de problemas de memoria | Microsoft docs"  
+[DevToolsOpenIndex]: ../open/index.md "Abra Microsoft Edge (Chromium) DevTools | Microsoft Docs"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigar asignación de memoria por función: solucionar problemas de memoria | Microsoft Docs"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
@@ -101,7 +101,7 @@ Puede ver la asignación de memoria por función de JavaScript.  Para obtener m�
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) y está creada por [Meggin Kearney][MegginKearney] \ (editor técnico \).  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) y es creado por [Meggin Kearney][MegginKearney] \(Technical Writer\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

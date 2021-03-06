@@ -1,18 +1,18 @@
 ---
-description: Guía sobre cómo abrir el menú de comandos, ejecutar comandos, revisar otras acciones y mucho más.
-title: Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools
+description: Una guía sobre cómo abrir el menú comando, ejecutar comandos, revisar otras acciones y mucho más.
+title: Ejecutar comandos con el menú Comando de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2f13461fdf04e034b324db63c6ec6d9090f80f50
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: a9e67815f69a44d3bd2a741738b04c7170f6ac15
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125282"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398031"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,51 +28,49 @@ ms.locfileid: "11125282"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Ejecutar comandos con el menú Comando de Microsoft Edge DevTools  
 
-  
+El menú de comandos proporciona una forma rápida de navegar por la interfaz de usuario de Microsoft Edge DevTools y realizar tareas comunes, como [deshabilitar JavaScript][JavascriptDisable].  Es posible que esté familiarizado con una característica similar en Microsoft Visual Studio Code denominada paleta de comandos [,][VisualStudioCodeUICommandPalette]que fue la inspiración original del menú de comandos.  
 
-El menú de comandos proporciona una forma rápida de navegar por la interfaz de usuario de Microsoft Edge DevTools y realizar tareas comunes, como la [deshabilitación de JavaScript][JavascriptDisable].  Es posible que esté familiarizado con una característica similar de Visual Studio que se denomina [paleta de comandos][VisualStudioCodeUICommandPalette], que es la inspiración original para el menú de comandos.  
-
-:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
-   Usar el menú de comandos para deshabilitar JavaScript  
+:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Uso del menú comando para deshabilitar JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
+   Uso del menú comando para deshabilitar JavaScript  
 :::image-end:::  
 
-## Abrir el menú de comandos  
+## <a name="open-the-command-menu"></a>Abrir el menú de comandos  
 
-Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \). O elija **personalizar y controlar DevTools** `...` y, a continuación, elija **Ejecutar comando**.  
+Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\). O elija **Personalizar y controlar DevTools** \( `...` \) > Ejecutar **comando**.  
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
-   Comando ejecutar  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Ejecutar comando" lightbox="../media/command-menu-options-run-command.msft.png":::
+   Ejecutar comando  
 :::image-end:::  
 
-## Ver otras acciones disponibles  
+## <a name="display-other-available-actions"></a>Mostrar otras acciones disponibles  
 
-Si usa el flujo de trabajo esquematizado en [abrir el menú de comandos](#open-the-command-menu), el menú comando se abre con un `>` carácter preestablecido en el cuadro de texto del menú de comandos.  
+Si usa el flujo de trabajo descrito en [Abrir el](#open-the-command-menu)menú de comandos , el menú comando se abre con un carácter previamente escrito en el cuadro de texto Menú `>` de comandos.  
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-run-command.msft.png":::
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="El carácter de comando" lightbox="../media/command-menu-run-command.msft.png":::
    El carácter de comando  
 :::image-end:::  
 
-Elimine el `>` carácter y escriba `?` para ver otras acciones disponibles en el menú de comandos.  
+Elimine el `>` carácter y el tipo para mostrar `?` otras acciones que están disponibles en el menú comando.  
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-help.msft.png":::
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Otras acciones disponibles" lightbox="../media/command-menu-help.msft.png":::
    Otras acciones disponibles  
 :::image-end:::  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft docs"  
+[JavascriptDisable]: ../javascript/disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft Docs"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Paleta de comandos: interfaz de usuario de Visual Studio"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Paleta de comandos: Visual Studio interfaz de usuario de código"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

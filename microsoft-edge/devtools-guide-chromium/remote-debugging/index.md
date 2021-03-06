@@ -1,18 +1,18 @@
 ---
-description: Depure contenido en vivo en un dispositivo Android desde un equipo con Windows o macOS.
-title: Introducción a la depuración remota dispositivos Android
+description: Depuración remota de contenido en directo en un dispositivo Android desde un equipo con Windows o macOS.
+title: Introducción a la depuración remota de dispositivos Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c6bdb48460fb8f6ff26cbb02872e33cb50dd6e12
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 61fad793ca03dbef68a5f769dbfd25e780fd9930
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125366"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398262"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,13 @@ ms.locfileid: "11125366"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Introducción a la depuración remota dispositivos Android  
+# <a name="get-started-with-remote-debugging-android-devices"></a>Introducción a la depuración remota de dispositivos Android  
 
-Depure de forma remota contenido en vivo en un dispositivo Android desde su equipo con Windows o macOS.  La siguiente página del tutorial le enseña a completar las siguientes acciones.  
+Depuración remota de contenido en directo en un dispositivo Android desde tu equipo Windows o macOS.  La siguiente página de tutorial le enseña a completar las siguientes acciones.  
 
-*   Configure su dispositivo Android para la depuración remota y descárguelo desde el equipo de desarrollo.  
-*   Inspeccione y depure contenido en vivo en su dispositivo Android desde su equipo de desarrollo.  
-*   Contenido de screencast de su dispositivo Android en una instancia de DevTools en el equipo de desarrollo.  
+*   Configura tu dispositivo Android para la depuración remota y descóyralo desde el equipo de desarrollo.  
+*   Inspecciona y depura contenido en directo en tu dispositivo Android desde el equipo de desarrollo.  
+*   Difusión de contenido desde el dispositivo Android a una instancia de DevTools en el equipo de desarrollo.  
 
 <!--  
 :::image type="complex" source="../media/remote-debugging--remote-debugging.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--remote-debugging.msft.png":::
@@ -43,113 +43,113 @@ Depure de forma remota contenido en vivo en un dispositivo Android desde su equi
 -->  
 
 > [!NOTE]
-> La depuración remota de la aplicación Microsoft Edge en dispositivos iOS no es compatible actualmente.  La siguiente guía está específicamente centrada en la depuración remota de Microsoft Edge en dispositivos con Android.
-> Si tiene un dispositivo macOS, siga la [Guía de depuración Brightcove][BrightcoveSupportDebuggingMobileDevices] para depurar Microsoft Edge de forma remota en un dispositivo iOS con Safari.  Para obtener más información sobre la herramienta Web Inspector de Safari, vaya a [herramientas de desarrollo web de Safari][AppleDeveloperSafariTools].  
+> Actualmente no se admite la depuración remota de la aplicación Microsoft Edge en dispositivos iOS.  La siguiente guía se centra específicamente en la depuración remota de Microsoft Edge en dispositivos Android.
+> Si tienes un dispositivo macOS, sigue la guía de depuración de [Brightcove][BrightcoveSupportDebuggingMobileDevices] para depurar de forma remota Microsoft Edge en un dispositivo iOS con Safari.  Para obtener más información acerca de la herramienta Inspector web en Safari, vaya a [Safari Web Development Tools][AppleDeveloperSafariTools].  
 
-## Paso 1: descubrir su dispositivo Android  
+## <a name="step-1-discover-your-android-device"></a>Paso 1: Descubrir el dispositivo Android  
 
-El flujo de trabajo siguiente funciona para la mayoría de los usuarios.  Para obtener más ayuda, vaya a [solución de problemas: DevTools no detecta la sección del dispositivo Android](#troubleshooting-devtools-is-not-detecting-the-android-device) .  
+El flujo de trabajo siguiente funciona para la mayoría de los usuarios.  Para obtener más ayuda, vaya [a Solución de problemas: DevTools no detecta la sección dispositivo Android.](#troubleshooting-devtools-is-not-detecting-the-android-device)  
 
-1.  Abra la pantalla **Opciones del desarrollador** en Android.  Para obtener más información, vaya a [configurar las opciones de Desarrollador en el dispositivo][AndroidDeveloperStudioDevOptions].  
+1.  Abre la **pantalla Opciones de** desarrollador en tu Android.  Para obtener más información, vaya a [Configurar opciones de desarrollador en el dispositivo][AndroidDeveloperStudioDevOptions].  
 1.  Elija **Habilitar depuración USB**.  
-1.  En tu equipo de desarrollo, abre Microsoft Edge.  
-1.  Vaya a la `edge://inspect` Página de Microsoft Edge.  
+1.  En el equipo de desarrollo, abra Microsoft Edge.  
+1.  Vaya a la `edge://inspect` página de Microsoft Edge.  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
-       Figura 1.  La `edge://inspect` página en Microsoft Edge  
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="La edge://inspect en Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
+       Figura 1.  La `edge://inspect` página de Microsoft Edge  
     :::image-end:::  
     
-1.  Conecta el dispositivo Android directamente a tu equipo de desarrollo con un cable USB.  La primera vez que intentes conectarte, deberás mostrarse un mensaje sobre DevTools detectando un dispositivo desconocido.  Acepte la solicitud de permiso de **depuración USB** en su dispositivo Android.  
+1.  Conecta el dispositivo Android directamente a la máquina de desarrollo mediante un cable USB.  La primera vez que intentes conectarte, debería mostrarse un mensaje sobre DevTools que detecta un dispositivo desconocido.  Acepta el **símbolo del permiso Permitir depuración USB** en tu dispositivo Android.  
     
-    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
-       Figura 2.  La solicitud de permiso de **depuración USB** en un dispositivo Android  
+    :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="El símbolo del sistema de permiso Permitir depuración USB en un dispositivo Android" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
+       Figura 2.  El **símbolo del sistema de permiso Permitir depuración USB** en un dispositivo Android  
     :::image-end:::  
     
-1.  Si se muestra el nombre de modelo de su dispositivo Android, Microsoft Edge ha establecido correctamente la conexión con el dispositivo.  Continúe con la sección [paso 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) .  
+1.  Si se muestra el nombre del modelo del dispositivo Android, Microsoft Edge ha establecido correctamente la conexión con el dispositivo.  Continúe con la [sección Paso 2.](#step-2-debug-content-on-your-android-device-from-your-development-machine)  
     
     <!--  
-    :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--unknown-device.msft.png":::
+    :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
        old Figure 4.  The **Remote Devices** tab has successfully detected an unknown device that is pending authorization  
     :::image-end:::
     -->  
     
-### Solución de problemas: DevTools no detecta el dispositivo Android  
+### <a name="troubleshooting-devtools-is-not-detecting-the-android-device"></a>Solución de problemas: DevTools no detecta el dispositivo Android  
 
-Use las siguientes sugerencias para solucionar problemas relacionados con la configuración correcta de su hardware.  
+Use las siguientes sugerencias para ayudarle a solucionar problemas con la configuración correcta del hardware.  
 
-*   Si está usando un concentrador USB, intente conectar el dispositivo Android directamente a su equipo de desarrollo.  
-*   Intenta desconectar el cable USB entre el dispositivo Android y el equipo de desarrollo y, a continuación, vuelve a conectar tu cable USB.  Complete la tarea mientras las pantallas de Android y de equipo de desarrollo estén desbloqueadas.  
-*   Asegúrate de que tu cable USB funcione.  Debería poder inspeccionar los archivos de su dispositivo Android desde su equipo de desarrollo.  
+*   Si usas un concentrador USB, prueba a conectar el dispositivo Android directamente a la máquina de desarrollo.  
+*   Prueba a desconectar el cable USB entre el dispositivo Android y la máquina de desarrollo y, a continuación, vuelve a conectar el cable USB.  Completa la tarea mientras se desbloquean las pantallas de la máquina de desarrollo y Android.  
+*   Asegúrese de que el cable USB funciona.  Debes poder inspeccionar los archivos del dispositivo Android desde el equipo de desarrollo.  
 
 Use las siguientes sugerencias para comprobar que el software está configurado correctamente.  
 
-*   Si tu equipo de desarrollo ejecuta Windows, intenta instalar manualmente los drivers USB para tu dispositivo Android.  Para obtener más información, vaya a [instalar los drivers de OEM USB][AndroidDeveloperToolsOemUsb].  
-*   Algunas combinaciones de Windows y dispositivos Android \ (especialmente Samsung \) requieren configuración adicional.  Para obtener más información, vaya a [DevTools los dispositivos no detectan el dispositivo cuando está conectado][Stackoverflow21925992].  
+*   Si el equipo de desarrollo ejecuta Windows, intenta instalar manualmente los controladores USB para tu dispositivo Android.  Para obtener más información, vaya a [Instalar controladores USB OEM.][AndroidDeveloperToolsOemUsb]  
+*   Algunas combinaciones de dispositivos Windows y Android \(especialmente Samsung\) requieren configuraciones adicionales.  Para obtener más información, vaya [a DevTools Devices no detecta el dispositivo cuando está conectado][Stackoverflow21925992].  
 
-Use las siguientes sugerencias para ayudarle a solucionar problemas si el mensaje **permitir la depuración USB** no se muestra en su dispositivo Android.  
+Usa las siguientes sugerencias para ayudarte a solucionar problemas si el mensaje Permitir **depuración USB** no se muestra en tu dispositivo Android.  
 
-*   Desconectar y volver a conectar el cable USB mientras DevTools está en el equipo de desarrollo y se muestra el pantalla Android de Android.  
+*   Desconectar y volver a conectar el cable USB mientras DevTools se centra en la máquina de desarrollo y se muestra la pantalla principal de Android.  
     
     > [!NOTE]
-    > Se muestra la pregunta si las pantallas de Android o de equipo de desarrollo están bloqueadas.  
+    > El mensaje se muestra si las pantallas de la máquina de desarrollo o Android están bloqueadas.  
 
-*   Actualización de la configuración de pantalla de su dispositivo Android y de la máquina de desarrollo para que cada uno nunca vaya al modo de suspensión.  
-*   Configuración del modo USB para Android en PTP.  Para obtener más información, vaya a [Galaxy S4 no mostrar el cuadro de diálogo autorizar depuración USB][StackexchangeAndroid101933].  
-*   Elija **revocar las autorizaciones de depuración USB** en la pantalla **Opciones del desarrollador** de su dispositivo Android para restablecerla a un estado actualizado.  
+*   Actualizar la configuración de pantalla para el dispositivo Android y la máquina de desarrollo para que cada uno nunca entre en suspensión.  
+*   Establecer el modo USB para Android en PTP.  Para obtener más información, vaya [a Galaxy S4 no muestra el cuadro de diálogo Autorizar depuración USB][StackexchangeAndroid101933].  
+*   Elige **Revocar autorizaciones de depuración USB** en la pantalla Opciones de desarrollador del dispositivo Android para restablecerla a un estado nuevo. ****  
 
-Si encuentra una solución que no está mencionada en esta página o en [DevTools dispositivos no detecta el dispositivo cuando está conectado][Stackoverflow21925992] al desbordamiento de la pila, agregue la solución a la pregunta de desbordamiento de pila.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+Si encuentras una solución que no se menciona en esta página o en [DevTools Devices][Stackoverflow21925992] no detecta el dispositivo cuando está conectado a Stack Overflow, agrega la solución a la pregunta Stack Overflow<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.  
 
-## Paso 2: depure contenido en su dispositivo Android desde su equipo de desarrollo  
+## <a name="step-2-debug-content-on-your-android-device-from-your-development-machine"></a>Paso 2: Depurar contenido en el dispositivo Android desde el equipo de desarrollo  
 
 1.  Abre Microsoft Edge en tu dispositivo Android.  
-1.  Vaya a `edge://inspect` , se muestra el nombre del modelo de su dispositivo Android, seguido del número de serie del dispositivo.  Debajo de eso, debe mostrarse la versión de Microsoft Edge que se ejecuta en el dispositivo, con el número de versión entre paréntesis.  Cada pestaña abierta de Microsoft Edge obtiene una sección única.  Puede interactuar con esa pestaña en una sección.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
+1.  Navegue hasta , se muestra el nombre del modelo del dispositivo `edge://inspect` Android, seguido del número de serie del dispositivo.  A continuación, se debe mostrar la versión de Microsoft Edge que se ejecuta en el dispositivo, con el número de versión entre paréntesis.  Cada pestaña de Microsoft Edge abierta obtiene una sección única.  Puede interactuar con esa pestaña desde una sección.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Un dispositivo remoto conectado" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
        Figura 3.  Un dispositivo remoto conectado  
     :::image-end:::  
     
-1.  En el cuadro de texto **pestaña abierta con dirección URL** , escriba una dirección URL y, a continuación, elija **abrir**.  La página se abre en una nueva pestaña en su dispositivo Android.  
-1.  Elija **inspeccionar** junto a la dirección URL que acaba de abrir.  Se abrirá una nueva instancia de DevTools.  
+1.  En el **cuadro de texto Abrir pestaña con dirección URL,** escriba una dirección URL y, a continuación, elija **Abrir**.  La página se abre en una nueva pestaña en el dispositivo Android.  
+1.  Elija **inspeccionar** junto a la dirección URL que acaba de abrir.  Se abre una nueva instancia de DevTools.  
 
 <!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
-### Más acciones: foco, volver a cargar o cerrar una pestaña  
+### <a name="more-actions-focus-refresh-or-close-a-tab"></a>Más acciones: enfocar, actualizar o cerrar una pestaña  
 
-Elija la **pestaña foco**, **volver a cargar**o **cerca** de la pestaña que desea centrar, volver a cargar o cerrar.  
+Elija **la pestaña foco,** **volver**a cargar o **cerrar** junto a la pestaña que desea enfocar, actualizar o cerrar.  
 
-:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
-   Figura 4.  Botones para centrar, volver a cargar o cerrar una pestaña  
+:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="Botones para enfocar, actualizar o cerrar una pestaña" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
+   Figura 4.  Botones para enfocar, actualizar o cerrar una pestaña  
 :::image-end:::  
 
-### Inspeccionar elementos  
+### <a name="inspect-elements"></a>Inspeccionar elementos  
 
-Vaya al panel **elementos** de la instancia de DevTools y mantenga el mouse sobre un elemento para resaltarlo en el área de visualización de su dispositivo Android.  
+Vaya a la **herramienta Elementos** de la instancia de DevTools y mantenga el mouse sobre un elemento para resaltarlo en la ventanilla del dispositivo Android.  
 
-También puede seleccionar un elemento de la pantalla de su dispositivo Android para seleccionarlo en el panel **elementos** .  Elija el icono **Seleccionar elemento** \ ( ![ Seleccionar elemento ][ImageSelectElementIcon] \) en la instancia de DevTools y, a continuación, seleccione el elemento en la pantalla de su dispositivo Android.  
-
-> [!NOTE]
-> **Seleccionar elemento** está deshabilitado después de la primera selección, por lo que debe volver a habilitarlo cada vez que desee usar la característica.  
-
-### Screencasts la pantalla de Android a su equipo de desarrollo  
-
-Elija **Toggle screencast** \ ( ![ Toggle screencast ][ImageToggleScreencastIcon] \) icono para ver el contenido de su dispositivo Android en la instancia de DevTools.  
-
-Puede interactuar con el screencast de las siguientes maneras.  
-
-*   Los clics se traducen en pulsaciones, lo que desencadena eventos táctiles adecuados en el dispositivo.  
-*   Las pulsaciones de tecla de tu equipo se envían al dispositivo.  
-*   Para simular un gesto de reducir, espera `Shift` mientras arrastra.  
-*   Para desplazarse, use el panel táctil o la rueda del mouse, o Fling con el puntero del mouse.
+También puedes seleccionar un elemento en la pantalla del dispositivo Android para seleccionarlo en la **herramienta** Elementos.  Elija **Seleccionar elemento** \( Seleccionar elemento \) icono en la instancia de ![ DevTools y, a continuación, seleccione ][ImageSelectElementIcon] el elemento en la pantalla del dispositivo Android.  
 
 > [!NOTE]
-> Use las siguientes sugerencias para ayudarle con el screencast.  
+> **Select Element** está deshabilitado después de la primera selección, por lo que debes volver a habilitarlo cada vez que quieras usar la característica.  
+
+### <a name="screencast-your-android-screen-to-your-development-machine"></a>Difusión en pantalla de la pantalla de Android a la máquina de desarrollo  
+
+Elija **Alternar difusión** de pantalla \( Alternar difusión por pantalla \) icono para ver el contenido de su dispositivo ![ Android en la instancia de ][ImageToggleScreencastIcon] DevTools.  
+
+Puede interactuar con la difusión en pantalla de las siguientes maneras.  
+
+*   Las opciones se traducen en pulsaciones, lo que dispara los eventos táctiles adecuados en el dispositivo.  
+*   Las pulsaciones de teclas del equipo se envían al dispositivo.  
+*   Para simular un gesto de pellizco, mantén `Shift` presionado mientras arrastras.  
+*   Para desplazarse, use el trackpad o la rueda del mouse o fling con el puntero del mouse.
+
+> [!NOTE]
+> Usa las siguientes sugerencias para ayudarte a la difusión en pantalla.  
 > 
-> *   Los screencasts solo muestran el contenido de la página.  Partes transparentes del screencast representan interfaces de dispositivo, como la barra de direcciones de Microsoft Edge, la barra de estado de Android o el teclado Android.  
-> *   Los screencasts afectan negativamente a las tarifas de fotogramas.  Deshabilite el screencasts y mida los desplazamientos o animaciones para obtener una imagen más precisa del rendimiento de la página.  
-> *   Si su dispositivo Android bloquea la pantalla, el contenido del screencast desaparecerá.  Desbloquear la pantalla de su dispositivo Android para reanudar automáticamente el screencast.  
+> *   Los difusión en pantalla solo muestran el contenido de la página.  Las partes transparentes de la difusión por pantalla representan interfaces de dispositivo, como la barra de direcciones de Microsoft Edge, la barra de estado de Android o el teclado androide.  
+> *   Las difusión en pantalla afectan negativamente a las tasas de fotogramas.  Deshabilite la difusión por pantalla al medir desplazamientos o animaciones para obtener una imagen más precisa del rendimiento de la página.  
+> *   Si la pantalla del dispositivo Android se bloquea, el contenido de la difusión en pantalla desaparece.  Desbloquea la pantalla del dispositivo Android para reanudar automáticamente la difusión por pantalla.  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -160,22 +160,22 @@ Puede interactuar con el screencast de las siguientes maneras.
 
 <!-- links -->  
 
-[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configurar opciones de Desarrollador en el dispositivo | Desarrollador de Android"  
-[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Instalar controladores USB para OEM | Desarrolladores de Android"  
+[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configurar opciones de desarrollador en el dispositivo | Desarrollador de Android"  
+[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Instalar controladores USB OEM | Desarrolladores de Android"  
 
 [AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Herramientas de desarrollo web de Safari | Desarrollador de Apple"  
 
-[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Depurar en dispositivos móviles | Soporte técnico de Brightcove"  
+[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Depuración en dispositivos móviles | Compatibilidad con Brightcove"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
 
-[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "ADB-intercambio de pila de entusiastas de Android"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb: Exchange de pila de entusiastas de Android"  
 
-[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "Los dispositivos DevTools no detectan el dispositivo cuando está conectado el desbordamiento de pila"  
+[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "Dispositivos DevTools no detecta el dispositivo cuando está conectado: desbordamiento de pila"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

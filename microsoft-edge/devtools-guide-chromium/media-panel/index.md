@@ -1,71 +1,85 @@
 ---
-description: Use el panel multimedia para ver información y depurar los reproductores multimedia por pestaña del explorador.
-title: Ver y depurar información de los reproductores multimedia
+description: Usa la herramienta Multimedia para ver información y depurar los reproductores multimedia por pestaña del explorador.
+title: Ver y depurar información de reproductores multimedia
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e6259cf573b76df7e281527ad30360b8f473a165
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 7680faa13f65a2ea6f0a8b085316b5ed67bfdaba
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230953"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398409"
 ---
-# Ver y depurar información de los reproductores multimedia  
+<!-- Copyright Jecelyn Yeen
 
-Use el panel **multimedia** en Microsoft Edge DevTools para ver información y depurar los reproductores multimedia por pestaña del explorador.  
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
 
-## Abrir el panel multimedia  
+       https://www.apache.org/licenses/LICENSE-2.0
 
-El panel **multimedia** es el lugar principal en DevTools para inspeccionar el reproductor multimedia de una página web.
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
+
+# <a name="view-and-debug-media-players-information"></a>Ver y depurar información de reproductores multimedia  
+
+Use la **herramienta Multimedia** en Microsoft Edge DevTools para ver información y depurar los reproductores multimedia por pestaña del explorador.  
+
+## <a name="open-the-media-tool"></a>Abrir la herramienta Multimedia  
+
+La **herramienta** Multimedia es el lugar principal en DevTools para inspeccionar el reproductor multimedia de una página web.
 
 1.  [Abra DevTools][DevtoolsGuideChromiumOpen].  
-1.  Para abrir el panel **multimedia** , elija **personalizar y controle DevTools** `...`  >  **más herramientas**  >  **multimedia**.  
+1.  Para abrir el panel **Multimedia,** elija **Personalizar y controlar DevTools** `...`  >  **Más herramientas**  >  **Multimedia**.  
     
     :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Panel multimedia" lightbox="../media/media-panel-empty.msft.png":::
-       Panel **multimedia**  
+       **Panel multimedia**  
     :::image-end:::  
     
-## Ver información de los reproductores multimedia  
+## <a name="view-media-players-information"></a>Ver información de reproductores multimedia  
 
-1.  Vaya a una página web con un reproductor multimedia, como la siguiente página web.  
+1.  Navegue a una página web con un reproductor multimedia, como la siguiente página web.  
     
-    [Maximizar la productividad con las herramientas para desarrolladores perimetrales][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
+    [Maximizar la productividad con edge Developer Tools][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
-1.  En el menú **Players** , se muestra un reproductor de medios.  
-1.  Seleccione el reproductor.  La pestaña **propiedades** muestra las propiedades del reproductor multimedia.  
+1.  En el **menú Reproductores,** se muestra un reproductor multimedia.  
+1.  Elige el jugador.  El **panel** Propiedades muestra las propiedades del reproductor multimedia.  
     
-    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Propiedades de elementos multimedia" lightbox="../media/media-panel-view.msft.png":::
-       Propiedades de elementos multimedia  
+    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Propiedades multimedia" lightbox="../media/media-panel-view.msft.png":::
+       Propiedades multimedia  
     :::image-end:::  
     
-1.  Para ver todos los eventos del reproductor multimedia, elija la pestaña **eventos** .  
+1.  Para ver todos los eventos del reproductor multimedia, elija el panel **Eventos.**  
     
     :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Eventos multimedia" lightbox="../media/media-panel-events.msft.png":::
        Eventos multimedia  
     :::image-end:::  
     
-1.  Para ver los registros de mensajes del reproductor multimedia, elija la pestaña **mensajes** .  Puede filtrar los mensajes por nivel de registro o cadena.  
+1.  Para ver los registros de mensajes del reproductor multimedia, elija **el** panel Mensajes.  Puede filtrar los mensajes por nivel de registro o cadena.  
     
     :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Mensajes multimedia" lightbox="../media/media-panel-messages.msft.png":::
        Mensajes multimedia  
     :::image-end:::  
     
-1.  En la pestaña **escala de tiempo** , la reproducción multimedia y el estado del búfer se muestran en vivo.  
+1.  En el panel **Escala de** tiempo, la reproducción multimedia y el estado del búfer se muestran en directo.  
     
-    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Escala de tiempo multimedia" lightbox="../media/media-panel-timeline.msft.png":::
-       Escala de tiempo multimedia  
+    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Escala de tiempo de medios" lightbox="../media/media-panel-timeline.msft.png":::
+       Escala de tiempo de medios  
     :::image-end:::  
     
-### Depuración remota  
+### <a name="remote-debugging"></a>Depuración remota  
 
-Ver la información de los reproductores multimedia en un dispositivo Android desde un equipo Windows o macOS.  
+Consulta la información de reproductores multimedia en un dispositivo Android desde tu equipo Windows o macOS.  
 
-1.  Para configurar la depuración remota, vaya a introducción a la [depuración remota de dispositivos Android][DevtoolsGuideChromiumRemoteDebuggingIndex].  
-1.  Ver la información de los reproductores multimedia de forma remota.  
+1.  Para configurar la depuración remota, vaya a [Introducción a la depuración remota de dispositivos Android.][DevtoolsGuideChromiumRemoteDebuggingIndex]  
+1.  Ver la información de reproductores multimedia de forma remota.  
     
     <!-- TODO: recreate image using an Android device -->  
     <!--  
@@ -74,40 +88,40 @@ Ver la información de los reproductores multimedia en un dispositivo Android de
     :::image-end:::  
     -->  
     
-## Ocultar y mostrar reproductores multimedia  
+## <a name="hide-and-show-media-players"></a>Ocultar y mostrar reproductores multimedia  
 
-A veces ejecuta más de un reproductor multimedia en una página web o usa la misma pestaña de explorador para examinar diferentes páginas web, cada una con reproductores multimedia.
+A veces, ejecutas más de un reproductor multimedia en una página web o usas la misma pestaña del explorador para explorar diferentes páginas web, cada una con reproductores multimedia.
 
-Puede ocultar \ (o mostrar \) cada reproductor multimedia para una experiencia de depuración más sencilla.  
+Puede elegir ocultar \(o mostrar\) cada reproductor multimedia para una experiencia de depuración más sencilla.  
 
-1.  Vaya a varias páginas web de vídeo diferentes usando la misma pestaña del explorador.  
-1.  Para ocultar reproductores multimedia, lleve a cabo una de las siguientes acciones.  
-    *   Para ocultar un reproductor multimedia, desplace el puntero sobre un reproductor multimedia, abra el menú contextual \ (haga clic con el botón derecho \) y elija **ocultar reproductor**.  
-    *   Para ocultar todos los demás reproductores multimedia, desplace el puntero sobre un reproductor multimedia y abra el menú contextual \ (haga clic con el botón derecho \) y elija **ocultar todos los demás**.  
+1.  Vaya a varias páginas web de vídeo diferentes con la misma pestaña del explorador.  
+1.  Para ocultar reproductores multimedia, complete una de las siguientes acciones.  
+    *   Para ocultar un reproductor multimedia, mantenga el mouse en un reproductor multimedia, abra el menú contextual \(hacer clic con el botón secundario\) y elija **Ocultar reproductor**.  
+    *   Para ocultar todos los demás reproductores multimedia, mantenga el mouse en un reproductor multimedia, abra el menú contextual \(hacer clic con el botón secundario\) y elija **Ocultar todos los demás**.  
     
     :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Ocultar reproductores multimedia" lightbox="../media/media-panel-hide-show.msft.png":::
        Ocultar reproductores multimedia  
     :::image-end:::  
     
-## Exportar información de reproductor multimedia  
+## <a name="export-media-player-information"></a>Exportar información del reproductor multimedia  
 
-1.  Para descargar la información del reproductor multimedia como un archivo JSON, desplace el puntero sobre un reproductor multimedia y abra el menú contextual \ (haga clic con el botón derecho \) y elija **Guardar información del reproductor**.  
+1.  Para descargar la información del reproductor multimedia como un archivo JSON, mantenga el mouse en un reproductor multimedia, abra el menú contextual \(clic con el botón secundario\) y elija **Guardar información del reproductor**.  
     
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Exportar información multimedia" lightbox="../media/media-panel-save.msft.png":::
        Exportar información multimedia  
     :::image-end:::  
     
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Abrir Microsoft Edge (cromo) DevTools | Microsoft docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 
-[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Introducción a la depuración remota dispositivos Android | Microsoft docs"  
+[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Introducción a la depuración remota de dispositivos Android | Microsoft Docs"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizar la productividad con las herramientas para desarrolladores de Edge | Vídeo de Bing"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximización de la productividad con las herramientas para desarrolladores perimetrales | Vídeo de Bing"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

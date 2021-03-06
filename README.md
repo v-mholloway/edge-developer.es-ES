@@ -1,98 +1,125 @@
-# Documentación de Microsoft Edge
+# <a name="microsoft-edge-documentation"></a>Documentación de Microsoft Edge  
 
-## Código de conducta de Microsoft Open Source
+## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta de Microsoft Open Source  
 
-Este proyecto ha adoptado el [código de conducta de Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/).
-Para obtener más información, consulta las [preguntas más frecuentes sobre el código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o ponte en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) preguntas o comentarios adicionales.
+Este proyecto ha adoptado el Código de [conducta de Código de código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct).  
+Para obtener más información, consulte [las preguntas](https://opensource.microsoft.com/codeofconduct/faq) más frecuentes sobre código de conducta o póngase en [contacto opencode@microsoft.com](mailto:opencode@microsoft.com) con cualquier pregunta o comentario adicional.  
 
-## Avisos legales
-Microsoft y sus colaboradores te conceden una licencia para la documentación de Microsoft y otros contenidos de este repositorio bajo la [licencia pública de Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode), consulta el archivo [LICENSE](LICENSE), y concédete una licencia para cualquier código del repositorio bajo la [Licencia MIT](https://opensource.org/licenses/MIT), consulta el archivo [LICENSE-CODE](LICENSE-CODE).
+## <a name="legal-notices"></a>Avisos legales  
 
-Microsoft, Windows, Microsoft Azure y otros productos y servicios Microsoft a los que se hace referencia en la documentación pueden ser marcas comerciales o marcas registradas de Microsoft en los Estados Unidos y en otros países o regiones.
-Las licencias para este proyecto no te conceden derechos para usar los nombres, logotipos o marcas comerciales de Microsoft.
-Encontrará las directrices generales de la marca comercial de Microsoft en https://go.microsoft.com/fwlink/?LinkID=254653 .
+Microsoft y los colaboradores le conceden una licencia para la documentación de Microsoft y otro contenido de este repositorio bajo la Licencia pública internacional de [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode), navegue hasta el archivo [LICENSE](./LICENSE) y le conceda una licencia para cualquier código del repositorio bajo la licencia [MIT](https://opensource.org/licenses/MIT), navegue hasta el archivo [LICENSE-CODE.](./LICENSE-CODE)  
 
-Puede encontrar la información de privacidad enhttps://privacy.microsoft.com
+Microsoft, Windows, Microsoft Azure y otros productos y servicios Microsoft a los que se hace referencia en la documentación pueden ser marcas comerciales o marcas registradas de Microsoft en los Estados Unidos y en otros países o regiones.  
+Las licencias para este proyecto no te conceden derechos para usar los nombres, logotipos o marcas comerciales de Microsoft.  
+Las directrices generales de marcas comerciales de Microsoft pueden encontrarse en [https://go.microsoft.com/fwlink/?LinkID=254653](https://go.microsoft.com/fwlink/?LinkID=254653) .  
 
-Microsoft y sus colaboradores se reservan todos los demás derechos, ya sea bajo sus respectivos derechos de autor, patentes o marcas comerciales, y tanto de manera implícita, explícita como de otro modo.
+La información de privacidad se puede encontrar en [https://privacy.microsoft.com](https://privacy.microsoft.com) .  
 
-## Autores
+Microsoft y sus colaboradores se reservan todos los demás derechos, ya sea bajo sus respectivos derechos de autor, patentes o marcas comerciales, y tanto de manera implícita, explícita como de otro modo.  
 
-Este es el repositorio de **documentación** de Microsoft Edge hospedado en [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/) .
+## <a name="contributing"></a>Contribuir  
 
-Si deseas ver la cobertura nueva o enviar comentarios, considera la posibilidad de [**contribuir**](/CONTRIBUTING.md).  Puede editar el contenido existente, agregar contenido nuevo o simplemente crear nuevos [problemas](https://github.com/MicrosoftDocs/edge-developer/issues). Echemos un vistazo a sus sugerencias y trabajaremos conjuntamente para incorporarlas en los documentos.
+Este es el repositorio de documentación **de** Microsoft Edge hospedado en [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/index) .  
 
-Busque los datos de la [`Status`](https://dev.windows.com/microsoft-edge/platform/status/) página en: https://github.com/MicrosoftEdge/Status . La `Status` página proporciona el último estado de implementación y planes futuros para las características de plataforma web de Microsoft Edge.
+Si desea incluir una nueva cobertura o recibir comentarios, considere la posibilidad de [contribuir](./CONTRIBUTING.md).  Puede editar el contenido existente, agregar contenido nuevo o crear nuevos [problemas](https://github.com/MicrosoftDocs/edge-developer/issues).  El equipo de Microsoft Edge revisa sus sugerencias y trabaja para incorporar las sugerencias a los documentos.  
 
-### Convenciones
+Busque los datos de la [página Estado](https://developer.microsoft.com/microsoft-edge/status) en:  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) .  La página proporciona el estado de implementación más reciente y los planes futuros para las características de la plataforma `Status` web en Microsoft Edge.
 
-- Al agregar una página, debe agregar una entrada para ella en [TOC.MD](microsoft-edge/toc.md) para que aparezca.
-- Una carpeta puede contener más carpetas o `readme.md` s
-- Los nombres de directorio o carpeta se separan con guiones (por ejemplo, `f12-tools` ) y en minúsculas. Se usan en las direcciones URL del sitio de docs.microsoft.com. No uses guiones de subrayado ni PascalCase/camelCase.
+### <a name="conventions"></a>Convenciones  
 
-### Otros elementos de texto
+*   Al agregar una página, debe agregar una entrada para ella en [toc.md](./microsoft-edge/toc.yml) que aparezca.
+*   Un directorio puede contener más directorios o `readme.md` s
+*   Los nombres de carpeta o directorio están separados por guiones \(por ejemplo, `f12-tools` \) y en minúsculas.  Los directorios se usan en las direcciones URL del `docs.microsoft.com` sitio.  Evite usar guiones bajos, PascalCase o camelCase.  
 
-Estos otros elementos de texto tienen estilos disponibles:
+### <a name="other-text-elements"></a>Otros elementos de texto  
 
-* Listas sin ordenar
-* Tener viñetas normales
-   * También puede anidar viñetas.
-   * Las listas de viñetas deben tener más de una entrada.
-* Muy estándar
+Estos otros elementos de texto tienen el estilo disponible:  
 
-1. Listas ordenadas.
-2. Usa la numeración de estilo occidental estándar de OL.
-3. Solo debe usarse cuando una lista tiene realmente un orden.
+*   Listas sin ordenar  
+*   Tener viñetas regulares  
+    *   También puede anidar viñetas.  
+    *   Las listas de viñetas deben tener más de una entrada.  
+*   Disposición estándar 
 
-_________________________
+1.  Listas ordenadas.  
+1.  Use numeración de estilo occidental normal.  
+1.  Solo se debe usar cuando una lista realmente tiene orden.  
 
-Hay reglas horizontales disponibles. Te sugerimos que lo uses con moderación para reducir la aglomeración.
-No combine reglas horizontales con etiquetas de encabezado; algunos estilos de línea ya usados para la jerarquía visual.
+---  
 
-### Mostrar código
+Las reglas horizontales están disponibles.  Use las reglas horizontales con moderación para reducir el desorden.  
+Evite usar reglas horizontales con etiquetas de título; algunos encabezados ya usan estilos de línea para la jerarquía visual.  
 
-Puede usar `code` la sintaxis de Markdown alineada (con los retrofijos).
+### <a name="displaying-code"></a>Mostrar código  
 
-O puede mostrar bloques de código como este:
+Puede usar la sintaxis `code` de Markdown en línea \(con los backticks\).  
+
+O puede mostrar bloques de código.  El siguiente fragmento de código es un ejemplo css.  
 
 ```css
 body {
     background: #fff;
 }
-```
+```  
 
-### Tablas
+### <a name="tables"></a>Tablas  
 
-| Puedes     | usar encabezados | en tablas    |
-|-------------|-------------|-------------:|
-| Alineado a la izquierda| A menos que un #  | 456          |
-| Valor de texto  | Más texto   | $0,00        |
+| Usted puede | usar encabezados | en tablas |  
+|:--- |:--- |:--- |  
+| Alineado a la izquierda | A menos que un # | 456 |  
+| Valor de texto | Más texto | $0,00 |  
 
-### Notas
+### <a name="notes"></a>Notas  
 
-Use las notas con moderación. Se trata de bloques diseñados para resaltar la información de "no-que te falten".
+Use notas con moderación.  Los bloques están diseñados para resaltar la información de "don't-miss-it".  
 
-Tenemos cuatro versiones diferentes de las notas con estilo actualmente:
-- NOTA
-- APARECERÁ
-- SOBRE
-- IMPORTANTE
+Cuatro versiones diferentes de notas tienen un estilo actual.  
 
-Respectivamente, tienen el siguiente aspecto:
+*   NOTA  
+*   ADVERTENCIA  
+*   SUGERENCIA  
+*   IMPORTANTE  
 
-![Patrones de notas](./media/notes.png)
+Respectivamente, las notas tienen el aspecto de los siguientes fragmentos de código.  
 
-```
+```md
+> [!NOTE]
+> This is a NOTE  
+```  
+
+```md
 > [!WARNING]
-> Hello. Yes. I am a warning note that has been automagically created. My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single (sometimes very long line) in the Markdown itself.```
+> This is a WARNING  
+```  
 
-For multi-line blockquote notes, use a > in front of each line of the notes as seen in the example below.
+```md
+> [!TIP]
+> This is a TIP  
+```  
 
+```md
+> [!IMPORTANT]
+> This is IMPORTANT  
+```  
+
+![Patrones de nota](./media/notes.png)
+
+Para las notas de bloque de varias líneas, use un carácter mayor que \( \) delante de cada línea de las notas como se muestra `>` en el ejemplo siguiente.  
+
+```md
+> This is a line in a blockquote.  
+> My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the Markdown.  
+> This is another line in a blockquote.  
 ```
 
+### <a name="images"></a>Imágenes  
 
-### Imágenes
+Las imágenes deben almacenarse en un directorio y hacer referencia a él con una ruta `media` de acceso relativa mediante el script de imagen.  
 
-Las imágenes deben almacenarse en una `media` carpeta y se hace referencia a ellas con una ruta de acceso relativa:
+<!--  `![Note patterns](media/notes.png)`  -->  
 
-`![Note patterns](media/notes.png)`
+```md
+:::image type="complex" source="./media/notes.png" alt-text="Note patterns" lightbox="./media/notes.png":::
+   Note patterns  
+:::image-end:::  
+```  

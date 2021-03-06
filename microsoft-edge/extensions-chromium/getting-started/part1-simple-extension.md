@@ -1,38 +1,38 @@
 ---
-description: Crear una extensión que emerja la imagen de la NASA del día
+description: Crear una extensión que emergente la imagen de la NASA del día
 title: 'Crear un tutorial de extensión: parte 1'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/23/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: Edge-cromo, desarrollo web, HTML, CSS, JavaScript, desarrollador, extensiones
-ms.openlocfilehash: 3809bfac714621cf97184127132487ed93958a2f
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
+ms.openlocfilehash: dfbe7893ce576c223d2b1d39ec21b6c5f46d8356
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104710"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397513"
 ---
-# Crear un tutorial de extensión: parte 1  
+# <a name="create-an-extension-tutorial---part-1"></a>Crear un tutorial de extensión: parte 1  
 
-## Introducción  
+## <a name="overview"></a>Introducción  
 
-El objetivo de este tutorial es crear una extensión de Microsoft Edge (cromo) a partir de un directorio vacío. Crearemos una extensión que emerja la imagen de la NASA del día. En este tutorial, aprenderá a crear una extensión de la siguiente manera:
+El objetivo de este tutorial es crear una extensión de Microsoft Edge (Chromium) a partir de un directorio vacío.  Está creando una extensión que muestra la imagen de la NASA del día. En este tutorial, aprenda a crear una extensión completando las siguientes acciones.  
 
 *   Crear un `manifest.json` archivo.  
 *   Agregar iconos.  
 *   Abrir un cuadro de diálogo emergente predeterminado.  
 
-## Antes de empezar
+## <a name="before-you-begin"></a>Antes de comenzar
 
-Si desea probar la extensión completada que compilará en este tutorial, descargue el [código fuente][ArchiveExtensionGettingStartedPart1].  
+Para probar la extensión completada que está creando en este tutorial, descargue el [código fuente][ArchiveExtensionGettingStartedPart1].  
 
-## Paso 1: crear un `manifest.json` archivo
+## <a name="step-1-create-a-manifestjson-file"></a>Paso 1: Crear una manifest.jsen el archivo
 
-Cada paquete de extensión debe tener un `manifest.json` archivo en la raíz.  El manifiesto proporciona detalles de la extensión, la versión del paquete de extensión, el nombre y la descripción de la extensión, etc.  
+Cada paquete de extensión debe tener `manifest.json` un archivo en la raíz.  El manifiesto proporciona detalles de la extensión, la versión del paquete de extensión, el nombre y la descripción de la extensión, y así sucesivamente.  
 
-En el siguiente fragmento de código se describe la información básica necesaria en el `manifest.json` archivo.  
+El siguiente fragmento de código describe la información básica necesaria en el `manifest.json` archivo.  
 
 ```json
 {
@@ -43,19 +43,19 @@ En el siguiente fragmento de código se describe la información básica necesar
 }
 ```  
 
-## Paso 2: agregar iconos  
+## <a name="step-2-add-icons"></a>Paso 2: Agregar iconos  
 
-Para empezar, cree el `icons` directorio en el proyecto para almacenar los archivos de imagen de icono.  Los iconos se usan para la imagen de fondo del botón en el que los usuarios seleccionan para iniciar la extensión.  
+Comience creando el `icons` directorio en el proyecto para almacenar los archivos de imagen de icono.  Los iconos se usan para la imagen de fondo del botón que los usuarios seleccionan para iniciar la extensión.  
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Icono en la barra de herramientas para abrir la extensión&quot;":::
-   Icono en la barra de herramientas para abrir la extensión
-:::image-end:::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="Icono de la barra de herramientas para abrir la extensión":::
+   Icono de la barra de herramientas para abrir la extensión  
+:::image-end:::  
 
-Para los iconos, recomendamos usar: 
-*   `PNG` aplicar formato a los iconos, pero también puede usar los `BMP` `GIF` `ICO` `JPEG` formatos.  
-*   Imágenes de 128 x 128 PX, que el explorador cambia su tamaño si es necesario.  
+Para los iconos, se recomienda usar: 
+*   `PNG` formato de iconos, pero también puede usar `BMP` , `GIF` o `ICO` `JPEG` formatos.  
+*   Imágenes de 128 x 128 px, que el explorador cambia de tamaño si es necesario.  
 
-Los directorios de su proyecto deberían ser similares a la estructura siguiente.   
+Los directorios del proyecto deben ser similares a la siguiente estructura.   
 
 ```shell
 └── part1
@@ -67,28 +67,28 @@ Los directorios de su proyecto deberían ser similares a la estructura siguiente
         └── nasapod128x128.png
 ```  
 
-A continuación, agregue los iconos al `manifest.json` archivo. Actualice el `manifest.json` archivo con la información de los iconos para que coincida con el siguiente fragmento de código. Los `png` archivos enumerados en el siguiente código están disponibles en el archivo de descarga mencionado anteriormente en este artículo.  
+A continuación, agregue los iconos al `manifest.json` archivo. Actualice el `manifest.json` archivo con la información de iconos para que coincida con el siguiente fragmento de código. Los `png` archivos enumerados en el siguiente código están disponibles en el archivo de descarga mencionado anteriormente en este artículo.  
 
 ```json
 {
-    &quot;name&quot;: &quot;NASA picture of the day viewer&quot;,
-    &quot;version&quot;: &quot;0.0.0.1&quot;,
-    &quot;manifest_version&quot;: 2,
-    &quot;description&quot;: &quot;A chromium extension to show the NASA picture of the day.&quot;,
-    &quot;icons&quot;: {
-        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
-        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
-        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
-        &quot;128&quot;: &quot;icons/nasapod128x128.png"
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "A chromium extension to show the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
     }
 }
 ```  
 
-## Paso 3: abrir un cuadro de diálogo emergente predeterminado  
+## <a name="step-3-open-a-default-pop-up-dialog"></a>Paso 3: Abrir un cuadro de diálogo emergente predeterminado  
 
-Ahora, cree un `HTML` archivo que se ejecute cuando el usuario inicie la extensión.  Cree el archivo HTML denominado `popup.html` en un directorio denominado `popup` .  Cuando los usuarios seleccionan el icono para iniciar la extensión, `popup/popup.html` se muestra como un cuadro de diálogo modal.  
+Ahora, cree un `HTML` archivo para que se ejecute cuando el usuario inicie la extensión.  Cree el archivo HTML denominado `popup.html` en un directorio denominado `popup` .  Cuando los usuarios seleccionan el icono para iniciar la extensión, `popup/popup.html` se muestra como un cuadro de diálogo modal.  
 
-Agregue el código del siguiente fragmento de código para `popup.html` Mostrar la imagen de estrellas.  
+Agregue el código del siguiente fragmento de código para `popup.html` mostrar la imagen de estrellas.  
 
 ```html
 <html lang="en">
@@ -104,7 +104,7 @@ Agregue el código del siguiente fragmento de código para `popup.html` Mostrar 
 </html>
 ```  
 
-Asegúrese de agregar el archivo de imagen `images/stars.jpeg` a la carpeta imágenes.  Los directorios de su proyecto deberían ser similares a la estructura siguiente.   
+Asegúrese de agregar el archivo de imagen `images/stars.jpeg` a la carpeta de imágenes.  Los directorios del proyecto deben ser similares a la siguiente estructura.   
 
 ```shell
 └── part1
@@ -120,7 +120,7 @@ Asegúrese de agregar el archivo de imagen `images/stars.jpeg` a la carpeta imá
         └── popup.html
 ```  
 
-Por último, asegúrese de registrar el elemento emergente en `manifest.json` en `browser_action` , como se muestra en el siguiente fragmento de código.  
+Por último, asegúrese de registrar la ventana emergente en `manifest.json` , como se muestra en el siguiente fragmento de `browser_action` código.  
 
 ```json
 {
@@ -140,9 +140,8 @@ Por último, asegúrese de registrar el elemento emergente en `manifest.json` en
 }
 ```  
 
-## Pasos siguientes
-Eso es todo lo que necesitas para desarrollar una extensión de trabajo. Ahora, continúe con la transferencia de prueba y pruebe su extensión. Para obtener más información, consulte [transferir localmente una extensión][TestExtensionSideload].  
-
+## <a name="next-steps"></a>Pasos siguientes
+Eso es todo lo que necesita para desarrollar una extensión de trabajo.  Ahora, continúe con la instalación local y pruebe la extensión. Para obtener más información, vaya [a Sideload an extension][TestExtensionSideload].  
 
 <!-- image links -->  
 
@@ -155,6 +154,6 @@ Eso es todo lo que necesitas para desarrollar una extensión de trabajo. Ahora, 
 
 <!-- links -->  
 
-[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "Origen del paquete de extensión completado | Microsoft docs"
+[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "Origen del paquete de extensión completado | Microsoft Docs"
 
-[TestExtensionSideload]: ./extension-sideloading.md "Probar la extensión (transferencia local) | Microsoft docs"
+[TestExtensionSideload]: ./extension-sideloading.md "Probar la extensión (sideloading) | Microsoft Docs"

@@ -1,18 +1,18 @@
 ---
 description: Use la API de consola para escribir mensajes en la consola.
-title: Referencia de la API de consola
+title: Referencia de api de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 38fb3ee2345530775423ac3ec8e53e0d8de76eaf
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: f38a7403cf11fbec5f5833fc0b1ed10207b436de
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125289"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398052"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,13 @@ ms.locfileid: "11125289"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Referencia de la API de consola  
+# <a name="console-api-reference"></a>Referencia de api de consola  
 
-Usa los métodos de la API de consola para escribir mensajes en la consola desde tu JavaScript.  Para obtener una introducción interactiva al tema, vaya a introducción al [registro de mensajes en la consola][DevtoolsConsoleLog].  Para obtener los métodos útiles como `debug()` o `monitorEvents()` que solo están disponibles en el panel de la **consola** , vaya a referencia de la API de [utilidades de consola][DevtoolConsoleUtilities].  
+Use los métodos de la API de consola para escribir mensajes en la consola desde JavaScript.  Para obtener una introducción interactiva al tema, vaya a Introducción al registro [de mensajes en la consola][DevtoolsConsoleLog].  Para los métodos de comodidad como o que solo están disponibles en el panel Consola, vaya a `debug()` Console Utilities API `monitorEvents()` [Reference][DevtoolConsoleUtilities]. ****  
 
 ---  
 
-## aserciones  
+## <a name="assert"></a>assert  
 
 ```javascript
 console.assert(expression, object)
@@ -44,7 +44,7 @@ console.assert(expression, object)
 
 <!--todo: add reference level (reference#persist-messages-across-page-loads) when available -->  
 
-Escribe un [error](#error) en la consola cuando `expression` se evalúa en `false` .  
+Escribe un [error en](#error) la consola cuando se evalúa como `expression` `false` .  
 
 ```javascript
 const x = 5;
@@ -53,13 +53,13 @@ const reason = 'x is expected to be less than y';
 console.assert(x < y, {x, y, reason});
 ```  
 
-:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-assert-button.msft.png":::
-   Ilustración 1: el resultado del `console.assert()` ejemplo  
+:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="El resultado del ejemplo console.assert()" lightbox="../media/console-demo-assert-button.msft.png":::
+   Figura 1: El resultado del `console.assert()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## Libere  
+## <a name="clear"></a>clear  
 
 ```javascript
 console.clear()
@@ -71,15 +71,15 @@ Borra la consola.
 console.clear();  
 ```  
 
-Si se habilita [preservar registro][DevtoolsConsoleReferenceLevel] , el método [Borrar](#clear) estará desactivado.  
+Si [Preserve Log][DevtoolsConsoleReferenceLevel] está habilitado, el método [clear](#clear) está deshabilitado.  
 
-### Consulte también  
+### <a name="see-also"></a>Consulte también  
 
 *   [Borrar la consola][DevtoolsConsoleReferenceClear]  
 
 ---  
 
-## encuentra  
+## <a name="count"></a>count  
 
 ```javascript
 console.count([label])
@@ -87,7 +87,7 @@ console.count([label])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Escribe el número de veces que se ha invocado al método [Count](#count) en la misma línea y con el mismo `label` .  Usa el método [countReset](#countreset) para restablecer el recuento.  
+Escribe el número de veces que se ha invocado el [método count](#count) en la misma línea y con la misma `label` .  Use el [método countReset](#countreset) para restablecer el recuento.  
 
 ```javascript
 console.count();
@@ -96,13 +96,13 @@ console.count();
 console.count();
 ```  
 
-:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-count-button.msft.png":::
-   Ilustración 2: el resultado del `console.count()` ejemplo  
+:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="El resultado del ejemplo console.count()" lightbox="../media/console-demo-count-button.msft.png":::
+   Figura 2: El resultado del `console.count()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## countReset  
+## <a name="countreset"></a>countReset  
 
 ```javascript
 console.countReset([label])
@@ -117,7 +117,7 @@ console.countReset('coffee');
 
 ---  
 
-## depurar  
+## <a name="debug"></a>depurar  
 
 ```javascript
 console.debug(object [, object, ...])
@@ -125,19 +125,19 @@ console.debug(object [, object, ...])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Verbose`
 
-Es idéntico a [log](#log) , excepto el nivel de registro diferente.  
+Idéntico al [registro excepto](#log) a otro nivel de registro.  
 
 ```javascript
 console.debug('debug');  
 ```  
 
-:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-debug-button.msft.png":::
-   Ilustración 3: el resultado del `console.debug()` ejemplo  
+:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="El resultado del ejemplo console.debug()" lightbox="../media/console-demo-debug-button.msft.png":::
+   Figura 3: El resultado del `console.debug()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## dir  
+## <a name="dir"></a>dir  
 
 ```javascript
 console.dir(object)
@@ -151,13 +151,13 @@ Imprime una representación JSON del objeto especificado.
 console.dir(document.head);
 ```  
 
-:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-dir-button.msft.png":::
-   Ilustración 4: el resultado del `console.dir()` ejemplo  
+:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="El resultado del ejemplo console.dir()" lightbox="../media/console-demo-dir-button.msft.png":::
+   Figura 4: El resultado del `console.dir()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## dirxml  
+## <a name="dirxml"></a>dirxml  
 
 ```javascript
 console.dirxml(node)
@@ -171,13 +171,13 @@ Imprime una representación XML de los descendientes de `node` .
 console.dirxml(document);
 ```  
 
-:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-dirxml-button.msft.png":::
-   Ilustración 5: el resultado del `console.dirxml()` ejemplo  
+:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="El resultado del ejemplo console.dirxml()" lightbox="../media/console-demo-dirxml-button.msft.png":::
+   Figura 5: El resultado del `console.dirxml()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## error  
+## <a name="error"></a>error  
 
 ```javascript
 console.error(object [, object, ...])
@@ -185,25 +185,25 @@ console.error(object [, object, ...])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Error`  
 
-Imprime `object` en la consola, le da formato de error e incluye un seguimiento de la pila.  
+Imprime la `object` consola, la da formato como un error e incluye un seguimiento de la pila.  
 
 ```javascript
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 ```  
 
-:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-error-button.msft.png":::
-   Ilustración 6: el resultado del `console.error()` ejemplo  
+:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="El resultado del ejemplo console.error()" lightbox="../media/console-demo-error-button.msft.png":::
+   Figura 6: El resultado del `console.error()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## grupo  
+## <a name="group"></a>grupo  
 
 ```javascript
 console.group(label)
 ```  
 
-Agrupa visualmente los mensajes hasta que se usa el método [groupEnd](#groupend) .  Use el método [groupCollapsed](#groupcollapsed) para contraer el grupo cuando se haya registrado inicialmente en la consola.  
+Agrupa visualmente mensajes hasta que [se usa el método groupEnd.](#groupend)  Use el [método groupCollapsed](#groupcollapsed) para contraer el grupo cuando se registra inicialmente en la consola.  
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -215,33 +215,33 @@ console.info('Raph');
 console.groupEnd(label);
 ```  
 
-:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-group-button.msft.png":::
-   Ilustración 7: el resultado del `console.group()` ejemplo  
+:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="El resultado del ejemplo console.group()" lightbox="../media/console-demo-group-button.msft.png":::
+   Figura 7: El resultado del `console.group()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## groupCollapsed  
+## <a name="groupcollapsed"></a>groupCollapsed  
 
 ```javascript
 console.groupCollapsed(label)
 ```  
 
-Igual que el método [log](#log) , excepto que el grupo se contraiga inicialmente cuando se registra en la consola.  
+Igual que el [método de registro,](#log) excepto que el grupo se contrae inicialmente cuando se registra en la consola.  
 
 ---  
 
-## groupEnd  
+## <a name="groupend"></a>groupEnd  
 
 ```javascript
 console.groupEnd(label)
 ```  
 
-Detiene la agrupación visual de mensajes.  Consulta el método [Group](#group) .  
+Detiene la agrupación visual de mensajes.  Vaya al [método group.](#group)  
 
 ---  
 
-## información  
+## <a name="info"></a>información  
 
 ```javascript
 console.info(object [, object, ...])
@@ -249,19 +249,19 @@ console.info(object [, object, ...])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Es idéntico al método de [registro](#log) .  
+Idéntico al método [log.](#log)  
 
 ```javascript
 console.info('info');
 ```  
 
-:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-info-button.msft.png":::
-   Ilustración 8: el resultado del `console.info()` ejemplo  
+:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="El resultado del ejemplo console.info()" lightbox="../media/console-demo-info-button.msft.png":::
+   Figura 8: El resultado del `console.info()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## registros  
+## <a name="log"></a>log  
 
 ```javascript
 console.log(object [, object, ...])
@@ -275,13 +275,13 @@ Imprime un mensaje en la consola.
 console.log('log');
 ```  
 
-:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-log-button.msft.png":::
-   Ilustración 9: el resultado del `console.log()` ejemplo  
+:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="El resultado del ejemplo console.log()" lightbox="../media/console-demo-log-button.msft.png":::
+   Figura 9: El resultado del `console.log()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## Table  
+## <a name="table"></a>tabla  
 
 ```javascript
 console.table(array)
@@ -309,19 +309,19 @@ console.table([
 ]);
 ```  
 
-:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-table-button.msft.png":::
-   Ilustración 10: el resultado del `console.table()` ejemplo  
+:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="El resultado del ejemplo console.table()" lightbox="../media/console-demo-table-button.msft.png":::
+   Figura 10: El resultado del `console.table()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## time  
+## <a name="time"></a>time  
 
 ```javascript
 console.time([label])
 ```  
 
-Inicia un nuevo temporizador.  Use el método [timeEnd](#timeend) para detener el temporizador e imprimir el tiempo transcurrido en la consola.  
+Inicia un nuevo temporizador.  Use el [método timeEnd](#timeend) para detener el temporizador e imprimir el tiempo transcurrido en la consola.  
 
 ```javascript
 console.time();
@@ -331,13 +331,13 @@ for (var i = 0; i < 100000; i++) {
 console.timeEnd();
 ```  
 
-:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-time-button.msft.png":::
-   Ilustración 11: el resultado del `console.time()` ejemplo  
+:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="El resultado del ejemplo console.time()" lightbox="../media/console-demo-time-button.msft.png":::
+   Figura 11: El resultado del `console.time()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## timeEnd  
+## <a name="timeend"></a>timeEnd  
 
 ```javascript
 console.timeEnd([label])
@@ -345,11 +345,11 @@ console.timeEnd([label])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Detiene un temporizador.  Consulta el método de [hora](#time) .  
+Detiene un temporizador.  Vaya al método [time.](#time)  
 
 ---  
 
-## trazabilidad  
+## <a name="trace"></a>seguimiento  
 
 ```javascript
 console.trace()
@@ -357,7 +357,7 @@ console.trace()
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Imprime un seguimiento de la pila en la consola.  
+Imprime un seguimiento de pila en la consola.  
 
 ```javascript
 const first = () => { second(); };
@@ -367,13 +367,13 @@ const fourth = () => { console.trace(); };
 first();
 ```  
 
-:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-trace-button.msft.png":::
-   Ilustración 12: el resultado del `console.trace()` ejemplo  
+:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="El resultado del ejemplo console.trace()" lightbox="../media/console-demo-trace-button.msft.png":::
+   Figura 12: El resultado del `console.trace()` ejemplo  
 :::image-end:::  
 
 ---  
 
-## advertir  
+## <a name="warn"></a>warn  
 
 ```javascript
 console.warn(object [, object, ...])
@@ -387,27 +387,27 @@ Imprime una advertencia en la consola.
 console.warn('warn');
 ```  
 
-:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="El resultado del ejemplo de Console. Assert ()" lightbox="../media/console-demo-warn-button.msft.png":::
-   Ilustración 13: el resultado del `console.warn()` ejemplo  
+:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="El resultado del ejemplo console.warn()" lightbox="../media/console-demo-warn-button.msft.png":::
+   Figura 13: El resultado del `console.warn()` ejemplo  
 :::image-end:::  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Introducción al registro de mensajes en la consola"  
-[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Referencia de API de utilidades de consola"  
+[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Referencia de api de utilidades de consola"  
 [DevtoolsConsoleReferenceClear]: /microsoft-edge/devtools-guide-chromium/console/reference#clear-the-console "Borrar la consola: referencia de consola"  
-[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Conservar mensajes en la carga de páginas: referencia de consola"  
-[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtrar por nivel de registro-referencia de consola"  
+[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
+[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtrar por nivel de registro: referencia de consola"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (cromo)"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (Chromium)"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/console/api) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/console/api) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

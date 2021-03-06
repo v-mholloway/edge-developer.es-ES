@@ -1,18 +1,18 @@
 ---
-description: Obtenga información sobre cómo usar Microsoft Edge DevTools para ver y cambiar las CSS de una página.
+description: Obtenga información sobre cómo usar Microsoft Edge DevTools para ver y cambiar el CSS de una página.
 title: Introducción a cómo ver y cambiar CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3cd833c97cb2e7b746943f18526d09481b4e3cc5
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: b3d19d34f329fec7a3903fb37e8be3558ba4d31d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125212"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399095"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,172 +28,172 @@ ms.locfileid: "11125212"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Introducción a cómo ver y cambiar CSS  
+# <a name="get-started-with-viewing-and-changing-css"></a>Introducción a cómo ver y cambiar CSS  
 
-Complete estos tutoriales interactivos para conocer los conceptos básicos de la visualización y el cambio de las CSS de una página con Microsoft Edge DevTools.  
+Complete estos tutoriales interactivos para aprender los conceptos básicos de ver y cambiar el CSS de una página con Microsoft Edge DevTools.  
 
-## Ejemplos de CSS abiertos  
+## <a name="open-css-examples"></a>Ejemplos de CSS abiertos  
 
-1.  Espera `Control` \ (Windows, Linux \) o `Command` \ (MacOS \) y elige **ejemplos de CSS** para abrir en una ventana nueva.  
+1.  Mantenga `Control` presionado \(Windows, Linux\) o `Command` \(macOS\) y elija **Ejemplos de CSS** para abrirse en una nueva ventana.  
     
     [Ejemplos de CSS][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > Si desea [acoplar la ventana de DevTools][DevToolsCustomizePlacement] a la derecha de su ventanilla \ (se muestra en la siguiente ilustración \), elija **personalizar y controlar DevTools** `...` .  En el menú desplegable **personalizar y controlar DevTools** , en la sección de **acoplamiento** , elija **acoplar a la derecha**.  
+    > Si desea acoplar la ventana [DevTools][DevToolsCustomizePlacement] a la derecha de la ventanilla \(se muestra en la siguiente figura\), elija Personalizar y **controlar DevTools** `...` .  En el **menú desplegable Personalizar y controlar DevTools,** en la sección Lado **dock,** elija **Acoplar a la derecha.**  
     
-## Ver la CSS de un elemento  
+## <a name="view-the-css-for-an-element"></a>Ver el CSS de un elemento  
 
-1.  [Abra ejemplos de CSS](#open-css-examples).  
-1.  Desplace el puntero sobre el `Inspect Me!` texto, abra el menú contextual \ (haga clic con el botón secundario del mouse \) y elija **inspeccionar**.  
-    1.  En DevTools, en el panel **elementos** , en la pestaña **árbol DOM** , `Inspect Me!` se resalta el elemento.  
+1.  [Abrir ejemplos de CSS](#open-css-examples).  
+1.  Mantenga el mouse `Inspect Me!` sobre el texto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Inspeccionar**.  
+    1.  En DevTools, en la **herramienta Elementos,** en el panel Árbol **DOM,** se `Inspect Me!` resalta el elemento.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-inspect-me.msft.png":::
-           Ilustración 1: el elemento inspeccionado está resaltado en el **árbol DOM**  
+        :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="El elemento inspeccionado se resalta en el árbol DOM" lightbox="../media/css-elements-inspect-me.msft.png":::
+           El elemento inspeccionado se resalta en el **árbol DOM**  
         :::image-end:::  
         
     1.  En el `Inspect Me!` elemento, busque el valor del `data-message` atributo y cópielo.  
-1.  En la página, en el cuadro **de texto valor de `data-message` :** , escriba el valor.  
-1.  Desplace el puntero sobre el `Inspect Me!` texto, abra el menú contextual \ (haga clic con el botón secundario del mouse \) y elija **inspeccionar**.  
-    1.  En DevTools, en el panel **elementos** , seleccione la pestaña **estilos** .  
-    1.  En la pestaña **estilos** , `Inspect Me!` se resalta el elemento.  
-    1.  En el `Inspect Me!` elemento, busque la `aloha` regla de clase.  
+1.  En la página, en el **cuadro de texto Valor de `data-message` :** , escriba el valor.  
+1.  Mantenga el mouse `Inspect Me!` sobre el texto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Inspeccionar**.  
+    1.  En DevTools, en la **herramienta Elementos,** seleccione el panel **Estilos.**  
+    1.  En el panel **Estilos,** el `Inspect Me!` elemento está resaltado.  
+    1.  En el `Inspect Me!` elemento, busque la regla `aloha` de clase.  
         
         > [!NOTE]
-        > Verá esta regla porque se está aplicando al `Inspect Me!` elemento.  
+        > Esta regla se muestra, ya que se está aplicando al `Inspect Me!` elemento.  
         
     1.  En la `aloha` clase, busque el valor del `padding` estilo y cópielo.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
-           Ilustración 2: las clases CSS que se están aplicando al elemento seleccionado, como `aloha` , se muestran en la pestaña **estilos** .  
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Las clases CSS se aplican al elemento inspeccionado y se resaltan en el panel Estilos" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+           Las clases CSS se aplican al elemento seleccionado, como , se muestran `aloha` en el panel **Estilos**  
         :::image-end:::  
         
-1.  En la página, en el cuadro **de texto valor de `padding` :** , escriba el valor.  
+1.  En la página, en el **cuadro de texto Valor de `padding` :** , escriba el valor.  
 
-## Agregar una declaración CSS a un elemento  
+## <a name="add-a-css-declaration-to-an-element"></a>Agregar una declaración CSS a un elemento  
 
-Use la pestaña **estilos** cuando desee cambiar o agregar declaraciones CSS a un elemento.  
+Use el panel **Estilos** cuando desee cambiar o agregar declaraciones CSS a un elemento.  
 
 > [!NOTE]
-> Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.  
+> Complete el [tutorial Ver el CSS de un elemento](#view-the-css-for-an-element) antes de hacerlo.  
 
-1.  [Abra ejemplos de CSS](#open-css-examples).  
-1.  Desplace el puntero sobre el `Add A Background Color To Me!` texto, abra el menú contextual \ (haga clic con el botón secundario del mouse \) y elija **inspeccionar**.  
-1.  Seleccione `element.style` cerca de la parte superior de la pestaña **estilos** .  
+1.  [Abrir ejemplos de CSS](#open-css-examples).  
+1.  Mantenga el mouse `Add A Background Color To Me!` sobre el texto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Inspeccionar**.  
+1.  Elija `element.style` cerca de la parte superior del panel **Estilos.**  
 1.  Escriba `background-color` y seleccione `Enter` .  
-1.  Escriba `honeydew` y seleccione `Enter` .  En el **árbol DOM** , debería ver que se aplicó una declaración de estilo en línea al elemento.  
+1.  Escriba `honeydew` y seleccione `Enter` .  En el **árbol DOM,** se muestra una declaración de estilo en línea aplicada al elemento.  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
-       Ilustración 3: la `background-color:honeydew` declaración se ha aplicado al elemento mediante la `element.style` sección de la pestaña **estilos** .  
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Agregar una declaración CSS al elemento mediante el panel Estilos" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+       La `background-color:honeydew` declaración se aplica al elemento mediante la sección del panel `element.style` **Estilos**  
     :::image-end:::  
     
-## Agregar una clase CSS a un elemento  
+## <a name="add-a-css-class-to-an-element"></a>Agregar una clase CSS a un elemento  
 
-Use la pestaña **estilos** para ver el aspecto que tiene un elemento cuando se aplica o se quita una clase CSS de un elemento.  
+Para mostrar el aspecto de un elemento cuando se aplica o quita una clase CSS de un elemento, vaya al panel **Estilos.**  
 
 > [!NOTE]
-> Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.  
+> Complete el [tutorial Ver el CSS de un elemento](#view-the-css-for-an-element) antes de hacerlo.  
 
-1.  [Abra ejemplos de CSS](#open-css-examples).  
-1.  Desplace el puntero sobre el `Add A Class To Me!` texto, abra el menú contextual \ (haga clic con el botón secundario del mouse \) y elija **inspeccionar**.  
-1.  Elija **. CLS**.  DevTools revela un cuadro de texto en el que puede Agregar clases al elemento seleccionado.  
-1.  Escriba `color_me` el cuadro de texto **Agregar nueva clase** y, después, seleccione `Enter` .  Aparece una casilla debajo del cuadro de texto **Agregar nueva clase** , donde puede activar o desactivar la clase.  Si el `Add A Class To Me!` elemento tiene otras clases aplicadas, también podrá alternar entre aquí.  
+1.  [Abrir ejemplos de CSS](#open-css-examples).  
+1.  Mantenga el mouse `Add A Class To Me!` sobre el texto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Inspeccionar**.  
+1.  Elija **.cls**.  DevTools muestra un cuadro de texto donde puede agregar clases al elemento seleccionado.  
+1.  Escriba `color_me` en el cuadro de texto Agregar nueva **clase** y, a continuación, seleccione `Enter` .  Aparece una casilla debajo del cuadro de texto **Agregar** nueva clase, donde puede activar y desactivar la clase.  Si el elemento tiene otras clases aplicadas, también puedes alternar cada `Add A Class To Me!` una desde aquí.  
     
-    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
-       Ilustración 4: se ha `color_me` aplicado la clase al elemento con la sección **. CLS** de la pestaña **estilos** .  
+    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Aplicar la clase color_me al elemento" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
+       La `color_me` clase se aplica al elemento mediante la sección **.cls** del panel **Estilos**  
     :::image-end:::  
     
-## Agregar un PseudoState a una clase  
+## <a name="add-a-pseudostate-to-a-class"></a>Agregar un pseudoestado a una clase  
 
-Use la pestaña **estilos** para aplicar de forma permanente un PseudoState CSS a un elemento.  DevTools es compatible con `:active` ,, `:focus` `:hover` , y `:visited` .  
+Use el panel **Estilos** para aplicar permanentemente un pseudoestado CSS a un elemento.  DevTools admite `:active` , `:focus` , y `:hover` `:visited` .  
 
 > [!NOTE]
-> Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.  
+> Complete el [tutorial Ver el CSS de un elemento](#view-the-css-for-an-element) antes de hacerlo.  
 
-1.  [Abra ejemplos de CSS](#open-css-examples).  
-1.  Desplace el puntero sobre el `Hover Over Me!` texto.  Cambia el color de fondo.  
-1.  Desplace el puntero sobre el `Hover Over Me!` texto, abra el menú contextual \ (haga clic con el botón secundario del mouse \) y elija **inspeccionar**.  
-1.  En la pestaña **estilos** , elija **: HOV**.  
-1.  Active la casilla **: hover** .  El color de fondo cambia como antes, aunque no esté colocando el puntero sobre el elemento.  
+1.  [Abrir ejemplos de CSS](#open-css-examples).  
+1.  Mantenga el mouse sobre el `Hover Over Me!` texto.  Cambia el color de fondo.  
+1.  Mantenga el mouse `Hover Over Me!` sobre el texto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Inspeccionar**.  
+1.  En el panel **Estilos,** elija **:hov**.  
+1.  Active la **casilla :hover.**  El color de fondo cambia como antes, aunque no se mantenga el mouse sobre el elemento.  
     
-    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
-       Ilustración 5: alternar el `:hover` PseudoState en un elemento  
+    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Alternar la pseudoestación activa en un elemento" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
+       Alternar el `:hover` pseudostate en un elemento  
     :::image-end:::  
     
-## Cambiar las dimensiones de un elemento  
+## <a name="change-the-dimensions-of-an-element"></a>Cambiar las dimensiones de un elemento  
 
-Use el Diagrama interactivo del **modelo de cuadro** de la pestaña **estilos** para cambiar el ancho, alto, relleno, margen o longitud de borde de un elemento.  
+Use el **diagrama interactivo Modelo** de cuadro en el panel **Estilos** para cambiar el ancho, alto, relleno, margen o longitud de borde de un elemento.  
 
 > [!NOTE]
-> Complete el tutorial [ver la CSS para un elemento antes de](#view-the-css-for-an-element) hacerlo.  
+> Complete el [tutorial Ver el CSS de un elemento](#view-the-css-for-an-element) antes de hacerlo.  
 
-1.  [Abra ejemplos de CSS](#open-css-examples).  
-1.  Desplace el puntero sobre el `Change My Margin!` texto, abra el menú contextual \ (haga clic con el botón secundario del mouse \) y elija **inspeccionar**.  
-1.  En el diagrama de **modelo de cuadro** de la pestaña **estilos** , desplace el puntero sobre el **relleno**.  El relleno de un elemento se resalta en la ventanilla.  
+1.  [Abrir ejemplos de CSS](#open-css-examples).  
+1.  Mantenga el mouse `Change My Margin!` sobre el texto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Inspeccionar**.  
+1.  En el **diagrama Modelo de** cuadro del panel **Estilos,** mantenga el mouse sobre **el relleno**.  El relleno de un elemento se resalta en la ventanilla.  
 
     > [!NOTE]
-    > Según el tamaño de la ventana de DevTools, es posible que tenga que desplazarse hasta la parte inferior de la pestaña **estilos** para ver el **modelo de cuadro**.  
+    > Según el tamaño de la ventana DevTools, es posible que deba desplazarse hasta la parte inferior del panel **Estilos** para mostrar **el modelo de cuadro**.  
 
-1.  Haga doble clic en el margen izquierdo del **modelo de cuadro**, que tiene actualmente el valor de `-` significado que el elemento no tiene un margen izquierdo.  
-1.  Escriba `100px` y seleccione `Enter` .  El **modelo de cuadro** tiene un valor predeterminado de píxeles, pero también acepta otros valores, como `25%` , o `10vw` .  
+1.  Haga doble clic en el margen izquierdo del **Modelo**de cuadro , que actualmente tiene un valor que significa que el elemento `-` no tiene un margen izquierdo.  
+1.  Escriba `100px` y seleccione `Enter` .  El **modelo de** cuadro tiene el valor predeterminado de píxeles, pero también acepta otros valores, como , o `25%` `10vw` .  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
-             Ilustración 6: mantener el mouse sobre el relleno del elemento  
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Mantenga el mouse sobre el relleno del elemento" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+             Mantenga el mouse sobre el relleno del elemento  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
-             Ilustración 7: cambiar el margen izquierdo del elemento  
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Cambiar el margen izquierdo del elemento" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
+             Cambiar el margen izquierdo del elemento  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-## Depurar consultas de medios  
+## <a name="debugging-media-queries"></a>Depuración de consultas multimedia  
 
-[Las consultas de medios][MDNUsingMediaGueries] son una forma de hacer que el producto Web reaccione ante los cambios en la configuración de cada usuario.  El caso de uso más importante es proporcionar a tu producto un diseño CSS diferente según las dimensiones de la ventanilla.  El uso de diseños independientes permite un diseño de una columna para dispositivos móviles y diseños de varias columnas cuando hay más pantalla disponible.  
+[Las consultas multimedia][MDNUsingMediaGueries] son una forma de hacer que el producto web reaccione a los cambios en las opciones de configuración de cada usuario.  El caso de uso más significativo es proporcionar al producto un diseño CSS diferente en función de las dimensiones de la ventanilla.  El uso de diseños independientes permite un diseño de una columna para dispositivos móviles y diseños de varias columnas cuando hay más estado de pantalla disponible.  
 
-Si desea depurar o probar las consultas de medios definidas en su CSS, siga estos pasos.  
+Si desea depurar o probar las consultas multimedia que definió en su CSS, siga estos pasos.  
 
-1.  Abra las herramientas de desarrollo y seleccione el icono de la **barra de herramientas del dispositivo de alternancia** en la parte superior izquierda o seleccione `Ctrl` + `Shift` + `M` \ ( `Cmd` + `Shift` + `M` en MacOS \).  
+1.  Abra las herramientas de desarrollador y seleccione el icono **de** la barra de herramientas Alternar dispositivo en la parte superior izquierda o `Ctrl` + `Shift` + `M` seleccione \( `Cmd` + `Shift` + `M` en macOS\).  
     
-    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
-       Ilustración 8: abrir la barra de herramientas del dispositivo  
+    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Abrir la barra de herramientas del dispositivo" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
+       Abrir la barra de herramientas del dispositivo  
     :::image-end:::  
     
-1.  Con la barra de herramientas dispositivo abierta, seleccione el `...` menú en la parte superior derecha y elija **Ver consultas de medios**.  Debería ver barras de colores encima de la visualización de la página que representan las diferentes consultas de medios.  
+1.  Con la barra de herramientas del dispositivo abierta, seleccione el menú de la parte superior derecha y `...` elija Ver consultas **multimedia**.  Las barras de colores que se muestran encima de la página web representan las distintas consultas multimedia.  
     
-    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
-       Ilustración 9: mostrar las consultas multimedia en la barra de herramientas del dispositivo  
+    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Mostrar consultas multimedia en la barra de herramientas del dispositivo" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+       Mostrar consultas multimedia en la barra de herramientas del dispositivo  
     :::image-end:::  
     
-1.  Mantenga el mouse sobre los límites de las barras para ver los valores de las diferentes consultas de medios. Seleccione cada una para cambiar el tamaño de la página web para que coincidan.  
+1.  Mantenga el mouse sobre los límites de las barras para mostrar los valores de las distintas consultas multimedia.  Elija cada una para cambiar el tamaño de la página web que desea que coincida.  
     
-    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
-       Ilustración 10: seleccionar una consulta multimedia desde la barra de vista previa  
+    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Elegir consulta multimedia en la barra de vista previa" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
+       Elegir consulta multimedia en la barra de vista previa  
     :::image-end:::  
     
-1.  Para depurar consultas de elementos multimedia y abrir el archivo CSS en el `Sources` Editor; Coloque el puntero sobre cualquiera de los segmentos de la barra, abra el menú contextual \ (haga clic con el botón secundario del mouse \) y seleccione `reveal in source code` .  
+1.  Para depurar consultas multimedia y abrir el archivo CSS en el editor; mantenga el mouse en cualquiera de los segmentos de barra, abra el menú contextual \(hacer clic con el botón `Sources` secundario\) y seleccione `reveal in source code` .  
     
-    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="El elemento inspeccionado está resaltado en el árbol DOM" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
-       Ilustración 11: revelación de consultas de medios en el editor de orígenes  
+    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Mostrar consultas multimedia en el Editor de orígenes" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
+       Mostrar consultas multimedia en el Editor de orígenes  
     :::image-end:::  
     
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Cambiar la ubicación de DevTools de Microsoft Edge (desacoplar, acoplar a la parte inferior, acoplar a la izquierda)"  
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Cambiar la ubicación de Microsoft Edge DevTools (desacoplar, acoplar a abajo, acoplar a la izquierda)"  
 
-[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "Ejemplos de CSS: Microsoft Edge (cromo) DevTools | Intento"  
+[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "Ejemplos de CSS: Microsoft Edge (Chromium) DevTools | Glitch"  
 
-[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Usar consultas multimedia | MDN"  
+[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Uso de consultas multimedia | MDN"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

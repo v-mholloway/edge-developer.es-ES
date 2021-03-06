@@ -1,36 +1,36 @@
 ---
-description: Insertar dinámicamente la imagen de la NASA debajo de la etiqueta cuerpo de página con scripts de contenido
-title: Crear un tutorial de extensiones, parte 2
+description: Insertar de forma dinámica una imagen de la NASA debajo de la etiqueta cuerpo de la página mediante scripts de contenido
+title: Crear un tutorial de extensión, parte 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-cromo, desarrollo web, HTML, CSS, JavaScript, desarrollador, extensiones
-ms.openlocfilehash: 755b70635c93d7331ef3ac985625ba7ac5689679
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
+ms.openlocfilehash: 48af14c33a368a3449acb88b4dfb875ad5398e7a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104717"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397919"
 ---
-# Crear un tutorial de extensiones, parte 2  
+# <a name="create-an-extension-tutorial-part-2"></a>Crear un tutorial de extensión, parte 2  
   
 [Origen del paquete de extensión completado para este elemento][ArchiveExtensionGettingStartedPart2]    
 
-## Introducción  
+## <a name="overview"></a>Introducción  
 
 En este tutorial se tratan las siguientes tecnologías de extensión.
-*   Inyectar bibliotecas de JavaScript en la extensión  
-*   Exponer los recursos de extensión a las pestañas del explorador  
-*   Incluir páginas de contenido en pestañas del explorador existentes  
+*   Insertar bibliotecas de JavaScript en la extensión  
+*   Exponer activos de extensión a pestañas del explorador  
+*   Incluir páginas de contenido en pestañas de explorador existentes  
 *   Hacer que las páginas de contenido escuchen los mensajes de las ventanas emergentes y respondan  
 
-Aprenderá a actualizar el menú emergente para reemplazar la imagen de inicios estáticos con un título y un botón estándar de HTML.  Este botón, cuando está seleccionado, pasa a la página de contenido la imagen de las estrellas, que está insertada en la extensión.  Esta imagen se inserta en la ficha del explorador activo. Siga los pasos a continuación para obtener más información.
+Aprenderás a actualizar el menú emergente para reemplazar la imagen de inicio estática por un título y un botón HTML estándar.  Ese botón, cuando se selecciona, pasa esa imagen de estrellas, que está incrustada en la extensión, a la página de contenido.  Esa imagen se inserta en la pestaña del explorador activo. Siga los pasos siguientes para obtener más detalles.
 
 1.  Quitar la imagen de la ventana emergente y reemplazarla por un botón  
 
-En primer lugar, actualice el `popup.html` archivo con una marca hacia adelante recta que muestre un título y un botón.  Programará ese botón muy pronto, pero por ahora, solo tienes que incluir una referencia a un archivo de JavaScript vacío `popup.js` .  Aquí es Update HTML.  
+En primer lugar, actualice `popup.html` el archivo con un marcado directo que muestre un título y un botón.  Programará ese botón en breve, pero por ahora, solo tiene que incluir una referencia a un archivo De JavaScript `popup.js` vacío.  Este es el código HTML de actualización.  
 
 ```html
 <html>
@@ -59,23 +59,23 @@ En primer lugar, actualice el `popup.html` archivo con una marca hacia adelante 
 </html>
 ```  
 
-Después de actualizar y abrir la extensión, se abre un elemento emergente con un botón Mostrar.  
+Después de actualizar y abrir la extensión, se abre una ventana emergente con un botón para mostrar.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html Mostrar después de pulsar el icono de extensión":::
-   popup.html Mostrar después de pulsar el icono de extensión
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.htmla pantalla después de seleccionar el icono Extensión":::
+   popup.htmla pantalla después de seleccionar el icono Extensión
 :::image-end:::
 
-<!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
+<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  
 
-2.  Estrategia de actualización para mostrar la imagen en la parte superior de la pestaña del explorador  
+2.  Actualizar estrategia para mostrar la imagen en la parte superior de la pestaña del explorador  
 
-Después de agregar el botón, la siguiente tarea es hacer que muestre el `images/stars.jpeg` archivo de imagen en la parte superior de la página de la pestaña activa.  
+Después de agregar el botón, la siguiente tarea es hacer que se active el archivo de imagen en `images/stars.jpeg` la parte superior de la página de pestaña activa.  
 
-Recuerde que cada página de pestaña se ejecuta en su propio subproceso. Además, la extensión usa un subproceso diferente.  En primer lugar, cree un script de contenido que se inserte en la página de pestañas.  Después, envíe un mensaje desde el elemento emergente a la secuencia de comandos de contenido que se ejecuta en la página de pestañas. El script de contenido recibe el mensaje, que describe qué imagen se debe mostrar.  
+Recuerde que cada página de tabulación se ejecuta en su propio subproceso. Además, la extensión usa un subproceso diferente.  En primer lugar, cree un script de contenido que se inyecte en la página de pestañas.  A continuación, envíe un mensaje desde la ventana emergente a ese script de contenido que se ejecuta en la página de pestaña. El script de contenido recibe el mensaje, que describe qué imagen se debe mostrar.  
 
 3. Crear el JavaScript emergente para enviar un mensaje  
 
-En primer lugar, cree `popup/popup.js` y agregue código para enviar un mensaje a su script de contenido que no haya creado, que debe crear momentáneamente e inyectar en la pestaña del explorador.  Para ello, el siguiente código agrega un `onclick` evento al botón Mostrar emergente.  
+En primer lugar, cree y agregue código para enviar un mensaje al script de contenido aún no creado que debe crear e insertar momentáneamente en la pestaña `popup/popup.js` del explorador.  Para ello, el siguiente código agrega un evento al `onclick` botón de presentación emergente.  
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -86,11 +86,11 @@ if (sendMessageId) {
 }
 ```  
 
-En el `onclick` evento, busque la pestaña actual del explorador.  Después, usa la `chrome.tabs.sendmessage` API de extensión para enviar un mensaje a esa pestaña.  
+En el `onclick` caso, busque la pestaña del explorador actual.  A continuación, use `chrome.tabs.sendmessage` la API de extensión para enviar un mensaje a esa pestaña.  
 
-En ese mensaje, debe incluir la dirección URL de la imagen que desea mostrar. Además, envía un identificador único para asignar a la imagen insertada.  Puede optar por permitir que el JavaScript de inserción de contenido genere eso, pero por razones que se hacen evidentes más adelante, genera ese identificador único aquí `popup.js` y lo pasa al script de contenido que aún no se ha creado.  
+En ese mensaje debe incluir la dirección URL de la imagen que desea mostrar. Además, envíe un identificador único para asignar a la imagen insertada.  Puede optar por permitir que la inserción de contenido de JavaScript genere eso, pero por motivos que se hacen evidentes más adelante, genere ese identificador único aquí y pásenlo al script de contenido aún no `popup.js` creado.  
 
-En el siguiente fragmento de código se describe el código actualizado en `popup/popup.js` .  Además, pasa el identificador de pestaña actual, que se usa más adelante en este artículo.  
+El siguiente fragmento de código describe el código actualizado en `popup/popup.js` .  Además, pase el identificador de pestaña actual, que se usa más adelante en este artículo.  
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -119,17 +119,17 @@ if (sendMessageId) {
 }
 ```  
 
-4. Hacer que las estrellas. JPEG estén disponibles desde cualquier pestaña del explorador  
+4. Hacer que stars.jpeg esté disponible desde cualquier pestaña del explorador  
 
-Probablemente se pregunte por qué, cuando pase el, `images/stars.jpeg` debe usar la `chrome.extension.getURL` API de extensión Chrome en lugar de simplemente pasar la dirección URL relativa sin el prefijo adicional como en la sección anterior.  Por cierto, ese prefijo adicional, devuelto por `getUrl` la imagen adjunta, tiene un aspecto similar al siguiente.  
+Probablemente te estés preguntando por qué, cuando pases el must you use the chrome Extension API en lugar de pasar la dirección URL relativa sin el prefijo adicional como en `images/stars.jpeg` `chrome.extension.getURL` la sección anterior.  Por cierto, ese prefijo adicional devuelto por con la `getUrl` imagen adjunta tiene un aspecto similar al siguiente.  
 
 ```http
 extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 ```  
 
-El motivo es que se inserta la imagen con el `src` atributo del `img` elemento en la página de contenido.  La página de contenido se está ejecutando en un subproceso único que no es el mismo que el subproceso que ejecuta la extensión.  Debe exponer el archivo de imagen estática como un recurso Web para que funcione correctamente.  
+El motivo es que está insertando la imagen mediante el `src` atributo del elemento en la página de `img` contenido.  La página de contenido se ejecuta en un subproceso único que no es el mismo que el subproceso que ejecuta la extensión.  Debe exponer el archivo de imagen estática como un activo web para que funcione correctamente.  
 
-Agregue otra entrada en el `manifest.json` archivo para declarar que la imagen está disponible para todas las pestañas del explorador.  Esa entrada es la siguiente \ (debería verla en el `manifest.json` archivo completo a continuación al agregar la declaración de script de contenido).  
+Agregue otra entrada en el `manifest.json` archivo para declarar que la imagen está disponible para todas las pestañas del explorador.  Esa entrada es la siguiente \(debería verla en el archivo completo siguiente cuando agregue la declaración de script de contenido `manifest.json` próximamente\).  
 
 ```json
 "web_accessible_resources": [
@@ -137,11 +137,11 @@ Agregue otra entrada en el `manifest.json` archivo para declarar que la imagen e
 ]
 ```  
 
-Ya ha escrito el código en el `popup.js` archivo para enviar un mensaje a la página de contenido que está insertada en la página de la pestaña activa actual, pero no ha creado e insertado esa página de contenido.  Hágalo ahora.  
+Ahora ha escrito el código en el archivo para enviar un mensaje a la página de contenido que está incrustada en la página de pestaña activa actual, pero no ha creado e insertado esa página `popup.js` de contenido.  Haz eso ahora.  
 
-5.  Actualizar su manifest.jspara contenido y acceso web  
+5.  Actualizar el manifest.jspara el contenido y el acceso web  
 
-La actualización `manifest.json` que incluye el `content-scripts` y `web_accessible_resources` es la siguiente.  
+El actualizado `manifest.json` que incluye el y es el `content-scripts` `web_accessible_resources` siguiente.  
 
 ```json
 {
@@ -172,17 +172,17 @@ La actualización `manifest.json` que incluye el `content-scripts` y `web_access
 }
 ```  
 
-La sección que has agregado es `content_scripts` .  El `matches` atributo se establece en `<all_urls>` , lo que significa que todos los archivos de `content_scripts` se insertan en todas las páginas de la pestaña del explorador cuando se carga cada pestaña.  Los tipos de archivos permitidos que se pueden insertar son JavaScript y CSS.  También has añadido `libjquery.min.js` .  Podrás incluirlo en la descarga mencionada en la parte superior de la sección.  
+La sección que agregó es `content_scripts` .  El atributo se establece en , lo que significa que todos los archivos se insertan en todas las páginas de pestañas del `matches` explorador cuando se carga cada `<all_urls>` `content_scripts` pestaña.  Los tipos de archivos permitidos que se pueden insertar son JavaScript y CSS.  También agregó `libjquery.min.js` .  Puedes incluirlo en la descarga mencionada en la parte superior de la sección.  
 
 6. Agregar jQuery y comprender el subproceso asociado  
 
-En los scripts de contenido que está inyectando, planee el uso de jQuery \ ( `$` \).  Agregó una versión de minified de jQuery y la puso en el paquete de extensión como `lib\jquery.min.js` .  Estos scripts de contenido se ejecutan en entornos limitados individuales, lo que significa que jQuery inyectado en la `popup.js` Página no se comparte con el contenido.  
+En los scripts de contenido que va a insertar, planee el uso de jQuery \( `$` \).  Agregó una versión minificada de jQuery y la puso en el paquete de extensión como `lib\jquery.min.js` .  Estos scripts de contenido se ejecutan en espacios aislados individuales, lo que significa que jQuery inyectado en la `popup.js` página no se comparte con el contenido.  
 
-Tenga en cuenta que incluso si la pestaña del explorador tiene JavaScript ejecutándose en la página web cargada, el contenido insertado no tiene acceso a él.  Los JavaScript insertados solo tienen acceso al DOM real cargado en la pestaña del explorador.  
+Tenga en cuenta que incluso si la pestaña del explorador tiene JavaScript ejecutándose en ella en la página web cargada, cualquier contenido inyectado no tiene acceso a eso.  Que JavaScript inyectado solo tiene acceso al DOM real cargado en esa pestaña del explorador.  
 
 7. Agregar el agente de escucha de mensajes de script de contenido  
 
-Este es `content-scripts\content.js` el archivo que se inyecta en todas las páginas de la pestaña del explorador en función de la `manifest.json` `content-scripts` sección.  
+Este es el `content-scripts\content.js` archivo que se inserta en todas las pestañas del explorador según la `manifest.json` `content-scripts` sección.  
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -205,26 +205,37 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 ```  
 
-Ten en cuenta que todo lo mencionado anteriormente es registrar un `listener` con el `chrome.runtime.onMessage.addListener` método API de extensión.  Este agente de escucha espera mensajes como el que envió desde la `popup.js` Descripción anterior con el `chrome.tabs.sendMessage` método API de extensión.  
+Tenga en cuenta que todo lo que hace JavaScript anterior es registrar un `listener` uso del método de la API de `chrome.runtime.onMessage.addListener` extensión.  Este agente de escucha espera mensajes como el que envió desde el `popup.js` descrito anteriormente con el método de la API de `chrome.tabs.sendMessage` extensión.  
 
-El primer parámetro del `addListener` método es una función cuyo primer parámetro, Request, son los detalles del mensaje que se pasa.  Recuerde, de `popup.js` , cuando usó el `sendMessage` método, los atributos del primer parámetro son `url` y `imageDivId` .  
+El primer parámetro del método es una función cuyo primer parámetro, solicitud, es los detalles `addListener` del mensaje que se pasa.  Recuerde `popup.js` que, a partir de , cuando usó `sendMessage` el método, los atributos del primer parámetro son `url` y `imageDivId` .  
 
-Cuando el agente de escucha procesa un evento, se ejecuta la función que es el primer parámetro.  El primer parámetro de esa función es un objeto que tiene atributos asignados por `sendMessage` .  Esa función simplemente procesa las tres líneas de script jQuery.  
+Cuando el agente de escucha procesa un evento, se ejecuta la función que es el primer parámetro.  El primer parámetro de esa función es un objeto que tiene atributos asignados por `sendMessage` .  Esa función simplemente procesa las tres líneas de script de jQuery.  
 
-*   La primera línea de la secuencia de comandos inserta dinámicamente en el encabezado DOM una **\<style\>** sección que debe asignar como `slide-image` clase al `img` elemento.  
-*   La segunda línea del script anexa un `img` elemento a la parte inferior `body` de la pestaña del explorador que tiene la `slide-image` clase asignada, así como el `imageDivId` identificador del elemento de imagen.  
-*   La tercera línea de la secuencia de comandos agrega un `click` evento que cubre toda la imagen, lo que permite al usuario seleccionar en cualquier lugar de la imagen y esa imagen se elimina de la página \ (junto con la escucha de eventos \).  
+*   La primera línea de script inserta dinámicamente en el encabezado DOM una sección que debe asignar **\<style\>** como clase al `slide-image` `img` elemento.  
+*   La segunda línea de script anexa un elemento justo debajo de la pestaña del explorador que tiene asignada la clase, así como el `img` identificador de ese elemento de `body` `slide-image` `imageDivId` imagen.  
+*   La tercera línea de script agrega un evento que cubre toda la imagen, lo que permite al usuario seleccionar cualquier parte de la imagen y esa imagen se quita de la página \(junto con ella es escucha de `click` eventos\).  
 
-8. Agregar funcionalidad para quitar la imagen mostrada al seleccionarla  
+8. Agregar funcionalidad para quitar la imagen mostrada cuando se selecciona  
 
-Ahora, cuando vaya a cualquier página y seleccione el icono de **extensión** , el menú emergente aparecerá de la siguiente manera.  
+Ahora, cuando vaya a cualquier página y seleccione el icono **Extensión,** el menú emergente se muestra de la siguiente manera.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html Mostrar después de pulsar el icono de extensión":::
-   popup.html Mostrar después de pulsar el icono de extensión
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.htmla pantalla después de seleccionar el icono Extensión":::
+   popup.htmla pantalla después de seleccionar el icono Extensión
 :::image-end:::
 
-<!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
+<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  
 
-Al seleccionar el `Display` botón, obtienes lo que aparece a continuación.  Si selecciona cualquier lugar de la `stars.jpeg` imagen, este elemento de imagen se quita y las páginas de pestañas se vuelven a las que se mostraban originalmente.  
+Al seleccionar el `Display` botón, obtiene lo que se muestra a continuación.  Si selecciona en cualquier lugar de la imagen, se quita ese elemento de imagen y las páginas de tabulación se contraen con lo `stars.jpeg` que se mostró originalmente.  
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="popup.html Mostrar después de pulsar el icono de extensión"  
+:::image type="complex" source="./media/part2-showingimage.png" alt-text="La imagen que se muestra en el explorador":::
+   La imagen que se muestra en el explorador
+:::image-end:::
+
+Ha creado una extensión que envía correctamente un mensaje desde la ventana emergente del icono de extensión y ha insertado dinámicamente JavaScript que se ejecuta como contenido en la pestaña del explorador.  El contenido inyectado establece el elemento image para mostrar el jpeg de estrellas estáticas.  
+
+<!-- image links -->  
+
+
+<!-- links -->  
+
+[ArchiveExtensionGettingStartedPart2]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2 "Origen del paquete de extensión completado | Microsoft Docs"  

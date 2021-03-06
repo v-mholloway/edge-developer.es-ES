@@ -1,75 +1,76 @@
 ---
-description: Más información sobre cómo puedes usar la mensajería nativa para que tu extensión se comunique con una aplicación para UWP complementaria.
-title: Extensiones-mensajería nativa
+description: Obtén información sobre cómo puedes usar la mensajería nativa para que tu extensión se comunique con una aplicación para UWP complementaria.
+title: Mensajes nativos | Extensiones
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador, nativo, mensajería, UWP
-ms.date: 12/02/2020
+keywords: edge, web development, html, css, javascript, developer, native, messaging, uwp
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 983ae11822edabc0f27bd6c02f9397104b082ad6
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d9a306055b8f86b92aa5c3e7cd6de44f2386307d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11236502"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399361"
 ---
-# Mensajería nativa en Microsoft Edge  
+# <a name="native-messaging-in-microsoft-edge"></a>Mensajería nativa en Microsoft Edge  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Descripción general de la arquitectura de mensajería nativa
+## <a name="native-messaging-architecture-overview"></a>Introducción a la arquitectura de mensajería nativa  
 
-Con Windows 10 Creators Update, las extensiones de Microsoft Edge pueden usar la mensajería nativa para comunicarse con una aplicación complementaria de la plataforma universal de Windows (UWP).  En un nivel alto, las extensiones de Microsoft Edge usan las mismas API para la mensajería nativa que las Extensiones Chrome y Firefox. Sin embargo, el host de mensajería nativo deberá implementarse con la plataforma universal de Windows.
-
-> [!NOTE]
-> El método que se describe a continuación (que se conecta a una aplicación para UWP a través de AppService) es el único mecanismo admitido para habilitar la comunicación entre las extensiones de Microsoft Edge y los componentes nativos. Para obtener más información sobre cómo habilitar la comunicación con componentes heredados de Win32, consulte la sección [Agregar un componente de puente de escritorio](#adding-a-desktop-bridge-component) de esta guía. 
-
- La arquitectura de mensajería nativa de Microsoft Edge aprovecha la [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API existente como infraestructura de comunicación entre procesos (IPC) subyacente. Las aplicaciones para UWP usan la `AppService` API para comunicarse entre sí. Por eso, las extensiones de Microsoft Edge ahora pueden comunicarse con aplicaciones para UWP.
-
-![arquitectura de mensajería nativa](./../media/native-messaging-architecture.png)
-
-### Cuándo y cuándo no usar la mensajería nativa
-
-La mensajería nativa agrega una capa completamente nueva a la extensión. Al implementar una aplicación complementaria para UWP para tu extensión, las siguientes posibilidades estarán disponibles:
-
-* Sincronizar datos (por ejemplo, credenciales) con una aplicación para UWP complementaria.
-* Implemente algoritmos de cifrado/descifrado más estrictos que no estén disponibles en las API Web.
-* Acceso a recursos que no son accesibles a través de las API Web, por ejemplo, dispositivos de hardware o USB
-
-Hay algunos casos en los que no se puede usar la mensajería nativa por restricciones de seguridad o de directiva:
-
-* Modificar la configuración de usuario en Microsoft Edge o Windows, por ejemplo, cambiar el explorador predeterminado o el proveedor de búsqueda.
-* Acciones que infringen las directivas de Microsoft Store para las aplicaciones y las extensiones.
-* Transfiriendo datos a un extremo remoto a través de un host de mensajes nativo.
-* Permitir que otras aplicaciones descarguen contenido que cambia el comportamiento de la extensión.
-
-## Demos
-
-Para tener una idea de lo que parece una extensión de mensajería nativa de Microsoft Edge que tiene una aplicación para UWP complementaria y un puente de escritorio, consulta los ejemplos de [SecureInput](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/SecureInput) y [DigitalSigning (C++)](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/DigitalSigning) en github.
-
-### Cómo funciona
-
-El componente de extensión de Microsoft Edge de la muestra usa su script de contenido para detectar cuando un usuario escribe información que se debe cifrar. La extensión comunica esto al componente de puente de escritorio a través de la mensajería nativa. Cuando el usuario está listo para enviar los datos, la extensión devolverá un valor cifrado al sitio Web.
+Con Windows 10 Creators Update, las extensiones de Microsoft Edge pueden usar la mensajería nativa para comunicarse con una aplicación complementaria de la Plataforma universal de Windows \(UWP\).  En un nivel alto, las extensiones de Microsoft Edge usan las mismas API para mensajería nativa que las extensiones de Chrome y Firefox.  Sin embargo, el host de mensajería nativa tendrá que implementarse con la Plataforma universal de Windows.  
 
 > [!NOTE]
-> Este ejemplo solo funciona en una página web que usa eventos personalizados para comunicarse con el script de contenido de la extensión. La carpeta de ejemplo incluye un [archivo. html](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/SecureInput/SecureInput.html) para probar la extensión.
+> El método descrito a continuación \(conectarse a una aplicación para UWP a través de AppService\) es el único mecanismo admitido para habilitar la comunicación entre las extensiones de Microsoft Edge y los componentes nativos.  Consulte la sección Agregar un componente [de puente](#adding-a-desktop-bridge-component) de escritorio de esta guía para obtener más información sobre cómo habilitar la comunicación con componentes win32 heredados.  
 
-En este ejemplo, se usa la aplicación para UWP para pasar las respuestas del puente de escritorio a Microsoft Edge, que se envían a la extensión de Microsoft Edge a través de la devolución de llamada. Aunque este ejemplo tiene el host de mensajería nativo ejecutándose en la aplicación principal, también puede ejecutarse como una tarea en segundo plano. Para cambiar entre los dos, es necesario editar la secuencia de comandos de fondo de la extensión, cambiando la cadena de `port = browser.runtime.connectNative("NativeMessagingHostInProcessService");` a a `"NativeMessagingHostOutOfProcess"` .
+La arquitectura de mensajería nativa de Microsoft Edge aprovecha la API existente como la infraestructura subyacente de comunicación entre procesos [`AppService`](/uwp/api/Windows.ApplicationModel.AppService?view=winrt-19041&preserve-view=true) \(IPC\).  Las aplicaciones para UWP usan `AppService` la API para comunicarse entre sí.  Debido a esto, las extensiones de Microsoft Edge ahora pueden comunicarse con aplicaciones para UWP.  
 
-## Implementación de Chrome y Microsoft Edge
+![arquitectura de mensajería nativa](../media/native-messaging-architecture.png)  
 
-Mientras que Chrome dirige las API de paso de mensajes para que sus extensiones se comuniquen con las aplicaciones, Microsoft Edge usa la [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API que ahora permite que las extensiones de Microsoft Edge y las aplicaciones para UWP se comuniquen.
+### <a name="when-and-when-not-to-use-native-messaging"></a>Cuándo y cuándo no usar mensajería nativa  
 
-En esta sección se detallan las diferencias entre la implementación de mensajería nativa de Chrome y Microsoft Edge.
+La mensajería nativa agrega una nueva capa completa a la extensión.  Al implementar una aplicación complementaria para UWP para tu extensión, las siguientes posibilidades estarán disponibles para ti:  
 
-### Registro y manifiesto del host
-Para que tu extensión sea reconocida por tu extensión como host de mensajería nativa, tendrás que registrarte.
+*   Sincronizar datos \(por ejemplo credenciales\) con una aplicación para UWP complementaria.  
+*   Implemente algoritmos de cifrado y descifrado más fuertes que no estén disponibles en las API web.  
+*   Acceder a recursos que no son accesibles a través de API web, por ejemplo hardware o dispositivos USB  
 
-Para el registro de host de [Mensajería nativa de Chrome](https://developer.chrome.com/extensions/nativeMessaging) , la aplicación debe instalar un archivo de manifiesto en cualquier parte del sistema de archivos de Windows que defina la configuración de host de mensajería nativa.
+Hay algunos casos en los que la mensajería nativa no debe usarse debido a restricciones de seguridad o directivas:  
 
-El siguiente JSON es un ejemplo de cómo se puede configurar el archivo de configuración:
+*   Modificar la configuración del usuario en Microsoft Edge o Windows, por ejemplo, cambiar el explorador predeterminado o el proveedor de búsqueda.  
+*   Acciones que infringen las directivas de Microsoft Store para aplicaciones y extensiones.  
+*   Transferir datos al extremo remoto a través del host de mensajes nativo.  
+*   Permitir que otras aplicaciones descarguen contenido que cambie el comportamiento de extensión.  
+
+## <a name="demos"></a>Demos  
+
+Para obtener una sensación de lo que es una extensión de mensajería nativa de Microsoft Edge que tiene una aplicación para UWP complementaria y un puente de escritorio, consulta los ejemplos [SecureInput](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/SecureInput) y [DigitalSigning (C++)](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/DigitalSigning) en GitHub.  
+
+### <a name="how-it-works"></a>Cómo funciona  
+
+El componente de extensión de Microsoft Edge del ejemplo usa su script de contenido para detectar cuándo un usuario escribe información que debe cifrarse.  La extensión lo comunica al componente puente de escritorio a través de mensajería nativa.  Cuando el usuario esté listo para enviar los datos, la extensión devolverá un valor cifrado al sitio web.  
+
+> [!NOTE]
+> Este ejemplo solo funcionará en una página web que use eventos personalizados para comunicarse con el script de contenido de la extensión.  La carpeta de ejemplo incluye [un archivo .html](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/SecureInput/SecureInput.html) con el que probar la extensión.  
+
+En este ejemplo, la aplicación para UWP se usa para pasar respuestas del Puente de escritorio a Microsoft Edge, que luego se envía a la extensión de Microsoft Edge mediante devolución de llamada.  Aunque en este ejemplo se ejecuta el host de mensajería nativa en la aplicación principal, también puede ejecutarse como una tarea en segundo plano.  Cambiar entre los dos requiere editar el script en segundo plano de la extensión, cambiando la cadena dentro `port = browser.runtime.connectNative("NativeMessagingHostInProcessService");` a `"NativeMessagingHostOutOfProcess"` .  
+
+## <a name="chrome-vs-microsoft-edge-implementation"></a>Implementación de Chrome vs Microsoft Edge  
+
+Aunque Chrome va por la ruta de usar API de paso de mensajes para que sus extensiones se comuniquen con aplicaciones, Microsoft Edge usa la API que ahora permite que las extensiones de Microsoft Edge y las aplicaciones para UWP se [`AppService`](/uwp/api/Windows.ApplicationModel.AppService?view=winrt-19041&preserve-view=true) comuniquen.  
+
+En esta sección se detallan las diferencias entre el modo en que Chrome y Microsoft Edge controlan la implementación de mensajería nativa.  
+
+### <a name="registration-and-host-manifest"></a>Manifiesto de registro y host  
+
+Para que tu aplicación sea reconocida por la extensión como un host de mensajería nativa, tendrá que registrarse.  
+
+Para el registro de host de mensajería nativa de [Chrome,](https://developer.chrome.com/extensions/nativeMessaging) la aplicación debe instalar un archivo de manifiesto en cualquier lugar del sistema de archivos de Windows que defina la configuración del host de mensajería nativa.  
+
+El siguiente JSON es un ejemplo de configuración para el archivo de configuración:  
 
 ```json
 {
@@ -83,26 +84,17 @@ El siguiente JSON es un ejemplo de cómo se puede configurar el archivo de confi
 }
 ```  
 
-Para instalar este archivo, la aplicación tendría que:
+Para instalar este archivo, la aplicación tendría que:  
 
-1.  Registre el archivo de manifiesto en una ubicación predefinida en el registro que defina la configuración del host:
-    -   ```text
-        HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application
-        ```  
+1.  Registre el archivo de manifiesto en una ubicación predefinida en el Registro que defina la configuración del host:  
+    *   `HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application`  
         
-        o
+        or  
+    *   `HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application`  
         
-    -   ```text
-        HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application
-        ```  
-        
-2.  Establezca el valor predeterminado de esa clave en la ruta de acceso completa del archivo de manifiesto, por ejemplo, 
-    
-    ```text
-    [HKEY_CURRENT_USER\Software\Google\Chrome\NativeMessagingHosts\com.my_company.my_application] @="C:\\path\\to\\nmh-manifest.json"
-    ```  
-    
-Para Microsoft Edge, para registrar un [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) (host de mensajería nativo), tendrás que incluir la aplicación complementaria de UWP en el mismo paquete que la extensión y especificar la [extensión de AppService](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) en el archivo del proyecto `Package.appxmanifest` . El `EntryPoint` `Name` usuario puede configurar los atributos y:
+1.  Establezca el valor predeterminado de esa clave en la ruta de acceso completa al archivo de manifiesto, por ejemplo `[HKEY_CURRENT_USER\Software\Google\Chrome\NativeMessagingHosts\com.my_company.my_application] @="C:\\path\\to\\nmh-manifest.json"`  
+
+Para Microsoft Edge, para registrar un \(host de mensajería nativa\) debes incluir la aplicación complementaria para UWP en el mismo paquete que la extensión y especificar la extensión AppService en el archivo de tu [`AppService`](/uwp/api/Windows.ApplicationModel.AppService?view=winrt-19041&preserve-view=true) [](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) `Package.appxmanifest` proyecto.  El `EntryPoint` usuario puede configurar los atributos `Name` y:  
 
 ```xml
 ...
@@ -113,13 +105,12 @@ Para Microsoft Edge, para registrar un [`AppService`](https://msdn.microsoft.com
             <uap:AppService Name="com.microsoft.inventory"/>        
             </uap:Extension>      
         </Extensions>      
-        ...    
+        ...   
     </Application>
 </Applications>
-```
+```  
 
-
-También necesitará establecer qué extensiones están autorizadas a conectarse al servicio. Debido a que Microsoft Edge no tiene una `"allowed_origins"` propiedad de manifiesto equivalente en tu AppxManifest, la aplicación para UWP deberá determinarlo y aplicarlo en tiempo de ejecución. Como Microsoft Edge va a establecer la conexión en nombre de la extensión, la aplicación puede buscar el nombre de familia de la persona que llama para determinar si está conectado por Microsoft Edge para controlar o autenticar a la persona que llama. P. ej. 
+También debe establecer qué extensiones pueden conectarse al servicio.  Dado que Microsoft Edge no tiene una propiedad de manifiesto equivalente en su AppxManifest, la aplicación para UWP deberá determinarlo y aplicarlo en tiempo de `"allowed_origins"` ejecución.  Dado que Microsoft Edge establece la conexión en nombre de la extensión, la aplicación busca el nombre de familia del paquete del autor de la llamada para determinar si Microsoft Edge está conectando la extensión para controlar o autenticar al autor de la llamada.  Por ejemplo   
 
 ```csharp
 protected async override void
@@ -141,38 +132,39 @@ OnBackgroundActivated(BackgroundActivatedEventArgs args)
 }
 ```  
 
-### Envío de mensajes
+### <a name="message-sending"></a>Envío de mensajes  
 
-Para que una aplicación y una extensión se comuniquen entre sí, los mensajes se deben enviar y recibir.
+Para que una aplicación y una extensión se comuniquen entre sí, los mensajes deben enviarse a y desde ellos.  
 
-Las extensiones de Chrome inician un mensaje con la [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) API para enviar un mensaje al host nativo mediante un canal no persistente. 
+Las extensiones de Chrome inician un mensaje con la API para entregar un mensaje al [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) host nativo mediante un canal no persistente.  
 
 ```javascript
 chrome.runtime.sendNativeMessage(string application, object message, function responseCallback)
 ```  
 
-El primer parámetro es el nombre del host nativo, en el que busca el cromo en el registro. El manifiesto especifica el archivo. exe que se iniciará en un espacio aislado y el mensaje se enviará con la e/s estándar. Las extensiones también pueden establecer un canal persistente mediante la `runtime.connectNative` API, que toma el nombre del host nativo como el único parámetro. 
+El primer parámetro es el nombre del host nativo, que Chrome busca en el Registro para el manifiesto.  El manifiesto especifica el .exe que Chrome iniciará en un espacio aislado y el mensaje se envía mediante std i/o.  
+Las extensiones también establecen un canal persistente mediante la API, que toma el nombre `runtime.connectNative` del host nativo como el único parámetro.  
 
-Microsoft Edge usa la misma construcción que la API de mensajería nativa de Chrome para permitir que las extensiones de Microsoft Edge especifiquen a qué servicio de aplicaciones conectar. El primer parámetro de `runtime.sendNativeMessage` especifica el nombre del servicio de aplicaciones. En la sección [registro y manifiesto del host](#registration-and-host-manifest) , este es el `"com.microsoft.inventory"` . La plataforma de extensión de Microsoft Edge restringe que el host de mensajería nativa sea una aplicación para UWP que esté empaquetada en el mismo AppX que la extensión. Esto atenúa los riesgos de seguridad asociados con ataques maliciosos que intentan conectar Microsoft Edge con otro nombre de familia de paquetes mediante la manipulación de entradas de manifiesto. 
+Microsoft Edge usa la misma construcción que la API de mensajería nativa en Chrome para permitir que las extensiones de Microsoft Edge especifiquen a qué servicio de aplicaciones se debe conectar.  El primer parámetro de `runtime.sendNativeMessage` especifica el nombre del servicio de aplicaciones.  En la [sección Registro y manifiesto de host,](#registration-and-host-manifest) se trata de `"com.microsoft.inventory"` .  La plataforma de extensión de Microsoft Edge restringe el host de mensajería nativa a ser una aplicación para UWP que se empaqueta en el mismo AppX que la extensión.  Esto mitiga los riesgos de seguridad asociados con ataques malintencionados que intenten conectar Microsoft Edge con otro nombre de familia de paquetes mediante la manipulación de entradas de manifiesto.  
 
-Esto significa que Microsoft Edge usará el mismo nombre de familia de paquete que la extensión, además del `AppService` nombre especificado en la API, para identificar de forma única el proveedor del servicio de aplicaciones.  
+Esto significa que Microsoft Edge usará el mismo nombre de familia de paquete que la extensión, además del nombre especificado en la API, para identificar de forma única al proveedor del `AppService` servicio de aplicaciones.  
 
 > [!NOTE]
-> El [Kit de herramientas de extensión de Microsoft Edge](./porting-chrome-extensions.md)no lo convertirá fácilmente. Todas las extensiones que especifiquen el `"nativeMessaging"` permiso se marcarán como obligatorias para este componente.
+> Microsoft [Edge Extension Toolkit](./porting-chrome-extensions.md)no lo convertirá fácilmente.  Las extensiones que especifiquen el permiso se marcarán como que requieren conversión `"nativeMessaging"` manual para este componente.  
 
-### Protocolo de comunicación
+### <a name="communication-protocol"></a>Protocolo de comunicación  
 
-El protocolo de comunicación para la mensajería instantánea determina cómo se aplica el formato a los mensajes antes de enviarlos.
+El protocolo de comunicación para mensajería nativa determina cómo se formatear los mensajes antes de enviarlos.  
 
-Chrome inicia cada host de mensajería nativo en un proceso independiente y se comunica con él con la entrada estándar y la salida estándar. El mismo formato se usa para enviar mensajes en ambas direcciones: cada mensaje se serializa con JSON, UTF-8 codificado y viene precedido de la longitud del mensaje de 32 bits en el orden de bytes nativo.
+Chrome inicia cada host de mensajería nativa en un proceso independiente y se comunica con él mediante entrada estándar y salida estándar.  El mismo formato se usa para enviar mensajes en ambas direcciones: cada mensaje se serializa con JSON, utf-8 codificado y se precede con longitud de mensaje de 32 bits en orden de bytes nativo.  
 
-En Microsoft Edge, la plataforma de la tarea en segundo plano y la aplicación principal que implementa el servicio de aplicaciones se iniciará con la plataforma. Al iniciar, se invocará el método de la tarea en segundo plano `Run` :  
+Para Microsoft Edge, la plataforma inicia la tarea en segundo plano o la aplicación principal que implementa el servicio de aplicaciones.  Al iniciar, se `Run` invoca el método de la tarea en segundo plano:  
 
 ```csharp
 public void Run(IBackgroundTaskInstance taskInstance)    
 {
     this.backgroundTaskDeferral = taskInstance.GetDeferral();
-    // Get a deferral so that the service isn't terminated.
+    // Get a deferral so that the service is not stopped and ended.
     taskInstance.Canceled += OnTaskCanceled;
     // Associate a cancellation handler with the background task.
     // Retrieve the app service connection and set up a listener for incoming app service requests.
@@ -182,7 +174,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
 }
 ```  
 
-Cuando la extensión envíe un mensaje a tu aplicación para UWP, se [`onRequestReceived`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceconnection.requestreceived) generará el evento. A continuación, este mensaje con formato JSON se stringified en el primer par de KeyValue de un [`ValueSet`](https://msdn.microsoft.com/library/windows/apps/dn636131) objeto. :
+Cuando la extensión envía un mensaje a la aplicación para UWP, se genera [`onRequestReceived`](/uwp/api/Windows.ApplicationModel.AppService.AppServiceConnection?view=winrt-19041&preserve-view=true) el evento.  A continuación, este mensaje con formato JSON se en stringified en el primer par KeyValue de un [`ValueSet`](/uwp/api/Windows.Foundation.Collections.ValueSet?view=winrt-19041&preserve-view=true) objeto.  :  
 
 ```csharp
 private async void OnRequestReceived(
@@ -193,36 +185,38 @@ AppServiceRequestReceivedEventArgs args)
 }
 ```  
 
-Cuando la aplicación para UWP vuelve a enviar una respuesta a tu extensión, se [`KeyValuePair`](https://msdn.microsoft.com/library/windows/apps/5tbh8a42) agregará un a al `ValueSet` objeto. `Key`Microsoft Edge omitirá la propiedad, pero la propiedad contendrá `Value` una cadena JSON válida.
+Cuando la aplicación para UWP envía una respuesta a la extensión, se agregará una al [`KeyValuePair`](/dotnet/api/system.collections.generic.keyvaluepair-2?view=netcore-3.1&preserve-view=true) `ValueSet` objeto.  Microsoft `Key` Edge omitirá la propiedad, pero la propiedad `Value` contendrá una cadena JSON válida.  
 
-### Devolución
+### <a name="callback"></a>Devolución de llamada  
 
-Para devoluciones de llamada, usa Chrome, [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) lo que permite que una función de devolución de llamada controle cualquier respuesta asincrónica envíe un mensaje.
+Para las devoluciones de llamada, Chrome usa lo que permite que una función de devolución de llamada controle cualquier [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) respuesta asincrónica al enviar un mensaje.  
 
-Microsoft Edge usa el [`AppServiceRequest`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appservicerequest) método del objeto [`SendResponseAsync`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appservicerequest.sendresponseasync) para permitir que la aplicación envíe un [`ValueSet`](https://msdn.microsoft.com/library/windows/apps/dn636131) objeto de nuevo a la extensión.
+Microsoft Edge usa el método del objeto para permitir que la [`SendResponseAsync`](/uwp/api/Windows.ApplicationModel.AppService.AppServiceRequest?view=winrt-19041&preserve-view=true) aplicación envíe un objeto de vuelta a la [`AppServiceRequest`](/uwp/api/Windows.ApplicationModel.AppService.AppServiceRequest?view=winrt-19041&preserve-view=true) [`ValueSet`](/uwp/api/Windows.Foundation.Collections.ValueSet?view=winrt-19041&preserve-view=true) extensión.  
 
+### <a name="message-size-limit"></a>Límite de tamaño de mensaje  
 
-### Límite de tamaño de mensaje
-Los mensajes que se envían entre una extensión y una aplicación tienen diferentes limitaciones de tamaño de mensaje para Chrome y Microsoft Edge.
+Los mensajes que se envían de ida y vuelta entre una extensión y una aplicación tienen limitaciones de tamaño de mensaje diferentes para Chrome y Microsoft Edge.  
 
-Chrome tiene las siguientes limitaciones de tamaño de mensaje:
--   Límite de mensaje único del host de mensajería nativa: 1 MB
--   Límite de mensaje único enviado al host de mensajería nativo: 4 GB
-    
-Para Microsoft Edge, a pesar de `AppService` que no haya límite en el tamaño de los mensajes (en función de la memoria), Microsoft Edge se protege en sí mismo frente a aplicaciones nativas que imponen los siguientes límites de tamaño de mensaje:
--   Un solo límite de mensajes de la aplicación para UWP para la extensión: 1 MB
--   Solo límite de mensajes de la extensión a la aplicación para UWP: 100 MB
-    
-### Conexiones de mensajería nativas
+Chrome tiene las siguientes limitaciones de tamaño de mensaje:  
 
-Existen dos tipos de conexiones para la mensajería instantánea; persistentes y no persistentes.
-Una conexión **persistente** es una conexión que se mantiene en ejecución hasta que se destruye el puerto. Una conexión **no persistente** es una conexión que se abre para un mensaje a la vez y se cierra después de la entrega.
+*   Límite de mensaje único del host de mensajería nativa: 1 MB  
+*   Límite de mensaje único enviado al host de mensajería nativa: 4 GB  
 
-#### Persistente
+Para Microsoft Edge, aunque no tiene límite en el tamaño del mensaje \(dependiente de la memoria\), Microsoft Edge se protege contra el mal comportamiento de las aplicaciones nativas imponiendo los siguientes límites de tamaño de `AppService` mensaje:  
 
-En el caso de Chrome, una conexión persistente se realiza mediante la creación de un puerto de mensajería con [`runtime.connectNative`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative) . Una vez que se haya creado el puerto, Chrome inicia un proceso de host de mensajería nativo que sigue ejecutándose hasta el puerto que ha destruido.
+*   Límite de mensaje único de la aplicación para UWP a la extensión: 1 MB  
+*   Límite de mensaje único de extensión a aplicación para UWP: 100 MB  
 
-Para Microsoft Edge, una vez que se crea un puerto de mensajería con `runtime.connectNative` , Microsoft Edge inicia el [`AppServiceConnection`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceconnection) y lo mantiene en ejecución hasta que se destruya el puerto. En el siguiente fragmento de código se muestra cómo se establece una conexión persistente desde una aplicación para UWP. 
+### <a name="native-messaging-connections"></a>Conexiones de mensajería nativas  
+
+Hay dos tipos de conexiones para mensajería nativa; persistente y no persistente.  
+Una **conexión** persistente es una conexión que se mantiene en ejecución hasta que se destruye el puerto.  Una **conexión no persistente** es una conexión que se abre para un mensaje a la vez y se cierra después de la entrega.  
+
+#### <a name="persistent"></a>Persistente  
+
+Para Chrome, se crea una conexión persistente mediante la creación de un puerto de mensajería mediante [`runtime.connectNative`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative) .  Una vez que se realiza el puerto, Chrome inicia un proceso de host de mensajería nativa que sigue ejecutándose hasta el puerto que destruyó.  
+
+Para Microsoft Edge, una vez que se crea un puerto de mensajería mediante , Microsoft Edge inicia el y lo mantiene en ejecución hasta que `runtime.connectNative` [`AppServiceConnection`](/uwp/api/Windows.ApplicationModel.AppService.AppServiceConnection?view=winrt-19041&preserve-view=true) se destruye el puerto.  El siguiente fragmento de código muestra cómo se establece una conexión persistente desde una aplicación para UWP.  
 
 ```csharp
 this.inventoryService = new AppServiceConnection();  
@@ -234,11 +228,11 @@ var status = await
 this.inventoryService.OpenAsync();
 ```  
 
-#### No persistente
+#### <a name="non-persistent"></a>No persistente  
 
-Cuando se envía un mensaje mediante el uso [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) de Chrome, sin crear un puerto de mensajería, Chrome inicia un nuevo proceso de host de mensajería nativo para cada mensaje. El primer mensaje generado por el proceso de host se trata como respuesta a la solicitud original y todos los demás mensajes después de que se pase por alto.
+Cuando se envía un mensaje con Chrome, sin crear un puerto de mensajería, Chrome inicia un nuevo proceso de host de mensajería nativa [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) para cada mensaje.  El primer mensaje generado por el proceso host se controla como una respuesta a la solicitud original y todos los demás mensajes después de que se omiten.  
 
-Microsoft Edge finalizará la conexión después de que se reciba la respuesta de cada mensaje. El siguiente fragmento de código muestra una conexión no persistente establecida con `AppServiceConnection` que se terminará dentro de la aplicación para UWP después de que se haya recibido una solicitud y se haya almacenado como un [`AppServiceResponse`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceresponse) .
+Microsoft Edge detiene y finaliza la conexión después de recibir cada respuesta a cada mensaje.  En el siguiente fragmento de código se muestra una conexión no persistente que se establece con la que, a continuación, se finalizará en la aplicación para UWP después de recibir y almacenar una solicitud `AppServiceConnection` como [`AppServiceResponse`](/uwp/api/Windows.ApplicationModel.AppService.AppServiceResponse?view=winrt-19041&preserve-view=true) .  
 
 ```csharp
 using (var connection = new AppServiceConnection())
@@ -251,35 +245,37 @@ using (var connection = new AppServiceConnection())
 }
 ```  
 
-### Permiso
+### <a name="permission"></a>Permiso  
 
-Para habilitar el uso de mensajería nativa con tu extensión, para Chrome y Microsoft Edge, necesitarás declarar el `"nativeMessaging"` permiso en el `manifest.json` archivo.
+Para habilitar el uso de mensajería nativa con la extensión, tanto para Chrome como para Microsoft Edge, debe declarar el `"nativeMessaging"` permiso en el `manifest.json` archivo.  
 
-## Servicios de aplicaciones
-Esta sección detalla el impacto que los servicios de la aplicación tienen en el rendimiento y la memoria de Microsoft Edge.
+## <a name="app-services"></a>Servicios de aplicaciones  
 
-### Rendimiento
+En esta sección se detalla el impacto que los servicios de aplicaciones tienen en el rendimiento y la memoria de mensajería nativa de Microsoft Edge.  
 
-Los servicios de aplicaciones son "patrocinados" por la aplicación en primer plano que los llama, que para fines de mensajería nativa es Microsoft Edge. Esto significa que los servicios de aplicaciones se pueden ejecutar siempre que se esté ejecutando Microsoft Edge.
+### <a name="performance"></a>Rendimiento  
 
-En relación con la latencia, los servicios de aplicaciones usan canalizaciones con nombre que, después de la conexión inicial, permiten que dos aplicaciones se comuniquen directamente. Este método de comunicación produce una latencia baja. Los dispositivos con CPU lentas experimentarán cierta latencia inicial después de iniciar el proceso que hospeda el servicio de aplicaciones (~ 80ms para iniciar la tarea en segundo plano en algunos dispositivos). Después del inicio, el rendimiento de los dispositivos de CPU lentos debe ser bueno. 
+Los servicios de aplicaciones están "patrocinados" por la aplicación en primer plano que los llama, que para fines de mensajería nativa es Microsoft Edge.  Esto significa que los servicios de aplicaciones pueden ejecutarse mientras se ejecute Microsoft Edge.  
 
-### Memoria
-La memoria asignada a un servicio de aplicaciones se saca de la cuota asignada a Microsoft Edge. Esto significa que si Microsoft Edge inicia demasiados servicios de aplicaciones, existe la posibilidad de que se agote la memoria. Los límites de memoria de tareas en segundo plano habituales se aplican en los servicios de aplicación. Por ejemplo, en un dispositivo de 512 MB, una tarea en segundo plano de App Service no puede tener más de 16 MB. Este número sube a medida que los dispositivos se escalan.
+En cuanto a la latencia, los servicios de aplicaciones usan canalizaciones con nombre que, después de la conexión inicial, permiten que dos aplicaciones se comuniquen directamente.  Este método de comunicación produce una latencia baja.  Los dispositivos con CPU lentas experimentarán cierta latencia inicial después de iniciar el proceso que hospeda el servicio de aplicaciones \(~80ms para iniciar la tarea en segundo plano en algunos dispositivos\).  Después de la puesta en marcha, el rendimiento en dispositivos de CPU lentos debe ser bueno.  
 
-## Crear una extensión con mensajería nativa
+### <a name="memory"></a>Memoria  
 
-Para poder probar la mensajería nativa, tu extensión necesita un nombre de familia de paquete. Microsoft Edge lo usa para determinar la identidad de host del mensaje nativo, lo que significa que se debe empaquetar la extensión. 
+La memoria asignada a un servicio de aplicaciones se ha quitado de la cuota asignada a Microsoft Edge.  Esto significa que si Microsoft Edge inicia demasiados servicios de aplicaciones, existe la posibilidad de que se les pueda quedár la memoria.  Los límites habituales de memoria de tareas en segundo plano se aplican en los servicios de aplicaciones.  Por ejemplo, en un dispositivo de 512 MB, una tarea en segundo plano del servicio de aplicaciones no puede tener más de 16 MB.  Este número sube a medida que los dispositivos se escalan hacia arriba.  
 
-Para crear su extensión con mensajería nativa en Visual Studio:
+## <a name="creating-an-extension-with-native-messaging"></a>Creación de una extensión con mensajería nativa  
 
-1.  Crea un proyecto de UWP en Visual Studio.
-2.  [Agrega `AppService` a tu aplicación para UWP](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
-    -   De forma opcional, puedes [configurar `AppService` para que se hospede en la aplicación principal](https://msdn.microsoft.com/windows/uwp/launch-resume/convert-app-service-in-process) en lugar de hacerlo como una tarea en segundo plano en este momento.
-3.  Compila y prueba el proyecto de UWP.
-    -   Opcionalmente, puede Agregar un [componente de puente de escritorio](#adding-a-desktop-bridge-component).
-4.  Crea una extensión de Microsoft Edge que usa la mensajería nativa para comunicarse con la aplicación complementaria para UWP. Los archivos de extensión se pueden agregar a una carpeta con `Extension` el nombre del proyecto para UWP. Todos los archivos que están debajo de esta carpeta, incluidas las subcarpetas, deben tener sus propiedades configuradas de esa forma `Build Action=Content` y `Copy to Output Directory=Copy Always` . Asegúrese `manifest.json` de que también está configurada con estas propiedades.
-5.  Modifique el `package.manifest.xml` archivo del proyecto para que incluya metadatos de extensión y conviértalo en una aplicación sin encabezado agregando `AppListEntry="none"` :
+Para probar la mensajería nativa, la extensión necesita un nombre de familia de paquete.  Microsoft Edge lo usa para determinar la identidad del host de mensaje nativo, lo que significa que la extensión debe empaquetarse.  
+
+Para crear la extensión con mensajería nativa en Visual Studio:  
+
+1.  Crea un proyecto para UWP en Visual Studio.  
+1.  [Agregar `AppService` a la aplicación para UWP](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).  
+    *   Opcionalmente, puedes [configurar `AppService` para hospedarte en la aplicación principal](/windows/uwp/launch-resume/convert-app-service-in-process) en lugar de como una tarea en segundo plano en este momento.  
+1.  Crea y prueba tu proyecto para UWP.  
+    *   Opcionalmente, puede agregar un componente [de Puente de escritorio](#adding-a-desktop-bridge-component).  
+1.  Crea una extensión de Microsoft Edge que usa mensajería nativa para comunicarse con la aplicación complementaria para UWP.  Los archivos de extensión se pueden agregar a una carpeta denominada `Extension` en el proyecto de UWP.  Todos los archivos debajo de esta carpeta, incluidas las subcarpetas, necesitan tener sus propiedades configuradas de tal `Build Action=Content` manera que y `Copy to Output Directory=Copy Always` .  Asegúrese de `manifest.json` que también está configurado con estas propiedades.  
+1.  Modifique el archivo del proyecto para incluir metadatos de extensión y convertirlo en una aplicación sin cabeza `package.manifest.xml` `AppListEntry="none"` agregando :  
     
     ```xml
     <Package
@@ -290,11 +286,11 @@ Para crear su extensión con mensajería nativa en Visual Studio:
     xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
     IgnorableNamespaces="uap uap3 mp rescap build" 
     xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
-
+    
     <Dependencies>
         <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.15063.0" MaxVersionTested="10.0.15063.0" />
     </Dependencies>
-
+       
        <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NativeMessagingHostInProcess.App">
           <uap:VisualElements AppListEntry="none"
             DisplayName="SecureInput"
@@ -314,28 +310,29 @@ Para crear su extensión con mensajería nativa en Visual Studio:
             </uap3:Extension>
           </Extensions>
     </Application>
-    ```
+    ```  
     
-6.  Usa el `AppService` nombre configurado para el UWP en las API de mensajería nativa.
-7.  Compila e [implementa](#deploying) el proyecto de UWP (con el componente opcional de puente de escritorio).
-8.  [Empaquetar](#packaging) la extensión de mensajería nativa una vez que esté lista para el envío a la tienda
+1.  Usa el `AppService` nombre configurado para la UWP en las API de mensajería nativa.  
+1.  Crea e [implementa el](#deploying) proyecto para UWP \(con el componente de puente de escritorio opcional\).  
+1.  [Empaquetar](#packaging) la extensión de mensajería nativa una vez que esté lista para el envío de la Tienda  
     
 > [!NOTE]
-> Para obtener un ejemplo de una extensión de mensajería nativa completa, consulte la sección [demos](#demos) .
+> Haga referencia [a la sección Demos](#demos) para obtener un ejemplo de una extensión de mensajería nativa completa.  
 
-## Agregar un componente de puente de escritorio 
-Si desea agregar un componente de puente de escritorio al paquete, tendrá que crear y compilar el proyecto Win32 en Visual Studio. Para obtener información sobre cómo convertir tu aplicación Win32 a UWP, consulta [portar aplicaciones a Windows 10 a través del puente de escritorio](/windows/uwp/porting/desktop-to-uwp-root). Una vez que se ha integrado Visual Studio, puede Agregar el archivo ejecutable de Win32 al paquete siguiendo estos pasos:
+## <a name="adding-a-desktop-bridge-component"></a>Agregar un componente de puente de escritorio  
 
-1.  Agregue el proyecto Win32 a la misma solución que el proyecto de UWP. 
-2.  Establezca el proyecto Win32 como un proyecto dependiente para el proyecto de UWP:
+Si desea agregar un componente de Puente de escritorio al paquete, debe crear y crear el proyecto de Win32 en Visual Studio.  Para obtener información sobre cómo convertir la aplicación de win32 a UWP, consulta [Porting apps to Windows 10 via Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).  Una vez integrado Visual Studio, puede agregar el archivo ejecutable de Win32 al paquete siguiendo los pasos siguientes:  
+
+1.  Agrega el proyecto win32 a la misma solución que el proyecto para UWP.  
+1.  Establece el proyecto de Win32 como un proyecto dependiente para el proyecto para UWP:  
     
-    ![configurar las dependencias del proyecto](./../media/project-dependencies.PNG)
+    ![configurar dependencias del proyecto](../media/project-dependencies.png)  
     
-3.  Crea una `Win32` carpeta en el proyecto de UWP. Copie los binarios necesarios para el `Win32` proyecto en esta carpeta. Configure las propiedades de todos los binarios `Build Action=Content` `Copy to Output Directory=Copy Always` .
+1.  Crea una `Win32` carpeta dentro del proyecto de UWP.  Copie los archivos binarios necesarios para el `Win32` proyecto en esta carpeta.  Configure las propiedades de todos los archivos binarios de tal `Build Action=Content` manera que y `Copy to Output Directory=Copy Always` .  
     
-    ![carpeta con archivos de la aplicación para UWP y Win32](./../media/desktop-bridge.png)
+    ![carpeta con archivos de aplicaciones para UWP y win32](../media/desktop-bridge.png)  
     
-4.  Modifica el archivo de proyecto de UWP para copiar todos los binarios necesarios para el `Win32` proyecto en esta carpeta mediante el comando de evento postbuild. Esto garantiza que los binarios actualizados se copian en la carpeta cada vez que se recompila la solución.
+1.  Modifique el archivo de proyecto de UWP para copiar todos los archivos binarios necesarios para el proyecto `Win32` en esta carpeta mediante el comando de evento PostBuild.  Esto garantiza que los archivos binarios actualizados se copian en la carpeta cada vez que se recompila la solución.  
     
     ```xml
     <Target Name="AfterBuild">
@@ -343,52 +340,56 @@ Si desea agregar un componente de puente de escritorio al paquete, tendrá que c
     <Copy SourceFiles="..\PasswordInputProtection\bin\$(Configuration)\PasswordInputProtection.exe.config" DestinationFolder="win32" />
     <Copy SourceFiles="..\PasswordInputProtection\bin\$(Configuration)\PasswordInputProtection.pdb" DestinationFolder="win32" />
     </Target>
-    ```
+    ```  
     
-5.  Modifique `package.manifest.xml` agregando el `<desktop:Extension>` elemento al `<Extensions>` elemento:
+1.  Modifique `package.manifest.xml` agregando `<desktop:Extension>` el elemento al `<Extensions>` elemento:  
     
     ```xml
     <Extensions>
     <desktop:Extension Category="windows.fullTrustProcess"Executable="Win32\PasswordInputProtection.exe"
     xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" />
     </Extensions>
-    ```
+    ```  
     
-## Implementar
-Una vez que hayas configurado el proyecto de UWP (y, opcionalmente, un proyecto Win32) como se describe anteriormente, ya puedes implementar la solución con Visual Studio.
+## <a name="deploying"></a>Implementar  
 
-![proyecto de compilación de InProcess](../media/native-message-uwp-debug.PNG)
+Una vez que haya configurado el proyecto para UWP \(y opcionalmente win32 project\) como se describe anteriormente, estará listo para implementar la solución mediante Visual Studio.  
 
-Una vez que la solución se haya implementado correctamente, deberías ver tu extensión en Microsoft Edge.
+![build inprocess project](../media/native-message-uwp-debug.png)  
 
-![se muestra la extensión en Microsoft Edge](../media/secureextension.png)
+Una vez que la solución se implemente correctamente, debería ver la extensión en Microsoft Edge.  
 
-## Empaquetado
+![extensión que se muestra en Microsoft Edge](../media/secureextension.png)  
+
+## <a name="packaging"></a>Empaquetado  
 
 > [!NOTE]
-> El envío de una extensión de Microsoft Edge a Microsoft Store es actualmente una función restringida. Póngase en [contacto con nosotros](https://aka.ms/extension-request) con sus solicitudes para formar parte de Microsoft Store y le daremos una actualización futura.
+> Enviar una extensión de Microsoft Edge a la Microsoft Store es actualmente una funcionalidad restringida.  [Envíe una solicitud](https://developer.microsoft.com/microsoft-edge/extensions/requests/) para que forme parte de Microsoft Store y que se considere para futuras actualizaciones.  
 
-Puedes generar un paquete de tienda para enviarlo al centro de desarrollo de Windows con la funcionalidad integrada de Visual Studio:
+Puedes generar un paquete de la Tienda para su envío al Centro de desarrollo de Windows con la funcionalidad Visual Studio integrada:  
 
-![Creando el paquete de la tienda](../media/create-store-package.PNG)
+![Crear paquete de la Tienda](../media/create-store-package.png)  
 
-## Depuración
-Las instrucciones para la depuración varían según el componente que desea probar:
+## <a name="debugging"></a>Depuración  
 
-### Depurar la extensión
-Una vez implementada la solución, la extensión se instalará en Microsoft Edge. Consulte la guía de [depuración](./debugging-extensions.md) para obtener información sobre cómo depurar una extensión.
+Las instrucciones para depurar varían en función del componente que desee probar:  
 
+### <a name="debugging-the-extension"></a>Depurar la extensión  
 
-### Depurar la aplicación para UWP
-La aplicación para UWP se iniciará cuando la extensión intente conectarse a ella mediante las [API de mensajería nativa](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative). Solo tendrás que depurar la aplicación para UWP una vez que se inicie el proceso. Puede configurarse mediante la página de propiedades del proyecto:
+Una vez implementada la solución, la extensión se instalará en Microsoft Edge.  Consulta la [Guía de depuración](./debugging-extensions.md) para obtener información sobre cómo depurar una extensión.  
 
-1.  En Visual Studio, haz clic con el botón derecho en el proyecto de la aplicación para UWP
-2.  Seleccione propiedades
-3.  Active "no iniciar, pero depure mi código cuando se inicie"
+### <a name="debugging-the-uwp-app"></a>Depuración de la aplicación para UWP  
+
+La aplicación para UWP se iniciará cuando la extensión intente conectarse a ella mediante [API de mensajería nativas.](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative)  Solo debes depurar la aplicación para UWP una vez que se inicie el proceso.  Esto puede configurarse mediante la página Property del proyecto:  
+
+1.  En Visual Studio, mantenga el mouse en el proyecto de la aplicación para UWP y abra el menú contextual \(hacer clic con el botón secundario\)  
+1.  Seleccionar **propiedades**  
+1.  Comprobar **No iniciar, pero depurar mi código cuando se inicia**  
     
-    ![selección de la casilla no iniciar](../media/native-message-do-not-launch.png)
+    ![cuadro de selección no iniciar](../media/native-message-do-not-launch.png)  
     
-En Visual Studio, ahora puedes establecer puntos de interrupción en el código en el que quieras depurar y, a continuación, iniciar el depurador presionando F5. Una vez que interactúes con la extensión para conectarte a la aplicación para UWP, Visual Studio se asociará automáticamente al proceso.
+En Visual Studio ahora puede establecer puntos de interrupción en el código donde desea depurar y, a continuación, inicie el depurador presionando F5.  Una vez que interactúes con la extensión para conectarte a la aplicación para UWP, Visual Studio se adjuntará automáticamente al proceso.  
 
-### Depurar el puente de escritorio
-Aunque hay varios [métodos para depurar un puente de escritorio](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-debug) (aplicación Win32 convertida), la única opción aplicable para este escenario es la opción PLMDebug. También puede agregar código de depuración a la función de inicio para realizar una espera durante un tiempo específico, lo que le permite adjuntar Visual Studio al proceso.
+### <a name="debugging-the-desktop-bridge"></a>Depuración del puente de escritorio  
+
+Aunque hay varios métodos para depurar un puente de escritorio \(aplicación convertida de Win32\), el único aplicable [para](/windows/msix/desktop/desktop-to-uwp-debug) estos escenarios es la opción PLMDebug.  También puede agregar código de depuración a la función de inicio para realizar una espera durante un tiempo específico, lo que le permite adjuntar Visual Studio al proceso.  

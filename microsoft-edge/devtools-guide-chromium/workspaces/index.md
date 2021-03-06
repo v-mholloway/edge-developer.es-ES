@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo guardar los cambios realizados en 
 title: Editar archivos con áreas de trabajo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 496bbbb34cdf900d36aa7ebfbf79ad63cdf3e6e7
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 17f9ced15dbacd62c9ffe40e4af889925a8155fb
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125352"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399249"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,62 +28,62 @@ ms.locfileid: "11125352"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Editar archivos con áreas de trabajo  
+# <a name="edit-files-with-workspaces"></a>Editar archivos con áreas de trabajo  
 
 > [!NOTE]
-> El objetivo de este tutorial es proporcionar práctica práctica para configurar y usar áreas de trabajo, de modo que pueda usar áreas de trabajo en sus propios proyectos.  Puede guardar los cambios en el código fuente, en el equipo local, que ha hecho dentro de DevTools después de habilitar las áreas de trabajo.  
+> El objetivo de este tutorial es proporcionar prácticas para configurar y usar áreas de trabajo, de modo que pueda usar áreas de trabajo en sus propios proyectos.  Puede guardar los cambios en el código fuente, en el equipo local, que realizó en DevTools después de habilitar Workspaces.  
 
 > [!IMPORTANT]
-> **Requisitos previos**: antes de comenzar con este tutorial, debe saber cómo realizar las siguientes acciones.  
+> **Requisitos previos:** antes de comenzar este tutorial, debe saber cómo realizar las siguientes acciones.  
 > 
-> *   [Usar HTML, CSS y JavaScript para crear una página web][MDNWebGettingStarted]  
+> *   [Usar html, CSS y JavaScript para crear una página web][MDNWebGettingStarted]  
 > *   [Usar DevTools para realizar cambios básicos en CSS][DevToolsCssIndex]  
-> *   [Ejecutar un servidor Web HTTP local][MDNSimpleLocalHTTPServer]  
+> *   [Ejecutar un servidor web HTTP local][MDNSimpleLocalHTTPServer]  
 
-## Introducción  
+## <a name="overview"></a>Introducción  
 
-Las áreas de trabajo le permiten guardar un cambio que realiza en DevTools en una copia local del mismo archivo de su equipo.  Para este tutorial, debe tener la siguiente configuración en su equipo.  
+Las áreas de trabajo permiten guardar un cambio que realice en Devtools en una copia local del mismo archivo en el equipo.  Para este tutorial, debe tener la siguiente configuración en el equipo.  
 
-*   Tiene el código fuente de su sitio en el escritorio.  
-*   Está ejecutando un servidor Web local desde el directorio de código fuente, de modo que el sitio sea accesible en `localhost:8080` .  
-*   Has abierto `localhost:8080` en Microsoft Edge y estás usando DevTools para cambiar las CSS del sitio.  
+*   Tiene el código fuente del sitio en el escritorio.  
+*   Está ejecutando un servidor web local desde el directorio de código fuente, de modo que el sitio sea accesible en `localhost:8080` .  
+*   Se abrió `localhost:8080` en Microsoft Edge y se usa DevTools para cambiar el CSS del sitio.  
 
-Con las áreas de trabajo habilitadas, los cambios de CSS que realice dentro de DevTools se guardan en el código fuente de su escritorio.  
+Con Workspaces habilitado, los cambios CSS que realices en DevTools se guardan en el código fuente del escritorio.  
 
-## Limitaciones  
+## <a name="limitations"></a>Limitaciones  
 
-Si está usando un marco moderno, probablemente transforme el código fuente desde un formato que sea fácil de mantener en un formato optimizado para ejecutarse lo antes posible.  
+Si usa un marco moderno, probablemente transforme el código fuente de un formato fácil de mantener en un formato optimizado para ejecutarse lo más rápido posible.  
 
-Las áreas de trabajo suelen poder asignar el código optimizado de nuevo al código fuente original con la ayuda de [mapas de origen][TreehouseBlogSourceMaps].  Sin embargo, hay una gran variedad de variaciones entre marcos que usan mapas de origen.  DevTools simplemente admite todas las variantes.  
+Las áreas de trabajo normalmente pueden asignar el código optimizado al código fuente original con la ayuda de [mapas de origen.][TreehouseBlogSourceMaps]  Pero hay mucha variación entre marcos sobre cómo cada uno usa mapas de origen.  Devtools simplemente admite todas las variaciones.  
 
-Las áreas de trabajo no funcionan con el siguiente marco.  
+Se sabe que las áreas de trabajo no funcionan con el siguiente marco.  
 
-*   Crear una aplicación de reAct  
+*   Crear aplicación React  
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
-## Característica relacionada: reemplazos locales  
+## <a name="related-feature-local-overrides"></a>Característica relacionada: invalidaciones locales  
 
-Los **reemplazos locales** son otra característica de DevTools similar a las áreas de trabajo.  Use reemplazos locales cuando desee experimentar con los cambios realizados en una página y necesite ver los cambios en todas las páginas, pero no le importa asignar los cambios al código fuente de la página.  
+**Invalidaciones locales es** otra característica de DevTools similar a Workspaces.  Usa Invalidaciones locales cuando quieras experimentar con los cambios en una página web y debes mostrar los cambios en las cargas de páginas web, pero no te importa asignar los cambios al código fuente de la página web.  
 
 <!--Todo: add section when content is ready  -->  
 
-## Paso 1: configurar  
+## <a name="step-1-set-up"></a>Paso 1: Configurar  
 
-Complete las acciones siguientes para obtener experiencia práctica con áreas de trabajo.  
+Complete las siguientes acciones para obtener experiencia práctica con Workspaces.  
 
-### Configurar la demostración  
+### <a name="set-up-the-demo"></a>Configurar la demostración  
 
 1.  [Abra la demostración][GlitchWorkspacesDemo].  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
     
-    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
-       Un proyecto de problema  
+    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="Un proyecto de glitch" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
+       Un proyecto de glitch  
     :::image-end:::  
     
     <!--1.  Choose the project name.  -->  
     <!--1.  Choose **Advanced Options** > **Download Project**.  
     
-    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
+    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
     :::image-end:::  
 
@@ -91,8 +91,8 @@ Complete las acciones siguientes para obtener experiencia práctica con áreas d
     <!--1.  Close the tab.  -->  
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->  
     
-1.  Cree un `app` directorio en el escritorio.  Guarde copias de los archivos desde el `workspaces-demo` directorio en el `app` directorio.  En el resto del tutorial, se hace referencia al directorio como `~/Desktop/app` .  
-1.  Inicie un servidor Web local en `~/Desktop/app` .  A continuación encontrará código de ejemplo para el inicio `SimpleHTTPServer` , pero puede usar cualquier servidor que prefiera.  
+1.  Cree un `app` directorio en el escritorio.  Guarde copias de los archivos del `workspaces-demo` directorio en el `app` directorio.  Para el resto del tutorial, el directorio se conoce como `~/Desktop/app` .  
+1.  Inicie un servidor web local en `~/Desktop/app` .  A continuación se muestra un código de ejemplo para iniciar, pero `SimpleHTTPServer` puede usar el servidor que prefiera.  
     
     :::row:::
        :::column span="":::
@@ -109,76 +109,76 @@ Complete las acciones siguientes para obtener experiencia práctica con áreas d
        :::column-end:::
     :::row-end:::  
     
-1.  Abra una pestaña en Microsoft Edge y vaya a la versión hospedada localmente del sitio.  Debería poder acceder a ella usando una dirección URL como `localhost:8080` o `http://0.0.0.0:8080` .  El [número de Puerto][WikiPortURLs] exacto puede ser diferente.  
+1.  Abra una pestaña en Microsoft Edge y vaya a la versión hospedada localmente del sitio.  Debe tener acceso a ella mediante una dirección URL como `localhost:8080` o `http://0.0.0.0:8080` .  El número [de puerto exacto][WikiPortURLs] puede ser diferente.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="La demostración" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        La demostración  
     :::image-end:::  
     
-### Configurar DevTools  
+### <a name="set-up-devtools"></a>Configurar DevTools  
 
-1.  Seleccione `Control` + `Shift` + `J` \ (Windows, Linux \) o `Command` + `Option` + `J` \ (MacOS \) para abrir el panel de **consola** de DevTools.  
+1.  Seleccione `Control` + `Shift` + `J` \(Windows, Linux\) o `Command` + `Option` + `J` \(macOS\) para abrir el panel Consola de DevTools. ****  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
-       Panel de **consola**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Panel consola" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+       Panel **consola**  
     :::image-end:::  
     
-1.  Elija la pestaña **orígenes** .  
-1.  Elija la ficha **filesystem** .  
+1.  Elija la **herramienta Orígenes.**  
+1.  Elija el **panel Sistema de** archivos.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       Ficha **filesystem**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Panel Sistema de archivos" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       Panel **Sistema de archivos**  
     :::image-end:::  
     
 1.  Elija **Agregar carpeta al área de trabajo**.  
 1.  Escribe `~/Desktop/app`.  
-1.  Elija **permitir** para dar a DevTools permiso de lectura y escritura en el directorio.  
-    En la ficha **filesystem** , ahora hay un punto verde junto a `index.html` , `script.js` y `styles.css` .  Estos puntos verdes indican que DevTools ha establecido una asignación entre los recursos de red de la página y los archivos de `~/Desktop/app` .  
+1.  Elija **Permitir** para conceder permiso a DevTools para leer y escribir en el directorio.  
+    En el panel **Sistema de** archivos, ahora hay un punto verde junto a , `index.html` y `script.js` `styles.css` .  Estos puntos verdes significan que DevTools ha establecido una asignación entre los recursos de red de la página y los archivos de `~/Desktop/app` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       La ficha **filesystem** ahora muestra una asignación entre los archivos locales y los de red  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="El panel Sistema de archivos muestra ahora una asignación entre los archivos locales y los de red" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       El **panel Sistema de** archivos muestra ahora una asignación entre los archivos locales y los de red  
     :::image-end:::  
     
-## Paso 2: guardar un cambio de CSS en disco  
+## <a name="step-2-save-a-css-change-to-disk"></a>Paso 2: Guardar un cambio css en disco  
 
 1.  Abra `styles.css` .  
     
     > [!NOTE]
-    > La `color` propiedad de `h1` elementos se establece en `fuchsia` .  
+    > La `color` propiedad de los elementos se establece en `h1` `fuchsia` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="Ver styles.css en un editor de texto" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
        Ver `styles.css` en un editor de texto  
     :::image-end:::  
     
-1.  Elija la pestaña **elementos** .  
-1.  Cambie el valor de la `color` propiedad del `<h1>` elemento a su color favorito.  
-    Recuerde que debe elegir el `<h1>` elemento en el **árbol DOM** para ver las reglas CSS que se aplican en el panel **estilos** .  El punto verde junto a `styles.css:1` significa que todos los cambios que realice se asignan a `~/Desktop/app/styles.css` .  
+1.  Elija la **herramienta** Elementos.  
+1.  Cambia el valor de la `color` propiedad del elemento a tu color `<h1>` favorito.  
+    Recuerde que debe elegir el elemento en el árbol DOM para mostrar las reglas CSS que se le aplican `<h1>` en el panel **Estilos.** ****  El punto verde junto `styles.css:1` a significa que cualquier cambio que realice se asigna a `~/Desktop/app/styles.css` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
-       El indicador verde indica que el archivo está vinculado  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="El indicador verde de que el archivo está vinculado" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+       El indicador verde de que el archivo está vinculado  
     :::image-end:::  
     
-1.  `styles.css`Vuelva a abrir en un editor de texto.  La `color` propiedad ya está configurada con su color favorito.  
-1.  Actualiza la página.  El color del `<h1>` elemento se mantiene establecido en el color que prefiera.  El cambio se mantiene durante una actualización, porque cuando realizó el cambio DevTools guardado el cambio en el disco.  Y, después, cuando haya actualizado la página, el servidor local ha servido la copia modificada del archivo desde el disco.  
+1.  Abra `styles.css` de nuevo en un editor de texto.  La `color` propiedad ahora está establecida en el color favorito.  
+1.  Actualiza la página.  El color del `<h1>` elemento aún está establecido en el color favorito.  El cambio permanece en una actualización, porque al realizar el cambio DevTools guardó el cambio en el disco.  Después, al actualizar la página, el servidor local sirvió la copia modificada del archivo desde el disco.  
     
-## Paso 3: guardar un cambio HTML en el disco  
+## <a name="step-3-save-an-html-change-to-disk"></a>Paso 3: Guardar un cambio HTML en disco  
 
-### Cambiar HTML desde el panel elementos  
+### <a name="change-html-from-the-elements-panel"></a>Cambiar HTML desde el Panel de elementos  
 
-Puede realizar cambios en el HTML desde el panel elemento, pero sus cambios en el árbol DOM no se guardan en el disco y solo afectan a la sesión actual del explorador.  
+Puede realizar cambios en el html desde el Panel de elementos, pero los cambios realizados en el árbol DOM no se guardan en el disco y solo tienen efecto en la sesión del explorador actual.  
 
-El árbol DOM no es HTML.  
+El árbol DOM no es html.  
 
 <!--### Try changing HTML from the Elements panel  
 
 > [!WARNING]
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
-1.  Choose the **Elements** tab.  
+1.  Choose the **Elements** tool.  
 1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
-       Attempt to change html from the DOM Tree of the **Elements** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempt to change html from the DOM Tree of the **Elements** tool  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
@@ -189,75 +189,75 @@ El árbol DOM no es HTML.
 > [!NOTE]
 > This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
 
-*   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
+*   The tree of nodes that are displayed on the **Elements** tool represents the [DOM][MDNWebAPIsDOM] of the page.  
 *   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.  
 *   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
-*   Therefore, the final state of the page that users see may be very different from the html that the browser fetched.  
-*   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
+*   Therefore, the final state of the webpage displayed for users may be very different from the html that the browser fetched.  
+*   This makes it difficult for DevTools to resolve where a change made in the **Elements** tool should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### Cambiar HTML desde el panel orígenes  
+### <a name="change-html-from-the-sources-panel"></a>Cambiar HTML desde el panel Orígenes  
 
-Si desea guardar un cambio en el código HTML de la página, hágalo usando el panel **fuentes** .  
+Si desea guardar un cambio en el html de la página, puede hacerlo con **el** panel Orígenes.  
 
-1.  Elija la pestaña **orígenes** .  
-1.  Elija la pestaña **Página** .  
-1.  Elija **(índice)**.  Se abrirá el código HTML de la página.  
-1.  Reemplazar `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Consulte la siguiente ilustración.  
-1.  Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
-1.  Actualiza la página.  El `<h1>` elemento aún muestra el nuevo texto.  
+1.  Elija la **herramienta Orígenes.**  
+1.  Elija **el** panel Página.  
+1.  Elija **(índice)**.  Se abre el CÓDIGO HTML de la página.  
+1.  Reemplace `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Revise la siguiente figura.  
+1.  Seleccione `Control` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar el cambio.  
+1.  Actualiza la página.  El `<h1>` elemento sigue mostrando el texto nuevo.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Cambiar HTML desde el panel **orígenes**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Cambiar HTML desde el panel Orígenes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Cambiar HTML desde el panel **Orígenes**  
     :::image-end:::  
     
-1.  Abra `~/Desktop/app/index.html` .  El `<h1>` elemento contiene el nuevo texto.  
+1.  Abra `~/Desktop/app/index.html` .  El `<h1>` elemento contiene el texto nuevo.  
     
-## Paso 4: guardar un cambio de JavaScript en el disco  
+## <a name="step-4-save-a-javascript-change-to-disk"></a>Paso 4: Guardar un cambio de JavaScript en disco  
 
-El panel **orígenes** también es el lugar donde se pueden realizar cambios en JavaScript.  Sin embargo, a veces necesita acceder a otros paneles, como el panel **elementos** o el panel de **consola** , mientras realiza cambios en su sitio.  Hay una forma de abrir el panel **fuentes** junto con otros paneles.  
+El **** panel Orígenes también es el lugar para realizar cambios en JavaScript.  Pero a veces es necesario tener acceso a otros paneles, como la **herramienta Elementos** o el **panel** consola, mientras realiza cambios en el sitio.  Hay una forma de abrir el panel **Orígenes** junto con otros paneles.  
 
-1.  Elija la pestaña **elementos** .  
-1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \).  Se abrirá el **menú de comandos** .  
-1.  Escriba `QS` y, a continuación, elija **Mostrar fuente rápida**.  En la parte inferior de la ventana de DevTools ahora hay una ficha de **fuente rápida** .  La pestaña muestra el contenido de `index.html` , que es el último archivo editado en el panel **fuentes** .  La pestaña **origen rápido** le ofrece el editor del panel **fuentes** , de modo que pueda editar archivos mientras tiene otros paneles abiertos.  
+1.  Elija la **herramienta** Elementos.  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  Se **abre el menú** comando.  
+1.  Escriba `QS` y, a continuación, **elija Mostrar origen rápido**.  En la parte inferior de la ventana DevTools ahora hay un panel **Origen** rápido.  El panel muestra el contenido de , que es el último archivo `index.html` que editó en el panel **Orígenes.**  El **panel Origen rápido** le proporciona el editor desde el panel **Orígenes,** para que pueda editar archivos mientras tiene otros paneles abiertos.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Abrir la pestaña **origen rápido** mediante el **menú de comandos**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abra el panel Origen rápido mediante el menú Comando" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Abra el **panel Origen rápido** mediante el menú **Comando**  
     :::image-end:::  
     
-1.  Seleccione `Control` + `P` \ (Windows, Linux \) o `Command` + `P` \ (MacOS \) para abrir el cuadro de diálogo **Abrir archivo** .  Consulte la siguiente ilustración.  
-1.  Escriba `script` y, a continuación, elija **aplicación/script.js**.  
+1.  Seleccione `Control` + `P` \(Windows, Linux\) o `Command` + `P` \(macOS\) para abrir el **cuadro de diálogo Abrir** archivo.  Revise la siguiente figura.  
+1.  Escriba `script` , luego elija **app/script.js**.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
-       Abrir `script.js` con el cuadro de diálogo **Abrir archivo**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Abra script.js mediante el cuadro de diálogo Abrir archivo" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+       Abrir `script.js` con el cuadro de diálogo **Abrir** archivo  
     :::image-end:::  
     
     > [!NOTE]
-    > El `Save Changes To Disk With Workspaces` vínculo de la demostración se ha estilo regularmente.  
+    > El `Save Changes To Disk With Workspaces` vínculo de la demostración tiene un estilo regular.  
     
-1.  Agregue el código siguiente en la parte inferior de **script.js** mediante la pestaña de **origen rápido** .  
+1.  Agregue el siguiente código a la parte inferior de **script.js** el panel **Origen** rápido.  
     
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  Seleccione `Control` + `S` \ (Windows, Linux \) o `Command` + `S` \ (MacOS \) para guardar el cambio.  
+1.  Seleccione `Control` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar el cambio.  
 1.  Actualiza la página.  
     
     > [!NOTE]
-    > El vínculo de la página está en cursiva.  
+    > El vínculo de la página ahora está en cursiva.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="Un proyecto de problema" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
-       El vínculo de la página se ha en cursiva  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="El vínculo de la página ahora está en cursiva" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+       El vínculo de la página ahora está en cursiva  
     :::image-end:::  
     
-## Pasos siguientes  
+## <a name="next-steps"></a>Pasos siguientes  
 
-Use lo que ha aprendido en este tutorial para configurar áreas de trabajo en su propio proyecto.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
+Usa lo que has aprendido en este tutorial para configurar áreas de trabajo en tu propio proyecto.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
 If you have more feedback on the topics or anything else, please use any of the channels below:  
@@ -265,36 +265,36 @@ If you have more feedback on the topics or anything else, please use any of the 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  -->  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md "Introducción a la visualización y el cambio de CSS | Microsoft docs"  
+[DevToolsCssIndex]: ../css/index.md "Introducción a la visualización y cambio de css | Microsoft Docs"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
-[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Archivos de demostración de áreas de trabajo | Intento"  
+[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces Archivos de demostración | Glitch"  
 
-[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Contenido-CSS: hojas de estilos en cascada | MDN"  
-[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Introducción a la web | MDN"  
-[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Ejecutando un servidor HTTP local simple | MDN"  
-[MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introducción a DOM-API Web | MDN"  
+[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Contenido : CSS: hojas de estilos en cascada | MDN"  
+[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Introducción al sitio web | MDN"  
+[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Ejecutar un servidor HTTP local simple | MDN"  
+[MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introducción a DOM: API web | MDN"  
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
 
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Introducción a los mapas de origen | Blog de Treehouse"  
+[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Una introducción a los mapas de origen | Treehouse Blog"  
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Puerto \ (red del equipo \)-Wikipedia"  
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

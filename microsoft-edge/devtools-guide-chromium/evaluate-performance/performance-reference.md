@@ -1,18 +1,18 @@
 ---
-description: El modo eventos de escala de tiempo muestra todos los eventos desencadenados mientras se realiza una grabación.  Use la referencia de evento de escala de tiempo para obtener más información sobre cada tipo de evento de escala de tiempo.
-title: Referencia de evento de línea de tiempo
+description: El modo de eventos de escala de tiempo muestra todos los eventos desencadenados al realizar una grabación.  Use la referencia de evento de escala de tiempo para obtener más información sobre cada tipo de evento de escala de tiempo.
+title: Referencia de evento de escala de tiempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 989d4d84345fedc1c5aef2cb8d893db3c0e1634b
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 2a166c9eebc980682fa872e5ee8d213f2058b384
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124904"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398668"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -28,137 +28,137 @@ ms.locfileid: "11124904"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Referencia de evento de línea de tiempo  
+# <a name="timeline-event-reference"></a>Referencia de evento de escala de tiempo  
 
-El modo eventos de escala de tiempo muestra todos los eventos desencadenados mientras se realiza una grabación.  Use la referencia de evento de escala de tiempo para obtener más información sobre cada tipo de evento de escala de tiempo.  
+El modo de eventos de escala de tiempo muestra todos los eventos desencadenados al realizar una grabación.  Use la referencia de evento de escala de tiempo para obtener más información sobre cada tipo de evento de escala de tiempo.  
 
-## Propiedades de evento de escala de tiempo comunes  
+## <a name="common-timeline-event-properties"></a>Propiedades de eventos de escala de tiempo comunes  
 
-Algunos detalles están presentes en eventos de todos los tipos, mientras que algunos solo se aplican a determinados tipos de eventos.  En esta sección se enumeran las propiedades comunes a los distintos tipos de eventos.  Las propiedades específicas de determinados tipos de eventos se muestran en las referencias de los siguientes tipos de eventos.  
+Algunos detalles están presentes en eventos de todos los tipos, mientras que algunos solo se aplican a determinados tipos de eventos.  En esta sección se enumeran las propiedades comunes a diferentes tipos de eventos.  Las propiedades específicas de determinados tipos de eventos se enumeran en las referencias para los tipos de eventos siguientes.  
 
-| Propiedad | ¿Cuándo se muestra? |  
+| Propiedad | Cuándo se muestra |  
 |:--- |:--- |  
 | Tiempo agregado | Para eventos con **eventos anidados**, el tiempo que toma cada categoría de eventos. |  
 | Pila de llamadas | Para eventos con **eventos secundarios**, el tiempo que toma cada categoría de eventos. |  
-| Tiempo de CPU | La cantidad de tiempo de CPU que tomó el evento registrado. |  
+| Tiempo de CPU | Cuánto tiempo de CPU tardó el evento grabado. |  
 | Detalles | Otros detalles sobre el evento. |  
-| Duration \ (en la marca de hora \) | Cuánto tiempo duró el evento con todos sus elementos secundarios para completar. TIMESTAMP es la hora en que se produjo el evento, en relación con la grabación iniciada. |  
-| Tiempo propio | Cuánto tiempo lleva el evento sin ninguno de sus elementos secundarios. |  
-| Tamaño de montón usado | Cantidad de memoria usada por la aplicación cuando se registró el evento y el cambio Delta \ (+/-\) en el tamaño de montón usado desde el último muestreo. |  
+| Duración \(at time-stamp\) | Cuánto tiempo tardó el evento con todos sus secundarios en completarse; timestamp es la hora en la que se produjo el evento, en relación con el momento en que se inició la grabación. |  
+| Tiempo de autoservicio | Cuánto tiempo tardó el evento sin ninguno de sus secundarios. |  
+| Tamaño de montón usado | Cantidad de memoria que usa la aplicación cuando se registró el evento y el delta \(+/-\) cambia en el tamaño del montón usado desde el último muestreo. |  
 
 <!--todo: add nested and child events (timelinetool) section when available -->  
 
-## Cargando eventos  
+## <a name="loading-events"></a>Cargar eventos  
 
-En esta sección se enumeran los eventos que pertenecen a la categoría de carga y sus propiedades.  
+En esta sección se enumeran los eventos que pertenecen a la categoría Loading y sus propiedades.  
 
 | Evento | Descripción |  
 |:--- |:--- |  
-| Analizar HTML |  Microsoft Edge ejecutó el algoritmo de análisis HTML. |  
+| ANALIZAR HTML |  Microsoft Edge ejecutó el algoritmo de análisis HTML. |  
 | Finalizar la carga |  Una solicitud de red completada. |  
-| Recibir datos |  Se recibieron datos para una solicitud.  Hay uno o más eventos de datos de recepción. |  
-| Recibir respuesta |  La respuesta HTTP inicial de una solicitud. |  
+| Recibir datos |  Se recibieron los datos de una solicitud.  Hay uno o varios eventos De recepción de datos. |  
+| Respuesta de recepción |  La respuesta HTTP inicial de una solicitud. |  
 | Enviar solicitud |  Se ha enviado una solicitud de red. |  
 
-### Cargando propiedades de evento  
+### <a name="loading-event-properties"></a>Cargar propiedades de evento  
 
 | Propiedad | Descripción |  
 |:--- |:--- |  
 | Recurso | Dirección URL del recurso solicitado. |  
-| Vista previa | Vista previa del recurso solicitado \ (solo imágenes \). |  
-| Método de solicitud | Método HTTP usado para la solicitud \ ( `GET` o `POST` , por ejemplo, \). |  
+| Vista previa | Vista previa del recurso solicitado \(solo imágenes\). |  
+| Request (método) | Método HTTP usado para la solicitud \( `GET` o `POST` , por ejemplo\). |  
 | Código de estado | Código de respuesta HTTP. |  
 | Tipo MIME | Tipo MIME del recurso solicitado. |  
-| Longitud de datos codificados | Longitud del recurso solicitado en bytes. |  
+| Longitud de datos codificada | Longitud del recurso solicitado en bytes. |  
 
-## Eventos de scripting  
+## <a name="scripting-events"></a>Eventos de scripting  
 
-En esta sección se enumeran los eventos que pertenecen a la categoría de scripting y sus propiedades.  
+En esta sección se enumeran los eventos que pertenecen a la categoría Scripting y sus propiedades.  
 
 | Evento | Descripción |  
 |:--- |:--- |  
-| Marco de animación desencadenado | Se activó un marco de animación programada y se llamará a su controlador de devolución de llamada. |  
-| Cancelar marco de animación |  Se ha cancelado un marco de animación programado. |  
-| Evento GC |  Se realizó la recolección de elementos no utilizados. |  
-| DOMContentLoaded |  El [evento DOMContentLoaded][MDNWindowDOMContentLoadedEvent] fue desencadenado por el explorador.  Este evento se desencadena cuando todo el contenido de DOM de la página se ha cargado y analizado. |  
+| Fotograma de animación desencadenado | Se desencadena un marco de animación programado y se invoca su controlador de devolución de llamada. |  
+| Cancelar fotograma de animación |  Se canceló un marco de animación programado. |  
+| Evento GC |  Se produjo la recolección de elementos no utilizados. |  
+| DOMContentLoaded |  El explorador despidió el evento [DOMContentLoaded.][MDNWindowDOMContentLoadedEvent]  Este evento se desencadena cuando se carga y analiza todo el contenido DOM de la página. |  
 | Evaluar script | Se evaluó un script. |  
-| Evento | Un evento de JavaScript \ (por ejemplo, `mousedown` , o `key` \). |  
-| Llamada de función | Se realizó una llamada de función de JavaScript de nivel superior \ (solo aparece cuando el explorador escribe el motor de JavaScript \). |  
-| Instalar cronómetro | Se creó un temporizador con [setInterval ()][MDNWindowOrWorkerGlobalScopeSetInterval] o [setTimeout ()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
-| Marco de animación de la solicitud | Una `requestAnimationFrame()` llamada programó un nuevo marco. |  
-| Quitar cronómetro | Se borró un temporizador creado previamente. |  
-| Tiempo |  Un script denominado [Console. Time ()][ConsoleApiTime]. |  
-| Hora de finalización | Un script denominado [Console. timeEnd ()][ConsoleApiTimeEnd]. |  
-| Cronómetro desencadenado | Un temporizador desencadenado que se programó con `setInterval()` o `setTimeout()` . |  
-| Cambio de estado de XHR listo | El estado de lista de un XMLHTTPRequest ha cambiado. |  
-| Carga de XHR | `XMLHTTPRequest`Finalizó la carga. |  
+| Evento | Un evento De JavaScript \(por ejemplo, `mousedown` o `key` \). |  
+| Llamada de función | Se realizó una llamada de función de JavaScript de nivel superior \(solo aparece cuando el explorador entra en el motor de JavaScript\). |  
+| Instalar temporizador | Se creó un temporizador [con setInterval()][MDNWindowOrWorkerGlobalScopeSetInterval] o [setTimeout()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
+| Fotograma de animación de solicitud | Una `requestAnimationFrame()` llamada programó un nuevo marco. |  
+| Quitar temporizador | Se ha borrado un temporizador creado anteriormente. |  
+| Tiempo |  Un script denominado [console.time()][ConsoleApiTime]. |  
+| Fin de la hora | Un script denominado [console.timeEnd()][ConsoleApiTimeEnd]. |  
+| Temporizador desencadenado | Temporizador desencadenado que estaba programado con `setInterval()` o `setTimeout()` . |  
+| XHR Ready State Change | Se ha cambiado el estado listo de un OBJETO XMLHTTPRequest. |  
+| Carga XHR | Una `XMLHTTPRequest` carga finalizada. |  
 
-### Propiedades de eventos de scripting  
+### <a name="scripting-event-properties"></a>Propiedades del evento Scripting  
 
 | Propiedad | Descripción |  
 |:--- |:--- |  
-| IDENTIFICADOR del temporizador | IDENTIFICADOR del temporizador. |  
-| Tiempo de espera agotado | El tiempo de espera especificado por el temporizador. |  
-| Repite | Valor booleano que especifica si el temporizador se repite. |  
-| Llamada de función | Una función que se invocó. |  
+| Id. del temporizador | El identificador del temporizador. |  
+| Tiempo de espera agotado | Tiempo de espera especificado por el temporizador. |  
+| Repeticiones | Boolean que especifica si el temporizador se repite. |  
+| Llamada de función | Función que se invocó. |  
 
-## Representar eventos  
+## <a name="rendering-events"></a>Eventos de representación  
 
-En esta sección se enumeran los eventos que pertenecen a la categoría de representación y sus propiedades.  
+En esta sección se enumeran los eventos que pertenecen a la categoría Representación y sus propiedades.  
 
 | Evento | Descripción |  
 |:--- |:--- |  
-| Invalidar diseño | Un cambio de DOM invalidó el diseño de página. |  
+| Invalidar diseño | El diseño de página se invalidó mediante un cambio de DOM. |  
 | Diseño | Se completó un diseño de página. |  
-| Recalcular estilo | Estilos de elemento recalculado de Microsoft Edge. |  
-| Scroll | Se ha desplazado el contenido de la vista anidada. |  
+| Recalcular estilo | Estilos de elemento recalculados de Microsoft Edge. |  
+| Scroll | El contenido de la vista anidada se desplazó. |  
 
-### Representación de propiedades de eventos  
+### <a name="rendering-event-properties"></a>Propiedades de evento de representación  
 
 | Propiedad | Descripción |  
 |:--- |:--- |  
-| Diseño invalidado | En los registros de diseño, el seguimiento de la pila del código que causó que se invalidara el diseño. |  
-| Nodos que necesitan diseño | En los registros de diseño, el número de nodos que se han marcado como que necesitan diseño antes de que se inicie el redistribución.  Suelen ser aquellos nodos que el código del desarrollador invalidó, además de una ruta de acceso ascendente para rediseñar la raíz. |  
-| Tamaño del árbol de diseño | En los registros de diseño, el número total de nodos en la raíz de redistribución \ (el nodo en el que Microsoft Edge inicia el rediseño \). |  
-| Ámbito de diseño | Los valores posibles son `Partial` \ (el límite de redistribución es una parte del DOM \) o `Whole document` . |  
-| Elementos afectados | Para volver a calcular los registros de estilo, el número de elementos afectados por un nuevo cálculo de estilo. |  
-| Estilos invalidados | Para recalcular los registros de estilo, proporciona el seguimiento de pila del código que causó la invalidación de estilo. |  
+| Diseño invalidado | Para los registros de diseño, el seguimiento de pila del código que provocó la invalidación del diseño. |  
+| Nodos que necesitan diseño | Para los registros de diseño, el número de nodos que se marcaron como diseño necesario antes de que se iniciara el relayout.  Estos son normalmente los nodos que se invalidaron mediante código de desarrollador, además de una ruta hacia arriba para volver a la raíz de layout. |  
+| Tamaño del árbol de diseño | Para los registros de diseño, el número total de nodos bajo la raíz de relayout \(el nodo que Microsoft Edge inicia el relayout\). |  
+| Ámbito de diseño | Los valores posibles `Partial` son \(el límite de nuevo diseño es una parte del DOM\) o `Whole document` . |  
+| Elementos afectados | Para volver a calcular los registros de estilo, el número de elementos afectados por una actualización de estilo. |  
+| Estilos invalidados | Para volver a calcular los registros de estilo, proporciona el seguimiento de pila del código que provocó la invalidación del estilo. |  
 
-## Eventos de pintura  
+## <a name="painting-events"></a>Eventos de pintura  
 
-En esta sección se enumeran los eventos que pertenecen a la categoría de pintura y sus propiedades.  
+En esta sección se enumeran los eventos que pertenecen a la categoría Painting y sus propiedades.  
 
 | Evento | Descripción |  
 |:--- |:--- |  
-| Capas compuestas | Las capas de imagen compuestas para el motor de representación de Microsoft Edge. |  
-| Descodificación de imagen | Se ha descodificado un recurso de imagen. |  
-| Cambiar el tamaño de la imagen | Se ha cambiado el tamaño de una imagen desde sus dimensiones nativas. |  
-| Paint | Las capas compuestas se han pintado en una región de la pantalla.  Al mantener el puntero sobre un registro de pintura, se resalta la región de la pantalla que se ha actualizado. |  
+| Capas compuestas | Capas de imagen compuestas para el motor de representación de Microsoft Edge. |  
+| Descodificación de imágenes | Se descodificó un recurso de imagen. |  
+| Cambio de tamaño de imagen | Se ha cambiado el tamaño de una imagen desde sus dimensiones nativas. |  
+| Paint | Las capas compuestas se pintaron en una región de la pantalla.  Al pasar el mouse sobre un registro paint se resalta la región de la pantalla que se actualizó. |  
 
-### Propiedades de evento de dibujo  
+### <a name="painting-event-properties"></a>Propiedades del evento Painting  
 
 | Propiedad | Descripción |  
 |:--- |:--- |  
-| Ubicación | Para eventos de pintura, las coordenadas x e y del rectángulo de pintura. |  
-| Dimensiones | Para eventos de pintura, el alto y el ancho de la región pintada. |  
+| Ubicación | Para eventos Paint, las coordenadas x e y del rectángulo de pintura. |  
+| Dimensiones | Para eventos Paint, el alto y el ancho de la región pintada. |  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 
-[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "Referencia de la API de consola de hora"  
-[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd: referencia de la API de consola"  
+[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time: Referencia de api de consola"  
+[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd: referencia de api de consola"  
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
 
 [MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Ventana: evento DOMContentLoaded | MDN"  
-[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope. setInterval () | MDN"  
-[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope. setTimeout () | MDN"  
+[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval() | MDN"  
+[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope.setTimeout() | MDN"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) y está creada por [Meggin Kearney][MegginKearney] \ (Tech Write \) y [Flavio Copes][FlavioCopes] \ (desarrollador de pila completa \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) y es creado por [Meggin Kearney][MegginKearney] \(Tech Writer\) y [Flavio Copes][FlavioCopes] \(Full Stack Developer\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

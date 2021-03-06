@@ -1,18 +1,18 @@
 ---
-description: Abre el menú de comandos y ejecuta el comando "deshabilitar JavaScript".
+description: Abra el menú comando y ejecute el comando "Deshabilitar JavaScript".
 title: Deshabilitar JavaScript con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f7aafee4b05f843319a4a744e6cba148d4642667
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 2067944fa17c332dd15ffb3ef97afe02d35685ed
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230673"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398563"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,49 +28,49 @@ ms.locfileid: "11230673"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Deshabilitar JavaScript con Microsoft Edge DevTools  
+# <a name="disable-javascript-with-microsoft-edge-devtools"></a>Deshabilitar JavaScript con Microsoft Edge DevTools  
 
-Complete las acciones siguientes para ver el aspecto y el comportamiento de una página web cuando JavaScript está deshabilitado.  
+Complete las siguientes acciones para mostrar el aspecto y el comportamiento de una página web cuando JavaScript está deshabilitado.  
 
-1.  [Abre Microsoft Edge DevTools][DevToolsOpen].  
-1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
+1.  [Abra Microsoft Edge DevTools][DevToolsOpen].  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
     
-    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="El menú de comandos" lightbox="../media/javascript-console-command.msft.png":::
-       El **menú de comandos**  
+    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Menú comando" lightbox="../media/javascript-console-command.msft.png":::
+       Menú **comando**  
     :::image-end:::  
     
-1.  Comience `javascript` a escribir, elija **deshabilitar JavaScript**y, a continuación, seleccione `Enter` para ejecutar el comando.  Ahora JavaScript está deshabilitado.  
+1.  Empiece a `javascript` escribir , elija Deshabilitar **JavaScript**y, a continuación, `Enter` seleccione para ejecutar el comando.  JavaScript ahora está deshabilitado.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Seleccione deshabilitar JavaScript en el menú de comandos" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       Elija **deshabilitar JavaScript** en el **menú de comandos**  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Elija Deshabilitar JavaScript en el menú comando" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       Elija **Deshabilitar JavaScript en** el menú **comando**  
     :::image-end:::  
     
-    El icono amarillo que aparece junto a los **orígenes** recuerda que JavaScript está deshabilitado.  
+    El icono de advertencia amarillo junto **a Orígenes** le recuerda que JavaScript está deshabilitado.  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Icono de advertencia junto a orígenes" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       Icono de advertencia junto a **orígenes**  
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="El icono de advertencia junto a Orígenes" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       El icono de advertencia junto a **Orígenes**  
     :::image-end:::  
     
-JavaScript permanece desactivado en la pestaña mientras haya DevTools abierto.  
+JavaScript permanece deshabilitado en la pestaña durante el tiempo que tenga DevTools abierto.  
 
-Es posible que desee volver a cargar la página para ver si la página depende de JavaScript mientras se carga.  
+Es posible que desee actualizar la página para revisar si y cómo la página web depende de JavaScript durante la carga.  
 
-Para volver a Habilitar JavaScript, complete las siguientes acciones.  
+Para volver a habilitar JavaScript, realice las siguientes acciones.  
 
-*   Vuelva a abrir el **menú de comandos** y ejecute el `Enable JavaScript` comando.  
+*   Abra de **nuevo el menú comando** y ejecute el `Enable JavaScript` comando.  
 *   Cierre DevTools.  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
+[DevToolsOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

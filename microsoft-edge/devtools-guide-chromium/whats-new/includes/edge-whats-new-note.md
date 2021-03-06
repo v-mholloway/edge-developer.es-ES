@@ -3,18 +3,18 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 12/08/2020
-ms.openlocfilehash: 4dbb6c0c07b6294c647f49929f12739447b43e8a
-ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
+ms.date: 02/12/2021
+ms.openlocfilehash: 5002caa02ee7baee334c2fcb10f22916399f8173
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11205238"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397583"
 ---
-En las secciones siguientes se enumeran los anuncios del equipo Microsoft Edge DevTools.  Para probar las nuevas características de DevTools, las extensiones de código de Visual Studio y mucho más, revise los anuncios.  Para mantenerte al día con las características más recientes de las herramientas para desarrolladores, descarga los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] y [sigue el equipo de Microsoft Edge DevTools en Twitter][EdgeDevToolsTwitterAccount].
+En las secciones siguientes se enumeran los anuncios del equipo de Microsoft Edge DevTools.  Para probar nuevas características en DevTools, Microsoft Visual Studio code extensions y mucho más, revise los anuncios.  Para mantenerse al día con las características más recientes y más importantes de las herramientas para desarrolladores, descargue los canales de vista previa de [Microsoft Edge][MicrosoftEdgePreviewChannels] y siga el equipo de Microsoft [Edge DevTools en Twitter][EdgeDevToolsTwitterAccount].
 
 <!-- links -->  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de Microsoft Edge Preview"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"  
 
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools cuenta de Twitter"  

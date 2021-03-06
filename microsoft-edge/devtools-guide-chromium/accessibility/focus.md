@@ -1,18 +1,18 @@
 ---
-description: Abra la consola, cree una expresión en vivo y establezca la expresión en Document. activeElement.
+description: Abra la consola, cree una expresión en directo y establezca la expresión en document.activeElement.
 title: Rastrear qué elemento tiene el foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 3f3e59c4ee6f10b8e162f30efbff337ca2beec8d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125310"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398318"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,31 +28,31 @@ ms.locfileid: "11125310"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Rastrear qué elemento tiene el foco  
+# <a name="track-which-element-has-focus"></a>Rastrear qué elemento tiene el foco  
 
-Suponga que está probando la accesibilidad de navegación por el teclado de una página.  Al navegar por la página con la `Tab` tecla, el anillo de foco desaparece a veces, porque el elemento que tiene el foco está oculto.  
+Supongamos que está probando la accesibilidad de navegación del teclado de una página.  Al navegar por la página con la clave, el anillo de enfoque a veces desaparece porque `Tab` el elemento que tiene el foco está oculto.  
 
-Complete las acciones siguientes para realizar un seguimiento del elemento que tiene el foco en DevTools.  
+Complete las siguientes acciones para realizar un seguimiento del elemento centrado en DevTools.  
 
 1.  Abra la **consola**.  
-1.  Elija **crear expresión en directo** \ ( ![ crear expresión en directo ][ImageCreateIcon] \).  
+1.  Elija **Crear expresión en directo** \( Crear expresión en directo ![ ][ImageCreateIcon] \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Crear una expresión en directo" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Crear una expresión en directo  
     :::image-end:::  
     
 1.  Escribe `document.activeElement`.  
-1.  Haga clic fuera de la interfaz de usuario de **Live Expression** para guardar.  
+1.  Elige fuera de la **interfaz de usuario de Expresión** en directo para guardar.  
     
-El valor que se ve a continuación `document.activeElement` es el resultado de la expresión.  
+El valor que se muestra `document.activeElement` a continuación es el resultado de la expresión.  
 
-Dado que esa expresión siempre representa el elemento que tiene el foco, ahora tienes una manera de realizar un seguimiento de qué elemento tiene el foco.  
+Dado que esa expresión siempre representa el elemento centrado, ahora tiene una forma de realizar siempre un seguimiento de qué elemento tiene el foco.  
 
-*   Desplace el puntero sobre el resultado para resaltar el elemento que tiene el foco en la ventanilla.  
-*   Haga clic con el botón derecho en el resultado y elija Mostrar **en el panel elementos** para mostrar el elemento en el árbol DOM en el panel **elementos** .  
-*   Haga clic con el botón secundario en el resultado y elija **almacenar como variable global** para crear una referencia de variable al nodo que se puede usar en la **consola**.  
+*   Mantenga el mouse sobre el resultado para resaltar el elemento centrado en la ventanilla.  
+*   Mantenga el mouse sobre el resultado, abra el menú contextual \(clic con el botón derecho\) y elija Mostrar en el **panel** Elementos para mostrar el elemento en el árbol DOM de la **herramienta** Elementos.  
+*   Mantenga el mouse sobre el resultado, abra el menú contextual \(haga clic con el botón secundario\) y elija Almacenar como **variable global** para crear una referencia variable al nodo que puede usar en la **consola**.  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -63,8 +63,8 @@ Dado que esa expresión siempre representa el elemento que tiene el foco, ahora 
 <!-- links -->  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

@@ -1,26 +1,26 @@
 ---
-description: Directiva de seguridad de contenido para las extensiones de Edge (cromo).
+description: Directiva de seguridad de contenido para extensiones perimetrales (Chromium).
 title: Directiva de seguridad de contenido (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de explorador, complementos, centro de Partners, desarrollador'
-ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
+ms.openlocfilehash: 8307482e780b4d631edffd976cca7ba724e2ad40
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015719"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397520"
 ---
-# Directiva de seguridad de contenido \ (CSP \)  
+# <a name="content-security-policy-csp"></a>Directiva de seguridad de contenido \(CSP\)  
 
-Para mitigar una gran clase de posibles problemas de scripting entre sitios, el sistema de extensiones Microsoft Edge ha incorporado el concepto general de [Directiva de seguridad de contenido \ (CSP \)][W3CContentSecurityPolicy].  Esto presenta directivas muy estrictas que hacen que las extensiones sean más seguras de forma predeterminada y le proporcionan la capacidad de crear y aplicar reglas que rijan los tipos de contenido que las extensiones y aplicaciones pueden cargar y ejecutar.  
+Para mitigar una gran clase de posibles problemas de scripting entre sitios, el sistema de extensión perimetral de Microsoft ha incorporado el concepto general de directiva de seguridad de contenido [\(CSP\)][W3CContentSecurityPolicy].  Esto presenta algunas directivas bastante estrictas que hacen que las extensiones sean más seguras de forma predeterminada y le proporciona la capacidad de crear y aplicar reglas que rigen los tipos de contenido que pueden cargarse y ejecutarse por las extensiones y las aplicaciones.  
 
-En general, CSP funciona como un mecanismo de bloqueo/allowlisting para los recursos cargados o ejecutados por las extensiones.  La definición de una directiva razonable para su extensión le permite considerar cuidadosamente los recursos que la extensión necesita y pedir al explorador que asegúrese de que son los únicos recursos a los que tiene acceso la extensión.  Estas directivas proporcionan seguridad y una mayor parte de los permisos de host y las solicitudes de extensión; son una capa adicional de protección, no un sustituto.  
+En general, CSP funciona como un mecanismo de bloqueo/lista de permitidos para los recursos cargados o ejecutados por las extensiones.  La definición de una directiva razonable para su extensión le permite tener en cuenta cuidadosamente los recursos que necesita la extensión y solicitar al explorador que se asegure de que esos son los únicos recursos a los que tiene acceso la Extensión.  Las directivas proporcionan seguridad por encima de los permisos de host que solicita la extensión; son una capa adicional de protección, no un reemplazo.  
 
-En la web, tal directiva se define a través de un elemento o encabezado HTTP `meta` .  En el sistema de extensión Microsoft Edge, ninguno de los mecanismos es adecuado.  En su lugar, se define una política de extensión a través del `manifest.json` archivo para la extensión de la siguiente manera:  
+En la web, dicha directiva se define a través de un elemento o encabezado `meta` HTTP.  Dentro del sistema de extensión de Microsoft Edge, ninguno de los dos es un mecanismo adecuado.  En su lugar, se define una directiva de extensión con `manifest.json` el archivo de la extensión de la siguiente manera:  
 
 ```javascript
 {
@@ -30,19 +30,19 @@ En la web, tal directiva se define a través de un elemento o encabezado HTTP `m
 }
 ```  
 
-> Para obtener información completa sobre la sintaxis de CSP, eche un vistazo a la especificación de la [política de seguridad de contenido][W3CContentSecurityPolicy] y el artículo ["una introducción a la Directiva de seguridad de contenido"][HTML5RocksIntroductionContentSecurityPolicy] en HTML5Rocks.  
+> Para obtener información completa acerca de la [][W3CContentSecurityPolicy] sintaxis de CSP, consulte la especificación de directiva de seguridad de contenido y el artículo "Introducción a la directiva de seguridad de [contenido"][HTML5RocksIntroductionContentSecurityPolicy] en HTML5Rocks.  
 
-## Restricciones de directiva predeterminadas  
+## <a name="default-policy-restrictions"></a>Restricciones de directiva predeterminadas  
 
-Los paquetes que no definen una no `manifest_version` tienen una directiva de seguridad de contenido predeterminada.  Los que seleccionan `manifest_version` 2, tienen una directiva de seguridad de contenido predeterminada de:  
+Los paquetes que no definen una `manifest_version` no tienen una directiva de seguridad de contenido predeterminada.  Los paquetes que `manifest_version` elijan 2 tienen la siguiente directiva de seguridad de contenido predeterminada.  
 
 ```javascript
 script-src 'self'; object-src 'self'
 ```  
 
-Esta directiva agrega seguridad limitando las extensiones y aplicaciones de tres maneras:  
+La directiva agrega seguridad limitando las extensiones y las aplicaciones de tres maneras:  
 
-**Eval y las funciones relacionadas están deshabilitadas**  
+**Las funciones Eval y relacionadas están deshabilitadas**  
 
 El código como el siguiente no funciona:  
 
@@ -53,7 +53,7 @@ window.setInterval("alert('hi')", 10);
 new Function("return foo.bar.baz");
 ```  
 
-La evaluación de cadenas de JavaScript como esta es un vector de ataques XSS común.  En su lugar, debe escribir código como el siguiente:
+Evaluar cadenas de JavaScript como esta es un vector de ataque XSS común.  En su lugar, debe escribir código como:
 
 ```javascript
 alert(foo && foo.bar && foo.bar.baz);
@@ -62,11 +62,11 @@ window.setInterval(function() { alert('hi'); }, 10);
 function() { return foo && foo.bar && foo.bar.baz };
 ```  
 
-**No se ejecutan JavaScript en línea**  
+**JavaScript en línea no se ejecuta**  
 
-No se ejecutan los JavaScripts en línea.  Esta restricción prohíbe tanto los bloques alineados como los `<script>` controladores de eventos alineados, como `<button onclick="...">` .
+JavaScript en línea no se ejecuta.  Esta restricción prohíbe tanto los bloques en línea como los controladores de eventos en `<script>` línea, como `<button onclick="...">` .
 
-La primera restricción elimina una enorme clase de ataques de scripting entre sitios, lo que le impide ejecutar accidentalmente la secuencia de comandos proporcionada por un tercero malintencionado.  Sin embargo, le pedirá que escriba su código con una separación clara entre el contenido y el comportamiento \ (¿qué debe hacer? de todos modos, ¿bien? \).  Un ejemplo puede hacer que sea más claro.  Puede intentar escribir un elemento emergente de acción del explorador como un único `pop-up.html` contenedor:  
+La primera restricción elimina una gran clase de ataques de scripting entre sitios al hacer que sea imposible ejecutar accidentalmente el script proporcionado por un tercero malintencionado.  Sin embargo, requiere que escriba el código con una separación limpia entre el contenido y el comportamiento \(que, por supuesto, debe hacer de todos modos, ¿no?\).  Un ejemplo puede hacerlo más claro.  Puede intentar escribir una ventana emergente Acción del explorador como una sola `pop-up.html` que contenga:  
 
 ```html
 <!doctype html>
@@ -99,14 +99,14 @@ La primera restricción elimina una enorme clase de ataques de scripting entre s
 </html>
 ```  
 
-Deben cambiarse tres cosas para que este funcione de la manera esperada:  
+Tres cosas deben cambiar para que esto funcione de la manera que espera:  
 
-*   La `clickHandler` definición se debe mover a un archivo JavaScript externo \ ( `popup.js` puede ser un buen objetivo).  
-*   Las definiciones de los controladores de eventos en línea se deben volver a escribir en términos de `addEventListener` y extraer en `popup.js` .  
-    Si actualmente inicia su programa con un código como `<body onload="main();">` , considere la posibilidad de reemplazarlo enlazando el `DOMContentLoaded` evento del documento o el `load` evento de la ventana, en función de sus necesidades.  Use el antiguo, ya que generalmente se desencadena más rápidamente.  
+*   La `clickHandler` definición debe moverse a un archivo JavaScript externo \( `popup.js` puede ser un buen destino).  
+*   Las definiciones del controlador de eventos en línea deben reescribirse en términos de y `addEventListener` extraerse en `popup.js` .  
+    Si está iniciando el programa con código como , considere la posibilidad de reemplazarlo conectando al evento del documento o al evento de la ventana, según `<body onload="main();">` `DOMContentLoaded` sus `load` requisitos.  Use el primero, ya que generalmente se desencadena más rápidamente.  
 
-*   La `setTimeout` llamada se debe volver a escribir para evitar convertir la cadena `"awesome(); totallyAwesome()"` en JavaScript para ejecutarla.  
-    Esos cambios pueden tener un aspecto similar al siguiente:  
+*   La `setTimeout` llamada debe reescribirse para evitar convertir la cadena `"awesome(); totallyAwesome()"` en JavaScript para que se ejecute.  
+    Estos cambios pueden tener un aspecto parecido al siguiente:  
 
 ```javascript
 function awesome() {
@@ -152,11 +152,11 @@ document.addEventListener('DOMContentLoaded', function () {
 </html>
 ```  
 
-**Solo se cargan los recursos de objetos y scripts locales**  
+**Solo se cargan los recursos de script y objeto locales**  
 
-Los recursos de scripts y objetos solo se pueden cargar desde el paquete de extensión, no desde la web en general.  Esto garantiza que su extensión solo ejecutará el código que haya aprobado específicamente, evitando que un atacante de red activa redirija su solicitud de un recurso por error.  
+Los recursos de script y objeto solo se pueden cargar desde el paquete de extensión, no desde la web en general.  Esto garantiza que la extensión solo ejecute el código que aprobó específicamente, lo que impide que un atacante de red activo redirija malintencionadamente la solicitud de un recurso.  
 
-En lugar de escribir código que depende de jQuery \ (o cualquier otra biblioteca \) que se cargue desde una red CDN externa, considere la posibilidad de incluir la versión específica de jQuery en el paquete de extensión.  Es decir, en lugar de:  
+En lugar de escribir código que dependa de la carga de jQuery \(o cualquier otra biblioteca\) desde una red CDN externa, considere la posibilidad de incluir la versión específica de jQuery en el paquete de extensión.  Es decir, en lugar de:  
 
 ```html
 <!doctype html>
@@ -171,7 +171,7 @@ En lugar de escribir código que depende de jQuery \ (o cualquier otra bibliotec
 </html>
 ```  
 
-Descargar el archivo, incluirlo en el paquete y escribir:  
+Descargue el archivo, inscríbalo en el paquete y escriba:  
 
 ```html
 <!doctype html>
@@ -186,7 +186,7 @@ Descargar el archivo, incluirlo en el paquete y escribir:
 </html>
 ```  
 
-## Cómo relajar la directiva predeterminada  
+## <a name="relaxing-the-default-policy"></a>Relajación de la directiva predeterminada  
 
 **Script en línea**  
 
@@ -194,67 +194,67 @@ Descargar el archivo, incluirlo en el paquete y escribir:
 
 As of Chrome 46, -->  
 
-Los scripts en línea pueden permitirse especificando el hash codificado en base64 del código fuente de la Directiva.  Este hash debe ir precedido por el algoritmo hash usado \ (SHA256, SHA384 o SHA512 \).  Consulta el [uso de hash de \<script\> los elementos][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] para obtener un ejemplo.  
+Los scripts en línea pueden permitirse especificando el hash codificado en base64 del código fuente en la directiva.  Este hash debe ir precedido por el algoritmo hash usado \(sha256, sha384 o sha512\).  Para obtener un ejemplo, vaya a [Uso hash de los \<script\> elementos][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage].  
 
 **Script remoto**  
 
-Si necesita algunos recursos de JavaScript o de objeto externo, puede relajar la Directiva en una medida limitada por allowlisting los orígenes seguros de los que se deben aceptar las secuencias de comandos.  Compruebe que los recursos en tiempo de ejecución cargados con permisos elevados de una extensión son exactamente los recursos que espera y no son reemplazados por un atacante de red activo.  Dado que los [ataques de intermediario][WikiManMiddleAttacks] son sencillos y no detectables a través de http, no se aceptan esos orígenes.  
+Si necesita algunos recursos de objeto u JavaScript externos, puede que relaje la directiva en una medida limitada al permitir la lista de orígenes seguros desde los que se deben aceptar scripts.  Compruebe que los recursos en tiempo de ejecución cargados con permisos elevados de una extensión son exactamente los recursos que espera y que no se reemplazan por un atacante de red activo.  Como los ataques de tipo [man-in-the-middle][WikiManMiddleAttacks] son triviales e indetectables a través de HTTP, esos orígenes no se aceptan.  
 
-En la actualidad, los desarrolladores pueden lista denegados origen con los siguientes esquemas: `blob` ,, `filesystem` `https` , y `extension` .  La parte del host del origen debe especificarse explícitamente para `https` los `extension` esquemas y.  Los caracteres comodín genéricos, como https:, `https://*` y `https://*.com` no están permitidos; se permiten los caracteres comodín de subdominio, como por ejemplo `https://*.example.com` .  Los dominios de la [lista de sufijos públicos][PublicSuffixList] también se visualizan como dominios genéricos de nivel superior.  Para cargar un recurso desde estos dominios, el subdominio debe mostrarse explícitamente.  Por ejemplo, `https://*.cloudfront.net` no es válido, pero `https://XXXX.cloudfront.net` y `https://*.XXXX.cloudfront.net` puede ser allowlisted.  
+Actualmente, los desarrolladores pueden permitir orígenes de lista con los siguientes esquemas: `blob` , `filesystem` , y `https` `extension` .  La parte host del origen debe especificarse explícitamente para los `https` esquemas `extension` y.  Caracteres comodín genéricos como https:, y no están permitidos; se permiten caracteres `https://*` `https://*.com` comodín de subdominio `https://*.example.com` como.  Los dominios de la [lista Sufijo público][PublicSuffixList] también se ven como dominios genéricos de nivel superior.  Para cargar un recurso desde estos dominios, el subdominio debe aparecer explícitamente.  Por ejemplo, `https://*.cloudfront.net` no es válido, pero `https://XXXX.cloudfront.net` puede `https://*.XXXX.cloudfront.net` ser `allowlisted` .  
 
-Por facilidad de desarrollo, los recursos cargados por HTTP desde los servidores en el equipo local pueden allowlisted.  Puede lista denegados los orígenes de scripts y objetos en cualquier puerto de `http://127.0.0.1` o `http://localhost` .  
+Para facilitar el desarrollo, los recursos cargados a través de HTTP desde los servidores de la máquina local pueden ser `allowlisted` .  Puede permitir el script de lista y los orígenes de objetos en cualquier puerto de cualquiera `http://127.0.0.1` o `http://localhost` .  
 
 > [!NOTE]
-> La restricción de los recursos cargados por HTTP solo se aplica a los recursos que se ejecutan directamente.  Sigue siendo gratis, por ejemplo, hacer conexiones de XMLHTTPRequest a cualquier origen que desee; la directiva predeterminada no se restringe `connect-src` de ninguna manera a las demás directivas de CSP ni ninguna de ellas.  
+> La restricción de los recursos cargados a través de HTTP solo se aplica a los recursos que se ejecutan directamente.  Sigue siendo libre, por ejemplo, para realizar conexiones a cualquier origen que quiera; la directiva predeterminada no restringe ni ninguna de las otras directivas `XMLHTTPRequest` CSP de ninguna `connect-src` manera.  
 
-Una definición de directiva relajada que permite que los recursos de script se carguen desde example.com a través de HTTPS puede tener el siguiente aspecto:  
+Una definición de directiva relajada que permite cargar recursos de script desde `example.com` https puede tener el siguiente aspecto:  
 
 ```javascript
 "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
 ```  
 
 > [!NOTE]
-> Ambos `script-src` y `object-src` los define la Directiva.  Microsoft Edge no acepta una directiva que no limite cada uno de estos valores a \ (por lo menos \) ' `self` '.  
+> Ambos `script-src` y `object-src` están definidos por la directiva.  Microsoft Edge no acepta una directiva que no limite cada uno de estos valores a \(al menos\) ' `self` '.  
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->  
 
 **JavaScript evaluado**  
 
-La Directiva en relación con las `eval()` funciones relacionadas como `setTimeout(String)` , `setInterval(String)` y que se pueden `new Function(String)` relajar agregando `unsafe-eval` a la Directiva:  
+La directiva y las funciones relacionadas como , y pueden ser `eval()` `setTimeout(String)` `setInterval(String)` `new Function(String)` relajadas agregando `unsafe-eval` a la directiva:  
 
 ```javascript
 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 ```  
 
-Sin embargo, le recomendamos especialmente que lo haga.  Estas funciones son vectores de ataque XSS.  
+Sin embargo, debe evitar las directivas de relajación.  Las funciones son vectores de ataque XSS notorios.  
 
-## Ajustar la directiva predeterminada  
+## <a name="tightening-the-default-policy"></a>Ajustar la directiva predeterminada  
 
-Por supuesto, puede ajustar esta directiva a cualquier medida que su extensión permita para aumentar la seguridad a costa de comodidad.  Para especificar que la extensión solo puede cargar recursos de cualquier tipo \ (imágenes, etc.) del paquete de extensión asociado, por ejemplo, una directiva de `default-src 'self'` puede ser adecuada.  
+Por supuesto, puede ajustar esta directiva en la medida en que la extensión lo permita para aumentar la seguridad a expensas de la comodidad.  Para especificar que la extensión solo puede cargar recursos de cualquier tipo \(imágenes, y así sucesivamente\) del paquete de extensión asociado, por ejemplo, una directiva de puede `default-src 'self'` ser adecuada.  
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->  
 
-## Scripts de contenido  
+## <a name="content-scripts"></a>Scripts de contenido  
 
-La Directiva que se está discutiendo se aplica a las páginas de fondo y a las páginas de evento de la extensión.  La forma en que los scripts de contenido se aplican a los scripts de contenido es más complicado.  
+La directiva que se está analizando se aplica a las páginas en segundo plano y a las páginas de eventos de la extensión.  El modo en que los scripts de contenido se aplican a los scripts de contenido de la extensión es más complicado.  
 
-Los scripts de contenido generalmente no están sujetos al CSP de la extensión.  Dado que los scripts de contenido no son HTML, la principal repercusión de esto es que pueden usarse `eval` incluso si el CSP de la extensión no especifica `unsafe-eval` , aunque no se recomienda.  Además, el CSP de la página no se aplica a los scripts de contenido.  Más complicadas son las `<script>` etiquetas que los scripts de contenido crean y se colocan en el Dom de la página en la que se están ejecutando.  Se hace referencia a estos como scripts inyectados en DOM hacia adelante.  
+Por lo general, los scripts de contenido no están sujetos al CSP de la extensión.  Dado que los scripts de contenido no son HTML, el impacto principal de esto es que pueden usar incluso si el CSP de la extensión no especifica , aunque esto `eval` `unsafe-eval` no se recomienda.  Además, el CSP de la página no se aplica a los scripts de contenido.  Más complicadas son las etiquetas que los scripts de contenido crean `<script>` y ponen en el DOM de la página en la que se ejecutan.  A estos se les hace referencia como scripts inyectados por DOM en el futuro.  
 
-DOM inyectado los scripts que se ejecutan inmediatamente después de la inserción en la página se ejecuta como cabría esperar.  Imagínese un script de contenido con el código siguiente como un ejemplo simple:  
+Los scripts inyectados por DOM que se ejecutan inmediatamente después de la inyección en la página se ejecutan como puede esperar.  Imagine un script de contenido con el siguiente código como un ejemplo sencillo:  
 
 ```javascript
 document.write("<script>alert(1);</script>");
  ```  
 
-Esta secuencia de comandos de contenido provoca una `alert` inmediata `document.write()` .  Ten en cuenta que esto se ejecuta independientemente de la Directiva que una página puede especificar.
-Sin embargo, el comportamiento es más complicado tanto dentro de la secuencia de comandos inyectada de DOM como en cualquier secuencia de comandos que no se ejecuta inmediatamente después de la inserción.  Suponga que su extensión se está ejecutando en una página que proporciona un CSP asociado que especifica `script-src 'self'` .  Ahora Imagine que el script de contenido ejecuta el siguiente código:  
+Este script de contenido provoca `alert` una inmediatamente después de `document.write()` .  Tenga en cuenta que esto se ejecuta independientemente de la directiva que pueda especificar una página.
+Sin embargo, el comportamiento se vuelve más complicado tanto dentro de ese script inyectado por DOM como para cualquier script que no se ejecute inmediatamente después de la inyección.  Imagine que la extensión se ejecuta en una página que proporciona un CSP asociado que especifica `script-src 'self'` .  Ahora imagine que el script de contenido ejecuta el siguiente código:  
 
 ```javascript
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```  
 
-Si un usuario hace clic en el botón, el `onclick` script no se ejecuta.  Esto se debe a que el script no se ejecutó inmediatamente y el código no se interpreta hasta que el evento click no se considera parte del script de contenido, por lo que el CSP de la página \ (no la extensión \) restringe el comportamiento.  Y como ese CSP no lo especifica `unsafe-inline` , el controlador de eventos inline se bloquea.  
-La manera correcta de implementar el comportamiento deseado en este caso puede ser agregar el `onclick` controlador como una función de la secuencia de comandos de contenido de la siguiente manera:  
+Si un usuario elige ese botón, el `onclick` script no se ejecuta.  Esto se debe a que el script no se ha ejecutado inmediatamente y el código no se interpreta hasta que el evento se produce no se considera parte del script de contenido, por lo que el CSP de la página \(no de extension\) restringe el `click` comportamiento.  Y como ese CSP no especifica , se bloquea el controlador de `unsafe-inline` eventos en línea.  
+La forma correcta de implementar el comportamiento deseado en este caso puede ser agregar el controlador como una función del script de contenido de la `onclick` siguiente manera:  
 
 ```javascript
 document.write("<button id='mybutton'>click me</button>'");
@@ -264,7 +264,7 @@ button.onclick = function() {
 };
 ```  
 
-Otro problema similar se produce si el script de contenido ejecuta lo siguiente:  
+Se produce otro problema similar si el script de contenido ejecuta lo siguiente:  
 
 ```javascript
 var script = document.createElement('script');
@@ -272,7 +272,7 @@ script.innerHTML = 'alert(1);'
 document.getElementById('body').appendChild(script);
 ```  
 
-En este caso, se ejecutará la secuencia de comandos y aparecerá la alerta.  Sin embargo, tomemos este caso:  
+En este caso, se ejecuta el script y se muestra la alerta.  Sin embargo, tome este caso:  
 
 ```javascript
 var script = document.createElement('script');
@@ -280,22 +280,22 @@ script.innerHTML = 'eval("alert(1);")';
 =document.getElementById('body').appendChild(script);
 ```  
 
-Mientras se ejecuta el script inicial, la llamada a `eval` está bloqueada.  Es decir, mientras se permite el tiempo de ejecución de los scripts iniciales, el comportamiento dentro del script se regula por el CSP de la página.  
-Por lo tanto, según el modo en que se escriben las secuencias de comandos inyectadas de DOM en la extensión, los cambios en el CSP de la página pueden afectar al comportamiento de la extensión.  Dado que los scripts de contenido no se ven afectados por el CSP de la página, esta es una excelente razón para poner el mayor comportamiento posible de la extensión en el script de contenido en lugar de las secuencias de comandos inyectadas en DOM.  
+Mientras se ejecuta el script inicial, se bloquea `eval` la llamada a.  Es decir, mientras se permite el tiempo de ejecución del script inicial, el comportamiento dentro del script está regulado por el CSP de la página.  
+Por lo tanto, en función de cómo escriba los scripts inyectados de DOM en la extensión, los cambios en el CSP de la página pueden afectar al comportamiento de la extensión.  Dado que los scripts de contenido no se ven afectados por el CSP de la página, este es un gran motivo para colocar el mayor comportamiento posible de la extensión en el script de contenido en lugar de scripts inyectados por DOM.  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "Introducción a la Directiva de seguridad de contenido: Rock HTML5"  
+[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "Una introducción a la directiva de seguridad de contenido | Rocas de HTML5"  
 [PublicSuffixList]: https://publicsuffix.org/list "VER LA LISTA DE SUFIJOS PÚBLICOS"  
-[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Uso de hash para \ <scripts \ > elementos-nivel 2 de directiva de seguridad de contenido"  
-[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Nivel 3 de directiva de seguridad de contenido"  
-[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Ataque de hombre en el medio: Wikipedia"  
+[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Uso de hash para elementos \<script\>: nivel 2 de directiva de seguridad de contenido | W3C"  
+[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Directiva de seguridad de contenido nivel 3 | W3C"  
+[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Ataque man-in-the-middle | Wikipedia"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developer.chrome.com/extensions/contentSecurityPolicy).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí.](https://developer.chrome.com/extensions/contentSecurityPolicy)  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

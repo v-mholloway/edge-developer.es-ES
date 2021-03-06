@@ -1,18 +1,18 @@
 ---
-description: En esta sección se describen los términos comunes que se usan en el análisis de memoria y se aplica a una variedad de herramientas de generación de perfiles de memoria para diferentes idiomas.
-title: Terminología de la memoria
+description: En esta sección se describen los términos comunes usados en el análisis de memoria y se aplica a una variedad de herramientas de generación de perfiles de memoria para diferentes idiomas.
+title: Terminología de memoria
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3455b05cf19f3aa5a69de5571ab3a24d5654dfe4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1579374be29f0f419ded3bf88f5dea284f0bbb1a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992753"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397793"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,15 +28,15 @@ ms.locfileid: "10992753"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Terminología de la memoria  
+# <a name="memory-terminology"></a>Terminología de memoria  
 
-En esta sección se describen los términos comunes que se usan en el análisis de memoria y se aplica a una variedad de herramientas de generación de perfiles de memoria para diferentes idiomas.  
+En este artículo se describen los términos comunes usados en el análisis de memoria y se aplica a varias herramientas de generación de perfiles de memoria para diferentes idiomas.  
 
-Las cláusulas y nociones que se describen aquí hacen referencia al [Panel memoria][DevtoolsMemoryProblemsHeapSnapshots].  Si alguna vez ha trabajado con Java, .NET o algún otro analizador de memoria, es posible que se trata de un repaso.  
+Los términos y nociones que se describen aquí hacen referencia al [panel Memoria][DevtoolsMemoryProblemsHeapSnapshots].  Si alguna vez ha trabajado con el Java, .NET o algún otro perfilador de memoria, este artículo puede ser un actualizador.  
 
-## Tamaños de objeto  
+## <a name="object-sizes"></a>Tamaños de objeto  
 
-Piense en la memoria como en un gráfico con tipos primitivos \ (como números y cadenas \) y objetos \ (asociantes de matrices \).  Puede representarse visualmente como un gráfico con un número de puntos interconectados, como se muestra a continuación:  
+Piense en la memoria como un gráfico con tipos primitivos \(como números y cadenas\) y objetos \(matrices asociativas\).  Puede mostrarse como un gráfico con muchos puntos interconectados, como la siguiente figura.  
 
 :::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Representación visual de la memoria" lightbox="../media/memory-problems-thinkgraph.msft.png":::
    Representación visual de la memoria  
@@ -45,148 +45,148 @@ Piense en la memoria como en un gráfico con tipos primitivos \ (como números y
 Un objeto puede contener memoria de dos maneras:  
 
 *   Directamente por el objeto.  
-*   De forma implícita, reteniendo referencias a otros objetos y, por lo tanto, impidiendo que un recolector de elementos no utilizados \ (**GC** por abreviado \) lo elimine automáticamente.  
+*   Implícitamente manteniendo referencias a otros objetos y, por lo tanto, evitando que un recolector de elementos no utilizados desechar automáticamente esos objetos.  
 
-Al trabajar con el panel [memoria][DevtoolsMemoryProblemsHeapSnapshots] en DevTools \ (una herramienta para investigar los problemas de memoria que se encuentran en **memoria**\), es posible que vea algunas columnas de información diferentes.  Dos que destaquen son **el tamaño superficial** y **el tamaño guardado**, pero ¿qué representa?  
+Al trabajar con el [panel][DevtoolsMemoryProblemsHeapSnapshots] Memoria en DevTools \(una herramienta para investigar problemas de memoria encontrados en **Memoria**\), puede encontrarse mirando algunas columnas diferentes de información.  Dos que destacan son **Shallow Size y** **Retained Size,** pero ¿qué representan estos?  
 
-:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Tamaño Shallow y retenido" lightbox="../media/memory-problems-shallow-retained.msft.png":::
-   Tamaño Shallow y retenido  
+:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Tamaño superficial y retenido" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+   Tamaño superficial y retenido  
 :::image-end:::  
 
-### Tamaño superficial  
+### <a name="shallow-size"></a>Tamaño superficial  
 
-Este es el tamaño de la memoria que posee el objeto.  
+Este es el tamaño de la memoria que contiene el objeto.  
 
-Los objetos típicos de JavaScript tienen memoria reservada para su descripción y para almacenar valores inmediatos.  Normalmente, solo las matrices y cadenas pueden tener un tamaño superficial significativo.  Sin embargo, las cadenas y las matrices externas suelen tener su almacenamiento principal en la memoria del representador y solo exponen un pequeño objeto contenedor en el montón de JavaScript.  
+Los objetos JavaScript típicos tienen algo de memoria reservada para su descripción y para almacenar valores inmediatos.  Normalmente, solo las matrices y las cadenas pueden tener un tamaño superficial significativo.  Sin embargo, las cadenas y matrices externas a menudo tienen su almacenamiento principal en la memoria del representador, lo que expone solo un pequeño objeto contenedor en el montón de JavaScript.  
 
-La memoria del representador es toda la memoria del proceso donde se representa una página inspeccionada: memoria nativa + JS memoria del montón de la memoria del montón Page + JS de todos los trabajadores dedicados iniciados por la página.  Sin embargo, incluso un objeto pequeño puede contener una gran cantidad de memoria indirectamente, impidiendo que otros objetos sean eliminados por el proceso de recolección automática de elementos no utilizados.  
+La memoria del representador es toda la memoria del proceso en el que se representa una página inspeccionada: memoria nativa + memoria de montón JS de la página + memoria de montón JS de todos los trabajadores dedicados iniciados por la página.  Sin embargo, incluso un objeto pequeño puede contener una gran cantidad de memoria indirectamente, al impedir que el proceso de recolección automática de elementos no utilizados desechar otros objetos.  
 
-### Tamaño retenido  
+### <a name="retained-size"></a>Tamaño retenido  
 
-Este es el tamaño de memoria que se libera una vez que se elimina el objeto junto con los objetos dependientes que se han inaccesible desde las **raíces del recolector de elementos no utilizados** \ (raíces de GC \).  
+Este es el tamaño de la memoria que se libera una vez que el objeto se elimina junto con los objetos dependientes que se han hecho inaccesibles desde las raíces del recolector **de elementos no utilizados.**  
 
-Las **raíces del recolector de elementos no utilizados** \ (raíces de GC \) se componen de **identificadores** que se crean \ (local o global \) cuando se hace referencia desde código nativo a un objeto de JavaScript fuera de V8.  Puede encontrar todos los identificadores de ese tipo dentro de una instantánea de montones, en **raíces de GC**  >  **Handle scope** , **GC roots**  >  **identificadores globales**de ámbito y raíz del GC.  La descripción de los identificadores de esta documentación sin profundizar en los detalles de la implementación del explorador puede resultar confusa.  Tanto las raíces del recopilador de elementos no usados (GC) como los identificadores no son algo de lo que necesita preocuparse.  
+**Las** raíces del recolector de elementos no utilizados están hechas de controladores que se crean \(local o global\) al hacer una referencia desde código nativo a un objeto JavaScript fuera de V8. ****  Todos estos controladores pueden encontrarse en una instantánea de montón en el ámbito de control de raíces **de GC**y en las raíces  >  **** de **GC**  >  **Controladores globales.**  Describir los controladores de esta documentación sin entrar en detalles de la implementación del explorador puede resultar confuso.  Tanto las raíces del recolector de elementos no utilizados como los controladores no son algo de lo que tenga que preocuparse.  
 
-Hay una gran cantidad de raíces de GC internas, la mayoría de las cuales no son interesantes para los usuarios.  Desde el punto de vista de las aplicaciones existen siguientes tipos de raíces.  
+Hay muchas raíces internas del recolector de elementos no utilizados, la mayoría de las cuales no son interesantes para los usuarios.  Desde el punto de vista de las aplicaciones, hay siguientes tipos de raíces.  
 
-*   Objeto global Window \ (en cada iframe \).  Hay un campo Distance en las instantáneas de montones, que es el número de referencias de propiedad en la ruta de retención más corta de la ventana.  
-*   Árbol DOM de documento compuesto de todos los nodos DOM nativos a los que se puede atravesar el documento.  Es posible que no todos los nodos tengan contenedores JS, pero si un nodo tiene un contenedor, estará activo mientras el documento está activo.  
-*   A veces, el contexto del depurador puede conservar los objetos en el panel **orígenes** y la **consola** \ (por ejemplo, después de la evaluación de consola \).  Crear instantáneas de montones con un panel de **consola** desactivado y sin puntos de interrupción activos en el depurador del panel **orígenes** .
+*   Objeto global window \(en cada iframe\).  Hay un campo de distancia en las instantáneas de montón, que es el número de referencias a propiedades en la ruta de retención más corta de la ventana.  
+*   Árbol DOM de documento que consta de todos los nodos DOM nativos a los que se puede acceder recorriendo el documento.  No todos los nodos pueden tener contenedores JS, pero si un nodo tiene un contenedor, está activo mientras el documento está activo.  
+*   A veces, el contexto del depurador puede retener objetos en el panel **Orígenes** y la consola **\(por** ejemplo, después de la evaluación de la consola\).  Cree instantáneas de montón con un panel **de** consola desactivado y sin puntos de interrupción activos en el depurador en **el** panel Orígenes.
 
 >[!TIP]
-> Para borrar el panel de la **consola** , ejecute `clear()` y desactive los puntos de interrupción en el panel **fuentes** antes de tomar una instantánea del montón en el [Panel memoria][DevtoolsMemoryProblemsHeapSnapshots].
+> Desactive el panel **Consola** ejecutando y desactivando puntos de interrupción en el panel Orígenes antes de tomar una instantánea `clear()` de montón en el panel [Memoria][DevtoolsMemoryProblemsHeapSnapshots]. ****
 
-El gráfico de memoria se inicia con una raíz, que puede ser el `window` objeto del explorador o el `Global` objeto de un módulo Node.js.  No controla cómo se recolecta este objeto raíz (M.c. d).  
+El gráfico de memoria comienza con una raíz, que puede ser el objeto del explorador o el `window` objeto de un Node.js `Global` módulo.  No se controla cómo se recopila este objeto raíz.  
 
-:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="No puede controlar cómo se recolectan los elementos no utilizados en el objeto raíz." lightbox="../media/memory-problems-dontcontrol.msft.png":::
-   No puede controlar cómo se recolectan los elementos no utilizados en el objeto raíz.  
+:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="No puede controlar cómo se recopila el objeto raíz." lightbox="../media/memory-problems-dontcontrol.msft.png":::
+   No puede controlar cómo se recopila el objeto raíz.  
 :::image-end:::  
 
-Lo que no sea accesible desde la raíz obtiene el recolector de elementos no usados \ (M.c. d \).  
+Todo lo que no se puede obtener desde la raíz obtiene la recolección de elementos no utilizados.  
 
 > [!NOTE]
-> Las columnas [tamaño superficial](#shallow-size) y [tamaño retenido](#retained-size) representan datos en bytes.  
+> Las columnas [Tamaño superficial y](#shallow-size) Tamaño [retenido](#retained-size) representan datos en bytes.  
 
-## Árbol de objetos reteniendo  
+## <a name="objects-retaining-tree"></a>Árbol de retención de objetos  
 
-El montón es una red de objetos interconectados.  En el mundo matemático, esta estructura se denomina gráfico **o gráfico de memoria** .  Un gráfico se crea a partir de los **nodos** conectados por medio de **bordes**, de los cuales se proporcionan etiquetas.  
+El montón es una red de objetos interconectados.  En el mundo matemático, esta estructura se denomina gráfico **o** gráfico de memoria.  Un gráfico se construye a partir de **nodos conectados** mediante **bordes,** a los que se les dan etiquetas.  
 
-*   Los **nodos** \ (u **objetos**\) se etiquetan con el nombre de la función **constructora** que se usó para crearlos.  
-*   Los **bordes** se etiquetan con los nombres de **las propiedades**.  
+*   **Los** nodos \(u **objetos**\) se etiquetan con el nombre de la **función de constructor** que se usó para crearlos.  
+*   **Los** bordes se etiquetan con los nombres de **las propiedades**.  
 
-Obtenga información sobre [Cómo grabar un perfil con el generador de perfiles del montón][DevtoolsMemoryProblemsHeapSnapshots].  En la siguiente ilustración, algunas de las cosas llamativas que puede ver en el registro de instantáneas de montones en el [Panel memoria][DevtoolsMemoryProblemsHeapSnapshots] incluyen distancia: la distancia desde la raíz del recolector de elementos no utilizados \ (GC \).  Si casi todos los objetos del mismo tipo se encuentran a la misma distancia y algunos están a una mayor distancia, es algo que vale la pena investigar.  
+Obtenga [información sobre cómo grabar un perfil mediante el Profiler de montón][DevtoolsMemoryProblemsHeapSnapshots].  En la siguiente figura, algunos de los aspectos [][DevtoolsMemoryProblemsHeapSnapshots] notables de la grabación de instantáneas de montón en la herramienta Memoria incluyen distancia: la distancia desde la raíz del recolector de elementos no utilizados.  Si casi todos los objetos del mismo tipo están a la misma distancia y algunos están a una distancia mayor, eso es algo que vale la pena investigar.  
 
 :::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distancia desde la raíz" lightbox="../media/memory-problems-root.msft.png":::
    Distancia desde la raíz  
 :::image-end:::  
 
-## Dominators  
+## <a name="dominators"></a>Dominadores  
 
-Los objetos Dominator se componen de una estructura de árbol, ya que cada objeto tiene exactamente un Dominator.  Un Dominator de un objeto puede carecer de referencias directas a un objeto que domina; es decir, el árbol de Dominator no es un árbol de expansión del gráfico.  
+Los objetos dominantes se componen de una estructura de árbol porque cada objeto tiene exactamente un dominante.  Un dominante de un objeto puede carecer de referencias directas a un objeto que domina; es decir, el árbol del dominante no es un árbol de expansión del gráfico.  
 
-En la siguiente ilustración, la siguiente instrucción es verdadera.  
+En la siguiente figura, se cumple la siguiente instrucción.  
 
 *   El nodo 1 domina el nodo 2  
-*   El nodo 2 predomina los nodos 3, 4 y 6  
-*   Nodo 3 domina el nodo 5  
+*   El nodo 2 domina los nodos 3, 4 y 6  
+*   El nodo 3 domina el nodo 5  
 *   El nodo 5 domina el nodo 8  
 *   El nodo 6 domina el nodo 7  
 
-:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Estructura de árbol de Dominator" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
-   Estructura de árbol de Dominator  
+:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Estructura de árbol de dominio" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+   Estructura de árbol de dominio  
 :::image-end:::  
 
-En la siguiente ilustración, node `#3` es el Dominator de `#10` , pero `#7` también existe en cada path simple desde el recolector de elementos no utilizados \ (GC \) a `#10` .  Por lo tanto, un objeto B es un Dominator de un objeto A si B existe en cada ruta simple de la raíz al objeto a.  
+En la siguiente figura, node es el dominante de , pero también existe en todas las rutas `#3` `#10` `#7` sencillas de recolector de elementos no utilizados a `#10` .  Por lo tanto, un objeto B es un dominante de un objeto A si B existe en todas las rutas de acceso sencillas desde la raíz al objeto A.  
 
-:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Ilustración Dominator animada" lightbox="../media/memory-problems-dominators.msft.gif":::
-   Ilustración Dominator animada  
+:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Ilustración de un domador animado" lightbox="../media/memory-problems-dominators.msft.gif":::
+   Ilustración de un domador animado  
 :::image-end:::  
 
-## Características específicas de V8  
+## <a name="v8-specifics"></a>Detalles de V8  
 
-Al generar perfiles de memoria, resulta útil comprender por qué las instantáneas de montones se ven de una determinada manera.  En esta sección se describen algunos temas relacionados con la memoria que corresponden específicamente a la **máquina virtual de JavaScript V8** \ (V8 VM o VM \).  
+Al generar perfiles de memoria, resulta útil comprender por qué las instantáneas de montón tienen un aspecto determinado.  En esta sección se describen algunos temas relacionados con la memoria que corresponden específicamente a la máquina **virtual V8 JavaScript** \(V8 VM o VM\).  
 
-### Representación de objeto de JavaScript  
+### <a name="javascript-object-representation"></a>Representación de objetos de JavaScript  
 
 Hay tres tipos primitivos:  
 
-*   Números \ (por ejemplo `3.14159...` \)  
-*   Booleanos \ ( `true` o `false` \)  
-*   Cadenas \ (por ejemplo `"Werner Heisenberg"` \)  
+*   Números \(por ejemplo `3.14159...` \)  
+*   Booleans \( `true` o `false` \)  
+*   Cadenas \(por ejemplo `"Werner Heisenberg"` \)  
 
-Los tipos primitivos no pueden hacer referencia a otros valores y siempre son hojas o nodos de terminación.  
+Los primitivos no pueden hacer referencia a otros valores y siempre son hojas o nodos de finalización.  
 
-**Los números** se pueden almacenar como:  
+**Los** números se pueden almacenar como:  
 
-*   valores enteros de 31 bits inmediatos denominados **pequeños enteros** \ (**SMI**s \) o  
-*   objetos Heap, denominados **números de montones**. Los números de montones se usan para almacenar valores que no se ajustan al formulario de SMI, como valores **Double**o cuando es necesario aplicar la **conversión boxing**a un valor, como establecer propiedades en él.  
+*   valores enteros inmediatos de 31 bits **denominados enteros pequeños** \(**SMI**s\) o  
+*   objetos de montón, denominados números **de montón**. Los números de montón se usan para almacenar valores que no caben en el formulario SMI, como **dobles,** o cuando es necesario boxe un **valor,** como establecer propiedades en él.  
 
-Las **cadenas** pueden almacenarse en:  
+**Las cadenas** pueden almacenarse en:  
 
-*   el **montón de VM**o
-*   externamente en la **memoria del representador**.  Se crea un **objeto contenedor** y se usa para acceder a un almacenamiento externo donde, por ejemplo, se almacenan los orígenes de script y otro contenido que se recibe de la web, en lugar de copiarse en el montón de la VM.
+*   el **montón de vm**o
+*   externamente en la **memoria del representador**.  Se **crea un** objeto contenedor y se usa para obtener acceso al almacenamiento externo donde, por ejemplo, se almacenan orígenes de scripts y otro contenido que se recibe de la Web, en lugar de copiarse en el montón de vm.
 
-La memoria de los nuevos objetos de JavaScript se asigna desde un montón de JavaScript dedicado \ (o **montón VM**\).  Estos objetos se administran mediante el recolector de elementos no utilizados en V8 y, por lo tanto, permanecen activos siempre que haya al menos una referencia fuerte.  
+La memoria de los nuevos objetos JavaScript se asigna desde un montón de JavaScript dedicado \(o **montón de vm**\).  El recolector de elementos no utilizados administra estos objetos en V8 y, por lo tanto, permanecen vivos siempre que haya al menos una referencia segura a ellos.  
 
-Todo lo que no esté en el montón de JavaScript se denomina **objeto nativo**.  Los objetos nativos, a diferencia de los objetos Heap, no se administran en el recolector de elementos no utilizados de la V8 durante su período de duración, y solo se puede acceder a ellos desde JavaScript mediante el objeto wrapper de JavaScript.  
+Cualquier cosa que no esté en el montón de JavaScript se denomina **objeto nativo**.  El recolector de elementos no utilizados V8 no administra los objetos nativos, a diferencia de los objetos montón, y solo se puede obtener acceso a ellos desde JavaScript mediante el objeto contenedor de JavaScript.  
 
-La **cadena cons** es un objeto que consta de pares de cadenas almacenadas y, a continuación, se unen, y es un resultado de una concatenación.  La Unión del contenido de la **cadena cons** solo se produce cuando es necesario. Un ejemplo sería cuando es necesario construir una subcadena de una cadena combinada.
+**La cadena Cons** es un objeto que consta de pares de cadenas almacenadas y luego unidas, y es el resultado de la concatenación.  La unión del contenido **de la cadena cons** se produce solo según sea necesario.  Por ejemplo, cuando es necesario construir una subcadena de una cadena unida.
 
-Por ejemplo, si concatena `a` y `b` , obtiene una cadena `(a, b)` que representa el resultado de la concatenación.  Si más adelante se ha concatenado `d` con ese resultado, obtendrá otra **cadena de cons**: `((a, b, d)` .  
+Por ejemplo, si concatena y `a` , obtiene una cadena que representa el resultado de la `b` `(a, b)` concatenación.  Si más tarde concatena con `d` ese resultado, obtiene otra **cadena de cons**: `((a, b, d)` .  
 
-**Matriz** es un objeto con teclas numéricas. Las **matrices** se usan ampliamente en la máquina virtual V8 para almacenar grandes cantidades de datos. Se realiza una copia de seguridad de los conjuntos de pares clave-valor, como diccionarios, por **matriz**.  
+**Array** es un objeto con claves numéricas. **Las matrices** se usan ampliamente en la vm V8 para almacenar grandes cantidades de datos. Las matrices copian una copia de seguridad de los conjuntos de pares clave-valor, como **diccionarios.**  
 
-Un objeto de JavaScript típico se almacena como uno de los dos tipos de **matriz** :  
+Un objeto JavaScript típico se almacena como solo uno de los dos tipos **de matriz:**  
 
 *   propiedades con nombre y  
 *   elementos numéricos  
 
-Cuando hay un pequeño número de propiedades, las propiedades se almacenan internamente en el objeto de JavaScript.  
+Cuando hay un número reducido de propiedades, las propiedades se almacenan internamente en el objeto JavaScript.  
 
-**Map** es un objeto que describe el tipo de objeto que es y el diseño. Por ejemplo, los mapas se usan para describir jerarquías de objetos implícitas para un [acceso rápido a la propiedad][V8FastProperties].  
+**Map** es un objeto que describe tanto el tipo de objeto que es como el diseño. Por ejemplo, los mapas se usan para describir jerarquías de objetos implícitos para [el acceso rápido a propiedades][V8FastProperties].  
 
-### Grupos de objetos  
+### <a name="object-groups"></a>Grupos de objetos  
 
-Cada grupo de **objetos nativos** está compuesto de objetos que contienen referencias mutuas entre sí.  Considere, por ejemplo, un subárbol DOM en el que cada nodo tiene un vínculo al elemento primario relativo y vincula al siguiente elemento secundario y al elemento relacionado siguiente, por lo tanto, formando un gráfico conectado.  
+Cada **grupo de objetos** nativos está hecho de objetos que tienen referencias mutuas entre sí.  Tenga en cuenta, por ejemplo, un subárbol DOM donde cada nodo tiene un vínculo al elemento primario relativo y vínculos al siguiente elemento secundario y al siguiente elemento del mismo nivel, formando así un gráfico conectado.  
 
 > [!NOTE]
-> Los objetos nativos no se representan en el montón de JavaScript.  La falta de representación es el motivo por el que los objetos nativos tienen el tamaño cero. En su lugar, se crean objetos contenedores.  
+> Los objetos nativos no se representan en el montón de JavaScript.  La falta de representación es la razón por la que los objetos nativos tienen un tamaño cero. En su lugar, se crean objetos contenedor.  
 
-Cada objeto contenedor mantiene una referencia al objeto nativo correspondiente, para redirigir comandos a él.  A su vez, un grupo de objetos contiene objetos contenedores.  Sin embargo, esto no crea un ciclo que no se puede cobrar porque el recolector de elementos no usados \ (GC \) es lo suficientemente inteligente para liberar los grupos de objetos cuyos contenedores ya no se hacen referencia. Pero olvidar liberar un único contenedor alberga todo el grupo y los contenedores asociados.  
+Cada objeto contenedor contiene una referencia al objeto nativo correspondiente, para redirigir comandos a él.  A su vez, un grupo de objetos contiene objetos contenedor.  Sin embargo, esto no crea un ciclo irreconectable, ya que recolector de elementos no utilizados es lo suficientemente inteligente como para liberar grupos de objetos cuyos contenedores ya no se hacen referencia.  Pero el olvido de liberar un solo contenedor contiene todo el grupo y los contenedores asociados.  
 
-## Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "Cómo grabar instantáneas de montones | Microsoft docs"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "Cómo grabar instantáneas de montón | Microsoft Docs"  
 
-[V8FastProperties]: https://v8.dev/blog/fast-properties "Propiedades rápidas de V8 | V8"  
+[V8FastProperties]: https://v8.dev/blog/fast-properties "Propiedades rápidas en V8 | V8"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) y está creada por [Meggin Kearney][MegginKearney] \ (editor técnico \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) y es creado por [Meggin Kearney][MegginKearney] \(Technical Writer\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

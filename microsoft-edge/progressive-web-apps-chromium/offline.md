@@ -1,29 +1,29 @@
 ---
-title: Soporte técnico sin conexión y conectividad de red en aplicaciones web progresivas
-description: Aprenda a usar las tecnologías de soporte para crear experiencias resistentes a fin de satisfacer condiciones de red diferentes.
+title: Compatibilidad con conectividad de red y sin conexión en aplicaciones web progresivas
+description: Aprenda a usar tecnologías de soporte técnico para crear experiencias resistentes para satisfacer diferentes condiciones de red.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: aplicaciones web progresivas, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 58ffb8e9ae596dec4b99143a3061995a6598ce44
-ms.sourcegitcommit: d9cc829deb709b0866f6b43a5f4733682ddae5ca
+ms.openlocfilehash: 6b6031aac10161c16195c83496f8d8b5b842628e
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "10659310"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398080"
 ---
-# Soporte técnico sin conexión y conectividad de red en aplicaciones web progresivas
+# <a name="offline-and-network-connectivity-support-in-progressive-web-apps"></a>Compatibilidad con conectividad de red y sin conexión en aplicaciones web progresivas
 
-A lo largo de muchos años, las organizaciones se resisten por invertir intensamente en software basado en el software nativo porque las aplicaciones web dependen de conexiones de red estables. Hoy en día, la plataforma web ahora ofrece sólidas opciones que permiten a los usuarios seguir funcionando, incluso si la conexión de red se vuelve inestable o se desconecta por completo.
+Durante muchos años, las organizaciones eran reacias a invertir mucho en software basado en web sobre software nativo porque las aplicaciones web dependían de conexiones de red estables. Hoy en día, la plataforma web ofrece ahora opciones sólidas que permiten a los usuarios seguir trabajando, incluso si la conexión de red se vuelve inestable o se desconecta completamente.
 
-## Usar el almacenamiento en caché para mejorar el rendimiento de PWAs
+## <a name="use-the-caching-to-improve-performance-of-pwas"></a>Usar el almacenamiento en caché para mejorar el rendimiento de los PWA
 
-Con la introducción de los [trabajadores del servicio][MDNServiceWorker], la plataforma web agregó la `Cache` API para proporcionar acceso a los recursos administrados almacenados en caché. Esta API basada en promesas permite a los desarrolladores almacenar y recuperar muchos recursos Web (HTML, CSS, JavaScript, imágenes, JSON, etc.). Normalmente, la API de caché se usa dentro del contexto de un trabajo de servicio, pero también está disponible en el subproceso principal del `window` objeto.
+Con la introducción de [Los trabajadores de servicio,][MDNServiceWorker]la plataforma web agregó la API para proporcionar `Cache` acceso a los recursos almacenados en caché administrados. Esta API basada en Promesa permite a los desarrolladores almacenar y recuperar muchos recursos web( HTML, CSS, JavaScript, imágenes, JSON, entre otros). Normalmente, la API de caché se usa en el contexto de un trabajador de servicio, pero también está disponible en el subproceso principal del `window` objeto.
 
-Un uso común de la `Cache` API es la Precaché previa de recursos críticos cuando se instala un trabajador de servicio, tal y como se muestra en el siguiente fragmento de código.  
+Un uso común para la API es almacenar previamente en caché los recursos críticos cuando se instala un trabajador de servicio, como se muestra `Cache` en el siguiente fragmento de código.  
 
 ```javascript
 self.addEventListener( "install", function( event ){
@@ -41,7 +41,7 @@ self.addEventListener( "install", function( event ){
 });
 ```  
 
-Este código, que se ejecuta durante el evento de ciclo de vida del trabajador `install` de servicio, abre una memoria caché con `static-cache` el nombre y, después, cuando tiene un puntero a la caché, agrega cuatro recursos a la misma con el `addAll()` método.  A menudo, el enfoque se acopla con la recuperación de la caché durante un `fetch` evento.   
+Este código, que se ejecuta durante el evento del ciclo de vida del trabajador de servicio, abre una memoria caché denominada y, después, cuando tiene un puntero a la memoria caché, le agrega cuatro recursos mediante `install` `static-cache` el `addAll()` método.  A menudo, el enfoque se combina con la recuperación de caché durante un `fetch` evento   
 
 ```javascript
 self.addEventListener( "fetch", event => {
@@ -78,23 +78,23 @@ self.addEventListener( "fetch", event => {
 });
 ```  
 
-El fragmento de código se ejecuta dentro del trabajo de servicio siempre que el explorador realiza una `fetch` solicitud para este sitio. Dentro de ese evento, hay una instrucción condicional que se ejecuta si la solicitud es para un archivo HTML. El trabajo del servicio comprueba si el archivo ya existe en cualquier caché \ (usando el `match()` método \). Si la solicitud existe en la caché, se devuelve ese resultado almacenado en caché. Si no es así, se ejecuta una nueva `fetch` para ese recurso, una copia de la respuesta se almacena en caché para más tarde y se devuelve la respuesta. Si se `fetch` produce un error porque la red no está disponible, la página sin conexión se devuelve de la caché.
+El fragmento de código se ejecuta en el trabajador de servicio siempre que el explorador realiza una `fetch` solicitud para este sitio. Dentro de ese evento, hay una instrucción condicional que se ejecuta si la solicitud es para un archivo HTML. El trabajador de servicio comprueba si el archivo ya existe en cualquier caché \(usando el `match()` método\). Si la solicitud existe en la memoria caché, se devuelve el resultado almacenado en caché. Si no es así, se ejecuta una nueva para ese recurso, se almacena en caché una copia de la respuesta para más adelante y se `fetch` devuelve la respuesta. Si se `fetch` produce un error porque la red no está disponible, la página sin conexión se devuelve de la memoria caché.
 
-Esta introducción sencilla muestra cómo usar el almacenamiento en caché en la aplicación web progresiva (PWA). Cada PWA es diferente y puede usar estrategias de almacenamiento en caché diferentes. El código puede tener un aspecto diferente y puede usar diferentes estrategias de almacenamiento en caché para diferentes rutas dentro de la misma aplicación.
+Esta sencilla introducción muestra cómo usar el almacenamiento en caché en la aplicación web progresiva (PWA). Cada PWA es diferente y puede usar diferentes estrategias de almacenamiento en caché. El código puede tener un aspecto diferente y puede usar diferentes estrategias de almacenamiento en caché para distintas rutas dentro de la misma aplicación.
 
-## Usar IndexedDB en PWA para almacenar datos estructurados
+## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>Usar IndexedDB en su PWA para almacenar datos estructurados
 
-`IndexedDB` es una API para almacenar datos estructurados. Al igual que la `Cache` API, también es asíncrona, lo que significa que puedes usarla en el subproceso principal o en trabajadores de la web, como trabajadores de servicio. Use la `IndexedDB` API para almacenar una cantidad significativa de datos estructurados en el cliente o datos binarios, como objetos multimedia cifrados. Para obtener más información, consulte información [básica sobre el uso de IndexedDB][MDNIndexeddbApiUsing].
+`IndexedDB` es una API para almacenar datos estructurados. Al igual que la API, también es asincrónica, lo que significa que puede usarla en el subproceso principal o con trabajadores web como `Cache` trabajadores de servicio. Use la API para almacenar una cantidad significativa de datos estructurados en el cliente o datos `IndexedDB` binarios, como objetos multimedia cifrados. Para obtener más información, vaya a [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
 
-## Comprender las opciones de almacenamiento para PWAs
+## <a name="understand-storage-options-for-pwas"></a>Comprender las opciones de almacenamiento para las PWA
 
-En ocasiones, es posible que necesite almacenar pequeñas cantidades de datos para ofrecer una mejor experiencia sin conexión para los usuarios. En ese caso, es posible que la simplicidad del sistema de pares clave-valor del almacenamiento web se ajuste a sus necesidades.  
+A veces es posible que deba almacenar pequeñas cantidades de datos para proporcionar una mejor experiencia sin conexión para los usuarios. Si ese es el caso, es posible que encuentre la simplicidad del sistema de par clave-valor del almacenamiento web según sus necesidades.  
 
 > [!IMPORTANT]
-> El almacenamiento web es un proceso sincrónico y no está disponible para su uso dentro de subprocesos de trabajo como trabajadores de servicio. Un uso intensivo puede crear problemas de rendimiento para la aplicación. 
+> El almacenamiento web es un proceso sincrónico y no está disponible para su uso en subprocesos de trabajo como trabajadores de servicio. El uso intenso puede crear problemas de rendimiento para la aplicación. 
 
 
-Hay dos tipos de almacenamiento web: `localStorage` y `sessionStorage` . Cada uno se mantiene como un almacén de datos independiente aislado al dominio que lo creó. `sessionStorage` solo se conserva durante la duración de la sesión de exploración (por ejemplo, mientras el explorador está abierto, lo que incluye actualizar y restaurar). `localStorage` continúa hasta que el código, el usuario o el explorador quitan los datos (por ejemplo, cuando hay almacenamiento limitado disponible). En el siguiente fragmento de código se muestra cómo usar `localStorage` , que es similar a la forma en que `sessionStorage` se usa.
+Hay 2 tipos de almacenamiento web: `localStorage` y `sessionStorage` . Cada uno se mantiene como un almacén de datos independiente aislado del dominio que lo creó. `sessionStorage` solo persiste durante la sesión de exploración (por ejemplo, mientras el explorador está abierto, que incluye actualizaciones y restauraciones). `localStorage` persiste hasta que el código, el usuario o el explorador quitan los datos (por ejemplo, cuando hay un almacenamiento limitado disponible). El siguiente fragmento de código muestra cómo usar `localStorage` , que es similar a cómo se `sessionStorage` usa.
 
 ```javascript
 var data = {
@@ -104,9 +104,9 @@ var data = {
 localStorage.setItem( window.location, JSON.stringify(data) );
 ```  
 
-Este fragmento de código toma metadatos sobre la página actual y los almacena en un objeto de JavaScript. A continuación, almacena ese valor como JSON en `localStorage` el `setItem()` método y asigna una clave igual a la `window.location` dirección URL actual. Puede recuperar la información de `localStorage` uso del `getItem()` método. 
+Este fragmento de código captura metadatos sobre la página actual y los almacena en un objeto JavaScript. A continuación, almacena ese valor como JSON en el uso `localStorage` del método y asigna una clave igual a la dirección URL `setItem()` `window.location` actual. Puede recuperar la información del `localStorage` uso del `getItem()` método. 
 
-El siguiente fragmento de código muestra cómo usar el almacenamiento en caché con `localstorage` para enumerar páginas almacenadas en caché y extraer metadatos para realizar una tarea, como crear una lista de vínculos.
+El siguiente fragmento de código muestra cómo usar el almacenamiento en caché para enumerar páginas almacenadas en caché y extraer metadatos para realizar una tarea, como crear una `localstorage` lista de vínculos.
 
 ```javascript
 caches.open( "pages" )
@@ -130,19 +130,19 @@ function insertOfflineLink( request ) {
 }
 ```  
 
-El `insertOfflineLink()` método pasa la dirección URL de la solicitud en el `localStorage.getItem()` método para recuperar los metadatos almacenados. Los datos recuperados se comprueban para ver si existe, y si lo hace, se puede llevar a cabo una acción en los datos, como generar e insertar el marcado para mostrarlo.
+El `insertOfflineLink()` método pasa la dirección URL de la solicitud al método para recuperar los `localStorage.getItem()` metadatos almacenados. Los datos recuperados se comprueban para ver si existen y, si lo hace, se puede realizar una acción en los datos, como crear e insertar el marcado para mostrarlos.
 
-## Probar las conexiones de red en su PWA
+## <a name="test-for-network-connections-in-your-pwa"></a>Probar las conexiones de red en su PWA
 
-Además de almacenar información para su uso sin conexión, resulta útil saber cuándo está disponible una conexión de red para poder sincronizar los datos o informar a los usuarios de que el estado de la red ha cambiado. Use las siguientes opciones para comprobar la conectividad de red.
+Además de almacenar información para uso sin conexión, es útil saber cuándo hay una conexión de red disponible para sincronizar datos o informar a los usuarios de que el estado de la red ha cambiado. Use las siguientes opciones para probar la conectividad de red.
 
-### Navigator. onLine  
+### <a name="navigatoronline"></a>navigator.onLine  
 
-La `navigator.onLine` propiedad es un valor booleano que le permite conocer el estado actual de la red. Si el valor es `true` , el usuario está conectado, de lo contrario el usuario está desconectado.
+La `navigator.onLine` propiedad es un valor booleano que le permite conocer el estado actual de la red. Si el valor es , el usuario está en línea, de lo `true` contrario, el usuario está sin conexión.
 
-### Eventos en línea y sin conexión  
+### <a name="online-and-offline-events"></a>Eventos en línea y sin conexión  
 
-Saber si la red está disponible es útil, pero es posible que desee tomar medidas cuando cambie la conectividad de red. En esta situación, es posible que desee escuchar y tomar medidas en respuesta a eventos de red. Los eventos están disponibles en los `window` `document` elementos, y, `document.body` tal y como se muestra en el siguiente fragmento de código.
+Saber si la red está disponible es útil, pero es posible que quieras tomar medidas cuando cambie la conectividad de red. En esta situación, es posible que desee escuchar y tomar medidas en respuesta a los eventos de red. Los eventos están disponibles en `window` los elementos , y como se muestra en el siguiente fragmento de `document` `document.body` código.
 
 ```javascript
 window.addEventListener("online",  function(){
@@ -153,28 +153,28 @@ window.addEventListener("offline", function(){
 });
 ```  
 
-## Consulte también  
+## <a name="see-also"></a>Consulte también  
 
-Para obtener más información sobre cómo administrar escenarios sin conexión, vea las páginas siguientes.  
+Para obtener más información sobre cómo administrar escenarios sin conexión, vaya a las páginas siguientes.  
 
 *   [Memoria caché][MDNCache]  
 *   [IndexedDB][MDNIndexeddbApi]  
-*   [Trabajo del servicio][MDNServiceWorker]  
-*   [Almacenamiento Web][MDNWebStorageApi]  
-*   [Navigator. onLine][MDNNavigatoronline]  
+*   [Trabajador de servicio][MDNServiceWorker]  
+*   [Almacenamiento web][MDNWebStorageApi]  
+*   [navigator.onLine][MDNNavigatoronline]  
 *   [Eventos en línea y sin conexión][MDNNavigatoronlineOfflineEvents]  
-*   [Solicitud con intención: estrategias de almacenamiento en caché de edad de PWAs][AlistapartRequestIntentCachingStrategiesAgePwas]
-
+*   [Solicitud con intención: estrategias de almacenamiento en caché en la era de los PWA][AlistapartRequestIntentCachingStrategiesAgePwas]
+    
 <!-- links -->  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Caché | MDN"  
-[MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "API de IndexedDB | MDN"  
-[MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Uso de IndexDb-IndexDB API | MDN"  
+[MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "Api IndexedDB | MDN"  
+[MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Uso de IndexDb: api de IndexDB | MDN"  
 [MDNServiceWorker]: https://developer.mozilla.org/docs/Web/API/ServiceWorker "ServiceWorker | MDN"  
-[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "API de almacenamiento Web | MDN"  
+[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Api de almacenamiento web | MDN"  
 [MDNNavigatoronline]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine "NavigatorOnLine | MDN"  
-[MDNNavigatoronlineOfflineEvents]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events "Eventos en línea y sin conexión-NavigatorOnLine | MDN"  
+[MDNNavigatoronlineOfflineEvents]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events "Eventos en línea y sin conexión: NavigatorOnLine | MDN"  
 
-[AbookapartGoingOffline]: https://abookapart.com/products/going-offline "Trabajando sin conexión por Jeremy Keith | Un libro separado"  
+[AbookapartGoingOffline]: https://abookapart.com/products/going-offline "Going Offline by Jeremy Keith | Un libro aparte"  
 
-[AlistapartRequestIntentCachingStrategiesAgePwas]: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas "Solicitud con intención: las estrategias de almacenamiento en caché de Age of PWAs por Aaron Gustafson | Una lista aparte"  
+[AlistapartRequestIntentCachingStrategiesAgePwas]: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas "Solicitud con intención: Estrategias de almacenamiento en caché en la era de las PWA de Aaron Gustafson | Una lista aparte"  

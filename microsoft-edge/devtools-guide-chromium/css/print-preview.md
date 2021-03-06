@@ -1,18 +1,18 @@
 ---
-description: Abre la pestaña "Fotorrealismo" y selecciona "emular los medios CSS" > "Imprimir".
-title: Forzar que Microsoft Edge DevTools al modo de vista previa de impresión (tipo de archivo CSS de impresión)
+description: Abra la herramienta "Representación" y seleccione Emular medios CSS > impresión.
+title: Forzar Microsoft Edge DevTools al modo de vista previa de impresión (tipo de medios de impresión CSS)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a036e710de998f03e876126581956929d8652f1e
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 0123b7abf475212304f654c04bc232e3e96f0bda
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230925"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399081"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,39 +28,39 @@ ms.locfileid: "11230925"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Forzar que Microsoft Edge DevTools al modo de vista previa de impresión (tipo de archivo CSS de impresión)  
+# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>Forzar Microsoft Edge DevTools al modo de vista previa de impresión  
 
-La [consulta multimedia de impresión][MDNUsingMediaQueries] controla el aspecto que tendrá la página impresa.  Para forzar la página al modo de vista previa de impresión:  
+La [consulta de medios de impresión][MDNUsingMediaQueries] controla el aspecto de la página cuando se imprime.  Para forzar la página al modo de vista previa de impresión:  
 
-1.  Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
     
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="El menú de comandos" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       El **menú de comandos**  
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+       Menú **comando**  
     :::image-end:::  
     
-1.  Escriba `rendering` , elija **Mostrar procesamiento**y, a continuación, seleccione `Enter` .  
-1.  En **emular medios CSS**, seleccione **Imprimir**.  
+1.  Escriba `rendering` , elija Mostrar **representación**y, a continuación, seleccione `Enter` .  
+1.  En **Emular medios CSS,** elija **imprimir**.  
     
     :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Modo de vista previa de impresión" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
        Modo de vista previa de impresión  
     :::image-end:::  
     
-Desde aquí, puede ver y cambiar su CSS, como cualquier otra página web.  Vaya a [Introducción a la visualización y el cambio de CSS][DevToolsCSSGetStarted].  
+Desde aquí, puede mostrar y cambiar su CSS, como cualquier otra página web.  Vaya a [Introducción a Ver y cambiar CSS][DevToolsCSSGetStarted].  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
-[DevToolsCSSGetStarted]: ./index.md "Introducción a la visualización y el cambio de CSS | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevToolsCSSGetStarted]: ./index.md "Introducción a la visualización y cambio de css | Microsoft Docs"  
 
-[MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Usar consultas multimedia | MDN"  
+[MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Uso de consultas multimedia | MDN"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

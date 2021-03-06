@@ -1,18 +1,18 @@
 ---
-description: Los usuarios esperan páginas interactivas y suaves.  Cada fase de la canalización de píxeles representa una oportunidad de introducir Jank.  Obtenga más información sobre las herramientas y estrategias para identificar y solucionar problemas comunes que ralentizan el rendimiento del tiempo de ejecución.
+description: Los usuarios esperan páginas interactivas y suaves.  Cada fase de la canalización de píxeles representa una oportunidad para introducir jank.  Obtenga información sobre herramientas y estrategias para identificar y corregir problemas comunes que ralentizan el rendimiento en tiempo de ejecución.
 title: Analizar el rendimiento en tiempo de ejecución
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d42ac5e7a7456971d48198a1f362eebe7156bbce
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 646db5b2e88e33b109e5eb3ae01a296bf3a4fb46
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230610"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398003"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -28,46 +28,46 @@ ms.locfileid: "11230610"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Analizar el rendimiento en tiempo de ejecución 
+# <a name="analyze-runtime-performance"></a>Analizar el rendimiento en tiempo de ejecución  
 
-Los usuarios esperan páginas interactivas y suaves.  Cada fase de la canalización de píxeles representa una oportunidad de introducir Jank.  Obtenga más información sobre las herramientas y estrategias para identificar y solucionar problemas comunes que ralentizan el rendimiento del tiempo de ejecución.  
+Los usuarios esperan páginas interactivas y suaves.  Cada fase de la canalización de píxeles representa una oportunidad para introducir jank.  Obtenga información sobre herramientas y estrategias para identificar y corregir problemas comunes que ralentizan el rendimiento en tiempo de ejecución.  
 
-### Resumen  
+### <a name="summary"></a>Resumen  
 
-*   No escriba JavaScript que obligue al explorador a volver a calcular el diseño.  Funciones de lectura y escritura distintas y realice lecturas en primer lugar.  
-*   No complica demasiado tu CSS.  Usa menos CSS y conserva tus selectores de CSS.  
-*   Evite el diseño tanto como sea posible.  Elija CSS que no desencadene el diseño.  
-*   La pintura puede tardar más tiempo que cualquier otra actividad de representación.  Mire los cuellos de botella de pintura.  
+*   No escriba JavaScript que fuerza al explorador a volver a calcular el diseño.  Separe las funciones de lectura y escritura y realice primero lecturas.  
+*   No complique en exceso su CSS.  Use menos CSS y mantenga los selectores CSS sencillos.  
+*   Evite el diseño tanto como sea posible.  Elija CSS que no desencadene el diseño en absoluto.  
+*   La pintura puede tardar más tiempo que cualquier otra actividad de representación.  Cuidado con los cuellos de botella de pintura.  
     
-## JavaScript  
+## <a name="javascript"></a>JavaScript  
 
-Los cálculos de JavaScript, especialmente aquellos que desencadenan cambios visuales extensivos, pueden detener el rendimiento de la aplicación.  No permita que los JavaScript con tiempos inesperados o de ejecución prolongada interfieran con las interacciones del usuario.  
+Los cálculos de JavaScript, especialmente los que desencadenan grandes cambios visuales, pueden detener el rendimiento de las aplicaciones.  No permita que JavaScript con un tiempo mal definido o de ejecución larga interfiera con las interacciones del usuario.  
 
-### JavaScript: herramientas  
+### <a name="javascript-tools"></a>JavaScript: herramientas  
 
-Toma una grabación en el panel **rendimiento** y busca eventos que sean sospechosos `Evaluate Script` .  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
+Haga una grabación en la **herramienta Rendimiento** y busque eventos sospechosamente `Evaluate Script` largos.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
 
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-Si recibes bastante Jank en tu código JavaScript, es posible que necesites llevar el análisis al siguiente nivel y recopilar un perfil de CPU de JavaScript.  Los perfiles de CPU muestran dónde se gasta el motor en tiempo de ejecución dentro de las funciones de la página.  Aprenda a crear perfiles de CPU para [acelerar el tiempo de ejecución de JavaScript][DevtoolsRenderingToolsJavascriptRuntime].
+si nota un poco de jank en JavaScript, es posible que deba llevar el análisis al siguiente nivel y recopilar un perfil de CPU de JavaScript.  Los perfiles de CPU muestran dónde se usa el tiempo de ejecución dentro de las funciones de la página.  Obtenga información sobre cómo crear perfiles de CPU en [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime].
 
-### JavaScript: problemas  
+### <a name="javascript-problems"></a>JavaScript: problemas  
 
-En la siguiente tabla se describen algunos problemas comunes de JavaScript y posibles soluciones:  
+En la tabla siguiente se describen algunos problemas comunes de JavaScript y posibles soluciones.  
 
-| Problema | Ejemplo | Solución |  
+| Problema | Por ejemplo: | Solución |  
 |:--- |:--- |:--- |  
-| Controladores de entrada caros que afectan a la respuesta o animación.  | Táctil, desplazamiento de Parallax.  | Deje que el explorador controle la entrada táctil y se desplace, o enlace el agente de escucha lo más tarde posible.  Consulte [controladores de entrada costosos en la lista de comprobación de rendimiento en tiempo de ejecución de Paul Lewis][WebPerformanceCalendarRuntimeChecklist].  |  
-| La respuesta, la animación y la carga de JavaScript es muy incorrecta.  | El usuario se desplaza a la derecha después de cargar la página, setTimeout/setInterval.  | Optimizar tiempo de ejecución de JavaScript: uso `requestAnimationFrame` , manipulación de Dom de propagación sobre marcos, uso de [trabajadores web][MDNUsingWebWorkers].  |  
-| JavaScript de ejecución prolongada que afecta a la respuesta.  | El [evento DOMContentLoaded][MDNUsingWebWorkers] se detiene porque está inundado con el trabajo de JS.  | Mover trabajo de cálculo puro a los [trabajadores web][MDNUsingWebWorkers].  Si necesita acceso a DOM, use `requestAnimationFrame` .  <!--See also [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
-| Scripts de elementos no utilizados que afectan a la respuesta o animación.  | La recolección de elementos no utilizados puede producirse en cualquier lugar.  | Escribir menos scripts y de elementos no utilizados.  Consulte recolección [de elementos no utilizados en la animación de la lista de comprobación de rendimiento en tiempo de ejecución de Paul Lewis][WebPerformanceCalendarRuntimeChecklist].  |  
+| Controladores de entrada caros que afectan a la respuesta o animación.  | Desplazamiento táctil y paralaje.  | Permitir que el explorador controle los desplazamientos y los contactos táctiles, o enlazar el agente de escucha lo más tarde posible.  Vaya a [Controladores de entrada caros en la][WebPerformanceCalendarRuntimeChecklist]lista de comprobación de rendimiento en tiempo de ejecución de Paul Lewis .  |  
+| JavaScript mal timed que afecta a la respuesta, animación, carga.  | El usuario se desplaza justo después de la carga de página, setTimeout / setInterval.  | Optimizar el tiempo de ejecución de JavaScript: use `requestAnimationFrame` , extienda la manipulación de DOM en fotogramas, use [Trabajadores web][MDNUsingWebWorkers].  |  
+| JavaScript de ejecución larga que afecta a la respuesta.  | El [evento DOMContentLoaded][MDNUsingWebWorkers] se detiene cuando está saturado de trabajo de JS.  | Mover el trabajo computacional puro a [Trabajadores web.][MDNUsingWebWorkers]  Si necesita acceso DOM, use `requestAnimationFrame` .  <!--Navigate to [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
+| Scripts de elementos no utilizados que afectan a la respuesta o animación.  | La recolección de elementos no utilizados puede producirse en cualquier lugar.  | Escribir menos scripts de elementos no utilizados.  Vaya a [Recolección de elementos no utilizados en Animación en la lista][WebPerformanceCalendarRuntimeChecklist]de comprobación de rendimiento en tiempo de ejecución de Paul Lewis .  |  
 
 <!--todo: add Optimize JavaScript runtime section when available  -->  
 
-## Estilo  
+## <a name="style"></a>Estilo  
 
-Los cambios de estilo son costosos, especialmente si esos cambios afectan a más de un elemento en el DOM.  Cada vez que se aplican estilos a un elemento, el explorador determina el impacto en todos los elementos relacionados, vuelve a calcular el diseño y el redibujado.  
+Los cambios de estilo son costosos, especialmente si esos cambios afectan a más de un elemento del DOM.  Cada vez que se aplican estilos a un elemento, el explorador calcula el impacto en todos los elementos relacionados, vuelve a calcular el diseño y vuelve a pintar.  
 
 <!--Related Guides:  
 
@@ -76,33 +76,33 @@ Los cambios de estilo son costosos, especialmente si esos cambios afectan a más
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->  
 
-### Estilo: herramientas  
+### <a name="style-tools"></a>Estilo: herramientas  
 
-Realizar una grabación en el panel **rendimiento** .  Compruebe la grabación de `Recalculate Style` eventos grandes \ (mostrada en color púrpura \).  
+Realizar una grabación en la **herramienta** Rendimiento.  Compruebe en la grabación si hay `Recalculate Style` eventos grandes \(mostrados en púrpura\).  
 
 <!--todo: add Recording section when available  -->  
 
-Haga clic en un `Recalculate Style` evento para ver más información sobre él en el panel de **detalles** .  Si los cambios de estilo están tardando mucho, eso es un impacto en el rendimiento.  Si los cálculos de estilo afectan a un gran número de elementos, se trata de otra área con espacio para mejorarlo.  
+Elija un `Recalculate Style` evento para ver más información sobre él en el **panel** Detalles.  Si los cambios de estilo tardan mucho tiempo, es un éxito de rendimiento.  Si los cálculos de estilo afectan a un gran número de elementos, ese es otro área con espacio para mejorar.  
 
-:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Recalcular largo estilo" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
-   Recalcular largo estilo  
+:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Estilo de recálculo largo" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+   Estilo de recálculo largo  
 :::image-end:::  
 
-Para reducir el impacto de `Recalculate Style` los eventos:  
+Para reducir el impacto de los `Recalculate Style` eventos:  
 
-*   Use los [desencadenadores de CSS][CssTriggers] para saber qué propiedades de CSS desencadenan diseño, pintura y composición.  Estas propiedades tienen el peor impacto en el rendimiento de la representación.  
-*   Cambiar a propiedades que tienen menos impacto.  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
+*   Usa los [desencadenadores CSS][CssTriggers] para saber qué propiedades CSS desencadenan el diseño, la pintura y la composición.  Estas propiedades tienen el peor impacto en el rendimiento de representación.  
+*   Cambie a las propiedades que tienen menos impacto.  <!--For more guidance, navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
     
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
-### Estilo: problemas  
+### <a name="style-problems"></a>Estilo: problemas  
 
-En la siguiente tabla se describen algunos problemas de estilo comunes y posibles soluciones:  
+En la tabla siguiente se describen algunos problemas de estilo comunes y posibles soluciones.  
 
-| Problema | Ejemplo | Solución |  
+| Problema | Por ejemplo: | Solución |  
 |:--- |:--- |:--- |  
-| Cálculos de estilo caros que afectan a la respuesta o animación.  | Cualquier propiedad de CSS que cambie la geometría de un elemento, como el ancho, alto o posición; el explorador comprueba el resto de los elementos y vuelve a calcular el diseño.  | Evitar CSS que desencadenan diseños |  
-| Selectores complejos que afectan a la respuesta o a la animación.  | Los selectores anidados obligan al explorador a conocer todo el resto de los elementos, incluidos los elementos primarios y secundarios.  | Haga referencia a un elemento de su CSS con solo una clase.  |  
+| Cálculos de estilo caros que afectan a la respuesta o animación.  | Cualquier propiedad CSS que cambie la geometría de un elemento, como el ancho, alto o posición; el explorador comprueba todos los demás elementos y vuelve a calcular el diseño.  | Evitar CSS que desencadena diseños |  
+| Selectores complejos que afectan a la respuesta o animación.  | Los selectores anidados fuerzan al explorador a saber todo sobre todos los demás elementos, incluidos los elementos principales y los elementos secundarios.  | Haga referencia a un elemento de su CSS con solo una clase.  |  
 
 <!--todo: add Avoid CSS that triggers layouts section when available -->  
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations (Reference an element in your CSS with just a class) section when available -->  
@@ -113,11 +113,11 @@ En la siguiente tabla se describen algunos problemas de estilo comunes y posible
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->  
 
-## Diseño  
+## <a name="layout"></a>Diseño  
 
-Diseño (o redistribución en Firefox) es el proceso por el cual el explorador calcula las posiciones y los tamaños de todos los elementos de una página.  El modelo de diseño de la web significa que un elemento puede afectar a otros; por ejemplo, el ancho del `<body>` elemento afecta normalmente a los anchos de los elementos secundarios, y así sucesivamente, todo el recorrido hacia arriba y hacia abajo en el árbol.  El proceso puede estar bastante implicado para el explorador.  
+El diseño (o reflujo en Firefox) es el proceso mediante el cual el explorador calcula las posiciones y tamaños de todos los elementos de una página.  El modelo de diseño de la web significa que un elemento puede afectar a otros; por ejemplo, el ancho del elemento suele afectar a los anchos de los elementos secundarios, y así sucesivamente, hasta arriba y `<body>` abajo del árbol.  El proceso puede estar bastante implicado para el explorador.  
 
-Como regla general, si solicita un valor geométrico al DOM antes de que se complete un marco, se encontrará con "diseños sincrónicos forzados", que puede ser un gran cuello de botella de rendimiento si se repite con frecuencia o se realiza para un gran árbol de DOM.  
+Como regla general, si solicita un valor geométrico del DOM antes de que se complete un marco, se encontrará con "diseños sincrónicos forzados", lo que puede ser un gran cuello de botella de rendimiento si se repite con frecuencia o se realiza para un árbol DOM grande.  
 
 <!--Related Guides:  
 
@@ -127,38 +127,38 @@ Como regla general, si solicita un valor geométrico al DOM antes de que se comp
 <!--todo: add Avoid CSS that triggers layouts (Avoid Layout Thrashing) section when available -->  
 <!--todo: add Diagnose Forced Synchronous Layouts section when available  -->  
 
-### Diseño: herramientas  
+### <a name="layout-tools"></a>Diseño: Herramientas  
 
-El panel **rendimiento** identifica cuando una página provoca diseños sincrónicos forzados.  Estos `Layout` eventos se marcan con barras rojas.  
+El **panel** Rendimiento identifica cuándo una página provoca diseños sincrónicos forzados.  Estos `Layout` eventos se marcan con barras rojas.  
 
 :::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Diseño sincrónico forzado" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
    Diseño sincrónico forzado  
 :::image-end:::  
 
-"La hiperpaginación de diseño" es una repetición de las condiciones de diseño sincrónico forzado.  Esto se produce cuando JavaScript escribe y Lee de forma repetida desde el DOM, lo que obliga al explorador a volver a calcular el diseño una y otra vez.  Para identificar la hiperpaginación de la distribución, busque un patrón de advertencias de diseño sincrónico forzado.  Vea la ilustración anterior.  
+"Thrashing de diseño" es una repetición de condiciones de diseño sincrónica forzadas.  Esto ocurre cuando JavaScript escribe y lee el DOM repetidamente, lo que fuerza al explorador a volver a calcular el diseño una y otra vez.  Para identificar la thrashing de diseño, busque un patrón de varias advertencias de diseño sincrónico forzado.  Revise la figura anterior.  
 
-### Diseño: problemas  
+### <a name="layout-problems"></a>Diseño: problemas  
 
-En la siguiente tabla se describen algunos problemas de diseño comunes y posibles soluciones:  
+En la tabla siguiente se describen algunos problemas comunes de diseño y posibles soluciones.  
 
-| Problema | Ejemplo | Solución |  
+| Problema | Por ejemplo: | Solución |  
 |:--- |:--- |:--- |  
-| Diseño sincrónico forzado que afecta a la respuesta o animación.  | Obligar al explorador a realizar el diseño anteriormente en la canalización de píxeles, lo que da como resultado pasos repetitivos en el proceso de representación.  | Por lotes el estilo se lee en primer lugar y luego realiza cualquier escritura.  <!--See also [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
-| La hiperpaginación de diseño afecta a la respuesta o animación.  | Un bucle que pone el explorador en un ciclo de lectura y escritura (lectura y escritura), lo que obliga al explorador a volver a calcular la presentación una y otra vez.  | Procesar automáticamente las operaciones de lectura y escritura con la [biblioteca FastDom][GitHubWilsonpageFastdom].  |  
+| Diseño sincrónico forzado que afecta a la respuesta o animación.  | Forzar al explorador a realizar el diseño anteriormente en la canalización de píxeles, lo que da como resultado la repetición de pasos en el proceso de representación.  | Primero se lee por lotes el estilo y, a continuación, se hacen las escrituras.  <!--Navigate to [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
+| Diseño thrashing que afecta a la respuesta o animación.  | Bucle que coloca al explorador en un ciclo de lectura y escritura y lectura, lo que obliga al explorador a volver a calcular el diseño una y otra vez.  | Procesar por lotes automáticamente operaciones de lectura y escritura con [la biblioteca FastDom][GitHubWilsonpageFastdom].  |  
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
-## Pintura y composición  
+## <a name="paint-and-composite"></a>Pintura y composición  
 
-Paint es el proceso de rellenar píxeles.  Suele ser la parte más costosa del proceso de representación.  Si se ha dado cuenta de que la página se Janky de ninguna manera, es posible que tenga problemas de pintura.  
+Paint es el proceso de rellenar píxeles.  Suele ser la parte más costosa del proceso de representación.  Si notó que la página no funciona como está diseñada de ninguna manera, es probable que tenga problemas de pintura.  
 
-La composición es el lugar donde se agrupan las partes pintadas de la página para mostrarse en pantalla.  En su mayor parte, si se fija en las propiedades solo de compositor y se evita que se pinte por completo, debería apreciarse una mejora importante en el rendimiento, pero debe tener cuidado con el recuento excesivo de capas.  <!--See also [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
+La composición es donde se reúnen las partes de la página que se pintan para mostrarse en pantalla.  En la mayoría de los casos, si te atener a las propiedades de compositor y evitas pintar por completo, deberías observar una mejora importante en el rendimiento, pero debes tener cuidado con los recuentos excesivos de capas.  <!--Navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-### Pintura y composición: herramientas  
+### <a name="paint-and-composite-tools"></a>Pintura y composición: herramientas  
 
-¿Quiere saber cuánto tarda el pintado o la frecuencia con la que se produce la pintura?  Active la opción [Habilitar el instrumental de pintura avanzada][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] en el panel **rendimiento** y, después, realice una grabación.  Si se gasta la mayor parte del tiempo de procesamiento, tiene problemas de pintura.  
+¿Quiere saber cuánto tarda la pintura o con qué frecuencia se produce la pintura?  Compruebe la [configuración Habilitar instrumentación avanzada de][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] pintura en el panel Rendimiento y, a continuación, haga una grabación. ****  Si la mayor parte del tiempo de representación se dedica a pintar, tiene problemas de pintura.  
 
 <!--
 :::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
@@ -171,26 +171,26 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 <!--todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live  -->  
 
-### Pintura y composición: problemas  
+### <a name="paint-and-composite-problems"></a>Pintura y composición: problemas  
 
-En la siguiente tabla se describen algunos problemas comunes de Paint y compuestos y posibles soluciones:  
+En la tabla siguiente se describen algunos problemas comunes de pintura y compuestos y posibles soluciones.  
 
-| Problema | Ejemplo | Solución |  
+| Problema | Por ejemplo: | Solución |  
 |:--- |:--- |:--- |  
-| Las tormentas de pintura afectan a la respuesta o animación.  | Grandes áreas de pintura o pinturas caras que afectan a la respuesta o animación.  | Evite pintar, promocionar elementos que estén desplazándose a su propia capa, usar transformaciones y opacidad.  <!--See [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
-| Explosiones de capas que afectan a las animaciones.  | Exceso de la promoción de demasiados elementos con el rendimiento de la `translateZ(0)` animación.  | Promueve a capas con moderación, y solo cuando sepa que ofrece mejoras tangibles.  <!--See [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
+| Pinta tormentas que afectan a la respuesta o animación.  | Áreas de pintura grandes o pinturas costosas que afectan a la respuesta o animación.  | Evite la pintura, promueva los elementos que se mueven a su propia capa, use transformaciones y opacidad.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| Explosiones de capas que afectan a animaciones.  | La sobrepromoción de demasiados elementos afecta en gran medida `translateZ(0)` al rendimiento de la animación.  | Promover a las capas con moderación y solo cuando sepa que ofrece mejoras tangibles.  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Acelerar el tiempo de ejecución de JavaScript | Microsoft docs"  
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Activar el instrumental de pintura avanzado-referencia para el análisis de rendimiento | Microsoft docs"
+[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Acelerar el tiempo de ejecución de JavaScript | Microsoft Docs"  
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Activar instrumentación de pintura avanzada: referencia de análisis de rendimiento | Microsoft Docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
@@ -206,17 +206,17 @@ En la siguiente tabla se describen algunos problemas comunes de Paint y compuest
 <!--[WebFundamentalsPerformanceRenderingSimplifyPaintComplexity]: /web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas "Simplify Paint Complexity and Reduce Paint Areas"  -->  
 <!--[WebFundamentalsPerformanceRenderingCompositorOnlyProperties]: /web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count "Stick to Compositor-Only Properties and Manage Layer Count"  -->  
 
-[CssTriggers]: https://csstriggers.com "Desencadenadores de CSS"  
+[CssTriggers]: https://csstriggers.com "Desencadenadores CSS"  
 
-[MDNUsingWebWorkers]: https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers "Usar los usuarios de Web | MDN"  
+[MDNUsingWebWorkers]: https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers "Uso de trabajadores web | MDN"  
 
-[WebPerformanceCalendarRuntimeChecklist]: https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/ "Lista de comprobación de rendimiento en tiempo de ejecución-calendario de rendimiento web"  
+[WebPerformanceCalendarRuntimeChecklist]: https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/ "Lista de comprobación de rendimiento en tiempo de ejecución: calendario de rendimiento web"  
 
 [GitHubWilsonpageFastdom]: https://github.com/wilsonpage/fastdom "wilsonpage/fastdom | GitHub"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \) y [Meggin Kearney][MegginKearney] \ (Tech Writer \).  
+> La página original [](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) se encuentra aquí y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) y [Meggin Kearney][MegginKearney] \(Tech Writer\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

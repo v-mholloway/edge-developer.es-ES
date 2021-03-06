@@ -3,16 +3,16 @@ description: La documentación canónica de los métodos abreviados de teclado d
 title: Métodos abreviados de teclado de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 417e2235e4ea63d0258c158035ea201cd5657099
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: c6d51d27ce41ed8192a867cf33555b3880dd3ef9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235924"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398353"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,133 +28,133 @@ ms.locfileid: "11235924"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Métodos abreviados de teclado de Microsoft Edge DevTools  
+# <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Métodos abreviados de teclado de Microsoft Edge DevTools  
 
 Este artículo es una referencia de los métodos abreviados de teclado en Microsoft Edge DevTools.
 
-También puede encontrar métodos abreviados en la información sobre herramientas.  Pase el puntero sobre un elemento de la interfaz de usuario de DevTools para mostrar la información sobre herramientas.  Si el elemento tiene un acceso directo, la información sobre herramientas lo incluye.
+También puede encontrar accesos directos en la información sobre herramientas.  Mantenga el mouse sobre un elemento de interfaz de usuario de DevTools para mostrar la información sobre herramientas.  Si el elemento tiene un acceso directo, la información sobre herramientas lo incluye.
 
-## Métodos abreviados de teclado para abrir DevTools  
+## <a name="keyboard-shortcuts-for-opening-devtools"></a>Métodos abreviados de teclado para abrir DevTools  
 
-Para abrir DevTools, seleccione los siguientes métodos abreviados de teclado mientras el cursor se centra en la ventanilla del explorador.
+Para abrir DevTools, seleccione los siguientes métodos abreviados de teclado mientras el cursor está centrado en la ventanilla del explorador.
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Abrir el panel que usó en último lugar | `F12` ni `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
-| Abrir el panel de **consola** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Abrir el panel **elementos** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` ni `Command`+`Option`+`C` |  
+| Abra el panel que usó por última vez | `F12` o `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Abrir la **herramienta Consola** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
+| Abrir la **herramienta** Elementos | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` o `Command`+`Option`+`C` |  
 
-## Métodos abreviados de teclado globales  
+## <a name="global-keyboard-shortcuts"></a>Métodos abreviados de teclado globales  
 
-Los siguientes métodos abreviados de teclado están disponibles en la mayoría de los paneles DevTools.
+Los siguientes métodos abreviados de teclado están disponibles en la mayoría de los paneles DevTools, si no todos.
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Mostrar **configuración** | `?` o `F1` | `?` ni `Function`+`F1` |  
+| Mostrar **configuración** | `?` or `F1` | `?` o `Function`+`F1` |  
 | Centrar el panel siguiente | `Control`+`]` | `Command`+`]` |  
-| Centrarse en el panel anterior | `Control`+`[` | `Command`+`[` |  
-| Vuelva a la [posición de acoplamiento][DevtoolsCustomizeIndexPlacement] que usó por última vez.  Si DevTools se encontraba en la posición predeterminada para toda la sesión, este método abreviado se desacopla DevTools en una ventana independiente. | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
-| Activar o desactivar [emulación de dispositivo][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
-| Alternar **inspeccionar modo de elemento** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
+| Centrar el panel anterior | `Control`+`[` | `Command`+`[` |  
+| Vuelva a la posición [de acoplamiento que][DevtoolsCustomizeIndexPlacement] usó por última vez.  Si DevTools ha estado en la posición predeterminada para toda la sesión, este acceso directo desacopla DevTools en una ventana independiente | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Alternar [emulación de dispositivo][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
+| Alternar **el modo de elemento Inspect** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Abrir el [menú de comandos][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
-| Activar o desactivar el [cajón][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
-| Recarga normal | `F5` ni `Control`+`R` | `Command`+`R` |  
-| Recarga de disco | `Control`+`F5` ni `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| Buscar texto en el panel actual.  No es compatible con los paneles **Auditoría**, **aplicación**y **seguridad** | `Control`+`F` | `Command`+`F` |  
-| Abre la pestaña **Buscar** en el [cajón][DevtoolsCustomizeIndexDrawer], que le permite buscar texto en todos los recursos cargados. | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Abrir un archivo en el panel **orígenes** | `Control`+`O` ni `Control`+`P` | `Command`+`O` ni `Command`+`P` |  
+| Alternar el [cajón][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
+| Actualización normal | `F5` o `Control`+`R` | `Command`+`R` |  
+| Actualización dura | `Control`+`F5` o `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Busque texto en el panel actual.  No se admite en las **herramientas auditorías,** **aplicaciones**y **seguridad** | `Control`+`F` | `Command`+`F` |  
+| Abre la **pestaña Búsqueda** en [el][DevtoolsCustomizeIndexDrawer]cajón, que le permite buscar texto en todos los recursos cargados | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
+| Abrir un archivo en el panel **Orígenes** | `Control`+`O` o `Control`+`P` | `Command`+`O` o `Command`+`P` |  
 | Acercar | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Alejar | `Control`+`-` | `Command`+`-` |  
 | Restaurar el nivel de zoom predeterminado | `Control`+`0` | `Command`+`0` |  
-| Ejecutar fragmento de código | Seleccione `Control` + `O` para abrir el [menú de comandos][DevtoolsCommandMenuIndex], escriba `!` seguido por el nombre del script y, a continuación, seleccione `Enter` | Seleccione `Command` + `O` para abrir el [menú de comandos][DevtoolsCommandMenuIndex], escriba `!` seguido por el nombre del script y, a continuación, seleccione `Enter` |  
+| Ejecutar fragmento de código | Seleccione `Control` + `O` para abrir el [menú comando][DevtoolsCommandMenuIndex], escriba seguido del nombre del script y, a `!` continuación, seleccione `Enter` | Seleccione `Command` + `O` para abrir el [menú comando][DevtoolsCommandMenuIndex], escriba seguido del nombre del script y, a `!` continuación, seleccione `Enter` |  
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->  
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->  
 
-## Métodos abreviados de teclado del panel elementos  
+## <a name="elements-tool-keyboard-shortcuts"></a>Métodos abreviados de teclado de la herramienta Elements  
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Deshacer el cambio | `Control`+`Z` | `Command`+`Z` |  
-| Rehacer cambiar | `Control`+`Y` | `Command`+`Shift`+`Z` |  
-| Seleccionar el elemento por encima o por debajo del elemento seleccionado | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
-| Expandir el nodo seleccionado actualmente.  Si el nodo ya está expandido, este método abreviado de teclado selecciona el elemento situado debajo de él. | `Right Arrow` | `Right Arrow` |  
-| Contraer el nodo seleccionado actualmente.  Si el nodo ya está contraído, este método abreviado de teclado selecciona el elemento situado encima de él. | `Left Arrow` | `Left Arrow` |  
-| Expandir o contraer el nodo seleccionado actualmente y todos los elementos secundarios | `Control` + `Alt` En espera y, a continuación, elija el icono de **flecha** junto al nombre del elemento. | `Option`En espera y, a continuación, elija el icono de **flecha** junto al nombre del elemento. |  
-| Activar o desactivar modificar el modo de **atributos** en el elemento seleccionado actualmente | `Enter` | `Enter` |  
-| Seleccionar el atributo siguiente o anterior después de especificar el modo **Editar atributos** | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
+| Deshacer cambio | `Control`+`Z` | `Command`+`Z` |  
+| Cambio de rehacer | `Control`+`Y` | `Command`+`Shift`+`Z` |  
+| Seleccione el elemento anterior / debajo del elemento seleccionado actualmente | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
+| Expanda el nodo seleccionado actualmente.  Si el nodo ya está expandido, este acceso directo selecciona el elemento debajo de él | `Right Arrow` | `Right Arrow` |  
+| Contraiga el nodo seleccionado actualmente.  Si el nodo ya está contraído, este acceso directo selecciona el elemento encima de él | `Left Arrow` | `Left Arrow` |  
+| Expandir o contraer el nodo seleccionado actualmente y todos los elementos secundarios | Hold `Control` + `Alt` , a continuación, elija el **icono de** flecha junto al nombre del elemento | Hold `Option` , a continuación, elija el **icono de** flecha junto al nombre del elemento |  
+| Alternar **el modo Editar atributos** en el elemento seleccionado actualmente | `Enter` | `Enter` |  
+| Seleccione el atributo siguiente o anterior después de entrar en el **modo Editar atributos** | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
 | Ocultar el elemento seleccionado actualmente | `H` | `H` |  
-| Activar o desactivar **Editar como modo html** en el elemento seleccionado actualmente | `Function`+`F2` | `F2` |  
+| Alternar **editar como modo HTML** en el elemento seleccionado actualmente | `Function`+`F2` | `F2` |  
 
-### Métodos abreviados de teclado del panel estilos  
+### <a name="styles-panel-keyboard-shortcuts"></a>Métodos abreviados de teclado del panel Estilos  
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Ir a la línea donde se declara un valor de propiedad | Espera `Control` y, después, seleccione el valor de la propiedad | Espera `Command` y, después, seleccione el valor de la propiedad |  
-| Recorrer las representaciones RBGA, HSLA y hexadecimales de un valor de color | Espera `Shift` y, a continuación, elija el cuadro **vista previa de color** junto al valor. | Espera `Shift` y, a continuación, elija el cuadro **vista previa de color** junto al valor. |  
-| Seleccionar el valor o la propiedad siguiente/anterior | Elija un nombre de propiedad o valor y, a continuación, seleccione `Tab` / `Shift`+`Tab` | Elija un nombre de propiedad o valor y, a continuación, seleccione `Tab` / `Shift`+`Tab` |  
-| Aumentar o disminuir el valor de una propiedad por 0,1 | Elija un valor y, a continuación, seleccione `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Elija un valor y, a continuación, seleccione `Option` + `Up Arrow` /opción + flecha abajo |  
-| Aumentar o disminuir un valor de propiedad en 1 | Elija un valor y, a continuación, seleccione `Up Arrow` / `Down Arrow` | Elija un valor y, a continuación, seleccione `Up Arrow` / `Down Arrow` |  
-| Aumentar o disminuir el valor de una propiedad en 10 | Elija un valor y, a continuación, seleccione `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Elija un valor y, a continuación, seleccione `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
-| Aumentar o disminuir el valor de una propiedad por 100 | Elija un valor y, a continuación, seleccione `Control`+`Up Arrow` / `Control`+`Down Arrow` | Elija un valor y, a continuación, seleccione `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
+| Navegue a la línea donde se declara un valor de propiedad | Hold `Control` y, a continuación, seleccione el valor de la propiedad | Hold `Command` y, a continuación, seleccione el valor de la propiedad |  
+| Recorrer las representaciones RBGA, HSLA y Hex de un valor de color | Hold `Shift` y, a continuación, elija el **cuadro Vista previa** de color junto al valor | Hold `Shift` y, a continuación, elija el **cuadro Vista previa** de color junto al valor |  
+| Seleccione la siguiente o anterior propiedad o valor | Elija un nombre o valor de propiedad y, a continuación, seleccione `Tab` / `Shift`+`Tab` | Elija un nombre o valor de propiedad y, a continuación, seleccione `Tab` / `Shift`+`Tab` |  
+| Incrementar o disminuir un valor de propiedad en 0,1 | Elija un valor y, a continuación, seleccione `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Elija un valor y, a continuación, `Option` + `Up Arrow` seleccione / Opción+Flecha abajo |  
+| Incrementar o disminuir un valor de propiedad en 1 | Elija un valor y, a continuación, seleccione `Up Arrow` / `Down Arrow` | Elija un valor y, a continuación, seleccione `Up Arrow` / `Down Arrow` |  
+| Incrementar o disminuir un valor de propiedad en 10 | Elija un valor y, a continuación, seleccione `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Elija un valor y, a continuación, seleccione `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
+| Incrementar o disminuir un valor de propiedad en 100 | Elija un valor y, a continuación, seleccione `Control`+`Up Arrow` / `Control`+`Down Arrow` | Elija un valor y, a continuación, seleccione `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
-## Métodos abreviados de teclado del panel orígenes  
+## <a name="sources-tool-keyboard-shortcuts"></a>Métodos abreviados de teclado de la herramienta Sources  
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| PAUSE script Runtime \ (si se está ejecutando \) o resume \ (si está en pausa \) | `F8` ni `Control`+`\` | `F8` ni `Command`+`\` |  
-| Paso a paso por la siguiente llamada de función | `F10` ni `Control`+`'` | `F10` ni `Command`+`'` |  
-| Ir a la siguiente llamada de función | `F11` ni `Control`+`;` | `F11` ni `Command`+`;` |  
-| Salir de la función actual | `Shift`+`F11` ni `Control`+`Shift`+`;` | `Shift`+`F11` ni `Command`+`Shift`+`;` |  
-| Ir a una [línea de código específica mientras está en pausa][DevtoolsJavascriptBreakpointsLOC] | Espera `Control` y, a continuación, elige la línea de código | Espera `Command` y, a continuación, elige la línea de código |  
-| Seleccionar el marco de llamada debajo o encima del fotograma seleccionado actualmente | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
-| Guardar los cambios en las modificaciones locales | `Control`+`S` | `Command`+`S` |  
+| Pause script runtime \(if currently running\) or resume \(if currently paused\) | `F8` o `Control`+`\` | `F8` o `Command`+`\` |  
+| Paso a paso sobre la siguiente llamada de función | `F10` o `Control`+`'` | `F10` o `Command`+`'` |  
+| Paso a siguiente llamada de función | `F11` o `Control`+`;` | `F11` o `Command`+`;` |  
+| Salir de la función actual | `Shift`+`F11` o `Control`+`Shift`+`;` | `Shift`+`F11` o `Command`+`Shift`+`;` |  
+| Continuar con una [línea de código específica mientras está en pausa][DevtoolsJavascriptBreakpointsLOC] | Hold `Control` y, a continuación, elija la línea de código | Hold `Command` y, a continuación, elija la línea de código |  
+| Seleccione el marco de llamada debajo / encima del marco seleccionado actualmente | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
+| Guardar cambios en modificaciones locales | `Control`+`S` | `Command`+`S` |  
 | Guardar todos los cambios | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |  
-| Ir a la línea | `Control`+`G` | `Control`+`G` |  
-| Ir a un número de línea del archivo abierto actualmente | Seleccione `Control` + `O` para abrir el [menú de comandos][DevtoolsCommandMenuIndex], escriba `:` seguido por el número de línea y, a continuación, seleccione `Enter` | Seleccione `Command` + `O` para abrir el [menú de comandos][DevtoolsCommandMenuIndex], escriba `:` seguido por el número de línea y, a continuación, seleccione `Enter` |  
-| Ir a una columna del archivo abierto actualmente \ (por ejemplo, línea 5, columna 9 \) | Seleccione `Control` + `O` para abrir el [menú de comandos][DevtoolsCommandMenuIndex], escriba `:` , luego el número de línea y, a continuación `:` , el número de columna y, después, seleccione `Enter` | Seleccione `Command` + `O` para abrir el [menú de comandos][DevtoolsCommandMenuIndex], escriba `:` , luego el número de línea y, a continuación `:` , el número de columna y, después, seleccione `Enter` |  
-| Ir a una declaración de función si el archivo actual es HTML o un script.  <br />  Ir a un conjunto de reglas si el archivo actual es una hoja de estilos.  | Seleccione `Control` + `Shift` + `O` y, a continuación, escriba el nombre del conjunto de reglas o la declaración, o selecciónelo en la lista de opciones. | Seleccione `Command` + `Shift` + `O` y, a continuación, escriba el nombre del conjunto de reglas o la declaración, o selecciónelo en la lista de opciones. |  
+| Navegar a la línea | `Control`+`G` | `Control`+`G` |  
+| Vaya a un número de línea del archivo abierto actualmente | Seleccione `Control` + `O` para abrir el menú [comando][DevtoolsCommandMenuIndex], escriba `:` seguido del número de línea y, a continuación, seleccione `Enter` | Seleccione `Command` + `O` para abrir el menú [comando][DevtoolsCommandMenuIndex], escriba `:` seguido del número de línea y, a continuación, seleccione `Enter` |  
+| Vaya a una columna del archivo actualmente abierto \(por ejemplo, línea 5, columna 9\) | Seleccione para abrir el menú comando , escriba , a continuación, el número de línea, luego otro , a `Control` + `O` continuación, el número de columna [][DevtoolsCommandMenuIndex] `:` `:` y, a continuación, seleccione `Enter` | Seleccione para abrir el menú comando , escriba , a continuación, el número de línea, luego otro , a `Command` + `O` continuación, el número de columna [][DevtoolsCommandMenuIndex] `:` `:` y, a continuación, seleccione `Enter` |  
+| Vaya a una declaración de función, si el archivo actual es HTML o un script.  <br />  Vaya a un conjunto de reglas, si el archivo actual es una hoja de estilos.  | Seleccione , escriba el nombre del conjunto de reglas `Control` + `Shift` + `O` o declaración, o selecciónelo en la lista de opciones | Seleccione , escriba el nombre del conjunto de reglas `Command` + `Shift` + `O` o declaración, o selecciónelo en la lista de opciones |  
 | Cerrar la pestaña activa | `Alt`+`W` | `Option`+`W` |  
 
-### Métodos abreviados de teclado del editor de código  
+### <a name="code-editor-keyboard-shortcuts"></a>Métodos abreviados de teclado del Editor de código  
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Eliminar todos los caracteres de la última palabra, hasta el cursor | `Control`+`Delete` | `Option`+`Delete` |  
-| Agregar o quitar un [punto de interrupción de línea de código][DevtoolsJavascriptBreakpointsLOC] | Centre el cursor en la línea y, a continuación, seleccione `Control`+`B` | Centre el cursor en la línea y, a continuación, seleccione `Command`+`B` |  
-| Ir al corchete coincidente | `Control`+`M` | `Control`+`M` |  
-| Activar o desactivar los comentarios de una sola línea.  Si se seleccionan varias líneas, DevTools agregar un comentario al principio de cada línea | `Control`+`/` | `Command`+`/` |  
-| Seleccione/anular la selección de la siguiente aparición de cualquier palabra en la que se encuentra el cursor.  Cada ocurrencia se resalta simultáneamente | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
+| Agregar o quitar un [punto de interrupción de línea de código][DevtoolsJavascriptBreakpointsLOC] | Centrar el cursor en la línea y, a continuación, seleccionar `Control`+`B` | Centrar el cursor en la línea y, a continuación, seleccionar `Command`+`B` |  
+| Navegar a corchetes de coincidencia | `Control`+`M` | `Control`+`M` |  
+| Alternar comentario de línea única.  Si se seleccionan varias líneas, DevTools agrega un comentario al inicio de cada línea | `Control`+`/` | `Command`+`/` |  
+| Active o desactive la siguiente aparición de cualquier palabra en la que esté el cursor.  Cada aparición se resalta simultáneamente | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
 
-## Métodos abreviados de teclado del panel de rendimiento  
+## <a name="performance-tool-keyboard-shortcuts"></a>Métodos abreviados de teclado de la herramienta de rendimiento  
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Iniciar o detener grabación | `Control`+`E` | `Command`+`E` |  
+| Iniciar o detener la grabación | `Control`+`E` | `Command`+`E` |  
 | Guardar grabación | `Control`+`S` | `Command`+`S` |  
 | Cargar grabación | `Control`+`O` | `Command`+`O` |  
 
-## Métodos abreviados de teclado del panel memoria  
+## <a name="memory-tool-keyboard-shortcuts"></a>Métodos abreviados de teclado de la herramienta de memoria  
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Iniciar o detener grabación | `Control`+`E` | `Command`+`E` |  
+| Iniciar o detener la grabación | `Control`+`E` | `Command`+`E` |  
 
-## Métodos abreviados de teclado del panel de consola  
+## <a name="console-tool-keyboard-shortcuts"></a>Métodos abreviados de teclado de la herramienta de consola  
 
-| Acción | Windows \/Linux | macOS |  
+| Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Aceptar sugerencia de autocompletar | `Right Arrow` o `Tab` | `Right Arrow` o `Tab` |  
+| Aceptar sugerencia de autocompletar | `Right Arrow` or `Tab` | `Right Arrow` or `Tab` |  
 | Rechazar sugerencia de autocompletar | `Escape` | `Escape` |  
-| Obtener la instrucción anterior | `Up Arrow` | `Up Arrow` |  
-| Instrucción GET NEXT | `Down Arrow` | `Down Arrow` |  
+| Obtener instrucción anterior | `Up Arrow` | `Up Arrow` |  
+| Obtener siguiente instrucción | `Down Arrow` | `Down Arrow` |  
 | Centrar la **consola** | `Control`+ `` ` `` | `Control`+`` ` `` |  
-| Borrar la **consola** | `Control`+`L` | `Command`+`K` ni `Option`+`L` |  
-| Forzar una entrada con varias líneas.  Este acceso directo es principalmente innecesario porque DevTools debería detectar escenarios de varias líneas de forma predeterminada | `Shift`+`Enter` | `Command`+`Return` |  
+| Borrar la **consola** | `Control`+`L` | `Command`+`K` o `Option`+`L` |  
+| Forzar una entrada de varias líneas.  Este acceso directo es en su mayoría innecesario, ya que DevTools debe detectar escenarios de varias líneas de forma predeterminada | `Shift`+`Enter` | `Command`+`Return` |  
 | Ejecutar | `Enter` | `Return` |  
-| Expandir todas las subpropiedades de un objeto que se han registrado en la consola | Espera `Alt` y, a continuación, elija **expandir** \ ( ![ expandir ][ImageExpandIcon] \) | Espera `Alt` y, a continuación, elija **expandir** \ ( ![ expandir ][ImageExpandIcon] \) |  
+| Expandir todas las subpropiedades de un objeto que se registran en la consola | Mantenga `Alt` y, a **continuación, elija Expandir** \( Expandir ![ ][ImageExpandIcon] \) | Mantenga `Alt` y, a **continuación, elija Expandir** \( Expandir ![ ][ImageExpandIcon] \) |  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -164,17 +164,17 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools | Microsoft docs"  
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Cajón-personalizar Microsoft Edge DevTools | Microsoft docs"  
-[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Cambiar la ubicación de DevTools: personalizar Microsoft Edge DevTools | Microsoft docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer: personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Cambiar ubicación de DevTools: personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Puntos de interrupción de línea de código: Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft docs"  
+[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Puntos de interrupción de línea de código: cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft Docs"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/shortcuts) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/shortcuts) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

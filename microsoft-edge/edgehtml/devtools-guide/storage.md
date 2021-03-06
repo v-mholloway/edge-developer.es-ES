@@ -1,195 +1,193 @@
 ---
-description: Usar el panel de almacenamiento para inspeccionar el almacenamiento Web, IndexedDB, cookies y las memorias caché de solicitudes/respuestas
-title: 'DevTools: almacenamiento'
+description: Use el panel Almacenamiento para inspeccionar el almacenamiento web, IndexedDB, las cookies y las memorias caché de solicitud y respuesta
+title: Almacenamiento | DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, almacenamiento Web, almacenamiento local, almacenamiento de sesión, IndexedDB, cookies, trabajo de servicio, caché
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools, almacenamiento web, almacenamiento local, almacenamiento de sesiones, indexeddb, cookies, trabajador de servicio, caché
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 90a2e2fdb0f329c3d83f52beb9eba169bdd48520
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 3e970ae0d8ca3a43a309eff7b77400aa3ced5b21
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235993"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398899"
 ---
-# Almacenamiento
+# <a name="storage"></a>Almacenamiento
 
-Use el panel **almacenamiento** para inspeccionar y administrar diversos datos de la caché local, entre los que se incluyen:
+Use el panel **Almacenamiento** para inspeccionar y administrar varios datos almacenados en caché localmente, incluidos:  
 
- - Pares de clave y valor de [almacenamiento web](#local-and-session-storage-managers) (almacenamiento*local* y de *sesión* )
- - Datos estructurados de la base de datos [indizados](#indexeddb-manager)
- - [Cookies](#cookies-list) para el dominio
- - [Caché](#cache-manager) (pares de solicitud y respuesta) para la depuración de trabajos de servicio
+*   [Pares de clave y](#local-and-session-storage-managers) valores de almacenamiento web \(Almacenamiento local y de sesión\)  
+*   [Datos estructurados de base de datos](#indexeddb-manager) indizados  
+*   [Cookies](#cookies-list) para el dominio  
+*   [Caché](#cache-manager) \(pares de solicitud/respuesta\) para la depuración del trabajador de servicio  
 
-Expanda cualquiera de estas categorías y haga clic en una entrada secundaria para abrir su ficha de administrador de recursos.
+Expanda cualquiera de estas categorías y haga clic en una entrada secundaria para abrir su pestaña administrador de recursos.  
 
-## Administradores de almacenamiento local y de sesión
+## <a name="local-and-session-storage-managers"></a>Administradores de almacenamiento local y de sesión  
 
-Use el *Administrador* de almacenamiento local y el *Administrador de almacenamiento de sesión* para inspeccionar y administrar el almacenamiento Web de la página. 
+Use el administrador de almacenamiento local y el administrador de almacenamiento de sesiones para inspeccionar y administrar el almacenamiento web de la página.  
 
-Las carpetas **almacenamiento local** y **almacenamiento de sesión** en el selector de [*recursos*](./debugger.md#resource-picker) del panel de almacenamiento muestran una lista de orígenes de la página. Al seleccionar uno de estos marcos, se abre una tabla editable de los pares de clave y valor actuales establecido a través de [window. localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) o [window. sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage), respectivamente (o establecido directamente desde la [lista de almacenamiento](#storage-list)de DevTools).
+Las **carpetas** Almacenamiento local y **Almacenamiento de** sesiones dentro del selector De recursos del panel almacenamiento muestran una lista de orígenes de la página. [](./debugger.md#resource-picker)  Al seleccionar uno de estos marcos, se abre una tabla editable de los pares clave/valor actuales establecidos a través de [](#storage-list) [Window.localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) o [Window.sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage), respectivamente \(y/o establecido directamente desde la lista Almacenamiento de DevTools \).  
 
-![DevTools local Storage Manager](./media/storage_web_storage.png)
+![Administrador de almacenamiento de DevTools](./media/storage_web_storage.png)  
 
-En las pestañas *almacenamiento local* y *almacenamiento de sesiones* , puede hacer lo siguiente:
+En las pestañas Almacenamiento local y Almacenamiento de sesiones puede:  
 
- - **Refresh** ( `Ctrl+F5` ) la [lista de almacenamiento](#cookies-list) para ver el conjunto actual de pares clave/valor para el dominio dado. (La lista no se actualiza automáticamente en las actualizaciones de script).
- - **Simular alcanzar el límite de almacenamiento** para almacenamiento Web Microsoft Edge. Cada dominio y subdominio tiene su propia área de almacenamiento, pero hay un límite combinado:
-    - **Subdominios:** hasta 5 MB de espacio
-    - **Dominios:** hasta 10 MB de espacio
-    - **Total para todos los dominios:** hasta 50 MB de espacio
+*   **Actualice** \( \) la lista de almacenamiento para ver el conjunto actual de pares `Ctrl+F5` clave/valores para el dominio determinado. [](#cookies-list)  \(La lista no se actualiza automáticamente tras las actualizaciones de scripts.\)  
+*   **Simular alcanzar el límite de almacenamiento**  para el almacenamiento web de Microsoft Edge.  Cada dominio y subdominio tiene su propio área de almacenamiento, pero hay un límite combinado:  
+    *   **Subdominios:** hasta 5 MB de espacio  
+    *   **Dominios:** hasta 10 MB de espacio  
+    *   **Total para todos los dominios:** hasta 50 MB de espacio  
 
-   El almacenamiento de sesión se borra tan pronto como se cierre la última ficha del explorador que hace referencia a su origen. Las entradas de almacenamiento local continúan de forma indefinida hasta que la página la borra mediante programación o manualmente por el usuario:
+   El almacenamiento de sesión se borra tan pronto como se cierra la última pestaña del explorador que hace referencia a su origen.  Las entradas de almacenamiento local persisten indefinidamente hasta que el usuario lo borra mediante programación o manualmente:  
 
-   **Configuración**  >  **Borrar datos**  >  de exploración **Cookies y datos de sitios web guardados**
+   **Configuración**  >  **Borrar datos de exploración**  >  **Cookies y datos guardados del sitio web**  
 
-![Desactivar la navegación de datos desde el panel de configuración de Microsoft Edge](./media/settings_clear_browsing_data.png)
+![Borrar datos de exploración desde el panel Configuración de Microsoft Edge](./media/settings_clear_browsing_data.png)  
 
-### Lista de almacenamiento
+### <a name="storage-list"></a>Lista de almacenamiento  
 
-En la tabla *lista de almacenamiento* , puede hacer lo siguiente:
+En la tabla de lista Almacenamiento puede:  
 
- - **Inspeccione y ordene** las parejas de clave y valor haciendo clic en uno de los nombres de columna de la tabla.
- - **Edite** la *clave* y el *valor* de una entrada existente haciendo clic en la celda.
- - **Eliminar** ( `Del` ) una entrada de la opción del menú contextual de clic derecho, *Eliminar elemento*.
- - **Agregue** un nuevo par de clave/valor haciendo clic en la fila vacía de la parte inferior de la tabla.
+*   **Inspeccione y ordene** `key/value` los pares haciendo clic en el nombre de columna de la tabla.  
+*   **Edite** `Key` el y de una entrada existente haciendo clic en la `Value` celda.  
+*   **Eliminar** \( \) una entrada de la opción del menú contextual con el botón `Del` secundario, **Eliminar elemento**.  
+*   **Agregue** un par `key/value` nuevo haciendo clic en la fila vacía de la parte inferior de la tabla.  
 
+### <a name="shortcuts"></a>Accesos directos
 
-### Accesos directos
+| Acción | Acceso directo |  
+|:--- |:--- |  
+| Actualizar | `Ctrl`+`F5` |  
+| Eliminar elemento | `Del` |  
+| Copiar elementos seleccionados | `Ctrl`+`C` |  
+| Seleccionar todos | `Ctrl`+`A` |  
 
-| Acción              | Acceso directo      |
-|:--------------------|:--------------|
-| Actualizar             | `Ctrl` + `F5` |
-| Eliminar elemento         | `Del`         |
-| Copiar elementos seleccionados | `Ctrl` + `C`  |
-| Seleccionar todos          | `Ctrl` + `A`  |
+## <a name="indexeddb-manager"></a>Administrador de IndexedDB  
 
-
-## IndexedDB Manager
-
-Use la pestaña **IndexedDB** para inspeccionar y administrar los datos estructurados almacenados de forma local en un equipo cliente. En concreto, puede inspeccionar/ordenar y actualizar los índices y los almacenes de objetos, así como eliminar entradas de clave y valor individuales.
+Use la **pestaña IndexedDB** para inspeccionar y administrar los datos estructurados almacenados localmente en un equipo cliente.  En concreto, puede inspeccionar/ordenar y actualizar los almacenes e índices de objetos, y también eliminar entradas de clave-valor individuales.  
 
 > [!TIP]
-> Puede usar nuestra demostración de [mezclador de audio](https://developer.microsoft.com/microsoft-edge/testdrive/demos/audiomixer/) para probar el *Administrador de IndexedDB* en Microsoft Edge DevTools.
+> Puede usar nuestra demostración [del mezclador de audio](https://developer.microsoft.com/microsoft-edge/testdrive/demos/audiomixer/) para probar la unidad del administrador de *IndexedDB* en Microsoft Edge DevTools.  
 
-Para eliminar todos los datos de IndexedDB almacenados para el usuario actual en Microsoft Edge, usa el menú de *configuración* de Microsoft Edge:
+Para eliminar todos los datos IndexedDB almacenados para el usuario actual en Microsoft Edge, use el menú Configuración **de** Microsoft Edge:  
 
-**...** >  **Configuración**  >  **Borrar datos**  >  de exploración **Cookies y datos de sitios web guardados**
+**...** >  **Configuración**  >  **Borrar datos de exploración**  >  **Cookies y datos guardados del sitio web**  
 
-La carpeta **IndexedDB** dentro del [*selector de recursos*](./debugger.md#resource-picker) del depurador muestra una lista de orígenes de los recursos cargados por la página. Todas las bases de datos IndexedDB (IDB) aparecerán debajo del origen, junto con sus almacenes de objetos. 
+La carpeta dentro del selector de recursos del depurador muestra una lista de orígenes de `IndexedDB` los recursos cargados por la página. [](./debugger.md#resource-picker)  Las bases de datos IndexedDB \(IDB\) aparecerán en el origen, junto con sus almacenes de objetos.  
 
-![DevTools IndexedDB Manager](./media/storage_indexeddb.png)
+![Administrador de IndexedDB de DevTools](./media/storage_indexeddb.png)  
 
-### Barra de IndexedDB
+### <a name="indexeddb-toolbar"></a>Barra de herramientas IndexedDB  
 
-Desde la barra de herramientas de *IndexedDB* puedes hacer lo siguiente:
+Desde la barra de herramientas IndexedDB puede:  
 
- - **Actualizar** ( `Ctrl+F5` ) para ver las entradas actuales en el almacén de objetos o el índice de su base de datos. El administrador de IndexedDB no se actualiza automáticamente cuando se realizan cambios en la base de datos.
+*   **Actualice** \( `Ctrl` + `F5` \) para ver las entradas actuales en el almacén de objetos o el índice de la base de datos.  El administrador de IndexedDB no se actualiza automáticamente cuando se realizan cambios en la base de datos.  
 
-### Lista de entradas del almacén de objetos
+### <a name="object-store-entries-list"></a>Lista de entradas del almacén de objetos  
 
-Desde la tabla *almacén de objetos* o *Índice* , puede:
+Desde el almacén de objetos o la tabla Índice puede:  
 
- - **Inspeccione y ordene** los pares clave-valor haciendo clic en cualquier nombre de columna de la tabla.
- - **Actualizar** ( `Ctrl+F5` )
- - **Eliminar elemento** ( `Del` ) para quitar la entrada seleccionada en el almacén de objetos o en el índice. También puede hacer esto desde la opción del [menú contextual](#context-menu) al hacer clic con el botón derecho, *Eliminar elemento*.
- - **Copiar elementos seleccionados** ( `Ctrl+C` ) para copiar el elemento seleccionado en el portapapeles. También puede hacer esto desde la opción del [menú contextual](#context-menu) al hacer clic con el botón derecho, *copiar el elemento seleccionado*.
- - **Seleccione todos** ( `Ctrl+A` ) para seleccionar todas las entradas del almacén de objetos o del índice. También puede hacer esto desde la opción del [menú contextual](#context-menu) de clic derecho, *seleccionar todo*.
+*   **Inspeccione y ordene** los pares clave-valor haciendo clic en cualquier nombre de columna de la tabla.  
+*   **Actualizar** \( `Ctrl` + `F5` \)  
+*   **Eliminar elemento** \( `Del` \) para quitar la entrada seleccionada en el índice o el almacén de objetos.  También puede hacerlo desde la opción de menú [contextual](#context-menu) Clic con el botón secundario, **Eliminar elemento**.  
+*   **Copie los elementos seleccionados** `Ctrl` + `C` \( \) para copiar el elemento seleccionado en el portapapeles.  También puede hacerlo desde la opción de menú [contextual](#context-menu) clic con el botón derecho, **Copiar elemento seleccionado**.  
+*   **Seleccione todo** \( \) para seleccionar todas las entradas del índice o `Ctrl` + `A` almacén de objetos.  También puede hacerlo desde la opción de menú [contextual](#context-menu) clic con el botón derecho, **Seleccionar todo**.  
 
-Las columnas de la tabla de *Índice* o el *almacén de objetos* se pueden ordenar:
+Las columnas del almacén de objetos o la tabla Index se pueden ordenar:  
 
-Columna | Descripción
-:------------ | :-------------
-Key | Nombre del par clave-valor (igual que la *clave principal*) al recorrer en iteración un almacén de objetos; Nombre de la clave de índice (clave actual del cursor) cuando se recorre en iteración un índice
-Clave principal | Nombre del par clave-valor (vea los *documentos web de MDN* para obtener más información sobre [las claves](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Structuring_the_database)de la IDB)
-Valor | Valor del par clave-valor
+| Columna | Descripción |  
+|:--- |:--- |  
+| Key | Nombre del par clave-valor \(igual que **la clave principal**\) al iterar por un almacén de objetos; Nombre de la clave de índice \(tecla actual del cursor\) al iterar sobre un índice |  
+| Clave principal | Nombre del par clave-valor \(see **MDN web docs** for more on IDB [keys](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Structuring_the_database)\) |  
+| Valor | Valor del par clave-valor |  
 
-Consulte los *documentos web de MDN* para obtener más información sobre los [conceptos y el uso de IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API).
+Consulte *documentos web de MDN* para obtener más información sobre los conceptos y el uso [de IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API).  
 
-### Menú contextual
+### <a name="context-menu"></a>Menú contextual  
 
-Además de la [barra de herramientas *IndexedDB* ](#indexeddb-toolbar), también puede administrar los datos en almacenes o índices de objetos desde el **menú contextual** o los [métodos abreviados](#shortcuts)de teclado del botón secundario del ratón.
+Además de la barra de herramientas [ *IndexedDB,* ](#indexeddb-toolbar)también puede administrar los datos **** en almacenes de objetos o índices desde el menú Contextual y/o los [métodos abreviados de teclado](#shortcuts).  
 
-### Accesos directos
+### <a name="shortcuts"></a>Accesos directos
 
-Acción | Acceso directo
-:------------ | :-------------
-Actualizar | `Ctrl` + `F5`
-Eliminar par clave-valor | `Del`
-Copiar elementos seleccionados | `Ctrl` + `C`
-Seleccionar todos | `Ctrl` + `A`
+| Acción | Acceso directo |  
+|:--- |:--- |  
+| Actualizar | `Ctrl`+`F5` |  
+| Eliminar par clave-valor | `Del` |  
+| Copiar elementos seleccionados | `Ctrl`+`C` |  
+| Seleccionar todos | `Ctrl +`A' |  
 
-## Administrador de cookies
+## <a name="cookies-manager"></a>Administrador de cookies  
 
-Use el *Administrador de cookies* para inspeccionar y administrar las cookies para el dominio dado. 
+Use el administrador de cookies para inspeccionar y administrar las cookies del dominio determinado.  
 
-La carpeta **cookies** dentro del selector de [*recursos*](./debugger.md#resource-picker) del depurador muestra una lista de orígenes de los recursos cargados por la página. Al seleccionar uno de estos marcos, se abre una tabla que representa las cookies actuales que ha establecido el encabezado [http](https://developer.mozilla.org/docs/Web/HTTP/Cookies) o mediante una secuencia de comandos con [Document. cookie](https://developer.mozilla.org/docs/Web/API/Document/cookie).
+La carpeta dentro del selector de recursos del depurador muestra una lista de orígenes de `Cookies` los recursos cargados por la página. [](./debugger.md#resource-picker)  Al seleccionar uno de estos fotogramas se abre una tabla que representa las cookies actuales establecidas por el encabezado [HTTP](https://developer.mozilla.org/docs/Web/HTTP/Cookies) o mediante un script [con Document.cookie](https://developer.mozilla.org/docs/Web/API/Document/cookie).  
 
-![Administrador de cookies de DevTools](./media/storage_cookies.png)
+![Administrador de cookies de DevTools](./media/storage_cookies.png)  
 
-En la barra de herramientas de la pestaña *cookies* puede:
+En la barra de herramientas de la pestaña Cookies puede:  
 
- - **Actualizar** ( `Ctrl+F5` ) la [lista de cookies](#cookies-list) para ver el conjunto actual de cookies para el dominio dado. (La lista no se actualiza automáticamente).
- - **Elimine todas las cookies** ( `Ctrl+Shift+Del` sesión y permanente) de la ruta de acceso de la página actual.
- - **Elimine todas las cookies de sesión** ( `Ctrl+Del` ) de la ruta de acceso de la página actual.
+*   **Actualice** \( `Ctrl` + `F5` \) la lista [cookies](#cookies-list) para ver el conjunto actual de cookies para el dominio determinado.  \(La lista no se actualiza automáticamente.\)  
+*   **Elimine todas las cookies** `Ctrl` + `Shift` + `Del` \( \) \(session y permanent\) de la ruta de acceso de la página actual.  
+*   **Elimine todas las cookies de sesión** `Ctrl` + `Del` \( \) de la ruta de acceso de la página actual.  
 
-Para borrar por completo la *lista de cookies*, es posible que tenga que **borrar todas las cookies del dominio** en la barra de herramientas del panel [**red**](./network.md#toolbar) .
+Para borrar completamente la lista de cookies, es posible que deba borrar todas **las cookies** del dominio desde la barra de [herramientas del](./network.md#toolbar) panel Red.  
 
-### Lista de cookies
+### <a name="cookies-list"></a>Lista de cookies  
 
-En la tabla *lista de cookies* puede:
+En la tabla de lista Cookies puede:  
 
- - **Inspeccione y ordene** las cookies haciendo clic en cualquier nombre de columna de la tabla.
- - **Edite** el *nombre* y el *valor* de una cookie existente haciendo clic en la celda.
- - **Eliminar** ( `Del` ) una cookie de la opción de [menú contextual](#context-menu) de clic derecho, *eliminar cookie*.
- - **Agregue** una nueva cookie de sesión para el *dominio o la ruta de acceso* dada haciendo clic en la fila vacía situada en la parte inferior de la tabla. Esto solo funciona para las cookies de sesión; las cookies permanentes (con fechas de vencimiento específicas) deben establecerse en métodos tradicionales. Los valores de *dominio* y *ruta* se rellenan automáticamente según la ubicación de la página.
+*   **Inspeccione y ordene** las cookies haciendo clic en cualquier nombre de columna de la tabla.  
+*   **Edite** `Name` el y de una cookie existente haciendo clic en la `Value` celda.  
+*   **Eliminar** \( \) una cookie de la opción del menú contextual con el botón `Del` secundario, [](#context-menu) `Delete cookie` .  
+*   **Agregue** una nueva cookie de sesión para el dado `Domain/Path` haciendo clic en la fila vacía en la parte inferior de la tabla.  Esto solo funciona para las cookies de sesión; las cookies permanentes \(con fechas de expiración específicas\) deben establecerse con métodos tradicionales.  Los `Domain` valores y se `Path` rellenan automáticamente según la ubicación de la página.  
 
-Las columnas de la *lista de cookies* se pueden ordenar:
+Las columnas de la lista cookies se pueden ordenar:
 
-Columna | Descripción
-:------------ | :-------------
-Name | Nombre de la cookie
-Valor | Valor de la cookie
-Dominio | Nombre de host de la cookie (puede estar vacío)
-Ruta de acceso | Dirección URL de la cookie (puede estar vacía)
-Expira | Vigencia máxima de la cookie como marca de tiempo de fecha HTTP. Si no `Expires` se `Max-Age` ha establecido ninguna o se ha establecido, la entrada se considera una cookie de *sesión* .
-Solo HTTP | Indica si la cookie se ha establecido en una `HttpOnly` Directiva, lo que indica que es inaccesible desde JavaScript
-Seguro | Indica si la cookie se estableció con la `Secure` Directiva, lo que indica que solo se enviará al servidor desde una solicitud mediante SSL y el protocolo HTTPS.
+| Columna | Descripción |  
+| :--- | :--- |  
+| Name | Nombre de la cookie |  
+| Valor | Valor de la cookie |  
+| Dominio | Nombre de host de la cookie \(puede estar vacío\) |  
+| Ruta de acceso | Ruta de acceso url para la cookie \(puede estar vacía\) |  
+| Expira | Duración máxima de la cookie como marca de tiempo de fecha HTTP.  Si no `Expires` se `Max-Age` estableció o no, la entrada se considera una cookie de sesión.  |  
+| Solo HTTP | Indica si la cookie se estableció con directiva, lo que indica que no es `HttpOnly` accesible desde JavaScript |  
+| Seguro | Indica si la cookie se estableció con la directiva, lo que indica que solo se enviará al servidor desde una solicitud mediante SSL y `Secure` el protocolo HTTPS.  |  
 
-Para obtener más información sobre las propiedades de las cookies, consulte la documentación del [conjunto de](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie) **documentos web de MDN** .
+Consulta la referencia [set-cookie](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie) de documentos web de **MDN** para obtener más información sobre las propiedades de las cookies.  
 
-### Menú contextual
+### <a name="context-menu"></a>Menú contextual  
 
-Además de la [barra de herramientas](#cookies-manager)de la pestaña *cookies* , también puede administrar las cookies desde el **menú contextual** o los [métodos abreviados](#shortcuts)de teclado del botón secundario.
+Además de la barra de herramientas [de](#cookies-manager)la pestaña Cookies, también puede administrar las cookies desde el menú contextual y/o los [métodos abreviados de teclado.](#shortcuts) ****  
 
-### Accesos directos
+### <a name="shortcuts"></a>Accesos directos  
 
-| Acción                     | Acceso directo                 |
-|:---------------------------|:-------------------------|
-| Actualizar                    | `Ctrl` + `F5`            |
-| Eliminar cookie              | `Del`                    |
-| Eliminar todas las cookies         | `Ctrl` + `Shift` + `Del` |
-| Eliminar todas las cookies de sesión | `Ctrl` + `Del`           |
-| Copiar elementos seleccionados        | `Ctrl` + `C`             |
-| Seleccionar todos                 | `Ctrl` + `A`             |
+| Acción | Acceso directo |  
+|:--- |:--- |  
+| Actualizar | `Ctrl`+`F5` |  
+| Eliminar cookie | `Del` |  
+| Eliminar todas las cookies | `Ctrl`+`Shift`+`Del` |  
+| Eliminar todas las cookies de sesión | `Ctrl`+`Del` |  
+| Copiar elementos seleccionados | `Ctrl`+`C` |  
+| Seleccionar todos | `Ctrl`+`A` |  
 
-### Administrador de caché
+### <a name="cache-manager"></a>Administrador de caché  
 
-Al hacer clic en una entrada de caché específica, se abrirá el administrador de **caché** de trabajadores del servicio, donde puede inspeccionar y, opcionalmente, eliminar entradas de la memoria caché (pares de clave y valor de*solicitud* y *respuesta* ):
+Al hacer clic en una entrada **** de caché específica, se abrirá el administrador de caché de trabajo de servicio, donde puede inspeccionar y eliminar opcionalmente entradas de caché \( y pares `Request` `Response` clave/valor\):  
 
-![Administrador de caché](./media/storage_cache.png)
+![Administrador de caché](./media/storage_cache.png)  
 
-### Accesos directos
+### <a name="shortcuts"></a>Accesos directos  
 
-#### Administrador de caché
+#### <a name="cache-manager"></a>Administrador de caché  
 
-| Acción              | Acceso directo      |
-|:--------------------|:--------------|
-| Actualizar             | `Ctrl` + `F5` |
-| Eliminar elemento         | `Del`         |
-| Copiar elementos seleccionados | `Ctrl` + `C`  |
-| Seleccionar todos          | `Ctrl` + `A`  |
+| Acción | Acceso directo |  
+|:--- |:--- |  
+| Actualizar | `Ctrl`+`F5` |  
+| Eliminar elemento | `Del` |  
+| Copiar elementos seleccionados | `Ctrl`+`C` |  
+| Seleccionar todos | `Ctrl`+`A` |  

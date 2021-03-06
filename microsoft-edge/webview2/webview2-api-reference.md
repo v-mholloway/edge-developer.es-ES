@@ -1,27 +1,27 @@
 ---
-description: Referencia de la API para el SDK de Microsoft Edge WebView2
-title: Referencia de la API de Microsoft Edge WebView2
+description: Referencia de API para SDK de WebView2 de Microsoft Edge
+title: Referencia de la API de WebView2 de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 01/07/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, control del explorador
-ms.openlocfilehash: 36c951967675d1daed769e40e8eacbf668a5973c
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador
+ms.openlocfilehash: 5005cd4648fae4d8ad27cc94f86ef56fea5cf44a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119055"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399235"
 ---
-# Referencia de la API de Microsoft Edge WebView2  
+# <a name="microsoft-edge-webview2-api-reference"></a>Referencia de la API de WebView2 de Microsoft Edge  
 
-El control Microsoft Edge WebView2 permite hospedar contenido web en la aplicación con [Microsoft Edge (cromo)](https://www.microsoftedgeinsider.com) como motor de representación.  Para obtener más información, vea [información general sobre Microsoft Edge WebView2](./index.md) y Introducción [a WebView2](gettingstarted/win32.md).  
+El control WebView2 de Microsoft Edge permite hospedar contenido web en la aplicación con [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) como motor de representación.  Para obtener más información, vaya [a Overview of Microsoft Edge WebView2](./index.md) y Getting Started with [WebView2](gettingstarted/win32.md).  
 
-Seleccione los idiomas y el marco de WebView2 que desea usar en la siguiente lista.  
+Seleccione los idiomas y el marco de WebView2 que desea usar para formar la siguiente lista.  
 
-## Idiomas y marcos  
+## <a name="languages-and-frameworks"></a>Idiomas y marcos  
 
 *   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)  
 *   .NET  
@@ -29,6 +29,8 @@ Seleccione los idiomas y el marco de WebView2 que desea usar en la siguiente lis
     *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  
     *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
 
-[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Espacio de nombres Microsoft. Web. WebView2. Core | Microsoft docs"
-[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Espacio de nombres Microsoft. Web. WebView2. WPF | Microsoft docs"
-[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Espacio de nombres Microsoft. Web. WebView2. WinForms | Microsoft docs"
+<!-- links -->  
+
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Espacio de nombres Microsoft.Web.WebView2.Core | Microsoft Docs"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Espacio de nombres Microsoft.Web.WebView2.Wpf | Microsoft Docs"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Espacio de nombres Microsoft.Web.WebView2.WinForms | Microsoft Docs"

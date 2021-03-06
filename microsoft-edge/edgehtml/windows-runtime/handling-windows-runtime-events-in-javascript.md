@@ -1,6 +1,8 @@
 ---
-description: Controlar eventos de Windows Runtime en JavaScript.
+description: Control de los eventos de Windows Runtime en JavaScript
 title: Control de los eventos de Windows Runtime en JavaScript
+ms.custom: ''
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 ms.topic: article
@@ -11,20 +13,19 @@ ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
 caps.latest.revision: 6
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: e0a3e35c908c766c0308903381b271f5ccdb27a3
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 08562f7ebff0c02b96bfc8229238a62463b95451
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11236444"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397527"
 ---
-# Control de los eventos de Windows Runtime en JavaScript  
+# <a name="handling-windows-runtime-events-in-javascript"></a>Control de los eventos de Windows Runtime en JavaScript  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Los eventos de Windows Runtime no se representan de la misma forma en JavaScript que en C++ o .NET Framework.  No son propiedades de clase, sino que se representan como identificadores de cadena \ (minúscula \) que se pasan a los métodos y a las clases `addEventListener` `removeEventListener` .  Por ejemplo, puedes agregar un controlador de eventos para el evento [geolocator. PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] pasando la cadena `positionchanged` al `Geolocator.addEventListener` método:  
+Los eventos de Windows Runtime no se representan de la misma manera en JavaScript que en C++ o en el .NET Framework.  No son propiedades de clase, sino que se representan como identificadores de cadena \(minúsculas\) que se pasan a los métodos y la `addEventListener` `removeEventListener` clase.  Por ejemplo, puede agregar un controlador de eventos para el evento [Geolocator.PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] pasando la cadena `positionchanged` al `Geolocator.addEventListener` método:  
 
 ```javascript  
 var locator = new Windows.Devices.Geolocation.Geolocator();
@@ -44,7 +45,7 @@ locator.onpositionchanged =
     };
 ```  
 
-Otra diferencia entre .NET/C++ y JavaScript es el número de parámetros que toma un controlador de eventos.  En .NET/C++, un controlador toma dos: el remitente del evento y los datos del evento.  En JavaScript, los dos se agrupan como un solo `Event` objeto.  En el ejemplo siguiente, el `ev` parámetro contiene el remitente del evento \ (la `target` propiedad \) y las propiedades de datos de evento \ (aquí, solo `position` \).  Las propiedades de los datos de evento son las documentadas para cada evento.  
+Otra diferencia entre .NET/C++ y JavaScript es el número de parámetros tomados por un controlador de eventos.  En .NET/C++, un controlador toma dos: el remitente del evento y los datos del evento.  En JavaScript, los dos se agrupan como un único `Event` objeto.  En el siguiente ejemplo, el parámetro contiene tanto el remitente del evento \(la propiedad\) como las propiedades de datos del evento `ev` `target` \(aquí, solo `position` \).  Las propiedades de datos de evento son las que se documentan para cada evento.  
 
 ```javascript
 function (ev) {
@@ -56,14 +57,14 @@ function (ev) {
 ```  
 
 > [!IMPORTANT]
-> Las características de Windows en tiempo de ejecución no están disponibles para las aplicaciones que se ejecutan en Internet Explorer.  
+> Las características de Windows Runtime no están disponibles para las aplicaciones que se ejecutan en Internet Explorer.  
 
-## Consulte también  
+## <a name="see-also"></a>Consulte también  
 
 [Use Windows en tiempo de ejecución en JavaScript][WindowsRuntimeJavascript]  
 
  <!-- links -->  
 
-[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Usar Windows Runtime en JavaScript | Microsoft docs"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Uso de Windows Runtime en JavaScript | Microsoft Docs"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Clase geolocator | Microsoft docs"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Clase Geolocator | Microsoft Docs"  

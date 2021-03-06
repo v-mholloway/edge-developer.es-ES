@@ -1,96 +1,95 @@
 ---
-description: Emular las deficiencias de la visión en Microsoft Edge DevTools.
-title: Emular deficiencias de la visión en Microsoft Edge DevTools (daltonismo)
+description: Emular las deficiencias de visión en Microsoft Edge DevTools.
+title: Emular las deficiencias de visión en Microsoft Edge DevTools (daltonismo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 5343d32992880f8c60501a86db6cb3a92f417331
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: eec3c95bac93e600acf1887c8d31cea2173c6aee
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230827"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397877"
 ---
-# Emular deficiencias visuales
+# <a name="emulate-vision-deficiencies"></a>Emular deficiencias visuales
 
-Para satisfacer mejor las necesidades de los usuarios con [deficiencia][ColorblindawarenessMain] de la visión del color \ (daltonismo \), [Microsoft Edge DevTools][DevtoolsIndex] le permite simular determinadas deficiencias de la visión del color.  La herramienta **emular deficiencias** de la visión simula las siguientes categorías.  
+Para satisfacer mejor las necesidades de los usuarios con deficiencia de visión de [color][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] le permite simular deficiencias específicas de la visión de color.  La **herramienta Emular deficiencias de visión** simula las siguientes categorías.  
 
 | Deficiencia de la visión del color | Detalles |  
 |:--- |:--- |  
-| Visión borrosa | El usuario tiene dificultades para centrarse en detalles. |   
+| Visión borrosa | El usuario tiene dificultades para centrarse en detalles finos. |  
 | Protanopia | El usuario no puede percibir ninguna luz roja. |  
 | Deuteranopia | El usuario no puede percibir ninguna luz verde. |  
 | Tritanopia | El usuario no puede percibir ninguna luz azul. |  
-| Achromatopsia | El usuario no puede percibir ningún color, lo que reduce todo el color a un tono de gris. |  
+| Achromatopsia | El usuario no puede percibir ningún color, lo que reduce todo el color a una sombra de gris. |  
 
-## Ir a las herramientas de representación  
+## <a name="navigate-to-the-rendering-tools"></a>Vaya a herramientas de representación  
 
-Para simular una deficiencia de la visión que se aplica a su producto Web, abra las [herramientas de representación][DevtoolsRenderingToolsIndex].  
+Para simular una deficiencia de visión que se está aplicando para el producto web, abra las herramientas [de representación][DevtoolsRenderingToolsIndex].  
 
-1.  Para abrir las herramientas de representación, elija el `...` elemento de menú de la barra de herramientas  
-1.  Elegir `More tools`  
-1.  Elegir `Rendering`  
+1.  Para abrir las herramientas de representación, elija el elemento `...` de menú de la barra de herramientas  
+1.  Elegir **más herramientas**  
+1.  Elegir **representación**  
     
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Abrir las herramientas de representación" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Abrir las **herramientas de representación**  
+       Abrir las herramientas **de representación**  
     :::image-end:::  
 
-El menú de **fotorrealismo** aparece en el cajón.  
+El **menú** Representación aparece en el cajón.  
 
 1.  Desplácese hacia abajo hasta el `Emulate vision deficiencies` elemento de menú y elija el menú desplegable para mostrar las opciones.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="El menú emular deficiencias de la visión en el alimentador de representación" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       El menú **emular deficiencias** de la visión en el alimentador de **representación**  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Menú Emular deficiencias de visión en el cajón de representación" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       Menú **Emular deficiencias de visión** en el **cajón de representación**  
     :::image-end:::  
     
 1.  Elija una opción.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Las opciones del menú emular deficiencias de visión" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       Las opciones del menú **emular deficiencias de visión**  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Opciones del menú Emular deficiencias de la visión" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
+       Opciones **del menú Emular deficiencias** de visión  
     :::image-end:::  
     
-1.  En la ventana principal, se muestra la simulación de la opción que ha elegido aplicada a la página actual.  
+1.  Las ventanas principales muestran la simulación de la opción elegida aplicada a la página actual.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Mostrar con * * simulación de enfoque * * borroso" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Mostrar con simulación de **visión borrosa**  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Mostrar con la simulación de visión borrosa" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             Visualización con **simulación de visión borrosa**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Pantalla con * * achromatopsia * * simulación" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Mostrar con simulación de **achromatopsia** :::image-end:::  
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Mostrar con la simulación **Achromatopsia**" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+             Mostrar con **la simulación de Achromatopsia** :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Usar el menú de comandos  
+## <a name="use-the-command-menu"></a>Usar el menú de comandos  
 
-También puede usar el **menú de comandos** para acceder a las distintas simulaciones.  
+También puede usar el **menú comando para** tener acceso a las diferentes simulaciones.  
 
-1.  Seleccione `Control` + `Shift` + `P` \ (Windows \) o `Command` + `Shift` + `P` \ (MacOS \) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows/Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
     
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="El menú de comandos" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       El **menú de comandos**  
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+       Menú **comando**  
     :::image-end:::  
     
-1.  Escriba `emulate` , elija lo que desea simular y seleccione `Enter` .  
+1.  Escriba `emulate` , elija lo que desea simular y elija `Enter` .  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Las diferentes opciones de simulación disponibles en el menú de comandos" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       Las diferentes opciones de simulación disponibles en el **menú de comandos**  
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Las distintas opciones de simulación disponibles en el menú comando" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+       Las distintas opciones de simulación disponibles en el **menú comando**  
     :::image-end:::  
     
 > [!IMPORTANT]
-> Las herramientas **emular deficiencias** de la visión simulan aproximaciones sobre cómo una persona con deficiencias puede ver su producto.  Cada persona es diferente; por lo tanto, las deficiencias de la visión varían en gravedad de persona a persona.  Para satisfacer mejor las necesidades de los usuarios, evite cualquier combinación de colores que pueda ser un problema.  Las herramientas **emular deficiencias de Vision** no son una evaluación completa de la accesibilidad del producto.  En su lugar, las herramientas **emular deficiencias** de la visión deberían darle un buen primer paso para evitar problemas.  
+> Las **herramientas Emular deficiencias de** visión simulan aproximaciones de cómo una persona con cada deficiencia puede ver el producto.  Cada persona es diferente, por lo tanto, las deficiencias de la vista varían en la gravedad de una persona a otra.  Para satisfacer mejor las necesidades de los usuarios, evite cualquier combinación de colores que pueda ser un problema.  Las **herramientas Emular deficiencias** de visión no son una evaluación de accesibilidad completa del producto.  En su lugar, **las herramientas Emular** deficiencias de visión deben darle un buen primer paso para evitar problemas.  
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
-[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analizar rendimiento en tiempo de ejecución | Microsoft docs"  
+[DevToolsIndex]: ../index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analizar el rendimiento en tiempo de ejecución | Microsoft Docs"  
 
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "La organización de conocimiento de colores ciegos"  
+[ColorblindawarenessMain]: http://www.colourblindawareness.org "La organización de concienciación de ciegos de color"  
 
-[AmfcbMain]: https://www.amfcb.org "American Foundation para el color Blind (AFCB)"  
-
+[AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  

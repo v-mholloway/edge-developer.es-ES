@@ -1,18 +1,18 @@
 ---
-description: Aprenda a ver, editar y eliminar las cookies HTTP de una página con Microsoft Edge DevTools.
+description: Obtenga información sobre cómo ver, editar y eliminar las cookies HTTP de una página con Microsoft Edge DevTools.
 title: Ver, editar y eliminar cookies con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 328771aa254dac1f851535a44126ea220dc95a9c
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 9c040aaa30142c2759c67b2c034d3a9271ca0a64
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125485"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397751"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,72 +28,72 @@ ms.locfileid: "11125485"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Ver, editar y eliminar cookies con Microsoft Edge DevTools  
+# <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>Ver, editar y eliminar cookies con Microsoft Edge DevTools  
 
-Las [cookies http][MDNHTTPCookies] se usan principalmente para administrar sesiones de usuario, almacenar las preferencias de personalización del usuario y hacer un seguimiento del comportamiento del usuario.  Las cookies también son la causa de todos los formularios de consentimiento "esta página usa cookies" que ve en la Web.  La siguiente guía le enseña a ver, editar y eliminar las cookies HTTP de una página con [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
+[Las cookies HTTP][MDNHTTPCookies] se usan principalmente para administrar sesiones de usuario, almacenar preferencias de personalización de usuario y realizar un seguimiento del comportamiento del usuario.  Las cookies también son la causa de todos los molestos que esta página **usa formularios** de consentimiento de cookies que se encuentran en toda la web.  La siguiente guía le enseña a ver, editar y eliminar las cookies HTTP de una página web con [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
-## Abrir el panel cookies  
+## <a name="open-the-cookies-pane"></a>Abrir el panel Cookies  
 
 1.  [Abra DevTools][DevToolsOpen].  
-1.  Seleccione la pestaña **aplicación** para abrir el panel de **aplicaciones** .  El panel **manifiesto** debe abrirse.  
+1.  Elija la **pestaña** Aplicación para abrir **el** panel Aplicación.  El **panel Manifiesto** debe abrirse.  
     
-    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-manifest-empty.msft.png":::
-       Ilustración 1: el panel manifiesto  
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Panel Manifiesto" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       Figura 1: Panel manifiesto  
     :::image-end:::  
 
-1.  En **almacenamiento** , expanda **cookies**y, a continuación, seleccione un origen.  
+1.  En **Almacenamiento,** expanda **Cookies**y, a continuación, seleccione un origen.  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
-       Ilustración 2: el panel cookies  
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="El panel Cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+       Figura 2: Panel cookies  
     :::image-end:::  
 
-## Campos  
+## <a name="fields"></a>Campos  
 
-La tabla **cookies** contiene los siguientes campos.  
+La **tabla Cookies** contiene los siguientes campos.  
 
 *   **Nombre**.  El nombre de la cookie.  
-*   **Value**.  El valor de la cookie.  
-*   **Dominio**.  Los hosts que pueden recibir la cookie.  Ver el [ámbito de las cookies][MDNHTTPCookiesScope].  
-*   **Ruta de acceso**.  La dirección URL que debe existir en la dirección URL solicitada para poder enviar el `Cookie` encabezado.  Ver el [ámbito de las cookies][MDNHTTPCookiesScope].  
-*   **Vence o Max-Age**.  La fecha de expiración o la antigüedad máxima de la cookie.  Consulte [cookies permanentes][MDNHTTPCookiesPermanent].  En el caso de las [cookies de sesión][MDNHTTPCookiesSession] , este valor es siempre `Session` .  
+*   **Valor**.  Valor de la cookie.  
+*   **Dominio**.  Los hosts que pueden recibir la cookie.  Vaya a [Ámbito de las cookies][MDNHTTPCookiesScope].  
+*   **Ruta**de acceso .  Dirección URL que debe existir en la dirección URL solicitada para enviar el `Cookie` encabezado.  Vaya a [Ámbito de las cookies][MDNHTTPCookiesScope].  
+*   **Expira / Max-Age**.  Fecha de expiración o antigüedad máxima de la cookie.  Vaya a [Cookies permanentes][MDNHTTPCookiesPermanent].  Para [las cookies de][MDNHTTPCookiesSession] sesión, este valor siempre es `Session` .  
 *   **Tamaño**.  Tamaño, en bytes, de la cookie.  
-*   **Http**.  Si es true, este campo indica que la cookie solo debe usarse a través de HTTP y no se permite la modificación de JavaScript.  Vea [cookies HttpOnly][MDNHTTPCookiesSecure].  
-*   **Seguro**.  Si es true, este campo indica que la cookie debe enviarse al servidor solo a través de una conexión HTTPS segura.  Consulte [cookies seguras][MDNHTTPCookiesSecure].  
-*   **SameSite**.  Contiene `strict` o `lax` si la cookie está usando el atributo [SameSite][MDNHTTPCookiesSamesite] experimental.  
-*   **Priority**.  Contains `low` , `medium` \ (default \) o `high` si la cookie usa el atributo de [prioridad de cookies][ChromiumIssue232693] obsoleto.
+*   **HTTP**.  Si es true, este campo indica que la cookie solo debe usarse a través de HTTP y no se permite la modificación de JavaScript.  Vaya a [Cookies HttpOnly][MDNHTTPCookiesSecure].  
+*   **Proteger**.  Si es true, este campo indica que la cookie debe enviarse al servidor solo a través de una conexión HTTPS segura.  Vaya a [Cookies seguras][MDNHTTPCookiesSecure].  
+*   **SameSite**.  Contiene `strict` o si la cookie usa el atributo experimental `lax` [Samesite.][MDNHTTPCookiesSamesite]  
+*   **Prioridad**.  Contiene `low` , `medium` \(default\), o si la cookie usa el atributo priority de cookie en desuso. `high` [][ChromiumIssue232693]
 
-## Filtrar cookies  
+## <a name="filter-cookies"></a>Filtrar cookies  
 
-Use el cuadro de texto **filtrar** para filtrar las cookies por **nombre** o **valor**.  No se admite el filtrado por otros campos.  
+Use el **cuadro de** texto Filtrar para filtrar las cookies **por Nombre** o **Valor**.  No se admite el filtrado por otros campos.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
-   Ilustración 3: filtrar las cookies que no contienen el texto `ID`  
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Filtrar las cookies que no contienen el identificador de texto" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+   Figura 3: Filtrado de las cookies que no contienen el texto `ID`  
 :::image-end:::  
 
-## Editar una cookie  
+## <a name="edit-a-cookie"></a>Editar una cookie  
 
-Los campos **nombre**, **valor**, **dominio**, **ruta**y **vencimiento/edad máxima** son editables.  
-Haga doble clic en un campo para modificarlo.  
+Los **campos Name**, **Value**, **Domain**, **Path**y **Expires / Max-Age** son editables.  
+Haga doble clic en un campo para editarlo.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
-   Ilustración 4: establecer el nombre de una cookie en `DEVTOOLS!`  
+:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Establecer el nombre de una cookie en DEVTOOLS." lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+   Figura 4: Establecer el nombre de una cookie en `DEVTOOLS!`  
 :::image-end:::  
 
-## Eliminar cookies  
+## <a name="delete-cookies"></a>Eliminar cookies  
 
-Seleccione una cookie y elija **eliminar** selección de ![ eliminación seleccionada ][ImageDeleteIcon]  para eliminarla.  
+Elija una cookie y **elija Eliminar seleccionada** \( Eliminar seleccionada ![ ][ImageDeleteIcon] \) para eliminar la cookie específica.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
-   Ilustración 5: eliminar una cookie específica  
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Eliminación de una cookie específica" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+   Figura 5: Eliminación de una cookie específica  
 :::image-end:::  
 
-Elija **Borrar** todo ![ Borrar todo ][ImageClearIcon]  para eliminar todas las cookies.  
+Elija **Borrar todo** \( Borrar todo ![ ][ImageClearIcon] \) para eliminar todas las cookies.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
-   Ilustración 6: borrar todas las cookies  
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Borrar todas las cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+   Figura 6: Borrar todas las cookies  
 :::image-end:::  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -104,21 +104,21 @@ Elija **Borrar** todo ![ Borrar todo ][ImageClearIcon]  para eliminar todas las 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (cromo)"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (Chromium)"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Abrir Microsoft Edge DevTools"  
 
-[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Error de cromo 232693: campo de prioridad de implementación de cookies | Errores de cromo"  
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Issue 232693: Implementing Priority Field for Cookies | Errores de Chromium"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Cookies HTTP | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Cookies HTTP: cookies permanentes | MDN"  
-[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookies HTTP: cookies SameSite | MDN"  
+[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookies HTTP: cookies de SameSite | MDN"  
 [MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "Cookies HTTP: ámbito de las cookies | MDN"  
 [MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "Cookies HTTP: cookies seguras y HttpOnly | MDN"  
 [MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "Cookies HTTP: cookies de sesión | MDN"  
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

@@ -3,16 +3,16 @@ description: Organice los recursos por marco, dominio, tipo u otros criterios.
 title: Ver recursos de página con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 353c36a9d98dac287c3fdaaa3feed2fe3b17cd07
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 75063b23f23c25ff4fe2e7f6e044a2de9a7b1ccd
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230778"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398227"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,148 +28,146 @@ ms.locfileid: "11230778"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Ver recursos de página con Microsoft Edge DevTools  
+# <a name="view-page-resources-with-microsoft-edge-devtools"></a>Ver recursos de página con Microsoft Edge DevTools  
 
-  
+Esta guía le enseña a usar Microsoft Edge DevTools para ver los recursos de una página web.  Los recursos son los archivos que necesita una página para mostrarse correctamente.  Algunos ejemplos de recursos incluyen archivos CSS, JavaScript y HTML, así como imágenes.  
 
-Esta guía le enseña cómo usar Microsoft Edge DevTools para ver los recursos de una página web.  Los recursos son los archivos que necesita una página para que se muestren correctamente.  Algunos ejemplos de recursos son los archivos CSS, JavaScript y HTML, así como las imágenes.  
+En esta guía se supone que está familiarizado con los conceptos básicos del desarrollo [web][MDNLearnWebDevelopment] y [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
-En esta guía se presupone que está familiarizado con los conceptos básicos de [desarrollo web][MDNLearnWebDevelopment] y [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
+## <a name="open-resources"></a>Recursos abiertos  
 
-## Abrir recursos  
+Cuando conoce el nombre del recurso que desea inspeccionar, el menú **comando** proporciona una forma rápida de abrir el recurso.  
 
-Cuando conoce el nombre del recurso que quiere inspeccionar, el **menú de comandos** proporciona una forma rápida de abrir el recurso.  
-
-1.  Seleccione `Control` + `P` \ (Windows, Linux \) o `Command` + `P` \ (MacOS \).  Se abrirá el cuadro de diálogo **Abrir archivo** .  
+1.  Seleccione `Control` + `P` \(Windows, Linux\) o `Command` + `P` \(macOS\).  Se **abre el cuadro de diálogo** Abrir archivo.  
     
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Cuadro de diálogo Abrir archivo" lightbox="../media/resources-command-menu-empty.msft.png":::
-       Cuadro de diálogo **Abrir archivo**  
+       Cuadro **de diálogo Abrir** archivo  
     :::image-end:::  
     
-1.  Seleccione el archivo de la lista desplegable o empiece a escribir el nombre de archivo y seleccione `Enter` una vez resaltado el archivo correcto en el cuadro Autocompletar.  
+1.  Elija el archivo en el desplegable o empiece a escribir el nombre de archivo y seleccione una vez que el archivo correcto esté `Enter` resaltado en el cuadro autocompletar.  
     
-    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Escribir un nombre de archivo en el cuadro de diálogo Abrir archivo" lightbox="../media/resources-command-menu-file-search.msft.png":::
-       Escribir un nombre de archivo en el cuadro de diálogo **Abrir archivo**  
+    :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Escriba un nombre de archivo en el cuadro de diálogo Abrir archivo" lightbox="../media/resources-command-menu-file-search.msft.png":::
+       Escriba un nombre de archivo en el **cuadro de diálogo Abrir** archivo  
     :::image-end:::  
     
-### Abrir recursos en el panel red  
+### <a name="open-resources-in-the-network-tool"></a>Abrir recursos en la herramienta Red  
 
-Desplácese para [inspeccionar los detalles de un recurso][DevtoolsNetworkInspectDetailsResource].  
+Vaya a [Inspeccionar los detalles de un recurso][DevtoolsNetworkInspectDetailsResource].  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Inspeccionar un recurso en el panel red" lightbox="../media/resources-network-response.msft.png":::
-   Inspeccionar un recurso en el panel **red**  
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Inspeccionar un recurso en la herramienta Red" lightbox="../media/resources-network-response.msft.png":::
+   Inspeccionar un recurso en la **herramienta Red**  
 :::image-end:::  
 
-### Mostrar recursos en el panel de red de otros paneles  
+### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a>Mostrar recursos de la herramienta Red desde otros paneles  
 
-En la sección [examinar recursos](#browse-resources) que se muestra a continuación se muestra cómo ver los recursos de varias partes de la interfaz de usuario de DevTools.  Si alguna vez desea inspeccionar un recurso en el panel **red** , haga clic con el botón derecho en el recurso y elija **Mostrar en el panel red**.  
+La [sección Examinar recursos](#browse-resources) siguiente muestra cómo ver recursos de varias partes de la interfaz de usuario de DevTools.  Si alguna vez desea inspeccionar **** un recurso en la herramienta Red, mantenga el mouse en el recurso, abra el menú contextual \(clic con el botón secundario\) y elija Mostrar en el **panel Red**.  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Mostrar en el panel red" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
-   **Mostrar en el panel red**  
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Mostrar en el panel Red" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+   **Mostrar en el panel Red**  
 :::image-end:::  
 
-## Examinar recursos  
+## <a name="browse-resources"></a>Examinar recursos  
 
-### Examinar recursos en el panel red  
+### <a name="browse-resources-in-the-network-panel"></a>Examinar recursos en el panel Red  
 
-Desplácese hasta [Registrar actividad de red][DevtoolsNetworkLogActivity].  
+Vaya a [Registrar actividad de red][DevtoolsNetworkLogActivity].  
 
 :::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Recursos de página en el registro de red" lightbox="../media/resources-network-resources.msft.png":::
-   Recursos de página en el registro de **red**  
+   Recursos de página en el **registro de** red  
 :::image-end:::  
 
-### Examinar por directorio  
+### <a name="browse-by-directory"></a>Examinar por directorio  
 
 Para ver los recursos de una página organizada por directorio:  
 
-1.  Haga clic en la pestaña **orígenes** para abrir el panel **fuentes** .  
-1.  Haga clic en la pestaña de la **Página** para mostrar los recursos de la página.  Se abre el panel de **páginas** .  
+1.  Elija la **herramienta Orígenes** para abrir el panel **Orígenes.**  
+1.  Elija **el** panel Página para mostrar los recursos de la página.  Se **abre el** panel Página.  
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="El panel de páginas" lightbox="../media/resources-sources-page-empty.msft.png":::
-       El panel de **páginas**  
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="El panel Página" lightbox="../media/resources-sources-page-empty.msft.png":::
+       Panel **Página**  
     :::image-end:::  
     
-    Este es un desglose de los elementos no obvios de la ilustración anterior.  
+    Este es un desglose de los elementos no obvios de la figura anterior.  
     
     | Elemento de página | Descripción |  
     |:--- |:--- |  
-    | `top` | [Contexto de examen][MDNInlineFrame]de documento principal. |  
-    | `airhorner.com` | El dominio.  Todos los recursos anidados en él provienen de ese dominio.  Por ejemplo, la dirección URL completa del `comlink.global.j` archivo es probablemente `https://airhorner.com/scripts/comlink.global.js` . |  
+    | `top` | El contexto de [exploración del documento principal][MDNInlineFrame]. |  
+    | `airhorner.com` | El dominio.  Todos los recursos anidados en él proceden de ese dominio.  Por ejemplo, la dirección URL completa del `comlink.global.j` archivo es probablemente `https://airhorner.com/scripts/comlink.global.js` . |  
     | `scripts` | Un directorio. |  
-    | `(index)` | Documento HTML principal. |  
-    | `sw.js` | Contexto en tiempo de ejecución de un trabajo de servicio. |  
+    | `(index)` | El documento HTML principal. |  
+    | `sw.js` | Contexto de tiempo de ejecución de un trabajador de servicio. |  
     
-1.  Haga clic en un recurso para verlo en el **Editor**.  
+1.  Elija un recurso para verlo en el **Editor**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Ver un archivo en el editor" lightbox="../media/resources-sources-page-resource.msft.png":::
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Ver un archivo en el Editor" lightbox="../media/resources-sources-page-resource.msft.png":::
        Ver un archivo en el **Editor**  
     :::image-end:::  
     
-### Examinar por nombre de archivo  
+### <a name="browse-by-filename"></a>Examinar por nombre de archivo  
 
-De forma predeterminada, el panel de **páginas** agrupa los recursos por directorio.  Para deshabilitar esta agrupación y ver los recursos de cada dominio como una lista plana:  
+De forma predeterminada, el panel **Página** agrupa los recursos por directorio.  Para deshabilitar esta agrupación y ver los recursos de cada dominio como una lista plana:  
 
-1.  Abra el panel de **páginas** .  Vaya a [Buscar por directorio](#browse-by-directory).  
-1.  Elija **más opciones** `...` y deshabilite **Agrupar por carpeta**.  
+1.  Abra **el** panel Página.  Vaya a [Examinar por directorio](#browse-by-directory).  
+1.  Elija **Más opciones y** `...` **deshabilite Grupo por carpeta**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="La opción agrupar por carpeta" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
-       La opción **Agrupar por carpeta**  
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="La opción Agrupar por carpeta" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+       La **opción Agrupar por** carpeta  
     :::image-end:::  
     
-    Los recursos están organizados por tipo de archivo.  Dentro de cada tipo de archivo, los recursos están organizados alfabéticamente.  
+    Los recursos se organizan por tipo de archivo.  Dentro de cada tipo de archivo, los recursos se organizan alfabéticamente.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="El panel de páginas después de deshabilitar agrupar por carpeta" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
-       El panel de **páginas** después de deshabilitar **Agrupar por carpeta**  
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="El panel Página después de deshabilitar Grupo por carpeta" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       El panel **Página** después de deshabilitar **Grupo por carpeta**  
     :::image-end:::  
     
-### Examinar por tipo de archivo  
+### <a name="browse-by-file-type"></a>Examinar por tipo de archivo  
 
 Para agrupar recursos en función de su tipo de archivo:  
 
-1.  Haga clic en la pestaña **aplicación** .  Se abre el panel de la **aplicación** .  De forma predeterminada, el panel **manifiesto** generalmente se abre en primer lugar.  
+1.  Elija la **pestaña** Aplicación.  Se **abre la herramienta** Aplicación.  De forma predeterminada, **el panel** Manifiesto normalmente se abre primero.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="El panel de aplicaciones" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
-       El panel de **aplicaciones**  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="La herramienta Aplicación" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+       La **herramienta Aplicación**  
     :::image-end:::  
     
-1.  Desplácese hacia abajo hasta el panel **Marcos** .  
+1.  Desplácese hacia abajo hasta el **panel Marcos.**  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="El panel marcos" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
-       El panel **Marcos**  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Panel Marcos" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+       Panel **Marcos**  
     :::image-end:::  
     
-1.  Expanda las secciones en las que esté interesado.  
-1.  Haga clic en un recurso para verlo.  
+1.  Expanda las secciones en las que está interesado.  
+1.  Elija un recurso para verlo.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Ver un recurso en el panel de aplicaciones" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
-       Ver un recurso en el panel de **aplicaciones**  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Ver un recurso en el panel Aplicación" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+       Ver un recurso en **el** panel Aplicación  
     :::image-end:::  
     
-#### Examinar archivos por tipo en el panel red  
+#### <a name="browse-files-by-type-in-the-network-panel"></a>Examinar archivos por tipo en el panel Red  
 
-Vaya a [filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].  
+Vaya a [Filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].  
 
-:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filtrar por CSS en el registro de red" lightbox="../media/resources-network-resources-filter-css.msft.png":::
-   Filtrar por CSS en el registro de **red**  
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filtrar para CSS en el registro de red" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+   Filtrar para CSS en el registro **de** red  
 :::image-end:::  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filtrar por tipo de recurso-comprobar actividad de red en Microsoft Edge DevTools | Microsoft docs"  
-[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Revise los detalles de la actividad de red inspeccionar recursos en Microsoft Edge DevTools | Microsoft docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Registrar actividad de red: inspeccionar actividad de red en Microsoft Edge DevTools | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filtrar por tipo de recurso: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspeccionar los detalles del recurso: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Actividad de red de registro: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
 
-[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<> iframe: el elemento marco alineado | MDN"  
-[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Aprenda el desarrollo web | MDN"  
+[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: el elemento Frame en línea | MDN"  
+[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Información sobre desarrollo web | MDN"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/resources/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/resources/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
