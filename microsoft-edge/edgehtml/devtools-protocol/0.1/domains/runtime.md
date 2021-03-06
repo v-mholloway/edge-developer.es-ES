@@ -1,585 +1,277 @@
 ---
-description: DevTools Protocol versión 0,1 (EdgeHTML) Reference for the Runtime domain. El dominio en tiempo de ejecución expone el tiempo de ejecución de JavaScript por medio de objetos de evaluación y reflejo remotos. Los resultados de la evaluación se devuelven como un objeto de espejo que expone el tipo de objeto, la representación de cadena y el identificador único que se puede usar para más referencias de objeto. Los objetos originales se mantienen en la memoria, a menos que se hayan liberado explícitamente.
-title: Dominio de tiempo de ejecución-protocolo de DevTools versión 0,1 (EdgeHTML)
+description: Referencia del protocolo DevTools versión 0.1 (EdgeHTML) para el dominio en tiempo de ejecución.  El dominio en tiempo de ejecución expone el tiempo de ejecución de JavaScript mediante objetos reflejados y de evaluación remota.  Los resultados de la evaluación se devuelven como objeto reflejado que exponen el tipo de objeto, la representación de cadenas y el identificador único que se puede usar para más referencia de objeto.  Los objetos originales se mantienen en la memoria a menos que se liberan explícitamente.
+title: 'Dominio en tiempo de ejecución: protocolo DevTools versión 0.1 (EdgeHTML)'
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 942a105199c8740fb7f7496b2a68e3eb0cc46fb4
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d9aa87c1c289452844ef3442811f84881fc752b4
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11235978"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397695"
 ---
-# <span data-ttu-id="e0efd-106">Dominio de tiempo de ejecución-protocolo de DevTools versión 0,1 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="e0efd-106">Runtime Domain - DevTools Protocol Version 0.1 (EdgeHTML)</span></span>  
-
-<span data-ttu-id="e0efd-107">El dominio en tiempo de ejecución expone el tiempo de ejecución de JavaScript por medio de objetos de evaluación y reflejo remotos.</span><span class="sxs-lookup"><span data-stu-id="e0efd-107">Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects.</span></span> <span data-ttu-id="e0efd-108">Los resultados de la evaluación se devuelven como un objeto de espejo que expone el tipo de objeto, la representación de cadena y el identificador único que se puede usar para más referencias de objeto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-108">Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference.</span></span> <span data-ttu-id="e0efd-109">Los objetos originales se mantienen en la memoria, a menos que se hayan liberado explícitamente.</span><span class="sxs-lookup"><span data-stu-id="e0efd-109">Original objects are maintained in memory unless they are either explicitly released.</span></span>
-
-| | |
-|-|-|
-| [**<span data-ttu-id="e0efd-110">Métodos</span><span class="sxs-lookup"><span data-stu-id="e0efd-110">Methods</span></span>**](#methods) | <span data-ttu-id="e0efd-111">[enable](#enable), [Disable](#disable), [Evaluate](#evaluate), [callFunctionOn](#callfunctionon), [GetProperties](#getproperties)</span><span class="sxs-lookup"><span data-stu-id="e0efd-111">[enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties)</span></span> |
-| [**<span data-ttu-id="e0efd-112">Eventos</span><span class="sxs-lookup"><span data-stu-id="e0efd-112">Events</span></span>**](#events) | <span data-ttu-id="e0efd-113">[executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)</span><span class="sxs-lookup"><span data-stu-id="e0efd-113">[executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)</span></span> |
-| [**<span data-ttu-id="e0efd-114">Tipos</span><span class="sxs-lookup"><span data-stu-id="e0efd-114">Types</span></span>**](#types) | <span data-ttu-id="e0efd-115">[ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace)</span><span class="sxs-lookup"><span data-stu-id="e0efd-115">[ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace)</span></span> |
-## <span data-ttu-id="e0efd-116">Métodos</span><span class="sxs-lookup"><span data-stu-id="e0efd-116">Methods</span></span>
-
-### <span data-ttu-id="e0efd-117">habilitar</span><span class="sxs-lookup"><span data-stu-id="e0efd-117">enable</span></span>
-<span data-ttu-id="e0efd-118">Permite informar del <code>executionContextsCleared</code> evento.</span><span class="sxs-lookup"><span data-stu-id="e0efd-118">Enables reporting of the <code>executionContextsCleared</code> event.</span></span>
-
-
----
-
-### <span data-ttu-id="e0efd-119">deshabilitar </span><span class="sxs-lookup"><span data-stu-id="e0efd-119">disable</span></span>
-<span data-ttu-id="e0efd-120">Deshabilita los informes del <code>executionContextsCleared</code> evento.</span><span class="sxs-lookup"><span data-stu-id="e0efd-120">Disables reporting of the <code>executionContextsCleared</code> event.</span></span>
-
-
----
-
-### <span data-ttu-id="e0efd-121">considerar</span><span class="sxs-lookup"><span data-stu-id="e0efd-121">evaluate</span></span>
-<span data-ttu-id="e0efd-122">Evalúa Expression en el objeto global.</span><span class="sxs-lookup"><span data-stu-id="e0efd-122">Evaluates expression on global object.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-123">Parameters</span><span class="sxs-lookup"><span data-stu-id="e0efd-123">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-124">Expression</span><span class="sxs-lookup"><span data-stu-id="e0efd-124">expression</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-125">Expresión que se va a evaluar.</span><span class="sxs-lookup"><span data-stu-id="e0efd-125">Expression to evaluate.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-126">silent</span><span class="sxs-lookup"><span data-stu-id="e0efd-126">silent</span></span> <br/> <i><span data-ttu-id="e0efd-127">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-127">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-128">En modo silencioso, no se notifican las excepciones producidas durante la evaluación y no pausan la ejecución.</span><span class="sxs-lookup"><span data-stu-id="e0efd-128">In silent mode exceptions thrown during evaluation are not reported and do not pause execution.</span></span> <span data-ttu-id="e0efd-129">Estado de invalidaciones <code>setPauseOnException</code> .</span><span class="sxs-lookup"><span data-stu-id="e0efd-129">Overrides <code>setPauseOnException</code> state.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-130">contextId</span><span class="sxs-lookup"><span data-stu-id="e0efd-130">contextId</span></span> <br/> <i><span data-ttu-id="e0efd-131">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-131">optional</span></span></i></td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td><span data-ttu-id="e0efd-132">Especifica el contexto de ejecución para realizar la evaluación.</span><span class="sxs-lookup"><span data-stu-id="e0efd-132">Specifies in which execution context to perform evaluation.</span></span> <span data-ttu-id="e0efd-133">Si se omite el parámetro, la evaluación se realizará en el contexto de la página inspeccionada.</span><span class="sxs-lookup"><span data-stu-id="e0efd-133">If the parameter is omitted the evaluation will be performed in the context of the inspected page.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-134">returnByValue</span><span class="sxs-lookup"><span data-stu-id="e0efd-134">returnByValue</span></span> <br/> <i><span data-ttu-id="e0efd-135">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-135">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-136">Si se espera que el resultado sea un objeto JSON que se debe enviar por valor.</span><span class="sxs-lookup"><span data-stu-id="e0efd-136">Whether the result is expected to be a JSON object that should be sent by value.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-137">awaitPromise</span><span class="sxs-lookup"><span data-stu-id="e0efd-137">awaitPromise</span></span> <br/> <i><span data-ttu-id="e0efd-138">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-138">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-139">Si la ejecución debe tener el <code>await</code> valor resultante y la devolución una vez que se resuelve la promesa esperada.</span><span class="sxs-lookup"><span data-stu-id="e0efd-139">Whether execution should <code>await</code> for resulting value and return once awaited promise is resolved.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-140">Devuelve</span><span class="sxs-lookup"><span data-stu-id="e0efd-140">Returns</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-141">resultado</span><span class="sxs-lookup"><span data-stu-id="e0efd-141">result</span></span></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="e0efd-142">Resultado de evaluación.</span><span class="sxs-lookup"><span data-stu-id="e0efd-142">Evaluation result.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <span data-ttu-id="e0efd-143">callFunctionOn</span><span class="sxs-lookup"><span data-stu-id="e0efd-143">callFunctionOn</span></span>
-<span data-ttu-id="e0efd-144">Función calls con declaración dada en el objeto dado.</span><span class="sxs-lookup"><span data-stu-id="e0efd-144">Calls function with given declaration on the given object.</span></span> <span data-ttu-id="e0efd-145">El grupo de objetos del resultado se hereda del objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="e0efd-145">Object group of the result is inherited from the target object.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-146">Parameters</span><span class="sxs-lookup"><span data-stu-id="e0efd-146">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-147">functionDeclaration</span><span class="sxs-lookup"><span data-stu-id="e0efd-147">functionDeclaration</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-148">Declaración de la función que se va a llamar.</span><span class="sxs-lookup"><span data-stu-id="e0efd-148">Declaration of the function to call.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-149">ID</span><span class="sxs-lookup"><span data-stu-id="e0efd-149">objectId</span></span> <br/> <i><span data-ttu-id="e0efd-150">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-150">optional</span></span></i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td><span data-ttu-id="e0efd-151">Identificador del objeto en el que se va a llamar.</span><span class="sxs-lookup"><span data-stu-id="e0efd-151">Identifier of the object to call function on.</span></span> <span data-ttu-id="e0efd-152">Debe especificar objectId o executionContextId.</span><span class="sxs-lookup"><span data-stu-id="e0efd-152">Either objectId or executionContextId should be specified.</span></span>  <span data-ttu-id="e0efd-153">objectId debe ser de la función Runtime. Evaluate ().</span><span class="sxs-lookup"><span data-stu-id="e0efd-153">objectId must be from the Runtime.evaluate() function.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-154">arguments</span><span class="sxs-lookup"><span data-stu-id="e0efd-154">arguments</span></span> <br/> <i><span data-ttu-id="e0efd-155">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-155">optional</span></span></i></td>
-            <td><a href="#callargument"><code class="flyout">CallArgument[]</code></a></td>
-            <td><span data-ttu-id="e0efd-156">Argumentos de la llamada.</span><span class="sxs-lookup"><span data-stu-id="e0efd-156">Call arguments.</span></span> <span data-ttu-id="e0efd-157">Todos los argumentos de la llamada deben pertenecer al mismo mundo de JavaScript que el objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="e0efd-157">All call arguments must belong to the same JavaScript world as the target object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-158">silent</span><span class="sxs-lookup"><span data-stu-id="e0efd-158">silent</span></span> <br/> <i><span data-ttu-id="e0efd-159">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-159">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-160">En modo silencioso, no se notifican las excepciones producidas durante la evaluación y no pausan la ejecución.</span><span class="sxs-lookup"><span data-stu-id="e0efd-160">In silent mode exceptions thrown during evaluation are not reported and do not pause execution.</span></span> <span data-ttu-id="e0efd-161">Estado de invalidaciones <code>setPauseOnException</code> .</span><span class="sxs-lookup"><span data-stu-id="e0efd-161">Overrides <code>setPauseOnException</code> state.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-162">returnByValue</span><span class="sxs-lookup"><span data-stu-id="e0efd-162">returnByValue</span></span> <br/> <i><span data-ttu-id="e0efd-163">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-163">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-164">Si se espera que el resultado sea un objeto JSON que se debe enviar por valor.</span><span class="sxs-lookup"><span data-stu-id="e0efd-164">Whether the result is expected to be a JSON object which should be sent by value.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-165">awaitPromise</span><span class="sxs-lookup"><span data-stu-id="e0efd-165">awaitPromise</span></span> <br/> <i><span data-ttu-id="e0efd-166">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-166">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-167">Si la ejecución debe tener el <code>await</code> valor resultante y la devolución una vez que se resuelve la promesa esperada.</span><span class="sxs-lookup"><span data-stu-id="e0efd-167">Whether execution should <code>await</code> for resulting value and return once awaited promise is resolved.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-168">Devuelve</span><span class="sxs-lookup"><span data-stu-id="e0efd-168">Returns</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-169">resultado</span><span class="sxs-lookup"><span data-stu-id="e0efd-169">result</span></span></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="e0efd-170">Resultado de la llamada.</span><span class="sxs-lookup"><span data-stu-id="e0efd-170">Call result.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <span data-ttu-id="e0efd-171">getProperties</span><span class="sxs-lookup"><span data-stu-id="e0efd-171">getProperties</span></span>
-<span data-ttu-id="e0efd-172">Devuelve las propiedades de un objeto determinado.</span><span class="sxs-lookup"><span data-stu-id="e0efd-172">Returns properties of a given object.</span></span> <span data-ttu-id="e0efd-173">El grupo de objetos del resultado se hereda del objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="e0efd-173">Object group of the result is inherited from the target object.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-174">Parameters</span><span class="sxs-lookup"><span data-stu-id="e0efd-174">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-175">ID</span><span class="sxs-lookup"><span data-stu-id="e0efd-175">objectId</span></span></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td><span data-ttu-id="e0efd-176">Identificador del objeto para el que se van a devolver las propiedades.</span><span class="sxs-lookup"><span data-stu-id="e0efd-176">Identifier of the object to return properties for.</span></span>  <span data-ttu-id="e0efd-177">objectId debe ser de la función Debugger. evaluateOnCallFrame ().</span><span class="sxs-lookup"><span data-stu-id="e0efd-177">objectId must be from the Debugger.evaluateOnCallFrame() function.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-178">ownProperties</span><span class="sxs-lookup"><span data-stu-id="e0efd-178">ownProperties</span></span> <br/> <i><span data-ttu-id="e0efd-179">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-179">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-180">Si es true, devuelve propiedades pertenecientes al propio elemento, no a su cadena de prototipo.</span><span class="sxs-lookup"><span data-stu-id="e0efd-180">If true, returns properties belonging only to the element itself, not to its prototype chain.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-181">accessorPropertiesOnly</span><span class="sxs-lookup"><span data-stu-id="e0efd-181">accessorPropertiesOnly</span></span> <br/> <i><span data-ttu-id="e0efd-182">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-182">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b><span data-ttu-id="e0efd-183">Montaje.</span><span class="sxs-lookup"><span data-stu-id="e0efd-183">Experimental.</span></span> </b></span><span data-ttu-id="e0efd-184">Si es verdadero, devuelve propiedades del descriptor de acceso (solo con el captador/establecedor); las propiedades internas no se devuelven.</span><span class="sxs-lookup"><span data-stu-id="e0efd-184">If true, returns accessor properties (with getter/setter) only; internal properties are not returned either.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-185">Devuelve</span><span class="sxs-lookup"><span data-stu-id="e0efd-185">Returns</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-186">resultado</span><span class="sxs-lookup"><span data-stu-id="e0efd-186">result</span></span></td>
-            <td><a href="#propertydescriptor"><code class="flyout">PropertyDescriptor[]</code></a></td>
-            <td><span data-ttu-id="e0efd-187">Propiedades del objeto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-187">Object properties.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-## <span data-ttu-id="e0efd-188">Eventos</span><span class="sxs-lookup"><span data-stu-id="e0efd-188">Events</span></span>
-
-### <span data-ttu-id="e0efd-189">executionContextsCleared</span><span class="sxs-lookup"><span data-stu-id="e0efd-189">executionContextsCleared</span></span>
-<span data-ttu-id="e0efd-190">Se emite cuando se han borrado todas las executionContexts en el explorador</span><span class="sxs-lookup"><span data-stu-id="e0efd-190">Issued when all executionContexts were cleared in browser</span></span>
-
-
----
-
-### <span data-ttu-id="e0efd-191">exceptionThrown</span><span class="sxs-lookup"><span data-stu-id="e0efd-191">exceptionThrown</span></span>
-<span data-ttu-id="e0efd-192">Se emite cuando se ha iniciado una excepción y no se ha controlado.</span><span class="sxs-lookup"><span data-stu-id="e0efd-192">Issued when exception was thrown and unhandled.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-193">Parameters</span><span class="sxs-lookup"><span data-stu-id="e0efd-193">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-194">marca</span><span class="sxs-lookup"><span data-stu-id="e0efd-194">timestamp</span></span></td>
-            <td><a href="#timestamp"><code class="flyout">Timestamp</code></a></td>
-            <td><span data-ttu-id="e0efd-195">Marca de fecha y hora de la excepción.</span><span class="sxs-lookup"><span data-stu-id="e0efd-195">Timestamp of the exception.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-196">exceptionDetails</span><span class="sxs-lookup"><span data-stu-id="e0efd-196">exceptionDetails</span></span></td>
-            <td><a href="#exceptiondetails"><code class="flyout">ExceptionDetails</code></a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-## <span data-ttu-id="e0efd-197">Tipos</span><span class="sxs-lookup"><span data-stu-id="e0efd-197">Types</span></span>
-
-### <a name="scriptid"></a> <span data-ttu-id="e0efd-198">ScriptId</span><span class="sxs-lookup"><span data-stu-id="e0efd-198">ScriptId</span></span> `string`
-
-<span data-ttu-id="e0efd-199">Identificador de script único.</span><span class="sxs-lookup"><span data-stu-id="e0efd-199">Unique script identifier.</span></span>
-
-
----
-
-### <a name="remoteobjectid"></a> <span data-ttu-id="e0efd-200">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="e0efd-200">RemoteObjectId</span></span> `string`
-
-<span data-ttu-id="e0efd-201">Identificador de objeto único.</span><span class="sxs-lookup"><span data-stu-id="e0efd-201">Unique object identifier.</span></span>
-
-
----
-
-### <a name="unserializablevalue"></a> <span data-ttu-id="e0efd-202">UnserializableValue</span><span class="sxs-lookup"><span data-stu-id="e0efd-202">UnserializableValue</span></span> `string`
-
-<span data-ttu-id="e0efd-203">Valor primitivo que no puede ser JSON-stringified.</span><span class="sxs-lookup"><span data-stu-id="e0efd-203">Primitive value which cannot be JSON-stringified.</span></span>
-
-##### <span data-ttu-id="e0efd-204">Valores permitidos</span><span class="sxs-lookup"><span data-stu-id="e0efd-204">Allowed Values</span></span>
-<span data-ttu-id="e0efd-205">Infinity, NaN,-Infinity,-0</span><span class="sxs-lookup"><span data-stu-id="e0efd-205">Infinity, NaN, -Infinity, -0</span></span>
-
----
-
-### <a name="remoteobject"></a> <span data-ttu-id="e0efd-206">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="e0efd-206">RemoteObject</span></span> `object`
-
-<span data-ttu-id="e0efd-207">Objeto Mirror que hace referencia al objeto de JavaScript original.</span><span class="sxs-lookup"><span data-stu-id="e0efd-207">Mirror object referencing original JavaScript object.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-208">Propiedades</span><span class="sxs-lookup"><span data-stu-id="e0efd-208">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-209">tipo</span><span class="sxs-lookup"><span data-stu-id="e0efd-209">type</span></span></td>
-            <td><code class="flyout">string</code> <br/> <i><span data-ttu-id="e0efd-210">Valores permitidos: objeto, función, sin definir, cadena, número, booleano, símbolo</span><span class="sxs-lookup"><span data-stu-id="e0efd-210">Allowed values: object, function, undefined, string, number, boolean, symbol</span></span></i></td>
-            <td><span data-ttu-id="e0efd-211">Tipo de objeto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-211">Object type.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-212">subtipo</span><span class="sxs-lookup"><span data-stu-id="e0efd-212">subtype</span></span> <br/> <i><span data-ttu-id="e0efd-213">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-213">optional</span></span></i></td>
-            <td><code class="flyout">string</code> <br/> <i><span data-ttu-id="e0efd-214">Valores permitidos: null, error, Promise</span><span class="sxs-lookup"><span data-stu-id="e0efd-214">Allowed values: null, error, promise</span></span></i></td>
-            <td><span data-ttu-id="e0efd-215">Sugerencia de subtipo de objeto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-215">Object subtype hint.</span></span> <span data-ttu-id="e0efd-216">Especificado <code>object</code> solo para los valores de tipo.</span><span class="sxs-lookup"><span data-stu-id="e0efd-216">Specified for <code>object</code> type values only.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-217">className</span><span class="sxs-lookup"><span data-stu-id="e0efd-217">className</span></span> <br/> <i><span data-ttu-id="e0efd-218">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-218">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-219">Nombre de la clase de objeto (constructor).</span><span class="sxs-lookup"><span data-stu-id="e0efd-219">Object class (constructor) name.</span></span> <span data-ttu-id="e0efd-220">Especificado <code>object</code> solo para los valores de tipo.</span><span class="sxs-lookup"><span data-stu-id="e0efd-220">Specified for <code>object</code> type values only.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-221">value</span><span class="sxs-lookup"><span data-stu-id="e0efd-221">value</span></span> <br/> <i><span data-ttu-id="e0efd-222">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-222">optional</span></span></i></td>
-            <td><code class="flyout">any</code></td>
-            <td><span data-ttu-id="e0efd-223">Valor del objeto remoto en caso de valores primitivos o valores de JSON (si se solicitó).</span><span class="sxs-lookup"><span data-stu-id="e0efd-223">Remote object value in case of primitive values or JSON values (if it was requested).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-224">unserializableValue</span><span class="sxs-lookup"><span data-stu-id="e0efd-224">unserializableValue</span></span> <br/> <i><span data-ttu-id="e0efd-225">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-225">optional</span></span></i></td>
-            <td><a href="#unserializablevalue"><code class="flyout">UnserializableValue</code></a></td>
-            <td><span data-ttu-id="e0efd-226">El valor primitivo que no puede ser JSON-stringified no tiene</span><span class="sxs-lookup"><span data-stu-id="e0efd-226">Primitive value which can not be JSON-stringified does not have</span></span> <code>value</code><span data-ttu-id="e0efd-227">, pero obtiene esta propiedad.</span><span class="sxs-lookup"><span data-stu-id="e0efd-227">, but gets this property.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-228">description</span><span class="sxs-lookup"><span data-stu-id="e0efd-228">description</span></span> <br/> <i><span data-ttu-id="e0efd-229">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-229">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-230">Representación de cadena del objeto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-230">String representation of the object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-231">ID</span><span class="sxs-lookup"><span data-stu-id="e0efd-231">objectId</span></span> <br/> <i><span data-ttu-id="e0efd-232">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-232">optional</span></span></i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td><span data-ttu-id="e0efd-233">Identificador de objeto único (para valores no primitivos).</span><span class="sxs-lookup"><span data-stu-id="e0efd-233">Unique object identifier (for non-primitive values).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-234">msDebuggerPropertyId</span><span class="sxs-lookup"><span data-stu-id="e0efd-234">msDebuggerPropertyId</span></span> <br/> <i><span data-ttu-id="e0efd-235">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-235">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b><span data-ttu-id="e0efd-236">Montaje.</span><span class="sxs-lookup"><span data-stu-id="e0efd-236">Experimental.</span></span> </b></span><span data-ttu-id="e0efd-237">Microsoft: el identificador de propiedad de depurador asociado para este objeto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-237">Microsoft: The associated debugger property id for this object.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="propertydescriptor"></a> <span data-ttu-id="e0efd-238">PropertyDescriptor</span><span class="sxs-lookup"><span data-stu-id="e0efd-238">PropertyDescriptor</span></span> `object`
-
-<span data-ttu-id="e0efd-239">Descriptor de propiedad de objeto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-239">Object property descriptor.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-240">Propiedades</span><span class="sxs-lookup"><span data-stu-id="e0efd-240">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-241">name</span><span class="sxs-lookup"><span data-stu-id="e0efd-241">name</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-242">Nombre de propiedad o descripción de símbolo.</span><span class="sxs-lookup"><span data-stu-id="e0efd-242">Property name or symbol description.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-243">value</span><span class="sxs-lookup"><span data-stu-id="e0efd-243">value</span></span> <br/> <i><span data-ttu-id="e0efd-244">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-244">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="e0efd-245">El valor asociado a la propiedad.</span><span class="sxs-lookup"><span data-stu-id="e0efd-245">The value associated with the property.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-246">pueda</span><span class="sxs-lookup"><span data-stu-id="e0efd-246">writable</span></span> <br/> <i><span data-ttu-id="e0efd-247">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-247">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-248">True si el valor asociado a la propiedad puede cambiarse (solo para descriptores de datos).</span><span class="sxs-lookup"><span data-stu-id="e0efd-248">True if the value associated with the property may be changed (data descriptors only).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-249">obtener</span><span class="sxs-lookup"><span data-stu-id="e0efd-249">get</span></span> <br/> <i><span data-ttu-id="e0efd-250">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-250">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="e0efd-251">Una función que sirve como captador para la propiedad o si no hay <code>undefined</code> ningún captador (solo descriptores de acceso).</span><span class="sxs-lookup"><span data-stu-id="e0efd-251">A function which serves as a getter for the property, or <code>undefined</code> if there is no getter (accessor descriptors only).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-252">set</span><span class="sxs-lookup"><span data-stu-id="e0efd-252">set</span></span> <br/> <i><span data-ttu-id="e0efd-253">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-253">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="e0efd-254">Una función que sirve como un establecedor para la propiedad o <code>undefined</code> si no hay ningún establecedor (solo descriptores de acceso).</span><span class="sxs-lookup"><span data-stu-id="e0efd-254">A function which serves as a setter for the property, or <code>undefined</code> if there is no setter (accessor descriptors only).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-255">puedan</span><span class="sxs-lookup"><span data-stu-id="e0efd-255">configurable</span></span></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-256">True si el tipo de este descriptor de propiedades se puede cambiar y si la propiedad se puede eliminar del objeto correspondiente.</span><span class="sxs-lookup"><span data-stu-id="e0efd-256">True if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-257">enumera</span><span class="sxs-lookup"><span data-stu-id="e0efd-257">enumerable</span></span></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-258">True si esta propiedad se muestra durante la enumeración de las propiedades del objeto correspondiente.</span><span class="sxs-lookup"><span data-stu-id="e0efd-258">True if this property shows up during enumeration of the properties on the corresponding object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-259">wasThrown</span><span class="sxs-lookup"><span data-stu-id="e0efd-259">wasThrown</span></span> <br/> <i><span data-ttu-id="e0efd-260">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-260">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-261">True si el resultado se produjo durante la evaluación.</span><span class="sxs-lookup"><span data-stu-id="e0efd-261">True if the result was thrown during the evaluation.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-262">isOwn</span><span class="sxs-lookup"><span data-stu-id="e0efd-262">isOwn</span></span> <br/> <i><span data-ttu-id="e0efd-263">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-263">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span data-ttu-id="e0efd-264">True si la propiedad es propiedad del objeto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-264">True if the property is owned for the object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-265">msReturnValue</span><span class="sxs-lookup"><span data-stu-id="e0efd-265">msReturnValue</span></span> <br/> <i><span data-ttu-id="e0efd-266">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-266">optional</span></span></i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b><span data-ttu-id="e0efd-267">Montaje.</span><span class="sxs-lookup"><span data-stu-id="e0efd-267">Experimental.</span></span> </b></span><span data-ttu-id="e0efd-268">Microsoft: true si la propiedad es un valor devuelto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-268">Microsoft: True if the property is a return value.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-269">symbol</span><span class="sxs-lookup"><span data-stu-id="e0efd-269">symbol</span></span> <br/> <i><span data-ttu-id="e0efd-270">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-270">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="e0efd-271">Objeto de símbolo de propiedad, si la propiedad es del `symbol` tipo.</span><span class="sxs-lookup"><span data-stu-id="e0efd-271">Property symbol object, if the property is of the `symbol` type.</span></span> </td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="callargument"></a> <span data-ttu-id="e0efd-272">CallArgument</span><span class="sxs-lookup"><span data-stu-id="e0efd-272">CallArgument</span></span> `object`
-
-<span data-ttu-id="e0efd-273">Representa el argumento de la llamada de función.</span><span class="sxs-lookup"><span data-stu-id="e0efd-273">Represents function call argument.</span></span> <span data-ttu-id="e0efd-274"><code>objectId</code>Se debe especificar el identificador de objeto remoto, el primitivo <code>value</code> , el valor primitivo inserializable o ninguno de los dos (no definidos).</span><span class="sxs-lookup"><span data-stu-id="e0efd-274">Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-275">Propiedades</span><span class="sxs-lookup"><span data-stu-id="e0efd-275">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-276">value</span><span class="sxs-lookup"><span data-stu-id="e0efd-276">value</span></span> <br/> <i><span data-ttu-id="e0efd-277">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-277">optional</span></span></i></td>
-            <td><code class="flyout">any</code></td>
-            <td><span data-ttu-id="e0efd-278">Valor primitivo o objeto serializable de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="e0efd-278">Primitive value or serializable javascript object.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-279">unserializableValue</span><span class="sxs-lookup"><span data-stu-id="e0efd-279">unserializableValue</span></span> <br/> <i><span data-ttu-id="e0efd-280">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-280">optional</span></span></i></td>
-            <td><a href="#unserializablevalue"><code class="flyout">UnserializableValue</code></a></td>
-            <td><span data-ttu-id="e0efd-281">Valor primitivo que no puede ser JSON-stringified.</span><span class="sxs-lookup"><span data-stu-id="e0efd-281">Primitive value which can not be JSON-stringified.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-282">ID</span><span class="sxs-lookup"><span data-stu-id="e0efd-282">objectId</span></span> <br/> <i><span data-ttu-id="e0efd-283">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-283">optional</span></span></i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td><span data-ttu-id="e0efd-284">Controlador de objeto remoto.</span><span class="sxs-lookup"><span data-stu-id="e0efd-284">Remote object handle.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="executioncontextid"></a> <span data-ttu-id="e0efd-285">ExecutionContextId</span><span class="sxs-lookup"><span data-stu-id="e0efd-285">ExecutionContextId</span></span> `integer`
-
-<span data-ttu-id="e0efd-286">Identificador de un contexto de ejecución.</span><span class="sxs-lookup"><span data-stu-id="e0efd-286">Id of an execution context.</span></span>
-
-
----
-
-### <a name="exceptiondetails"></a> <span data-ttu-id="e0efd-287">ExceptionDetails</span><span class="sxs-lookup"><span data-stu-id="e0efd-287">ExceptionDetails</span></span> `object`
-
-<span data-ttu-id="e0efd-288">Información detallada sobre la excepción (o error) que se produjo durante la compilación o ejecución de scripts.</span><span class="sxs-lookup"><span data-stu-id="e0efd-288">Detailed information about exception (or error) that was thrown during script compilation or execution.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-289">Propiedades</span><span class="sxs-lookup"><span data-stu-id="e0efd-289">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-290">exceptionId</span><span class="sxs-lookup"><span data-stu-id="e0efd-290">exceptionId</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="e0efd-291">Identificador de excepción.</span><span class="sxs-lookup"><span data-stu-id="e0efd-291">Exception id.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-292">texto</span><span class="sxs-lookup"><span data-stu-id="e0efd-292">text</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-293">Texto de excepción, que debe usarse junto con el objeto de excepción cuando esté disponible.</span><span class="sxs-lookup"><span data-stu-id="e0efd-293">Exception text, which should be used together with exception object when available.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-294">lineNumber</span><span class="sxs-lookup"><span data-stu-id="e0efd-294">lineNumber</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="e0efd-295">Número de línea de la ubicación de excepción (basada en 0).</span><span class="sxs-lookup"><span data-stu-id="e0efd-295">Line number of the exception location (0-based).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-296">columnNumber</span><span class="sxs-lookup"><span data-stu-id="e0efd-296">columnNumber</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="e0efd-297">Número de columna de la ubicación de excepción (basado en 0).</span><span class="sxs-lookup"><span data-stu-id="e0efd-297">Column number of the exception location (0-based).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-298">scriptId</span><span class="sxs-lookup"><span data-stu-id="e0efd-298">scriptId</span></span> <br/> <i><span data-ttu-id="e0efd-299">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-299">optional</span></span></i></td>
-            <td><a href="#scriptid"><code class="flyout">ScriptId</code></a></td>
-            <td><span data-ttu-id="e0efd-300">IDENTIFICADOR de script de la ubicación de excepción.</span><span class="sxs-lookup"><span data-stu-id="e0efd-300">Script ID of the exception location.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-301">url</span><span class="sxs-lookup"><span data-stu-id="e0efd-301">url</span></span> <br/> <i><span data-ttu-id="e0efd-302">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-302">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-303">Dirección URL de la ubicación de excepción que se usará cuando no se notificó el script.</span><span class="sxs-lookup"><span data-stu-id="e0efd-303">URL of the exception location, to be used when the script was not reported.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-304">stackTrace</span><span class="sxs-lookup"><span data-stu-id="e0efd-304">stackTrace</span></span> <br/> <i><span data-ttu-id="e0efd-305">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-305">optional</span></span></i></td>
-            <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
-            <td><span data-ttu-id="e0efd-306">Seguimiento de la pila de JavaScript si está disponible.</span><span class="sxs-lookup"><span data-stu-id="e0efd-306">JavaScript stack trace if available.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-307">excepción</span><span class="sxs-lookup"><span data-stu-id="e0efd-307">exception</span></span> <br/> <i><span data-ttu-id="e0efd-308">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-308">optional</span></span></i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td><span data-ttu-id="e0efd-309">Objeto de excepción si está disponible.</span><span class="sxs-lookup"><span data-stu-id="e0efd-309">Exception object if available.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-310">executionContextId</span><span class="sxs-lookup"><span data-stu-id="e0efd-310">executionContextId</span></span> <br/> <i><span data-ttu-id="e0efd-311">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-311">optional</span></span></i></td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td><span data-ttu-id="e0efd-312">Identificador del contexto en el que se produjo la excepción.</span><span class="sxs-lookup"><span data-stu-id="e0efd-312">Identifier of the context where exception happened.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="timestamp"></a> <span data-ttu-id="e0efd-313">Timestamp</span><span class="sxs-lookup"><span data-stu-id="e0efd-313">Timestamp</span></span> `integer`
-
-<span data-ttu-id="e0efd-314">Número de milisegundos desde la época.</span><span class="sxs-lookup"><span data-stu-id="e0efd-314">Number of milliseconds since epoch.</span></span>
-
-
----
-
-### <a name="callframe"></a> <span data-ttu-id="e0efd-315">CallFrame</span><span class="sxs-lookup"><span data-stu-id="e0efd-315">CallFrame</span></span> `object`
-
-<span data-ttu-id="e0efd-316">Entrada de pila para errores y aserciones en tiempo de ejecución.</span><span class="sxs-lookup"><span data-stu-id="e0efd-316">Stack entry for runtime errors and assertions.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-317">Propiedades</span><span class="sxs-lookup"><span data-stu-id="e0efd-317">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-318">functionName</span><span class="sxs-lookup"><span data-stu-id="e0efd-318">functionName</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-319">Nombre de la función JavaScript.</span><span class="sxs-lookup"><span data-stu-id="e0efd-319">JavaScript function name.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-320">scriptId</span><span class="sxs-lookup"><span data-stu-id="e0efd-320">scriptId</span></span></td>
-            <td><a href="#scriptid"><code class="flyout">ScriptId</code></a></td>
-            <td><span data-ttu-id="e0efd-321">ID. de script de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="e0efd-321">JavaScript script id.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-322">url</span><span class="sxs-lookup"><span data-stu-id="e0efd-322">url</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-323">Nombre de script o URL de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="e0efd-323">JavaScript script name or url.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-324">lineNumber</span><span class="sxs-lookup"><span data-stu-id="e0efd-324">lineNumber</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="e0efd-325">Número de línea de script de JavaScript (basado en 0).</span><span class="sxs-lookup"><span data-stu-id="e0efd-325">JavaScript script line number (0-based).</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-326">columnNumber</span><span class="sxs-lookup"><span data-stu-id="e0efd-326">columnNumber</span></span></td>
-            <td><code class="flyout">integer</code></td>
-            <td><span data-ttu-id="e0efd-327">Número de columna de script de JavaScript (basado en 0).</span><span class="sxs-lookup"><span data-stu-id="e0efd-327">JavaScript script column number (0-based).</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-### <a name="stacktrace"></a> <span data-ttu-id="e0efd-328">StackTrace</span><span class="sxs-lookup"><span data-stu-id="e0efd-328">StackTrace</span></span> `object`
-
-<span data-ttu-id="e0efd-329">Llamar a marcos para las aserciones o los mensajes de error.</span><span class="sxs-lookup"><span data-stu-id="e0efd-329">Call frames for assertions or error messages.</span></span>
-
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="e0efd-330">Propiedades</span><span class="sxs-lookup"><span data-stu-id="e0efd-330">Properties</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="e0efd-331">description</span><span class="sxs-lookup"><span data-stu-id="e0efd-331">description</span></span> <br/> <i><span data-ttu-id="e0efd-332">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-332">optional</span></span></i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="e0efd-333">Etiqueta de cadena de este seguimiento de pila.</span><span class="sxs-lookup"><span data-stu-id="e0efd-333">String label of this stack trace.</span></span> <span data-ttu-id="e0efd-334">Para las trazas asíncronas puede ser un nombre de la función que inició la llamada asincrónica.</span><span class="sxs-lookup"><span data-stu-id="e0efd-334">For async traces this may be a name of the function that initiated the async call.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-335">callFrames</span><span class="sxs-lookup"><span data-stu-id="e0efd-335">callFrames</span></span></td>
-            <td><a href="#callframe"><code class="flyout">CallFrame[]</code></a></td>
-            <td><span data-ttu-id="e0efd-336">Nombre de la función JavaScript.</span><span class="sxs-lookup"><span data-stu-id="e0efd-336">JavaScript function name.</span></span></td>
-        </tr>
-        <tr>
-            <td><span data-ttu-id="e0efd-337">matriz</span><span class="sxs-lookup"><span data-stu-id="e0efd-337">parent</span></span> <br/> <i><span data-ttu-id="e0efd-338">opcional</span><span class="sxs-lookup"><span data-stu-id="e0efd-338">optional</span></span></i></td>
-            <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
-            <td><span data-ttu-id="e0efd-339">Seguimiento asincrónico de la pila de JavaScript que precedía a esta pila, si está disponible.</span><span class="sxs-lookup"><span data-stu-id="e0efd-339">Asynchronous JavaScript stack trace that preceded this stack, if available.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-
----
+# <a name="runtime-domain---devtools-protocol-version-01-edgehtml"></a><span data-ttu-id="cf0b9-106">Dominio en tiempo de ejecución: protocolo DevTools versión 0.1 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-106">Runtime Domain - DevTools Protocol Version 0.1 (EdgeHTML)</span></span>  
+
+<span data-ttu-id="cf0b9-107">El dominio en tiempo de ejecución expone el tiempo de ejecución de JavaScript mediante objetos reflejados y de evaluación remota.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-107">Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects.</span></span>  <span data-ttu-id="cf0b9-108">Los resultados de la evaluación se devuelven como objeto reflejado que exponen el tipo de objeto, la representación de cadenas y el identificador único que se puede usar para más referencia de objeto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-108">Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference.</span></span>  <span data-ttu-id="cf0b9-109">Los objetos originales se mantienen en la memoria a menos que se liberan explícitamente.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-109">Original objects are maintained in memory unless they are either explicitly released.</span></span>  
+
+| <span data-ttu-id="cf0b9-110">Clasificación</span><span class="sxs-lookup"><span data-stu-id="cf0b9-110">Classification</span></span> | <span data-ttu-id="cf0b9-111">Miembros</span><span class="sxs-lookup"><span data-stu-id="cf0b9-111">Members</span></span> |  
+|:--- |:--- |  
+| [<span data-ttu-id="cf0b9-112">Métodos</span><span class="sxs-lookup"><span data-stu-id="cf0b9-112">Methods</span></span>](#methods) | <span data-ttu-id="cf0b9-113">[enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-113">[enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties)</span></span> |  
+| [<span data-ttu-id="cf0b9-114">Eventos</span><span class="sxs-lookup"><span data-stu-id="cf0b9-114">Events</span></span>](#events) | <span data-ttu-id="cf0b9-115">[executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-115">[executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)</span></span> |  
+| [<span data-ttu-id="cf0b9-116">Tipos</span><span class="sxs-lookup"><span data-stu-id="cf0b9-116">Types</span></span>](#types) | <span data-ttu-id="cf0b9-117">[ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-117">[ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace)</span></span> |  
+
+## <a name="methods"></a><span data-ttu-id="cf0b9-118">Métodos</span><span class="sxs-lookup"><span data-stu-id="cf0b9-118">Methods</span></span>  
+
+### <a name="enable"></a><span data-ttu-id="cf0b9-119">habilitar</span><span class="sxs-lookup"><span data-stu-id="cf0b9-119">enable</span></span>  
+
+<span data-ttu-id="cf0b9-120">Habilita la presentación de informes del `executionContextsCleared` evento.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-120">Enables reporting of the `executionContextsCleared` event.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="disable"></a><span data-ttu-id="cf0b9-121">deshabilitar </span><span class="sxs-lookup"><span data-stu-id="cf0b9-121">disable</span></span>  
+
+<span data-ttu-id="cf0b9-122">Deshabilita la presentación de informes del `executionContextsCleared` evento.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-122">Disables reporting of the `executionContextsCleared` event.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="evaluate"></a><span data-ttu-id="cf0b9-123">evaluar</span><span class="sxs-lookup"><span data-stu-id="cf0b9-123">evaluate</span></span>  
+
+<span data-ttu-id="cf0b9-124">Evalúa la expresión en el objeto global.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-124">Evaluates expression on global object.</span></span>  
+
+| <span data-ttu-id="cf0b9-125">Parameters</span><span class="sxs-lookup"><span data-stu-id="cf0b9-125">Parameters</span></span> | <span data-ttu-id="cf0b9-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-126">Type</span></span> | <span data-ttu-id="cf0b9-127">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-127">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-128">expresión</span><span class="sxs-lookup"><span data-stu-id="cf0b9-128">expression</span></span> | `string` | <span data-ttu-id="cf0b9-129">Expresión que se debe evaluar.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-129">Expression to evaluate.</span></span> |  
+| <span data-ttu-id="cf0b9-130">silent \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-130">silent \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-131">En modo silencioso, las excepciones que se inician durante la evaluación no se notifican y no pausan la ejecución.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-131">In silent mode exceptions thrown during evaluation are not reported and do not pause execution.</span></span>  <span data-ttu-id="cf0b9-132">Invalida el `setPauseOnException` estado.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-132">Overrides `setPauseOnException` state.</span></span> |  
+| <span data-ttu-id="cf0b9-133">contextId \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-133">contextId \(optional\)</span></span> | [<span data-ttu-id="cf0b9-134">ExecutionContextId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-134">ExecutionContextId</span></span>](#executioncontextid) | <span data-ttu-id="cf0b9-135">Especifica en qué contexto de ejecución se debe realizar la evaluación.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-135">Specifies in which execution context to perform evaluation.</span></span>  <span data-ttu-id="cf0b9-136">Si se omite el parámetro, la evaluación se realizará en el contexto de la página inspeccionada.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-136">If the parameter is omitted the evaluation will be performed in the context of the inspected page.</span></span> |  
+| <span data-ttu-id="cf0b9-137">returnByValue \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-137">returnByValue \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-138">Si se espera que el resultado sea un objeto JSON que se debe enviar por valor.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-138">Whether the result is expected to be a JSON object that should be sent by value.</span></span> |  
+| <span data-ttu-id="cf0b9-139">awaitPromise \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-139">awaitPromise \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-140">Si la ejecución debe `await` ser para el valor resultante y devolver una vez que se resuelva la promesa esperada.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-140">Whether execution should `await` for resulting value and return once awaited promise is resolved.</span></span> |  
+
+| <span data-ttu-id="cf0b9-141">Devuelve</span><span class="sxs-lookup"><span data-stu-id="cf0b9-141">Returns</span></span> | <span data-ttu-id="cf0b9-142">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-142">Type</span></span> | <span data-ttu-id="cf0b9-143">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-143">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-144">resultado</span><span class="sxs-lookup"><span data-stu-id="cf0b9-144">result</span></span> | [<span data-ttu-id="cf0b9-145">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="cf0b9-145">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="cf0b9-146">Resultado de la evaluación.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-146">Evaluation result.</span></span> |  
+
+---  
+
+### <a name="callfunctionon"></a><span data-ttu-id="cf0b9-147">callFunctionOn</span><span class="sxs-lookup"><span data-stu-id="cf0b9-147">callFunctionOn</span></span>  
+
+<span data-ttu-id="cf0b9-148">Las llamadas funcionan con una declaración determinada en el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-148">Calls function with given declaration on the given object.</span></span>  <span data-ttu-id="cf0b9-149">El grupo de objetos del resultado se hereda del objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-149">Object group of the result is inherited from the target object.</span></span>  
+
+| <span data-ttu-id="cf0b9-150">Parameters</span><span class="sxs-lookup"><span data-stu-id="cf0b9-150">Parameters</span></span> | <span data-ttu-id="cf0b9-151">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-151">Type</span></span> | <span data-ttu-id="cf0b9-152">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-152">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-153">functionDeclaration</span><span class="sxs-lookup"><span data-stu-id="cf0b9-153">functionDeclaration</span></span> | `string` | <span data-ttu-id="cf0b9-154">Declaración de la función a la que se llamará.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-154">Declaration of the function to call.</span></span> |  
+| <span data-ttu-id="cf0b9-155">objectId \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-155">objectId \(optional\)</span></span> | [<span data-ttu-id="cf0b9-156">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-156">RemoteObjectId</span></span>](#remoteobjectid) | <span data-ttu-id="cf0b9-157">Identificador del objeto en el que se debe llamar.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-157">Identifier of the object to call function on.</span></span>  <span data-ttu-id="cf0b9-158">Se `objectId` debe especificar o `executionContextId` no.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-158">Either `objectId` or `executionContextId` should be specified.</span></span>  <span data-ttu-id="cf0b9-159">objectId debe ser de la función Runtime.evaluate().</span><span class="sxs-lookup"><span data-stu-id="cf0b9-159">objectId must be from the Runtime.evaluate() function.</span></span> |  
+| <span data-ttu-id="cf0b9-160">argumentos \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-160">arguments \(optional\)</span></span> | [<span data-ttu-id="cf0b9-161">CallArgument[]</span><span class="sxs-lookup"><span data-stu-id="cf0b9-161">CallArgument[]</span></span>](#callargument) | <span data-ttu-id="cf0b9-162">Argumentos de llamada.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-162">Call arguments.</span></span>  <span data-ttu-id="cf0b9-163">Todos los argumentos de llamada deben pertenecer al mismo mundo de JavaScript que el objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-163">All call arguments must belong to the same JavaScript world as the target object.</span></span> |  
+| <span data-ttu-id="cf0b9-164">silent \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-164">silent \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-165">En modo silencioso, las excepciones que se inician durante la evaluación no se notifican y no pausan la ejecución.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-165">In silent mode exceptions thrown during evaluation are not reported and do not pause execution.</span></span>  <span data-ttu-id="cf0b9-166">Invalida el `setPauseOnException` estado.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-166">Overrides `setPauseOnException` state.</span></span> |  
+| <span data-ttu-id="cf0b9-167">returnByValue \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-167">returnByValue \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-168">Si se espera que el resultado sea un objeto JSON que se debe enviar por valor.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-168">Whether the result is expected to be a JSON object which should be sent by value.</span></span> |  
+| <span data-ttu-id="cf0b9-169">awaitPromise \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-169">awaitPromise \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-170">Si la ejecución debe `await` ser para el valor resultante y devolver una vez que se resuelva la promesa esperada.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-170">Whether execution should `await` for resulting value and return once awaited promise is resolved.</span></span> |  
+
+| <span data-ttu-id="cf0b9-171">Devuelve</span><span class="sxs-lookup"><span data-stu-id="cf0b9-171">Returns</span></span> | <span data-ttu-id="cf0b9-172">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-172">Type</span></span> | <span data-ttu-id="cf0b9-173">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-173">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-174">resultado</span><span class="sxs-lookup"><span data-stu-id="cf0b9-174">result</span></span> | [<span data-ttu-id="cf0b9-175">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="cf0b9-175">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="cf0b9-176">Resultado de la llamada.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-176">Call result.</span></span> |  
+
+---  
+
+### <a name="getproperties"></a><span data-ttu-id="cf0b9-177">getProperties</span><span class="sxs-lookup"><span data-stu-id="cf0b9-177">getProperties</span></span>  
+
+<span data-ttu-id="cf0b9-178">Devuelve las propiedades de un objeto determinado.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-178">Returns properties of a given object.</span></span>  <span data-ttu-id="cf0b9-179">El grupo de objetos del resultado se hereda del objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-179">Object group of the result is inherited from the target object.</span></span>  
+
+| <span data-ttu-id="cf0b9-180">Parameters</span><span class="sxs-lookup"><span data-stu-id="cf0b9-180">Parameters</span></span> | <span data-ttu-id="cf0b9-181">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-181">Type</span></span> | <span data-ttu-id="cf0b9-182">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-182">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-183">objectId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-183">objectId</span></span> | [<span data-ttu-id="cf0b9-184">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-184">RemoteObjectId</span></span>](#remoteobjectid) | <span data-ttu-id="cf0b9-185">Identificador del objeto para el que se devolverán las propiedades.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-185">Identifier of the object to return properties for.</span></span>  `objectId` <span data-ttu-id="cf0b9-186">debe ser de la `Debugger.evaluateOnCallFrame()` función.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-186">must be from the `Debugger.evaluateOnCallFrame()` function.</span></span> |  
+| <span data-ttu-id="cf0b9-187">ownProperties \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-187">ownProperties \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-188">Si `true` , devuelve propiedades que pertenecen solo al elemento en sí, no a su cadena prototipo.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-188">If `true`, returns properties belonging only to the element itself, not to its prototype chain.</span></span> |  
+| <span data-ttu-id="cf0b9-189">accessorPropertiesOnly \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-189">accessorPropertiesOnly \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-190">**Experimental**.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-190">**Experimental**.</span></span>  <span data-ttu-id="cf0b9-191">Si `true` , devuelve las propiedades del accessor \(with getter/setter\) solo; tampoco se devuelven las propiedades internas.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-191">If `true`, returns accessor properties \(with getter/setter\) only; internal properties are not returned either.</span></span> |  
+
+| <span data-ttu-id="cf0b9-192">Devuelve</span><span class="sxs-lookup"><span data-stu-id="cf0b9-192">Returns</span></span> | <span data-ttu-id="cf0b9-193">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-193">Type</span></span> | <span data-ttu-id="cf0b9-194">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-194">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-195">resultado</span><span class="sxs-lookup"><span data-stu-id="cf0b9-195">result</span></span> | [<span data-ttu-id="cf0b9-196">PropertyDescriptor[]</span><span class="sxs-lookup"><span data-stu-id="cf0b9-196">PropertyDescriptor[]</span></span>](#propertydescriptor) | <span data-ttu-id="cf0b9-197">Propiedades del objeto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-197">Object properties.</span></span> |  
+
+---  
+
+## <a name="events"></a><span data-ttu-id="cf0b9-198">Eventos</span><span class="sxs-lookup"><span data-stu-id="cf0b9-198">Events</span></span>  
+
+### <a name="executioncontextscleared"></a><span data-ttu-id="cf0b9-199">executionContextsCleared</span><span class="sxs-lookup"><span data-stu-id="cf0b9-199">executionContextsCleared</span></span>  
+
+<span data-ttu-id="cf0b9-200">Se emite cuando se borraron todos los executionContexts en el explorador.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-200">Issued when all executionContexts were cleared in browser.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="exceptionthrown"></a><span data-ttu-id="cf0b9-201">exceptionThrown</span><span class="sxs-lookup"><span data-stu-id="cf0b9-201">exceptionThrown</span></span>  
+
+<span data-ttu-id="cf0b9-202">Se emitió cuando se produjo la excepción y no se controló.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-202">Issued when exception was thrown and unhandled.</span></span>  
+
+| <span data-ttu-id="cf0b9-203">Parameters</span><span class="sxs-lookup"><span data-stu-id="cf0b9-203">Parameters</span></span> | <span data-ttu-id="cf0b9-204">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-204">Type</span></span> | <span data-ttu-id="cf0b9-205">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-205">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-206">marca de tiempo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-206">timestamp</span></span> | [<span data-ttu-id="cf0b9-207">Timestamp</span><span class="sxs-lookup"><span data-stu-id="cf0b9-207">Timestamp</span></span>](#timestamp) | <span data-ttu-id="cf0b9-208">Marca de tiempo de la excepción.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-208">Timestamp of the exception.</span></span> |  
+| <span data-ttu-id="cf0b9-209">exceptionDetails</span><span class="sxs-lookup"><span data-stu-id="cf0b9-209">exceptionDetails</span></span> | [<span data-ttu-id="cf0b9-210">ExceptionDetails</span><span class="sxs-lookup"><span data-stu-id="cf0b9-210">ExceptionDetails</span></span>](#exceptiondetails) | &nbsp; |  
+
+---  
+
+## <a name="types"></a><span data-ttu-id="cf0b9-211">Tipos</span><span class="sxs-lookup"><span data-stu-id="cf0b9-211">Types</span></span>  
+
+### <a name="scriptid-string"></a><span data-ttu-id="cf0b9-212">Cadena ScriptId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-212">ScriptId string</span></span>  
+
+<a name="scriptid"></a>  
+
+<span data-ttu-id="cf0b9-213">Identificador de script único.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-213">Unique script identifier.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="remoteobjectid-string"></a><span data-ttu-id="cf0b9-214">Cadena RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-214">RemoteObjectId string</span></span>  
+
+<a name="remoteobjectid"></a>  
+
+<span data-ttu-id="cf0b9-215">Identificador de objeto único.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-215">Unique object identifier.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="unserializablevalue-string"></a><span data-ttu-id="cf0b9-216">Cadena UnserializableValue</span><span class="sxs-lookup"><span data-stu-id="cf0b9-216">UnserializableValue string</span></span>  
+
+<a name="unserializablevalue"></a>  
+
+<span data-ttu-id="cf0b9-217">Valor primitivo que no puede ser cadena JSON.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-217">Primitive value which cannot be JSON-stringified.</span></span>  
+
+##### <a name="allowed-values"></a><span data-ttu-id="cf0b9-218">Valores permitidos</span><span class="sxs-lookup"><span data-stu-id="cf0b9-218">Allowed Values</span></span>  
+
+`Infinity`<span data-ttu-id="cf0b9-219">, `NaN`, `-Infinity`,</span><span class="sxs-lookup"><span data-stu-id="cf0b9-219">, `NaN`, `-Infinity`,</span></span> `-0`  
+
+---  
+
+### <a name="remoteobject-object"></a><span data-ttu-id="cf0b9-220">Objeto RemoteObject</span><span class="sxs-lookup"><span data-stu-id="cf0b9-220">RemoteObject object</span></span>  
+
+<a name="remoteobject"></a>  
+
+<span data-ttu-id="cf0b9-221">Objeto Mirror que hace referencia al objeto JavaScript original.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-221">Mirror object referencing original JavaScript object.</span></span>  
+
+| <span data-ttu-id="cf0b9-222">Propiedades</span><span class="sxs-lookup"><span data-stu-id="cf0b9-222">Properties</span></span> | <span data-ttu-id="cf0b9-223">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-223">Type</span></span> | <span data-ttu-id="cf0b9-224">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-224">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-225">tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-225">type</span></span> | `string` | <span data-ttu-id="cf0b9-226">Tipo de objeto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-226">Object type.</span></span>  <span data-ttu-id="cf0b9-227">Valores permitidos:  `object` , , , , , `function` `undefined` `string` `number` `boolean` y</span><span class="sxs-lookup"><span data-stu-id="cf0b9-227">Allowed values:  `object`, `function`, `undefined`, `string`, `number`, `boolean`, and</span></span> `symbol` |  
+| <span data-ttu-id="cf0b9-228">subtipo \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-228">subtype \(optional\)</span></span> | `string` | <span data-ttu-id="cf0b9-229">Sugerencia de subtipo de objeto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-229">Object subtype hint.</span></span>  <span data-ttu-id="cf0b9-230">Se especifica solo `object` para los valores de tipo.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-230">Specified for `object` type values only.</span></span>  <span data-ttu-id="cf0b9-231">Valores permitidos:  `null` `error` , y</span><span class="sxs-lookup"><span data-stu-id="cf0b9-231">Allowed values:  `null`, `error`, and</span></span> `promise` |  
+| <span data-ttu-id="cf0b9-232">className \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-232">className \(optional\)</span></span> | `string` | <span data-ttu-id="cf0b9-233">Nombre de clase de objeto \(constructor\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-233">Object class \(constructor\) name.</span></span>  <span data-ttu-id="cf0b9-234">Se especifica solo `object` para los valores de tipo.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-234">Specified for `object` type values only.</span></span> |  
+| <span data-ttu-id="cf0b9-235">value \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-235">value \(optional\)</span></span> | `any` | <span data-ttu-id="cf0b9-236">Valor de objeto remoto en caso de valores primitivos o valores JSON \(si se solicitó\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-236">Remote object value in case of primitive values or JSON values \(if it was requested\).</span></span> |  
+| <span data-ttu-id="cf0b9-237">unserializableValue \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-237">unserializableValue \(optional\)</span></span> | [<span data-ttu-id="cf0b9-238">UnserializableValue</span><span class="sxs-lookup"><span data-stu-id="cf0b9-238">UnserializableValue</span></span>](#unserializablevalue) | <span data-ttu-id="cf0b9-239">El valor primitivo que no puede tener cadena JSON no tiene `value` , pero obtiene esta propiedad.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-239">Primitive value which can not be JSON-stringified does not have `value`, but gets this property.</span></span> |  
+| <span data-ttu-id="cf0b9-240">description \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-240">description \(optional\)</span></span> | `string` | <span data-ttu-id="cf0b9-241">Representación de cadena del objeto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-241">String representation of the object.</span></span> |  
+| <span data-ttu-id="cf0b9-242">objectId \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-242">objectId \(optional\)</span></span> | [<span data-ttu-id="cf0b9-243">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-243">RemoteObjectId</span></span>](#remoteobjectid) | <span data-ttu-id="cf0b9-244">Identificador de objeto único \(para valores no primitivos\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-244">Unique object identifier \(for non-primitive values\).</span></span> |  
+| <span data-ttu-id="cf0b9-245">msDebuggerPropertyId \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-245">msDebuggerPropertyId \(optional\)</span></span> | `string` | <span data-ttu-id="cf0b9-246">**Experimental**.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-246">**Experimental**.</span></span>  <span data-ttu-id="cf0b9-247">Microsoft: el identificador de propiedad del depurador asociado para este objeto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-247">Microsoft:  The associated debugger property ID for this object.</span></span> |  
+
+---  
+
+### <a name="propertydescriptor-object"></a><span data-ttu-id="cf0b9-248">PropertyDescriptor (objeto)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-248">PropertyDescriptor object</span></span>  
+
+<a name="propertydescriptor"></a>  
+
+<span data-ttu-id="cf0b9-249">Descriptor de la propiedad Object.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-249">Object property descriptor.</span></span>  
+
+| <span data-ttu-id="cf0b9-250">Propiedades</span><span class="sxs-lookup"><span data-stu-id="cf0b9-250">Properties</span></span> | <span data-ttu-id="cf0b9-251">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-251">Type</span></span> | <span data-ttu-id="cf0b9-252">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-252">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-253">name</span><span class="sxs-lookup"><span data-stu-id="cf0b9-253">name</span></span> | `string` | <span data-ttu-id="cf0b9-254">Nombre de la propiedad o descripción del símbolo.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-254">Property name or symbol description.</span></span> |  
+| <span data-ttu-id="cf0b9-255">value \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-255">value \(optional\)</span></span> | [<span data-ttu-id="cf0b9-256">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="cf0b9-256">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="cf0b9-257">Valor asociado a la propiedad.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-257">The value associated with the property.</span></span> |  
+| <span data-ttu-id="cf0b9-258">writable \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-258">writable \(optional\)</span></span> | `boolean` | `True` <span data-ttu-id="cf0b9-259">si se puede cambiar el valor asociado a la propiedad \(data descriptors only\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-259">if the value associated with the property may be changed \(data descriptors only\).</span></span> |  
+| <span data-ttu-id="cf0b9-260">get \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-260">get \(optional\)</span></span> | [<span data-ttu-id="cf0b9-261">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="cf0b9-261">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="cf0b9-262">Función que sirve como getter para la propiedad, o si no hay ningún descriptor de acceso `undefined` \(descriptores de acceso\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-262">A function which serves as a getter for the property, or `undefined` if there is no getter \(accessor descriptors only\).</span></span> |  
+| <span data-ttu-id="cf0b9-263">set \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-263">set \(optional\)</span></span> | [<span data-ttu-id="cf0b9-264">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="cf0b9-264">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="cf0b9-265">Función que sirve como setter para la propiedad, o si no hay ningún `undefined` setter \(descriptores de descriptores de acceso solamente\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-265">A function which serves as a setter for the property, or `undefined` if there is no setter \(accessor descriptors only\).</span></span> |  
+| <span data-ttu-id="cf0b9-266">configurable</span><span class="sxs-lookup"><span data-stu-id="cf0b9-266">configurable</span></span> | `boolean` | `True` <span data-ttu-id="cf0b9-267">si se puede cambiar el tipo de descriptor de esta propiedad y si la propiedad se puede eliminar del objeto correspondiente.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-267">if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.</span></span> |  
+| <span data-ttu-id="cf0b9-268">enumerable</span><span class="sxs-lookup"><span data-stu-id="cf0b9-268">enumerable</span></span> | `boolean` | `True` <span data-ttu-id="cf0b9-269">si esta propiedad se muestra durante la enumeración de las propiedades del objeto correspondiente.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-269">if this property shows up during enumeration of the properties on the corresponding object.</span></span> |  
+| <span data-ttu-id="cf0b9-270">wasThrown \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-270">wasThrown \(optional\)</span></span> | `boolean` | `True` <span data-ttu-id="cf0b9-271">si el resultado se ha arrojado durante la evaluación.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-271">if the result was thrown during the evaluation.</span></span> |  
+| <span data-ttu-id="cf0b9-272">isOwn \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-272">isOwn \(optional\)</span></span> | `boolean` | `True` <span data-ttu-id="cf0b9-273">si la propiedad es propiedad del objeto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-273">if the property is owned for the object.</span></span> |  
+| <span data-ttu-id="cf0b9-274">msReturnValue \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-274">msReturnValue \(optional\)</span></span> | `boolean` | <span data-ttu-id="cf0b9-275">**Experimental**.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-275">**Experimental**.</span></span>  <span data-ttu-id="cf0b9-276">Microsoft:  `True` si la propiedad es un valor devuelto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-276">Microsoft:  `True` if the property is a return value.</span></span> |  
+| <span data-ttu-id="cf0b9-277">símbolo \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-277">symbol \(optional\)</span></span> | [<span data-ttu-id="cf0b9-278">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="cf0b9-278">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="cf0b9-279">Objeto de símbolo de propiedad, si la propiedad es del `symbol` tipo.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-279">Property symbol object, if the property is of the `symbol` type.</span></span> |  
+
+---  
+
+### <a name="callargument-object"></a><span data-ttu-id="cf0b9-280">CallArgument (objeto)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-280">CallArgument object</span></span>  
+
+<a name="callargument"></a>  
+
+<span data-ttu-id="cf0b9-281">Representa el argumento de llamada de función.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-281">Represents function call argument.</span></span>  <span data-ttu-id="cf0b9-282">Debe especificarse el identificador de objeto remoto, el valor primitivo no extraíble o ninguno de `value` \(para undefined\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-282">Either remote object ID `value`, unserializable primitive value or neither of \(for undefined\) them should be specified.</span></span>  
+
+| <span data-ttu-id="cf0b9-283">Propiedades</span><span class="sxs-lookup"><span data-stu-id="cf0b9-283">Properties</span></span> | <span data-ttu-id="cf0b9-284">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-284">Type</span></span> | <span data-ttu-id="cf0b9-285">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-285">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-286">value \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-286">value \(optional\)</span></span> | `any` | <span data-ttu-id="cf0b9-287">Valor primitivo o objeto javascript serializable.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-287">Primitive value or serializable javascript object.</span></span> |  
+| <span data-ttu-id="cf0b9-288">unserializableValue \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-288">unserializableValue \(optional\)</span></span> | [<span data-ttu-id="cf0b9-289">UnserializableValue</span><span class="sxs-lookup"><span data-stu-id="cf0b9-289">UnserializableValue</span></span>](#unserializablevalue) | <span data-ttu-id="cf0b9-290">Valor primitivo que no puede estar en cadena JSON.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-290">Primitive value which can not be JSON-stringified.</span></span> |  
+| <span data-ttu-id="cf0b9-291">objectId \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-291">objectId \(optional\)</span></span> | [<span data-ttu-id="cf0b9-292">RemoteObjectId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-292">RemoteObjectId</span></span>](#remoteobjectid) | <span data-ttu-id="cf0b9-293">Controlador de objetos remoto.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-293">Remote object handle.</span></span> |  
+
+---  
+
+### <a name="executioncontextid-integer"></a><span data-ttu-id="cf0b9-294">Número entero ExecutionContextId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-294">ExecutionContextId integer</span></span>  
+
+<a name="executioncontextid"></a>  
+
+<span data-ttu-id="cf0b9-295">Id. de un contexto de ejecución.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-295">ID of an execution context.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="exceptiondetails-object"></a><span data-ttu-id="cf0b9-296">ExceptionDetails (objeto)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-296">ExceptionDetails object</span></span>  
+
+<a name="exceptiondetails"></a>  
+
+<span data-ttu-id="cf0b9-297">Información detallada sobre la excepción \(o error\) que se produjo durante la compilación o ejecución de scripts.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-297">Detailed information about exception \(or error\) that was thrown during script compilation or execution.</span></span>  
+
+| <span data-ttu-id="cf0b9-298">Propiedades</span><span class="sxs-lookup"><span data-stu-id="cf0b9-298">Properties</span></span> | <span data-ttu-id="cf0b9-299">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-299">Type</span></span> | <span data-ttu-id="cf0b9-300">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-300">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-301">exceptionId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-301">exceptionId</span></span> | `integer` | <span data-ttu-id="cf0b9-302">Identificador de excepción.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-302">Exception ID.</span></span> |  
+| <span data-ttu-id="cf0b9-303">texto</span><span class="sxs-lookup"><span data-stu-id="cf0b9-303">text</span></span> | `string` | <span data-ttu-id="cf0b9-304">Texto de excepción, que debe usarse junto con el objeto de excepción cuando esté disponible.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-304">Exception text, which should be used together with exception object when available.</span></span> |  
+| <span data-ttu-id="cf0b9-305">lineNumber</span><span class="sxs-lookup"><span data-stu-id="cf0b9-305">lineNumber</span></span> | `integer` | <span data-ttu-id="cf0b9-306">Número de línea de la ubicación de excepción \(0-based\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-306">Line number of the exception location \(0-based\).</span></span> |  
+| <span data-ttu-id="cf0b9-307">columnNumber</span><span class="sxs-lookup"><span data-stu-id="cf0b9-307">columnNumber</span></span> | `integer` | <span data-ttu-id="cf0b9-308">Número de columna de la ubicación de excepción \(0-based\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-308">Column number of the exception location \(0-based\).</span></span> |  
+| <span data-ttu-id="cf0b9-309">scriptId \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-309">scriptId \(optional\)</span></span> | [<span data-ttu-id="cf0b9-310">ScriptId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-310">ScriptId</span></span>](#scriptid) | <span data-ttu-id="cf0b9-311">Identificador de script de la ubicación de excepción.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-311">Script ID of the exception location.</span></span> |  
+| <span data-ttu-id="cf0b9-312">url \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-312">url \(optional\)</span></span> | `string` | <span data-ttu-id="cf0b9-313">Dirección URL de la ubicación de excepción, que se usará cuando no se haya notificado el script.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-313">URL of the exception location, to be used when the script was not reported.</span></span> |  
+| <span data-ttu-id="cf0b9-314">stackTrace \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-314">stackTrace \(optional\)</span></span> | [<span data-ttu-id="cf0b9-315">StackTrace</span><span class="sxs-lookup"><span data-stu-id="cf0b9-315">StackTrace</span></span>](#stacktrace) | <span data-ttu-id="cf0b9-316">Seguimiento de pila de JavaScript si está disponible.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-316">JavaScript stack trace if available.</span></span> |  
+| <span data-ttu-id="cf0b9-317">excepción \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-317">exception \(optional\)</span></span> | [<span data-ttu-id="cf0b9-318">RemoteObject</span><span class="sxs-lookup"><span data-stu-id="cf0b9-318">RemoteObject</span></span>](#remoteobject) | <span data-ttu-id="cf0b9-319">Objeto Exception si está disponible.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-319">Exception object if available.</span></span> |  
+| <span data-ttu-id="cf0b9-320">executionContextId \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-320">executionContextId \(optional\)</span></span> | [<span data-ttu-id="cf0b9-321">ExecutionContextId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-321">ExecutionContextId</span></span>](#executioncontextid) | <span data-ttu-id="cf0b9-322">Identificador del contexto donde se produjo la excepción.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-322">Identifier of the context where exception happened.</span></span> |  
+
+---  
+
+### <a name="timestamp-integer"></a><span data-ttu-id="cf0b9-323">Número entero de marca de tiempo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-323">Timestamp integer</span></span>  
+
+<a name="timestamp"></a>  
+
+<span data-ttu-id="cf0b9-324">Número de milisegundos desde la época.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-324">Number of milliseconds since epoch.</span></span>  
+
+&nbsp;  
+
+---  
+
+### <a name="callframe-object"></a><span data-ttu-id="cf0b9-325">CallFrame (objeto)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-325">CallFrame object</span></span>  
+
+<a name="callframe"></a>  
+
+<span data-ttu-id="cf0b9-326">Entrada de pila para errores y aserciones en tiempo de ejecución.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-326">Stack entry for runtime errors and assertions.</span></span>  
+
+| <span data-ttu-id="cf0b9-327">Propiedades</span><span class="sxs-lookup"><span data-stu-id="cf0b9-327">Properties</span></span> | <span data-ttu-id="cf0b9-328">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-328">Type</span></span> | <span data-ttu-id="cf0b9-329">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-329">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-330">functionName</span><span class="sxs-lookup"><span data-stu-id="cf0b9-330">functionName</span></span> | `string` | <span data-ttu-id="cf0b9-331">Nombre de la función JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-331">JavaScript function name.</span></span> |  
+| <span data-ttu-id="cf0b9-332">scriptId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-332">scriptId</span></span> | [<span data-ttu-id="cf0b9-333">ScriptId</span><span class="sxs-lookup"><span data-stu-id="cf0b9-333">ScriptId</span></span>](#scriptid) | <span data-ttu-id="cf0b9-334">Id. de script de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-334">JavaScript script ID.</span></span> |  
+| <span data-ttu-id="cf0b9-335">url</span><span class="sxs-lookup"><span data-stu-id="cf0b9-335">url</span></span> | `string` | <span data-ttu-id="cf0b9-336">Dirección URL o nombre de script de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-336">JavaScript script name or url.</span></span> |  
+| <span data-ttu-id="cf0b9-337">lineNumber</span><span class="sxs-lookup"><span data-stu-id="cf0b9-337">lineNumber</span></span> | `integer` | <span data-ttu-id="cf0b9-338">Número de línea de script de JavaScript \(basado en 0\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-338">JavaScript script line number \(0-based\).</span></span> |  
+| <span data-ttu-id="cf0b9-339">columnNumber</span><span class="sxs-lookup"><span data-stu-id="cf0b9-339">columnNumber</span></span> | `integer` | <span data-ttu-id="cf0b9-340">Número de columna de script de JavaScript \(0-based\).</span><span class="sxs-lookup"><span data-stu-id="cf0b9-340">JavaScript script column number \(0-based\).</span></span> |  
+
+---  
+
+### <a name="stacktrace-object"></a><span data-ttu-id="cf0b9-341">StackTrace (objeto)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-341">StackTrace object</span></span>  
+
+<a name="stacktrace"></a>  
+
+<span data-ttu-id="cf0b9-342">Marcos de llamadas para aserciones o mensajes de error.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-342">Call frames for assertions or error messages.</span></span>  
+
+| <span data-ttu-id="cf0b9-343">Propiedades</span><span class="sxs-lookup"><span data-stu-id="cf0b9-343">Properties</span></span> | <span data-ttu-id="cf0b9-344">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf0b9-344">Type</span></span> | <span data-ttu-id="cf0b9-345">Detalles</span><span class="sxs-lookup"><span data-stu-id="cf0b9-345">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="cf0b9-346">description \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-346">description \(optional\)</span></span> | `string` | <span data-ttu-id="cf0b9-347">Etiqueta de cadena de este seguimiento de pila.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-347">String label of this stack trace.</span></span>  <span data-ttu-id="cf0b9-348">Para los seguimientos asincrónicos, puede ser un nombre de la función que inició la llamada asincrónica.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-348">For async traces this may be a name of the function that initiated the async call.</span></span> |  
+| <span data-ttu-id="cf0b9-349">callFrames</span><span class="sxs-lookup"><span data-stu-id="cf0b9-349">callFrames</span></span> | [<span data-ttu-id="cf0b9-350">CallFrame[]</span><span class="sxs-lookup"><span data-stu-id="cf0b9-350">CallFrame[]</span></span>](#callframe) | <span data-ttu-id="cf0b9-351">Nombre de la función JavaScript.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-351">JavaScript function name.</span></span> |  
+| <span data-ttu-id="cf0b9-352">parent \(optional\)</span><span class="sxs-lookup"><span data-stu-id="cf0b9-352">parent \(optional\)</span></span> | [<span data-ttu-id="cf0b9-353">StackTrace</span><span class="sxs-lookup"><span data-stu-id="cf0b9-353">StackTrace</span></span>](#stacktrace) | <span data-ttu-id="cf0b9-354">Seguimiento de pila de JavaScript asincrónico que precedía a esta pila, si está disponible.</span><span class="sxs-lookup"><span data-stu-id="cf0b9-354">Asynchronous JavaScript stack trace that preceded this stack, if available.</span></span> |  
+
+---  

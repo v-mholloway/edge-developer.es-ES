@@ -1,18 +1,18 @@
 ---
-description: Guía sobre cómo abrir el menú de comandos, ejecutar comandos, revisar otras acciones y mucho más.
-title: Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools
+description: Una guía sobre cómo abrir el menú comando, ejecutar comandos, revisar otras acciones y mucho más.
+title: Ejecutar comandos con el menú Comando de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2f13461fdf04e034b324db63c6ec6d9090f80f50
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: a9e67815f69a44d3bd2a741738b04c7170f6ac15
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125282"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398031"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,54 +28,52 @@ ms.locfileid: "11125282"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="883e0-104">Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="883e0-104">Run Commands With The Microsoft Edge DevTools Command Menu</span></span>  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a><span data-ttu-id="afb99-104">Ejecutar comandos con el menú Comando de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="afb99-104">Run commands with the Microsoft Edge DevTools Command menu</span></span>  
 
-  
+<span data-ttu-id="afb99-105">El menú de comandos proporciona una forma rápida de navegar por la interfaz de usuario de Microsoft Edge DevTools y realizar tareas comunes, como [deshabilitar JavaScript][JavascriptDisable].</span><span class="sxs-lookup"><span data-stu-id="afb99-105">The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].</span></span>  <span data-ttu-id="afb99-106">Es posible que esté familiarizado con una característica similar en Microsoft Visual Studio Code denominada paleta de comandos [,][VisualStudioCodeUICommandPalette]que fue la inspiración original del menú de comandos.</span><span class="sxs-lookup"><span data-stu-id="afb99-106">You may be familiar with a similar feature in Microsoft Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.</span></span>  
 
-<span data-ttu-id="883e0-105">El menú de comandos proporciona una forma rápida de navegar por la interfaz de usuario de Microsoft Edge DevTools y realizar tareas comunes, como la [deshabilitación de JavaScript][JavascriptDisable].</span><span class="sxs-lookup"><span data-stu-id="883e0-105">The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].</span></span>  <span data-ttu-id="883e0-106">Es posible que esté familiarizado con una característica similar de Visual Studio que se denomina [paleta de comandos][VisualStudioCodeUICommandPalette], que es la inspiración original para el menú de comandos.</span><span class="sxs-lookup"><span data-stu-id="883e0-106">You may be familiar with a similar feature in Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.</span></span>  
-
-:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
-   <span data-ttu-id="883e0-108">Usar el menú de comandos para deshabilitar JavaScript</span><span class="sxs-lookup"><span data-stu-id="883e0-108">Using the Command Menu to disable JavaScript</span></span>  
+:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Uso del menú comando para deshabilitar JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
+   <span data-ttu-id="afb99-108">Uso del menú comando para deshabilitar JavaScript</span><span class="sxs-lookup"><span data-stu-id="afb99-108">Using the Command Menu to disable JavaScript</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="883e0-109">Abrir el menú de comandos</span><span class="sxs-lookup"><span data-stu-id="883e0-109">Open the Command Menu</span></span>  
+## <a name="open-the-command-menu"></a><span data-ttu-id="afb99-109">Abrir el menú de comandos</span><span class="sxs-lookup"><span data-stu-id="afb99-109">Open the Command Menu</span></span>  
 
-<span data-ttu-id="883e0-110">Seleccione `Control` + `Shift` + `P` \ (Windows, Linux \) o `Command` + `Shift` + `P` \ (MacOS \).</span><span class="sxs-lookup"><span data-stu-id="883e0-110">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span> <span data-ttu-id="883e0-111">O elija **personalizar y controlar DevTools** `...` y, a continuación, elija **Ejecutar comando**.</span><span class="sxs-lookup"><span data-stu-id="883e0-111">Or choose **Customize And Control DevTools** `...` and then choose **Run Command**.</span></span>  
+<span data-ttu-id="afb99-110">Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="afb99-110">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span> <span data-ttu-id="afb99-111">O elija **Personalizar y controlar DevTools** \( `...` \) > Ejecutar **comando**.</span><span class="sxs-lookup"><span data-stu-id="afb99-111">Or choose **Customize And Control DevTools** \(`...`\) > **Run Command**.</span></span>  
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
-   <span data-ttu-id="883e0-113">Comando ejecutar</span><span class="sxs-lookup"><span data-stu-id="883e0-113">Run Command</span></span>  
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Ejecutar comando" lightbox="../media/command-menu-options-run-command.msft.png":::
+   <span data-ttu-id="afb99-113">Ejecutar comando</span><span class="sxs-lookup"><span data-stu-id="afb99-113">Run Command</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="883e0-114">Ver otras acciones disponibles</span><span class="sxs-lookup"><span data-stu-id="883e0-114">See other available actions</span></span>  
+## <a name="display-other-available-actions"></a><span data-ttu-id="afb99-114">Mostrar otras acciones disponibles</span><span class="sxs-lookup"><span data-stu-id="afb99-114">Display other available actions</span></span>  
 
-<span data-ttu-id="883e0-115">Si usa el flujo de trabajo esquematizado en [abrir el menú de comandos](#open-the-command-menu), el menú comando se abre con un `>` carácter preestablecido en el cuadro de texto del menú de comandos.</span><span class="sxs-lookup"><span data-stu-id="883e0-115">If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.</span></span>  
+<span data-ttu-id="afb99-115">Si usa el flujo de trabajo descrito en [Abrir el](#open-the-command-menu)menú de comandos , el menú comando se abre con un carácter previamente escrito en el cuadro de texto Menú `>` de comandos.</span><span class="sxs-lookup"><span data-stu-id="afb99-115">If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.</span></span>  
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-run-command.msft.png":::
-   <span data-ttu-id="883e0-117">El carácter de comando</span><span class="sxs-lookup"><span data-stu-id="883e0-117">The command character</span></span>  
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="El carácter de comando" lightbox="../media/command-menu-run-command.msft.png":::
+   <span data-ttu-id="afb99-117">El carácter de comando</span><span class="sxs-lookup"><span data-stu-id="afb99-117">The command character</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="883e0-118">Elimine el `>` carácter y escriba `?` para ver otras acciones disponibles en el menú de comandos.</span><span class="sxs-lookup"><span data-stu-id="883e0-118">Delete the `>` character and type `?` to see other actions that are available from the Command Menu.</span></span>  
+<span data-ttu-id="afb99-118">Elimine el `>` carácter y el tipo para mostrar `?` otras acciones que están disponibles en el menú comando.</span><span class="sxs-lookup"><span data-stu-id="afb99-118">Delete the `>` character and type `?` to display other actions that are available from the Command Menu.</span></span>  
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Usar el menú de comandos para deshabilitar JavaScript" lightbox="../media/command-menu-help.msft.png":::
-   <span data-ttu-id="883e0-120">Otras acciones disponibles</span><span class="sxs-lookup"><span data-stu-id="883e0-120">Other available actions</span></span>  
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Otras acciones disponibles" lightbox="../media/command-menu-help.msft.png":::
+   <span data-ttu-id="afb99-120">Otras acciones disponibles</span><span class="sxs-lookup"><span data-stu-id="afb99-120">Other available actions</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="883e0-121">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="883e0-121">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="afb99-121">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="afb99-121">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft docs"  
+[JavascriptDisable]: ../javascript/disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft Docs"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Paleta de comandos: interfaz de usuario de Visual Studio"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Paleta de comandos: Visual Studio interfaz de usuario de código"  
 
 > [!NOTE]
-> <span data-ttu-id="883e0-124">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="883e0-124">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="883e0-125">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).</span><span class="sxs-lookup"><span data-stu-id="883e0-125">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="afb99-124">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="afb99-124">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="afb99-125">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="afb99-125">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="883e0-127">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="883e0-127">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="afb99-127">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="afb99-127">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

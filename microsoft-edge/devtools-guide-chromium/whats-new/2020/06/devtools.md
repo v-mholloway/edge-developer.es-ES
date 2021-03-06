@@ -1,386 +1,386 @@
 ---
-description: Características de depuración de la cuadrícula CSS, editar y reproducir solicitudes con la consola de red y mucho más.
+description: Características de depuración de cuadrícula CSS, solicitudes de edición y reproducción con la consola de red y mucho más.
 title: Novedades de DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
-ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
+ms.openlocfilehash: 3085153b87f09c1b5aba8fbe43c42cef0851fa9c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015464"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397758"
 ---
-# <span data-ttu-id="b34a7-104">Novedades de DevTools (Microsoft Edge 85)</span><span class="sxs-lookup"><span data-stu-id="b34a7-104">What's New In DevTools (Microsoft Edge 85)</span></span>  
+# <a name="whats-new-in-devtools-microsoft-edge-85"></a><span data-ttu-id="faf78-104">Novedades de DevTools (Microsoft Edge 85)</span><span class="sxs-lookup"><span data-stu-id="faf78-104">What's New In DevTools (Microsoft Edge 85)</span></span>  
 
-## <span data-ttu-id="b34a7-105">Anuncios del equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="b34a7-105">Announcements from the Microsoft Edge DevTools team</span></span>  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="faf78-105">Anuncios del equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="faf78-105">Announcements from the Microsoft Edge DevTools team</span></span>  
 
-<span data-ttu-id="b34a7-106">Las secciones siguientes son una lista de anuncios que puede haber perdido del equipo Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="b34a7-106">The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.</span></span>  <span data-ttu-id="b34a7-107">Consulta los anuncios para probar nuevas características de DevTools, Visual Studio Code Extensions y mucho más.</span><span class="sxs-lookup"><span data-stu-id="b34a7-107">See the announcements to try new features in the DevTools, Visual Studio Code extensions, and more.</span></span>  <span data-ttu-id="b34a7-108">Para estar al día de las características más recientes y las más recientes de las herramientas para desarrolladores, descargue los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] y [siga el equipo de Microsoft Edge DevTools en Twitter][EdgeDevToolsTwitterAccount].</span><span class="sxs-lookup"><span data-stu-id="b34a7-108">To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].</span></span>  
+<span data-ttu-id="faf78-106">Las siguientes secciones son una lista de anuncios que puede que falte del equipo de Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="faf78-106">The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.</span></span>  <span data-ttu-id="faf78-107">Echa un vistazo a los anuncios para probar nuevas características en DevTools, microsoft Visual Studio code extensions y mucho más.</span><span class="sxs-lookup"><span data-stu-id="faf78-107">Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.</span></span>  <span data-ttu-id="faf78-108">Para mantenerse al día de todas las características más recientes y más importantes de las herramientas para desarrolladores, descargue los canales de vista previa de [Microsoft Edge][MicrosoftEdgePreviewChannels] y siga el equipo de Microsoft [Edge DevTools en Twitter][EdgeDevToolsTwitterAccount].</span><span class="sxs-lookup"><span data-stu-id="faf78-108">To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].</span></span>  
 
-### <span data-ttu-id="b34a7-109">Características de depuración de cuadrícula CSS</span><span class="sxs-lookup"><span data-stu-id="b34a7-109">CSS grid debugging features</span></span>  
+### <a name="css-grid-debugging-features"></a><span data-ttu-id="faf78-109">Características de depuración de cuadrícula CSS</span><span class="sxs-lookup"><span data-stu-id="faf78-109">CSS grid debugging features</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
-   <span data-ttu-id="b34a7-111">Característica experimental</span><span class="sxs-lookup"><span data-stu-id="b34a7-111">Experimental feature</span></span>  
+   <span data-ttu-id="faf78-111">Característica experimental</span><span class="sxs-lookup"><span data-stu-id="faf78-111">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-112">El equipo de DevTools de Microsoft Edge está colaborando con el equipo de Chrome DevTools y la comunidad de cromo para agregar nuevas características de depuración de cuadrícula CSS a DevTools.</span><span class="sxs-lookup"><span data-stu-id="b34a7-112">The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.</span></span>  <span data-ttu-id="b34a7-113">Ahora puede mostrar los números de línea de la cuadrícula, los huecos de cuadrícula y las líneas de cuadrícula extendidas como una superposición en la página.</span><span class="sxs-lookup"><span data-stu-id="b34a7-113">You are now able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.</span></span>  <span data-ttu-id="b34a7-114">Además, pronto estarán disponibles otras mejoras en las herramientas de cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="b34a7-114">Plus, more improvements to the grid tools are coming soon.</span></span>  
+<span data-ttu-id="faf78-112">El equipo de Microsoft Edge DevTools colabora con el equipo de Chrome DevTools y la comunidad chromium para agregar nuevas características de depuración de cuadrícula CSS a DevTools.</span><span class="sxs-lookup"><span data-stu-id="faf78-112">The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.</span></span>  <span data-ttu-id="faf78-113">Ahora puede mostrar números de línea de cuadrícula, espacios de cuadrícula y líneas de cuadrícula extendidas como una superposición en la página.</span><span class="sxs-lookup"><span data-stu-id="faf78-113">You are now able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.</span></span>  <span data-ttu-id="faf78-114">Además, próximamente se realizarán más mejoras en las herramientas de cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="faf78-114">Plus, more improvements to the grid tools are coming soon.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-grid.msft.png":::
-   <span data-ttu-id="b34a7-116">Características de depuración de cuadrícula CSS</span><span class="sxs-lookup"><span data-stu-id="b34a7-116">CSS grid debugging features</span></span>
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Características de depuración de cuadrícula CSS" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+   <span data-ttu-id="faf78-116">Características de depuración de cuadrícula CSS</span><span class="sxs-lookup"><span data-stu-id="faf78-116">CSS grid debugging features</span></span>
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="b34a7-117">Para habilitar el experimento, vea [activar las características experimentales][DevtoolsExperimentalFeaturesTurnOn] y seleccione la casilla situada junto a **Habilitar nuevas características de depuración de la cuadrícula CSS**.</span><span class="sxs-lookup"><span data-stu-id="b34a7-117">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.</span></span>  
+> <span data-ttu-id="faf78-117">Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOn] y active la casilla situada junto a Habilitar nuevas características **de depuración de cuadrícula CSS**.</span><span class="sxs-lookup"><span data-stu-id="faf78-117">To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.</span></span>  
 > 
-> <span data-ttu-id="b34a7-118">Para probar el experimento con un ejemplo, consulta [ejemplo de planeación de cuadrícula CSS][CodepenRachelweilYzwBzKM].</span><span class="sxs-lookup"><span data-stu-id="b34a7-118">To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].</span></span>  
+> <span data-ttu-id="faf78-118">Para probar el experimento con un ejemplo, vaya al ejemplo [del planificador de cuadrícula CSS][CodepenRachelweilYzwBzKM].</span><span class="sxs-lookup"><span data-stu-id="faf78-118">To try out the experiment with a sample, navigate to [CSS Grid planner example][CodepenRachelweilYzwBzKM].</span></span>  
 
-<span data-ttu-id="b34a7-119">[#1047356][CR1047356] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-119">Chromium issue [#1047356][CR1047356]</span></span>  
+<span data-ttu-id="faf78-119">Problema de [chromium #1047356][CR1047356]</span><span class="sxs-lookup"><span data-stu-id="faf78-119">Chromium issue [#1047356][CR1047356]</span></span>  
 
-### <span data-ttu-id="b34a7-120">Editar y reproducir solicitudes con la consola de red</span><span class="sxs-lookup"><span data-stu-id="b34a7-120">Edit and Replay requests with the Network Console</span></span>  
+### <a name="edit-and-replay-requests-with-the-network-console"></a><span data-ttu-id="faf78-120">Editar y reproducir solicitudes con la consola de red</span><span class="sxs-lookup"><span data-stu-id="faf78-120">Edit and Replay requests with the Network Console</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
-   <span data-ttu-id="b34a7-122">Característica experimental</span><span class="sxs-lookup"><span data-stu-id="b34a7-122">Experimental feature</span></span>  
+   <span data-ttu-id="faf78-122">Característica experimental</span><span class="sxs-lookup"><span data-stu-id="faf78-122">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-123">Ahora puede usar **Editar y reproducir** en las solicitudes en el [registro de red][DevtoolsNetworkIndexLogActivity] con la consola de **red**.</span><span class="sxs-lookup"><span data-stu-id="b34a7-123">You are now able to use **Edit and Replay** on requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.</span></span>  
+<span data-ttu-id="faf78-123">Ahora puede usar Editar **y** reproducir en solicitudes en el registro de red [mediante][DevtoolsNetworkIndexLogActivity] la consola de **red.**</span><span class="sxs-lookup"><span data-stu-id="faf78-123">You are now able to use **Edit and Replay** on requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
-   <span data-ttu-id="b34a7-125">Editar y reproducir una solicitud en el [NetworkLog][DevtoolsNetworkIndexLogActivity] con la **consola de red**</span><span class="sxs-lookup"><span data-stu-id="b34a7-125">Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**</span></span>  
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Editar y reproducir una solicitud en networklog con la consola de red" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+   <span data-ttu-id="faf78-125">Editar y reproducir una solicitud en [networklog][DevtoolsNetworkIndexLogActivity] con la **consola de red**</span><span class="sxs-lookup"><span data-stu-id="faf78-125">Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-126">Un panel nuevo, la **consola de red** se abre en el [cajón de DevTools][DevtoolsCustomizeIndexDrawer] y se rellena automáticamente con información para la solicitud HTTP.</span><span class="sxs-lookup"><span data-stu-id="b34a7-126">A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.</span></span>  <span data-ttu-id="b34a7-127">Para ver la respuesta devuelta desde el servidor, edite \ (si es necesario \) y seleccione **Enviar**.</span><span class="sxs-lookup"><span data-stu-id="b34a7-127">To see the response returned from the server, edit the request \(if needed\) and select **Send**.</span></span>  
+<span data-ttu-id="faf78-126">Un nuevo panel, la **consola de** red se abre en el cajón [DevTools][DevtoolsCustomizeIndexDrawer] y se rellena automáticamente con información para la solicitud HTTP.</span><span class="sxs-lookup"><span data-stu-id="faf78-126">A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.</span></span>  <span data-ttu-id="faf78-127">Para mostrar la respuesta devuelta desde el servidor, edite la solicitud \(si es necesario\) y seleccione **Enviar**.</span><span class="sxs-lookup"><span data-stu-id="faf78-127">To display the response returned from the server, edit the request \(if needed\) and select **Send**.</span></span>  
 
-<span data-ttu-id="b34a7-128">También puede usar la **consola de red** para crear y enviar solicitudes HTTP directamente desde el DevTools.</span><span class="sxs-lookup"><span data-stu-id="b34a7-128">You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.</span></span>  
+<span data-ttu-id="faf78-128">También puede usar la consola **de red** para crear y enviar solicitudes HTTP directamente desde DevTools.</span><span class="sxs-lookup"><span data-stu-id="faf78-128">You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
-   <span data-ttu-id="b34a7-130">Panel de **consola de red**</span><span class="sxs-lookup"><span data-stu-id="b34a7-130">The **Network Console** panel</span></span>  
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Panel consola de red" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+   <span data-ttu-id="faf78-130">Panel **consola de red**</span><span class="sxs-lookup"><span data-stu-id="faf78-130">The **Network Console** panel</span></span>  
 :::image-end:::  
 
 > [!TIP]
-> <span data-ttu-id="b34a7-131">Para ver la **consola de red** en el panel \ (superior \) en lugar del [alimentador de DevTools][DevtoolsCustomizeIndexDrawer], consulte movimiento de [herramientas entre paneles](#move-tools-between-panels).</span><span class="sxs-lookup"><span data-stu-id="b34a7-131">To see **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], see [moving tools between panels](#move-tools-between-panels).</span></span>  
+> <span data-ttu-id="faf78-131">Para mostrar **la Consola de** red en el panel principal \(top\) en lugar del cajón [DevTools][DevtoolsCustomizeIndexDrawer], vaya a herramientas de movimiento [entre paneles](#move-tools-between-panels).</span><span class="sxs-lookup"><span data-stu-id="faf78-131">To display **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], navigate to [moving tools between panels](#move-tools-between-panels).</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="b34a7-132">Para habilitar el experimento, consulte [activar las características experimentales][DevtoolsExperimentalFeaturesTurnOn] y seleccione la casilla que se encuentra junto a **Habilitar la consola de red**.</span><span class="sxs-lookup"><span data-stu-id="b34a7-132">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.</span></span>  
+> <span data-ttu-id="faf78-132">Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOn] y seleccione la casilla situada junto **a Habilitar consola de red.**</span><span class="sxs-lookup"><span data-stu-id="faf78-132">To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable Network Console**.</span></span>  
 > 
-> <span data-ttu-id="b34a7-133">Abra el [registro de red][DevtoolsNetworkIndexLogActivity], abra el menú contextual \ (haga clic con el botón derecho del ratón \) y seleccione **Editar y reproducir**.</span><span class="sxs-lookup"><span data-stu-id="b34a7-133">Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and select **Edit and Replay**.</span></span>  
+> <span data-ttu-id="faf78-133">Abra el [registro de red][DevtoolsNetworkIndexLogActivity], abra el menú contextual \(haga clic con el botón secundario\) y elija Editar y **reproducir**.</span><span class="sxs-lookup"><span data-stu-id="faf78-133">Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and choose **Edit and Replay**.</span></span>  
 
-<span data-ttu-id="b34a7-134">[#1093687][CR1093687] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-134">Chromium issue [#1093687][CR1093687]</span></span>  
+<span data-ttu-id="faf78-134">Problema de [chromium #1093687][CR1093687]</span><span class="sxs-lookup"><span data-stu-id="faf78-134">Chromium issue [#1093687][CR1093687]</span></span>  
 
-### <span data-ttu-id="b34a7-135">Eventos de respondWith de trabajo de servicio en la pestaña intervalos</span><span class="sxs-lookup"><span data-stu-id="b34a7-135">Service worker respondWith events in the Timing tab</span></span>  
+### <a name="service-worker-respondwith-events-in-the-timing-tab"></a><span data-ttu-id="faf78-135">Service worker respondWith events in the Timing tab</span><span class="sxs-lookup"><span data-stu-id="faf78-135">Service worker respondWith events in the Timing tab</span></span>  
 
-<span data-ttu-id="b34a7-136">La ficha **intervalos** del panel **red** ahora incluye `respondWith` eventos de trabajo de servicio.</span><span class="sxs-lookup"><span data-stu-id="b34a7-136">The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.</span></span>  <span data-ttu-id="b34a7-137">El `respondWith` evento de trabajo de servicio muestra la duración desde el momento en que el `fetch` controlador de eventos de trabajo de servicio comienza a ejecutarse hasta el momento en que `respondWith` se liquida la promesa del `fetch` controlador.</span><span class="sxs-lookup"><span data-stu-id="b34a7-137">The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.</span></span>  
+<span data-ttu-id="faf78-136">La **pestaña Tiempo** de la herramienta **Red** ahora incluye eventos de trabajo `respondWith` de servicio.</span><span class="sxs-lookup"><span data-stu-id="faf78-136">The **Timing** tab of the **Network** tool now includes `respondWith` service worker events.</span></span>  <span data-ttu-id="faf78-137">El evento de trabajo de servicio muestra la duración del tiempo inmediatamente antes de que el controlador de eventos de trabajo de servicio comience a ejecutarse hasta el momento en que se resuelva la promesa `respondWith` `fetch` del `respondWith` `fetch` controlador.</span><span class="sxs-lookup"><span data-stu-id="faf78-137">The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/timing-tab.msft.png":::
-   <span data-ttu-id="b34a7-139">El `respondWith` evento de trabajo de servicio en la pestaña **intervalos** del panel **red**</span><span class="sxs-lookup"><span data-stu-id="b34a7-139">The `respondWith` service worker event in the **Timing** tab of the **Network** panel</span></span>  
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="El evento de trabajo de servicio respondWith en la pestaña Temporización del panel Red" lightbox="../../media/2020/06/timing-tab.msft.png":::
+   <span data-ttu-id="faf78-139">Evento `respondWith` de trabajo de servicio en la pestaña **Temporización** de la **herramienta Red**</span><span class="sxs-lookup"><span data-stu-id="faf78-139">The `respondWith` service worker event in the **Timing** tab of the **Network** tool</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-140">Expanda la **respuesta recibida** para ver información adicional de la `fetch` respuesta como `CacheStorageCacheName` , `serviceWorkerResponseSource` y `ResponseTime` .</span><span class="sxs-lookup"><span data-stu-id="b34a7-140">Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.</span></span>  
+<span data-ttu-id="faf78-140">Expanda **Respuesta recibida** para mostrar información adicional de la respuesta como , y `fetch` `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` .</span><span class="sxs-lookup"><span data-stu-id="faf78-140">Expand **Response received** to display additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/timing-tab2.msft.png":::
-   <span data-ttu-id="b34a7-142">Expandir **respuesta recibida** para ver información adicional de la `fetch` respuesta</span><span class="sxs-lookup"><span data-stu-id="b34a7-142">Expand **Response received** to see additional information from the `fetch` response</span></span>  
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expandir Respuesta recibida para mostrar información adicional de la respuesta de captura" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+   <span data-ttu-id="faf78-142">Expandir **respuesta recibida** para mostrar información adicional de la `fetch` respuesta</span><span class="sxs-lookup"><span data-stu-id="faf78-142">Expand **Response received** to display additional information from the `fetch` response</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-143">[#1066579][CR1066579] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-143">Chromium issue [#1066579][CR1066579]</span></span>  
+<span data-ttu-id="faf78-143">Problema de [chromium #1066579][CR1066579]</span><span class="sxs-lookup"><span data-stu-id="faf78-143">Chromium issue [#1066579][CR1066579]</span></span>  
 
-### <span data-ttu-id="b34a7-144">Comentarios sobre webhint en el panel problemas</span><span class="sxs-lookup"><span data-stu-id="b34a7-144">webhint feedback in the Issues panel</span></span>  
+### <a name="webhint-feedback-in-the-issues-panel"></a><span data-ttu-id="faf78-144">comentarios de webhint en el panel Problemas</span><span class="sxs-lookup"><span data-stu-id="faf78-144">webhint feedback in the Issues panel</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
-   <span data-ttu-id="b34a7-146">Característica experimental</span><span class="sxs-lookup"><span data-stu-id="b34a7-146">Experimental feature</span></span>  
+   <span data-ttu-id="faf78-146">Característica experimental</span><span class="sxs-lookup"><span data-stu-id="faf78-146">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-147">[webhint][WebhintMain] es una herramienta de código abierto que proporciona comentarios en tiempo real sobre accesibilidad, compatibilidad entre exploradores, seguridad, rendimiento, PWAs y otros problemas comunes de desarrollo web de los sitios Web.</span><span class="sxs-lookup"><span data-stu-id="b34a7-147">[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.</span></span>  <span data-ttu-id="b34a7-148">Ahora puede ver comentarios sobre webhint en el panel [problemas][DevtoolsIssues] .</span><span class="sxs-lookup"><span data-stu-id="b34a7-148">You are now able to see webhint feedback in the [Issues][DevtoolsIssues] panel.</span></span>  
+<span data-ttu-id="faf78-147">[webhint][WebhintMain] es una herramienta de código abierto que proporciona comentarios en tiempo real sobre la accesibilidad, compatibilidad entre exploradores, seguridad, rendimiento, PWA y otros problemas comunes de desarrollo web de sitios web.</span><span class="sxs-lookup"><span data-stu-id="faf78-147">[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.</span></span>  <span data-ttu-id="faf78-148">Para revisar los comentarios de webhint en el panel [Problemas.][DevtoolsIssues]</span><span class="sxs-lookup"><span data-stu-id="faf78-148">To review webhint feedback in the [Issues][DevtoolsIssues] panel.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
-   <span data-ttu-id="b34a7-150">Comentarios sobre webhint en el panel problemas</span><span class="sxs-lookup"><span data-stu-id="b34a7-150">webhint feedback in the Issues panel</span></span>  
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="comentarios de webhint en el panel Problemas" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+   <span data-ttu-id="faf78-150">comentarios de webhint en el panel Problemas</span><span class="sxs-lookup"><span data-stu-id="faf78-150">webhint feedback in the Issues panel</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="b34a7-151">Para habilitar el experimento, vea [activar las características experimentales][DevtoolsExperimentalFeaturesTurnOn] y seleccione la casilla que se encuentra junto a **Habilitar webhint**.</span><span class="sxs-lookup"><span data-stu-id="b34a7-151">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.</span></span>  
+> <span data-ttu-id="faf78-151">Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOn] y seleccione la casilla situada junto **a Habilitar webhint**.</span><span class="sxs-lookup"><span data-stu-id="faf78-151">To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable webhint**.</span></span>  
 > 
-> <span data-ttu-id="b34a7-152">Abra el panel [problemas][DevtoolsIssues] para ver los comentarios de webhint.</span><span class="sxs-lookup"><span data-stu-id="b34a7-152">Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.</span></span>  
+> <span data-ttu-id="faf78-152">Abra el panel [Problemas][DevtoolsIssues] para mostrar los comentarios de webhint.</span><span class="sxs-lookup"><span data-stu-id="faf78-152">Open the [Issues][DevtoolsIssues] panel to display feedback from webhint.</span></span>  
 
-<span data-ttu-id="b34a7-153">[#1070378][CR1070378] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-153">Chromium issue [#1070378][CR1070378]</span></span>  
+<span data-ttu-id="faf78-153">Problema de [chromium #1070378][CR1070378]</span><span class="sxs-lookup"><span data-stu-id="faf78-153">Chromium issue [#1070378][CR1070378]</span></span>  
 
-### <span data-ttu-id="b34a7-154">Mover herramientas entre paneles</span><span class="sxs-lookup"><span data-stu-id="b34a7-154">Move tools between panels</span></span>  
+### <a name="move-tools-between-panels"></a><span data-ttu-id="faf78-154">Mover herramientas entre paneles</span><span class="sxs-lookup"><span data-stu-id="faf78-154">Move tools between panels</span></span>  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
-   <span data-ttu-id="b34a7-156">Característica experimental</span><span class="sxs-lookup"><span data-stu-id="b34a7-156">Experimental feature</span></span>  
+   <span data-ttu-id="faf78-156">Característica experimental</span><span class="sxs-lookup"><span data-stu-id="faf78-156">Experimental feature</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-157">Normalmente, las herramientas, como **los elementos** y la **red** , solo se pueden abrir en el panel \ (parte superior \) de DevTools.</span><span class="sxs-lookup"><span data-stu-id="b34a7-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="b34a7-158">De forma similar, las herramientas, como la **vista 3D** y los **problemas** , solo se pueden abrir en el panel del cajón \ (inferior \) de DevTools.</span><span class="sxs-lookup"><span data-stu-id="b34a7-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="b34a7-159">Ahora puede personalizar el diseño de DevTools moviendo las herramientas entre los paneles superior e inferior.</span><span class="sxs-lookup"><span data-stu-id="b34a7-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
+<span data-ttu-id="faf78-157">Normalmente, herramientas como **Elementos** y **Red** solo se pueden abrir en el panel principal \(top\) de DevTools.</span><span class="sxs-lookup"><span data-stu-id="faf78-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="faf78-158">Del mismo modo, las herramientas como **Vista 3D** y **Problemas** solo pueden abrirse en el panel \(bottom\) del cajón de DevTools.</span><span class="sxs-lookup"><span data-stu-id="faf78-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="faf78-159">Ahora puede personalizar el diseño de DevTools moviendo las herramientas entre los paneles superior e inferior.</span><span class="sxs-lookup"><span data-stu-id="faf78-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
-   <span data-ttu-id="b34a7-161">Mover pestañas entre paneles</span><span class="sxs-lookup"><span data-stu-id="b34a7-161">Moving tabs between panels</span></span>  
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Mover herramientas entre paneles" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+   <span data-ttu-id="faf78-161">Mover herramientas entre paneles</span><span class="sxs-lookup"><span data-stu-id="faf78-161">Move tools between panels</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="b34a7-162">Para habilitar el experimento, vea [activar las características experimentales][DevtoolsExperimentalFeaturesTurnOn] y seleccione la casilla junto a **habilitar soporte técnico para mover las tabulaciones entre los paneles**.</span><span class="sxs-lookup"><span data-stu-id="b34a7-162">To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.</span></span>  
+> <span data-ttu-id="faf78-162">Para habilitar el experimento, vaya a Activar características [experimentales][DevtoolsExperimentalFeaturesTurnOn] y seleccione la casilla situada junto a Habilitar compatibilidad para mover **fichas entre paneles.**</span><span class="sxs-lookup"><span data-stu-id="faf78-162">To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable support to move tabs between panels**.</span></span>  
 
-<span data-ttu-id="b34a7-163">[#897944][CR897944] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-163">Chromium issue [#897944][CR897944]</span></span>  
+<span data-ttu-id="faf78-163">Problema de [chromium #897944][CR897944]</span><span class="sxs-lookup"><span data-stu-id="faf78-163">Chromium issue [#897944][CR897944]</span></span>  
 
-### <span data-ttu-id="b34a7-164">Información sobre herramientas de iniciador mejorada en el panel red</span><span class="sxs-lookup"><span data-stu-id="b34a7-164">Improved Initiator tooltip in the Network panel</span></span>  
+### <a name="improved-initiator-tooltip-in-the-network-panel"></a><span data-ttu-id="faf78-164">Información sobre herramientas del iniciador mejorada en el panel Red</span><span class="sxs-lookup"><span data-stu-id="faf78-164">Improved Initiator tooltip in the Network panel</span></span>  
 
-<span data-ttu-id="b34a7-165">En Microsoft Edge 83 y 84, información sobre herramientas para la columna Initiator, que muestra la causa de la solicitud de recursos, en el [registro de red][DevtoolsNetworkIndexLogActivity] que se muestra con una barra de desplazamiento horizontal.</span><span class="sxs-lookup"><span data-stu-id="b34a7-165">In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.</span></span>  <span data-ttu-id="b34a7-166">Solo pudimos ver la pila de llamadas que inició la solicitud desplazándose horizontalmente en la información sobre herramientas.</span><span class="sxs-lookup"><span data-stu-id="b34a7-166">You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.</span></span>  
+<span data-ttu-id="faf78-165">En Microsoft Edge 83 y 84, la información sobre herramientas de la [][DevtoolsNetworkIndexLogActivity] columna Iniciador, que muestra la causa de la solicitud de recurso, en el registro de red que se muestra con una barra de desplazamiento horizontal.</span><span class="sxs-lookup"><span data-stu-id="faf78-165">In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.</span></span>  <span data-ttu-id="faf78-166">Solo pudo mostrar la pila de llamadas que inició la solicitud desplazándose horizontalmente en la información sobre herramientas.</span><span class="sxs-lookup"><span data-stu-id="faf78-166">You were only able to display the call stack that initiated the request by scrolling horizontally in the tooltip.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
-   <span data-ttu-id="b34a7-168">Información sobre herramientas de iniciador en Microsoft Edge 84</span><span class="sxs-lookup"><span data-stu-id="b34a7-168">The Initiator tooltip in Microsoft Edge 84</span></span>  
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Información sobre herramientas del iniciador en Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+   <span data-ttu-id="faf78-168">Información sobre herramientas del iniciador en Microsoft Edge 84</span><span class="sxs-lookup"><span data-stu-id="faf78-168">The Initiator tooltip in Microsoft Edge 84</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-169">A partir de Microsoft Edge 85, ahora puedes ver la pila de llamadas de iniciador en la información sobre herramientas sin tener que desplazarse horizontalmente.</span><span class="sxs-lookup"><span data-stu-id="b34a7-169">Starting with Microsoft Edge 85, you are now able to see the Initiator call stack in the tooltip without scrolling horizontally.</span></span>  
+<span data-ttu-id="faf78-169">A partir de Microsoft Edge 85, ahora puede mostrar la pila de llamadas del iniciador en la información sobre herramientas sin desplazarse horizontalmente.</span><span class="sxs-lookup"><span data-stu-id="faf78-169">Starting with Microsoft Edge 85, you are now able to display the Initiator call stack in the tooltip without scrolling horizontally.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
-   <span data-ttu-id="b34a7-171">Información sobre herramientas de iniciador en Microsoft Edge 85</span><span class="sxs-lookup"><span data-stu-id="b34a7-171">The Initiator tooltip in Microsoft Edge 85</span></span>
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Información sobre herramientas del iniciador en Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+   <span data-ttu-id="faf78-171">Información sobre herramientas del iniciador en Microsoft Edge 85</span><span class="sxs-lookup"><span data-stu-id="faf78-171">The Initiator tooltip in Microsoft Edge 85</span></span>
 :::image-end:::  
 
-<span data-ttu-id="b34a7-172">[#1069404][CR1069404] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-172">Chromium issue [#1069404][CR1069404]</span></span>  
+<span data-ttu-id="faf78-172">Problema de chromium [#1069404][CR1069404]</span><span class="sxs-lookup"><span data-stu-id="faf78-172">Chromium issue [#1069404][CR1069404]</span></span>  
 
-## <span data-ttu-id="b34a7-173">Anuncios del proyecto de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-173">Announcements from the Chromium project</span></span>  
+## <a name="announcements-from-the-chromium-project"></a><span data-ttu-id="faf78-173">Anuncios del proyecto de Chromium</span><span class="sxs-lookup"><span data-stu-id="faf78-173">Announcements from the Chromium project</span></span>  
 
-<span data-ttu-id="b34a7-174">En las siguientes secciones se anuncian características adicionales disponibles en Microsoft Edge 85 que se han contribuido al proyecto de código abierto.</span><span class="sxs-lookup"><span data-stu-id="b34a7-174">The following sections announce additional features available in Microsoft Edge 85 that were contributed to the open source Chromium project.</span></span>  
+<span data-ttu-id="faf78-174">En las secciones siguientes se anuncian características adicionales disponibles en Microsoft Edge 85 que se contribuyeron al proyecto chromium de código abierto.</span><span class="sxs-lookup"><span data-stu-id="faf78-174">The following sections announce additional features available in Microsoft Edge 85 that were contributed to the open source Chromium project.</span></span>  
 
-### <span data-ttu-id="b34a7-175">Edición de estilos para marcos CSS-en-JS</span><span class="sxs-lookup"><span data-stu-id="b34a7-175">Style editing for CSS-in-JS frameworks</span></span>  
+### <a name="style-editing-for-css-in-js-frameworks"></a><span data-ttu-id="faf78-175">Edición de estilos para marcos CSS-in-JS</span><span class="sxs-lookup"><span data-stu-id="faf78-175">Style editing for CSS-in-JS frameworks</span></span>  
 
-<span data-ttu-id="b34a7-176">El panel **estilos** ahora tiene mejor compatibilidad para editar los estilos que se crearon con las API del [modelo de objetos CSS (CSSOM)][CsswgDraftsCssom] .</span><span class="sxs-lookup"><span data-stu-id="b34a7-176">The **Styles** pane now has better support for editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.</span></span>  <span data-ttu-id="b34a7-177">Muchos marcos y bibliotecas CSS-en-JS usan las API de CSSOM en el capó para construir estilos.</span><span class="sxs-lookup"><span data-stu-id="b34a7-177">Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.</span></span>  
+<span data-ttu-id="faf78-176">El **panel Estilos** ahora admite mejor los estilos de edición que se crearon con las API del modelo de objetos CSS [(CSSOM).][CsswgDraftsCssom]</span><span class="sxs-lookup"><span data-stu-id="faf78-176">The **Styles** pane now has better support for editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.</span></span>  <span data-ttu-id="faf78-177">Muchos marcos y bibliotecas de CSS-in-JS usan las API cssom debajo del capó para crear estilos.</span><span class="sxs-lookup"><span data-stu-id="faf78-177">Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.</span></span>  
 
-<span data-ttu-id="b34a7-178">Ahora puede editar los estilos agregados en JavaScript con [hojas de estilo construyebles][WicgConstructStylesheet].</span><span class="sxs-lookup"><span data-stu-id="b34a7-178">You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].</span></span>  <span data-ttu-id="b34a7-179">Las hojas de estilo creativas son una nueva forma de crear y distribuir estilos reutilizables al usar la [sombra de Dom][MdnShadowDom].</span><span class="sxs-lookup"><span data-stu-id="b34a7-179">Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].</span></span>  
+<span data-ttu-id="faf78-178">Ahora puede editar los estilos agregados en JavaScript con hojas de estilos [constructables.][WicgConstructStylesheet]</span><span class="sxs-lookup"><span data-stu-id="faf78-178">You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].</span></span>  <span data-ttu-id="faf78-179">Las hojas de estilo constructables son una nueva forma de crear y distribuir estilos reutilizables al usar [Shadow DOM][MdnShadowDom].</span><span class="sxs-lookup"><span data-stu-id="faf78-179">Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].</span></span>  
 
-<span data-ttu-id="b34a7-180">Por ejemplo, los `h1` estilos agregados con `CSSStyleSheet` \ (API de CSSOM \) no se podían modificar anteriormente.</span><span class="sxs-lookup"><span data-stu-id="b34a7-180">For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.</span></span>  <span data-ttu-id="b34a7-181">Ahora los estilos se pueden editar en el panel **estilos** .</span><span class="sxs-lookup"><span data-stu-id="b34a7-181">The styles are editable now in the **Styles** pane.</span></span>  
+<span data-ttu-id="faf78-180">Por ejemplo, los `h1` estilos agregados con `CSSStyleSheet` \(CSSOM API\) no se modificaban anteriormente.</span><span class="sxs-lookup"><span data-stu-id="faf78-180">For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.</span></span>  <span data-ttu-id="faf78-181">Los estilos se pueden editar ahora en el panel **Estilos.**</span><span class="sxs-lookup"><span data-stu-id="faf78-181">The styles are editable now in the **Styles** panel.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/css-in-js.msft.png":::
-   <span data-ttu-id="b34a7-183">Cambiar la `background` propiedad de los `h1` estilos agregados con `CSSStyleSheet` from `pink` a `lightblue` .</span><span class="sxs-lookup"><span data-stu-id="b34a7-183">Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.</span></span>
+:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Cambiar la propiedad de fondo de los estilos h1 agregados con CSSStyleSheet de rosa a azul claro" lightbox="../../media/2020/06/css-in-js.msft.png":::
+   <span data-ttu-id="faf78-183">Cambiar la `background` propiedad de los estilos `h1` agregados con de a `CSSStyleSheet` `pink` `lightblue` .</span><span class="sxs-lookup"><span data-stu-id="faf78-183">Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.</span></span>
 :::image-end:::  
 
-<span data-ttu-id="b34a7-184">Proporciona a esta característica una prueba con un [ejemplo que usa CSS-in-JS][CodepenZoherghadyaliAbdgrpz].</span><span class="sxs-lookup"><span data-stu-id="b34a7-184">Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].</span></span>
+<span data-ttu-id="faf78-184">Pruebe esta característica con un [ejemplo que use CSS-in-JS][CodepenZoherghadyaliAbdgrpz].</span><span class="sxs-lookup"><span data-stu-id="faf78-184">Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].</span></span>
 
-<span data-ttu-id="b34a7-185">[#946975][CR946975] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-185">Chromium issue [#946975][CR946975]</span></span>  
+<span data-ttu-id="faf78-185">Problema de [chromium #946975][CR946975]</span><span class="sxs-lookup"><span data-stu-id="faf78-185">Chromium issue [#946975][CR946975]</span></span>  
 
-### <span data-ttu-id="b34a7-186">Lighthouse 6 en el panel de Lighthouse</span><span class="sxs-lookup"><span data-stu-id="b34a7-186">Lighthouse 6 in the Lighthouse panel</span></span>  
+### <a name="lighthouse-6-in-the-lighthouse-panel"></a><span data-ttu-id="faf78-186">Faro 6 en el panel Faro</span><span class="sxs-lookup"><span data-stu-id="faf78-186">Lighthouse 6 in the Lighthouse panel</span></span>  
 
-<span data-ttu-id="b34a7-187">El panel de **Lighthouse** ahora se ejecuta Lighthouse 6.</span><span class="sxs-lookup"><span data-stu-id="b34a7-187">The **Lighthouse** panel is now running Lighthouse 6.</span></span>  <span data-ttu-id="b34a7-188">Para obtener una lista completa de todos los cambios, consulte las notas de la [versión v 6.0.0][GithubGoogleChromeLighthouse600].</span><span class="sxs-lookup"><span data-stu-id="b34a7-188">For a full list of all changes, see [v6.0.0 release notes][GithubGoogleChromeLighthouse600].</span></span>  
+<span data-ttu-id="faf78-187">El panel **Faro** está ejecutando Ahora Faro 6.</span><span class="sxs-lookup"><span data-stu-id="faf78-187">The **Lighthouse** panel is now running Lighthouse 6.</span></span>  <span data-ttu-id="faf78-188">Para obtener una lista completa de todos los cambios, vaya a las notas de la [versión v6.0.0][GithubGoogleChromeLighthouse600].</span><span class="sxs-lookup"><span data-stu-id="faf78-188">For a full list of all changes, navigate to [v6.0.0 release notes][GithubGoogleChromeLighthouse600].</span></span>  
 
-<span data-ttu-id="b34a7-189">Lighthouse 6,0 introduce tres nuevas métricas en el informe: pintura con el contenido más grande \ (LCP \), turno de distribución acumulativa \ (CLS \) y tiempo de bloqueo total \ (TBT \).</span><span class="sxs-lookup"><span data-stu-id="b34a7-189">Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).</span></span>  
+<span data-ttu-id="faf78-189">Lighthouse 6.0 presenta tres nuevas métricas al informe: La mayor pintura contenta \(LCP\), Desplazamiento de diseño acumulado \(CLS\) y Tiempo total de bloqueo \(TBT\).</span><span class="sxs-lookup"><span data-stu-id="faf78-189">Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).</span></span>  
 
-<span data-ttu-id="b34a7-190">La fórmula de puntuación de rendimiento también se ha recargado para reflejar mejor la experiencia de carga del usuario.</span><span class="sxs-lookup"><span data-stu-id="b34a7-190">The performance score formula has also been reweighted to better reflect the loading experience of the user.</span></span>  
+<span data-ttu-id="faf78-190">La fórmula de puntuación de rendimiento también se ha repondido para reflejar mejor la experiencia de carga del usuario.</span><span class="sxs-lookup"><span data-stu-id="faf78-190">The performance score formula has also been reweighted to better reflect the loading experience of the user.</span></span>  
 
-<span data-ttu-id="b34a7-191">[#772558][CR772558] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-191">Chromium issue [#772558][CR772558]</span></span>  
+<span data-ttu-id="faf78-191">Problema de [chromium #772558][CR772558]</span><span class="sxs-lookup"><span data-stu-id="faf78-191">Chromium issue [#772558][CR772558]</span></span>  
 
-#### <span data-ttu-id="b34a7-192">Primer desuso de pintura significativo</span><span class="sxs-lookup"><span data-stu-id="b34a7-192">First Meaningful Paint deprecation</span></span>  
+#### <a name="first-meaningful-paint-deprecation"></a><span data-ttu-id="faf78-192">Primer desuso de pintura significativa</span><span class="sxs-lookup"><span data-stu-id="faf78-192">First Meaningful Paint deprecation</span></span>  
 
-<span data-ttu-id="b34a7-193">La primera pintura significativa \ (FMP \) está en desuso en Lighthouse 6,0.</span><span class="sxs-lookup"><span data-stu-id="b34a7-193">First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.</span></span>  <span data-ttu-id="b34a7-194">FMP también se ha eliminado del panel **rendimiento** .</span><span class="sxs-lookup"><span data-stu-id="b34a7-194">FMP has also been removed from the **Performance** panel.</span></span>  <span data-ttu-id="b34a7-195">La **mayor pintura** con el contenido es el reemplazo recomendado para FMP.</span><span class="sxs-lookup"><span data-stu-id="b34a7-195">**Largest Contentful Paint** is the recommended replacement for FMP.</span></span>  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
+<span data-ttu-id="faf78-193">First Meaningful Paint \(FMP\) está en desuso en Lighthouse 6.0.</span><span class="sxs-lookup"><span data-stu-id="faf78-193">First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.</span></span>  <span data-ttu-id="faf78-194">FMP también se ha quitado del panel **Rendimiento.**</span><span class="sxs-lookup"><span data-stu-id="faf78-194">FMP has also been removed from the **Performance** panel.</span></span>  <span data-ttu-id="faf78-195">**La pintura contentful más grande** es el reemplazo recomendado para FMP.</span><span class="sxs-lookup"><span data-stu-id="faf78-195">**Largest Contentful Paint** is the recommended replacement for FMP.</span></span>  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
 
-<span data-ttu-id="b34a7-196">[#1096008][CR1096008] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-196">Chromium issue [#1096008][CR1096008]</span></span>  
+<span data-ttu-id="faf78-196">Problema de chromium [#1096008][CR1096008]</span><span class="sxs-lookup"><span data-stu-id="faf78-196">Chromium issue [#1096008][CR1096008]</span></span>  
 
-### <span data-ttu-id="b34a7-197">Compatibilidad con las nuevas características de JavaScript</span><span class="sxs-lookup"><span data-stu-id="b34a7-197">Support for new JavaScript features</span></span>  
+### <a name="support-for-new-javascript-features"></a><span data-ttu-id="faf78-197">Compatibilidad con nuevas características de JavaScript</span><span class="sxs-lookup"><span data-stu-id="faf78-197">Support for new JavaScript features</span></span>  
 
-<span data-ttu-id="b34a7-198">DevTools ahora es una mejor compatibilidad para algunas de las características más recientes del lenguaje JavaScript.</span><span class="sxs-lookup"><span data-stu-id="b34a7-198">DevTools now has better support for some of the latest JavaScript language features.</span></span>  
+<span data-ttu-id="faf78-198">DevTools ahora tiene mejor compatibilidad con algunas de las características más recientes del lenguaje JavaScript.</span><span class="sxs-lookup"><span data-stu-id="faf78-198">DevTools now has better support for some of the latest JavaScript language features.</span></span>  
 
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="b34a7-199">Finalización automática de sintaxis de [encadenamiento opcional][V8DevOptionalChaining]</span><span class="sxs-lookup"><span data-stu-id="b34a7-199">[Optional chaining][V8DevOptionalChaining] syntax autocompletion</span></span>  
+      <span data-ttu-id="faf78-199">[Autocompletion de sintaxis][V8DevOptionalChaining] de encadenamiento opcional</span><span class="sxs-lookup"><span data-stu-id="faf78-199">[Optional chaining][V8DevOptionalChaining] syntax autocompletion</span></span>  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="b34a7-200">La finalización automática de la propiedad en la **consola** ahora admite la sintaxis de encadenamiento opcional; por ejemplo,  `name?.` ahora funciona además de `name.` y `name[` .</span><span class="sxs-lookup"><span data-stu-id="b34a7-200">Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.</span></span>  
+      <span data-ttu-id="faf78-200">La finalización automática de la propiedad **en la consola** ahora admite la sintaxis de encadenamiento opcional, por ejemplo, ahora funciona además de y  `name?.` `name.` `name[` .</span><span class="sxs-lookup"><span data-stu-id="faf78-200">Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="b34a7-201">Resaltado de sintaxis para [campos privados][V8DevClassFieldsPrivate]</span><span class="sxs-lookup"><span data-stu-id="b34a7-201">Syntax highlighting for [private fields][V8DevClassFieldsPrivate]</span></span>  
+      <span data-ttu-id="faf78-201">Resaltado de sintaxis para [campos privados][V8DevClassFieldsPrivate]</span><span class="sxs-lookup"><span data-stu-id="faf78-201">Syntax highlighting for [private fields][V8DevClassFieldsPrivate]</span></span>  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="b34a7-202">Ahora, los campos de clase privados se resaltan correctamente y se resaltan en el panel **fuentes** .</span><span class="sxs-lookup"><span data-stu-id="b34a7-202">private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.</span></span>  
+      <span data-ttu-id="faf78-202">Los campos de clase privada ahora están correctamente resaltados por la sintaxis y están bastante impresos en **el** panel Orígenes.</span><span class="sxs-lookup"><span data-stu-id="faf78-202">private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="b34a7-203">Resaltado de sintaxis para el [operador de fusión con valores nulos][V8DevNullishCoalescing]</span><span class="sxs-lookup"><span data-stu-id="b34a7-203">Syntax highlighting for [Nullish coalescing operator][V8DevNullishCoalescing]</span></span>
+      <span data-ttu-id="faf78-203">Resaltado de sintaxis [para el operador de conjunción Nullish][V8DevNullishCoalescing]</span><span class="sxs-lookup"><span data-stu-id="faf78-203">Syntax highlighting for [Nullish coalescing operator][V8DevNullishCoalescing]</span></span>
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="b34a7-204">Ahora DevTools correctamente: imprime el operador de fusión de NULL en el panel **fuentes** .</span><span class="sxs-lookup"><span data-stu-id="b34a7-204">DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.</span></span>  
+      <span data-ttu-id="faf78-204">Ahora DevTools imprime correctamente el operador de conjunción nulo en el panel **Orígenes.**</span><span class="sxs-lookup"><span data-stu-id="faf78-204">DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="b34a7-205">Problemas de cromo [#1073903][CR1073903], [#1083214][CR1083214] [#1083797][CR1083797]</span><span class="sxs-lookup"><span data-stu-id="b34a7-205">Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]</span></span>  
+<span data-ttu-id="faf78-205">Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]</span><span class="sxs-lookup"><span data-stu-id="faf78-205">Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]</span></span>  
 
-### <span data-ttu-id="b34a7-206">Advertencias de nuevo acceso directo a la aplicación en el panel manifiesto</span><span class="sxs-lookup"><span data-stu-id="b34a7-206">New app shortcut warnings in the Manifest pane</span></span>  
+### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a><span data-ttu-id="faf78-206">Nuevas advertencias de acceso directo de la aplicación en el panel Manifiesto</span><span class="sxs-lookup"><span data-stu-id="faf78-206">New app shortcut warnings in the Manifest pane</span></span>  
 
-<span data-ttu-id="b34a7-207">Los **accesos directos a aplicaciones** ayudan a los usuarios a iniciar rápidamente las tareas comunes o recomendadas dentro de una aplicación Web.</span><span class="sxs-lookup"><span data-stu-id="b34a7-207">**App shortcuts** help users quickly start common or recommended tasks within a web app.</span></span>  
+<span data-ttu-id="faf78-207">**Los accesos directos de** la aplicación ayudan a los usuarios a iniciar rápidamente tareas comunes o recomendadas dentro de una aplicación web.</span><span class="sxs-lookup"><span data-stu-id="faf78-207">**App shortcuts** help users quickly start common or recommended tasks within a web app.</span></span>  
 
 <!--todo: add App shortcuts when section is live  -->  
 
-<span data-ttu-id="b34a7-208">En el panel **manifiesto** ahora se muestran advertencias para las siguientes condiciones.</span><span class="sxs-lookup"><span data-stu-id="b34a7-208">The **Manifest** pane now shows warnings for the following conditions.</span></span>  
+<span data-ttu-id="faf78-208">El **panel** Manifiesto ahora muestra advertencias para las siguientes condiciones.</span><span class="sxs-lookup"><span data-stu-id="faf78-208">The **Manifest** pane now shows warnings for the following conditions.</span></span>  
 
-* <span data-ttu-id="b34a7-209">Los iconos de acceso directo de la aplicación son menores que 96 píxeles</span><span class="sxs-lookup"><span data-stu-id="b34a7-209">The app shortcut icons are smaller than 96x96 pixels</span></span>  
-* <span data-ttu-id="b34a7-210">Los iconos de acceso directo de la aplicación y los iconos de manifiesto no son cuadrados \ (porque los iconos se ignoran \)</span><span class="sxs-lookup"><span data-stu-id="b34a7-210">The app shortcut icons and manifest icons are not square \(since the icons are ignored\)</span></span>  
+* <span data-ttu-id="faf78-209">Los iconos de acceso directo de la aplicación son menores que 96 x 96 píxeles</span><span class="sxs-lookup"><span data-stu-id="faf78-209">The app shortcut icons are smaller than 96x96 pixels</span></span>  
+* <span data-ttu-id="faf78-210">Los iconos de acceso directo de la aplicación y los iconos de manifiesto no son cuadrados \(dado que los iconos se omiten\)</span><span class="sxs-lookup"><span data-stu-id="faf78-210">The app shortcut icons and manifest icons are not square \(since the icons are ignored\)</span></span>  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
-   <span data-ttu-id="b34a7-212">Advertencias de acceso directo a la aplicación</span><span class="sxs-lookup"><span data-stu-id="b34a7-212">App shortcut warnings</span></span>  
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Advertencias de acceso directo de aplicaciones" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+   <span data-ttu-id="faf78-212">Advertencias de acceso directo de aplicaciones</span><span class="sxs-lookup"><span data-stu-id="faf78-212">App shortcut warnings</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-213">[#955497][CR955497] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-213">Chromium issue [#955497][CR955497]</span></span>  
+<span data-ttu-id="faf78-213">Problema de chromium [#955497][CR955497]</span><span class="sxs-lookup"><span data-stu-id="faf78-213">Chromium issue [#955497][CR955497]</span></span>  
 
-### <span data-ttu-id="b34a7-214">Visualización coherente del panel calculado</span><span class="sxs-lookup"><span data-stu-id="b34a7-214">Consistent display of the Computed pane</span></span>  
+### <a name="consistent-display-of-the-computed-pane"></a><span data-ttu-id="faf78-214">Visualización coherente del panel calculado</span><span class="sxs-lookup"><span data-stu-id="faf78-214">Consistent display of the Computed pane</span></span>  
 
-<span data-ttu-id="b34a7-215">El panel **calculado** del panel **elementos** se muestra ahora de forma coherente en todos los tamaños de la ventanilla.</span><span class="sxs-lookup"><span data-stu-id="b34a7-215">The **Computed** pane in the **Elements** panel now displays consistently as a pane across all viewport sizes.</span></span>  <span data-ttu-id="b34a7-216">Anteriormente el panel **calculado** se combinó en el panel **estilos** cuando el ancho de la ventanilla de DevTools era estrecho.</span><span class="sxs-lookup"><span data-stu-id="b34a7-216">Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.</span></span>  
+<span data-ttu-id="faf78-215">El **panel Calculado de** la herramienta **Elementos** ahora se muestra de forma coherente como un panel en todos los tamaños de ventanilla.</span><span class="sxs-lookup"><span data-stu-id="faf78-215">The **Computed** pane in the **Elements** tool now displays consistently as a pane across all viewport sizes.</span></span>  <span data-ttu-id="faf78-216">Anteriormente, el **panel Calculado** se combinaba dentro del panel **Estilos** cuando el ancho de la ventanilla de DevTools era estrecho.</span><span class="sxs-lookup"><span data-stu-id="faf78-216">Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/computed-pane.msft.png":::
-   <span data-ttu-id="b34a7-218">El panel **calculado** se muestra de forma coherente como un panel independiente incluso cuando el DevTools es estrecho.</span><span class="sxs-lookup"><span data-stu-id="b34a7-218">The **Computed** pane consistently displays as a separate pane even when the DevTools are narrow.</span></span>
+:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="El panel Calculado se muestra de forma coherente como un panel independiente incluso cuando las DevTools son estrechas" lightbox="../../media/2020/06/computed-pane.msft.png":::
+   <span data-ttu-id="faf78-218">El **panel Calculado** se muestra de forma coherente como un panel independiente incluso cuando las DevTools son estrechas.</span><span class="sxs-lookup"><span data-stu-id="faf78-218">The **Computed** pane consistently displays as a separate pane even when the DevTools are narrow.</span></span>
 :::image-end:::  
 
-<span data-ttu-id="b34a7-219">[#1073899][CR1073899] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-219">Chromium issue [#1073899][CR1073899]</span></span>  
+<span data-ttu-id="faf78-219">Problema de [chromium #1073899][CR1073899]</span><span class="sxs-lookup"><span data-stu-id="faf78-219">Chromium issue [#1073899][CR1073899]</span></span>  
 
-### <span data-ttu-id="b34a7-220">Desplazamientos de código de bytes para archivos webassembly</span><span class="sxs-lookup"><span data-stu-id="b34a7-220">Bytecode offsets for WebAssembly files</span></span>  
+### <a name="bytecode-offsets-for-webassembly-files"></a><span data-ttu-id="faf78-220">Desplazamientos de bytecode para archivos WebAssembly</span><span class="sxs-lookup"><span data-stu-id="faf78-220">Bytecode offsets for WebAssembly files</span></span>  
 
-<span data-ttu-id="b34a7-221">DevTools ahora usa desplazamientos de código de byte para mostrar los números de línea de WASM desensamblador.</span><span class="sxs-lookup"><span data-stu-id="b34a7-221">DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.</span></span>  
-<span data-ttu-id="b34a7-222">Los números de línea marcan más claramente que estás buscando datos binarios y son más coherentes con el modo en que el tiempo de ejecución de WASM hace referencia a ubicaciones.</span><span class="sxs-lookup"><span data-stu-id="b34a7-222">The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.</span></span>  
+<span data-ttu-id="faf78-221">DevTools ahora usa desplazamientos de código de bytes para mostrar números de línea de desmontaje de Wasm.</span><span class="sxs-lookup"><span data-stu-id="faf78-221">DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.</span></span>  
+<span data-ttu-id="faf78-222">Los números de línea hacen que sea más claro que está mirando datos binarios y es más coherente con la forma en que el tiempo de ejecución de Wasm hace referencia a las ubicaciones.</span><span class="sxs-lookup"><span data-stu-id="faf78-222">The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.</span></span>  
 
-<span data-ttu-id="b34a7-223">[#1071432][CR1071432] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-223">Chromium issue [#1071432][CR1071432]</span></span>  
+<span data-ttu-id="faf78-223">Problema de [chromium #1071432][CR1071432]</span><span class="sxs-lookup"><span data-stu-id="faf78-223">Chromium issue [#1071432][CR1071432]</span></span>  
 
-### <span data-ttu-id="b34a7-224">Copia y corte de línea en el panel orígenes</span><span class="sxs-lookup"><span data-stu-id="b34a7-224">Line-wise copy and cut in Sources Panel</span></span>  
+### <a name="line-wise-copy-and-cut-in-sources-panel"></a><span data-ttu-id="faf78-224">Copiar y cortar en línea en el Panel orígenes</span><span class="sxs-lookup"><span data-stu-id="faf78-224">Line-wise copy and cut in Sources Panel</span></span>  
 
-<span data-ttu-id="b34a7-225">Al realizar una operación de copiar o cortar sin selección en el [Editor del panel orígenes][DevtoolsSourcesEditCssJavascript], DevTools copia o corta la línea de contenido actual.</span><span class="sxs-lookup"><span data-stu-id="b34a7-225">When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.</span></span>  
+<span data-ttu-id="faf78-225">Al realizar copias o cortes sin selección en el editor del [panel Orígenes,][DevtoolsSourcesEditCssJavascript]DevTools copia o corta la línea de contenido actual.</span><span class="sxs-lookup"><span data-stu-id="faf78-225">When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   <span data-ttu-id="b34a7-227">Con el cursor al final de la línea 5, copiando toda la línea desde **pen.js** en el DevTools y pegando en [Visual Studio Code][VSCode].</span><span class="sxs-lookup"><span data-stu-id="b34a7-227">With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VSCode].</span></span>
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Con el cursor al final de la línea 5, copiando toda la línea desde pen.js en devTools y pegando en Visual Studio código" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   <span data-ttu-id="faf78-227">Con el cursor al final de la línea 5, copiando toda la línea de **pen.js** en DevTools y pegando en [Visual Studio Code][VisualStudioCode].</span><span class="sxs-lookup"><span data-stu-id="faf78-227">With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VisualStudioCode].</span></span>
 :::image-end:::  
 
-<span data-ttu-id="b34a7-228">[#800028][CR800028] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-228">Chromium issue [#800028][CR800028]</span></span>
+<span data-ttu-id="faf78-228">Problema de chromium [#800028][CR800028]</span><span class="sxs-lookup"><span data-stu-id="faf78-228">Chromium issue [#800028][CR800028]</span></span>
 
-### <span data-ttu-id="b34a7-229">Actualizaciones de configuración de consola</span><span class="sxs-lookup"><span data-stu-id="b34a7-229">Console Settings updates</span></span>  
+### <a name="console-settings-updates"></a><span data-ttu-id="faf78-229">Actualizaciones de configuración de consola</span><span class="sxs-lookup"><span data-stu-id="faf78-229">Console Settings updates</span></span>  
 
-#### <span data-ttu-id="b34a7-230">Desagrupar los mismos mensajes de consola</span><span class="sxs-lookup"><span data-stu-id="b34a7-230">Ungroup same console messages</span></span>  
+#### <a name="ungroup-same-console-messages"></a><span data-ttu-id="faf78-230">Desagrupar los mismos mensajes de consola</span><span class="sxs-lookup"><span data-stu-id="faf78-230">Ungroup same console messages</span></span>  
 
-<span data-ttu-id="b34a7-231">El botón de alternancia **similar** en la configuración de la consola se aplica a los mensajes duplicados.</span><span class="sxs-lookup"><span data-stu-id="b34a7-231">The **Group similar** toggle in Console Settings now applies to duplicate messages.</span></span>  <span data-ttu-id="b34a7-232">Anteriormente se acaba de aplicar a mensajes similares.</span><span class="sxs-lookup"><span data-stu-id="b34a7-232">Previously it just applied to similar messages.</span></span>  
+<span data-ttu-id="faf78-231">La **alternancia Grupo similar** en Configuración de consola ahora se aplica a los mensajes duplicados.</span><span class="sxs-lookup"><span data-stu-id="faf78-231">The **Group similar** toggle in Console Settings now applies to duplicate messages.</span></span>  <span data-ttu-id="faf78-232">Anteriormente solo se aplicaba a mensajes similares.</span><span class="sxs-lookup"><span data-stu-id="faf78-232">Previously it just applied to similar messages.</span></span>  
 
-<span data-ttu-id="b34a7-233">Por ejemplo, anteriormente, DevTools no desagrupaba los `hello` mensajes aunque el **grupo es similar** .</span><span class="sxs-lookup"><span data-stu-id="b34a7-233">For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.</span></span>  <span data-ttu-id="b34a7-234">Ahora, los `hello` mensajes están desagrupados.</span><span class="sxs-lookup"><span data-stu-id="b34a7-234">Now, the `hello` messages are ungrouped.</span></span>  
+<span data-ttu-id="faf78-233">Por ejemplo, anteriormente, DevTools no desagrupó los mensajes `hello` aunque **group similar** está desactivado.</span><span class="sxs-lookup"><span data-stu-id="faf78-233">For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.</span></span>  <span data-ttu-id="faf78-234">Ahora, los `hello` mensajes se desagrupa.</span><span class="sxs-lookup"><span data-stu-id="faf78-234">Now, the `hello` messages are ungrouped.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   <span data-ttu-id="b34a7-236">Cuando **agrupar similares** está desactivado, los `hello` mensajes no se agrupan</span><span class="sxs-lookup"><span data-stu-id="b34a7-236">When **Group similar** is unchecked, the `hello` messages are ungrouped</span></span>
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Cuando group similar is unchecked, the hello messages are ungrouped" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+   <span data-ttu-id="faf78-236">Cuando **group similar** is unchecked, the messages are `hello` ungrouped</span><span class="sxs-lookup"><span data-stu-id="faf78-236">When **Group similar** is unchecked, the `hello` messages are ungrouped</span></span>
 :::image-end:::  
 
-<span data-ttu-id="b34a7-237">Proporciona a esta característica una prueba con un [ejemplo que envía mensajes duplicados a la consola][CodepenZoherghadyaliZyrjgdJ].</span><span class="sxs-lookup"><span data-stu-id="b34a7-237">Give this feature a try with a [sample that sends duplicate messages to the Console][CodepenZoherghadyaliZyrjgdJ].</span></span>  
+<span data-ttu-id="faf78-237">Pruebe esta característica con un [ejemplo que envíe mensajes duplicados a la consola][CodepenZoherghadyaliZyrjgdJ].</span><span class="sxs-lookup"><span data-stu-id="faf78-237">Give this feature a try with a [sample that sends duplicate messages to the Console][CodepenZoherghadyaliZyrjgdJ].</span></span>  
 
-<span data-ttu-id="b34a7-238">[#1082963][CR1082963] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-238">Chromium issue [#1082963][CR1082963]</span></span>  
+<span data-ttu-id="faf78-238">Problema de [chromium #1082963][CR1082963]</span><span class="sxs-lookup"><span data-stu-id="faf78-238">Chromium issue [#1082963][CR1082963]</span></span>  
 
-### <span data-ttu-id="b34a7-239">Conservar la configuración de solo contexto seleccionada</span><span class="sxs-lookup"><span data-stu-id="b34a7-239">Persisting Selected context only settings</span></span>  
+### <a name="persisting-selected-context-only-settings"></a><span data-ttu-id="faf78-239">Persisting Selected context only settings</span><span class="sxs-lookup"><span data-stu-id="faf78-239">Persisting Selected context only settings</span></span>  
 
-<span data-ttu-id="b34a7-240">La configuración de **contexto seleccionada solo** en la configuración de la consola se conserva.</span><span class="sxs-lookup"><span data-stu-id="b34a7-240">The **Selected context only** settings in Console Settings is now persisted.</span></span>  <span data-ttu-id="b34a7-241">Anteriormente, la configuración se restableció cada vez que cerraste y reabros DevTools.</span><span class="sxs-lookup"><span data-stu-id="b34a7-241">Previously the settings were reset every time you closed and reopened DevTools.</span></span>  <span data-ttu-id="b34a7-242">El cambio hace que el ajuste del comportamiento sea coherente con otras opciones de configuración de la consola.</span><span class="sxs-lookup"><span data-stu-id="b34a7-242">The change makes the setting behavior consistent with other Console Settings options.</span></span>  
+<span data-ttu-id="faf78-240">Ahora **solo se conserva la** configuración de contexto seleccionado en Configuración de consola.</span><span class="sxs-lookup"><span data-stu-id="faf78-240">The **Selected context only** settings in Console Settings is now persisted.</span></span>  <span data-ttu-id="faf78-241">Anteriormente, la configuración se restablece cada vez que se cierra y se vuelve a abrir DevTools.</span><span class="sxs-lookup"><span data-stu-id="faf78-241">Previously the settings were reset every time you closed and reopened DevTools.</span></span>  <span data-ttu-id="faf78-242">El cambio hace que el comportamiento de configuración sea coherente con otras opciones de configuración de consola.</span><span class="sxs-lookup"><span data-stu-id="faf78-242">The change makes the setting behavior consistent with other Console Settings options.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/selected-context.msft.png":::
-   <span data-ttu-id="b34a7-244">Configuración de **contexto seleccionado únicamente**</span><span class="sxs-lookup"><span data-stu-id="b34a7-244">**Selected context only** setting</span></span>  
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Configuración de solo contexto seleccionada" lightbox="../../media/2020/06/selected-context.msft.png":::
+   <span data-ttu-id="faf78-244">**Configuración de solo contexto** seleccionada</span><span class="sxs-lookup"><span data-stu-id="faf78-244">**Selected context only** setting</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-245">[#1055875][CR1055875] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-245">Chromium issue [#1055875][CR1055875]</span></span>  
+<span data-ttu-id="faf78-245">Problema de [chromium #1055875][CR1055875]</span><span class="sxs-lookup"><span data-stu-id="faf78-245">Chromium issue [#1055875][CR1055875]</span></span>  
 
-### <span data-ttu-id="b34a7-246">Actualizaciones del panel de rendimiento</span><span class="sxs-lookup"><span data-stu-id="b34a7-246">Performance panel updates</span></span>  
+### <a name="performance-panel-updates"></a><span data-ttu-id="faf78-246">Actualizaciones del panel de rendimiento</span><span class="sxs-lookup"><span data-stu-id="faf78-246">Performance panel updates</span></span>  
 
-#### <span data-ttu-id="b34a7-247">Información de caché de compilación de JavaScript en el panel rendimiento</span><span class="sxs-lookup"><span data-stu-id="b34a7-247">JavaScript compilation cache information in Performance panel</span></span>  
+#### <a name="javascript-compilation-cache-information-in-performance-tool"></a><span data-ttu-id="faf78-247">Información de caché de compilación de JavaScript en **la herramienta** Rendimiento</span><span class="sxs-lookup"><span data-stu-id="faf78-247">JavaScript compilation cache information in **Performance** tool</span></span>  
 
-<span data-ttu-id="b34a7-248">La información de la [caché de compilación de JavaScript][V8DevCodeCaching] se muestra ahora siempre en la pestaña Resumen del panel rendimiento.</span><span class="sxs-lookup"><span data-stu-id="b34a7-248">[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the Summary tab of the Performance panel.</span></span>  <span data-ttu-id="b34a7-249">Anteriormente, DevTools no mostraba nada relacionado con el almacenamiento en caché del código si no se produjera el almacenamiento en caché de código.</span><span class="sxs-lookup"><span data-stu-id="b34a7-249">Previously, DevTools did not show anything related to code caching if code caching did not happen.</span></span>  
+<span data-ttu-id="faf78-248">[La información de caché de compilación de JavaScript][V8DevCodeCaching] ahora siempre se muestra en el panel **Resumen** de la **herramienta** Rendimiento.</span><span class="sxs-lookup"><span data-stu-id="faf78-248">[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the **Summary** panel of the **Performance** tool.</span></span>  <span data-ttu-id="faf78-249">Anteriormente, DevTools no mostraba nada relacionado con el almacenamiento en caché de código si el almacenamiento en caché de código no se hacía.</span><span class="sxs-lookup"><span data-stu-id="faf78-249">Previously, DevTools did not show anything related to code caching if code caching did not happen.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
-   <span data-ttu-id="b34a7-251">Información de caché de compilación de JavaScript</span><span class="sxs-lookup"><span data-stu-id="b34a7-251">JavaScript compilation cache information</span></span>  
+:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Información de caché de compilación de JavaScript" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
+   <span data-ttu-id="faf78-251">Información de caché de compilación de JavaScript</span><span class="sxs-lookup"><span data-stu-id="faf78-251">JavaScript compilation cache information</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-252">[#912581][CR912581] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-252">Chromium issue [#912581][CR912581]</span></span>  
+<span data-ttu-id="faf78-252">Problema de [chromium #912581][CR912581]</span><span class="sxs-lookup"><span data-stu-id="faf78-252">Chromium issue [#912581][CR912581]</span></span>  
 
-#### <span data-ttu-id="b34a7-253">Alineación de la navegación en el panel rendimiento</span><span class="sxs-lookup"><span data-stu-id="b34a7-253">Navigation timing alignment in the Performance panel</span></span>  
+#### <a name="navigation-timing-alignment-in-the-performance-panel"></a><span data-ttu-id="faf78-253">Alineación del tiempo de navegación en el panel Rendimiento</span><span class="sxs-lookup"><span data-stu-id="faf78-253">Navigation timing alignment in the Performance panel</span></span>  
 
-<span data-ttu-id="b34a7-254">El panel de **rendimiento** que se usa para mostrar las horas en las reglas en función del inicio de la grabación.</span><span class="sxs-lookup"><span data-stu-id="b34a7-254">The **Performance** panel used to show times in the rulers based on when the recording started.</span></span>  <span data-ttu-id="b34a7-255">Ahora se ha cambiado el intervalo de tiempo para las grabaciones en las que el usuario navega, donde DevTools ahora muestra las horas relacionadas con la navegación.</span><span class="sxs-lookup"><span data-stu-id="b34a7-255">The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.</span></span>  
+<span data-ttu-id="faf78-254">El \*\*\*\* panel Rendimiento usado para mostrar horas en las reglas en función del momento en que se inició la grabación.</span><span class="sxs-lookup"><span data-stu-id="faf78-254">The **Performance** panel used to show times in the rulers based on when the recording started.</span></span>  <span data-ttu-id="faf78-255">Ahora, el tiempo ha cambiado para las grabaciones en las que el usuario navega, donde DevTools ahora muestra los tiempos de regla relativos a la navegación.</span><span class="sxs-lookup"><span data-stu-id="faf78-255">The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/nav-timing.msft.png":::
-   <span data-ttu-id="b34a7-257">Alinear los intervalos de navegación en el panel **rendimiento**</span><span class="sxs-lookup"><span data-stu-id="b34a7-257">Align navigation timing in **Performance** panel</span></span>  
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Alinear el tiempo de navegación en la herramienta Rendimiento" lightbox="../../media/2020/06/nav-timing.msft.png":::
+   <span data-ttu-id="faf78-257">Alinear el tiempo de navegación en **la herramienta Rendimiento**</span><span class="sxs-lookup"><span data-stu-id="faf78-257">Align navigation timing in **Performance** tool</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-258">Las horas de `DOMContentLoaded` , primera pintura con control de contenido y los mayores eventos de pintura con contenido se actualizan para que sean relativas al inicio de la navegación, lo que significa que los intervalos coinciden con los intervalos que informaron `PerformanceObserver` .</span><span class="sxs-lookup"><span data-stu-id="b34a7-258">The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Largest Contentful Paint events are updated to be relative to the start of the navigation, which means the timing matches the timings reported by `PerformanceObserver`.</span></span>  
+<span data-ttu-id="faf78-258">Las horas `DOMContentLoaded` de , First Paint, First Contentful Paint y Largest Contentful Paint eventos se actualizan para ser relativos al inicio de la navegación, lo que significa que el tiempo coincide con los tiempos notificados por `PerformanceObserver` .</span><span class="sxs-lookup"><span data-stu-id="faf78-258">The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Largest Contentful Paint events are updated to be relative to the start of the navigation, which means the timing matches the timings reported by `PerformanceObserver`.</span></span>  
 
-<span data-ttu-id="b34a7-259">[#974550][CR974550] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-259">Chromium issue [#974550][CR974550]</span></span>  
+<span data-ttu-id="faf78-259">Problema de [chromium #974550][CR974550]</span><span class="sxs-lookup"><span data-stu-id="faf78-259">Chromium issue [#974550][CR974550]</span></span>  
 
-### <span data-ttu-id="b34a7-260">Nuevos iconos para puntos de interrupción, puntos de interrupción condicionales y logpoints</span><span class="sxs-lookup"><span data-stu-id="b34a7-260">New icons for breakpoints, conditional breakpoints, and logpoints</span></span>  
+### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a><span data-ttu-id="faf78-260">Nuevos iconos para puntos de interrupción, puntos de interrupción condicionales y puntos de registro</span><span class="sxs-lookup"><span data-stu-id="faf78-260">New icons for breakpoints, conditional breakpoints, and logpoints</span></span>  
 
-<span data-ttu-id="b34a7-261">El panel **orígenes** tiene nuevos diseños para puntos de interrupción, puntos de interrupción condicionales y logpoints.</span><span class="sxs-lookup"><span data-stu-id="b34a7-261">The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.</span></span>  <span data-ttu-id="b34a7-262">Los puntos de interrupción están representados por un círculo rojo, como [Visual Studio Code][VSCode] y [Visual Studio][VS].</span><span class="sxs-lookup"><span data-stu-id="b34a7-262">Breakpoints are represented by a red circle, just like [Visual Studio Code][VSCode] and [Visual Studio][VS].</span></span>  <span data-ttu-id="b34a7-263">Se agregan iconos para diferenciar los puntos de interrupción y logpoints.</span><span class="sxs-lookup"><span data-stu-id="b34a7-263">Icons are added to differentiate conditional breakpoints and logpoints.</span></span>  
+<span data-ttu-id="faf78-261">El panel **Orígenes** tiene nuevos diseños para puntos de interrupción, puntos de interrupción condicionales y puntos de registro.</span><span class="sxs-lookup"><span data-stu-id="faf78-261">The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.</span></span>  <span data-ttu-id="faf78-262">Los puntos de interrupción se representan mediante un círculo rojo, al igual que [Visual Studio Code][VisualStudioCode] y [Visual Studio][VisualStudio].</span><span class="sxs-lookup"><span data-stu-id="faf78-262">Breakpoints are represented by a red circle, just like [Visual Studio Code][VisualStudioCode] and [Visual Studio][VisualStudio].</span></span>  <span data-ttu-id="faf78-263">Se agregan iconos para diferenciar puntos de interrupción condicionales y puntos de registro.</span><span class="sxs-lookup"><span data-stu-id="faf78-263">Icons are added to differentiate conditional breakpoints and logpoints.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Característica experimental" lightbox="../../media/2020/06/breakpoints.msft.png":::
-   <span data-ttu-id="b34a7-265">Puntos de interrupción</span><span class="sxs-lookup"><span data-stu-id="b34a7-265">Breakpoints</span></span>  
+:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Puntos de interrupción" lightbox="../../media/2020/06/breakpoints.msft.png":::
+   <span data-ttu-id="faf78-265">Puntos de interrupción</span><span class="sxs-lookup"><span data-stu-id="faf78-265">Breakpoints</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="b34a7-266">[#1041830][CR1041830] de problemas de cromo</span><span class="sxs-lookup"><span data-stu-id="b34a7-266">Chromium issue [#1041830][CR1041830]</span></span>  
+<span data-ttu-id="faf78-266">Problema de [chromium #1041830][CR1041830]</span><span class="sxs-lookup"><span data-stu-id="faf78-266">Chromium issue [#1041830][CR1041830]</span></span>  
 
-## <span data-ttu-id="b34a7-267">Descargar los canales de Microsoft Edge Preview</span><span class="sxs-lookup"><span data-stu-id="b34a7-267">Download the Microsoft Edge preview channels</span></span>  
+## <a name="download-the-microsoft-edge-preview-channels"></a><span data-ttu-id="faf78-267">Descargar los canales de vista previa de Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="faf78-267">Download the Microsoft Edge preview channels</span></span>  
 
-<span data-ttu-id="b34a7-268">Si está en Windows o macOS, considere la posibilidad de usar los [canales de Microsoft Edge Preview][MicrosoftEdgePreviewChannels] como su explorador de desarrollo predeterminado.</span><span class="sxs-lookup"><span data-stu-id="b34a7-268">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="b34a7-269">Los canales de previsualización proporcionan acceso a las características más recientes de DevTools.</span><span class="sxs-lookup"><span data-stu-id="b34a7-269">The preview channels give you access to the latest DevTools features.</span></span>  
+<span data-ttu-id="faf78-268">Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.</span><span class="sxs-lookup"><span data-stu-id="faf78-268">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="faf78-269">Los canales de vista previa proporcionan acceso a las características más recientes de DevTools.</span><span class="sxs-lookup"><span data-stu-id="faf78-269">The preview channels give you access to the latest DevTools features.</span></span>  
 
-## <span data-ttu-id="b34a7-270">Ponerse en contacto con el equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="b34a7-270">Getting in touch with Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a><span data-ttu-id="faf78-270">Ponerse en contacto con el equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="faf78-270">Getting in touch with Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Ejecutar comandos con el menú de comandos de Microsoft Edge DevTools | Microsoft docs"
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Cajón-personalizar Microsoft Edge DevTools | Microsoft docs"
-[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft docs"  
-[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Buscar y solucionar problemas con la herramienta de problemas de Microsoft Edge DevTools | Microsoft docs"
-[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Información general del panel editar CSS y JavaScript | Microsoft docs"  
-[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Registrar actividad de red: inspeccionar actividad de red en Microsoft Edge DevTools | Microsoft docs"
+[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer: personalizar Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
+[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Editar CSS y JavaScript: información general del panel orígenes | Microsoft Docs"  
+[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Actividad de red de registro: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"
 
-[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Edición de estilos para marcos CSS-en-JS | CodePen"
+[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Edición de estilos para marcos CSS-in-JS | CodePen"
 [CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Enviar mensajes duplicados a la consola | CodePen"
-[CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "Ejemplo de programador de cuadrícula CSS | CodePen"
+[CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "Ejemplo de planificador de cuadrícula CSS | CodePen"
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Errores de cromo"  
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Errores de Chromium"  
 
-[CR772558]: https://crbug.com/772558 "DevTools: actualizar a la última versión de Lighthouse | Errores de cromo"  
-[CR800028]: https://crbug.com/800028 "El método abreviado de línea duplicado en el editor herramientas de desarrollo no funciona después de la actualización Chrome | Errores de cromo"  
-[CR912581]: https://crbug.com/912581 "Exponga qué scripts se almacenaron en caché de código en V8 en DevTools/acerca de: Tracing | Errores de cromo"  
-[CR946975]: https://crbug.com/946975 "La barra lateral estilos de DevTools no funciona con hojas de estilos construidas | Errores de cromo"  
-[CR955497]: https://crbug.com/955497 "Menú contextual del icono de la aplicación para PWAs | Errores de cromo"  
-[CR974550]: https://crbug.com/974550 "La métrica entre el panel de rendimiento y performanceObserver | Errores de cromo"  
-[CR1041830]: https://crbug.com/1041830 "Mejorar los colores de los puntos de interrupción | Errores de cromo"  
-[CR1055875]: https://crbug.com/1055875 "El valor de la configuración de la consola solo de contexto seleccionado no se conserva después de cerrar y volver a abrir las herramientas de desarrollo | Errores de cromo"  
-[CR1066579]: https://crbug.com/1066579 "DevTools: Mostrar la escala de tiempo de captura de ServiceWorkers por solicitud en el panel red | Errores de cromo"  
-[CR1071432]: https://crbug.com/1071432 "Experiencia de desarrollador básica de WASM | Errores de cromo"  
-[CR1073899]: https://crbug.com/1073899 "La pestaña de estilo calculado desaparece en modo de respuesta | Errores de cromo"  
-[CR1073903]: https://crbug.com/1073903 "DevTools: el resaltado de sintaxis no funciona con los campos privados | Errores de cromo"  
-[CR1082963]: https://crbug.com/1082963 "No se puede deshabilitar el grupo de consola de mensajes similares comportamiento | Errores de cromo"  
-[CR1083214]: https://crbug.com/1083214 "ACORN no admite el encadenamiento opcional | Errores de cromo"  
-[CR1083797]: https://crbug.com/1083797 "Impresión con sangría dañada para la combinación nula | Errores de cromo"  
-[CR1096008]: https://crbug.com/1096008 "Quitar FMP | Errores de cromo"  
-[CR1047356]: https://crbug.com/1047356 "Herramientas CSS/Flexbox/tables de CSS | Errores de cromo"  
-[CR1093687]: https://crbug.com/1093687 "Herramienta crear y reproducir solicitudes de red sintéticas | Errores de cromo"  
-[CR1070378]: https://crbug.com/1070378 "Integrar webhint en DevTools | Errores de cromo"  
-[CR1069404]: https://crbug.com/1069404 "Las ventanas emergentes de widgets de [dev Tools] son demasiado limitadas | Errores de cromo"  
-[CR897944]: https://crbug.com/897944 "Paneles de devtool arrastrables | Errores de cromo"
+[CR772558]: https://crbug.com/772558 "DevTools: actualizar a la versión más reciente de | Errores de Chromium"  
+[CR800028]: https://crbug.com/800028 "Acceso directo de línea duplicada en el editor de Herramientas de desarrollador que no funciona después de actualizar Chrome | Errores de Chromium"  
+[CR912581]: https://crbug.com/912581 "Exponer los scripts almacenados en caché por V8 en DevTools/about:tracing | Errores de Chromium"  
+[CR946975]: https://crbug.com/946975 "La barra lateral de estilos de DevTools no funciona con hojas de estilos construidas | Errores de Chromium"  
+[CR955497]: https://crbug.com/955497 "Menú contextual de icono de aplicación para PWAs | Errores de Chromium"  
+[CR974550]: https://crbug.com/974550 "Error de coincidencia de métricas entre el panel Perf y performanceObserver | Errores de Chromium"  
+[CR1041830]: https://crbug.com/1041830 "Mejorar los colores de los puntos de interrupción | Errores de Chromium"  
+[CR1055875]: https://crbug.com/1055875 "El valor de la configuración de consola Solo contexto seleccionado no persiste después de cerrar y volver a abrir herramientas de | Errores de Chromium"  
+[CR1066579]: https://crbug.com/1066579 "DevTools: mostrar la escala de tiempo de recuperación de ServiceWorkers por solicitud en el panel DevTools | Errores de Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Errores de Chromium"  
+[CR1073899]: https://crbug.com/1073899 "La pestaña Estilo calculado desaparece en modo de respuesta | Errores de Chromium"  
+[CR1073903]: https://crbug.com/1073903 "DevTools: el resaltado de sintaxis no funciona con campos privados | Errores de Chromium"  
+[CR1082963]: https://crbug.com/1082963 "No se puede deshabilitar el comportamiento de mensajes similares de grupo de la consola | Errores de Chromium"  
+[CR1083214]: https://crbug.com/1083214 "acorn no admite cadenas opcionales | Errores de Chromium"  
+[CR1083797]: https://crbug.com/1083797 "Se ha roto la impresión bastante para la | Errores de Chromium"  
+[CR1096008]: https://crbug.com/1096008 "Quitar FMP | Errores de Chromium"  
+[CR1047356]: https://crbug.com/1047356 "Herramientas CSS Grid/Flexbox/Table | Errores de Chromium"  
+[CR1093687]: https://crbug.com/1093687 "Crear herramienta para crear y reproducir solicitudes de red sintéticas | Errores de Chromium"  
+[CR1070378]: https://crbug.com/1070378 "Integrar webhint en DevTools | Errores de Chromium"  
+[CR1069404]: https://crbug.com/1069404 "Los elementos emergentes del widget [Herramientas de desarrollo] son demasiado estrechos | Errores de Chromium"  
+[CR897944]: https://crbug.com/897944 "Paneles de devtool arrastrables | Errores de Chromium"
 
-[GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v 6.0.0-GoogleChrome/Lighthouse | GitHub"  
+[GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0: GoogleChrome/lighthouse | GitHub"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Nuevo problema: MicrosoftDocs/Edge-Developer"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Nuevo problema: MicrosoftDocs/edge-developer"  
 
-[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Usar DOM de sombra | MDN"
+[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Uso de dom de sombra | MDN"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canales de Microsoft Edge Preview"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canales de vista previa de Microsoft Edge"  
 
-[VS]: https://visualstudio.microsoft.com/ "Visual Studio"
-[VSCode]: https://code.visualstudio.com/ "Código de Visual Studio"  
+[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
+[VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
 
-[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "Modelo de objetos CSS (CSSOM) | Borradores del editor del grupo de trabajo CSS W3C"  
+[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "Modelo de objetos CSS (CSSOM) | Borradores del editor de grupo de trabajo CSS de W3C"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Publicar un tweet"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools cuenta de Twitter"  
 
-[V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Campos de clase privados: campos de clase pública y privada | V8. Desarrolladores"  
-[V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Almacenamiento en caché de código para desarrolladores de JavaScript | V8. Desarrolladores"  
-[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Fusión nula | V8. Desarrolladores"  
-[V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Encadenamiento opcional | V8. Desarrolladores"  
+[V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Campos de clase privada: campos de clase pública y privada | V8. Desarrollo"  
+[V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Almacenamiento en caché de código para desarrolladores de JavaScript | V8. Desarrollo"  
+[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish coalescing | V8. Desarrollo"  
+[V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Cadenas opcionales | V8. Desarrollo"  
 
-[WebhintMain]: https://webhint.io "sugerencia"  
+[WebhintMain]: https://webhint.io "webhint"  
 
-[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Objetos de hoja de estilos que se construyen | Autoincubadora CG"
+[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Objetos de hoja de estilos | Web Incubator CG"
 
 <!--[WebDevLighthouseWhatsNew60]: https://web.dev/lighthouse-whats-new-6.0 "What's New in Lighthouse 6.0 | Web.Dev"  -->  
 <!--[WebDevVitalsCoreWeb]: https://web.dev/vitals#core-web-vitals "Core Web Vitals - Web Vitals | Web.Dev"  -->  
@@ -398,11 +398,11 @@ ms.locfileid: "11015464"
 [TheWebWeWant]: https://webwewant.fyi/ "La web que queremos"  
 
 > [!NOTE]
-> <span data-ttu-id="b34a7-319">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b34a7-319">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="b34a7-320">La página original se encuentra [aquí](https://developers.google.com/web/updates/2020/06/devtools/index) y está creada por [Jecelyn Yeen][JecelynYeen] \ (defensor para desarrolladores, Chrome DevTools \).</span><span class="sxs-lookup"><span data-stu-id="b34a7-320">The original page is found [here](https://developers.google.com/web/updates/2020/06/devtools/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
+> <span data-ttu-id="faf78-319">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="faf78-319">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="faf78-320">La página original se encuentra [aquí](https://developers.google.com/web/updates/2020/06/devtools/index) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).</span><span class="sxs-lookup"><span data-stu-id="faf78-320">The original page is found [here](https://developers.google.com/web/updates/2020/06/devtools/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="b34a7-322">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b34a7-322">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="faf78-322">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="faf78-322">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

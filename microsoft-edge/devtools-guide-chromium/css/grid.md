@@ -1,188 +1,188 @@
 ---
-description: Aprenda a usar Microsoft Edge DevTools para ver y cambiar la CSS de una página CSS.
-title: Inspeccionar cuadrícula CSS en Microsoft Edge DevTools
+description: Obtenga información sobre cómo usar Microsoft Edge DevTools para ver y cambiar el CSS de una página CSS.
+title: Inspeccionar css grid en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1fe6bd1c8efd244315fb9a38777df6ea3e9b1a4d
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 5e4b20690eac3a692f6428f391def102a4f78ecb
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231100"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398773"
 ---
-# <span data-ttu-id="a81f2-104">Inspeccionar cuadrícula CSS</span><span class="sxs-lookup"><span data-stu-id="a81f2-104">Inspect CSS Grid</span></span>  
+# <a name="inspect-css-grid"></a><span data-ttu-id="b12cd-104">Inspeccionar cuadrícula CSS</span><span class="sxs-lookup"><span data-stu-id="b12cd-104">Inspect CSS Grid</span></span>  
 
-<span data-ttu-id="a81f2-105">Este artículo le muestra cómo identificar las cuadrículas CSS en un sitio web y cómo depurar problemas de diseño de cuadrícula con superposiciones de cuadrícula personalizables.</span><span class="sxs-lookup"><span data-stu-id="a81f2-105">This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.</span></span>  
+<span data-ttu-id="b12cd-105">En este artículo se le guía a través de la identificación de cuadrículas CSS en un sitio web y la depuración de problemas de diseño de cuadrícula mediante superposiciones de cuadrícula personalizables.</span><span class="sxs-lookup"><span data-stu-id="b12cd-105">This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.</span></span>  
 
-<span data-ttu-id="a81f2-106">Los ejemplos que se usan en las figuras de este artículo se han tomado de las siguientes páginas Web.</span><span class="sxs-lookup"><span data-stu-id="a81f2-106">The examples used in the figures in this article are taken from the following webpages.</span></span>  
+<span data-ttu-id="b12cd-106">Los ejemplos usados en las figuras de este artículo se toman de las siguientes páginas web.</span><span class="sxs-lookup"><span data-stu-id="b12cd-106">The examples used in the figures in this article are taken from the following webpages.</span></span>  
 
-*   [<span data-ttu-id="a81f2-107">Cuadro de frutas</span><span class="sxs-lookup"><span data-stu-id="a81f2-107">Fruit box</span></span>][JecFyiDemoCssGridFruit]  
-*   [<span data-ttu-id="a81f2-108">Cuadro de bocadillo</span><span class="sxs-lookup"><span data-stu-id="a81f2-108">Snack box</span></span>][JecFyiDemoCssGridSnack]  
+*   [<span data-ttu-id="b12cd-107">Cuadro de frutas</span><span class="sxs-lookup"><span data-stu-id="b12cd-107">Fruit box</span></span>][JecFyiDemoCssGridFruit]  
+*   [<span data-ttu-id="b12cd-108">Caja de refrigerio</span><span class="sxs-lookup"><span data-stu-id="b12cd-108">Snack box</span></span>][JecFyiDemoCssGridSnack]  
 
-## <span data-ttu-id="a81f2-109">Antes de comenzar</span><span class="sxs-lookup"><span data-stu-id="a81f2-109">Before you begin</span></span>  
+## <a name="before-you-begin"></a><span data-ttu-id="b12cd-109">Antes de comenzar</span><span class="sxs-lookup"><span data-stu-id="b12cd-109">Before you begin</span></span>  
 
-<span data-ttu-id="a81f2-110">CSS Grid es un versátil paradigma de diseño para la Web.</span><span class="sxs-lookup"><span data-stu-id="a81f2-110">CSS Grid is a powerful layout paradigm for the web.</span></span>  <span data-ttu-id="a81f2-111">Un excelente lugar para comenzar a aprender sobre CSS Grid y las numerosas características es la [Guía de diseño de cuadrícula CSS][MdnCssGridLayout] en MDN.</span><span class="sxs-lookup"><span data-stu-id="a81f2-111">A great place to get started learning about CSS Grid and the many features is the [CSS Grid Layout guide][MdnCssGridLayout] on MDN.</span></span>  
+<span data-ttu-id="b12cd-110">CSS Grid es un poderoso paradigma de diseño para la web.</span><span class="sxs-lookup"><span data-stu-id="b12cd-110">CSS Grid is a powerful layout paradigm for the web.</span></span>  <span data-ttu-id="b12cd-111">Un excelente lugar para empezar a aprender sobre CSS Grid y las muchas características es la [guía css grid layout][MdnCssGridLayout] en MDN.</span><span class="sxs-lookup"><span data-stu-id="b12cd-111">A great place to get started learning about CSS Grid and the many features is the [CSS Grid Layout guide][MdnCssGridLayout] on MDN.</span></span>  
 
-## <span data-ttu-id="a81f2-112">Descubrir cuadrículas CSS</span><span class="sxs-lookup"><span data-stu-id="a81f2-112">Discover CSS grids</span></span>  
+## <a name="discover-css-grids"></a><span data-ttu-id="b12cd-112">Detectar cuadrículas CSS</span><span class="sxs-lookup"><span data-stu-id="b12cd-112">Discover CSS grids</span></span>  
 
-<span data-ttu-id="a81f2-113">Cuando un elemento HTML de la página se tiene o se le `display: grid` `display: inline-grid` aplica, `grid` se muestra un distintivo junto a él en el panel [elementos][DevtoolsGuideChromiumOpen] .</span><span class="sxs-lookup"><span data-stu-id="a81f2-113">When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the [Elements][DevtoolsGuideChromiumOpen] panel.</span></span>  
+<span data-ttu-id="b12cd-113">Cuando un elemento HTML de la página tiene o se ha aplicado, se muestra un distintivo junto a él `display: grid` `display: inline-grid` en el panel `grid` [Elementos.][DevtoolsGuideChromiumOpen]</span><span class="sxs-lookup"><span data-stu-id="b12cd-113">When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the [Elements][DevtoolsGuideChromiumOpen] panel.</span></span>  
 
 :::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="Descubrir cuadrícula" lightbox="../media/grid-discover-grid.msft.png":::
-   <span data-ttu-id="a81f2-115">Descubrir cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-115">Discover grid</span></span>  
+   <span data-ttu-id="b12cd-115">Descubrir cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-115">Discover grid</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="a81f2-116">Seleccione el distintivo para alternar la visualización de una superposición de cuadrícula en la página.</span><span class="sxs-lookup"><span data-stu-id="a81f2-116">Select the badge to toggle the display of a grid overlay on the page.</span></span>  <span data-ttu-id="a81f2-117">La superposición aparece sobre el elemento, dispuestos como una cuadrícula para mostrar la posición de las líneas de la cuadrícula y las pistas:</span><span class="sxs-lookup"><span data-stu-id="a81f2-117">The overlay appears over the element, laid out like a grid to display the position of the grid lines and tracks:</span></span>  
+<span data-ttu-id="b12cd-116">Elija el distintivo para alternar la visualización de una superposición de cuadrícula en la página.</span><span class="sxs-lookup"><span data-stu-id="b12cd-116">Choose the badge to toggle the display of a grid overlay on the page.</span></span>  <span data-ttu-id="b12cd-117">La superposición aparece sobre el elemento, establecida como una cuadrícula para mostrar la posición de las líneas de cuadrícula y las pistas:</span><span class="sxs-lookup"><span data-stu-id="b12cd-117">The overlay appears over the element, laid out like a grid to display the position of the grid lines and tracks:</span></span>  
 
-:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Activar distintivo de cuadrícula" lightbox="../media/grid-highlight-grid.msft.png":::
-   <span data-ttu-id="a81f2-119">Activar distintivo de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-119">Toggle grid badge</span></span>  
+:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Distintivo de cuadrícula de alternancia" lightbox="../media/grid-highlight-grid.msft.png":::
+   <span data-ttu-id="b12cd-119">Distintivo de cuadrícula de alternancia</span><span class="sxs-lookup"><span data-stu-id="b12cd-119">Toggle grid badge</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="a81f2-120">Abrir el panel **diseño** .</span><span class="sxs-lookup"><span data-stu-id="a81f2-120">Open the **Layout** pane.</span></span>  <span data-ttu-id="a81f2-121">Cuando se incluyen cuadrículas en una página, el panel de **diseño** incluye una sección de **cuadrícula** que contiene varias opciones para ver las cuadrículas.</span><span class="sxs-lookup"><span data-stu-id="a81f2-121">When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.</span></span>  
+<span data-ttu-id="b12cd-120">Abra el **panel Diseño.**</span><span class="sxs-lookup"><span data-stu-id="b12cd-120">Open the **Layout** pane.</span></span>  <span data-ttu-id="b12cd-121">Cuando se incluyen cuadrículas en \*\*\*\* una página, el panel Diseño incluye una sección **Cuadrícula** que contiene varias opciones para ver las cuadrículas.</span><span class="sxs-lookup"><span data-stu-id="b12cd-121">When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.</span></span>  
 
-:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Panel de diseño" lightbox="../media/grid-layout-pane.msft.png":::
-   <span data-ttu-id="a81f2-123">Panel de **diseño**</span><span class="sxs-lookup"><span data-stu-id="a81f2-123">**Layout** pane</span></span>  
+:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Panel Diseño" lightbox="../media/grid-layout-pane.msft.png":::
+   <span data-ttu-id="b12cd-123">**Panel Diseño**</span><span class="sxs-lookup"><span data-stu-id="b12cd-123">**Layout** pane</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="a81f2-124">La sección de **cuadrícula** en el panel de **diseño** contiene las siguientes 2 subsecciones.</span><span class="sxs-lookup"><span data-stu-id="a81f2-124">The **Grid** section in the **Layout** pane contains the following 2 sub-sections.</span></span>  
+<span data-ttu-id="b12cd-124">La **sección Cuadrícula** del panel **Diseño** contiene las 2 subsecciones siguientes.</span><span class="sxs-lookup"><span data-stu-id="b12cd-124">The **Grid** section in the **Layout** pane contains the following 2 sub-sections.</span></span>  
 
-*   <span data-ttu-id="a81f2-125">Configuración de superposición</span><span class="sxs-lookup"><span data-stu-id="a81f2-125">Overlay display settings</span></span>  
-*   <span data-ttu-id="a81f2-126">Superposiciones de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-126">Grid overlays</span></span>  
+*   <span data-ttu-id="b12cd-125">Configuración de visualización de superposición</span><span class="sxs-lookup"><span data-stu-id="b12cd-125">Overlay display settings</span></span>  
+*   <span data-ttu-id="b12cd-126">Superposiciones de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-126">Grid overlays</span></span>  
 
 <!--todo: @zoher verify the details for each of the sub-sections.  -->  
 
-## <span data-ttu-id="a81f2-127">Configuración de superposición</span><span class="sxs-lookup"><span data-stu-id="a81f2-127">Overlay display settings</span></span>  
+## <a name="overlay-display-settings"></a><span data-ttu-id="b12cd-127">Configuración de visualización de superposición</span><span class="sxs-lookup"><span data-stu-id="b12cd-127">Overlay display settings</span></span>  
 
-<span data-ttu-id="a81f2-128">La **configuración de la pantalla de superposición** consta de dos partes:</span><span class="sxs-lookup"><span data-stu-id="a81f2-128">The **Overlay display settings** consists of following 2 parts.</span></span>  
+<span data-ttu-id="b12cd-128">La **configuración de visualización de superposición** consta de 2 partes siguientes.</span><span class="sxs-lookup"><span data-stu-id="b12cd-128">The **Overlay display settings** consists of following 2 parts.</span></span>  
 
-*   <span data-ttu-id="a81f2-129">Elija una de las siguientes opciones en el menú desplegable.</span><span class="sxs-lookup"><span data-stu-id="a81f2-129">Choose one of the following options from the dropdown menu.</span></span>  
+*   <span data-ttu-id="b12cd-129">Elija una de las siguientes opciones en el menú desplegable.</span><span class="sxs-lookup"><span data-stu-id="b12cd-129">Choose one of the following options from the dropdown menu.</span></span>  
     
-    | <span data-ttu-id="a81f2-130">Opción de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-130">Line option</span></span> | <span data-ttu-id="a81f2-131">Detalles</span><span class="sxs-lookup"><span data-stu-id="a81f2-131">Details</span></span> |  
+    | <span data-ttu-id="b12cd-130">Opción Línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-130">Line option</span></span> | <span data-ttu-id="b12cd-131">Detalles</span><span class="sxs-lookup"><span data-stu-id="b12cd-131">Details</span></span> |  
     |:--- |:--- |  
-    | **<span data-ttu-id="a81f2-132">Ocultar etiquetas de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-132">Hide line labels</span></span>** | <span data-ttu-id="a81f2-133">Oculte las etiquetas de las líneas de cada superposición de cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="a81f2-133">Hide the labels of the lines for each grid overlay.</span></span> |  
-    | **<span data-ttu-id="a81f2-134">Mostrar números de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-134">Show line numbers</span></span>** | <span data-ttu-id="a81f2-135">Mostrar los números de las líneas de cada superposición de cuadrícula \ (seleccionado de forma predeterminada \).</span><span class="sxs-lookup"><span data-stu-id="a81f2-135">Display the numbers of the lines for each grid overlay \(selected by default\).</span></span> |  
-    | **<span data-ttu-id="a81f2-136">Mostrar nombres de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-136">Show line names</span></span>** | <span data-ttu-id="a81f2-137">Mostrar los nombres de las líneas de cada cuadrícula superpuestas cuando se proporcionen nombres.</span><span class="sxs-lookup"><span data-stu-id="a81f2-137">Display the names of the lines for each grid overlay when names are provided.</span></span> |  
+    | **<span data-ttu-id="b12cd-132">Ocultar etiquetas de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-132">Hide line labels</span></span>** | <span data-ttu-id="b12cd-133">Ocultar las etiquetas de las líneas de cada superposición de cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="b12cd-133">Hide the labels of the lines for each grid overlay.</span></span> |  
+    | **<span data-ttu-id="b12cd-134">Mostrar números de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-134">Show line numbers</span></span>** | <span data-ttu-id="b12cd-135">Muestra los números de las líneas de cada superposición de cuadrícula \(seleccionada de forma predeterminada\).</span><span class="sxs-lookup"><span data-stu-id="b12cd-135">Display the numbers of the lines for each grid overlay \(selected by default\).</span></span> |  
+    | **<span data-ttu-id="b12cd-136">Mostrar nombres de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-136">Show line names</span></span>** | <span data-ttu-id="b12cd-137">Muestra los nombres de las líneas de cada superposición de cuadrícula cuando se proporcionan nombres.</span><span class="sxs-lookup"><span data-stu-id="b12cd-137">Display the names of the lines for each grid overlay when names are provided.</span></span> |  
     
-*  <span data-ttu-id="a81f2-138">Seleccione la casilla junto a las siguientes opciones.</span><span class="sxs-lookup"><span data-stu-id="a81f2-138">Choose the checkbox next the following options.</span></span>  
+*  <span data-ttu-id="b12cd-138">Seleccione la casilla siguiente de las siguientes opciones.</span><span class="sxs-lookup"><span data-stu-id="b12cd-138">Choose the checkbox next the following options.</span></span>  
     
-    | <span data-ttu-id="a81f2-139">Opción</span><span class="sxs-lookup"><span data-stu-id="a81f2-139">Option</span></span> | <span data-ttu-id="a81f2-140">Detalles</span><span class="sxs-lookup"><span data-stu-id="a81f2-140">Details</span></span> |  
+    | <span data-ttu-id="b12cd-139">Opción</span><span class="sxs-lookup"><span data-stu-id="b12cd-139">Option</span></span> | <span data-ttu-id="b12cd-140">Detalles</span><span class="sxs-lookup"><span data-stu-id="b12cd-140">Details</span></span> |  
     |:--- |:--- |  
-    | **<span data-ttu-id="a81f2-141">Mostrar tamaños de seguimiento</span><span class="sxs-lookup"><span data-stu-id="a81f2-141">Show track sizes</span></span>**  | <span data-ttu-id="a81f2-142">Mostrar \ (u ocultar \) el tamaño de las pistas.</span><span class="sxs-lookup"><span data-stu-id="a81f2-142">Display \(or hide\) the sizes of the tracks.</span></span> |  
-    | **<span data-ttu-id="a81f2-143">Mostrar nombres de área</span><span class="sxs-lookup"><span data-stu-id="a81f2-143">Show area names</span></span>** | <span data-ttu-id="a81f2-144">Mostrar \ (u ocultar \) los nombres del área, cuando se proporcionen nombres.</span><span class="sxs-lookup"><span data-stu-id="a81f2-144">Display \(or hide\) the names of the area, when names are provided.</span></span> |  
-    | **<span data-ttu-id="a81f2-145">Extender las líneas de la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-145">Extend grid lines</span></span>** | <span data-ttu-id="a81f2-146">Muestra \ (u oculta \) las extensiones de las dimensiones de la cuadrícula a lo largo de cada eje.</span><span class="sxs-lookup"><span data-stu-id="a81f2-146">Displays \(or hides\) the extensions of the grid dimensions along each axis.</span></span>  <span data-ttu-id="a81f2-147">De forma predeterminada, las líneas de cuadrícula solo se muestran dentro del elemento con `display: grid` o `display: inline-grid` CSS establecido.</span><span class="sxs-lookup"><span data-stu-id="a81f2-147">By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` CSS set on it.</span></span> |  
+    | **<span data-ttu-id="b12cd-141">Mostrar tamaños de pista</span><span class="sxs-lookup"><span data-stu-id="b12cd-141">Show track sizes</span></span>**  | <span data-ttu-id="b12cd-142">Muestra \(u hide\) los tamaños de las pistas.</span><span class="sxs-lookup"><span data-stu-id="b12cd-142">Display \(or hide\) the sizes of the tracks.</span></span> |  
+    | **<span data-ttu-id="b12cd-143">Mostrar nombres de área</span><span class="sxs-lookup"><span data-stu-id="b12cd-143">Show area names</span></span>** | <span data-ttu-id="b12cd-144">Muestra \(u hide\) los nombres del área, cuando se proporcionan nombres.</span><span class="sxs-lookup"><span data-stu-id="b12cd-144">Display \(or hide\) the names of the area, when names are provided.</span></span> |  
+    | **<span data-ttu-id="b12cd-145">Ampliar líneas de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-145">Extend grid lines</span></span>** | <span data-ttu-id="b12cd-146">Muestra \(u oculta\) las extensiones de las dimensiones de cuadrícula a lo largo de cada eje.</span><span class="sxs-lookup"><span data-stu-id="b12cd-146">Displays \(or hides\) the extensions of the grid dimensions along each axis.</span></span>  <span data-ttu-id="b12cd-147">De forma predeterminada, las líneas de cuadrícula solo se muestran dentro del elemento con `display: grid` o CSS establecido en `display: inline-grid` él.</span><span class="sxs-lookup"><span data-stu-id="b12cd-147">By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` CSS set on it.</span></span> |  
     
-<span data-ttu-id="a81f2-148">En las siguientes secciones se proporcionan detalles para cada una de las **Opciones de superposición de pantalla**.</span><span class="sxs-lookup"><span data-stu-id="a81f2-148">The following sections provide details for each of the **Overlay display settings**.</span></span>  
+<span data-ttu-id="b12cd-148">En las secciones siguientes se proporcionan detalles para cada una de las **opciones de visualización De superposición.**</span><span class="sxs-lookup"><span data-stu-id="b12cd-148">The following sections provide details for each of the **Overlay display settings**.</span></span>  
 
-### <span data-ttu-id="a81f2-149">Mostrar números de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-149">Show line numbers</span></span>  
+### <a name="show-line-numbers"></a><span data-ttu-id="b12cd-149">Mostrar números de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-149">Show line numbers</span></span>  
 
-<span data-ttu-id="a81f2-150">De forma predeterminada, los números de línea positivos y negativos se muestran en la superposición de la cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="a81f2-150">By default, the positive and negative line numbers are displayed on the grid overlay.</span></span>  
+<span data-ttu-id="b12cd-150">De forma predeterminada, los números de línea positivos y negativos se muestran en la superposición de cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="b12cd-150">By default, the positive and negative line numbers are displayed on the grid overlay.</span></span>  
 
-<span data-ttu-id="a81f2-151">Para obtener más información sobre números negativos en la superposición de cuadrícula, vaya a [ubicación basada en líneas con cuadrícula CSS][MdnLineBasedPlacementCssGrid].</span><span class="sxs-lookup"><span data-stu-id="a81f2-151">For more information about negative numbers in the grid overlay, navigate to [Line-based placement with CSS Grid][MdnLineBasedPlacementCssGrid].</span></span>  
+<span data-ttu-id="b12cd-151">Para obtener más información acerca de los números negativos en la superposición de cuadrícula, vaya a [Ubicación basada en línea con CSS Grid][MdnLineBasedPlacementCssGrid].</span><span class="sxs-lookup"><span data-stu-id="b12cd-151">For more information about negative numbers in the grid overlay, navigate to [Line-based placement with CSS Grid][MdnLineBasedPlacementCssGrid].</span></span>  
 
 :::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Mostrar números de línea" lightbox="../media/grid-show-line-numbers.msft.png":::
-   <span data-ttu-id="a81f2-153">Mostrar números de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-153">Display line numbers</span></span>  
+   <span data-ttu-id="b12cd-153">Mostrar números de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-153">Display line numbers</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="a81f2-154">Ocultar etiquetas de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-154">Hide line labels</span></span>  
+### <a name="hide-line-labels"></a><span data-ttu-id="b12cd-154">Ocultar etiquetas de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-154">Hide line labels</span></span>  
 
-<span data-ttu-id="a81f2-155">Seleccione **ocultar etiquetas de línea** para ocultar los números de línea.</span><span class="sxs-lookup"><span data-stu-id="a81f2-155">Select **Hide line labels** to hide the line numbers.</span></span>  
+<span data-ttu-id="b12cd-155">Elija **Ocultar etiquetas de línea** para ocultar los números de línea.</span><span class="sxs-lookup"><span data-stu-id="b12cd-155">Choose **Hide line labels** to hide the line numbers.</span></span>  
 
 :::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Ocultar etiquetas de línea" lightbox="../media/grid-hide-line-labels.msft.png":::
-   <span data-ttu-id="a81f2-157">Ocultar etiquetas de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-157">Hide line labels</span></span>  
+   <span data-ttu-id="b12cd-157">Ocultar etiquetas de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-157">Hide line labels</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="a81f2-158">Mostrar nombres de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-158">Show line names</span></span>  
+### <a name="show-line-names"></a><span data-ttu-id="b12cd-158">Mostrar nombres de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-158">Show line names</span></span>  
 
-<span data-ttu-id="a81f2-159">Para obtener más información sobre los nombres de línea en la superposición de cuadrícula, desplácese al [diseño mediante líneas de cuadrícula con nombre][MdnLayoutUsingNamedGridLines].</span><span class="sxs-lookup"><span data-stu-id="a81f2-159">For more information about line names in the grid overlay, navigate to [Layout using named grid lines][MdnLayoutUsingNamedGridLines].</span></span>  
+<span data-ttu-id="b12cd-159">Para obtener más información acerca de los nombres de línea en la superposición de cuadrícula, vaya a [Diseño con líneas de cuadrícula con nombre.][MdnLayoutUsingNamedGridLines]</span><span class="sxs-lookup"><span data-stu-id="b12cd-159">For more information about line names in the grid overlay, navigate to [Layout using named grid lines][MdnLayoutUsingNamedGridLines].</span></span>  
 
-<span data-ttu-id="a81f2-160">Seleccione **Mostrar nombres de línea** para ver los nombres de línea en lugar de los números.</span><span class="sxs-lookup"><span data-stu-id="a81f2-160">Select **Show line names** to view the line names instead of numbers.</span></span>  <span data-ttu-id="a81f2-161">En el ejemplo, cuatro líneas tienen nombres: `left` , `middle1` , `middle2` y `right` .</span><span class="sxs-lookup"><span data-stu-id="a81f2-161">In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.</span></span>  
+<span data-ttu-id="b12cd-160">Elija **Mostrar nombres de línea** para ver los nombres de línea en lugar de números.</span><span class="sxs-lookup"><span data-stu-id="b12cd-160">Choose **Show line names** to view the line names instead of numbers.</span></span>  <span data-ttu-id="b12cd-161">En el ejemplo, 4 líneas tienen nombres: `left` , `middle1` , y `middle2` `right` .</span><span class="sxs-lookup"><span data-stu-id="b12cd-161">In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.</span></span>  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
 :::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Mostrar nombres de línea" lightbox="../media/grid-show-line-names.msft.png":::
-   **<span data-ttu-id="a81f2-163">Mostrar nombres de línea</span><span class="sxs-lookup"><span data-stu-id="a81f2-163">Show line names</span></span>**  
+   **<span data-ttu-id="b12cd-163">Mostrar nombres de línea</span><span class="sxs-lookup"><span data-stu-id="b12cd-163">Show line names</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="a81f2-164">Mostrar tamaños de seguimiento</span><span class="sxs-lookup"><span data-stu-id="a81f2-164">Show track sizes</span></span>  
+### <a name="show-track-sizes"></a><span data-ttu-id="b12cd-164">Mostrar tamaños de pista</span><span class="sxs-lookup"><span data-stu-id="b12cd-164">Show track sizes</span></span>  
 
-<span data-ttu-id="a81f2-165">Active la casilla **Mostrar tamaños de seguimiento** para ver los tamaños de las pistas de la cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="a81f2-165">Enable the **Show track sizes** checkbox to view the track sizes of the grid.</span></span>  
+<span data-ttu-id="b12cd-165">Active la casilla **Mostrar tamaños de** pista para ver los tamaños de pista de la cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="b12cd-165">Enable the **Show track sizes** checkbox to view the track sizes of the grid.</span></span>  
 
-<span data-ttu-id="a81f2-166">DevTools muestra `[authored size]` y `[computed size]` en cada etiqueta de línea.</span><span class="sxs-lookup"><span data-stu-id="a81f2-166">DevTools displays `[authored size]` and `[computed size]` in each line label.</span></span>  
+<span data-ttu-id="b12cd-166">DevTools muestra `[authored size]` y en cada etiqueta de `[computed size]` línea.</span><span class="sxs-lookup"><span data-stu-id="b12cd-166">DevTools displays `[authored size]` and `[computed size]` in each line label.</span></span>  
 
-| <span data-ttu-id="a81f2-167">Tamaño</span><span class="sxs-lookup"><span data-stu-id="a81f2-167">Size</span></span> | <span data-ttu-id="a81f2-168">Detalles</span><span class="sxs-lookup"><span data-stu-id="a81f2-168">Details</span></span> |  
+| <span data-ttu-id="b12cd-167">Tamaño</span><span class="sxs-lookup"><span data-stu-id="b12cd-167">Size</span></span> | <span data-ttu-id="b12cd-168">Detalles</span><span class="sxs-lookup"><span data-stu-id="b12cd-168">Details</span></span> |  
 |:--- |:--- |  
-| **<span data-ttu-id="a81f2-169">tamaño creado</span><span class="sxs-lookup"><span data-stu-id="a81f2-169">authored size</span></span>** | <span data-ttu-id="a81f2-170">El tamaño definido en la hoja de estilos \ (se omite si no se define \).</span><span class="sxs-lookup"><span data-stu-id="a81f2-170">The size defined in stylesheet \(omitted if not defined\).</span></span> |  
-| **<span data-ttu-id="a81f2-171">tamaño calculado</span><span class="sxs-lookup"><span data-stu-id="a81f2-171">computed size</span></span>** | <span data-ttu-id="a81f2-172">Tamaño real en pantalla.</span><span class="sxs-lookup"><span data-stu-id="a81f2-172">The actual size on screen.</span></span> |  
+| **<span data-ttu-id="b12cd-169">tamaño de autor</span><span class="sxs-lookup"><span data-stu-id="b12cd-169">authored size</span></span>** | <span data-ttu-id="b12cd-170">El tamaño definido en la hoja de estilos \(omitido si no está definido\).</span><span class="sxs-lookup"><span data-stu-id="b12cd-170">The size defined in stylesheet \(omitted if not defined\).</span></span> |  
+| **<span data-ttu-id="b12cd-171">tamaño calculado</span><span class="sxs-lookup"><span data-stu-id="b12cd-171">computed size</span></span>** | <span data-ttu-id="b12cd-172">Tamaño real en pantalla.</span><span class="sxs-lookup"><span data-stu-id="b12cd-172">The actual size on screen.</span></span> |  
 
-<span data-ttu-id="a81f2-173">En la demostración, el `snack-box` tamaño de las columnas se define en la `grid-template-columns:1fr 2fr;` CSS.</span><span class="sxs-lookup"><span data-stu-id="a81f2-173">In the demo, the `snack-box` column sizes are defined in the `grid-template-columns:1fr 2fr;` CSS.</span></span>  <span data-ttu-id="a81f2-174">Por lo tanto, las etiquetas de las líneas de columna muestran tanto los tamaños de los usuarios como los calculados.</span><span class="sxs-lookup"><span data-stu-id="a81f2-174">Therefore, the column line labels display both authored and computed sizes.</span></span>  
+<span data-ttu-id="b12cd-173">En la demostración, los tamaños de columna `snack-box` se definen en el `grid-template-columns:1fr 2fr;` CSS.</span><span class="sxs-lookup"><span data-stu-id="b12cd-173">In the demo, the `snack-box` column sizes are defined in the `grid-template-columns:1fr 2fr;` CSS.</span></span>  <span data-ttu-id="b12cd-174">Por lo tanto, las etiquetas de línea de columna muestran tamaños escritos y calculados.</span><span class="sxs-lookup"><span data-stu-id="b12cd-174">Therefore, the column line labels display both authored and computed sizes.</span></span>  
 
-| <span data-ttu-id="a81f2-175">Tamaño de la pista</span><span class="sxs-lookup"><span data-stu-id="a81f2-175">Track size</span></span> | <span data-ttu-id="a81f2-176">Tamaño creado</span><span class="sxs-lookup"><span data-stu-id="a81f2-176">Authored size</span></span> | <span data-ttu-id="a81f2-177">Tamaño calculado</span><span class="sxs-lookup"><span data-stu-id="a81f2-177">Computed size</span></span> |  
+| <span data-ttu-id="b12cd-175">Tamaño de la pista</span><span class="sxs-lookup"><span data-stu-id="b12cd-175">Track size</span></span> | <span data-ttu-id="b12cd-176">Tamaño de creación</span><span class="sxs-lookup"><span data-stu-id="b12cd-176">Authored size</span></span> | <span data-ttu-id="b12cd-177">Tamaño calculado</span><span class="sxs-lookup"><span data-stu-id="b12cd-177">Computed size</span></span> |  
 |:--- |:--- |:--- |  
-| <span data-ttu-id="a81f2-178">**1fr** &#x2022; **96.66 PX**</span><span class="sxs-lookup"><span data-stu-id="a81f2-178">**1fr** &#x2022; **96.66px**</span></span> | <span data-ttu-id="a81f2-179">1fr</span><span class="sxs-lookup"><span data-stu-id="a81f2-179">1fr</span></span> | <span data-ttu-id="a81f2-180">96.66 PX</span><span class="sxs-lookup"><span data-stu-id="a81f2-180">96.66px</span></span> |  
-| <span data-ttu-id="a81f2-181">**2fr** &#x2022; **193.32 PX**</span><span class="sxs-lookup"><span data-stu-id="a81f2-181">**2fr** &#x2022; **193.32px**</span></span> | <span data-ttu-id="a81f2-182">2fr</span><span class="sxs-lookup"><span data-stu-id="a81f2-182">2fr</span></span> | <span data-ttu-id="a81f2-183">193.32 PX</span><span class="sxs-lookup"><span data-stu-id="a81f2-183">193.32px</span></span> |  
+| <span data-ttu-id="b12cd-178">**1fr** &#x2022; **96,66px**</span><span class="sxs-lookup"><span data-stu-id="b12cd-178">**1fr** &#x2022; **96.66px**</span></span> | <span data-ttu-id="b12cd-179">1fr</span><span class="sxs-lookup"><span data-stu-id="b12cd-179">1fr</span></span> | <span data-ttu-id="b12cd-180">96,66 píxeles</span><span class="sxs-lookup"><span data-stu-id="b12cd-180">96.66px</span></span> |  
+| <span data-ttu-id="b12cd-181">**2fr** &#x2022; **193,32px**</span><span class="sxs-lookup"><span data-stu-id="b12cd-181">**2fr** &#x2022; **193.32px**</span></span> | <span data-ttu-id="b12cd-182">2fr</span><span class="sxs-lookup"><span data-stu-id="b12cd-182">2fr</span></span> | <span data-ttu-id="b12cd-183">193,32px</span><span class="sxs-lookup"><span data-stu-id="b12cd-183">193.32px</span></span> |  
 
-<span data-ttu-id="a81f2-184">Las etiquetas de línea de fila muestran solo los tamaños calculados, ya que no hay tamaños de fila definidos en la hoja de estilos.</span><span class="sxs-lookup"><span data-stu-id="a81f2-184">The row line labels display only computed sizes, since there are no row sizes defined in the stylesheet.</span></span>  
+<span data-ttu-id="b12cd-184">Las etiquetas de línea de fila solo muestran tamaños calculados, ya que no hay ningún tamaño de fila definido en la hoja de estilos.</span><span class="sxs-lookup"><span data-stu-id="b12cd-184">The row line labels display only computed sizes, since there are no row sizes defined in the stylesheet.</span></span>  
 
-| <span data-ttu-id="a81f2-185">Tamaño de la pista</span><span class="sxs-lookup"><span data-stu-id="a81f2-185">Track size</span></span> | <span data-ttu-id="a81f2-186">Tamaño creado</span><span class="sxs-lookup"><span data-stu-id="a81f2-186">Authored size</span></span> | <span data-ttu-id="a81f2-187">Tamaño calculado</span><span class="sxs-lookup"><span data-stu-id="a81f2-187">Computed size</span></span> |  
+| <span data-ttu-id="b12cd-185">Tamaño de la pista</span><span class="sxs-lookup"><span data-stu-id="b12cd-185">Track size</span></span> | <span data-ttu-id="b12cd-186">Tamaño de creación</span><span class="sxs-lookup"><span data-stu-id="b12cd-186">Authored size</span></span> | <span data-ttu-id="b12cd-187">Tamaño calculado</span><span class="sxs-lookup"><span data-stu-id="b12cd-187">Computed size</span></span> |  
 |:--- |:--- |:--- |  
-| **<span data-ttu-id="a81f2-188">80px</span><span class="sxs-lookup"><span data-stu-id="a81f2-188">80px</span></span>** | &nbsp;| <span data-ttu-id="a81f2-189">80px</span><span class="sxs-lookup"><span data-stu-id="a81f2-189">80px</span></span> |  
-| **<span data-ttu-id="a81f2-190">80px</span><span class="sxs-lookup"><span data-stu-id="a81f2-190">80px</span></span>** | &nbsp;| <span data-ttu-id="a81f2-191">80px</span><span class="sxs-lookup"><span data-stu-id="a81f2-191">80px</span></span> |  
+| **<span data-ttu-id="b12cd-188">80px</span><span class="sxs-lookup"><span data-stu-id="b12cd-188">80px</span></span>** | &nbsp;| <span data-ttu-id="b12cd-189">80px</span><span class="sxs-lookup"><span data-stu-id="b12cd-189">80px</span></span> |  
+| **<span data-ttu-id="b12cd-190">80px</span><span class="sxs-lookup"><span data-stu-id="b12cd-190">80px</span></span>** | &nbsp;| <span data-ttu-id="b12cd-191">80px</span><span class="sxs-lookup"><span data-stu-id="b12cd-191">80px</span></span> |  
 
-:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Mostrar tamaños de seguimiento" lightbox="../media/grid-show-track-sizes.msft.png":::
-   **<span data-ttu-id="a81f2-193">Mostrar tamaños de seguimiento</span><span class="sxs-lookup"><span data-stu-id="a81f2-193">Show track sizes</span></span>**  
+:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Mostrar tamaños de pista" lightbox="../media/grid-show-track-sizes.msft.png":::
+   **<span data-ttu-id="b12cd-193">Mostrar tamaños de pista</span><span class="sxs-lookup"><span data-stu-id="b12cd-193">Show track sizes</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="a81f2-194">Mostrar nombres de área</span><span class="sxs-lookup"><span data-stu-id="a81f2-194">Show area names</span></span>  
+### <a name="show-area-names"></a><span data-ttu-id="b12cd-194">Mostrar nombres de área</span><span class="sxs-lookup"><span data-stu-id="b12cd-194">Show area names</span></span>  
 
-<span data-ttu-id="a81f2-195">Para ver los nombres de las áreas, active la casilla **Mostrar nombres de área** .</span><span class="sxs-lookup"><span data-stu-id="a81f2-195">To view the area names, enable the **Show area names** checkbox.</span></span>  <span data-ttu-id="a81f2-196">En el ejemplo, hay 3 áreas en la cuadrícula: **Top**, **bottom1** y **bottom2**.</span><span class="sxs-lookup"><span data-stu-id="a81f2-196">In the example, there are 3 areas in the grid: **top**, **bottom1** and **bottom2**.</span></span>  
+<span data-ttu-id="b12cd-195">Para ver los nombres de área, active la casilla **Mostrar nombres de** área.</span><span class="sxs-lookup"><span data-stu-id="b12cd-195">To view the area names, enable the **Show area names** checkbox.</span></span>  <span data-ttu-id="b12cd-196">En el ejemplo, hay 3 áreas en la cuadrícula: **superior**, **inferior1** e **inferior2**.</span><span class="sxs-lookup"><span data-stu-id="b12cd-196">In the example, there are 3 areas in the grid: **top**, **bottom1** and **bottom2**.</span></span>  
 
 :::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Mostrar nombres de área" lightbox="../media/grid-show-area-names.msft.png":::
-   **<span data-ttu-id="a81f2-198">Mostrar nombres de área</span><span class="sxs-lookup"><span data-stu-id="a81f2-198">Show area names</span></span>**  
+   **<span data-ttu-id="b12cd-198">Mostrar nombres de área</span><span class="sxs-lookup"><span data-stu-id="b12cd-198">Show area names</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="a81f2-199">Extender las líneas de la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-199">Extend grid lines</span></span>  
+### <a name="extend-grid-lines"></a><span data-ttu-id="b12cd-199">Ampliar líneas de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-199">Extend grid lines</span></span>  
 
-<span data-ttu-id="a81f2-200">Active la casilla **extender líneas de cuadrícula** para extender las líneas de la cuadrícula al borde de la ventanilla a lo largo de cada eje.</span><span class="sxs-lookup"><span data-stu-id="a81f2-200">Enable the **Extend grid lines** checkbox to extend the grid lines to the edge of the viewport along each axis.</span></span>  
+<span data-ttu-id="b12cd-200">Active la **casilla Extender líneas de cuadrícula** para extender las líneas de cuadrícula al borde de la ventanilla a lo largo de cada eje.</span><span class="sxs-lookup"><span data-stu-id="b12cd-200">Enable the **Extend grid lines** checkbox to extend the grid lines to the edge of the viewport along each axis.</span></span>  
 
-:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Extender las líneas de la cuadrícula" lightbox="../media/grid-extend-grid-lines.msft.png":::
-   **<span data-ttu-id="a81f2-202">Extender las líneas de la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-202">Extend grid lines</span></span>**  
+:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Ampliar líneas de cuadrícula" lightbox="../media/grid-extend-grid-lines.msft.png":::
+   **<span data-ttu-id="b12cd-202">Ampliar líneas de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-202">Extend grid lines</span></span>**  
 :::image-end:::  
 
-## <span data-ttu-id="a81f2-203">Superposiciones de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-203">Grid overlays</span></span>  
+## <a name="grid-overlays"></a><span data-ttu-id="b12cd-203">Superposiciones de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-203">Grid overlays</span></span>  
 
-<span data-ttu-id="a81f2-204">La sección de **superposiciones de cuadrícula** contiene una lista de cuadrículas que están presentes en la página, cada una con una casilla, junto con varias opciones.</span><span class="sxs-lookup"><span data-stu-id="a81f2-204">The **Grid overlays** section contains a list of grids that are present on the page, each with a checkbox, along with various options.</span></span>  
+<span data-ttu-id="b12cd-204">La **sección Superposiciones de cuadrícula** contiene una lista de cuadrículas que están presentes en la página, cada una con una casilla, junto con varias opciones.</span><span class="sxs-lookup"><span data-stu-id="b12cd-204">The **Grid overlays** section contains a list of grids that are present on the page, each with a checkbox, along with various options.</span></span>  
 
-### <span data-ttu-id="a81f2-205">Habilitar vistas superpuestas de varias cuadrículas</span><span class="sxs-lookup"><span data-stu-id="a81f2-205">Enable overlay views of multiple grids</span></span>  
+### <a name="enable-overlay-views-of-multiple-grids"></a><span data-ttu-id="b12cd-205">Habilitar vistas superpuestas de varias cuadrículas</span><span class="sxs-lookup"><span data-stu-id="b12cd-205">Enable overlay views of multiple grids</span></span>  
 
-<span data-ttu-id="a81f2-206">Para mostrar la cuadrícula de superposición para varias cuadrículas, seleccione la casilla junto a cada nombre de la cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="a81f2-206">To display the overlay grid for multiple grids, choose the checkbox next to each name of the grid.</span></span>  <span data-ttu-id="a81f2-207">En el ejemplo, se han habilitado dos superposiciones de cuadrícula que se representan con distintos colores.</span><span class="sxs-lookup"><span data-stu-id="a81f2-207">In the example, there are 2 grid overlays enabled that are each represented with different colors.</span></span>  
+<span data-ttu-id="b12cd-206">Para mostrar la cuadrícula superpuesta para varias cuadrículas, elija la casilla situada junto a cada nombre de la cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="b12cd-206">To display the overlay grid for multiple grids, choose the checkbox next to each name of the grid.</span></span>  <span data-ttu-id="b12cd-207">En el ejemplo, hay 2 superposiciones de cuadrícula habilitadas que se representan con colores diferentes.</span><span class="sxs-lookup"><span data-stu-id="b12cd-207">In the example, there are 2 grid overlays enabled that are each represented with different colors.</span></span>  
 
 *   `main`  
 *   `div.snack-box`  
     
 :::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Habilitar vistas superpuestas de varias cuadrículas" lightbox="../media/grid-grid-overlays.msft.png":::
-   <span data-ttu-id="a81f2-209">Habilitar vistas superpuestas de varias cuadrículas</span><span class="sxs-lookup"><span data-stu-id="a81f2-209">Enable overlay views of multiple grids</span></span>  
+   <span data-ttu-id="b12cd-209">Habilitar vistas superpuestas de varias cuadrículas</span><span class="sxs-lookup"><span data-stu-id="b12cd-209">Enable overlay views of multiple grids</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="a81f2-210">Personalizar el color de superposición de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-210">Customize the grid overlay color</span></span>  
+### <a name="customize-the-grid-overlay-color"></a><span data-ttu-id="b12cd-210">Personalizar el color de superposición de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-210">Customize the grid overlay color</span></span>  
 
-<span data-ttu-id="a81f2-211">Para abrir el selector de colores y personalizar el color de superposición de cuadrícula, seleccione el cuadro situado junto al nombre de la superposición de cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="a81f2-211">To open the color picker and customize the grid overlay color, choose the box next to the name of the grid overlay.</span></span>  
+<span data-ttu-id="b12cd-211">Para abrir el selector de color y personalizar el color de superposición de cuadrícula, elija el cuadro situado junto al nombre de la superposición de cuadrícula.</span><span class="sxs-lookup"><span data-stu-id="b12cd-211">To open the color picker and customize the grid overlay color, choose the box next to the name of the grid overlay.</span></span>  
 
 :::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Personalizar el color de superposición de cuadrícula" lightbox="../media/grid-grid-overlays-color.msft.png":::
-   <span data-ttu-id="a81f2-213">Personalizar el color de superposición de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-213">Customize the grid overlay color</span></span>  
+   <span data-ttu-id="b12cd-213">Personalizar el color de superposición de cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-213">Customize the grid overlay color</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="a81f2-214">Resaltar la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-214">Highlight the grid</span></span>  
+### <a name="highlight-the-grid"></a><span data-ttu-id="b12cd-214">Resaltar la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-214">Highlight the grid</span></span>  
 
-<span data-ttu-id="a81f2-215">Para resaltar el elemento HTML en el panel **elementos** y desplazarse hasta él en la página web, elija el **elemento Mostrar en el panel elementos** \ ( ![ elemento Mostrar en el icono del panel elementos ][ImageShowElementInElementsPanelIcon] ).</span><span class="sxs-lookup"><span data-stu-id="a81f2-215">To highlight the HTML element in the **Elements** panel and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon][ImageShowElementInElementsPanelIcon]\) icon.</span></span>  
+<span data-ttu-id="b12cd-215">Para resaltar el elemento HTML en la herramienta **Elementos** y desplazarse hasta él en la página web, elija el elemento **Mostrar** en el panel Elementos \( Mostrar elemento en el icono del panel Elementos ![ ][ImageShowElementInElementsPanelIcon] \).</span><span class="sxs-lookup"><span data-stu-id="b12cd-215">To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon][ImageShowElementInElementsPanelIcon]\) icon.</span></span>  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Resaltar la cuadrícula" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
-   <span data-ttu-id="a81f2-217">Resaltar la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="a81f2-217">Highlight the grid</span></span>  
+   <span data-ttu-id="b12cd-217">Resaltar la cuadrícula</span><span class="sxs-lookup"><span data-stu-id="b12cd-217">Highlight the grid</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="a81f2-218">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="a81f2-218">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="b12cd-218">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="b12cd-218">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -192,21 +192,21 @@ ms.locfileid: "11231100"
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 
-[JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "Cuadrícula CSS | JEC. FYI"  
-[JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Cuadrícula CSS | JEC. FYI"  
+[JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "Cuadrícula CSS | jec.fyi"  
+[JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Cuadrícula CSS | jec.fyi"  
 
-[MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "Diseño de cuadrícula CSS | MDN"  
-[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Diseño usando líneas de cuadrícula con nombre | MDN"  
-[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Ubicación basada en líneas con CSS Grid | MDN"  
+[MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "Css Grid Layout | MDN"  
+[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Diseño con líneas de cuadrícula con nombre | MDN"  
+[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Colocación basada en línea con css grid | MDN"  
 
 > [!NOTE]
-> <span data-ttu-id="a81f2-225">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="a81f2-225">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="a81f2-226">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/grid) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).</span><span class="sxs-lookup"><span data-stu-id="a81f2-226">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/grid) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
+> <span data-ttu-id="b12cd-225">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b12cd-225">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="b12cd-226">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/css/grid) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).</span><span class="sxs-lookup"><span data-stu-id="b12cd-226">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/grid) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="a81f2-228">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="a81f2-228">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="b12cd-228">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="b12cd-228">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

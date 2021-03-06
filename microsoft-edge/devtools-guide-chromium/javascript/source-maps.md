@@ -1,18 +1,18 @@
 ---
-description: Mantenga el código de cliente legible y depurable incluso después de combinarlo, minifylo o compilarlo.
+description: Mantenga el código del lado cliente legible y depurable incluso después de combinarlo, minificarlo o compilarlo.
 title: Asignar código preprocesado al código fuente
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c16f59658217ab9dfb905bd814f96af21f95130d
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: debea327be41ab8aa2da19aa8cc128a1897e51e5
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124687"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398395"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,91 +28,91 @@ ms.locfileid: "11124687"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="3ea7e-104">Asignar código preprocesado a código fuente</span><span class="sxs-lookup"><span data-stu-id="3ea7e-104">Map preprocessed code to source code</span></span>  
+# <a name="map-preprocessed-code-to-source-code"></a><span data-ttu-id="33590-104">Asignar código preprocesado al código fuente</span><span class="sxs-lookup"><span data-stu-id="33590-104">Map preprocessed code to source code</span></span>  
 
-<span data-ttu-id="3ea7e-105">Mantenga el código de cliente legible y depurable incluso después de combinarlo, minifylo o compilarlo.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-105">Keep your client-side code readable and debuggable even after you combine, minify, or compile it.</span></span>  <span data-ttu-id="3ea7e-106">Use mapas de origen para asignar el código fuente al código compilado.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-106">Use source maps to map your source code to your compiled code.</span></span>  
+<span data-ttu-id="33590-105">Mantenga el código del lado cliente legible y depurable incluso después de combinarlo, minificarlo o compilarlo.</span><span class="sxs-lookup"><span data-stu-id="33590-105">Keep your client-side code readable and debuggable even after you combine, minify, or compile it.</span></span>  <span data-ttu-id="33590-106">Use mapas de origen para asignar el código fuente al código compilado.</span><span class="sxs-lookup"><span data-stu-id="33590-106">Use source maps to map your source code to your compiled code.</span></span>  
 
-### <span data-ttu-id="3ea7e-107">Resumen</span><span class="sxs-lookup"><span data-stu-id="3ea7e-107">Summary</span></span>  
+### <a name="summary"></a><span data-ttu-id="33590-107">Resumen</span><span class="sxs-lookup"><span data-stu-id="33590-107">Summary</span></span>  
 
-*   <span data-ttu-id="3ea7e-108">Use mapas de origen para asignar código de minified al código fuente.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-108">Use Source Maps to map minified code to source code.</span></span> <span data-ttu-id="3ea7e-109">Después, podrá leer y depurar el código compilado en el origen original.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-109">You are then able to read and debug compiled code in the original source.</span></span>  
-*   <span data-ttu-id="3ea7e-110">Usa previamente procesadores que puedan generar mapas de origen.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-110">Only use pre-processors capable of producing Source Maps.</span></span>  
-*   <span data-ttu-id="3ea7e-111">Compruebe que el servidor web puede atender mapas de origen.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-111">Verify that your web server is able to serve Source Maps.</span></span>  
+*   <span data-ttu-id="33590-108">Use Mapas de origen para asignar código minificado al código fuente.</span><span class="sxs-lookup"><span data-stu-id="33590-108">Use Source Maps to map minified code to source code.</span></span>  <span data-ttu-id="33590-109">A continuación, puede leer y depurar código compilado en el origen original.</span><span class="sxs-lookup"><span data-stu-id="33590-109">You are then able to read and debug compiled code in the original source.</span></span>  
+*   <span data-ttu-id="33590-110">Solo use procesadores previos que puedan producir mapas de origen.</span><span class="sxs-lookup"><span data-stu-id="33590-110">Only use pre-processors capable of producing Source Maps.</span></span>  
+*   <span data-ttu-id="33590-111">Compruebe que el servidor web puede servir mapas de origen.</span><span class="sxs-lookup"><span data-stu-id="33590-111">Verify that your web server is able to serve Source Maps.</span></span>  
     
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
-## <span data-ttu-id="3ea7e-112">Introducción a los preprocesadores</span><span class="sxs-lookup"><span data-stu-id="3ea7e-112">Get started with preprocessors</span></span>  
+## <a name="get-started-with-preprocessors"></a><span data-ttu-id="33590-112">Introducción a los preprocesadores</span><span class="sxs-lookup"><span data-stu-id="33590-112">Get started with preprocessors</span></span>  
 
-<span data-ttu-id="3ea7e-113">En este artículo se explica cómo interactuar con mapas de origen de JavaScript en el panel de orígenes de DevTools.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-113">This article explains how to interact with JavaScript Source Maps in the DevTools Sources Panel.</span></span>  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; see Set Up CSS & JS Preprocessors.  -->  
+<span data-ttu-id="33590-113">En este artículo se explica cómo interactuar con los mapas de origen de JavaScript en el Panel de orígenes de DevTools.</span><span class="sxs-lookup"><span data-stu-id="33590-113">This article explains how to interact with JavaScript Source Maps in the DevTools Sources Panel.</span></span>  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
 
-## <span data-ttu-id="3ea7e-114">Usar un preprocesador admitido</span><span class="sxs-lookup"><span data-stu-id="3ea7e-114">Use a supported preprocessor</span></span>  
+## <a name="use-a-supported-preprocessor"></a><span data-ttu-id="33590-114">Usar un preprocesador compatible</span><span class="sxs-lookup"><span data-stu-id="33590-114">Use a supported preprocessor</span></span>  
 
-<span data-ttu-id="3ea7e-115">Debe usar un minifier que sea capaz de crear mapas de origen.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-115">You need to use a minifier that is capable of creating source maps.</span></span>  <!--For the most popular options, navigate to preprocessor support section.  -->  <span data-ttu-id="3ea7e-116">Para ver una vista extendida, vaya a [mapas de origen: idiomas, herramientas y otra][GitHubWikiSourceMapsLanguagesTools] página wiki de información.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-116">For an extended view, navigate to [Source maps: languages, tools and other info][GitHubWikiSourceMapsLanguagesTools] wiki page.</span></span>  
+<span data-ttu-id="33590-115">Use un rectificador que sea capaz de crear mapas de origen.</span><span class="sxs-lookup"><span data-stu-id="33590-115">Use a minifier that is capable of creating source maps.</span></span>  <!--For the most popular options, navigate to preprocessor support section.  -->  <span data-ttu-id="33590-116">Para obtener una vista extendida, vaya [a Mapas de origen: idiomas, herramientas y otra página][GitHubWikiSourceMapsLanguagesTools] wiki de información.</span><span class="sxs-lookup"><span data-stu-id="33590-116">For an extended view, navigate to [Source maps: languages, tools and other info][GitHubWikiSourceMapsLanguagesTools] wiki page.</span></span>  
 
-<!--todo: add link to see the preprocessor support section when section is available -->  
+<!--todo: add link to display the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
-<span data-ttu-id="3ea7e-117">Los siguientes tipos de preprocesadores se suelen usar en combinación con mapas de origen:</span><span class="sxs-lookup"><span data-stu-id="3ea7e-117">The following types of preprocessors are commonly used in combination with Source Maps:</span></span>  
+<span data-ttu-id="33590-117">Los siguientes tipos de preprocesadores se usan comúnmente en combinación con mapas de origen:</span><span class="sxs-lookup"><span data-stu-id="33590-117">The following types of preprocessors are commonly used in combination with Source Maps:</span></span>  
 
-*   <span data-ttu-id="3ea7e-118">Transpiladores \ ([Babel][BabelJS], [traceur][GitHubWikiGoogleTraceurCompiler]\)</span><span class="sxs-lookup"><span data-stu-id="3ea7e-118">Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)</span></span>  
-*   <span data-ttu-id="3ea7e-119">Compiladores \ ([compilador de cierre][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [DART][DartMain]\)</span><span class="sxs-lookup"><span data-stu-id="3ea7e-119">Compilers \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dart][DartMain]\)</span></span>  
-*   <span data-ttu-id="3ea7e-120">Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)</span><span class="sxs-lookup"><span data-stu-id="3ea7e-120">Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)</span></span>  
+*   <span data-ttu-id="33590-118">Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)</span><span class="sxs-lookup"><span data-stu-id="33590-118">Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)</span></span>  
+*   <span data-ttu-id="33590-119">Compiladores \([Compilador de cierre][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dardo][DartMain]\)</span><span class="sxs-lookup"><span data-stu-id="33590-119">Compilers \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dart][DartMain]\)</span></span>  
+*   <span data-ttu-id="33590-120">Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)</span><span class="sxs-lookup"><span data-stu-id="33590-120">Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)</span></span>  
     
-## <span data-ttu-id="3ea7e-121">Mapas de origen en el panel de orígenes de DevTools</span><span class="sxs-lookup"><span data-stu-id="3ea7e-121">Source Maps in DevTools Sources panel</span></span>  
+## <a name="source-maps-in-devtools-sources-panel"></a><span data-ttu-id="33590-121">Mapas de origen en el panel Orígenes de DevTools</span><span class="sxs-lookup"><span data-stu-id="33590-121">Source Maps in DevTools Sources panel</span></span>  
 
-<span data-ttu-id="3ea7e-122">Los mapas de origen de los preprocesadores hacen que DevTools cargue los archivos originales además de sus minified.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-122">Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.</span></span>  <span data-ttu-id="3ea7e-123">A continuación, puede usar los originales para establecer puntos de interrupción y recorrer el código.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-123">You then use the originals to set breakpoints and step through code.</span></span>  <span data-ttu-id="3ea7e-124">Mientras tanto, Microsoft Edge ejecuta el código de minified.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-124">Meanwhile, Microsoft Edge is actually running your minified code.</span></span> <span data-ttu-id="3ea7e-125">Esto le ofrece la ilusión de ejecutar un sitio de desarrollo en producción.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-125">This gives you the illusion of running a development site in production.</span></span>  
+<span data-ttu-id="33590-122">Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.</span><span class="sxs-lookup"><span data-stu-id="33590-122">Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.</span></span>  <span data-ttu-id="33590-123">A continuación, use los originales para establecer puntos de interrupción y pasar por el código.</span><span class="sxs-lookup"><span data-stu-id="33590-123">You then use the originals to set breakpoints and step through code.</span></span>  <span data-ttu-id="33590-124">Mientras tanto, Microsoft Edge está ejecutando el código minificado.</span><span class="sxs-lookup"><span data-stu-id="33590-124">Meanwhile, Microsoft Edge is actually running your minified code.</span></span>  <span data-ttu-id="33590-125">La ejecución del código le ofrece la ilusión de ejecutar un sitio de desarrollo en producción.</span><span class="sxs-lookup"><span data-stu-id="33590-125">The running of the code gives you the illusion of running a development site in production.</span></span>  
 
-<span data-ttu-id="3ea7e-126">Al ejecutar mapas de origen en DevTools, debes tener en cuenta que el código JavaScript no está compilado y que puedes ver todos los archivos JavaScript individuales a los que hace referencia.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-126">When running Source Maps in DevTools, you should notice that the JavaScript is not compiled and you are able to see all the individual JavaScript files it references.</span></span>  <span data-ttu-id="3ea7e-127">Este es el uso de la asignación de origen, pero, en realidad, ejecuta el código compilado en segundo plano.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-127">This is using source mapping, but behind the scenes actually runs the compiled code.</span></span>  <span data-ttu-id="3ea7e-128">Los errores, registros y puntos de interrupción se asignan al código de desarrollo para la depuración formidable.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-128">Any errors, logs, and breakpoints map to the dev code for awesome debugging!</span></span>  <span data-ttu-id="3ea7e-129">Por ello, le da la sensación de que está ejecutando un sitio de desarrollo en producción.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-129">So in effect it gives you the illusion that you are running a dev site in production.</span></span>  
+<span data-ttu-id="33590-126">Al ejecutar mapas de origen en DevTools, debe observar que javascript no está compilado y se muestran todos los archivos JavaScript individuales a los que hace referencia.</span><span class="sxs-lookup"><span data-stu-id="33590-126">When running Source Maps in DevTools, you should notice that the JavaScript is not compiled and all of the individual JavaScript files it references are displayed.</span></span>  <span data-ttu-id="33590-127">Los mapas de origen en DevTools usan la asignación de origen, pero la funcionalidad subyacente realmente ejecuta el código compilado.</span><span class="sxs-lookup"><span data-stu-id="33590-127">Source Maps in DevTools is using source mapping, but the underlying functionality actually runs the compiled code.</span></span>  <span data-ttu-id="33590-128">Los errores, registros y puntos de interrupción se asignan al código de desarrollo para una depuración increíble.</span><span class="sxs-lookup"><span data-stu-id="33590-128">Any errors, logs, and breakpoints map to the dev code for awesome debugging.</span></span>  <span data-ttu-id="33590-129">Por lo tanto, en efecto, te da la ilusión de que estás ejecutando un sitio de desarrollo en producción.</span><span class="sxs-lookup"><span data-stu-id="33590-129">So in effect it gives you the illusion that you are running a dev site in production.</span></span>  
 
-### <span data-ttu-id="3ea7e-130">Habilitar mapas de origen en la configuración</span><span class="sxs-lookup"><span data-stu-id="3ea7e-130">Enable Source Maps in settings</span></span>  
+### <a name="enable-source-maps-in-settings"></a><span data-ttu-id="33590-130">Habilitar mapas de origen en la configuración</span><span class="sxs-lookup"><span data-stu-id="33590-130">Enable Source Maps in settings</span></span>  
 
-<span data-ttu-id="3ea7e-131">Los mapas de origen están habilitados de forma predeterminada</span><span class="sxs-lookup"><span data-stu-id="3ea7e-131">Source Maps are enabled by default</span></span> <!--\(as of Microsoft Edge 39\)--><span data-ttu-id="3ea7e-132">, pero si deseas volver a activarlos o habilitarlos; en primer lugar, abre DevTools, haz clic en el botón **personalizar DevTools** \ ( `...` \) y selecciona **configuración**.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-132">, but if you want to double-check or enable them; first open DevTools, click the **Customize and control DevTools** \(`...`\) button, and choose **Settings**.</span></span>  <span data-ttu-id="3ea7e-133">En el panel **preferencias** , en **fuentes**, active la casilla **Habilitar mapas de origen de JavaScript**.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-133">On the **Preferences** pane, under **Sources**, check **Enable JavaScript Source Maps**.</span></span>  <span data-ttu-id="3ea7e-134">También puede **Activar habilitar mapas de origen CSS**.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-134">You may also check **Enable CSS Source Maps**.</span></span>  
+<span data-ttu-id="33590-131">Los mapas de origen están habilitados de forma predeterminada</span><span class="sxs-lookup"><span data-stu-id="33590-131">Source Maps are enabled by default</span></span><!-- \(as of Microsoft Edge 39\)--><span data-ttu-id="33590-132">, pero si desea comprobarlos o habilitarlos; primero abra DevTools, elija **Personalizar y controlar DevTools** \( `...` \) > **Configuración**.</span><span class="sxs-lookup"><span data-stu-id="33590-132">, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** \(`...`\) > **Settings**.</span></span>  <span data-ttu-id="33590-133">En el **panel Preferencias,** en **Orígenes**, active Habilitar mapas de origen **de JavaScript**.</span><span class="sxs-lookup"><span data-stu-id="33590-133">On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.</span></span>  <span data-ttu-id="33590-134">También puede activar la opción **Habilitar mapas de origen CSS**.</span><span class="sxs-lookup"><span data-stu-id="33590-134">You may also turn on the **Enable CSS Source Maps**.</span></span>  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Habilitar mapas de origen" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   **<span data-ttu-id="3ea7e-136">Habilitar mapas de origen de JavaScript</span><span class="sxs-lookup"><span data-stu-id="3ea7e-136">Enable JavaScript Source Maps</span></span>**  
+   **<span data-ttu-id="33590-136">Habilitar mapas de origen de JavaScript</span><span class="sxs-lookup"><span data-stu-id="33590-136">Enable JavaScript Source Maps</span></span>**  
 :::image-end:::  
 
-### <span data-ttu-id="3ea7e-137">Depurar con mapas de origen</span><span class="sxs-lookup"><span data-stu-id="3ea7e-137">Debugging with Source Maps</span></span>  
+### <a name="debugging-with-source-maps"></a><span data-ttu-id="33590-137">Depuración con mapas de origen</span><span class="sxs-lookup"><span data-stu-id="33590-137">Debugging with Source Maps</span></span>  
 
-<span data-ttu-id="3ea7e-138">Al depurar el código y los mapas de origen habilitados, los mapas de origen se muestran en dos lugares:</span><span class="sxs-lookup"><span data-stu-id="3ea7e-138">When debugging your code and Source Maps enabled, Source Maps show in two places:</span></span>  
+<span data-ttu-id="33590-138">Al depurar el código y mapas de origen habilitados, los mapas de origen se muestran en dos lugares:</span><span class="sxs-lookup"><span data-stu-id="33590-138">When debugging your code and Source Maps enabled, Source Maps show in two places:</span></span>  
 
-1.  <span data-ttu-id="3ea7e-139">En la consola \ (el vínculo al origen debe ser el archivo original, no el generado \)</span><span class="sxs-lookup"><span data-stu-id="3ea7e-139">In the console \(the link to source should be the original file, not the generated one\)</span></span>  
-1.  <span data-ttu-id="3ea7e-140">Al repasar por el código \ (los vínculos en la pila de llamadas deben abrir el archivo de origen original \)</span><span class="sxs-lookup"><span data-stu-id="3ea7e-140">When stepping through code \(the links in the call stack should open the original source file\)</span></span>  
+1.  <span data-ttu-id="33590-139">En la consola \(el vínculo al origen debe ser el archivo original, no el generado\)</span><span class="sxs-lookup"><span data-stu-id="33590-139">In the console \(the link to source should be the original file, not the generated one\)</span></span>  
+1.  <span data-ttu-id="33590-140">Al pasar por el código \(los vínculos de la pila de llamadas deben abrir el archivo de origen original\)</span><span class="sxs-lookup"><span data-stu-id="33590-140">When stepping through code \(the links in the call stack should open the original source file\)</span></span>  
     
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
 
-## <span data-ttu-id="3ea7e-141">@sourceURL y displayName</span><span class="sxs-lookup"><span data-stu-id="3ea7e-141">@sourceURL and displayName</span></span>  
+## <a name="sourceurl-and-displayname"></a><span data-ttu-id="33590-141">@sourceURL y displayName</span><span class="sxs-lookup"><span data-stu-id="33590-141">@sourceURL and displayName</span></span>  
 
-<span data-ttu-id="3ea7e-142">Aunque no forme parte de la especificación del mapa de origen, el `@sourceURL` le permite hacer un desarrollo mucho más fácil cuando se trabaja con evaluaciones.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-142">While not part of the Source Map spec, the `@sourceURL` allows you to make development much easier when working with evals.</span></span>  <span data-ttu-id="3ea7e-143">Este ayudante es muy similar a la `//# sourceMappingURL` propiedad y se menciona realmente en las especificaciones del mapa de origen V3.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-143">This helper looks very similar to the `//# sourceMappingURL` property and is actually mentioned in the Source Map V3 specifications.</span></span>  
+<span data-ttu-id="33590-142">Aunque no forma parte de la especificación de mapa de origen, permite facilitar el desarrollo al `@sourceURL` trabajar con evales.</span><span class="sxs-lookup"><span data-stu-id="33590-142">While not part of the Source Map spec, the `@sourceURL` allows you to make development much easier when working with evals.</span></span>  <span data-ttu-id="33590-143">La aplicación auxiliar se muestra de forma similar a la `//# sourceMappingURL` propiedad y se menciona en las especificaciones de Source Map V3.</span><span class="sxs-lookup"><span data-stu-id="33590-143">The helper is displayed similar to the `//# sourceMappingURL` property and is mentioned in the Source Map V3 specifications.</span></span>  
 
-<span data-ttu-id="3ea7e-144">Al incluir el siguiente comentario especial en el código, que se evaluación, podrás nombrar las evaluaciones y los estilos y los scripts en línea, de modo que cada uno aparezca como más nombres lógicos en tu DevTools.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-144">By including the following special comment in your code, which is be evaled, you are able to name evals and inline scripts and styles so each appears as more logical names in your DevTools.</span></span>  
+<span data-ttu-id="33590-144">Al incluir el siguiente comentario especial en el código, que se evita, puede nombrar evales y scripts en línea y estilos para que cada uno aparezca como nombres más lógicos en sus DevTools.</span><span class="sxs-lookup"><span data-stu-id="33590-144">By including the following special comment in your code, which is evaled, you are able to name evals and inline scripts and styles so each appears as more logical names in your DevTools.</span></span>  
 
 ```javascript
 //# sourceURL=source.coffee
 ```  
 
-<span data-ttu-id="3ea7e-145">Vaya a la página siguiente.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-145">Navigate to the following page.</span></span>  
+<span data-ttu-id="33590-145">Vaya a la página siguiente.</span><span class="sxs-lookup"><span data-stu-id="33590-145">Navigate to the following page.</span></span>  
 
-*   [<span data-ttu-id="3ea7e-146">demo</span><span class="sxs-lookup"><span data-stu-id="3ea7e-146">demo</span></span>][CssNinjaDemoSourceMapping]
+*   [<span data-ttu-id="33590-146">demo</span><span class="sxs-lookup"><span data-stu-id="33590-146">demo</span></span>][CssNinjaDemoSourceMapping]
 
-<span data-ttu-id="3ea7e-147">Complete las siguientes acciones.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-147">Complete the following actions.</span></span>  
+<span data-ttu-id="33590-147">Complete las siguientes acciones.</span><span class="sxs-lookup"><span data-stu-id="33590-147">Complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="3ea7e-148">Abra el DevTools y vaya al panel **fuentes** .</span><span class="sxs-lookup"><span data-stu-id="3ea7e-148">Open the DevTools and go to the **Sources** panel.</span></span>  
-1.  <span data-ttu-id="3ea7e-149">Escribe un nombre de archivo en el campo **nombre de tu código:** entrada.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-149">Enter in a filename into the **Name your code:** input field.</span></span>  
-1.  <span data-ttu-id="3ea7e-150">Haga clic en el botón **compilar** .</span><span class="sxs-lookup"><span data-stu-id="3ea7e-150">Click on the **compile** button.</span></span>  
-1.  <span data-ttu-id="3ea7e-151">Aparece una alerta con la suma evaluada del origen de CoffeeScript.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-151">An alert appears with the evaluated sum from the CoffeeScript source.</span></span>  
+1.  <span data-ttu-id="33590-148">Abra DevTools y vaya al panel **Orígenes.**</span><span class="sxs-lookup"><span data-stu-id="33590-148">Open the DevTools and navigate to the **Sources** panel.</span></span>  
+1.  <span data-ttu-id="33590-149">Escriba un nombre de archivo en el **campo Nombre del código:** entrada.</span><span class="sxs-lookup"><span data-stu-id="33590-149">Enter in a filename into the **Name your code:** input field.</span></span>  
+1.  <span data-ttu-id="33590-150">Elija el **botón compilar.**</span><span class="sxs-lookup"><span data-stu-id="33590-150">Choose the **compile** button.</span></span>  
+1.  <span data-ttu-id="33590-151">Aparece una alerta con la suma evaluada del origen CoffeeScript.</span><span class="sxs-lookup"><span data-stu-id="33590-151">An alert appears with the evaluated sum from the CoffeeScript source.</span></span>  
     
-<span data-ttu-id="3ea7e-152">Si expande el subpanel **orígenes** , ahora verá un nuevo archivo con el nombre de archivo personalizado que escribió anteriormente.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-152">If you expand the **Sources** sub-panel you now see a new file with the custom filename you entered earlier.</span></span>  <span data-ttu-id="3ea7e-153">Si hace doble clic para ver este archivo, contiene el JavaScript compilado para el origen original.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-153">If you double-click to view this file it contains the compiled JavaScript for the original source.</span></span>  <span data-ttu-id="3ea7e-154">En la última línea, sin embargo, es un `// @sourceURL` comentario que indica el archivo de origen original.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-154">On the last line, however, is a `// @sourceURL` comment indicating the original source file.</span></span>  <span data-ttu-id="3ea7e-155">Esto puede ayudarle a realizar la depuración mientras trabaja con abstracciones de lenguaje.</span><span class="sxs-lookup"><span data-stu-id="3ea7e-155">This may help you with debugging while working with language abstractions.</span></span>  
+<span data-ttu-id="33590-152">Si expande el sub panel **Orígenes,** ahora mostrará un nuevo archivo con el nombre de archivo personalizado que escribió anteriormente.</span><span class="sxs-lookup"><span data-stu-id="33590-152">If you expand the **Sources** sub-panel you now display a new file with the custom filename you entered earlier.</span></span>  <span data-ttu-id="33590-153">Si hace doble clic para ver este archivo, contiene el JavaScript compilado para el origen original.</span><span class="sxs-lookup"><span data-stu-id="33590-153">If you double-click to view this file, it contains the compiled JavaScript for the original source.</span></span>  <span data-ttu-id="33590-154">Sin embargo, en la última línea hay un `// @sourceURL` comentario que indica el archivo de origen original.</span><span class="sxs-lookup"><span data-stu-id="33590-154">On the last line, however, is a `// @sourceURL` comment indicating the original source file.</span></span>  <span data-ttu-id="33590-155">Esto puede ayudarle con la depuración mientras trabaja con abstracciones de idioma.</span><span class="sxs-lookup"><span data-stu-id="33590-155">This may help you with debugging while working with language abstractions.</span></span>  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Habilitar mapas de origen" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
-   <span data-ttu-id="3ea7e-157">Trabajar con</span><span class="sxs-lookup"><span data-stu-id="3ea7e-157">Work with</span></span> `sourceURL`  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Trabajar con sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   <span data-ttu-id="33590-157">Trabajar con</span><span class="sxs-lookup"><span data-stu-id="33590-157">Work with</span></span> `sourceURL`  
 :::image-end:::  
 
-## <span data-ttu-id="3ea7e-158">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="3ea7e-158">Getting in touch with the Microsoft Edge DevTools team</span></span>
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="33590-158">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="33590-158">Getting in touch with the Microsoft Edge DevTools team</span></span>
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -122,26 +122,26 @@ ms.locfileid: "11124687"
 
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
 
-[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Un ejemplo sencillo de nombre de evaluación de//# sourceURL"  
+[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Un ejemplo sencillo de nomenclatura eval //# sourceURL"  
 
-[DartMain]: https://www.dartlang.org "Lenguaje de programación DART"  
+[DartMain]: https://www.dartlang.org "Lenguaje de programación de Dardo"  
 
-[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "Google/cierre-compilador | GitHub"  
+[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "google/closure-compiler | GitHub"  
 
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
 
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Mapas de origen: idiomas, herramientas y otra información | Wiki de GitHub"  
 
-[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Introducción-Google/traceur-Compiler | Wiki de GitHub"  
+[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Introducción: google/traceur-compiler | Wiki de GitHub"  
 
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]
-> <span data-ttu-id="3ea7e-168">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según las condiciones descritas en la [licencia internacional de Creative Commons Atribution 4,0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="3ea7e-168">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="3ea7e-169">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) y está creada por [Meggin Kearney][MegginKearney] \ (Tech Write \) y [Paul Bakaus][PaulBakaus] \ (Open Web Developer defensor, Google: Tools, performance, Animation y UX \).</span><span class="sxs-lookup"><span data-stu-id="3ea7e-169">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\).</span></span>  
+> <span data-ttu-id="33590-168">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="33590-168">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="33590-169">La página original [](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) se encuentra aquí y está redactada por [Meggin Kearney][MegginKearney] \(Tech Writer\) y [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\).</span><span class="sxs-lookup"><span data-stu-id="33590-169">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="3ea7e-171">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="3ea7e-171">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="33590-171">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="33590-171">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
