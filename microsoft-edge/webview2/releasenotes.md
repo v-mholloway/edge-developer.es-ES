@@ -3,25 +3,79 @@ description: Notas de la versión del SDK de WebView2 de Microsoft Edge
 title: Notas de la versión de Microsoft Edge WebView2 para Win32, WPF y WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/16/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, html perimetral
-ms.openlocfilehash: d00d0629b7598b4a82c184441a09b79c59fd3df8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c3a541560394f2e144f1ffbbd621c800c415602d
+ms.sourcegitcommit: 140e09e508fa97f2d124f264d7d2ff77d12d1ffb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399270"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11399840"
 ---
 # <a name="release-notes-for-webview2-sdk"></a>Notas de la versión del SDK de WebView2  
 
 El equipo de WebView2 actualiza el [SDK de WebView2][NuGetGallery] en una cadencia de seis semanas.  Revise el siguiente contenido para obtener información actualizada sobre anuncios de productos, adiciones, modificaciones y cambios importantes en las API.  
 
 > [!NOTE]
-> Asegúrate de volver a compilar la aplicación después de actualizar el paquete NuGet.  El equipo recomienda usar el canal Canary al desarrollar con los paquetes de versión preliminar y el tiempo de ejecución de evergreen al usar paquetes publicados.  Para obtener más información, vaya a [Control de versiones][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
+> Asegúrate de volver a compilar la aplicación después de actualizar el paquete NuGet.  El equipo de WebView recomienda usar el canal Canary al desarrollar con los paquetes de versión preliminar y el tiempo de ejecución de evergreen al usar paquetes publicados.  Para obtener más información, vaya a [Control de versiones][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
  
+<!--## 1.0.816-prerelease  
+
+Release Date: March 8, 2021  
+
+[NuGet package][NuGetGallery1.0.816-prerelease] \| Microsoft Edge version 86.0.616.0 or newer  
+
+### General  
+
+#### Features  
+
+*   Extended `ProcessFailed` event that it will now be raised for non-renderer child processes and frame renderers.  
+*   Added experimental [AreBrowserAcceleratorKeysEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210811GetArebrowseracceleratorkeysenabled] setting.  You may choose to keeps the browser from responding to accelerator keys related to navigation, printing, saving, and other browser-specific functions.  
+*   Added iframe support for `AddScriptToExecuteOnDocumentCreated`.  
+    
+#### Promotion
+
+*   [UserAgent][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived] API is now promoted to public.  
+*   Rasterization Scale APIs ([RasterizationScale][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] property,  [RasterizationScaleChanged][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] event, [BoundsMode property][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsmode], and [ShouldDetectMonitorScaleChanges][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShoulddetectmonitorscalechanges] property) are now promoted to public.  
+    
+#### Bug fixes  
+
+*   Expanded supported C++ and .NET project types such as MFC and ATL.  \([\#506][GithubMicrosoftedgeWebviewfeedbackIssue506], [\#669][GithubMicrosoftedgeWebviewfeedbackIssue669], and [\#851][GithubMicrosoftedgeWebviewfeedbackIssue851]\).  
+*   Fixed a bug that WebView2 Runtime leaks Inbound firewall entry.  
+*   Fixed setting Response during WebResourceRequested event.  \([\#568][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  
+*   Fixed a bug that navigating to `edge://` causes browser process to exit.  \([\#604][GithubMicrosoftedgeWebviewfeedbackIssue604]\).  
+*   Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode. 
+    -->  
+
+## <a name="1077444"></a>1.0.774.44  
+
+Fecha de lanzamiento: 8 de marzo de 2021  
+
+[Paquete NuGet][NuGetGallery1.0.774.44] \| WebView2 Runtime versión 86.0.616.0 o posterior.  
+
+### <a name="general"></a>General  
+
+#### <a name="features"></a>Características  
+
+*   Desactivados varios servicios de explorador de Microsoft Edge en WebView2.  
+*   Las API de hospedaje visual ahora están disponibles en general.  
+
+#### <a name="promotions"></a>Promociones  
+
+*   Las siguientes API experimentales ahora se promueven a Estable.  
+    *   [API relacionadas con][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived] la compatibilidad con PPP  
+    *   API de hospedaje visual  
+    *   [SetVirtualHostNameToFolderMapping][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseSetvirtualhostnametofoldermapping]  
+    *   [TrySuspend y Resume][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseTrysuspend]  
+    *   [DefaultBackgroundColor][Webview2ReferenceWin32Icorewebview2controller2ViewWebview210790PrereleaseGetDefaultbackgroundcolor]  
+        
+#### <a name="bug-fixes"></a>Correcciones de errores  
+
+*   Se ha corregido un error que limitaba los límites de WebView2 al tamaño de pantalla en el modo de hospedaje visual.  
+    
 ## <a name="10790-prerelease"></a>1.0.790-prerelease  
 
 Fecha de lanzamiento: 10 de febrero de 2021  
@@ -34,9 +88,9 @@ Fecha de lanzamiento: 10 de febrero de 2021
 > **Breaking Change**: El paquete de versión previa a WebView2 1.0.781 está en desuso.  Discontinue el desarrollo con el paquete 1.0.781.  
 
 > [!IMPORTANT]
-> El paquete de versión previa a webView2 0.9.430 está en desuso y se está quitando de la próxima versión.  Si la aplicación WebView usa el paquete, se recomienda actualizar a un paquete más reciente.  
+> El paquete de versión previa a webView2 0.9.430 está en desuso y se quita con la siguiente versión.  Si la aplicación WebView usa el paquete, el equipo de WebView te recomienda que uses un paquete más reciente.  
 
-##### <a name="features"></a>Características  
+#### <a name="features"></a>Características  
 
 *   Se [agregó el método TrySuspend y Resume][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseTrysuspend] para suspender y reanudar WebViews.  
 *   Se [agregó el método SetVirtualHostNameToFolderMapping][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseSetvirtualhostnametofoldermapping] que asigna un nombre de host virtual a una ruta de acceso de directorio.  \([\#37][GithubMicrosoftedgeWebviewfeedbackIssue37], [\#161][GithubMicrosoftedgeWebviewfeedbackIssue161]y [\#212][GithubMicrosoftedgeWebviewfeedbackIssue212]\).  
@@ -44,9 +98,8 @@ Fecha de lanzamiento: 10 de febrero de 2021
 *   Se agregó [la propiedad UserAgent][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210790PrereleaseGetUseragent] para obtener o establecer el agente de usuario.  \([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\).  
 *   Se `CreateCookieWithCookie` reemplazó el método por el `CopyCookie` método.  
 *   Se agregó compatibilidad de hospedaje visual con la [interfaz ICoreWebView2CompositionController,][Webview2ReferenceWin32Icorewebview2compositioncontrollerViewWebview210790Prerelease] que se crea con el nuevo `CreateCoreWebView2CompositionController` método de `ICoreWebView2Environment3` .  
-
     
-##### <a name="bug-fixes"></a>Correcciones de errores  
+#### <a name="bug-fixes"></a>Correcciones de errores  
 
 *   Desactivada la característica Microsoft Edge Shopping en WebView2.  
 *   Desactivado el menú contextual en el visor de PDF cuando `AreDefaultContextMenusEnabled` es `false` .  \([\#605][GithubMicrosoftedgeWebviewfeedbackIssue605]\).  
@@ -61,17 +114,15 @@ Fecha de lanzamiento: 10 de febrero de 2021
 *   Se han reducido los problemas de uso elevado de LA CPU.  \([\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
 *   Se han corregido problemas con el paquete de versión preliminar 1.0.781 en desuso. [\#875][GithubMicrosoftedgeWebviewfeedbackIssue875] [y \#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
     
-##### <a name="promotions"></a>Promociones  
+#### <a name="promotions"></a>Promociones  
 
 *   Las siguientes API experimentales ahora se promueven a Estable.  
-    *   API de hospedaje visual.  
+    *   API de hospedaje visual  
     *   [SetVirtualHostNameToFolderMapping][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseSetvirtualhostnametofoldermapping]  
-    *   [TrySuspend y Resume][Webview2ReferenceWin32Icorewebview23ViewWebview210790PrereleaseTrysuspend]  
-    *   [DefaultBackgroundColor][Webview2ReferenceWin32Icorewebview2controller2ViewWebview210790PrereleaseGetDefaultbackgroundcolor]  
-    
-#### <a name="net"></a>.NET  
+        
+### <a name="net"></a>.NET  
 
-##### <a name="bug-fixes"></a>Correcciones de errores  
+#### <a name="bug-fixes"></a>Correcciones de errores  
 
 *   Se ha corregido un error que bloqueaba las aplicaciones webView que usaban el SDK de WPF.  El bloqueo se produjo cuando las ventanas se cerraron con la clave F4.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\).  
 *   La pantalla de inicialización de WebView2 ahora es transparente, en lugar de gris.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\).  
@@ -82,7 +133,9 @@ Fecha de lanzamiento: 25 de enero de 2021
 
 [Paquete NuGet][NuGetGallery1.0.705.50] \| WebView2 Runtime versión 86.0.616.0 o posterior  
 
-##### <a name="promotions"></a>Promociones  
+### <a name="general"></a>General  
+
+#### <a name="promotions"></a>Promociones  
 
 *   Las siguientes API experimentales ahora se promueven a Estable.  
     *   [WebResourceResponseReceived API][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived]  
@@ -97,12 +150,12 @@ Fecha de lanzamiento: 8 de diciembre de 2020
 
 [Paquete NuGet][NuGetGallery1.0.721-prerelease] \| Versión de Microsoft Edge 86.0.616.0 o posterior  
 
-#### <a name="general"></a>General  
+### <a name="general"></a>General  
 
 > [!IMPORTANT]
 > **Cambio de**última hora: el paquete de versión previa a WebView2 1.0.707 y el paquete 0.9.628 están en desuso.  Suspenda el desarrollo con el paquete 1.0.707 y package0.9.628.  
 
-###### <a name="features"></a>Características  
+#### <a name="features"></a>Características  
 
 *   Se [agregaron directivas de grupo de WebView2][DeployedgeMicrosoftEdgeWebviewPolicies].  Para obtener más información sobre los procedimientos recomendados, vaya a [directivas de grupo para WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2].  
 *   > [!IMPORTANT]
@@ -125,15 +178,15 @@ Fecha de lanzamiento: 8 de diciembre de 2020
     *   [DOMContentLoaded API][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddDomcontentloaded]  
     *   [Propiedad WebView Environment][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseGetEnvironment]  
         
-#### <a name="net"></a>.NET  
+### <a name="net"></a>.NET  
 
-###### <a name="features"></a>Características  
+#### <a name="features"></a>Características  
 
 *   Activado el diseñador de WinForms en .NET Core 3.1+ y .NET 5.  
 *   Administración de cookies .NET mejorada.  \([\#611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
 *   Se `CoreWebView2Ready` reemplaza [por CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].  
 
-###### <a name="bug-fixes"></a>Correcciones de errores
+#### <a name="bug-fixes"></a>Correcciones de errores
 
 *   Se agregó [el evento AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed] para admitir AcceleratorKey select en WebView2.  \([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
 *   Se quitaron los archivos innecesarios de salida a las carpetas WebView2.  \([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
@@ -145,19 +198,19 @@ Fecha de lanzamiento: 20 de noviembre de 2020
 
 [Paquete NuGet][NuGetGallery1.0.664.37] \| WebView2 Runtime versión 86.0.616.0 o posterior.  
 
-#### <a name="general"></a>General  
+### <a name="general"></a>General  
 
 > [!IMPORTANT]
 > **Anuncio:** los SDK de WebView2 de .NET WPF/WinForms ahora están disponibles en general \(GA\).  A partir de esta versión, los SDK de versión son compatibles con el avance.  Para obtener más información, vaya a [la entrada de blog del anuncio de GA][MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod].  
 
-###### <a name="features"></a>Características  
+#### <a name="features"></a>Características  
 
 *   .NET WPF/WinForms WebView2 ahora está disponible generalmente \(GA\).  
 *   Modo de distribución fijo \(Bring-your-own\) alcanzado ga.  
     
-#### <a name="net"></a>.NET  
+### <a name="net"></a>.NET  
 
-###### <a name="bug-fixes"></a>Correcciones de errores  
+#### <a name="bug-fixes"></a>Correcciones de errores  
 
 *   `CoreWebView2NewWindowRequestedEventArgs.Handled` impide que se abra una nueva ventana.  \([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549] y [\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\).  
     
@@ -167,7 +220,7 @@ Fecha de lanzamiento: 19 de octubre de 2020
 
 [Paquete NuGet][NuGetGallery1.0.674-prerelease] \| WebView2 Runtime versión 86.0.616.0 o posterior.  
 
-#### <a name="general"></a>General  
+### <a name="general"></a>General  
 
 *   Se agregó [el método NavigateWithWebResourceRequest para][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseNavigatewithwebresourcerequest] proporcionar datos de publicación u otros encabezados de solicitud durante la navegación.  
 *   Se agregó [el evento DOMContentLoaded][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseAddDomcontentloaded] que se ejecuta cuando se carga y analiza el documento HTML inicial.  
@@ -179,7 +232,7 @@ Fecha de lanzamiento: 19 de octubre de 2020
 *   Se agregó un error corregido para el método Input en el hospedaje visual.  
 *   Se ha quitado el requisito `version.lib` de uso de la biblioteca estática de WebView2.  
     
-#### <a name="net"></a>.NET  
+### <a name="net"></a>.NET  
 
 *   Se actualizó la clase [CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] para exponer la `CoreWebView2Environment` variable.  
 *   Se han cambiado las implementaciones de clases EventArgs personalizadas en el espacio de nombres a `Microsoft.Web.WebView2.Core` subclases [de System.EventArgs][DotnetApiSystemEventargs] o [System.ComponentModel.CancelEventArgs][DotnetApiSystemComponentmodelCancelEventargs].  \([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\)  
@@ -197,7 +250,7 @@ Fecha de lanzamiento: 19 de octubre de 2020
 
 [Paquete NuGet][NuGetGallery1.0.622.22] \| WebView2 Runtime versión 86.0.616.0 o posterior.  
 
-#### <a name="general"></a>General  
+### <a name="general"></a>General  
 
 > [!IMPORTANT]
 > **Anuncio:** Win32 C/C++ WebView2 ahora está disponible generalmente \(GA\).  A partir de esta versión, los SDK de versión son compatibles con el avance.  Para obtener más información, vaya a [la entrada de blog de anuncios de GA][WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability].  
@@ -211,7 +264,7 @@ Fecha de lanzamiento: 10 de septiembre de 2020
 
 [Paquete NuGet][NuGetGallery0.9.622.11] \| WebView2 Runtime versión 86.0.616.0 o posterior.  
 
-#### <a name="general"></a>General  
+### <a name="general"></a>General  
 
 *   > [!IMPORTANT]
     > **Anuncio:** este SDK es el candidato de versión de WebView2 Win32 C/C++ GA.  La versión de GA debe usar la misma interfaz y funcionalidad de la API.  
@@ -229,7 +282,7 @@ Fecha de lanzamiento: 20 de julio de 2020
 
 [Paquete NuGet][NuGetGallery0.9.579] \| Versión 86.0.579.0 de Microsoft Edge.  
 
-#### <a name="general"></a>General  
+### <a name="general"></a>General  
 
 *   > [!IMPORTANT]
     > **Anuncio:** Evergreen WebView2 Runtime y el instalador se liberan para obtener una vista previa.  Para obtener más información, vaya [a Distribución de WebView2][Webview2ConceptsDistributionUnderstandRuntimeInstaller].  
@@ -252,7 +305,7 @@ Fecha de lanzamiento: 20 de julio de 2020
 *   Se agregó la propiedad [experimental IsSingleSignOnUsingOSPrimaryAccountEnabled][Webview2ReferenceWin32Icorewebview2experimentalenvironmentoptionsViewWebview209538PrereleaseGetIssinglesignonusingosprimaryaccountenabled] en las opciones del entorno WebView2 para activar el acceso condicional para WebView.  
 *   Se agregó [el evento experimental WebResourceResponseReceived][Webview2ReferenceWin32Icorewebview2experimentalViewWebview209538PrereleaseAddWebresourceresponsereceived] que se ejecuta después de que WebView recibe y procesa la respuesta de una solicitud WebResource.  Los encabezados de autenticación, si los hay, se incluyen en el objeto de respuesta.  
     
-#### <a name="net"></a>.NET  
+### <a name="net"></a>.NET  
 
 *   Se ha mejorado el control de foco de WPF.  \([\#185][GithubMicrosoftedgeWebviewfeedbackIssue185]\).  
 *   Se `ZoomFactor` agregó la propiedad en wpf Webview2 Controller.  
@@ -261,12 +314,12 @@ Fecha de lanzamiento: 20 de julio de 2020
 
 [Paquete NuGet][NuGetGallery0.9.538] \| Versión 85.0.538.0 de Microsoft Edge.  
 
-#### <a name="general"></a>General  
+### <a name="general"></a>General  
 
 *   Quitar compatibilidad con WebView2 SDK Versión [0.8.149](#08149).  WebView2 recomienda mantenerse al día con la versión más reciente de WebView2.  
 *   Directiva de grupo actualizada para tener en cuenta cuándo se modifica la ruta de acceso de perfil del explorador Microsoft Edge \([#179][GithubMicrosoftedgeWebviewfeedbackIssue179]\).  
     
-#### <a name="win32-cc"></a>Win32 C/C++  
+### <a name="win32-cc"></a>Win32 C/C++  
 
 *   Se agregó [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview209538PrereleaseGetWindowfeatures], que se activa cuando se ejecuta y se asocia con `window.open()` [ICoreWebView2ExperimentalWindowFeatures][Webview2ReferenceWin32Icorewebview2experimentalwindowfeaturesViewWebview209538Prerelease] \([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\).  
 *   > [!IMPORTANT]
@@ -279,7 +332,7 @@ Fecha de lanzamiento: 20 de julio de 2020
     
 *   [AddHostObjectToScript actualizado][Webview2ReferenceWin32Icorewebview2ViewWebview209538ddhostobjecttoscript].  Los marcadores del serializador de objetos host originales ahora se establecen en los objetos proxy.  A continuación, los marcadores del serializador de objetos host se serializan de nuevo como un objeto host cuando se pasan como parámetro en la devolución de llamada de JavaScript \([#148][GithubMicrosoftedgeWebviewfeedbackIssue148]\).  
     
-#### <a name="net-09538-pre-release"></a>.NET (versión previa 0.9.538)  
+### <a name="net-09538-pre-release"></a>.NET (versión previa 0.9.538)  
 
 *   WinForms y WPF WebView2API Samples publicados, que son guías completas del SDK de WebView2.  Para obtener más información, vaya a [Samples Repo][GithubMicrosoftedgeWebview2samplesMain].  
 *   Se agregó compatibilidad con las API experimentales de características de ventana y hospedaje [visual.][Webview2ConceptsVersioningExperimentalApis]  
@@ -342,11 +395,10 @@ Fecha de lanzamiento: 20 de julio de 2020
 *   Inyección de objetos remota actualizada para admitir implementaciones de .NET `IDispatch` \([#113][GithubMicrosoftedgeWebviewfeedbackIssue113]\).  
 *   Evento [NewWindowRequested actualizado][Webview2ReferenceWin32Icorewebview2ViewWebview209488AddNewwindowrequested] para controlar solicitudes de menús contextuales \([#108][GithubMicrosoftedgeWebviewfeedbackIssue108]\).  
 *   Se publicó el primer paquete de versión previa a WebView2 independiente en el que puede tener acceso a las API de hospedaje visual.  El equipo de WebView actualizó [APISample][GithubMicrosoftedgeWebview2samplesMain] para incluir las nuevas API experimentales.  
-    
     *   Se [agregó la interfaz ICoreWebView2ExperimentalCompositionController,][Webview2ReferenceWin32Icorewebview2experimentalcompositioncontrollerViewWebview209488Prerelease] para conectarse a un árbol de composición y proporcionar entradas para WebView.  
     *   Se [agregó ICoreWebView2ExperimentalPointerInfo][Webview2ReferenceWin32Icorewebview2experimentalpointerinfoViewWebview209488Prerelease], que contiene toda la información de un `POINTER_INFO` archivo .  Este objeto se pasa a SendPointerInput para insertar entrada de puntero en webView.  
     *   Se [agregó ICoreWebView2ExperimentalCursorChangedEventHandler][Webview2ReferenceWin32Icorewebview2experimentalcursorchangedeventhandlerViewWebview209488Prerelease], que indica a la aplicación cuándo debe cambiarse el cursor del mouse sobre WebView.  Cuando el mouse está sobre un cuadro de texto en WebView, el cursor cambia de la flecha al selector.  La propiedad de la aplicación indica a la aplicación cuál debe ser el cursor del `cursor` `CompositionController` mouse actualmente para WebView.  
-    
+        
 ## <a name="09430"></a>0.9.430  
 
 [Paquete NuGet][NuGetGallery0.9.430] \| Versión 82.0.430.0 de Microsoft Edge.  
@@ -354,7 +406,7 @@ Fecha de lanzamiento: 20 de julio de 2020
 El SDK de WebView2 es la versión beta oficial de Win32 C++, que incorpora varias solicitudes de características de comentarios.  El equipo de WebView intenta limitar el número de versiones con cambios importantes.  A medida que se acerca la disponibilidad general, se incorporan varios cambios importantes en la versión beta.  
 
 *   > [!IMPORTANT]
-    > **Cambio**de ruptura: a medida que se acerca la versión final, el equipo de WebView cambió el nombre del prefijo *IWebView2WebView*   a *ICoreWebView2*   para asegurarse de que la API de WebView2 se alinea con la convención de nomenclatura de la API de Windows.  Además, para aprovechar el SDK de WebView2 de los marcos de interfaz de usuario, el equipo de WebView se separó de `ICoreWebView2` [ICoreWebView2][Webview2ReferenceWin32Icorewebview2ViewWebview209430] e [ICoreWebView2Host][Webview2ReferenceWin32Icorewebview2hostViewWebview209430].  `ICoreWebView2Host` admite cambiar el tamaño, mostrar y ocultar, enfocar y otras funciones relacionadas con las ventanas y la composición.  ICoreWebView2 admite todas las demás funciones de WebView2.  Para obtener más información sobre cómo incorporar [][GithubMicrosoftedgeWebview2samplesPr17] los cambios, vaya a la solicitud de extracción de WebView2 en el proyecto [APISample][GithubMicrosoftedgeWebview2samplesMain] de WebView2.  
+    > **Cambio de**separación: a medida que se acerca la versión final, el equipo de WebView cambió el nombre del prefijo para asegurarse de que la `IWebView2WebView` API de WebView2 se alinea con la convención de nomenclatura `ICoreWebView2` de la API de Windows.  Además, para aprovechar el SDK de WebView2 de los marcos de interfaz de usuario, el equipo de WebView se separó de `ICoreWebView2` [ICoreWebView2][Webview2ReferenceWin32Icorewebview2ViewWebview209430] e [ICoreWebView2Host][Webview2ReferenceWin32Icorewebview2hostViewWebview209430].  `ICoreWebView2Host` admite cambiar el tamaño, mostrar y ocultar, enfocar y otras funciones relacionadas con las ventanas y la composición.  ICoreWebView2 admite todas las demás funciones de WebView2.  Para obtener más información sobre cómo incorporar [][GithubMicrosoftedgeWebview2samplesPr17] los cambios, vaya a la solicitud de extracción de WebView2 en el proyecto [APISample][GithubMicrosoftedgeWebview2samplesMain] de WebView2.  
     
 *   > [!IMPORTANT]
     > **Breaking Change**: Split [DocumentStateChanged][Webview2ReferenceWin32Iwebview2webviewViewWebview208355AddDocumentstatechanged] en tres componentes:  [SourceChanged][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddSourcechanged], [ContentLoading][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddContentloading]e [HistoryChanged][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddHistorychanged].  Ahora, cuando la dirección URL de origen cambia, `SourceChanged` se ejecuta el evento.  Cuando se cambia el estado del historial, `HistoryChanged` se ejecuta el evento.  El `ContentLoading` evento se ejecuta antes del script inicial cuando se carga un nuevo documento.  
@@ -460,6 +512,8 @@ Versión preliminar del desarrollador inicial.
 [Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "Introducción a WebView2 en WPF | Microsoft Docs"  
 [Webview2HowtoDebug]: ./howto/debug.md "Cómo depurar al desarrollar con controles WebView2 | Microsoft Docs"  
 
+[Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210811GetArebrowseracceleratorkeysenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings?view=webview2-1.0.816&preserve-view=true#get_arebrowseracceleratorkeysenabled "get_AreBrowserAcceleratorKeyPressed: interfaz ICoreWebView2ExperimentalSettings | Microsoft Docs" 
+
 [Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddDomcontentloaded]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_domcontentloaded "add_DOMContentLoaded: interfaz ICoreWebView2_2 | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived: interfaz ICoreWebView2 | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseGetEnvironment]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#get_environment "ICoreWebView2CookieManager | Microsoft Docs" 
@@ -513,7 +567,7 @@ Versión preliminar del desarrollador inicial.
 [Webview2ReferenceWin32Icorewebview2settingsViewWebview209430GetAreremoteobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.430&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed: interfaz ICoreWebView2Settings | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2settingsViewWebview209430GetIszoomcontrolenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.430&preserve-view=true#get_iszoomcontrolenabled "get_IsZoomControlEnabled: interfaz ICoreWebView2Settings | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetAreremoteobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_areremoteobjectsallowed "get_AreRemoteObjectsAllowed: interfaz ICoreWebView2Settings | Microsoft Docs" 
-[Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetIsbuiltinerrorpageenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_isbuiltinerrorpageenabled " | Microsoft Docs" 
+[Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetIsbuiltinerrorpageenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.488&preserve-view=true#get_isbuiltinerrorpageenabled "get_IsBuiltInErrorPageEnabled: interfaz ICoreWebView2Settings | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2settingsViewWebview209538GetArehostobjectsallowed]: /microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-0.9.538&preserve-view=true#get_arehostobjectsallowed "get_AreHostObjectsAllowed: interfaz ICoreWebView2Settings | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2ViewWebview209430]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true "interfaz ICoreWebView2 | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2ViewWebview209430AddContentloading]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.430&preserve-view=true#add_contentloading "add_ContentLoading: interfaz ICoreWebView2 | Microsoft Docs" 
@@ -644,14 +698,19 @@ Versión preliminar del desarrollador inicial.
 [GithubMicrosoftedgeWebviewfeedbackIssue432]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/432 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 432"  
 [GithubMicrosoftedgeWebviewfeedbackIssue442]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/442 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 442"  
 [GithubMicrosoftedgeWebviewfeedbackIssue461]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/461 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 461"  
+[GithubMicrosoftedgeWebviewfeedbackIssue506]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/506 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 506"  
 [GithubMicrosoftedgeWebviewfeedbackIssue525]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/525 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 525"  
 [GithubMicrosoftedgeWebviewfeedbackIssue549]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/549 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 549"  
 [GithubMicrosoftedgeWebviewfeedbackIssue560]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/560 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Problema 560"  
+[GithubMicrosoftedgeWebviewfeedbackIssue568]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/568 "Repositorio de comentarios de MicrosoftEdge/WebViewFeedback Issue 568"  
 [GithubMicrosoftedgeWebviewfeedbackIssue585]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/585 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 585"  
+[GithubMicrosoftedgeWebviewfeedbackIssue604]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/604 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 604"  
 [GithubMicrosoftedgeWebviewfeedbackIssue605]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/605 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 605"  
 [GithubMicrosoftedgeWebviewfeedbackIssue611]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/611 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 611"  
+[GithubMicrosoftedgeWebviewfeedbackIssue669]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/669 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 669"  
 [GithubMicrosoftedgeWebviewfeedbackIssue691]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/691 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 691"  
 [GithubMicrosoftedgeWebviewfeedbackIssue816]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/816 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 816"  
+[GithubMicrosoftedgeWebviewfeedbackIssue851]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/851 "Repositorio de comentarios de MicrosoftEdge/WebViewFeedback Issue 851"  
 [GithubMicrosoftedgeWebviewfeedbackIssue875]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/875 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 875"  
 [GithubMicrosoftedgeWebviewfeedbackIssue878]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/878 "Repositorio de comentarios para MicrosoftEdge/WebViewFeedback Issue 878"  
 
@@ -679,6 +738,8 @@ Versión preliminar del desarrollador inicial.
 [NuGetGallery1.0.674-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.674"  
 [NuGetGallery1.0.705.50]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.50 "Galería nuGet | Microsoft.Web.WebView2 v1.0.705.50"  
 [NuGetGallery1.0.721-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.721-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.721"  
+[NuGetGallery1.0.774.44]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.774.44 "Galería nuGet | Microsoft.Web.WebView2 v1.0.774.44"  
 [NuGetGallery1.0.790-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.790"  
+[NuGetGallery1.0.816-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.816-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.816"  
 
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Anuncio de disponibilidad general de Microsoft Edge WebView2 | Microsoft Edge Blog"  
