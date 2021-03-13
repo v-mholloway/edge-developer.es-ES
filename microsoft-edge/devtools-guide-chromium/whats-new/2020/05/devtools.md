@@ -3,16 +3,16 @@ description: Usa DevTools en el modo de contraste alto de Windows, coincide con 
 title: Novedades de DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 701c328c1dc975a81129049fe2931139757205c3
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3264292721d5e4385b0e6d256d042c76182c21c7
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398577"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408328"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398577"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="whats-new-in-devtools-microsoft-edge-84"></a><span data-ttu-id="4cc06-104">Novedades de DevTools (Microsoft Edge 84)</span><span class="sxs-lookup"><span data-stu-id="4cc06-104">What's new in DevTools (Microsoft Edge 84)</span></span>  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="4cc06-105">Anuncios del equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="4cc06-105">Announcements from the Microsoft Edge DevTools team</span></span>  

@@ -3,16 +3,16 @@ description: Vista 3D, Visual Studio integración con Microsoft Edge y mucho má
 title: Novedades de DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a60be4d55d7f6152ed7ce7afd24049f0f5909a4b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 204a596e2497415eefeeb8aa819106635ff30caa
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398248"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408363"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398248"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="whats-new-in-devtools-microsoft-edge-81"></a><span data-ttu-id="3209f-104">Novedades de DevTools (Microsoft Edge 81)</span><span class="sxs-lookup"><span data-stu-id="3209f-104">What's New In DevTools (Microsoft Edge 81)</span></span>  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="3209f-105">Anuncios del equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="3209f-105">Announcements from the Microsoft Edge DevTools team</span></span>  

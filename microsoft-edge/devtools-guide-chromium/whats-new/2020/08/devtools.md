@@ -3,17 +3,30 @@ description: Combina los métodos abreviados de teclado Visual Studio código, e
 title: Novedades de DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3853f097877fc45b14ceb0674309cb35b58a0aa6
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a981c8b1a2658ba8cf771096e63001f7d6f69616
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398619"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408349"
 ---
+<!-- Copyright Jecelyn Yeen 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 # <a name="whats-new-in-devtools-microsoft-edge-86"></a><span data-ttu-id="81344-104">Novedades de DevTools (Microsoft Edge 86)</span><span class="sxs-lookup"><span data-stu-id="81344-104">What's New In DevTools (Microsoft Edge 86)</span></span>  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="81344-105">Anuncios del equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="81344-105">Announcements from the Microsoft Edge DevTools team</span></span>  
