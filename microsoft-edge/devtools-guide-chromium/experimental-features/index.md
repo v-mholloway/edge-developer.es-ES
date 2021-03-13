@@ -3,16 +3,16 @@ description: Las últimas características experimentales de Microsoft Edge DevT
 title: Características experimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, experiment
-ms.openlocfilehash: b366cfeccafe874bc9e76d3b66659122c5d07c69
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 612b3b83aee1ee9035982e58e008395ec3645b2b
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398682"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408307"
 ---
 # <a name="experimental-features"></a>Características experimentales  
 
@@ -24,10 +24,10 @@ Aunque las características experimentales están disponibles en todos los canal
 
 Para activar las características experimentales \(or off\) en Microsoft Edge, siga estos pasos.  
 
-1.  [Abra DevTools][DevtoolsOpenMain].  
-    *   Seleccione `Control` + `Shift` + `I` \(Windows, Linux\) o `Command` + `Option` + `I` \(macOS\).  Para obtener más información, vaya a [Métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
+1.  [Abra DevTools][DevtoolsOpenIndex].  
+    *   Seleccione `Control` + `Shift` + `I` \(Windows, Linux\) o `Command` + `Option` + `I` \(macOS\).  Para obtener más información, vaya a [Métodos abreviados de teclado de Microsoft Edge DevTools][DevtoolsShortcutsIndex].  
 1.  Abra el [panel][DevToolsCustomizeIndexSettings] Configuración.  
-    *   Seleccione `Shift` + `?` .  Para obtener más información, vaya a [Métodos abreviados de teclado de Microsoft Edge DevTools][DevToolsShortcuts].  
+    *   Seleccione `Shift` + `?` .  Para obtener más información, vaya a [Métodos abreviados de teclado de Microsoft Edge DevTools][DevtoolsShortcutsIndex].  
 1.  En el lado izquierdo del **panel Configuración,** elija la **sección** Experimentos.  
     
     :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="La página Experimentos en Configuración" lightbox="../media/experiments-devtools.msft.png":::
@@ -49,64 +49,11 @@ En las secciones siguientes se describen las nuevas características experimenta
 | [Habilitar webhint](#enable-webhint) | 85 o posterior |  
 | [Habilitar consola de red](#enable-network-console) | 85 o posterior |  
 | [Visor de pedidos de origen](#source-order-viewer) | 86 o posterior |  
-| [Habilitar el editor de métodos abreviados de teclado](#enable-keyboard-shortcut-editor) | 87 o posterior |  
 | [Habilitar capas compuestas en la vista 3D](#enable-composited-layers-in-3d-view) | 87 o posterior |  
 | [Habilitar la nueva herramienta Editor de fuentes en el panel Estilos](#enable-new-font-editor-tool-within-the-styles-pane) | 89 o posterior |  
 | [Habilitar nuevas características de depuración de CSS Flexbox](#enable-new-css-flexbox-debugging-features) | 89 o posterior |  
 | [Habilitar menús de pestañas + botón para abrir más herramientas](#enable--button-tab-menus-to-open-more-tools) | 89 o posterior |  
 | [Pestaña Habilitar bienvenida](#enable-welcome-tool) | 89 o posterior |  
-
-### <a name="enable-new-css-grid-debugging-features"></a>Habilitar nuevas características de depuración de cuadrícula CSS  
-
-Esta característica experimental proporciona una serie de visualizaciones nuevas que le ayudarán a depurar diseños de cuadrícula CSS.  Para obtener una vista previa de las características experimentales más recientes, [habilite este experimento](#turn-on-experimental-features) y vuelva a cargar DevTools.  Este experimento está en la versión 87 o posterior de Microsoft Edge de forma predeterminada.  
-
-#### <a name="viewing-on-hover-grid-overlays-with-the-inspect-tool"></a>Visualización de superposiciones de cuadrícula activa con la herramienta Inspeccionar  
-
-La **herramienta Inspeccionar** proporciona una forma rápida de identificar y visualizar diseños de cuadrícula CSS en un sitio web al pasar el puntero sobre ellos con el mouse.  Elija el **icono Inspeccionar** \( Inspeccionar \) en la esquina superior izquierda ![ de ](../media/inspect-icon.msft.png) DevTools.  A continuación, mantenga el `Grid` mouse en un elemento de la página web que está depurando.  Los contornos se muestran alrededor de la cuadrícula y el sombreado indica la ubicación de los espacios de cuadrícula si están presentes.  
-
-:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Visualización de cuadrículas con la herramienta Inspeccionar" lightbox="../media/grid-inspect.msft.png":::
-   Visualización de cuadrículas con la **herramienta Inspeccionar**  
-:::image-end:::  
-
-#### <a name="viewing-persistent-grid-overlays"></a>Visualización de superposiciones de cuadrícula persistentes  
-
-En Microsoft Edge versión 86 o posterior, la característica de cuadrícula CSS experimental también ofrece la opción de habilitar las superposiciones de cuadrícula persistentes.  Las superposiciones persistentes proporcionan varias ventajas.  
-
-*   Las superposiciones persistentes permanecen visibles en la página a medida que se desplaza, mueve el mouse y usa otras características de DevTools.  
-*   Varias superposiciones persistentes pueden estar activadas al mismo tiempo, lo que te permite revisar varios diseños de cuadrícula a la vez.  
-*   Las superposiciones persistentes ofrecen muchas opciones de configuración, como ocultar o mostrar nombres en el área de cuadrícula, espacios de cuadrícula, tamaños de pista, y así sucesivamente.  
-    
-Las dos formas de alternar una superposición de cuadrícula persistente.  
-
-*   Elija el **icono** óvalo Cuadrícula junto a cualquier elemento Grid que se muestra en el árbol DOM de la **herramienta** Elementos.  
-    
-    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Icono ovalado de cuadrícula en la herramienta Elementos" lightbox="../media/grid-adorner.msft.png":::
-       Icono ovalado de cuadrícula en **la herramienta** Elementos  
-    :::image-end:::  
-    
-*   Abra el nuevo panel **Diseño** ubicado en la herramienta Elementos y seleccione la casilla situada junto a cada elemento Grid que desee resaltar.  
-    
-    :::image type="complex" source="../media/grid-layout-zoom.msft.png" alt-text="Panel Diseño en DevTools" lightbox="../media/grid-layout-zoom.msft.png":::
-       **Panel Diseño** en DevTools  
-    :::image-end:::  
-    
-#### <a name="configuring-persistent-overlays"></a>Configuración de superposiciones persistentes  
-
-En Microsoft Edge versión 86 o posterior, el **nuevo** panel Diseño se encuentra en la herramienta **Elementos** junto con los paneles **Estilos** **y Calculados.**  El panel **Diseño** muestra las opciones de configuración de las superposiciones persistentes.  
-
-:::image type="complex" source="../media/experiments-grid.msft.png" alt-text="Característica de depuración de cuadrícula CSS" lightbox="../media/experiments-grid.msft.png":::
-   Característica de depuración de cuadrícula CSS  
-:::image-end:::  
-
-### <a name="enable-support-to-move-tabs-between-panels"></a>Habilitar la compatibilidad para mover pestañas entre paneles  
-
-Normalmente, herramientas como **** Elementos **y** Red solo se pueden abrir en el panel principal que se encuentra en la parte superior de DevTools.  Herramientas como **vista 3D** y problemas que normalmente solo se abren en el panel **** **DevTools** que se encuentra en la parte inferior.  Después de elegir el experimento, puede mover herramientas entre los paneles superior e inferior.  Para mover una herramienta, mantenga el mouse en la pestaña, abra el menú contextual \(hacer clic con el botón secundario\) y elija Mover a la parte superior **o** Mover a la **parte inferior**.   Este experimento le permite personalizar el diseño de DevTools.  Para mostrar u ocultar el panel **De cajón,** seleccione `Escape` .  
-
-:::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Mover herramientas entre paneles" lightbox="../media/experiments-move-panels.msft.png":::
-   Mover herramientas entre paneles  
-:::image-end:::  
-
-<!--Available in Microsoft Edge version 85 and later.  -->  
 
 ### <a name="enable-webhint"></a>Habilitar webhint  
 
@@ -119,7 +66,7 @@ Normalmente, herramientas como **** Elementos **y** Red solo se pueden abrir en 
 *   Aplicaciones web progresivas (PWA)  
 *   otros problemas comunes de desarrollo web  
     
-El [experimento webhint][WebhintMain] muestra los comentarios de webhint en el panel [Problemas.][DevtoolsIssues]  Elija un problema para mostrar la documentación de la solución y una lista de los recursos afectados en su sitio web.  Elija un vínculo de recurso para abrir el panel **Network**, **Sources**o **Elements** relevante en DevTools.  
+El [experimento webhint][WebhintMain] muestra los comentarios de webhint en el panel [Problemas.][DevtoolsIssuesIndex]  Elija un problema para mostrar la documentación de la solución y una lista de los recursos afectados en su sitio web.  Elija un vínculo de recurso para abrir el panel **Network**, **Sources**o **Elements** relevante en DevTools.  
 
 :::image type="complex" source="../media/experiments-webhint.msft.png" alt-text="comentarios de webhint en el panel Problemas" lightbox="../media/experiments-webhint.msft.png":::
    comentarios de webhint en el panel **Problemas**  
@@ -161,44 +108,6 @@ Después de activar el experimento, asegúrese de reiniciar DevTools.  Para usar
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
-
-### <a name="enable-keyboard-shortcut-editor"></a>Habilitar el editor de métodos abreviados de teclado
-
-Con el **experimento Habilitar editor de métodos** abreviados de teclado activado, puedes personalizar los métodos abreviados de teclado para cualquier acción en DevTools.  Para personalizar el método abreviado de teclado de una acción específica, siga estos pasos.  
-
-1.  [Abra DevTools][DevtoolsOpenMain].  
-1.  Abra [Configuración][DevToolsCustomizeIndexSettings].  
-    *   Seleccione `Shift` + `?` .  
-1.  Vaya a la **página Accesos directos.**  
-1.  Elija la acción que desea personalizar.  
-1.  Elija el **icono Editar** \( ![ EditKeyboardShortcut ](../media/edit-keyboard-shortcut-icon.msft.png) \).  
-    
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Elija la acción que desea personalizar en la página Accesos directos de Configuración" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
-       Elija la acción que desea personalizar en la página **Accesos directos** de [Configuración][DevToolsCustomizeIndexSettings]  
-    :::image-end:::  
-    
-1.  En el teclado, seleccione las teclas que se enlazarán a la acción.  
-    
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Elija las claves que desea asignar a la acción" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Elija las claves que desea asignar a la acción  
-    :::image-end:::  
-    
-1.  Para guardar el nuevo método abreviado de teclado, elija la marca de verificación \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) icono.  
-    
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Elija el icono de marca de verificación para guardar el nuevo método abreviado de teclado" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Elija el icono de marca de verificación para guardar el nuevo método abreviado de teclado  
-    :::image-end:::  
-    
-1.  Seleccione el nuevo método abreviado de teclado para desencadenar la acción en DevTools.  
-    
-En la **página Accesos directos,** el icono **Método** abreviado de teclado personalizado \( ![ CustomKeyboardShortcut \) muestra los ](../media/custom-keyboard-shortcut-icon.msft.png) métodos abreviados de teclado personalizados.  Para restablecer todos los accesos directos, elija **Restaurar métodos abreviados predeterminados.**  
-
-Para descartar los cambios mientras edita los métodos abreviados de teclado para una acción, elija el icono X \( ![ XKeyboardShortcut ](../media/discard-changes-keyboard-shortcut-icon.msft.png) \).  Para quitar accesos directos para una acción específica, elija el icono Eliminar **acceso directo** \( ![ DeleteKeyboardShortcut ](../media/delete-keyboard-shortcut-icon.msft.png) \).  Para agregar varios métodos abreviados para una acción, elija **Agregar un acceso directo.**  
-
-> [!NOTE]
-> Si un método abreviado de teclado está asignado actualmente a otra acción, es posible que no lo guarde para una nueva acción.  Primero debe eliminar el método abreviado de teclado de la acción anterior y, a continuación, agregarlo a la nueva acción.  
-
-<!--Available in Microsoft Edge version 87 and later.  -->  
 
 ### <a name="enable-composited-layers-in-3d-view"></a>Habilitar capas compuestas en la vista 3D  
 
@@ -310,10 +219,12 @@ Si prefiere la herramienta **novedades** original, [][DevtoolsCustomizeIndexSett
 ## <a name="previous-experimental-features"></a>Características experimentales anteriores  
 
 *   [La vista 3D][Devtools3dViewIndex] ya está disponible y activada de forma predeterminada en Microsoft Edge versión 83 o posterior.  
-*   [Activar la compatibilidad para mover pestañas][DevtoolsMoveTabs] entre paneles ya está disponible y activada de forma predeterminada en Microsoft Edge versión 85 o posterior.  
-*   [Personalizar métodos abreviados de][DevtoolsCustomKeyboardShortcuts] teclado ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 86 o posterior.  
-*   [Emulación: el modo de pantalla dual ya][DevtoolsDeviceModeDualScreenAndFoldables] está disponible y activado de forma predeterminada en Microsoft Edge versión 89 o posterior.  
+*   [Activar la compatibilidad para mover pestañas][DevtoolsCustomizeIndex] entre paneles ya está disponible y activada de forma predeterminada en Microsoft Edge versión 85 o posterior.  
+*   [Hacer coincidir los métodos abreviados][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] de teclado en DevTools con Microsoft Visual Studio Code ya está disponible y activado de forma predeterminada en Microsoft Edge versión 86 o posterior.  
+*   [Editar métodos abreviados de][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] teclado para cualquier acción en DevTools ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 89 o posterior.  
 *   [Activar nuevas características de depuración de][DevtoolsCssGrid] cuadrícula CSS ahora está disponible y activada de forma predeterminada en Microsoft Edge versión 89 o posterior.  
+*   [Emulación: el modo de pantalla dual ya][DevtoolsDeviceModeDualScreenAndFoldables] está disponible y activado de forma predeterminada en Microsoft Edge versión 90 o posterior.  
+
     
 ## <a name="providing-feedback-on-experimental-features"></a>Proporcionar comentarios sobre características experimentales  
 
@@ -336,33 +247,18 @@ Para proporcionar comentarios sobre los experimentos de Microsoft Edge DevTools 
 
 [Devtools3dViewIndex]: ../3d-view/index.md "Vista 3D | Microsoft Docs"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspeccionar CSS Grid en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsMoveTabs]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndex]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edite los métodos abreviados de teclado para cualquier acción en el archivo DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Coincidencia de métodos abreviados de teclado en devTools a Microsoft Visual Studio código | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simular dispositivos móviles con modo de dispositivo en Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar estilos y configuraciones de fuentes CSS en el panel Estilos de DevTools | Microsoft Docs"  
-[DevtoolsIssues]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsShortcuts]: ../shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Personalización de métodos abreviados de teclado en las herramientas de desarrollo de Microsoft Edge | Microsoft Docs"  
-[DevtoolsOpenMain]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpenIndex]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  
 
-[DualScreenWebIndex]: /dual-screen/web/index "Experiencias web de pantalla doble | Microsoft Docs"  
-[DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Obtener el emulador de Surface Duo | Microsoft Docs"  
-[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Cómo trabajar con la costura: introducción a los dispositivos de pantalla doble | Microsoft Docs"  
-[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Usa el emulador de Surface Duo | Microsoft Docs"  
-[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "Característica de pantalla de medios CSS para la detección de pantalla doble | Microsoft Docs"  
-[DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "La API de JavaScript getWindowSegments para dispositivos de pantalla doble | Microsoft Docs"  
+[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
 
-[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Clientes de Escritorio remoto | Microsoft Docs"
-
-[MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
-
-[SurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "Surface Duo | Microsoft Surface"  
-
-[AndroidDeveloperStudio]: https://developer.android.com/studio/ "Android Studio"  
-
-[GooglePlayMicrosoftEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge | Google Play"  
-
-[SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "Galaxy Fold | Samsung"  
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emular dispositivos de pantalla doble y plegables en Microsoft Edge DevTools | Microsoft Docs"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  

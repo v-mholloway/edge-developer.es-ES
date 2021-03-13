@@ -3,17 +3,17 @@ description: Conozca las herramientas para desarrolladores de Microsoft Edge (Ch
 title: Herramientas para desarrolladores de Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: fa407393f8ecb79a3382294742bf9061787ec04a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 29ded7376ab1788998acf059c6677916a52d5d15
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397709"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408279"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Introducción a Microsoft Edge (Chromium) Developer Tools  
 
@@ -140,7 +140,7 @@ Si quieres obtener una vista previa de las características más recientes que l
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools para principiantes: Introducción a HTML y dom | Microsoft Docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Novedades de Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2021/02/devtools "Novedades de Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocolo DevTools de Microsoft Edge (Chromium) | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos de Microsoft Edge"  
