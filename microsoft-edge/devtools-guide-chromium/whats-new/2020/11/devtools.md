@@ -3,16 +3,17 @@ description: Microsoft Edge en Linux, sugerencias de webhint mejoradas en la her
 title: Novedades de DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6a36029aa97604b6aea20f232d329ce3805a3144
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408370"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439278"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -113,7 +114,7 @@ En el panel **Estilos**, [las variables CSS][MdnUsingCssCustomProperties] ahora 
 
 Las siguientes características nuevas de las herramientas [Redes](#network-tool), [Aplicaciones](#application-tool) y [Fuentes](#sources-tool) le ayudan a crear su [PWA][ProgressiveWebAppsIndex].  Use las siguientes características cuando tenga dificultades para depurar el trabajo del servicio.  
 
-El enrutamiento de solicitudes muestra los eventos `startup` y `fetch` en función de las solicitudes de red que se ejecutan a través de los trabajos de servicio.  Se obtiene acceso a las escalas de tiempo desde la herramienta **Aplicación** o **Red**.  Las escalas de tiempo te ayudan cuando tienes problemas con los trabajadores del servicio y quieres mostrar si hay algún problema con el `startup` evento `fetch` o.  
+El enrutamiento de solicitudes muestra los eventos `startup` y `fetch` en función de las solicitudes de red que se ejecutan a través de los trabajos de servicio.  Se obtiene acceso a las escalas de tiempo desde la herramienta **Aplicación** o **Red**.  Las escalas de tiempo te ayudan cuando tienes problemas con los trabajadores del servicio y quieres mostrar si hay algún problema con el `startup` o `fetch` evento.  
 
 ### <a name="application-tool"></a>Herramienta Aplicación  
 
