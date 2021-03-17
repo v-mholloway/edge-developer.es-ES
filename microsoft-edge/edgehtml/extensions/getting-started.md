@@ -1,92 +1,92 @@
 ---
-description: Obtén un resumen de la visión general del camino desde el principio del desarrollo hasta el empaquetado de las extensiones de Microsoft Edge.
-title: Extensiones-introducción
+description: Obtenga información general de un extremo a otro del recorrido desde el inicio del desarrollo hasta el empaquetado de extensiones de Microsoft Edge.
+title: 'Extensiones: introducción'
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge, desarrollo web, HTML, CSS, JavaScript, desarrollador, extensiones
-ms.date: 12/02/2020
+keywords: edge, web development, html, css, javascript, developer, extensions
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: f06762692c451ea89b74fdf6f9959172c69a32ca
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 52d0aa5c1968518194a4e3b90cb0cc876d0c7f86
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11236556"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439720"
 ---
-# Introducción a las extensiones  
+# <a name="getting-started-with-extensions"></a>Introducción a las extensiones  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
-Tanto si es un nuevo desarrollador que desea familiarizarse con las extensiones como si es un veterano experto con una extensión Chrome que le gustaría trasladar, esta guía contiene toda la información que necesita para desarrollar, probar, empaquetar y publicar una extensión para Microsoft Edge. 
+Ya seas un desarrollador nuevo que quiera familiarizarte con las extensiones o un veterano experimentado con una extensión de Chrome que quieras portabilidad, esta guía contiene toda la información que necesitas para desarrollar, probar, empaquetar y publicar una extensión para Microsoft Edge. 
 
-## Desarrollar una extensión
+## <a name="developing-an-extension"></a>Desarrollo de una extensión
 
-El primer paso de este viaje es crear una extensión de Microsoft Edge: 
-- ¿Es nuevo en las extensiones? Consulta nuestra [Guía sobre cómo crear extensiones](./guides/creating-an-extension.md) para obtener más información sobre cómo crear tu primera extensión de explorador. 
-- ¿Ya estás familiarizado con las API de extensión? Consulte nuestra [documentación de soporte de API](./api-support.md) para obtener la información más reciente sobre las API que se admiten/en desarrollo. 
-- ¿Tienes una extensión Chrome que deseas trasladar a Microsoft Edge? Prueba el [Kit de herramientas de Microsoft Edge Extension](./guides/porting-chrome-extensions.md).
+El primer paso de este recorrido es crear una extensión de Microsoft Edge: 
+- ¿Es nuevo en las extensiones? Consulte nuestra [guía sobre cómo crear extensiones para](./guides/creating-an-extension.md) obtener información sobre cómo crear la primera extensión del explorador. 
+- ¿Ya está familiarizado con las API de extensión? Consulte nuestra [documentación de soporte técnico de api](./api-support.md) para obtener la información más reciente sobre qué API son compatibles o en desarrollo. 
+- ¿Tiene una extensión de Chrome que desea portabilidad a Microsoft Edge? Pruebe el Kit [de herramientas de extensión de Microsoft Edge](./guides/porting-chrome-extensions.md)!
 
-## Carga y depuración
+## <a name="loading-and-debugging"></a>Carga y depuración
 
-Una vez que tenga una extensión que funcione en Microsoft Edge, querrá cargarla para verla en acción. El primer paso para hacerlo es asegurarse de tener [habilitadas las características para desarrolladores de extensiones](./guides/adding-and-removing-extensions.md). Esto le permitirá cargar archivos de extensión en Microsoft Edge para poder probar la extensión mientras la desarrolla. Si tiene algún problema, las herramientas de desarrollo F12 le permiten [depurar los distintos contextos de la extensión](./guides/debugging-extensions.md) para determinar exactamente lo que ocurre. ¿Aún está teniendo problemas? Nuestra [Guía de solución de problemas](./troubleshooting.md) tiene soluciones a varias trampas comunes. 
+Una vez que tenga una extensión que funcione en Microsoft Edge, querrá cargarla de forma lateral para verla en acción. El primer paso para hacerlo es asegurarse de que tiene habilitadas las características de [desarrollador de extensión](./guides/adding-and-removing-extensions.md). Esto te permitirá cargar archivos de extensión de lado en Microsoft Edge para que puedas probar la extensión mientras la desarrollas. Si se encuentra con algún problema, las herramientas para desarrolladores de F12 le permiten depurar los [distintos contextos](./guides/debugging-extensions.md) de la extensión para determinar exactamente lo que está sucediendo. ¿Sigues teniendo problemas? Nuestra [guía de solución de problemas](./troubleshooting.md) tiene soluciones para varias gotchas comunes. 
 
-## Notificar errores y obtener ayuda
+## <a name="reporting-bugs-and-getting-help"></a>Informar de errores y obtener ayuda
 
-¿Crees que has encontrado un error en nuestra plataforma de extensiones? Si el problema es específico de Microsoft Edge, búscalo en nuestro [Microsoft Edge Issue Tracker](https://developer.microsoft.com/microsoft-edge/platform/issues/) para ver si ya se ha notificado. Si es así, ¡ genial! Puedes pulsar el botón "me me gustaría" para votar sobre el error y el botón "ver este problema de actualizaciones" para recibir una alerta de cualquier cambio en el problema. Si no encuentra el problema que está ejecutando, no dude en abrir un nuevo problema y proporcionar la mayor cantidad de información posible para que nuestros programadores puedan encontrarla. 
+¿Crees que has encontrado un error en nuestra plataforma de extensiones? Si el problema es específico de Microsoft Edge, buscalo en nuestro Rastreador de problemas de [Microsoft Edge](https://developer.microsoft.com/microsoft-edge/platform/issues/) para ver si ya se ha notificado. Si lo ha hecho, ¡genial! Puedes presionar el botón "+ Yo también" para invocar el error y el botón "Ver este problema para actualizaciones" para recibir una alerta sobre cualquier cambio en el problema. Si no encuentra el problema en el que se encuentra, no dude en abrir un nuevo problema y proporcionar tanta información como sea posible para que nuestros desarrolladores puedan buscarlo. 
 
-¿Falta una API que su extensión necesite que funcione correctamente? Si es así, [siempre estamos escuchando en UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). No dudes en votar en tu API si ya existe, o en crear un nuevo elemento de comentarios para que otros desarrolladores también puedan votar. 
+<!--Are we missing an API that your extension needs to work properly? If so, [we're always listening on UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too! -->  
 
-¿Tiene alguna pregunta en la que no encuentre una respuesta en la documentación? Le recomendamos encarecidamente que se una a la [comunidad de las extensiones de Microsoft Edge](https://stackoverflow.com/questions/tagged/microsoft-edge-extension) sobre el desbordamiento de pila.
+¿Tiene una pregunta a la que no puede encontrar una respuesta en la documentación? Te recomendamos encarecidamente que te unas a la comunidad de extensiones de [Microsoft Edge](https://stackoverflow.com/questions/tagged/microsoft-edge-extension) en Stack Overflow y pregúntele allí.
 
-## Probar la extensión
+## <a name="testing-your-extension"></a>Probar la extensión
 
-A partir de la actualización de aniversario de Windows, [Microsoft Webdriver](../webdriver/index.md) admite la carga automatizada de extensiones en sesiones de Microsoft Edge. Esto le permitirá escribir pruebas sencillas para asegurarse de que todas las extensiones que se destinan a modificar una página lo hagan de la manera esperada. Puede encontrar más información sobre cómo hacerlo en nuestra [Guía de pruebas](./guides/packaging/creating-and-testing-extension-packages.md#automated-testing-with-webdriver). Además, Manténgase atento a las actualizaciones mientras planeamos agregar más características específicas de extensión a Microsoft WebDrive en el futuro.
+Desde Windows Anniversary Update, [Microsoft WebDriver](../webdriver/index.md) admite la carga lateral automatizada de extensiones en sesiones de Microsoft Edge. Esto le permitirá escribir pruebas sencillas para asegurarse de que cualquier extensión destinada a modificar una página lo haga de la manera esperada. Puedes encontrar más información sobre cómo hacerlo en nuestra guía [de pruebas.](./guides/packaging/creating-and-testing-extension-packages.md#automated-testing-with-webdriver) Además, mantente atento a las actualizaciones mientras planeamos agregar más características específicas de extensión a Microsoft WebDriver en el futuro.
 
-## Agregar los toques finales
+## <a name="adding-the-final-touches"></a>Agregar los toques finales
 
-Para que tu extensión funcione en Microsoft Edge. ¿Qué ocurre a continuación? Antes de continuar empaquetando su extensión, le recomendamos encarecidamente que consulte estas guías para asegurarse de que su extensión siga nuestras políticas de mejores prácticas: 
-- Asegúrese de que los iconos de extensión sean [correctos](./guides/design.md) y sean [accesibles](./guides/accessibility.md) (es decir, que sean visibles tanto en los temas claros como oscuros de Microsoft Edge, así como en el modo contraste alto). 
-- Si tu extensión debe admitir varios idiomas, asegúrate de haber sacado un vistazo a nuestra guía de [internacionalización](./guides/internationalization.md). 
+Por lo tanto, la extensión funciona en Microsoft Edge. ¿Qué sucede a continuación? Antes de continuar empaquetando la extensión, le recomendamos encarecidamente que consulte estas guías para asegurarse de que la extensión siga nuestras directivas de procedimiento recomendado: 
+- Asegúrate de que [](./guides/design.md) los iconos de extensión tienen el tamaño y el acceso [correctos](./guides/accessibility.md) (lo que significa que están visibles en los temas claros y oscuros de Microsoft Edge, así como en el modo de contraste alto). 
+- Si la extensión necesita admitir varios idiomas, asegúrese de que ha hecho un vistazo a nuestra guía [de internacionalización](./guides/internationalization.md). 
 
-## Empaquetar una extensión
+## <a name="packaging-an-extension"></a>Empaquetar una extensión
 
-Ahora tu extensión se ha acabado y está lista para ser embalada. Si desea empaquetarlo para prepararse para el envío a Microsoft Store o para que sea más fácil de distribuir dentro de los equipos de desarrollo/pruebas, hay muchos recursos disponibles para ayudarle: 
+Ahora, la extensión finalmente se pule y está lista para empaquetarse. Tanto si quieres empaquetar para preparar el envío a Microsoft Store como para facilitar la distribución en los equipos de desarrollo y pruebas, hay muchos recursos disponibles para ayudarte: 
 
-- Nuestra solución recomendada para crear un paquete de extensión es seguir nuestra [Guía de presentación de ManifoldJS](./guides/packaging/using-manifoldjs-to-package-extensions.md) que te guiará por los pasos de usar una herramienta basada en Node.js para empaquetar fácilmente tu extensión, independientemente de la plataforma en la que desarrolles. Si desea un aspecto más manual y exhaustivo de nuestro formato de empaquetado de extensiones, consulte nuestra [Guía de creación de paquetes de appx](./guides/packaging/creating-and-testing-extension-packages.md#preparing-the-submission-folder). 
-- Si su extensión es compatible con varios idiomas, también tendrá que seguir nuestra guía sobre la [localización de paquetes de extensión](./guides/packaging/localizing-extension-packages.md) para que los idiomas que tiene en su extensión se registren correctamente después del embalaje. 
+- Nuestra solución recomendada para crear un paquete de extensión es seguir nuestra guía de empaquetado [manifoldJS](./guides/packaging/using-manifoldjs-to-package-extensions.md) que le guiará a través de los pasos del uso de una herramienta basada en Node.js para empaquetar fácilmente la extensión independientemente de la plataforma en la que desarrolle. Si desea obtener una mirada más detallada y manual a nuestro formato de empaquetado de extensiones, consulte nuestra guía de creación [de paquetes AppX](./guides/packaging/creating-and-testing-extension-packages.md#preparing-the-submission-folder). 
+- Si la extensión admite varios idiomas, también tendrás [](./guides/packaging/localizing-extension-packages.md) que seguir nuestra guía sobre la localización de paquetes de extensión para que los idiomas que tienes en la extensión se registren correctamente después del empaquetado. 
 
-Si es un cliente empresarial y quiere distribuir sus extensiones empaquetadas a través de canales internos, consulte nuestra [Guía de extensiones para empresas](./extensions-for-enterprise.md) para ver cómo hacerlo.  
+Si es un cliente de empresa que busca distribuir las extensiones [](./extensions-for-enterprise.md) empaquetadas a través de canales internos, consulte nuestra guía de extensiones para empresas para ver cómo hacerlo.  
 
-## Publicar en Microsoft Store
+## <a name="publishing-to-the-microsoft-store"></a>Publicación en Microsoft Store
 
-Debido a que nuestra plataforma de extensiones aún está en sus incaracterísticas, hacemos para administrar los envíos de extensiones a Microsoft Store de modo que podamos centrarnos en ofrecer una experiencia de calidad para nuestros usuarios y programadores. Como se dice, queremos que sea lo más fácil posible para los desarrolladores publicar sus extensiones. Como resultado, recientemente hemos iniciado un nuevo formulario de [envío de extensión](https://aka.ms/extension-request) en el que los desarrolladores pueden solicitar permiso para enviar su appx de extensión a Microsoft Store.
+Dado que nuestra plataforma de extensiones aún está en sus inicios, estamos administrando específicamente envíos de extensiones a Microsoft Store para que podamos centrarnos en ofrecer una experiencia de calidad para nuestros usuarios y desarrolladores. Dicho esto, queremos que sea lo más fácil posible que los desarrolladores publiquen sus extensiones. Como resultado, hemos iniciado recientemente [](https://aka.ms/extension-request) un nuevo formulario de envío de extensión donde los desarrolladores pueden solicitar permiso para enviar su extensión AppX a Microsoft Store.
  
-El primer paso del proceso de publicación es asegurarse de que la extensión se ajuste a nuestra **Directiva de extensión del explorador** , así como a la [sección de las extensiones de Microsoft Edge de las directivas de Microsoft Store](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).  
+El primer paso del proceso de publicación es asegurarse **** de que la extensión se ajusta a nuestra directiva de extensión del explorador, así como a la sección extensiones de Microsoft Edge de las directivas [de Microsoft Store](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).  
 
 <!--  The first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Microsoft Edge extensions section of the Microsoft Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).  -->  
 
-Una vez que haya confirmado que su extensión sigue las directivas, tendrá que registrarse para obtener una [cuenta de Desarrollador en el centro de Partners y reservar el nombre de la extensión](./guides/packaging/extensions-in-the-windows-dev-center.md). A continuación, deberá enviar una solicitud a través de nuestro [formulario de envío de extensiones](https://aka.ms/extension-request) para solicitar permiso para publicar en Microsoft Store. Si intentas enviar tu AppX de extensión sin obtener primero el permiso, recibirás el siguiente error:
+Una vez que hayas confirmado que la extensión sigue las directivas, deberás registrarte para una cuenta de desarrollador en el Centro de partners y reservar el nombre [de la extensión](./guides/packaging/extensions-in-the-windows-dev-center.md). A continuación, tendrás que enviar [](https://aka.ms/extension-request) una solicitud a través de nuestro formulario de envío de extensión para solicitar permiso para publicar en Microsoft Store. Si intenta enviar la extensión AppX sin obtener primero permiso, recibirá el siguiente error:
 
 ```text
 Package acceptance validation error: com.microsoft.edge.extension is a reserved extension type. Your app does not have permission to use this extension type.
 ```  
 
-Una vez que hayas enviado una solicitud, recibiremos una notificación y te intentaremos llegar a tu envío tan pronto como sea posible. Esto puede demorar un poco por el gran volumen de entregas que hemos recibido, pero le enviaremos un mensaje por correo electrónico en el momento en que se le apruebe. Una vez que hayas recibido el mensaje de correo electrónico, podrás enviar tu AppX de extensión a la tienda de Microsoft a través del centro de Partners. Ten en cuenta que no es necesario que firmes tu AppX antes de enviarlo; el proceso de recopilación de Microsoft Store se encargará de hacerlo.
+Una vez que haya enviado una solicitud, recibiremos una notificación e intentaremos llegar a su envío tan pronto como sea posible. Esto puede tardar un poco debido al gran volumen de envíos que hemos recibido, pero le notificaremos por correo electrónico en el momento en que se apruebe. Una vez que hayas recibido el correo, podrás enviar la extensión AppX a Microsoft Store a través del Centro de partners. Ten en cuenta que no tienes que firmar tu AppX antes de enviarlo; el proceso de ingesta de Microsoft Store se ocupará de eso por ti.
  
 > [!NOTE]
-> El proceso de publicación de una extensión en Microsoft Store (ya sea una extensión completamente nueva o una actualización a una existente) puede tardar hasta 72 horas en completarse. Para agilizar este proceso, asegúrese de haber verificado estas trampas comunes antes de enviarlas para evitar tener que volver a enviar más tarde: 
-> - Las capturas de pantallas tienen el tamaño correcto y se ejecutan en Microsoft Edge 
-> - La descripción de la extensión hace referencia a "Microsoft Edge" en lugar de "Edge" (este es un requisito legal). 
-> - El icono de 150x150 en el paquete de extensión no [tiene un fondo transparente](./guides/design.md#microsoft-store-icon) (el cliente de Microsoft Store no representa correctamente imágenes con fondos transparentes) 
+> El proceso para publicar una extensión en Microsoft Store (ya sea una extensión nueva o una actualización de una existente) puede tardar hasta 72 horas en completarse. Para acelerar este proceso, asegúrese de que ha comprobado estos gotchas comunes antes de enviarlos para evitar tener que volver a enviar más tarde: 
+> - Las capturas de pantalla tienen el tamaño correcto y son de la extensión que se ejecuta en Microsoft Edge 
+> - La descripción de la extensión hace referencia a "Microsoft Edge" en lugar de "Edge" (este es un requisito legal) 
+> - El icono de 150 x 150 del paquete de extensión no tiene un fondo transparente [(el](./guides/design.md#microsoft-store-icon) cliente de Microsoft Store no representa correctamente imágenes con fondos transparentes) 
 
-Además de lo anterior, y si corresponde, asegúrese de que la información de disponibilidad de la plataforma de su sitio web mencione correctamente la disponibilidad de su extensión en Microsoft Edge. Aunque Microsoft Store no permite instalaciones de extensión en línea con un solo clic, puede [vincular en profundidad con su extensión en Microsoft Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-microsoft-store) para que los usuarios puedan adquirirla fácilmente. 
+Además de lo anterior y, si procede, asegúrese de que cualquier información de disponibilidad de la plataforma en su sitio web mencione correctamente la disponibilidad de la extensión en Microsoft Edge. Aunque la Microsoft Store no permite instalar extensiones en línea con un solo clic, puedes vincularla profundamente a la extensión en [la Microsoft Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-microsoft-store) para facilitar que los usuarios puedan adquirirla. 
 
-Microsoft Store también le permite [controlar la visibilidad de su extensión](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) en el catálogo de Microsoft Store. Algunos de nuestros socios han sacado provecho de esta funcionalidad para lograr lo siguiente: 
+La Microsoft Store también te permite [controlar la visibilidad de tu extensión en](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) el catálogo de Microsoft Store. Algunos de nuestros partners han aprovechado esta funcionalidad para lograr lo siguiente: 
 - Publicar una segunda versión beta de su extensión como oculta en Microsoft Store.
-- Inicialmente, publicar su extensión como oculta para supervisar la telemetría inicial antes de cambiar su estado a visible una vez que se alcanza un cierto nivel de confianza.
+- Inicialmente publicar su extensión como oculta para supervisar la telemetría inicial antes de cambiar finalmente su estado a visible una vez que se alcanza un cierto nivel de confianza.
 
-## Eso es todo.
+## <a name="thats-it"></a>Eso es todo.
 
-Si has llegado al final de esta guía, has completado el proceso de desarrollo de una extensión para Microsoft Edge. Asegúrese de consultar nuestra página de [sugerencias y trucos](./tips-and-tricks.md) para obtener ideas sobre cómo promocionar su extensión e interactuar con sus usuarios.
+Si has llegado a la parte inferior de esta guía, has completado el proceso de desarrollo de una extensión para Microsoft Edge. Asegúrate de consultar nuestra página de [sugerencias y](./tips-and-tricks.md) trucos para obtener ideas sobre cómo comercializar tu extensión e interactuar con los usuarios.

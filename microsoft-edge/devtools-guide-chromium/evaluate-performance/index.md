@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo evaluar el rendimiento del tiempo 
 title: Introducción al análisis del rendimiento en tiempo de ejecución
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 074c112b99abb4689cac2274338f2276bc46b4ae
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398724"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439615"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -65,8 +65,8 @@ En el siguiente tutorial, abra DevTools en una página en directo y use el **pan
 Los dispositivos móviles tienen mucha menos potencia de CPU que los equipos de escritorio y portátiles.  Siempre que perfiles una página, usa la limitación de CPU para simular el rendimiento de la página en dispositivos móviles.  
 
 1.  En DevTools, elija la **herramienta** Rendimiento.  
-1.  Asegúrese de que la casilla **Capturas de pantalla** está habilitada.  
-1.  Elija **Configuración de captura** \(![ Configuración de captura][ImageCaptureSettingsIcon]\).  DevTools muestra la configuración relacionada con la forma en que captura las métricas de rendimiento.  
+1.  Asegúrate de elegir la casilla situada junto a **Capturas de pantalla.**  
+1.  Elija **Configuración de captura** \( Configuración de captura ![ ](../media/capture-settings-icon.msft.png) \).  DevTools muestra la configuración relacionada con la forma en que captura las métricas de rendimiento.  
 1.  Para **CPU,** elija **4x slowdown**.  DevTools limita la CPU para que sea 4 veces más lenta de lo habitual.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="Limitación de CPU" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -93,7 +93,7 @@ Es difícil crear una demostración de rendimiento en tiempo de ejecución que f
 
 Cuando se ejecutó la versión optimizada de la página, los iconos azules se mueven más rápido.  ¿Por qué?  Se supone que ambas versiones mueven los iconos la misma cantidad de espacio en la misma cantidad de tiempo.  Haga una grabación en el panel Rendimiento para obtener información sobre cómo detectar el cuello de botella de rendimiento en la versión no optimizada.  
 
-1.  En DevTools, elija **Record** \(![ Record][ImageRecordIcon]\).  DevTools captura métricas de rendimiento a medida que se ejecuta la página.  
+1.  En DevTools, elija **Record** \( ![ Record ](../media/record-icon.msft.png) \).  DevTools captura métricas de rendimiento a medida que se ejecuta la página.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Perfil de la página" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        Perfil de la página  
@@ -148,7 +148,7 @@ Otra herramienta práctica es el medidor fps, que proporciona estimaciones en ti
 
 1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
 1.  Empiece a `Rendering` escribir en el menú **comando** y elija **Mostrar representación**.  
-1.  En la **herramienta De representación,** habilite **Fps Meter**.  Aparece una nueva superposición en la parte superior derecha de la ventanilla.  
+1.  En la **herramienta De** representación, active **Fps Meter**.  Aparece una nueva superposición en la parte superior derecha de la ventanilla.  
     
     :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="El medidor fps" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        El **medidor fps**  
@@ -184,7 +184,7 @@ Después de medir y comprobar que la animación no funciona bien, el siguiente p
     1.  Céntrate en el triángulo rojo de la parte superior derecha del evento Fotograma de animación **desencadenado.**  Cada vez que se muestra un triángulo rojo, es una advertencia de que puede haber un problema relacionado con el evento.  
     
     > [!NOTE]
-    > El **evento Animation Frame Fired** se produce siempre que se ejecuta una [ `requestAnimationFrame()` devolución][MDNWebRequestAnimationFrame] de llamada.  
+    > El **evento Animation Frame Fired** se produce siempre que se ejecuta una devolución de llamada [requestAnimationFrame().][MDNWebRequestAnimationFrame]  
     
 1.  Elija el **evento Fotograma de** animación desencadenado.  El **panel Resumen** ahora muestra información sobre ese evento.  Tenga en cuenta **el vínculo** Revelar.  Después de elegirla, DevTools resaltará el evento que inició el **evento Animation Frame Fired.**  Además, céntrate en **el vínculoapp.js:95.**  Después de elegirla, se muestra la línea relevante en el código fuente.
     
@@ -213,7 +213,7 @@ Eso era mucho que aprender.  Ahora tiene una base sólida en el flujo de trabajo
 
 ### <a name="bonus-analyze-the-optimized-version"></a>Bonus: Analizar la versión optimizada  
 
-Con los flujos de trabajo y las herramientas que acaba de aprender, elija **Optimizar** en la demostración para habilitar el código optimizado, realizar otra grabación de rendimiento y, a continuación, analizar los resultados.  Desde la velocidad de fotogramas mejorada hasta la **** reducción de eventos en el gráfico de llamas en la sección Principal, la versión optimizada de la aplicación hace mucho menos trabajo, lo que resulta en un mejor rendimiento.  
+Con los flujos de trabajo y las herramientas que acaba de aprender, elija **Optimizar** en la demostración para activar el código optimizado, realizar otra grabación de rendimiento y, a continuación, analizar los resultados.  Desde la velocidad de fotogramas mejorada hasta la **** reducción de eventos en el gráfico de llamas en la sección Principal, la versión optimizada de la aplicación hace mucho menos trabajo, lo que resulta en un mejor rendimiento.  
 
 > [!NOTE]
 > Incluso la versión optimizada no es excelente, ya que manipula la `top` propiedad de cada icono.  Un enfoque mejor es seguir las propiedades que solo afectan a la composición.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  

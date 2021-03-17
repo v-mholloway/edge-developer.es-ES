@@ -3,16 +3,16 @@ description: Cómo ver nodos, buscar nodos, editar nodos, nodos de referencia en
 title: Introducción a la visualización y cambio del DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bb2b733cfa3597c47f0a20de00e9c8b506e7c41c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398332"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439243"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -61,7 +61,7 @@ Cuando está interesado en un nodo DOM determinado, **Inspect** es una forma rá
            Resaltar el `Michelangelo` nodo  
         :::image-end:::  
         
-        1.  Elija el **icono Inspeccionar** \( Inspeccionar \) en la esquina superior izquierda ![ de ][ImageInspectIcon] DevTools.  
+        1.  Elija el **icono Inspeccionar** \( Inspeccionar \) en la esquina superior izquierda ![ de ](../media/inspect-icon.msft.png) DevTools.  
             
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="El icono Inspeccionar" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                El **icono Inspeccionar**  
@@ -285,14 +285,14 @@ Use puntos de interrupción de modificación de atributos cuando desee pausar Ja
            **Interrupción en las modificaciones de atributos**  
         :::image-end:::  
         
-    1.  En el siguiente paso, se le indicará que elija un botón que detenga el código de la página.  Después de pausar la página, ya no podrá desplazarse por la página.  Debe elegir **Reanudar script** \( Reanudar script \) para que la página se pueda desplazar de ![ ][ImageResumeScriptIcon] nuevo.
+    1.  En el siguiente paso, se le indicará que elija un botón que detenga el código de la página.  Después de pausar la página, ya no podrá desplazarse por la página.  Debe elegir **Reanudar script** \( Reanudar script \) para que la página se pueda desplazar de ![ ](../media/resume-script-icon.msft.png) nuevo.
         
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Dónde reanudar la ejecución de scripts" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Dónde reanudar la ejecución de scripts  
         :::image-end:::  
         
     1.  Elija el **botón Establecer fondo** anterior.  Esto establece el `style` atributo del nodo en `background-color:thistle` .  DevTools pausa la página y resalta el código que hizo que el atributo cambiara.  
-    1.  Elija **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \), como se mencionó anteriormente.  
+    1.  Elija **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \), como se mencionó anteriormente.  
     
 ### <a name="break-on-node-removal"></a>Interrupción en la eliminación de nodos  
 
@@ -302,7 +302,7 @@ Si desea pausar cuando se quita un nodo determinado, use puntos de interrupción
 1.  En **Interrumpir la eliminación de nodos,** elija **Neuromancer con** el botón secundario y elija **Inspeccionar**.  
     1.  En el árbol DOM, mantenga el mouse sobre , abra el menú contextual \(haga clic con el botón `<li id="target">Neuromancer</li>` secundario\) y elija Interrumpir al **quitar**  >  **nodo**.  Vaya a [Apéndice: faltan opciones](#appendix-missing-options) si no se muestra la opción.  
     1.  Elija el **botón Eliminar** anterior.  DevTools pausa la página y resalta el código que hizo que se quitara el nodo.  
-    1.  Elija **Reanudar script** \( Reanudar script ![ ][ImageResumeScriptIcon] \).  
+    1.  Elija **Reanudar script** \( Reanudar script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ### <a name="break-on-subtree-modifications"></a>Interrupción de las modificaciones del subárbol  
 
@@ -312,7 +312,7 @@ Después de colocar un punto de interrupción de modificación de subárbol en u
 1.  En **Interrumpir las modificaciones del subárbol,** elija A Fire Upon The **Deep** y elija **Inspect**.  
     1.  En el árbol DOM, mantenga el mouse sobre , que es el nodo anterior , abra el menú contextual \(haga clic con el botón secundario\) y elija `<ul id="target">` `<li>A Fire Upon the Deep</li>` Interrumpir en **modificaciones**  >  **del subárbol**.  Si no se muestra la opción, vaya a [Apéndice: Falta opciones](#appendix-missing-options).  
     1.  Elija **Agregar elemento**secundario .  El código se detiene porque se `<li>` agregó un nodo a la lista.  
-    1.  Elija **Reanudar script** \( Reanudar script ![ ][ImageResumeScriptIcon] \).  
+    1.  Elija **Reanudar script** \( Reanudar script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ## <a name="next-steps"></a>Pasos siguientes  
 
@@ -416,11 +416,6 @@ Muchas de las instrucciones de este tutorial le indican que mantenga el mouse en
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageInspectIcon]: ../media/inspect-icon.msft.png  
-[ImageResumeScriptIcon]: ../media/resume-script-icon.msft.png  
 
 <!-- links -->  
 

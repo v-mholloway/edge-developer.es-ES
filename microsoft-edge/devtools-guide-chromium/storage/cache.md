@@ -3,16 +3,16 @@ description: Cómo ver datos de caché desde el panel Aplicación de Microsoft E
 title: Ver datos de caché con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7e0523e3293bbdafa9c3575344714da708fffe62
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397541"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439320"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -75,7 +75,7 @@ Si está intentando inspeccionar los datos de [caché HTTP,][MDNHTTPCaching] est
        Elegir un recurso para actualizar  
     :::image-end:::  
     
-1.  Elija **Actualizar** \( ![ Actualizar ][ImageRefreshIcon] \).  
+1.  Elija **Actualizar** \( ![ Actualizar ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-resources"></a>Filtrar recursos  
 
@@ -95,7 +95,7 @@ Si está intentando inspeccionar los datos de [caché HTTP,][MDNHTTPCaching] est
        Elegir un recurso para eliminar  
     :::image-end:::  
     
-1.  Elija **Eliminar seleccionado** \( Eliminar seleccionado ![ ][ImageDeleteIcon] \).  
+1.  Elija **Eliminar seleccionado** \( Eliminar seleccionado ![ ](../media/delete-icon.msft.png) \).  
     
 ## <a name="delete-all-cache-data"></a>Eliminar todos los datos de caché  
 
@@ -115,11 +115,6 @@ Si está intentando inspeccionar los datos de [caché HTTP,][MDNHTTPCaching] est
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

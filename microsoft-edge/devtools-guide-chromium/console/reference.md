@@ -3,16 +3,16 @@ description: Una referencia completa sobre todas las características y comporta
 title: Referencia de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1aed46486240dea19420e8b7cb52b6758f1f528b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d6fed1681e64f8f57c2e577017d623039a7b4152
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399165"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439370"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -74,7 +74,7 @@ Para abrir la **herramienta Consola** desde [el][DevToolsCommandMenu]menú coman
 
 ### <a name="open-console-settings"></a>Abrir configuración de consola  
 
-Elija **Configuración de consola** \( Icono configuración de consola ![ ][ImageSettingsButtonIcon] \).  
+Elija **Configuración de consola** \( Icono configuración de consola ![ ](../media/settings-button-icon.msft.png) \).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Configuración de consola" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Configuración de consola**  
@@ -92,7 +92,7 @@ Los vínculos siguientes explican cada configuración:
     
 ### <a name="open-the-console-sidebar"></a>Abrir la barra lateral de la consola  
 
-Elija **Mostrar barra lateral de consola** \( Mostrar barra lateral de consola \) para mostrar la barra ![ ][ImageShowConsoleSidebarIcon] lateral, que es útil para filtrar.  
+Elija **Mostrar barra lateral de consola** \( Mostrar barra lateral de consola \) para mostrar la barra ![ ](../media/show-console-sidebar-icon.msft.png) lateral, que es útil para filtrar.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Barra lateral de consola" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Consola** Barra lateral  
@@ -246,7 +246,7 @@ Supongamos que tienes un anuncio en tu página incrustado en un `<iframe>` .  Qu
 
 Puede usar cualquiera de los siguientes flujos de trabajo para borrar la consola:  
 
-*   Elija **Borrar consola** \( Borrar consola ![ ][ImageClearConsoleIcon] \).  
+*   Elija **Borrar consola** \( Borrar consola ![ ](../media/clear-console-button-icon.msft.png) \).  
 *   Mantenga el mouse sobre un mensaje, abra el menú contextual \(righ-click\) y elija **Borrar consola**.  
 *   Escriba `clear()` en la **Consola** y seleccione `Enter` .  
 *   Ejecute `console.clear()` desde JavaScript para la página web.  
@@ -255,12 +255,6 @@ Puede usar cualquiera de los siguientes flujos de trabajo para borrar la consola
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

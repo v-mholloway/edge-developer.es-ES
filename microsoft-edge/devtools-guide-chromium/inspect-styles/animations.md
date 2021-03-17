@@ -3,16 +3,16 @@ description: Inspeccione y modifique las animaciones con el Inspector de animaci
 title: Inspeccionar animaciones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 742096f13179de2ad1a95dc9fa62d2bbf3d7c226
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397737"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439545"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -42,7 +42,7 @@ Inspeccione y modifique las animaciones con el Inspector de animaciones de Micro
 *   Inspeccione las animaciones ralentizando cada una, reprobando cada una o viendo el código fuente.  
 *   Modifique las animaciones cambiando el tiempo, el retraso, la duración o los desplazamientos de fotograma clave.  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 El Inspector de animación de Microsoft Edge DevTools tiene dos propósitos principales.  
 
@@ -82,7 +82,7 @@ El Inspector de animación se agrupa en cuatro secciones principales \(o panes\)
 | Índice | Panel | Descripción |  
 |:--- |:--- |:--- |  
 | 1 | **Controles** | Desde aquí, puedes borrar todos los grupos de animación capturados actualmente o cambiar la velocidad del grupo de animación seleccionado actualmente. |  
-| 2 | **Introducción** | Elija un grupo de animación aquí para inspeccionarlo y modificarlo en el **panel** Detalles. |  
+| 2 | **Información general** | Elija un grupo de animación aquí para inspeccionarlo y modificarlo en el **panel** Detalles. |  
 | 3 | **Línea de tiempo** | Pausa e inicia una animación desde aquí, o salta a un punto específico de la animación. |  
 | 4 | **Detalles** | Inspeccione y modifique el grupo de animaciones seleccionado actualmente. |  
 
@@ -103,7 +103,7 @@ Para capturar una animación, simplemente realiza la interacción que desencaden
 Después de capturar una animación, hay varias maneras de reproducirla:  
 
 *   Mantenga el mouse en la miniatura del panel **Información** general para ver una vista previa de ella.  
-*   Elija el grupo de animación en el **panel** Información **** general \(para que se muestre en el panel Detalles\) y elija el icono **de** reproducción \( icono de reproducción ![ ][ImageReplayButtonIcon] \).  La animación se reproduce en la ventanilla.  Elige los **iconos de velocidad de** animación \( iconos de velocidad de animación \) para cambiar la velocidad de vista previa del grupo de ![ ][ImageAnimationSpeedButtonsIcon] animaciones seleccionado actualmente.  Puede usar la barra vertical roja para cambiar la posición actual.  
+*   Elija el grupo de animación en el **panel** Información **** general \(para que se muestre en el panel Detalles\) y elija el icono **de** reproducción \( icono de reproducción ![ ](../media/replay-button-icon.msft.png) \).  La animación se reproduce en la ventanilla.  Elige los **iconos de velocidad de** animación \( iconos de velocidad de animación \) para cambiar la velocidad de vista previa del grupo de ![ ](../media/animation-speed-buttons-icon.msft.png) animaciones seleccionado actualmente.  Puede usar la barra vertical roja para cambiar la posición actual.  
 *   Elija y arrastre la barra vertical roja para limpiar la animación de la ventanilla.  
     
 ### <a name="view-animation-details"></a>Ver detalles de animación  
@@ -170,8 +170,8 @@ Para agregar un retraso a una animación, elige y arrástrala en cualquier lugar
 
 <!-- image links -->  
 
-[ImageAnimationSpeedButtonsIcon]: ../media/animation-speed-buttons-icon.msft.png  
-[ImageReplayButtonIcon]: ../media/replay-button-icon.msft.png  
+(.. /media/animation-speed-buttons-icon.msft.png): .. /media/animation-speed-buttons-icon.msft.png  
+(.. /media/replay-button-icon.msft.png): .. /media/replay-button-icon.msft.png  
 
 <!-- links -->  
 

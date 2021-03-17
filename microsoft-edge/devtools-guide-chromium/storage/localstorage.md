@@ -1,18 +1,18 @@
 ---
-description: Cómo ver y editar localStorage con el panel almacenamiento local y la consola.
+description: Cómo ver y editar localStorage con el panel Almacenamiento local y la consola.
 title: Ver y editar el almacenamiento local con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c68f11b8ba2c10a0792f10acf5c5ededf2ad8e8d
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 4eebf3108e7b1c6ecaecbfed445e8f3fe26215c4
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231191"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439678"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,99 +28,94 @@ ms.locfileid: "11231191"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Ver y editar el almacenamiento local con Microsoft Edge DevTools  
+# <a name="view-and-edit-local-storage-with-microsoft-edge-devtools"></a>Ver y editar el almacenamiento local con Microsoft Edge DevTools  
 
-En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para ver, editar y eliminar [localStorage][MDNWindowsLocalStorage] pares clave-valor.  
+En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para ver, editar y eliminar pares [clave-valor localStorage.][MDNWindowsLocalStorage]  
 
-## Ver las claves y los valores de localStorage  
+## <a name="view-localstorage-keys-and-values"></a>Ver claves y valores de localStorage  
 
-1.  Elija la pestaña **aplicación** para abrir la herramienta **aplicación** .  El panel **manifiesto** se muestra de forma predeterminada.  
+1.  Elija la **pestaña** Aplicación para abrir la **herramienta** Aplicación.  El **panel** Manifiesto se muestra de forma predeterminada.  
     
-    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="El panel manifiesto" lightbox="../media/storage-application-manifest.msft.png":::
-       El panel **manifiesto**  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Panel Manifiesto" lightbox="../media/storage-application-manifest.msft.png":::
+       Panel **Manifiesto**  
     :::image-end:::  
     
-1.  Expanda el menú **almacenamiento local** .  
+1.  Expanda el **menú Almacenamiento** local.  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="El menú almacenamiento local" lightbox="../media/storage-application-local-storage.msft.png":::
-       El menú **almacenamiento local**  
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Menú Almacenamiento local" lightbox="../media/storage-application-local-storage.msft.png":::
+       Menú **Almacenamiento** local  
     :::image-end:::  
     
-1.  Elija un dominio para ver los pares de clave y valor.  
+1.  Elija un dominio para ver los pares clave-valor.  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="Pares de clave y valor de localStorage para el https://www.bing.com dominio" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
-       `localStorage`Pares clave-valor para el `https://www.bing.com` dominio  
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="Los pares clave-valor localStorage para el https://www.bing.com dominio" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+       Pares `localStorage` clave-valor para el `https://www.bing.com` dominio  
     :::image-end:::  
     
 1.  Elija una fila de la tabla para ver el valor en el visor debajo de la tabla.  
     
-    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="Ver el valor de la clave eventLogQueue_Online" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="Ver el valor de la eventLogQueue_Online clave" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
        Ver el valor de la `eventLogQueue_Online` clave  
     :::image-end:::  
     
-## Crear un nuevo par clave-valor de localStorage  
+## <a name="create-a-new-localstorage-key-value-pair"></a>Crear un nuevo par clave-valor localStorage  
 
 1.  [Ver los pares clave-valor localStorage de un dominio](#view-localstorage-keys-and-values).  
-1.  Haga doble clic en la parte vacía de la tabla.  DevTools crea una fila nueva y centra el cursor en la columna de **clave** .  
+1.  Haga doble clic en la parte vacía de la tabla.  DevTools crea una nueva fila y centra el cursor en la **columna** Clave.  
     
-    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="La parte vacía de la tabla para hacer doble clic para crear un nuevo par clave-valor" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
-       La parte vacía de la tabla para hacer doble clic para crear un nuevo par clave-valor  
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="La parte vacía de la tabla que se va a hacer doble clic para crear un nuevo par clave-valor" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+       La parte vacía de la tabla que se va a hacer doble clic para crear un nuevo par clave-valor  
     :::image-end:::  
     
-## Editar claves o valores de localStorage  
+## <a name="edit-localstorage-keys-or-values"></a>Editar claves o valores de localStorage  
 
 1.  [Ver los pares clave-valor localStorage de un dominio](#view-localstorage-keys-and-values).  
-1.  Haga doble clic en una celda de la columna **clave** o **valor** para editar esa clave o valor.  
+1.  Haga doble clic en una celda de la **columna Clave** **o** Valor para editar esa clave o valor.  
     
-    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Editar una clave de localStorage" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
-       Modificar una `localStorage` tecla  
+    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Editar una clave localStorage" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+       Editar una `localStorage` clave  
     :::image-end:::  
     
-## Eliminar pares de clave y valor de localStorage  
+## <a name="delete-localstorage-key-value-pairs"></a>Eliminar pares clave-valor localStorage  
 
 1.  [Ver los `localStorage` pares clave-valor de un dominio](#view-localstorage-keys-and-values).  
-1.  Elija el par de clave y valor que desea eliminar.  DevTools lo resalta azul para indicar que está seleccionado.  
-1.  Seleccione la `Delete` tecla o elija **eliminar seleccionada** \ ( ![ eliminar seleccionado ][ImageDeleteIcon] \).  
+1.  Elija el par clave-valor que desea eliminar.  DevTools lo resalta en azul para indicar que está seleccionado.  
+1.  Seleccione la `Delete` clave o elija Eliminar **seleccionado** \( Eliminar ![ seleccionado ](../media/delete-icon.msft.png) \).  
     
-## Eliminar todos los `localStorage` pares clave-valor para un dominio  
+## <a name="delete-all-localstorage-key-value-pairs-for-a-domain"></a>Eliminar todos `localStorage` los pares clave-valor de un dominio  
 
 1.  [Ver los `localStorage` pares clave-valor de un dominio](#view-localstorage-keys-and-values).  
-1.  Elija **Borrar todo** \ ( ![ Borrar todo ][ImageClearIcon] \).  
+1.  Elija **Borrar todo** \( Borrar todo ![ ](../media/clear-icon.msft.png) \).  
     
-## Interactuar con localStorage desde la consola  
+## <a name="interact-with-localstorage-from-the-console"></a>Interactuar con localStorage desde la consola  
 
-Dado que puede ejecutar JavaScript en la **consola**y que la **consola** tiene acceso a los contextos de JavaScript de la página, es posible interactuar con ella `localStorage` en la **consola**.  
+Dado que puede ejecutar JavaScript en la **** consola **y**dado que la consola tiene acceso a los contextos de JavaScript de la página, es posible interactuar con desde `localStorage` la **consola**.  
 
-1.  Use el menú **contextos de JavaScript** para cambiar el contexto de JavaScript de la **consola** si desea obtener acceso a los `localStorage` pares clave-valor de un dominio que no sea la página que se muestra.  
+1.  Use el **menú contextos de JavaScript** para **** cambiar el contexto de JavaScript de la consola si desea tener acceso a los pares clave-valor de un dominio distinto de la página `localStorage` que se muestra.  
     
     :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="Cambiar el contexto de JavaScript de la consola" lightbox="../media/storage-console-local-storage.msft.png":::
        Cambiar el contexto de JavaScript de la consola  
     :::image-end:::  
     
-1.  Ejecuta tus `localStorage` expresiones en la consola, de la misma forma en que lo haces en tu JavaScript.  
+1.  Ejecute las `localStorage` expresiones en la consola, lo mismo que en JavaScript.  
     
     :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interactuar con localStorage desde la consola" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
        Interactuar con `localStorage` desde la **consola**  
     :::image-end:::  
     
-## Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (cromo) | Microsoft docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
 
-[MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window. localStorage | MDN"  
+[MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) y está modificada por [Kayce vascos][KayceBasques] \ (redactor técnico, Chrome DevTools \ & Lighthouse \).  
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

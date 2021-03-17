@@ -3,16 +3,16 @@ description: Cómo depurar la captura en segundo plano, la sincronización en se
 title: Depurar servicios en segundo plano con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: cf3459e7b5f80a695a855ffdd0c249c2bc223d31
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398640"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439531"
 ---
 <!-- Copyright Kayce Basques
 
@@ -60,7 +60,7 @@ La **API de captura en** segundo plano permite a un trabajador de servicio desca
        Panel **Captura en** segundo plano  
     :::image-end:::  
     
-1.  Elija **Record** \( ![ Record ][ImageRecordIcon] \).  
+1.  Elija **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
    Después de desencadenar alguna actividad de captura en segundo plano, DevTools registra los eventos en la tabla.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Registro de eventos en el panel Captura en segundo plano" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
@@ -87,7 +87,7 @@ La API de sincronización **** **en** segundo plano permite a un trabajador del 
        Panel **Sincronización en** segundo plano  
     :::image-end:::  
     
-1.  Elija **Record** \( ![ Record ][ImageRecordIcon] \).  
+1.  Elija **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
    Después de desencadenar alguna actividad de sincronización en segundo plano, DevTools registra los eventos en la tabla.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Un registro de eventos en el panel Sincronización en segundo plano" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
@@ -112,7 +112,7 @@ Después de **que un trabajador de** servicio haya recibido un mensaje [de][MDNP
        Panel **Notificaciones**  
     :::image-end:::  
     
-1.  Elija **Record** \( ![ Record ][ImageRecordIcon] \).  
+1.  Elija **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
    Después de desencadenar alguna actividad notifications, DevTools registra los eventos en la tabla.  
     
     :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Un registro de eventos en el panel Notificaciones" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
@@ -137,7 +137,7 @@ Para mostrar una notificación de **** inserción a un usuario, un trabajador de
        Abrir el **panel Mensajería de inserción**  
     :::image-end:::  
     
-1.  Elija **Record** \( ![ Record ][ImageRecordIcon] \).  
+1.  Elija **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
     Después de desencadenar alguna actividad de mensaje de inserción, DevTools registra los eventos en la tabla.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Registro de eventos en el panel Mensajería de inserción" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
@@ -153,10 +153,6 @@ Para mostrar una notificación de **** inserción a un usuario, un trabajador de
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRecordIcon]: ../media/record-icon.msft.png  
 
 <!-- links -->  
 

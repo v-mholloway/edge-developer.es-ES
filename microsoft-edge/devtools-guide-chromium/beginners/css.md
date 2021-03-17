@@ -3,16 +3,16 @@ description: Introducción a CSS
 title: 'DevTools para principiantes: Introducción a CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 7aa33c339a7d130265660e4a4af6f50dde7e3e90
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6a7135e144123917535e7c43e6a3cd608ec0c8a7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398402"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439440"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -337,7 +337,7 @@ Complete las siguientes acciones para editar las declaraciones existentes en Dev
 
 Complete las siguientes acciones para agregar nuevos conjuntos de reglas en DevTools.  
 
-1.  Elija **Nueva regla de estilo** \( Nueva regla de estilo ![ ][ImageNewStyleRuleIcon] \) que está junto a **.cls**.  Aparece un conjunto de reglas vacío `a` con como selector.  
+1.  Elija **Nueva regla de estilo** \( Nueva regla de estilo ![ ](../media/new-style-rule-icon.msft.png) \) que está junto a **.cls**.  Aparece un conjunto de reglas vacío `a` con como selector.  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Agregar una nueva regla" lightbox="../media/beginners-css-rule1.msft.png":::
        Agregar una nueva regla  
@@ -605,10 +605,6 @@ Enhorabuena, ha terminado.
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!--- image links --->  
-
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
 
 <!--- links  --->  
 

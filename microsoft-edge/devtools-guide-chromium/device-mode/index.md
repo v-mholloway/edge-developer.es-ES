@@ -3,16 +3,16 @@ description: Usa dispositivos virtuales en Microsoft Edge para crear sitios web 
 title: Emular dispositivos móviles en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, emulación, dispositivo, simulación, móvil
-ms.openlocfilehash: 1a83dece95acba386385bfea035a9e2c91639240
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398793"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439454"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,7 +47,7 @@ Algunos aspectos de los dispositivos móviles nunca se emulan en DevTools.  Por 
 
 ## <a name="simulate-a-mobile-viewport"></a>Simular una ventanilla móvil  
 
-Elija **Alternar emulación** de dispositivo \( Alternar barra de herramientas del dispositivo \) o elija Personalizar y ![ controlar ][ImageDeviceToolbarIcon] **DevTools** \( `...` \) **** emulación de dispositivo > para abrir la interfaz de usuario que permite simular una ventanilla móvil.  
+Elija **Alternar emulación** de dispositivo \( Alternar barra de herramientas del dispositivo \) o elija Personalizar y ![ controlar ](../media/toggle-device-toolbar-dark-icon.msft.png) **DevTools** \( `...` \) **** emulación de dispositivo > para abrir la interfaz de usuario que permite simular una ventanilla móvil.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="La barra de herramientas del dispositivo" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     La barra de herramientas del dispositivo  
@@ -109,7 +109,7 @@ Para simular las dimensiones de un dispositivo móvil específico, selecciona el
 
 Pruebe la página web en orientación horizontal.  
 
-*   Para girar la ventanilla a orientación horizontal, **elija Girar** \( ![ Girar ][ImageRotateIcon] \).  
+*   Para girar la ventanilla a orientación horizontal, **elija Girar** \( ![ Girar ](../media/rotate-dark-icon.msft.png) \).  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Página mostrada en orientación horizontal" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        Página mostrada en orientación horizontal  
@@ -216,7 +216,7 @@ Toda la limitación se basa en la funcionalidad normal de su portátil o escrito
 
 Para limitar la CPU solo y no la red, siga estos pasos.
 
-1.  Elija el panel **Rendimiento** y elija **Configuración de captura** \( Configuración de captura ![ ][ImageCaptureIcon] \).
+1.  Elija el panel **Rendimiento** y elija **Configuración de captura** \( Configuración de captura ![ ](../media/capture-settings-icon.msft.png) \).
 1.  Elija **CPU**  >  **4x slowdown** o **6x slowdown**.
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="La lista de CPU del panel Rendimiento" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -242,7 +242,7 @@ Para limitar solo la red, siga estos pasos.
     
 También puede establecer la limitación de red desde **el** panel Rendimiento.  
 
-1.  Elija **Configuración de** captura \( Configuración de captura \) y elija la lista Red y cambie el valor preestablecido ![ a Fast ][ImageCaptureIcon] **3G** o **Slow 3G**. ****  
+1.  Elija **Configuración de** captura \( Configuración de captura \) y elija la lista Red y cambie el valor preestablecido ![ a Fast ](../media/capture-settings-icon.msft.png) **3G** o **Slow 3G**. ****  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Establecer limitación de red desde el panel Rendimiento" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Establecer limitación de red desde **el** panel Rendimiento  
@@ -338,12 +338,6 @@ Junto al **agente de usuario,** desactive la **casilla Seleccionar automáticame
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureIcon]: ../media/capture-settings-icon.msft.png  
-[ImageDeviceToolbarIcon]: ../media/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 

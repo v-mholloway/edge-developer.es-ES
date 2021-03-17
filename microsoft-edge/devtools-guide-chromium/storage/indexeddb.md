@@ -3,16 +3,16 @@ description: Cómo ver y cambiar los datos de IndexedDB con el panel Aplicación
 title: Ver y cambiar datos IndexedDB con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6062cb6b574b2295441bc98616f600cbf00cee8e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398983"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439713"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,8 +46,8 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
        Menú **IndexedDB**  
     :::image-end:::  
     
-    *   \( Icono de base de datos \) representa una base de datos, donde es el nombre de la base de datos y es el origen que ![ tiene acceso a la base de ][ImageDatabaseIcon] `notes - https://mdn.github.io` `notes` `https://mdn.github.io` datos.  
-    *   \( ![ Icono del almacén de objetos ][ImageObjectStoreIcon] \) es un almacén de `notes` objetos.  
+    *   \( Icono de base de datos \) representa una base de datos, donde es el nombre de la base de datos y es el origen que ![ tiene acceso a la base de ](../media/database-icon.msft.png) `notes - https://mdn.github.io` `notes` `https://mdn.github.io` datos.  
+    *   \( ![ Icono del almacén de objetos ](../media/object-store-icon.msft.png) \) es un almacén de `notes` objetos.  
     *   **title** y **body** son [índices][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
@@ -85,7 +85,7 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
     
 ## <a name="refresh-indexeddb-data"></a>Actualizar datos indexadosDB  
 
-Los valores indexadosDB en **la herramienta Aplicación** no se actualizan en tiempo real.  Elija **Actualizar** \( Actualizar \) al ver un almacén de objetos para actualizar los datos o ver una base de datos y elegir Actualizar base de datos para ![ actualizar todos los ][ImageRefreshIcon] datos. ****  
+Los valores indexadosDB en **la herramienta Aplicación** no se actualizan en tiempo real.  Elija **Actualizar** \( Actualizar \) al ver un almacén de objetos para actualizar los datos o ver una base de datos y elegir Actualizar base de datos para ![ actualizar todos los ](../media/reload-icon.msft.png) datos. ****  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Ver una base de datos" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Ver una base de datos  
@@ -114,7 +114,7 @@ Las claves indexadasDB y los valores no se pueden editar desde la **herramienta 
        Elegir un par clave-valor para eliminarlo  
     :::image-end:::  
     
-1.  Seleccione la `Delete` clave o elija Eliminar **seleccionado** \( Eliminar ![ seleccionado ][ImageDeleteIcon] \).  
+1.  Seleccione la `Delete` clave o elija Eliminar **seleccionado** \( Eliminar ![ seleccionado ](../media/delete-icon.msft.png) \).  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Cómo se ve el almacén de objetos después de eliminar el par clave-valor" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Cómo se ve el almacén de objetos después de eliminar el par clave-valor  
@@ -128,7 +128,7 @@ Las claves indexadasDB y los valores no se pueden editar desde la **herramienta 
        Ver un almacén de objetos  
     :::image-end:::  
     
-1.  Elija **Borrar almacén de objetos** \( Borrar almacén de objetos ![ ][ImageClearIcon] \).  
+1.  Elija **Borrar almacén de objetos** \( Borrar almacén de objetos ![ ](../media/clear-icon.msft.png) \).  
     
 ### <a name="delete-an-indexeddb-database"></a>Eliminar una base de datos IndexedDB  
 
@@ -152,14 +152,6 @@ Las claves indexadasDB y los valores no se pueden editar desde la **herramienta 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDatabaseIcon]: ../media/database-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 

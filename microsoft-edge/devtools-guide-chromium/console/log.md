@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo registrar mensajes en la consola.
 title: Introducción al registro de mensajes en la consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e2ea1a8327dd2a591e067b69198c4509b2abcb2d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fb428154b00959db1627096819c565dd5dc11346
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399172"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439292"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -122,7 +122,7 @@ La mayoría de los mensajes que se muestran en la **consola** provienen de los d
     > [!TIP]
     > Si desea mostrar el código que provocó que un mensaje se registrara de una forma determinada, elija un script \(como \) para ver el código que hizo que el mensaje se aplicara `log.js:12` formato.  
 
-1.  Elija el **icono Expandir** \( ![ Expandir ][ImageExpandIcon] \) delante de `Abandon Hope All Ye Who Enter` .  DevTools muestra el [seguimiento de la pila][WikiStackTrace] que conduce a la llamada.  
+1.  Elija el **icono Expandir** \( ![ Expandir ](../media/expand-icon.msft.png) \) delante de `Abandon Hope All Ye Who Enter` .  DevTools muestra el [seguimiento de la pila][WikiStackTrace] que conduce a la llamada.  
     
     :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="Seguimiento de una pila" lightbox="../media/console-log-warning-expanded.msft.png":::
        Seguimiento de una pila  
@@ -236,13 +236,13 @@ Cuando desee mostrar todos los mensajes que incluyen un patrón de texto, en lug
 
 Cuando solo desee ver los mensajes que provenían de una dirección URL determinada, use la **barra lateral**.  
 
-1.  Elija **Mostrar barra lateral de la** consola \( Mostrar barra lateral de la consola ![ ][ImageShowConsoleSidebarIcon] \).  
+1.  Elija **Mostrar barra lateral de la** consola \( Mostrar barra lateral de la consola ![ ](../media/show-console-sidebar-icon.msft.png) \).  
     
     :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="La barra lateral" lightbox="../media/console-sidebar-all-messages.msft.png":::
        La barra lateral  
     :::image-end:::  
     
-1.  Elija el **icono Expandir** \( ![ Expandir ][ImageExpandIcon] \) junto al número de mensajes.  En la siguiente figura, el número de mensajes se indica como **13 Mensajes**.  La **barra** lateral muestra una lista de direcciones URL que provocaron que se registraron los mensajes.  Por ejemplo, `log.js` causó 11 mensajes.  
+1.  Elija el **icono Expandir** \( ![ Expandir ](../media/expand-icon.msft.png) \) junto al número de mensajes.  En la siguiente figura, el número de mensajes se indica como **13 Mensajes**.  La **barra** lateral muestra una lista de direcciones URL que provocaron que se registraron los mensajes.  Por ejemplo, `log.js` causó 11 mensajes.  
     
     :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Ver el origen de los mensajes en la barra lateral" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        Ver el origen de los mensajes en la barra lateral  
@@ -280,11 +280,6 @@ Si está editando estilos, pero necesita comprobar rápidamente si hay algo en e
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

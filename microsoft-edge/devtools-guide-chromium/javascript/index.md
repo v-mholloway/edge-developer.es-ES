@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo usar Microsoft Edge DevTools para 
 title: Introducción a la depuración de JavaScript en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e146c6708f097b1ea8dc82f08be58f5aa5e52d1f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bbfb766bcc03e4c4fe0f975f1ecfccbef08084be
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398444"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439468"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -99,7 +99,7 @@ En resumen, los puntos de interrupción pueden ayudarle a encontrar y corregir e
 Si retroces y piensas en cómo funciona la aplicación, puedes hacer una conjetura educada de que la suma incorrecta \( \) se calcula en el agente de escucha de eventos asociado con los botones Agregar número 1 y Número `5 + 1 = 51` `click` **2.**  Por lo tanto, probablemente quiera pausar el código durante el tiempo en que se ejecute `click` el agente de escucha.  **Los puntos de interrupción de escucha de** eventos le permiten hacer exactamente lo siguiente:  
 
 1.  En el **panel Depuración de JavaScript,** elija Puntos de interrupción de **escucha de eventos** para expandir la sección.  DevTools muestra una lista de categorías de eventos expandibles, como **Animación y** **Portapapeles.**  
-1.  Junto a la categoría de eventos **Mouse,** elija **Expandir** \( ![ Expandir icono ][ImageExpandIcon] \).  DevTools muestra una lista de eventos de mouse, como clic **y** **mousedown**.  Cada evento tiene una casilla junto a él.  
+1.  Junto a la categoría de eventos **Mouse,** elija **Expandir** \( ![ Expandir icono ](../media/expand-icon.msft.png) \).  DevTools muestra una lista de eventos de mouse, como clic **y** **mousedown**.  Cada evento tiene una casilla junto a él.  
 1.  Seleccione la casilla situada junto **a**.  DevTools ahora está configurado para pausar automáticamente cuando se ejecuta cualquier `click` escucha de eventos.  
     
     :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Seleccione la casilla situada junto a hacer clic" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
@@ -112,7 +112,7 @@ Si retroces y piensas en cómo funciona la aplicación, puedes hacer una conjetu
     if (inputsAreEmpty()) {
     ```  
     
-    Si pausa en una línea de código diferente, elija Reanudar ejecución de **script** \( Reanudar ejecución de script \) hasta que se detenga ![ en la línea ][ImageResumeIcon] correcta.  
+    Si pausa en una línea de código diferente, elija Reanudar ejecución de **script** \( Reanudar ejecución de script \) hasta que se detenga ![ en la línea ](../media/resume-script-run-icon.msft.png) correcta.  
     
     > [!NOTE]
     > Si hizo una pausa en una línea diferente, tiene una extensión de explorador que registra un agente de escucha de eventos en todas las páginas `click` web que visita.  Está en pausa en el agente `click` de escucha de la extensión.  Si usa el modo InPrivate para examinar en privado **,** lo que deshabilita todas las extensiones, es posible que vea que se pausa en la línea de código deseada cada vez.  
@@ -125,7 +125,7 @@ Si retroces y piensas en cómo funciona la aplicación, puedes hacer una conjetu
 
 Una causa común de errores es cuando un script se ejecuta en el orden incorrecto.  El paso a través del código le permite recorrer el tiempo de ejecución del código.  Puede recorrer una línea a la vez para ayudarle a averiguar exactamente dónde se ejecuta el código en un orden diferente del esperado.  Pruébalo ahora:  
 
-1.  Elija **Paso sobre la siguiente llamada de función** \( Paso sobre la siguiente llamada de función ![ ][ImageOverIcon] \).  DevTools ejecuta el siguiente código sin entrar en él.  
+1.  Elija **Paso sobre la siguiente llamada de función** \( Paso sobre la siguiente llamada de función ![ ](../media/step-over-icon.msft.png) \).  DevTools ejecuta el siguiente código sin entrar en él.  
     
     ```javascript
     if (inputsAreEmpty()) {
@@ -134,7 +134,7 @@ Una causa común de errores es cuando un script se ejecuta en el orden incorrect
     > [!NOTE]
     > DevTools omite algunas líneas de código.  Esto se debe a que se evalúa como false, por lo que no se ejecuta el bloque `inputsAreEmpty()` de código de la `if` instrucción.  
     
-1.  En la **herramienta Orígenes** de DevTools, elija Paso a siguiente llamada de función **\(** Paso a siguiente llamada de función \) para pasar por el tiempo de ejecución de la función, una línea ![ a ][ImageIntoIcon] `updateLabel()` la vez.  
+1.  En la **herramienta Orígenes** de DevTools, elija Paso a siguiente llamada de función **\(** Paso a siguiente llamada de función \) para pasar por el tiempo de ejecución de la función, una línea ![ a ](../media/step-into-icon.msft.png) `updateLabel()` la vez.  
     
 Revisar una línea a la vez es la idea básica de pasar por el código.  Si revisa el código en , el error probablemente esté en `get-started.js` algún lugar de la `updateLabel()` función.  En lugar de pasar por todas las líneas de código, puede usar otro tipo de punto de interrupción para pausar el código más cerca de la ubicación probable del error.  
 
@@ -149,7 +149,7 @@ Los puntos de interrupción de línea de código son el tipo más común de punt
     ```  
     
 1.  A la izquierda, el número de esta línea de código en particular se muestra como **34**.  Elija la **línea 34**.  DevTools muestra un icono rojo a la izquierda de **34**.  El icono rojo indica que un punto de interrupción de línea de código está en esta línea.  DevTools siempre se pausa antes de que se ejecute esta línea de código.  
-1.  Elija **Reanudar ejecución de script** \( Reanudar ejecución de script ![ ][ImageResumeIcon] \).  El script continúa en ejecución hasta que llega a la línea 33.  En las líneas 31, 32 y 33, DevTools imprime los valores de , y a la derecha de los dos puntos y coma `addend1` `addend2` en cada `sum` línea.  
+1.  Elija **Reanudar ejecución de script** \( Reanudar ejecución de script ![ ](../media/resume-script-run-icon.msft.png) \).  El script continúa en ejecución hasta que llega a la línea 33.  En las líneas 31, 32 y 33, DevTools imprime los valores de , y a la derecha de los dos puntos y coma `addend1` `addend2` en cada `sum` línea.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools se pausa en el punto de interrupción de línea de código en la línea 34" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
        DevTools se pausa en el punto de interrupción de línea de código en la línea 34  
@@ -172,7 +172,7 @@ Si se pausa en una línea de código, el **panel** Ámbito muestra las variables
 El **panel Ver expresiones** le permite supervisar los valores de las variables a lo largo del tiempo.  Como su nombre indica, **las expresiones de** reloj no se limitan a variables.  Puede almacenar cualquier expresión de JavaScript válida en una **expresión Watch**.  Pruébalo ahora.  
 
 1.  Elija **el** panel Ver.  
-1.  Elija **Agregar expresión** \( Agregar expresión ![ ][ImageAddIcon] \).  
+1.  Elija **Agregar expresión** \( Agregar expresión ![ ](../media/add-expression-icon.msft.png) \).  
 1.  Escribe `typeof sum`.  
 1.  Seleccione `Enter` .  DevTools muestra `typeof sum: "string"` .  El valor a la derecha de los dos puntos es el resultado de la expresión Watch.  
     
@@ -201,10 +201,10 @@ La **consola** le permite ver mensajes y también puede usarlos para evaluar `co
 
 Si encuentras una solución para el error, prueba la corrección editando el código y rerunning la demostración.  Puede editar código JavaScript directamente en la interfaz de usuario de DevTools y aplicar la corrección.  Pruébalo ahora.  
 
-1.  Elija **Reanudar ejecución de script** \( Reanudar ejecución de script ![ ][ImageResumeIcon] \).  
+1.  Elija **Reanudar ejecución de script** \( Reanudar ejecución de script ![ ](../media/resume-script-run-icon.msft.png) \).  
 1.  En el **Editor de código,** reemplace la línea 32, `var sum = addend1 + addend2` , por `var sum = parseInt(addend1) + parseInt(addend2)` .  
 1.  Seleccione `Control` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar el cambio.  
-1.  Elija **Desactivar puntos de interrupción** \( Desactivar puntos de ![ interrupción ][ImageDeactivateIcon] \).  Cambia de color azul para indicar que la opción está activa.  Mientras **se establecen los puntos** de interrupción Deactivate, DevTools omite los puntos de interrupción establecidos.  
+1.  Elija **Desactivar puntos de interrupción** \( Desactivar puntos de ![ interrupción ](../media/deactivate-breakpoints-button-icon.msft.png) \).  Cambia de color azul para indicar que la opción está activa.  Mientras **se establecen los puntos** de interrupción Deactivate, DevTools omite los puntos de interrupción establecidos.  
 1.  Pruebe la demostración con valores diferentes.  La demostración ahora calcula correctamente.  
     
 > [!CAUTION]
@@ -227,15 +227,6 @@ En este artículo no se explica un par de controles de paso a paso de código.  
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddIcon]: ../media/add-expression-icon.msft.png  
-[ImageDeactivateIcon]: ../media/deactivate-breakpoints-button-icon.msft.png  
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-[ImageIntoIcon]: ../media/step-into-icon.msft.png  
-[ImageOverIcon]: ../media/step-over-icon.msft.png  
-[ImageResumeIcon]: ../media/resume-script-run-icon.msft.png  
 
 <!-- links -->  
 

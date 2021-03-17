@@ -3,16 +3,16 @@ description: Una referencia completa de las características de accesibilidad en
 title: Referencia de accesibilidad
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e3fed1c4e53c69b7a6837f71c270c0bf2f65b7e2
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398339"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439257"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,7 +72,7 @@ Para auditar una página:
     :::image-end:::  
     
     > [!NOTE]
-    > Las capturas de pantalla de esta sección se tomaron con la versión 79 de Microsoft Edge.  Puede comprobar la versión que está ejecutando en `edge://version` .  La interfaz de usuario de la herramienta **Auditorías** tiene un aspecto diferente en versiones anteriores de Microsoft Edge, pero el flujo de trabajo general es el mismo.  
+    > Las capturas de pantalla de esta sección se tomaron con Microsoft Edge versión 79.  Puede comprobar la versión que está ejecutando en `edge://version` .  La interfaz de usuario de la herramienta **Auditorías** tiene un aspecto diferente en versiones anteriores de Microsoft Edge, pero el flujo de trabajo general es el mismo.  
     
 1.  Para **Dispositivo,** elija **Móvil** si desea simular un dispositivo móvil.  Esta opción cambia la cadena del agente de usuario y cambia el tamaño de la ventanilla.  Si la versión móvil de la página se muestra de forma diferente a la versión de escritorio, esta opción puede tener un efecto significativo en los resultados de la auditoría.  
 1.  En la **sección Auditorías,** asegúrese de que **la accesibilidad** está habilitada.  Deshabilite las otras categorías si desea excluirlas del informe.  Déjelos habilitados si desea descubrir otras formas de mejorar la calidad de la página.  
@@ -114,7 +114,7 @@ Para abrir el panel **Accesibilidad:**
 
 1.  Elija la **herramienta** Elementos.  
 1.  En el **árbol DOM,** seleccione el elemento que desea inspeccionar.  
-1.  Elija el panel **Accesibilidad.**  Este panel puede estar oculto detrás del **botón Más pestañas** \( ![ Más pestañas ][ImageMoreTabsIcon] \).  
+1.  Elija el panel **Accesibilidad.**  Este panel puede estar oculto detrás del **botón Más pestañas** \( ![ Más pestañas ](../media/more-tabs-icon.msft.png) \).  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspeccionar el elemento h1 de la página principal de DevTools en el panel Accesibilidad" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspeccionar el `h1` elemento de la página principal de DevTools en el panel **Accesibilidad**  
@@ -189,10 +189,6 @@ El Selector de colores te ayuda a comprobar que el texto cumple los niveles de r
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
 
 <!-- links -->  
 

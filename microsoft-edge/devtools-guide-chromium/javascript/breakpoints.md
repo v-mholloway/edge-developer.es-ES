@@ -3,16 +3,16 @@ description: Obtenga información sobre todas las formas en que puede pausar el 
 title: Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 84077503d6c786244fc2ca4d54c349ae9f6d20d8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3d50b7b105aa9a9018ba61e44147f46f3d340079
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398598"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439517"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ Use puntos de interrupción para pausar el código JavaScript.  En esta guía se
 
 El tipo de punto de interrupción más conocido es la línea de código.  Pero los puntos de interrupción de línea de código pueden ser ineficientes para establecer, especialmente si no sabe exactamente dónde buscar o si está trabajando con una base de código grande.  Puede ahorrar tiempo al depurar al saber cómo y cuándo usar los otros tipos de puntos de interrupción.  
 
-| Tipo de punto de interrupción | Úsalo cuando quieras pausar...  |  
+| Tipo de punto de interrupción | Úsalo cuando quieras pausar... |  
 |:--- |:--- |  
 | [Línea de código](#line-of-code-breakpoints) | En una región exacta del código.  |  
 | [Línea de código condicional](#conditional-line-of-code-breakpoints) | En una región exacta del código, pero solo cuando alguna otra condición es true.  |  
@@ -165,7 +165,7 @@ Use puntos de interrupción de escucha de eventos cuando desee pausar el código
 Use puntos de interrupción de excepción cuando desee pausar en la línea de código que inicia una excepción capturada o no capturada.  
 
 1.  Elija la **herramienta Orígenes.**  
-1.  Elija **Pausar en excepciones** \( ![ Pausar en excepciones ][ImagePauseOnExceptionsIcon] \).  El icono se vuelve azul cuando está habilitado.  
+1.  Elija **Pausar en excepciones** \( ![ Pausar en excepciones ](../media/pause-on-exceptions-icon.msft.png) \).  El icono se vuelve azul cuando está habilitado.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="Botón Pausar en excepciones" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        Botón **Pausar en excepciones**  
@@ -217,10 +217,6 @@ Asegurarse de que la función de destino está en el ámbito es complicado si es
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImagePauseOnExceptionsIcon]: ../media/pause-on-exceptions-icon.msft.png  
 
 <!-- links -->  
 

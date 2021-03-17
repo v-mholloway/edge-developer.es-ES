@@ -3,16 +3,16 @@ description: Una referencia completa de las características del panel de red De
 title: Referencia de análisis de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e8e2259e0f95499519c954e2199e191382998649
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398381"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439706"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,12 +44,12 @@ De forma predeterminada, DevTools registra todas las solicitudes de red en la **
 
 Para detener la grabación de solicitudes, siga estos pasos.  
 
-1.  En la **herramienta Red,** elija **Detener registro de red de grabación** \( Detener registro de red de grabación ![ ][ImageRecordOnIcon] \).  Se vuelve gris para indicar que DevTools ya no está grabando solicitudes.  
+1.  En la **herramienta Red,** elija **Detener registro de red de grabación** \( Detener registro de red de grabación ![ ](../media/record-on-icon.msft.png) \).  Se vuelve gris para indicar que DevTools ya no está grabando solicitudes.  
 1.  Seleccione `Control` + `E` \(Windows, Linux\) o `Command` + `E` \(macOS\) mientras la **herramienta Red** está en foco.  
 
 ### <a name="clear-requests"></a>Borrar solicitudes  
 
-Elija **Borrar** \( Borrar \) en la herramienta Red para borrar todas las ![ solicitudes de la tabla ][ImageClearIcon] Solicitudes. ****  
+Elija **Borrar** \( Borrar \) en la herramienta Red para borrar todas las ![ solicitudes de la tabla ](../media/clear-requests-icon.msft.png) Solicitudes. ****  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="El botón Borrar" lightbox="../media/network-network-clear-button.msft.png":::
    El **botón Borrar**  
@@ -929,7 +929,7 @@ Puedes expandir o contraer secciones de la interfaz de usuario de la herramienta
 ### <a name="hide-the-filters-pane"></a>Ocultar el panel Filtros  
 
 De forma predeterminada, DevTools muestra el **panel Filtros.**  
-Elija **Filtro** \( ![ Filtro ][ImageFilterIcon] \) para ocultarlo.  
+Elija **Filtro** \( ![ Filtro ](../media/filter-icon.msft.png) \) para ocultarlo.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="El botón Ocultar filtros" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    El botón Ocultar filtros  
@@ -960,15 +960,6 @@ De forma predeterminada, DevTools muestra el **panel Información** general.  Pa
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureScreenshotsIcon]: ../media/capture-screenshots-icon.msft.png  
-[ImageClearIcon]: ../media/clear-requests-icon.msft.png  
-[ImageFilterIcon]: ../media/filter-icon.msft.png  
-[ImageHideIcon]: ../media/hide-overview-icon.msft.png  
-[ImageLargeResourceRowsIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageRecordOnIcon]: ../media/record-on-icon.msft.png  
 
 <!-- links -->  
 

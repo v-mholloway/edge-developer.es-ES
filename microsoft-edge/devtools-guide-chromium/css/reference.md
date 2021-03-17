@@ -3,16 +3,16 @@ description: Descubra nuevos flujos de trabajo para ver y cambiar CSS en Microso
 title: Referencia de CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a99cf46c4c0a6c6f14892268a30f8aab471e919d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399144"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439306"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -48,7 +48,7 @@ La **herramienta Elementos** de DevTools permite ver o cambiar el CSS de un elem
 Use una de las siguientes acciones para seleccionar un elemento.  
 
 *   En la ventanilla, mantenga el mouse sobre el elemento, abra el menú contextual \(hacer clic con el botón secundario\) y elija **Inspeccionar**.  
-*   En DevTools, elija **Seleccionar** un elemento \( Seleccionar un elemento \) o seleccione ![ ][ImageSelectAnElementIcon] `Control` + `Shift` + `C` \(Windows, Linux\) o `Command` + `Shift` + `C` \(macOS\) y, a continuación, elija el elemento en la ventanilla.  
+*   En DevTools, elija **Seleccionar** un elemento \( Seleccionar un elemento \) o seleccione ![ ](../media/select-an-element-icon.msft.png) `Control` + `Shift` + `C` \(Windows, Linux\) o `Command` + `Shift` + `C` \(macOS\) y, a continuación, elija el elemento en la ventanilla.  
 *   En DevTools, elija el elemento en el **árbol DOM**.  
 *   En DevTools, ejecute una consulta como en la consola , mantenga el mouse sobre el resultado, abra el menú contextual \(haga clic con el botón secundario en\) y elija Mostrar en el `document.querySelector('p')` **panel Elementos**. ****  
 
@@ -175,7 +175,7 @@ La **herramienta Cobertura** muestra qué CSS usa realmente una página.
        :::column-end:::
     :::row-end:::  
     
-1.  Elija **Iniciar la cobertura de instrumentación y actualizar la página** \( Iniciar la ![ instrumentación de la cobertura y actualizar la página ][ImageRefreshIcon] \).  La página se actualiza y la herramienta **Cobertura** proporciona una introducción a la cantidad de CSS \(y JavaScript\) que se usa en cada archivo que carga el explorador.  El color verde representa CSS usado.  El rojo representa CSS sin usar.  
+1.  Elija **Iniciar la cobertura de instrumentación y actualizar la página** \( Iniciar la ![ instrumentación de la cobertura y actualizar la página ](../media/refresh-icon.msft.png) \).  La página se actualiza y la herramienta **Cobertura** proporciona una introducción a la cantidad de CSS \(y JavaScript\) que se usa en cada archivo que carga el explorador.  El color verde representa CSS usado.  El rojo representa CSS sin usar.  
     
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Información general sobre la cantidad de CSS (y JavaScript) que se usa y no se usa" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        Información general sobre la cantidad de CSS \(y JavaScript\) que se usa y no se usa.  
@@ -283,7 +283,7 @@ Complete las siguientes acciones para habilitar o deshabilitar una clase en un e
 Complete las siguientes acciones para agregar una nueva regla de estilo.  
 
 1.  [Seleccione un elemento](#choose-an-element).  
-1.  Elija **Nueva regla de estilo** \( Nueva regla de estilo ![ ][ImageNewStyleRuleIcon] \).  DevTools inserta una nueva regla debajo de la **regla element.style.**  
+1.  Elija **Nueva regla de estilo** \( Nueva regla de estilo ![ ](../media/new-style-rule-icon.msft.png) \).  DevTools inserta una nueva regla debajo de la **regla element.style.**  
 
 > [!NOTE]
 > En la siguiente figura, DevTools agrega la regla `h1.devsite-page-title` de estilo después de elegir Nueva regla de **estilo**.  
@@ -294,7 +294,7 @@ Complete las siguientes acciones para agregar una nueva regla de estilo.
 
 #### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>Elegir la hoja de estilos a la que se va a agregar una regla  
 
-Al [agregar una nueva regla de estilo,](#add-a-style-rule)elija y mantenga presionada nueva regla de estilo **\(** Nueva regla de estilo \) para elegir a qué hoja de estilos agregar la ![ regla de ][ImageNewStyleRuleIcon] estilo.  
+Al [agregar una nueva regla de estilo,](#add-a-style-rule)elija y mantenga presionada nueva regla de estilo **\(** Nueva regla de estilo \) para elegir a qué hoja de estilos agregar la ![ regla de ](../media/new-style-rule-icon.msft.png) estilo.  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Elegir una hoja de estilos" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    Elegir una hoja de estilos  
@@ -306,7 +306,7 @@ Complete las siguientes acciones para agregar una regla de estilo a una ubicaci�
 
 1.  Mantenga el mouse sobre la regla de estilo que está directamente encima de donde desea agregar la nueva regla de estilo.  
 1.  [Mostrar la **barra de herramientas Más** acciones](#reveal-the-more-actions-toolbar).  
-1.  Elija **Insertar regla de estilo debajo** \( Insertar regla de estilo ![ debajo del icono ][ImageNewStyleRuleIcon] \).  
+1.  Elija **Insertar regla de estilo debajo** \( Insertar regla de estilo ![ debajo del icono ](../media/new-style-rule-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Insertar regla de estilo a continuación" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Insertar regla de estilo a continuación**  
@@ -360,7 +360,7 @@ Complete las siguientes acciones para agregar una declaración a `background-col
 
 1.  Mantenga el mouse sobre la regla de estilo a la que desea agregar `background-color` la declaración.  
 1.  [Mostrar la **barra de herramientas Más** acciones](#reveal-the-more-actions-toolbar).  
-1.  Elija **Agregar color de fondo** \( Icono Agregar color de fondo ![ ][ImageAddBackgroundColorIcon] \).  
+1.  Elija **Agregar color de fondo** \( Icono Agregar color de fondo ![ ](../media/add-background-color-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Agregar color de fondo" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Agregar color de fondo**  
@@ -372,7 +372,7 @@ Complete las siguientes acciones para agregar una declaración a `color` un elem
 
 1.  Mantenga el mouse sobre la regla de estilo a la que desea agregar `color` la declaración.  
 1.  [Mostrar la **barra de herramientas Más** acciones](#reveal-the-more-actions-toolbar).  
-1.  Elija **Agregar color** \( Icono Agregar color ![ ][ImageAddColorIcon] \).  
+1.  Elija **Agregar color** \( Icono Agregar color ![ ](../media/add-color-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Agregar color" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Agregar color**  
@@ -384,7 +384,7 @@ Complete las siguientes acciones para agregar una declaración a `box-shadow` un
 
 1.  Mantenga el mouse sobre la regla de estilo a la que desea agregar `box-shadow` la declaración.  
 1.  [Mostrar la **barra de herramientas Más** acciones](#reveal-the-more-actions-toolbar).  
-1.  Elija **Agregar sombra de cuadro** \( Agregar icono de sombra de cuadro ![ ][ImageAddBoxShadowIcon] \).  
+1.  Elija **Agregar sombra de cuadro** \( Agregar icono de sombra de cuadro ![ ](../media/add-box-shadow-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Agregar sombra de cuadro" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Agregar sombra de cuadro**  
@@ -396,7 +396,7 @@ Complete las siguientes acciones para agregar una declaración a `text-shadow` u
 
 1.  Mantenga el mouse sobre la regla de estilo a la que desea agregar `text-shadow` la declaración.  
 1.  [Mostrar la **barra de herramientas Más** acciones](#reveal-the-more-actions-toolbar).  
-1.  Elija **Agregar sombra de texto** \( Agregar icono sombra de texto ![ ][ImageAddTextShadowIcon] \).  
+1.  Elija **Agregar sombra de texto** \( Agregar icono sombra de texto ![ ](../media/add-text-shadow-icon.msft.png) \).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Agregar sombra de texto" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Agregar sombra de texto**  
@@ -532,7 +532,7 @@ La siguiente figura y enumerar descries de cada uno de los elementos de la inter
 
 #### <a name="sample-a-color-off-the-page-with-the-eyedropper"></a>Muestrear un color fuera de la página con el cuentagotas  
 
-Al abrir el **Selector de colores**, el **cuentagotas** \( Cuentagotas ![ ][ImageEyedropperIcon] \) está en la opción predeterminada.  Complete las siguientes acciones para cambiar el color seleccionado a otro color de la página.  
+Al abrir el **Selector de colores**, el **cuentagotas** \( Cuentagotas ![ ](../media/eyedropper-icon.msft.png) \) está en la opción predeterminada.  Complete las siguientes acciones para cambiar el color seleccionado a otro color de la página.  
 
 1.  Mantenga el mouse sobre el color de destino en la ventanilla.  
 1.  Elija confirmar.  
@@ -549,17 +549,6 @@ Al abrir el **Selector de colores**, el **cuentagotas** \( Cuentagotas ![ ][Imag
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  
-[ImageAddBoxShadowIcon]: ../media/add-box-shadow-icon.msft.png  
-[ImageAddColorIcon]: ../media/add-color-icon.msft.png  
-[ImageAddTextShadowIcon]: ../media/add-text-shadow-icon.msft.png  
-[ImageEyedropperIcon]: ../media/eyedropper-icon.msft.png  
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageSelectAnElementIcon]: ../media/select-an-element-icon.msft.png  
 
 <!-- links -->  
 

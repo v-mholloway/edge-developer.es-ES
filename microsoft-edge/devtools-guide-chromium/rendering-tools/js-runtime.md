@@ -3,16 +3,16 @@ description: Identifique funciones costosas mediante el panel de memoria DevTool
 title: Acelerar el tiempo de ejecución de JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 682001ae8d265b342e5d6e0725f9f8ac4e298cf8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2151777c6a9f94408f48552839531c3534d3de36
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397604"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439741"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -30,7 +30,7 @@ ms.locfileid: "11397604"
 
 # <a name="speed-up-javascript-runtime"></a>Acelerar el tiempo de ejecución de JavaScript  
 
-Identifique funciones costosas mediante el panel **Memoria.**  
+Identificar funciones costosas mediante la **herramienta Memoria.**  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Perfiles de ejemplo" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Perfiles de ejemplo  
@@ -38,14 +38,14 @@ Identifique funciones costosas mediante el panel **Memoria.**
 
 ### <a name="summary"></a>Resumen  
 
-*   Registre exactamente qué funciones se llamaron y cuánta memoria necesita cada una con el muestreo de asignación en el panel **Memoria.**  
+*   Registre exactamente qué funciones se llamaron y cuánta memoria necesita cada una con el muestreo de asignación en la **herramienta Memoria.**  
 *   Visualiza los perfiles como un gráfico de llamas.  
     
 ## <a name="record-a-sampling-profile"></a>Registrar un perfil de muestreo  
 
 Si observa jank en JavaScript, recopile un perfil de muestreo.  Los perfiles de muestreo muestran dónde se dedica el tiempo de ejecución en las funciones de la página.  
 
-1.  Vaya al panel **Memoria** de DevTools.  
+1.  Vaya a la **herramienta Memoria** de DevTools.  
 1.  Elija el **botón de radio Asignación de** muestreo.  
 1.  Elija **Inicio**.  
 1.  Según lo que intente analizar, puede actualizar la página, interactuar con la página o simplemente dejar que se ejecute la página.  
@@ -62,7 +62,7 @@ La vista predeterminada es **Heavy \(Bottom Up\)**.  Esta vista le permite revis
 
 ### <a name="change-sort-order"></a>Cambiar criterio de ordenación  
 
-Para cambiar el orden de ordenación, seleccione el menú desplegable junto al icono de la función seleccionada de foco **\(** Función seleccionada por foco \) y, a continuación, elija una de ![ las siguientes ][ImageFocusIcon] opciones.
+Para cambiar el orden de ordenación, seleccione el menú desplegable junto al icono de la función seleccionada de foco **\(** Función seleccionada por foco \) y, a continuación, elija una de ![ las siguientes ](../media/focus-icon.msft.png) opciones.
 
 **Gráfico**.  Muestra un gráfico cronológico de la grabación.  
 
@@ -84,9 +84,9 @@ Para cambiar el orden de ordenación, seleccione el menú desplegable junto al i
 
 ### <a name="exclude-functions"></a>Funciones de exclusión  
 
-Para excluir una función del perfil de muestreo, selecciónelo y, a continuación, seleccione el botón excluir la función seleccionada **\(** ![ excluir la función seleccionada ][ImageExcludeIcon] \).  La función de solicitud \(parent\) de la función excluida \(child\) se carga con la memoria asignada a la función excluida \(child\).  
+Para excluir una función del perfil de muestreo, selecciónla y, a continuación, elija el botón excluir la función seleccionada **\(** ![ excluir la función seleccionada ](../media/exclude-icon.msft.png) \).  La función de solicitud \(parent\) de la función excluida \(child\) se carga con la memoria asignada a la función excluida \(child\).  
 
-Elija el **botón restaurar todas las funciones** \( restaurar todas las funciones \) para restaurar todas las funciones excluidas de nuevo en la ![ ][ImageRestoreIcon] grabación.  
+Elija el **botón restaurar todas las funciones** \( restaurar todas las funciones \) para restaurar todas las funciones excluidas de nuevo en la ![ ](../media/restore-icon.msft.png) grabación.  
 
 ## <a name="view-sampling-profile-as-chart"></a>Ver perfil de muestreo como gráfico  
 
@@ -102,7 +102,7 @@ El gráfico de llama se divide en dos partes.
 
 | index | Parte | Descripción |  
 | --- |:--- |:--- |  
-| 1 | Introducción | Una vista visual de toda la grabación.  El alto de las barras corresponde a la profundidad de la pila de llamadas.  Por lo tanto, cuanto mayor sea la barra, más profunda será la pila de llamadas.  |  
+| 1 | Información general | Una vista visual de toda la grabación.  El alto de las barras corresponde a la profundidad de la pila de llamadas.  Por lo tanto, cuanto mayor sea la barra, más profunda será la pila de llamadas.  |  
 | 2 | Pilas de llamadas | Se trata de una vista detallada de las funciones a las que se llamó durante la grabación.  El eje horizontal es el tiempo y el eje vertical es la pila de llamadas.  Las pilas están organizadas de arriba abajo.  Por lo tanto, la función en la parte superior llamada a la que está debajo de ella, y así sucesivamente.  |  
 
 Las funciones se coloreadas aleatoriamente.  No hay ninguna correlación con los colores usados en los otros paneles.  Sin embargo, las funciones siempre tienen el mismo color entre invocaciones para que pueda observar patrones en cada tiempo de ejecución.  
@@ -123,7 +123,7 @@ Elija, mantenga presionado y arrastre el mouse hacia la izquierda y la derecha a
 
 ### <a name="view-function-details"></a>Ver detalles de la función  
 
-Elija una función para ver la definición en **el** panel Orígenes.  
+Elija una función para ver la definición en la **herramienta** Orígenes.  
 
 Mantenga el mouse sobre una función para mostrar el nombre y los datos de temporización.  Se proporciona la siguiente información.  
 
@@ -144,12 +144,6 @@ Mantenga el mouse sobre una función para mostrar el nombre y los datos de tempo
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExcludeIcon]: ../media/exclude-icon.msft.png  
-[ImageFocusIcon]: ../media/focus-icon.msft.png  
-[ImageRestoreIcon]: ../media/restore-icon.msft.png  
 
 <!-- links -->  
 

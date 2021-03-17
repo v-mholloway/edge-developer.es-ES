@@ -3,16 +3,16 @@ description: Depuración remota de contenido en directo en un dispositivo Androi
 title: Introducción a la depuración remota de dispositivos Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 61fad793ca03dbef68a5f769dbfd25e780fd9930
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2beab5bf6d4b58dc93d883f5114e168213053e84
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398262"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439573"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -126,14 +126,14 @@ Elija **la pestaña foco,** **volver**a cargar o **cerrar** junto a la pestaña 
 
 Vaya a la **herramienta Elementos** de la instancia de DevTools y mantenga el mouse sobre un elemento para resaltarlo en la ventanilla del dispositivo Android.  
 
-También puedes seleccionar un elemento en la pantalla del dispositivo Android para seleccionarlo en la **herramienta** Elementos.  Elija **Seleccionar elemento** \( Seleccionar elemento \) icono en la instancia de ![ DevTools y, a continuación, seleccione ][ImageSelectElementIcon] el elemento en la pantalla del dispositivo Android.  
+También puedes seleccionar un elemento en la pantalla del dispositivo Android para seleccionarlo en la **herramienta** Elementos.  Elija **Seleccionar elemento** \( Seleccionar elemento \) icono en la instancia de ![ DevTools y, a continuación, seleccione ](../media/select-element-icon.msft.png) el elemento en la pantalla del dispositivo Android.  
 
 > [!NOTE]
 > **Select Element** está deshabilitado después de la primera selección, por lo que debes volver a habilitarlo cada vez que quieras usar la característica.  
 
 ### <a name="screencast-your-android-screen-to-your-development-machine"></a>Difusión en pantalla de la pantalla de Android a la máquina de desarrollo  
 
-Elija **Alternar difusión** de pantalla \( Alternar difusión por pantalla \) icono para ver el contenido de su dispositivo ![ Android en la instancia de ][ImageToggleScreencastIcon] DevTools.  
+Elija **Alternar difusión** de pantalla \( Alternar difusión por pantalla \) icono para ver el contenido de su dispositivo ![ Android en la instancia de ](../media/toggle-screencast-icon.msft.png) DevTools.  
 
 Puede interactuar con la difusión en pantalla de las siguientes maneras.  
 
@@ -152,11 +152,6 @@ Puede interactuar con la difusión en pantalla de las siguientes maneras.
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
-[ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: La documentación canónica de los métodos abreviados de teclado d
 title: Métodos abreviados de teclado de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c6d51d27ce41ed8192a867cf33555b3880dd3ef9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398353"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439594"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -152,15 +152,11 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 | Borrar la **consola** | `Control`+`L` | `Command`+`K` o `Option`+`L` |  
 | Forzar una entrada de varias líneas.  Este acceso directo es en su mayoría innecesario, ya que DevTools debe detectar escenarios de varias líneas de forma predeterminada | `Shift`+`Enter` | `Command`+`Return` |  
 | Ejecutar | `Enter` | `Return` |  
-| Expandir todas las subpropiedades de un objeto que se registran en la consola | Mantenga `Alt` y, a **continuación, elija Expandir** \( Expandir ![ ][ImageExpandIcon] \) | Mantenga `Alt` y, a **continuación, elija Expandir** \( Expandir ![ ][ImageExpandIcon] \) |  
+| Expandir todas las subpropiedades de un objeto que se registran en la consola | Mantenga `Alt` y, a **continuación, elija Expandir** \( Expandir ![ ](../media/expand-icon.msft.png) \) | Mantenga `Alt` y, a **continuación, elija Expandir** \( Expandir ![ ](../media/expand-icon.msft.png) \) |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
 
 <!-- links -->  
 

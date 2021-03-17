@@ -3,16 +3,16 @@ description: Una referencia sobre todas las formas de registrar y analizar el re
 title: Referencia de análisis de rendimiento
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 181bc05fffbaef6a06bebcc5cb9ccfcc8e7de498
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: e7774dc0aab647b8cf2bf47699368fafe6c21d70
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398808"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439692"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -42,7 +42,7 @@ Registre el rendimiento en tiempo de ejecución cuando desee analizar el rendimi
 
 1.  Vaya a la página que desea analizar.  
 1.  Abra la **herramienta Rendimiento** en DevTools.  
-1.  Elija **Grabar** \( ![ Icono de registro ][ImageRecordIcon] \).  
+1.  Elija **Grabar** \( ![ Icono de registro ](../media/record-icon.msft.png) \).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Grabar" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
        **Grabar**  
@@ -57,7 +57,7 @@ Registre el rendimiento de carga cuando desee analizar el rendimiento de una pá
 
 1.  Vaya a la página que desea analizar.  
 1.  Abra **el** panel Rendimiento de DevTools.  
-1.  Elija **Actualizar página** \( Actualizar página ![ ][ImageRefreshPageIcon] \).  DevTools registra las métricas de rendimiento mientras la página se actualiza y, a continuación, detiene automáticamente la grabación un par de segundos después de que finalice la carga.  
+1.  Elija **Actualizar página** \( Actualizar página ![ ](../media/refresh-page-icon.msft.png) \).  DevTools registra las métricas de rendimiento mientras la página se actualiza y, a continuación, detiene automáticamente la grabación un par de segundos después de que finalice la carga.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="Página Actualizar" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
        **Página Actualizar**  
@@ -81,7 +81,7 @@ Vaya a [Ver una captura de pantalla](#view-a-screenshot) para obtener informaci�
 
 ### <a name="force-garbage-collection-while-recording"></a>Forzar la recolección de elementos no utilizados durante la grabación  
 
-Mientras graba una página, elija **Recopilar elementos no** utilizados \( Recopilar icono de elementos no utilizados ![ ][ImageCollectGarbageIcon] \) para forzar la recolección de elementos no utilizados.  
+Mientras graba una página, elija **Recopilar elementos no** utilizados \( Recopilar icono de elementos no utilizados ![ ](../media/collect-garbage-icon.msft.png) \) para forzar la recolección de elementos no utilizados.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Recopilar elementos no utilizados" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    Recopilar elementos no utilizados  
@@ -89,7 +89,7 @@ Mientras graba una página, elija **Recopilar elementos no** utilizados \( Recop
 
 ### <a name="show-recording-settings"></a>Mostrar configuración de grabación  
 
-Elija **Configuración de captura** \( Configuración de captura \) para exponer más opciones relacionadas con la forma en que ![ ][ImageCaptureSettingsIcon] DevTools captura las grabaciones de rendimiento.  
+Elija **Configuración de captura** \( Configuración de captura \) para exponer más opciones relacionadas con la forma en que ![ ](../media/capture-settings-icon.msft.png) DevTools captura las grabaciones de rendimiento.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Sección Configuración de captura" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    Sección **Configuración de** captura  
@@ -161,7 +161,7 @@ Para cargar una grabación, abra el menú contextual \(hacer clic con el botón 
 
 ## <a name="clear-the-previous-recording"></a>Borrar la grabación anterior  
 
-Después de realizar una grabación, elija **Borrar grabación** \( Borrar icono de grabación \) para borrar esa grabación desde el ![ panel ][ImageClearRecordingIcon] Rendimiento. ****  
+Después de realizar una grabación, elija **Borrar grabación** \( Borrar icono de grabación \) para borrar esa grabación desde el ![ panel ](../media/clear-recording-icon.msft.png) Rendimiento. ****  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Borrar grabación" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **Borrar grabación**  
@@ -201,13 +201,13 @@ Seleccione `Control` + `F` \(Windows, Linux\) o `Command` + `F` \(macOS\) **** p
 
 Para navegar por actividades que coincidan con la consulta:  
 
-*   Use los **botones** Previous \( ![ Previous ][ImagePreviousIcon] \) y **Next** \( ![ Next ][ImageNextIcon] \).  
+*   Use los **botones** Previous \( ![ Previous ](../media/previous-icon.msft.png) \) y **Next** \( ![ Next ](../media/next-icon.msft.png) \).  
 *   Seleccione `Shift` + `Enter` para seleccionar la anterior `Enter` o para seleccionar la siguiente.  
 
 Para modificar la configuración de consulta:  
 
-*   Elija **Distingue mayúsculas de** minúsculas ![ \( Distingue mayúsculas de ][ImageSearchCaseIcon] minúsculas \) para que la consulta sea confidencial.  
-*   Elija **Regex** \( ![ Regex ][ImageSearchRegexIcon] \) para usar una expresión regular en la consulta.  
+*   Elija **Distingue mayúsculas de** minúsculas ![ \( Distingue mayúsculas de ](../media/search-case-icon.msft.png) minúsculas \) para que la consulta sea confidencial.  
+*   Elija **Regex** \( ![ Regex ](../media/search-regex-icon.msft.png) \) para usar una expresión regular en la consulta.  
 
 Para ocultar el cuadro de búsqueda, elija **Cancelar**.  
 
@@ -278,7 +278,7 @@ Use el **cuadro de** texto Filtrar para filtrar eventos por nombre de actividad.
 
 De forma **predeterminada, el menú** Agrupación se establece en Sin **agrupación**.  Use el **menú Agrupación** para ordenar la tabla de actividad según varios criterios.  
 
-Elija **Mostrar pila más pesada** \( Mostrar pila más pesada \) para mostrar otra tabla a la derecha de la tabla ![ ][ImageShowHeaviestStackIcon] **Actividad.**  Elija una actividad para rellenar la **tabla De pila más** pesada.  La **tabla Pila más pesada** muestra los elementos secundarios de la actividad seleccionada que tardaron más tiempo en ejecutarse.  
+Elija **Mostrar pila más pesada** \( Mostrar pila más pesada \) para mostrar otra tabla a la derecha de la tabla ![ ](../media/show-heaviest-stack-icon.msft.png) **Actividad.**  Elija una actividad para rellenar la **tabla De pila más** pesada.  La **tabla Pila más pesada** muestra los elementos secundarios de la actividad seleccionada que tardaron más tiempo en ejecutarse.  
 
 #### <a name="the-bottom-up-panel"></a>El panel Bottom-Up panel  
 
@@ -489,9 +489,9 @@ Mantenga el mouse sobre una capa para resaltarla en el diagrama.
 
 Para mover el diagrama:  
 
-*   Elija **Modo panorámica** \( Modo panorámica ![ \) para desplazarse por los ][ImagePanModeIcon] ejes X e Y.  
-*   Elija **Girar modo** \( Girar modo \) para girar a lo largo del eje ![ ][ImageRotateModeIcon] Z.  
-*   Elija **Restablecer transformación** \( Restablecer transformación ![ ][ImageResetTransformIcon] \) para restablecer el diagrama a la posición original.  
+*   Elija **Modo panorámica** \( Modo panorámica ![ \) para desplazarse por los ](../media/pan-mode-icon.msft.png) ejes X e Y.  
+*   Elija **Girar modo** \( Girar modo \) para girar a lo largo del eje ![ ](../media/rotate-mode-icon.msft.png) Z.  
+*   Elija **Restablecer transformación** \( Restablecer transformación ![ ](../media/reset-transform-icon.msft.png) \) para restablecer el diagrama a la posición original.  
     
 ### <a name="view-paint-profiler"></a>Ver el perfilador de pintura  
 
@@ -573,22 +573,6 @@ Para ver problemas de rendimiento de desplazamiento, complete las siguientes acc
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureSettingsIcon]: ../media/capture-settings-icon.msft.png  
-[ImageClearRecordingIcon]: ../media/clear-recording-icon.msft.png  
-[ImageCollectGarbageIcon]: ../media/collect-garbage-icon.msft.png  
-[ImageNextIcon]: ../media/next-icon.msft.png  
-[ImagePanModeIcon]: ../media/pan-mode-icon.msft.png  
-[ImagePreviousIcon]: ../media/previous-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png
-[ImageRefreshPageIcon]: ../media/refresh-page-icon.msft.png  
-[ImageResetTransformIcon]: ../media/reset-transform-icon.msft.png  
-[ImageRotateModeIcon]: ../media/rotate-mode-icon.msft.png  
-[ImageSearchCaseIcon]: ../media/search-case-icon.msft.png  
-[ImageSearchRegexIcon]: ../media/search-regex-icon.msft.png  
-[ImageShowHeaviestStackIcon]: ../media/show-heaviest-stack-icon.msft.png  
 
 <!-- links -->  
 

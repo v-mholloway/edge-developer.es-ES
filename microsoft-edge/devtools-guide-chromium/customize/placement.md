@@ -3,16 +3,16 @@ description: Cómo mover Microsoft Edge DevTools a la parte inferior o izquierda
 title: Cambiar la ubicación de Microsoft Edge DevTools (Undock, Dock to Bottom, Dock to Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e3160999a1072afffdc5c5d44f8fc60fab65d264
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399046"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439180"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ De forma predeterminada, DevTools está acoplada a la derecha de la ventanilla. 
 
 ## <a name="change-placement-from-the-main-menu"></a>Cambiar la ubicación desde el menú principal  
 
-1.  Elija Personalizar y **controlar devTools** \( \) y elija Desacoplar en una ventana independiente \( Desacoplar \), Acoplar a la parte inferior \) o Acoplar a la izquierda \( Acoplar a la izquierda `...` **** ![ ][ImageUndockIcon] **** ![ ][ImageBottomIcon] **** ![ ][ImageLeftIcon] \).  
+1.  Elija Personalizar y **controlar devTools** \( \) y elija Desacoplar en una ventana independiente \( Desacoplar \), Acoplar a la parte inferior \) o Acoplar a la izquierda \( Acoplar a la izquierda `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Elegir Desacoplar en ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Elegir **Desacoplar en ventana independiente**  
@@ -77,12 +77,6 @@ De forma predeterminada, DevTools está acoplada a la derecha de la ventanilla. 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageUndockIcon]: ../media/undock-icon.msft.png  
-[ImageBottomIcon]: ../media/bottom-icon.msft.png  
-[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 

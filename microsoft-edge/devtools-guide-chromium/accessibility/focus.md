@@ -3,16 +3,16 @@ description: Abra la consola, cree una expresión en directo y establezca la exp
 title: Rastrear qué elemento tiene el foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3f3e59c4ee6f10b8e162f30efbff337ca2beec8d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2c2040c690441fb33c802cf454dc7a1e3f33c494
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398318"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439173"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Supongamos que está probando la accesibilidad de navegación del teclado de una
 Complete las siguientes acciones para realizar un seguimiento del elemento centrado en DevTools.  
 
 1.  Abra la **consola**.  
-1.  Elija **Crear expresión en directo** \( Crear expresión en directo ![ ][ImageCreateIcon] \).  
+1.  Elija **Crear expresión en directo** \( Crear expresión en directo ![ ](../media/create-live-expression-icon.msft.png) \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Crear una expresión en directo" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Crear una expresión en directo  
@@ -55,10 +55,6 @@ Dado que esa expresión siempre representa el elemento centrado, ahora tiene una
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

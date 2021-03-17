@@ -3,16 +3,16 @@ description: Cómo ver y editar sessionStorage con el panel Almacenamiento de se
 title: Ver y editar el almacenamiento de sesiones con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: cf00d71302e7a1f16ba1cceaa17c9380245d12f8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398010"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439664"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -80,12 +80,12 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
 
 1.  [Ver los `sessionStorage` pares clave-valor de un dominio](#view-sessionstorage-keys-and-values).  
 1.  Elija el par clave-valor que desea eliminar.  DevTools lo resalta en azul para indicar que está seleccionado.  
-1.  Seleccione la `Delete` clave o elija Eliminar **seleccionado** \( Eliminar ![ seleccionado ][ImageDeleteIcon] \).  
+1.  Seleccione la `Delete` clave o elija Eliminar **seleccionado** \( Eliminar ![ seleccionado ](../media/delete-icon.msft.png) \).  
     
 ## <a name="delete-all-sessionstorage-key-value-pairs-for-a-domain"></a>Eliminar todos los pares clave-valor sessionStorage de un dominio  
 
 1.  [Ver los `sessionStorage` pares clave-valor de un dominio](#view-sessionstorage-keys-and-values).  
-1.  Elija **Borrar todo** \( Borrar todo ![ ][ImageClearIcon] \).  
+1.  Elija **Borrar todo** \( Borrar todo ![ ](../media/clear-icon.msft.png) \).  
     
 ## <a name="interact-with-sessionstorage-from-the-console"></a>Interactuar con sessionStorage desde la consola  
 
@@ -106,11 +106,6 @@ Dado que puede ejecutar JavaScript en **** la consola **y**dado que la consola t
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

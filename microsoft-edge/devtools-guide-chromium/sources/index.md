@@ -3,16 +3,16 @@ description: Mostrar y editar archivos, crear fragmentos de código, depurar Jav
 title: Información general del panel orígenes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 7ce7ae32b4bf91419512ec9e387cdf75549552a5
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397765"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439608"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -101,7 +101,7 @@ En su lugar, puede guardar este código en un fragmento de **código** y ejecuta
 
 Para ejecutar un **fragmento de código:**
 
-*   Abra el archivo mediante el panel **Fragmentos** de código y elija **Ejecutar** \( ![ El botón Ejecutar ][ImageRunIcon] \).  
+*   Abra el archivo mediante el panel **Fragmentos** de código y elija **Ejecutar** \( ![ El botón Ejecutar ](../media/run-snippet-icon.msft.png) \).  
 *   Abra el [menú comando][DevtoolsGuideChromiumCommandMenuIndex], elimine el carácter, escriba , escriba el nombre del fragmento de código y, a `>` continuación, seleccione `!` **** `Enter` .  
     
 Vaya a [Ejecutar fragmentos de código desde cualquier página para][DevtoolsGuideChromiumJavascriptSnippets] obtener más información.
@@ -125,10 +125,6 @@ Vaya a [Editar archivos con áreas de trabajo][DevtoolsGuideChromiumWorkspacesIn
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 
