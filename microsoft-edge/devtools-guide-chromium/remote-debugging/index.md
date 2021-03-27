@@ -3,16 +3,16 @@ description: Depuración remota de contenido en directo en un dispositivo Androi
 title: Introducción a la depuración remota de dispositivos Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2beab5bf6d4b58dc93d883f5114e168213053e84
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: d69fd4832991826c76f47daea399bdd89e981bb4
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439573"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461216"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439573"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-remote-debugging-android-devices"></a>Introducción a la depuración remota de dispositivos Android  
 
 Depuración remota de contenido en directo en un dispositivo Android desde tu equipo Windows o macOS.  La siguiente página de tutorial le enseña a completar las siguientes acciones.  

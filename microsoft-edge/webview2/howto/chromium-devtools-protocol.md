@@ -3,17 +3,17 @@ description: Aprende a usar el protocolo Chrome DevTools en tus aplicaciones web
 title: Usar el protocolo DevTools de Chrome en WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Chrome DevTools Protocol
-ms.openlocfilehash: 0f7a2dd4bb3b1621e854cd4c0c5410e64d3c03ff
-ms.sourcegitcommit: 0ef5bb3933cde8a466f2931b824f07b4995cfe5e
+ms.openlocfilehash: 86846ee195406f78d5fd7c369f375ed1e359101a
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "11409331"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461202"
 ---
 # <a name="use-chromium-devtools-protocol-in-webview2"></a>Usar el protocolo Chromium DevTools en WebView2  
 
@@ -26,7 +26,7 @@ El [protocolo Chromium DevTools][GitHubChromedevtoolsDevtoolsProtocol] proporcio
 
 Para usar la API del protocolo DevTools de Chromium en WebView2, use cualquiera de las siguientes acciones.  
 
-*   Instale y use el [paquete NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension (versión preliminar)][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] \(.NET\).  
+*   Instale y use el [paquete NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension (versión preliminar)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] \(.NET\).  
 *   Ejecute uno de los métodos siguientes.  
     *   .NET:  [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString], [GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]  
     *   Win32 C/C++:  [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod], [ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]  
@@ -34,9 +34,9 @@ Para usar la API del protocolo DevTools de Chromium en WebView2, use cualquiera 
 ## <a name="use-devtoolsprotocolhelper-preview"></a>Usar DevToolsProtocolHelper (versión preliminar)
 
 > [!NOTE]
-> El [paquete NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] se encuentra actualmente en versión preliminar técnica.  Mientras esté en versión preliminar, no use el paquete en aplicaciones de producción.
+> El [paquete NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] se encuentra actualmente en versión preliminar técnica.  Mientras esté en versión preliminar, no use el paquete en aplicaciones de producción.
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension (versión preliminar)][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] es un paquete NuGet creado por el equipo de WebView2 que proporciona un fácil acceso a las características del protocolo Chromium DevTools.  En los ejemplos siguientes se describe cómo usar la funcionalidad de geolocalización en el protocolo Chromium DevTools en el control WebView2.  Puede seguir un patrón similar para usar otras características del protocolo Chromium DevTools.  
+[Microsoft.Web.WebView2.DevToolsProtocolExtension (versión preliminar)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] es un paquete NuGet creado por el equipo de WebView2 que proporciona un fácil acceso a las características del protocolo Chromium DevTools.  En los ejemplos siguientes se describe cómo usar la funcionalidad de geolocalización en el protocolo Chromium DevTools en el control WebView2.  Puede seguir un patrón similar para usar otras características del protocolo Chromium DevTools.  
 
 ## <a name="step-1-create-a-webpage-to-find-your-geolocation"></a>Paso 1: Crear una página web para buscar la geolocalización  
 
@@ -200,4 +200,4 @@ Para presentar un error o un problema del Protocolo DevTools de Chromium, comple
 
 [ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]: https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform "Informe de errores | Errores de Chromium"  
 
-[NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension | Galería nuGet QA"  
+[NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension | Galería nuGet QA"  

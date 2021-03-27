@@ -3,18 +3,18 @@ description: Introducción a los emuladores de Surface Duo de depuración remota
 title: Introducción a los emuladores de Surface Duo de depuración remota
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, depuración remota, android, surface duo
-ms.openlocfilehash: 61f903a5b929b7ee7b924938cf6ddc21a9783ca7
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 49b16f3c920735b34d44455bae437442cac3bf6e
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439334"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461244"
 ---
-# <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Introducción a los emuladores de Surface Duo de depuración remota  
+# <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Introducción a la depuración remota de emuladores de Surface Duo  
 
 En este artículo, describes el proceso de depuración remota del contenido web en la aplicación [Microsoft Edge][GooglePlayStoreAppsComMicrosoftEmmx] en un emulador de [Surface Duo][MicrosoftSurfaceDevicesSurfaceDuo] desde una instancia de escritorio de Microsoft [Edge][MicrosoftEdge].  Para obtener información sobre la depuración en un dispositivo Surface Duo, sigue nuestra guía para la depuración remota [de dispositivos Android.][DevtoolsRemoteDebuggingMain]  
 
