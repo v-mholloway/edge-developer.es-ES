@@ -1,0 +1,334 @@
+- name: Hospedaje en tiempo de ejecución de JavaScript
+  href: javascript-runtime-hosting.md
+  items:
+    - name: Hospedar el tiempo de ejecución de JavaScript
+      href: chakra-hosting/hosting-the-javascript-runtime.md
+    - name: Destinos de Microsoft Edge frente a motores de herencia
+      href: chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md
+    - name: Referencia (tiempo de ejecución de JavaScript)
+      href: chakra-hosting/reference-javascript-runtime.md
+      items:
+        - name: 'Constantes, enumeraciones y definiciones de tipo en tiempo de ejecución de JavaScript'
+          href: chakra-hosting/javascript-runtime-typedefs-constants-and-enumerations.md
+          items:
+            - name: Definición de tipo JsBackgroundWorkItemCallback
+              href: chakra-hosting/jsbackgroundworkitemcallback-typedef.md
+            - name: Definición de tipo JsBeforeCollectCallback
+              href: chakra-hosting/jsbeforecollectcallback-typedef.md
+            - name: Definición de tipo JsContextRef
+              href: chakra-hosting/jscontextref-typedef.md
+            - name: Definición de tipo JsFinalizeCallback
+              href: chakra-hosting/jsfinalizecallback-typedef.md
+            - name: Definición de tipo JsMemoryAllocationCallback
+              href: chakra-hosting/jsmemoryallocationcallback-typedef.md
+            - name: Definición de tipo JsNativeFunction
+              href: chakra-hosting/jsnativefunction-typedef.md
+            - name: Definición de tipo JsObjectBeforeCollectCallback
+              href: chakra-hosting/jsobjectbeforecollectcallback-typedef.md
+            - name: Definición de tipo JsProjectionCallback
+              href: chakra-hosting/jsprojectioncallback-typedef.md
+            - name: Definición de tipo JsProjectionCallbackContext
+              href: chakra-hosting/jsprojectioncallbackcontext-typedef.md
+            - name: Definición de tipo JsProjectionEnqueueCallback
+              href: chakra-hosting/jsprojectionenqueuecallback-typedef.md
+            - name: Definición de tipo JsPromiseContinuationCallback
+              href: chakra-hosting/jspromisecontinuationcallback-typedef.md
+            - name: 'Definición de tipo JsPropertyIdRef '
+              href: chakra-hosting/jspropertyidref-typedef.md
+            - name: Definición de tipo JsRef
+              href: chakra-hosting/jsref-typedef.md
+            - name: Definición de tipo JsRuntimeHandle
+              href: chakra-hosting/jsruntimehandle-typedef.md
+            - name: Definición de tipo JsSerializedScriptLoadSourceCallback
+              href: chakra-hosting/jsserializedscriptloadsourcecallback-typedef.md
+            - name: Definición de tipo JsSerializedScriptUnloadCallback
+              href: chakra-hosting/jsserializedscriptunloadcallback-typedef.md
+            - name: Definición de tipo JsSourceContext
+              href: chakra-hosting/jssourcecontext-typedef.md
+            - name: Definición de tipo JsThreadServiceCallback
+              href: chakra-hosting/jsthreadservicecallback-typedef.md
+            - name: Definición de tipo JsValueRef
+              href: chakra-hosting/jsvalueref-typedef.md
+            - name: Constante JS_INVALID_PROPERTYID
+              href: chakra-hosting/js-invalid-propertyid-constant.md
+            - name: Constante JS_INVALID_REFERENCE
+              href: chakra-hosting/js-invalid-reference-constant.md
+            - name: Constante JS_INVALID_RUNTIME_HANDLE
+              href: chakra-hosting/js-invalid-runtime-handle-constant.md
+            - name: Constante JS_SOURCE_CONTEXT_NONE
+              href: chakra-hosting/js-source-context-none-constant.md
+            - name: Enumeración JsErrorCode
+              href: chakra-hosting/jserrorcode-enumeration.md
+            - name: Enumeración JsMemoryEventType
+              href: chakra-hosting/jsmemoryeventtype-enumeration.md
+            - name: Enumeración JsPropertyIdType
+              href: chakra-hosting/jspropertyidtype-enumeration.md
+            - name: Enumeración JsRuntimeAttributes
+              href: chakra-hosting/jsruntimeattributes-enumeration.md
+            - name: Enumeración JsRuntimeVersion
+              href: chakra-hosting/jsruntimeversion-enumeration.md
+            - name: Enumeración JsTypedArrayType
+              href: chakra-hosting/jstypedarraytype-enumeration.md
+            - name: Enumeración de JsValueType
+              href: chakra-hosting/jsvaluetype-enumeration.md
+        - name: Función JsAddRef
+          href: chakra-hosting/jsaddref-function.md
+        - name: Función JsBooleanToBool
+          href: chakra-hosting/jsbooleantobool-function.md
+        - name: Función JsBoolToBoolean
+          href: chakra-hosting/jsbooltoboolean-function.md
+        - name: Función JsCallFunction
+          href: chakra-hosting/jscallfunction-function.md
+        - name: Función JsCollectGarbage
+          href: chakra-hosting/jscollectgarbage-function.md
+        - name: Función JsConstructObject
+          href: chakra-hosting/jsconstructobject-function.md
+        - name: Función JsConvertValueToBoolean
+          href: chakra-hosting/jsconvertvaluetoboolean-function.md
+        - name: Función JsConvertValueToNumber
+          href: chakra-hosting/jsconvertvaluetonumber-function.md
+        - name: Función JsConvertValueToObject
+          href: chakra-hosting/jsconvertvaluetoobject-function.md
+        - name: Función JsConvertValueToString
+          href: chakra-hosting/jsconvertvaluetostring-function.md
+        - name: Función JsCreateArray
+          href: chakra-hosting/jscreatearray-function.md
+        - name: Función JsCreateArrayBuffer
+          href: chakra-hosting/jscreatearraybuffer-function.md
+        - name: Función JsCreateContext
+          href: chakra-hosting/jscreatecontext-function.md
+        - name: Función JsCreateDataView
+          href: chakra-hosting/jscreatedataview-function.md
+        - name: Función JsCreateError
+          href: chakra-hosting/jscreateerror-function.md
+        - name: Función JsCreateExternalArrayBuffer
+          href: chakra-hosting/jscreateexternalarraybuffer-function.md
+        - name: Función JsCreateExternalObject
+          href: chakra-hosting/jscreateexternalobject-function.md
+        - name: Función JsCreateFunction
+          href: chakra-hosting/jscreatefunction-function.md
+        - name: Función JsCreateNamedFunction
+          href: chakra-hosting/jscreatenamedfunction-function.md
+        - name: Función JsCreateObject
+          href: chakra-hosting/jscreateobject-function.md
+        - name: Función JsCreateRangeError
+          href: chakra-hosting/jscreaterangeerror-function.md
+        - name: Función JsCreateReferenceError
+          href: chakra-hosting/jscreatereferenceerror-function.md
+        - name: Función JsCreateRuntime
+          href: chakra-hosting/jscreateruntime-function.md
+        - name: Función JsCreateSymbol
+          href: chakra-hosting/jscreatesymbol-function.md
+        - name: Función JsCreateSyntaxError
+          href: chakra-hosting/jscreatesyntaxerror-function.md
+        - name: Función JsCreateTypeError
+          href: chakra-hosting/jscreatetypeerror-function.md
+        - name: Función JsCreateTypedArray
+          href: chakra-hosting/jscreatetypedarray-function.md
+        - name: Función JsCreateURIError
+          href: chakra-hosting/jscreateurierror-function.md
+        - name: Función JsDefineProperty
+          href: chakra-hosting/jsdefineproperty-function.md
+        - name: Función JsDeleteIndexedProperty
+          href: chakra-hosting/jsdeleteindexedproperty-function.md
+        - name: Función JsDeleteProperty
+          href: chakra-hosting/jsdeleteproperty-function.md
+        - name: Función JsDisableRuntimeExecution
+          href: chakra-hosting/jsdisableruntimeexecution-function.md
+        - name: Función JsDisposeRuntime
+          href: chakra-hosting/jsdisposeruntime-function.md
+        - name: Función JsDoubleToNumber
+          href: chakra-hosting/jsdoubletonumber-function.md
+        - name: Función JsEnableRuntimeExecution
+          href: chakra-hosting/jsenableruntimeexecution-function.md
+        - name: Función JsEnumerateHeap
+          href: chakra-hosting/jsenumerateheap-function.md
+        - name: Función JsEquals
+          href: chakra-hosting/jsequals-function.md
+        - name: Función JsGetAndClearException
+          href: chakra-hosting/jsgetandclearexception-function.md
+        - name: Función JsGetArrayBufferStorage
+          href: chakra-hosting/jsgetarraybufferstorage-function.md
+        - name: Función JsGetContextData
+          href: chakra-hosting/jsgetcontextdata-function.md
+        - name: Función JsGetContextOfObject
+          href: chakra-hosting/jsgetcontextofobject-function.md
+        - name: Función JsGetCurrentContext
+          href: chakra-hosting/jsgetcurrentcontext-function.md
+        - name: Función JsGetDataViewStorage
+          href: chakra-hosting/jsgetdataviewstorage-function.md
+        - name: Función JsGetExtensionAllowed
+          href: chakra-hosting/jsgetextensionallowed-function.md
+        - name: Función JsGetExternalData
+          href: chakra-hosting/jsgetexternaldata-function.md
+        - name: Función JsGetFalseValue
+          href: chakra-hosting/jsgetfalsevalue-function.md
+        - name: Función JsGetGlobalObject
+          href: chakra-hosting/jsgetglobalobject-function.md
+        - name: Función JsGetIndexedPropertiesExternalData
+          href: chakra-hosting/jsgetindexedpropertiesexternaldata-function.md
+        - name: Función JsGetIndexedProperty
+          href: chakra-hosting/jsgetindexedproperty-function.md
+        - name: Función JsGetNullValue
+          href: chakra-hosting/jsgetnullvalue-function.md
+        - name: Función JsGetOwnPropertyDescriptor
+          href: chakra-hosting/jsgetownpropertydescriptor-function.md
+        - name: Función JsGetOwnPropertyNames
+          href: chakra-hosting/jsgetownpropertynames-function.md
+        - name: Función JsGetOwnPropertySymbols
+          href: chakra-hosting/jsgetownpropertysymbols-function.md
+        - name: Función JsGetProperty
+          href: chakra-hosting/jsgetproperty-function.md
+        - name: Función JsGetPropertyIdFromName
+          href: chakra-hosting/jsgetpropertyidfromname-function.md
+        - name: Función JsGetPropertyIdFromSymbol
+          href: chakra-hosting/jsgetpropertyidfromsymbol-function.md
+        - name: Función JsGetPropertyIdType
+          href: chakra-hosting/jsgetpropertyidtype-function.md
+        - name: Función JsGetPropertyNameFromId
+          href: chakra-hosting/jsgetpropertynamefromid-function.md
+        - name: Función JsGetPrototype
+          href: chakra-hosting/jsgetprototype-function.md
+        - name: Función JsGetRuntime
+          href: chakra-hosting/jsgetruntime-function.md
+        - name: Función JsGetRuntimeMemoryLimit
+          href: chakra-hosting/jsgetruntimememorylimit-function.md
+        - name: Función JsGetRuntimeMemoryUsage
+          href: chakra-hosting/jsgetruntimememoryusage-function.md
+        - name: Función JsGetStringLength
+          href: chakra-hosting/jsgetstringlength-function.md
+        - name: Función JsGetSymbolFromPropertyId
+          href: chakra-hosting/jsgetsymbolfrompropertyid-function.md
+        - name: Función JsGetTrueValue
+          href: chakra-hosting/jsgettruevalue-function.md
+        - name: Función JsGetTypedArrayInfo
+          href: chakra-hosting/jsgettypedarrayinfo-function.md
+        - name: Función JsGetTypedArrayStorage
+          href: chakra-hosting/jsgettypedarraystorage-function.md
+        - name: Función JsGetUndefinedValue
+          href: chakra-hosting/jsgetundefinedvalue-function.md
+        - name: Función JsGetValueType
+          href: chakra-hosting/jsgetvaluetype-function.md
+        - name: Función JsHasException
+          href: chakra-hosting/jshasexception-function.md
+        - name: Función JsHasExternalData
+          href: chakra-hosting/jshasexternaldata-function.md
+        - name: Función JsHasIndexedPropertiesExternalData
+          href: chakra-hosting/jshasindexedpropertiesexternaldata-function.md
+        - name: Función JsHasIndexedProperty
+          href: chakra-hosting/jshasindexedproperty-function.md
+        - name: Función JsHasProperty
+          href: chakra-hosting/jshasproperty-function.md
+        - name: Función JsIdle
+          href: chakra-hosting/jsidle-function.md
+        - name: Función JsInspectableToObject
+          href: chakra-hosting/jsinspectabletoobject-function.md
+        - name: Función JsInstanceOf
+          href: chakra-hosting/jsinstanceof-function.md
+        - name: Función JsIntToNumber
+          href: chakra-hosting/jsinttonumber-function.md
+        - name: Función JsIsEnumeratingHeap
+          href: chakra-hosting/jsisenumeratingheap-function.md
+        - name: Función JsIsRuntimeExecutionDisabled
+          href: chakra-hosting/jsisruntimeexecutiondisabled-function.md
+        - name: Función JsNumberToDouble
+          href: chakra-hosting/jsnumbertodouble-function.md
+        - name: Función JsNumberToInt
+          href: chakra-hosting/jsnumbertoint-function.md
+        - name: Función JsObjectToInspectable
+          href: chakra-hosting/jsobjecttoinspectable-function.md
+        - name: Función JsParseScript
+          href: chakra-hosting/jsparsescript-function.md
+        - name: Función JsParseSerializedScript
+          href: chakra-hosting/jsparseserializedscript-function.md
+        - name: Función JsParseSerializedScriptWithCallback
+          href: chakra-hosting/jsparseserializedscriptwithcallback-function.md
+        - name: Función JsPointerToString
+          href: chakra-hosting/jspointertostring-function.md
+        - name: Función JsPreventExtension
+          href: chakra-hosting/jspreventextension-function.md
+        - name: Función JsProjectWinRTNamespace
+          href: chakra-hosting/jsprojectwinrtnamespace-function.md
+        - name: Función JsRelease
+          href: chakra-hosting/jsrelease-function.md
+        - name: Función JsRunScript
+          href: chakra-hosting/jsrunscript-function.md
+        - name: Función JsRunSerializedScript
+          href: chakra-hosting/jsrunserializedscript-function.md
+        - name: Función JsRunSerializedScriptWithCallback
+          href: chakra-hosting/jsrunserializedscriptwithcallback-function.md
+        - name: Función JsSerializeScript
+          href: chakra-hosting/jsserializescript-function.md
+        - name: Función JsSetContextData
+          href: chakra-hosting/jssetcontextdata-function.md
+        - name: Función JsSetCurrentContext
+          href: chakra-hosting/jssetcurrentcontext-function.md
+        - name: Función JsSetException
+          href: chakra-hosting/jssetexception-function.md
+        - name: Función JsSetExternalData
+          href: chakra-hosting/jssetexternaldata-function.md
+        - name: Función JsSetIndexedPropertiesToExternalData
+          href: chakra-hosting/jssetindexedpropertiestoexternaldata-function.md
+        - name: Función JsSetIndexedProperty
+          href: chakra-hosting/jssetindexedproperty-function.md
+        - name: Función JsSetObjectBeforeCollectCallback
+          href: chakra-hosting/jssetobjectbeforecollectcallback-function.md
+        - name: Función JsSetProjectionEnqueueCallback
+          href: chakra-hosting/jssetprojectionenqueuecallback-function.md
+        - name: Función JsSetPromiseContinuationCallback
+          href: chakra-hosting/jssetpromisecontinuationcallback-function.md
+        - name: Función JsSetProperty
+          href: chakra-hosting/jssetproperty-function.md
+        - name: Función JsSetPrototype
+          href: chakra-hosting/jssetprototype-function.md
+        - name: Función JsSetRuntimeBeforeCollectCallback
+          href: chakra-hosting/jssetruntimebeforecollectcallback-function.md
+        - name: Función JsSetRuntimeMemoryAllocationCallback
+          href: chakra-hosting/jssetruntimememoryallocationcallback-function.md
+        - name: Función JsSetRuntimeMemoryLimit
+          href: chakra-hosting/jssetruntimememorylimit-function.md
+        - name: Función JsStartDebugging
+          href: chakra-hosting/jsstartdebugging-function.md
+        - name: Función JsStartProfiling
+          href: chakra-hosting/jsstartprofiling-function.md
+        - name: Función JsStopProfiling
+          href: chakra-hosting/jsstopprofiling-function.md
+        - name: Función JsStrictEquals
+          href: chakra-hosting/jsstrictequals-function.md
+        - name: Función JsStringToPointer
+          href: chakra-hosting/jsstringtopointer-function.md
+        - name: Función JsValueToVariant
+          href: chakra-hosting/jsvaluetovariant-function.md
+        - name: Función JsVariantToValue
+          href: chakra-hosting/jsvarianttovalue-function.md
+- name: Vista Web (EdgeHTML)
+  href: webview/index.md
+  items:
+    - name: DeferredPermissionRequest
+      href: webview/DeferredPermissionRequest.md
+    - name: FocusNavigationEvent
+      href: webview/FocusNavigationEvent.md
+    - name: LongRunningScriptDetectedEvent
+      href: webview/LongRunningScriptDetectedEvent.md
+    - name: MSWebViewAsyncOperation
+      href: webview/MSWebViewAsyncOperation.md
+    - name: MSWebViewProcess
+      href: webview/MSWebViewProcess.md
+    - name: MSWebViewSettings
+      href: webview/MSWebViewSettings.md
+    - name: NavigationCompletedEvent
+      href: webview/NavigationCompletedEvent.md
+    - name: NavigationEvent
+      href: webview/NavigationEvent.md
+    - name: NavigationEventWithReferrer
+      href: webview/NavigationEventWithReferrer.md
+    - name: PermissionRequest
+      href: webview/PermissionRequest.md
+    - name: PermissionRequestedEvent
+      href: webview/PermissionRequestedEvent.md
+    - name: ScriptNotifyEvent
+      href: webview/ScriptNotifyEvent.md
+    - name: UnviewableContentIdentifiedEvent
+      href: webview/UnviewableContentIdentifiedEvent.md
+    - name: WebResourceRequestedEvent
+      href: webview/WebResourceRequestedEvent.md

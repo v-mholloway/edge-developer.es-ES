@@ -77,6 +77,8 @@
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
                 - name: Introducción a la depuración remota de dispositivos Windows 10
                   href: devtools-guide-chromium/remote-debugging/windows.md
+                - name: Introducción a la depuración remota de Android WebViews
+                  href: devtools-guide-chromium/remote-debugging/webviews.md
         - name: Guías de procedimientos
           items:
             - name: Accesibilidad
@@ -307,6 +309,10 @@
               href: extensions-chromium/enterprise/match-patterns.md
             - name: Hospedaje y actualización
               href: extensions-chromium/enterprise/hosting-and-updating.md
+            - name: Actualización automática
+              href: extensions-chromium/enterprise/auto-update.md
+            - name: Declarar permisos
+              href: extensions-chromium/enterprise/declare-permissions.md
     - name: Información general sobre las pruebas de origen
       href: origin-trials/index.md
     - name: Documento técnico de privacidad
@@ -323,6 +329,8 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Manifiestos de aplicación web
           href: progressive-web-apps-chromium/webappmanifests.md
+        - name: Publicar una PWA en Microsoft Store
+          href: progressive-web-apps-chromium/microsoft-store.md
     - name: Información general sobre Playwright
       href: playwright/index.md
     - name: Información general sobre Puppeteer
@@ -339,14 +347,6 @@
           href: visual-studio-code/microsoft-edge-devtools-extension.md
         - name: extensión webhint
           href: visual-studio-code/webhint.md
-    - name: WebDriver
-      items:
-        - name: Información general sobre WebDriver
-          href: webdriver-chromium/index.md
-        - name: Funciones y EdgeOptions
-          href: webdriver-chromium/capabilities-edge-options.md
-        - name: Comprobar las descargas de herramientas de Selenium para Microsoft Edge
-          href: webdriver-chromium/verify-selenium-tools.md
     - name: Plataforma web
       items:
         - name: Cambios que afectan la compatibilidad del sitio próximamente en Microsoft Edge
@@ -357,6 +357,16 @@
           href: web-platform/tracking-prevention.md
         - name: Cadena del agente de usuario de Microsoft Edge
           href: web-platform/user-agent-string.md
+    - name: Información general sobre Web We Want
+      href: web-we-want/index.md
+    - name: WebDriver
+      items:
+        - name: Información general sobre WebDriver
+          href: webdriver-chromium/index.md
+        - name: Funciones y EdgeOptions
+          href: webdriver-chromium/capabilities-edge-options.md
+        - name: Comprobar las descargas de herramientas de Selenium para Microsoft Edge
+          href: webdriver-chromium/verify-selenium-tools.md
     - name: WebView2
       items:
         - name: Introducción a WebView2
@@ -420,5 +430,3 @@
                   href: /dotnet/api/microsoft.web.webview2.wpf
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
-    - name: Documentación de Microsoft Edge (versión anterior)
-      href: edgehtml/index.md
