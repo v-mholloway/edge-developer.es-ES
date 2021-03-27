@@ -5,36 +5,36 @@ author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, compatibilidad, plataforma web, Internet Explorer
-ms.openlocfilehash: 872bd5ec52f471e4958ef7354c046ec30f1ba72e
-ms.sourcegitcommit: 62258ce0ef469948ca8af42141d02aa9719243f8
+keywords: microsoft edge, compatibilidad, plataforma web, Internet Explorer
+ms.openlocfilehash: c2106955ed79bd28dc1f847dee220944bb014689
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168374"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461139"
 ---
-# Mover usuarios a Microsoft Edge desde Internet Explorer  
+# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Mover usuarios a Microsoft Edge desde Internet Explorer  
 
-Muchos sitios web modernos tienen diseños incompatibles con Internet Explorer \ (IE \).  Cuando un usuario de IE visita un sitio web público incompatible, es posible que reciba un mensaje.  El mensaje indica que el sitio web es incompatible con el explorador.  Después de que se muestre el mensaje, se espera que el usuario cambie manualmente a un explorador moderno.  Para minimizar las interrupciones, a partir de la versión 84, Microsoft Edge admite una nueva capacidad que redirige a los usuarios de forma automática.  Cuando un usuario de IE navega a un sitio web que es incompatible con IE, Windows redirige automáticamente al usuario a Microsoft Edge.  Para revisar los sitios web de la lista, vaya a [necesita una lista de Microsoft Edge][MicrosoftEdgeNeededgeV1].
+Muchos sitios web modernos tienen diseños incompatibles con Internet Explorer \(IE\).  Cuando un usuario de IE visita un sitio web público incompatible, el usuario puede recibir un mensaje.  El mensaje indica que el sitio web es incompatible con el explorador.  Después de mostrar el mensaje, se espera que el usuario cambie manualmente a un explorador moderno.  Para minimizar las interrupciones, a partir de la versión 84, Microsoft Edge admite una nueva funcionalidad que redirige automáticamente a los usuarios.  Cuando un usuario de IE navega a un sitio web incompatible con IE, Windows redirige automáticamente al usuario a Microsoft Edge.  Para revisar los sitios web de la lista, vaya a [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
 
-En este artículo se describen los siguientes conceptos:  
+En este artículo se describen los siguientes conceptos.  
 
 *   Por qué se agrega un sitio web a la lista  
-*   La experiencia de usuario para el redireccionamiento  
-*   Solicitar una actualización de la lista  
+*   La experiencia del usuario para el redireccionamiento  
+*   Solicitar una actualización a la lista  
     
-## ¿Por qué se agrega un sitio web a la lista de compatibilidad de IE?  
+## <a name="why-is-a-website-added-to-the-ie-compatibility-list"></a>¿Por qué se agrega un sitio web a la lista de compatibilidad de IE?  
 
 La lista de compatibilidad de IE solo agrega un sitio web cuando se producen las siguientes acciones.  
 
-*   Muestra un usuario de IE un mensaje que sugiere que el usuario debe usar un explorador diferente por razones de compatibilidad.  
-*   Solicitudes de propietario para agregar el sitio web a la lista de compatibilidad de IE.  
+*   Muestra a un usuario de IE un mensaje que sugiere que el usuario debe usar un explorador diferente por motivos de compatibilidad.  
+*   El propietario solicita agregar el sitio web a la lista de compatibilidad de IE.  
 
-## Experiencia de redirección
+## <a name="redirection-experience"></a>Experiencia de redirección
 
 En el redireccionamiento a Microsoft Edge, se muestra al usuario el cuadro de diálogo de una sola vez en la siguiente captura de pantalla.  El cuadro de diálogo proporciona al usuario la siguiente información.  
 
-*   Explica por qué se redirige el sitio Web.  
+*   Explica por qué se redirige el sitio web.  
 *   Solicita al usuario su consentimiento para copiar los datos de exploración y las preferencias de IE a Microsoft Edge.  
 
 :::row:::
@@ -48,59 +48,61 @@ En el redireccionamiento a Microsoft Edge, se muestra al usuario el cuadro de di
       *   Historial  
       *   Configuración  
       *   Cookies  
-      *   La Página principal  
+      *   La página principal  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="Examen de la notificación y solicitud para importar datos y preferencias" lightbox="../media/neededge-dialog1.msft.png":::
-         Examen de la notificación y solicitud para importar datos y preferencias  
+      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="Notificación de exploración y aviso para importar datos y preferencias" lightbox="../media/neededge-dialog1.msft.png":::
+         Notificación de exploración y aviso para importar datos y preferencias  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-Si el usuario no acepta el consentimiento seleccionando la casilla **de verificación presentar siempre los datos y preferencias de búsqueda de Internet Explorer** , el usuario puede elegir continuar con la **exploración**   para continuar con la sesión de exploración.  
+Si el usuario no da su consentimiento seleccionando la casilla Traer siempre mis **** datos y preferencias de exploración de **Internet Explorer,** el usuario puede elegir Continuar la exploración para continuar la   sesión de exploración.  
 
-Por último, se muestra un banner de incompatibilidad de sitios web debajo de la barra de direcciones para cada redireccionamiento.  En la siguiente ilustración se muestra un ejemplo de un banner de incompatibilidad de sitios Web.
+Por último, se muestra un banner de incompatibilidad de sitio web en la barra de direcciones para cada redirección.  En la siguiente figura se muestra un ejemplo de un banner de incompatibilidad de sitios web.
 
-:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notificaciones sobre sitios modernos y preguntar para establecer Microsoft Edge como explorador predeterminado o explorar Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
-   Notificaciones sobre sitios modernos y preguntar para establecer Microsoft Edge como explorador predeterminado o explorar Microsoft Edge  
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notificación sobre sitios modernos y solicitud para establecer Microsoft Edge como explorador predeterminado o explorar Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+   Notificación sobre sitios modernos y solicitud para establecer Microsoft Edge como explorador predeterminado o explorar Microsoft Edge  
 :::image-end:::
 
 El banner de incompatibilidad del sitio web proporciona los siguientes detalles al usuario.  
 
-*   Recomienda que el usuario cambie a Microsoft Edge.  
+*   Recomienda al usuario que cambie a Microsoft Edge.  
 *   Ofrece establecer Microsoft Edge como explorador predeterminado.  
 *   Ofrece al usuario la opción de explorar Microsoft Edge.    
     
-Cuando se redirige un sitio web de Internet Explorer a Microsoft Edge, se produce una de las siguientes acciones.
+Cuando se redirige un sitio web desde Internet Explorer a Microsoft Edge, se produce una de las siguientes acciones.
 
-*   Si la pestaña activa de IE no tenía contenido anterior, se cerrará.  
-*   Si la pestaña activa de IE tenía contenido anterior, se desplaza a la [Página de soporte técnico de Microsoft que explica por qué el sitio web se redirigió a Microsoft Edge][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer].  
+*   Si la pestaña IE activa no tenía contenido anterior, se cierra.  
+*   Si la pestaña IE activa tenía contenido anterior, se desplaza a la página de soporte técnico de Microsoft que explica por qué se redirija el sitio web [a Microsoft Edge.][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]  
 
 > [!NOTE]
-> Después de una redirección, los usuarios pueden seguir usando IE en sitios web que no se encuentran en la lista de compatibilidad de IE.  
+> Después de una redirección, los usuarios pueden seguir usando IE para sitios web que no están en la lista de compatibilidad de IE.  
 
-## Solicitar una actualización de la lista de compatibilidad de IE  
+## <a name="request-an-update-to-the-ie-compatibility-list"></a>Solicitar una actualización a la lista de compatibilidad de IE  
 
-La lista de compatibilidad de IE es un archivo XML en [Microsoft.com][MicrosoftOfficialHome].  La lista se actualiza regularmente en respuesta a las solicitudes de los programadores de usuarios y sitios web para agregar o quitar sitios Web.  Las actualizaciones de la lista se descargan automáticamente en los equipos de los usuarios.  
+La lista de compatibilidad de IE es un archivo XML en [microsoft.com][MicrosoftOfficialHome].  La lista se actualiza periódicamente en respuesta a las solicitudes de los desarrolladores de sitios web y usuarios para agregar o quitar sitios web.  Las actualizaciones de la lista se descargan automáticamente en los equipos de usuario.  
 
-Envíe por correo electrónico la siguiente información a [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] para que su sitio web se agregue o se quite de la lista de compatibilidad de IE.    
+Envíe por correo [electrónico la siguiente ietoedge@microsoft.com][MailtoMicrosoftIetoedge] para que su sitio web se agregará o quitará de la lista de compatibilidad de IE.    
 
 *   Nombre del propietario  
-*   Título de la empresa  
+*   Título corporativo  
 *   Dirección de correo electrónico  
 *   Nombre de la empresa  
 *   Dirección  
 *   Dirección del sitio web  
     
+La lista de compatibilidad de IE se actualiza en una semana.
+
 > [!NOTE]
-> La lista de compatibilidad de IE está diseñada para trabajar solo con sitios públicos.  
+> La lista de compatibilidad de IE está diseñada para funcionar solo con sitios públicos.  
 
 <!-- links -->  
 
 [MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Enviar un correo electrónico a ietoedge@microsoft.com"  
 
-[MicrosoftOfficialHome]: https://www.microsoft.com "Página de inicio oficial de Microsoft"  
+[MicrosoftOfficialHome]: https://www.microsoft.com "Inicio oficial de Microsoft"  
 
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Se necesita la lista de Microsoft Edge v1 XML Microsoft Edge"  
+[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Necesita microsoft edge list v1 xml | Microsoft Edge"  
 
-[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "El sitio web al que intentaba llamar no funciona con Internet Explorer | Soporte técnico de Microsoft Office"  
+[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "El sitio web al que intentabas llegar no funciona con Internet Explorer | Microsoft Office soporte técnico"  
