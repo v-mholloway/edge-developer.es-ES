@@ -284,7 +284,7 @@ li a {
     
     :::row:::
        :::column span="":::
-          <span data-ttu-id="a5e6b-231">En la siguiente figura, la declaración que agregó anteriormente se muestra en la pestaña Estilos debajo `font-family: 'Courier New', Courier, serif` `contact.html` del árbol DOM. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="a5e6b-231">In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree.</span></span>  
+          <span data-ttu-id="a5e6b-231">En la siguiente figura, la declaración que agregó anteriormente se muestra en la pestaña Estilos debajo `font-family: 'Courier New', Courier, serif` `contact.html` del árbol DOM. </span><span class="sxs-lookup"><span data-stu-id="a5e6b-231">In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree.</span></span>  
           
           :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="La pestaña Estilos está debajo del árbol DOM" lightbox="../media/beginners-css-add2.msft.png":::
              <span data-ttu-id="a5e6b-233">La **pestaña Estilos** está debajo del árbol DOM</span><span class="sxs-lookup"><span data-stu-id="a5e6b-233">The **Styles** tab is below the DOM Tree</span></span>  

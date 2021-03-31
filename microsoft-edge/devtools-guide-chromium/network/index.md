@@ -180,7 +180,7 @@ ms.locfileid: "11439699"
        <span data-ttu-id="40379-204">La actividad de red que se estaba produciendo durante la primera captura de pantalla</span><span class="sxs-lookup"><span data-stu-id="40379-204">The network activity that was happening during the first screenshot</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="40379-205">Vuelva a elegir \( Configuración de red \) y desactive la casilla Capturar capturas de pantalla ![ para cerrar el panel Capturas de ](../media/settings-icon.msft.png) pantalla. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="40379-205">Choose \(![Network settings](../media/settings-icon.msft.png)\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.</span></span>
+1.  <span data-ttu-id="40379-205">Vuelva a elegir \( Configuración de red \) y desactive la casilla Capturar capturas de pantalla ![ para cerrar el panel Capturas de ](../media/settings-icon.msft.png) pantalla. </span><span class="sxs-lookup"><span data-stu-id="40379-205">Choose \(![Network settings](../media/settings-icon.msft.png)\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.</span></span>
 1.  <span data-ttu-id="40379-206">Actualice la página de nuevo.</span><span class="sxs-lookup"><span data-stu-id="40379-206">Refresh the page again.</span></span>  
     
 ## <a name="inspect-the-details-of-the-resource"></a><span data-ttu-id="40379-207">Inspeccionar los detalles del recurso</span><span class="sxs-lookup"><span data-stu-id="40379-207">Inspect the details of the resource</span></span>  
@@ -208,9 +208,9 @@ ms.locfileid: "11439699"
     :::image-end:::  
     
     > [!TIP]
-    > <span data-ttu-id="40379-225">Cuando se minifica un archivo, elija el botón **Formato** \( Formato \) situado en la parte inferior del panel Respuesta para volver a aplicar formato al contenido del archivo para que sea ![ ](../media/format-icon.msft.png) legible. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="40379-225">When a file is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.</span></span>  
+    > <span data-ttu-id="40379-225">Cuando se minifica un archivo, elija el botón **Formato** \( Formato \) situado en la parte inferior del panel Respuesta para volver a aplicar formato al contenido del archivo para que sea ![ ](../media/format-icon.msft.png) legible. </span><span class="sxs-lookup"><span data-stu-id="40379-225">When a file is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.</span></span>  
     
-1.  <span data-ttu-id="40379-226">Elija \*\*\*\* el panel Temporización.</span><span class="sxs-lookup"><span data-stu-id="40379-226">Choose the **Timing** panel.</span></span>  <span data-ttu-id="40379-227">Se muestra un desglose de la actividad de red del recurso.</span><span class="sxs-lookup"><span data-stu-id="40379-227">A breakdown of the network activity for the resource is displayed.</span></span>  
+1.  <span data-ttu-id="40379-226">Elija  el panel Temporización.</span><span class="sxs-lookup"><span data-stu-id="40379-226">Choose the **Timing** panel.</span></span>  <span data-ttu-id="40379-227">Se muestra un desglose de la actividad de red del recurso.</span><span class="sxs-lookup"><span data-stu-id="40379-227">A breakdown of the network activity for the resource is displayed.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="El panel Temporización" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
        <span data-ttu-id="40379-229">El panel **Temporización**</span><span class="sxs-lookup"><span data-stu-id="40379-229">The **Timing** panel</span></span>  

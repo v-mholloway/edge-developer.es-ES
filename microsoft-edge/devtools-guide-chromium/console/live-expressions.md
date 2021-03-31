@@ -41,7 +41,7 @@ ms.locfileid: "11439229"
        <span data-ttu-id="593f1-113">Escribir `document.activeElement` en el cuadro de texto **Expresión** en directo</span><span class="sxs-lookup"><span data-stu-id="593f1-113">Typing `document.activeElement` into the **Live Expression** text box</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="593f1-114">Seleccione `Control` + `Enter` \(Windows, Linux\) o `Command` + `Enter` \(macOS\) \*\*\*\* para guardar la expresión o elija fuera del cuadro de texto Expresión en directo.</span><span class="sxs-lookup"><span data-stu-id="593f1-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
+1.  <span data-ttu-id="593f1-114">Seleccione `Control` + `Enter` \(Windows, Linux\) o `Command` + `Enter` \(macOS\)  para guardar la expresión o elija fuera del cuadro de texto Expresión en directo.</span><span class="sxs-lookup"><span data-stu-id="593f1-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="593f1-115">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="593f1-115">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 

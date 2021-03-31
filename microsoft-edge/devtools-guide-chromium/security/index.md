@@ -38,7 +38,7 @@ ms.locfileid: "11397779"
 
 ## <a name="open-the-security-panel"></a><span data-ttu-id="67ec3-105">Abrir el panel Seguridad</span><span class="sxs-lookup"><span data-stu-id="67ec3-105">Open the Security panel</span></span>  
 
-<span data-ttu-id="67ec3-106">El \*\*\*\* panel Seguridad es el lugar principal de DevTools para inspeccionar la seguridad de una página.</span><span class="sxs-lookup"><span data-stu-id="67ec3-106">The **Security** panel is the main place in DevTools for inspecting the security of a page.</span></span>  
+<span data-ttu-id="67ec3-106">El  panel Seguridad es el lugar principal de DevTools para inspeccionar la seguridad de una página.</span><span class="sxs-lookup"><span data-stu-id="67ec3-106">The **Security** panel is the main place in DevTools for inspecting the security of a page.</span></span>  
 
 1.  <span data-ttu-id="67ec3-107">[Abra DevTools][DevToolsOpen].</span><span class="sxs-lookup"><span data-stu-id="67ec3-107">[Open DevTools][DevToolsOpen].</span></span>  
 1.  <span data-ttu-id="67ec3-108">Elija la **pestaña** Seguridad para abrir la **herramienta** Seguridad.</span><span class="sxs-lookup"><span data-stu-id="67ec3-108">Choose the **Security** tab to open the **Security** tool.</span></span>  
@@ -74,7 +74,7 @@ ms.locfileid: "11397779"
    <span data-ttu-id="67ec3-129">Contenido mixto</span><span class="sxs-lookup"><span data-stu-id="67ec3-129">Mixed content</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="67ec3-130">En la figura anterior, elija Ver **1** \*\*\*\* solicitud en el panel Red para abrir la herramienta Red y aplicar el filtro para que el registro de red solo muestre `mixed-content:displayed` recursos no seguros. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="67ec3-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
+<span data-ttu-id="67ec3-130">En la figura anterior, elija Ver **1**  solicitud en el panel Red para abrir la herramienta Red y aplicar el filtro para que el registro de red solo muestre `mixed-content:displayed` recursos no seguros. </span><span class="sxs-lookup"><span data-stu-id="67ec3-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Recursos mixtos en el registro de red" lightbox="../media/security-network-filter.msft.png":::
    <span data-ttu-id="67ec3-132">Recursos mixtos en el **registro de red**</span><span class="sxs-lookup"><span data-stu-id="67ec3-132">Mixed resources in the **Network Log**</span></span>  

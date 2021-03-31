@@ -49,7 +49,7 @@ ms.locfileid: "11439706"
 
 ### <a name="clear-requests"></a><span data-ttu-id="db872-115">Borrar solicitudes</span><span class="sxs-lookup"><span data-stu-id="db872-115">Clear requests</span></span>  
 
-<span data-ttu-id="db872-116">Elija **Borrar** \( Borrar \) en la herramienta Red para borrar todas las ![ solicitudes de la tabla ](../media/clear-requests-icon.msft.png) Solicitudes. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="db872-116">Choose **Clear** \(![Clear](../media/clear-requests-icon.msft.png)\) on the **Network** tool to clear all requests from the Requests table.</span></span>  
+<span data-ttu-id="db872-116">Elija **Borrar** \( Borrar \) en la herramienta Red para borrar todas las ![ solicitudes de la tabla ](../media/clear-requests-icon.msft.png) Solicitudes. </span><span class="sxs-lookup"><span data-stu-id="db872-116">Choose **Clear** \(![Clear](../media/clear-requests-icon.msft.png)\) on the **Network** tool to clear all requests from the Requests table.</span></span>  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="El botón Borrar" lightbox="../media/network-network-clear-button.msft.png":::
    <span data-ttu-id="db872-118">El **botón Borrar**</span><span class="sxs-lookup"><span data-stu-id="db872-118">The **Clear** button</span></span>  
@@ -459,7 +459,7 @@ ms.locfileid: "11439706"
 
 #### <a name="add-custom-columns"></a><span data-ttu-id="db872-296">Agregar columnas personalizadas</span><span class="sxs-lookup"><span data-stu-id="db872-296">Add custom columns</span></span>  
 
-<span data-ttu-id="db872-297">Para agregar una columna personalizada a la tabla Solicitudes, mantenga el mouse en el encabezado de la \*\*\*\* tabla Solicitudes, abra el menú contextual \(clic con el botón derecho\) y elija Encabezados de respuesta Administrar columnas de  >  **encabezado**.</span><span class="sxs-lookup"><span data-stu-id="db872-297">To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and choose **Response Headers** > **Manage Header Columns**.</span></span>  
+<span data-ttu-id="db872-297">Para agregar una columna personalizada a la tabla Solicitudes, mantenga el mouse en el encabezado de la  tabla Solicitudes, abra el menú contextual \(clic con el botón derecho\) y elija Encabezados de respuesta Administrar columnas de  >  **encabezado**.</span><span class="sxs-lookup"><span data-stu-id="db872-297">To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and choose **Response Headers** > **Manage Header Columns**.</span></span>  
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Agregar una columna personalizada a la tabla Solicitudes" lightbox="../media/network-network-requests-add-custom.msft.png":::
    <span data-ttu-id="db872-299">Agregar una columna personalizada a la tabla Solicitudes</span><span class="sxs-lookup"><span data-stu-id="db872-299">Add a custom column to the Requests table</span></span>  
@@ -593,7 +593,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 <span data-ttu-id="db872-356">Para mostrar el desglose de tiempo de una solicitud, siga estos pasos.</span><span class="sxs-lookup"><span data-stu-id="db872-356">To display the timing breakdown of a request, use the following steps.</span></span>  
 
 1.  <span data-ttu-id="db872-357">Elija la dirección URL de la solicitud, en la **columna Nombre** de la tabla Solicitudes.</span><span class="sxs-lookup"><span data-stu-id="db872-357">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
-1.  <span data-ttu-id="db872-358">Elija \*\*\*\* el panel Temporización.</span><span class="sxs-lookup"><span data-stu-id="db872-358">Choose the **Timing** panel.</span></span>  
+1.  <span data-ttu-id="db872-358">Elija  el panel Temporización.</span><span class="sxs-lookup"><span data-stu-id="db872-358">Choose the **Timing** panel.</span></span>  
 
 <span data-ttu-id="db872-359">Para obtener una forma más rápida de obtener acceso a los datos, vaya [a Vista previa de un desglose de tiempo.](#preview-a-timing-breakdown)</span><span class="sxs-lookup"><span data-stu-id="db872-359">For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).</span></span>  
 

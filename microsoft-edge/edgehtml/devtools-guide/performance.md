@@ -33,7 +33,7 @@ ms.locfileid: "11236023"
 
 ### <span data-ttu-id="e155e-114">Barra de herramientas</span><span class="sxs-lookup"><span data-stu-id="e155e-114">Toolbar</span></span>
 
-<span data-ttu-id="e155e-115">Use los \*\*\*\*  /  \*\*\*\* botones de inicio de la barra de herramientas (o `Ctrl+E` ) para iniciar y concluir el seguimiento de rendimiento.</span><span class="sxs-lookup"><span data-stu-id="e155e-115">Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate and conclude your performance trace.</span></span> <span data-ttu-id="e155e-116">En la pestaña **rendimiento** , se aparecerá un indicador verde para indicar que hay una grabación en curso.</span><span class="sxs-lookup"><span data-stu-id="e155e-116">A green indicator will apear on the **Performance** tab to indicate a recording is in progress.</span></span> 
+<span data-ttu-id="e155e-115">Use los   /   botones de inicio de la barra de herramientas (o `Ctrl+E` ) para iniciar y concluir el seguimiento de rendimiento.</span><span class="sxs-lookup"><span data-stu-id="e155e-115">Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate and conclude your performance trace.</span></span> <span data-ttu-id="e155e-116">En la pestaña **rendimiento** , se aparecerá un indicador verde para indicar que hay una grabación en curso.</span><span class="sxs-lookup"><span data-stu-id="e155e-116">A green indicator will apear on the **Performance** tab to indicate a recording is in progress.</span></span> 
 
 ![Barra de herramientas del panel rendimiento](./media/performance_toolbar.png)
 

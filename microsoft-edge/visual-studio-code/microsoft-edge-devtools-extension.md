@@ -118,7 +118,7 @@ ms.locfileid: "11398458"
     }
     ```  
     
-1.  <span data-ttu-id="2c488-154">En Visual Studio, abra el \*\*\*\* menú desplegable Depurador y elija Adjuntar a **Microsoft Edge y abra las herramientas para desarrolladores.**</span><span class="sxs-lookup"><span data-stu-id="2c488-154">In Visual Studio Code, open the **Debugger** drop-down menu and choose **Attach to Microsoft Edge and open the developer tools**.</span></span>  
+1.  <span data-ttu-id="2c488-154">En Visual Studio, abra el  menú desplegable Depurador y elija Adjuntar a **Microsoft Edge y abra las herramientas para desarrolladores.**</span><span class="sxs-lookup"><span data-stu-id="2c488-154">In Visual Studio Code, open the **Debugger** drop-down menu and choose **Attach to Microsoft Edge and open the developer tools**.</span></span>  
 1.  <span data-ttu-id="2c488-155">Para iniciar la **herramienta Elementos** desde Visual Studio code, realice una de las siguientes acciones.</span><span class="sxs-lookup"><span data-stu-id="2c488-155">To launch the **Elements** tool from Visual Studio Code, complete one of the following actions.</span></span> 
     *   <span data-ttu-id="2c488-156">Seleccione `F5` .</span><span class="sxs-lookup"><span data-stu-id="2c488-156">Select `F5`.</span></span>  
     *   <span data-ttu-id="2c488-157">Elija el **botón Reproducir** \(verde\).</span><span class="sxs-lookup"><span data-stu-id="2c488-157">Choose the **Play** \(green\) button.</span></span>  

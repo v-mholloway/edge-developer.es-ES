@@ -41,7 +41,7 @@ ms.locfileid: "11398717"
     :::image-end:::  
     
 1.  <span data-ttu-id="41047-109">Escriba `sensors` , elija Mostrar **sensores**y seleccione `Enter` .</span><span class="sxs-lookup"><span data-stu-id="41047-109">Type `sensors`, choose **Show Sensors**, and select `Enter`.</span></span>  <span data-ttu-id="41047-110">La **herramienta** Sensores se abre en la parte inferior de la ventana DevTools.</span><span class="sxs-lookup"><span data-stu-id="41047-110">The **Sensors** tool opens at the bottom of your DevTools window.</span></span>  
-1.  <span data-ttu-id="41047-111">En la **lista Orientación,** seleccione una de las orientaciones preestablecidas, como , o elija Orientación personalizada para proporcionar `Portrait upside down` su propia orientación exacta. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="41047-111">From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or choose **Custom orientation** to provide your own exact orientation.</span></span>  
+1.  <span data-ttu-id="41047-111">En la **lista Orientación,** seleccione una de las orientaciones preestablecidas, como , o elija Orientación personalizada para proporcionar `Portrait upside down` su propia orientación exacta. </span><span class="sxs-lookup"><span data-stu-id="41047-111">From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or choose **Custom orientation** to provide your own exact orientation.</span></span>  
     
     :::row:::
        :::column span="":::

@@ -53,7 +53,7 @@ ms.locfileid: "11399025"
 ## <a name="set-up-dark-theme-from-the-command-menu"></a><span data-ttu-id="0c373-116">Configurar el tema oscuro desde el menú de comandos</span><span class="sxs-lookup"><span data-stu-id="0c373-116">Set up dark theme from the Command Menu</span></span>  
 
 1.  <span data-ttu-id="0c373-117">[Abra el menú de comandos][DevtoolsCommandMenu].</span><span class="sxs-lookup"><span data-stu-id="0c373-117">[Open the Command Menu][DevtoolsCommandMenu].</span></span>  
-1.  <span data-ttu-id="0c373-118">Escriba , elija el comando Cambiar a tema oscuro `dark` y, a \*\*\*\* continuación, seleccione para ejecutar el `Enter` comando.</span><span class="sxs-lookup"><span data-stu-id="0c373-118">Type `dark`, choose the **Switch To Dark Theme** command, and then select `Enter` to run the command.</span></span>  
+1.  <span data-ttu-id="0c373-118">Escriba , elija el comando Cambiar a tema oscuro `dark` y, a  continuación, seleccione para ejecutar el `Enter` comando.</span><span class="sxs-lookup"><span data-stu-id="0c373-118">Type `dark`, choose the **Switch To Dark Theme** command, and then select `Enter` to run the command.</span></span>  
     
     :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="El comando tema oscuro" lightbox="../media/customize-command-menu-dark.msft.png":::
        <span data-ttu-id="0c373-120">El comando tema oscuro</span><span class="sxs-lookup"><span data-stu-id="0c373-120">The dark theme command</span></span>  

@@ -63,7 +63,7 @@ $_
 $0
 ```  
 
-<span data-ttu-id="49576-120">Devuelve el elemento seleccionado más recientemente o el objeto JavaScript.</span><span class="sxs-lookup"><span data-stu-id="49576-120">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="49576-121">devuelve el segundo seleccionado más recientemente, y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="49576-121">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="49576-122">Los comandos , , y funcionan como una referencia histórica a los últimos cinco elementos DOM inspeccionados dentro de la herramienta Elementos o los últimos cinco objetos de `$0` `$1` montón de `$2` `$3` `$4` JavaScript seleccionados \*\*\*\* \*\*\*\* en la herramienta Memoria.</span><span class="sxs-lookup"><span data-stu-id="49576-122">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.</span></span>  
+<span data-ttu-id="49576-120">Devuelve el elemento seleccionado más recientemente o el objeto JavaScript.</span><span class="sxs-lookup"><span data-stu-id="49576-120">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="49576-121">devuelve el segundo seleccionado más recientemente, y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="49576-121">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="49576-122">Los comandos , , y funcionan como una referencia histórica a los últimos cinco elementos DOM inspeccionados dentro de la herramienta Elementos o los últimos cinco objetos de `$0` `$1` montón de `$2` `$3` `$4` JavaScript seleccionados   en la herramienta Memoria.</span><span class="sxs-lookup"><span data-stu-id="49576-122">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.</span></span>  
 
 :::row:::
    :::column span="1":::
@@ -123,7 +123,7 @@ $(selector, [startNode])
    <span data-ttu-id="49576-136">Figura 5: La</span><span class="sxs-lookup"><span data-stu-id="49576-136">Figure 5:  The</span></span> `$('img')`  
 :::image-end:::  
 
-<span data-ttu-id="49576-137">Mantenga el mouse sobre el resultado devuelto, abra el menú contextual \(hacer clic con \*\*\*\* el botón secundario\) y elija Mostrar en el **Panel** de elementos para encontrarlo en el DOM o Desplazarse hasta Ver para mostrarlo en la página.</span><span class="sxs-lookup"><span data-stu-id="49576-137">Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.</span></span>  
+<span data-ttu-id="49576-137">Mantenga el mouse sobre el resultado devuelto, abra el menú contextual \(hacer clic con  el botón secundario\) y elija Mostrar en el **Panel** de elementos para encontrarlo en el DOM o Desplazarse hasta Ver para mostrarlo en la página.</span><span class="sxs-lookup"><span data-stu-id="49576-137">Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.</span></span>  
 
 <span data-ttu-id="49576-138">En la siguiente figura, se devuelve una referencia al elemento seleccionado actualmente y se muestra la propiedad src.</span><span class="sxs-lookup"><span data-stu-id="49576-138">In the following figure, a reference to the currently selected element is returned and the src property is displayed.</span></span>  
 
@@ -297,7 +297,7 @@ dirxml(object)
 inspect(object/method)
 ```  
 
-<span data-ttu-id="49576-194">Abre y selecciona el elemento u objeto especificado en el panel correspondiente: \*\*\*\* la herramienta **Elementos** para elementos DOM o la herramienta Memoria para objetos de montón de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="49576-194">Opens and selects the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.</span></span>  
+<span data-ttu-id="49576-194">Abre y selecciona el elemento u objeto especificado en el panel correspondiente:  la herramienta **Elementos** para elementos DOM o la herramienta Memoria para objetos de montón de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="49576-194">Opens and selects the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.</span></span>  
 
 <span data-ttu-id="49576-195">En el siguiente ejemplo de código y figura, se `document.body` abre en la **herramienta** Elementos.</span><span class="sxs-lookup"><span data-stu-id="49576-195">In the following code sample and figure, the `document.body` opens in the **Elements** tool.</span></span>  
 

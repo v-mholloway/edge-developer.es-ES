@@ -12,7 +12,7 @@ ms.lasthandoff: 04/09/2020
 ms.locfileid: "10573850"
 ---
 > [!NOTE]
-> <span data-ttu-id="6b422-101">El nuevo Microsoft Edge se ha creado con cromo y comienza en la versión 75.</span><span class="sxs-lookup"><span data-stu-id="6b422-101">The new Microsoft Edge is built using Chromium, and starts at version 75.</span></span>  <span data-ttu-id="6b422-102">Para obtener más información, [descarga el nuevo Microsoft Edge][MicrosoftNewEdge]y prueba las nuevas [herramientas de desarrollador de Microsoft Edge \ (cromo \)][DevtoolsGuideChromium].</span><span class="sxs-lookup"><span data-stu-id="6b422-102">For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge \(Chromium\) Developer Tools][DevtoolsGuideChromium].</span></span>  
+> <span data-ttu-id="6b422-101">El nuevo Microsoft Edge se ha creado con cromo y comienza en la versión 75.</span><span class="sxs-lookup"><span data-stu-id="6b422-101">The new Microsoft Edge is built using Chromium, and starts at version 75.</span></span>  <span data-ttu-id="6b422-102">Para obtener más información, [descarga el nuevo Microsoft Edge][MicrosoftNewEdge]y prueba las nuevas [herramientas de desarrollador de Microsoft Edge \(cromo \)][DevtoolsGuideChromium].</span><span class="sxs-lookup"><span data-stu-id="6b422-102">For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge \(Chromium\) Developer Tools][DevtoolsGuideChromium].</span></span>  
 
 <!-- image links -->  
 

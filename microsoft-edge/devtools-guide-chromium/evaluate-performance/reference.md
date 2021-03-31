@@ -161,7 +161,7 @@ ms.locfileid: "11439692"
 
 ## <a name="clear-the-previous-recording"></a><span data-ttu-id="63b5c-182">Borrar la grabación anterior</span><span class="sxs-lookup"><span data-stu-id="63b5c-182">Clear the previous recording</span></span>  
 
-<span data-ttu-id="63b5c-183">Después de realizar una grabación, elija **Borrar grabación** \( Borrar icono de grabación \) para borrar esa grabación desde el ![ panel ](../media/clear-recording-icon.msft.png) Rendimiento. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="63b5c-183">After making a recording, choose **Clear recording** \(![Clear recording icon](../media/clear-recording-icon.msft.png)\) to clear that recording from the **Performance** panel.</span></span>  
+<span data-ttu-id="63b5c-183">Después de realizar una grabación, elija **Borrar grabación** \( Borrar icono de grabación \) para borrar esa grabación desde el ![ panel ](../media/clear-recording-icon.msft.png) Rendimiento. </span><span class="sxs-lookup"><span data-stu-id="63b5c-183">After making a recording, choose **Clear recording** \(![Clear recording icon](../media/clear-recording-icon.msft.png)\) to clear that recording from the **Performance** panel.</span></span>  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Borrar grabación" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **<span data-ttu-id="63b5c-185">Borrar grabación</span><span class="sxs-lookup"><span data-stu-id="63b5c-185">Clear recording</span></span>**  
@@ -169,7 +169,7 @@ ms.locfileid: "11439692"
 
 ## <a name="analyze-a-performance-recording"></a><span data-ttu-id="63b5c-186">Analizar una grabación de rendimiento</span><span class="sxs-lookup"><span data-stu-id="63b5c-186">Analyze a performance recording</span></span>  
 
-<span data-ttu-id="63b5c-187">Después de [registrar el rendimiento en tiempo](#record-runtime-performance) de ejecución o el rendimiento de carga de registros, el panel Rendimiento proporciona una gran cantidad de datos para analizar el rendimiento de lo que acaba de suceder. [](#record-load-performance) \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="63b5c-187">After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** panel provides a lot of data for analyzing the performance of what just happened.</span></span>  
+<span data-ttu-id="63b5c-187">Después de [registrar el rendimiento en tiempo](#record-runtime-performance) de ejecución o el rendimiento de carga de registros, el panel Rendimiento proporciona una gran cantidad de datos para analizar el rendimiento de lo que acaba de suceder. [](#record-load-performance) </span><span class="sxs-lookup"><span data-stu-id="63b5c-187">After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** panel provides a lot of data for analyzing the performance of what just happened.</span></span>  
 
 ### <a name="select-a-portion-of-a-recording"></a><span data-ttu-id="63b5c-188">Seleccionar una parte de una grabación</span><span class="sxs-lookup"><span data-stu-id="63b5c-188">Select a portion of a recording</span></span>  
 
@@ -193,7 +193,7 @@ ms.locfileid: "11439692"
 
 ### <a name="search-activities"></a><span data-ttu-id="63b5c-204">Actividades de búsqueda</span><span class="sxs-lookup"><span data-stu-id="63b5c-204">Search activities</span></span>  
 
-<span data-ttu-id="63b5c-205">Seleccione `Control` + `F` \(Windows, Linux\) o `Command` + `F` \(macOS\) \*\*\*\* para abrir el cuadro de búsqueda en la parte inferior del panel Rendimiento.</span><span class="sxs-lookup"><span data-stu-id="63b5c-205">Select `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\) to open the search box at the bottom of the **Performance** panel.</span></span>  
+<span data-ttu-id="63b5c-205">Seleccione `Control` + `F` \(Windows, Linux\) o `Command` + `F` \(macOS\)  para abrir el cuadro de búsqueda en la parte inferior del panel Rendimiento.</span><span class="sxs-lookup"><span data-stu-id="63b5c-205">Select `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\) to open the search box at the bottom of the **Performance** panel.</span></span>  
 
 :::image type="complex" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="El cuadro de búsqueda" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
    <span data-ttu-id="63b5c-207">El cuadro de búsqueda</span><span class="sxs-lookup"><span data-stu-id="63b5c-207">The search box</span></span>  
@@ -216,7 +216,7 @@ ms.locfileid: "11439692"
 <span data-ttu-id="63b5c-216">Use la **sección Main** para ver la actividad que se produjo en el subproceso principal de la página.</span><span class="sxs-lookup"><span data-stu-id="63b5c-216">Use the **Main** section to view activity that occurred on the main thread of the page.</span></span>  
 
 :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Sección Principal" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
-   <span data-ttu-id="63b5c-218">Sección \*\*\*\* Principal</span><span class="sxs-lookup"><span data-stu-id="63b5c-218">The **Main** section</span></span>  
+   <span data-ttu-id="63b5c-218">Sección  Principal</span><span class="sxs-lookup"><span data-stu-id="63b5c-218">The **Main** section</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="63b5c-219">Elija un evento para ver más información sobre él en el panel **Resumen.**</span><span class="sxs-lookup"><span data-stu-id="63b5c-219">Choose an event to view more information about it in the **Summary** panel.</span></span>  <span data-ttu-id="63b5c-220">DevTools describe el evento seleccionado.</span><span class="sxs-lookup"><span data-stu-id="63b5c-220">DevTools outlines the selected event.</span></span>  
@@ -438,7 +438,7 @@ ms.locfileid: "11439692"
 <span data-ttu-id="63b5c-372">Las líneas coloreadas del gráfico se asignan a las casillas de color situadas encima del gráfico.</span><span class="sxs-lookup"><span data-stu-id="63b5c-372">The colored lines on the chart map to the colored checkboxes above the chart.</span></span>  
 <span data-ttu-id="63b5c-373">Deshabilite una casilla para ocultar esa categoría del gráfico.</span><span class="sxs-lookup"><span data-stu-id="63b5c-373">Disable a checkbox to hide that category from the chart.</span></span>  
 
-<span data-ttu-id="63b5c-374">El gráfico solo muestra la región de la grabación que está seleccionada actualmente.</span><span class="sxs-lookup"><span data-stu-id="63b5c-374">The chart only displays the region of the recording that is currently selected.</span></span>  <span data-ttu-id="63b5c-375">Por ejemplo, en la \*\*\*\* figura anterior, el gráfico de memoria solo muestra el uso de memoria de alrededor de la marca de 400 ms a la marca de 1750 ms.</span><span class="sxs-lookup"><span data-stu-id="63b5c-375">For example, in the previous figure, the **Memory** chart is only showing memory usage from around the 400 ms mark to the 1750 ms mark.</span></span>  
+<span data-ttu-id="63b5c-374">El gráfico solo muestra la región de la grabación que está seleccionada actualmente.</span><span class="sxs-lookup"><span data-stu-id="63b5c-374">The chart only displays the region of the recording that is currently selected.</span></span>  <span data-ttu-id="63b5c-375">Por ejemplo, en la  figura anterior, el gráfico de memoria solo muestra el uso de memoria de alrededor de la marca de 400 ms a la marca de 1750 ms.</span><span class="sxs-lookup"><span data-stu-id="63b5c-375">For example, in the previous figure, the **Memory** chart is only showing memory usage from around the 400 ms mark to the 1750 ms mark.</span></span>  
 
 ### <a name="view-the-duration-of-a-portion-of-a-recording"></a><span data-ttu-id="63b5c-376">Ver la duración de una parte de una grabación</span><span class="sxs-lookup"><span data-stu-id="63b5c-376">View the duration of a portion of a recording</span></span>  
 

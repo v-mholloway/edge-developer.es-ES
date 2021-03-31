@@ -30,7 +30,7 @@ ms.locfileid: "11230939"
 | <span data-ttu-id="efb8c-112">API</span><span class="sxs-lookup"><span data-stu-id="efb8c-112">API</span></span>  | <span data-ttu-id="efb8c-113">Descripción</span><span class="sxs-lookup"><span data-stu-id="efb8c-113">Description</span></span>  |
 |:--- |:--- |  
 | [<span data-ttu-id="efb8c-114">ExecuteScriptAsync</span><span class="sxs-lookup"><span data-stu-id="efb8c-114">ExecuteScriptAsync</span></span>][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | <span data-ttu-id="efb8c-115">Ejecutar JavaScript en un control WebView.</span><span class="sxs-lookup"><span data-stu-id="efb8c-115">Run JavaScript in a WebView control.</span></span> <span data-ttu-id="efb8c-116">Para obtener más información, vaya al tutorial Introducción.</span><span class="sxs-lookup"><span data-stu-id="efb8c-116">For more information, navigate to the Getting Started tutorial.</span></span> |
-| [<span data-ttu-id="efb8c-117">OnDocumentCreatedAsync</span><span class="sxs-lookup"><span data-stu-id="efb8c-117">OnDocumentCreatedAsync</span></span>][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | <span data-ttu-id="efb8c-118">Se ejecuta cuando se crea el modelo de objetos de documento \ (DOM \).</span><span class="sxs-lookup"><span data-stu-id="efb8c-118">Runs when the Document Object Model \(DOM\) is created.</span></span> |
+| [<span data-ttu-id="efb8c-117">OnDocumentCreatedAsync</span><span class="sxs-lookup"><span data-stu-id="efb8c-117">OnDocumentCreatedAsync</span></span>][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | <span data-ttu-id="efb8c-118">Se ejecuta cuando se crea el modelo de objetos de documento \(DOM \).</span><span class="sxs-lookup"><span data-stu-id="efb8c-118">Runs when the Document Object Model \(DOM\) is created.</span></span> |
       
 ## <span data-ttu-id="efb8c-119">Escenario: ejecutar un archivo de script dedicado</span><span class="sxs-lookup"><span data-stu-id="efb8c-119">Scenario:  Running a dedicated script file</span></span>  
 
@@ -94,7 +94,7 @@ ms.locfileid: "11230939"
 <span data-ttu-id="efb8c-146">Para empezar, explore la funcionalidad actual del menú contextual.</span><span class="sxs-lookup"><span data-stu-id="efb8c-146">To begin, explore the current contextual menu functionality.</span></span>  
 
 1.  <span data-ttu-id="efb8c-147">Ejecute el proyecto.</span><span class="sxs-lookup"><span data-stu-id="efb8c-147">Run your project.</span></span>  
-1.  <span data-ttu-id="efb8c-148">Mantenga el mouse en cualquier lugar del control WebView2 y abra el menú contextual \ (haga clic con el botón derecho \).</span><span class="sxs-lookup"><span data-stu-id="efb8c-148">Hover anywhere on the WebView2 control and open the context menu \(right-click\).</span></span>  <span data-ttu-id="efb8c-149">El menú contextual muestra las opciones predeterminadas.</span><span class="sxs-lookup"><span data-stu-id="efb8c-149">The context menu displays the default choices.</span></span>  
+1.  <span data-ttu-id="efb8c-148">Mantenga el mouse en cualquier lugar del control WebView2 y abra el menú contextual \(haga clic con el botón derecho \).</span><span class="sxs-lookup"><span data-stu-id="efb8c-148">Hover anywhere on the WebView2 control and open the context menu \(right-click\).</span></span>  <span data-ttu-id="efb8c-149">El menú contextual muestra las opciones predeterminadas.</span><span class="sxs-lookup"><span data-stu-id="efb8c-149">The context menu displays the default choices.</span></span>  
     
     :::image type="complex" source="./media/contextmenu.png" alt-text="Menú contextual que muestra las opciones predeterminadas" lightbox="./media/contextmenu.png":::
        <span data-ttu-id="efb8c-151">Menú contextual que muestra las opciones predeterminadas</span><span class="sxs-lookup"><span data-stu-id="efb8c-151">The context menu showing the default choices</span></span>  
@@ -108,7 +108,7 @@ ms.locfileid: "11230939"
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
 
-1.  <span data-ttu-id="efb8c-154">Vuelva a ejecutar el código.</span><span class="sxs-lookup"><span data-stu-id="efb8c-154">Run the code again.</span></span>  <span data-ttu-id="efb8c-155">Confirme que no puede abrir un menú contextual \ (haga clic con el botón derecho \).</span><span class="sxs-lookup"><span data-stu-id="efb8c-155">Confirm that you're not able to open a context menu \(right-click\).</span></span>  
+1.  <span data-ttu-id="efb8c-154">Vuelva a ejecutar el código.</span><span class="sxs-lookup"><span data-stu-id="efb8c-154">Run the code again.</span></span>  <span data-ttu-id="efb8c-155">Confirme que no puede abrir un menú contextual \(haga clic con el botón derecho \).</span><span class="sxs-lookup"><span data-stu-id="efb8c-155">Confirm that you're not able to open a context menu \(right-click\).</span></span>  
    
 ## <span data-ttu-id="efb8c-156">Consulte también</span><span class="sxs-lookup"><span data-stu-id="efb8c-156">See also</span></span>  
 

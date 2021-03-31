@@ -110,7 +110,7 @@ ms.locfileid: "11398899"
 
 ### <a name="context-menu"></a><span data-ttu-id="03b5d-174">Menú contextual</span><span class="sxs-lookup"><span data-stu-id="03b5d-174">Context menu</span></span>  
 
-<span data-ttu-id="03b5d-175">Además de la barra de herramientas [ *IndexedDB,* ](#indexeddb-toolbar)también puede administrar los datos \*\*\*\* en almacenes de objetos o índices desde el menú Contextual y/o los [métodos abreviados de teclado](#shortcuts).</span><span class="sxs-lookup"><span data-stu-id="03b5d-175">In addition to the [*IndexedDB* toolbar](#indexeddb-toolbar), you can also manage your data in object stores or indices from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).</span></span>  
+<span data-ttu-id="03b5d-175">Además de la barra de herramientas [ *IndexedDB,* ](#indexeddb-toolbar)también puede administrar los datos  en almacenes de objetos o índices desde el menú Contextual y/o los [métodos abreviados de teclado](#shortcuts).</span><span class="sxs-lookup"><span data-stu-id="03b5d-175">In addition to the [*IndexedDB* toolbar](#indexeddb-toolbar), you can also manage your data in object stores or indices from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).</span></span>  
 
 ### <a name="shortcuts"></a><span data-ttu-id="03b5d-176">Accesos directos</span><span class="sxs-lookup"><span data-stu-id="03b5d-176">Shortcuts</span></span>
 
@@ -162,7 +162,7 @@ ms.locfileid: "11398899"
 
 ### <a name="context-menu"></a><span data-ttu-id="03b5d-222">Menú contextual</span><span class="sxs-lookup"><span data-stu-id="03b5d-222">Context menu</span></span>  
 
-<span data-ttu-id="03b5d-223">Además de la barra de herramientas [de](#cookies-manager)la pestaña Cookies, también puede administrar las cookies desde el menú contextual y/o los [métodos abreviados de teclado.](#shortcuts) \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="03b5d-223">In addition to the Cookies tab [toolbar](#cookies-manager), you can also manage your cookies from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).</span></span>  
+<span data-ttu-id="03b5d-223">Además de la barra de herramientas [de](#cookies-manager)la pestaña Cookies, también puede administrar las cookies desde el menú contextual y/o los [métodos abreviados de teclado.](#shortcuts) </span><span class="sxs-lookup"><span data-stu-id="03b5d-223">In addition to the Cookies tab [toolbar](#cookies-manager), you can also manage your cookies from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).</span></span>  
 
 ### <a name="shortcuts"></a><span data-ttu-id="03b5d-224">Accesos directos</span><span class="sxs-lookup"><span data-stu-id="03b5d-224">Shortcuts</span></span>  
 
@@ -177,7 +177,7 @@ ms.locfileid: "11398899"
 
 ### <a name="cache-manager"></a><span data-ttu-id="03b5d-233">Administrador de caché</span><span class="sxs-lookup"><span data-stu-id="03b5d-233">Cache manager</span></span>  
 
-<span data-ttu-id="03b5d-234">Al hacer clic en una entrada \*\*\*\* de caché específica, se abrirá el administrador de caché de trabajo de servicio, donde puede inspeccionar y eliminar opcionalmente entradas de caché \( y pares `Request` `Response` clave/valor\):</span><span class="sxs-lookup"><span data-stu-id="03b5d-234">Clicking on a specific cache entry will open up the service worker **Cache** manager, where you can inspect and optionally delete cache entries \(`Request` and `Response` key/value pairs\):</span></span>  
+<span data-ttu-id="03b5d-234">Al hacer clic en una entrada  de caché específica, se abrirá el administrador de caché de trabajo de servicio, donde puede inspeccionar y eliminar opcionalmente entradas de caché \( y pares `Request` `Response` clave/valor\):</span><span class="sxs-lookup"><span data-stu-id="03b5d-234">Clicking on a specific cache entry will open up the service worker **Cache** manager, where you can inspect and optionally delete cache entries \(`Request` and `Response` key/value pairs\):</span></span>  
 
 ![Administrador de caché](./media/storage_cache.png)  
 

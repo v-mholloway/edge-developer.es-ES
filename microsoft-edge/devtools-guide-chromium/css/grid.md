@@ -41,7 +41,7 @@ ms.locfileid: "11439264"
    <span data-ttu-id="5b085-119">Distintivo de cuadrícula de alternancia</span><span class="sxs-lookup"><span data-stu-id="5b085-119">Toggle grid badge</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="5b085-120">Abra el **panel Diseño.**</span><span class="sxs-lookup"><span data-stu-id="5b085-120">Open the **Layout** pane.</span></span>  <span data-ttu-id="5b085-121">Cuando se incluyen cuadrículas en \*\*\*\* una página, el panel Diseño incluye una sección **Cuadrícula** que contiene varias opciones para ver las cuadrículas.</span><span class="sxs-lookup"><span data-stu-id="5b085-121">When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.</span></span>  
+<span data-ttu-id="5b085-120">Abra el **panel Diseño.**</span><span class="sxs-lookup"><span data-stu-id="5b085-120">Open the **Layout** pane.</span></span>  <span data-ttu-id="5b085-121">Cuando se incluyen cuadrículas en  una página, el panel Diseño incluye una sección **Cuadrícula** que contiene varias opciones para ver las cuadrículas.</span><span class="sxs-lookup"><span data-stu-id="5b085-121">When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.</span></span>  
 
 :::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Panel Diseño" lightbox="../media/grid-layout-pane.msft.png":::
    <span data-ttu-id="5b085-123">**Panel Diseño**</span><span class="sxs-lookup"><span data-stu-id="5b085-123">**Layout** pane</span></span>  
