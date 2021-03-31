@@ -39,7 +39,7 @@ Puede reaccionar ante los bloqueos y bloqueos en estos procesos del explorador y
 
 Puede apagar de forma segura los procesos del explorador y el representador asociados con el `Close` método de `CoreWebView2Controller` .  
 
-Para abrir la ventana del administrador de tareas del explorador desde la ventana **DevTools** de una instancia de WebView2, puede seleccionar `Shift` + `Escape` o mantener el mouse en la barra de título de la ventana de DevTools, abrir el menú contextual \ (haga clic con el botón secundario del mouse \) y elija `Browser task manager` .  Se muestran todos los procesos asociados con el proceso del explorador de su WebView2, incluidos los propósitos relacionados.  
+Para abrir la ventana del administrador de tareas del explorador desde la ventana **DevTools** de una instancia de WebView2, puede seleccionar `Shift` + `Escape` o mantener el mouse en la barra de título de la ventana de DevTools, abrir el menú contextual \(haga clic con el botón secundario del mouse \) y elija `Browser task manager` .  Se muestran todos los procesos asociados con el proceso del explorador de su WebView2, incluidos los propósitos relacionados.  
 
 <!-- links -->  
 

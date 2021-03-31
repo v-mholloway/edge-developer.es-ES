@@ -17,7 +17,7 @@ ms.locfileid: "11231219"
 ---
 # Descripción general de las aplicaciones web progresivas en Windows  
 
-[Aplicaciones web progresivas][MDNApps] \ (PWAs \) proporcionan acceso a las tecnologías web abiertas para la interoperabilidad entre plataformas y proporcionan a los usuarios una experiencia nativa, como la aplicación personalizada para sus dispositivos.  PWAs son sitios web que se han [mejorado progresivamente][AListApartUnderstandingProgressiveEnhancement] para funcionar como aplicaciones nativas en plataformas compatibles.  Las cualidades de una PWA combinan lo mejor de las aplicaciones web y nativas.  
+[Aplicaciones web progresivas][MDNApps] \(PWAs \) proporcionan acceso a las tecnologías web abiertas para la interoperabilidad entre plataformas y proporcionan a los usuarios una experiencia nativa, como la aplicación personalizada para sus dispositivos.  PWAs son sitios web que se han [mejorado progresivamente][AListApartUnderstandingProgressiveEnhancement] para funcionar como aplicaciones nativas en plataformas compatibles.  Las cualidades de una PWA combinan lo mejor de las aplicaciones web y nativas.  
 
 :::row:::
     :::column:::
@@ -70,17 +70,17 @@ ms.locfileid: "11231219"
 :::row-end:::  
 
 
-Cree \ (o convierta \) su sitio web existente en un PWA para mejorar su compromiso con los usuarios.  Las mejoras incluyen las notificaciones push, la integración como la aplicación y el soporte técnico sin conexión.  Continúe con la creación de la audiencia en la web abierta para que los usuarios puedan descubrir su PWA mediante la búsqueda y el uso compartido de vínculos.  Y lo mejor de todo es que la aplicación se actualiza con el código de servidor Web.  
+Cree \(o convierta \) su sitio web existente en un PWA para mejorar su compromiso con los usuarios.  Las mejoras incluyen las notificaciones push, la integración como la aplicación y el soporte técnico sin conexión.  Continúe con la creación de la audiencia en la web abierta para que los usuarios puedan descubrir su PWA mediante la búsqueda y el uso compartido de vínculos.  Y lo mejor de todo es que la aplicación se actualiza con el código de servidor Web.  
 
 ## PWAs en Microsoft Edge (cromo)  
 
-Cuando se crea una aplicación Web de acceso público orientada a las API estándar Web, la aplicación puede implementarse en todas las plataformas y dispositivos, y aprovechar las capacidades específicas del dispositivo según esté disponible.  PWAs en Microsoft Edge \ (cromo \) agrega las siguientes ventajas a tu sitio Web.  
+Cuando se crea una aplicación Web de acceso público orientada a las API estándar Web, la aplicación puede implementarse en todas las plataformas y dispositivos, y aprovechar las capacidades específicas del dispositivo según esté disponible.  PWAs en Microsoft Edge \(cromo \) agrega las siguientes ventajas a tu sitio Web.  
 
 *   Tu aplicación se ha creado en una plataforma web basada en estándares.  
 *   Permite a los usuarios instalar la aplicación directamente desde el explorador.  
 *   Permite a los usuarios instalar la aplicación sin un registro o implementación basado en la tienda.  
     
-Los PWAs de escritorio se admiten en cualquiera de las plataformas disponibles Microsoft Edge \ (cromo \). Microsoft Edge \ (cromo \) está disponible en Windows 7, Windows 10 y macOS.  Se incluyen los siguientes beneficios:  
+Los PWAs de escritorio se admiten en cualquiera de las plataformas disponibles Microsoft Edge \(cromo \). Microsoft Edge \(cromo \) está disponible en Windows 7, Windows 10 y macOS.  Se incluyen los siguientes beneficios:  
 
 *   Las aplicaciones se pueden instalar directamente desde el explorador mediante el icono de **instalación** de la barra de navegación.  
     
@@ -96,7 +96,7 @@ Los PWAs de escritorio se admiten en cualquiera de las plataformas disponibles M
     
 *   Las notificaciones web están integradas en el sistema de notificaciones de Windows  
 *   Almacén de cookies compartido con el perfil de explorador que instaló la aplicación  
-*   Acceso a otras características del explorador con la **configuración y más** el `...` menú \ (\), incluidos la validación de certificados, los permisos de sitio, la protección de rastreo y las extensiones de explorador  
+*   Acceso a otras características del explorador con la **configuración y más** el `...` menú \(\), incluidos la validación de certificados, los permisos de sitio, la protección de rastreo y las extensiones de explorador  
 *   Acceso total a [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] para la depuración de la aplicación  
     
 > [!IMPORTANT]
@@ -114,7 +114,7 @@ Para ejecutar como PWA, la aplicación web hospedada por el servidor debe inclui
       [HTTPS][WikiHttps]  
    :::column-end:::
    :::column span="2":::
-      Protege a los usuarios proporcionando una conexión segura para la comunicación entre servidores o aplicaciones.  Los trabajadores del servicio y otras tecnologías de PWA solo funcionan con recursos Web servidos a través de una conexión segura \ (o de `localhost` para fines de depuración \).  
+      Protege a los usuarios proporcionando una conexión segura para la comunicación entre servidores o aplicaciones.  Los trabajadores del servicio y otras tecnologías de PWA solo funcionan con recursos Web servidos a través de una conexión segura \(o de `localhost` para fines de depuración \).  
    :::column-end:::
 :::row-end:::  
 :::row:::

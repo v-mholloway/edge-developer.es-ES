@@ -23,7 +23,7 @@ Crear un diseño inclusivo hace que la tecnología sea utilizable por todos los 
 *   Accesibilidad de teclado: muchos usuarios de accesibilidad dependen del teclado para navegar y operar la interfaz de usuario de la siguiente manera:
     *   Mover el foco entre los elementos mediante la tecla TAB.
     *   Navegar en elementos contenedores, como listas, cuadrículas y vistas de árbol, con las teclas de dirección.
-    *   Activación de la funcionalidad \ (invocar acciones \) con las teclas entrar o espaciado.
+    *   Activación de la funcionalidad \(invocar acciones \) con las teclas entrar o espaciado.
     *   Usar teclas de método abreviado para obtener acceso eficaz a otras funciones de la aplicación.
 *   Experiencia visual accesible: los usuarios con deficiencias visuales necesitan una relación de contraste de texto suficiente para el contenido de texto y una experiencia visual buena con los temas de contraste alto en general.  Los usuarios que tienen daltonismo necesitan transmitir la información de formas que no sean de color.
 

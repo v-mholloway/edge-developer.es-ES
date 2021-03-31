@@ -52,7 +52,7 @@ La configuración por sitio invalida la configuración global.  Por ejemplo, si 
 
 A continuación se explica cómo garantizar una buena experiencia de usuario con elementos multimedia hospedados en su sitio:  
 
-*   Supongamos que cada uso de un elemento multimedia retiene un movimiento de usuario para iniciar la reproducción \ (a medida que los usuarios pueden bloquear la reproducción automática en cualquier momento \) y planificar según corresponda.  Las directivas de reproducción automática global y por sitio se aplican a todos los `<audio>` `<video>` elementos y, independientemente de cómo se usan en su sitio.  
+*   Supongamos que cada uso de un elemento multimedia retiene un movimiento de usuario para iniciar la reproducción \(a medida que los usuarios pueden bloquear la reproducción automática en cualquier momento \) y planificar según corresponda.  Las directivas de reproducción automática global y por sitio se aplican a todos los `<audio>` `<video>` elementos y, independientemente de cómo se usan en su sitio.  
 
 *   Asegúrate de que los controles multimedia estén siempre presentes tanto en los medios del sitio como en el contenido de Active Directory.  Esto proporcionará a los usuarios la posibilidad de reiniciar la reproducción si la reproducción automática está bloqueada en la página.  
 

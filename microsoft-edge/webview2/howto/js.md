@@ -30,7 +30,7 @@ Use las siguientes funciones para empezar a incrustar JavaScript en la aplicaci�
 | API  | Descripción  |
 |:--- |:--- |  
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Ejecutar JavaScript en un control WebView. Para obtener más información, vaya al tutorial Introducción. |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Se ejecuta cuando se crea el modelo de objetos de documento \ (DOM \). |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Se ejecuta cuando se crea el modelo de objetos de documento \(DOM \). |
       
 ## Escenario: ejecutar un archivo de script dedicado  
 
@@ -94,7 +94,7 @@ En esta sección, quite el menú contextual predeterminado del control WebView2.
 Para empezar, explore la funcionalidad actual del menú contextual.  
 
 1.  Ejecute el proyecto.  
-1.  Mantenga el mouse en cualquier lugar del control WebView2 y abra el menú contextual \ (haga clic con el botón derecho \).  El menú contextual muestra las opciones predeterminadas.  
+1.  Mantenga el mouse en cualquier lugar del control WebView2 y abra el menú contextual \(haga clic con el botón derecho \).  El menú contextual muestra las opciones predeterminadas.  
     
     :::image type="complex" source="./media/contextmenu.png" alt-text="Menú contextual que muestra las opciones predeterminadas" lightbox="./media/contextmenu.png":::
        Menú contextual que muestra las opciones predeterminadas  
@@ -108,7 +108,7 @@ Ahora agregue código para quitar la funcionalidad de menú contextual del contr
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
 
-1.  Vuelva a ejecutar el código.  Confirme que no puede abrir un menú contextual \ (haga clic con el botón derecho \).  
+1.  Vuelva a ejecutar el código.  Confirme que no puede abrir un menú contextual \(haga clic con el botón derecho \).  
    
 ## Consulte también  
 

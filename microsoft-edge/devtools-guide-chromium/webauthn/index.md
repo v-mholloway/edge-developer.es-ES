@@ -30,7 +30,7 @@ Un buen lugar para empezar a usar la autenticación Web es la [especificación d
     
 1.  Inicie sesión en el sitio Web.  
 1.  [Abra DevTools][DevtoolsGuideChromiumOpen].  
-1.  Para abrir la herramienta **webauthn** , elija el icono **personalizar y controlar DevTools** \ ( `...` \) > **más herramientas**  >  **webauthn**.  
+1.  Para abrir la herramienta **webauthn** , elija el icono **personalizar y controlar DevTools** \( `...` \) > **más herramientas**  >  **webauthn**.  
     
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="Herramienta webauthn" lightbox="../media/webauthn-webauthn-tab.msft.png":::
        Herramienta **Webauthn**  
@@ -49,8 +49,8 @@ Un buen lugar para empezar a usar la autenticación Web es la [especificación d
     |:--- |:--- |:--- |  
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] o [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | El protocolo que el autenticador virtual usa para codificar y descodificar |  
     | `Transport` |   `usb`, `nfc` , `ble` o `internal` | El autenticador virtual simula el transporte seleccionado para comunicarse con los clientes a fin de obtener una aserción para una credencial específica.  Para obtener más información, vaya a la [enumeración de transporte de autenticador][GithubW3cWebauthnEnumTransport] |  
-    |  `Supports resident keys` | Activar \ (o desactivar \) con la casilla | Active esta opción si su aplicación web depende de las claves residentes \ (también conocidas como credenciales detectables del cliente \).  Para obtener más información, vaya a la [enumeración de requisitos clave residente][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
-    | `Supports user verification` | Activar \ (o desactivar \) con la casilla | Active esta opción si su aplicación web se basa en la autorización local con modalidades de gestos como toque, código PIN, entrada de contraseña o reconocimiento biométrico.  Para obtener más información, vaya a verificación por el [usuario][GithubW3cWebauthnEnumUserverification] |  
+    |  `Supports resident keys` | Activar \(o desactivar \) con la casilla | Active esta opción si su aplicación web depende de las claves residentes \(también conocidas como credenciales detectables del cliente \).  Para obtener más información, vaya a la [enumeración de requisitos clave residente][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
+    | `Supports user verification` | Activar \(o desactivar \) con la casilla | Active esta opción si su aplicación web se basa en la autorización local con modalidades de gestos como toque, código PIN, entrada de contraseña o reconocimiento biométrico.  Para obtener más información, vaya a verificación por el [usuario][GithubW3cWebauthnEnumUserverification] |  
     
 1.  Elija el botón **Agregar** .  
 1.  Aparece una nueva sección del autenticador recién creado.  

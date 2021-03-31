@@ -20,13 +20,13 @@ ms.locfileid: "11119006"
 El [control WebView2][Webview2Main] permite a los programadores hospedar contenido web en las aplicaciones nativas. Cuando se usa correctamente, el contenido Web de hospedaje ofrece varias ventajas, como el uso de interfaces de usuario basadas en Web, el acceso a características de la plataforma web, el uso compartido de código entre plataformas, etc.  Para evitar las vulnerabilidades que pueden surgir al hospedar contenido Web, asegúrese de diseñar su aplicación WebView2 para supervisar estrechamente las interacciones entre el contenido web y la aplicación host.  
 
 1.  Tratar todo el contenido web como inseguro.  
-    *   Valide los mensajes web y los parámetros de objeto de host antes de consumirlos, ya que los mensajes web y los parámetros pueden tener un formato incorrecto \ (involuntariamente o malintencionado \) y hacer que la aplicación se comporte de manera inesperada.
+    *   Valide los mensajes web y los parámetros de objeto de host antes de consumirlos, ya que los mensajes web y los parámetros pueden tener un formato incorrecto \(involuntariamente o malintencionado \) y hacer que la aplicación se comporte de manera inesperada.
     *   Compruebe siempre el origen del documento que se está ejecutando dentro de WebView2 y evalúe la confiabilidad del contenido.  
 1.  Diseñe mensajes Web específicos y interacciones de objeto de hospedaje en lugar de usar proxies genéricos.  
 1.  Establezca las siguientes opciones para restringir la funcionalidad de contenido web modificando [ICoreWebView2Settings (Win32)][Webview2ReferenceWin32Icorewebview2settings] o [CoreWebView2Settings (.net)][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings].  
     *   Se establece `AreHostObjectsAllowed` en `false` si no se espera que el contenido web tenga acceso a los objetos host.  
     *   Se establece `IsWebMessageEnabled` en `false` si no se espera que el contenido web publique mensajes Web en la aplicación nativa.  
-    *   Se establece `IsScriptEnabled` en `false` si no se espera que el contenido web ejecute scripts \ (por ejemplo, al mostrar contenido HTML estático \).  
+    *   Se establece `IsScriptEnabled` en `false` si no se espera que el contenido web ejecute scripts \(por ejemplo, al mostrar contenido HTML estático \).  
     *   Se establece `AreDefaultScriptDialogsEnabled` en `false` si no se espera que el contenido web aparezca o no en los `alert` cuadros de `prompt` diálogo.  
 1.  En los pasos siguientes, use los `NavigationStarting` `FrameNavigationStarting` eventos y para actualizar la configuración en función del origen de la página nueva.  
     1.  Para evitar que la aplicación navegue a determinadas páginas, use los eventos para comprobar y, a continuación, bloquear la navegación de página o marco.  

@@ -28,7 +28,7 @@ Estas son las características más recientes de Microsoft Edge DevTools que se 
 
 ![Aplicación de DevTools de Microsoft Edge](../../devtools-protocol/media/microsoft-edge-devtools.png) 
 
-Las [DevTools de Microsoft Edge](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) ya están disponibles para su versión preliminar como una aplicación independiente de Windows 10 en Microsoft Store. Con la versión de la tienda incluye un panel *selector* que permite adjuntar a destinos de página remotos y locales abiertos, así como un diseño con fichas para facilitar el cambio entre instancias de DevTools. Además, exclusivo de la aplicación DevTools es la capacidad de depurar contenido web en las aplicaciones \ (como complementos para Office, Cortana, EdgeHTML [WebView](../../hosting/webview/index.md)y [Windows-installed PWAs](../../progressive-web-apps/windows-features.md)\).
+Las [DevTools de Microsoft Edge](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) ya están disponibles para su versión preliminar como una aplicación independiente de Windows 10 en Microsoft Store. Con la versión de la tienda incluye un panel *selector* que permite adjuntar a destinos de página remotos y locales abiertos, así como un diseño con fichas para facilitar el cambio entre instancias de DevTools. Además, exclusivo de la aplicación DevTools es la capacidad de depurar contenido web en las aplicaciones \(como complementos para Office, Cortana, EdgeHTML [WebView](../../hosting/webview/index.md)y [Windows-installed PWAs](../../progressive-web-apps/windows-features.md)\).
 
 Las DevToolss de borde también siguen disponibles ( `F12` ) desde el explorador (sin el panel de selector).
 

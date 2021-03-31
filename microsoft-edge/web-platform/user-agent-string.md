@@ -16,7 +16,7 @@ ms.locfileid: "10574934"
 ---
 # Cadena de agente de usuario de Microsoft Edge (escritorio)  
 
-Una cadena de agente de usuario \ (UA \) puede usarse para detectar qué versión de un explorador específico se está usando en un determinado sistema operativo.  Al igual que otros exploradores, Microsoft Edge incluye esta información en el `User-Agent` encabezado HTTP cada vez que realiza una solicitud a un sitio.  También se puede acceder a ella mediante JavaScript consultando el valor de `navigator.userAgent` .  
+Una cadena de agente de usuario \(UA \) puede usarse para detectar qué versión de un explorador específico se está usando en un determinado sistema operativo.  Al igual que otros exploradores, Microsoft Edge incluye esta información en el `User-Agent` encabezado HTTP cada vez que realiza una solicitud a un sitio.  También se puede acceder a ella mediante JavaScript consultando el valor de `navigator.userAgent` .  
 
 Microsoft recomienda que los desarrolladores web usen la [detección de características](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) siempre que sea posible para mejorar la mantenibilidad del código, reducir la fragilidad del código y eliminar el riesgo de ruptura de código en el caso de futuras actualizaciones de la cadena de agente de Office.  
 

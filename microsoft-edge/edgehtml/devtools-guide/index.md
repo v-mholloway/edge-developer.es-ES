@@ -66,7 +66,7 @@ Para depurar una página a nivel local, inicie la aplicación Microsoft Edge Dev
 
 ### Depuración remota  
 
-La aplicación Microsoft Edge DevTools introduce la compatibilidad básica para la depuración de páginas en un equipo remoto mediante nuestro [Protocolo DevTools][DevtoolsProtocolEdgehtmlIndex] publicado recientemente.  Con la versión más reciente, se obtiene acceso remoto a la funcionalidad principal del depurador, elementos \ (para operaciones de solo lectura\) y paneles de [consola][DevtoolsGuideEdgehtml|::ref12::|].  La depuración remota está limitada a hosts de escritorio en ejecución de Microsoft Edge \ (EdgeHTML\) y es compatible con otros hosts EdgeHTML y dispositivos Windows 10 que disponibles en versiones futuras.  
+La aplicación Microsoft Edge DevTools introduce la compatibilidad básica para la depuración de páginas en un equipo remoto mediante nuestro [Protocolo DevTools][DevtoolsProtocolEdgehtmlIndex] publicado recientemente.  Con la versión más reciente, se obtiene acceso remoto a la funcionalidad principal del depurador, elementos \(para operaciones de solo lectura\) y paneles de [consola][DevtoolsGuideEdgehtml|::ref12::|].  La depuración remota está limitada a hosts de escritorio en ejecución de Microsoft Edge \(EdgeHTML\) y es compatible con otros hosts EdgeHTML y dispositivos Windows 10 que disponibles en versiones futuras.  
 
 Para empezar, consulte la sección Microsoft Edge DevTools de los documentos del [Protocolo DevTools][DevtoolsProtocolEdgehtmlIndex].  
 

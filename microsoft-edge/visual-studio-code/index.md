@@ -22,7 +22,7 @@ El [código de Visual Studio][VisualStudioCodeDocs] es un editor de código fuen
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-Para adquirir cualquiera de las extensiones resaltadas a continuación, vaya a extensiones \ (seleccione `Ctrl` + `Shift` + `X` en Windows/Linux o `Command` + `Shift` + `X` en MacOS \) en código de Visual Studio.  
+Para adquirir cualquiera de las extensiones resaltadas a continuación, vaya a extensiones \(seleccione `Ctrl` + `Shift` + `X` en Windows/Linux o `Command` + `Shift` + `X` en MacOS \) en código de Visual Studio.  
 
 Busque la extensión específica en el Marketplace y elija **instalar**.  
 
@@ -55,7 +55,7 @@ Busque la extensión específica en el Marketplace y elija **instalar**.
 
 Con el [depurador de la extensión de código de Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio, depura el código de JavaScript front-end línea a línea y muestra las `console.log()` instrucciones directamente desde el [código de Visual Studio][VisualstudioCode].  
       
-Con la herramienta de depuración, puedes iniciar o adjuntar a Microsoft Edge \ (EdgeHTML \) y Microsoft Edge \ (cromo \).  Para obtener un tutorial sobre la depuración de Microsoft Edge desde código de Visual Studio y configuraciones de ejemplo `launch.json` , navegue hasta el [depurador de la extensión de código de Microsoft Edge Visual Studio][VisualStudioCodeDebuggerEdge].  Elija la siguiente imagen para ver la extensión en acción.  
+Con la herramienta de depuración, puedes iniciar o adjuntar a Microsoft Edge \(EdgeHTML \) y Microsoft Edge \(cromo \).  Para obtener un tutorial sobre la depuración de Microsoft Edge desde código de Visual Studio y configuraciones de ejemplo `launch.json` , navegue hasta el [depurador de la extensión de código de Microsoft Edge Visual Studio][VisualStudioCodeDebuggerEdge].  Elija la siguiente imagen para ver la extensión en acción.  
 
 :::image type="complex" source="./media/debugger-for-edge.png" alt-text="Depurador para la extensión de código perimetral de Visual Studio en acción" lightbox="./media/debugger-for-edge.gif":::
    **Depurador para Microsoft Edge** Extensión de código de Visual Studio en acción  

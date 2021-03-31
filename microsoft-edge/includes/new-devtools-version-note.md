@@ -12,7 +12,7 @@ ms.lasthandoff: 04/09/2020
 ms.locfileid: "10573850"
 ---
 > [!NOTE]
-> El nuevo Microsoft Edge se ha creado con cromo y comienza en la versión 75.  Para obtener más información, [descarga el nuevo Microsoft Edge][MicrosoftNewEdge]y prueba las nuevas [herramientas de desarrollador de Microsoft Edge \ (cromo \)][DevtoolsGuideChromium].  
+> El nuevo Microsoft Edge se ha creado con cromo y comienza en la versión 75.  Para obtener más información, [descarga el nuevo Microsoft Edge][MicrosoftNewEdge]y prueba las nuevas [herramientas de desarrollador de Microsoft Edge \(cromo \)][DevtoolsGuideChromium].  
 
 <!-- image links -->  
 

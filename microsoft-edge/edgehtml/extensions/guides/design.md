@@ -114,8 +114,8 @@ Una vez que la extensión está lista para empaquetar, debe tener preparados tre
 
 | Tamaño | Detalles |  
 |:--- |:--- |  
-| 44px | Se usa en la interfaz de usuario de Windows \ (**lista**de aplicaciones, ****  \>  aplicaciones**del sistema**de configuración  \>  **& características**\). |  
-| aplica un fundido | Requisito de empaquetado \ (no visible en ninguna parte \). |  
+| 44px | Se usa en la interfaz de usuario de Windows \(**lista**de aplicaciones, ****  \>  aplicaciones**del sistema**de configuración  \>  **& características**\). |  
+| aplica un fundido | Requisito de empaquetado \(no visible en ninguna parte \). |  
 | 150px | Se usa como el icono de Microsoft Store. |  
 
 

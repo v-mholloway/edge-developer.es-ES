@@ -19,9 +19,9 @@ ms.locfileid: "11231086"
 
 [Playwright][|::ref1::|Main] es una biblioteca de [Node.js][NodejsMain] para automatizar [cromo][ChromiumHome], [Firefox][FirefoxMain]y [WebKit][|::ref2::|Main] con una sola API.  Playwright se ha creado para permitir la automatización web entre exploradores, que es siempre verde, compatible, confiable y rápida.  Como [Microsoft Edge está integrado en la plataforma web de cromo de código abierto][MicrosoftBlogsWindowsExperience20181206], Playwright también puede automatizar Microsoft Edge.  
 
-Playwright inicia los [exploradores desatendidas][WikiHeadlessBrowser] de forma predeterminada.  Los exploradores sin encabezado no muestran una interfaz de usuario, por lo que debe usar la línea de comandos.  También puede configurar Playwright para que ejecute también Microsoft Edge \ (no headed \) Microsoft Edge.  
+Playwright inicia los [exploradores desatendidas][WikiHeadlessBrowser] de forma predeterminada.  Los exploradores sin encabezado no muestran una interfaz de usuario, por lo que debe usar la línea de comandos.  También puede configurar Playwright para que ejecute también Microsoft Edge \(no headed \) Microsoft Edge.  
 
-De forma predeterminada, al instalar Playwright, el instalador descarga [cromo][ChromiumHome], [Firefox][FirefoxMain]y [WebKit][|::ref3::|Main].  Si tienes Microsoft Edge \ (cromo \) instalado también, Playwright solo necesita un cambio de código de una línea para probar tu sitio web o aplicación en Microsoft Edge.  Para descargar Microsoft Edge \ (cromo \), navegue hasta [Descargar Microsoft Edge][MicrosoftEdgeDownload].  
+De forma predeterminada, al instalar Playwright, el instalador descarga [cromo][ChromiumHome], [Firefox][FirefoxMain]y [WebKit][|::ref3::|Main].  Si tienes Microsoft Edge \(cromo \) instalado también, Playwright solo necesita un cambio de código de una línea para probar tu sitio web o aplicación en Microsoft Edge.  Para descargar Microsoft Edge \(cromo \), navegue hasta [Descargar Microsoft Edge][MicrosoftEdgeDownload].  
 
 ## Instalación de Playwright  
 
@@ -36,7 +36,7 @@ npm i playwright
 > [!NOTE]
 > [Playwright][|::ref5::|Main] requiere Node.js versión 10,17 o superior. Ejecute `node -v` desde la línea de comandos para asegurarse de que tiene una versión compatible de Node.js.  Los archivos binarios del explorador de cromo, Firefox y WebKit funcionan en Windows, macOS y Linux. Para obtener más información, vaya a [Playwright requisitos del sistema][PlaywrightSystemRequirements].  
 
-Playwright debería ser familiar para los usuarios de otros marcos de pruebas de explorador, como [Webdriver][WebDriverChromiumMain] o [puppeteer][PuppeteerMain].  Puede crear una instancia del explorador, abrir una página y, a continuación, manipularla con la [API de Playwright][PlaywrightAPIReference].  En el siguiente fragmento de código, Playwright lanza Microsoft Edge \ (cromo \), se desplaza a `https://www.microsoft.com/edge` y guarda una captura de pantalla como `example.png` .  
+Playwright debería ser familiar para los usuarios de otros marcos de pruebas de explorador, como [Webdriver][WebDriverChromiumMain] o [puppeteer][PuppeteerMain].  Puede crear una instancia del explorador, abrir una página y, a continuación, manipularla con la [API de Playwright][PlaywrightAPIReference].  En el siguiente fragmento de código, Playwright lanza Microsoft Edge \(cromo \), se desplaza a `https://www.microsoft.com/edge` y guarda una captura de pantalla como `example.png` .  
 
 Copie el siguiente fragmento de código y guárdelo como `example.js` .  
 
@@ -55,13 +55,13 @@ const { chromium } = require('playwright');
 })();
 ```  
 
-Cambie `executablePath` a la instalación de Microsoft Edge \ (cromo \).  Por ejemplo, en macOS, la `executablePath` configuración de for Microsoft Edge debe establecerse en `/Applications/Microsoft\ Edge\ Canary.app/` .  Para encontrar el `executablePath` , navegue `edge://version` y copie la **ruta de acceso del archivo ejecutable** en esa página o instale el paquete [Edge-paths][npmEdgePaths] con el siguiente comando.  
+Cambie `executablePath` a la instalación de Microsoft Edge \(cromo \).  Por ejemplo, en macOS, la `executablePath` configuración de for Microsoft Edge debe establecerse en `/Applications/Microsoft\ Edge\ Canary.app/` .  Para encontrar el `executablePath` , navegue `edge://version` y copie la **ruta de acceso del archivo ejecutable** en esa página o instale el paquete [Edge-paths][npmEdgePaths] con el siguiente comando.  
 
 ```shell
 npm i edge-paths
 ```  
 
-El siguiente fragmento de código usa el paquete [Edge-paths][npmEdgePaths] para buscar mediante programación la ruta de acceso a la instalación de Microsoft Edge \ (cromo \) en el sistema operativo.  
+El siguiente fragmento de código usa el paquete [Edge-paths][npmEdgePaths] para buscar mediante programación la ruta de acceso a la instalación de Microsoft Edge \(cromo \) en el sistema operativo.  
 
 ```javascript
 const edgePaths = require("edge-paths");
@@ -72,7 +72,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 Por último, establezca `executablePath: EDGE_PATH` en `example.js` .  Haz clic en Guardar para guardar los cambios.  
 
 > [!NOTE]
-> Microsoft Edge \ (EdgeHTML \) no funciona con Playwright.  Para continuar siguiendo este ejemplo, debes instalar [Microsoft Edge \ (cromo \)][MicrosoftEdgeDownload] .  
+> Microsoft Edge \(EdgeHTML \) no funciona con Playwright.  Para continuar siguiendo este ejemplo, debes instalar [Microsoft Edge \(cromo \)][MicrosoftEdgeDownload] .  
 
 Ahora se ejecuta `example.js` desde la línea de comandos.  
 

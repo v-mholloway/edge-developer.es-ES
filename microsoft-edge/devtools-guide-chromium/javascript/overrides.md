@@ -65,7 +65,7 @@ Para agregar archivos a la carpeta Overrides, abra la herramienta **elementos** 
    Elegir un archivo en el inspector de **estilos**  
 :::image-end:::  
 
-En el editor de **orígenes** , desplace el puntero sobre el nombre de archivo del archivo que ha elegido, abra el menú contextual \ (haga clic con el botón derecho \) y elija **Guardar para reemplazos**.  
+En el editor de **orígenes** , desplace el puntero sobre el nombre de archivo del archivo que ha elegido, abra el menú contextual \(haga clic con el botón derecho \) y elija **Guardar para reemplazos**.  
 
 :::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="En el editor de orígenes, agregue el nombre del archivo a Overrides" lightbox="../media/javascript-overrides-file-name.msft.png":::
    En el editor de **orígenes** , agregue el nombre del archivo a Overrides  
@@ -100,14 +100,14 @@ El archivo se almacena en la carpeta Overrides.  Compruebe que DevTools crear un
 
 :::row:::
    :::column span="":::
-      En la herramienta **orígenes** , en la sección **Página** , mantenga el puntero sobre cualquier archivo, abra el menú contextual \ (haga clic con el botón derecho \) y agréguelo a reemplazos.  De nuevo, los archivos que ya están en la carpeta sobrescrituras tienen un punto púrpura en el icono.  
+      En la herramienta **orígenes** , en la sección **Página** , mantenga el puntero sobre cualquier archivo, abra el menú contextual \(haga clic con el botón derecho \) y agréguelo a reemplazos.  De nuevo, los archivos que ya están en la carpeta sobrescrituras tienen un punto púrpura en el icono.  
       
       :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Elegir un archivo de la herramienta orígenes para invalidaciones" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Elegir un archivo de la herramienta **orígenes** para invalidaciones  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Como alternativa, en la herramienta **red** , desplace el puntero sobre cualquier archivo, abra el menú contextual \ (haga clic con el botón derecho \) y agréguelo a reemplazos.  Cuando las invalidaciones son efectivas, los archivos que se encuentran en el equipo y no desde la página web en vivo.  Cuando las invalidaciones estén en vigor, en la herramienta **red** , busque un icono de advertencia junto al nombre del archivo.  
+      Como alternativa, en la herramienta **red** , desplace el puntero sobre cualquier archivo, abra el menú contextual \(haga clic con el botón derecho \) y agréguelo a reemplazos.  Cuando las invalidaciones son efectivas, los archivos que se encuentran en el equipo y no desde la página web en vivo.  Cuando las invalidaciones estén en vigor, en la herramienta **red** , busque un icono de advertencia junto al nombre del archivo.  
       
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Elegir un archivo de la herramienta red para invalidaciones" lightbox="../media/javascript-overrides-network.msft.png":::
          Elegir un archivo de la herramienta **red** para invalidaciones  

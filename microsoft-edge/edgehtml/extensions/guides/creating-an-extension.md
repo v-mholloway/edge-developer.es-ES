@@ -72,7 +72,7 @@ En `manifest.json` el interior, agregue el siguiente código.
 | [autorización][MDNManifestjsonAuthor] | El autor de la extensión.  |  
 | [version][MDNManifestjsonVersion] | Número de versión de la extensión.  |  
 | [description][MDNManifestjsonDescription] | La descripción de la extensión mostrada en la sección acerca del menú extensión en Microsoft Edge.  |  
-| [permisos][MDNManifestjsonPermissions] | Matriz de cadenas que solicitan permisos para la extensión.  Para tu extensión, Estás solicitando permisos para ver los sitios web visitados \ ("pestañas" \) y para actualizar el contenido de las direcciones URL que coincidan con " `*://docs.microsoft.com/*` ".  |  
+| [permisos][MDNManifestjsonPermissions] | Matriz de cadenas que solicitan permisos para la extensión.  Para tu extensión, Estás solicitando permisos para ver los sitios web visitados \("pestañas" \) y para actualizar el contenido de las direcciones URL que coincidan con " `*://docs.microsoft.com/*` ".  |  
 | [browser_action][MDNManifestjsonBrowserAction] | Contiene la información de un icono. El icono se coloca en la barra de herramientas de Microsoft Edge, a la derecha de la barra de direcciones.  |  
 
 #### browser_action definiciones de clave  
@@ -114,7 +114,7 @@ Cree un archivo con `popup.html` el nombre en la raíz de la `color-changer` car
 </html>
 ```  
 
-En `popup.html` , puedes crear un título, un párrafo y tres botones \ (AliceBlue, Cornsilk y restablecer \).  
+En `popup.html` , puedes crear un título, un párrafo y tres botones \(AliceBlue, Cornsilk y restablecer \).  
 
 Ahora cree una carpeta con el nombre `css` y dentro de crear un archivo denominado `styles.css` .  Agregue los siguientes estilos.  
 
@@ -239,7 +239,7 @@ if (url.indexOf("//docs.microsoft.com") === -1) {
 }
 ```  
 
-Este script obtiene la dirección URL de la página actual a través de `document.location.href` y comprueba si la página actual se encuentra en el dominio [docs.Microsoft.com][MicrosoftDocs] .  Si la página no está en el dominio [docs.Microsoft.com][MicrosoftDocs] \ (por ejemplo  [https://www.bing.com/][|::ref1::|] \), las rutas de los iconos inactivos \ (iconos gris \) se envían al script de fondo con [Runtime. SendMessage ()][MDNApiRuntimeSendmessage].  
+Este script obtiene la dirección URL de la página actual a través de `document.location.href` y comprueba si la página actual se encuentra en el dominio [docs.Microsoft.com][MicrosoftDocs] .  Si la página no está en el dominio [docs.Microsoft.com][MicrosoftDocs] \(por ejemplo  [https://www.bing.com/][|::ref1::|] \), las rutas de los iconos inactivos \(iconos gris \) se envían al script de fondo con [Runtime. SendMessage ()][MDNApiRuntimeSendmessage].  
 
 Para incluir la siguiente clave, debe actualizar la [manifest.jsen][GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson] el archivo `content_scripts` .  
 
@@ -263,7 +263,7 @@ Para incluir la siguiente clave, debe actualizar la [manifest.jsen][GithubMicros
 
 | Key | Detalles |  
 |:--- |:---- |  
-| `matches` \ (requerido \) | El modelo de dirección URL que debe coincidir antes de cargar el script de contenido. |  
+| `matches` \(requerido \) | El modelo de dirección URL que debe coincidir antes de cargar el script de contenido. |  
 | `js` | El script que debe cargarse en las direcciones URL coincidentes. |  
 | `run_at` | Especifica dónde se insertan los archivos JavaScript de la `js` clave. |  
 
@@ -290,7 +290,7 @@ browser.runtime.onMessage.addListener(
 
 El método [Runtime.][MDNApiRuntimeOnmessage] método de mensaje escucha en [Runtime. SendMessage ()][MDNApiRuntimeSendmessage] de la secuencia de comandos de contenido.  Si el dominio de la página no es [docs.Microsoft.com][MicrosoftDocs], el método [browserAction. setIcon ()][MDNApiBrowseractionSeticon] establece las rutas de los iconos en las imágenes inactivas.  
 
-La secuencia de comandos también deshabilita la acción del explorador \ ([browserAction. Disable][MDApiBrowseractionDisable]\), de modo que los usuarios no puedan hacer clic en la acción del explorador fuera de una página [docs.Microsoft.com][MicrosoftDocs] .  
+La secuencia de comandos también deshabilita la acción del explorador \([browserAction. Disable][MDApiBrowseractionDisable]\), de modo que los usuarios no puedan hacer clic en la acción del explorador fuera de una página [docs.Microsoft.com][MicrosoftDocs] .  
 
 Debe agregar el script de fondo al [manifest.jsen][GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson] el archivo.  Agregue la siguiente `background` clave al manifiesto.  
 
@@ -314,7 +314,7 @@ Debe agregar el script de fondo al [manifest.jsen][GithubMicrosoftEdgeExtensions
 | `scripts` | La ruta de acceso a un archivo JavaScript. |  
 | `persistent` (obligatorio) | Debe establecerse en `true` o `false` .  Si se establece en `true` , el script de fondo se carga y se conserva para toda la sección de exploración.  Si se establece en `false` , el script de fondo se carga con un retraso y se conserva para la sesión de exploración. |  
 
-Vuelva a cargar la extensión y vuelva a probar.  Para volver a cargar la extensión: haga clic en **...** para ver la configuración y más en Microsoft Edge, haga clic en **extensiones**, haga clic en la extensión \ (**cambiador de color**\) y haga clic en **volver a cargar extensión**.  
+Vuelva a cargar la extensión y vuelva a probar.  Para volver a cargar la extensión: haga clic en **...** para ver la configuración y más en Microsoft Edge, haga clic en **extensiones**, haga clic en la extensión \(**cambiador de color**\) y haga clic en **volver a cargar extensión**.  
 
 Ahora, abra una nueva pestaña o actualice una pestaña existente que no sea una página de [docs.Microsoft.com][MicrosoftDocs] .  Debe ver el icono inactivo y no podrá hacer clic en la acción del explorador.  
 

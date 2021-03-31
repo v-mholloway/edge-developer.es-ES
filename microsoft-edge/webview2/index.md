@@ -17,7 +17,7 @@ ms.locfileid: "11182370"
 ---
 # Introducción a Microsoft Edge WebView2  
 
-El control Microsoft Edge WebView2 permite incrustar tecnologías web \ (HTML, CSS y JavaScript \) en las aplicaciones nativas.  El control WebView2 usa [Microsoft Edge (cromo)][MicrosoftedgeinsiderMain] como motor de representación para mostrar el contenido web en aplicaciones nativas.  Con WebView2, puedes incrustar código web en diferentes partes de tu aplicación nativa o compilar toda la aplicación nativa dentro de una sola vista Web.  Para obtener información sobre cómo empezar a crear una aplicación de WebView2, vaya a [Introducción](#getting-started).  
+El control Microsoft Edge WebView2 permite incrustar tecnologías web \(HTML, CSS y JavaScript \) en las aplicaciones nativas.  El control WebView2 usa [Microsoft Edge (cromo)][MicrosoftedgeinsiderMain] como motor de representación para mostrar el contenido web en aplicaciones nativas.  Con WebView2, puedes incrustar código web en diferentes partes de tu aplicación nativa o compilar toda la aplicación nativa dentro de una sola vista Web.  Para obtener información sobre cómo empezar a crear una aplicación de WebView2, vaya a [Introducción](#getting-started).  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="¿Qué es la vista previa?" lightbox="./media/WebView2/whatwebview.png":::
    ¿Qué es la vista previa?  
@@ -73,7 +73,7 @@ Las aplicaciones híbridas permiten a los desarrolladores disfrutar de lo mejor 
       Use una versión actualizada de cromo con actualizaciones de plataforma y revisiones de seguridad regulares.  
    :::column-end:::
    :::column span="1":::
-      **Fijo** \ (próximamente \)  
+      **Fijo** \(próximamente \)  
       Elija empaquetar los bits de cromo en la aplicación.  
    :::column-end:::
    :::column span="1":::
@@ -95,13 +95,13 @@ El repositorio de [muestras de WebView2][GithubMicrosoftedgeWebview2samples] con
 
 ## Plataformas compatibles  
 
-Una disponibilidad general \ (GA \) o versión preliminar está disponible en los siguientes entornos de programación.  
+Una disponibilidad general \(GA \) o versión preliminar está disponible en los siguientes entornos de programación.  
 
-*   C/C++ \ (GA \) Win32
+*   C/C++ \(GA \) Win32
 *   .NET Framework 4.6.2 o posterior
 *   .NET Core 3,1 o posterior
 *   .NET 5
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (versión preliminar \)
+*   [WinUI 3,0][UwpToolkitsWinui3] \(versión preliminar \)
 
 Puede ejecutar aplicaciones de WebView2 en las siguientes versiones de Windows.  
 

@@ -17,7 +17,7 @@ ms.locfileid: "11191620"
 ---
 # Automatizar y probar WebView2 con el controlador Microsoft Edge  
 
-Debido a que WebView2 usa la plataforma web Microsoft Edge \ (cromo \), WebView2 desarrolladores \ (usted \) puede aprovechar las herramientas web estándar para la depuración y la automatización.  Selenium es una herramienta de este tipo.  Implementa la API [Webdriver][W3cWebdriver2] de W3C.  Puede usar Selenium para crear pruebas automatizadas para simular interacciones del usuario.  
+Debido a que WebView2 usa la plataforma web Microsoft Edge \(cromo \), WebView2 desarrolladores \(usted \) puede aprovechar las herramientas web estándar para la depuración y la automatización.  Selenium es una herramienta de este tipo.  Implementa la API [Webdriver][W3cWebdriver2] de W3C.  Puede usar Selenium para crear pruebas automatizadas para simular interacciones del usuario.  
 
 Comience con los siguientes pasos.  
 
@@ -148,9 +148,9 @@ En este momento, deberías tener instalado WebView2 Runtime, haber creado un pro
 
 ## Consulte también  
 
-*   Para obtener una visión completa de cómo las API Selenium Drives WebView2 o Microsoft Edge \ (cromo \), vaya a [WebDrive en la documentación de Selenium][SeleniumWebdriver]   
+*   Para obtener una visión completa de cómo las API Selenium Drives WebView2 o Microsoft Edge \(cromo \), vaya a [WebDrive en la documentación de Selenium][SeleniumWebdriver]   
 *   Para obtener más información sobre el control de WebView2 y cómo usarlo al incrustar contenido web en la aplicación nativa, vaya a [Introducción a Microsoft Edge WebView2][WebViewIndex].  
-*   Para obtener más información sobre cómo automatizar Microsoft Edge \ (cromo \), navegue para [usar Webdriver (cromo) para automatización de prueba][WebdriverChromium]   
+*   Para obtener más información sobre cómo automatizar Microsoft Edge \(cromo \), navegue para [usar Webdriver (cromo) para automatización de prueba][WebdriverChromium]   
     
 ## Ponerse en contacto con el equipo de la vista de WebView de Microsoft Edge  
 

@@ -15,19 +15,19 @@ ms.locfileid: "11236384"
 ---
 # Descripción general del Protocolo de DevTools Microsoft Edge (cromo)  
 
-Con el turno de la plataforma web subyacente de Microsoft Edge a cromo, el [Protocolo DevTools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) no recibirá más actualizaciones.  El protocolo de DevTools Microsoft Edge \ (cromo \) coincidirá con las API del Protocolo de DevTools de Chrome hacia adelante.  
+Con el turno de la plataforma web subyacente de Microsoft Edge a cromo, el [Protocolo DevTools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) no recibirá más actualizaciones.  El protocolo de DevTools Microsoft Edge \(cromo \) coincidirá con las API del Protocolo de DevTools de Chrome hacia adelante.  
 
 Puede encontrar documentación sobre esos dominios y métodos en el [visor de protocolos de Chrome DevTools](https://chromedevtools.github.io/devtools-protocol/tot/).  
 
 > [!NOTE]
-> Los métodos que fueron prefijos `ms` en el [Protocolo DevTools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ya no se admiten en el protocolo de DevTools Microsoft Edge \ (cromo \).  
+> Los métodos que fueron prefijos `ms` en el [Protocolo DevTools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ya no se admiten en el protocolo de DevTools Microsoft Edge \(cromo \).  
 
 ## Usar el protocolo DevTools  
 
-A continuación se explica cómo adjuntar un cliente de herramientas personalizado al servidor de DevTools en Microsoft Edge \ (cromo \).  
+A continuación se explica cómo adjuntar un cliente de herramientas personalizado al servidor de DevTools en Microsoft Edge \(cromo \).  
 
-1.  Asegúrate de que todas las instancias de Microsoft Edge \ (cromo \) estén cerradas.  
-1.  Inicia Microsoft Edge \ (cromo \) con el puerto de depuración remota:. 
+1.  Asegúrate de que todas las instancias de Microsoft Edge \(cromo \) estén cerradas.  
+1.  Inicia Microsoft Edge \(cromo \) con el puerto de depuración remota:. 
     
     ```shell
     msedge.exe --remote-debugging-port=9222
@@ -49,7 +49,7 @@ A continuación se explica cómo adjuntar un cliente de herramientas personaliza
 
 ## Puntos de conexión HTTP del protocolo DevTools  
 
-El protocolo DevTools de Microsoft Edge \ (cromo \) admite los siguientes puntos de conexión HTTP.  
+El protocolo DevTools de Microsoft Edge \(cromo \) admite los siguientes puntos de conexión HTTP.  
 
 ## /json/version  
 
@@ -108,7 +108,7 @@ Proporciona una lista de candidatos de los destinos de página para la depuraci�
 
 ## /json/close  
 
-Cierra el proceso de destino \ (por ejemplo, en Microsoft Edge \ (cromo \), cierra la pestaña de página \).  
+Cierra el proceso de destino \(por ejemplo, en Microsoft Edge \(cromo \), cierra la pestaña de página \).  
 
 **Parameters**  
 
@@ -130,7 +130,7 @@ Las [herramientas remotas para Microsoft Edge (beta)](https://www.microsoft.com/
 
 ### /msedge/json/list  
 
-Proporciona una lista de candidatos de todos los `msedge.exe` procesos \ (incluyendo [PWAs](../progressive-web-apps-chromium/index.md) y todas las pestañas de todas las instancias de Microsoft Edge \) en el dispositivo Windows 10 para la depuración.  
+Proporciona una lista de candidatos de todos los `msedge.exe` procesos \(incluyendo [PWAs](../progressive-web-apps-chromium/index.md) y todas las pestañas de todas las instancias de Microsoft Edge \) en el dispositivo Windows 10 para la depuración.  
 
 **Parameters**  
 

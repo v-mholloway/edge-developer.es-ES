@@ -21,7 +21,7 @@ ms.locfileid: "11236139"
 > [!NOTE]
 > El nuevo Microsoft Edge se ha creado con cromo y comienza en la versión 75.  Para obtener más información, [descarga el nuevo Microsoft Edge][MicrosoftNewEdge]y prueba las nuevas [herramientas para desarrolladores de Microsoft Edge (cromo)][DevtoolsGuideChromium].  
 > 
-> Para emular diferentes dispositivos, exploradores, tamaños de pantalla y resoluciones en el nuevo DevTools, vaya a [emular dispositivos móviles en Microsoft Edge \ (cromo \) DevTools][DevtoolsGuideChromiumDeviceMode].  
+> Para emular diferentes dispositivos, exploradores, tamaños de pantalla y resoluciones en el nuevo DevTools, vaya a [emular dispositivos móviles en Microsoft Edge \(cromo \) DevTools][DevtoolsGuideChromiumDeviceMode].  
 
 El panel de **emulación** ayuda a realizar las siguientes actividades.    
 
@@ -54,7 +54,7 @@ Modificar la cadena de agente de usuario para imitar a otro explorador es un bue
 
 Los scripts usan la cadena de agente de usuario para detectar qué explorador se usa.  El script puede ser front-end, back-end o front-end y back-end.  Aunque el código no usa la detección del explorador, el código puede heredarlo de una biblioteca de JavaScript de terceros o de una secuencia de comandos del servidor.  
 
-El problema con la detección de explorador es que puede escalar \ (o cambiar \) características en la página web con suposiciones acerca de las capacidades del explorador. En su lugar, debe considerar la posibilidad de usar la detección de características para detectar las capacidades de su explorador.  Se puede producir un comportamiento inesperado debido a una de las siguientes situaciones:  
+El problema con la detección de explorador es que puede escalar \(o cambiar \) características en la página web con suposiciones acerca de las capacidades del explorador. En su lugar, debe considerar la posibilidad de usar la detección de características para detectar las capacidades de su explorador.  Se puede producir un comportamiento inesperado debido a una de las siguientes situaciones:  
 
 *   El código dirigido a Windows Internet Explorer 8 puede ejecutarse de forma diferente en Microsoft Edge.  
 *   Una característica que el explorador debe admitir está deshabilitada debido a una suposición realizada por el desarrollador.  

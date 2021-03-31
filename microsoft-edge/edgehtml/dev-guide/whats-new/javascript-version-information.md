@@ -20,12 +20,12 @@ ms.locfileid: "11236246"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-La compatibilidad con JavaScript varía según Microsoft Edge, las aplicaciones de Microsoft Store y los distintos modos de documento de Internet Explorer \ (IE \). Para obtener más información sobre el control de versiones de código de documento de IE, consulte [definir la compatibilidad de documentos](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
+La compatibilidad con JavaScript varía según Microsoft Edge, las aplicaciones de Microsoft Store y los distintos modos de documento de Internet Explorer \(IE \). Para obtener más información sobre el control de versiones de código de documento de IE, consulte [definir la compatibilidad de documentos](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 En la siguiente tabla se resume la compatibilidad de JavaScript en Internet Explorer, Microsoft Edge y las aplicaciones de Microsoft Store.  
   
 > [!IMPORTANT]
-> Las características experimentales \ (habilitadas desde `about:flags` \) están indicadas por `Exp` . En algunos casos, la compatibilidad de las aplicaciones de la tienda varía entre las aplicaciones Windows 8 \ (V8 \) y Windows 10 \ (V10 \), y el escritorio de Windows \ (Win \) y Windows Phone \ (teléfono \), tal como se indica.  
+> Las características experimentales \(habilitadas desde `about:flags` \) están indicadas por `Exp` . En algunos casos, la compatibilidad de las aplicaciones de la tienda varía entre las aplicaciones Windows 8 \(V8 \) y Windows 10 \(V10 \), y el escritorio de Windows \(Win \) y Windows Phone \(teléfono \), tal como se indica.  
   
  | Elemento de lenguaje | Peculiaridades, estándares de IE 6, estándares de IE 7 | Estándares de IE 8 | Estándares de IE 9 | Estándares de IE 10 | Estándares de IE 11 | Microsoft Edge | Almacenar aplicaciones |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  

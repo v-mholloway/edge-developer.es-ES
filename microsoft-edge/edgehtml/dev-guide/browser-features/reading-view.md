@@ -20,14 +20,14 @@ ms.locfileid: "11236452"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Microsoft Edge ofrece una vista de lectura para obtener una experiencia de lectura más fluida y simplificada de las páginas web sin la distracción de contenido no relacionado u otro contenido secundario de la página.  La vista de lectura se puede activar o desactivar desde la **vista de lectura** \ (icono de libro \) en la barra de direcciones o con `Ctrl` + `Shift` + `R` .  La vista de lectura extrae los siguientes metadatos de una página:  
+Microsoft Edge ofrece una vista de lectura para obtener una experiencia de lectura más fluida y simplificada de las páginas web sin la distracción de contenido no relacionado u otro contenido secundario de la página.  La vista de lectura se puede activar o desactivar desde la **vista de lectura** \(icono de libro \) en la barra de direcciones o con `Ctrl` + `Shift` + `R` .  La vista de lectura extrae los siguientes metadatos de una página:  
 
 *   Title
 *   Autorización
 *   Date
 *   Publicador
-*   Imagen dominante \ (s \)
-*   Títulos de la imagen dominante \ (s \)
+*   Imagen dominante \(s \)
+*   Títulos de la imagen dominante \(s \)
 *   Imágenes secundarias
 *   Contenido de texto principal de la página
 *   Copyright
@@ -44,7 +44,7 @@ Para asegurarse de que la vista de lectura represente el título del artículo:
 
 *   Incluir un `title` elemento en el encabezado  
 *   Incluir una etiqueta meta con `name="title"`  
-*   Busque el texto de título en el cuerpo del artículo con la cadena de contenido de la etiqueta meta.  Canalizaciones \ ( `|` \) en la cadena de contenido impiden que la vista de lector se active, intente usar guiones \ ( `-` \) en su lugar.  
+*   Busque el texto de título en el cuerpo del artículo con la cadena de contenido de la etiqueta meta.  Canalizaciones \( `|` \) en la cadena de contenido impiden que la vista de lector se active, intente usar guiones \( `-` \) en su lugar.  
 
 ### Autorización  
 
@@ -92,7 +92,7 @@ Para asegurarse de que se captura todo el texto del cuerpo de la página en la v
 
 ### Copyright  
 
-La vista de lectura extrae y muestra información de copyright denotada por etiquetas meta con `name = "copyright"` o si no existe información de metaetiquetas, un nodo de texto que contiene el símbolo de copyright \ ( `©` \).  Vista de lectura muestra información de propiedad intelectual al final del artículo cuerpo principal, con un estilo con un tamaño de fuente más pequeño que el texto del cuerpo principal.  
+La vista de lectura extrae y muestra información de copyright denotada por etiquetas meta con `name = "copyright"` o si no existe información de metaetiquetas, un nodo de texto que contiene el símbolo de copyright \( `©` \).  Vista de lectura muestra información de propiedad intelectual al final del artículo cuerpo principal, con un estilo con un tamaño de fuente más pequeño que el texto del cuerpo principal.  
 
 ```html
 <meta name="copyright" content="Your copyright information">

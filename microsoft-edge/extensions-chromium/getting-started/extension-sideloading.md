@@ -16,7 +16,7 @@ ms.locfileid: "11104779"
 ---
 # Transferir localmente una extensión
 
-Durante el desarrollo, puedes usar el explorador Microsoft Edge \ (cromo \) para ejecutar y depurar tu extensión de forma segura. Si instalas localmente tu extensión en tu explorador, puedes ejecutar y probar la extensión. En este artículo se explica cómo transferir extensiones a Microsoft Edge.
+Durante el desarrollo, puedes usar el explorador Microsoft Edge \(cromo \) para ejecutar y depurar tu extensión de forma segura. Si instalas localmente tu extensión en tu explorador, puedes ejecutar y probar la extensión. En este artículo se explica cómo transferir extensiones a Microsoft Edge.
 
 Para realizar la transferencia de la extensión, siga estos pasos.
 

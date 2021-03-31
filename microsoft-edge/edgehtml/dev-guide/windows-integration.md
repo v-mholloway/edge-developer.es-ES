@@ -22,7 +22,7 @@ ms.locfileid: "11236184"
 
 ## API de solicitud de pago  
 
-La [API de solicitud de pago](./windows-integration/payment-request-api.md) es un estándar entre exploradores abierto que permite que los exploradores actúen como intermediario entre comerciantes, consumidores y las formas de pago \ (como tarjetas de crédito \) que los consumidores hayan almacenado en la nube.  
+La [API de solicitud de pago](./windows-integration/payment-request-api.md) es un estándar entre exploradores abierto que permite que los exploradores actúen como intermediario entre comerciantes, consumidores y las formas de pago \(como tarjetas de crédito \) que los consumidores hayan almacenado en la nube.  
 
 ## Autenticación Web y Windows Hello  
 
