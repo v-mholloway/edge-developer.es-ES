@@ -23,10 +23,10 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.openlocfilehash: c76830cb8bbcc597aa026f58e1926cd2f9bc2d62
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 04/02/2021
 ms.locfileid: "11439587"
 ---
 # <a name="experimental-features"></a>Características experimentales  
@@ -143,8 +143,8 @@ Después de activar el experimento, asegúrese de reiniciar DevTools.  Para usar
 
 Ahora puede usar el nuevo Editor de [fuentes][DevtoolsInspectStylesEditFonts] visual para editar fuentes.  Úselo para definir fuentes y características de fuente.  El Editor **de fuentes visual** le ayuda a completar las siguientes acciones.  
 
-*   Cambiar entre unidades para distintas propiedades de fuente  
-*   Cambiar entre palabras clave para distintas propiedades de fuente  
+*   Cambiar entre unidades para las diferentes propiedades de la fuente  
+*   Cambiar entre palabras clave para las diferentes propiedades de la fuente  
 *   Convertir unidades  
 *   Generar código CSS preciso  
     
@@ -261,11 +261,11 @@ Para proporcionar comentarios sobre los experimentos de Microsoft Edge DevTools 
 [Devtools3dViewIndex]: ../3d-view/index.md "Vista 3D | Microsoft Docs"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspeccionar CSS Grid en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Configuración: Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edit keyboard shortcuts for any action in the DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simular dispositivos móviles con modo de dispositivo en Microsoft Edge DevTools | Microsoft Edge"  
-[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar estilos y configuraciones de fuentes CSS en el panel Estilos de DevTools | Microsoft Docs"  
+[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar la configuración y los estilos de fuente CSS en el panel Estilos en DevTools | Microsoft Docs"  
 [DevtoolsIssuesIndex]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsOpenIndex]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  

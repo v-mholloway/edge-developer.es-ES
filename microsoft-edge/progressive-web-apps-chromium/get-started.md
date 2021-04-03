@@ -3,16 +3,16 @@ description: En esta guía se ofrece información general sobre los conceptos b�
 title: Introducción a Las aplicaciones web progresivas (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, PWABuilder, manifiesto web, trabajador de servicio, inserción
-ms.openlocfilehash: 6ff24b2e9219b2f3755bb2e8f6db137dc7a721ec
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6a40742c1065dbc3b8aaeeeb469ab9154629a47a
+ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398136"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474923"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a>Introducción a Las aplicaciones web progresivas (Chromium)  
 
@@ -52,9 +52,9 @@ npm start
 
 Ahora vaya a `http://localhost:3000` ver la nueva aplicación web.  
 
-:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Ejecutar el nuevo PWA en localhost" lightbox="./media/vs-nodejs-express-index.png":::
-   Ejecutar el nuevo PWA en localhost
-:::image-end:::
+:::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="Ejecutar el nuevo PWA en localhost" lightbox="./media/visual-studio-nodejs-express-index.png":::
+   Ejecutar el nuevo PWA en localhost  
+:::image-end:::  
 
 ## <a name="get-started-building-a-pwa"></a>Introducción a la creación de un PWA  
 
@@ -100,7 +100,7 @@ Para agregar un manifiesto de aplicación a la aplicación web:
     ```  
     
 1.  Guarde el archivo como `/MySamplePwa/public/manifest.json` .  
-1.  Agregue una imagen de icono de aplicación de 512x512 denominada `icon512.png` a `/MySamplePwa/public/images` .  Puede usar la imagen [de ejemplo con][ImagePwa] fines de prueba.  
+1.  Agregue una imagen de icono de aplicación de 512x512 denominada `icon512.png` a `/MySamplePwa/public/images` .  Puede usar la imagen [de ejemplo con](./media/progressive-web-app.png) fines de prueba.  
 1.  En Visual Studio, abra y agregue el siguiente fragmento `/public/index.html` de código dentro de la `<head>` etiqueta.  
     
     ```html
@@ -148,26 +148,26 @@ Siga estos pasos para confirmar que se ejecuta el trabajador de servicio.
 1.  En Microsoft Edge, seleccione `F12` para abrir Microsoft Edge DevTools.  Seleccione **Aplicación**y, a continuación, **Trabajadores de** servicio para ver los trabajadores del servicio.  Si no se muestra el trabajador del servicio, actualice la página.  
     
     :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Introducción al trabajador del servicio DevTools de Microsoft Edge" lightbox="./media/devtools-sw-overview.png":::
-       Introducción al trabajador del servicio DevTools de Microsoft Edge
-    :::image-end:::
+       Introducción al trabajador del servicio DevTools de Microsoft Edge  
+    :::image-end:::  
     
 1.  Para ver la caché de trabajo de servicio, expanda **Almacenamiento en caché** y seleccione **pwabuilder-precache**.  Se deben mostrar todos los recursos almacenados en caché por el trabajador de servicio.  Los recursos almacenados en caché por el trabajador de servicio incluyen el icono de la aplicación, el manifiesto de la aplicación, CSS y los archivos JavaScript.  
     
     :::image type="complex" source="./media/devtools-cache.png" alt-text="Caché de trabajo de servicio en Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
-       Caché del trabajador de servicio en Microsoft Edge DevTools (F12)
-    :::image-end:::
+       Caché del trabajador de servicio en Microsoft Edge DevTools \(F12\)  
+    :::image-end:::  
     
 1.  Prueba tu PWA como una aplicación sin conexión.  En Microsoft Edge DevTools \( `F12` \), **** elija **Red** y, a continuación, cambie el estado En línea a **Sin conexión**.  
     
     :::image type="complex" source="./media/devtools-offline.png" alt-text="Establecer la aplicación en modo sin conexión en Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
-       Establecer la aplicación en modo sin conexión en Microsoft Edge DevTools
-    :::image-end:::
+       Establecer la aplicación en modo sin conexión en Microsoft Edge DevTools  
+    :::image-end:::  
     
 1.  Actualiza la aplicación y debería mostrar el mecanismo sin conexión para servir los recursos de la aplicación desde la memoria caché.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA que se ejecuta sin conexión" lightbox="./media/vs-nodejs-express-index.png":::
-       PWA que se ejecuta sin conexión
-    :::image-end:::
+    :::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="PWA que se ejecuta sin conexión" lightbox="./media/visual-studio-nodejs-express-index.png":::
+       PWA que se ejecuta sin conexión  
+    :::image-end:::  
     
 ## <a name="add-push-notifications-to-your-pwa"></a>Agregar notificaciones de inserción a su PWA  
 
@@ -285,8 +285,8 @@ Para probar las notificaciones de inserción de su PWA, siga estos pasos.
 1.  Vaya a su PWA en `http://localhost:3000` .  Cuando el trabajador de servicio se activa e intenta suscribir su PWA a notificaciones push, Microsoft Edge le pide que permita que su PWA muestre notificaciones.  Seleccione **Permitir**.  
     
     :::image type="complex" source="./media/notification-permission.png" alt-text="Cuadro de diálogo de permisos para habilitar notificaciones" lightbox="./media/notification-permission.png":::
-       Cuadro de diálogo de permisos para habilitar notificaciones
-    :::image-end:::
+       Cuadro de diálogo de permisos para habilitar notificaciones  
+    :::image-end:::  
     
 1.  Simular una notificación de inserción del lado servidor.  Con el PWA abierto en `http://localhost:3000` el explorador, seleccione `F12` para abrir DevTools.  Elija **Inserción**del trabajador del servicio de  >  ****  >  **** aplicación para enviar una notificación de inserción de prueba a su PWA.  
     
@@ -302,7 +302,8 @@ Para probar las notificaciones de inserción de su PWA, siga estos pasos.
           Si no seleccionas \(o activate\) una notificación del sistema, el sistema la descarta automáticamente después de varios segundos y la pone en cola en el Centro de acciones de Windows.  
           
           :::image type="complex" source="./media/windows-action-center.png" alt-text="Notificaciones en el Centro de acciones de Windows" lightbox="./media/windows-action-center.png":::
-             Notificaciones en el Centro de acciones de Windows :::image-end:::
+             Notificaciones en el Centro de acciones de Windows  
+          :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
@@ -331,10 +332,6 @@ Los siguientes pasos incluyen tareas adicionales que le ayudarán a comprender l
 *   [Diseño y creación de una aplicación web progresiva sin marco (parte 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
 *   [Diseño y creación de una aplicación web progresiva sin marco (parte 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
 *   [Diseño y creación de una aplicación web progresiva sin un marco (parte 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
-    
-<!-- image links -->  
-
-[ImagePwa]: ./media/pwa.png  
 
 <!-- links -->  
 

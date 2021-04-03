@@ -1,49 +1,85 @@
 ---
 description: Navegación
-title: Navegación
+title: Navegación | WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, edge html
-ms.openlocfilehash: ac15b9f32a29c64bbdc2a7886fa654a2d71a5453
-ms.sourcegitcommit: 4cea8cf99b5f12db9d2daba99bbf48f3ccc537fe
+keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
+ms.openlocfilehash: e87994d6205f81e01385a131e17091d0c8b001d5
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314800"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11470847"
 ---
-# Eventos de navegación  
+# <a name="navigation-events"></a>Eventos de navegación  
 
-La secuencia normal de eventos de navegación `NavigationStarting` es `SourceChanged` , , `ContentLoading` `HistoryChanged` y, a `NavigationCompleted` continuación, .  Los siguientes eventos describen el estado de WebView2 durante cada navegación.  
+:::row:::
+   :::column span="1":::
+      Plataformas compatibles:
+   :::column-end:::
+   :::column span="2":::
+      Win32, Windows Forms, WinUi, WPF
+   :::column-end:::
+:::row-end:::  
 
-| Secuencia | Nombre del evento | Detalles |  
-|:--- |:--- |:--- |  
-| 1 | `NavigationStarting`  |  WebView2 comienza a navegar y la navegación da como resultado una solicitud de red.  El host puede no permitir la solicitud durante el evento.  |  
-| 2 | `SourceChanged`  |  El origen de WebView2 cambia a una nueva dirección URL.  El evento puede ser el resultado de una navegación que no provoca una solicitud de red, como una navegación por fragmentos.  |  
-| 3 | `HistoryChanged`  |  El historial de actualizaciones de WebView2 como resultado de la navegación.  |  
-| 4 | `ContentLoading`  |  WebView2 comienza a cargar contenido para la nueva página.  |  
-| 5 | `NavigationCompleted`  |  WebView2 completa la carga de contenido en la nueva página.  |  
+Los eventos de navegación se ejecutan cuando se producen acciones asincrónicas específicas al contenido mostrado en una instancia webView2.  Por ejemplo, cuando un usuario de WebView2 navega a un nuevo sitio web, el contenido nativo escucha el evento change `NavigationStarting` using.  Cuando se completa la acción de navegación, `NavigationCompleted` se ejecuta.  Para obtener un buen ejemplo de eventos de navegación, vaya a La guía de introducción [a WebView2][Webview2IndexGettingStarted].  
 
-Realiza `navigations` un seguimiento de cada nuevo documento con el identificador de navegación \( `NavigationId` \).  El `NavigationId` elemento WebView cambia cada vez que hay una navegación correcta a un nuevo documento.
+<!--todo:  Move the relevant information out of the getting started guide to better focus the content and leave the most concise elements in the getting started guide.  -->   
 
-:::image type="complex" source="../media/navigation-graph.png" alt-text="Eventos de navegación de Microsoft Edge WebView2" lightbox="../media/navigation-graph.png":::
-   Eventos de navegación de Microsoft Edge WebView2  
-:::image-end:::  
+La secuencia normal de eventos de navegación es `NavigationStarting` `SourceChanged` , , , `ContentLoading` `HistoryChanged` y, a continuación, `NavigationCompleted` .  Los siguientes eventos describen el estado de WebView2 durante cada navegación.  
 
-> [!NOTE]
-> La figura anterior representa los eventos de navegación con la misma `NavigationId` propiedad en el argumento de evento respectivo.  
+:::row:::
+   :::column span="1":::
+      :::image type="complex" source="../media/navigation-graph.png" alt-text="Eventos de navegación de Microsoft Edge WebView2" lightbox="../media/navigation-graph.png":::
+         Eventos de navegación de Microsoft Edge WebView2  
+      :::image-end:::  
+      
+      > [!NOTE]
+      > La figura representa eventos de navegación con la misma `NavigationId` propiedad en el argumento de evento respectivo.  
+   :::column-end:::
+   :::column span="2":::
+      | Secuencia | Nombre del evento | Detalles |  
+      |:--- |:--- |:--- |  
+      | 1 | `NavigationStarting`  |  WebView2 comienza a navegar y la navegación da como resultado una solicitud de red.  El host puede no permitir la solicitud durante el evento.  |  
+      | 2 | `SourceChanged`  |  El origen de WebView2 cambia a una nueva dirección URL.  El evento puede ser el resultado de una acción de navegación que no provoca una solicitud de red, como una navegación por fragmentos.  |  
+      | 3 | `ContentLoading`  |  WebView inicia la carga de contenido de la nueva página.  |  
+      | 4 | `HistoryChanged`  |  La navegación hace que se actualice el historial de WebView2.  |  
+      | 5 | `NavigationCompleted`  |  WebView2 completa la carga de contenido en la nueva página.  |  
+   :::column-end:::
+:::row-end:::
 
- `Navigations` los eventos con diferentes instancias de `NavigationId` evento pueden superponerse.  Por ejemplo, al iniciar una navegación, debe esperar al evento `NavigationStarting` relacionado.  Si, a continuación, inicia otra navegación, debería ver el evento de la primera navegación seguido del evento para la segunda navegación, seguido del evento para la primera navegación y, a continuación, todos los demás eventos de navegación adecuados para la segunda `NavigationStarting` `NavigationStarting` `NavigationCompleted` navegación.  
+Realice un seguimiento de los eventos de navegación a cada nuevo documento mediante el identificador de navegación \( `NavigationId` event\).  El evento WebView cambia cada vez que se completa una navegación `NavigationId` correcta a un nuevo documento.  
+
+ Los eventos de navegación con diferentes instancias de `NavigationId` evento pueden superponerse.  Por ejemplo, al iniciar un evento de navegación, debe esperar al evento `NavigationStarting` relacionado.  Si, a continuación, inicia otra navegación, debería ver el evento de la primera navegación seguido del evento de la segunda navegación, seguido del evento para la primera navegación y, a continuación, todos los demás eventos de navegación adecuados para la segunda `NavigationStarting` `NavigationStarting` `NavigationCompleted` navegación.  
  
- En los casos de error puede haber o no un evento dependiendo de si la `ContentLoading` navegación continúa a una página de error.  
+ En casos de error, puede haber o no un evento en función de si la `ContentLoading` navegación continúa en una página de error.  
  
- En el caso de un redireccionamiento HTTP, hay varios eventos en una fila, donde los argumentos de eventos posteriores tienen la propiedad establecida, pero el `NavigationStarting` `IsRedirect` resto permanece `NavigationId` igual.  
+ Si se produce un redireccionamiento HTTP, hay varios eventos en una fila, donde los argumentos de evento posteriores tienen la propiedad establecida, pero el `NavigationStarting` `IsRedirect` evento permanece `NavigationId` igual.  
  
- El mismo documento, como navegar a un fragmento, no produce el `navigations` evento y no incrementa el archivo `NavigationStarting` `NavigationId` .  
+ Los mismos eventos de navegación de documentos, como navegar a un fragmento, no resultan en el evento y no `NavigationStarting` incrementan el `NavigationId` evento.  
 
-Para supervisar o cancelar dentro de subframes en webView, usa los eventos que actúan igual que los eventos equivalentes que no son `navigations` `FrameNavigationStarting` `FrameNavigationCompleted` equivalentes a fotogramas.  
+Para supervisar o cancelar eventos de navegación dentro de subframes en una instancia WebView2, use los eventos y que actúan igual que los eventos equivalentes que no son `FrameNavigationStarting` `FrameNavigationCompleted` de fotogramas.  
+
+## <a name="see-also"></a>Consulte también  
+
+*   Para empezar a usar WebView2, vaya a Guías de introducción a [WebView2.][Webview2IndexGettingStarted]  
+*   Para obtener un ejemplo completo de las capacidades de WebView2, vaya al repositorio [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.  
+*   Para obtener información más detallada acerca de las API de WebView2, vaya a [Referencia de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  
+*   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2][Webview2IndexNextSteps].  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
+
+[Webview2IndexGettingStarted]: ../index.md#getting-started "Introducción: introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Clase WebView2 | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
