@@ -1,49 +1,85 @@
 ---
 description: Navegación
-title: Navegación
+title: Navegación | WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, edge html
-ms.openlocfilehash: ac15b9f32a29c64bbdc2a7886fa654a2d71a5453
-ms.sourcegitcommit: 4cea8cf99b5f12db9d2daba99bbf48f3ccc537fe
+keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
+ms.openlocfilehash: e87994d6205f81e01385a131e17091d0c8b001d5
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314800"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11470847"
 ---
-# <span data-ttu-id="20b68-104">Eventos de navegación</span><span class="sxs-lookup"><span data-stu-id="20b68-104">Navigation events</span></span>  
+# <a name="navigation-events"></a><span data-ttu-id="98ae8-104">Eventos de navegación</span><span class="sxs-lookup"><span data-stu-id="98ae8-104">Navigation events</span></span>  
 
-<span data-ttu-id="20b68-105">La secuencia normal de eventos de navegación `NavigationStarting` es `SourceChanged` , , `ContentLoading` `HistoryChanged` y, a `NavigationCompleted` continuación, .</span><span class="sxs-lookup"><span data-stu-id="20b68-105">The normal sequence of navigation events is `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.</span></span>  <span data-ttu-id="20b68-106">Los siguientes eventos describen el estado de WebView2 durante cada navegación.</span><span class="sxs-lookup"><span data-stu-id="20b68-106">The following events describe the state of WebView2 during each navigation.</span></span>  
+:::row:::
+   :::column span="1":::
+      <span data-ttu-id="98ae8-105">Plataformas compatibles:</span><span class="sxs-lookup"><span data-stu-id="98ae8-105">Supported platforms:</span></span>
+   :::column-end:::
+   :::column span="2":::
+      <span data-ttu-id="98ae8-106">Win32, Windows Forms, WinUi, WPF</span><span class="sxs-lookup"><span data-stu-id="98ae8-106">Win32, Windows Forms, WinUi, WPF</span></span>
+   :::column-end:::
+:::row-end:::  
 
-| <span data-ttu-id="20b68-107">Secuencia</span><span class="sxs-lookup"><span data-stu-id="20b68-107">Sequence</span></span> | <span data-ttu-id="20b68-108">Nombre del evento</span><span class="sxs-lookup"><span data-stu-id="20b68-108">Event name</span></span> | <span data-ttu-id="20b68-109">Detalles</span><span class="sxs-lookup"><span data-stu-id="20b68-109">Details</span></span> |  
-|:--- |:--- |:--- |  
-| <span data-ttu-id="20b68-110">1</span><span class="sxs-lookup"><span data-stu-id="20b68-110">1</span></span> | `NavigationStarting`  |  <span data-ttu-id="20b68-111">WebView2 comienza a navegar y la navegación da como resultado una solicitud de red.</span><span class="sxs-lookup"><span data-stu-id="20b68-111">WebView2 starts to navigate and the navigation results in a network request.</span></span>  <span data-ttu-id="20b68-112">El host puede no permitir la solicitud durante el evento.</span><span class="sxs-lookup"><span data-stu-id="20b68-112">The host is able to disallow the request during the event.</span></span>  |  
-| <span data-ttu-id="20b68-113">2</span><span class="sxs-lookup"><span data-stu-id="20b68-113">2</span></span> | `SourceChanged`  |  <span data-ttu-id="20b68-114">El origen de WebView2 cambia a una nueva dirección URL.</span><span class="sxs-lookup"><span data-stu-id="20b68-114">The source of WebView2 changes to a new URL.</span></span>  <span data-ttu-id="20b68-115">El evento puede ser el resultado de una navegación que no provoca una solicitud de red, como una navegación por fragmentos.</span><span class="sxs-lookup"><span data-stu-id="20b68-115">The event may result from a navigation that does not cause a network request such as a fragment navigation.</span></span>  |  
-| <span data-ttu-id="20b68-116">3</span><span class="sxs-lookup"><span data-stu-id="20b68-116">3</span></span> | `HistoryChanged`  |  <span data-ttu-id="20b68-117">El historial de actualizaciones de WebView2 como resultado de la navegación.</span><span class="sxs-lookup"><span data-stu-id="20b68-117">The history of WebView2 updates as a result of the navigation.</span></span>  |  
-| <span data-ttu-id="20b68-118">4</span><span class="sxs-lookup"><span data-stu-id="20b68-118">4</span></span> | `ContentLoading`  |  <span data-ttu-id="20b68-119">WebView2 comienza a cargar contenido para la nueva página.</span><span class="sxs-lookup"><span data-stu-id="20b68-119">WebView2 starts loading content for the new page.</span></span>  |  
-| <span data-ttu-id="20b68-120">5</span><span class="sxs-lookup"><span data-stu-id="20b68-120">5</span></span> | `NavigationCompleted`  |  <span data-ttu-id="20b68-121">WebView2 completa la carga de contenido en la nueva página.</span><span class="sxs-lookup"><span data-stu-id="20b68-121">WebView2 completes loading content on the new page.</span></span>  |  
+<span data-ttu-id="98ae8-107">Los eventos de navegación se ejecutan cuando se producen acciones asincrónicas específicas al contenido mostrado en una instancia webView2.</span><span class="sxs-lookup"><span data-stu-id="98ae8-107">Navigation events run when specific asynchronous actions occur to the content displayed in a WebView2 instance.</span></span>  <span data-ttu-id="98ae8-108">Por ejemplo, cuando un usuario de WebView2 navega a un nuevo sitio web, el contenido nativo escucha el evento change `NavigationStarting` using.</span><span class="sxs-lookup"><span data-stu-id="98ae8-108">For example, when a WebView2 user navigates to a new website, the native content listens for the change using `NavigationStarting` event.</span></span>  <span data-ttu-id="98ae8-109">Cuando se completa la acción de navegación, `NavigationCompleted` se ejecuta.</span><span class="sxs-lookup"><span data-stu-id="98ae8-109">When the navigation action completes, `NavigationCompleted` runs.</span></span>  <span data-ttu-id="98ae8-110">Para obtener un buen ejemplo de eventos de navegación, vaya a La guía de introducción [a WebView2][Webview2IndexGettingStarted].</span><span class="sxs-lookup"><span data-stu-id="98ae8-110">For a good example of navigation events, navigate to [WebView2 getting started guide][Webview2IndexGettingStarted].</span></span>  
 
-<span data-ttu-id="20b68-122">Realiza `navigations` un seguimiento de cada nuevo documento con el identificador de navegación \( `NavigationId` \).</span><span class="sxs-lookup"><span data-stu-id="20b68-122">Track `navigations` to each new document using the navigation ID \(`NavigationId`\).</span></span>  <span data-ttu-id="20b68-123">El `NavigationId` elemento WebView cambia cada vez que hay una navegación correcta a un nuevo documento.</span><span class="sxs-lookup"><span data-stu-id="20b68-123">The `NavigationId` of WebView changes every time there is a successful navigation to a new document.</span></span>
+<!--todo:  Move the relevant information out of the getting started guide to better focus the content and leave the most concise elements in the getting started guide.  -->   
 
-:::image type="complex" source="../media/navigation-graph.png" alt-text="Eventos de navegación de Microsoft Edge WebView2" lightbox="../media/navigation-graph.png":::
-   <span data-ttu-id="20b68-125">Eventos de navegación de Microsoft Edge WebView2</span><span class="sxs-lookup"><span data-stu-id="20b68-125">The Microsoft Edge WebView2 Navigation Events</span></span>  
-:::image-end:::  
+<span data-ttu-id="98ae8-111">La secuencia normal de eventos de navegación es `NavigationStarting` `SourceChanged` , , , `ContentLoading` `HistoryChanged` y, a continuación, `NavigationCompleted` .</span><span class="sxs-lookup"><span data-stu-id="98ae8-111">The normal sequence of navigation events is `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.</span></span>  <span data-ttu-id="98ae8-112">Los siguientes eventos describen el estado de WebView2 durante cada navegación.</span><span class="sxs-lookup"><span data-stu-id="98ae8-112">The following events describe the state of WebView2 during each navigation.</span></span>  
 
-> [!NOTE]
-> <span data-ttu-id="20b68-126">La figura anterior representa los eventos de navegación con la misma `NavigationId` propiedad en el argumento de evento respectivo.</span><span class="sxs-lookup"><span data-stu-id="20b68-126">The previous figure represents navigation events with the same `NavigationId` property on the respective event arg.</span></span>  
+:::row:::
+   :::column span="1":::
+      :::image type="complex" source="../media/navigation-graph.png" alt-text="Eventos de navegación de Microsoft Edge WebView2" lightbox="../media/navigation-graph.png":::
+         <span data-ttu-id="98ae8-114">Eventos de navegación de Microsoft Edge WebView2</span><span class="sxs-lookup"><span data-stu-id="98ae8-114">The Microsoft Edge WebView2 Navigation Events</span></span>  
+      :::image-end:::  
+      
+      > [!NOTE]
+      > <span data-ttu-id="98ae8-115">La figura representa eventos de navegación con la misma `NavigationId` propiedad en el argumento de evento respectivo.</span><span class="sxs-lookup"><span data-stu-id="98ae8-115">The figure represents navigation events with the same `NavigationId` property on the respective event argument.</span></span>  
+   :::column-end:::
+   :::column span="2":::
+      | <span data-ttu-id="98ae8-116">Secuencia</span><span class="sxs-lookup"><span data-stu-id="98ae8-116">Sequence</span></span> | <span data-ttu-id="98ae8-117">Nombre del evento</span><span class="sxs-lookup"><span data-stu-id="98ae8-117">Event name</span></span> | <span data-ttu-id="98ae8-118">Detalles</span><span class="sxs-lookup"><span data-stu-id="98ae8-118">Details</span></span> |  
+      |:--- |:--- |:--- |  
+      | <span data-ttu-id="98ae8-119">1</span><span class="sxs-lookup"><span data-stu-id="98ae8-119">1</span></span> | `NavigationStarting`  |  <span data-ttu-id="98ae8-120">WebView2 comienza a navegar y la navegación da como resultado una solicitud de red.</span><span class="sxs-lookup"><span data-stu-id="98ae8-120">WebView2 starts to navigate and the navigation results in a network request.</span></span>  <span data-ttu-id="98ae8-121">El host puede no permitir la solicitud durante el evento.</span><span class="sxs-lookup"><span data-stu-id="98ae8-121">The host may disallow the request during the event.</span></span>  |  
+      | <span data-ttu-id="98ae8-122">2</span><span class="sxs-lookup"><span data-stu-id="98ae8-122">2</span></span> | `SourceChanged`  |  <span data-ttu-id="98ae8-123">El origen de WebView2 cambia a una nueva dirección URL.</span><span class="sxs-lookup"><span data-stu-id="98ae8-123">The source of WebView2 changes to a new URL.</span></span>  <span data-ttu-id="98ae8-124">El evento puede ser el resultado de una acción de navegación que no provoca una solicitud de red, como una navegación por fragmentos.</span><span class="sxs-lookup"><span data-stu-id="98ae8-124">The event may result from a navigation action that does not cause a network request such as a fragment navigation.</span></span>  |  
+      | <span data-ttu-id="98ae8-125">3</span><span class="sxs-lookup"><span data-stu-id="98ae8-125">3</span></span> | `ContentLoading`  |  <span data-ttu-id="98ae8-126">WebView inicia la carga de contenido de la nueva página.</span><span class="sxs-lookup"><span data-stu-id="98ae8-126">WebView starts loading content for the new page.</span></span>  |  
+      | <span data-ttu-id="98ae8-127">4</span><span class="sxs-lookup"><span data-stu-id="98ae8-127">4</span></span> | `HistoryChanged`  |  <span data-ttu-id="98ae8-128">La navegación hace que se actualice el historial de WebView2.</span><span class="sxs-lookup"><span data-stu-id="98ae8-128">The navigation causes the history of WebView2 to update.</span></span>  |  
+      | <span data-ttu-id="98ae8-129">5</span><span class="sxs-lookup"><span data-stu-id="98ae8-129">5</span></span> | `NavigationCompleted`  |  <span data-ttu-id="98ae8-130">WebView2 completa la carga de contenido en la nueva página.</span><span class="sxs-lookup"><span data-stu-id="98ae8-130">WebView2 completes loading content on the new page.</span></span>  |  
+   :::column-end:::
+:::row-end:::
 
- `Navigations` <span data-ttu-id="20b68-127">los eventos con diferentes instancias de `NavigationId` evento pueden superponerse.</span><span class="sxs-lookup"><span data-stu-id="20b68-127">events with different instances of `NavigationId` event may overlap.</span></span>  <span data-ttu-id="20b68-128">Por ejemplo, al iniciar una navegación, debe esperar al evento `NavigationStarting` relacionado.</span><span class="sxs-lookup"><span data-stu-id="20b68-128">For instance when you start a navigation, you have to wait for the related `NavigationStarting` event.</span></span>  <span data-ttu-id="20b68-129">Si, a continuación, inicia otra navegación, debería ver el evento de la primera navegación seguido del evento para la segunda navegación, seguido del evento para la primera navegación y, a continuación, todos los demás eventos de navegación adecuados para la segunda `NavigationStarting` `NavigationStarting` `NavigationCompleted` navegación.</span><span class="sxs-lookup"><span data-stu-id="20b68-129">If you then start another navigation, you should see the `NavigationStarting` event for the first navigate followed by the `NavigationStarting` event for the second navigate, followed by the `NavigationCompleted` event for the first navigation and then all the rest of the appropriate navigation events for the second navigation.</span></span>  
+<span data-ttu-id="98ae8-131">Realice un seguimiento de los eventos de navegación a cada nuevo documento mediante el identificador de navegación \( `NavigationId` event\).</span><span class="sxs-lookup"><span data-stu-id="98ae8-131">Track navigation events to each new document using the navigation ID \(`NavigationId` event\).</span></span>  <span data-ttu-id="98ae8-132">El evento WebView cambia cada vez que se completa una navegación `NavigationId` correcta a un nuevo documento.</span><span class="sxs-lookup"><span data-stu-id="98ae8-132">The `NavigationId` event of WebView changes every time a successful navigation to a new document completes.</span></span>  
+
+ <span data-ttu-id="98ae8-133">Los eventos de navegación con diferentes instancias de `NavigationId` evento pueden superponerse.</span><span class="sxs-lookup"><span data-stu-id="98ae8-133">Navigation events with different instances of `NavigationId` event may overlap.</span></span>  <span data-ttu-id="98ae8-134">Por ejemplo, al iniciar un evento de navegación, debe esperar al evento `NavigationStarting` relacionado.</span><span class="sxs-lookup"><span data-stu-id="98ae8-134">For instance, when you start a navigation event, you must wait for the related `NavigationStarting` event.</span></span>  <span data-ttu-id="98ae8-135">Si, a continuación, inicia otra navegación, debería ver el evento de la primera navegación seguido del evento de la segunda navegación, seguido del evento para la primera navegación y, a continuación, todos los demás eventos de navegación adecuados para la segunda `NavigationStarting` `NavigationStarting` `NavigationCompleted` navegación.</span><span class="sxs-lookup"><span data-stu-id="98ae8-135">If you then start another navigation, you should see the `NavigationStarting` event for the first navigate followed by the `NavigationStarting` event for the second navigate, followed by the `NavigationCompleted` event for the first navigation and then all the rest of the appropriate navigation events for the second navigation.</span></span>  
  
- <span data-ttu-id="20b68-130">En los casos de error puede haber o no un evento dependiendo de si la `ContentLoading` navegación continúa a una página de error.</span><span class="sxs-lookup"><span data-stu-id="20b68-130">In error cases there may or may not be a `ContentLoading` event depending on whether the navigation is continued to an error page.</span></span>  
+ <span data-ttu-id="98ae8-136">En casos de error, puede haber o no un evento en función de si la `ContentLoading` navegación continúa en una página de error.</span><span class="sxs-lookup"><span data-stu-id="98ae8-136">In error cases, there may or may not be a `ContentLoading` event depending on whether the navigation is continued to an error page.</span></span>  
  
- <span data-ttu-id="20b68-131">En el caso de un redireccionamiento HTTP, hay varios eventos en una fila, donde los argumentos de eventos posteriores tienen la propiedad establecida, pero el `NavigationStarting` `IsRedirect` resto permanece `NavigationId` igual.</span><span class="sxs-lookup"><span data-stu-id="20b68-131">In the case of an HTTP redirect, there are multiple `NavigationStarting` events in a row, where subsequent event args have the `IsRedirect` property set, however the `NavigationId` remains the same.</span></span>  
+ <span data-ttu-id="98ae8-137">Si se produce un redireccionamiento HTTP, hay varios eventos en una fila, donde los argumentos de evento posteriores tienen la propiedad establecida, pero el `NavigationStarting` `IsRedirect` evento permanece `NavigationId` igual.</span><span class="sxs-lookup"><span data-stu-id="98ae8-137">If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row, where later event arguments have the `IsRedirect` property set, however the `NavigationId` event remains the same.</span></span>  
  
- <span data-ttu-id="20b68-132">El mismo documento, como navegar a un fragmento, no produce el `navigations` evento y no incrementa el archivo `NavigationStarting` `NavigationId` .</span><span class="sxs-lookup"><span data-stu-id="20b68-132">Same document `navigations`, such as navigating to a fragment, do not result in the `NavigationStarting` event and do not increment the `NavigationId`.</span></span>  
+ <span data-ttu-id="98ae8-138">Los mismos eventos de navegación de documentos, como navegar a un fragmento, no resultan en el evento y no `NavigationStarting` incrementan el `NavigationId` evento.</span><span class="sxs-lookup"><span data-stu-id="98ae8-138">Same document navigation events, such as navigating to a fragment, do not result in the `NavigationStarting` event and do not increment the `NavigationId` event.</span></span>  
 
-<span data-ttu-id="20b68-133">Para supervisar o cancelar dentro de subframes en webView, usa los eventos que actúan igual que los eventos equivalentes que no son `navigations` `FrameNavigationStarting` `FrameNavigationCompleted` equivalentes a fotogramas.</span><span class="sxs-lookup"><span data-stu-id="20b68-133">To monitor or cancel `navigations` inside subframes in the WebView, use the `FrameNavigationStarting` and the `FrameNavigationCompleted` events which act just like the equivalent non-frame counterpart events.</span></span>  
+<span data-ttu-id="98ae8-139">Para supervisar o cancelar eventos de navegación dentro de subframes en una instancia WebView2, use los eventos y que actúan igual que los eventos equivalentes que no son `FrameNavigationStarting` `FrameNavigationCompleted` de fotogramas.</span><span class="sxs-lookup"><span data-stu-id="98ae8-139">To monitor or cancel navigation events inside subframes in a WebView2 instance, use the `FrameNavigationStarting` and `FrameNavigationCompleted` events that act just like the equivalent non-frame counterpart events.</span></span>  
+
+## <a name="see-also"></a><span data-ttu-id="98ae8-140">Consulte también</span><span class="sxs-lookup"><span data-stu-id="98ae8-140">See also</span></span>  
+
+*   <span data-ttu-id="98ae8-141">Para empezar a usar WebView2, vaya a Guías de introducción a [WebView2.][Webview2IndexGettingStarted]</span><span class="sxs-lookup"><span data-stu-id="98ae8-141">To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2IndexGettingStarted] guides.</span></span>  
+*   <span data-ttu-id="98ae8-142">Para obtener un ejemplo completo de las capacidades de WebView2, vaya al repositorio [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.</span><span class="sxs-lookup"><span data-stu-id="98ae8-142">For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.</span></span>  
+*   <span data-ttu-id="98ae8-143">Para obtener información más detallada acerca de las API de WebView2, vaya a [Referencia de API][DotnetApiMicrosoftWebWebview2WpfWebview2].</span><span class="sxs-lookup"><span data-stu-id="98ae8-143">For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].</span></span>  
+*   <span data-ttu-id="98ae8-144">Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2][Webview2IndexNextSteps].</span><span class="sxs-lookup"><span data-stu-id="98ae8-144">For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].</span></span>  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a><span data-ttu-id="98ae8-145">Getting in touch with the Microsoft Edge WebView team</span><span class="sxs-lookup"><span data-stu-id="98ae8-145">Getting in touch with the Microsoft Edge WebView team</span></span>  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
+
+[Webview2IndexGettingStarted]: ../index.md#getting-started "Introducción: introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Clase WebView2 | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
