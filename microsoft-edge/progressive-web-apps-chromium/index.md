@@ -3,17 +3,17 @@ description: Las aplicaciones web progresivas (Chromium) se ejecutan de forma na
 title: Aplicaciones web progresivas en Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: aplicaciones web progresivas, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 2850c983c1dae34362a43be9cd33abbfd0df77cf
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: be832ee5c0ad395dae7b4946c41da157ab5cd9ba
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474902"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480191"
 ---
 # <a name="progressive-web-apps-on-windows-overview"></a>Introducción a Las aplicaciones web progresivas en Windows  
 
@@ -183,7 +183,7 @@ Para ser un gran PWA, la aplicación también debe cumplir los siguientes requis
 :::row-end:::  
 
 > [!NOTE]
-> Para convertir tu PWA en una aplicación de [Microsoft Store,][MicrosoftDeveloperStore] ve a [Aplicaciones web progresivas (EdgeHTML) en Microsoft Store][PwaEdgehtmlMicrosoftStore].  
+> Para convertir tu PWA en una [aplicación de Microsoft Store,][MicrosoftDeveloperStore] ve a [Aplicaciones web progresivas en la Microsoft Store][PwaChromiumMicrosoftStore].  
   
 ## <a name="see-also"></a>Consulte también  
 
@@ -204,6 +204,8 @@ Para ser un gran PWA, la aplicación también debe cumplir los siguientes requis
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emular y probar otros exploradores | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Depurar aplicaciones web progresivas | Microsoft Docs"  
 [PwaChromiumMicrosoftStore]: ./microsoft-store.md "Publicar la aplicación web progresiva en microsoft store | Microsoft Docs"
+
+
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Información general Notification Services Windows Push (WNS) | Microsoft Docs"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Diseño para Xbox y tv | Microsoft Docs"  

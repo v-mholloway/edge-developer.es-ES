@@ -3,17 +3,17 @@ description: Usar Puppeteer para automatizar y probar en Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, desarrollador, herramientas, automatización, prueba
-ms.openlocfilehash: 068a2289b0e3bf8fffb49c771b83337abb79ea83
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 89a4dad3319f8e61f27487973509a8ee5ac23b6a
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398472"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480170"
 ---
 # <a name="puppeteer-overview"></a>Información general sobre Puppeteer  
 
@@ -98,14 +98,14 @@ Este es solo un ejemplo sencillo de los escenarios de automatización y pruebas 
 
 El equipo de desarrolladores de Microsoft Edge está deseando escuchar sus comentarios sobre el uso de Puppeteer `puppeteer-core` y Microsoft Edge.  Usa el **icono Enviar comentarios** en las Herramientas de desarrollo de Microsoft Edge o el @EdgeDevTools tweet para que el equipo de Microsoft Edge sepa lo que piensas. [][TwitterIntentTweetEdgedevtools]  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en las Herramientas de desarrollo del borde de Microsoft Edge" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    El **icono Enviar comentarios** en Microsoft Edge DevTools  
 :::image-end:::  
 
 <!--## See also  
 
 *   [WebDriver (Chromium)][WebdriverChromiumMain]  
-*   [WebDriver (EdgeHTML)][WebdriverEdgehtmlMain]  
+*   [WebDriver (EdgeHTML)][ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]  
 *   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]  
 *   [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
 *   [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload]  
@@ -119,7 +119,8 @@ El equipo de desarrolladores de Microsoft Edge está deseando escuchar sus comen
 <!-- links -->  
 
 [WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"  
-<!--  [WebdriverEdgehtmlMain]: ../edgehtml/webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
+
+<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"  
 

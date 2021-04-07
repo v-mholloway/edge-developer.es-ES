@@ -4,17 +4,17 @@ description: Consulte cómo los procedimientos recomendados y las aplicaciones a
 title: Crear | Accesibilidad
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accesibilidad, accesibilidad para desarrolladores, sitios web accesibles, edge, desarrollo web, ARIA, desarrollador, UIA, Automatización de la interfaz de usuario
 ms.custom: seodec18
-ms.openlocfilehash: 69f0576b39815708d01477972abad1f8bdc9486e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3bc16450a3a64c06d290d1d3e112a9b2faecbe14
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397891"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480156"
 ---
 # <a name="building-accessible-websites"></a>Creación de sitios web accesibles
 
@@ -144,7 +144,7 @@ El sitio web de OpenAjax Alliance es un recurso excelente para comprobar las reg
 
 ### <a name="accessibility-techniques--tools"></a>Herramientas de & accesibilidad
 
-#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a>Accesibilidad: creación de iconos de extensión accesibles para Microsoft Edge](../../edgehtml/extensions/guides/accessibility.md)
+#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a>Accesibilidad: creación de iconos de extensión accesibles para Microsoft Edge](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility)
 
 Obtenga instrucciones sobre cómo crear iconos de extensiones accesibles para Microsoft Edge.
 

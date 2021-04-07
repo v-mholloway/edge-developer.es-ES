@@ -3,17 +3,17 @@ description: Obtenga información sobre cómo probar su sitio web o aplicación 
 title: Usar WebDriver (Chromium) para la automatización de pruebas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: 87855fad02243a9d86053e43b5523013644f7e35
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: ad7a7f276dbf71d25be03d041161ead599b82f04
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398836"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480184"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>Usar WebDriver (Chromium) para la automatización de pruebas  
 
@@ -30,7 +30,7 @@ En la siguiente sección se describe cómo empezar a usar WebDriver para Microso
 
 Asegúrese de instalar [Microsoft Edge (Chromium).][MicrosoftEdge]  Para confirmar que tiene Instalado Microsoft Edge \(Chromium\), vaya a y compruebe que el número de versión es la `edge://settings/help` versión 75 o posterior.  
 
-## <a name="download-microsoft-edge-driver"></a>Descargar controlador de Microsoft Edge  
+## <a name="download-microsoft-edge-driver"></a>Descargar Microsoft Edge Driver  
 
 Para empezar a automatizar las pruebas, siga estos pasos para asegurarse de que la versión de WebDriver que instale coincida con la versión del explorador.  
 
@@ -48,7 +48,7 @@ Para empezar a automatizar las pruebas, siga estos pasos para asegurarse de que 
     
     <!--  
     > [!NOTE] 
-    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge \(EdgeHTML\)][Webdriver].  
+    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge (EdgeHTML)][Webdriver].  
     -->  
     
 ## <a name="choose-a-webdriver-language-binding"></a>Elegir un enlace de idioma de WebDriver  
@@ -364,7 +364,7 @@ Para obtener más información sobre WebDriver y cómo escribir pruebas automati
 
 El equipo de Microsoft Edge está deseando escuchar sus comentarios sobre el uso de WebDriver, Selenium y Microsoft Edge.  Para enviar al equipo sus preguntas **** y comentarios, elija el icono Enviar comentarios en Microsoft Edge DevTools o envíe un [tweet][TwitterTweetEdgeDevTools]@EdgeDevTools .  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en las Herramientas de desarrollo del borde de Microsoft Edge" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    El **icono Enviar comentarios** en Microsoft Edge DevTools  
 :::image-end:::  
 
@@ -372,7 +372,8 @@ El equipo de Microsoft Edge está deseando escuchar sus comentarios sobre el uso
 
 [DevtoolsIndex]: ../devtools-guide-chromium/index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
 [WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Funcionalidades y EdgeOptions | Microsoft Docs"  
-<!--[Webdriver]: ../edgehtml/webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
+
+<!--[Webdriver]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge: directivas | Microsoft Docs"  
 
