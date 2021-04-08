@@ -3,16 +3,16 @@ description: Mejoras en la accesibilidad, con DevTools en otros idiomas y mucho 
 title: Novedades de DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7758b7f8ed55bb766abc56d6dd29ec124617e7ff
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 31e18091a9f86b7b8a4e123b24e3d312689301ef
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408314"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481488"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -318,17 +318,13 @@ Se ha quitado la cobertura de código de alternar sin una actualización de pág
 
 Problema de [chromium #1004203][CR1004203]  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
 
-Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de vista previa proporcionan acceso a las características más recientes de DevTools.  
+Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
-
-<!-- image links -->  
-
-<!--[../../images/2019/12/wasm.msft.png]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
 
 <!-- links -->  
 
@@ -337,7 +333,6 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 [DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simular una ventanilla móvil: simular dispositivos móviles con el modo de dispositivo en Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "Inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "Ver iniciadores y dependencias: referencia de análisis de red | Microsoft Docs"  
-[DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new "Novedades de EdgeHTML | Microsoft Docs"  
 [VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Depurador para Microsoft Edge Visual Studio de código | Microsoft Docs"  
 [VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elementos para microsoft Edge Visual Studio de código | Microsoft Docs"  
 

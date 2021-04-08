@@ -3,16 +3,16 @@ description: El trabajo no termina asegurando que el sitio se ejecute bien en Mi
 title: Emular y probar otros exploradores
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6b1239db373bd13d798ac90ac47a10878d07cdcb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 22153a54df7c5b92236a745be8e3bbac9a52d247
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398689"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481369"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398689"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-and-test-other-browsers"></a>Emular y probar otros exploradores  
 
 El trabajo no termina asegurando que el sitio se ejecute bien en Microsoft Edge y Android.  Aunque el modo dispositivo es capaz de simular una variedad de otros dispositivos como iPhones, te recomendamos que consultes las soluciones de emulación proporcionadas por otros exploradores.  
@@ -48,7 +47,7 @@ Firefox tiene una [vista de][MDNResponsiveDesignMode] diseño adaptable que te a
 
 ### <a name="edgehtml-emulation"></a>Emulación edgeHTML  
 
-Para emular Windows Phones, usa la [emulación][DevToolsEdgeHtmlEmulation]integrada de Microsoft Edge \(EdgeHTML\).  
+Para emular Windows Phones, usa la [emulación][ArchiveMicrosoftEdgeDevtoolsEmulation]integrada de Microsoft Edge \(EdgeHTML\).  
 
 Usa [la emulación de IE 11][Ie11DevToolsEmulation] para simular el aspecto de tu página en versiones anteriores de Internet Explorer.  
 
@@ -136,7 +135,7 @@ Si no puedes usar los emuladores y no tienes acceso a dispositivos reales, los e
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML): emulación | Microsoft Docs"  
+[ArchiveMicrosoftEdgeDevtoolsEmulation]: /archive/microsoft-edge/legacy/developer/devtools-guide/emulation "Emulación | Microsoft Docs"  
 
 [Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emular exploradores, tamaños de pantalla y ubicaciones DE GPS | Microsoft Docs"  
 
@@ -159,7 +158,7 @@ Si no puedes usar los emuladores y no tienes acceso a dispositivos reales, los e
 > La página original [](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) se encuentra aquí y es creado por [Meggin Kearney][MegginKearney] \(Tech Writer\) y [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate en Google | Herramientas, Rendimiento, Animación, UX\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+Este trabajo dispone de una [Licencia internacional de Atribución de Creative Commons 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
