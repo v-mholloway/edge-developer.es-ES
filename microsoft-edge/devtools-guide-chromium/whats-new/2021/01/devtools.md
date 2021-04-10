@@ -3,17 +3,17 @@ description: La herramienta Novedades ahora es Bienvenida, Editor de fuentes vis
 title: Novedades de DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: f04884c4022394ad96f1bd47236047d16ae5ccb9
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: d823408b40644585b885ad52201f7080bd542549
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439650"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481362"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -93,19 +93,19 @@ En la herramienta **Elementos**, el nuevo icono de Flexbox (flex) le ayuda a ide
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="Flexbox se superpone cuando se resalta en el panel Diseño" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
-         **Flexbox se superpone** cuando se resalta en el panel **Diseño**  
+         Las **superposiciones de Flexbox** se resaltan en el panel de **Diseño**.  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### <a name="display-alignment-icons-and-gridlines-when-flexbox-layouts-change-using-css-properties"></a>Mostrar los iconos de alineación y las líneas de cuadrícula cuando los diseños de Flexbox cambien a través de las propiedades CSS  
+### <a name="display-alignment-icons-and-visual-guides-when-flexbox-layouts-change-using-css-properties"></a>Mostrar los iconos de alineación y las guías visuales cuando los diseños de Flexbox cambien mediante propiedades CSS  
 
-<!--  Title: Display alignment icons and gridlines for changes to Flexbox layouts from CSS properties  -->  
+<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->  
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Cuando edita CSS para su diseño de Flexbox, CSS se autocompleta en el panel **Estilos** y ahora muestra iconos útiles junto a las propiedades relevantes de Flexbox.  Para probar esta nueva característica, abra la herramienta **Elementos** y seleccione un contenedor flexible.  Luego, agregue o cambie alguna propiedad en ese contenedor en el panel **Estilos**.  
+Cuando edita CSS para su diseño de Flexbox, CSS se autocompleta en el panel **Estilos** y muestra iconos útiles junto a las propiedades relevantes de Flexbox.  Para probar esta nueva característica, abra la herramienta **Elementos** y seleccione un contenedor flexible.  Luego, agregue o cambie alguna propiedad en ese contenedor en el panel **Estilos**.  
 
 :::row:::
    :::column span="":::
