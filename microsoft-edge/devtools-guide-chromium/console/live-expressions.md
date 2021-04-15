@@ -3,45 +3,87 @@ description: Si te encuentras escribiendo las mismas expresiones de JavaScript e
 title: Ver valores de expresión de JavaScript en tiempo real con live expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: af920de1c395489dc09b83f3cc0f24814c4f5cbe
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439229"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483159"
 ---
-<!-- Copyright Kayce Basques 
+# <a name="monitor-changes-in-javascript-using-live-expressions"></a>Supervisar los cambios en JavaScript mediante expresiones live  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+**Las expresiones live** son una excelente manera de supervisar expresiones de JavaScript que cambian mucho.    En lugar de tener muchos mensajes de consola para leer y navegar, puede anclar las expresiones de JavaScript específicas a la parte superior de la **consola**.  
 
-       https://www.apache.org/licenses/LICENSE-2.0
+## <a name="add-a-new-live-expression"></a>Agregar una nueva expresión en directo  
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
+Para empezar, elija el **botón Crear expresión en** directo \(eye\) junto al cuadro de texto **Filter.**  Después de elegirlo, se muestra un cuadro de texto para que escriba la nueva expresión en él.  
 
-# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>Ver valores de expresión de JavaScript en tiempo real con live expressions  
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Elija el botón Nueva expresión en directo para abrir un cuadro de texto para escribir una expresión" lightbox="../media/console-live-expressions-new.msft.png":::
+    Elija el `New live expression` botón para abrir un cuadro de texto para escribir una expresión  
+:::image-end:::  
 
-Si se encuentra escribiendo la misma expresión de JavaScript en la consola repetidamente, es posible que le resulte más fácil crear **una expresión live**.  Con **Live Expressions,** escribe una expresión una vez y, a continuación, anclarla a la parte superior de la consola.  El valor de la expresión se actualiza casi en tiempo real.  
+**Las expresiones live** pueden ser cualquier expresión válida de JavaScript.  Para probarlo, complete las siguientes acciones.  
 
-## <a name="create-a-live-expression"></a>Crear una expresión en directo  
+1.  Abra el **cuadro de texto Expresión** en directo.  
+1.  Escriba `document.activeElement`.  
+1.  Para guardar la expresión, complete una de las siguientes acciones.  
+    *   Seleccione `Control` + `Enter` \(Windows, Linux\) o `Command` + `Enter` \(macOS\).  
+    *   Elija fuera del **cuadro de texto Expresión** en directo.  
+        
+La expresión ahora está en directo y se `body` muestra como resultado.  
 
-1.  [Abra la consola][DevToolsConsoleReferenceOpenConsole].  
-1.  Elija **Crear expresión en directo** \( Crear expresión en directo ![ ](../media/create-live-expression-icon.msft.png) \).  Aparece **el cuadro de** texto Expresión en directo.  
+:::image type="complex" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="La expresión activa de document.activeElement muestra el cuerpo como resultado" lightbox="../media/console-live-expressions-document-active-element.msft.png":::
+    Expresión en directo para `document.activeElement` muestra el cuerpo como resultado  
+:::image-end:::  
+
+Si navega por la página web, el valor cambia.  Por ejemplo, en la siguiente figura se abre el menú de búsqueda en la página web y la expresión se muestra `button.nav-bar-button.focus-visible` ahora como el valor.  
+
+:::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="Para cambiar el valor de live expression, interactúe con diferentes elementos de la página web" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
+    Para cambiar el valor de **live expression**, interactúe con diferentes elementos de la página web  
+:::image-end:::  
+
+Para volver a cambiar el valor, abra y elija el cuadro de texto Buscar en la página web.  
+
+:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navegue a otro elemento de la página web para actualizar live expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
+    Navegue a otro elemento de la página web para actualizar **live expression**  
+:::image-end:::  
+
+## <a name="remove-live-expressions"></a>Quitar expresiones en directo  
+
+Una **expresión activa** está disponible siempre que la mantenga activa.  Para deshacerse de **una expresión live,** elija la `x` siguiente.  
+
+:::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="Para quitar live expressions, elija la x junto a ella" lightbox="../media/console-live-expressions-remove.msft.png":::
+    Para quitar **expresiones en directo,** elija la `x` siguiente.  
+:::image-end:::  
+
+## <a name="replace-console-logging-with-live-expressions"></a>Reemplazar el registro de consola por expresiones en directo  
+
+Puedes crear tantas expresiones como quieras y conservar cada una de las sesiones y ventanas del explorador.  **Las expresiones live** son una forma de reducir el ruido en el flujo de trabajo de depuración.  
+
+Por ejemplo, desea supervisar el movimiento del mouse en la página web actual.  Navegue a [la demostración movimiento][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]del mouse de registro, abra **la consola**y mueva el mouse alrededor para mostrar los registros con mucha información.  
+
+:::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="La consola muestra mucha información sobre la posición del mouse" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
+    **La** consola muestra mucha información sobre la posición del mouse  
+:::image-end:::  
+
+La gran cantidad de información no solo ralentiza el proceso de depuración, sino que también facilita la pérdida de los cambios que desea revisar.  A medida **que la consola** muestra más mensajes y mueve el mouse, los valores que desea revisar se desplazan fuera de la pantalla.  
+
+Para probar **Live Expressions** como alternativa, complete las siguientes acciones.  
+
+1.  Vaya al movimiento [mouse sin la demostración de registro][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml].  
+1.  Crear **expresiones en directo** para y `x` `y` .  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Escribir document.activeElement en el cuadro de texto Expresión activa" lightbox="../media/console-create-live-expression.msft.png":::
-       Escribir `document.activeElement` en el cuadro de texto **Expresión** en directo  
-    :::image-end:::  
-    
-1.  Seleccione `Control` + `Enter` \(Windows, Linux\) o `Command` + `Enter` \(macOS\) **** para guardar la expresión o elija fuera del cuadro de texto Expresión en directo.  
+Cuando se usan **expresiones**en directo, siempre se obtiene la **** información en la misma parte de la pantalla y se mantienen los registros de consola para valores que no cambian tanto.
+
+:::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Mostrar la posición x e y del mouse como expresiones vivas" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
+    Mostrar la `x` posición y el mouse como `y` **expresiones vivas**  
+:::image-end:::  
+
+**Las expresiones live** se ejecutan exclusivamente en el equipo y no es necesario cambiar nada en el código para mostrar.  **Las expresiones en** directo son una excelente manera de asegurarse de que solo se muestra la información que desea depurar.  Además, **live expressions** te ayudan a limitar el ruido en los equipos de los usuarios.
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
@@ -49,16 +91,5 @@ Si se encuentra escribiendo la misma expresión de JavaScript en la consola repe
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Abra la consola: referencia de consola | Microsoft Docs"  
-
-> [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
-
-[![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "Ejemplos de mensajes de consola: Uso de tablas | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "Movimiento del mouse sin registro | GitHub"  

@@ -7,12 +7,12 @@ ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 5ab2ab0a727d1eb52f61a01ea64b52bc1c09abce
-ms.sourcegitcommit: f6a3ab7b13adf05dbe7a4bf65ee67c9b0f6fab95
+ms.openlocfilehash: 20bc4c90c1fe30be360b44294966415823f9b3a6
+ms.sourcegitcommit: 4c6b74b9cdfca73c410d9eba9b42d229b695ee4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "11482166"
+ms.locfileid: "11482446"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Características experimentales en aplicaciones web progresivas (PWA)  
 
@@ -94,7 +94,7 @@ Actualice el manifiesto para admitir el protocolo que desea registrar.  Después
     
 Si más de una aplicación registra un protocolo, se muestra al usuario un mensaje.  El usuario elige la aplicación adecuada de la lista presentada por el sistema operativo o el explorador.  
 
-Para obtener una vista previa del control de protocolos en Microsoft Edge en Windows, vaya a Activar características [experimentales](#turn-on-experimental-features) y active **Desktop Web Apps support Protocol Handlers**.  
+Para obtener una vista previa del control de protocolos en Microsoft Edge en Windows, vaya a Activar características [experimentales](#turn-on-experimental-features) y active El control del **protocolo PWA de escritorio.**  
 
 Para obtener más información acerca de la versión de prueba de origen que se está ejecutando para los controladores de protocolo, vaya a Registrar para el registro del controlador de [protocolo de aplicación web.][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]  
 

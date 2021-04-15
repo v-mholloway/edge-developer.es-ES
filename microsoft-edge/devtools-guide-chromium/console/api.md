@@ -1,18 +1,18 @@
 ---
 description: Use la API de consola para escribir mensajes en la consola.
-title: Referencia de api de consola
+title: Referencia de la API de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f38a7403cf11fbec5f5833fc0b1ed10207b436de
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 54b89e25501449a1e5119afa812a0535fbc6ffbb
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398052"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483257"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,14 +27,17 @@ ms.locfileid: "11398052"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="console-api-reference"></a>Referencia de la API de consola  
 
-# <a name="console-api-reference"></a>Referencia de api de consola  
-
-Use los métodos de la API de consola para escribir mensajes en la consola desde JavaScript.  Para obtener una introducción interactiva al tema, vaya a Introducción al registro [de mensajes en la consola][DevtoolsConsoleLog].  Para los métodos de comodidad como o que solo están disponibles en el panel Consola, vaya a `debug()` Console Utilities API `monitorEvents()` [Reference][DevtoolConsoleUtilities]. ****  
+La **herramienta Consola** es útil cuando se completan varias tareas en DevTools.  Las API están disponibles para incluir en los scripts. Los métodos de comodidad solo están disponibles para su uso en la **herramienta Consola,** como los `debug()` métodos `monitorEvents()` and.  Para obtener más información sobre cómo empezar con la **consola,** vaya a Introducción al registro [de mensajes en la consola][DevtoolsConsoleConsoleLog].  Para obtener más información sobre los métodos de comodidad en **la consola,** vaya a [Console Utilities API Reference][DevtoolConsoleUtilities].  
 
 ---  
 
 ## <a name="assert"></a>assert  
+
+Este método escribe un [error](#error) en la **consola** cuando `expression` se evalúa como `false` .  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.assert(expression, object)
@@ -42,36 +45,66 @@ console.assert(expression, object)
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Error`  
 
-<!--todo: add reference level (reference#persist-messages-across-page-loads) when available -->  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-Escribe un [error en](#error) la consola cuando se evalúa como `expression` `false` .  
-
-```javascript
-const x = 5;
-const y = 3;
-const reason = 'x is expected to be less than y';
-console.assert(x < y, {x, y, reason});
-```  
-
-:::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="El resultado del ejemplo console.assert()" lightbox="../media/console-demo-assert-button.msft.png":::
-   Figura 1: El resultado del `console.assert()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      const x = 5;
+      const y = 3;
+      const reason = 'x is expected to be less than y';
+      console.assert(x < y, {x, y, reason});
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="El resultado del ejemplo console.assert()" lightbox="../media/console-demo-assert-button.msft.png":::
+         El resultado del `console.assert()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="clear"></a>clear  
 
+Este método borra la **consola**.  
+
+Si [Preserve Log][DevtoolsConsoleReferenceFilter] está activado, el método [clear](#clear) se desactivará.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
+
 ```javascript
 console.clear()
 ```
 
-Borra la consola.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.clear();  
-```  
-
-Si [Preserve Log][DevtoolsConsoleReferenceLevel] está habilitado, el método [clear](#clear) está deshabilitado.  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.clear();  
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      
+   :::column-end:::
+:::row-end:::  
 
 ### <a name="see-also"></a>Consulte también  
 
@@ -81,63 +114,120 @@ Si [Preserve Log][DevtoolsConsoleReferenceLevel] está habilitado, el método [c
 
 ## <a name="count"></a>count  
 
+Este método escribe el número de veces que el [método count](#count) se ha invocado en la misma línea y con la misma `label` .  Use el [método countReset](#countreset) para restablecer el recuento.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
+
 ```javascript
 console.count([label])
 ```  
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Escribe el número de veces que se ha invocado el [método count](#count) en la misma línea y con la misma `label` .  Use el [método countReset](#countreset) para restablecer el recuento.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.count();
-console.count('coffee');
-console.count();
-console.count();
-```  
-
-:::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="El resultado del ejemplo console.count()" lightbox="../media/console-demo-count-button.msft.png":::
-   Figura 2: El resultado del `console.count()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.count();
+      console.count('coffee');
+      console.count();
+      console.count();
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="El resultado del ejemplo console.count()" lightbox="../media/console-demo-count-button.msft.png":::
+         El resultado del `console.count()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="countreset"></a>countReset  
 
+Este método restablece un recuento.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
+
 ```javascript
 console.countReset([label])
 ```  
 
-Restablece un recuento.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.countReset();
-console.countReset('coffee');
-```  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.countReset();
+      console.countReset('coffee');
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="debug"></a>depurar  
 
+Este método es idéntico al método [log,](#log) excepto el nivel de registro diferente.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
+
 ```javascript
 console.debug(object [, object, ...])
 ```  
 
-[Nivel de registro][DevtoolsConsoleReferencePersist]: `Verbose`
+[Nivel de registro][DevtoolsConsoleReferencePersist]: `Verbose`  
 
-Idéntico al [registro excepto](#log) a otro nivel de registro.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.debug('debug');  
-```  
-
-:::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="El resultado del ejemplo console.debug()" lightbox="../media/console-demo-debug-button.msft.png":::
-   Figura 3: El resultado del `console.debug()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.debug('debug');  
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="El resultado del ejemplo console.debug()" lightbox="../media/console-demo-debug-button.msft.png":::
+         El resultado del `console.debug()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="dir"></a>dir  
+
+Este método imprime una representación JSON del objeto especificado.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.dir(object)
@@ -145,19 +235,36 @@ console.dir(object)
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Imprime una representación JSON del objeto especificado.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.dir(document.head);
-```  
-
-:::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="El resultado del ejemplo console.dir()" lightbox="../media/console-demo-dir-button.msft.png":::
-   Figura 4: El resultado del `console.dir()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.dir(document.head);
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="El resultado del ejemplo console.dir()" lightbox="../media/console-demo-dir-button.msft.png":::
+         El resultado del `console.dir()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="dirxml"></a>dirxml  
+
+Este método imprime una representación XML de los descendientes de `node` .  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.dirxml(node)
@@ -165,19 +272,36 @@ console.dirxml(node)
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Imprime una representación XML de los descendientes de `node` .  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.dirxml(document);
-```  
-
-:::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="El resultado del ejemplo console.dirxml()" lightbox="../media/console-demo-dirxml-button.msft.png":::
-   Figura 5: El resultado del `console.dirxml()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.dirxml(document);
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="El resultado del ejemplo console.dirxml()" lightbox="../media/console-demo-dirxml-button.msft.png":::
+         El resultado del `console.dirxml()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="error"></a>error  
+
+Este método imprime la consola, la da `object` formato como un error e incluye un seguimiento de la pila. ****  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.error(object [, object, ...])
@@ -185,63 +309,101 @@ console.error(object [, object, ...])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Error`  
 
-Imprime la `object` consola, la da formato como un error e incluye un seguimiento de la pila.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
-```  
-
-:::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="El resultado del ejemplo console.error()" lightbox="../media/console-demo-error-button.msft.png":::
-   Figura 6: El resultado del `console.error()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="El resultado del ejemplo console.error()" lightbox="../media/console-demo-error-button.msft.png":::
+         El resultado del `console.error()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="group"></a>grupo  
 
+Este método agrupa visualmente mensajes hasta que se usa el [método groupEnd.](#groupend)  Use el [método groupCollapsed](#groupcollapsed) para contraer el grupo cuando inicia sesión inicialmente en la **consola**.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
+
 ```javascript
 console.group(label)
 ```  
 
-Agrupa visualmente mensajes hasta que [se usa el método groupEnd.](#groupend)  Use el [método groupCollapsed](#groupcollapsed) para contraer el grupo cuando se registra inicialmente en la consola.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-const label = 'Adolescent Irradiated Espionage Tortoises';
-console.group(label);
-console.info('Leo');
-console.info('Mike');
-console.info('Don');
-console.info('Raph');
-console.groupEnd(label);
-```  
-
-:::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="El resultado del ejemplo console.group()" lightbox="../media/console-demo-group-button.msft.png":::
-   Figura 7: El resultado del `console.group()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      const label = 'Adolescent Irradiated Espionage Tortoises';
+      console.group(label);
+      console.info('Leo');
+      console.info('Mike');
+      console.info('Don');
+      console.info('Raph');
+      console.groupEnd(label);
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="El resultado del ejemplo console.group()" lightbox="../media/console-demo-group-button.msft.png":::
+         El resultado del `console.group()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="groupcollapsed"></a>groupCollapsed  
 
+Este método es idéntico al método [log,](#log) excepto que el grupo se contrae inicialmente cuando inicia sesión en la **consola**.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
+
 ```javascript
 console.groupCollapsed(label)
 ```  
-
-Igual que el [método de registro,](#log) excepto que el grupo se contrae inicialmente cuando se registra en la consola.  
 
 ---  
 
 ## <a name="groupend"></a>groupEnd  
 
+Este método detiene la agrupación visual de mensajes.  Vaya al [método group.](#group)  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
+
 ```javascript
 console.groupEnd(label)
 ```  
 
-Detiene la agrupación visual de mensajes.  Vaya al [método group.](#group)  
-
 ---  
 
 ## <a name="info"></a>información  
+
+Este método es idéntico al método [log.](#log)  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.info(object [, object, ...])
@@ -249,19 +411,36 @@ console.info(object [, object, ...])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Idéntico al método [log.](#log)  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.info('info');
-```  
-
-:::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="El resultado del ejemplo console.info()" lightbox="../media/console-demo-info-button.msft.png":::
-   Figura 8: El resultado del `console.info()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.info('info');
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="El resultado del ejemplo console.info()" lightbox="../media/console-demo-info-button.msft.png":::
+         El resultado del `console.info()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="log"></a>log  
+
+Este método imprime un mensaje en la **consola**.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.log(object [, object, ...])
@@ -269,19 +448,36 @@ console.log(object [, object, ...])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Imprime un mensaje en la consola.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.log('log');
-```  
-
-:::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="El resultado del ejemplo console.log()" lightbox="../media/console-demo-log-button.msft.png":::
-   Figura 9: El resultado del `console.log()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.log('log');
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="El resultado del ejemplo console.log()" lightbox="../media/console-demo-log-button.msft.png":::
+         El resultado del `console.log()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="table"></a>tabla  
+
+Este método registra una matriz de objetos como una tabla.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.table(array)
@@ -289,55 +485,89 @@ console.table(array)
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Registra una matriz de objetos como una tabla.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.table([
-    {
-        first: 'René',
-        last: 'Magritte',
-    },
-    {
-        first: 'Chaim',
-        last: 'Soutine',
-        birthday: '18930113',
-    },
-    {
-        first: 'Henri',
-        last: 'Matisse',
-    }
-]);
-```  
-
-:::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="El resultado del ejemplo console.table()" lightbox="../media/console-demo-table-button.msft.png":::
-   Figura 10: El resultado del `console.table()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.table([
+          {
+              first: 'René',
+              last: 'Magritte',
+          },
+          {
+              first: 'Chaim',
+              last: 'Soutine',
+              birthday: '18930113',
+          },
+          {
+              first: 'Henri',
+              last: 'Matisse',
+          }
+      ]);
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="El resultado del ejemplo console.table()" lightbox="../media/console-demo-table-button.msft.png":::
+         El resultado del `console.table()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="time"></a>time  
 
+Este método inicia un nuevo temporizador.  Utilice el [método timeEnd](#timeend) para detener el temporizador e imprimir el tiempo transcurrido en la **consola**.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
+
 ```javascript
 console.time([label])
 ```  
 
-Inicia un nuevo temporizador.  Use el [método timeEnd](#timeend) para detener el temporizador e imprimir el tiempo transcurrido en la consola.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.time();
-for (var i = 0; i < 100000; i++) {
-    let square = i ** 2;
-}
-console.timeEnd();
-```  
-
-:::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="El resultado del ejemplo console.time()" lightbox="../media/console-demo-time-button.msft.png":::
-   Figura 11: El resultado del `console.time()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.time();
+      for (var i = 0; i < 100000; i++) {
+          let square = i ** 2;
+      }
+      console.timeEnd();
+      ```
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="El resultado del ejemplo console.time()" lightbox="../media/console-demo-time-button.msft.png":::
+         El resultado del `console.time()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="timeend"></a>timeEnd  
+
+Este método detiene un temporizador.  Para obtener más información, vaya al [método time.](#time)  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.timeEnd([label])
@@ -345,11 +575,13 @@ console.timeEnd([label])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Detiene un temporizador.  Vaya al método [time.](#time)  
-
 ---  
 
 ## <a name="trace"></a>seguimiento  
+
+Este método imprime un seguimiento de pila en la **consola**.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.trace()
@@ -357,23 +589,40 @@ console.trace()
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Info`  
 
-Imprime un seguimiento de pila en la consola.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-const first = () => { second(); };
-const second = () => { third(); };
-const third = () => { fourth(); };
-const fourth = () => { console.trace(); };
-first();
-```  
-
-:::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="El resultado del ejemplo console.trace()" lightbox="../media/console-demo-trace-button.msft.png":::
-   Figura 12: El resultado del `console.trace()` ejemplo  
-:::image-end:::  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      const first = () => { second(); };
+      const second = () => { third(); };
+      const third = () => { fourth(); };
+      const fourth = () => { console.trace(); };
+      first();
+      ```  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="El resultado del ejemplo console.trace()" lightbox="../media/console-demo-trace-button.msft.png":::
+         El resultado del `console.trace()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ---  
 
 ## <a name="warn"></a>warn  
+
+Este método imprime una advertencia en la **consola**.  
+
+### <a name="javascript-syntax"></a>Sintaxis de JavaScript  
 
 ```javascript
 console.warn(object [, object, ...])
@@ -381,15 +630,30 @@ console.warn(object [, object, ...])
 
 [Nivel de registro][DevtoolsConsoleReferencePersist]: `Warning`  
 
-Imprime una advertencia en la consola.  
+### <a name="javascript-example"></a>Ejemplo de JavaScript  
 
-```javascript
-console.warn('warn');
-```  
+:::row:::
+   :::column span="1":::
+      Entrada  
+   :::column-end:::
+   :::column span="3":::
+      ```javascript
+      console.warn('warn');
+      ```
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Salida
+   :::column-end:::
+   :::column span="3":::
+      :::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="El resultado del ejemplo console.warn()" lightbox="../media/console-demo-warn-button.msft.png":::
+         El resultado del `console.warn()` ejemplo  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
-:::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="El resultado del ejemplo console.warn()" lightbox="../media/console-demo-warn-button.msft.png":::
-   Figura 13: El resultado del `console.warn()` ejemplo  
-:::image-end:::  
+---  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
@@ -397,13 +661,13 @@ console.warn('warn');
 
 <!-- links -->  
 
-[DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Introducción al registro de mensajes en la consola"  
-[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Referencia de api de utilidades de consola"  
-[DevtoolsConsoleReferenceClear]: /microsoft-edge/devtools-guide-chromium/console/reference#clear-the-console "Borrar la consola: referencia de consola"  
-[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
-[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtrar por nivel de registro: referencia de consola"  
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Inicia sesión en la herramienta consola | Microsoft Docs"  
+[DevtoolConsoleUtilities]: ./utilities.md "Referencia de api de utilidades de consola | Microsoft Docs"  
+[DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Borrar la consola: referencia de consola | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filtrar por nivel de registro: referencia de consola | Microsoft Docs"  
+[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Conservar mensajes entre cargas de página: referencia de consola | Microsoft Docs"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (Chromium)"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Introducción a las herramientas de desarrollador de Microsoft Edge (Chromium) | Microsoft Docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

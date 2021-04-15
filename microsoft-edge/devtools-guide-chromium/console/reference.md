@@ -1,18 +1,18 @@
 ---
-description: Una referencia completa sobre todas las características y comportamientos relacionados con la interfaz de usuario de consola en Microsoft Edge DevTools.
+description: Una referencia completa para cada característica y comportamiento de la interfaz de usuario de consola en Microsoft Edge DevTools.
 title: Referencia de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d6fed1681e64f8f57c2e577017d623039a7b4152
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: adc3f6c33d6e1a2f6c7db8336c5ab803e76c3307
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439370"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483278"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11439370"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="console-reference"></a>Referencia de consola  
 
-Esta página es una referencia de las características relacionadas con la consola DevTools de Microsoft Edge.  Se supone que ya está familiarizado con el uso de la consola para ver los mensajes registrados y ejecutar JavaScript.  Si no es así, vaya a Introducción a la ejecución [de JavaScript en][DevToolsConsoleJavascript] la consola y Empezar a registrar [mensajes en la consola][DevToolsConsoleLog].  
+Este artículo es una referencia de las características relacionadas con la consola de Microsoft Edge DevTools.  Se supone que ya está familiarizado con el uso de la consola para ver los mensajes registrados y ejecutar JavaScript.  Si no es así, vaya a Introducción a la ejecución de [JavaScript en][DevtoolsConsoleConsoleJavascript] la consola y Empezar a registrar [mensajes en la consola][DevtoolsConsoleConsoleLog].  
 
-Si está buscando la referencia de API en funciones como `console.log()` , vaya a Referencia de api de [consola][DevToolsConsoleApi].  Para obtener la referencia de funciones como `monitorEvents()` , vaya a Console Utilities API [Reference][DevToolsConsoleUtilities].  
+Si está buscando la referencia de api en funciones como , vaya a `console.log()` Referencia de api de [consola][DevToolsConsoleApi].  Para obtener la referencia de funciones como `monitorEvents()` , vaya a Console Utilities API [Reference][DevToolsConsoleUtilities].  
 
 ## <a name="open-the-console"></a>Abrir la consola  
 
@@ -46,15 +45,15 @@ Seleccione `Control` + `Shift` + `J` \(Windows, Linux\) o `Command` + `Option` +
    La **herramienta Consola**  
 :::image-end:::  
 
-Para abrir la **herramienta Consola** desde [el][DevToolsCommandMenu]menú comando, empiece a escribir y, a continuación, ejecute el comando Mostrar consola que tiene el `Console` distintivo **Panel** junto a él. ****  
+Para abrir la **herramienta Consola** desde [el][DevtoolsCommandMenuIndex]menú comando , escriba y, a continuación, ejecute el comando Mostrar consola que tiene el `Console` distintivo **Panel** junto a él. ****  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="El comando para mostrar el panel Consola" lightbox="../media/console-command-menu-show-console.msft.png":::
-   El comando para mostrar la **herramienta Consola**  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Ejecute el comando para mostrar la herramienta Consola" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Ejecute el comando para mostrar la **herramienta Consola**  
 :::image-end:::  
 
 ### <a name="open-the-console-tool-in-the-drawer"></a>Abrir la herramienta Consola en el cajón  
 
-Seleccione `Escape` o elija Personalizar y controlar **DevTools** \( \) y, a continuación, `...` elija Mostrar **cajón de consola**.  
+Seleccione `Esc` o elija Personalizar y controlar **DevTools** \( \) y, a continuación, `...` elija Mostrar **cajón de consola**.  
 
 :::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Mostrar el cajón de la consola" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
    **Mostrar el cajón de la consola**  
@@ -66,54 +65,56 @@ El cajón aparece en la parte inferior de la ventana DevTools, con la **herramie
    La **herramienta Consola** en el **cajón**  
 :::image-end:::  
 
-Para abrir la **herramienta Consola** desde [el][DevToolsCommandMenu]menú comando, empiece a escribir y, a continuación, ejecute el comando Mostrar consola que tiene el distintivo `Console` **De** cajón junto **** a él.  
+Para abrir la **herramienta Consola** desde el menú [comando][DevtoolsCommandMenuIndex], escriba y, a continuación, ejecute el comando Mostrar consola que tiene el distintivo `Console` **De** cajón junto a él. ****  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="El comando para mostrar la herramienta **Consola** en el cajón" lightbox="../media/console-command-menu-show-console.msft.png":::
-   El comando para mostrar la **herramienta Consola** en el **cajón**  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Ejecute el comando para mostrar la herramienta **Consola** en el cajón" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Ejecutar el comando para mostrar la **herramienta Consola** en el **cajón**  
 :::image-end:::  
 
 ### <a name="open-console-settings"></a>Abrir configuración de consola  
 
-Elija **Configuración de consola** \( Icono configuración de consola ![ ](../media/settings-button-icon.msft.png) \).  
+Elija el **botón Configuración de consola** \( Icono configuración de consola ![ ](../media/settings-button-icon.msft.png) \).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Configuración de consola" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Configuración de consola**  
 :::image-end:::  
 
-Los vínculos siguientes explican cada configuración:  
+Los vínculos siguientes explican cada configuración.  
 
-*   [**Ocultar red**](#hide-network-messages)  
-*   [**Conservar registro**](#persist-messages-across-page-loads)  
-*   [**Solo contexto seleccionado**](#filter-out-messages-from-different-contexts)  
-*   [**Group Similar**](#disable-message-grouping)  
-*   [**Log XmlHttpRequests**](#log-xhr-and-fetch-requests)  
-*   [**Evaluación ansiosa**](#disable-eager-evaluation)  
-*   [**Autocompletar desde el historial**](#disable-autocomplete-from-history)  
+*   [Ocultar red](#hide-network-messages)  
+*   [Conservar registro](#persist-messages-across-page-loads)  
+*   [Solo contexto seleccionado](#filter-out-messages-from-different-contexts)  
+*   [Grupo similar](#turn-off-message-grouping)  
+*   [XML de registroHttpRequests](#log-xhr-and-fetch-requests)  
+*   [Evaluación ansiosa](#turn-off-eager-evaluation)  
+*   [Autocompletar del historial](#turn-off-autocomplete-from-history)  
+<!--*   Evaluate triggers user activation  -->  
     
 ### <a name="open-the-console-sidebar"></a>Abrir la barra lateral de la consola  
 
-Elija **Mostrar barra lateral de consola** \( Mostrar barra lateral de consola \) para mostrar la barra ![ ](../media/show-console-sidebar-icon.msft.png) lateral, que es útil para filtrar.  
+Para mostrar la **barra lateral,** elija **Mostrar barra lateral de la** consola \( Mostrar barra lateral de la consola ![ ](../media/show-console-sidebar-icon.msft.png) \).  La **barra** lateral le ayuda a filtrar.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Barra lateral de consola" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
-   **Consola** Barra lateral  
+   **Barra lateral de consola**  
 :::image-end:::  
 
 ## <a name="view-messages"></a>Ver mensajes  
 
-Esta sección contiene características que cambian la forma en que se presentan los mensajes en la consola.  Para obtener un tutorial práctica, vaya a [Ver mensajes][DevToolsConsoleViewMessages].  
+Esta sección contiene características que cambian la forma en que se presentan los mensajes en la consola.  Para obtener un tutorial práctica, vaya a [Ver mensajes][DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage].  
 
-### <a name="disable-message-grouping"></a>Deshabilitar la agrupación de mensajes  
+### <a name="turn-off-message-grouping"></a>Desactivar la agrupación de mensajes  
 
-[Abra Configuración de la](#open-console-settings) consola y deshabilite **Grupo de forma similar** para deshabilitar el comportamiento de agrupación de mensajes predeterminado de la consola.  Para obtener un ejemplo, vaya [a Registrar XHR y Obtener solicitudes](#log-xhr-and-fetch-requests).  
+Para desactivar el comportamiento de agrupación de mensajes predeterminado de la **consola,** [abra](#open-console-settings) Configuración de la consola y seleccione la casilla junto a **Grupo similar**.  Para obtener un ejemplo, vaya [a Registrar XHR y Obtener solicitudes](#log-xhr-and-fetch-requests).  
 
 ### <a name="log-xhr-and-fetch-requests"></a>Registrar solicitudes XHR y Fetch  
 
-[Abra Configuración de la](#open-console-settings) consola y **habilite Log XMLHttpRequests** para registrar todas y solicitudes `XMLHttpRequest` en la consola a medida que se `Fetch` suceden.  
+Para registrar todo y las solicitudes en la consola a medida que se produce cada una de ellas, abra Configuración de la consola y seleccione la casilla situada junto a `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**. **** [](#open-console-settings)  
 
 :::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Registrar solicitudes XMLHttpRequest y Fetch" lightbox="../media/console-xhr-fetch.msft.png":::
    Registro `XMLHttpRequest` y `Fetch` solicitudes  
 :::image-end:::  
-El mensaje superior de la figura anterior muestra el comportamiento de agrupación predeterminado de la **consola**.  <!--  In the following figure, the same log is displayed after [disabling message grouping](#disable-message-grouping).  -->  
+
+El mensaje superior de la figura anterior muestra el comportamiento de agrupación predeterminado de la **consola**.  <!--  In the following figure, the same log is displayed after you [turn off message grouping](#turn-off-message-grouping).  -->  
 
 <!--  
 > ##### Old Figure 9  
@@ -127,43 +128,51 @@ El mensaje superior de la figura anterior muestra el comportamiento de agrupaci�
 
 ### <a name="persist-messages-across-page-loads"></a>Conservar mensajes entre cargas de página  
 
-De forma predeterminada, la consola borra cada vez que se carga una página nueva.  Para conservar los mensajes en las cargas de página, [abra configuración de consola](#open-console-settings) y, a continuación, habilite la casilla **Conservar** registro.  
+Al cargar una nueva página web, la acción predeterminada borra la **consola**.  Para conservar los mensajes en las cargas de página, [abra Configuración de](#open-console-settings) consola y seleccione la casilla situada junto a Conservar **registro**.  
 
 ### <a name="hide-network-messages"></a>Ocultar mensajes de red  
 
-De forma predeterminada, el explorador registra los mensajes de red en la **consola**.  En la siguiente figura, el mensaje seleccionado representa un código de estado HTTP de `429` .  
+La acción predeterminada de Microsoft Edge es registra los mensajes de red en la **consola**.  En la siguiente figura, el mensaje elegido representa un código de estado HTTP de `429` .  
 
 :::image type="complex" source="../media/console-show-network.msft.png" alt-text="Un mensaje 429 en la consola" lightbox="../media/console-show-network.msft.png":::
    Un `429` mensaje en la **consola**  
 :::image-end:::  
-Para ocultar mensajes de red:  
+
+Para ocultar los mensajes de red, realice las siguientes acciones.  
 
 1.  [Abra Configuración de la consola](#open-console-settings).  
-1.  Active la casilla **Ocultar red.**  
+1.  Seleccione la casilla situada junto a **Ocultar red**.  
     
 ## <a name="filter-messages"></a>Filtrar mensajes  
 
-Hay muchas maneras de filtrar los mensajes en la consola.  
+Existen muchas formas de filtrar los mensajes en la **consola**.  
 
 ### <a name="filter-out-browser-messages"></a>Filtrar mensajes del explorador  
 
-[Abra la barra lateral de la](#open-the-console-sidebar) consola y elija Mensajes de **usuario** para mostrar solo los mensajes que provenían del JavaScript de la página.  
+[Abra la barra lateral de la](#open-the-console-sidebar) consola y elija # mensajes de **usuario** para mostrar solo los mensajes que provenían del JavaScript de la página web.  
 
-:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Ver mensajes de usuario" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
-   Ver mensajes de usuario  
+:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Mostrar mensajes de usuario" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+   Mostrar mensajes de usuario  
 :::image-end:::  
 
 ### <a name="filter-by-log-level"></a>Filtrar por nivel de registro  
 
-DevTools asigna a cada `console.*` método un nivel de gravedad.  Hay 4 niveles: `Verbose` , `Info` , y `Warning` `Error` .  Por ejemplo, `console.log()` está en el `Info` grupo, mientras que está en el `console.error()` `Error` grupo.  La [referencia de la API de][DevToolsConsoleApi] consola describe el nivel de gravedad de cada método aplicable.  Cada mensaje que el explorador inicia sesión en la consola también tiene un nivel de gravedad.  Puede ocultar cualquier nivel de mensajes que no le interesen.  Por ejemplo, si solo está interesado en los `Error` mensajes, puede ocultar los otros 3 grupos.  
+DevTools asigna a cada `console.*` método uno de los cuatro niveles de gravedad.  
 
-Elija el **desplegable Niveles de registro** para habilitar o deshabilitar , o `Verbose` `Info` `Warning` `Error` mensajes.  
+*   `Error`  
+*   `Info`  
+*   `Verbose`  
+*   `Warning`  
+    
+Por ejemplo, `console.log()` está en el `Info` grupo, pero está en el `console.error()` `Error` grupo.  La [referencia de la API de][DevToolsConsoleApi] consola describe el nivel de gravedad de cada método aplicable.  Cada mensaje que el explorador inicia sesión en la consola también tiene un nivel de gravedad.  Puede ocultar cualquier nivel de mensajes que no le interesen.  Por ejemplo, si solo está interesado en los `Error` mensajes, puede ocultar los otros tres grupos.  
+
+Para filtrar los mensajes, elija el desplegable **Niveles de** registro y `Verbose` elija , , o `Info` `Warning` `Error` .  
 
 :::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="Desplegable Niveles de registro" lightbox="../media/console-log-level-default-levels.msft.png":::
    Desplegable **Niveles de** registro  
 :::image-end:::  
 
-También puede filtrar por [](#open-the-console-sidebar) nivel de registro abriendo la barra lateral de la consola y, a continuación, haciendo clic en **Errores,** **Advertencias,** **Información**o **Verbose**.  
+Para usar el nivel de registro para filtrar, [abra](#open-the-console-sidebar) la barra lateral de la consola y, a continuación, elija **Errores**, **Advertencias,** **Información**o **Detallado**.  
 
 :::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Usar la barra lateral para ver advertencias" lightbox="../media/console-sidebar-warnings.msft.png":::
    Usar la barra lateral para ver advertencias  
@@ -171,29 +180,33 @@ También puede filtrar por [](#open-the-console-sidebar) nivel de registro abrie
 
 ### <a name="filter-messages-by-url"></a>Filtrar mensajes por dirección URL  
 
-Escriba `url:` seguido de una dirección URL para ver solo los mensajes que provenían de esa dirección URL.  Después de escribir `url:` DevTools, se muestran todas las direcciones URL relevantes.  Los dominios también funcionan.  Por ejemplo, si `https://example.com/a.js` y `https://example.com/b.js` están registrando mensajes, le permite `url:https://example.com` centrarse en los mensajes de estos 2 scripts.  
+Escriba `url:` seguido de una dirección URL para ver solo los mensajes que provenían de esa dirección URL.  Después de escribir `url:` , DevTools muestra todas las direcciones URL relevantes.  Los dominios también funcionan.  Por ejemplo, si y están registrando mensajes, le permite `https://example.com/a.js` `https://example.com/b.js` `url:https://example.com` centrarse en los mensajes de estos dos scripts.  
 
 :::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Un filtro de dirección URL" lightbox="../media/console-filter-text.msft.png":::
    Un filtro de dirección URL  
 :::image-end:::  
 
-Escriba `-url:` para ocultar mensajes de esa dirección URL.  Esto se denomina filtro de dirección URL negativa.  
+Para ocultar mensajes de una dirección URL, escriba `-url:` .  Es un filtro de dirección URL negativo.  
 
 :::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="Filtro de dirección URL negativo que oculta todos los mensajes que coinciden con la https://b.wal.co dirección URL" lightbox="../media/console-negative-filter-text.msft.png":::
    Filtro de dirección URL negativo que oculta todos los mensajes que coinciden con la `https://b.wal.co` dirección URL
 :::image-end:::  
 
-También puede mostrar mensajes de una sola dirección URL **** abriendo la barra lateral de [consola,](#open-the-console-sidebar)expandiendo la sección Mensajes de usuario y, a continuación, haciendo clic en la dirección URL del script que contiene los mensajes en los que desea centrarse.  
+Para mostrar mensajes desde una única dirección URL, complete las siguientes acciones.  
 
-:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Ver los mensajes procedentes de wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
-   Ver los mensajes procedentes `wp-ad.min.js`  
+1.  [Abra la barra lateral de la consola](#open-the-console-sidebar).  
+1.  Expanda la **sección # mensajes de** usuario.  
+1.  Elija la dirección URL del script que contiene los mensajes en los que desea centrarse.  
+    
+:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Mostrar los mensajes que provenían de wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
+   Mostrar los mensajes procedentes de `wp-ad.min.js`  
 :::image-end:::  
 
 ### <a name="filter-out-messages-from-different-contexts"></a>Filtrar mensajes de distintos contextos  
 
-Suponga que tiene un anuncio \(ad\) en su página.  El anuncio está incrustado en un y está generando una gran cantidad `<iframe>` de mensajes en la consola.  Dado que el anuncio se ejecuta en un contexto de [](#open-console-settings) [JavaScript](#select-javascript-context)diferente, una forma de ocultar los mensajes es abrir la configuración de consola y activar la casilla **Solo contexto** seleccionado.  
+Suponga que tiene un anuncio \(ad\) en su página web.  El anuncio está incrustado en un `<iframe>` y genera muchos mensajes en la **consola**.  Dado que el anuncio se ejecuta en un contexto de [](#open-console-settings) [JavaScript](#choose-javascript-context)diferente, una forma de ocultar los mensajes es abrir Configuración de consola y elegir la casilla situada junto a Solo contexto **seleccionado**.  
 
-### <a name="filter-out-messages-that-do-not-match-a-regular-expression-pattern"></a>Filtrar mensajes que no coinciden con un patrón de expresión regular  
+### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>Filtrar mensajes que no coincidan con un patrón de expresión regular  
 
 Escriba una expresión regular como, por ejemplo, en el cuadro de texto Filtrar para filtrar los mensajes que no `/[gm][ta][mi]/` coincidan con ese patrón. ****  DevTools comprueba si el patrón se encuentra en el texto del mensaje o en el script que hizo que se registrara el mensaje.  
 
@@ -203,40 +216,43 @@ Escriba una expresión regular como, por ejemplo, en el cuadro de texto Filtrar 
 
 ## <a name="run-javascript"></a>Ejecutar JavaScript  
 
-Esta sección contiene características relacionadas con la ejecución de JavaScript en la consola.  Para obtener un tutorial práctica, vaya a [Ejecutar JavaScript][DevToolsConsoleOverviewJavascript].  
+Esta sección contiene características relacionadas con la ejecución de JavaScript en la **consola**.  Para obtener un tutorial práctica, vaya a [Ejecutar JavaScript][DevtoolsConsoleConsoleJavascript].  
 
-### <a name="re-run-expressions-from-history"></a>Volver a ejecutar expresiones del historial  
+### <a name="rerun-expressions-from-history"></a>Volver a ejecutar expresiones del historial  
 
-Seleccione la `Up Arrow` clave para recorrer el historial de expresiones de JavaScript que ejecutó anteriormente en la consola.  Seleccione `Enter` para ejecutar esa expresión de nuevo.  
+Seleccione `Up Arrow` esta opción para recorrer el historial de expresiones de JavaScript que se ejecutó anteriormente en la **consola**.  Seleccione `Enter` para ejecutar esa expresión de nuevo.  
 
-### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>Ver el valor de una expresión en tiempo real con live expressions  
+### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>Ver el valor de una expresión en tiempo real con Live Expressions  
 
-Si se encuentra escribiendo la misma expresión de JavaScript en la consola repetidamente, es posible que le resulte más fácil crear **una expresión live**.  Con **Live Expressions,** escribe una expresión una vez y, a continuación, anclarla a la parte superior de la consola.  El valor de la expresión se actualiza casi en tiempo real.  Vaya a [Ver valores de expresión de JavaScript en Real-Time Con expresiones en directo][DevToolsConsoleLiveExpressions].  
+Si se encuentra escribiendo la misma expresión de JavaScript en la **consola** repetidamente, es posible que le resulte más fácil crear **una expresión live**.  Con **live expressions**, se escribe una expresión una vez y, a continuación, se ancla a la parte superior de la **consola**.  El valor de la expresión se actualiza casi en tiempo real.  Vaya a [Ver valores de expresión de JavaScript en Real-Time Con expresiones en directo][DevToolsConsoleLiveExpressions].  
 
-### <a name="disable-eager-evaluation"></a>Deshabilitar la evaluación de Eager  
+### <a name="turn-off-eager-evaluation"></a>Desactivar evaluación ansiosa  
 
-Al escribir expresiones de JavaScript en la consola, La evaluación **ansiosa** muestra una vista previa del valor devuelto para esa expresión.  [Abra Configuración de la](#open-console-settings) consola y deshabilite la casilla **Evaluación** ansiosa para desactivar las vistas previas del valor devuelto.  
+**Eager Evaluation** muestra una vista previa del valor devuelto al escribir expresiones de JavaScript en la **consola**.  Para desactivar las vistas previas de valor devuelto, complete las siguientes acciones.  
 
-### <a name="disable-autocomplete-from-history"></a>Deshabilitar la autocompletar del historial  
+1.  [Abra Configuración de la consola](#open-console-settings).  
+1.  Quite la casilla situada junto a **Evaluación ansiosa**.  
+    
+### <a name="turn-off-autocomplete-from-history"></a>Desactivar autocompletar del historial  
 
-Al escribir una expresión, la ventana emergente autocompletar de la consola muestra las expresiones que ejecutó anteriormente.  Estas expresiones se anteponen al `>` carácter.  [Abra Configuración de consola](#open-console-settings) y deshabilite la casilla **Autocompletar desde el historial** para dejar de mostrar expresiones de su historial.  
+Al escribir una expresión, la ventana emergente autocompletar de la **consola** muestra las expresiones que ejecutó anteriormente.  Las expresiones están pre-pended con el `>` carácter.  Para dejar de mostrar expresiones del historial, [abra configuración](#open-console-settings) de consola y quite la casilla junto a **Autocompletar del historial** casilla.  
 
 > [!NOTE]
 > En la siguiente figura, `document.querySelector('a')` y `document.querySelector('img')` son expresiones que se evaluaron anteriormente.  
 
-:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="El elemento emergente autocompletar muestra expresiones del historial" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
-   El elemento emergente autocompletar muestra expresiones del historial  
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="El menú emergente autocompletar muestra expresiones del historial" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+   El menú emergente autocompletar muestra expresiones del historial  
 :::image-end:::  
 
-### <a name="select-javascript-context"></a>Seleccionar contexto de JavaScript  
+### <a name="choose-javascript-context"></a>Elegir contexto de JavaScript  
 
-De forma predeterminada, el desplegable Contexto de **JavaScript** se establece en **la parte**superior, que representa el contexto [de exploración][MDNBrowsingContext] del documento principal.  
+La opción predeterminada para el desplegable **Contexto de JavaScript** es **la**parte superior, que representa el contexto [de exploración][MdnDocsGlossaryBrowsingContext] de la página web principal.  
 
 :::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="Desplegable Contexto de JavaScript" lightbox="../media/console-dom-level-top.msft.png":::
    Desplegable **Contexto de JavaScript**  
 :::image-end:::  
 
-Supongamos que tienes un anuncio en tu página incrustado en un `<iframe>` .  Quieres ejecutar JavaScript para ajustar el DOM del anuncio.  Primero debes seleccionar el contexto de exploración del anuncio en el desplegable **Contexto de JavaScript.**  
+Supongamos que tienes un anuncio en tu página web incrustado en un `<iframe>` .  Quieres ejecutar JavaScript para ajustar el DOM del anuncio.  En primer lugar, elige el contexto de exploración del anuncio en el desplegable **Contexto de JavaScript.**  
 
 :::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Elegir un contexto de JavaScript diferente" lightbox="../media/console-dom-level-multiple.msft.png":::
    Elegir un contexto de JavaScript diferente  
@@ -244,10 +260,10 @@ Supongamos que tienes un anuncio en tu página incrustado en un `<iframe>` .  Qu
 
 ## <a name="clear-the-console"></a>Borrar la consola  
 
-Puede usar cualquiera de los siguientes flujos de trabajo para borrar la consola:  
+Para borrar la **consola,** complete cualquiera de los siguientes flujos de trabajo.  
 
-*   Elija **Borrar consola** \( Borrar consola ![ ](../media/clear-console-button-icon.msft.png) \).  
-*   Mantenga el mouse sobre un mensaje, abra el menú contextual \(righ-click\) y elija **Borrar consola**.  
+*   Elija el **botón Borrar consola** \( Borrar consola ![ ](../media/clear-console-button-icon.msft.png) \).  
+*   Mantenga el mouse sobre un mensaje, abra el menú contextual \(haga clic con el botón secundario\) y elija **Borrar consola**.  
 *   Escriba `clear()` en la **Consola** y seleccione `Enter` .  
 *   Ejecute `console.clear()` desde JavaScript para la página web.  
 *   Seleccione `Control` + `L` mientras la **consola** está en foco.  
@@ -258,16 +274,17 @@ Puede usar cualquiera de los siguientes flujos de trabajo para borrar la consola
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Comando de Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Visualización de mensajes registrados: información general de la consola | Microsoft Docs"  
-[DevToolsConsoleApi]: ./api.md "Referencia de api de consola | Microsoft Docs"  
-[DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Ejecución de JavaScript: información general de la consola | Microsoft Docs"  
-[DevToolsConsoleJavascript]: ./javascript.md "Introducción a la ejecución de JavaScript en la consola | Microsoft Docs"  
-[DevToolsConsoleLiveExpressions]: ./live-expressions.md "Ver valores de expresión de JavaScript en tiempo real con Live Expressions | Microsoft Docs"  
-[DevToolsConsoleLog]: ./log.md "Introducción al registro de mensajes en la consola | Microsoft Docs"  
-[DevToolsConsoleUtilities]: ./utilities.md "Referencia de api de utilidades de consola | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Referencia de api de consola | Microsoft Docs"  
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Registrar mensajes en la herramienta consola | Microsoft Docs"  
+[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Consola como entorno de JavaScript | Microsoft Docs"  
+[DevtoolsConsoleIndex]: .index.md "Use la consola | Microsoft Docs"  
+[DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage]: ./index.md#inspect-and-filter-information-on-the-current-webpage "Inspeccionar y filtrar información en la página web | Microsoft Docs"  
+[DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Supervisar los cambios en JavaScript mediante expresiones live | Microsoft Docs"  
+[DevtoolsConsoleUtilities]: ./utilities.md "Referencia de api de utilidades de consola | Microsoft Docs"  
 
-[MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Contexto de exploración | MDN"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecute comandos con el menú Comando de Microsoft Edge DevTools | Microsoft Docs"  
+
+[MdnDocsGlossaryBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Contexto de exploración | MDN"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
