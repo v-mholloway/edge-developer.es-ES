@@ -3,16 +3,16 @@ description: Las últimas características experimentales de Microsoft Edge para
 title: Características experimentales | Aplicaciones web progresivas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 20bc4c90c1fe30be360b44294966415823f9b3a6
-ms.sourcegitcommit: 4c6b74b9cdfca73c410d9eba9b42d229b695ee4a
+ms.openlocfilehash: 641b6fd5185e7f96289c1de6482764979ee0981d
+ms.sourcegitcommit: 9cc54ba3e731ecc8b713c3cf215018848f7405b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11482446"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "11496757"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Características experimentales en aplicaciones web progresivas (PWA)  
 
@@ -61,7 +61,7 @@ En la siguiente lista se describen las nuevas características experimentales de
 
 | Característica | Versión de Microsoft Edge | Plataforma |  
 |:--- |:--- |:--- |  
-| [Administración del protocolo URI](#uri-protocol-handling) | 91 o posterior | Windows |    
+| [Administración del protocolo URI](#uri-protocol-handling) | 91 o posterior | Windows y Linux |    
 | [Administración de vínculos URL](#url-link-handling) | 91 o posterior | Windows|
 | [Superposición de controles de ventana para aplicaciones de escritorio](#window-controls-overlay-for-installed-desktop-web-apps) | 91 o posterior | Windows 10|   
 | [Ejecutar en inicio de sesión del sistema operativo](#run-on-os-login) | 88 o posterior | Todos |  
