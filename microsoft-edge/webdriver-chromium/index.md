@@ -3,17 +3,17 @@ description: Obtenga información sobre cómo probar su sitio web o aplicación 
 title: Usar WebDriver (Chromium) para la automatización de pruebas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: ad7a7f276dbf71d25be03d041161ead599b82f04
-ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
+ms.openlocfilehash: 0a5a6cde75621f0dda1e98b0c7b471b1456bf430
+ms.sourcegitcommit: 518c1116dc5e6968edf92730906aa0e72dbf945d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11480184"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "11496969"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>Usar WebDriver (Chromium) para la automatización de pruebas  
 
@@ -34,16 +34,19 @@ Asegúrese de instalar [Microsoft Edge (Chromium).][MicrosoftEdge]  Para confirm
 
 Para empezar a automatizar las pruebas, siga estos pasos para asegurarse de que la versión de WebDriver que instale coincida con la versión del explorador.  
 
-1.  Para mostrar la versión de Microsoft Edge, vaya a `edge://settings/help` .  
+1.  Busque la versión de Microsoft Edge.  
+    1.  Vaya a `edge://settings/help` .  
+        
+        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="El número de compilación de Microsoft Edge el 15 de abril de 2021" lightbox="./media/microsoft-edge-version.msft.png":::
+           El número de compilación de Microsoft Edge el 15 de abril de 2021  
+        :::image-end:::  
+        
+1.  Vaya a [Controlador de Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
+1.  Vaya a **Obtener la versión más reciente**.  
+1.  Elija la compilación del canal que coincida con el número de versión de Microsoft Edge.  
     
-    :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="El número de compilación de Microsoft Edge Canary el 10 de febrero de 2021" lightbox="./media/microsoft-edge-version.msft.png":::
-       El número de compilación de Microsoft Edge Canary el 10 de febrero de 2021  
-    :::image-end:::  
-    
-1.  Vaya a [Controlador de Microsoft Edge,][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]en la sección **Descargas,** y descargue el WebDriver que coincida con el número de versión de Microsoft Edge.  
-    
-    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="La sección Descargas en el controlador de Microsoft Edge" lightbox="./media/microsoft-edge-driver-install.msft.png":::
-       La **sección Descargas** en el controlador de Microsoft [Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
+    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="La sección Obtener la versión más reciente en la página web controlador de Microsoft Edge" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+       La **sección Obtener la versión más reciente** en la página web controlador de Microsoft [Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
     :::image-end:::  
     
     <!--  
@@ -358,7 +361,7 @@ Para obtener más información, vaya al [contenedor msedgedriver en Docker Hub][
 
 ## <a name="next-steps"></a>Pasos siguientes  
 
-Para obtener más información sobre WebDriver y cómo escribir pruebas automatizadas de WebDriver con Selenio, vaya a la documentación [de Selenio][SeleniumDocumentation].  
+Para obtener más información acerca de WebDriver y cómo escribir pruebas automatizadas de WebDriver con Selenio, vaya a la documentación [de Selenio][SeleniumDocumentation].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
@@ -391,7 +394,7 @@ El equipo de Microsoft Edge está deseando escuchar sus comentarios sobre el uso
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"  
 [JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "selenium-webdriver | npm"  
 
-[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "WebDriver | Microsoft Developer"  
+[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "Controlador de Microsoft Edge | Desarrollador de Microsoft Edge"  
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Descargar nuevo explorador de Microsoft Edge"  
 
