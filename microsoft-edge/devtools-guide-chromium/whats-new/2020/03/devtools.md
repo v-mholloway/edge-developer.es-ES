@@ -3,16 +3,16 @@ description: Emular las deficiencias de la visión de color, acoplar a la izquie
 title: Novedades de DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f97155b12a679f630ce80c007e7f0ca693e19876
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: c329dfba980b882b6e538447e52902e4d0cc985b
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408356"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514420"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -272,11 +272,11 @@ Habilita la nueva **casilla Mostrar solo** el área **** mínima segura para ico
 > [!NOTE]
 > Esta característica se inicia en Microsoft Edge 81.  Las actualizaciones que se tratan aquí en Microsoft Edge 83 no se han cubierto en [What's New In DevTools (Microsoft Edge 81).][WhatsNew81]  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
 
-Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de vista previa proporcionan acceso a las características más recientes de DevTools.  
+Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -301,11 +301,11 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Herramientas remotas para Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de versiones preliminares de Microsoft Edge"  
 
 [WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Actualización de versiones de canal estables para Microsoft Edge"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Nuevo problema : MicrosoftDocs/edge-developer - GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Nuevo problema: MicrosoftDocs/programador perimetral - GitHub"  
 
 [MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
 
@@ -324,7 +324,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 [CR963183]: https://crbug.com/963183 "Problema 963183: DevTools no son compatibles con WCAG"  
 [CR1003700]: https://crbug.com/1003700 "Problema 1003700: Agregar compatibilidad con DevTools para la simulación de deficiencia de visión de color"  
-[CR1011679]: https://crbug.com/1011679 "Problema 1011679: Introducir "Acoplar a la izquierda" mediante el menú de comandos"  
+[CR1011679]: https://crbug.com/1011679 "Problema 1011679: Introducir &quot;Acoplar a la izquierda&quot; mediante el menú de comandos"  
 [CR1016501]: https://crbug.com/1016501 "Problema 1016501: Solicitud de característica: botón para eliminar todas las invalidaciones locales"  
 [CR1050999]: https://crbug.com/1050999 "Problema 1050999: Pestaña Propiedades"  
 [CR1051466]: https://crbug.com/1051466 "Problema 1051466: Compatibilidad con la depuración DE COOP/COEP en DevTools"  
@@ -341,7 +341,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/updates/2020/03/devtools/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> La página original se encuentra [aquí](https://developer.chrome.com/blog/new-in-devtools-83) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

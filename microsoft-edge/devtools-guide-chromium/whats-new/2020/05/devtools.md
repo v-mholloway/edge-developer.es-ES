@@ -3,16 +3,16 @@ description: Usa DevTools en el modo de contraste alto de Windows, coincide con 
 title: Novedades de DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3264292721d5e4385b0e6d256d042c76182c21c7
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 01d41fe5400dde427a0ac73870ace0e1211f429a
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408328"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514392"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -270,9 +270,9 @@ Los accesos directos de la aplicación ayudan a los usuarios a iniciar rápidame
   Accesos directos de la aplicación en el **panel** Manifiesto  
 :::image-end:::  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
 
-Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de vista previa proporcionan acceso a las características más recientes de DevTools.  
+Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Getting in touch with Microsoft Edge Devtools team  
 
@@ -320,7 +320,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 [CR1075437]: https://crbug.com/1075437 "DevTools: agregue compatibilidad con la palabra clave y el valor css 'revert' | Errores de Chromium"  
 [CR1076112]: https://crbug.com/1076112 "Personalización de Devtools: cambiador de tamaño de cajón"  
 [CR1081486]: https://crbug.com/1081486 "El foco del teclado no está visible para los botones de navegación en modo de difusión | Errores de Chromium"  
-[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus debe ser "cumplido", no "resuelto" | Errores de V8"  
+[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus debe ser &quot;cumplido&quot;, no &quot;resuelto&quot; | Errores de V8"  
 
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Cambios de Colors 3 - CSS Color Module Level 4 | Borradores del editor de grupo de trabajo CSS de W3C"  
 [CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3. Color de primer plano: el 'color' - Módulo de color CSS Nivel 4 | Borradores del editor de grupo de trabajo CSS de W3C"  
@@ -356,7 +356,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/updates/2020/05/devtools/index) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> La página original se encuentra [aquí](https://developer.chrome.com/blog/new-in-devtools-84) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

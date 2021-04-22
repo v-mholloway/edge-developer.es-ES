@@ -3,16 +3,16 @@ description: Combina los métodos abreviados de teclado Visual Studio código, e
 title: Novedades de DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a981c8b1a2658ba8cf771096e63001f7d6f69616
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: f1227f0869aa753c2d05980c712ca3453adfd041
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408349"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514385"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -55,10 +55,10 @@ Problema de [chromium #174309][CR174309]
 
 Ahora puedes probar el aspecto de tu sitio web o aplicación en dos nuevos dispositivos:  [Surface Duo][MicrosoftSurfaceDevicesDuo] y Samsung [Galaxy Fold][SamsungMobileGalaxyFold] en Microsoft Edge.  
 
-Para ayudar a mejorar tu sitio web o aplicación para los dispositivos de pantalla doble y plegables, usa las siguientes características [al emular el dispositivo][DevtoolsDeviceModeIndex].  
+Para ayudar a mejorar su sitio web o aplicación para dispositivos plegables y de pantalla doble, use las siguientes características al [emular el dispositivo][DevtoolsDeviceModeIndex].  
 
-*   [Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], que es cuando aparece el sitio web \(o aplicación\) en ambas pantallas.
-*   [Representación de la costura][DualScreenIntroductionHowWorkSeam], que es el espacio entre las dos pantallas.
+*   [Expandir][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], que es cuando su sitio web \(o aplicación\) se extiende por las dos pantallas.
+*   [Representación de la unión][DualScreenIntroductionHowWorkSeam], que es el espacio entre las dos pantallas.
 *   [Habilitar las API experimentales de plataforma web][DevtoolsExperimentalFeaturesEnableExperimentalApis] para tener acceso a la nueva característica de pantalla multimedia [CSS][DualScreenWebCssMediaSpanning] y a la [API getWindowSegments de JavaScript.][DualScreenWebJavascriptGetwindowsegments]  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Emulación de dispositivos para Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
@@ -452,11 +452,11 @@ Elija el **botón** Borrar para quitar cualquier texto escrito.
 
 Problema de Chromium: [#1067184][CR1067184]  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
 
-Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de vista previa proporcionan acceso a las características más recientes de DevTools.  
+Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -470,7 +470,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Características de depuración de cuadrícula CSS: novedades de DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalización de métodos abreviados de teclado en las herramientas de desarrollo de Microsoft Edge | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Habilitar API experimentales: características experimentales | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulación: admite el modo de pantalla dual: características experimentales | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Habilitar visor de pedidos de origen: características experimentales | Microsoft Docs"
@@ -483,11 +483,11 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analizar el rendimiento de representación con la pestaña Representación: referencia de análisis de rendimiento | Microsoft Docs"  
 [DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "Ver y depurar información de reproductores multimedia | Microsoft Docs"  
 
-[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Cómo trabajar con la costura: introducción a los dispositivos de pantalla doble | Microsoft Docs"  
-[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Característica de pantalla de medios CSS para la detección de pantalla doble | Microsoft Docs"  
-[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "La API de JavaScript getWindowSegments para dispositivos de pantalla doble | Microsoft Docs"  
+[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Cómo trabajar con la unión: Introducción a los dispositivos de pantalla doble | Microsoft Docs"  
+[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Característica de pantalla expandida para medios CSS para la detección de pantalla doble | Microsoft Docs"  
+[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "API de JavaScript de getWindowSegments para dispositivos de pantalla doble | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de versiones preliminares de Microsoft Edge"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio código "  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio métodos abreviados de teclado de código para Windows"  
@@ -532,7 +532,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 [GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "Búferes de protocolo | Desarrolladores de Google"  
 
-[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung US"  
+[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung Estados Unidos"  
 
 [V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "Asignación lógica | V8"  
 [V8FeaturesNumericSeparators]: https://v8.dev/features/numeric-separators "Separadores numéricos | V8"  
@@ -543,7 +543,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/updates/2020/08/devtools/index) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
+> La página original se encuentra [aquí](https://developer.chrome.com/blog/new-in-devtools-86) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

@@ -3,16 +3,16 @@ description: Nuevas herramientas de depuración de cuadrícula CSS, herramienta 
 title: Novedades de DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 53aa8f20ba400c7ff95432b1e752f1f008dac919
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 0f4e0aaeba55f584697d1817f7ea54044dfdd380
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408335"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514357"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -112,7 +112,7 @@ Las características están activadas de forma predeterminada.  Para obtener má
    **Herramienta de** diseño con cuadrículas  
 :::image-end:::  
 
-## <a name="customize-keyboard-shortcuts-in-settings"></a>Personalizar métodos abreviados de teclado en Configuración  
+## <a name="customize-keyboard-shortcuts-in-settings"></a>Personalizar accesos rápidos de teclado en Configuración  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Característica experimental":::
    Característica experimental  
@@ -178,7 +178,7 @@ Puedes emular autenticadores y depurar la [API de][GithubW3cWebauthn] autenticac
    :::column-end:::
 :::row-end:::  
 
-### <a name="elements-tool-updates"></a>Actualizaciones de herramientas de elementos  
+### <a name="elements-tool-updates"></a>Actualizaciones de la herramienta Elementos  
 
 #### <a name="view-the-computed-sidebar-pane-in-the-styles-pane"></a>Ver el panel lateral calculado en el panel Estilos  
 
@@ -271,11 +271,11 @@ Para habilitar este experimento, en **Experimentos**  >  **de configuración,** 
    Problemas de contraste de color bajo  
 :::image-end:::  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
 
-Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de vista previa proporcionan acceso a las características más recientes de DevTools.  
+Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -287,7 +287,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Elemento seleccionado recientemente o objeto JavaScript: referencia de api de utilidades de consola | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalización de métodos abreviados de teclado en las herramientas de desarrollo de Microsoft Edge | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Referencia de análisis de rendimiento | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "Emulación: admite el modo de pantalla dual: características experimentales | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Habilitar API experimentales: características experimentales | Microsoft Docs"  
@@ -301,7 +301,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Busque código JavaScript y CSS sin usar con la pestaña Cobertura en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Inspeccionar css grid | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer: personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Configuración: Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analizar el rendimiento de representación con la pestaña Representación: referencia de análisis de rendimiento | Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Ver y depurar información de reproductores multimedia | Microsoft Docs"  
 [DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filtrar solicitudes por propiedades: referencia de análisis de red | Microsoft Docs"  
@@ -351,7 +351,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/updates/2020/10/devtools/index) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
+> La página original se encuentra [aquí](https://developer.chrome.com/blog/new-in-devtools-87) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
