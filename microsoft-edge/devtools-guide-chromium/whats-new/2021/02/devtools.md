@@ -3,17 +3,17 @@ description: Compatibilidad en la depuración para CSS Flexbox, rendimiento de v
 title: Novedades de DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: e220bbbe0a545b7cc539d0c77deb2ecb070decc0
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 3653bd2293f96a6ddfb84d8e1c7492bea78c15c1
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439748"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514406"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -297,7 +297,7 @@ Para activar el experimento, vaya a [Activar características experimentales][De
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
 
-Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales de versiones preliminares de Microsoft Edge][MicrosoftEdgePreviewChannels] como su explorador de desarrollo predeterminado.  Los canales de vista previa proporcionan acceso a las características más recientes de DevTools.  
+Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales de versión preliminar de Microsoft Edge][MicrosoftEdgePreviewChannels] como su explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
@@ -336,9 +336,9 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [CR1073887]: https://crbug.com/1073887 "Problema 1073887: DevTools: @media (gama de colores: ...) emulación de espacio de color | Errores de Chromium"  
 [CR1128885]: https://crbug.com/1128885 "Problema 1128885: Compatibilidad de DevTools para CORS-RFC1918 | Errores de Chromium"  
 [CR1146450]: https://crbug.com/1146450 "Problema 1146450: [Android] Implementar las instalaciones de la hoja inferior | Errores de Chromium"  
-[CR1158276]: https://crbug.com/1158276 "Problema 1158276: No se puede expandir o contratar el panel "Solicitar cadena de iniciador" mediante las teclas de dirección en la sección "Red" de DevTools | Errores de Chromium"  
+[CR1158276]: https://crbug.com/1158276 "Problema 1158276: No se puede expandir o contratar el panel &quot;Solicitar cadena de iniciador&quot; mediante las teclas de dirección en la sección &quot;Red&quot; de DevTools | Errores de Chromium"  
 [CR1158827]: https://crbug.com/1158827 "Problema 1158827: [Directiva de permisos] Implementar la compatibilidad de DevTools para la directiva de permisos | Errores de Chromium"  
-[CR1160637]: https://crbug.com/1160637 "Problema 1160637: El foco en "Solicitar cadena de iniciador" se ve incompleto en la sección "Red" de la ventana "Herramientas para desarrolladores" | Errores de Chromium"  
+[CR1160637]: https://crbug.com/1160637 "Problema 1160637: El foco en &quot;Solicitar cadena de iniciador&quot; se ve incompleto en la sección &quot;Red&quot; de la ventana &quot;Herramientas para desarrolladores&quot; | Errores de Chromium"  
 [CR1161427]: https://crbug.com/1161427 "Problema 1161427: &#9730; compatibilidad con la depuración de atributos de cookies SameParty en DevTools | Errores de Chromium"  
 [CR1166710]: https://crbug.com/1166710 "Problema 1166710: activar el experimento de herramientas flexbox de forma predeterminada | Errores de Chromium"  
 [CR1169689]: https://crbug.com/1169689 "Problema 1169689: La hoja inferior de instalación de PWA no debe incluir categorías | Errores de Chromium"  
@@ -346,7 +346,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [CR1177685]: https://crbug.com/1177685 "Problema 1177685: Quitar la compatibilidad con un fn.displayName no estándar | Errores de Chromium"  
 [CR1178530]: https://crbug.com/1178530 "Problema 1178530: la consola no evita las comillas dobles al imprimir cadenas | Errores de Chromium"  
 
-[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Calidad de visualización de color: la característica "gama de colores" | Borradores del editor de grupo de trabajo CSS"  
+[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Calidad de visualización de color: la característica &quot;gama de colores&quot; | Borradores del editor de grupo de trabajo CSS"  
 
 [GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md "DevTools: Interfaz de usuario del modo de enfoque: MicrosoftEdge/MSEdgeExplainers | GitHub"  
 
@@ -360,7 +360,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/updates/2021/02/devtools/index) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
+> La página original se encuentra [aquí](https://developer.chrome.com/blog/new-in-devtools-90) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
