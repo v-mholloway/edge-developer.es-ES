@@ -1,18 +1,18 @@
 ---
 description: Descubra nuevos flujos de trabajo de depuración en esta referencia completa de las características de depuración de Microsoft Edge DevTools.
-title: Referencia de depuración de JavaScript
+title: Usar las características del depurador
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2944e054a08a901d2e1752fa7c4e48ae110f5787
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 6fb90a70e0aac9f556fa9f5f02afee1fd5b4962e
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439461"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519607"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,31 +28,66 @@ ms.locfileid: "11439461"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="javascript-debugging-reference"></a><span data-ttu-id="75b7e-104">Referencia de depuración de JavaScript</span><span class="sxs-lookup"><span data-stu-id="75b7e-104">JavaScript debugging reference</span></span>  
+# <a name="use-the-debugger-features"></a><span data-ttu-id="94758-104">Usar las características del depurador</span><span class="sxs-lookup"><span data-stu-id="94758-104">Use the debugger features</span></span>
 
-<span data-ttu-id="75b7e-105">Descubra nuevos flujos de trabajo de depuración con la siguiente referencia completa de las características de depuración de Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="75b7e-105">Discover new debugging workflows with the following comprehensive reference of Microsoft Edge DevTools debugging features.</span></span>  
+<span data-ttu-id="94758-105">En este artículo se describe cómo usar el depurador en Microsoft Edge DevTools, incluido cómo establecer un punto de interrupción de línea de código.</span><span class="sxs-lookup"><span data-stu-id="94758-105">This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.</span></span>  <span data-ttu-id="94758-106">Para establecer otros tipos de puntos de interrupción, vea [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].</span><span class="sxs-lookup"><span data-stu-id="94758-106">To set other types of breakpoints, see [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].</span></span>  
 
-<span data-ttu-id="75b7e-106">Para obtener información sobre los conceptos básicos de la depuración, vaya a Introducción a [La depuración de JavaScript en Microsoft Edge DevTools][DevToolsJavascriptGetStarted].</span><span class="sxs-lookup"><span data-stu-id="75b7e-106">To learn the basics of debugging, navigate to [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted].</span></span>  
+<span data-ttu-id="94758-107">Para conocer los conceptos básicos de la depuración, vaya a Introducción a la depuración de JavaScript en [Microsoft Edge DevTools][DevToolsJavascriptGetStarted], que es un tutorial que usa una página web existente basada en formularios.</span><span class="sxs-lookup"><span data-stu-id="94758-107">To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which is a tutorial that uses an existing, form-based webpage.</span></span>  <span data-ttu-id="94758-108">El tutorial tiene capturas de pantalla, por lo que puedes desaconscarla.</span><span class="sxs-lookup"><span data-stu-id="94758-108">The tutorial has screen captures, so you can skim it.</span></span>  <span data-ttu-id="94758-109">Puedes probar fácilmente las características del depurador mediante la página web de demostración.</span><span class="sxs-lookup"><span data-stu-id="94758-109">You can easily try out the debugger features by using the demo webpage.</span></span>
 
-## <a name="pause-code-with-breakpoints"></a><span data-ttu-id="75b7e-107">Pausar código con puntos de interrupción</span><span class="sxs-lookup"><span data-stu-id="75b7e-107">Pause code with breakpoints</span></span>  
+## <a name="view-and-edit-javascript-code"></a><span data-ttu-id="94758-110">Ver y editar código JavaScript</span><span class="sxs-lookup"><span data-stu-id="94758-110">View and edit JavaScript code</span></span>
 
-<span data-ttu-id="75b7e-108">Establece un punto de interrupción para que puedas pausar el código en medio del tiempo de ejecución.</span><span class="sxs-lookup"><span data-stu-id="75b7e-108">Set a breakpoint so that you are able to pause your code in the middle of the runtime.</span></span>  
+<span data-ttu-id="94758-111">Al corregir un error, a menudo quieres probar algunos cambios en el código JavaScript.</span><span class="sxs-lookup"><span data-stu-id="94758-111">When fixing a bug, you often want to try out some changes to your JavaScript code.</span></span>  <span data-ttu-id="94758-112">No es necesario realizar los cambios en un editor externo o IDE, volver a cargar el archivo en el servidor y, a continuación, actualizar la página; en su lugar, para probar los cambios, puede editar el código JavaScript directamente en DevTools y ver el resultado inmediatamente.</span><span class="sxs-lookup"><span data-stu-id="94758-112">You don't need to make the changes in an external editor or IDE, re-upload the file to the server, and then refresh the page; instead, to test changes, you can edit your JavaScript code directly in DevTools and see the result immediately.</span></span>  
 
-<span data-ttu-id="75b7e-109">Para obtener información sobre cómo establecer puntos de interrupción, vaya [a Pausar el código con puntos de interrupción][DevToolsJavascriptBreakpoints].</span><span class="sxs-lookup"><span data-stu-id="75b7e-109">To learn how to set breakpoints, navigate to [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].</span></span>  
+<span data-ttu-id="94758-113">Para ver y editar un archivo JavaScript:</span><span class="sxs-lookup"><span data-stu-id="94758-113">To view and edit a JavaScript file:</span></span>  
 
-## <a name="step-through-code"></a><span data-ttu-id="75b7e-110">Paso a través del código</span><span class="sxs-lookup"><span data-stu-id="75b7e-110">Step through code</span></span>  
+1.  <span data-ttu-id="94758-114">Vaya a la **herramienta Orígenes.**</span><span class="sxs-lookup"><span data-stu-id="94758-114">Navigate to the **Sources** tool.</span></span>  
+1.  <span data-ttu-id="94758-115">En el **panel** Navegador, seleccione el archivo para abrirlo en el **panel Editor.**</span><span class="sxs-lookup"><span data-stu-id="94758-115">In the **Navigator** pane, select your file, to open it in the **Editor** pane.</span></span>
+1.  <span data-ttu-id="94758-116">En el **panel Editor,** edite el archivo.</span><span class="sxs-lookup"><span data-stu-id="94758-116">In the **Editor** pane, edit your file.</span></span>  
+1.  <span data-ttu-id="94758-117">Seleccione `Ctrl` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar.</span><span class="sxs-lookup"><span data-stu-id="94758-117">Select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.</span></span>  <span data-ttu-id="94758-118">A continuación, DevTools carga el archivo JavaScript en el motor de JavaScript de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="94758-118">DevTools then loads the JavaScript file into the JavaScript engine of Microsoft Edge.</span></span>  
+    
+    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Panel Editor" lightbox="../media/javascript-sources-html-minified.msft.png":::
+       <span data-ttu-id="94758-120">Panel **Editor**</span><span class="sxs-lookup"><span data-stu-id="94758-120">The **Editor** pane</span></span>  
+    :::image-end:::  
+     
+## <a name="reformat-a-minified-javascript-file-with-pretty-print"></a><span data-ttu-id="94758-121">Volver a formatear un archivo JavaScript minificado con pretty-print</span><span class="sxs-lookup"><span data-stu-id="94758-121">Reformat a minified JavaScript file with pretty-print</span></span>
 
-<span data-ttu-id="75b7e-111">Una vez que el código está en pausa, pase por él, una línea a la vez, investigando el flujo de control y los valores de propiedad en el camino.</span><span class="sxs-lookup"><span data-stu-id="75b7e-111">Once your code is paused, step through it, one line at a time, investigating control flow and property values along the way.</span></span>  
+<span data-ttu-id="94758-122">Para que un archivo minificado sea legible, elija el botón **Formato** \( Formato \) situado en la parte inferior ![ del ](../media/format-icon.msft.png) **panel** Editor.</span><span class="sxs-lookup"><span data-stu-id="94758-122">To make a minified file human-readable, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Editor** pane.</span></span>
 
-### <a name="step-over-line-of-code"></a><span data-ttu-id="75b7e-112">Paso a paso por la línea de código</span><span class="sxs-lookup"><span data-stu-id="75b7e-112">Step over line of code</span></span>  
-
-<span data-ttu-id="75b7e-113">Cuando se pausa en una línea de código que contiene una función que no es relevante para el problema que está depurando, elija el botón **Paso** a paso \( Paso sobre \) para ejecutar la función sin entrar en ![ ](../media/step-over-icon.msft.png) ella.</span><span class="sxs-lookup"><span data-stu-id="75b7e-113">When paused on a line of code containing a function that is not relevant to the problem you are debugging, choose the **Step over** \(![Step over](../media/step-over-icon.msft.png)\) button to run the function without stepping into it.</span></span>  
-
-:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Elija Paso a paso" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
-   <span data-ttu-id="75b7e-115">Elija **Paso a paso**</span><span class="sxs-lookup"><span data-stu-id="75b7e-115">Choose **Step over**</span></span>  
+:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="El botón Formato" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
+   <span data-ttu-id="94758-124">El **botón** Formato</span><span class="sxs-lookup"><span data-stu-id="94758-124">The **Format** button</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="75b7e-116">Por ejemplo, supongamos que está depurando el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="75b7e-116">For example, suppose you are debugging the following code snippet.</span></span>  
+## <a name="set-a-breakpoint-to-pause-code"></a><span data-ttu-id="94758-125">Establecer un punto de interrupción para pausar el código</span><span class="sxs-lookup"><span data-stu-id="94758-125">Set a breakpoint, to pause code</span></span>
+
+<span data-ttu-id="94758-126">Para pausar el código en medio del tiempo de ejecución, establezca un punto de interrupción.</span><span class="sxs-lookup"><span data-stu-id="94758-126">To pause your code in the middle of the runtime, set a breakpoint.</span></span>  <span data-ttu-id="94758-127">El tipo de punto de interrupción más básico y conocido es un punto de interrupción de línea de código.</span><span class="sxs-lookup"><span data-stu-id="94758-127">The most basic and well-known type of breakpoint is a line-of-code breakpoint.</span></span>
+
+<span data-ttu-id="94758-128">Use un punto de interrupción de línea de código cuando sepa la región exacta del código que necesita investigar.</span><span class="sxs-lookup"><span data-stu-id="94758-128">Use a line-of-code breakpoint when you know the exact region of code that you need to investigate.</span></span>  <span data-ttu-id="94758-129">DevTools siempre se pausa en la línea de código especificada, antes de ejecutarlo.</span><span class="sxs-lookup"><span data-stu-id="94758-129">DevTools always pauses at the specified line of code, before running it.</span></span>
+
+<span data-ttu-id="94758-130">Para establecer un punto de interrupción de línea de código:</span><span class="sxs-lookup"><span data-stu-id="94758-130">To set a line-of-code breakpoint:</span></span>  
+
+1.  <span data-ttu-id="94758-131">Vaya a la **herramienta Orígenes.**</span><span class="sxs-lookup"><span data-stu-id="94758-131">Navigate to the **Sources** tool.</span></span>  
+1.  <span data-ttu-id="94758-132">Abra el archivo que contiene la línea de código.</span><span class="sxs-lookup"><span data-stu-id="94758-132">Open the file that contains the line of code.</span></span>  
+1.  <span data-ttu-id="94758-133">Seleccione el área a la izquierda del número de línea para la línea de código.</span><span class="sxs-lookup"><span data-stu-id="94758-133">Select the area to the left of the line number for the line of code.</span></span>  <span data-ttu-id="94758-134">O bien, haga clic con el botón secundario en el número de línea y, a continuación, **elija Agregar punto de interrupción**.</span><span class="sxs-lookup"><span data-stu-id="94758-134">Or, right-click the line number and then choose **Add breakpoint**.</span></span>  <span data-ttu-id="94758-135">A continuación, aparece un círculo rojo junto al número de línea, que indica un punto de interrupción.</span><span class="sxs-lookup"><span data-stu-id="94758-135">A red circle then appears next to the line number, indicating a breakpoint.</span></span>  
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="Punto de interrupción de línea de código" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+       <span data-ttu-id="94758-137">Punto de interrupción de línea de código</span><span class="sxs-lookup"><span data-stu-id="94758-137">A line-of-code breakpoint</span></span>  
+    :::image-end:::  
+
+<span data-ttu-id="94758-138">Los puntos de interrupción de línea de código pueden ser ineficientes para establecer, especialmente si no sabe exactamente dónde buscar o si su base de código es grande.</span><span class="sxs-lookup"><span data-stu-id="94758-138">Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if your codebase is large.</span></span>  <span data-ttu-id="94758-139">Para ahorrar tiempo al depurar, obtenga información sobre cómo y cuándo usar los otros tipos de puntos de interrupción.</span><span class="sxs-lookup"><span data-stu-id="94758-139">To save time when debugging, learn how and when to use the other types of breakpoints.</span></span>  <span data-ttu-id="94758-140">Para obtener más información, vaya [a Pausar el código con puntos de interrupción.][DevToolsJavascriptBreakpoints]</span><span class="sxs-lookup"><span data-stu-id="94758-140">For more information, navigate to [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].</span></span>
+
+## <a name="step-through-code"></a><span data-ttu-id="94758-141">Paso a través del código</span><span class="sxs-lookup"><span data-stu-id="94758-141">Step through code</span></span>  
+
+<span data-ttu-id="94758-142">Después de pausar el código en un punto de interrupción, pase por el código, una línea a la vez, investigando el flujo de control y los valores de propiedad en el camino.</span><span class="sxs-lookup"><span data-stu-id="94758-142">After your code is paused at a breakpoint, step through the code, one line at a time, investigating control flow and property values along the way.</span></span>  
+
+### <a name="step-over-line-of-code"></a><span data-ttu-id="94758-143">Paso a paso por la línea de código</span><span class="sxs-lookup"><span data-stu-id="94758-143">Step over line of code</span></span>  
+
+<span data-ttu-id="94758-144">Cuando se pausa en una línea de código que contiene una función que no es relevante para el problema que está depurando, elija el botón **Paso** a paso \( Paso sobre \) para ejecutar la función sin entrar en ![ ](../media/step-over-icon.msft.png) ella.</span><span class="sxs-lookup"><span data-stu-id="94758-144">When paused on a line of code containing a function that isn't relevant to the problem you are debugging, choose the **Step over** \(![Step over](../media/step-over-icon.msft.png)\) button to run the function without stepping into it.</span></span>  
+
+:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Elija Paso a paso" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
+   <span data-ttu-id="94758-146">Elija **Paso a paso**</span><span class="sxs-lookup"><span data-stu-id="94758-146">Choose **Step over**</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="94758-147">Por ejemplo, supongamos que está depurando el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="94758-147">For example, suppose you are debugging the following code snippet.</span></span>  
 
 ```javascript
 function updateHeader() {
@@ -66,17 +101,17 @@ function getName() {
 }
 ```  
 
-<span data-ttu-id="75b7e-117">Está en pausa en `A` .</span><span class="sxs-lookup"><span data-stu-id="75b7e-117">You are paused on `A`.</span></span>  <span data-ttu-id="75b7e-118">Después de elegir **Paso a paso**, DevTools ejecuta todo el código de la función que va a pasar, que es y `B` `C` .</span><span class="sxs-lookup"><span data-stu-id="75b7e-118">After you choose **Step over**, DevTools runs all the code in the function that you are stepping over, which is `B` and `C`.</span></span>  <span data-ttu-id="75b7e-119">A continuación, DevTools hace una pausa en `D` .</span><span class="sxs-lookup"><span data-stu-id="75b7e-119">DevTools then pauses on `D`.</span></span>  
+<span data-ttu-id="94758-148">Está en pausa en `A` .</span><span class="sxs-lookup"><span data-stu-id="94758-148">You are paused on `A`.</span></span>  <span data-ttu-id="94758-149">Después de elegir **Paso a paso**, DevTools ejecuta todo el código de la función que va a pasar, que es y `B` `C` .</span><span class="sxs-lookup"><span data-stu-id="94758-149">After you choose **Step over**, DevTools runs all the code in the function that you are stepping over, which is `B` and `C`.</span></span>  <span data-ttu-id="94758-150">A continuación, DevTools hace una pausa en `D` .</span><span class="sxs-lookup"><span data-stu-id="94758-150">DevTools then pauses on `D`.</span></span>  
 
-### <a name="step-into-line-of-code"></a><span data-ttu-id="75b7e-120">Paso a paso en la línea de código</span><span class="sxs-lookup"><span data-stu-id="75b7e-120">Step into line of code</span></span>  
+### <a name="step-into-line-of-code"></a><span data-ttu-id="94758-151">Paso a paso en la línea de código</span><span class="sxs-lookup"><span data-stu-id="94758-151">Step into line of code</span></span>  
 
-<span data-ttu-id="75b7e-121">Cuando se pausa en una línea de código que contiene una llamada de función relacionada con el problema que está depurando, elija el botón Paso a **paso** en \( Paso a \) para investigar esa función más ![ ](../media/step-into-icon.msft.png) adelante.</span><span class="sxs-lookup"><span data-stu-id="75b7e-121">When paused on a line of code containing a function call that is related to the problem you are debugging, choose the **Step into** \(![Step into](../media/step-into-icon.msft.png)\) button to investigate that function further.</span></span>  
+<span data-ttu-id="94758-152">Cuando se pausa en una línea de código que contiene una llamada de función relacionada con el problema que está depurando, elija el botón Paso a **paso** en \( Paso a \) para investigar esa función más ![ ](../media/step-into-icon.msft.png) adelante.</span><span class="sxs-lookup"><span data-stu-id="94758-152">When paused on a line of code containing a function call that is related to the problem you are debugging, choose the **Step into** \(![Step into](../media/step-into-icon.msft.png)\) button to investigate that function further.</span></span>  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Elija Paso a paso" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
-   <span data-ttu-id="75b7e-123">Elija **Paso a paso**</span><span class="sxs-lookup"><span data-stu-id="75b7e-123">Choose **Step into**</span></span>  
+   <span data-ttu-id="94758-154">Elija **Paso a paso**</span><span class="sxs-lookup"><span data-stu-id="94758-154">Choose **Step into**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="75b7e-124">Por ejemplo, supongamos que está depurando el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="75b7e-124">For example, suppose you are debugging the following code snippet.</span></span>  
+<span data-ttu-id="94758-155">Por ejemplo, supongamos que está depurando el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="94758-155">For example, suppose you are debugging the following code snippet.</span></span>  
 
 ```javascript
 function updateHeader() {
@@ -90,17 +125,17 @@ function getName() {
 }
 ```  
 
-<span data-ttu-id="75b7e-125">Está en pausa en `A` .</span><span class="sxs-lookup"><span data-stu-id="75b7e-125">You are paused on `A`.</span></span>  <span data-ttu-id="75b7e-126">Después de elegir **Paso en**, DevTools ejecuta esta línea de código y, a continuación, se pausa en `B` .</span><span class="sxs-lookup"><span data-stu-id="75b7e-126">After you choose **Step into**, DevTools runs this line of code, then pauses on `B`.</span></span>  
+<span data-ttu-id="94758-156">Está en pausa en `A` .</span><span class="sxs-lookup"><span data-stu-id="94758-156">You are paused on `A`.</span></span>  <span data-ttu-id="94758-157">Después de elegir **Paso en**, DevTools ejecuta esta línea de código y, a continuación, se pausa en `B` .</span><span class="sxs-lookup"><span data-stu-id="94758-157">After you choose **Step into**, DevTools runs this line of code, then pauses on `B`.</span></span>  
 
-### <a name="step-out-of-line-of-code"></a><span data-ttu-id="75b7e-127">Salir de la línea de código</span><span class="sxs-lookup"><span data-stu-id="75b7e-127">Step out of line of code</span></span>  
+### <a name="step-out-of-line-of-code"></a><span data-ttu-id="94758-158">Salir de la línea de código</span><span class="sxs-lookup"><span data-stu-id="94758-158">Step out of line of code</span></span>  
 
-<span data-ttu-id="75b7e-128">Cuando se pausa dentro de una función que no está relacionada con el problema que está depurando, elija el botón Salir **\(** Salir \) para ejecutar el resto del código de ![ la ](../media/step-out-icon.msft.png) función.</span><span class="sxs-lookup"><span data-stu-id="75b7e-128">When paused inside of a function that is not related to the problem you are debugging, choose the **Step out** \(![Step out](../media/step-out-icon.msft.png)\) button to run the rest of the code of the function.</span></span>  
+<span data-ttu-id="94758-159">Cuando se pausa dentro de una función que no está relacionada con el problema que está depurando, elija el botón Salir **\(** Salir \) para ejecutar el resto del código de ![ la ](../media/step-out-icon.msft.png) función.</span><span class="sxs-lookup"><span data-stu-id="94758-159">When paused inside of a function that isn't related to the problem you are debugging, choose the **Step out** \(![Step out](../media/step-out-icon.msft.png)\) button to run the rest of the code of the function.</span></span>  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Elija Salir" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
-   <span data-ttu-id="75b7e-130">Elija **Salir**</span><span class="sxs-lookup"><span data-stu-id="75b7e-130">Choose **Step out**</span></span>  
+   <span data-ttu-id="94758-161">Elija **Salir**</span><span class="sxs-lookup"><span data-stu-id="94758-161">Choose **Step out**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="75b7e-131">Por ejemplo, supongamos que está depurando el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="75b7e-131">For example, suppose you are debugging the following code snippet.</span></span>  
+<span data-ttu-id="94758-162">Por ejemplo, supongamos que está depurando el siguiente fragmento de código.</span><span class="sxs-lookup"><span data-stu-id="94758-162">For example, suppose you are debugging the following code snippet.</span></span>  
 
 ```javascript
 function updateHeader() {
@@ -114,25 +149,25 @@ function getName() {
 }
 ```  
 
-<span data-ttu-id="75b7e-132">Está en pausa en `A` .</span><span class="sxs-lookup"><span data-stu-id="75b7e-132">You are paused on `A`.</span></span>  <span data-ttu-id="75b7e-133">Después de elegir **Step out**, DevTools ejecuta el resto del código en , que está en este ejemplo y, a `getName()` continuación, se pausa en `B` `C` .</span><span class="sxs-lookup"><span data-stu-id="75b7e-133">After you choose **Step out**, DevTools runs the rest of the code in `getName()`, which is just `B` in this example, and then pauses on `C`.</span></span>  
+<span data-ttu-id="94758-163">Está en pausa en `A` .</span><span class="sxs-lookup"><span data-stu-id="94758-163">You are paused on `A`.</span></span>  <span data-ttu-id="94758-164">Después de elegir **Step out**, DevTools ejecuta el resto del código en , que está en este ejemplo y, a `getName()` continuación, se pausa en `B` `C` .</span><span class="sxs-lookup"><span data-stu-id="94758-164">After you choose **Step out**, DevTools runs the rest of the code in `getName()`, which is just `B` in this example, and then pauses on `C`.</span></span>  
 
-### <a name="run-all-code-up-to-a-specific-line"></a><span data-ttu-id="75b7e-134">Ejecutar todo el código hasta una línea específica</span><span class="sxs-lookup"><span data-stu-id="75b7e-134">Run all code up to a specific line</span></span>  
+### <a name="run-all-code-up-to-a-specific-line"></a><span data-ttu-id="94758-165">Ejecutar todo el código hasta una línea específica</span><span class="sxs-lookup"><span data-stu-id="94758-165">Run all code up to a specific line</span></span>  
 
-<span data-ttu-id="75b7e-135">Al depurar una función larga, puede haber una gran cantidad de código que no está relacionado con el problema que está depurando.</span><span class="sxs-lookup"><span data-stu-id="75b7e-135">When debugging a long function, there may be a lot of code that is not related to the problem you are debugging.</span></span>  
+<span data-ttu-id="94758-166">Al depurar una función larga, puede haber una gran cantidad de código que no esté relacionado con el problema que está depurando.</span><span class="sxs-lookup"><span data-stu-id="94758-166">When debugging a long function, there may be a lot of code that isn't related to the problem you are debugging.</span></span>  
 
-<span data-ttu-id="75b7e-136">Puede optar por pasar por todas las líneas, pero eso es tedioso.</span><span class="sxs-lookup"><span data-stu-id="75b7e-136">You may choose to step through all the lines, but that is tedious.</span></span>  <span data-ttu-id="75b7e-137">Puede elegir establecer un punto de interrupción de línea de código en la línea en la que está interesado y, a continuación, elegir el botón Reanudar ejecución de **script** \( Reanudar ejecución de script \), pero hay una forma más ![ ](../media/resume-script-run-icon.msft.png) rápida.</span><span class="sxs-lookup"><span data-stu-id="75b7e-137">You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button, but there is a faster way.</span></span>  
+<span data-ttu-id="94758-167">Puede optar por pasar por todas las líneas, pero eso es tedioso.</span><span class="sxs-lookup"><span data-stu-id="94758-167">You may choose to step through all the lines, but that is tedious.</span></span>  <span data-ttu-id="94758-168">Puede elegir establecer un punto de interrupción de línea de código en la línea en la que está interesado y, a continuación, elegir el botón Reanudar ejecución de **script** \( Reanudar ejecución de script \), pero hay una forma más ![ ](../media/resume-script-run-icon.msft.png) rápida.</span><span class="sxs-lookup"><span data-stu-id="94758-168">You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button, but there is a faster way.</span></span>  
 
-<span data-ttu-id="75b7e-138">Mantenga el mouse sobre la línea de código en la que le interesa, abra el menú contextual \(hacer clic con el botón secundario\) y **elija Continuar hasta aquí**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-138">Hover on the line of code in which you are interested, open the contextual menu \(right-click\), and choose **Continue to here**.</span></span>  <span data-ttu-id="75b7e-139">DevTools ejecuta todo el código hasta ese punto y, a continuación, se pausa en esa línea.</span><span class="sxs-lookup"><span data-stu-id="75b7e-139">DevTools runs all of the code up to that point, and then pauses on that line.</span></span>  
+<span data-ttu-id="94758-169">Mantenga el mouse sobre la línea de código en la que le interesa, abra el menú contextual \(hacer clic con el botón secundario\) y **elija Continuar hasta aquí**.</span><span class="sxs-lookup"><span data-stu-id="94758-169">Hover on the line of code in which you are interested, open the contextual menu \(right-click\), and choose **Continue to here**.</span></span>  <span data-ttu-id="94758-170">DevTools ejecuta todo el código hasta ese punto y, a continuación, se pausa en esa línea.</span><span class="sxs-lookup"><span data-stu-id="94758-170">DevTools runs all of the code up to that point, and then pauses on that line.</span></span>  
 
 :::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="Elija Continuar hasta aquí" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
-   <span data-ttu-id="75b7e-141">Elija **Continuar hasta aquí**</span><span class="sxs-lookup"><span data-stu-id="75b7e-141">Choose **Continue to here**</span></span>  
+   <span data-ttu-id="94758-172">Elija **Continuar hasta aquí**</span><span class="sxs-lookup"><span data-stu-id="94758-172">Choose **Continue to here**</span></span>  
 :::image-end:::  
 
-### <a name="restart-the-top-function-of-the-call-stack"></a><span data-ttu-id="75b7e-142">Reiniciar la función superior de la pila de llamadas</span><span class="sxs-lookup"><span data-stu-id="75b7e-142">Restart the top function of the call stack</span></span>  
+### <a name="restart-the-top-function-of-the-call-stack"></a><span data-ttu-id="94758-173">Reiniciar la función superior de la pila de llamadas</span><span class="sxs-lookup"><span data-stu-id="94758-173">Restart the top function of the call stack</span></span>  
 
-<span data-ttu-id="75b7e-143">Para pausar en la primera línea de la función superior de la pila de  llamadas, mientras se pausa en una línea de código, mantenga el mouse en cualquier lugar del panel Pila de llamadas, abra el menú contextual \(haga clic con el botón secundario\) y elija **Reiniciar**marco .</span><span class="sxs-lookup"><span data-stu-id="75b7e-143">To pause on the first line of the top function in your call stack, while paused on a line of code, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Restart Frame**.</span></span>  <span data-ttu-id="75b7e-144">La función superior es la última función que se ha ejecutado.</span><span class="sxs-lookup"><span data-stu-id="75b7e-144">The top function is the last function that was run.</span></span>  
+<span data-ttu-id="94758-174">Para pausar en la primera línea de la función superior de la pila de \*\*\*\* llamadas, mientras está pausada en una línea de código, mantenga el mouse en cualquier lugar del panel Pila de llamadas, abra el menú contextual \(haga clic con el botón secundario\) y elija **Reiniciar**fotograma .</span><span class="sxs-lookup"><span data-stu-id="94758-174">To pause on the first line of the top function in your call stack, while paused on a line of code, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Restart frame**.</span></span>  <span data-ttu-id="94758-175">La función superior es la última función que se ha ejecutado.</span><span class="sxs-lookup"><span data-stu-id="94758-175">The top function is the last function that was run.</span></span>  
 
-<span data-ttu-id="75b7e-145">El siguiente fragmento de código es un ejemplo de paso a paso.</span><span class="sxs-lookup"><span data-stu-id="75b7e-145">The following code snippet is an example for you to step-through.</span></span>  
+<span data-ttu-id="94758-176">El siguiente fragmento de código es un ejemplo de paso a paso.</span><span class="sxs-lookup"><span data-stu-id="94758-176">The following code snippet is an example for you to step-through.</span></span>  
 
 ```javascript
 function factorial(n) {
@@ -144,77 +179,89 @@ function factorial(n) {
 }
 ```  
 
-<span data-ttu-id="75b7e-146">Está en pausa en `A` .</span><span class="sxs-lookup"><span data-stu-id="75b7e-146">You are paused on `A`.</span></span>  <span data-ttu-id="75b7e-147">Después de elegir **Reiniciar fotograma**, debe pausarse en , sin establecer nunca un punto de interrupción ni elegir Reanudar ejecución `B` de **script**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-147">After choosing **Restart Frame**, you should be paused on `B`, without ever setting a breakpoint or choosing **Resume script execution**.</span></span>  
+<span data-ttu-id="94758-177">Está en pausa en `A` .</span><span class="sxs-lookup"><span data-stu-id="94758-177">You are paused on `A`.</span></span>  <span data-ttu-id="94758-178">Después de elegir **Reiniciar fotograma,** debe pausarse en , sin establecer nunca un punto de interrupción ni elegir Reanudar ejecución `B` de **script**.</span><span class="sxs-lookup"><span data-stu-id="94758-178">After choosing **Restart frame**, you should be paused on `B`, without ever setting a breakpoint or choosing **Resume script execution**.</span></span>  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Elegir fotograma de reinicio" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
-   <span data-ttu-id="75b7e-149">Elegir **fotograma de reinicio**</span><span class="sxs-lookup"><span data-stu-id="75b7e-149">Choose **Restart Frame**</span></span>  
+:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Elegir fotograma reiniciar" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
+   <span data-ttu-id="94758-180">Elegir **fotograma reiniciar**</span><span class="sxs-lookup"><span data-stu-id="94758-180">Choose **Restart frame**</span></span>  
 :::image-end:::  
 
-### <a name="resume-script-runtime"></a><span data-ttu-id="75b7e-150">Resume script runtime</span><span class="sxs-lookup"><span data-stu-id="75b7e-150">Resume script runtime</span></span>  
+### <a name="resume-script-runtime"></a><span data-ttu-id="94758-181">Resume script runtime</span><span class="sxs-lookup"><span data-stu-id="94758-181">Resume script runtime</span></span>  
 
-<span data-ttu-id="75b7e-151">Para continuar con el tiempo de ejecución después de una pausa del script, elija el botón Reanudar ejecución de **script** \( ![ Reanudar ejecución de script ](../media/resume-script-run-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="75b7e-151">To continue the runtime after a pause of your script, choose the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button.</span></span>  <span data-ttu-id="75b7e-152">DevTools ejecuta el script hasta el siguiente punto de interrupción, si lo hay.</span><span class="sxs-lookup"><span data-stu-id="75b7e-152">DevTools runs the script up until the next breakpoint, if any.</span></span>  
+<span data-ttu-id="94758-182">Para continuar con el tiempo de ejecución después de una pausa del script, elija el botón Reanudar ejecución de **script** \( ![ Reanudar ejecución de script ](../media/resume-script-run-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="94758-182">To continue the runtime after a pause of your script, choose the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button.</span></span>  <span data-ttu-id="94758-183">DevTools ejecuta el script hasta el siguiente punto de interrupción, si lo hay.</span><span class="sxs-lookup"><span data-stu-id="94758-183">DevTools runs the script up until the next breakpoint, if any.</span></span>  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Elegir Reanudar ejecución de script" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
-   <span data-ttu-id="75b7e-154">Elegir **Reanudar ejecución de script**</span><span class="sxs-lookup"><span data-stu-id="75b7e-154">Choose **Resume script execution**</span></span>  
+   <span data-ttu-id="94758-185">Elegir **Reanudar ejecución de script**</span><span class="sxs-lookup"><span data-stu-id="94758-185">Choose **Resume script execution**</span></span>  
 :::image-end:::  
 
-#### <a name="force-script-runtime"></a><span data-ttu-id="75b7e-155">Forzar tiempo de ejecución de script</span><span class="sxs-lookup"><span data-stu-id="75b7e-155">Force script runtime</span></span>  
+#### <a name="force-script-runtime"></a><span data-ttu-id="94758-186">Forzar tiempo de ejecución de script</span><span class="sxs-lookup"><span data-stu-id="94758-186">Force script runtime</span></span>  
 
-<span data-ttu-id="75b7e-156">Para omitir todos los puntos de interrupción y forzar la reanudación de la ejecución del script, elija y mantenga presionado el botón Reanudar ejecución de script **\(** Reanudar ejecución de script \) y, a continuación, elija el botón Forzar ejecución de script \( Forzar la ejecución del ![ ](../media/resume-script-run-icon.msft.png) script  ![ ](../media/force-script-run-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="75b7e-156">To ignore all breakpoints and force your script to resume running, choose and hold the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.</span></span>  
+<span data-ttu-id="94758-187">Para omitir todos los puntos de interrupción y forzar la ejecución del script, elija y mantenga presionado el botón Reanudar ejecución de **scripts** \( Reanudar ejecución de script \) y, a continuación, elija el botón Forzar ejecución de script \( Forzar ejecución de ![ ](../media/resume-script-run-icon.msft.png) script \*\*\*\* ![ ](../media/force-script-run-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="94758-187">To ignore all breakpoints and force your script to continue to run, choose and hold the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.</span></span>  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Elegir Forzar ejecución de script" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
-   <span data-ttu-id="75b7e-158">Elegir **Forzar ejecución de script**</span><span class="sxs-lookup"><span data-stu-id="75b7e-158">Choose **Force script execution**</span></span>  
+   <span data-ttu-id="94758-189">Elegir **Forzar ejecución de script**</span><span class="sxs-lookup"><span data-stu-id="94758-189">Choose **Force script execution**</span></span>  
 :::image-end:::  
 
-### <a name="change-thread-context"></a><span data-ttu-id="75b7e-159">Cambiar contexto de subproceso</span><span class="sxs-lookup"><span data-stu-id="75b7e-159">Change thread context</span></span>  
+### <a name="change-thread-context"></a><span data-ttu-id="94758-190">Cambiar contexto de subproceso</span><span class="sxs-lookup"><span data-stu-id="94758-190">Change thread context</span></span>  
 
-<span data-ttu-id="75b7e-160">Al trabajar con trabajadores web o trabajadores  de servicio, elija en un contexto que aparece en el panel Subprocesos para cambiar a ese contexto.</span><span class="sxs-lookup"><span data-stu-id="75b7e-160">When working with web workers or service workers, choose on a context listed in the **Threads** pane to switch to that context.</span></span>  <span data-ttu-id="75b7e-161">El icono de flecha azul representa qué contexto está seleccionado actualmente.</span><span class="sxs-lookup"><span data-stu-id="75b7e-161">The blue arrow icon represents which context is currently selected.</span></span>  
+<span data-ttu-id="94758-191">Al trabajar con trabajadores web o trabajadores \*\*\*\* de servicio, elija en un contexto que aparece en el panel Subprocesos para cambiar a ese contexto.</span><span class="sxs-lookup"><span data-stu-id="94758-191">When working with web workers or service workers, choose on a context listed in the **Threads** pane to switch to that context.</span></span>  <span data-ttu-id="94758-192">El icono de flecha azul representa qué contexto está seleccionado actualmente.</span><span class="sxs-lookup"><span data-stu-id="94758-192">The blue arrow icon represents which context is currently selected.</span></span>  
 
 :::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="Panel Subprocesos" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
-   <span data-ttu-id="75b7e-163">Panel **Subprocesos**</span><span class="sxs-lookup"><span data-stu-id="75b7e-163">The **Threads** pane</span></span>  
+   <span data-ttu-id="94758-194">Panel **Subprocesos**</span><span class="sxs-lookup"><span data-stu-id="94758-194">The **Threads** pane</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="75b7e-164">Por ejemplo, suponga que está pausado en un punto de interrupción tanto en el script principal como en el script de trabajo de servicio.</span><span class="sxs-lookup"><span data-stu-id="75b7e-164">For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.</span></span>  <span data-ttu-id="75b7e-165">Desea ver las propiedades locales y globales del contexto de trabajo de servicio, pero el **panel** Orígenes muestra el contexto de script principal.</span><span class="sxs-lookup"><span data-stu-id="75b7e-165">You want to view the local and global properties for the service worker context, but the **Sources** panel is showing the main script context.</span></span>  <span data-ttu-id="75b7e-166">Al elegir en la entrada de trabajo de servicio en **el** panel Subprocesos, debería poder cambiar a ese contexto.</span><span class="sxs-lookup"><span data-stu-id="75b7e-166">By choosing on the service worker entry in the **Threads** pane, you should be able to switch to that context.</span></span>  
+<span data-ttu-id="94758-195">Por ejemplo, suponga que está pausado en un punto de interrupción tanto en el script principal como en el script de trabajo de servicio.</span><span class="sxs-lookup"><span data-stu-id="94758-195">For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.</span></span>  <span data-ttu-id="94758-196">Desea ver las propiedades locales y globales del contexto de trabajo de servicio, pero la herramienta **Orígenes** muestra el contexto de script principal.</span><span class="sxs-lookup"><span data-stu-id="94758-196">You want to view the local and global properties for the service worker context, but the **Sources** tool is showing the main script context.</span></span>  <span data-ttu-id="94758-197">Para cambiar al contexto de trabajo de servicio, en el **panel Subprocesos,** elija la entrada de trabajador de servicio.</span><span class="sxs-lookup"><span data-stu-id="94758-197">To switch to the service worker context, in the **Threads** pane, choose the service worker entry.</span></span>  
 
-## <a name="view-and-edit-local-closure-and-global-properties"></a><span data-ttu-id="75b7e-167">Ver y editar propiedades locales, de cierre y globales</span><span class="sxs-lookup"><span data-stu-id="75b7e-167">View and edit local, closure, and global properties</span></span>  
+## <a name="view-and-edit-properties-and-variables"></a><span data-ttu-id="94758-198">Ver y editar propiedades y variables</span><span class="sxs-lookup"><span data-stu-id="94758-198">View and edit properties and variables</span></span>
 
-<span data-ttu-id="75b7e-168">Mientras está pausado en una  línea de código, use el panel Ámbito para ver y editar los valores de propiedades y variables en los ámbitos local, de cierre y global.</span><span class="sxs-lookup"><span data-stu-id="75b7e-168">While paused on a line of code, use the **Scope** pane to view and edit the values of properties and variables in the local, closure, and global scopes.</span></span>  
+<span data-ttu-id="94758-199">Mientras está pausado en una \*\*\*\* línea de código, use el panel Ámbito para ver y editar los valores de propiedades y variables en los ámbitos local, de cierre y global.</span><span class="sxs-lookup"><span data-stu-id="94758-199">While paused on a line of code, use the **Scope** pane to view and edit the values of properties and variables in the local, closure, and global scopes.</span></span>  
 
-*   <span data-ttu-id="75b7e-169">Haga doble clic en un valor de propiedad para cambiarlo.</span><span class="sxs-lookup"><span data-stu-id="75b7e-169">Double-click a property value to change it.</span></span>  
-*   <span data-ttu-id="75b7e-170">Las propiedades no enumerables están grises.</span><span class="sxs-lookup"><span data-stu-id="75b7e-170">Non-enumerable properties are greyed out.</span></span>  
+*   <span data-ttu-id="94758-200">Haga doble clic en un valor de propiedad para cambiarlo.</span><span class="sxs-lookup"><span data-stu-id="94758-200">Double-click a property value to change it.</span></span>  
+*   <span data-ttu-id="94758-201">Las propiedades no enumerables están grises.</span><span class="sxs-lookup"><span data-stu-id="94758-201">Non-enumerable properties are greyed out.</span></span>  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-scope.msft.png" alt-text="Panel Ámbito" lightbox="../media/javascript-sources-get-started-js-scope.msft.png":::
-   <span data-ttu-id="75b7e-172">Panel **Ámbito**</span><span class="sxs-lookup"><span data-stu-id="75b7e-172">The **Scope** pane</span></span>  
+   <span data-ttu-id="94758-203">Panel **Ámbito**</span><span class="sxs-lookup"><span data-stu-id="94758-203">The **Scope** pane</span></span>  
 :::image-end:::  
 
-## <a name="view-the-current-call-stack"></a><span data-ttu-id="75b7e-173">Ver la pila de llamadas actual</span><span class="sxs-lookup"><span data-stu-id="75b7e-173">View the current call stack</span></span>  
+## <a name="watch-the-values-of-javascript-expressions"></a><span data-ttu-id="94758-204">Ver los valores de las expresiones de JavaScript</span><span class="sxs-lookup"><span data-stu-id="94758-204">Watch the values of JavaScript expressions</span></span>  
 
-<span data-ttu-id="75b7e-174">Mientras está pausado en una línea de código, use el panel **Pila** de llamadas para ver la pila de llamadas que le ha hecho llegar hasta este punto.</span><span class="sxs-lookup"><span data-stu-id="75b7e-174">While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.</span></span>  
+<span data-ttu-id="94758-205">Use el **panel** Ver para ver los valores de las expresiones personalizadas.</span><span class="sxs-lookup"><span data-stu-id="94758-205">Use the **Watch** pane to watch the values of custom expressions.</span></span>  <span data-ttu-id="94758-206">Puede ver cualquier expresión de JavaScript válida.</span><span class="sxs-lookup"><span data-stu-id="94758-206">You can watch any valid JavaScript expression.</span></span>  
+
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="El panel Ver" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+   <span data-ttu-id="94758-208">El **panel Ver**</span><span class="sxs-lookup"><span data-stu-id="94758-208">The **Watch** pane</span></span>  
+:::image-end:::  
+
+*   <span data-ttu-id="94758-209">Para crear una nueva expresión de reloj, seleccione el botón Agregar expresión **de** reloj \( ![ Agregar expresión de reloj ](../media/add-expression-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="94758-209">To create a new watch expression, select the **Add watch expression** \(![Add watch expression](../media/add-expression-icon.msft.png)\) button.</span></span>  
+*   <span data-ttu-id="94758-210">Para actualizar los valores de todas las expresiones existentes, seleccione el botón **Actualizar** ![ \( Actualizar ](../media/refresh-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="94758-210">To refresh the values of all existing expressions, select the **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\) button.</span></span>  <span data-ttu-id="94758-211">Los valores se actualizan automáticamente al pasar por el código.</span><span class="sxs-lookup"><span data-stu-id="94758-211">Values automatically refresh while stepping through code.</span></span>  
+*   <span data-ttu-id="94758-212">Para eliminar una expresión de reloj, haga clic con el botón secundario en la expresión y, a continuación, seleccione **Eliminar** expresión de reloj \( ![ Eliminar expresión de reloj ](../media/delete-expression-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="94758-212">To delete a watch expression, right-click the expression and then select **Delete watch expression** \(![Delete watch expression](../media/delete-expression-icon.msft.png)\).</span></span>  
+
+## <a name="view-the-call-stack"></a><span data-ttu-id="94758-213">Ver la pila de llamadas</span><span class="sxs-lookup"><span data-stu-id="94758-213">View the call stack</span></span>  
+
+<span data-ttu-id="94758-214">Mientras está pausado en una línea de código, use el panel **Pila** de llamadas para ver la pila de llamadas que le ha hecho llegar hasta este punto.</span><span class="sxs-lookup"><span data-stu-id="94758-214">While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.</span></span>  
 
 <!--If you are working with async code, check the **Async** checkbox to enable async call stacks.  -->  
 
-<span data-ttu-id="75b7e-175">Elija una entrada para saltar a la línea de código donde se llamó a esa función.</span><span class="sxs-lookup"><span data-stu-id="75b7e-175">Choose an entry to jump to the line of code where that function was called.</span></span>  <span data-ttu-id="75b7e-176">El icono de flecha azul representa la función DevTools que está resaltando actualmente.</span><span class="sxs-lookup"><span data-stu-id="75b7e-176">The blue arrow icon represents which function DevTools is currently highlighting.</span></span>  
+<span data-ttu-id="94758-215">Elija una entrada para saltar a la línea de código donde se llamó a esa función.</span><span class="sxs-lookup"><span data-stu-id="94758-215">Choose an entry to jump to the line of code where that function was called.</span></span>  <span data-ttu-id="94758-216">El icono de flecha azul representa la función DevTools que está resaltando actualmente.</span><span class="sxs-lookup"><span data-stu-id="94758-216">The blue arrow icon represents which function DevTools is currently highlighting.</span></span>  
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Panel Pila de llamadas" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
-   <span data-ttu-id="75b7e-178">Panel **Pila de** llamadas</span><span class="sxs-lookup"><span data-stu-id="75b7e-178">The **Call Stack** pane</span></span>  
+   <span data-ttu-id="94758-218">Panel **Pila de** llamadas</span><span class="sxs-lookup"><span data-stu-id="94758-218">The **Call Stack** pane</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="75b7e-179">Cuando no se pausa en una línea de código, el panel **Pila** de llamadas está vacío.</span><span class="sxs-lookup"><span data-stu-id="75b7e-179">When not paused on a line of code, the **Call Stack** pane is empty.</span></span>  
+> <span data-ttu-id="94758-219">Cuando no se pausa en una línea de código, el panel **Pila** de llamadas está vacío.</span><span class="sxs-lookup"><span data-stu-id="94758-219">When not paused on a line of code, the **Call Stack** pane is empty.</span></span>  
 
-### <a name="copy-stack-trace"></a><span data-ttu-id="75b7e-180">Copiar seguimiento de pila</span><span class="sxs-lookup"><span data-stu-id="75b7e-180">Copy stack trace</span></span>  
+### <a name="copy-stack-trace"></a><span data-ttu-id="94758-220">Copiar seguimiento de pila</span><span class="sxs-lookup"><span data-stu-id="94758-220">Copy stack trace</span></span>  
 
 <!--
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-<span data-ttu-id="75b7e-181">para copiar la pila de llamadas actual  en el Portapapeles, mantenga el mouse en cualquier lugar del panel Pila de llamadas, abra el menú contextual \(clic con el botón secundario\) y elija Copiar seguimiento **de pila**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-181">to copy the current call stack to the clipboard, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Copy stack trace**.</span></span>  
+<span data-ttu-id="94758-221">Para copiar la pila de llamadas actual \*\*\*\* en el Portapapeles, mantenga el mouse en cualquier lugar del panel Pila de llamadas, abra el menú contextual \(clic con el botón secundario\) y elija Copiar seguimiento **de pila**.</span><span class="sxs-lookup"><span data-stu-id="94758-221">To copy the current call stack to the clipboard, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Copy stack trace**.</span></span>  
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Elija Copiar seguimiento de pila" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
-   <span data-ttu-id="75b7e-183">Elija **Copiar seguimiento de pila**</span><span class="sxs-lookup"><span data-stu-id="75b7e-183">Choose **Copy Stack Trace**</span></span>  
+   <span data-ttu-id="94758-223">Elija **Copiar seguimiento de pila**</span><span class="sxs-lookup"><span data-stu-id="94758-223">Choose **Copy Stack Trace**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="75b7e-184">El siguiente fragmento de código es un ejemplo de la salida.</span><span class="sxs-lookup"><span data-stu-id="75b7e-184">The following code snippet is an example of the output.</span></span>  
+<span data-ttu-id="94758-224">El siguiente fragmento de código es un ejemplo de la salida.</span><span class="sxs-lookup"><span data-stu-id="94758-224">The following code snippet is an example of the output.</span></span>  
 
 ```javascript
 getNumber1 (get-started.js:35)
@@ -222,11 +269,11 @@ inputsAreEmpty (get-started.js:22)
 onChoose (get-started.js:15)
 ```  
 
-## <a name="ignore-a-script-or-pattern-of-scripts"></a><span data-ttu-id="75b7e-185">Omitir un script o patrón de scripts</span><span class="sxs-lookup"><span data-stu-id="75b7e-185">Ignore a script or pattern of scripts</span></span>  
+## <a name="ignore-a-script-or-pattern-of-scripts"></a><span data-ttu-id="94758-225">Omitir un script o patrón de scripts</span><span class="sxs-lookup"><span data-stu-id="94758-225">Ignore a script or pattern of scripts</span></span>  
 
-<span data-ttu-id="75b7e-186">Marca un script como código de biblioteca cuando quieras omitir ese script durante la depuración.</span><span class="sxs-lookup"><span data-stu-id="75b7e-186">Mark a script as Library code when you want to ignore that script while debugging.</span></span>  <span data-ttu-id="75b7e-187">Cuando se marca como código de biblioteca, un script se oculta en el panel Pila de llamadas y nunca se pasa a las funciones del script cuando se pasa por el código. </span><span class="sxs-lookup"><span data-stu-id="75b7e-187">When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.</span></span>  
+<span data-ttu-id="94758-226">Marca un script como código de biblioteca cuando quieras omitir ese script durante la depuración.</span><span class="sxs-lookup"><span data-stu-id="94758-226">Mark a script as Library code when you want to ignore that script while debugging.</span></span>  <span data-ttu-id="94758-227">Cuando se marca como código de biblioteca, un script se oculta en el panel Pila de llamadas y nunca se pasa a las funciones del script cuando se pasa por el código. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="94758-227">When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.</span></span>  
 
-<span data-ttu-id="75b7e-188">El siguiente fragmento de código es un ejemplo de paso a paso.</span><span class="sxs-lookup"><span data-stu-id="75b7e-188">The following code snippet is an example for you to step-through.</span></span>  
+<span data-ttu-id="94758-228">Por ejemplo, en el siguiente fragmento de código, line `A` usa , que es una biblioteca de `lib` terceros.</span><span class="sxs-lookup"><span data-stu-id="94758-228">For example, in the following code snippet, line `A` uses `lib`, which is a third-party library.</span></span>  <span data-ttu-id="94758-229">Si está seguro de que el problema que está depurando no está relacionado con esa biblioteca de terceros, tiene sentido marcar el script como **código de biblioteca**.</span><span class="sxs-lookup"><span data-stu-id="94758-229">If you are confident that the problem you are debugging is not related to that third-party library, then it makes sense to mark the script as **Library code**.</span></span>  
 
 ```javascript
 function animate() {
@@ -236,90 +283,56 @@ function animate() {
 }
 ```  
 
-`A` <span data-ttu-id="75b7e-189">es una biblioteca de terceros en la que confía.</span><span class="sxs-lookup"><span data-stu-id="75b7e-189">is a third-party library that you trust.</span></span>  <span data-ttu-id="75b7e-190">Si está seguro de que el problema que está depurando no está relacionado con la biblioteca de terceros, tiene sentido marcar el script como **código de biblioteca**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-190">If you are confident that the problem you are debugging is not related to the third-party library, then it makes sense to mark the script as **Library code**.</span></span>  
+### <a name="mark-a-script-as-library-code-from-the-editor-pane"></a><span data-ttu-id="94758-230">Marcar un script como código de biblioteca desde el panel Editor</span><span class="sxs-lookup"><span data-stu-id="94758-230">Mark a script as Library code from the Editor pane</span></span>  
 
-### <a name="mark-a-script-as-library-code-from-the-editor-pane"></a><span data-ttu-id="75b7e-191">Marcar un script como código de biblioteca desde el panel Editor</span><span class="sxs-lookup"><span data-stu-id="75b7e-191">Mark a script as Library code from the Editor pane</span></span>  
+<span data-ttu-id="94758-231">Para marcar un script como **código de biblioteca** desde el panel **Editor:**</span><span class="sxs-lookup"><span data-stu-id="94758-231">To mark a script as **Library code** from the **Editor** pane:</span></span>  
 
-<span data-ttu-id="75b7e-192">Complete las siguientes acciones para marcar un script como **código de biblioteca** desde el panel **Editor.**</span><span class="sxs-lookup"><span data-stu-id="75b7e-192">Complete the following actions to mark a script as **Library code** from the **Editor** pane.</span></span>  
-
-1.  <span data-ttu-id="75b7e-193">Abra el archivo.</span><span class="sxs-lookup"><span data-stu-id="75b7e-193">Open the file.</span></span>  
-1.  <span data-ttu-id="75b7e-194">Mantenga el mouse en cualquier lugar y abra el menú contextual \(hacer clic con el botón secundario\).</span><span class="sxs-lookup"><span data-stu-id="75b7e-194">Hover anywhere and open the contextual menu \(right-click\).</span></span>  
-1.  <span data-ttu-id="75b7e-195">Elija **Marcar como código de biblioteca**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-195">Choose **Mark as Library code**.</span></span>  
+1.  <span data-ttu-id="94758-232">Abra el archivo.</span><span class="sxs-lookup"><span data-stu-id="94758-232">Open the file.</span></span>  
+1.  <span data-ttu-id="94758-233">Mantenga el mouse en cualquier lugar y abra el menú contextual \(hacer clic con el botón secundario\).</span><span class="sxs-lookup"><span data-stu-id="94758-233">Hover anywhere and open the contextual menu \(right-click\).</span></span>  
+1.  <span data-ttu-id="94758-234">Elija **Agregar script para omitir la lista** (anteriormente se muestra como Marcar como código de **biblioteca).**</span><span class="sxs-lookup"><span data-stu-id="94758-234">Choose **Add script to ignore list** (previously shown as **Mark as Library code**).</span></span>  
     
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Marcar un script como código de biblioteca desde el panel Editor" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
-       <span data-ttu-id="75b7e-197">Marcar un script como **código de biblioteca** desde el panel **Editor**</span><span class="sxs-lookup"><span data-stu-id="75b7e-197">Mark a script as **Library code** from the **Editor** pane</span></span>  
+       <span data-ttu-id="94758-236">Marcar un script como **código de biblioteca** desde el panel **Editor**</span><span class="sxs-lookup"><span data-stu-id="94758-236">Mark a script as **Library code** from the **Editor** pane</span></span>  
     :::image-end:::  
     
-### <a name="mark-a-script-as-library-code-from-the-call-stack-pane"></a><span data-ttu-id="75b7e-198">Marcar un script como código de biblioteca desde el panel Pila de llamadas</span><span class="sxs-lookup"><span data-stu-id="75b7e-198">Mark a script as Library code from the Call Stack pane</span></span>  
+### <a name="mark-a-script-as-library-code-from-the-call-stack-pane"></a><span data-ttu-id="94758-237">Marcar un script como código de biblioteca desde el panel Pila de llamadas</span><span class="sxs-lookup"><span data-stu-id="94758-237">Mark a script as Library code from the Call Stack pane</span></span>  
 
-<span data-ttu-id="75b7e-199">Complete las siguientes acciones para marcar un script como **código de biblioteca** desde el panel Pila **de** llamadas.</span><span class="sxs-lookup"><span data-stu-id="75b7e-199">Complete the following actions to mark a script as **Library code** from the **Call Stack** pane.</span></span>  
+<span data-ttu-id="94758-238">Para marcar un script como **código de biblioteca** desde el panel Pila **de** llamadas:</span><span class="sxs-lookup"><span data-stu-id="94758-238">To mark a script as **Library code** from the **Call Stack** pane:</span></span>  
 
-1.  <span data-ttu-id="75b7e-200">Mantenga el mouse sobre una función del script y abra el menú contextual \(hacer clic con el botón secundario\).</span><span class="sxs-lookup"><span data-stu-id="75b7e-200">Hover on a function from the script and open the contextual menu \(right-click\).</span></span>  
-1.  <span data-ttu-id="75b7e-201">Elija **Marcar como código de biblioteca**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-201">Choose **Mark as Library code**.</span></span>  
+1.  <span data-ttu-id="94758-239">Mantenga el mouse sobre una función del script y abra el menú contextual \(hacer clic con el botón secundario\).</span><span class="sxs-lookup"><span data-stu-id="94758-239">Hover on a function from the script and open the contextual menu \(right-click\).</span></span>  
+1.  <span data-ttu-id="94758-240">Elija **Agregar script para omitir la lista** (anteriormente se muestra como Marcar como código de **biblioteca).**</span><span class="sxs-lookup"><span data-stu-id="94758-240">Choose **Add script to ignore list** (previously shown as **Mark as Library code**).</span></span>  
     
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Marcar un script como código de biblioteca desde el panel Pila de llamadas" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
-       <span data-ttu-id="75b7e-203">Marcar un script como **código de biblioteca** desde el panel Pila **de** llamadas</span><span class="sxs-lookup"><span data-stu-id="75b7e-203">Mark a script as **Library code** from the **Call Stack** pane</span></span>  
+       <span data-ttu-id="94758-242">Marcar un script como **código de biblioteca** desde el panel Pila **de** llamadas</span><span class="sxs-lookup"><span data-stu-id="94758-242">Mark a script as **Library code** from the **Call Stack** pane</span></span>  
     :::image-end:::  
     
-### <a name="mark-a-script-as-library-code-from-settings"></a><span data-ttu-id="75b7e-204">Marcar un script como código de biblioteca desde Configuración</span><span class="sxs-lookup"><span data-stu-id="75b7e-204">Mark a script as Library code from Settings</span></span>  
+### <a name="mark-a-script-as-library-code-from-settings"></a><span data-ttu-id="94758-243">Marcar un script como código de biblioteca desde Configuración</span><span class="sxs-lookup"><span data-stu-id="94758-243">Mark a script as Library code from Settings</span></span>  
 
-<span data-ttu-id="75b7e-205">Complete las siguientes acciones para marcar un único script o patrón de scripts desde **Configuración**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-205">Complete the following actions to mark a single script or pattern of scripts from **Settings**.</span></span>  
+<span data-ttu-id="94758-244">Para marcar un único script o patrón de scripts desde **Configuración:**</span><span class="sxs-lookup"><span data-stu-id="94758-244">To mark a single script or pattern of scripts from **Settings**:</span></span>  
 
-1.  <span data-ttu-id="75b7e-206">Abra [Configuración][DevToolsCustomize].</span><span class="sxs-lookup"><span data-stu-id="75b7e-206">Open [Settings][DevToolsCustomize].</span></span>  
-1.  <span data-ttu-id="75b7e-207">Vaya a la **configuración de código de biblioteca.**</span><span class="sxs-lookup"><span data-stu-id="75b7e-207">Navigate to the **Library code** setting.</span></span>  
-1.  <span data-ttu-id="75b7e-208">Elija **Agregar patrón**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-208">Choose **Add pattern**.</span></span>  
-1.  <span data-ttu-id="75b7e-209">Escriba el nombre del script o un patrón regex de nombres de script para marcar como **código de biblioteca.**</span><span class="sxs-lookup"><span data-stu-id="75b7e-209">Enter the script name or a regex pattern of script names to mark as **Library code**.</span></span>  
-1.  <span data-ttu-id="75b7e-210">Elija **Agregar**.</span><span class="sxs-lookup"><span data-stu-id="75b7e-210">Choose **Add**.</span></span>  
+1.  <span data-ttu-id="94758-245">Abra [Configuración][DevToolsCustomize].</span><span class="sxs-lookup"><span data-stu-id="94758-245">Open [Settings][DevToolsCustomize].</span></span>  
+1.  <span data-ttu-id="94758-246">Vaya a la **configuración de código de biblioteca.**</span><span class="sxs-lookup"><span data-stu-id="94758-246">Navigate to the **Library code** setting.</span></span>  
+1.  <span data-ttu-id="94758-247">Elija **Agregar patrón**.</span><span class="sxs-lookup"><span data-stu-id="94758-247">Choose **Add pattern**.</span></span>  
+1.  <span data-ttu-id="94758-248">Escriba el nombre del script o un patrón regex de nombres de script para marcar como **código de biblioteca.**</span><span class="sxs-lookup"><span data-stu-id="94758-248">Enter the script name or a regex pattern of script names to mark as **Library code**.</span></span>  
+1.  <span data-ttu-id="94758-249">Elija **Agregar**.</span><span class="sxs-lookup"><span data-stu-id="94758-249">Choose **Add**.</span></span>  
     
     :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Marcar un script como código de biblioteca desde Configuración" lightbox="../media/javascript-framework-library-code.msft.png":::
-       <span data-ttu-id="75b7e-212">Marcar un script como código **de biblioteca desde** **Configuración**</span><span class="sxs-lookup"><span data-stu-id="75b7e-212">Mark a script as **Library code** from **Settings**</span></span>  
+       <span data-ttu-id="94758-251">Marcar un script como código **de biblioteca desde** **Configuración**</span><span class="sxs-lookup"><span data-stu-id="94758-251">Mark a script as **Library code** from **Settings**</span></span>  
     :::image-end:::  
     
-## <a name="run-snippets-of-debug-code-from-any-page"></a><span data-ttu-id="75b7e-213">Ejecutar fragmentos de código de depuración desde cualquier página</span><span class="sxs-lookup"><span data-stu-id="75b7e-213">Run snippets of debug code from any page</span></span>  
+## <a name="run-snippets-of-debug-code-from-any-page"></a><span data-ttu-id="94758-252">Ejecutar fragmentos de código de depuración desde cualquier página</span><span class="sxs-lookup"><span data-stu-id="94758-252">Run snippets of debug code from any page</span></span>  
 
-<span data-ttu-id="75b7e-214">Si se encuentra ejecutando el mismo código de depuración en la consola una y otra vez, considere Fragmentos de código.</span><span class="sxs-lookup"><span data-stu-id="75b7e-214">If you find yourself running the same debug code in the Console over and over, consider Snippets.</span></span>  <span data-ttu-id="75b7e-215">Los fragmentos de código son scripts en tiempo de ejecución que se pueden crear, almacenar y ejecutar en DevTools.</span><span class="sxs-lookup"><span data-stu-id="75b7e-215">Snippets are runtime scripts that you author, store, and run within DevTools.</span></span>  
+<span data-ttu-id="94758-253">Si se encuentra ejecutando el mismo código de depuración en la consola una y otra vez, considere Fragmentos de código.</span><span class="sxs-lookup"><span data-stu-id="94758-253">If you find yourself running the same debug code in the Console over and over, consider Snippets.</span></span>  <span data-ttu-id="94758-254">Los fragmentos de código son scripts en tiempo de ejecución que se pueden crear, almacenar y ejecutar en DevTools.</span><span class="sxs-lookup"><span data-stu-id="94758-254">Snippets are runtime scripts that you author, store, and run within DevTools.</span></span>  
 
-<span data-ttu-id="75b7e-216">Para obtener más información, vaya [a Ejecutar fragmentos de código desde cualquier página][DevToolsJavascriptSnippets].</span><span class="sxs-lookup"><span data-stu-id="75b7e-216">To learn more, navigate to [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets].</span></span>  
+<span data-ttu-id="94758-255">Consulte [Ejecutar fragmentos de código de JavaScript en cualquier página web][DevToolsJavascriptSnippets].</span><span class="sxs-lookup"><span data-stu-id="94758-255">See [Run snippets of JavaScript on any webpage][DevToolsJavascriptSnippets].</span></span>  
 
-## <a name="watch-the-values-of-custom-javascript-expressions"></a><span data-ttu-id="75b7e-217">Ver los valores de las expresiones de JavaScript personalizadas</span><span class="sxs-lookup"><span data-stu-id="75b7e-217">Watch the values of custom JavaScript expressions</span></span>  
+## <a name="see-also"></a><span data-ttu-id="94758-256">Consulte también</span><span class="sxs-lookup"><span data-stu-id="94758-256">See also</span></span>  
 
-<span data-ttu-id="75b7e-218">Use el **panel** Ver para ver los valores de las expresiones personalizadas.</span><span class="sxs-lookup"><span data-stu-id="75b7e-218">Use the **Watch** pane to watch the values of custom expressions.</span></span>  <span data-ttu-id="75b7e-219">Puede ver cualquier expresión de JavaScript válida.</span><span class="sxs-lookup"><span data-stu-id="75b7e-219">You may watch any valid JavaScript expression.</span></span>  
+*   <span data-ttu-id="94758-257">[Introducción a la depuración de JavaScript en Microsoft Edge DevTools:][DevToolsJavascriptGetStarted] un tutorial sencillo y breve con código existente, con capturas de pantalla.</span><span class="sxs-lookup"><span data-stu-id="94758-257">[Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - A simple, short tutorial using existing code, with screen captures.</span></span>
+*   <span data-ttu-id="94758-258">[Introducción a la herramienta][DevToolsSourcesIndex] Orígenes: la **herramienta Orígenes** incluye el depurador y el editor de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="94758-258">[Sources tool overview][DevToolsSourcesIndex] - The **Sources** tool includes the JavaScript debugger and editor.</span></span>
+*   <span data-ttu-id="94758-259">[Deshabilitar JavaScript con Microsoft Edge DevTools][DevToolsJavascriptDisable].</span><span class="sxs-lookup"><span data-stu-id="94758-259">[Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].</span></span>
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="El panel Ver" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
-   <span data-ttu-id="75b7e-221">El **panel Ver**</span><span class="sxs-lookup"><span data-stu-id="75b7e-221">The **Watch** pane</span></span>  
-:::image-end:::  
-
-*   <span data-ttu-id="75b7e-222">Elija el botón Agregar **expresión** \( ![ Agregar expresión ](../media/add-expression-icon.msft.png) \) para crear una nueva expresión de reloj.</span><span class="sxs-lookup"><span data-stu-id="75b7e-222">Choose the **Add Expression** \(![Add Expression](../media/add-expression-icon.msft.png)\) button to create a new watch expression.</span></span>  
-*   <span data-ttu-id="75b7e-223">Elija el **botón Actualizar** \( ![ Actualizar ](../media/refresh-icon.msft.png) \) para actualizar los valores de todas las expresiones existentes.</span><span class="sxs-lookup"><span data-stu-id="75b7e-223">Choose the **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\) button to refresh the values of all existing expressions.</span></span>  <span data-ttu-id="75b7e-224">Los valores se actualizan automáticamente al pasar por el código.</span><span class="sxs-lookup"><span data-stu-id="75b7e-224">Values automatically refresh while stepping through code.</span></span>  
-*   <span data-ttu-id="75b7e-225">Mantenga el mouse sobre una expresión y elija el **botón Eliminar expresión** \( Eliminar expresión ![ ](../media/delete-expression-icon.msft.png) \) para eliminarla.</span><span class="sxs-lookup"><span data-stu-id="75b7e-225">Hover on an expression and choose the **Delete Expression** \(![Delete Expression](../media/delete-expression-icon.msft.png)\) button to delete it.</span></span>  
-
-## <a name="make-a-minified-file-readable"></a><span data-ttu-id="75b7e-226">Hacer que un archivo minified sea legible</span><span class="sxs-lookup"><span data-stu-id="75b7e-226">Make a minified file readable</span></span>  
-
-<span data-ttu-id="75b7e-227">Elija el **botón Formato** \( ![ Formato ](../media/format-icon.msft.png) \) para que un archivo minificado sea legible.</span><span class="sxs-lookup"><span data-stu-id="75b7e-227">Choose the **Format** \(![Format](../media/format-icon.msft.png)\) button to make a minified file human-readable.</span></span>  
-
-:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="El botón Formato" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
-   <span data-ttu-id="75b7e-229">El **botón** Formato</span><span class="sxs-lookup"><span data-stu-id="75b7e-229">The **Format** button</span></span>  
-:::image-end:::  
-
-## <a name="edit-a-script"></a><span data-ttu-id="75b7e-230">Editar un script</span><span class="sxs-lookup"><span data-stu-id="75b7e-230">Edit a script</span></span>  
-
-<span data-ttu-id="75b7e-231">Al corregir un error, a menudo quieres probar algunos cambios en el código JavaScript.</span><span class="sxs-lookup"><span data-stu-id="75b7e-231">When fixing a bug, you often want to test out some changes to your JavaScript code.</span></span>  <span data-ttu-id="75b7e-232">No es necesario realizar los cambios en un editor externo o IDE y, a continuación, actualizar la página.</span><span class="sxs-lookup"><span data-stu-id="75b7e-232">You do not need to make the changes in an external editor or IDE and then refresh the page.</span></span>  <span data-ttu-id="75b7e-233">Puede editar el script en DevTools.</span><span class="sxs-lookup"><span data-stu-id="75b7e-233">You may edit your script in DevTools.</span></span>  
-
-<span data-ttu-id="75b7e-234">Complete las siguientes acciones para editar un script.</span><span class="sxs-lookup"><span data-stu-id="75b7e-234">Complete the following actions to edit a script.</span></span>  
-
-1.  <span data-ttu-id="75b7e-235">Abra el archivo en el **panel Editor** del panel **Orígenes.**</span><span class="sxs-lookup"><span data-stu-id="75b7e-235">Open the file in the **Editor** pane of the **Sources** panel.</span></span>  
-1.  <span data-ttu-id="75b7e-236">Realice los cambios en el **panel Editor.**</span><span class="sxs-lookup"><span data-stu-id="75b7e-236">Make your changes in the **Editor** pane.</span></span>  
-1.  <span data-ttu-id="75b7e-237">Seleccione `Ctrl` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar.</span><span class="sxs-lookup"><span data-stu-id="75b7e-237">Select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.</span></span>  <span data-ttu-id="75b7e-238">DevTools parchea todo el archivo JS en el motor JavaScript de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="75b7e-238">DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.</span></span>  
-    
-    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Panel Editor" lightbox="../media/javascript-sources-html-minified.msft.png":::
-       <span data-ttu-id="75b7e-240">Panel **Editor**</span><span class="sxs-lookup"><span data-stu-id="75b7e-240">The **Editor** pane</span></span>  
-    :::image-end:::  
-     
-## <a name="disable-javascript"></a><span data-ttu-id="75b7e-241">Deshabilitar JavaScript</span><span class="sxs-lookup"><span data-stu-id="75b7e-241">Disable JavaScript</span></span>  
-
-<span data-ttu-id="75b7e-242">Vaya a [Deshabilitar JavaScript con Microsoft Edge DevTools][DevToolsJavascriptDisable].</span><span class="sxs-lookup"><span data-stu-id="75b7e-242">Navigate to [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].</span></span>  
-
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="75b7e-243">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="75b7e-243">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="94758-260">Contactar al equipo de Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="94758-260">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -329,14 +342,15 @@ function animate() {
 [DevToolsJavascriptDisable]: ./disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptGetStarted]: ./index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptSnippets]: ./snippets.md "Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
 [DevToolsCustomize]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
-> <span data-ttu-id="75b7e-249">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="75b7e-249">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="75b7e-250">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="75b7e-250">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="94758-267">Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="94758-267">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="94758-268">La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="94758-268">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-<span data-ttu-id="75b7e-252">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="75b7e-252">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="94758-270">Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="94758-270">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
