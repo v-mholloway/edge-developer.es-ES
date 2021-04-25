@@ -1,18 +1,18 @@
 ---
 description: Cómo mover Microsoft Edge DevTools a la parte inferior o izquierda de la ventanilla, o a una ventana independiente.
-title: Cambiar la ubicación de Microsoft Edge DevTools (Undock, Dock to Bottom, Dock to Left)
+title: Cambiar la ubicación de Microsoft Edge DevTools (Undock, Dock to bottom, Dock to left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439180"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519159"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,39 @@ ms.locfileid: "11439180"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Cambiar la ubicación de Microsoft Edge DevTools (Undock, Dock to Bottom, Dock to Left)  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Cambiar la ubicación de Microsoft Edge DevTools (Undock, Dock to bottom, Dock to left)  
 
-De forma predeterminada, DevTools está acoplada a la derecha de la ventanilla.  También puede acoplar a la parte inferior, acoplar a la izquierda o desacoplar Las DevTools a una ventana independiente.  
+De forma predeterminada, DevTools está acoplada a la derecha de la ventanilla (ventana).  También puede acoplar DevTools a la parte inferior o izquierda de la ventana, o desacoplar DevTools a una ventana independiente.
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Elija Acoplar a la izquierda" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         Elegir `Dock To Left`  
+      DevTools acoplada al lado izquierdo de la ventana:
+   :::column-end:::
+   :::column span="":::
+      DevTools acoplada a la parte inferior de la ventana:
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Elija Dock a la izquierda" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Elija **Dock a la izquierda**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Elija Acoplar a la parte inferior" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         Elegir `Dock To Bottom`  
+         Elegir `Dock to bottom`  
       :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+DevTools puede desacoplarse a una ventana independiente, que puede mover a un monitor independiente:
+
+:::row:::
+   :::column span="":::
+      Ventana del explorador:
+   :::column-end:::
+   :::column span="":::
+      DevTools se desacopla en una ventana independiente:
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -59,19 +78,27 @@ De forma predeterminada, DevTools está acoplada a la derecha de la ventanilla. 
 
 ## <a name="change-placement-from-the-main-menu"></a>Cambiar la ubicación desde el menú principal  
 
-1.  Elija Personalizar y **controlar devTools** \( \) y elija Desacoplar en una ventana independiente \( Desacoplar \), Acoplar a la parte inferior \) o Acoplar a la izquierda \( Acoplar a la izquierda `...` **** ![ ](../media/undock-icon.msft.png) **** ![ ](../media/bottom-icon.msft.png) **** ![ ](../media/left-icon.msft.png) \).  
+1.  Elija Personalizar y **controlar DevTools** \( \) y elija `...` **Undock into separate window** \( ![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to ![ bottom ](../media/bottom-icon.msft.png) \) o Dock to **left** \( Dock to ![ left ](../media/left-icon.msft.png) \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Elegir Desacoplar en ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Elegir **Desacoplar en ventana independiente**  
+       Elegir **Desacoplar en una ventana independiente**  
     :::image-end:::  
     
 ## <a name="change-placement-from-the-command-menu"></a>Cambiar la ubicación desde el menú comando  
 
-1.  [Abra el menú de comandos][DevtoolsCommandMenu].  
-1.  Ejecute uno de los siguientes comandos: `Dock To Bottom` , `Undock Into Separate Window` .  Actualmente no hay ningún comando para acoplar a la izquierda, pero puede tener acceso a él desde el [menú principal](#change-placement-from-the-main-menu).  
+1.  [Abra el menú comando][DevtoolsCommandMenu], seleccionando `Shift` + `Ctrl` + `P` en Windows/Linux o `Command` + `Shift` + `P` en macOS.  
+1.  Después del `>` carácter, escriba y, a `dock` continuación, elija uno de los siguientes comandos:  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="El comando de desacoplar" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       El comando de desacoplar  
+    *  **Acoplar a la parte inferior**
+    *  **Acoplar a la izquierda**
+    *  **Acoplar a la derecha**
+    *  **Restaurar la última posición de acoplamiento**
+    *  **Desacoplar en una ventana independiente**
+    
+    También puede tener acceso a los comandos desde el [menú principal](#change-placement-from-the-main-menu). 
+    
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="El comando Undock" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       El comando Undock  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  

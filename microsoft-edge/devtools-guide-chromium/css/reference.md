@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 84aacbb3961f6b8f6e9a0bda8823fecbbb26ec25
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bddbf14e73f5c29bfd4757c9cd6d255f419c331f
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439306"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519334"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -56,9 +56,9 @@ Use una de las siguientes acciones para seleccionar un elemento.
 
 ### <a name="view-the-external-stylesheet-where-a-rule-is-defined"></a>Ver la hoja de estilos externa donde se define una regla  
 
-En el **panel Estilos,** elija el vínculo junto a una regla CSS para abrir la hoja de estilos externa que define la regla.  
+En el **panel Estilos,** elija el vínculo junto a una regla CSS para abrir la hoja de estilos externa que define la regla.  La hoja de estilos se abre en el **panel Editor** de la **herramienta** Orígenes.  
 
-Si la hoja de estilos está minificada, vaya a Hacer que un archivo [minificado sea legible.][DevToolsJavascriptReferenceFormat]  
+Si la hoja de estilos está minificada, elija el botón **Formato** \( Formato \) en la parte ![ inferior del ](../media/format-icon.msft.png) **panel** Editor.  Para obtener más información, vaya [a Volver a formatear un archivo JavaScript minificado con pretty-print][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
 > En la siguiente figura, después de elegir, se le toma a la línea 2 de , donde se define la `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css` regla `.content h1:first-of-type` CSS.  
@@ -557,7 +557,7 @@ Al abrir el **Selector de colores**, el **cuentagotas** \( Cuentagotas ![ ](../m
 [DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Agregar un pseudoestado a una clase: introducción a ver y cambiar css | Microsoft Docs"  
 [DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Ver el CSS de un elemento: introducción a la visualización y cambio de css | Microsoft Docs"  
 [DevToolsCssPrintPreview]: ../css/print-preview.md "Forzar las DevTools de Microsoft Edge al modo de vista previa de impresión (tipo de medios de impresión CSS) | Microsoft Docs"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Hacer que un archivo minificado sea legible: referencia de depuración de JavaScript | Microsoft Docs"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Volver a formatear un archivo JavaScript minificado con pretty-print: use el depurador | Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "El sistema de colores: diseño de material"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "El modelo de cuadro | MDN"  

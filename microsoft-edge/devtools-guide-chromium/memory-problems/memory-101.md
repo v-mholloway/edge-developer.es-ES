@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1579374be29f0f419ded3bf88f5dea284f0bbb1a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c9659255e2bf0082cd1be3e6615c9d54c293b967
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397793"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519313"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -67,16 +67,16 @@ Este es el tamaño de la memoria que se libera una vez que el objeto se elimina 
 
 **Las** raíces del recolector de elementos no utilizados están hechas de controladores que se crean \(local o global\) al hacer una referencia desde código nativo a un objeto JavaScript fuera de V8. ****  Todos estos controladores pueden encontrarse en una instantánea de montón en el ámbito de control de raíces **de GC**y en las raíces  >  **** de **GC**  >  **Controladores globales.**  Describir los controladores de esta documentación sin entrar en detalles de la implementación del explorador puede resultar confuso.  Tanto las raíces del recolector de elementos no utilizados como los controladores no son algo de lo que tenga que preocuparse.  
 
-Hay muchas raíces internas del recolector de elementos no utilizados, la mayoría de las cuales no son interesantes para los usuarios.  Desde el punto de vista de las aplicaciones, hay siguientes tipos de raíces.  
+Hay muchas raíces internas del recolector de elementos no utilizados, la mayoría de las cuales no son interesantes para los usuarios.  Desde el punto de vista de las aplicaciones, hay los siguientes tipos de raíces.  
 
-*   Objeto global window \(en cada iframe\).  Hay un campo de distancia en las instantáneas de montón, que es el número de referencias a propiedades en la ruta de retención más corta de la ventana.  
-*   Árbol DOM de documento que consta de todos los nodos DOM nativos a los que se puede acceder recorriendo el documento.  No todos los nodos pueden tener contenedores JS, pero si un nodo tiene un contenedor, está activo mientras el documento está activo.  
-*   A veces, el contexto del depurador puede retener objetos en el panel **Orígenes** y la consola **\(por** ejemplo, después de la evaluación de la consola\).  Cree instantáneas de montón con un panel **de** consola desactivado y sin puntos de interrupción activos en el depurador en **el** panel Orígenes.
+*   Objeto global window \(en cada iframe\).  En las instantáneas de montón, el campo indica el número de referencias a propiedades en la ruta de retención más corta `distance` de la ventana.  
+*   El árbol DOM del documento, que consta de todos los nodos DOM nativos a los que se puede acceder recorriendo el documento.  No todos los nodos tienen contenedores de JavaScript, pero si un nodo tiene un contenedor, el nodo está activo mientras el documento está activo.  
+*   A veces, el contexto de depuración retiene los objetos en la **herramienta Orígenes** y la **consola,** como después de la evaluación de la consola.  Cree instantáneas de montón con una herramienta **de consola** desactivada y sin puntos de interrupción activos en el depurador en la **herramienta Orígenes.**
 
 >[!TIP]
-> Desactive el panel **Consola** ejecutando y desactivando puntos de interrupción en el panel Orígenes antes de tomar una instantánea `clear()` de montón en el panel [Memoria][DevtoolsMemoryProblemsHeapSnapshots]. ****
+> Antes de tomar una instantánea de montón en la [herramienta Memoria,][DevtoolsMemoryProblemsHeapSnapshots] desactive la herramienta **Consola** y desactive los puntos de interrupción en la **herramienta Orígenes.**  Para borrar la **herramienta Consola,** ejecute el `clear()` método.  
 
-El gráfico de memoria comienza con una raíz, que puede ser el objeto del explorador o el `window` objeto de un Node.js `Global` módulo.  No se controla cómo se recopila este objeto raíz.  
+El gráfico de memoria comienza con una raíz, que puede ser el objeto del explorador o el `window` objeto de un Node.js `Global` módulo.  No se controla cómo se recopila el objeto raíz.  
 
 :::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="No puede controlar cómo se recopila el objeto raíz." lightbox="../media/memory-problems-dontcontrol.msft.png":::
    No puede controlar cómo se recopila el objeto raíz.  

@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 75063b23f23c25ff4fe2e7f6e044a2de9a7b1ccd
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 818b93c1c07a93baa8972a530871d20446fd687f
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398227"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519446"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -78,13 +78,14 @@ Vaya a [Registrar actividad de red][DevtoolsNetworkLogActivity].
 
 ### <a name="browse-by-directory"></a>Examinar por directorio  
 
-Para ver los recursos de una página organizada por directorio:  
+Para ver los recursos de una página web organizada por directorio:  
 
-1.  Elija la **herramienta Orígenes** para abrir el panel **Orígenes.**  
-1.  Elija **el** panel Página para mostrar los recursos de la página.  Se **abre el** panel Página.  
+1.  Abra DevTools.
+1.  Elija la **herramienta Orígenes** y, a continuación, en el **panel** Navegador de la parte superior izquierda, elija la **pestaña** Página.
+1.  Elija el **botón Más opciones** (...) a la derecha de la pestaña **Página** y, a continuación, elija Agrupar **por carpeta**.
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="El panel Página" lightbox="../media/resources-sources-page-empty.msft.png":::
-       Panel **Página**  
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="La pestaña Página del panel Navegador de la herramienta Orígenes" lightbox="../media/resources-sources-page-empty.msft.png":::
+       La **pestaña Página** del panel **Navegador** de la herramienta **Orígenes**  
     :::image-end:::  
     
     Este es un desglose de los elementos no obvios de la figura anterior.  
@@ -105,19 +106,20 @@ Para ver los recursos de una página organizada por directorio:
     
 ### <a name="browse-by-filename"></a>Examinar por nombre de archivo  
 
-De forma predeterminada, el panel **Página** agrupa los recursos por directorio.  Para deshabilitar esta agrupación y ver los recursos de cada dominio como una lista plana:  
+De forma predeterminada, la pestaña **Página** agrupa los recursos por directorio.  Para mostrar los recursos de cada dominio como una lista plana, en lugar de agruparlos por directorio:
 
-1.  Abra **el** panel Página.  Vaya a [Examinar por directorio](#browse-by-directory).  
-1.  Elija **Más opciones y** `...` **deshabilite Grupo por carpeta**.  
+1.  Vaya a la **herramienta Orígenes.**  
+1.  En el **panel** Navegador (a la izquierda), elija la **pestaña** Página.  
+1.  Elija **Más opciones y,** `...` a continuación, desactive la marca de verificación junto **a Grupo por carpeta**.  
     
     :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="La opción Agrupar por carpeta" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        La **opción Agrupar por** carpeta  
     :::image-end:::  
     
     Los recursos se organizan por tipo de archivo.  Dentro de cada tipo de archivo, los recursos se organizan alfabéticamente.  
-    
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="El panel Página después de deshabilitar Grupo por carpeta" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
-       El panel **Página** después de deshabilitar **Grupo por carpeta**  
+
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="La pestaña Página después de borrar la marca de verificación Grupo por carpeta" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       La **pestaña Página** después de borrar la marca de verificación Grupo **por** carpeta  
     :::image-end:::  
     
 ### <a name="browse-by-file-type"></a>Examinar por tipo de archivo  

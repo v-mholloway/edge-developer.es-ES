@@ -1,18 +1,18 @@
 ---
 description: Obtenga información sobre cómo guardar los cambios realizados en DevTools en el disco.
-title: Editar archivos con áreas de trabajo
+title: Editar archivos con Áreas de trabajo
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 17f9ced15dbacd62c9ffe40e4af889925a8155fb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: f00e2e42f73f7d03c858deaf020db683391ff1f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399249"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519425"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,10 +28,9 @@ ms.locfileid: "11399249"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="edit-files-with-workspaces"></a>Editar archivos con áreas de trabajo  
+# <a name="edit-files-with-workspaces"></a>Editar archivos con Áreas de trabajo  
 
-> [!NOTE]
-> El objetivo de este tutorial es proporcionar prácticas para configurar y usar áreas de trabajo, de modo que pueda usar áreas de trabajo en sus propios proyectos.  Puede guardar los cambios en el código fuente, en el equipo local, que realizó en DevTools después de habilitar Workspaces.  
+Este tutorial proporciona prácticas para configurar y usar un área de trabajo.  Después de agregar archivos a un área de trabajo, los cambios realizados en el código fuente dentro de DevTools se guardan en el equipo local y se conservan después de actualizar la página web.  
 
 > [!IMPORTANT]
 > **Requisitos previos:** antes de comenzar este tutorial, debe saber cómo realizar las siguientes acciones.  
@@ -40,7 +39,7 @@ ms.locfileid: "11399249"
 > *   [Usar DevTools para realizar cambios básicos en CSS][DevToolsCssIndex]  
 > *   [Ejecutar un servidor web HTTP local][MDNSimpleLocalHTTPServer]  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 Las áreas de trabajo permiten guardar un cambio que realice en Devtools en una copia local del mismo archivo en el equipo.  Para este tutorial, debe tener la siguiente configuración en el equipo.  
 
@@ -54,7 +53,7 @@ Con Workspaces habilitado, los cambios CSS que realices en DevTools se guardan e
 
 Si usa un marco moderno, probablemente transforme el código fuente de un formato fácil de mantener en un formato optimizado para ejecutarse lo más rápido posible.  
 
-Las áreas de trabajo normalmente pueden asignar el código optimizado al código fuente original con la ayuda de [mapas de origen.][TreehouseBlogSourceMaps]  Pero hay mucha variación entre marcos sobre cómo cada uno usa mapas de origen.  Devtools simplemente admite todas las variaciones.  
+Las áreas de trabajo normalmente pueden asignar el código optimizado al código fuente original con la ayuda de [mapas de origen.][TreehouseBlogSourceMaps]  Pero hay mucha variación entre marcos sobre cómo cada marco usa mapas de origen.  Devtools no admite todas las variaciones.  
 
 Se sabe que las áreas de trabajo no funcionan con el siguiente marco.  
 
@@ -123,20 +122,20 @@ Complete las siguientes acciones para obtener experiencia práctica con Workspac
        Panel **consola**  
     :::image-end:::  
     
-1.  Elija la **herramienta Orígenes.**  
-1.  Elija el **panel Sistema de** archivos.  
+1.  Vaya a la **herramienta Orígenes.**  
+1.  En el **panel Navegador** (a la izquierda), elija la pestaña **Sistema de** archivos.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Panel Sistema de archivos" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       Panel **Sistema de archivos**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Ficha Sistema de archivos" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       Ficha **Sistema de** archivos  
     :::image-end:::  
     
 1.  Elija **Agregar carpeta al área de trabajo**.  
-1.  Escribe `~/Desktop/app`.  
+1.  Escriba `~/Desktop/app`.  
 1.  Elija **Permitir** para conceder permiso a DevTools para leer y escribir en el directorio.  
-    En el panel **Sistema de** archivos, ahora hay un punto verde junto a , `index.html` y `script.js` `styles.css` .  Estos puntos verdes significan que DevTools ha establecido una asignación entre los recursos de red de la página y los archivos de `~/Desktop/app` .  
+    En la **pestaña Sistema de** archivos, ahora aparece un punto verde junto a , y `index.html` `script.js` `styles.css` .  Un punto verde indica que DevTools ha establecido una asignación entre un recurso de red de la página y el archivo en `~/Desktop/app` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="El panel Sistema de archivos muestra ahora una asignación entre los archivos locales y los de red" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       El **panel Sistema de** archivos muestra ahora una asignación entre los archivos locales y los de red  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="La pestaña Sistema de archivos ahora indica una asignación entre los archivos locales y los de red" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       La **pestaña Sistema de** archivos ahora indica una asignación entre los archivos locales y los de red  
     :::image-end:::  
     
 ## <a name="step-2-save-a-css-change-to-disk"></a>Paso 2: Guardar un cambio css en disco  
@@ -199,33 +198,35 @@ El árbol DOM no es html.
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### <a name="change-html-from-the-sources-panel"></a>Cambiar HTML desde el panel Orígenes  
+### <a name="change-html-from-the-sources-tool"></a>Cambiar HTML desde la herramienta Orígenes  
 
-Si desea guardar un cambio en el html de la página, puede hacerlo con **el** panel Orígenes.  
+Si desea guardar un cambio en el HTML de la página web, use la **herramienta** Orígenes.  
 
-1.  Elija la **herramienta Orígenes.**  
-1.  Elija **el** panel Página.  
+1.  Vaya a la **herramienta Orígenes.**  
+1.  En el **panel** Navegador (a la izquierda), elija la **pestaña** Página.  
 1.  Elija **(índice)**.  Se abre el CÓDIGO HTML de la página.  
 1.  Reemplace `<h1>Workspaces Demo</h1>` por `<h1>I ❤️  Cake</h1>` .  Revise la siguiente figura.  
 1.  Seleccione `Control` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar el cambio.  
-1.  Actualiza la página.  El `<h1>` elemento sigue mostrando el texto nuevo.  
+1.  Actualiza la página.  El `<h1>` elemento sigue mostrando el texto nuevo después de actualizar la página.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Cambiar HTML desde el panel Orígenes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Cambiar HTML desde el panel **Orígenes**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Cambiar HTML desde la herramienta Orígenes" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Cambiar HTML desde la **herramienta Orígenes**  
     :::image-end:::  
     
 1.  Abra `~/Desktop/app/index.html` .  El `<h1>` elemento contiene el texto nuevo.  
     
 ## <a name="step-4-save-a-javascript-change-to-disk"></a>Paso 4: Guardar un cambio de JavaScript en disco  
 
-El **** panel Orígenes también es el lugar para realizar cambios en JavaScript.  Pero a veces es necesario tener acceso a otros paneles, como la **herramienta Elementos** o el **panel** consola, mientras realiza cambios en el sitio.  Hay una forma de abrir el panel **Orígenes** junto con otros paneles.  
+El lugar principal para usar el editor de código de DevTools es la **herramienta Orígenes.**  Pero a veces es necesario tener acceso a otras herramientas, como la **herramienta Elementos** o el panel **Consola,** mientras se editan archivos.  La **herramienta Origen rápido** le proporciona solo el editor de la herramienta **Orígenes,** mientras que cualquier herramienta está abierta.  
 
-1.  Elija la **herramienta** Elementos.  
+Para abrir el editor de código DevTools junto con otras herramientas, haga lo siguiente:  
+
+1.  Vaya a la **herramienta** Elementos.  
 1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  Se **abre el menú** comando.  
-1.  Escriba `QS` y, a continuación, **elija Mostrar origen rápido**.  En la parte inferior de la ventana DevTools ahora hay un panel **Origen** rápido.  El panel muestra el contenido de , que es el último archivo `index.html` que editó en el panel **Orígenes.**  El **panel Origen rápido** le proporciona el editor desde el panel **Orígenes,** para que pueda editar archivos mientras tiene otros paneles abiertos.  
+1.  Escriba `Quick Source` y, a continuación, **elija Mostrar origen rápido**.  En la parte inferior de la ventana DevTools, aparece la herramienta **Origen** rápido, que muestra el contenido de , que es el último archivo que editó `index.html` en la **herramienta** Orígenes.    
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abra el panel Origen rápido mediante el menú Comando" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Abra el **panel Origen rápido** mediante el menú **Comando**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Abra la herramienta Origen rápido mediante el menú Comando" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Abra la **herramienta Origen rápido** mediante el menú **Comando**  
     :::image-end:::  
     
 1.  Seleccione `Control` + `P` \(Windows, Linux\) o `Command` + `P` \(macOS\) para abrir el **cuadro de diálogo Abrir** archivo.  Revise la siguiente figura.  
@@ -238,7 +239,7 @@ El **** panel Orígenes también es el lugar para realizar cambios en JavaScript
     > [!NOTE]
     > El `Save Changes To Disk With Workspaces` vínculo de la demostración tiene un estilo regular.  
     
-1.  Agregue el siguiente código a la parte inferior de **script.js** el panel **Origen** rápido.  
+1.  Agregue el siguiente código a la parte inferior de **script.js** mediante la **herramienta Origen** rápido.  
     
     ```javascript
     console.log('greetings from script.js');

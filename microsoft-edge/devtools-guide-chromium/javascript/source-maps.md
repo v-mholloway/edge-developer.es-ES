@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: debea327be41ab8aa2da19aa8cc128a1897e51e5
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c04d1ec02b188cc7ec8ab2598b395dbeb4431c46
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398395"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519418"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -43,7 +43,7 @@ Mantenga el código del lado cliente legible y depurable incluso después de com
 
 ## <a name="get-started-with-preprocessors"></a>Introducción a los preprocesadores  
 
-En este artículo se explica cómo interactuar con los mapas de origen de JavaScript en el Panel de orígenes de DevTools.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
+En este artículo se explica cómo interactuar con los mapas de origen de JavaScript en la herramienta Orígenes de DevTools.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
@@ -61,7 +61,7 @@ Los siguientes tipos de preprocesadores se usan comúnmente en combinación con 
 *   Compiladores \([Compilador de cierre][GitHubGoogleClosureCompiler], [TypeScript][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [Dardo][DartMain]\)  
 *   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)  
     
-## <a name="source-maps-in-devtools-sources-panel"></a>Mapas de origen en el panel Orígenes de DevTools  
+## <a name="source-maps-in-devtools-sources-tool"></a>Herramienta Mapas de origen en orígenes de DevTools  
 
 Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.  A continuación, use los originales para establecer puntos de interrupción y pasar por el código.  Mientras tanto, Microsoft Edge está ejecutando el código minificado.  La ejecución del código le ofrece la ilusión de ejecutar un sitio de desarrollo en producción.  
 
@@ -101,10 +101,10 @@ Vaya a la página siguiente.
 
 Complete las siguientes acciones.  
 
-1.  Abra DevTools y vaya al panel **Orígenes.**  
+1.  Abra DevTools y vaya a la **herramienta Orígenes.**  
 1.  Escriba un nombre de archivo en el **campo Nombre del código:** entrada.  
 1.  Elija el **botón compilar.**  
-1.  Aparece una alerta con la suma evaluada del origen CoffeeScript.  
+1.  Aparece una alerta que muestra la suma evaluada del origen de CoffeeScript.  
     
 Si expande el sub panel **Orígenes,** ahora mostrará un nuevo archivo con el nombre de archivo personalizado que escribió anteriormente.  Si hace doble clic para ver este archivo, contiene el JavaScript compilado para el origen original.  Sin embargo, en la última línea hay un `// @sourceURL` comentario que indica el archivo de origen original.  Esto puede ayudarle con la depuración mientras trabaja con abstracciones de idioma.  
 

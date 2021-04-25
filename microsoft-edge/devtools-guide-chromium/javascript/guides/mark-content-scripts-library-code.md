@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ffc27cdd04ce28df888507fb2e1dc460d5bb4f21
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c1571ab909aac09e4593413e96f7d4b7723c7759
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398955"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519348"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,11 +30,10 @@ ms.locfileid: "11398955"
 
 # <a name="mark-content-scripts-as-library-code"></a>Marcar scripts de contenido como código de biblioteca  
 
-Al usar el panel **Orígenes** de Microsoft Edge DevTools para pasar por el [código,][DevToolsJavascriptStepThroughCode]a veces se pausa en el código que no reconoce.  Probablemente haya pausado el código para una de las extensiones de Microsoft Edge que instaló.  Siga estos pasos para no pausar el código de extensión.  
+Cuando usa la herramienta **Orígenes** para pasar por [el código,][DevToolsJavascriptStepThroughCode]a veces se pausa en el código que no reconoce.  Probablemente haya pausado el código para una de las extensiones de Microsoft Edge que instaló.  Para no pausar el código de extensión, realice las siguientes acciones.  
 
-1.  Abra DevTools, elija **Personalizar y controlar DevTools** \( `...` \) > **Configuración**.  También puede abrir **Configuración** seleccionando `F1` .  
-
-1.  Elija el panel **Código de biblioteca** que abre la sección Código de **biblioteca** marco de **Configuración**.  
+1.  En DevTools, en la parte superior derecha, elija el icono de engranaje (**Configuración**).  Aparece la página **Settings**.  
+1.  Debajo **de Configuración,** elija **Omitir lista**.  Aparece **la sección Código de biblioteca** de marcos de **Configuración.**  
 1.  Active la casilla **Marcar scripts de contenido como código de biblioteca.**  
     
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Habilitar la casilla Marcar scripts de contenido como código de biblioteca" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::

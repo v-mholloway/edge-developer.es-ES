@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c622d529a8008248d57a6b1b0656636a982054c1
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439594"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519411"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -62,7 +62,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 | Actualización dura | `Control`+`F5` o `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Busque texto en el panel actual.  No se admite en las **herramientas auditorías,** **aplicaciones**y **seguridad** | `Control`+`F` | `Command`+`F` |  
 | Abre la **pestaña Búsqueda** en [el][DevtoolsCustomizeIndexDrawer]cajón, que le permite buscar texto en todos los recursos cargados | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Abrir un archivo en el panel **Orígenes** | `Control`+`O` o `Control`+`P` | `Command`+`O` o `Command`+`P` |  
+| Abrir un archivo en la **herramienta Orígenes** | `Control`+`O` o `Control`+`P` | `Command`+`O` o `Command`+`P` |  
 | Acercar | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Alejar | `Control`+`-` | `Command`+`-` |  
 | Restaurar el nivel de zoom predeterminado | `Control`+`0` | `Command`+`0` |  

@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 75c9df5d86ce994cebfda882a0adfa2664b6ec30
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: e3ddadcf37303a476f3a656696b00f121f079b69
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439447"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519614"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -359,13 +359,13 @@ La primera tarea, a continuación, es buscar código que no es necesario ejecuta
        El informe de cobertura  
     :::image-end:::  
     
-1.  Elija la **jquery.js** fila.  DevTools abre el archivo en el panel Orígenes.  Se ejecutó una línea de código si tiene una barra azul al lado.  Una barra roja significa que no se ha ejecutado y, definitivamente, no es necesario en la carga de página.  
+1.  Elija la `jquery.js` fila.  DevTools abre el archivo en la **herramienta Orígenes.**  Si se ejecutó una línea de código, aparece una barra azul junto a ella.  Una barra roja significa que la línea de código no se ha ejecutado y, definitivamente, no es necesaria en la carga de la página web.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Visualización del archivo jQuery en el panel Orígenes" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
-       Visualización del archivo jQuery en el panel **Orígenes**  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Visualización del archivo jQuery en la herramienta Orígenes" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+       Visualización del archivo jQuery en la **herramienta Orígenes**  
     :::image-end:::  
     
-1.  Desplácese un poco por el código jQuery.  Algunas de las líneas que se "ejecutan" son solo comentarios.  Ejecutar este código a través de un rectificador que elimina los comentarios es otra forma de reducir el tamaño de este archivo.  
+1.  Desplácese por el código jQuery.  Algunas de las líneas que se ejecutan son solo comentarios.  Para quitar comentarios y reducir el tamaño del archivo, ejecute el código a través de una aplicación o un script de compresión.  
 
 En resumen, cuando trabaja con su **** propio código, la herramienta Cobertura le ayuda a analizar el código, línea por línea y solo enviar el código necesario para la carga de página.  
 

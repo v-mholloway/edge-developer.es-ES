@@ -1,161 +1,184 @@
 ---
-title: Introducción a la depuración remota dispositivos con Windows 10
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/11/2020
+description: Introducción a la depuración remota de dispositivos Windows 10
+title: Introducción a la depuración remota de dispositivos Windows 10
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools, remoto, depuración, Windows 10, Windows, portal de dispositivos
-ms.openlocfilehash: b944e1f16d4c26f4db83e3eb131f1da8ea938c97
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools, remoto, depuración, windows 10, windows, portal de dispositivos
+ms.openlocfilehash: e3f60f07ba96aaed8cd9d7348eee1b0a846faecf
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10573897"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519285"
 ---
-# Introducción a la depuración remota dispositivos con Windows 10  
+# <a name="get-started-with-remote-debugging-windows-10-devices"></a>Introducción a la depuración remota de dispositivos Windows 10  
 
-Depure contenido en vivo de forma remota en un dispositivo con Windows 10 desde el equipo con Windows o macOS.  Este tutorial le enseña a:  
+Depuración remota de contenido en directo en un dispositivo Windows 10 desde tu equipo Windows o macOS.  En este tutorial se le enseñarán las siguientes tareas.  
 
-*   Configure el dispositivo Windows 10 para la depuración remota y conéctese a él desde el equipo de desarrollo.  
-*   Inspeccione y depure contenido en vivo en el dispositivo Windows 10 desde el equipo de desarrollo.  
-*   Contenido de screencast de su dispositivo Windows 10 en una instancia de DevTools en el equipo de desarrollo.  
+*   Configura el dispositivo Windows 10 para la depuración remota y conéctate a él desde el equipo de desarrollo.  
+*   Inspecciona y depura contenido en directo en tu dispositivo Windows 10 desde el equipo de desarrollo.  
+*   Difusión en pantalla del contenido del dispositivo Windows 10 en una instancia de DevTools en el equipo de desarrollo.  
+    
+## <a name="step-1-set-up-the-host-debuggee-machine"></a>Paso 1: Configurar el host (máquina de depuración)  
 
-## Paso 1: configurar el host (equipo de depuración)  
+La máquina host o debuggee es el dispositivo Windows 10 que quieres depurar.  Puede ser un dispositivo remoto al que es difícil acceder físicamente o puede que no tenga periféricos de teclado y mouse, lo que dificulta la interacción con microsoft Edge DevTools en ese dispositivo.  Para configurar el equipo host \(debuggee\), debe completar las siguientes acciones.  
 
-El host o la máquina depurada es el dispositivo de Windows 10 que desea depurar.  Puede ser un dispositivo remoto que sea difícil de acceder físicamente o puede que no tenga periféricos de teclado y ratón, lo que dificulta la interacción con el DevTools de Microsoft Edge en ese dispositivo.  Para configurar el equipo de host (depurado), tendrá que:  
+*   Instalar y configurar [Microsoft Edge (Chromium)][MicrosoftEdgeMain]  
+*   Instalar las [herramientas remotas para Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] desde [Microsoft Store][MicrosoftStoreAppsWindows]  
+*   Activar [el modo de desarrollador][WindowsAppsGetStartedEnableYourDeviceForDevelopment] y habilitar Device [Portal][WindowsUwpDebugTestPerfDevicePortal]  
+    
+### <a name="install-and-configure-microsoft-edge-chromium"></a>Instalar y configurar Microsoft Edge (Chromium)  
 
-*   Instalar y configurar [Microsoft Edge (cromo)](https://www.microsoft.com/edge)  
-*   Instalar [herramientas remotas para Microsoft Edge (beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) desde [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
-*   Activar el [modo de desarrollador](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) y habilitar el portal de [dispositivos](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)  
+Si aún no lo ha hecho, instale Microsoft Edge \(Chromium\) desde [esta página][MicrosoftEdgeMain].  Si usa una versión preinstalada de Microsoft Edge en el equipo host \(debuggee\), compruebe que tiene Microsoft Edge \(Chromium\) y no Microsoft Edge \(EdgeHTML\).  Una forma rápida de comprobar es cargar en el explorador y confirmar que el número de versión `edge://settings/help` es 75 o superior.  
 
-### Instalar y configurar Microsoft Edge (cromo)  
+Ahora vaya a `edge://flags` en Microsoft Edge \(Chromium\).  En **Marcas de búsqueda**, escriba Habilitar la **depuración remota a través de Windows Device Portal**.  Establece esa marca en **Habilitado**.  A continuación, elija **el botón Reiniciar** para reiniciar Microsoft Edge \(Chromium\).  
 
-Si todavía no lo ha hecho, instale Microsoft Edge (cromo) en [esta página](https://www.microsoft.com/edge).  Si está usando una versión preinstalada de Microsoft Edge en el equipo de host (depurado), compruebe que tiene Microsoft Edge (cromo) y no Microsoft Edge (EdgeHTML).  Una forma rápida de comprobar es cargar `edge://settings/help` en el explorador y confirmar que el número de versión es 75 o superior.  
+:::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="Establecer la marca Habilitar depuración remota a través de Windows Device Portal en Habilitado" lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
+   Establecer la **marca Habilitar depuración remota a través de Windows Device Portal** en **Habilitado**  
+:::image-end:::  
 
-Ahora, vaya a `edge://flags` en Microsoft Edge (cromo).  En **marcas de búsqueda**, escriba **Habilitar depuración remota a través de Windows Device portal**.  Establezca el marcador en **habilitado**.  Después, haga clic en el botón **reiniciar** para reiniciar Microsoft Edge (cromo).  
+### <a name="install-the-remote-tools-for-microsoft-edge-beta"></a>Instalar las herramientas remotas para Microsoft Edge (Beta)  
 
-> ##### Figura 1  
-> Configuración de la opción **Habilitar depuración remota mediante Windows Device portal** en **habilitado**  
-> ![Configuración de la opción Habilitar depuración remota mediante Windows Device portal en habilitado](./windows-media/edge-flags-on-host.png)  
-
-### Instalar herramientas remotas para Microsoft Edge (beta)  
-
-Instale las [herramientas remotas de Microsoft Edge (beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) en [Microsoft Store](https://www.microsoft.com/store/apps/windows).  
-
-> [!NOTE]
-> El botón **obtener** de las [herramientas remotas de Microsoft Edge (beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) puede estar deshabilitado si estás en Windows 10 versión 1809 o versiones anteriores.  Para configurar el equipo de host (depurado), debe estar ejecutando Windows 10 versión 1903 o posterior.  Actualiza el equipo de host (depurado) para adquirir las [herramientas remotas de Microsoft Edge (beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).  
-
-> ##### Figura 2  
-> [Herramientas remotas para Microsoft Edge (beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) en [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
-> ![Herramientas remotas para Microsoft Edge (beta) en Microsoft Store](./windows-media/remote-tools-in-store.png)  
-
-Inicia las [herramientas remotas de Microsoft Edge (beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) y, si se le solicita, acepta el cuadro de diálogo de permisos en la aplicación. Ahora puede cerrar las [herramientas remotas de Microsoft Edge (beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) y no es necesario que esté abierta para futuras sesiones de depuración remota.
-
-### Activar el modo de desarrollador y habilitar el portal de dispositivos  
-
-Si estás en una red WiFi, asegúrate de que la red esté marcada como **dominio** o **privada**.  Para comprobarlo, abra la aplicación de **seguridad de Windows** , haga clic en **firewall & protección de red** y compruebe si su red aparece como red de **dominio** o como red **privada** .  
-
-Si se muestra como **público**, vaya a **configuración**  >  **red & Internet**  >  **Wi-Fi**, haga clic en su red y cambie el botón **Perfil de red** a **privado**.  
-
-Ahora, abra la aplicación **configuración** .  En **buscar una configuración**, escriba la **configuración de desarrollador** y selecciónela.  Activar o desactivar el **modo para programadores**.  Ahora puede habilitar el **portal de dispositivos** configurando **Activar diagnósticos remotos a través de conexiones de red de área local** en **activado**.  Después, puede activar de forma opcional la **autenticación** para que el dispositivo cliente (depurador) deba proporcionar las credenciales correctas para conectarse a este dispositivo.  
+Instale las [herramientas remotas para Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] desde [Microsoft Store][MicrosoftStoreAppsWindows].  
 
 > [!NOTE]
-> Si **activa los diagnósticos remotos a través de conexiones de red de área local.** se habilitó, debe deshabilitarla y habilitarla de nuevo para que **Device portal** funcione con [herramientas remotas para Microsoft Edge (beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT). Si no ve una sección **para desarrolladores** en **configuración**, es posible que el **portal de dispositivos** ya esté habilitado para intentar reiniciar el dispositivo Windows 10.
+> El **botón** Obtener de herramientas remotas para [Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] puede deshabilitarse si estás en Windows 10 versión 1809 o versiones anteriores.  Para configurar el equipo host \(debuggee\), debe ejecutar Windows 10 versión 1903 o posterior.  Actualice el equipo host \(debuggee\) para adquirir [las Herramientas remotas para Microsoft Edge (Beta).][MicrosoftStoreApps9p6cmfv44zlt]  
 
-> ##### Imagen 3  
-> La aplicación **configuración** con el **modo de desarrollador** y el portal de **dispositivos** configurado  
-> ![La aplicación configuración con el modo de desarrollador y el portal de dispositivos configurado](./windows-media/host-settings.png)  
+:::image type="complex" source="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png" alt-text="Herramientas remotas para Microsoft Edge \(Beta\) en Microsoft Store" lightbox="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png":::
+   Herramientas [remotas para Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] en [Microsoft Store][MicrosoftStoreAppsWindows]  
+:::image-end:::  
 
-Anote la dirección IP de la máquina y el puerto de conexión aparecen en **conectar usando:**.  La dirección IP de la imagen siguiente es `192.168.86.78` y el puerto de conexión es `50080` .  
+Inicie las [Herramientas remotas para Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] y, si se le solicita, acepte el cuadro de diálogo de permisos de la aplicación.  Ahora puede cerrar las Herramientas remotas para [Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] y no es necesario que se abra para futuras sesiones de depuración remota.
 
-> ##### Imagen 4  
-> Anote la dirección IP y el puerto de conexión en la **configuración**  
-> ![Anote la dirección IP y el puerto de conexión en la configuración](./windows-media/host-settings-ip-address.png)  
+### <a name="activate-developer-mode-and-enable-device-portal"></a>Activar el modo de desarrollador y habilitar Device Portal  
 
-Escribirás esta información en el dispositivo cliente (depurador) de la [siguiente sección](#step-2-set-up-the-client-debugger-machine).  Abra las pestañas de Microsoft Edge y las [aplicaciones web progresivas (PWAs)](../progressive-web-apps.md) en el equipo de host (depurado) que desea depurar desde el equipo del cliente (depurador).  
+Si está en una red WiFi, asegúrese de que la red esté marcada como **Dominio** o **Privado**.  Puedes comprobar el estado abriendo la aplicación Seguridad de **Windows,** seleccionando **Firewall & protección** de **** red y comprobando si la red aparece como una red de dominio o **una red** privada.  
 
-## Paso 2: configurar el cliente (equipo de depuración)  
+Si aparece como **Público**, vaya a Configuración red ****  >  **& Internet**  >  **Wi-Fi**, **** elija en **** la red y cambie el botón Perfil de red a Privado .  
 
-El cliente o el equipo depurador es el dispositivo desde el que desea depurar.  Este dispositivo puede ser su equipo de desarrollo diario o puede ser su equipo PC o MacBook al trabajar desde casa.  
-
-Para configurar el equipo cliente (depurador), instala Microsoft Edge (cromo) desde [esta página](https://www.microsoft.com/edge) si aún no lo has hecho.  Si está usando una versión preinstalada de Microsoft Edge en el equipo de host (depurado), compruebe que tiene Microsoft Edge (cromo) y no Microsoft Edge (EdgeHTML).  Una forma rápida de comprobar es cargar `edge://settings/help` en el explorador y confirmar que el número de versión es 75 o superior.  
-
-Ahora, vaya a `edge://flags` en Microsoft Edge (cromo).  En **marcas de búsqueda**, escriba **Habilitar la depuración de dispositivos remotos de Windows en Edge://Inspect**.  Establezca el marcador en **habilitado**.  Después, haga clic en el botón **reiniciar** para reiniciar Microsoft Edge (cromo).  
-
-> ##### Imagen 5  
-> Configurar la **depuración de dispositivos de Windows remotos mediante** la marca Edge://Inspect en **habilitado**  
-> ![Configurar la depuración de dispositivos de Windows remotos mediante la marca edge://inspect en habilitado](./windows-media/edge-flags-on-client.png)  
-
-Ahora, vaya a la `edge://inspect` página en Microsoft Edge (cromo).  De forma predeterminada, debe estar en la sección **dispositivos** .  En **conectar con un dispositivo Windows remoto**, escriba la dirección IP y el puerto de conexión del equipo de host (de depuración) en el cuadro de texto siguiendo este patrón: http:// `IP address` : `connection port` .  Ahora, haga clic en **conectar con el dispositivo**.  
-
-> ##### Imagen 6  
-> La `edge://inspect` página en el cliente  
-> ![La página edge://inspect en el cliente](./windows-media/edge-inspect.png)  
-
-Si configura la autenticación para el equipo de host (depurado), se le pedirá que escriba el **nombre de usuario** y la **contraseña** para que el equipo cliente (depurador) se conecte correctamente.  
-
-### Usar https en lugar de http  
-
-Si desea conectar con el equipo de host (depurado) mediante en `https` lugar de `http` , debe Navgiate `http://IP address:50080/config/rootcertificate` en Microsoft Edge en el equipo del cliente (depurador). Se descargará automáticamente un certificado de seguridad denominado `rootcertificate.cer` .
-
-Haga clic en activado `rootcertificate.cer` . Se abrirá la [herramienta Administrador de certificados de Windows](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool).
-
-Haga clic en **instalar certificado...**, asegúrese de que el **usuario actual** está seleccionado y haga clic en **siguiente**. Ahora, seleccione **colocar todos los certificados en el siguiente almacén** y haga clic en **examinar...**. Seleccione el almacén de **entidades emisoras de certificados raíz de confianza** y haga clic en **Aceptar**. Haz clic en **Siguiente** y, después, en **Finalizar**. Si se le solicita, confirme que desea instalar este certificado en el almacén de **entidades emisoras de certificados raíz de confianza** .
-
-Ahora, al conectarse al equipo de host (depurado) desde el equipo cliente (depurador) con la `edge://inspect` página, debe usar un `connection port` valor diferente.  De forma predeterminada, para las ventanas de escritorio, el portal `50080` de dispositivos usará como el `connection port` para `http` .  `https`En el caso de, el portal de dispositivos `50043` se usa para seguir este patrón: https:// `IP address` : `50043` en la `edge://inspect` página.  [Más información sobre los puertos predeterminados usados por Device portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal#setup).  
+Ahora, abre la **aplicación Configuración.**  En **Buscar una configuración,** escriba `Developer settings` y elija.  Alternar en **el modo de desarrollador**.  Ahora puedes activar el **Portal de** dispositivos estableciendo Activar diagnóstico remoto a través de conexiones de red de **área local** en **On**.  A continuación, puede activar opcionalmente **la** autenticación para que el dispositivo \(debugger\) del cliente proporcione las credenciales correctas para conectarse a este dispositivo.  
 
 > [!NOTE]
-> El puerto predeterminado para `http` is `50080` y el puerto predeterminado para `https` es, `50043` pero esto no siempre es el caso de que el portal de dispositivos en los puertos de notificaciones de escritorio en el intervalo efímero (>50.000) Evite las colisiones con las notificaciones de puertos existentes en el dispositivo.  Para obtener más información, consulta la sección [configuración de puertos](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) de Device portal en el escritorio de Windows.  
+> Si **activa el diagnóstico remoto a través de conexiones de red de área local.** anteriormente estaba activado, debes desactivarlo y volver a activarlo para **que Device Portal** funcione con las Herramientas remotas para Microsoft Edge [(Beta).][MicrosoftStoreApps9p6cmfv44zlt]  Si una **sección Para desarrolladores** no se muestra en **Configuración,** es posible que **El Portal** de dispositivos ya esté activado, por lo que intenta reiniciar el dispositivo Windows 10 en su lugar.
 
-## Paso 3: depurar el contenido en el host desde el cliente  
+:::image type="complex" source="../media/remote-debugging-windows-media-host-settings.msft.png" alt-text="La aplicación Configuración con el modo de desarrollador y el Portal de dispositivos configurados" lightbox="../media/remote-debugging-windows-media-host-settings.msft.png":::
+   La **aplicación Configuración** con el modo de **desarrollador** y el Portal **de dispositivos configurados**  
+:::image-end:::  
 
-Si el equipo cliente (depurador) se conecta correctamente al equipo de host (depurado), la `edge://inspect` página del cliente mostrará ahora una lista de las pestañas de Microsoft Edge y cualquier PWAs abierta en el host.  
+Tenga en cuenta la dirección IP de la máquina y el puerto de conexión que se muestran en **Conectar con:**.  La dirección IP de la imagen siguiente es `192.168.86.78` y el puerto de conexión es `50080` .  
 
-> ##### Imagen 7  
-> La `edge://inspect` página del cliente muestra las pestañas de Microsoft Edge y PWAs en el host.  
-> ![La página edge://inspect en el cliente muestra las pestañas en Microsoft Edge y PWAs en el host.](./windows-media/edge-inspect-connected.png)  
+:::image type="complex" source="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png" alt-text="Tenga en cuenta la dirección IP y el puerto de conexión en configuración" lightbox="../media/remote-debugging-windows-media-host-settings-ip-address.msft.png":::
+   Tenga en cuenta la dirección IP y el puerto de conexión en **configuración**  
+:::image-end:::  
 
-Determine el contenido que desea depurar y haga clic en **inspeccionar**.  El DevTools de Microsoft Edge se abrirá en una nueva pestaña y mostrará el contenido del equipo de host (depurado) en el equipo cliente (depurador).  Ahora puede usar toda la potencia de Microsoft Edge DevTools en el cliente para el contenido que se ejecuta en el host.  Para obtener más información sobre cómo usar Microsoft Edge DevTools [aquí](../../devtools-guide-chromium.md).  
+Escribes la información en el dispositivo \(debugger\) del cliente en la [siguiente sección](#step-2-set-up-the-client-debugger-machine).  Abra pestañas en Microsoft Edge y Aplicaciones web progresivas [(PWA)][DevtoolsProgressiveWebApps] en el equipo host \(debuggee\) que desea depurar desde el equipo \(depurador\) del cliente.  
 
-> ##### Imagen 8  
-> [Microsoft Edge DevTools](../../devtools-guide-chromium.md) en el cliente depurar una pestaña en Microsoft Edge en el host  
-> ![Microsoft Edge DevTools en el cliente depurar una pestaña en Microsoft Edge en el host](./windows-media/devtools-client.png)  
+## <a name="step-2-set-up-the-client-debugger-machine"></a>Paso 2: Configurar el cliente (máquina depuradora)  
 
-### Inspeccionar elementos  
+El cliente o el equipo depurador es el dispositivo desde el que desea depurar.  Este dispositivo puede ser tu máquina de desarrollo diaria o puede ser tu PC o MacBook cuando trabajes desde casa.  
 
-Por ejemplo, intenta inspeccionar un elemento.  Vaya al panel **elementos** de la instancia de DevTools en el cliente y mantenga el mouse sobre un elemento para resaltarlo en el área de visualización del dispositivo host.  
+Para configurar la máquina \(debugger\) del cliente, instale Microsoft Edge \(Chromium\) desde [esta página][MicrosoftEdgeMain] si aún no lo ha hecho.  Si usa una versión preinstalada de Microsoft Edge en el equipo host \(debuggee\), compruebe que tiene Microsoft Edge \(Chromium\) y no Microsoft Edge \(EdgeHTML\).  Una forma rápida de comprobar es cargar en el explorador y confirmar que el número de versión `edge://settings/help` es 75 o superior.  
 
-También puede puntear en un elemento de la pantalla del dispositivo host para seleccionarlo en el panel **elementos** .  Haga clic en **Seleccionar elemento** en la instancia de DevTools en el cliente y, a continuación, puntee en el elemento de la pantalla del dispositivo host.  Ten en cuenta que el **elemento Select** se deshabilita después del primer toque, por lo que deberás volver a habilitarlo cada vez que quieras usar esta característica.  
+Ahora vaya a `edge://flags` en Microsoft Edge \(Chromium\).  En **Marcas de búsqueda**, escriba Habilitar la depuración remota de **dispositivos Windows en edge://inspect**.  Establece esa marca en **Habilitado**.  A continuación, elija **el botón Reiniciar** para reiniciar Microsoft Edge \(Chromium\).  
+
+:::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png" alt-text="Establecer la opción Habilitar la depuración remota de dispositivos Windows edge://inspect marca habilitada" lightbox="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png":::
+   Establecer la **opción Habilitar la depuración remota de dispositivos Windows edge://inspect** marca habilitada ****  
+:::image-end:::  
+
+Ahora vaya a la `edge://inspect` página en Microsoft Edge \(Chromium\).  De forma predeterminada, debería estar en la **sección Dispositivos.**  En **Conectarse a un**dispositivo Remoto de Windows, escriba la dirección IP y el puerto de conexión del equipo host \(debuggee\) en el cuadro de texto siguiendo este patrón: http:// : `IP address` `connection port` .  Ahora elija **Conectarse al dispositivo**.  
+
+:::image type="complex" source="../media/remote-debugging-windows-media-edge-inspect.msft.png" alt-text="La edge://inspect en el cliente" lightbox="../media/remote-debugging-windows-media-edge-inspect.msft.png":::
+   La `edge://inspect` página del cliente  
+:::image-end:::  
+
+Si configura la autenticación para el equipo host \(debuggee\), **** se **** le pedirá que escriba el nombre de usuario y la contraseña para que el equipo \(depurador\) del cliente se conecte correctamente.  
+
+### <a name="using-https-instead-of-http"></a>Usar https en lugar de http  
+
+Si desea conectarse al equipo host \(debuggee\) que usa en lugar de , debe navegar a en Microsoft Edge en la máquina `https` `http` `http://IP address:50080/config/rootcertificate` \(debugger\) del cliente.  Esto descarga automáticamente un certificado de seguridad denominado `rootcertificate.cer` .
+
+Elija `rootcertificate.cer` .  Se abre la [herramienta Administrador de certificados de Windows][DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool].
+
+Elija **Instalar certificado...**, asegúrese de que el usuario **actual** está activado y elija **Siguiente**.  Ahora elija **Colocar todos los certificados en el siguiente almacén** y elija **Examinar...**.  Elija el **almacén Entidades de certificación raíz de** confianza y elija **Aceptar**.  Elija **Siguiente** y, a continuación, **elija Finalizar**.  Si se le solicita, confirme que desea instalar este certificado en el almacén de entidades de certificación **raíz de** confianza.
+
+Ahora, al conectarse al equipo host \(debuggee\) desde el equipo cliente \(depurador\) mediante la página, debe usar `edge://inspect` un valor `connection port` diferente.  De forma predeterminada, para Windows de escritorio, Device Portal usa `50080` como `connection port` for `http` .  For `https` , el Portal de dispositivos usa así que siga este `50043` patrón: https:// : en la `IP address` `50043` `edge://inspect` página.  [Obtenga más información sobre los puertos predeterminados usados por Device Portal][WindowsUwpDebugTestPerfDevicePortalSetup].  
+
+> [!NOTE]
+> El puerto predeterminado para es y el puerto predeterminado es, pero no siempre es el caso de Device Portal en puertos de notificaciones de escritorio en el intervalo `http` `50080` `https` `50043` efímero \(\>50.000\) para evitar colisiones con las notificaciones de puerto existentes en el dispositivo.  Para obtener más información, vaya a la sección  [Configuración de][WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal] puerto para Device Portal en el escritorio de Windows.  
+
+## <a name="step-3-debug-content-on-the-host-from-the-client"></a>Paso 3: Depurar contenido en el host desde el cliente  
+
+Si el equipo cliente \(debugger\) se conecta correctamente al equipo host \(debuggee\), la página del cliente ahora muestra una lista de las pestañas de Microsoft Edge y cualquier PWA abierto en el `edge://inspect` host.  
+
+:::image type="complex" source="../media/remote-debugging-windows-media-edge-inspect-connected.msft.png" alt-text="La edge://inspect en el cliente muestra las pestañas de Microsoft Edge y PWAs en el host" lightbox="../media/remote-debugging-windows-media-edge-inspect-connected.msft.png":::
+   La `edge://inspect` página del cliente muestra las pestañas de Microsoft Edge y pwas en el host  
+:::image-end:::  
+
+Determine el contenido que desea depurar y elija **inspeccionar**.  Microsoft Edge DevTools se abre en una nueva pestaña y se proyecta el contenido desde el equipo host \(debuggee\) al equipo cliente \(depurador\).  Ahora puede usar toda la potencia de Microsoft Edge DevTools en el cliente para el contenido que se ejecuta en el host.  Obtenga más información sobre cómo usar Microsoft Edge DevTools [aquí][DevtoolsIndex].  
+
+:::image type="complex" source="../media/remote-debugging-windows-media-devtools-client.msft.png" alt-text="Microsoft Edge DevTools en el cliente depurando una pestaña en Microsoft Edge en el host" lightbox="../media/remote-debugging-windows-media-devtools-client.msft.png":::
+   Microsoft [Edge DevTools][DevtoolsIndex] en el cliente depurando una pestaña en Microsoft Edge en el host  
+:::image-end:::  
+
+### <a name="inspect-elements"></a>Inspeccionar elementos  
+
+Por ejemplo, intente inspeccionar un elemento.  Vaya a la **herramienta Elementos** de la instancia de DevTools en el cliente y mantenga el mouse sobre un elemento para resaltarlo en la ventanilla del dispositivo host.  
+
+También puedes pulsar un elemento en la pantalla del dispositivo host para elegirlo en la **herramienta** Elementos.  Elija **Seleccionar elemento** en la instancia de DevTools en el cliente y, a continuación, pulse el elemento en la pantalla del dispositivo host.  
+
+> [!NOTE]
+> **Select Element** está deshabilitado después del primer toque, por lo que debes volver a activarlo cada vez que quieras usar esta característica.  
 
 > [!IMPORTANT]
-> El panel de **escuchas de eventos** del panel **elementos** está en blanco en la versión 1903 de Windows 10.  Este es un problema conocido y corregiremos el panel de **detectores de eventos** en una actualización de mantenimiento a la versión 1903 de Windows 10.  
+> El **panel Escuchas de eventos** de la herramienta **Elementos** está en blanco en Windows 10 versión 1903.  Este es un problema conocido y el equipo planea corregir el panel **Escuchas** de eventos en una actualización de mantenimiento de Windows 10 versión 1903.  
 
-## Paso 4: screencasts la pantalla de host a su dispositivo cliente  
+## <a name="step-4-screencast-your-host-screen-to-your-client-device"></a>Paso 4: Difusión en pantalla de la pantalla host al dispositivo cliente  
 
-De forma predeterminada, la instancia de DevTools en el cliente activará el screencasts, lo que le permitirá ver el contenido en el dispositivo host en la instancia de DevTools en el dispositivo cliente.  Haga clic en **activar la screencast** para activar o desactivar esta característica.  
+De forma predeterminada, la instancia de DevTools en el cliente tiene la difusión de pantalla activada, lo que le permite ver el contenido en el dispositivo host en la instancia de DevTools en el dispositivo cliente.  Elija **Alternar difusión en** pantalla para desactivar o activar esta característica.  
 
-> ##### Imagen 9  
-> Botón de alternancia de la **screencast** en Microsoft Edge DevTools en el cliente  
-> ![Botón de alternancia de la screencast en Microsoft Edge DevTools en el cliente](./windows-media/toggle-screencast.png)  
+:::image type="complex" source="../media/remote-debugging-windows-media-toggle-screencast.msft.png" alt-text="Botón Alternar difusión en pantalla en Microsoft Edge DevTools en el cliente" lightbox="../media/remote-debugging-windows-media-toggle-screencast.msft.png":::
+   Botón **Alternar difusión** en pantalla en Microsoft Edge DevTools en el cliente  
+:::image-end:::  
 
-Puede interactuar con el screencast de varias maneras:  
-*   Los clics se traducen en pulsaciones, lo que desencadena eventos táctiles adecuados en el dispositivo.  
-*   Las pulsaciones de tecla de tu equipo se envían al dispositivo.  
-*   Para simular un gesto de reducir, espera `Shift` mientras arrastra.  
-*   Para desplazarse, use el panel táctil o la rueda del mouse, o Fling con el puntero del mouse.  
+Puedes interactuar con la difusión en pantalla de varias maneras:  
+*   Las opciones se traducen en pulsaciones, lo que dispara los eventos táctiles adecuados en el dispositivo.  
+*   Las pulsaciones de teclas del equipo se envían al dispositivo.  
+*   Para simular un gesto de pellizco, mantén `Shift` presionado mientras arrastras.  
+*   Para desplazarse, use el trackpad o la rueda del mouse o fling con el puntero del mouse.  
 
-Algunas notas en los screencasts:  
-*   Los screencasts solo muestran el contenido de la página.  Partes transparentes del screencast representan interfaces de dispositivo, como la barra de direcciones de Microsoft Edge, la barra de tareas de Windows 10 o el teclado de Windows 10.  
-*   Los screencasts afectan negativamente a las tarifas de fotogramas.  Deshabilite el screencasts y mida los desplazamientos o animaciones para obtener una imagen más precisa del rendimiento de la página.  
-*   Si la pantalla del dispositivo de hospedaje se bloquea, el contenido del screencast desaparece.  Desbloquee la pantalla del dispositivo host para reanudar automáticamente el screencast.  
+Algunas notas de las difusión en pantalla:  
+*   Los difusión en pantalla solo muestran el contenido de la página.  Las partes transparentes de la difusión en pantalla representan interfaces de dispositivo, como la barra de direcciones de Microsoft Edge, la barra de tareas de Windows 10 o el teclado de Windows 10.  
+*   Las difusión en pantalla afectan negativamente a las tasas de fotogramas.  Deshabilite la difusión por pantalla al medir desplazamientos o animaciones para obtener una imagen más precisa del rendimiento de la página.  
+*   Si la pantalla del dispositivo host se bloquea, el contenido de la difusión en pantalla desaparece.  Desbloquea la pantalla del dispositivo host para reanudar automáticamente la difusión por pantalla.  
 
-## Problemas conocidos  
+## <a name="known-issues"></a>Problemas conocidos  
 
-El panel de **escuchas de eventos** del panel **elementos** está en blanco en la versión 1903 de Windows 10.  Corregiremos el panel de **detectores de eventos** en una actualización de mantenimiento de la versión 1903 de Windows 10.  
+El **panel Escuchas de eventos** de la herramienta **Elementos** está en blanco en Windows 10 versión 1903.  El equipo tiene previsto corregir el panel **Escuchas de** eventos en una actualización de mantenimiento de Windows 10 versión 1903.  
 
-El panel **cookies** en el panel de la **aplicación** está en blanco en la versión 1903 de Windows 10.  Corregiremos el panel de **cookies** en una actualización de mantenimiento de Windows 10, versión 1903.  
+El **panel Cookies** del panel **Aplicación** está en blanco en Windows 10 versión 1903.  El equipo planea corregir el **panel Cookies** en una actualización de servicio a Windows 10 versión 1903.  
 
-El panel **auditorías** , el panel **vista 3D** , la **sección dispositivos emulados** de **configuración**y el panel de **árbol de accesibilidad** en el panel **elementos** no funcionan actualmente de la forma esperada.  Corregiremos estas herramientas en una futura actualización de Microsoft Edge.  
+La **herramienta Auditorías,** la herramienta Vista **** **3D,** la sección **** Dispositivos emulados en Configuración y el panel de árbol Accesibilidad de la herramienta **Elementos** no funcionan actualmente como se esperaba. ****  El equipo tiene previsto corregir las herramientas enumeradas en una actualización futura de Microsoft Edge.  
 
-El explorador de archivos no se inicia desde el DevTools en el panel de **fuentes** o en el panel de **seguridad** cuando se realiza la depuración remota.  Corregiremos estas herramientas en una futura actualización de Microsoft Edge.  
+El explorador de archivos no se inicia desde DevTools en la **herramienta Orígenes** ni en el **panel** Seguridad al depurar de forma remota.  El equipo tiene previsto corregir las herramientas en una actualización futura de Microsoft Edge.  
+
+<!-- links -->
+
+[DevtoolsIndex]: ../index.md "Introducción a Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Depurar aplicaciones web progresivas | Microsoft Docs"  
+
+[DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool]: /dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool "Ver certificados con la herramienta Administrador de certificados: Cómo: Ver certificados con el complemento MMC | Microsoft Docs"  
+
+[WindowsAppsGetStartedEnableYourDeviceForDevelopment]: /windows/apps/get-started/enable-your-device-for-development "Habilitar el dispositivo para desarrollo | Microsoft Docs"  
+
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Información general de Windows Device Portal | Microsoft Docs"  
+[WindowsUwpDebugTestPerfDevicePortalSetup]: /windows/uwp/debug-test-perf/device-portal#setup "Configuración: información general de Windows Device Portal | Microsoft Docs"  
+[WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal]: /windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal "Configuración basada en el Registro para Device Portal: Device Portal para Windows Desktop | Microsoft Docs"  
+
+[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Descargar nuevo explorador de Microsoft Edge"  
+
+[MicrosoftStoreAppsWindows]: https://www.microsoft.com/store/apps/windows "Windows Apps | Microsoft Store"  
+
+[MicrosoftStoreApps9p6cmfv44zlt]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Herramientas remotas para Microsoft Edge (Beta) | Microsoft Store"  

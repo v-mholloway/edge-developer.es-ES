@@ -6,25 +6,24 @@ ms.author: msedgedevrel
 ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 7f273f89708e0948e68cd2c7ba79cefb6d7e167c
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: 66c0686c166163f1640384d096288af0b530f135
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11230967"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519439"
 ---
 # <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Invalidar recursos de página web con copias locales con Microsoft Edge DevTools  
 
-A veces es necesario solucionar un problema en una página web a la que no tiene acceso o las correcciones implican un proceso de compilación lento y complejo.  Puede depurar y corregir todo tipo de problemas en DevTools. Pero el problema es que los cambios no persisten.  Después de actualizar el archivo, todo el trabajo se ha ido.  
-
-La característica Invalidaciones de la [herramienta Orígenes][DevToolsSourcesTool] le ayuda a resolver este problema.  
+A veces, necesita probar algunas correcciones posibles para una página web, pero no tiene acceso a los archivos de origen, o cambiar la página requiere un proceso de compilación lento y complejo.  Puede depurar y corregir todo tipo de problemas en DevTools.  Pero los cambios no persisten; después de actualizar el archivo local, todo el trabajo ha desaparecido.  La característica Invalidaciones de la [herramienta Orígenes][DevToolsSourcesTool] le ayuda a resolver este problema.  
 
 Ahora puede tomar un recurso de la página web actual y almacenarlo localmente.  Al actualizar la página web, el explorador no carga el recurso desde el servidor.  En su lugar, el explorador lo reemplaza por la copia local del recurso.  
 
 ## <a name="setting-up-your-local-folder-to-store-overrides"></a>Configurar la carpeta local para almacenar invalidaciones  
 
-1.  En la **herramienta Orígenes,** busque varias secciones en el lado izquierdo.  Si no **se muestra** la opción Invalidaciones, elija la opción <code>&#x0226B;</code><!--`≫`--> icono para llegar allí.  
+1.  Vaya a la **herramienta Orígenes.**  
+1.  En el **panel** Navegador (a la izquierda), elija la **pestaña Invalidaciones.**  Si no **se muestra** la pestaña Invalidaciones, elija la opción <code>&#x0226B;</code><!--`≫`--> .  
     
     :::row:::
        :::column span="":::
@@ -39,7 +38,8 @@ Ahora puede tomar un recurso de la página web actual y almacenarlo localmente. 
        :::column-end:::
     :::row-end:::  
     
-1.  Después de elegir la **opción Invalidaciones,** debe elegir una carpeta en el equipo local para almacenar los archivos de recursos que desea reemplazar.  Elija la **carpeta + Seleccionar para reemplazos** para buscar una carpeta.  
+1.  Elija una carpeta en el equipo local para almacenar los archivos de recursos que desea reemplazar.  
+     *   Para buscar una carpeta, elija **+ Seleccionar carpeta para invalidaciones.**  
     
     :::image type="complex" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Elegir una carpeta que se usará para invalidaciones" lightbox="../media/javascript-overrides-select-folder.msft.png":::
        Elegir una carpeta que se usará para invalidaciones  
@@ -51,10 +51,10 @@ Ahora puede tomar un recurso de la página web actual y almacenarlo localmente. 
        Conceder acceso de DevTools a la carpeta  
     :::image-end:::  
     
-1.  En el **panel Invalidaciones,** debe mostrarse una casilla junto a `Enable Local Overrides` y la carpeta invalidaciones.  Se muestra un icono junto a él que permite eliminar la configuración de invalidaciones locales.  Ya ha terminado de configurar la carpeta y está listo para reemplazar los recursos en directo por los locales.
+1.  En la **pestaña Invalidaciones,** se muestra una casilla junto a **Habilitar invalidaciones locales**.  A la derecha de **Habilitar invalidaciones locales** se encuentra un **icono Borrar** configuración que permite eliminar la configuración de invalidaciones locales.  Ya ha terminado de configurar la carpeta y está listo para reemplazar los recursos en directo por los locales.
     
-    :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Configuración correcta de una carpeta de invalidaciones" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
-       Configuración correcta de una carpeta de invalidaciones  
+    :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Instalación correcta de una carpeta de invalidaciones" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
+       Instalación correcta de una carpeta de invalidaciones  
     :::image-end:::  
     
 ## <a name="adding-files-to-your-overrides-folder"></a>Agregar archivos a la carpeta Invalidaciones  

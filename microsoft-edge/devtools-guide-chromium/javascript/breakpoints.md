@@ -7,12 +7,12 @@ ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3d50b7b105aa9a9018ba61e44147f46f3d340079
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: dd865f346046cb6706e71fdb3cc869950b2b4352
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439517"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519362"
 ---
 <!-- Copyright Kayce Basques
 
@@ -30,7 +30,9 @@ ms.locfileid: "11439517"
 
 # <a name="how-to-pause-your-code-with-breakpoints-in-microsoft-edge-devtools"></a>Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools  
 
-Use puntos de interrupción para pausar el código JavaScript.  En esta guía se explica cada tipo de punto de interrupción que está disponible en DevTools, así como cuándo usar y cómo establecer cada tipo.  Para obtener un tutorial práctica del proceso de depuración, vaya a Introducción a [la depuración de JavaScript en Microsoft Edge DevTools][DevtoolsJavascriptIndex].  
+Use puntos de interrupción para pausar el código JavaScript.  En este artículo se explica cada tipo de punto de interrupción disponible en DevTools, así como cuándo usar y cómo establecer cada tipo.
+
+Para obtener un tutorial introductorio con una página web existente, vaya a Introducción a la [depuración de JavaScript en Microsoft Edge DevTools][DevtoolsJavascriptIndex].
 
 ## <a name="overview-of-when-to-use-each-breakpoint-type"></a>Información general sobre cuándo usar cada tipo de punto de interrupción  
 
@@ -214,13 +216,23 @@ Asegurarse de que la función de destino está en el ámbito es complicado si es
 1.  Desencadene el punto de interrupción.  
 1.  Ejecute el `debug()` método en la Consola de DevTools mientras el código aún está en pausa en el punto de interrupción de línea de código.  
     
+## <a name="related-articles"></a>Artículos relacionados
+
+*   [Usar las características del depurador:][DevtoolsJavascriptReference] usar la interfaz de usuario del depurador en la **herramienta** Orígenes.
+*   [Introducción a la depuración de JavaScript en Microsoft Edge DevTools:][DevtoolsJavascriptIndex] un tutorial introductorio con una página web existente.
+*   [Introducción a la][DevtoolsSourcesIndex] herramienta Sources: el depurador forma parte de **la herramienta Orígenes,** que incluye un editor de JavaScript.
+
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
+[DevtoolsJavascriptReference]: ./reference.md "Usar las características del depurador | Microsoft Docs"  
+
 [DevtoolsJavascriptIndex]: index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft Docs"  
+
+[DevtoolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Recuperación de api | MDN"  
 
