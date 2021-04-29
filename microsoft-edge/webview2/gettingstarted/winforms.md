@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicaciones de winforms, winforms, edge, CoreWebView2, control de explorador, html perimetral, introducción, Introducción, .NET, formularios de windows
-ms.openlocfilehash: 9d797e87ff8b5f11d957442c2cea08ae2f8c66a7
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
+ms.openlocfilehash: 408d225c6c0abe54483226e7004a386d367d65ab
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11470868"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526090"
 ---
 # <a name="getting-started-with-webview2-in-windows-forms"></a>Introducción a WebView2 en Windows Forms
 
@@ -340,8 +340,7 @@ Enhorabuena, has creado tu primera aplicación WebView2.
 
 Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.  
 
-### <a name="see-also"></a>Consulte también  
-
+*   Para obtener más información sobre cómo crear aplicaciones webView2, vaya a Procedimientos recomendados de desarrollo [de WebView2][WV2BestPractices].  
 *   Para obtener un ejemplo completo de las capacidades de WebView2, vaya a [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
 *   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2][Webview2IndexNextSteps].  
 *   Para obtener información detallada acerca de la API de WebView2, vaya a [Referencia de api][DotnetApiMicrosoftWebWebview2WinformsWebview2].  
@@ -352,6 +351,7 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
 
 <!-- links -->  
 
+[WV2BestPractices]: ../concepts/developer-guide.md "Procedimientos recomendados de desarrollo de WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegación | Microsoft Docs"  
 

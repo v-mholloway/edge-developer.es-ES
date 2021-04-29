@@ -3,17 +3,17 @@ description: Notas de la versión del SDK de WebView2 de Microsoft Edge
 title: Notas de la versión de Microsoft Edge WebView2 para Win32, WPF y WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/23/2021
+ms.date: 04/28/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, html perimetral
-ms.openlocfilehash: 913aa7f6a646964aae6aa36665395f64c3b65b36
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 63a81baed1f4b67cf37b95fa88abd0b6f67b1e4d
+ms.sourcegitcommit: f7169e7b239de9605c68d6a678a0c68abd0c2f63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519404"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "11526001"
 ---
 # <a name="release-notes-for-webview2-sdk"></a>Notas de la versión del SDK de WebView2  
 
@@ -24,48 +24,48 @@ El equipo de WebView2 actualiza el [SDK de WebView2][NuGetGallery] en una cadenc
 
 > [!NOTE]
 > Las correcciones de errores de WebView2 son específicas de Runtime o SDK.  
-<!-- 
-## 1.0.865-prerelease  
 
-Release Date: April 19, 2021  
+## <a name="10865-prerelease"></a>1.0.865-prerelease  
 
-[NuGet package][NuGetGallery1.0.865-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.865.0 or newer  
+Fecha de lanzamiento: 26 de abril de 2021  
 
-### General  
+[Paquete NuGet][NuGetGallery1.0.865-prerelease] \| Versión mínima de Microsoft Edge para cargar: 86.0.616.0 o posterior \| Compatibilidad completa de API: 91.0.865.0 o posterior  
 
-#### Experimental Features  
+### <a name="general"></a>General  
 
-*   Added [IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings4ViewWebview210865PrereleaseIspinchzoomenabled] setting. It allows you to turn on or off page scale zoom control in a setting.  
-*   Added Custom [add_DownloadStarting][Webview2ReferenceWin32Icorewebview2experimental2ViewWebview210865PrereleaseAddDownloadstarting] API.  It allows you to block downloads, save to a different path, and access the required metadata to build custom download UI.  
-*   Added `iframe` element support from [AddHostObjectToScriptWithOrigins][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210865PrereleaseAddhostobjecttoscriptwithorigins].  
-*   Added sample code for [WPF sample app][GithubMicrosoftedgeWebview2samplesWebview2wpfbrowser] to use the API to turn off browser function keys.  
-*   Added the [UpdateRuntime][Webview2ReferenceWin32Icorewebview2experimentalenvironment3ViewWebview210865PrereleaseUpdateruntime] API, to easily update the WebView2 Runtime.  
+#### <a name="experimental-features"></a>Características experimentales  
+
+*   Se agregó [la configuración IsPinchZoomEnabled.][Webview2ReferenceWin32Icorewebview2experimentalsettings4ViewWebview210865PrereleaseIspinchzoomenabled] Le permite activar o desactivar el control de zoom de escala de página en una configuración.  
+*   Se agregó la [API add_DownloadStarting][Webview2ReferenceWin32Icorewebview2experimental2ViewWebview210865PrereleaseAddDownloadstarting] personalizada.  Te permite bloquear descargas, guardar en una ruta de acceso diferente y acceder a los metadatos necesarios para crear la interfaz de usuario de descarga personalizada.  
+*   Se `iframe` agregó compatibilidad con [elementos de AddHostObjectToScriptWithOrigins][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210865PrereleaseAddhostobjecttoscriptwithorigins].  
+*   Se agregó código de ejemplo para [que la aplicación de ejemplo WPF][GithubMicrosoftedgeWebview2samplesWebview2wpfbrowser] use la API para desactivar las teclas de función del explorador.  
+*   Se agregó la API [UpdateRuntime][Webview2ReferenceWin32Icorewebview2experimentalenvironment3ViewWebview210865PrereleaseUpdateruntime] para actualizar fácilmente el tiempo de ejecución de WebView2.  
     
-#### Bug fixes  
+#### <a name="bug-fixes"></a>Correcciones de errores  
 
-*   Fixed handler for a `Chromium DevTools Protocol` message with `POST` binary data in WebView2.  
-*   Turned off the `OpenSaveAsAwareness` download UI, because it included links to `edge://settings`.  \([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).  
-*   Removed branding from screen share dialog.  \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).  
-*   Fixed bug where the [SetWindowDisplayAffinity][WindowsWin32ApiWinuserSetWindowDisplayAffinity] function broke WebView2 when it stopped screen capture in an WebView2 app.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
-*   Fixed bug for composition hosting where mouse input stopped working if any pen input was sent to WebView2.  
-*   Fixed bug that broke mouse input after any pen input.  This change is Runtime-specific.  
+*   Controlador fijo de un `Chromium DevTools Protocol` mensaje con `POST` datos binarios en WebView2.  
+*   Desactivada la interfaz `OpenSaveAsAwareness` de usuario de descarga, ya que incluía vínculos a `edge://settings` .  \([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).  
+*   Se quitó la personal de marca del cuadro de diálogo de recurso compartido de pantalla.  \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).  
+*   Se ha corregido un error por el que la [función SetWindowDisplayAffinity][WindowsWin32ApiWinuserSetWindowDisplayAffinity] rompía WebView2 al detener la captura de pantalla en una aplicación WebView2.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
+*   Se ha corregido un error para el hospedaje de composición en el que la entrada del mouse dejó de funcionar si se envió alguna entrada de lápiz a WebView2.  
+*   Se ha corregido un error que rompía la entrada del mouse después de cualquier entrada de lápiz.  Este cambio es específico del tiempo de ejecución.  
     
-### .NET  
+### <a name="net"></a>.NET  
 
-#### Experimental Features  
+#### <a name="experimental-features"></a>Características experimentales  
 
-*   Added WebView2 designer tool to WPF Toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
-*   Added WebView2 UI element in .NET Designer Mode.  
+*   Se agregó la herramienta de diseñador WebView2 al cuadro de herramientas wpf.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
+*   Se agregó un elemento de interfaz de usuario de WebView2 en el modo diseñador de .NET.  
     
-#### Bug fixes  
+#### <a name="bug-fixes"></a>Correcciones de errores  
 
-*   Improved COM Exception descriptions by wrapping each in a more detailed .NET exception.  \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  This change is Runtime-specific.  
-*   Fixed bug caused when you select `tab` to shift focus caused WebView2 control to crash in Microsoft Visual Studio Tools for Office.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589] and [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  This change is Runtime-specific.  
-*   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue946]\).
-*   Fixed bug that caused crash when you try to refresh before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
-*   Fixed initialization so navigation occurs during `CoreWebView2InitializationCompleted`.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
-*   Improved .NET browser process crash error handling.  You may now recreate controls after you handle a `ProcessFailed` event without a crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
-     -->
+*   Se han mejorado las descripciones de excepción COM ajustando cada una de ellas en una excepción .NET más detallada.  \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  Este cambio es específico del tiempo de ejecución.  
+*   Corregido el error causado al seleccionar cambiar el foco, el control WebView2 se bloqueaba en `tab` Microsoft Visual Studio Tools for Office.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589] y [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  Este cambio es específico del tiempo de ejecución.  
+*   Nivel inferior del cargador de .NET Framework mejorado para ser más robusto.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue946]\).
+*   Se ha corregido un error que provocaba un bloqueo al intentar actualizar antes de completar la primera navegación.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
+*   Se ha corregido la inicialización para que la navegación se produzca durante `CoreWebView2InitializationCompleted` .  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
+*   Se ha mejorado el control de errores de bloqueo del proceso del explorador .NET.  Ahora puede volver a crear controles después de controlar un `ProcessFailed` evento sin bloqueo.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
+
 ## <a name="1081841"></a>1.0.818.41  
 
 Fecha de lanzamiento: 21 de abril de 2021  

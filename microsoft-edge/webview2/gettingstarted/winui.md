@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicaciones winui, winui, edge, CoreWebView2, control de explorador, html perimetral, introducción, Introducción, .NET
-ms.openlocfilehash: 52d84afb6f9fe1e120f75525b2669a797309fdfe
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 8ecc40a1940bfb656e2dfdc7ab6f57effa90717d
+ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461209"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "11526062"
 ---
 # <a name="getting-started-with-webview2-in-winui-3-preview"></a>Introducción a WebView2 en WinUI 3 (versión preliminar)  
 
@@ -279,8 +279,7 @@ Enhorabuena, has creado tu primera aplicación WebView2.
 
 Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.  
 
-### <a name="see-also"></a>Consulte también  
-
+*   Para obtener más información sobre cómo crear aplicaciones webView2, vaya a Procedimientos recomendados de desarrollo [de WebView2][WV2BestPractices].  
 *   Para obtener un ejemplo completo de las capacidades de WebView2, vaya a [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
 *   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2][Webview2IndexNextSteps].  
     
@@ -296,6 +295,7 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
 Para enviar las solicitudes de características específicas de WinUI o los errores, vaya a [Problemas - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] y elija **Nuevo problema**.  
 
 <!-- links -->  
+[WV2BestPractices]: ../concepts/developer-guide.md "Procedimientos recomendados de desarrollo de WebView2 | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
