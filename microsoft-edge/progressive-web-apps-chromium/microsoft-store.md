@@ -3,16 +3,16 @@ description: Hacer que tu PWA sea más reconocible publicando en Microsoft Store
 title: Publicar la aplicación web progresiva en Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2021
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, Microsoft Store
-ms.openlocfilehash: 68471535446a2270a23b32205717da225fd9e4bf
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 5e78e909187408566219ffe80779bb9221b585fa
+ms.sourcegitcommit: e3cd336c9448277e0dde3b9da1521b5cbc7c44d2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461566"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "11527085"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>Publicar la aplicación web progresiva en Microsoft Store  
 
@@ -23,7 +23,7 @@ Publicar la aplicación web progresiva \(PWA\) en [Microsoft Store][WindowsUwpPu
       **Detectabilidad**  
    :::column-end:::
    :::column span="2":::
-      Los usuarios buscan aplicaciones de forma natural en la tienda de aplicaciones.  Al publicar en la Microsoft Store, millones de usuarios de Windows pueden descubrir su PWA junto con otras aplicaciones de Windows.  La Tienda muestra aplicaciones a través de categorías, colecciones curadas y mucho más.  Los portales de detección de aplicaciones proporcionan una experiencia de exploración y compra fácil para los posibles usuarios de la aplicación.  Incluso puedes mejorar [la descripción de la Tienda][WindowsUwpPublishAppScreenshotsImages] con capturas de pantalla, una imagen de héroe y tráileres de vídeo.  
+      Los usuarios buscan aplicaciones de forma natural en la tienda de aplicaciones.  Cuando publicas en Microsoft Store, millones de usuarios de Windows pueden descubrir tu PWA junto con otras aplicaciones de Windows.  La Tienda muestra aplicaciones a través de categorías, colecciones curadas y mucho más.  Los portales de detección de aplicaciones proporcionan una experiencia de exploración y compra fácil para los posibles usuarios de la aplicación.  Incluso puedes mejorar [la descripción de la Tienda][WindowsUwpPublishAppScreenshotsImages] con capturas de pantalla, una imagen de héroe y tráileres de vídeo.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -73,32 +73,30 @@ Para crear una reserva de aplicación, complete las siguientes acciones.
     1.  Navega a **Windows & Xbox**.  
     1.  Elija **Introducción**.  
     1.  Sigue las instrucciones.  
-1.  Ahora, la aplicación está inscrita en el programa para desarrolladores de aplicaciones. Para crear una reserva de aplicación, complete las siguientes acciones.  
+1.  Ahora, tu cuenta está inscrita en el programa para desarrolladores de aplicaciones. Para crear una reserva de aplicación, complete las siguientes acciones.  
     1.  Navega a **Windows & Xbox**.  
     1.  Elija **Información general**Crear una nueva  >  **aplicación**.  
-    1.  Escriba el nombre de PWA en el símbolo del sistema.  
+    1.  Escriba el nombre de la aplicación en el símbolo del sistema.  
     1.  Elija `Reserve product name` .  
-    
+        
     :::image type="complex" source="./media/windows-partner-center-create-app.msft.png" alt-text="Crear una reserva de aplicación en el Centro de partners de Windows" lightbox="./media/windows-partner-center-create-app.msft.png":::
        Crear una reserva de aplicación en el Centro de partners de Windows  
     :::image-end:::  
-
-1.  Para mostrar los detalles del editor para su uso en la sección [Empaquetar su PWA,](#package-your-pwa) elija **Product management**  >  **Product Identity**.  
+    
+1.  Para mostrar los detalles del editor para su uso en la sección [Empaquetar su PWA,](#package-your-pwa-for-the-store) elija **Product management**  >  **Product Identity**.  
     
     :::image type="complex" source="./media/windows-partner-center-publisher-info.msft.png" alt-text="Copiar la información del editor desde el Centro de partners de Windows" lightbox="./media/windows-partner-center-publisher-info.msft.png":::
        Copiar la información del editor desde el Centro de partners de Windows  
     :::image-end:::  
-
+    
 1.  Copie y guarde los siguientes valores.  
     *   **Id. de paquete**  
     *   **Id. de publicador**  
     *   **Nombre para mostrar del editor**  
         
-## <a name="package-your-pwa"></a>Empaquetar su PWA  
+## <a name="package-your-pwa-for-the-store"></a>Empaquetar tu PWA para la Tienda 
 
-Genera un paquete de aplicación de Windows para tu PWA.  
-
-El paquete de la aplicación es un archivo que contiene los metadatos de la aplicación, incluidos el `.msixbundle` nombre, la descripción, los iconos, entre otros.  Usa el [modelo de aplicaciones hospedadas,][WindowsBlogWindowsdeveloperHostedAppModel]con Microsoft Edge potenciando tu PWA.  En este modelo, tu PWA usa funcionalidades web modernas mientras funciona como una aplicación de Windows.  Entre las funcionalidades web modernas se incluyen el trabajador del servicio, sin conexión, las notificaciones de inserción, la mala administración y mucho más.  
+Ahora que ya tienes la información de publicación de aplicaciones, genera un paquete de aplicación de Windows para tu PWA.
 
 Para generar un paquete de aplicación, complete las siguientes acciones.  
 
@@ -115,11 +113,13 @@ Para generar un paquete de aplicación, complete las siguientes acciones.
     :::image-end:::  
     
 1.  Elija **Listo**.  
-1.  Para descargar el paquete de la aplicación de Windows, elija **Descargar**.  La descarga es un `.zip` archivo que contiene un `.msixbundle` archivo.  Usa el `.msixbundle` archivo en la sección Enviar el paquete de la aplicación a la [Tienda.](#submit-your-app-package-to-the-store)  
+1.  Para descargar el paquete de la aplicación de Windows, elija **Descargar**.
+
+La descarga es un `.zip` archivo que contiene un archivo y un `.msixbundle` `.classic.appxbundle` archivo.  Los dos paquetes de aplicaciones permiten que tu PWA se ejecute en una amplia variedad de versiones de Windows.  Para obtener más información, vaya [a ¿Qué es un paquete clásico?][GithubPwaBuilderPwabuilderWindowsChromiumDocsClassicPackageMd].  
 
 ### <a name="submit-your-app-package-to-the-store"></a>Enviar el paquete de la aplicación a la Tienda  
 
-Ahora, tienes el paquete `.msixbundle` de la aplicación.  Para enviar el paquete de la aplicación a la Tienda, realice las siguientes acciones.  
+Para enviar la aplicación a la Tienda, complete las siguientes acciones.  
 
 1.  Navegar al [Centro de partners de Windows][MicrosoftPartnerDashboardWindowsOverview] 
 1.  Elige tu aplicación.  
@@ -134,9 +134,19 @@ Ahora, tienes el paquete `.msixbundle` de la aplicación.  Para enviar el paquet
     *   clasificación por edades  
     *   y mucho más  
         
-1.  En el **símbolo del** sistema Paquetes, elija el archivo generado en la `.msixbundle` sección [Empaquetar su PWA.](#package-your-pwa)  
-
+1.  En el **símbolo del** sistema Paquetes, elija el archivo y los `.msixbundle` que `.classic.appxbundle` generó en la sección [Empaquetar su PWA.](#package-your-pwa-for-the-store)  
+    
 Después de completar el envío, se revisa la aplicación, normalmente en un plazo de entre 24 y 48 horas.  Después de recibir la aprobación, tu PWA está disponible en Microsoft Store.  
+
+## <a name="see-also"></a>Consulte también  
+
+PWABuilder proporciona más documentación que le ayudará a obtener su PWA en Microsoft Store.  
+
+*   [Probar y enviar el paquete de la aplicación de PWA][GithubPwaBuilderPwabuilderWindowsChromiumDocsNextStepsMd]  
+*   [Publicar un nuevo PWA en la Tienda][GithubPwaBuilderPwabuilderWindowsChromiumDocsPublishNewAppMd]  
+*   [Actualizar una aplicación de la Tienda existente a un PWA][GithubPwaBuilderPwabuilderWindowsChromiumDocsUpdateExistingAppMd]  
+*   [Recomendaciones de imagen para las PWA en la Tienda][GithubPwaBuilderPwabuilderWindowsChromiumDocsImageRecommendationsMd]  
+*   [Explicador de empaquetado de aplicaciones][GithubPwaBuilderPwabuilderWindowsChromiumDocsClassicPackageMd]  
 
 <!-- links -->  
 
@@ -153,5 +163,10 @@ Después de completar el envío, se revisa la aplicación, normalmente en un pla
 
 [WindowsBlogWindowsdeveloperHostedAppModel]: https://blogs.windows.com/windowsdeveloper/hosted-app-model "Hosted App Model | Blog para desarrolladores de Windows"  
 
-[PwabuilderMain]: https://www.pwabuilder.com "PWABuilder"  
+[GithubPwaBuilderPwabuilderWindowsChromiumDocsClassicPackageMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md "¿Qué es un paquete clásico? | GitHub"  
+[GithubPwaBuilderPwabuilderWindowsChromiumDocsImageRecommendationsMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/image-recommendations.md "Recomendaciones de imagen para paquetes de PWA de Windows | GitHub"  
+[GithubPwaBuilderPwabuilderWindowsChromiumDocsNextStepsMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/next-steps.md "Pasos siguientes para obtener tu PWA en microsoft store | GitHub"  
+[GithubPwaBuilderPwabuilderWindowsChromiumDocsPublishNewAppMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/publish-new-app.md "Publicar una nueva aplicación en la tienda | GitHub"  
+[GithubPwaBuilderPwabuilderWindowsChromiumDocsUpdateExistingAppMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/update-existing-app.md "Actualizar una aplicación existente en la tienda | GitHub"  
 
+[PwabuilderMain]: https://www.pwabuilder.com "PWABuilder"  
