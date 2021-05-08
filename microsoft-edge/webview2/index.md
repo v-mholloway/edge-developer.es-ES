@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, control de explorador, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
-ms.openlocfilehash: 154c18a3cc9236a8abd286918d72e1a1968fea38
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 9c1aa073294fc649223da19c44850dc4335f6c00
+ms.sourcegitcommit: 7f7922dbb6af87ecac1378d18359125770c5b8e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535735"
+ms.locfileid: "11536873"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Introducción a Microsoft Edge WebView2  
 
@@ -38,60 +38,102 @@ Las aplicaciones híbridas permiten a los desarrolladores disfrutar de lo mejor 
     
 ## <a name="webview2-benefits"></a>Ventajas de WebView2   
 
-<!--  
-:::image type="complex" source="./media/WebView2/webview-reasons.png" alt-text="WebView reasons" lightbox="./media/WebView2/webview-reasons.png":::
-   WebView reasons  
-:::image-end:::    
--->  
-
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset.msft.png":::  
-      **Ecosistema web \& skillset**  
+      :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-rapid-innovation-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support-small.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### <a name="web-ecosystem--skillset"></a>Conjunto de aptitudes & web  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="rapid-innovation"></a>Innovación rápida  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="windows-7-8-and-10-support"></a>Windows compatibilidad con 7, 8 y 10  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       Use toda la plataforma web, bibliotecas, herramientas y talento que existe en el ecosistema web.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-rapid-innovation.msft.png":::  
-      **Innovación rápida**  
       El desarrollo web permite una implementación e iteración más rápidas.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support.msft.png":::  
-      **Windows compatibilidad con 7, 8 y 10**  
       Compatibilidad con una experiencia de usuario coherente en Windows 7, Windows 8 y Windows 10.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-native-capabilities.msft.png":::  
-      **Funcionalidades nativas**  
+      :::image type="icon" source="./media/webview-reasons-native-capabilities-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-code-sharing-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-microsoft-support-small.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### <a name="native-capabilities"></a>Funcionalidades nativas  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="code-sharing"></a>Uso compartido de código  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="microsoft-support"></a>Soporte técnico de Microsoft  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       Obtenga acceso al conjunto completo de API nativas.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-code-sharing.msft.png":::  
-      **Uso compartido de código**  
       Agregar código web a la base de código permite una mayor reutilización en varias plataformas.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-microsoft-support.msft.png":::  
-      **Soporte técnico de Microsoft**  
       Microsoft proporciona soporte técnico y agrega nuevas solicitudes de características cuando WebView2 se publica en Disponibilidad general \(GA\).  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-evergreen.msft.png":::  
-      **Distribución de Evergreen**  
+      :::image type="icon" source="./media/webview-reasons-evergreen-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-fixed-small.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-incremental-adoption-small.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### <a name="evergreen-distribution"></a>Distribución de Evergreen  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="fixed"></a>Corregido  
+   :::column-end:::
+   :::column span="1":::
+      ### <a name="incremental-adoption"></a>Adopción incremental  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       Confíe en una versión actualizada de Chromium actualizaciones de plataforma y revisiones de seguridad normales.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-fixed.msft.png":::  
-      **Corregido**  
       \(coming soon\) Elige empaquetar los Chromium bits de la aplicación.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-incremental-adoption.msft.png":::  
-      **Adopción incremental**  
       Agrega componentes web pieza a pieza a la aplicación.  
    :::column-end:::
 :::row-end:::  
