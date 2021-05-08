@@ -3,17 +3,17 @@ description: Navegación
 title: Navegación | WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
-ms.openlocfilehash: e87994d6205f81e01385a131e17091d0c8b001d5
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d133bfb99808d0e036c4b46be9ef82039aee49eb
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470847"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535709"
 ---
 # <a name="navigation-events"></a>Eventos de navegación  
 
@@ -26,16 +26,16 @@ ms.locfileid: "11470847"
    :::column-end:::
 :::row-end:::  
 
-Los eventos de navegación se ejecutan cuando se producen acciones asincrónicas específicas al contenido mostrado en una instancia webView2.  Por ejemplo, cuando un usuario de WebView2 navega a un nuevo sitio web, el contenido nativo escucha el evento change `NavigationStarting` using.  Cuando se completa la acción de navegación, `NavigationCompleted` se ejecuta.  Para obtener un buen ejemplo de eventos de navegación, vaya a La guía de introducción [a WebView2][Webview2IndexGettingStarted].  
+Los eventos de navegación se ejecutan cuando se producen acciones asincrónicas específicas al contenido mostrado en una instancia webView2.  Por ejemplo, cuando un usuario de WebView2 navega a un nuevo sitio web, el contenido nativo escucha el evento change `NavigationStarting` using.  Cuando se completa la acción de navegación, `NavigationCompleted` se ejecuta.  Para obtener un buen ejemplo de eventos de navegación, vaya a [WebView2 Introducción guía][Webview2IndexGetStarted].  
 
-<!--todo:  Move the relevant information out of the getting started guide to better focus the content and leave the most concise elements in the getting started guide.  -->   
+<!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->   
 
 La secuencia normal de eventos de navegación es `NavigationStarting` `SourceChanged` , , , `ContentLoading` `HistoryChanged` y, a continuación, `NavigationCompleted` .  Los siguientes eventos describen el estado de WebView2 durante cada navegación.  
 
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="../media/navigation-graph.png" alt-text="Eventos de navegación de Microsoft Edge WebView2" lightbox="../media/navigation-graph.png":::
-         Eventos de navegación de Microsoft Edge WebView2  
+      :::image type="complex" source="../media/navigation-graph.png" alt-text="Eventos de navegación Microsoft Edge WebView2" lightbox="../media/navigation-graph.png":::
+         Eventos de navegación Microsoft Edge WebView2  
       :::image-end:::  
       
       > [!NOTE]
@@ -66,8 +66,8 @@ Para supervisar o cancelar eventos de navegación dentro de subframes en una ins
 
 ## <a name="see-also"></a>Consulte también  
 
-*   Para empezar a usar WebView2, vaya a Guías de introducción a [WebView2.][Webview2IndexGettingStarted]  
-*   Para obtener un ejemplo completo de las capacidades de WebView2, vaya al repositorio [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.  
+*   Para empezar a usar WebView2, vaya a Guías de Introducción [WebView2.][Webview2IndexGetStarted]  
+*   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] en GitHub.  
 *   Para obtener información más detallada acerca de las API de WebView2, vaya a [Referencia de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2][Webview2IndexNextSteps].  
 
@@ -77,7 +77,7 @@ Para supervisar o cancelar eventos de navegación dentro de subframes en una ins
 
 <!-- links -->  
 
-[Webview2IndexGettingStarted]: ../index.md#getting-started "Introducción: introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Clase WebView2 | Microsoft Docs"  

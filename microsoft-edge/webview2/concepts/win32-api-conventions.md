@@ -3,17 +3,17 @@ description: Convenciones de la API de Win32 C++ WebView2
 title: Convenciones de la API de Win32 C++ WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
-ms.openlocfilehash: b47e53a4846d4bb662ae108c6445a6c2a615722a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b5a86751bfe3386058812ca166fa7cf9e0e201dc
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470861"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535646"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Convenciones de la API de WebView2 de Win32 C++  
 
@@ -141,7 +141,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 ## <a name="see-also"></a>Consulte también  
 
-*   Para empezar a usar WebView2 Win32 C/C++, vaya a [Introducción a WebView2][Webview2IndexGettingStarted].  
+*   Para empezar a usar WebView2 Win32 C/C++, vaya a [Introducción a WebView2][Webview2IndexGetStarted].  
 *   Para obtener información más detallada acerca de las API de WebView2, vaya a [Referencia de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
@@ -150,7 +150,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Introducción a WebView2 | Microsoft Docs"  
+[Webview2GetStartedWin32]: ../get-started/win32.md "Introducción a WebView2 | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview: interfaz ICoreWebView2 | Microsoft Docs"  
 

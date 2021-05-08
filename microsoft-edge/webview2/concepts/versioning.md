@@ -3,17 +3,17 @@ description: Modelos de versión usados para Microsoft Edge WebView2
 title: Comprender las versiones del SDK de WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
-ms.openlocfilehash: b292f59e264293a958eb619d04b751203cb517ac
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 18ae2b8feb9310798f78e67cbb767d0642d83d24
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461181"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535716"
 ---
 # <a name="understand-webview2-sdk-versions"></a>Comprender las versiones del SDK de WebView2  
 
@@ -21,7 +21,7 @@ Las nuevas versiones del SDK de WebView2 se envían con la misma cadencia genera
 
 ## <a name="release-and-prerelease-package"></a>Paquete de versión y versión preliminar  
 
-El paquete NuGet de WebView2 contiene un paquete de versión y de versión previa.  
+El paquete webView2 NuGet contiene un paquete de versión y de versión previa.  
 
 El **paquete de versión** es compatible con reenvío y contiene los siguientes componentes.  
 
@@ -51,11 +51,11 @@ Las aplicaciones de WebView2 requieren que los usuarios instalen [webView2 Runti
 
 Si se detienen las actualizaciones de WebView2 Runtime, asegúrate de comprender la versión mínima de [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] que requiere la aplicación.  Tenga en cuenta los dos elementos siguientes:  
 
-1.  La versión mínima necesaria del SDK para cargar correctamente una instancia webview2 se encuentra en las Notas de la versión de [WebView2][Webview2Releasenotes] en Versión mínima de Microsoft Edge para **cargar**.  La versión mínima para cargar requerida por el SDK solo cambia cuando se produce un cambio importante en la plataforma web.  Por ejemplo, para sdk versión [1.0.622.22][Webview2Releasenotes1062222], debe instalar [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] o un canal de [Microsoft Edge][MicrosoftedgeinsiderDownload] no estable con un número de compilación o `86.0.616.0` posterior.   
-1.  La versión mínima necesaria del paquete NuGet necesario para admitir las interfaces y [][Webview2Releasenotes] API de la aplicación se encuentra en las Notas de la versión de WebView2 en **Compatibilidad completa**de api .  Las nuevas interfaces y API se agregan periódicamente a WebView2.  Las API e interfaces agrupadas en un SDK requieren diferentes versiones de WebView2 Runtime, ya que las API y la interfaz se agregan al SDK en momentos diferentes.  La versión necesaria de WebView2 Runtime coincide con el número de compilación, el tercer número, de la versión del SDK en la que se introdujo por primera vez la API.  Por ejemplo, una nueva API o interfaz agregada en sdk versión [1.0.622.22][Webview2Releasenotes1062222] requiere la versión de Tiempo de ejecución de WebView2 `86.0.622.0` o posterior.  Una API o interfaz agregada en una versión posterior del SDK requiere un Tiempo de ejecución de WebView2 que tenga el mismo número de versión que el SDK.  Para ayudarle a determinar si la versión de WebView2 Runtime admite una interfaz o API, vaya a Determinar el requisito de Tiempo de ejecución [de WebView2](#determine-webview2-runtime-requirement).  
+1.  La versión mínima necesaria del SDK para cargar correctamente una instancia webview2 se encuentra en las Notas de la versión de [WebView2][Webview2ReleaseNotes] en Minimum Microsoft Edge version to **load**.  La versión mínima para cargar requerida por el SDK solo cambia cuando se produce un cambio importante en la plataforma web.  Por ejemplo, para sdk versión [1.0.622.22][Webview2ReleaseNotes1062222], debe instalar [webView2 Runtime][MicrosoftDeveloperEdgeWebview2] o un canal [de Microsoft Edge][MicrosoftedgeinsiderDownload] no estable con un número de compilación o `86.0.616.0` posterior.   
+1.  La versión mínima necesaria del paquete NuGet necesario para admitir las interfaces y las API [][Webview2ReleaseNotes] de la aplicación se encuentra en las Notas de la versión de WebView2 en **Compatibilidad completa**de api .  Las nuevas interfaces y API se agregan periódicamente a WebView2.  Las API e interfaces agrupadas en un SDK requieren diferentes versiones de WebView2 Runtime, ya que las API y la interfaz se agregan al SDK en momentos diferentes.  La versión necesaria de WebView2 Runtime coincide con el número de compilación, el tercer número, de la versión del SDK en la que se introdujo por primera vez la API.  Por ejemplo, una nueva API o interfaz agregada en sdk versión [1.0.622.22][Webview2ReleaseNotes1062222] requiere la versión de Tiempo de ejecución de WebView2 `86.0.622.0` o posterior.  Una API o interfaz agregada en una versión posterior del SDK requiere un Tiempo de ejecución de WebView2 que tenga el mismo número de versión que el SDK.  Para ayudarle a determinar si la versión de WebView2 Runtime admite una interfaz o API, vaya a Determinar el requisito de Tiempo de ejecución [de WebView2](#determine-webview2-runtime-requirement).  
     
 > [!IMPORTANT]
-> Al desarrollar aplicaciones [de Evergreen WebView2,][Webview2ConceptsDistributionEvergreenDistributionMode]pruebe regularmente la aplicación con las versiones más recientes de WebView2 Runtime y los canales no estables de Microsoft Edge.  Dado que la plataforma web está en constante evolución, las pruebas periódicas son la mejor manera de garantizar que la aplicación funciona según lo previsto.  
+> Al desarrollar aplicaciones [de Evergreen WebView2,][Webview2ConceptsDistributionEvergreenDistributionMode]prueba la aplicación con regularidad con las versiones más recientes de WebView2 Runtime y los canales de Microsoft Edge estables.  Dado que la plataforma web está en constante evolución, las pruebas periódicas son la mejor manera de garantizar que la aplicación funciona según lo previsto.  
 
 ### <a name="determine-webview2-runtime-requirement"></a>Determinar el requisito de Tiempo de ejecución de WebView2  
 
@@ -79,8 +79,8 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->  
 
 [Webview2ConceptsDistributionEvergreenDistributionMode]: ./distribution.md#evergreen-distribution-mode "Modo de distribución Evergreen: distribución de aplicaciones con WebView2 | Microsoft Docs"  
-[Webview2Releasenotes]: ../releasenotes.md "Notas de la versión de WebView2 SDK | Microsoft Docs"  
-[Webview2Releasenotes1062222]: ../releasenotes.md#1062222 "1.0.622.22: notas de la versión de WebView2 SDK | Microsoft Docs"   
+[Webview2ReleaseNotes]: ../release-notes.md "Notas de la versión de WebView2 SDK | Microsoft Docs"  
+[Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22: notas de la versión de WebView2 SDK | Microsoft Docs"   
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Información general sobre los canales de Microsoft Edge | Microsoft Docs"  
 

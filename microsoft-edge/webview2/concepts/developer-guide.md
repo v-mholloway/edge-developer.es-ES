@@ -3,17 +3,17 @@ description: Obtenga información sobre los procedimientos recomendados de desar
 title: Procedimientos recomendados de desarrollo de WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/04/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, edge, procedimientos recomendados
-ms.openlocfilehash: 5a09d48cc9972a310c865fcdd6c10e4ed96451fc
-ms.sourcegitcommit: b51df5036642060525e03cd744b7d35726326abe
+ms.openlocfilehash: 3982f47e0fe58287582915673d4ba0de0365a55d
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "11526103"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535660"
 ---
 # <a name="webview2-development-best-practices"></a>Procedimientos recomendados de desarrollo de WebView2  
 
@@ -53,7 +53,7 @@ Cada vez que se descarga una nueva versión de Evergreen WebView2 Runtime en el 
 Para realizar acciones cuando haya una nueva versión disponible, como notificar al usuario que reinicie la aplicación, puede usar el evento [add_NewBrowserVersionAvailable(Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] o [CoreWebView2Environment.NewBrowserVersionAvailable(.NET)][Webview2ReferenceNewBrowserVersionAvailable] en el código. Si el código controla el reinicio de la aplicación, considere la posibilidad de guardar el estado de usuario antes de que salga la aplicación WebView2.  
 
 ## <a name="manage-the-lifetime-of-the-user-data-folder"></a>Administrar la duración de la carpeta de datos de usuario 
-Las aplicaciones webView2 crean una carpeta de datos de usuario para almacenar datos como cookies, credenciales, permisos, entre otros. Después de crear la carpeta, la aplicación es responsable de administrar la duración de la carpeta de datos de usuario, incluida la limpieza cuando se desinstala la aplicación.  Para obtener más información, vaya a [Managing the User Data Folder][Webview2ConceptsUserdatafolder].  
+Las aplicaciones webView2 crean una carpeta de datos de usuario para almacenar datos como cookies, credenciales, permisos, entre otros. Después de crear la carpeta, la aplicación es responsable de administrar la duración de la carpeta de datos de usuario, incluida la limpieza cuando se desinstala la aplicación.  Para obtener más información, vaya a [Managing the User Data Folder][Webview2ConceptsUserDataFolder].  
 
 ## <a name="follow-recommended-webview2-security-best-practices"></a>Seguir los procedimientos recomendados de seguridad de WebView2 
 Para cualquier aplicación WebView2, asegúrese de seguir nuestros procedimientos recomendados de seguridad de WebView2.  Para obtener más información, vaya a [Procedimientos recomendados para desarrollar aplicaciones webView2 seguras.][Webview2ConceptsSecurity]  
@@ -65,11 +65,11 @@ Para cualquier aplicación WebView2, asegúrese de seguir nuestros procedimiento
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#fixed-version-distribution-mode "Modo de distribución de versiones fijas: distribución de aplicaciones mediante WebView2 | Microsoft Docs"  
 [Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#stay-compatible-in-evergreen-mode "Mantener la compatibilidad en modo Evergreen: distribución de aplicaciones con WebView2 | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ../concepts/security.md "Procedimientos recomendados para desarrollar aplicaciones webView2 seguras | Microsoft Docs"  
-[Webview2ConceptsUserdatafolder]: ../concepts/userdatafolder.md "Administración de la carpeta de datos de usuario | Microsoft Docs"  
+[Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Administrar la carpeta de datos de usuario | Microsoft Docs"  
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#determine-webview2-runtime-requirement "Determinar el requisito de Tiempo de ejecución de WebView2: comprender las versiones del SDK de WebView2 | Microsoft Docs"  
-[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Introducción a WebView2 | Microsoft Docs"  
-[Webview2GettingstartedWinforms]: ../gettingstarted/winforms.md "Introducción a WebView2 en Windows Forms | Microsoft Docs"  
-[Webview2GettingstartedWinui]: ../gettingstarted/winui.md "Introducción a WebView2 en WinUI 3 (versión preliminar) | Microsoft Docs"  
-[Webview2GettingstartedWpf]: ../gettingstarted/wpf.md "Introducción a WebView2 en WPF | Microsoft Docs"  
+[Webview2GetStartedWin32]: ../get-started/win32.md "Introducción a WebView2 | Microsoft Docs"  
+[Webview2GetStartedWinforms]: ../get-started/winforms.md "Introducción a WebView2 en Windows Forms | Microsoft Docs"  
+[Webview2GetStartedWinui]: ../get-started/winui.md "Introducción a WebView2 en WinUI 3 (versión preliminar) | Microsoft Docs"  
+[Webview2GetStartedWpf]: ../get-started/wpf.md "Introducción a WebView2 en WPF | Microsoft Docs"  
 [Webview2ReferenceaddNewBrowserVersionAvailable]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
 [Webview2ReferenceNewBrowserVersionAvailable]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "Evento CoreWebView2Environment.NewBrowserVersionAvailable | Microsoft Docs"  

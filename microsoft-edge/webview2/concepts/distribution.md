@@ -3,23 +3,23 @@ description: Opciones de distribución al liberar una aplicación con Microsoft 
 title: Distribución de aplicaciones WebView2 de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
-ms.openlocfilehash: 14f252b0155beb6bfce0b01dc080900f2d3e57ee
-ms.sourcegitcommit: e79503c6c53ea9b7de58f8cf1532b5c82116a6eb
-ms.translationtype: HT
+ms.openlocfilehash: 97ede968e066c572bb1b22e10ed7e758e38e3ca4
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11195169"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535702"
 ---
-# Distribución de aplicaciones con WebView2  
+# <a name="distribution-of-apps-using-webview2"></a>Distribución de aplicaciones con WebView2  
 
 Al distribuir la aplicación WebView2, asegúrate de que la plataforma web de copia de seguridad, [el tiempo de ejecución de WebView2][Webview2Installer], esté presente antes de iniciar la aplicación.  En este artículo se describe la instalación del tiempo de ejecución de WebView2 y se usan los dos modos de distribución para la aplicación WebView2: [Evergreen](#evergreen-distribution-mode) y [versión no editable](#fixed-version-distribution-mode).  
 
-## Modo de distribución Evergreen  
+## <a name="evergreen-distribution-mode"></a>Modo de distribución Evergreen  
 
 > [!NOTE]
 > El modo de distribución Evergreen es el recomendado para la mayoría de los desarrolladores.  
@@ -29,7 +29,7 @@ Garantiza que la aplicación aproveche las últimas características y actualiza
 *   La plataforma web subyacente \(tiempo de ejecución WebView2\) se actualiza automáticamente sin que tengas que hacer nada.  
 *   Todas las aplicaciones con el modo de distribución Evergreen usan una copia compartida del tiempo de ejecución Evergreen WebView2, que ahorra espacio en disco.  
     
-### Descripción del tiempo de ejecución de WebView2  
+### <a name="understanding-the-webview2-runtime"></a>Descripción del tiempo de ejecución de WebView2  
 
 WebView2 es un tiempo de ejecución redistribuible y sirve como la plataforma web de respaldo para aplicaciones WebView2.  El concepto es similar a Visual C++ o las aplicaciones del tiempo de ejecución .NET para C++/.NET.  El tiempo de ejecución contiene archivos binarios modificados de Microsoft Edge \(Chromium\) que se ajustan y ponen a prueba para las aplicaciones.  Durante la instalación, el usuario no ve el tiempo de ejecución como un explorador visible.  Por ejemplo, un usuario no tiene acceso directo de escritorio del explorador ni una entrada de menú inicio.  
 
@@ -48,7 +48,7 @@ Hay varias razones para no tomar una dependencia en el explorador:
     
 Está previsto que el tiempo de ejecución Evergreen WebView2 venga en las próximas versiones de Windows,  pero hasta que esté disponible universalmente, implementa el tiempo de ejecución con tu aplicación de producción.  
 
-### Implementación del tiempo de ejecución Evergreen WebView2  
+### <a name="deploying-the-evergreen-webview2-runtime"></a>Implementación del tiempo de ejecución Evergreen WebView2  
 
 Solo necesitas una instalación del tiempo de ejecución Evergreen WebView2 para todas las aplicaciones Evergreen del dispositivo.  Hay varias herramientas disponibles en la [página de descarga del tiempo de ejecución WebView2][Webview2Installer].  Las siguientes herramientas te ayudan a implementar el tiempo de ejecución Evergreen.  
 
@@ -60,7 +60,7 @@ Actualmente, tanto el programa previo como el instalador independiente son solo 
 
 Usa los siguientes flujos de trabajo para asegurarte de que el tiempo de ejecución ya está instalado antes de iniciar la aplicación.  Puedes ajustar el flujo de trabajo en función de la situación.  Tienes un código de ejemplo disponible en el [repositorio de muestras][GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
 
-#### Implementación solo en línea  
+#### <a name="online-only-deployment"></a>Implementación solo en línea  
 
 Si tienes un escenario de implementación solo en línea donde se puede asumir que los usuarios tienen acceso a Internet, sigue estos pasos.  
 
@@ -91,7 +91,7 @@ El flujo de trabajo anterior tiene las siguientes ventajas:
     
 También puedes elegir empaquetar el programa previo con la aplicación en lugar de descargarlo a petición por medios de programación.  
 
-#### Implementación sin conexión  
+#### <a name="offline-deployment"></a>Implementación sin conexión  
 
 Si tienes un escenario de implementación sin conexión en el que la implementación de aplicaciones tiene que funcionar completamente sin conexión, sigue estos pasos.  
 
@@ -119,13 +119,13 @@ Si tienes un escenario de implementación sin conexión en el que la implementac
     MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
     ```  
     
-### Mantener la compatibilidad en modo Evergreen  
+### <a name="stay-compatible-in-evergreen-mode"></a>Mantener la compatibilidad en modo Evergreen  
 
 La web está en constante evolución.  El tiempo de ejecución Evergreen WebView2 se mantiene actualizado para proporcionarte las últimas características y correcciones de seguridad.  Para garantizar que la aplicación sea compatible con la web, debes configurar la infraestructura de pruebas.  
 
-Los canales de Microsoft Edge no estables \(Beta/Dev/Canary\) ofrecen una vista previa de las novedades del tiempo de ejecución de WebView2.  Al igual que lo harías si desarrollas sitios web para Microsoft Edge, debes poner a prueba la aplicación WebView2 con regularidad.  Prueba la aplicación WebView2 en uno de los canales no estables y actualiza tu aplicación o [informa de problemas][GithubMicrosoftedgeWebviewfeedback] si surgen. Normalmente, Dev y Beta son los canales recomendados.  Para ayudarte a decidir qué canal es el más adecuado, ve a [Información general de los canales de Microsoft Edge][DeployEdgeMicrosoftEdgeChannels].  Puedes descargar el canal de [Microsoft Edge][DownloadNonstableEdge] no estable en el entorno de pruebas y usar `regkey` o variables de entorno para indicar la preferencia del canal para la aplicación de prueba.  Para obtener más información, ve a [ CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  También puedes usar [WebDriver][HowtoWebdriver] para automatizar las pruebas de WebView2.
+Los canales de Microsoft Edge no estables \(Beta/Dev/Canary\) ofrecen una vista previa de las novedades del tiempo de ejecución de WebView2.  Al igual que lo harías si desarrollas sitios web para Microsoft Edge, debes poner a prueba la aplicación WebView2 con regularidad.  Prueba la aplicación WebView2 en uno de los canales no estables y actualiza tu aplicación o [informa de problemas][GithubMicrosoftedgeWebviewfeedback] si surgen. Normalmente, Dev y Beta son los canales recomendados.  Para ayudarte a decidir qué canal es el más adecuado, ve a [Información general de los canales de Microsoft Edge][DeployEdgeMicrosoftEdgeChannels].  Puedes descargar el canal de [Microsoft Edge][DownloadNonstableEdge] no estable en el entorno de pruebas y usar `regkey` o variables de entorno para indicar la preferencia del canal para la aplicación de prueba.  Para obtener más información, ve a [ CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  También puedes usar [WebDriver][HowToWebdriver] para automatizar las pruebas de WebView2.
 
-## Modo de distribución de versión no editable   
+## <a name="fixed-version-distribution-mode"></a>Modo de distribución de versión no editable   
 
 Para entornos restringidos con requisitos de compatibilidad estrictos, considera la posibilidad de usar el modo de distribución de versión no editable.  Elige y empaqueta una versión específica del tiempo de ejecución WebView2 con el modo de distribución de versión no editable.  Puedes especificar el tiempo de las actualizaciones en el tiempo de ejecución de la aplicación.  El modo de distribución de versión no editable no recibe actualizaciones automáticas. Planifica la actualización de la aplicación y el tiempo de ejecución.  
 
@@ -148,7 +148,7 @@ Para usar el modo de versión no editable, completa las siguientes acciones
         *   Usa `EnsureCoreWebView2Async` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]/[WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\) para especificar el entorno.  Usa el parámetro `browserExecutableFolder` en [CoreWebView2Environment.CreateAsync][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] para indicar la ruta de acceso a los archivos binarios de versión no editable.  
 1.  Empaqueta y envía los archivos binarios de versión no editable con la aplicación.  Actualiza los archivos binarios según corresponda.  
     
-### Problemas conocidos para la versión no editable   
+### <a name="known-issues-for-fixed-version"></a>Problemas conocidos para la versión no editable   
 
 En comparación con el tiempo de ejecución de Evergreen, la versión no editable no tiene un proceso de instalación, lo que hace que [Microsoft PlayReady][MicrosoftPlayReady] no funcione sin modificaciones.  Puedes mitigar el problema completando las siguientes acciones.  
 
@@ -174,7 +174,7 @@ En comparación con el tiempo de ejecución de Evergreen, la versión no editabl
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Descripción de las versiones de explorador y WebView2 | Microsoft Docs"  
-[HowtoWebdriver]: ../howto/webdriver.md "Automatizar y probar WebView2 con WebDriver de Microsoft Edge | Microsoft Docs"  
+[HowToWebdriver]: ../how-to/webdriver.md "Automatizar y probar WebView2 con WebDriver de Microsoft Edge | Microsoft Docs"  
 
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 [ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
