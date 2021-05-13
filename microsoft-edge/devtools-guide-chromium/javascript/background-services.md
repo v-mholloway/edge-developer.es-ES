@@ -3,16 +3,16 @@ description: Cómo depurar la captura en segundo plano, la sincronización en se
 title: Depurar servicios en segundo plano con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 4f5f52bcde976cea8432e3160a792438e5603e21
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439531"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564199"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439531"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="debug-background-services-with-microsoft-edge-devtools"></a><span data-ttu-id="92379-104">Depurar servicios en segundo plano con Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="92379-104">Debug Background Services with Microsoft Edge DevTools</span></span>  
 
 <span data-ttu-id="92379-105">La sección **Servicios** en segundo plano de Microsoft Edge DevTools es una colección de herramientas para las API de JavaScript que permite al sitio web enviar y recibir actualizaciones incluso cuando un usuario no tiene el sitio web abierto.</span><span class="sxs-lookup"><span data-stu-id="92379-105">The **Background Services** section of Microsoft Edge DevTools is a collection of tools for the JavaScript APIs that enables your website to send and receive updates even when a user does not have your website open.</span></span>  
@@ -48,7 +47,7 @@ ms.locfileid: "11439531"
 
 ## <a name="background-fetch"></a><span data-ttu-id="92379-117">Captura en segundo plano</span><span class="sxs-lookup"><span data-stu-id="92379-117">Background Fetch</span></span>  
 
-<span data-ttu-id="92379-118">La **API de captura en** segundo plano permite a un trabajador de servicio descargar recursos grandes de forma confiable, como películas o podcasts, como un servicio en segundo plano. </span><span class="sxs-lookup"><span data-stu-id="92379-118">The **Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.</span></span>  <span data-ttu-id="92379-119">Para registrar el evento Background Fetch durante 3 días, incluso cuando DevTools no está abierto:</span><span class="sxs-lookup"><span data-stu-id="92379-119">To log Background Fetch event for 3 days, even when DevTools is not open:</span></span>  
+<span data-ttu-id="92379-118">La **API de captura en** segundo plano permite a un trabajador de servicio descargar recursos grandes de forma confiable, como películas o podcasts, como un servicio en segundo plano. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="92379-118">The **Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.</span></span>  <span data-ttu-id="92379-119">Para registrar el evento Background Fetch durante 3 días, incluso cuando DevTools no está abierto:</span><span class="sxs-lookup"><span data-stu-id="92379-119">To log Background Fetch event for 3 days, even when DevTools is not open:</span></span>  
 
 <!--Todo: add background fetch api section when available -->  
 
@@ -75,7 +74,7 @@ ms.locfileid: "11439531"
     
 ## <a name="background-sync"></a><span data-ttu-id="92379-132">Sincronización en segundo plano</span><span class="sxs-lookup"><span data-stu-id="92379-132">Background Sync</span></span>  
 
-<span data-ttu-id="92379-133">La API de sincronización  **en** segundo plano permite a un trabajador del servicio sin conexión enviar datos a un servidor una vez que haya vuelto a establecer una conexión a Internet confiable.</span><span class="sxs-lookup"><span data-stu-id="92379-133">The **Background Sync API** enables an offline **service worker** to send data to a server once it has re-established a reliable internet connection.</span></span>  <span data-ttu-id="92379-134">Para registrar eventos de sincronización en segundo plano durante 3 días, incluso cuando DevTools no está abierto:</span><span class="sxs-lookup"><span data-stu-id="92379-134">To log Background Sync events for 3 days, even when DevTools is not open:</span></span>  
+<span data-ttu-id="92379-133">La API de sincronización \*\*\*\* **en** segundo plano permite a un trabajador del servicio sin conexión enviar datos a un servidor una vez que haya vuelto a establecer una conexión a Internet confiable.</span><span class="sxs-lookup"><span data-stu-id="92379-133">The **Background Sync API** enables an offline **service worker** to send data to a server once it has re-established a reliable internet connection.</span></span>  <span data-ttu-id="92379-134">Para registrar eventos de sincronización en segundo plano durante 3 días, incluso cuando DevTools no está abierto:</span><span class="sxs-lookup"><span data-stu-id="92379-134">To log Background Sync events for 3 days, even when DevTools is not open:</span></span>  
 
 <!--Todo: add background sync api section when available -->  
 
@@ -127,7 +126,7 @@ ms.locfileid: "11439531"
     
 ## <a name="push-messages"></a><span data-ttu-id="92379-162">Mensajes de inserción</span><span class="sxs-lookup"><span data-stu-id="92379-162">Push Messages</span></span>  
 
-<span data-ttu-id="92379-163">Para mostrar una notificación de  inserción a un usuario, un trabajador del servicio primero debe usar la [API][MDNPush] de mensajes de inserción para recibir datos de un servidor.</span><span class="sxs-lookup"><span data-stu-id="92379-163">To display a push notification to a user, a **service worker** must first use the [Push Message API][MDNPush] to receive data from a server.</span></span>  <span data-ttu-id="92379-164">Cuando el trabajador del servicio está listo para mostrar la notificación, usa la [API de notificaciones][MDNNotifications].</span><span class="sxs-lookup"><span data-stu-id="92379-164">When the service worker is ready to display the notification, it uses the [Notifications API][MDNNotifications].</span></span>  <span data-ttu-id="92379-165">Para registrar mensajes de inserción durante 3 días, incluso cuando DevTools no está abierto:</span><span class="sxs-lookup"><span data-stu-id="92379-165">To log Push Messages for 3 days, even when DevTools is not open:</span></span>  
+<span data-ttu-id="92379-163">Para mostrar una notificación de \*\*\*\* inserción a un usuario, un trabajador del servicio primero debe usar la [API][MDNPush] de mensajes de inserción para recibir datos de un servidor.</span><span class="sxs-lookup"><span data-stu-id="92379-163">To display a push notification to a user, a **service worker** must first use the [Push Message API][MDNPush] to receive data from a server.</span></span>  <span data-ttu-id="92379-164">Cuando el trabajador del servicio está listo para mostrar la notificación, usa la [API de notificaciones][MDNNotifications].</span><span class="sxs-lookup"><span data-stu-id="92379-164">When the service worker is ready to display the notification, it uses the [Notifications API][MDNNotifications].</span></span>  <span data-ttu-id="92379-165">Para registrar mensajes de inserción durante 3 días, incluso cuando DevTools no está abierto:</span><span class="sxs-lookup"><span data-stu-id="92379-165">To log Push Messages for 3 days, even when DevTools is not open:</span></span>  
 
 1.  <span data-ttu-id="92379-166">[Abra DevTools][OpenDevTools].</span><span class="sxs-lookup"><span data-stu-id="92379-166">[Open DevTools][OpenDevTools].</span></span>  
 1.  <span data-ttu-id="92379-167">Abra la **herramienta Aplicación.**</span><span class="sxs-lookup"><span data-stu-id="92379-167">Open the **Application** tool.</span></span>  
@@ -175,4 +174,4 @@ ms.locfileid: "11439531"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

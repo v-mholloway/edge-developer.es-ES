@@ -3,16 +3,16 @@ description: Los fragmentos de código son pequeños scripts que puede crear y e
 title: Ejecutar fragmentos de código de JavaScript en cualquier página web con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 00c612a1573c7446711a2dc9d22985c83140eecd
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 4a84e959f652320f40a501a26e9ba763c7348b33
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519432"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564115"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519432"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a><span data-ttu-id="4c83d-106">Ejecutar fragmentos de código de JavaScript en cualquier página web con Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="4c83d-106">Run snippets of JavaScript on any webpage with Microsoft Edge DevTools</span></span>  
 
 <span data-ttu-id="4c83d-107">Si ejecuta el mismo código en la [consola][DevtoolsConsoleIndex] repetidamente, considere la posibilidad de guardar el código como fragmento de código en su lugar.</span><span class="sxs-lookup"><span data-stu-id="4c83d-107">If you are running the same code in the [Console][DevtoolsConsoleIndex] repeatedly, consider saving the code as a Snippet instead.</span></span>  <span data-ttu-id="4c83d-108">Los fragmentos de código son scripts que se pueden crear en la [herramienta][DevToolsSourcesTool] Orígenes.</span><span class="sxs-lookup"><span data-stu-id="4c83d-108">Snippets are scripts that you author in the [Sources][DevToolsSourcesTool] tool.</span></span>  <span data-ttu-id="4c83d-109">Los fragmentos de código tienen acceso al contexto de JavaScript de la página web y puede ejecutar fragmentos de código en cualquier página web.</span><span class="sxs-lookup"><span data-stu-id="4c83d-109">Snippets have access to the JavaScript context of the webpage, and you may run snippets on any webpage.</span></span>  <span data-ttu-id="4c83d-110">La configuración de seguridad de la mayoría de las páginas web bloquea la carga de otros scripts en fragmentos de código.</span><span class="sxs-lookup"><span data-stu-id="4c83d-110">The security settings of most webpages block from loading other scripts in Snippets.</span></span>  <span data-ttu-id="4c83d-111">Por este motivo, debe incluir todo el código en un archivo.</span><span class="sxs-lookup"><span data-stu-id="4c83d-111">For that reason, you must include all your code in one file.</span></span>  
@@ -184,4 +183,4 @@ ms.locfileid: "11519432"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
