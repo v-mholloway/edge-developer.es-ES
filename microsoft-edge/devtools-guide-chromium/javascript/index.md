@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo usar Microsoft Edge DevTools para 
 title: Introducción a la depuración de JavaScript en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a60bd0c734df18ba7424cde6a828abbd9e7135a9
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 90a979cebcb74a118cb1d8ce88d48c7ac64c7a6d
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519376"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564094"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Este artículo le enseña el flujo de trabajo básico para depurar cualquier pro
 
 Encontrar una serie de acciones que reproducen un error de forma coherente siempre es el primer paso para la depuración.  
 
-1.  Elija el siguiente **vínculo Abrir demostración** y abra la página web en una nueva pestaña.  Para abrir la demostración en una pestaña nueva, seleccione y mantenga presionada `Ctrl` \(Windows, Linux\) o `Command` \(macOS\) y, a continuación, elija **Abrir demostración**.  
+1.  Elija el siguiente **vínculo Abrir demostración** y abra la página web en una nueva pestaña.  Para abrir la demostración en una nueva pestaña, seleccione y mantenga `Ctrl` presionada \(Windows, Linux\) o `Command` \(macOS\) y, a continuación, elija **Abrir demostración**.  
     
     [Demostración abierta][OpenDebugJSDemo]  
     
@@ -254,4 +254,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

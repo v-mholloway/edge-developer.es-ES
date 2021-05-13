@@ -1,18 +1,18 @@
 ---
-description: Una referencia de comandos de comodidad disponibles en la consola de Microsoft Edge DevTools.
+description: Una referencia de comandos de comodidad disponibles en la Microsoft Edge DevTools Console.
 title: Referencia de API de utilidades de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: c6a0356bd590809f9164aa62fd42156f901cef0f
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: 436f2807c5fab1723ca6cc93fddc68d9ecf12db7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483285"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564535"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,7 +37,7 @@ La API de utilidades de consola contiene una colección de comandos de comodidad
 *   Supervisar eventos DOM  
     
 > [!WARNING]
-> Los siguientes comandos solo funcionan en la **** consola de Microsoft Edge DevTools .  Los comandos no funcionan si se ejecutan desde los scripts.  
+> Los siguientes comandos solo funcionan en la Microsoft Edge DevTools **Console**.  Los comandos no funcionan si se ejecutan desde los scripts.  
 
 Para obtener más información sobre los `console.log()` métodos and `console.error()` y el resto de los `console.*` métodos, vaya a [Console API Reference][DevToolsConsoleApi].  
 
@@ -297,7 +297,7 @@ debug(method)
 ```  
 
 >[!NOTE]
-> El [problema chromium #1050237][CR1050237] está rastreando un error con la `debug()` función.  Si encuentra el problema, intente usar [puntos de interrupción en][DevtoolsJavascriptBreakpoints] su lugar.  
+> El [Chromium problema #1050237][CR1050237] está rastreando un error con la `debug()` función.  Si encuentra el problema, intente usar [puntos de interrupción en][DevtoolsJavascriptBreakpoints] su lugar.  
 
 Cuando se solicita el método especificado, el depurador invoca y rompe dentro del método en la **herramienta Orígenes.**  Le permite realizar un paso a través y depurar el código.  
 
@@ -773,7 +773,7 @@ values(object);
 
 [DevtoolsRenderingToolsJsRuntime]: ../rendering-tools/js-runtime.md "Acelerar el tiempo de ejecución de JavaScript | Microsoft Docs"  
 
-[CR1050237]: https://crbug.com/1050237 "Problema 1050237: debug(function) no funciona | Errores de Chromium"  
+[CR1050237]: https://crbug.com/1050237 "Problema 1050237: debug(function) no funciona | Chromium errores"  
 
 [MdnDocsWebApiConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
 [MdnDocsWebApiConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  
@@ -790,4 +790,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

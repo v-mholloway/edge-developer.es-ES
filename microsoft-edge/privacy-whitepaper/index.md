@@ -3,7 +3,7 @@ description: notas del producto sobre la privacidad de Microsoft Edge
 title: notas del producto sobre la privacidad de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, privacidad, notas del producto, confianza
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 52eb4e47ae70a222b24a70d5903f84e20058685b
-ms.sourcegitcommit: 1b1f099d9b0a8310784ccc8afd641e0708609602
+ms.openlocfilehash: ac07c968bbbf7f995018aa326a3f8781bda11e74
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "11496946"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564864"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -104,7 +104,7 @@ Las herramientas de desarrollo de Microsoft Edge proporcionan herramientas para 
 
 Microsoft usa los datos de diagnóstico para mejorar nuestros productos y servicios, y mantener nuestros productos seguros, actualizados y funcionando de la forma esperada. Cuando recopilamos datos, queremos asegurarnos de que sea la elección adecuada para usted. Microsoft cree en la reducción de la recopilación de información y la pone en práctica. Nos esforzamos por recopilar solo la información que necesitamos y almacenarla solo durante el tiempo que sea necesario para mejorar nuestros productos y servicios. 
 
-Microsoft Edge recopila un conjunto de datos de diagnóstico requeridos que son necesarios para mantener el producto seguro, actualizado y funcionando correctamente. Entre los datos de diagnóstico necesarios se incluyen datos como la conectividad de dispositivos, la información de configuración, la configuración de software y los datos de inventario. Microsoft utiliza estos datos de diagnóstico necesarios para solucionar problemas y mantener los productos y servicios de Microsoft confiables, seguros y funcionando normalmente. Para obtener más información acerca de los datos de diagnóstico en dispositivos administrados, vaya a [Configurar los datos de diagnóstico de Windows en su organización][WindowsPrivacyConfigureDiagnosticDataOrganization] y la [directiva de grupo de datos de diagnóstico de Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings). 
+Microsoft Edge recopila un conjunto de datos de diagnóstico requeridos que son necesarios para mantener el producto seguro, actualizado y funcionando correctamente. Entre los datos de diagnóstico necesarios se incluyen datos como la conectividad de dispositivos, la información de configuración, la configuración de software y los datos de inventario. Microsoft utiliza estos datos de diagnóstico necesarios para solucionar problemas y mantener los productos y servicios de Microsoft confiables, seguros y funcionando normalmente. Para obtener más información acerca de los datos de diagnóstico en dispositivos administrados, vaya a [Configurar los datos de diagnóstico de Windows en su organización][WindowsPrivacyConfigureDiagnosticDataOrganization] y la [directiva de grupo de datos de diagnóstico de Microsoft Edge](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 :::image type="complex" source="./media/diagnostic-data2.png" alt-text="Datos de diagnóstico" lightbox="./media/diagnostic-data2.png":::
    Datos de diagnóstico  

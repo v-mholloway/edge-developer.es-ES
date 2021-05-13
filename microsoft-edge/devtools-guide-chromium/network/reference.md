@@ -1,18 +1,18 @@
 ---
-description: Una referencia completa de las características del panel de red DevTools de Microsoft Edge.
+description: Una referencia completa de las Microsoft Edge del panel DevTools Network.
 title: Referencia de análisis de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bdb1145e7ee8ed7865b68f9fd632c4b1a30007e9
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439706"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564836"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439706"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="network-analysis-reference"></a>Referencia de análisis de red  
 
-Descubra nuevas formas de analizar cómo se carga la página en esta referencia completa de las características de análisis de red de Microsoft Edge DevTools.  
+Descubra nuevas formas de analizar cómo se carga la página en esta referencia completa de las Microsoft Edge de análisis de red de DevTools.  
 
 ## <a name="record-network-requests"></a>Registrar solicitudes de red  
 
@@ -45,7 +44,7 @@ De forma predeterminada, DevTools registra todas las solicitudes de red en la **
 Para detener la grabación de solicitudes, siga estos pasos.  
 
 1.  En la **herramienta Red,** elija **Detener registro de red de grabación** \( Detener registro de red de grabación ![ ](../media/record-on-icon.msft.png) \).  Se vuelve gris para indicar que DevTools ya no está grabando solicitudes.  
-1.  Seleccione `Control` + `E` \(Windows, Linux\) o `Command` + `E` \(macOS\) mientras la **herramienta Red** está en foco.  
+1.  Seleccione `Control` + `E` \(Windows, Linux\) o `Command` + `E` \(macOS\) mientras la **herramienta Red** está en el foco.  
 
 ### <a name="clear-requests"></a>Borrar solicitudes  
 
@@ -289,7 +288,7 @@ Para filtrar las solicitudes por tipo de solicitud, elija uno de los botones sig
 Si los botones no se muestran, el **panel Filtros** puede estar oculto.  
 Para obtener más información, vaya [a Ocultar el panel Filtros](#hide-the-filters-pane).  
 
-Para habilitar varios filtros de tipo simultáneamente, mantenga `Control` presionado \(Windows, Linux\) o `Command` \(macOS\) y, a continuación, elija.  
+Para habilitar varios filtros de tipo simultáneamente, mantenga presionado `Control` \(Windows, Linux\) o `Command` \(macOS\) y, a continuación, elija.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Usar los filtros De tipo para mostrar recursos JS, CSS y Document" lightbox="../media/network-network-type-filters.msft.png":::
    Usar los filtros De tipo para mostrar recursos JS, CSS y Document  
@@ -418,7 +417,7 @@ La tabla Solicitudes muestra las siguientes columnas de forma predeterminada.
    :::column span="2":::
       Los siguientes objetos o procesos inician solicitudes.  
       
-      *   **Analizador**  Analizador HTML para Microsoft Edge.  
+      *   **Analizador**  El analizador HTML para Microsoft Edge.  
       *   **Redirigir**  Redireccionamiento HTTP.  
       *   **Script**  Una función JavaScript.  
       *   **Otros**  Otro proceso o acción, como navegar a una página mediante un vínculo o escribir una dirección URL en la barra de direcciones.  
@@ -903,8 +902,8 @@ Elija una solicitud de red y vaya al **panel Encabezados.**  Para copiar el valo
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Código Visual Studio Microsoft con json de respuesta con formato" lightbox="../media/network-header-paste-property-value.msft.png":::
-          Pegar JSON de respuesta con formato en Microsoft Visual Studio Code  
+        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio Código con JSON de respuesta con formato" lightbox="../media/network-header-paste-property-value.msft.png":::
+          Pegar JSON de respuesta con formato en Microsoft Visual Studio código  
         :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -981,4 +980,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo evaluar el rendimiento del tiempo 
 title: Introducción al análisis del rendimiento en tiempo de ejecución
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: f40f23c4ac9fcc0bb0186ddb96956f691890c0c0
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439615"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564276"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,17 +27,16 @@ ms.locfileid: "11439615"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="get-started-with-analyzing-runtime-performance"></a>Introducción al análisis del rendimiento en tiempo de ejecución  
 
 > [!NOTE]
 > Para obtener información sobre cómo hacer que las páginas se carguen más rápido, vaya a [Optimizar la velocidad del sitio web][DevtoolsSpeedGetStarted].  
 
-El rendimiento en tiempo de ejecución es el rendimiento de la página cuando se ejecuta, en lugar de cargarse.  El siguiente artículo tutorial le enseña a usar el panel Rendimiento de Microsoft Edge DevTools para analizar el rendimiento en tiempo de ejecución.  En cuanto al modelo **RAIL,** las habilidades que aprendas en este tutorial son útiles para analizar las fases respuesta, animación e inactividad de la página.  
+El rendimiento en tiempo de ejecución es el rendimiento de la página cuando se ejecuta, en lugar de cargarse.  El siguiente artículo tutorial le enseña a usar el panel de rendimiento Microsoft Edge DevTools para analizar el rendimiento en tiempo de ejecución.  En cuanto al modelo **RAIL,** las habilidades que aprendas en este tutorial son útiles para analizar las fases respuesta, animación e inactividad de la página.  
 
 <!--todo: add rail link when section is ready -->  
 
-## <a name="get-started"></a>Introducción  
+## <a name="get-started"></a>Comenzar  
 
 En el siguiente tutorial, abra DevTools en una página en directo y use el **panel** Rendimiento para encontrar un cuello de botella de rendimiento en la página.  
 
@@ -66,7 +65,7 @@ Los dispositivos móviles tienen mucha menos potencia de CPU que los equipos de 
 
 1.  En DevTools, elija la **herramienta** Rendimiento.  
 1.  Asegúrate de elegir la casilla situada junto a **Capturas de pantalla.**  
-1.  Elija **Configuración de captura** \( Configuración de captura ![ ](../media/capture-settings-icon.msft.png) \).  DevTools muestra la configuración relacionada con la forma en que captura las métricas de rendimiento.  
+1.  Elija **Capturar Configuración** \( Capturar Configuración ![ ](../media/capture-settings-icon.msft.png) \).  DevTools muestra la configuración relacionada con la forma en que captura las métricas de rendimiento.  
 1.  Para **CPU,** elija **4x slowdown**.  DevTools limita la CPU para que sea 4 veces más lenta de lo habitual.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="Limitación de CPU" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -146,7 +145,7 @@ Por supuesto, la pantalla indica que la página web no está funcionando bien.  
 
 Otra herramienta práctica es el medidor fps, que proporciona estimaciones en tiempo real de FPS a medida que se ejecuta la página.  
 
-1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú de comandos .  
 1.  Empiece a `Rendering` escribir en el menú **comando** y elija **Mostrar representación**.  
 1.  En la **herramienta De** representación, active **Fps Meter**.  Aparece una nueva superposición en la parte superior derecha de la ventanilla.  
     
@@ -225,10 +224,10 @@ Con los flujos de trabajo y las herramientas que acaba de aprender, elija **Opti
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->  
 
-Para sentirse más cómodo con la **herramienta Rendimiento,** la práctica hace que sea perfecto.  Intente generar perfiles de las páginas y analizar los resultados.  Si tienes alguna pregunta sobre los **** resultados, usa el icono Enviar comentarios, selecciona `Alt` + `Shift` + `I` \(Windows, Linux\), `Option` + `Shift` + `I` selecciona \(macOS\) o [tuitea][TwitterEdgeDevtools]el equipo de DevTools .  Incluya capturas de pantalla o vínculos a páginas reproducibles, si es posible.  
+Para sentirse más cómodo con la **herramienta Rendimiento,** la práctica hace que sea perfecto.  Intente generar perfiles de las páginas y analizar los resultados.  Si tiene alguna pregunta sobre los **** resultados, use el icono Enviar comentarios, seleccione `Alt` + `Shift` + `I` \(Windows, Linux\), `Option` + `Shift` + `I` seleccione \(macOS\) [][TwitterEdgeDevtools]o tuitee al equipo de DevTools .  Incluya capturas de pantalla o vínculos a páginas reproducibles, si es posible.  
 
-:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="El icono **Comentarios** en Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
-   El **icono Enviar comentarios** en Microsoft Edge DevTools  
+:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="El icono **Comentarios** de la Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
+   El **icono Enviar comentarios** en el Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
@@ -250,7 +249,7 @@ Por último, hay muchas formas de mejorar el rendimiento en tiempo de ejecución
 
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Cambiar la ubicación de Microsoft Edge DevTools (desacoplar, acoplar a abajo, acoplar a la izquierda)"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Cambiar Microsoft Edge ubicación de DevTools (desacoplar, acoplar a abajo, acoplar a la izquierda)"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimizar la velocidad del sitio web con Microsoft Edge DevTools"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools: publicar un mensaje de | Twitter"  
@@ -284,4 +283,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Hospedar un sitio en un servidor web de máquina de desarrollo y, a
 title: Acceso a servidores locales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: 2d721a0ccd27befc7a59726f4c5ef9227042b30b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461265"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565095"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,7 +72,7 @@ Por ejemplo, supongamos que el sitio usa una biblioteca de JavaScript de tercero
 
 ### <a name="set-up-port-forwarding-to-proxy-server"></a>Configurar el reenvío de puertos al servidor proxy  
 
-Para asignar un dominio personalizado, debe ejecutar un servidor proxy en el equipo de desarrollo.  Ejemplos de servidores proxy [son Charles,][CharlesWebDebuggingProxy] [Squid][SquidOptimisingWebDelivery]y [Fiddler.][FiddlerWebDebuggingProxy]  
+Para asignar un dominio personalizado, debe ejecutar un servidor proxy en el equipo de desarrollo.  Ejemplos de servidores proxy [son Charles,][CharlesWebDebuggingProxy] [Squid][SquidCacheWiki]y [Fiddler.][TelerikFiddler]  
 
 Para configurar el reenvío de puertos a un proxy:  
 
@@ -119,9 +119,9 @@ Si el servidor web se está ejecutando fuera de un puerto no estándar, recuerde
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Proxy de depuración web de Carlos"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid : Optimización de la entrega web"  
+[SquidCacheWiki]: https://wiki.squid-cache.org "Wiki proxy de wiki de calamar"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler: proxy de depuración web gratuito"  
+[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler: proxy de depuración web gratuito"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
@@ -133,5 +133,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

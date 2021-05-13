@@ -3,16 +3,16 @@ description: Cómo ver y cambiar los datos de IndexedDB con el panel Aplicación
 title: Ver y cambiar datos IndexedDB con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: b0927ab436d1278f50b0dee099ba3526e5506762
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439713"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564808"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439713"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-change-indexeddb-data-with-microsoft-edge-devtools"></a>Ver y cambiar datos IndexedDB con Microsoft Edge DevTools  
 
-En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para ver y cambiar [los datos de IndexedDB.][MDNIndexedDBAPI]  Se supone que está familiarizado con DevTools.  También supone que está familiarizado con IndexedDB.  Si no es así, vaya [a Using IndexedDB][MDNUsingIndexedDB].  
+En esta guía se muestra cómo usar [Microsoft Edge DevTools para][MicrosoftEdgeDevTools] ver y cambiar [los datos de IndexedDB.][MDNIndexedDBAPI]  Se supone que está familiarizado con DevTools.  También supone que está familiarizado con IndexedDB.  Si no es así, vaya [a Using IndexedDB][MDNUsingIndexedDB].  
 
 ## <a name="view-indexeddb-data"></a>Ver datos indexadosDB  
 
@@ -155,8 +154,8 @@ Las claves indexadasDB y los valores no se pueden editar desde la **herramienta 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
-[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Herramientas para desarrolladores | Microsoft Docs"  
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Ejecute fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools | Microsoft Docs"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Mostrar bases de datos de iframe IndexedDB - chromium - Monorail"  
 
@@ -175,4 +174,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
-description: Una guía sobre cómo navegar por Microsoft Edge DevTools con tecnología de asistencia como lectores de pantalla.
-title: Navegar por Microsoft Edge DevTools con tecnología de asistencia
+description: Una guía para navegar por Microsoft Edge DevTools con tecnología de asistencia como lectores de pantalla.
+title: Navegar Microsoft Edge DevTools con tecnología de asistencia
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 343ce99188234b40dd8554e3db8bf303876e7b2f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: cf2742dfb08ee482b26fe43417b7454e5b6ff809
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398437"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564584"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -27,14 +27,13 @@ ms.locfileid: "11398437"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navegar Microsoft Edge DevTools con tecnología de asistencia  
 
-# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navegar por Microsoft Edge DevTools con tecnología de asistencia  
-
-El siguiente artículo tiene como objetivo ayudar a los usuarios que dependen principalmente de la tecnología de asistencia, como los lectores de pantalla, a acceder y usar [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] es un conjunto de herramientas para desarrolladores web integradas en el explorador Microsoft Edge.  Si está buscando características de DevTools relacionadas con la mejora de la accesibilidad de una página web, vaya a [Accessibility Reference][DevtoolsAccessibilityReference].  
+El siguiente artículo tiene como objetivo ayudar a los usuarios que dependen principalmente de la tecnología de asistencia, como los lectores de pantalla, a acceder y usar [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools es][MicrosoftEdgeDevtoolsMain] un conjunto de herramientas de desarrollador web integradas en el Microsoft Edge web.  Si está buscando características de DevTools relacionadas con la mejora de la accesibilidad de una página web, vaya a [Accessibility Reference][DevtoolsAccessibilityReference].  
 
 La accesibilidad de DevTools es un trabajo en curso.  Algunos paneles y pestañas funcionan mejor con tecnología de asistencia que otros.  Esta guía le guiará por los paneles que son los más accesibles y resalta los problemas específicos que puede encontrar en el camino.  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 Antes de empezar, ayuda a tener un modelo mental de cómo se estructura la interfaz de usuario de DevTools.  DevTools se divide en una serie de paneles que se organizan en una lista de [pestañas de ARIA.][W3CWaiAriaTablist]  
 
@@ -58,7 +57,7 @@ Para empezar, vaya a [Abrir Microsoft Edge DevTools][DevtoolsOpen].  Hay varias 
 
 ### <a name="navigate-by-keyboard"></a>Navegar por teclado  
 
-*   Con DevTools abierto, selecciona `Control` + `]` \(Windows, Linux\) o `Command` + `]` \(macOS\) para centrar el panel siguiente.  
+*   Con DevTools abierto, seleccione `Control` + `]` \(Windows, Linux\) o `Command` + `]` \(macOS\) para centrar el panel siguiente.  
 *   Seleccione `Control` + `[` \(Windows, Linux\) o `Command` + `[` \(macOS\) para centrar el panel anterior.  
 *   También es posible usar para mover el foco a la lista de pestañas ARIA de un panel y usar las teclas de flecha para cambiar los paneles, aunque puede ser más rápido usar los `Shift` + `Tab` métodos abreviados mencionados anteriormente. [][W3CWaiAriaTablist]  
 
@@ -71,14 +70,14 @@ Para empezar, vaya a [Abrir Microsoft Edge DevTools][DevtoolsOpen].  Hay varias 
 
 Para centrar un panel específico, use el [menú comando][DevtoolsCommandMenuIndex]:  
 
-1.  Con DevTools abierto, seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú comando .  
+1.  Con DevTools abierto, seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú de comandos .  
     El **menú de comandos** es un cuadro combinado de autocompletar de búsqueda aproximada.  
 1.  Escriba el nombre del panel que desea abrir y, a continuación, use el teclado para `Down Arrow` navegar a la opción correcta.  
 1.  Seleccione `Enter` para ejecutar un comando.  
 
 Complete las siguientes acciones para abrir la **herramienta** Elementos.  
 
-1.  Abra el **menú de comandos**.  
+1.  Abra el **Menú de comandos**.  
 1.  Escriba `E` a `L` continuación .  La **opción Panel > Mostrar elementos** está seleccionada.  
 1.  Seleccione `Enter` para ejecutar el comando que abre el panel.  
 
@@ -147,7 +146,7 @@ Dado que todas las herramientas de estilo se conectan de una forma u otra al pan
 
 *   Con el foco en el **panel Estilos,** seleccione `Tab` para mover el foco dentro y explorar el contenido.  
 *   Seleccione `Tab` hasta que el primer estilo se active.  Si usa un lector de pantalla, este primer estilo se anuncia como `element.style {}` .  
-*   Seleccione `Down Arrow` esta opción para navegar por la lista de estilos por orden de especificidad.  Un lector de pantalla anuncia cada estilo empezando por el nombre del archivo CSS, el número de línea en el que aparece el estilo y el nombre del estilo.  (por ejemplo, `main.css:233 .card__img {}`).  
+*   Seleccione `Down Arrow` esta opción para navegar por la lista de estilos por orden de especificidad.  Un lector de pantalla anuncia cada estilo empezando por el nombre del archivo CSS, el número de línea en el que aparece el estilo y el nombre del estilo.  Por ejemplo, `main.css:233 .card__img {}`.  
 *   Seleccione `Enter` para inspeccionar un estilo con más detalle.  El foco comienza en una versión editable del nombre del estilo.  
 *   Seleccione `Tab` para moverse entre las versiones editables de cada propiedad CSS y los valores correspondientes.  Al final de cada bloque de estilos hay un campo de texto editable en blanco que puede usar para agregar propiedades CSS adicionales.  
 *   Puede seguir seleccionando para desplazarse por la lista de estilos o seleccionar salir del modo y volver a navegar por `Tab` `Escape` las teclas de flecha.  
@@ -211,7 +210,7 @@ El **árbol de accesibilidad** se presenta como un árbol [ARIA][W3CWaiAriaTree]
 
 **Problemas conocidos**  
 
-*   Es posible que el tipo de árbol [ARIA][W3CWaiAriaTree] usado por el **panel** Accesibilidad no se exponga correctamente en Microsoft Edge para lectores de pantalla de macOS como VoiceOver.  Suscríbete al problema [chromium #868480][ChromiumIssues868480] para estar informado sobre el progreso en este problema.  
+*   Es posible que el tipo de árbol [ARIA][W3CWaiAriaTree] usado por el **panel** Accesibilidad no se exponga correctamente en Microsoft Edge lectores de pantalla de macOS como VoiceOver.  [Suscríbete Chromium problema #868480][ChromiumIssues868480] para estar informado sobre el progreso en este problema.  
 *   Cada una de las **** secciones **Atributos de ARIA** y Propiedades calculadas se marcan como un árbol de [ARIA,][W3CWaiAriaTree]pero cada una de ellas no tiene actualmente administración de focos y no funciona con el teclado.  
 
 ## <a name="audits-panel"></a>Panel auditorías  
@@ -244,10 +243,10 @@ Para ejecutar una nueva auditoría, use `Shift` + `Tab` para salir del informe y
 
 [DevtoolsAccessibilityReference]: ./reference.md "Referencia de accesibilidad | Microsoft Docs"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "El panel Accesibilidad- Referencia de accesibilidad | Microsoft Docs"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el Microsoft Edge de comandos DevTools | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Descripción general de la consola | Microsoft Docs"  
-[DevtoolsCssIndex]: ../css/index.md "Introducción a la visualización y cambio de css | Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Introducción Con vista y cambio de CSS | Microsoft Docs"  
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: .. /dom/index.md#view-dom-nodes "Ver nodos DOM: introducción a la visualización y cambio del dom | Microsoft Docs"  
@@ -278,5 +277,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[RobDodson]: https://developers.google.com/web/resources/contributors/robdodson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[RobDodson]: https://developers.google.com/web/resources/contributors#rob-dodson  

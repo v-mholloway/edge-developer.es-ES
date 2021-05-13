@@ -1,18 +1,18 @@
 ---
-description: Combina los métodos abreviados de teclado Visual Studio código, emular Surface Duo y Samsung Galaxy Fold, mejoras de superposición de cuadrícula CSS y mucho más.
+description: Combina los métodos abreviados de teclado Visual Studio Code, emular Surface Duo y Samsung Galaxy Fold, mejoras de superposición de cuadrícula CSS y mucho más.
 title: Novedades de DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: f1227f0869aa753c2d05980c712ca3453adfd041
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: ec2219e9ebdd5d79c61bcaa813f7784246b1f5d0
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514385"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564948"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -29,23 +29,23 @@ ms.locfileid: "11514385"
    limitations under the License.  -->  
 # <a name="whats-new-in-devtools-microsoft-edge-86"></a>Novedades de DevTools (Microsoft Edge 86)  
 
-## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Anuncios del equipo de Microsoft Edge DevTools  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Anuncios del equipo Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a>Coincidencia de métodos abreviados de teclado en DevTools para Visual Studio código  
+### <a name="match-keyboard-shortcuts-in-devtools-to-visual-studio-code"></a>Coincidencia de métodos abreviados de teclado en DevTools para Visual Studio Code  
 
-En Microsoft Edge 86, puede hacer coincidir los métodos abreviados de teclado de DevTools con los accesos directos de [Microsoft Visual Studio Code][VisualStudioCode].  
+En Microsoft Edge 86, puede hacer coincidir los métodos abreviados de teclado de DevTools con los accesos directos de [Microsoft Visual Studio Code][VisualStudioCodeMain].  
 
-:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Coincidencia de métodos abreviados de teclado en DevTools para Visual Studio código" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
-   Coincidencia de métodos abreviados de teclado en DevTools para Visual Studio código  
+:::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Coincida con los métodos abreviados de teclado en DevTools para Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
+   Coincida con los métodos abreviados de teclado en DevTools para Visual Studio Code  
 :::image-end:::  
 
-Para activar esta característica, vaya a [Personalizar métodos abreviados de teclado en Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
+Para activar esta característica, vaya a [Personalizar métodos abreviados de teclado en el Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
 
-Por ejemplo, el método abreviado de teclado para pausar o continuar ejecutando un script [en Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] es `F5` .  Con el valor preestablecido **DevTools (predeterminado),** ese mismo acceso directo en DevTools es , pero cuando elige el valor preestablecido Visual Studio `F8` **Code,** ese acceso directo ahora también es `F5` .  
+Por ejemplo, el método abreviado de teclado para pausar o continuar ejecutando un script [en Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] es `F5` .  Con el valor **preestablecido DevTools (predeterminado),** ese mismo acceso directo en DevTools es , pero cuando elige el valor preestablecido `F8` **Visual Studio Code,** ese acceso directo ahora también es `F5` .  
 
-Problema de [chromium #174309][CR174309]  
+Chromium problema [#174309][CR174309]  
 
 ### <a name="emulate-surface-duo-and-samsung-galaxy-fold"></a>Emular Surface Duo y Samsung Galaxy Fold  
 
@@ -53,23 +53,23 @@ Problema de [chromium #174309][CR174309]
    Característica experimental  
 :::image-end:::  
 
-Ahora puedes probar el aspecto de tu sitio web o aplicación en dos nuevos dispositivos:  [Surface Duo][MicrosoftSurfaceDevicesDuo] y Samsung [Galaxy Fold][SamsungMobileGalaxyFold] en Microsoft Edge.  
+Ahora puedes probar el aspecto de tu sitio web o aplicación en dos nuevos dispositivos: [Surface Duo][MicrosoftSurfaceDevicesDuo] y Samsung [Galaxy Fold][SamsungMobileGalaxyFold] en Microsoft Edge.  
 
 Para ayudar a mejorar su sitio web o aplicación para dispositivos plegables y de pantalla doble, use las siguientes características al [emular el dispositivo][DevtoolsDeviceModeIndex].  
 
-*   [Expandir][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], que es cuando su sitio web \(o aplicación\) se extiende por las dos pantallas.
+*   [Expandir][DevtoolsDeviceModeDualScreenAndFoldables], que es cuando su sitio web \(o aplicación\) se extiende por las dos pantallas.
 *   [Representación de la unión][DualScreenIntroductionHowWorkSeam], que es el espacio entre las dos pantallas.
-*   [Habilitar las API experimentales de plataforma web][DevtoolsExperimentalFeaturesEnableExperimentalApis] para tener acceso a la nueva característica de pantalla multimedia [CSS][DualScreenWebCssMediaSpanning] y a la [API getWindowSegments de JavaScript.][DualScreenWebJavascriptGetwindowsegments]  
+*   Habilitar las API experimentales de plataforma web para tener acceso a la nueva característica de pantalla multimedia [CSS][DualScreenWebCssMediaSpanning] y a la [API getWindowSegments de JavaScript.][DualScreenWebJavascriptGetwindowsegments]  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Emulación de dispositivos para Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Emulación de dispositivos para Surface Duo  
 :::image-end:::  
 
-Para activar esta característica experimental, vaya a Activar características [experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla junto a **Emulación: Admitir modo de pantalla dual.**  
+Para activar esta característica experimental, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y elija la casilla situada junto a **Emulation: Support dual screen mode**.  
 
-Para obtener más información acerca de este experimento, vaya [a Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
+Para obtener más información acerca de esta característica, vaya a Emular dispositivos de pantalla doble y plegables [en Microsoft Edge DevTools][DevtoolsDeviceModeDualScreenAndFoldables].  
 
-Problema de Chromium: [#1054281][CR1054281]  
+Chromium problema: [#1054281][CR1054281]  
 
 ### <a name="css-grid-overlay-improvements-and-new-experimental-grid-features"></a>Mejoras de superposición de cuadrícula CSS y nuevas características de cuadrícula experimental  
 
@@ -82,13 +82,13 @@ Gracias por los comentarios positivos sobre las superposiciones de cuadrícula C
 > [!NOTE]
 > Para obtener más información acerca de las superposiciones de cuadrícula, vaya a [Características de depuración de][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]cuadrícula CSS .  
 
-El equipo de Microsoft Edge DevTools y el equipo de Chrome DevTools colaboran en características adicionales.  Las nuevas características incluyen varias superposiciones que son persistentes y configurables desde un nuevo panel **Diseño** de la **herramienta** Elementos.  
+El Microsoft Edge de DevTools y el equipo de Chrome DevTools colaboran en características adicionales.  Las nuevas características incluyen varias superposiciones que son persistentes y configurables desde un nuevo panel **Diseño** de la **herramienta** Elementos.  
 
-Para activar esta característica experimental, vaya a Activar características [experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla situada junto a Habilitar nuevas características de depuración **de css grid (opciones**de configuración disponibles en el panel de la barra lateral Diseño en Elementos después del reinicio).  
+Para activar esta característica experimental, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y elija la casilla situada junto a Habilitar nuevas características de depuración de cuadrícula **CSS (opciones**de configuración disponibles en el panel de la barra lateral Diseño en Elementos después del reinicio).  
 
-Para obtener más información acerca de este experimento, vaya [a Habilitar nuevas características de depuración de cuadrícula CSS][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
+Para obtener más información acerca de esta característica, vaya a [Inspeccionar cuadrícula CSS en Microsoft Edge DevTools][DevtoolsCssGrid].  
 
-Problema de Chromium: [#1047356][CR1047356]  
+Chromium problema: [#1047356][CR1047356]  
 
 ### <a name="table-copied-from-the-console-preserves-formatting"></a>La tabla copiada desde la consola conserva el formato  
 
@@ -96,33 +96,33 @@ En Microsoft Edge 85 o versiones anteriores, se perdió el formato de una `conso
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Resultado de la API de consola de tabla en Microsoft Edge 85 o versiones anteriores" lightbox="../../media/2020/08/console-table-beta.msft.png":::
-         `table` Salida de la API de consola en Microsoft Edge 85 o versiones anteriores  
+      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Resultado de la API de consola de tabla Microsoft Edge 85 o versiones anteriores" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+         `table` Salida de la API de consola Microsoft Edge 85 o versiones anteriores  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="table Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
-         `table` Salida de la API de consola de Microsoft Edge 85 o anterior pegada en Visual Studio código  
+         `table` Resultado de la API de consola Microsoft Edge 85 o versiones anteriores pegadas en Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-En Microsoft Edge 86 o posterior, al copiar una tabla desde la **consola,** el formato se conserva ahora.  
+En Microsoft Edge 86 o posterior, al copiar una tabla de la **consola,** el formato se conserva ahora.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Resultado de la API de consola de tabla en Microsoft Edge 86 o posterior" lightbox="../../media/2020/08/console-table-canary.msft.png":::
-         `table` Salida de la API de consola en Microsoft Edge 86 o posterior  
+      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="resultado de la API de consola de tabla Microsoft Edge 86 o posterior" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+         `table` Salida de la API de consola Microsoft Edge 86 o posterior  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="table Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
-         `table` Salida de la API de consola de Microsoft Edge 86 o posterior pegada en Visual Studio código  
+         `table` Salida de la API de consola Microsoft Edge 86 o posterior pegada en Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Problema de Chromium: [#1115011][CR1115011]  
+Chromium problema: [#1115011][CR1115011]  
 
 ### <a name="source-order-viewer-for-easier-accessibility-testing"></a>Visor de pedidos de origen para pruebas de accesibilidad más fáciles  
 
@@ -138,11 +138,11 @@ La nueva aplicación auxiliar de accesibilidad muestra el orden de los elementos
 
 Esta característica facilita la prueba de la forma en que los usuarios del lector de pantalla y el teclado experimentan su sitio web o aplicación.  Los lectores de pantalla y la navegación por teclado dependen de que el contenido se coloque en un orden determinado en el código fuente de su sitio web o aplicación, de modo que coincida con la página representada.  El Visor de pedidos de origen muestra posibles diferencias de orden entre la página representada y el código fuente.  
 
-Para activar esta característica experimental, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla situada junto a Habilitar visor **de pedidos de origen**.  
+Para activar esta característica experimental, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y elija la casilla situada junto a **Habilitar**visor de pedidos de origen .  
 
-Para obtener más información acerca de este experimento, vaya a [Habilitar el Visor de pedidos de origen][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].  
+Para obtener más información acerca de este experimento, vaya a [Visor de pedidos de origen][DevtoolsExperimentalFeaturesSourceOrderViewer].  
 
-Problema de Chromium: [#1094406][CR1094406]  
+Chromium problema: [#1094406][CR1094406]  
 
 <!--
 ### DevTools language enhancements  
@@ -169,17 +169,17 @@ The current effort to improve translation quality enables easier support for mor
 
 ### <a name="highlight-all-search-results-in-elements-tool"></a>Resaltar todos los resultados de búsqueda en la herramienta Elementos  
 
-En Microsoft Edge 84 y 85, no se resaltó el primer resultado de búsqueda en **la herramienta Elementos.**  Los resultados de búsqueda restantes se resaltaron correctamente.  
+En Microsoft Edge 84 y 85, no se resaltó el primer resultado de búsqueda en la **herramienta** Elementos.  Los resultados de búsqueda restantes se resaltaron correctamente.  
 
-Gracias por enviar sus comentarios y ayudar a mejorar Chromium.  Sus comentarios revelaron el [problema #1103316][CR1103316] en el proyecto chromium de código abierto.  
+Gracias por enviar sus comentarios y ayudar a mejorar Chromium.  Sus comentarios revelaron el [problema #1103316][CR1103316] en el proyecto de código Chromium código abierto.  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Primer resultado de búsqueda resaltado en el panel Elementos de Microsoft Edge 84 o posterior" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-   Primer resultado de búsqueda resaltado en **la herramienta Elements** en Microsoft Edge 84 o posterior  
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Primer resultado de búsqueda resaltado en el panel Elementos Microsoft Edge 84 o posterior" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+   Primer resultado de búsqueda resaltado en **la herramienta Elementos** en Microsoft Edge 84 o posterior  
 :::image-end:::  
 
 El problema ahora se soluciona en todas las versiones de Microsoft Edge.  
 
-Problema de Chromium: [#1103316][CR1103316]  
+Chromium problema: [#1103316][CR1103316]  
 
 ## <a name="announcements-from-the-chromium-project"></a>Anuncios del proyecto de Chromium  
 
@@ -187,7 +187,7 @@ Problema de Chromium: [#1103316][CR1103316]
 
 ### <a name="new-media-tool"></a>Nueva herramienta multimedia  
 
-Ahora DevTools muestra información de reproductores multimedia en la [herramienta][DevtoolsMediaPanelIndex] Multimedia.  
+Ahora DevTools muestra información de reproductores multimedia en la herramienta [Media][DevtoolsMediaPanelIndex].  
 
 Para abrir la nueva **herramienta Multimedia,** complete el siguiente paso.  
 
@@ -214,7 +214,7 @@ Por ejemplo, para realizar una captura de pantalla de la tabla de contenido, man
    Capturar capturas de pantalla de nodo  
 :::image-end:::  
 
-Problema de Chromium: [#1100253][CR1100253]  
+Chromium problema: [#1100253][CR1100253]  
 
 ### <a name="issues-tool-updates"></a>Problemas de actualizaciones de herramientas  
 
@@ -232,13 +232,13 @@ Los problemas de cookies de terceros ahora están ocultos de forma predeterminad
    Casilla de verificación problemas de cookies de terceros  
 :::image-end:::  
 
-Problemas de cromo: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]  
+Chromium: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]  
 
 ### <a name="emulate-missing-local-fonts"></a>Emular fuentes locales que faltan  
 
 Abra la [herramienta de representación y][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] use la nueva característica Deshabilitar fuentes **locales** para emular los orígenes que faltan en `local()` las `@font-face` reglas.  
 
-Por ejemplo, cuando la fuente está instalada en el dispositivo y la regla la usa como fuente, Microsoft Edge usa el archivo de fuente `Rubik` `@font-face src` local del `local()` dispositivo.  
+Por ejemplo, cuando la fuente está instalada en el dispositivo y la regla la usa como fuente, Microsoft Edge el archivo de fuente `Rubik` `@font-face src` local del `local()` dispositivo.  
 
 Cuando **se habilita Deshabilitar fuentes** locales, DevTools omite las fuentes y captura cada una de la `local()` red.  
 
@@ -257,7 +257,7 @@ Use **Deshabilitar fuentes locales** para facilitar la realización de las sigui
 *   Compruebe la precisión de las reglas `@font-face` CSS.  
 *   Descubra las diferencias entre las versiones locales instaladas en el dispositivo y una fuente web.  
 
-Problema de Chromium: [#384968][CR384968]  
+Chromium problema: [#384968][CR384968]  
 
 ### <a name="emulate-inactive-users"></a>Emular usuarios inactivos  
 
@@ -267,7 +267,7 @@ La [API de detección de][WebDevIdleDetection] inactividad permite a los desarro
    Emular usuarios inactivos  
 :::image-end:::  
 
-Problema de Chromium: [#1090802][CR1090802]  
+Chromium problema: [#1090802][CR1090802]  
 
 ### <a name="emulate-prefers-reduced-data"></a>Emular prefers-reduced-data  
 
@@ -282,7 +282,7 @@ Ahora puede usar DevTools para emular la `prefers-reduced-data` consulta multime
    Emular prefers-reduced-data  
 :::image-end:::  
 
-Problema de Chromium: [#1096068][CR1096068]  
+Chromium problema: [#1096068][CR1096068]  
 
 ### <a name="support-for-new-javascript-features"></a>Compatibilidad con nuevas características de JavaScript  
 
@@ -293,13 +293,13 @@ DevTools ahora admite mejor las siguientes características del lenguaje JavaScr
 | [Operadores de asignación lógica][V8FeaturesLogicalAssignment] | DevTools ahora admite la asignación lógica con los `&&=` nuevos operadores , y en las herramientas `||=` `??=` **Consola** **y** Orígenes.  |  
 | Separadores [numéricos de impresión bastante][V8FeaturesNumericSeparators] | Ahora DevTools imprime correctamente los separadores numéricos en la **herramienta** Orígenes.  |  
 
-Problemas de cromo: [1086817][CR1086817], [1080569][CR1080569]  
+Chromium: [1086817][CR1086817], [1080569][CR1080569]  
 
 ### <a name="lighthouse-62-in-the-lighthouse-panel"></a>Faro 6.2 en el panel Faro  
 
 Ahora, **la herramienta Lighthouse** está ejecutando Lighthouse 6.2.  Para obtener una lista completa de los cambios, vaya a las notas [de la versión de Lighthouse][GithubGooglechromeLighthouseV620].  
 
-Problema de Chromium: [#772558][CR772558]  
+Chromium problema: [#772558][CR772558]  
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>Desuso de la descripción de otros orígenes en el panel Trabajadores de servicio  
 
@@ -311,7 +311,7 @@ Anteriormente, DevTools muestra una lista anidada en el panel **DevTools** > **D
    Vínculo a otros orígenes  
 :::image-end:::  
 
-Problema de Chromium: [#807440][CR807440]  
+Chromium problema: [#807440][CR807440]  
 
 ### <a name="show-coverage-summary-for-filtered-items"></a>Mostrar resumen de cobertura para elementos filtrados  
 
@@ -332,7 +332,7 @@ En la primera de las siguientes figuras, el resumen se muestra inicialmente y, e
    :::column-end:::
 :::row-end:::
 
-Problema de Chromium: [#1061385][CR1090802]  
+Chromium problema: [#1061385][CR1090802]  
 
 ### <a name="new-frame-details-view-in-application-panel"></a>Nueva vista detalles del marco en el panel Aplicación  
 
@@ -342,7 +342,7 @@ DevTools ahora muestra una vista detallada para cada fotograma.  Para acceder a 
    Nueva vista detallada para un marco en **la herramienta Aplicación**  
 :::image-end:::  
 
-Problema de Chromium: [#1093247][CR1093247]  
+Chromium problema: [#1093247][CR1093247]  
 
 #### <a name="frame-details-for-opened-windows"></a>Detalles del marco para ventanas abiertas  
 
@@ -352,7 +352,7 @@ Las ventanas abiertas y las ventanas emergentes ahora también se muestran debaj
    Nueva vista detallada de fotogramas para ventanas abiertas  
 :::image-end:::  
 
-Problema de Chromium: [#1107766][CR1107766]  
+Chromium problema: [#1107766][CR1107766]  
 
 #### <a name="security-and-isolation-information"></a>Información de seguridad y aislamiento  
 
@@ -362,9 +362,9 @@ Contexto seguro, [Cross-Origin-Embedder-Policy (COEP)][WebDevCoopCoep]y [Cross-O
    Información de seguridad y aislamiento  
 :::image-end:::  
 
-En el futuro, el equipo de DevTools de Microsoft Edge y el equipo de Chrome DevTools planean agregar más información de seguridad a los detalles del marco.  
+En el futuro, el Microsoft Edge de DevTools y el equipo de Chrome DevTools planean agregar más información de seguridad a los detalles del marco.  
 
-Problema de Chromium: [#1051466][CR1051466]  
+Chromium problema: [#1051466][CR1051466]  
 
 ### <a name="elements-and-network-panel-updates"></a>Actualizaciones de elementos y panel de red  
 
@@ -378,17 +378,17 @@ En el ejemplo siguiente, `h1` tiene texto de contraste bajo.  Para corregirlo, a
    El selector de colores sugiere sugerencias de color AAA y AA  
 :::image-end:::  
 
-Problema de Chromium: [#1093227][CR1093227]  
+Chromium problema: [#1093227][CR1093227]  
 
 #### <a name="reinstate-properties-pane-in-the-elements-panel"></a>Reinstaurar el panel Propiedades en el panel Elementos  
 
-El **panel Propiedades** ha vuelto.  Estaba en [desuso en Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  El equipo de Microsoft Edge DevTools y el equipo de Chrome DevTools están planeando mejoras para inspeccionar las propiedades de los elementos.  
+El **panel Propiedades** ha vuelto.  Estaba en [desuso en Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  El Microsoft Edge de DevTools y el equipo de Chrome DevTools están planeando mejoras para inspeccionar las propiedades de los elementos.  
 
 :::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Panel Propiedades en el panel Elementos" lightbox="../../media/2020/08/properties-pane.msft.png":::
    **Panel Propiedades** de la **herramienta** Elementos  
 :::image-end:::  
 
-Problema de Chromium:  <!--  [#1105205][CR1105205],  -->  [#1116085] [CR1116085]  
+Chromium problema:  <!--  [#1105205][CR1105205],  -->  [#1116085] [CR1116085]  
 
 <!--  
 #### Human-readable X-Client-Data header values in the Network panel  
@@ -414,7 +414,7 @@ Por ejemplo, si `monospace` es una fuente personalizada instalada en el equipo l
    Autocompletar fuentes personalizadas  
 :::image-end:::  
 
-Problema de Chromium: [#1106221][CR1106221]  
+Chromium problema: [#1106221][CR1106221]  
 
 #### <a name="consistently-display-resource-type-in-network-panel"></a>Mostrar de forma coherente el tipo de recurso en el panel Red  
 
@@ -426,7 +426,7 @@ Anteriormente, DevTools cambió el tipo a `Other` veces.
    Mostrar tipo de recurso de redireccionamiento  
 :::image-end:::  
 
-Problema de Chromium: [#997694][CR997694]  
+Chromium problema: [#997694][CR997694]  
 
 #### <a name="clear-buttons-in-the-elements-and-network-tools"></a>Borrar botones en las herramientas Elementos y Red  
 
@@ -450,47 +450,44 @@ Elija el **botón** Borrar para quitar cualquier texto escrito.
    :::column-end:::
 :::row-end:::  
 
-Problema de Chromium: [#1067184][CR1067184]  
+Chromium problema: [#1067184][CR1067184]  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
 
-Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
+Si está en Windows o macOS, considere la posibilidad de usar los canales [Microsoft Edge vista previa][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
-
-<!-- image links -->  
-
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "Icono DevTools Settings"  
 
 <!-- links -->  
 
 [DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "Desuso del panel Propiedades en el panel Elementos: novedades de DevTools (Microsoft Edge 84) | Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Características de depuración de cuadrícula CSS: novedades de DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Habilitar API experimentales: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulación: admite el modo de pantalla dual: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Habilitar visor de pedidos de origen: características experimentales | Microsoft Docs"
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "Emulación: admite el modo de pantalla dual: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Pruebas en dispositivos plegables y de pantalla doble: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
-[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "tabla: referencia de api de consola | Microsoft Docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Busque código JavaScript y CSS sin usar con la pestaña Cobertura en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer: personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analizar el rendimiento de representación con la pestaña Representación: referencia de análisis de rendimiento | Microsoft Docs"  
-[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "Ver y depurar información de reproductores multimedia | Microsoft Docs"  
+[DevtoolsConsoleApiTable]: ../../../console/api.md#table "tabla: referencia de api de consola | Microsoft Docs"  
+[DevtoolsCoverageIndex]: ../../../coverage/index.md "Busque código JavaScript y CSS sin usar con la pestaña Cobertura en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: ../../../css/grid.md "Inspeccionar css grid en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer: personalice Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../../../device-mode/dual-screen-and-foldables.md "Emular dispositivos de pantalla doble y plegables en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analizar el rendimiento de representación con la herramienta de representación: referencia de análisis de rendimiento | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->  
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: .. /.. /.. /experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesSourceOrderViewer]: .. /.. /.. /experimental-features/index.md#source-order-viewer "Source Order Viewer - Experimental features | Microsoft Docs"
+<!--  [DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  -->  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: .. /.. /.. /experimental-features/index.md#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
+[DevtoolsMediaPanelIndex]: .. /.. /.. /media-panel/index.md "Ver y depurar la información de los reproductores multimedia | Microsoft Docs"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "Cómo trabajar con la unión: Introducción a los dispositivos de pantalla doble | Microsoft Docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Característica de pantalla expandida para medios CSS para la detección de pantalla doble | Microsoft Docs"  
 [DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "API de JavaScript de getWindowSegments para dispositivos de pantalla doble | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de versiones preliminares de Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio código "  
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio métodos abreviados de teclado de código para Windows"  
+[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Métodos abreviados de teclado para Windows"  
 
 [MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "El nuevo Surface Duo"  
 
@@ -498,33 +495,33 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Errores de Chromium"  
 
-[CR174309]: https://crbug.com/174309 "DevTools: permitir personalizar los métodos abreviados de teclado o los enlaces de teclas | Errores de Chromium"
-[CR384968]: https://crbug.com/384968 "Opción para omitir fuentes local() | Errores de Chromium"  
-[CR772558]: https://crbug.com/772558 "DevTools: actualizar a la versión más reciente de | Errores de Chromium"  
-[CR807440]: https://crbug.com/807440 "Chrome se bloquea con un gran número de SWs | Errores de Chromium"  
-[CR997694]: https://crbug.com/997694 "Las solicitudes XHR con estado 302 no se muestran en el filtro \"xhr\" del panel de red | Errores de Chromium"  
-[CR1047356]: https://crbug.com/1047356 "Herramientas CSS Grid/Flexbox/Table | Errores de Chromium"  
-[CR1051466]: https://crbug.com/1051466 "Admite la depuración de COOP/COEP en DevTools | Errores de Chromium"  
-[CR1054281]: https://crbug.com/1054281 "Solicitud de característica: DevTools debe emular dispositivos de pantalla doble y | Errores de Chromium"  
-[CR1067184]: https://crbug.com/1067184 "Solicitud de característica: botón Borrar filtro en elementos de & -> de filtro de estilos | Errores de Chromium"  
-[CR1068116]: https://crbug.com/1068116 "☂ Panel de problemas de envío | Errores de Chromium"  
-[CR1080569]: https://crbug.com/1080569 "acorn no admite operadores de asignación lógica | Errores de Chromium"  
-[CR1080589]: https://crbug.com/1080589 "Clasificar problemas por terceros o por terceros | Errores de Chromium"  
-[CR1086817]: https://crbug.com/1086817 "acorn no admite separadores numéricos | Errores de Chromium"  
-[CR1090802]: https://crbug.com/1090802 "Simular cambios de estado de inactividad desde la API de detección de inactividad | Errores de Chromium"  
-[CR1093227]: https://crbug.com/1093227 "DevTools: sugerir colores accesibles más cercanos | Errores de Chromium"  
-[CR1093247]: https://crbug.com/1093247 "Mostrar información sobre fotogramas en el panel de aplicaciones | Errores de Chromium"  
+[CR174309]: https://crbug.com/174309 "DevTools: permitir personalizar los métodos abreviados de teclado o los enlaces de teclas | Chromium errores"
+[CR384968]: https://crbug.com/384968 "Opción para omitir fuentes local() | Chromium errores"  
+[CR772558]: https://crbug.com/772558 "DevTools: actualizar a la versión más reciente de | Chromium errores"  
+[CR807440]: https://crbug.com/807440 "Chrome se bloquea con un gran número de SWs | Chromium errores"  
+[CR997694]: https://crbug.com/997694 "Las solicitudes XHR con estado 302 no se muestran en el filtro \"xhr\" del panel de red | Chromium errores"  
+[CR1047356]: https://crbug.com/1047356 "Herramientas CSS Grid/Flexbox/Table | Chromium errores"  
+[CR1051466]: https://crbug.com/1051466 "Admite la depuración de COOP/COEP en DevTools | Chromium errores"  
+[CR1054281]: https://crbug.com/1054281 "Solicitud de característica: DevTools debe emular dispositivos de pantalla doble y | Chromium errores"  
+[CR1067184]: https://crbug.com/1067184 "Solicitud de característica: botón Borrar filtro en elementos de & -> de filtro de estilos | Chromium errores"  
+[CR1068116]: https://crbug.com/1068116 "☂ Panel de problemas de envío | Chromium errores"  
+[CR1080569]: https://crbug.com/1080569 "acorn no admite operadores de asignación lógica | Chromium errores"  
+[CR1080589]: https://crbug.com/1080589 "Clasificar problemas por terceros o por terceros | Chromium errores"  
+[CR1086817]: https://crbug.com/1086817 "acorn no admite separadores numéricos | Chromium errores"  
+[CR1090802]: https://crbug.com/1090802 "Simular cambios de estado de inactividad desde la API de detección de inactividad | Chromium errores"  
+[CR1093227]: https://crbug.com/1093227 "DevTools: sugerir colores accesibles más cercanos | Chromium errores"  
+[CR1093247]: https://crbug.com/1093247 "Mostrar información sobre fotogramas en el panel de aplicaciones | Chromium errores"  
 [CR1094406]: https://crbug.com/1094406 "Los desarrolladores desean un visor de pedidos de origen para AT https://webwewant.fyi/wants/64/"  
-[CR1096068]: https://crbug.com/1096068 "DevTools: admite la emulación de la característica multimedia prefers-reduced-data | Errores de Chromium"  
-[CR1096481]: https://crbug.com/1096481 "Problemas de colocación de banner | Errores de Chromium"  
-[CR1100253]: https://crbug.com/1100253 "Agregar acceso directo de nodo de captura de pantalla en el menú contextual elemento | Errores de Chromium"  
-[CR1103316]: https://crbug.com/1103316 "La búsqueda de elementos no resuelveNode (texto resaltado, etc.) en la primera búsqueda de resultados | Errores de Chromium"  
-[CR1103854]: https://crbug.com/1103854 "Desuso de los valores X-Client-Data en Developer Tools | Errores de Chromium"  
+[CR1096068]: https://crbug.com/1096068 "DevTools: admite la emulación de la característica multimedia prefers-reduced-data | Chromium errores"  
+[CR1096481]: https://crbug.com/1096481 "Problemas de colocación de banner | Chromium errores"  
+[CR1100253]: https://crbug.com/1100253 "Agregar acceso directo de nodo de captura de pantalla en el menú contextual elemento | Chromium errores"  
+[CR1103316]: https://crbug.com/1103316 "La búsqueda de elementos no resuelveNode (texto resaltado, etc.) en la primera búsqueda de resultados | Chromium errores"  
+[CR1103854]: https://crbug.com/1103854 "Desuso de los valores X-Client-Data en Developer Tools | Chromium errores"  
 <!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->  
-[CR1106221]: "Agregar fuentes importadas a la autocompleción de familia de fuentes en el panel Estilos | https://crbug.com/1106221 Errores de Chromium"  
-[CR1107766]: "Mostrar información sobre fotogramas generados por https://crbug.com/1107766 'window.open()' en el árbol de | Errores de Chromium"  
-[CR1115011]: "Al copiar una tabla desde la consola, la estructura de la tabla no se https://crbug.com/1115011 conserva | Errores de Chromium"  
-[CR1116085]: "Vuelva a traer el inspector de propiedades https://crbug.com/1116085 de DevTools | Errores de Chromium"  
+[CR1106221]: "Agregar fuentes importadas a la autocompleción de familia de fuentes en el panel Estilos | https://crbug.com/1106221 Chromium errores"  
+[CR1107766]: "Mostrar información sobre fotogramas generados por https://crbug.com/1107766 'window.open()' en el árbol de | Chromium errores"  
+[CR1115011]: "Al copiar una tabla desde la consola, la estructura de la tabla no se https://crbug.com/1115011 conserva | Chromium errores"  
+[CR1116085]: "Vuelva a traer el inspector de propiedades https://crbug.com/1116085 de DevTools | Chromium errores"  
 
 [CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "prefers-reduced-data: Media Queries Level 5 | Borradores del editor de grupo de trabajo CSS de W3C"  
 
@@ -551,4 +548,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

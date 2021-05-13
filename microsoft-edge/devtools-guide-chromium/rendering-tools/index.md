@@ -3,16 +3,16 @@ description: Los usuarios esperan páginas interactivas y suaves.  Cada fase de 
 title: Analizar el rendimiento en tiempo de ejecución
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 646db5b2e88e33b109e5eb3ae01a296bf3a4fb46
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d5c37c188ae9038a7baafc936d2a02299def6366
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398003"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564710"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398003"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="analyze-runtime-performance"></a>Analizar el rendimiento en tiempo de ejecución  
 
 Los usuarios esperan páginas interactivas y suaves.  Cada fase de la canalización de píxeles representa una oportunidad para introducir jank.  Obtenga información sobre herramientas y estrategias para identificar y corregir problemas comunes que ralentizan el rendimiento en tiempo de ejecución.  
@@ -148,15 +147,15 @@ En la tabla siguiente se describen algunos problemas comunes de diseño y posibl
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
-## <a name="paint-and-composite"></a>Pintura y composición  
+## <a name="paint-and-composite"></a>Paint y compuesto  
 
-Paint es el proceso de rellenar píxeles.  Suele ser la parte más costosa del proceso de representación.  Si notó que la página no funciona como está diseñada de ninguna manera, es probable que tenga problemas de pintura.  
+Paint es el proceso de relleno en píxeles.  Suele ser la parte más costosa del proceso de representación.  Si notó que la página no funciona como está diseñada de ninguna manera, es probable que tenga problemas de pintura.  
 
 La composición es donde se reúnen las partes de la página que se pintan para mostrarse en pantalla.  En la mayoría de los casos, si te atener a las propiedades de compositor y evitas pintar por completo, deberías observar una mejora importante en el rendimiento, pero debes tener cuidado con los recuentos excesivos de capas.  <!--Navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-### <a name="paint-and-composite-tools"></a>Pintura y composición: herramientas  
+### <a name="paint-and-composite-tools"></a>Paint y compuesto: Herramientas  
 
 ¿Quiere saber cuánto tarda la pintura o con qué frecuencia se produce la pintura?  Compruebe la [configuración Habilitar instrumentación avanzada de][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] pintura en el panel Rendimiento y, a continuación, haga una grabación. ****  Si la mayor parte del tiempo de representación se dedica a pintar, tiene problemas de pintura.  
 
@@ -171,13 +170,13 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 <!--todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live  -->  
 
-### <a name="paint-and-composite-problems"></a>Pintura y composición: problemas  
+### <a name="paint-and-composite-problems"></a>Paint y compuesto: Problemas  
 
 En la tabla siguiente se describen algunos problemas comunes de pintura y compuestos y posibles soluciones.  
 
 | Problema | Por ejemplo: | Solución |  
 |:--- |:--- |:--- |  
-| Pinta tormentas que afectan a la respuesta o animación.  | Áreas de pintura grandes o pinturas costosas que afectan a la respuesta o animación.  | Evite la pintura, promueva los elementos que se mueven a su propia capa, use transformaciones y opacidad.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| Paint tormentas que afectan a la respuesta o animación.  | Áreas de pintura grandes o pinturas costosas que afectan a la respuesta o animación.  | Evite la pintura, promueva los elementos que se mueven a su propia capa, use transformaciones y opacidad.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
 | Explosiones de capas que afectan a animaciones.  | La sobrepromoción de demasiados elementos afecta en gran medida `translateZ(0)` al rendimiento de la animación.  | Promover a las capas con moderación y solo cuando sepa que ofrece mejoras tangibles.  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
@@ -224,5 +223,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

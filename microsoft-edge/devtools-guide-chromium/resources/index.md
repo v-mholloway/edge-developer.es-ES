@@ -3,16 +3,16 @@ description: Organice los recursos por marco, dominio, tipo u otros criterios.
 title: Ver recursos de página con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 818b93c1c07a93baa8972a530871d20446fd687f
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 415ed45bf650aa6800ab674cce74179f783a82c7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519446"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565074"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519446"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-page-resources-with-microsoft-edge-devtools"></a>Ver recursos de página con Microsoft Edge DevTools  
 
 Esta guía le enseña a usar Microsoft Edge DevTools para ver los recursos de una página web.  Los recursos son los archivos que necesita una página para mostrarse correctamente.  Algunos ejemplos de recursos incluyen archivos CSS, JavaScript y HTML, así como imágenes.  
@@ -159,7 +158,7 @@ Vaya a [Filtrar por tipo de recurso][DevtoolsNetworkFilterByResourceType].
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Herramientas para desarrolladores | Microsoft Docs"  
 [DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filtrar por tipo de recurso: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspeccionar los detalles del recurso: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Actividad de red de registro: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
@@ -177,4 +176,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Características de depuración de cuadrícula CSS, solicitudes de 
 title: Novedades de DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 5bd013fae617e9759aa91949acccf936d85f7160
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: 75642a7f0fa8d6fae2f4daead84e2fc77df21e29
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514364"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564934"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -29,9 +29,9 @@ ms.locfileid: "11514364"
    limitations under the License.  -->  
 # <a name="whats-new-in-devtools-microsoft-edge-85"></a>Novedades de DevTools (Microsoft Edge 85)  
 
-## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Anuncios del equipo de Microsoft Edge DevTools  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Anuncios del equipo Microsoft Edge DevTools  
 
-Las siguientes secciones son una lista de anuncios que puede que falte del equipo de Microsoft Edge DevTools.  Echa un vistazo a los anuncios para probar nuevas características en DevTools, microsoft Visual Studio code extensions y mucho más.  Para mantenerse al día de todas las características más recientes y más importantes de las herramientas para desarrolladores, descargue los canales de vista previa de [Microsoft Edge][MicrosoftEdgePreviewChannels] y siga el equipo de Microsoft [Edge DevTools en Twitter][EdgeDevToolsTwitterAccount].  
+Las siguientes secciones son una lista de anuncios que puede haber perdido del equipo Microsoft Edge DevTools.  Echa un vistazo a los anuncios para probar nuevas características en DevTools, Microsoft Visual Studio code extensions y mucho más.  Para mantenerse al día de todas las características más recientes y más importantes de las herramientas para desarrolladores, descargue los canales de vista previa de Microsoft Edge y siga el equipo [de DevTools][EdgeDevToolsTwitterAccount]de [Microsoft Edge][MicrosoftEdgePreviewChannels] en Twitter .  
 
 ### <a name="css-grid-debugging-features"></a>Características de depuración de cuadrícula CSS  
 
@@ -39,7 +39,7 @@ Las siguientes secciones son una lista de anuncios que puede que falte del equip
    Característica experimental  
 :::image-end:::  
 
-El equipo de Microsoft Edge DevTools colabora con el equipo de Chrome DevTools y la comunidad chromium para agregar nuevas características de depuración de cuadrícula CSS a DevTools.  Ahora puede mostrar números de línea de cuadrícula, espacios de cuadrícula y líneas de cuadrícula extendidas como una superposición en la página.  Además, próximamente se realizarán más mejoras en las herramientas de cuadrícula.  
+El Microsoft Edge de DevTools colabora con el equipo de Chrome DevTools y la comunidad de Chromium para agregar nuevas características de depuración de cuadrícula CSS a DevTools.  Ahora puede mostrar números de línea de cuadrícula, espacios de cuadrícula y líneas de cuadrícula extendidas como una superposición en la página.  Además, próximamente se realizarán más mejoras en las herramientas de cuadrícula.  
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Características de depuración de cuadrícula CSS" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    Características de depuración de cuadrícula CSS
@@ -50,7 +50,7 @@ El equipo de Microsoft Edge DevTools colabora con el equipo de Chrome DevTools y
 > 
 > Para probar el experimento con un ejemplo, vaya al ejemplo [del planificador de cuadrícula CSS][CodepenRachelweilYzwBzKM].  
 
-Problema de [chromium #1047356][CR1047356]  
+Chromium problema [#1047356][CR1047356]  
 
 ### <a name="edit-and-replay-requests-with-the-network-console"></a>Editar y reproducir solicitudes con la consola de red  
 
@@ -80,7 +80,7 @@ También puede usar la consola **de red** para crear y enviar solicitudes HTTP d
 > 
 > Abra el [registro de red][DevtoolsNetworkIndexLogActivity], abra el menú contextual \(haga clic con el botón secundario\) y elija Editar y **reproducir**.  
 
-Problema de [chromium #1093687][CR1093687]  
+Chromium problema [#1093687][CR1093687]  
 
 ### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>Service worker respondWith events in the Timing tab  
 
@@ -96,7 +96,7 @@ Expanda **Respuesta recibida** para mostrar información adicional de la respues
    Expandir **respuesta recibida** para mostrar información adicional de la `fetch` respuesta  
 :::image-end:::  
 
-Problema de [chromium #1066579][CR1066579]  
+Chromium problema [#1066579][CR1066579]  
 
 ### <a name="webhint-feedback-in-the-issues-panel"></a>comentarios de webhint en el panel Problemas  
 
@@ -115,7 +115,7 @@ Problema de [chromium #1066579][CR1066579]
 > 
 > Abra el panel [Problemas][DevtoolsIssues] para mostrar los comentarios de webhint.  
 
-Problema de [chromium #1070378][CR1070378]  
+Chromium problema [#1070378][CR1070378]  
 
 ### <a name="move-tools-between-panels"></a>Mover herramientas entre paneles  
 
@@ -132,27 +132,27 @@ Normalmente, herramientas como **Elementos** y **Red** solo se pueden abrir en e
 > [!NOTE]
 > Para habilitar el experimento, vaya a Activar características [experimentales][DevtoolsExperimentalFeaturesTurnOn] y seleccione la casilla situada junto a Habilitar compatibilidad para mover **fichas entre paneles.**  
 
-Problema de [chromium #897944][CR897944]  
+Chromium problema [#897944][CR897944]  
 
 ### <a name="improved-initiator-tooltip-in-the-network-panel"></a>Información sobre herramientas del iniciador mejorada en el panel Red  
 
-En Microsoft Edge 83 y 84, la información sobre herramientas de la [][DevtoolsNetworkIndexLogActivity] columna Iniciador, que muestra la causa de la solicitud de recurso, en el registro de red que se muestra con una barra de desplazamiento horizontal.  Solo pudo mostrar la pila de llamadas que inició la solicitud desplazándose horizontalmente en la información sobre herramientas.  
+En Microsoft Edge 83 y 84, la información sobre herramientas de la columna Iniciador, que muestra la causa de la solicitud de recurso, en el registro de red que se muestra con una barra de desplazamiento horizontal. [][DevtoolsNetworkIndexLogActivity]  Solo pudo mostrar la pila de llamadas que inició la solicitud desplazándose horizontalmente en la información sobre herramientas.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Información sobre herramientas del iniciador en Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    Información sobre herramientas del iniciador en Microsoft Edge 84  
 :::image-end:::  
 
-A partir de Microsoft Edge 85, ahora puede mostrar la pila de llamadas del iniciador en la información sobre herramientas sin desplazarse horizontalmente.  
+A partir Microsoft Edge 85, ahora puede mostrar la pila de llamadas del iniciador en la información sobre herramientas sin desplazarse horizontalmente.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Información sobre herramientas del iniciador en Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    Información sobre herramientas del iniciador en Microsoft Edge 85
 :::image-end:::  
 
-Problema de chromium [#1069404][CR1069404]  
+Chromium problema [#1069404][CR1069404]  
 
 ## <a name="announcements-from-the-chromium-project"></a>Anuncios del proyecto de Chromium  
 
-En las secciones siguientes se anuncian características adicionales disponibles en Microsoft Edge 85 que se contribuyeron al proyecto chromium de código abierto.  
+Las siguientes secciones anuncian características adicionales disponibles en Microsoft Edge 85 que se contribuyeron al proyecto de código Chromium abierto.  
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>Edición de estilos para marcos CSS-in-JS  
 
@@ -168,26 +168,26 @@ Por ejemplo, los `h1` estilos agregados con `CSSStyleSheet` \(CSSOM API\) no se 
 
 Pruebe esta característica con un [ejemplo que use CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
 
-Problema de [chromium #946975][CR946975]  
+Chromium problema [#946975][CR946975]  
 
 ### <a name="lighthouse-6-in-the-lighthouse-panel"></a>Faro 6 en el panel Faro  
 
 El panel **Faro** está ejecutando Ahora Faro 6.  Para obtener una lista completa de todos los cambios, vaya a las notas de la [versión v6.0.0][GithubGoogleChromeLighthouse600].  
 
-Lighthouse 6.0 presenta tres nuevas métricas al informe: La mayor pintura contenta \(LCP\), Desplazamiento de diseño acumulado \(CLS\) y Tiempo total de bloqueo \(TBT\).  
+Lighthouse 6.0 presenta tres nuevas métricas para el informe: Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\) y Total Blocking Time \(TBT\).  
 
 La fórmula de puntuación de rendimiento también se ha repondido para reflejar mejor la experiencia de carga del usuario.  
 
-Problema de [chromium #772558][CR772558]  
+Chromium problema [#772558][CR772558]  
 
-#### <a name="first-meaningful-paint-deprecation"></a>Primer desuso de pintura significativa  
+#### <a name="first-meaningful-paint-deprecation"></a>Primera desuso Paint significativa  
 
-First Meaningful Paint \(FMP\) está en desuso en Lighthouse 6.0.  FMP también se ha quitado del panel **Rendimiento.**  **La pintura contentful más grande** es el reemplazo recomendado para FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
+First Meaningful Paint \(FMP\) está en desuso en Lighthouse 6.0.  FMP también se ha quitado del panel **Rendimiento.**  **La mayor Paint contentful** es el reemplazo recomendado para FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
 
-Problema de chromium [#1096008][CR1096008]  
+Chromium problema [#1096008][CR1096008]  
 
 ### <a name="support-for-new-javascript-features"></a>Compatibilidad con nuevas características de JavaScript  
 
@@ -218,7 +218,7 @@ DevTools ahora tiene mejor compatibilidad con algunas de las características m�
    :::column-end:::
 :::row-end:::  
 
-Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]  
+Chromium problemas [#1073903][CR1073903], [#1083214][CR1083214] [,][CR1083797] #1083797  
 
 ### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>Nuevas advertencias de acceso directo de la aplicación en el panel Manifiesto  
 
@@ -235,7 +235,7 @@ El **panel** Manifiesto ahora muestra advertencias para las siguientes condicion
    Advertencias de acceso directo de aplicaciones  
 :::image-end:::  
 
-Problema de chromium [#955497][CR955497]  
+Chromium problema [#955497][CR955497]  
 
 ### <a name="consistent-display-of-the-computed-pane"></a>Visualización coherente del panel calculado  
 
@@ -245,30 +245,30 @@ El **panel Calculado de** la herramienta **Elementos** ahora se muestra de forma
    El **panel Calculado** se muestra de forma coherente como un panel independiente incluso cuando las DevTools son estrechas.
 :::image-end:::  
 
-Problema de [chromium #1073899][CR1073899]  
+Chromium problema [#1073899][CR1073899]  
 
 ### <a name="bytecode-offsets-for-webassembly-files"></a>Desplazamientos de bytecode para archivos WebAssembly  
 
 DevTools ahora usa desplazamientos de código de bytes para mostrar números de línea de desmontaje de Wasm.  
 Los números de línea hacen que sea más claro que está mirando datos binarios y es más coherente con la forma en que el tiempo de ejecución de Wasm hace referencia a las ubicaciones.  
 
-Problema de [chromium #1071432][CR1071432]  
+Chromium problema [#1071432][CR1071432]  
 
 ### <a name="line-wise-copy-and-cut-in-sources-panel"></a>Copiar y cortar en línea en el Panel orígenes  
 
-Al realizar copias o cortes sin selección en el editor del [panel Orígenes,][DevtoolsSourcesEditCssJavascript]DevTools copia o corta la línea de contenido actual.  
+Al realizar copias o cortes sin selección en el editor del [panel Orígenes,][DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]DevTools copia o corta la línea de contenido actual.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Con el cursor al final de la línea 5, copiando toda la línea desde pen.js en devTools y pegando en Visual Studio código" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   Con el cursor al final de la línea 5, copiando toda la línea de **pen.js** en DevTools y pegando en [Visual Studio Code][VisualStudioCode].
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Con el cursor al final de la línea 5, copiando toda la línea desde pen.js en devTools y pegando en Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   Con el cursor al final de la línea 5, copiando toda la línea desde **pen.js** en devTools y pegando en [Visual Studio Code][VisualStudioCode].
 :::image-end:::  
 
-Problema de chromium [#800028][CR800028]
+Chromium problema [#800028][CR800028]
 
-### <a name="console-settings-updates"></a>Actualizaciones de configuración de consola  
+### <a name="console-settings-updates"></a>Actualizaciones de Configuración consola  
 
 #### <a name="ungroup-same-console-messages"></a>Desagrupar los mismos mensajes de consola  
 
-La **alternancia Grupo similar** en Configuración de consola ahora se aplica a los mensajes duplicados.  Anteriormente solo se aplicaba a mensajes similares.  
+La **alternancia Group similar** en console Configuración ahora se aplica a los mensajes duplicados.  Anteriormente solo se aplicaba a mensajes similares.  
 
 Por ejemplo, anteriormente, DevTools no desagrupó los mensajes `hello` aunque **group similar** está desactivado.  Ahora, los `hello` mensajes se desagrupa.  
 
@@ -278,17 +278,17 @@ Por ejemplo, anteriormente, DevTools no desagrupó los mensajes `hello` aunque *
 
 Pruebe esta característica con un [ejemplo que envíe mensajes duplicados a la consola][CodepenZoherghadyaliZyrjgdJ].  
 
-Problema de [chromium #1082963][CR1082963]  
+Chromium problema [#1082963][CR1082963]  
 
 ### <a name="persisting-selected-context-only-settings"></a>Persisting Selected context only settings  
 
-Ahora **solo se conserva la** configuración de contexto seleccionado en Configuración de consola.  Anteriormente, la configuración se restablece cada vez que se cierra y se vuelve a abrir DevTools.  El cambio hace que el comportamiento de configuración sea coherente con otras opciones de configuración de consola.  
+Ahora **se conserva la** configuración de solo contexto seleccionado Configuración configuración de consola.  Anteriormente, la configuración se restablece cada vez que se cierra y se vuelve a abrir DevTools.  El cambio hace que el comportamiento de configuración sea coherente con otras opciones de configuración Configuración consola.  
 
 :::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Configuración de solo contexto seleccionada" lightbox="../../media/2020/06/selected-context.msft.png":::
    **Configuración de solo contexto** seleccionada  
 :::image-end:::  
 
-Problema de [chromium #1055875][CR1055875]  
+Chromium problema [#1055875][CR1055875]  
 
 ### <a name="performance-panel-updates"></a>Actualizaciones del panel de rendimiento  
 
@@ -300,7 +300,7 @@ Problema de [chromium #1055875][CR1055875]
    Información de caché de compilación de JavaScript  
 :::image-end:::  
 
-Problema de [chromium #912581][CR912581]  
+Chromium problema [#912581][CR912581]  
 
 #### <a name="navigation-timing-alignment-in-the-performance-panel"></a>Alineación del tiempo de navegación en el panel Rendimiento  
 
@@ -310,9 +310,9 @@ El **** panel Rendimiento usado para mostrar horas en las reglas en función del
    Alinear el tiempo de navegación en **la herramienta Rendimiento**  
 :::image-end:::  
 
-Las horas `DOMContentLoaded` de , First Paint, First Contentful Paint y Largest Contentful Paint eventos se actualizan para ser relativos al inicio de la navegación, lo que significa que el tiempo coincide con los tiempos notificados por `PerformanceObserver` .  
+Las horas `DOMContentLoaded` de , First Paint, First Contentful Paint y Largest Contentful Paint events se actualizan para que sean relativas al inicio de la navegación, lo que significa que el tiempo coincide con los tiempos notificados por `PerformanceObserver` .  
 
-Problema de [chromium #974550][CR974550]  
+Chromium problema [#974550][CR974550]  
 
 ### <a name="new-icons-for-breakpoints-conditional-breakpoints-and-logpoints"></a>Nuevos iconos para puntos de interrupción, puntos de interrupción condicionales y puntos de registro  
 
@@ -322,25 +322,25 @@ El panel **Orígenes** tiene nuevos diseños para puntos de interrupción, punto
    Puntos de interrupción  
 :::image-end:::  
 
-Problema de [chromium #1041830][CR1041830]  
+Chromium problema [#1041830][CR1041830]  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
 
-Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
+Si está en Windows o macOS, considere la posibilidad de usar los canales [Microsoft Edge vista previa][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer: personalizar Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
-[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Editar CSS y JavaScript: información general del panel orígenes | Microsoft Docs"  
-[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Actividad de red de registro: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../../../command-menu.md "Ejecutar comandos con el Microsoft Edge de comandos DevTools | Microsoft Docs"
+[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer: personalice Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
+[DevtoolsIssues]: ../../../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "Uso del panel Editor para ver o editar archivos: Información general del panel orígenes | Microsoft Docs"  
+[DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Actividad de red de registro: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Edición de estilos para marcos CSS-in-JS | CodePen"
 [CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Enviar mensajes duplicados a la consola | CodePen"
@@ -348,27 +348,27 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Errores de Chromium"  
 
-[CR772558]: https://crbug.com/772558 "DevTools: actualizar a la versión más reciente de | Errores de Chromium"  
-[CR800028]: https://crbug.com/800028 "Acceso directo de línea duplicada en el editor de Herramientas de desarrollador que no funciona después de actualizar Chrome | Errores de Chromium"  
-[CR912581]: https://crbug.com/912581 "Exponer los scripts almacenados en caché por V8 en DevTools/about:tracing | Errores de Chromium"  
-[CR946975]: https://crbug.com/946975 "La barra lateral de estilos de DevTools no funciona con hojas de estilos construidas | Errores de Chromium"  
-[CR955497]: https://crbug.com/955497 "Menú contextual de icono de aplicación para PWAs | Errores de Chromium"  
-[CR974550]: https://crbug.com/974550 "Error de coincidencia de métricas entre el panel Perf y performanceObserver | Errores de Chromium"  
-[CR1041830]: https://crbug.com/1041830 "Mejorar los colores de los puntos de interrupción | Errores de Chromium"  
-[CR1055875]: https://crbug.com/1055875 "El valor de la configuración de consola Solo contexto seleccionado no persiste después de cerrar y volver a abrir herramientas de | Errores de Chromium"  
-[CR1066579]: https://crbug.com/1066579 "DevTools: mostrar la escala de tiempo de recuperación de ServiceWorkers por solicitud en el panel DevTools | Errores de Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Errores de Chromium"  
-[CR1073899]: https://crbug.com/1073899 "La pestaña Estilo calculado desaparece en modo de respuesta | Errores de Chromium"  
-[CR1073903]: https://crbug.com/1073903 "DevTools: el resaltado de sintaxis no funciona con campos privados | Errores de Chromium"  
-[CR1082963]: https://crbug.com/1082963 "No se puede deshabilitar el comportamiento de mensajes similares de grupo de la consola | Errores de Chromium"  
-[CR1083214]: https://crbug.com/1083214 "acorn no admite cadenas opcionales | Errores de Chromium"  
-[CR1083797]: https://crbug.com/1083797 "Se ha roto la impresión bastante para la | Errores de Chromium"  
-[CR1096008]: https://crbug.com/1096008 "Quitar FMP | Errores de Chromium"  
-[CR1047356]: https://crbug.com/1047356 "Herramientas CSS Grid/Flexbox/Table | Errores de Chromium"  
-[CR1093687]: https://crbug.com/1093687 "Crear herramienta para crear y reproducir solicitudes de red sintéticas | Errores de Chromium"  
-[CR1070378]: https://crbug.com/1070378 "Integrar webhint en DevTools | Errores de Chromium"  
-[CR1069404]: https://crbug.com/1069404 "Los elementos emergentes del widget [Herramientas de desarrollo] son demasiado estrechos | Errores de Chromium"  
-[CR897944]: https://crbug.com/897944 "Paneles de devtool arrastrables | Errores de Chromium"
+[CR772558]: https://crbug.com/772558 "DevTools: actualizar a la versión más reciente de | Chromium errores"  
+[CR800028]: https://crbug.com/800028 "Acceso directo de línea duplicada en el editor de Herramientas de desarrollador que no funciona después de actualizar Chrome | Chromium errores"  
+[CR912581]: https://crbug.com/912581 "Exponer los scripts almacenados en caché por V8 en DevTools/about:tracing | Chromium errores"  
+[CR946975]: https://crbug.com/946975 "La barra lateral de estilos de DevTools no funciona con hojas de estilos construidas | Chromium errores"  
+[CR955497]: https://crbug.com/955497 "Menú contextual de icono de aplicación para PWAs | Chromium errores"  
+[CR974550]: https://crbug.com/974550 "Error de coincidencia de métricas entre el panel Perf y performanceObserver | Chromium errores"  
+[CR1041830]: https://crbug.com/1041830 "Mejorar los colores de los puntos de interrupción | Chromium errores"  
+[CR1055875]: https://crbug.com/1055875 "El valor de la configuración de consola Solo contexto seleccionado no persiste después de cerrar y volver a abrir herramientas de | Chromium errores"  
+[CR1066579]: https://crbug.com/1066579 "DevTools: mostrar la escala de tiempo de recuperación de ServiceWorkers por solicitud en el panel DevTools | Chromium errores"  
+[CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Chromium errores"  
+[CR1073899]: https://crbug.com/1073899 "La pestaña Estilo calculado desaparece en modo de respuesta | Chromium errores"  
+[CR1073903]: https://crbug.com/1073903 "DevTools: el resaltado de sintaxis no funciona con campos privados | Chromium errores"  
+[CR1082963]: https://crbug.com/1082963 "No se puede deshabilitar el comportamiento de mensajes similares de grupo de la consola | Chromium errores"  
+[CR1083214]: https://crbug.com/1083214 "acorn no admite cadenas opcionales | Chromium errores"  
+[CR1083797]: https://crbug.com/1083797 "Se ha roto la impresión bastante para la | Chromium errores"  
+[CR1096008]: https://crbug.com/1096008 "Quitar FMP | Chromium errores"  
+[CR1047356]: https://crbug.com/1047356 "Herramientas CSS Grid/Flexbox/Table | Chromium errores"  
+[CR1093687]: https://crbug.com/1093687 "Crear herramienta para crear y reproducir solicitudes de red sintéticas | Chromium errores"  
+[CR1070378]: https://crbug.com/1070378 "Integrar webhint en DevTools | Chromium errores"  
+[CR1069404]: https://crbug.com/1069404 "Los elementos emergentes del widget [Herramientas de desarrollo] son demasiado estrechos | Chromium errores"  
+[CR897944]: https://crbug.com/897944 "Paneles de devtool arrastrables | Chromium errores"
 
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0: GoogleChrome/lighthouse | GitHub"  
 
@@ -376,7 +376,7 @@ Si estás en Windows o macOS, considera usar los canales de vista [previa de Mic
 
 [MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Uso de dom de sombra | MDN"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canales de versiones preliminares de Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canales de vista previa de Microsoft Edge"  
 
 [VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
 [VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
@@ -420,5 +420,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
-description: Cómo ver y editar localStorage con el panel Almacenamiento local y la consola.
-title: Ver y editar el almacenamiento local con Microsoft Edge DevTools
+description: Cómo ver y editar localStorage con el panel Storage local y la consola.
+title: Ver y editar archivos Storage con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4eebf3108e7b1c6ecaecbfed445e8f3fe26215c4
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 5088a1b9d7ab2b92051d099e76b8b07bbd5db5f8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439678"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565053"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439678"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-edit-local-storage-with-microsoft-edge-devtools"></a>Ver y editar el almacenamiento local con Microsoft Edge DevTools  
 
-En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para ver, editar y eliminar pares [clave-valor localStorage.][MDNWindowsLocalStorage]  
+En esta guía se muestra cómo usar [Microsoft Edge DevTools para][MicrosoftEdgeDevTools] ver, editar y eliminar pares [clave-valor localStorage.][MDNWindowsLocalStorage]  
 
 ## <a name="view-localstorage-keys-and-values"></a>Ver claves y valores de localStorage  
 
@@ -40,10 +39,10 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
        Panel **Manifiesto**  
     :::image-end:::  
     
-1.  Expanda el **menú Almacenamiento** local.  
+1.  Expanda el **menú Storage** local.  
     
-    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="Menú Almacenamiento local" lightbox="../media/storage-application-local-storage.msft.png":::
-       Menú **Almacenamiento** local  
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="El menú Storage local" lightbox="../media/storage-application-local-storage.msft.png":::
+       El **menú Storage** local  
     :::image-end:::  
     
 1.  Elija un dominio para ver los pares clave-valor.  
@@ -109,7 +108,7 @@ Dado que puede ejecutar JavaScript en la **** consola **y**dado que la consola t
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Herramientas para desarrolladores | Microsoft Docs"  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
 
@@ -123,4 +122,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

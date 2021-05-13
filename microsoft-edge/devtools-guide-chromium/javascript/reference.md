@@ -1,18 +1,18 @@
 ---
-description: Descubra nuevos flujos de trabajo de depuración en esta referencia completa de las características de depuración de Microsoft Edge DevTools.
+description: Descubra nuevos flujos de trabajo de depuración en esta referencia completa de Microsoft Edge de depuración de DevTools.
 title: Usar las características del depurador
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6fb90a70e0aac9f556fa9f5f02afee1fd5b4962e
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 6b15d317d4c720ab5ad76b7047532df101f69376
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519607"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564129"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519607"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="use-the-debugger-features"></a>Usar las características del depurador
 
 En este artículo se describe cómo usar el depurador en Microsoft Edge DevTools, incluido cómo establecer un punto de interrupción de línea de código.  Para establecer otros tipos de puntos de interrupción, vea [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].  
@@ -43,7 +42,7 @@ Para ver y editar un archivo JavaScript:
 1.  Vaya a la **herramienta Orígenes.**  
 1.  En el **panel** Navegador, seleccione el archivo para abrirlo en el **panel Editor.**
 1.  En el **panel Editor,** edite el archivo.  
-1.  Seleccione `Ctrl` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar.  A continuación, DevTools carga el archivo JavaScript en el motor de JavaScript de Microsoft Edge.  
+1.  Seleccione `Ctrl` + `S` \(Windows, Linux\) o `Command` + `S` \(macOS\) para guardar.  A continuación, DevTools carga el archivo JavaScript en el motor JavaScript de Microsoft Edge.  
     
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Panel Editor" lightbox="../media/javascript-sources-html-minified.msft.png":::
        Panel **Editor**  
@@ -308,7 +307,7 @@ Para marcar un script como **código de biblioteca** desde el panel Pila **de** 
     
 ### <a name="mark-a-script-as-library-code-from-settings"></a>Marcar un script como código de biblioteca desde Configuración  
 
-Para marcar un único script o patrón de scripts desde **Configuración:**  
+Para marcar un único script o patrón de scripts desde **Configuración**:  
 
 1.  Abra [Configuración][DevToolsCustomize].  
 1.  Vaya a la **configuración de código de biblioteca.**  
@@ -317,7 +316,7 @@ Para marcar un único script o patrón de scripts desde **Configuración:**
 1.  Elija **Agregar**.  
     
     :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Marcar un script como código de biblioteca desde Configuración" lightbox="../media/javascript-framework-library-code.msft.png":::
-       Marcar un script como código **de biblioteca desde** **Configuración**  
+       Marcar un script como **código de biblioteca** desde **Configuración**  
     :::image-end:::  
     
 ## <a name="run-snippets-of-debug-code-from-any-page"></a>Ejecutar fragmentos de código de depuración desde cualquier página  
@@ -328,7 +327,7 @@ Consulte [Ejecutar fragmentos de código de JavaScript en cualquier página web]
 
 ## <a name="see-also"></a>Consulte también  
 
-*   [Introducción a la depuración de JavaScript en Microsoft Edge DevTools:][DevToolsJavascriptGetStarted] un tutorial sencillo y breve con código existente, con capturas de pantalla.
+*   [Introducción Con depuración de JavaScript en Microsoft Edge DevTools:][DevToolsJavascriptGetStarted] un tutorial sencillo y breve con código existente, con capturas de pantalla.
 *   [Introducción a la herramienta][DevToolsSourcesIndex] Orígenes: la **herramienta Orígenes** incluye el depurador y el editor de JavaScript.
 *   [Deshabilitar JavaScript con Microsoft Edge DevTools][DevToolsJavascriptDisable].
 
@@ -341,7 +340,7 @@ Consulte [Ejecutar fragmentos de código de JavaScript en cualquier página web]
 [DevToolsJavascriptBreakpoints]: ./breakpoints.md "Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptDisable]: ./disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptGetStarted]: ./index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptSnippets]: ./snippets.md "Ejecutar fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptSnippets]: ./snippets.md "Ejecute fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
 [DevToolsCustomize]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 
@@ -355,4 +354,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Abra el menú comando y ejecute el comando "Deshabilitar JavaScript
 title: Deshabilitar JavaScript con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 665181b14e6fa5e86950a27822d52395f49f5b92
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: c9b5605aff5680ff0f44386c4a69e4c9f7c08cc8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519355"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564164"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519355"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="disable-javascript-with-microsoft-edge-devtools"></a>Deshabilitar JavaScript con Microsoft Edge DevTools  
 
 Para revisar cómo se representa la página web cuando un explorador no tiene compatibilidad con JavaScript, desactive temporalmente JavaScript.
@@ -35,7 +34,7 @@ Para revisar cómo se representa la página web cuando un explorador no tiene co
 Complete las siguientes acciones para examinar cómo se muestra y se comporta una página web al desactivar JavaScript.  
 
 1.  [Abra Microsoft Edge DevTools][DevToolsOpen].  
-1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú de comandos .  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Menú comando" lightbox="../media/javascript-console-command.msft.png":::
        Menú **comando**  
@@ -80,4 +79,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

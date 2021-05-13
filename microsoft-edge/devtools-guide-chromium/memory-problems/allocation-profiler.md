@@ -3,16 +3,16 @@ description: Use instrumentación de asignación en la escala de tiempo para bus
 title: Cómo usar instrumentación de asignación en escala de tiempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 374b7f0ad80b8975319b2b0ec5cecf42ce4bde82
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a02249840256b1e5a2469a253d765eb888527662
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397821"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564087"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397821"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-
 # <a name="how-to-use-allocation-instrumentation-on-timeline"></a>Cómo usar instrumentación de asignación en escala de tiempo  
 
 Use **instrumentación de asignación en** la escala de tiempo para buscar objetos que no se están recopilando correctamente y seguir conservando la memoria.  
@@ -97,7 +96,7 @@ Puede ver la asignación de memoria mediante la función JavaScript.  Para obten
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Descargar un canal de Microsoft Edge"  
+[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Descargar un canal Microsoft Edge web"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
@@ -109,5 +108,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

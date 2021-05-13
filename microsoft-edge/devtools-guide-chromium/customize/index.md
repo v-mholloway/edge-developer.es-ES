@@ -3,16 +3,16 @@ description: Una lista de formas de personalizar Microsoft Edge DevTools
 title: Personalizar Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2b242fcb74b7c8cdbca2d523c55ab4e5eed56b45
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0be3219579794dca28f71e336da1154f31f2d2be
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399045"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564388"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11399045"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="customize-microsoft-edge-devtools"></a>Personalizar Microsoft Edge DevTools  
 
 En esta página se enumeran las formas de personalizar Microsoft Edge DevTools.  
@@ -39,7 +38,7 @@ En esta página se enumeran las formas de personalizar Microsoft Edge DevTools.
 Para abrir Configuración, complete una de las siguientes acciones.  
 
 *   Seleccione `F1` mientras DevTools está en el foco.  
-*   Abra el **menú principal y,** a continuación, **elija Configuración**.  
+*   Abra el **menú principal y,** a **continuación, elija Configuración**.  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Configuración" lightbox="../media/customize-settings-preferences.msft.png":::
    **Configuración**  
@@ -89,7 +88,7 @@ Elija y arrastre una herramienta para cambiar el orden.  El orden de la herramie
 
 ## <a name="change-devtools-placement"></a>Cambiar la ubicación de DevTools  
 
-Vaya a [Ubicación de Microsoft Edge DevTools][DevToolsPlacement].  
+Vaya a [Microsoft Edge ubicación de DevTools][DevToolsPlacement].  
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools desacopladas" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    DevTools desacopladas  
@@ -107,11 +106,11 @@ Vaya a [Habilitar tema oscuro][DarkTheme].
 
 Para activar los experimentos de DevTools, realice las siguientes acciones.  
 
-1.  Vaya a `edge://flags/#enable-devtools-experiments` .  
+1.  Vaya a `edge://flags/#enable-devtools-experiments`.  
 1.  Elija **Habilitar**.  
 1.  Elija **Volver a iniciar ahora**, en la parte inferior de la página.  
 
-La próxima vez que abra DevTools, se mostrará una nueva página denominada **Experimentos** en [Configuración](#settings).  
+La próxima vez que abra DevTools, se mostrará una nueva página denominada **Experiments** en [Configuración](#settings).  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
@@ -123,7 +122,7 @@ La próxima vez que abra DevTools, se mostrará una nueva página denominada **E
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Cambiar la ubicación de Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsPlacement]: ./placement.md "Cambiar Microsoft Edge ubicación de DevTools | Microsoft Docs"  
 [DarkTheme]: ./dark-theme.md "Habilitar tema oscuro en Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
@@ -136,4 +135,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

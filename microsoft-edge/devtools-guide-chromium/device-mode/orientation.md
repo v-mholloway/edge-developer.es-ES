@@ -3,16 +3,16 @@ description: Abra la herramienta Sensores y vaya a la sección Orientación.
 title: Simular la orientación del dispositivo con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 754df3b271b44f986802c2847862624f6a8b5bd9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 71527d8dce0d7a0563feef0081ce12d40eeb5e1a
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398717"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564311"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,14 +27,13 @@ ms.locfileid: "11398717"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="simulate-device-orientation-with-microsoft-edge-devtools"></a>Simular la orientación del dispositivo con Microsoft Edge DevTools  
 
 Complete las siguientes acciones para simular diferentes orientaciones de dispositivo desde Microsoft Edge DevTools.  
 
 <!--todo: update device orientation section when available -->  
 
-1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú de comandos .  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menú comando" lightbox="../media/device-mode-console-command-menu.msft.png":::
        Menú **comando**  
@@ -82,4 +81,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

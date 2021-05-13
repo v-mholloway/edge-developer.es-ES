@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo detectar problemas de red en el pa
 title: Guía de problemas de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 9b92ca7b759fab80d7d829b31f605ccb8062a816
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c99f43872abe04800880c63ee4126bfcdd633edb
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439622"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564983"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -27,12 +27,11 @@ ms.locfileid: "11439622"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="network-issues-guide"></a>Guía de problemas de red  
 
 En esta guía se muestra cómo detectar problemas de red o oportunidades de optimización en el panel Red de Microsoft Edge DevTools.  
 
-Para obtener información sobre los conceptos básicos de la **herramienta Red,** vaya a [Introducción.][NetworkPerformance]  
+Para conocer los conceptos básicos de la **herramienta Red,** vaya [a Introducción][NetworkPerformance].  
 
 ## <a name="queued-or-stalled-requests"></a>Solicitudes en cola o en espera  
 
@@ -48,7 +47,7 @@ En la **cascada de** la siguiente figura, las seis primeras solicitudes del acti
 
 **Causas**  
 
-Se están haciendo demasiadas solicitudes en un solo dominio.  En las conexiones HTTP/1.0 o HTTP/1.1, Microsoft Edge permite un máximo de seis conexiones TCP simultáneas por host.  
+Se están haciendo demasiadas solicitudes en un solo dominio.  En las conexiones HTTP/1.0 o HTTP/1.1, Microsoft Edge un máximo de seis conexiones TCP simultáneas por host.  
 
 **Correcciones**  
 
@@ -75,7 +74,7 @@ En la siguiente figura, la barra verde y larga de **la cascada** indica que la s
     
 **Correcciones**  
 
-*   Si la conexión es lenta, considere la posibilidad de hospedar el contenido en una red CDN o cambiar los proveedores de hospedaje.  
+*   Si la conexión es lenta, considere la posibilidad de hospedar el contenido en un CDN o cambiar los proveedores de hospedaje.  
 *   Si el servidor es lento, considere la posibilidad de optimizar las consultas de base de datos, implementar una memoria caché o modificar la configuración del servidor.  
     
 ## <a name="slow-content-download"></a>Descarga lenta de contenido  
@@ -97,7 +96,7 @@ En la siguiente figura, la barra larga y azul de **la cascada** junto al png sig
     
 **Correcciones**  
 
-*   Considere la posibilidad de hospedar el contenido en una red CDN o cambiar los proveedores de hospedaje.  
+*   Considere la posibilidad de hospedar el contenido en un CDN o cambiar los proveedores de hospedaje.  
 *   Envíe menos bytes optimizando las solicitudes.  
     
 <!--   ## Contribute knowledge  
@@ -130,5 +129,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[JonathanGarbee]: https://developers.google.com/web/resources/contributors/jonathangarbee
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[JonathanGarbee]: https://developers.google.com/web/resources/contributors#jonathan-garbee

@@ -1,18 +1,18 @@
 ---
-description: Habilite "Marcar scripts de contenido como código de biblioteca" en Configuración > código de biblioteca de Framework.
+description: Habilite "Marcar scripts de contenido como código de biblioteca" Configuración > código de biblioteca de Framework.
 title: Marcar scripts de contenido como código de biblioteca
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c1571ab909aac09e4593413e96f7d4b7723c7759
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: e3c2e89e8635b568d0beea8df8720bbb28beb711
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519348"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564031"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,12 @@ ms.locfileid: "11519348"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="mark-content-scripts-as-library-code"></a>Marcar scripts de contenido como código de biblioteca  
 
-Cuando usa la herramienta **Orígenes** para pasar por [el código,][DevToolsJavascriptStepThroughCode]a veces se pausa en el código que no reconoce.  Probablemente haya pausado el código para una de las extensiones de Microsoft Edge que instaló.  Para no pausar el código de extensión, realice las siguientes acciones.  
+Cuando usa la herramienta **Orígenes** para pasar por [el código,][DevToolsJavascriptStepThroughCode]a veces se pausa en el código que no reconoce.  Probablemente haya pausado el código para una de las extensiones Microsoft Edge que instaló.  Para no pausar el código de extensión, realice las siguientes acciones.  
 
 1.  En DevTools, en la parte superior derecha, elija el icono de engranaje (**Configuración**).  Aparece la página **Settings**.  
-1.  Debajo **de Configuración,** elija **Omitir lista**.  Aparece **la sección Código de biblioteca** de marcos de **Configuración.**  
+1.  A **continuación Configuración**, elija **Omitir lista**.  Aparece **la sección Código de** biblioteca de **Configuración** marco.  
 1.  Active la casilla **Marcar scripts de contenido como código de biblioteca.**  
     
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Habilitar la casilla Marcar scripts de contenido como código de biblioteca" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
@@ -58,4 +57,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

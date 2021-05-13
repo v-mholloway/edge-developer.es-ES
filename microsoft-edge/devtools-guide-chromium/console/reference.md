@@ -3,16 +3,16 @@ description: Una referencia completa para cada característica y comportamiento 
 title: Referencia de consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: adc3f6c33d6e1a2f6c7db8336c5ab803e76c3307
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: f14663ca1883c0a81184f9a4fa67ddcbd3f08a24
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483278"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564528"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "11483278"
    limitations under the License.  -->
 # <a name="console-reference"></a>Referencia de consola  
 
-Este artículo es una referencia de las características relacionadas con la consola de Microsoft Edge DevTools.  Se supone que ya está familiarizado con el uso de la consola para ver los mensajes registrados y ejecutar JavaScript.  Si no es así, vaya a Introducción a la ejecución de [JavaScript en][DevtoolsConsoleConsoleJavascript] la consola y Empezar a registrar [mensajes en la consola][DevtoolsConsoleConsoleLog].  
+Este artículo es una referencia de las características relacionadas con la Microsoft Edge DevTools Console.  Se supone que ya está familiarizado con el uso de la consola para ver los mensajes registrados y ejecutar JavaScript.  Si no es así, vaya a Introducción a la ejecución de [JavaScript en][DevtoolsConsoleConsoleJavascript] la consola y Empezar a registrar [mensajes en la consola][DevtoolsConsoleConsoleLog].  
 
 Si está buscando la referencia de api en funciones como , vaya a `console.log()` Referencia de api de [consola][DevToolsConsoleApi].  Para obtener la referencia de funciones como `monitorEvents()` , vaya a Console Utilities API [Reference][DevToolsConsoleUtilities].  
 
@@ -71,12 +71,12 @@ Para abrir la **herramienta Consola** desde el menú [comando][DevtoolsCommandMe
    Ejecutar el comando para mostrar la **herramienta Consola** en el **cajón**  
 :::image-end:::  
 
-### <a name="open-console-settings"></a>Abrir configuración de consola  
+### <a name="open-console-settings"></a>Abra la consola Configuración  
 
-Elija el **botón Configuración de consola** \( Icono configuración de consola ![ ](../media/settings-button-icon.msft.png) \).  
+Elija el **botón Consola Configuración** \( Icono de Configuración ![ ](../media/settings-button-icon.msft.png) \).  
 
-:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Configuración de consola" lightbox="../media/console-settings-group-similar-empty.msft.png":::
-   **Configuración de consola**  
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Consola Configuración" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+   **Consola Configuración**  
 :::image-end:::  
 
 Los vínculos siguientes explican cada configuración.  
@@ -104,11 +104,11 @@ Esta sección contiene características que cambian la forma en que se presentan
 
 ### <a name="turn-off-message-grouping"></a>Desactivar la agrupación de mensajes  
 
-Para desactivar el comportamiento de agrupación de mensajes predeterminado de la **consola,** [abra](#open-console-settings) Configuración de la consola y seleccione la casilla junto a **Grupo similar**.  Para obtener un ejemplo, vaya [a Registrar XHR y Obtener solicitudes](#log-xhr-and-fetch-requests).  
+Para desactivar el comportamiento de agrupación de mensajes predeterminado de la **consola,** [abra consola Configuración](#open-console-settings) y elija la casilla junto a Grupo **similar**.  Para obtener un ejemplo, vaya [a Registrar XHR y Obtener solicitudes](#log-xhr-and-fetch-requests).  
 
 ### <a name="log-xhr-and-fetch-requests"></a>Registrar solicitudes XHR y Fetch  
 
-Para registrar todo y las solicitudes en la consola a medida que se produce cada una de ellas, abra Configuración de la consola y seleccione la casilla situada junto a `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**. **** [](#open-console-settings)  
+Para registrar todas las solicitudes y todas en la consola a medida que se produce cada una de ellas, abra console Configuración y seleccione la casilla situada junto a `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**. **** [](#open-console-settings)  
 
 :::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Registrar solicitudes XMLHttpRequest y Fetch" lightbox="../media/console-xhr-fetch.msft.png":::
    Registro `XMLHttpRequest` y `Fetch` solicitudes  
@@ -128,11 +128,11 @@ El mensaje superior de la figura anterior muestra el comportamiento de agrupaci�
 
 ### <a name="persist-messages-across-page-loads"></a>Conservar mensajes entre cargas de página  
 
-Al cargar una nueva página web, la acción predeterminada borra la **consola**.  Para conservar los mensajes en las cargas de página, [abra Configuración de](#open-console-settings) consola y seleccione la casilla situada junto a Conservar **registro**.  
+Al cargar una nueva página web, la acción predeterminada borra la **consola**.  Para conservar los mensajes en las cargas de página, [abra Configuración](#open-console-settings) consola y seleccione la casilla situada junto a **Conservar registro**.  
 
 ### <a name="hide-network-messages"></a>Ocultar mensajes de red  
 
-La acción predeterminada de Microsoft Edge es registra los mensajes de red en la **consola**.  En la siguiente figura, el mensaje elegido representa un código de estado HTTP de `429` .  
+La acción predeterminada para Microsoft Edge es registra los mensajes de red en la **consola**.  En la siguiente figura, el mensaje elegido representa un código de estado HTTP de `429` .  
 
 :::image type="complex" source="../media/console-show-network.msft.png" alt-text="Un mensaje 429 en la consola" lightbox="../media/console-show-network.msft.png":::
    Un `429` mensaje en la **consola**  
@@ -140,7 +140,7 @@ La acción predeterminada de Microsoft Edge es registra los mensajes de red en l
 
 Para ocultar los mensajes de red, realice las siguientes acciones.  
 
-1.  [Abra Configuración de la consola](#open-console-settings).  
+1.  [Abra la consola Configuración](#open-console-settings).  
 1.  Seleccione la casilla situada junto a **Ocultar red**.  
     
 ## <a name="filter-messages"></a>Filtrar mensajes  
@@ -204,7 +204,7 @@ Para mostrar mensajes desde una única dirección URL, complete las siguientes a
 
 ### <a name="filter-out-messages-from-different-contexts"></a>Filtrar mensajes de distintos contextos  
 
-Suponga que tiene un anuncio \(ad\) en su página web.  El anuncio está incrustado en un `<iframe>` y genera muchos mensajes en la **consola**.  Dado que el anuncio se ejecuta en un contexto de [](#open-console-settings) [JavaScript](#choose-javascript-context)diferente, una forma de ocultar los mensajes es abrir Configuración de consola y elegir la casilla situada junto a Solo contexto **seleccionado**.  
+Suponga que tiene un anuncio \(ad\) en su página web.  El anuncio está incrustado en un `<iframe>` y genera muchos mensajes en la **consola**.  Dado que el anuncio se ejecuta en un contexto [de JavaScript](#choose-javascript-context)diferente, una forma de ocultar los mensajes es abrir la consola [Configuración](#open-console-settings) y elegir la casilla junto a Solo **contexto seleccionado**.  
 
 ### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>Filtrar mensajes que no coincidan con un patrón de expresión regular  
 
@@ -230,12 +230,12 @@ Si se encuentra escribiendo la misma expresión de JavaScript en la **consola** 
 
 **Eager Evaluation** muestra una vista previa del valor devuelto al escribir expresiones de JavaScript en la **consola**.  Para desactivar las vistas previas de valor devuelto, complete las siguientes acciones.  
 
-1.  [Abra Configuración de la consola](#open-console-settings).  
+1.  [Abra la consola Configuración](#open-console-settings).  
 1.  Quite la casilla situada junto a **Evaluación ansiosa**.  
     
 ### <a name="turn-off-autocomplete-from-history"></a>Desactivar autocompletar del historial  
 
-Al escribir una expresión, la ventana emergente autocompletar de la **consola** muestra las expresiones que ejecutó anteriormente.  Las expresiones están pre-pended con el `>` carácter.  Para dejar de mostrar expresiones del historial, [abra configuración](#open-console-settings) de consola y quite la casilla junto a **Autocompletar del historial** casilla.  
+Al escribir una expresión, la ventana emergente autocompletar de la **consola** muestra las expresiones que ejecutó anteriormente.  Las expresiones están pre-pended con el `>` carácter.  Para dejar de mostrar expresiones del historial, abra [la](#open-console-settings) Configuración consola y quite la casilla junto a **Autocompletar del historial.**  
 
 > [!NOTE]
 > En la siguiente figura, `document.querySelector('a')` y `document.querySelector('img')` son expresiones que se evaluaron anteriormente.  
@@ -282,7 +282,7 @@ Para borrar la **consola,** complete cualquiera de los siguientes flujos de trab
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Supervisar los cambios en JavaScript mediante expresiones live | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Referencia de api de utilidades de consola | Microsoft Docs"  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecute comandos con el menú Comando de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecute comandos con el menú Microsoft Edge comando DevTools | Microsoft Docs"  
 
 [MdnDocsGlossaryBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Contexto de exploración | MDN"  
 
@@ -296,4 +296,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

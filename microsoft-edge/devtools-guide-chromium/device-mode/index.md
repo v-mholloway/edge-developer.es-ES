@@ -3,16 +3,16 @@ description: Usa dispositivos virtuales en Microsoft Edge para crear sitios web 
 title: Emular dispositivos móviles en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, emulación, dispositivo, simulación, móvil
-ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: b62a1799b1707fc4c6890bb7ad9ad4aa9afab113
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439454"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564409"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439454"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>Emular dispositivos móviles en Microsoft Edge DevTools  
 
-Usa **la emulación de dispositivo para** aproximar el aspecto de la página y cómo responde en un dispositivo móvil.  Microsoft Edge DevTools proporciona una colección de características que le ayudarán a emular dispositivos móviles.  La colección incluye las siguientes características.  
+Usa **la emulación de dispositivo para** aproximar el aspecto de la página y cómo responde en un dispositivo móvil.  El Microsoft Edge DevTools proporciona una colección de características que le ayudarán a emular dispositivos móviles.  La colección incluye las siguientes características.  
 
 *   [Simular una ventanilla móvil](#simulate-a-mobile-viewport)  
 *   [Limitar la red](#throttle-the-network-only)  
@@ -85,7 +84,7 @@ Usa la **lista Tipo de** dispositivo para simular un dispositivo móvil o dispos
    La **lista Tipo de** dispositivo  
 :::image-end:::  
 
-En la tabla siguiente se describen las diferencias entre las opciones de tipo de dispositivo disponibles.  La columna Rendering method hace referencia a si Microsoft Edge representa la página como una ventanilla móvil o de escritorio.  La columna de icono cursor hace referencia al tipo de cursor que se muestra al pasar el mouse en la página.  La columna Eventos desencadenados hace referencia a si la página desencadena `touch` o eventos al interactuar con la `click` página.  
+En la tabla siguiente se describen las diferencias entre las opciones de tipo de dispositivo disponibles.  La columna Rendering method hace referencia a si Microsoft Edge la página como una ventanilla móvil o de escritorio.  La columna de icono cursor hace referencia al tipo de cursor que se muestra al pasar el mouse en la página.  La columna Eventos desencadenados hace referencia a si la página desencadena `touch` o eventos al interactuar con la `click` página.  
 
 | Opción | Método rendering | Icono de cursor | Eventos desencadenados |  
 |:--- |:--- |:--- |:--- |  
@@ -126,7 +125,7 @@ Para obtener más información, vaya a [Establecer orientación](#set-orientatio
 
 #### <a name="show-device-frame"></a>Mostrar fotograma del dispositivo  
 
-Muestra el marco del dispositivo físico alrededor de la ventanilla cuando simulas las dimensiones de un dispositivo móvil específico, como un iPhone 6.  
+Muestra el marco del dispositivo físico alrededor de la ventanilla al simular las dimensiones de un dispositivo móvil específico, como un iPhone 6.  
 
 1.  Abra **Más opciones**.  
 1.  Elija **Mostrar marco de dispositivo**.  
@@ -141,8 +140,8 @@ Muestra el marco del dispositivo físico alrededor de la ventanilla cuando simul
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Marco del dispositivo para el iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
-         Marco del dispositivo para el iPhone 6  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="El marco del dispositivo para el iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         El marco del dispositivo para el iPhone 6  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -216,7 +215,7 @@ Toda la limitación se basa en la funcionalidad normal de su portátil o escrito
 
 Para limitar la CPU solo y no la red, siga estos pasos.
 
-1.  Elija el panel **Rendimiento** y elija **Configuración de captura** \( Configuración de captura ![ ](../media/capture-settings-icon.msft.png) \).
+1.  Elija **el** panel Rendimiento y elija **Capturar Configuración** \( Capturar ![ Configuración ](../media/capture-settings-icon.msft.png) \).
 1.  Elija **CPU**  >  **4x slowdown** o **6x slowdown**.
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="La lista de CPU del panel Rendimiento" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -234,7 +233,7 @@ Para limitar solo la red, siga estos pasos.
        Lista **de limitaciones** en el panel Red  
     :::image-end:::  
     
-    O seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) **** `3G` **** **** para abrir el menú comando , escriba y elija Habilitar la limitación rápida de 3G o Habilitar la limitación 3G lenta .  
+    O bien, seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) **** `3G` **** **** para abrir el menú comando , escriba y elija Habilitar la limitación rápida de 3G o Habilitar la limitación 3G lenta .  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Menú comando" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        Menú **comando**  
@@ -242,7 +241,7 @@ Para limitar solo la red, siga estos pasos.
     
 También puede establecer la limitación de red desde **el** panel Rendimiento.  
 
-1.  Elija **Configuración de** captura \( Configuración de captura \) y elija la lista Red y cambie el valor preestablecido ![ a Fast ](../media/capture-settings-icon.msft.png) **3G** o **Slow 3G**. ****  
+1.  Elija **Capturar Configuración** \( Capturar Configuración \) y elija la lista Red y cambie el valor preestablecido ![ a Fast ](../media/capture-settings-icon.msft.png) **3G** o **Slow 3G**. ****  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Establecer limitación de red desde el panel Rendimiento" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Establecer limitación de red desde **el** panel Rendimiento  
@@ -261,7 +260,7 @@ También puede establecer la limitación de red desde **el** panel Rendimiento.
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Abra el menú comando.  
+      1.  Abra el Menú de comandos.  
           *   Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
       1. Escriba `Sensors` y elija Mostrar **sensores**.  
       
@@ -290,7 +289,7 @@ En **el** panel Sensores, puede seleccionar una de las **** ubicaciones preestab
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Abra el menú comando.  
+      1.  Abra el Menú de comandos.  
           *   Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
       1. Escriba `Sensors` y elija Mostrar **sensores**.  
       
@@ -319,7 +318,7 @@ En **el** panel Sensores, puede seleccionar una orientación preestablecida en *
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Abra el menú comando.  
+      1.  Abra el Menú de comandos.  
           *   Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
       1. Escriba `Network conditions` y elija Mostrar condiciones de **red**.  
       
@@ -362,4 +361,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

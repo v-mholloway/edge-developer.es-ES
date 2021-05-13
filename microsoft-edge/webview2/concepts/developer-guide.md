@@ -3,22 +3,21 @@ description: Obtenga información sobre los procedimientos recomendados de desar
 title: Procedimientos recomendados de desarrollo de WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/11/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, edge, procedimientos recomendados
-ms.openlocfilehash: 3982f47e0fe58287582915673d4ba0de0365a55d
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 5a11f01ec07aea12599c8bdb8428d451ad7bd013
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535660"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564752"
 ---
 # <a name="webview2-development-best-practices"></a>Procedimientos recomendados de desarrollo de WebView2  
 
 Cada equipo de desarrollo sigue diferentes prácticas al compilar su aplicación. Al crear aplicaciones webView2, hay prácticas que se recomienda seguir. En este artículo se describen las recomendaciones y los procedimientos recomendados para usted al crear aplicaciones WebView2 basadas en producción.
-
 
 ## <a name="use-evergreen-webview2-runtime-recommended"></a>Usar Evergreen WebView2 Runtime (recomendado)  
 
@@ -36,9 +35,10 @@ Las aplicaciones webView2 necesitan un SDK de Webview2 y un Tiempo de ejecución
 
 Si usa Evergreen WebView2 Runtime, hay algunos escenarios en los que es posible que el tiempo de ejecución no se actualice para usar la versión más reciente. Por ejemplo, cuando los usuarios no tienen acceso a Internet, el tiempo de ejecución no se actualiza automáticamente en ese entorno. Además, el uso de algunas directivas de grupo pausa las actualizaciones de WebView2. Al insertar una actualización en la aplicación WebView2, la aplicación puede interrumpirse porque usa API más recientes que no están disponibles en el tiempo de ejecución instalado.   
  
-Para solucionar esta situación, puede probar la disponibilidad de las API en el tiempo de ejecución instalado, antes de que el código llame a la API. Esta prueba de funcionalidad más reciente es similar a otros procedimientos recomendados de desarrollo web que detectan características compatibles antes de usar nuevas API web. Para probar la disponibilidad de la API en el tiempo de ejecución instalado, use:
-* El `queryinterface` de C/C++. 
-* Un bloque try/catch en .NET o WinUI. 
+Para solucionar esta situación, puede probar la disponibilidad de las API en el tiempo de ejecución instalado, antes de que el código llame a la API. Esta prueba de funcionalidad más reciente es similar a otros procedimientos recomendados de desarrollo web que detectan características compatibles antes de usar nuevas API web. Para probar la disponibilidad de la API en el tiempo de ejecución instalado, use:  
+
+*   El `queryinterface` de C/C++. 
+*   Un bloque try/catch en .NET o WinUI. 
     
 Para obtener más información, vaya a [Determine WebView2 Runtime requirement][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement].  
 
@@ -58,7 +58,6 @@ Las aplicaciones webView2 crean una carpeta de datos de usuario para almacenar d
 ## <a name="follow-recommended-webview2-security-best-practices"></a>Seguir los procedimientos recomendados de seguridad de WebView2 
 Para cualquier aplicación WebView2, asegúrese de seguir nuestros procedimientos recomendados de seguridad de WebView2.  Para obtener más información, vaya a [Procedimientos recomendados para desarrollar aplicaciones webView2 seguras.][Webview2ConceptsSecurity]  
 
-
 <!-- links -->  
 
 [Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Implementación de Evergreen WebView2 Runtime: distribución de aplicaciones con WebView2 | Microsoft Docs"  
@@ -71,5 +70,7 @@ Para cualquier aplicación WebView2, asegúrese de seguir nuestros procedimiento
 [Webview2GetStartedWinforms]: ../get-started/winforms.md "Introducción a WebView2 en Windows Forms | Microsoft Docs"  
 [Webview2GetStartedWinui]: ../get-started/winui.md "Introducción a WebView2 en WinUI 3 (versión preliminar) | Microsoft Docs"  
 [Webview2GetStartedWpf]: ../get-started/wpf.md "Introducción a WebView2 en WPF | Microsoft Docs"  
-[Webview2ReferenceaddNewBrowserVersionAvailable]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
-[Webview2ReferenceNewBrowserVersionAvailable]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "Evento CoreWebView2Environment.NewBrowserVersionAvailable | Microsoft Docs"  
+
+[Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
+
+[Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "Evento CoreWebView2Environment.NewBrowserVersionAvailable | Microsoft Docs"  

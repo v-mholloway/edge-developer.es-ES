@@ -3,16 +3,16 @@ description: Nuevas herramientas de depuración de cuadrícula CSS, herramienta 
 title: Novedades de DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 0f4e0aaeba55f584697d1817f7ea54044dfdd380
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: c7859631327fc031909cd25736fddb8cff3cff45
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514357"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564899"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -33,14 +33,15 @@ ms.locfileid: "11514357"
 
 ## <a name="improving-devtools-localization"></a>Mejorar la localización de DevTools  
 
-Para satisfacer sus necesidades de traducción, el equipo de Microsoft Edge DevTools se centra en mejorar la calidad de la traducción.  A partir de la versión 87 de Microsoft Edge, varias cadenas y términos están bloqueados y no cambian incluso cuando el resto de DevTools se muestran en otros idiomas.  La lista de cadenas y términos afectados incluye lo siguiente.  
+Para satisfacer sus necesidades de traducción, el Microsoft Edge de DevTools se centra en mejorar la calidad de la traducción.  A partir Microsoft Edge versión 87, varias cadenas y términos están bloqueados y no cambian incluso cuando el resto de DevTools se muestran en otros idiomas.  La lista de cadenas y términos afectados incluye lo siguiente.  
 
 *   Las cadenas de la **herramienta Faro.**  
 *   El término `service worker` .  
 *   Algunos de los **filtros de** herramientas de red como , , `URL` y `XHR` `JS` `CSS` .  
-*   LA API de utilidades de consola [$0.][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]  
+*   LA API de utilidades de consola [$0.][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]  
     
-[$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] ahora está disponible en la [consola para](/microsoft-edge/devtools-guide-chromium/console/index.md) los usuarios en versiones localizadas de DevTools.   Gracias a la comunidad de desarrolladores global por ayudar a mejorar la localización de Microsoft Edge DevTools.  Continúe con [el envío de comentarios sobre la calidad de localización](#getting-in-touch-with-microsoft-edge-devtools-team) para mejorar la compatibilidad con DevTools en todas las configuraciones regionales.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1136655][CR1136655].  
+[$0][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject] ahora está disponible en la [consola para][DevtoolsConsoleIndex] los usuarios en versiones localizadas de DevTools.   Gracias a la comunidad de desarrolladores global por ayudar a mejorar la localización del Microsoft Edge DevTools.  Continúe con [el envío de comentarios sobre la calidad de localización](#getting-in-touch-with-microsoft-edge-devtools-team) para mejorar la compatibilidad con DevTools en todas las configuraciones regionales.  Para revisar las actualizaciones en tiempo real de esta característica en Chromium proyecto de código abierto, vaya a Problema [#1136655][CR1136655].  
+
 
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Herramienta de red con filtros no localizados" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **Panel de** red con filtros no localizados  
@@ -48,7 +49,7 @@ Para satisfacer sus necesidades de traducción, el equipo de Microsoft Edge DevT
 
 ## <a name="move-tools-between-top-and-bottom-panels"></a>Mover herramientas entre paneles superior e inferior  
 
-DevTools ahora admite mover herramientas entre los paneles superior e inferior.  Personalice sus DevTools y mejore su productividad viendo cualquier combinación de dos herramientas al mismo tiempo.  Por ejemplo, vea las **** **herramientas Elementos** y Orígenes al mismo tiempo \(moviendo la herramienta **Orígenes** a la parte inferior\).  Para revisar el historial de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1075732][CR1075732].  
+DevTools ahora admite mover herramientas entre los paneles superior e inferior.  Personalice sus DevTools y mejore su productividad viendo cualquier combinación de dos herramientas al mismo tiempo.  Por ejemplo, vea las **** **herramientas Elementos** y Orígenes al mismo tiempo \(moviendo la herramienta **Orígenes** a la parte inferior\).  Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [#1075732][CR1075732].  
 
 :::row:::
    :::column span="":::
@@ -73,12 +74,12 @@ DevTools ahora admite mover herramientas entre los paneles superior e inferior. 
    Característica experimental  
 :::image-end:::  
 
-La **herramienta Consola de** red ahora ha mejorado la compatibilidad con los esquemas [Postman v2.1][PostmanSchemaJsonCollectionv210Index] y [OpenAPI v2.][SwaggerSpecificationV2]  Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla situada junto **a Habilitar consola de red.**  Para obtener más información acerca de **la consola de red,** vaya a [Habilitar la característica Experimental de consola de red][DevtoolsExperimentalFeaturesEnableNetworkConsole].  Este experimento ahora admite las siguientes acciones.  
+La **herramienta Consola de** red ahora ha mejorado la compatibilidad con los esquemas [Postman v2.1][PostmanSchemaJsonCollectionv210Index] y [OpenAPI v2.][SwaggerSpecificationV2]  Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y elija la casilla situada junto a **Habilitar**consola de red .  Para obtener más información acerca de **la**consola de red, vaya a [Habilitar la característica experimental de consola de red][DevtoolsExperimentalFeaturesEnableNetworkConsole].  Este experimento ahora admite las siguientes acciones.  
 
 *   Guardar y exportar colecciones y entornos.  
 *   Edite y exporte conjuntos de variables de entorno dentro de la **herramienta Consola de** red.  
     
-Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1093687][CR1093687].  
+Para revisar las actualizaciones en tiempo real de esta característica en Chromium proyecto de código abierto, vaya a Problema [#1093687][CR1093687].  
 
 :::row:::
    :::column span="":::
@@ -99,14 +100,14 @@ Para revisar las actualizaciones en tiempo real de esta característica en el pr
    Característica experimental  
 :::image-end:::  
 
-Microsoft Edge DevTools ahora admite las siguientes características para inspeccionar, ver y depurar las cuadrículas CSS.  
+Las Microsoft Edge DevTools ahora admiten las siguientes características para inspeccionar, ver y depurar las cuadrículas CSS.  
 
 *   Muestra una superposición de cuadrícula simplificada con **la herramienta Inspeccionar** u obtén información más detallada con superposiciones persistentes.  
 *   Para habilitar las superposiciones de cuadrícula persistentes, elija el icono de cuadrícula junto a un elemento contenedor de cuadrícula en la herramienta **Elementos** o elija la cuadrícula en la **herramienta** Diseño.  
 *   Puede habilitar las superposiciones persistentes para varias cuadrículas.  
 *   La nueva **herramienta Diseño** te permite alternar fácilmente las superposiciones de cuadrícula y configurar la apariencia y el contenido de cada una.  
     
-Las características están activadas de forma predeterminada.  Para obtener más información acerca de las características, vaya a [cuadrículas CSS][DevtoolsCssGrid].  Para revisar el historial de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1047356][CR1047356].  Además, el equipo de Microsoft Edge DevTools colabora con el equipo de Chrome DevTools y la comunidad chromium para agregar nuevas características de herramientas flexbox a DevTools.  Para obtener actualizaciones sobre las herramientas de flexbox en el proyecto de código abierto Chromium, vaya a Problema [#1136394][CR1136394].  
+Las características están activadas de forma predeterminada.  Para obtener más información acerca de las características, vaya a [cuadrículas CSS][DevtoolsCssGrid].  Para revisar el historial de esta característica en el Chromium de código abierto, vaya a Problema [#1047356][CR1047356].  Además, el equipo Microsoft Edge DevTools colabora con el equipo de Chrome DevTools y la comunidad de Chromium para agregar nuevas características de herramientas de flexbox a DevTools.  Para obtener actualizaciones sobre las herramientas de flexbox Chromium proyecto de código abierto, vaya a Problema [#1136394][CR1136394].  
 
 :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Herramienta de diseño con cuadrículas" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    **Herramienta de** diseño con cuadrículas  
@@ -118,23 +119,23 @@ Las características están activadas de forma predeterminada.  Para obtener má
    Característica experimental  
 :::image-end:::  
 
-Ahora puedes personalizar el método abreviado de teclado para cualquier acción en DevTools.  Desde La versión 84 de Microsoft Edge, puede elegir entre Visual Studio **Code** y **DevTools (predeterminado)** preestablecidos para métodos [abreviados de teclado.][DevtoolsCustomizeShortcuts]  A partir de la versión 87 de Microsoft Edge, puede activar el experimento Habilitar **editor** de métodos abreviados de teclado para personalizar aún más [los métodos abreviados de teclado.][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]  
+Ahora puedes personalizar el método abreviado de teclado para cualquier acción en DevTools.  Desde Microsoft Edge versión 84, puede elegir **** entre los ajustes preestablecidos Visual Studio Code **y DevTools (predeterminado)** para los [métodos abreviados de teclado.][DevtoolsCustomizeShortcuts]  A partir Microsoft Edge versión 87, puede activar el experimento Habilitar **editor** de métodos abreviados de teclado para personalizar aún más [los métodos abreviados de teclado.][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]  
 
-Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla situada junto a Habilitar editor **de métodos abreviados de teclado.**  Para obtener más información sobre la personalización y la edición de accesos directos, vaya a [Habilitar la característica experimental del editor de método abreviado de teclado][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#174309][CR174309].  
+Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla situada junto a Habilitar editor de métodos abreviados de **teclado**.  Para obtener más información acerca de la personalización y edición de accesos directos, vaya a [Editar métodos abreviados][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]de teclado para cualquier acción en DevTools .  Para revisar las actualizaciones en tiempo real de esta característica en Chromium proyecto de código abierto, vaya a Problema [#174309][CR174309].  
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Acceso directo personalizado para pausar un script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Acceso directo personalizado para pausar un script  
 :::image-end:::  
 
-## <a name="introducing-the-microsoft-edge-tools-for-visual-studio-code-extension"></a>Presentación de las herramientas de Microsoft Edge para Visual Studio de código  
+## <a name="introducing-the-microsoft-edge-tools-for-visual-studio-code-extension"></a>Presentación de la Microsoft Edge herramientas de Visual Studio Code extensión  
 
-Los **elementos para Visual Studio código** y red para **extensiones** de código Visual Studio ahora se combinan en las nuevas herramientas para desarrolladores de Microsoft Edge para Visual Studio [de código.][VisualStudioCodeMarketplaceMsEdgedevtools]  Use Microsoft Edge DevTools para las siguientes actividades sin salir de Microsoft Visual Studio Code.  
+Los **elementos para Visual Studio Code** **y red** para extensiones Visual Studio Code ahora se combinan en la nueva [Microsoft Edge Developer Tools para Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extensión.  Use el Microsoft Edge DevTools para las siguientes actividades sin salir de Microsoft Visual Studio code.  
 
 *   Depurar el DOM  
 *   Editar CSS  
 *   Inspeccionar el tráfico de red  
 
-Con la extensión, inicie Microsoft Edge, conéctese a una instancia existente del explorador o use un explorador sin cabeza directamente desde el editor.  Para empezar a contribuir y archivar problemas con sus comentarios sobre esta extensión, vaya a [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] repo on GitHub.  
+Con la extensión, inicie Microsoft Edge, conéctese a una instancia existente del explorador o use un explorador sin cabeza directamente desde el editor.  Para empezar a contribuir y archivar problemas con sus comentarios sobre esta extensión, vaya a Microsoft Edge [Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] repo on GitHub.  
 
 :::row:::
    :::column span="":::
@@ -163,7 +164,7 @@ En versiones anteriores de Microsoft Edge, no había compatibilidad de depuraci�
     
 Para obtener más información acerca de la característica **WebAuthn,** vaya a [Emular autenticadores y depurar WebAuthn en Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
 
-Puedes emular autenticadores y depurar la [API de][GithubW3cWebauthn] autenticación web con la nueva [herramienta WebAuthn.][DevtoolsWebauthnIndex]  Para abrir la **herramienta WebAuthn,** elija el icono Personalizar y **controlar DevTools** \( \) > `...` Más **herramientas**  >  **WebAuthn**.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1034663][CR1034663].  
+Puede emular autenticadores y depurar la API de autenticación [web][GithubW3cWebauthn] con la nueva herramienta [WebAuthn][DevtoolsWebauthnIndex].  Para abrir la **herramienta WebAuthn,** elija el icono Personalizar y **controlar DevTools** \( \) > `...` Más **herramientas**  >  **WebAuthn**.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto Chromium de código abierto, vaya a Problema [#1034663][CR1034663].  
 
 :::row:::
    :::column span="":::
@@ -182,7 +183,7 @@ Puedes emular autenticadores y depurar la [API de][GithubW3cWebauthn] autenticac
 
 #### <a name="view-the-computed-sidebar-pane-in-the-styles-pane"></a>Ver el panel lateral calculado en el panel Estilos  
 
-Alterna el **panel Calculado** en el **panel Estilos.**  El **panel Calculado** del panel **Estilos** se contrae de forma predeterminada.  Para alternar, elija el botón.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1073899][CR1073899].  
+Alterna el **panel Calculado** en el **panel Estilos.**  El **panel Calculado** del panel **Estilos** se contrae de forma predeterminada.  Para alternar, elija el botón.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto Chromium de código abierto, vaya a Problema [#1073899][CR1073899].  
 
 :::row:::
    :::column span="":::
@@ -207,11 +208,11 @@ Para ver el CSS aplicado con menos desplazamiento, agrupa las propiedades CSS po
 
 ### <a name="lighthouse-64-in-the-lighthouse-tool"></a>Faro 6.4 en la herramienta Faro  
 
-La **herramienta Lighthouse** ahora ejecuta Lighthouse 6.4.  Para obtener una lista completa de los cambios, vaya a las notas [de la versión de Lighthouse][GithubGoogleChromeLighthouseReleasesV641].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#772558][CR772558].  
+La **herramienta Lighthouse** ahora ejecuta Lighthouse 6.4.  Para obtener una lista completa de los cambios, vaya a las notas [de la versión de Lighthouse][GithubGoogleChromeLighthouseReleasesV641].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto Chromium de código abierto, vaya a Problema [#772558][CR772558].  
 
 ### <a name="performancemark-events-in-the-timings-section"></a>eventos performance.mark() en la sección Timings  
 
-La **sección Timings de** una grabación de la herramienta [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] marca ahora los `performance.mark()` eventos.  Para probar esta característica y medir el rendimiento del código JavaScript, agregue `performance.mark()` eventos al código.  Por ejemplo, el siguiente fragmento de código agrega marcadores antes y después de un bucle que itera de 0 a `for` 1000 mediante incrementos de 7.  
+La **sección Timings de** una grabación de la herramienta [Performance][DevtoolsEvaluatePerformanceReference] marca ahora los `performance.mark()` eventos.  Para probar esta característica y medir el rendimiento del código JavaScript, agregue `performance.mark()` eventos al código.  Por ejemplo, el siguiente fragmento de código agrega marcadores antes y después de un bucle que itera de 0 a `for` 1000 mediante incrementos de 7.  
 
 ```javascript
 performance.mark('start');
@@ -221,7 +222,7 @@ for (var i = 0; i < 1000; i+=7;){
 performance.mark('end');
 ```  
 
-A continuación, abra la [herramienta][DevtoolsGuideChromiumEvaluatePerformanceReference] Rendimiento y vaya a la **sección Timings** para registrar el código JavaScript.  Los `performance.mark()` eventos que agregó ahora se muestran en la grabación.  
+A continuación, abra la [herramienta][DevtoolsEvaluatePerformanceReference] Rendimiento y vaya a la **sección Timings** para registrar el código JavaScript.  Los `performance.mark()` eventos que agregó ahora se muestran en la grabación.  
 
 :::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Eventos Performance.mark" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` eventos  
@@ -235,13 +236,13 @@ Use las palabras `resource-type` clave y nuevas de la herramienta `url` **Red** 
    filtro de tipo de recurso  
 :::image-end:::  
 
-Para descubrir palabras clave más especiales, `resource-type` como y , vaya a filtrar las solicitudes por `url` [propiedades][DevtoolsNetworkReferenceFilterRequestsProperties].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problemas [#1121141][CR1121141] y [#1104188][CR1104188].  
+Para descubrir palabras clave más especiales como y , vaya a [solicitudes de filtro por `resource-type` `url` propiedades][DevtoolsNetworkReferenceFilterRequestsProperties].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto Chromium de código abierto, vaya a Problemas [#1121141][CR1121141] y [#1104188][CR1104188].  
 
 ### <a name="frame-details-view-updates"></a>Actualización de la vista de detalles del marco  
 
 #### <a name="display-coep-and-coop-reporting-to-endpoint"></a>Mostrar informes de COEP y COOP en el punto de conexión  
 
-Vea el extremo Directiva de incrustación entre orígenes \(COEP\) y Directiva de apertura entre orígenes \(COOP\) en la sección Seguridad `reporting to` **& aislamiento.**  La [API de informes][MdnReportingApi] define , un nuevo encabezado HTTP, que le permite especificar los puntos de conexión del servidor para que el explorador envíe `Report-To` advertencias y errores.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1051466][CR1051466].  
+Vea el extremo Directiva de incrustación entre orígenes \(COEP\) y Directiva de apertura entre orígenes \(COOP\) en la sección Seguridad `reporting to` **& aislamiento.**  La [API de informes][MdnReportingApi] define , un nuevo encabezado HTTP, que le permite especificar los puntos de conexión del servidor para que el explorador envíe `Report-To` advertencias y errores.  Para revisar las actualizaciones en tiempo real de esta característica en el Chromium de código abierto, vaya a Problema [#1051466][CR1051466].  
 
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="El punto de conexión de informes" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    El `reporting to` extremo  
@@ -249,7 +250,7 @@ Vea el extremo Directiva de incrustación entre orígenes \(COEP\) y Directiva d
 
 #### <a name="display-coep-and-coop-report-only-mode"></a>Mostrar el modo de solo informe DE COEP y COOP  
 
-DevTools ahora muestra la `report-only` etiqueta de COEP y COOP que están establecidas en `report-only` modo.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1051466][CR1051466].  
+DevTools ahora muestra la `report-only` etiqueta de COEP y COOP que están establecidas en `report-only` modo.  Para revisar las actualizaciones en tiempo real de esta característica en el Chromium de código abierto, vaya a Problema [#1051466][CR1051466].  
 
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="La etiqueta de modo de solo informe" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    La `report-only` etiqueta de modo  
@@ -265,73 +266,74 @@ Ahora, **la herramienta** Información general de CSS muestra una lista de eleme
 
 [CSS Overview Accessible Colors Demo][GlitchCssOverviewAccessibleColorsDemo]  
 
-Para habilitar este experimento, en **Experimentos**  >  **de configuración,** elija la casilla Información general de **CSS.**  Para ver una lista de elementos que tienen un problema de contraste de color, en **Problemas de contraste**, elija **Texto**.  Para abrir el elemento en la **herramienta Elementos,** elija un elemento en la lista.  Para ayudar a solucionar problemas de contraste, Microsoft Edge DevTools [proporciona automáticamente sugerencias de color.][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [#1120316][CR1120316].  
+Para habilitar este **** experimento, en  >  **Configuración,** seleccione la casilla **Información general de CSS.**  Para ver una lista de elementos que tienen un problema de contraste de color, en **Problemas de contraste**, elija **Texto**.  Para abrir el elemento en la **herramienta Elementos,** elija un elemento en la lista.  Para ayudar a solucionar problemas de contraste, el Microsoft Edge DevTools [proporciona automáticamente sugerencias de color.][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto Chromium de código abierto, vaya a Problema [#1120316][CR1120316].  
 
 :::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Problemas de contraste de color bajo" lightbox="../../media/2020/10/css-overview.msft.png":::
    Problemas de contraste de color bajo  
 :::image-end:::  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
 
-Si estás en Windows o macOS, considera usar los canales de vista [previa de Microsoft Edge][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
+Si está en Windows o macOS, considere la posibilidad de usar los canales [Microsoft Edge vista previa][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Desuso del panel Propiedades en la herramienta Elementos: novedades de DevTools (Microsoft Edge 84) | Microsoft Docs"  
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsTool]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Desuso del panel Propiedades en la herramienta Elementos: novedades de DevTools (Microsoft Edge 84) | Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "Características de depuración de cuadrícula CSS: novedades de DevTools (Microsoft Edge 85) | Microsoft Docs"  
 [DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "Sugerencia de color accesible en el panel Estilos: novedades de DevTools (Microsoft Edge 86) | Microsoft Docs"  
 
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Elemento seleccionado recientemente o objeto JavaScript: referencia de api de utilidades de consola | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Referencia de análisis de rendimiento | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "Emulación: admite el modo de pantalla dual: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Habilitar API experimentales: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Habilitar el editor de métodos abreviados de teclado: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulación: admite el modo de pantalla dual: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNetworkConsole]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-network-console "Habilitar consola de red: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Habilitar visor de pedidos de origen: características experimentales | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Pruebas en dispositivos plegables y de pantalla doble: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
-[DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "tabla: referencia de api de consola | Microsoft Docs"  
-[DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Busque código JavaScript y CSS sin usar con la pestaña Cobertura en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Inspeccionar css grid | Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer: personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Configuración: Personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analizar el rendimiento de representación con la pestaña Representación: referencia de análisis de rendimiento | Microsoft Docs"  
-[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Ver y depurar información de reproductores multimedia | Microsoft Docs"  
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filtrar solicitudes por propiedades: referencia de análisis de red | Microsoft Docs"  
-[DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Emular autenticadores y depurar WebAuthn en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../../../console/index.md "Use la consola | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Elemento o objeto JavaScript elegido recientemente: referencia de api de utilidades de consola | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edite los métodos abreviados de teclado para cualquier acción en el archivo DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Referencia de análisis de rendimiento | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulación: admite el modo de pantalla dual: características experimentales | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features.md#enable-experimental-apis "Habilitar API experimentales: características experimentales | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  -->  
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: .. /.. /.. /experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableNetworkConsole]: .. /.. /.. /experimental-features/index.md#enable-network-console "Enable Network Console - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: .. /.. /.. /experimental-features/index.md#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs&quot; [DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: .. /.. /.. /experimental-features/index.md#testing-on-foldable-and-dual-screen-devices &quot;Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: .. /.. /.. /experimental-features/index.md#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
+[DevtoolsConsoleApiTable]: .. /.. /.. /console/api.md#table "table- Console API reference | Microsoft Docs"  
+[DevtoolsCoverageIndex]: .. /.. /.. /coverage/index.md "Buscar código JavaScript y CSS sin usar con la pestaña Cobertura en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: .. /.. /.. /css/grid.md "Inspect CSS Grid | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: .. /.. /.. /customize/index.md#drawer "Drawer- Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: .. /.. /.. /customize/index.md#settings "Configuración: Personalizar Microsoft Edge devTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: .. /.. /.. /evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
+[DevtoolsMediaIndex]: .. /.. /.. /media/index.md "Ver y depurar la información de los reproductores multimedia | Microsoft Docs"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: .. /.. /.. /network/reference.md#filter-requests-by-properties "Filter requests by properties - Network Analysis reference | Microsoft Docs"  
+[DevtoolsWebauthnIndex]: .. /.. /.. /webauthn/index.md "Emular autenticadores y depurar WebAuthn en Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 
-[VisualStudioCodeMarketplaceMsEdgedevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Herramientas de Microsoft Edge para Visual Studio código | Visual Studio código"  
+[VisualStudioCodeMarketplaceMsEdgedevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Herramientas para Visual Studio Code | Visual Studio Code"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Errores de Chromium"  
 
-[CR174309]: https://crbug.com/174309 "DevTools: permitir personalizar los métodos abreviados de teclado o los enlaces de teclas | Errores de Chromium"
-[CR772558]: https://crbug.com/772558 "DevTools: actualizar a la versión más reciente de | Errores de Chromium"  
-[CR1034663]: https://crbug.com/1034663 "Crear un front-end para la API de prueba de WebAuthn | Errores de Chromium"  
-[CR1047356]: https://crbug.com/1047356 "Herramientas CSS Grid/Flexbox/Table | Errores de Chromium"  
-[CR1051466]: https://crbug.com/1051466 "Admite la depuración de COOP/COEP en DevTools | Errores de Chromium"  
-[CR1073899]: https://crbug.com/1073899 "La pestaña Estilo calculado desaparece en modo de respuesta | Errores de Chromium"  
-[CR1075732]: https://crbug.com/1075732 "Personalización de DevTools: pestañas móviles | Errores de Chromium"  
-[CR1084673]: https://crbug.com/1084673 "DevTools: mejore la forma en que presentamos propiedades personalizadas css ((aka). variables CSS) y sus valores | Errores de Chromium"  
-[CR1093687]: https://crbug.com/1093687 "Crear herramienta para crear y reproducir solicitudes de red sintéticas | Errores de Chromium"  
-[CR1096230]: https://crbug.com/1096230 "Agrupar propiedades CSS por categorías en el panel Estilos calculados | Errores de Chromium"  
-[CR1104188]: https://crbug.com/1104188 "La búsqueda de herramientas de red no encuentra resultados al buscar direcciones URL | Errores de Chromium"  
-[CR1106251]: https://crbug.com/1106251 "☂ DevTools: mejorar la pestaña Estilos calculados | Errores de Chromium"  
-[CR1120316]: https://crbug.com/1120316 "Resalte el contraste malo en Información general de CSS > colores | Errores de Chromium"  
-[CR1121141]: https://crbug.com/1121141 "Permitir el filtrado por tipo de recurso en el registro de red | Errores de Chromium"  
-[CR1121312]: https://crbug.com/1121312 "La configuración debe quitarse del menú Más herramientas | Errores de Chromium"  
-[CR1136394]: https://crbug.com/1136394 "Herramientas flexbox | Errores de Chromium"  
-[CR1136655]: https://crbug.com/1136655 "Devtools: Localización V2 | Errores de Chromium"  
+[CR174309]: https://crbug.com/174309 "DevTools: permitir personalizar los métodos abreviados de teclado o los enlaces de teclas | Chromium errores"
+[CR772558]: https://crbug.com/772558 "DevTools: actualizar a la versión más reciente de | Chromium errores"  
+[CR1034663]: https://crbug.com/1034663 "Crear un front-end para la API de prueba de WebAuthn | Chromium errores"  
+[CR1047356]: https://crbug.com/1047356 "Herramientas CSS Grid/Flexbox/Table | Chromium errores"  
+[CR1051466]: https://crbug.com/1051466 "Admite la depuración de COOP/COEP en DevTools | Chromium errores"  
+[CR1073899]: https://crbug.com/1073899 "La pestaña Estilo calculado desaparece en modo de respuesta | Chromium errores"  
+[CR1075732]: https://crbug.com/1075732 "Personalización de DevTools: pestañas móviles | Chromium errores"  
+[CR1084673]: https://crbug.com/1084673 "DevTools: mejore la forma en que presentamos propiedades personalizadas css ((aka). variables CSS) y sus valores | Chromium errores"  
+[CR1093687]: https://crbug.com/1093687 "Crear herramienta para crear y reproducir solicitudes de red sintéticas | Chromium errores"  
+[CR1096230]: https://crbug.com/1096230 "Agrupar propiedades CSS por categorías en el panel Estilos calculados | Chromium errores"  
+[CR1104188]: https://crbug.com/1104188 "La búsqueda de herramientas de red no encuentra resultados al buscar direcciones URL | Chromium errores"  
+[CR1106251]: https://crbug.com/1106251 "☂ DevTools: mejorar la pestaña Estilos calculados | Chromium errores"  
+[CR1120316]: https://crbug.com/1120316 "Resalte el contraste malo en Información general de CSS > colores | Chromium Errores"  
+[CR1121141]: https://crbug.com/1121141 "Permitir el filtrado por tipo de recurso en el registro de red | Chromium errores"  
+[CR1121312]: https://crbug.com/1121312 "Configuración debe quitarse del menú Más herramientas | Chromium errores"  
+[CR1136394]: https://crbug.com/1136394 "Herramientas flexbox | Chromium Errores"  
+[CR1136655]: https://crbug.com/1136655 "Devtools: Localización V2 | Chromium errores"  
 
 [MdnReportingApi]: https://developer.mozilla.org/docs/Web/API/Reporting_API "Api de informes | MDN"  
 
@@ -359,4 +361,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

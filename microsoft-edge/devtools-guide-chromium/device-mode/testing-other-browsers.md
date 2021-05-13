@@ -3,16 +3,16 @@ description: El trabajo no termina asegurando que el sitio se ejecute bien en Mi
 title: Emular y probar otros exploradores
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 22153a54df7c5b92236a745be8e3bbac9a52d247
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: f2ca56c2e15f578a970e6ceb84b1554bfda53862
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481369"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564283"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -47,7 +47,7 @@ Firefox tiene una [vista de][MDNResponsiveDesignMode] diseño adaptable que te a
 
 ### <a name="edgehtml-emulation"></a>Emulación edgeHTML  
 
-Para emular Windows Phones, usa la [emulación][ArchiveMicrosoftEdgeDevtoolsEmulation]integrada de Microsoft Edge \(EdgeHTML\).  
+Para emular Windows teléfonos, use la [emulación][ArchiveMicrosoftEdgeDevtoolsEmulation]Microsoft Edge \(EdgeHTML\) integrada .  
 
 Usa [la emulación de IE 11][Ie11DevToolsEmulation] para simular el aspecto de tu página en versiones anteriores de Internet Explorer.  
 
@@ -63,12 +63,12 @@ Los simuladores y emuladores de dispositivo simulan no solo el entorno del explo
 :::image-end:::  
 -->  
 
-Por el momento, no hay forma de instalar Microsoft Edge en un emulador de Android.  Sin embargo, puede usar el Explorador de Android, el Shell de contenido chromium y Firefox para Android que revisaremos más adelante en esta guía.  Chromium Content Shell ejecuta el mismo motor de representación de Chromium que Microsoft Edge, pero viene sin ninguna de las características específicas del explorador.  
+Por el momento, no hay ninguna forma de instalar Microsoft Edge en un emulador de Android.  Sin embargo, puede usar el Explorador de Android, el Shell de contenido Chromium y Firefox para Android que revisaremos más adelante en esta guía.  Chromium El Shell de contenido ejecuta el mismo Chromium de representación que Microsoft Edge, pero viene sin ninguna de las características específicas del explorador.  
 
 El emulador de Android viene con el SDK de Android que necesitas descargar como parte de [Android Studio][AndroidStudioDownload].  A continuación, siga [las instrucciones para configurar un dispositivo virtual e][AndroidStudioCreateManageVirtualDevices] iniciar el [emulador][AndroidStudioRunAppsAndroidEmulator].  
 Una vez que se inicie el emulador, elija en el icono Explorador y pruebe el sitio en el antiguo Explorador de acciones para Android.  
 
-#### <a name="chromium-content-shell-on-android"></a>Shell de contenido chromium en Android  
+#### <a name="chromium-content-shell-on-android"></a>Chromium shell de contenido en Android  
 
 <!--  
 :::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
@@ -76,7 +76,7 @@ Una vez que se inicie el emulador, elija en el icono Explorador y pruebe el siti
 :::image-end:::  
 -->  
 
-Para instalar el Shell de contenido de Chromium para Android, deje el emulador en ejecución y ejecute el siguiente comando.  
+Para instalar el shell Chromium contenido para Android, deje el emulador en ejecución y ejecute el siguiente comando.  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -84,7 +84,7 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```  
 
-Ahora puede probar su sitio con el Shell de contenido de Chromium.  
+Ahora puede probar su sitio con el Shell Chromium contenido.  
 
 #### <a name="firefox-on-android"></a>Firefox en Android  
 
@@ -94,7 +94,7 @@ Ahora puede probar su sitio con el Shell de contenido de Chromium.
 :::image-end:::  
 -->  
 
-Al igual que el Shell de contenido de Chromium, puedes obtener un APK para instalar Firefox en el emulador.  
+Al igual que Chromium Shell de contenido, puedes obtener un APK para instalar Firefox en el emulador.  
 
 [Descargue el archivo .apk correcto.][MozillaFirefoxDownload]  
 
@@ -119,7 +119,7 @@ Cuando haya terminado, obtenga información sobre cómo trabajar con el simulado
    Máquina virtual IE moderna  
 :::image-end:::  
 
-Las máquinas virtuales \(VM\) de Microsoft Edge \(EdgeHTML\) permiten tener acceso a diferentes versiones de EdgeHTML e IE en el equipo a través de VirtualBox \(o VMWare\).  Elija una [máquina virtual en la página de descarga][MicrosoftDeveloperEdgeVms].  
+Microsoft Edge \(EdgeHTML\) Máquinas virtuales \(VM\) permiten tener acceso a diferentes versiones de EdgeHTML e IE en el equipo a través de VirtualBox \(o VMWare\).  Elija una [máquina virtual en la página de descarga][MicrosoftDeveloperEdgeVms].  
 
 ## <a name="cloud-based-emulators-and-simulators"></a>Emuladores y simuladores basados en la nube  
 
@@ -158,11 +158,11 @@ Si no puedes usar los emuladores y no tienes acceso a dispositivos reales, los e
 > La página original [](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) se encuentra aquí y es creado por [Meggin Kearney][MegginKearney] \(Tech Writer\) y [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate en Google | Herramientas, Rendimiento, Animación, UX\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de una [Licencia internacional de Atribución de Creative Commons 4.0][CCA4IL].  
+Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[PaulBakaus]: https://developers.google.com/web/resources/contributors/pbakaus  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus  

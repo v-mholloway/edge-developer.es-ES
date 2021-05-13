@@ -1,22 +1,22 @@
 ---
 description: Emular las deficiencias de visión en Microsoft Edge DevTools.
-title: Emular las deficiencias de visión en Microsoft Edge DevTools (daltonismo)
+title: Emular las deficiencias de la visión Microsoft Edge DevTools (daltonismo)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/09/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 8c3f3a34c441692117906f51c3d8430e79fd72b1
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 1ab224f1dc70618dbef77ec6e6dbc22a0d1f47fb
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519173"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564605"
 ---
-# <a name="emulate-vision-deficiencies"></a>Emular deficiencias visuales
+# <a name="emulate-vision-deficiencies"></a>Emular deficiencias visuales  
 
-Para satisfacer mejor las necesidades de los usuarios con deficiencia de visión de [color][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] le permite simular deficiencias específicas de la visión de color.  La **herramienta Emular deficiencias de visión** simula las siguientes categorías.  
+Para satisfacer mejor las necesidades de los usuarios con deficiencia de visión de [color][ColorblindawarenessMain] \(daltonismo\), [Microsoft Edge DevTools][DevtoolsIndex] le permiten simular deficiencias específicas de la visión de color.  La **herramienta Emular deficiencias de visión** simula las siguientes categorías.  
 
 | Deficiencia de la visión del color | Detalles |  
 |:--- |:--- |  
@@ -37,7 +37,7 @@ Para simular una deficiencia de visión que se está aplicando para el producto 
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Abrir las herramientas de representación" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        Abrir las herramientas **de representación**  
     :::image-end:::  
-
+    
 El **menú** Representación aparece en el cajón.  
 
 1.  Desplácese hacia abajo hasta el `Emulate vision deficiencies` elemento de menú y elija el menú desplegable para mostrar las opciones.  
@@ -70,7 +70,7 @@ El **menú** Representación aparece en el cajón.
 
 También puede usar el **menú comando para** tener acceso a las diferentes simulaciones.  
 
-1.  Seleccione `Ctrl` + `Shift` + `P` \(Windows/Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
+1.  Seleccione `Ctrl` + `Shift` + `P` \(Windows/Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú de comandos .  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        Menú **comando**  
@@ -87,9 +87,9 @@ También puede usar el **menú comando para** tener acceso a las diferentes simu
 
 <!-- links -->  
 
-[DevToolsIndex]: ../index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analizar el rendimiento en tiempo de ejecución | Microsoft Docs"  
 
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "La organización de concienciación de ciegos de color"  
+[ColorblindawarenessMain]: https://www.colourblindawareness.org "La organización de concienciación de ciegos de color"  
 
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  

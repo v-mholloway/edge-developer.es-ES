@@ -3,17 +3,17 @@ description: Compatibilidad en la depuración para CSS Flexbox, rendimiento de v
 title: Novedades de DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 3653bd2293f96a6ddfb84d8e1c7492bea78c15c1
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: a6682043166909bf75a875b72058cc9839c5b43b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514406"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564850"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -274,7 +274,7 @@ Antes, la propiedad `fn.displayName` permitía controlar los nombres de depuraci
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Este experimento proporciona una **vista de árbol de accesibilidad completa** en la herramienta **Elementos**.  El panel [Accesibilidad][DevtoolsAccessibilityReferenceTheAccessibilityPane] proporciona una vista de árbol de accesibilidad parcial, que muestra la cadena directamente anterior del nodo raíz al nodo inspeccionado.  
+Este experimento proporciona una **vista de árbol de accesibilidad completa** en la herramienta **Elementos**.  El panel [Accesibilidad][DevtoolsAccessibilityReferenceAccessibilityPanel] proporciona una vista de árbol de accesibilidad parcial, que muestra la cadena directamente anterior del nodo raíz al nodo inspeccionado.  
 Después de activar este experimento y volver a cargar DevTools, elija uno de los siguientes botones para cambiar la visualización en la herramienta Elementos para todos los elementos de la página web.  
 
 *   Para mostrar la vista de árbol de accesibilidad completa, elija la **vista Cambiar a árbol de accesibilidad**.  
@@ -305,19 +305,19 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#the-accessibility-pane "El panel Accesibilidad: referencia de accesibilidad | Microsoft Docs"  
-[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilterByLogLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filtrar por nivel de registro: referencia de consola | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilterMessages]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-messages "Filtrar mensajes: referencia de consola | Microsoft Docs"  
-[DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "Abrir la barra lateral de la consola: referencia de consola | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personalización de accesos rápidos de teclado en las herramientas de desarrollo de Microsoft Edge | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#enable--button-tab-menus-to-open-more-tools "Habilitar + menús de las pestañas de los botones para abrir más herramientas: características experimentales | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
-[DevtoolsNetworkReferenceAddRemoveColumns]: /microsoft-edge/devtools-guide-chromium/network/reference#add-or-remove-columns "Agregar o quitar columnas: referencia de análisis de red | Microsoft Docs"  
-[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#display-initiators-and-dependencies "Mostrar iniciadores y dependencias: referencia de análisis de red | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "El panel Accesibilidad: referencia de accesibilidad | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filtrar por nivel de registro: referencia de consola | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filtrar mensajes: referencia de consola | Microsoft Docs"  
+[DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar "Abrir la barra lateral de la consola: referencia de consola | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalización de accesos rápidos de teclado en las herramientas de desarrollo de Microsoft Edge | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "Habilitar + menús de las pestañas de los botones para abrir más herramientas: características experimentales | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
+[DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "Agregar o quitar columnas: referencia de análisis de red | Microsoft Docs"  
+[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "Mostrar iniciadores y dependencias: referencia de análisis de red | Microsoft Docs"  
 
-[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Información general de aplicaciones web progresivas en Windows | Microsoft Docs"  
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Información general de aplicaciones web progresivas en Windows | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"  
 
@@ -368,4 +368,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

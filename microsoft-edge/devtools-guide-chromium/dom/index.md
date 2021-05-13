@@ -3,16 +3,16 @@ description: Cómo ver nodos, buscar nodos, editar nodos, nodos de referencia en
 title: Introducción a la visualización y cambio del DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 66078844730ebb22664c9ce89517511d7eb99ee7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439243"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564290"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439243"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>Introducción a la visualización y cambio del DOM  
 
 Complete estos tutoriales interactivos para aprender los conceptos básicos de ver y cambiar el DOM de una página mediante Microsoft Edge DevTools.  
@@ -36,7 +35,7 @@ En este tutorial se supone que conoce la diferencia entre DOM y HTML.  Vaya a [A
 
 ## <a name="open-dom-examples"></a>Ejemplos de OPEN DOM  
 
-1.  Mantenga `Control` presionada \(Windows, Linux\) o `Command` \(macOS\) y elija **Ejemplos de DOM** para abrir en una nueva pestaña.  
+1.  Mantenga `Control` presionado \(Windows, Linux\) o `Command` \(macOS\) y elija **Ejemplos de DOM** para abrir en una pestaña nueva.  
     
     [Ejemplos de DOM][GlitchDomExamples]  
     
@@ -69,7 +68,7 @@ Cuando está interesado en un nodo DOM determinado, **Inspect** es una forma rá
             
 1.  En **Inspeccionar un nodo,** elija el **texto de** Tokio.  Ahora, `<li>Tokyo</li>` se resalta en el árbol DOM.  
 
-Inspeccionar un nodo también es el primer paso para ver y cambiar los estilos de un nodo.  Vaya a [Introducción a Ver y cambiar CSS][DevToolsCssGetStarted].  
+Inspeccionar un nodo también es el primer paso para ver y cambiar los estilos de un nodo.  Vaya a [Introducción con ver y cambiar CSS][DevToolsCssGetStarted].  
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>Navegar por el árbol DOM con un teclado  
 
@@ -113,7 +112,7 @@ Puede buscar en el árbol DOM por cadena, selector CSS o selector XPath.
 
 1.  Centra el cursor en la **herramienta** Elementos.  
 1.  Seleccione `Control` + `F` \(Windows, Linux\) o `Command` + `F` \(macOS\).  La barra de búsqueda se abre en la parte inferior del árbol DOM.  
-1.  Escribe `The Moon is a Harsh Mistress`.  La última oración se resalta en el árbol DOM.  
+1.  Escriba `The Moon is a Harsh Mistress`.  La última oración se resalta en el árbol DOM.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Resaltar la consulta en la barra de búsqueda" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
        Resaltar la consulta en la barra de búsqueda  
@@ -318,7 +317,7 @@ Después de colocar un punto de interrupción de modificación de subárbol en u
 
 Eso cubre la mayoría de las características relacionadas con DOM en DevTools.  Para descubrir el resto de las características, mantenga el mouse en los nodos del árbol DOM, abra el menú contextual \(haga clic con el botón secundario\) y experimente con las otras opciones que no se han cubierto en este tutorial.  Vaya a [Métodos abreviados de teclado del panel Elementos][DevToolsShortcutsElements].  
 
-Consulte la página [principal de Microsoft Edge DevTools][MicrosoftEdgeDevTools] para descubrir todo lo que puede hacer con DevTools.  
+Echa un vistazo a Microsoft Edge página principal [de DevTools][MicrosoftEdgeDevTools] para descubrir todo lo que puedes hacer con DevTools.  
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
@@ -420,10 +419,10 @@ Muchas de las instrucciones de este tutorial le indican que mantenga el mouse en
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) Developer Tools | Microsoft Docs"  
-[DevToolsCssGetStarted]: ../css/index.md "Introducción a la visualización y cambio de css | Microsoft Docs"  
-[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Métodos abreviados de teclado de la herramienta Elements: métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCssGetStarted]: ../css/index.md "Introducción Con vista y cambio de CSS | Microsoft Docs"  
+[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Métodos abreviados de teclado de la herramienta Elements: Microsoft Edge métodos abreviados de teclado de DevTools | Microsoft Docs"  
 
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Ejemplo de Microsoft Edge (Chromium) DevTools DOM | Glitch"
+[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Ejemplo | Glitch"
 
 [MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introducción al dom | MDN"  
 
@@ -437,4 +436,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

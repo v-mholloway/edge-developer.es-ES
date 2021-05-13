@@ -1,18 +1,18 @@
 ---
-description: Inspeccione y modifique las animaciones con el Inspector de animaciones de Microsoft Edge DevTools.
+description: Inspeccione y modifique las animaciones con Microsoft Edge DevTools Animation Inspector.
 title: Inspeccionar animaciones
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a695517cb56da057e62293b5ca92b22058602f44
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439545"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564220"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439545"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-animations"></a>Inspeccionar animaciones  
 
-Inspeccione y modifique las animaciones con el Inspector de animaciones de Microsoft Edge DevTools.  
+Inspeccione y modifique las animaciones con Microsoft Edge DevTools Animation Inspector.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="inspector de animación" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
    inspector de animación  
@@ -44,7 +43,7 @@ Inspeccione y modifique las animaciones con el Inspector de animaciones de Micro
 
 ## <a name="overview"></a>Información general  
 
-El Inspector de animación de Microsoft Edge DevTools tiene dos propósitos principales.  
+El Microsoft Edge DevTools Animation Inspector tiene dos propósitos principales.  
 
 *   Inspeccionar animaciones.  Quieres ralentizar, reproducir o inspeccionar el código fuente de un grupo de animación.  
 *   Modificar animaciones.  Desea modificar los desplazamientos de tiempo, retraso, duración o fotograma clave de un grupo de animación.  Actualmente, no se admite la edición de bezier ni la edición de fotogramas clave.  
@@ -56,7 +55,7 @@ El Inspector de animación admite animaciones CSS, transiciones CSS y animacione
 Un grupo de animaciones es un grupo de animaciones que pueden estar relacionadas entre sí.  Actualmente, la web no tiene un concepto real de una animación de grupo, por lo que los diseñadores y desarrolladores de movimiento tienen que componer y dar tiempo a animaciones individuales para que las animaciones se representen como un efecto visual coherente.  El Inspector de animación predice qué animaciones están relacionadas en función de la hora de inicio \(excluyendo retrasos, y así sucesivamente\).  El Inspector de animación también agrupa las animaciones en paralelo.  
 En otras palabras, un conjunto de animaciones que se desencadenan en el mismo bloque de script se agrupan.  Si una animación es asincrónica, se coloca en un grupo independiente.  
 
-## <a name="get-started"></a>Introducción  
+## <a name="get-started"></a>Comenzar  
 
 Hay dos formas de abrir el Inspector de animación:  
 
@@ -66,11 +65,11 @@ Hay dos formas de abrir el Inspector de animación:
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animaciones con el menú principal" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animaciones con** el menú principal  
-    :::image-end:::  
+        :::image-end:::  
         
 *   Abrir el **menú de comandos**  
-    1.  Escribe `Drawer: Show Animations`.  
-
+    1.  Escriba `Drawer: Show Animations`.  
+        
 El Inspector de animación se abre junto a la **herramienta Consola.**  Dado que el Inspector de animación es una herramienta de cajón, puedes usar el Inspector de animación desde cualquier panel DevTools.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Inspector de animación vacío" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
@@ -168,11 +167,6 @@ Para agregar un retraso a una animación, elige y arrástrala en cualquier lugar
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-(.. /media/animation-speed-buttons-icon.msft.png): .. /media/animation-speed-buttons-icon.msft.png  
-(.. /media/replay-button-icon.msft.png): .. /media/replay-button-icon.msft.png  
-
 <!-- links -->  
 
 > [!NOTE]
@@ -185,4 +179,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

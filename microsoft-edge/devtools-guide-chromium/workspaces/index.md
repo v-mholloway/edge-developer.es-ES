@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo guardar los cambios realizados en 
 title: Editar archivos con Áreas de trabajo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f00e2e42f73f7d03c858deaf020db683391ff1f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 640bb80e01f776c763af053cf8354ce90cf52e93
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519425"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564668"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519425"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="edit-files-with-workspaces"></a>Editar archivos con Áreas de trabajo  
 
 Este tutorial proporciona prácticas para configurar y usar un área de trabajo.  Después de agregar archivos a un área de trabajo, los cambios realizados en el código fuente dentro de DevTools se guardan en el equipo local y se conservan después de actualizar la página web.  
@@ -45,7 +44,7 @@ Las áreas de trabajo permiten guardar un cambio que realice en Devtools en una 
 
 *   Tiene el código fuente del sitio en el escritorio.  
 *   Está ejecutando un servidor web local desde el directorio de código fuente, de modo que el sitio sea accesible en `localhost:8080` .  
-*   Se abrió `localhost:8080` en Microsoft Edge y se usa DevTools para cambiar el CSS del sitio.  
+*   Se abrió `localhost:8080` en Microsoft Edge y está usando DevTools para cambiar el CSS del sitio.  
 
 Con Workspaces habilitado, los cambios CSS que realices en DevTools se guardan en el código fuente del escritorio.  
 
@@ -57,7 +56,7 @@ Las áreas de trabajo normalmente pueden asignar el código optimizado al códig
 
 Se sabe que las áreas de trabajo no funcionan con el siguiente marco.  
 
-*   Crear aplicación React  
+*   Crear React app  
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
@@ -116,7 +115,7 @@ Complete las siguientes acciones para obtener experiencia práctica con Workspac
     
 ### <a name="set-up-devtools"></a>Configurar DevTools  
 
-1.  Seleccione `Control` + `Shift` + `J` \(Windows, Linux\) o `Command` + `Option` + `J` \(macOS\) para abrir el panel Consola de DevTools. ****  
+1.  Seleccione `Control` + `Shift` + `J` \(Windows, Linux\) o `Command` + `Option` + `J` \(macOS\) **** para abrir el panel Consola de DevTools.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="Panel consola" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        Panel **consola**  
@@ -229,7 +228,7 @@ Para abrir el editor de código DevTools junto con otras herramientas, haga lo s
        Abra la **herramienta Origen rápido** mediante el menú **Comando**  
     :::image-end:::  
     
-1.  Seleccione `Control` + `P` \(Windows, Linux\) o `Command` + `P` \(macOS\) para abrir el **cuadro de diálogo Abrir** archivo.  Revise la siguiente figura.  
+1.  Seleccione `Control` + `P` \(Windows, Linux\) o `Command` + `P` \(macOS\) para **** abrir el cuadro de diálogo Abrir archivo.  Revise la siguiente figura.  
 1.  Escriba `script` , luego elija **app/script.js**.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Abra script.js mediante el cuadro de diálogo Abrir archivo" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -287,7 +286,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
 
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Una introducción a los mapas de origen | Treehouse Blog"  
+[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "Una introducción al origen Mapas | Treehouse Blog"  
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 
@@ -303,4 +302,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

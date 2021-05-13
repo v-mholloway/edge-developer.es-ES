@@ -3,16 +3,16 @@ description: Introducción a la depuración remota WebViews en las aplicaciones 
 title: Introducción a la depuración remota de Android WebViews
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 4d389473673791d91c38e252c919378c4725db6b
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: 75d948465c62c63c9ccbe0fcd46616819a04e79d
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461567"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565081"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -88,7 +88,7 @@ The gray graphics listed with the Android WebView represent its size and positio
 
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: ./index.md "Introducción a la depuración remota de dispositivos Android | Microsoft Docs"  
+[RemoteDebuggingGettingStarted]: ./index.md "Introducción con dispositivos Android de depuración remota | Microsoft Docs"  
 
 [AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled]: https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean) "setWebContentsDebuggingEnabled- WebView | Desarrolladores de Android"  
 
@@ -102,5 +102,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: http://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

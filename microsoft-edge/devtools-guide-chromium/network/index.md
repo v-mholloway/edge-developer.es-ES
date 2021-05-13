@@ -1,18 +1,18 @@
 ---
-description: Tutorial sobre las características más populares relacionadas con la red en Microsoft Edge DevTools.
+description: Un tutorial sobre las características más populares relacionadas con la red en Microsoft Edge DevTools.
 title: Inspeccionar la actividad de red en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 63a0c8dc1d481ee3fba93146c2e2925bbdd07203
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439699"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565046"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439699"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-network-activity-in-microsoft-edge-devtools"></a>Inspeccionar la actividad de red en Microsoft Edge DevTools  
 
 Este es un tutorial práctica de algunas de las características de DevTools más usadas relacionadas con la inspección de la actividad de red de una página.  
@@ -55,7 +54,7 @@ Si está buscando formas de mejorar el rendimiento de carga de página, **no emp
 
 Para sacar el máximo partido a este tutorial, abra la demostración y pruebe las características de la página de demostración.  
 
-1.  Abra la [Demostración de introducción][GlitchNetworkGetStarted].  
+1.  Abra la [Introducción demo][GlitchNetworkGetStarted].  
     
     :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="La demostración" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
        La demostración  
@@ -276,13 +275,13 @@ El **cuadro de** texto Filtrar admite muchos tipos diferentes de filtrado.
        Un filtro de cadena  
     :::image-end:::  
     
-1.  Escribe `/.*\.[cj]s+$/`.  DevTools filtra cualquier recurso con un nombre de archivo que no termine con un o un seguido `j` `c` de 1 o más `s` caracteres.  
+1.  Escriba `/.*\.[cj]s+$/`.  DevTools filtra cualquier recurso con un nombre de archivo que no termine con un o un seguido `j` `c` de 1 o más `s` caracteres.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="Filtro de expresiones regulares" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
        Filtro de expresiones regulares  
     :::image-end:::  
     
-1.  Escribe `-main.css`.  DevTools filtra `main.css` .  Si algún archivo coincide con el patrón, tit también se filtra.  
+1.  Escriba `-main.css`.  DevTools filtra `main.css` .  Si algún archivo coincide con el patrón, tit también se filtra.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="Un filtro negativo" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
        Un filtro negativo  
@@ -322,7 +321,7 @@ Para otros flujos de trabajo de filtrado, vaya [a Filtrar solicitudes][DevtoolsN
 
 ¿Cómo se ve y se comporta una página cuando algunos de los recursos de página no están disponibles?  ¿Falla completamente o todavía es algo funcional?  Bloquear solicitudes para averiguar:  
 
-1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú de comandos .  
     
     :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="Menú comando" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
        Menú **comando**  
@@ -335,7 +334,7 @@ Para otros flujos de trabajo de filtrado, vaya [a Filtrar solicitudes][DevtoolsN
     :::image-end:::  
     
 1.  Elija **Agregar patrón** \( Agregar patrón ![ ](../media/add-icon.msft.png) \).  
-1.  Escribe `main.css`.  
+1.  Escriba `main.css`.  
     
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Bloqueo de main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
        Bloqueo `main.css`  
@@ -355,7 +354,7 @@ Para otros flujos de trabajo de filtrado, vaya [a Filtrar solicitudes][DevtoolsN
 
 ## <a name="conclusion"></a>Conclusión  
 
-Enhorabuena, ha completado el tutorial.  Ahora ya sabes cómo usar la herramienta **Red** en Microsoft Edge DevTools.
+Enhorabuena, ha completado el tutorial.  Ahora ya sabe cómo usar la herramienta **Red** en el Microsoft Edge DevTools.
 
 Vaya a [la Referencia de red para][DevtoolsNetworkReference] descubrir más características de DevTools relacionadas con la inspección de la actividad de red.  
 
@@ -367,7 +366,7 @@ Vaya a [la Referencia de red para][DevtoolsNetworkReference] descubrir más cara
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 
-[DevToolsCustomizePlacement]: ../customize/placement.md "Cambiar la ubicación de Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Cambiar Microsoft Edge ubicación de DevTools | Microsoft Docs"  
 [DevtoolsNetworkReference]: ./reference.md "Referencia de análisis de red | Microsoft Docs"
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Solicitudes de filtro: referencia de análisis de red | Microsoft Docs"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Ocultar el panel Información general: referencia de análisis de red | Microsoft Docs"
@@ -389,4 +388,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

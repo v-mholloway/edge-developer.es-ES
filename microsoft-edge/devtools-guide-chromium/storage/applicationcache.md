@@ -1,18 +1,18 @@
 ---
 description: Cómo ver los datos de caché de aplicaciones desde el panel Aplicación de Microsoft Edge DevTools.
-title: Ver datos de caché de aplicaciones con Microsoft Edge DevTools
+title: Ver datos de caché de aplicaciones Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: cbe6623aa3132db4d01cd6b440702eb157525eed
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: ec0d1a003e621ecc2220c3eb0d03992bcd8fffa1
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519145"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565025"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,14 @@ ms.locfileid: "11519145"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>Ver datos de caché de aplicaciones con Microsoft Edge DevTools  
 
 > [!WARNING]
 > La API de caché de [aplicaciones se está quitando de la plataforma web][HTMLStandardOfflineWebApplications].  
 
-En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para inspeccionar los [recursos de caché de][MDNWebAPIsWindowApplicationCache] aplicaciones.  
+<!--todo: Replace [HTMLStandardOfflineWebApplications] with [WebDevAppcacheRemoval].  -->  
+
+En esta guía se muestra cómo usar [Microsoft Edge DevTools para][MicrosoftEdgeDevTools] inspeccionar los [recursos de caché de][MDNWebAPIsWindowApplicationCache] aplicaciones.  
 
 ## <a name="view-application-cache-data"></a>Ver datos de caché de aplicaciones  
 
@@ -74,12 +75,14 @@ En la parte inferior de la tabla hay iconos de estado que indican la conexión d
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Aplicaciones web sin conexión: estándar HTML"  
 
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Recursos en una memoria caché de aplicaciones | MDN"  
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache: API web | MDN"  
+
+[WebDevAppcacheRemoval]: https://web.dev/appcache-removal "Preparación para la eliminación de AppCache | web.dev"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
@@ -91,4 +94,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

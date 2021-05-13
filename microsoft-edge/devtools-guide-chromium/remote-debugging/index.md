@@ -1,18 +1,18 @@
 ---
-description: Depuración remota de contenido en directo en un dispositivo Android desde un equipo con Windows o macOS.
+description: Depuración remota de contenido en directo en un dispositivo Android desde un Windows o un equipo macOS.
 title: Introducción a la depuración remota de dispositivos Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: d69fd4832991826c76f47daea399bdd89e981bb4
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: d5a5ea8faef40925fb0fb986eb984ac9ae4f051b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461216"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565109"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "11461216"
    limitations under the License.  -->  
 # <a name="get-started-with-remote-debugging-android-devices"></a>Introducción a la depuración remota de dispositivos Android  
 
-Depuración remota de contenido en directo en un dispositivo Android desde tu equipo Windows o macOS.  La siguiente página de tutorial le enseña a completar las siguientes acciones.  
+Depuración remota de contenido en directo en un dispositivo Android desde Windows o equipo macOS.  La siguiente página de tutorial le enseña a completar las siguientes acciones.  
 
 *   Configura tu dispositivo Android para la depuración remota y descóyralo desde el equipo de desarrollo.  
 *   Inspecciona y depura contenido en directo en tu dispositivo Android desde el equipo de desarrollo.  
@@ -42,7 +42,7 @@ Depuración remota de contenido en directo en un dispositivo Android desde tu eq
 -->  
 
 > [!NOTE]
-> Actualmente no se admite la depuración remota de la aplicación Microsoft Edge en dispositivos iOS.  La siguiente guía se centra específicamente en la depuración remota de Microsoft Edge en dispositivos Android.
+> Actualmente no se admite la depuración Microsoft Edge la aplicación en dispositivos iOS.  La siguiente guía se centra específicamente en la depuración remota Microsoft Edge dispositivos Android.
 > Si tienes un dispositivo macOS, sigue la guía de depuración de [Brightcove][BrightcoveSupportDebuggingMobileDevices] para depurar de forma remota Microsoft Edge en un dispositivo iOS con Safari.  Para obtener más información acerca de la herramienta Inspector web en Safari, vaya a [Safari Web Development Tools][AppleDeveloperSafariTools].  
 
 ## <a name="step-1-discover-your-android-device"></a>Paso 1: Descubrir el dispositivo Android  
@@ -52,13 +52,13 @@ El flujo de trabajo siguiente funciona para la mayoría de los usuarios.  Para o
 1.  Abre la **pantalla Opciones de** desarrollador en tu Android.  Para obtener más información, vaya a [Configurar opciones de desarrollador en el dispositivo][AndroidDeveloperStudioDevOptions].  
 1.  Elija **Habilitar depuración USB**.  
 1.  En el equipo de desarrollo, abra Microsoft Edge.  
-1.  Vaya a la `edge://inspect` página de Microsoft Edge.  
+1.  Vaya a la `edge://inspect` página en Microsoft Edge.  
     
     :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="La edge://inspect en Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
        Figura 1.  La `edge://inspect` página de Microsoft Edge  
     :::image-end:::  
     
-1.  Conecta el dispositivo Android directamente a la máquina de desarrollo mediante un cable USB.  La primera vez que intentes conectarte, debería mostrarse un mensaje sobre DevTools que detecta un dispositivo desconocido.  Acepta el **símbolo del permiso Permitir depuración USB** en tu dispositivo Android.  
+1.  Conectar el dispositivo Android directamente a la máquina de desarrollo mediante un cable USB.  La primera vez que intentes conectarte, debería mostrarse un mensaje sobre DevTools que detecta un dispositivo desconocido.  Acepta el **símbolo del permiso Permitir depuración USB** en tu dispositivo Android.  
     
     :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="El símbolo del sistema de permiso Permitir depuración USB en un dispositivo Android" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
        Figura 2.  El **símbolo del sistema de permiso Permitir depuración USB** en un dispositivo Android  
@@ -82,8 +82,8 @@ Use las siguientes sugerencias para ayudarle a solucionar problemas con la confi
 
 Use las siguientes sugerencias para comprobar que el software está configurado correctamente.  
 
-*   Si el equipo de desarrollo ejecuta Windows, intenta instalar manualmente los controladores USB para tu dispositivo Android.  Para obtener más información, vaya a [Instalar controladores USB OEM.][AndroidDeveloperToolsOemUsb]  
-*   Algunas combinaciones de dispositivos Windows y Android \(especialmente Samsung\) requieren configuraciones adicionales.  Para obtener más información, vaya [a DevTools Devices no detecta el dispositivo cuando está conectado][Stackoverflow21925992].  
+*   Si el equipo de desarrollo se Windows, intenta instalar manualmente los controladores USB para tu dispositivo Android.  Para obtener más información, vaya a [Instalar controladores USB OEM.][AndroidDeveloperToolsOemUsb]  
+*   Algunas combinaciones de Windows dispositivos Android \(especialmente Samsung\) requieren configuraciones adicionales.  Para obtener más información, vaya [a DevTools Devices no detecta el dispositivo cuando está conectado][Stackoverflow21925992].  
 
 Usa las siguientes sugerencias para ayudarte a solucionar problemas si el mensaje Permitir **depuración USB** no se muestra en tu dispositivo Android.  
 
@@ -101,7 +101,7 @@ Si encuentras una solución que no se menciona en esta página o en [DevTools De
 ## <a name="step-2-debug-content-on-your-android-device-from-your-development-machine"></a>Paso 2: Depurar contenido en el dispositivo Android desde el equipo de desarrollo  
 
 1.  Abre Microsoft Edge en tu dispositivo Android.  
-1.  Navegue hasta , se muestra el nombre del modelo del dispositivo `edge://inspect` Android, seguido del número de serie del dispositivo.  A continuación, se debe mostrar la versión de Microsoft Edge que se ejecuta en el dispositivo, con el número de versión entre paréntesis.  Cada pestaña de Microsoft Edge abierta obtiene una sección única.  Puede interactuar con esa pestaña desde una sección.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
+1.  Navegue hasta , se muestra el nombre del modelo del dispositivo `edge://inspect` Android, seguido del número de serie del dispositivo.  A continuación, se debe mostrar la versión Microsoft Edge que se ejecuta en el dispositivo, con el número de versión entre paréntesis.  Cada pestaña Microsoft Edge obtiene una sección única.  Puede interactuar con esa pestaña desde una sección.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
     
     :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Un dispositivo remoto conectado" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
        Figura 3.  Un dispositivo remoto conectado  
@@ -144,7 +144,7 @@ Puede interactuar con la difusión en pantalla de las siguientes maneras.
 > [!NOTE]
 > Usa las siguientes sugerencias para ayudarte a la difusión en pantalla.  
 > 
-> *   Los difusión en pantalla solo muestran el contenido de la página.  Las partes transparentes de la difusión por pantalla representan interfaces de dispositivo, como la barra de direcciones de Microsoft Edge, la barra de estado de Android o el teclado androide.  
+> *   Los difusión en pantalla solo muestran el contenido de la página.  Las partes transparentes de la difusión en pantalla representan interfaces de dispositivo, como la barra de direcciones Microsoft Edge, la barra de estado de Android o el teclado androide.  
 > *   Las difusión en pantalla afectan negativamente a las tasas de fotogramas.  Deshabilite la difusión por pantalla al medir desplazamientos o animaciones para obtener una imagen más precisa del rendimiento de la página.  
 > *   Si la pantalla del dispositivo Android se bloquea, el contenido de la difusión en pantalla desaparece.  Desbloquea la pantalla del dispositivo Android para reanudar automáticamente la difusión por pantalla.  
 
@@ -159,11 +159,11 @@ Puede interactuar con la difusión en pantalla de las siguientes maneras.
 
 [AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Herramientas de desarrollo web de Safari | Desarrollador de Apple"  
 
-[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Depuración en dispositivos móviles | Compatibilidad con Brightcove"  
+[BrightcoveSupportDebuggingMobileDevices]: https://general.support.brightcove.com/developer/debugging-mobile-devices.html "Depuración en dispositivos móviles | Compatibilidad con Brightcove"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
 
-[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb: Exchange de pila de entusiastas de Android"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb: pila de entusiastas de Android Exchange"  
 
 [Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "Dispositivos DevTools no detecta el dispositivo cuando está conectado: desbordamiento de pila"  
 
@@ -177,4 +177,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

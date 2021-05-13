@@ -1,18 +1,18 @@
 ---
-description: Obtenga información sobre cómo ver, editar y eliminar las cookies HTTP de una página con Microsoft Edge DevTools.
+description: Obtenga información sobre cómo ver, editar y eliminar las cookies HTTP de una página mediante Microsoft Edge DevTools.
 title: Ver, editar y eliminar cookies con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c208ca628fe91ed5922bc36566be2b9bdd20ec0b
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 4f5a352445bd13b82ada82df3a528a1e80aa144e
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439685"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565060"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439685"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>Ver, editar y eliminar cookies con Microsoft Edge DevTools  
 
-[Las cookies HTTP][MDNHTTPCookies] se usan principalmente para administrar sesiones de usuario, almacenar preferencias de personalización de usuario y realizar un seguimiento del comportamiento del usuario.  Las cookies también son la causa de todos los molestos que esta página **usa formularios** de consentimiento de cookies que se encuentran en toda la web.  La siguiente guía le enseña a ver, editar y eliminar las cookies HTTP de una página web con [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
+[Las cookies HTTP][MDNHTTPCookies] se usan principalmente para administrar sesiones de usuario, almacenar preferencias de personalización de usuario y realizar un seguimiento del comportamiento del usuario.  Las cookies también son la causa de todos los molestos que esta página **usa formularios** de consentimiento de cookies que se encuentran en toda la web.  La siguiente guía le enseña a ver, editar y eliminar las cookies HTTP de una página web [con Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
 ## <a name="open-the-cookies-pane"></a>Abrir el panel Cookies  
 
@@ -41,7 +40,7 @@ ms.locfileid: "11439685"
        Figura 1: Panel manifiesto  
     :::image-end:::  
 
-1.  En **Almacenamiento,** expanda **Cookies**y, a continuación, seleccione un origen.  
+1.  En **Storage** **expanda Cookies**y, a continuación, seleccione un origen.  
     
     :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="El panel Cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        Figura 2: Panel cookies  
@@ -99,10 +98,10 @@ Elija **Borrar todo** \( Borrar todo ![ ](../media/clear-icon.msft.png) \) para 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Herramientas para desarrolladores de Microsoft Edge (Chromium)"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Abrir Microsoft Edge DevTools"  
 
-[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Issue 232693: Implementing Priority Field for Cookies | Errores de Chromium"  
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Problema 232693: Implementar el campo de prioridad para las cookies | Chromium Errores"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Cookies HTTP | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Cookies HTTP: cookies permanentes | MDN"  
@@ -121,4 +120,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

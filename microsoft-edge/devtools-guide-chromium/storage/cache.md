@@ -3,16 +3,16 @@ description: Cómo ver datos de caché desde el panel Aplicación de Microsoft E
 title: Ver datos de caché con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 1f66419014682a316fa565c5ef2ab704f652637f
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439320"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564689"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439320"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="view-cache-data-with-microsoft-edge-devtools"></a>Ver datos de caché con Microsoft Edge DevTools  
 
-En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para inspeccionar los [datos de caché.][MDNCache]  
+En esta guía se muestra cómo usar [Microsoft Edge DevTools para][MicrosoftEdgeDevTools] inspeccionar los datos [de][MDNCache] caché.  
 
 Si está intentando inspeccionar los datos de [caché HTTP,][MDNHTTPCaching] esta no es la guía que desea.  Busque la información en la columna **Tamaño** del registro **de red**.  Vaya a [Registrar actividad de red][DevtoolsNetworkLogActivity].  
 
@@ -42,7 +41,7 @@ Si está intentando inspeccionar los datos de [caché HTTP,][MDNHTTPCaching] est
        Panel **Manifiesto**  
     :::image-end:::  
     
-1.  Expanda la **sección Almacenamiento de caché** para ver las memorias caché disponibles.  
+1.  Expanda la **sección Storage** caché para ver las memorias caché disponibles.  
     
     :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Cachés disponibles" lightbox="../media/storage-application-cache-storage.msft.png":::
        Cachés disponibles  
@@ -99,11 +98,11 @@ Si está intentando inspeccionar los datos de [caché HTTP,][MDNHTTPCaching] est
     
 ## <a name="delete-all-cache-data"></a>Eliminar todos los datos de caché  
 
-1.  Abra **Almacenamiento sin**formato de  >  **aplicación**.  
-1.  Asegúrese de que la casilla **Almacenamiento en caché** está habilitada.  
+1.  Abra **Application**  >  **Clear Storage**.  
+1.  Asegúrese de que la **casilla De Storage** caché está habilitada.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="La casilla Almacenamiento en caché" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       La **casilla Almacenamiento en caché**  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Casilla de verificación Storage caché" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       Casilla **de verificación Storage** caché  
     :::image-end:::  
     
 1.  Elija **Borrar datos del sitio**.  
@@ -118,7 +117,7 @@ Si está intentando inspeccionar los datos de [caché HTTP,][MDNHTTPCaching] est
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Herramientas para desarrolladores | Microsoft Docs"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Registrar actividad de red | Microsoft Docs"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Caché | MDN"  
@@ -134,4 +133,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

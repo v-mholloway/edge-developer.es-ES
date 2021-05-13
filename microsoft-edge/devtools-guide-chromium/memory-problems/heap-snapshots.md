@@ -1,18 +1,18 @@
 ---
-description: Obtenga información sobre cómo grabar instantáneas de montón con el perfilador de montón DevTools de Microsoft Edge y buscar pérdidas de memoria.
+description: Obtenga información sobre cómo grabar instantáneas de montón con el Microsoft Edge de perfiles de montón de DevTools y buscar pérdidas de memoria.
 title: Cómo grabar instantáneas de montón
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ce7a6f972bed386f96312808428bd74f1241668f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 5f097cc45facc7f366a99a9564cf6f3d443f2058
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397807"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565018"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11397807"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="how-to-record-heap-snapshots"></a>Cómo grabar instantáneas de montón  
 
-Obtenga información sobre cómo grabar instantáneas de montón con el perfilador de montón DevTools de Microsoft Edge y buscar pérdidas de memoria.  
+Obtenga información sobre cómo grabar instantáneas de montón con el Microsoft Edge de perfiles de montón de DevTools y buscar pérdidas de memoria.  
 
-El profiler de montón DevTools de Microsoft Edge muestra la distribución de memoria por los objetos JavaScript y los nodos DOM relacionados de la página.  Úselo para tomar instantáneas de montón de JavaScript \(JS heap\), analizar gráficos de memoria, comparar instantáneas y encontrar pérdidas de memoria.  Vaya a [Árbol de retención de objetos][DevtoolsMemoryProblems101ObjectsRetainingTree].  
+El Microsoft Edge de perfiles de montón de DevTools muestra la distribución de memoria por los objetos JavaScript y los nodos DOM relacionados de la página.  Úselo para tomar instantáneas de montón de JavaScript \(JS heap\), analizar gráficos de memoria, comparar instantáneas y encontrar pérdidas de memoria.  Vaya a [Árbol de retención de objetos][DevtoolsMemoryProblems101ObjectsRetainingTree].  
 
 ## <a name="take-a-snapshot"></a>Tomar una instantánea  
 
@@ -242,7 +241,7 @@ El mantiene una referencia al elemento primario `#leaf` relevante \(parentNode\)
 > [!NOTE]
 > Ejemplos: pruebe este ejemplo de un nodo [DOM][GlitchDevtoolsMemoryExample06] de pérdida para comprender dónde se puede producir una pérdida y cómo detectarlo.  También puede ver este ejemplo de [pérdidas dom siendo más grandes][GlitchDevtoolsMemoryExample09]de lo esperado.  
 
-Para obtener más información sobre las pérdidas de DOM y los fundamentos del análisis de memoria, consulte Búsqueda y depuración de pérdidas de memoria con [Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] de Gonzalo Ruiz de Villa.  
+Para obtener más información sobre las pérdidas de DOM y los fundamentos del análisis de memoria, consulte Búsqueda y depuración de pérdidas de memoria con el Microsoft Edge [DevTools][GonzaloRuizdeVillaMemory] de Gonzalo Ruiz de Villa.  
 
 <!--  
 > [!NOTE]
@@ -266,12 +265,12 @@ Para obtener más información sobre las pérdidas de DOM y los fundamentos del 
 <!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->  
 <!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->  
 
-[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html- Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html- Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html- Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html- Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html- Microsoft Edge (Chromium) DevTools | Glitch"  
-[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html- Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html - Microsoft Edge (Chromium) DevTools | Glitch"  
 
 [GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "memoria | Diapositivas"  
 
@@ -285,5 +284,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

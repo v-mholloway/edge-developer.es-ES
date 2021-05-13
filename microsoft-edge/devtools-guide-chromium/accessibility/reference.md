@@ -3,16 +3,16 @@ description: Una referencia completa de las características de accesibilidad en
 title: Referencia de accesibilidad
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a82dec6ffd7e3fb44143ea103fc9756afcd1a161
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439257"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564577"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439257"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="accessibility-reference"></a>Referencia de accesibilidad  
 
 Esta página es una referencia completa de las características de accesibilidad en Microsoft Edge DevTools.  Está pensado para desarrolladores web que:  
@@ -37,7 +36,7 @@ Esta página es una referencia completa de las características de accesibilidad
     
 El propósito de esta referencia es ayudarle a descubrir todas las herramientas disponibles en DevTools que le ayudarán a examinar la accesibilidad de una página.  
 
-Si está buscando ayuda para navegar por DevTools con una tecnología de asistencia como un lector de pantalla, vaya a Navegación por [Microsoft Edge DevTools con][DevtoolsAccessibilityNavigation]tecnología de asistencia .  
+Si está buscando ayuda para navegar por DevTools con una tecnología de asistencia como un lector de pantalla, vaya a Navegación Microsoft Edge [DevTools con][DevtoolsAccessibilityNavigation]tecnología de asistencia .  
 
 ## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Información general sobre las características de accesibilidad en Microsoft Edge DevTools  
 
@@ -72,12 +71,12 @@ Para auditar una página:
     :::image-end:::  
     
     > [!NOTE]
-    > Las capturas de pantalla de esta sección se tomaron con Microsoft Edge versión 79.  Puede comprobar la versión que está ejecutando en `edge://version` .  La interfaz de usuario de la herramienta **Auditorías** tiene un aspecto diferente en versiones anteriores de Microsoft Edge, pero el flujo de trabajo general es el mismo.  
+    > Las capturas de pantalla de esta sección se tomaron Microsoft Edge versión 79.  Puede comprobar la versión que está ejecutando en `edge://version` .  La interfaz de usuario de la herramienta **Auditorías** tiene un aspecto diferente en versiones anteriores de Microsoft Edge, pero el flujo de trabajo general es el mismo.  
     
 1.  Para **Dispositivo,** elija **Móvil** si desea simular un dispositivo móvil.  Esta opción cambia la cadena del agente de usuario y cambia el tamaño de la ventanilla.  Si la versión móvil de la página se muestra de forma diferente a la versión de escritorio, esta opción puede tener un efecto significativo en los resultados de la auditoría.  
 1.  En la **sección Auditorías,** asegúrese de que **la accesibilidad** está habilitada.  Deshabilite las otras categorías si desea excluirlas del informe.  Déjelos habilitados si desea descubrir otras formas de mejorar la calidad de la página.  
 1.  La **sección Limitación permite** limitar la red y la CPU, lo que resulta útil al analizar el rendimiento de la carga.  Esta opción debe ser irrelevante para la puntuación de accesibilidad, por lo que puedes usar lo que prefieras.  
-1.  La **casilla Borrar almacenamiento** permite borrar todo el almacenamiento antes de cargar la página o conservar el almacenamiento entre cargas de página.  Esta opción también es probablemente irrelevante para la puntuación de accesibilidad, por lo que puede usar lo que prefiera.  
+1.  La **casilla Borrar Storage** permite borrar todo el almacenamiento antes de cargar la página o conservar el almacenamiento entre cargas de página.  Esta opción también es probablemente irrelevante para la puntuación de accesibilidad, por lo que puede usar lo que prefiera.  
 1.  Elija **Ejecutar auditorías**. Después de 10 a 30 segundos, DevTools proporciona un informe.  El informe le ofrece varias sugerencias sobre cómo mejorar la accesibilidad de la página.  
     
     :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Un informe" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
@@ -192,7 +191,7 @@ El Selector de colores te ayuda a comprobar que el texto cumple los niveles de r
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navegar por Microsoft Edge DevTools con tecnología de asistencia | Microsoft Docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navegue Microsoft Edge DevTools con tecnología de asistencia | Microsoft Docs"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Ver solo el CSS que realmente se aplica a un elemento: referencia CSS | Microsoft Docs"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Pruebas de accesibilidad web - Chrome Web Store"  
@@ -214,4 +213,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

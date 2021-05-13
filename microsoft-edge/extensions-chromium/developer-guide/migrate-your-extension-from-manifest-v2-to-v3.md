@@ -1,71 +1,70 @@
 ---
-description: Más información sobre cómo actualizar la extensión de manifest V2 a V3
-title: Prepararse para actualizar las extensiones del manifiesto V2 a V3
+description: Obtenga información sobre cómo actualizar la extensión de Manifiesto V2 a V3
+title: Prepararse para actualizar las extensiones de Manifiesto V2 a V3
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/13/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: 'Edge: cromo, desarrollo de extensiones, extensiones de perímetro, extensiones de explorador, addons, desarrollador, manifiesto V3, migrar a manifest V3'
-ms.openlocfilehash: 262a5cab54dd23f596791c93ec1238619e247333
-ms.sourcegitcommit: 1ad087b00df16fd7718a5d95226de57e29b335e1
+keywords: edge-chromium, desarrollo de extensiones, extensiones perimetrales, extensiones de explorador, complementos, desarrollador, manifiesto v3, migración a manifiesto v3
+ms.openlocfilehash: 5aa1aa7446a312d581bacc4fa19ba7362c6c2a3e
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117835"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564619"
 ---
-# Prepararse para actualizar las extensiones del manifiesto V2 a V3 
+# <a name="prepare-to-update-your-extensions-from-manifest-v2-to-v3"></a>Prepararse para actualizar las extensiones de Manifest v2 a v3  
 
-En este documento se enumeran los cambios importantes que se implementan como parte del manifiesto V3, que es la siguiente versión de la plataforma extensiones de cromo. Actualizaremos este documento a medida que se progrese la implementación. Para obtener instrucciones detalladas sobre cómo migrar su extensión al manifiesto V3, vaya a [migrar al manifiesto V3][Google_Migrate_to_MV3]. 
+En este documento se enumeran los cambios importantes que se implementan como parte de Manifest v3, que es la siguiente versión de la plataforma Chromium extensions.  El Microsoft Edge de extensiones actualiza este documento a medida que avanza la implementación.  Para obtener instrucciones detalladas sobre cómo migrar la extensión a Manifiesto v3, vaya a [Migrar al manifiesto V3][ChromeDeveloperDocsExtensionsMv3Mv3MigrationChecklist].  
 
-## Código hospedado de forma remota  
+## <a name="remotely-hosted-code"></a>Código hospedado de forma remota  
 
-Hoy, las extensiones pueden hospedar partes de su código de forma remota y no incluirla como parte del paquete de extensión durante el proceso de validación. A pesar de que esto ofrece flexibilidad para cambiar el código sin reenviar la extensión a la tienda, el código puede ser aprovechado después de la instalación. Para garantizar que los [Complementos de Microsoft Edge][EdgeAddons] enumeren las extensiones validadas, no permitimos que las extensiones usen código hospedado de forma remota. Este cambio hace que las extensiones sean más seguras. Los desarrolladores necesitarán empaquetar y enviar todo el código que se usa en la extensión para la validación. Como alternativa, los desarrolladores pueden usar la función eval () en un [entorno de espacio aislado][sandboxingEval]. 
+Actualmente, partes del código de extensiones se hospedan de forma remota y no lo incluyen como parte del paquete de extensión durante el proceso de validación.  Aunque esto ofrece flexibilidad para cambiar el código sin volver a enviar la extensión al almacén, es posible que el código se aproveche después de la instalación.  Para asegurarse [Microsoft Edge listas][MicrosoftMicrosoftedgeAddons] de extensiones validadas, el equipo de extensiones de Microsoft Edge no permite que las extensiones utilicen código hospedado de forma remota.  Este cambio hace que las extensiones sea más segura.  Los desarrolladores tendrán que empaquetar y enviar todo el código usado por la extensión para su validación.  Como alternativa, puede usar la `eval()` función en un entorno de espacio [aislado.][ChromeDeveloperDocsExtensionsMv2Sandboxingeval]  
 
-## Permisos de host en tiempo de ejecución  
+## <a name="run-time-host-permissions"></a>Permisos de host en tiempo de ejecución  
 
-En el momento de la instalación, las extensiones pueden solicitar permisos globales para obtener acceso a todos los sitios y contenido. Estos permisos permiten que las extensiones funcionen con una mínima intervención y crean un riesgo para la privacidad y la seguridad del usuario. Para mejorar la transparencia, proporcionamos controles para que los usuarios permitan o restrinjan el acceso a los sitios web en tiempo de ejecución. 
+En el momento de la instalación, las extensiones pueden solicitar permisos de información general para tener acceso a todos los sitios y contenido.  Estos permisos permiten que las extensiones funcionen con una intervención mínima y creen un riesgo para la privacidad y la seguridad de los usuarios.  Para mejorar la transparencia, el equipo Microsoft Edge de extensiones proporciona controles para que los usuarios permitan o restrinjan el acceso a sitios web en tiempo de ejecución.  
 
-## Solicitudes de origen cruzado en scripts de contenido  
+## <a name="cross-origin-requests-in-content-scripts"></a>Solicitudes entre orígenes en scripts de contenido  
 
-Hoy, los scripts de contenido pueden solicitar acceso a cualquier origen, incluidos los orígenes no permitidos por el sitio Web. Este comportamiento rompe los principios de origen cruzado. En el futuro, requerimos que los scripts de contenido tengan los mismos permisos que la página en la que se insertan, cerrando una posible Laguna de seguridad. Para realizar solicitudes de origen cruzado, tendrá que usar scripts de segundo plano para retransmitir respuestas a los scripts de contenido. Estos cambios están disponibles y detrás de una marca. Para obtener más información, vaya a este [documento][CORS]. 
+En la actualidad, los scripts de contenido solicitan acceso a cualquier origen, incluidos los orígenes que no están permitidos por el sitio web.  El comportamiento rompe los principios entre orígenes.  En el futuro, el equipo Microsoft Edge de extensiones de contenido requiere que los scripts de contenido tengan los mismos permisos que la página web en la que se insertan los scripts, lo que cierra un posible resquicio de seguridad.  Para realizar solicitudes entre orígenes, debe usar scripts en segundo plano para retransmitir respuestas a scripts de contenido.  Estos cambios están disponibles y detrás de una marca.  Para obtener más información, vaya a este [documento][ChromiumHomeChromiumSecurityExtensionContentScriptFetches].  
 
-## API de solicitudes Web  
+## <a name="web-request-api"></a>API de solicitud web  
 
-Reemplazamos la [API de solicitudes web][WebRequestAPI] con la [API de solicitudes de red declarativa][DeclarativeNetRequestAPI], pero continuamos manteniendo las capacidades de observación de la API de solicitudes Web. A excepción de algunos escenarios específicos en los que la extensión necesita capacidades de observación de la API de solicitudes Web, le recomendamos que use solo las API de DNR. Creemos que este cambio tendrá un impacto positivo en las extensiones que usan capacidades declarativas enriquecidas con características. A medida que se pasa más extensiones a las API de DNR, este cambio mejorará la privacidad de los usuarios, lo que contribuye a mejorar la confianza en el uso de extensiones.
-Las empresas pueden continuar usando el comportamiento de bloqueo de la API de solicitudes web para las extensiones administradas mediante directivas de empresa. Para obtener más información sobre las directivas de extensión, vaya a [Microsoft Edge: directivas][MicrosoftEdgePolicies]. 
+El equipo Microsoft Edge de extensiones de web reemplaza la API de solicitud web por [la][ChromeDeveloperDocsExtensionsReferenceDeclarativenetrequest] [API][ChromeDeveloperDocsExtensionsReferenceWebrequest] declarativa de solicitud neta, pero sigue manteniendo las capacidades de observación de la API de solicitud web.  Excepto en algunos escenarios específicos en los que la extensión requiere capacidades de observación de la API de solicitud web, el equipo de extensiones de Microsoft Edge recomienda usar solo las API de DNR.  El Microsoft Edge de extensiones cree que este cambio tendrá un impacto positivo en las extensiones que usan funcionalidades declarativas enriquecibles con características.  A medida que más extensiones se desvían a las API de DNR, este cambio mejorará la privacidad del usuario, lo que contribuye a aumentar la confianza en el uso de extensiones.  
+Las empresas pueden seguir usando el comportamiento de bloqueo de la API de solicitud web para extensiones administradas a través de directivas de empresa.  Para obtener más información acerca de las directivas de extensión, vaya [a Microsoft Edge – Directivas][DeployedgeMicrosoftEdgePoliciesExtensions].  
 
-## Trabajadores de servicio en segundo plano  
+## <a name="background-service-workers"></a>Trabajadores del servicio en segundo plano  
  
-Los trabajadores del servicio están disponibles para realizar pruebas en la Canarias. Para migrar las extensiones de las páginas de fondo a los trabajos de servicio, consulte [migrar de páginas de fondo a trabajos de servicio][ServiceWorkers]. Estamos evaluando & investigando el impacto que este cambio aporta a los usuarios y a los programadores. Agregaremos más detalles sobre este cambio a este documento en el futuro. 
+Los trabajadores de servicio están disponibles para las pruebas en Canary.  Para migrar las extensiones de páginas en segundo plano a trabajadores de servicio, consulte Migración de páginas en segundo plano [a trabajadores de servicio.][ChromeDeveloperDocsExtensionsMv3MigratingToServiceWorkers]  El Microsoft Edge de extensiones de usuario está evaluando e investigando el impacto que este cambio produce tanto para los desarrolladores como para los usuarios.  El Microsoft Edge de extensiones agrega detalles adicionales sobre el cambio en este documento en el futuro.  
 
-## ¿Cuándo estarán disponibles estos cambios en Microsoft Edge?
+## <a name="when-are-these-changes-available-in-microsoft-edge"></a>¿Cuándo están disponibles estos cambios en Microsoft Edge  
 
-La implementación de la API de la solicitud de red declarativa actual está disponible en nuestros canales de versión estable y beta. Los programadores pueden probar estos cambios y enviar comentarios. Contribuiremos a realizar esfuerzos de desarrollo y a investigar cambios adicionales. 
+La implementación de la API de solicitud neta declarativa actual está disponible en nuestros canales Estable y Beta.  Pruebe los cambios y proporcione comentarios.  El Microsoft Edge de extensiones contribuye a los esfuerzos de desarrollo e investiga más cambios.  
 
-| Nombre del canal | Descripción |
+| Nombre del canal | Detalles |  
 |:--- |:--- |  
-| Microsoft Edge 84 estable | La API de DNR está disponible para pruebas |  
-| Microsoft Edge 85 beta | La compatibilidad con la modificación de encabezados está disponible| 
+| Microsoft Edge 84 Estable | La API de DNR está disponible para pruebas |  
+| Microsoft Edge 85 Beta | La compatibilidad con la modificación de encabezados está disponible|  
 
-Cuando se realicen cambios en el cromo, compartiremos escalas de tiempo para que los desarrolladores puedan actualizar su código y volver a publicar las extensiones para la tienda. 
+Cuando se realizan los cambios en Chromium, el equipo de extensiones de Microsoft Edge comparte escalas de tiempo para que pueda actualizar el código y volver a publicar extensiones en el almacén.  
 
-Continuaremos publicando actualizaciones en nuestro blog. Puede enviar sus comentarios sobre estos cambios a través de [TechCommunity][TechCommunity].
+El Microsoft Edge de extensiones continúa publicando actualizaciones en el blog.  Puede proporcionar sus comentarios sobre los cambios a través de [tech Community][MicrosoftTechcommunityT5ArticlesManifestV3ChnagesAreNowAvailableInMicrosoftEdgeMP1780254].
 
 <!-- links -->  
 
-[EdgeAddons]: https://microsoftedge.microsoft.com/addons/ "Complementos de Microsoft Edge"  
-[MicrosoftBlog]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/  
-[MicrosoftEdgePolicies]: https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensions 
+[DeployedgeMicrosoftEdgePoliciesExtensions]: /deployedge/microsoft-edge-policies#extensions "Extensiones - Microsoft Edge: directivas | Microsoft Docs"  
 
-[TechCommunity]: https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254 "Comunidad tecnológica"  
+[MicrosoftMicrosoftedgeAddons]: https://microsoftedge.microsoft.com/addons "Microsoft Edge Complementos"  
 
+[MicrosoftTechcommunityT5ArticlesManifestV3ChnagesAreNowAvailableInMicrosoftEdgeMP1780254]: https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254 "Los cambios del manifiesto V3 ya están disponibles en Microsoft Edge | Microsoft Tech Community"  
 
-[Google_Migrate_to_MV3]: https://developer.chrome.com/extensions/migrating_to_manifest_v3   
-[SandboxingEval]: https://developer.chrome.com/apps/sandboxingEval "Usar eval en las extensiones de Chrome. Puede."
-[CORS]: https://www.chromium.org/Home/chromium-security/extension-content-script-fetches "Cambios en las solicitudes de origen cruzado en scripts de contenido de extensión"
-[WebRequestAPI]: https://developer.chrome.com/extensions/webRequest "API de solicitudes Web"  
-[DeclarativeNetRequestAPI]: https://developer.chrome.com/extensions/declarativeNetRequest/ "API de solicitudes de red declarativa"
-[ServiceWorkers]:  https://developers.chrome.com/extensions/migrating_to_service_workers
+[ChromeDeveloperDocsExtensionsMv2Sandboxingeval]: https://developer.chrome.com/docs/extensions/mv2/sandboxingEval "Uso de eval en extensiones de Chrome | Desarrolladores de Chrome"  
+[ChromeDeveloperDocsExtensionsMv3MigratingToServiceWorkers]:  https://developer.chrome.com/docs/extensions/mv3/migrating_to_service_workers "Migración de páginas en segundo plano a trabajadores de servicio | Desarrolladores de Chrome"  
+[ChromeDeveloperDocsExtensionsMv3Mv3MigrationChecklist]: https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist "Lista de comprobación de migración de manifiesto V3 | Desarrolladores de Chrome"    
 
+[ChromeDeveloperDocsExtensionsReferenceDeclarativenetrequest]: https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest "chrome.declarativeNetRequest | Desarrolladores de Chrome"  
+[ChromeDeveloperDocsExtensionsReferenceWebrequest]: https://developer.chrome.com/docs/extensions/reference/webRequest "chrome.webRequest | Desarrolladores de Chrome"  
 
+[ChromiumHomeChromiumSecurityExtensionContentScriptFetches]: https://www.chromium.org/Home/chromium-security/extension-content-script-fetches "Cambios en solicitudes entre orígenes en scripts de contenido de extensión de Chrome | The Chromium Projects"  

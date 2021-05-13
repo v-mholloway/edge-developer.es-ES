@@ -1,18 +1,18 @@
 ---
-description: Introducción a HTML y DOM
+description: Introducción con HTML y DOM
 title: 'DevTools para principiantes: Introducción a HTML y DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 6ca27b720a17928545712666e43495c4da2fb880
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d2893021f5e19ffb714215b27edadba08c8d6f71
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397933"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564570"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11397933"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="devtools-for-beginners-get-started-with-html-and-the-dom"></a>DevTools para principiantes: Introducción a HTML y DOM  
 
 Este es el primero de una serie de tutoriales que le enseñarán los conceptos básicos del desarrollo web.  Obtenga información sobre un conjunto de herramientas de desarrollador web, denominadas Microsoft Edge DevTools, que pueden aumentar su productividad.  
@@ -45,7 +44,7 @@ Vas a aprender el desarrollo web creando tu propio sitio web.  Para cuando compl
 Al final de este tutorial, debe comprender los siguientes temas.  
 
 *   Cómo HTML y DOM crean el contenido que se muestra en las páginas web.  
-*   Cómo Microsoft Edge DevTools puede ayudarle a experimentar con los cambios DE HTML y DOM.  
+*   How Microsoft Edge DevTools may help you experiment with HTML and DOM changes.  
 *   La diferencia entre HTML y DOM.  
 
 También tiene un sitio web real.  Puede usar el sitio para hospedar su currículum vitae o blog.  
@@ -55,7 +54,7 @@ También tiene un sitio web real.  Puede usar el sitio para hospedar su currícu
 Antes de intentar este tutorial, complete los siguientes requisitos previos:  
 
 *   Si no está familiarizado con HTML, lea [Introducción a HTML][MDNGettingStartedHtml].  
-*   Descargue el explorador web [de Microsoft Edge.][MicrosoftEdgeInsider]  En este tutorial se usa un conjunto de herramientas de desarrollo web, denominadas Microsoft Edge DevTools, integradas en Microsoft Edge.  
+*   Descargue el [Microsoft Edge][MicrosoftEdgeInsider] web.  Este tutorial usa un conjunto de herramientas de desarrollo web, denominadas Microsoft Edge DevTools, integradas en Microsoft Edge.  
 
 ## <a name="set-up-your-code"></a>Configurar el código  
 
@@ -67,19 +66,19 @@ Va a crear el sitio en un editor de código en línea llamado Glitch.
        Pestaña editor  
     :::image-end:::  
     
-1.  Elija **alluring-shock**.  El menú Opciones de proyecto se abre en la esquina superior izquierda.  
+1.  Elija **alluring-shock**.  El menú Project opciones se abre en la esquina superior izquierda.  
     
-    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menú Opciones del proyecto" lightbox="../media/beginners-html-setup2.msft.png":::
-       Menú Opciones del proyecto  
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menú Project opciones" lightbox="../media/beginners-html-setup2.msft.png":::
+       Menú Project opciones  
     :::image-end:::  
     
-1.  Elija **Remix Project**.  Glitch crea una copia del proyecto que puede editar y genera aleatoriamente un nuevo nombre para el proyecto.  El contenido es el mismo que antes.  
+1.  Elija **Remezcla Project**.  Glitch crea una copia del proyecto que puede editar y genera aleatoriamente un nuevo nombre para el proyecto.  El contenido es el mismo que antes.  
     
     :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="El proyecto remezclado" lightbox="../media/beginners-html-setup3.msft.png":::
        El proyecto remezclado  
     :::image-end:::  
     
-1.  Si planea completar el siguiente tutorial de **** esta serie, elija Iniciar sesión e iniciar sesión en Glitch con su cuenta de GitHub o Facebook.  Si decide no iniciar sesión en su cuenta, perderá la capacidad de editar el proyecto después de cerrar la pestaña de edición.  
+1.  Si tienes previsto completar el siguiente tutorial **** de esta serie, elige Iniciar sesión e iniciar sesión en Glitch con tu cuenta GitHub o Facebook.  Si decide no iniciar sesión en su cuenta, perderá la capacidad de editar el proyecto después de cerrar la pestaña de edición.  
 1.  Elija **Mostrar** y **elija En una nueva ventana**.  Se abre una pestaña nueva que muestra la página activa.  Esta pestaña se denomina pestaña **activa a** lo largo de este tutorial.  
     
     :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="La pestaña activa" lightbox="../media/beginners-html-setup4.msft.png":::
@@ -185,7 +184,7 @@ Si estaba desarrollando una página grande con mucho HTML, es algo tedioso ir y 
 
 ### <a name="learn-the-difference-between-html-and-the-dom"></a>Obtenga información sobre la diferencia entre HTML y DOM  
 
-Antes de empezar a editar el contenido de Microsoft Edge DevTools, debe comprender la diferencia entre HTML y DOM.  La mejor manera de aprender es por ejemplo:  
+Antes de empezar a editar el contenido desde Microsoft Edge DevTools, debe comprender la diferencia entre HTML y DOM.  La mejor manera de aprender es por ejemplo:  
 
 1.  Vaya a la **pestaña activa**.  En la parte inferior de la página, se `A new element!?!` muestra el texto.  
     
@@ -269,18 +268,24 @@ También puede cambiar el orden de los nodos DOM.  Por ejemplo, en la página we
     
     :::row:::
        :::column span="":::
+          &nbsp;  
+       :::column-end:::
+       :::column span="":::
+          El `<nav>` nodo se muestra ahora en la parte superior de la página.  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="":::
           :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Arrastrar el nodo de navegación a la parte superior" lightbox="../media/beginners-html-reorder2.msft.png":::
              Arrastrar el nodo de navegación a la parte superior  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          El `<nav>` nodo se muestra ahora en la parte superior de la página.  
-          
           :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="El nodo de navegación está en la parte superior de la página" lightbox="../media/beginners-html-reorder3.msft.png":::
              El nodo de navegación está en la parte superior de la página  
           :::image-end:::  
        :::column-end:::
-   :::row-end:::  
+    :::row-end:::  
     
 ### <a name="delete-a-node"></a>Eliminar un nodo  
 
@@ -350,7 +355,7 @@ Casi ha terminado.  Has realizado algunos cambios en tu página en DevTools, per
     
 ## <a name="next-steps"></a>Pasos siguientes  
 
-*   Complete el siguiente tutorial de esta serie, Introducción a [CSS,][DevToolsBeginnersCss]para aprender a dar estilo a su página y experimentar con los cambios de estilo en Microsoft Edge DevTools.  
+*   Complete el siguiente tutorial de esta serie, [Introducción con CSS][DevToolsBeginnersCss], para aprender a dar estilo a su página y experimentar con los cambios de estilo en Microsoft Edge DevTools.  
 *   Lea [Introducción al DOM][MDNIntroductionDom] para obtener más información sobre el DOM.  
 *   Consulte un curso como [Introducción al desarrollo web][CourseraIntroductionToWebDevelopment] para obtener más experiencia práctica en el desarrollo web.  
 
@@ -360,7 +365,7 @@ Casi ha terminado.  Has realizado algunos cambios en tu página en DevTools, per
 
 <!--- links --->  
 
-[DevToolsBeginnersCss]: ./css.md "DevTools para principiantes: Introducción a css | Microsoft Docs"  
+[DevToolsBeginnersCss]: ./css.md "DevTools para principiantes: Introducción con CSS | Microsoft Docs"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
@@ -373,7 +378,7 @@ Casi ha terminado.  Has realizado algunos cambios en tu página en DevTools, per
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/beginners/html) y es creado por [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
+> La página original se encontró [aquí](https://developers.google.com/web/tools/chrome-devtools/beginners/html) y fue creado por [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
@@ -381,5 +386,5 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors  

@@ -1,18 +1,18 @@
 ---
-description: Cómo ver los datos SQL web desde el panel Aplicación de Microsoft Edge DevTools.
+description: Cómo ver datos de SQL web desde el panel Aplicación de Microsoft Edge DevTools.
 title: Ver datos SQL web con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 9f684aabf3592220079e6a8595d91cfea6785769
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bc25f7422be19bec99bde1cd7764f08aad8e6668
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439601"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564703"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,12 @@ ms.locfileid: "11439601"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Ver datos SQL web con Microsoft Edge DevTools  
 
 > [!WARNING]
 > La especificación SQL web no [se está conservando.][W3CWebSQLStatus]  
 
-En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para inspeccionar los datos SQL web.  
+En esta guía se muestra cómo usar [Microsoft Edge DevTools para][MicrosoftEdgeDevTools] inspeccionar los datos SQL web.  
 
 ## <a name="view-web-sql-data"></a>Ver datos SQL web  
 
@@ -46,7 +45,7 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
 1.  Expanda la **sección Web SQL** para ver bases de datos y tablas.  En la siguiente figura, debajo **de html5meetup** hay una base de datos y **salas** es una tabla.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Panel web SQL web" lightbox="../media/storage-application-storage-web-sql.msft.png":::
-       Panel **de SQL** web  
+       Panel **web SQL** web  
     :::image-end:::  
     
 1.  Elija una tabla para ver los datos de esa tabla.  
@@ -57,27 +56,27 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
     
 ## <a name="edit-web-sql-data"></a>Editar datos SQL web  
 
-No puede editar datos web SQL al ver una tabla de SQL web, como en la anterior.  Pero puede ejecutar instrucciones desde la consola web SQL que editan o eliminan tablas.  Vaya a [Ejecutar consultas SQL web](#run-web-sql-queries).  
+No puede editar los datos de SQL web al ver una tabla de SQL web, como en la anterior.  Pero puede ejecutar instrucciones desde la consola web SQL que editan o eliminan tablas.  Vaya a [Ejecutar consultas SQL web](#run-web-sql-queries).  
 
 ## <a name="run-web-sql-queries"></a>Ejecutar consultas SQL web  
 
 1.  Elija una base de datos para abrir una consola para esa base de datos.  
 1.  Escriba una instrucción Web SQL y, a continuación, `Enter` seleccione para ejecutarla.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Usar la Consola de SQL web para eliminar una fila de una tabla" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
-       Usar la Consola de SQL web para eliminar una fila de una tabla  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Usar la Consola SQL web para eliminar una fila de una tabla" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+       Usar la Consola SQL web para eliminar una fila de una tabla  
     :::image-end:::  
     
 ## <a name="refresh-a-web-sql-table"></a>Actualizar una tabla de SQL web  
 
 DevTools no actualiza tablas en tiempo real.  Para actualizar los datos de una tabla, complete las siguientes acciones.  
 
-1.  [Ver los datos en una tabla web SQL web](#view-web-sql-data).  
+1.  [Ver los datos en una tabla web SQL .](#view-web-sql-data)  
 1.  Elija **Actualizar** \( ![ Actualizar ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-out-columns-in-a-web-sql-table"></a>Filtrar las columnas de una tabla de SQL web  
 
-1.  [Ver los datos en una tabla web SQL web](#view-web-sql-data).  
+1.  [Ver los datos en una tabla web SQL .](#view-web-sql-data)  
 1.  Use el cuadro de texto Columnas **visibles** para especificar qué columnas desea mostrar.  Proporcione los nombres de columna como una lista CSV.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Usar el cuadro de texto Columnas visibles para reducir el número de columnas mostradas" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
@@ -86,11 +85,11 @@ DevTools no actualiza tablas en tiempo real.  Para actualizar los datos de una t
     
 ## <a name="delete-all-web-sql-data"></a>Eliminar todos los datos SQL web  
 
-1.  Abra el **panel Borrar** almacenamiento.  
-1.  Asegúrese de que la **casilla web SQL** está activada.  
+1.  Abra el **panel Borrar Storage.**  
+1.  Asegúrese de que la **casilla web SQL** esté activada.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="La casilla de SQL web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
-       La **casilla de SQL** web  
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="La casilla SQL web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+       La **casilla SQL** web  
     :::image-end:::  
     
 1.  Elija **Borrar datos del sitio**.  
@@ -105,7 +104,7 @@ DevTools no actualiza tablas en tiempo real.  Para actualizar los datos de una t
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Base de SQL web | W3C"  
 
@@ -119,4 +118,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

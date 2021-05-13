@@ -1,18 +1,18 @@
 ---
-description: Cómo ver y editar sessionStorage con el panel Almacenamiento de sesiones y la consola.
-title: Ver y editar el almacenamiento de sesiones con Microsoft Edge DevTools
+description: Cómo ver y editar sessionStorage con el panel De Storage sesión y la consola.
+title: Ver y editar session Storage con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 6d686a6eb7bc6fca46d65c46fa9c5aee044ec052
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439664"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565067"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439664"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Ver y editar session Storage con Microsoft Edge DevTools  
 
-# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Ver y editar el almacenamiento de sesiones con Microsoft Edge DevTools  
-
-En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTools] para ver, editar y eliminar pares [clave-valor sessionStorage.][MDNSessionStorage]  
+En esta guía se muestra cómo usar [Microsoft Edge DevTools para][MicrosoftEdgeDevTools] ver, editar y eliminar pares [clave-valor sessionStorage.][MDNSessionStorage]  
 
 ## <a name="view-sessionstorage-keys-and-values"></a>Ver claves y valores sessionStorage  
 
@@ -40,10 +39,10 @@ En esta guía se muestra cómo usar [Microsoft Edge DevTools][MicrosoftEdgeDevTo
        Panel **Manifiesto**  
     :::image-end:::  
     
-1.  Expanda el **menú Almacenamiento de** sesiones.  
+1.  Expanda el **menú Storage** sesión.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Menú Almacenamiento de sesiones" lightbox="../media/storage-application-storage-session-storage.msft.png":::
-       Menú **Almacenamiento de** sesiones  
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Menú de Storage sesión" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       Menú **de Storage** sesión  
     :::image-end:::  
     
 1.  Elija un dominio para ver los pares clave-valor.  
@@ -109,7 +108,7 @@ Dado que puede ejecutar JavaScript en **** la consola **y**dado que la consola t
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Herramientas para desarrolladores | Microsoft Docs"  
 
 [MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
 
@@ -123,4 +122,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

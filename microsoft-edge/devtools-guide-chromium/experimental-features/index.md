@@ -22,31 +22,31 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: c76830cb8bbcc597aa026f58e1926cd2f9bc2d62
-ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
+ms.openlocfilehash: 8f85bab4b1229a13f3b0185c65da900573380811
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11439587"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564241"
 ---
 # <a name="experimental-features"></a>Características experimentales  
 
 Microsoft Edge DevTools proporciona acceso a características experimentales que aún están en desarrollo.  Puede probar y [proporcionar comentarios antes](#providing-feedback-on-experimental-features) de publicar cada característica.  
 
-Aunque las características experimentales están disponibles en todos los canales de Microsoft Edge, es posible que obtenga las características experimentales más recientes con el canal de Microsoft Edge Canary.  
+Aunque las características experimentales están disponibles en todos los canales de Microsoft Edge, puede obtener las características experimentales más recientes mediante el canal Microsoft Edge Canary.  
 
 ## <a name="turn-on-experimental-features"></a>Activar características experimentales  
 
 Para activar las características experimentales \(or off\) en Microsoft Edge, siga estos pasos.  
 
 1.  [Abra DevTools][DevtoolsOpenIndex].  
-    *   Seleccione `Control` + `Shift` + `I` \(Windows, Linux\) o `Command` + `Option` + `I` \(macOS\).  Para obtener más información, vaya a [Métodos abreviados de teclado de Microsoft Edge DevTools][DevtoolsShortcutsIndex].  
-1.  Abra el [panel][DevToolsCustomizeIndexSettings] Configuración.  
-    *   Seleccione `Shift` + `?` .  Para obtener más información, vaya a [Métodos abreviados de teclado de Microsoft Edge DevTools][DevtoolsShortcutsIndex].  
+    *   Seleccione `Control` + `Shift` + `I` \(Windows, Linux\) o `Command` + `Option` + `I` \(macOS\).  Para obtener más información, vaya [a Microsoft Edge métodos abreviados de teclado de DevTools][DevtoolsShortcutsIndex].  
+1.  Abra el [Configuración][DevToolsCustomizeIndexSettings] panel.  
+    *   Seleccione `Shift` + `?` .  Para obtener más información, vaya [a Microsoft Edge métodos abreviados de teclado de DevTools][DevtoolsShortcutsIndex].  
 1.  En el lado izquierdo del **panel Configuración,** elija la **sección** Experimentos.  
     
-    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="La página Experimentos en Configuración" lightbox="../media/experiments-devtools.msft.png":::
-       La **página Experimentos** en **Configuración**  
+    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="La página Experimentos de Configuración" lightbox="../media/experiments-devtools.msft.png":::
+       La **página Experimentos** de **Configuración**  
     :::image-end:::  
     
 1.  En la **página Experimentos,** desplácese por la lista de todas las características experimentales disponibles y elija la casilla junto a cada característica que desee probar.  
@@ -59,7 +59,7 @@ Para activar las características experimentales \(or off\) en Microsoft Edge, s
 
 En las secciones siguientes se describen las nuevas características experimentales que están disponibles en Microsoft Edge.  
 
-| Característica experimental | Versión de Microsoft Edge |  
+| Característica experimental | Microsoft Edge versión |  
 |:--- |:--- |  
 | [Enable webhint](#enable-webhint) | 85 o posterior |  
 | [Enable Network Console](#enable-network-console) | 85 o posterior |  
@@ -218,11 +218,11 @@ Este experimento reemplaza la herramienta **Novedades** por la nueva **herramien
 *   Vínculos a documentos para desarrolladores  
 *   las características más recientes  
 *   notas de la versión  
-*   Opción para ponerse en contacto con el equipo de Microsoft Edge DevTools  
+*   Opción para ponerse en contacto con el Microsoft Edge de DevTools  
     
-La **herramienta De** bienvenida se abre automáticamente después de cada actualización de Microsoft Edge.  Para evitar que se muestre la herramienta **de** bienvenida después de cada actualización, desactive la casilla situada junto a la pestaña Abrir después de cada **actualización** en el **título de** la herramienta de bienvenida.  
+La **herramienta De** bienvenida se abre automáticamente después de cada actualización a Microsoft Edge.  Para evitar que se muestre la herramienta **de** bienvenida después de cada actualización, desactive la casilla situada junto a la pestaña Abrir después de cada **actualización** en el **título de** la herramienta de bienvenida.  
 
-Si prefiere la herramienta original **Novedades,** vaya a Experimentos de [][DevtoolsCustomizeIndexSettings]  >  **configuración** y quite la casilla situada junto a **Enable Welcome tab** .  
+Si prefiere la herramienta original **Novedades,** vaya [a Configuración][DevtoolsCustomizeIndexSettings]  >  **Experiments** y quite la casilla situada junto a **Enable Welcome tab** .  
 
 :::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="Herramienta de bienvenida" lightbox="../media/experiments-welcome.msft.png":::
    **Herramienta de** bienvenida  
@@ -232,22 +232,22 @@ Si prefiere la herramienta original **Novedades,** vaya a Experimentos de [][Dev
 
 ## <a name="previous-experimental-features"></a>Características experimentales anteriores  
 
-*   [3D View][Devtools3dViewIndex] ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 83 o posterior.  
-*   [Turn on support to move tabs between panels][DevtoolsCustomizeIndex] ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 85 o posterior.  
-*   [Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 86 o posterior.  
-*   [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 89 o posterior.  
-*   [Turn on new CSS grid debugging features][DevtoolsCssGrid] ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 89 o posterior.  
-*   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 90 o posterior.  
+*   [3D View][Devtools3dViewIndex]ahora está disponible y activado de forma predeterminada Microsoft Edge versión 83 o posterior.  
+*   [Turn on support to move tabs between panels][DevtoolsCustomizeIndex]ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 85 o posterior.  
+*   [Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 86 o posterior.  
+*   [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]ahora está disponible y activado de forma predeterminada Microsoft Edge versión 89 o posterior.  
+*   [Turn on new CSS grid debugging features][DevtoolsCssGrid]ahora está disponible y activado de forma predeterminada Microsoft Edge versión 89 o posterior.  
+*   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables]ahora está disponible y activado de forma predeterminada en Microsoft Edge versión 90 o posterior.  
 
 ## <a name="providing-feedback-on-experimental-features"></a>Proporcionar comentarios sobre características experimentales  
 
-Para proporcionar comentarios sobre los experimentos de Microsoft Edge DevTools o cualquier otra cosa relacionada con DevTools.  
+Para proporcionar comentarios sobre Microsoft Edge experimentos de DevTools o cualquier otra cosa relacionada con DevTools.  
 
 *   Enviar sus comentarios con el icono **Enviar comentarios** en DevTools  
 *   Tweet en [@EdgeDevTools][TwitterEdgedevtools]  
     
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   El **icono Enviar comentarios** en Microsoft Edge DevTools  
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en devTools de Microsoft Edge" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+   El icono **Enviar comentarios en** devTools de Microsoft Edge  
 :::image-end:::  
 
 <!--  
@@ -259,20 +259,19 @@ Para proporcionar comentarios sobre los experimentos de Microsoft Edge DevTools 
 <!-- links -->  
 
 [Devtools3dViewIndex]: ../3d-view/index.md "Vista 3D | Microsoft Docs"  
-[DevtoolsCssGrid]: ../css/grid.md "Inspeccionar CSS Grid en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: ../css/grid.md "Inspeccionar css grid en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Configuración: Personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edit keyboard shortcuts for any action in the DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emular dispositivos de pantalla doble y plegables en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simular dispositivos móviles con modo de dispositivo en Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar la configuración y los estilos de fuente CSS en el panel Estilos en DevTools | Microsoft Docs"  
 [DevtoolsIssuesIndex]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsOpenIndex]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge Métodos abreviados de teclado de DevTools | Microsoft Docs"  
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
-
-[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emular dispositivos de pantalla doble y plegables en Microsoft Edge DevTools | Microsoft Docs"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 

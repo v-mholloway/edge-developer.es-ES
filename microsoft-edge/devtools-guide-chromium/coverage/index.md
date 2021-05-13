@@ -3,16 +3,16 @@ description: Cómo buscar y analizar código JavaScript y CSS sin usar en Micros
 title: Buscar código JavaScript y CSS sin usar con el panel Cobertura en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a8fccdcabf03f3894a9a11246b90db4686fd953e
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: b31d14feac13a907ca0c5ce7ef702bcdef375ad5
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519320"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564465"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11519320"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>Buscar código JavaScript y CSS sin usar con el panel Cobertura en Microsoft Edge DevTools  
 
-El panel **Cobertura** de Microsoft Edge DevTools le ayuda a encontrar código JavaScript y CSS sin usar.  La eliminación de código no usado puede acelerar la carga de la página y guardar los datos móviles de los usuarios móviles.  
+El **** panel Cobertura de Microsoft Edge DevTools le ayuda a encontrar código JavaScript y CSS sin usar.  La eliminación de código no usado puede acelerar la carga de la página y guardar los datos móviles de los usuarios móviles.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Análisis de la cobertura de código" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    Análisis de la cobertura de código  
@@ -96,7 +95,7 @@ La tabla del panel **Cobertura** muestra los recursos analizados y la cantidad d
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Comando de Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Microsoft Edge comando DevTools | Microsoft Docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Botones - Bootstrap"  
 
@@ -110,4 +109,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

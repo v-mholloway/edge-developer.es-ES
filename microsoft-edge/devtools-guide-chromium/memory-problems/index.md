@@ -1,18 +1,18 @@
 ---
-description: Obtenga información sobre cómo usar Microsoft Edge y DevTools para encontrar problemas de memoria que afecten al rendimiento de la página, como pérdidas de memoria, exceso de memoria y colecciones de elementos no utilizados frecuentes.
-title: Corregir problemas de memoria
+description: Obtenga información sobre cómo usar Microsoft Edge y DevTools para encontrar problemas de memoria que afecten al rendimiento de la página, como pérdidas de memoria, distensión de memoria y recolecciones de elementos no utilizados frecuentes.
+title: Solucionar problemas de memoria
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: afaea8ca561bd975490d9153cda40877786a0f08
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3b2405d23dd6ee349484c9ba66d195e3ed12144b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397835"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565032"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,19 +27,18 @@ ms.locfileid: "11397835"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="fix-memory-problems"></a>Solucionar problemas de memoria  
 
-# <a name="fix-memory-problems"></a>Corregir problemas de memoria  
-
-Obtenga información sobre cómo usar Microsoft Edge y DevTools para encontrar problemas de memoria que afecten al rendimiento de la página, como pérdidas de memoria, exceso de memoria y colecciones de elementos no utilizados frecuentes.  
+Obtenga información sobre cómo usar Microsoft Edge y DevTools para encontrar problemas de memoria que afecten al rendimiento de la página, como pérdidas de memoria, distensión de memoria y recolecciones de elementos no utilizados frecuentes.  
 
 ### <a name="summary"></a>Resumen  
 
-*   Descubra la cantidad de memoria que la página está usando actualmente con el Administrador de tareas del explorador Microsoft Edge.  
+*   Descubra la cantidad de memoria que la página está usando actualmente con el administrador de tareas Microsoft Edge explorador.  
 *   Visualice el uso de memoria con el tiempo con el panel **Memoria.**  
 *   Identifique los árboles DOM desasociados \(una causa común de pérdidas de memoria\) con **instantánea de montón**.  
 *   Descubra cuándo se asigna nueva memoria en el montón de JavaScript \(JS heap\) con instrumentación de asignación **en la escala de tiempo**.  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 En el sentido del modelo de rendimiento **RAIL,** el foco de sus esfuerzos de rendimiento deben ser los usuarios.  
 
@@ -59,17 +58,17 @@ Aquí no hay números duros, ya que los distintos dispositivos y exploradores ti
 
 La clave aquí es usar el modelo RAIL y centrarse en los usuarios.  Descubra qué dispositivos son populares entre los usuarios y, a continuación, pruebe la página en esos dispositivos.  Si la experiencia es coherentemente mala, es posible que la página supere las capacidades de memoria de esos dispositivos.  
 
-## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>Supervisar el uso de memoria en tiempo real con el Administrador de tareas del explorador Microsoft Edge  
+## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>Supervisar el uso de memoria en tiempo real con el Administrador de tareas Microsoft Edge explorador  
 
-Use el Administrador de tareas del explorador de Microsoft Edge como punto de partida para la investigación de problemas de memoria.  El Administrador de tareas del explorador Microsoft Edge es un monitor en tiempo real que le indica la cantidad de memoria que está usando una página actualmente.  
+Use el administrador Microsoft Edge de tareas del explorador como punto de partida para la investigación de problemas de memoria.  El Microsoft Edge de tareas del explorador es un monitor en tiempo real que le indica la cantidad de memoria que está usando actualmente una página.  
 
-1.  Seleccione o navegue al menú principal de Microsoft Edge y elija Más herramientas Administrador de tareas del explorador para abrir el Administrador de tareas del `Shift` + `Esc` explorador de ****  >  **** Microsoft Edge.  
+1.  Seleccione o navegue hasta el menú Microsoft Edge principal y elija Más herramientas Administrador de tareas del explorador para abrir Microsoft Edge administrador de `Shift` + `Esc` tareas ****  >  **** del explorador.  
     
-    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Abrir el Administrador de tareas del explorador de Microsoft Edge" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
-       Figura 1: Abrir el Administrador de tareas del explorador Microsoft Edge  
+    :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Abrir el administrador Microsoft Edge de tareas del explorador" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
+       Figura 1: Abrir el administrador de tareas Microsoft Edge explorador  
     :::image-end:::  
     
-1.  Mantenga el mouse en el encabezado de la tabla del Administrador de tareas del explorador de Microsoft Edge, abra el menú contextual \(hacer clic con el botón secundario\) y habilite **la memoria de JavaScript**.  
+1.  Mantenga el mouse en el encabezado de la tabla del Administrador de tareas del explorador Microsoft Edge, abra el menú contextual \(hacer clic con el botón secundario\) y habilite **la memoria de JavaScript**.  
     
     :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Habilitar memoria de JavaScript" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
        Figura 2: Habilitar memoria de JavaScript  
@@ -231,7 +230,7 @@ DevTools muestra un desglose de la asignación de memoria por función.  La vist
 
 Si la página parece pausar con frecuencia, es posible que tenga problemas de recolección de elementos no utilizados.  
 
-Puede usar el Administrador de tareas del explorador Microsoft Edge o las grabaciones de memoria de rendimiento para detectar la recolección de elementos no utilizados frecuente.  En el Administrador de tareas del **** explorador de Microsoft Edge, los valores de memoria o memoria **de JavaScript** que aumentan y bajan con frecuencia representan una recolección de elementos no utilizados frecuente.  En las grabaciones de rendimiento, los cambios frecuentes \(ascendentes y caídos\) en los gráficos de recuento de nodos o montón de JS indican una recolección de elementos no utilizados frecuente.  
+Puede usar el Administrador de tareas Microsoft Edge explorador o grabaciones de memoria de rendimiento para detectar la recolección de elementos no utilizados frecuente.  En el Administrador Microsoft Edge de tareas del **** explorador, los valores de memoria o memoria **de JavaScript** que aumentan y bajan con frecuencia representan la recolección de elementos no utilizados frecuente.  En las grabaciones de rendimiento, los cambios frecuentes \(ascendentes y caídos\) en los gráficos de recuento de nodos o montón de JS indican una recolección de elementos no utilizados frecuente.  
 
 Después de identificar el problema, puede **** usar un instrumental de asignación en la grabación de escala de tiempo para averiguar dónde se asigna la memoria y qué funciones están causando las asignaciones.  
 
@@ -263,4 +262,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

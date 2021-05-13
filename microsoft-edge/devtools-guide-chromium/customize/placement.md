@@ -1,18 +1,18 @@
 ---
-description: Cómo mover Microsoft Edge DevTools a la parte inferior o izquierda de la ventanilla, o a una ventana independiente.
-title: Cambiar la ubicación de Microsoft Edge DevTools (Undock, Dock to bottom, Dock to left)
+description: Cómo mover de Microsoft Edge DevTools a la parte inferior o izquierda de la ventanilla, o a una ventana independiente.
+title: Cambiar Microsoft Edge ubicación de DevTools (Undock, Dock to bottom, Dock to left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 3c6dbf3e4a72b793997fcbe0970c88e4bee07caf
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519159"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564367"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519159"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Cambiar la ubicación de Microsoft Edge DevTools (Undock, Dock to bottom, Dock to left)  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Cambiar Microsoft Edge ubicación de DevTools (Undock, Dock to bottom, Dock to left)  
 
 De forma predeterminada, DevTools está acoplada a la derecha de la ventanilla (ventana).  También puede acoplar DevTools a la parte inferior o izquierda de la ventana, o desacoplar DevTools a una ventana independiente.
 
@@ -86,7 +85,7 @@ DevTools puede desacoplarse a una ventana independiente, que puede mover a un mo
     
 ## <a name="change-placement-from-the-command-menu"></a>Cambiar la ubicación desde el menú comando  
 
-1.  [Abra el menú comando][DevtoolsCommandMenu], seleccionando `Shift` + `Ctrl` + `P` en Windows/Linux o `Command` + `Shift` + `P` en macOS.  
+1.  [Abra el menú Comando][DevtoolsCommandMenu], `Shift` + `Ctrl` + `P` seleccionando en Windows/Linux o `Command` + `Shift` + `P` en macOS.  
 1.  Después del `>` carácter, escriba y, a `dock` continuación, elija uno de los siguientes comandos:  
     
     *  **Acoplar a la parte inferior**
@@ -107,7 +106,7 @@ DevTools puede desacoplarse a una ventana independiente, que puede mover a un mo
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Comando de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Microsoft Edge comando DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
@@ -119,4 +118,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

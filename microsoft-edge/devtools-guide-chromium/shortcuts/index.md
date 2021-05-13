@@ -1,18 +1,18 @@
 ---
-description: La documentación canónica de los métodos abreviados de teclado de Microsoft Edge DevTools.
-title: Métodos abreviados de teclado de Microsoft Edge DevTools
+description: La documentación canónica para Microsoft Edge métodos abreviados de teclado de DevTools.
+title: Microsoft Edge Métodos abreviados de teclado de DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c622d529a8008248d57a6b1b0656636a982054c1
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: f2b10bc763073632975248cd5a9caa523702e869
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519411"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565102"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11519411"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Métodos abreviados de teclado de Microsoft Edge DevTools  
+# <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Microsoft Edge Métodos abreviados de teclado de DevTools  
 
 Este artículo es una referencia de los métodos abreviados de teclado en Microsoft Edge DevTools.
 
@@ -50,7 +49,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 
 | Acción | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Mostrar **configuración** | `?` or `F1` | `?` o `Function`+`F1` |  
+| Mostrar **Configuración** | `?` or `F1` | `?` o `Function`+`F1` |  
 | Centrar el panel siguiente | `Control`+`]` | `Command`+`]` |  
 | Centrar el panel anterior | `Control`+`[` | `Command`+`[` |  
 | Vuelva a la posición [de acoplamiento que][DevtoolsCustomizeIndexPlacement] usó por última vez.  Si DevTools ha estado en la posición predeterminada para toda la sesión, este acceso directo desacopla DevTools en una ventana independiente | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
@@ -161,8 +160,8 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 <!-- links -->  
 
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer: personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Cambiar ubicación de DevTools: personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer: personalice Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Cambiar ubicación de DevTools: personalizar Microsoft Edge devTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Puntos de interrupción de línea de código: cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft Docs"  
 
@@ -178,4 +177,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

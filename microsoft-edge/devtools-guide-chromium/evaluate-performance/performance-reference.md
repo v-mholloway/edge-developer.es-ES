@@ -3,16 +3,16 @@ description: El modo de eventos de escala de tiempo muestra todos los eventos de
 title: Referencia de evento de escala de tiempo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2a166c9eebc980682fa872e5ee8d213f2058b384
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b8a15dd3503a891698d1f96bdc99946163d738ff
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398668"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564213"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398668"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="timeline-event-reference"></a>Referencia de evento de escala de tiempo  
 
 El modo de eventos de escala de tiempo muestra todos los eventos desencadenados al realizar una grabación.  Use la referencia de evento de escala de tiempo para obtener más información sobre cada tipo de evento de escala de tiempo.  
@@ -54,7 +53,7 @@ En esta sección se enumeran los eventos que pertenecen a la categoría Loading 
 
 | Evento | Descripción |  
 |:--- |:--- |  
-| ANALIZAR HTML |  Microsoft Edge ejecutó el algoritmo de análisis HTML. |  
+| ANALIZAR HTML |  Microsoft Edge el algoritmo de análisis HTML. |  
 | Finalizar la carga |  Una solicitud de red completada. |  
 | Recibir datos |  Se recibieron los datos de una solicitud.  Hay uno o varios eventos De recepción de datos. |  
 | Respuesta de recepción |  La respuesta HTTP inicial de una solicitud. |  
@@ -110,7 +109,7 @@ En esta sección se enumeran los eventos que pertenecen a la categoría Represen
 |:--- |:--- |  
 | Invalidar diseño | El diseño de página se invalidó mediante un cambio de DOM. |  
 | Diseño | Se completó un diseño de página. |  
-| Recalcular estilo | Estilos de elemento recalculados de Microsoft Edge. |  
+| Recalcular estilo | Microsoft Edge de elementos recalculados. |  
 | Scroll | El contenido de la vista anidada se desplazó. |  
 
 ### <a name="rendering-event-properties"></a>Propiedades de evento de representación  
@@ -119,7 +118,7 @@ En esta sección se enumeran los eventos que pertenecen a la categoría Represen
 |:--- |:--- |  
 | Diseño invalidado | Para los registros de diseño, el seguimiento de pila del código que provocó la invalidación del diseño. |  
 | Nodos que necesitan diseño | Para los registros de diseño, el número de nodos que se marcaron como diseño necesario antes de que se iniciara el relayout.  Estos son normalmente los nodos que se invalidaron mediante código de desarrollador, además de una ruta hacia arriba para volver a la raíz de layout. |  
-| Tamaño del árbol de diseño | Para los registros de diseño, el número total de nodos bajo la raíz de relayout \(el nodo que Microsoft Edge inicia el relayout\). |  
+| Tamaño del árbol de diseño | Para los registros layout, el número total de nodos bajo la raíz de relayout \(el nodo que Microsoft Edge inicia el relayout\). |  
 | Ámbito de diseño | Los valores posibles `Partial` son \(el límite de nuevo diseño es una parte del DOM\) o `Whole document` . |  
 | Elementos afectados | Para volver a calcular los registros de estilo, el número de elementos afectados por una actualización de estilo. |  
 | Estilos invalidados | Para volver a calcular los registros de estilo, proporciona el seguimiento de pila del código que provocó la invalidación del estilo. |  
@@ -130,17 +129,17 @@ En esta sección se enumeran los eventos que pertenecen a la categoría Painting
 
 | Evento | Descripción |  
 |:--- |:--- |  
-| Capas compuestas | Capas de imagen compuestas para el motor de representación de Microsoft Edge. |  
+| Capas compuestas | Las capas de imagen compuestas para el Microsoft Edge de representación. |  
 | Descodificación de imágenes | Se descodificó un recurso de imagen. |  
 | Cambio de tamaño de imagen | Se ha cambiado el tamaño de una imagen desde sus dimensiones nativas. |  
-| Paint | Las capas compuestas se pintaron en una región de la pantalla.  Al pasar el mouse sobre un registro paint se resalta la región de la pantalla que se actualizó. |  
+| Paint | Las capas compuestas se pintaron en una región de la pantalla.  Al pasar el mouse sobre Paint de datos se resalta la región de la pantalla que se actualizó. |  
 
 ### <a name="painting-event-properties"></a>Propiedades del evento Painting  
 
 | Propiedad | Descripción |  
 |:--- |:--- |  
-| Ubicación | Para eventos Paint, las coordenadas x e y del rectángulo de pintura. |  
-| Dimensiones | Para eventos Paint, el alto y el ancho de la región pintada. |  
+| Ubicación | Para Paint eventos, las coordenadas x e y del rectángulo de pintura. |  
+| Dimensiones | Para Paint eventos, el alto y el ancho de la región pintada. |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
@@ -166,6 +165,6 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[FlavioCopes]: https://developers.google.com/web/resources/contributors/flaviocopes  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[FlavioCopes]: https://developers.google.com/web/resources/contributors#flavio-copes  

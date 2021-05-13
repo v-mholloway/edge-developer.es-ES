@@ -3,16 +3,16 @@ description: Una referencia sobre todas las formas de registrar y analizar el re
 title: Referencia de análisis de rendimiento
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e7774dc0aab647b8cf2bf47699368fafe6c21d70
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 5cd7c4aee6eb5f0c48f783e250efa1ef69010fc4
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439692"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564353"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11439692"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="performance-analysis-reference"></a>Referencia de análisis de rendimiento  
 
-Esta página es una referencia completa de las características de Microsoft Edge DevTools relacionadas con el análisis del rendimiento.  
+Esta página es una referencia completa de Microsoft Edge características de DevTools relacionadas con el análisis del rendimiento.  
 
-Vaya a [Introducción al análisis del rendimiento][DevtoolsEvaluatePerformanceGettingStarted] en tiempo de ejecución para obtener un tutorial guiado sobre cómo analizar el rendimiento de una página mediante Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
+Vaya a [Introducción Con el][DevtoolsEvaluatePerformanceGettingStarted] análisis del rendimiento en tiempo de ejecución para obtener un tutorial guiado sobre cómo analizar el rendimiento de una página mediante Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
 
 ## <a name="record-performance"></a>Rendimiento del registro  
 
@@ -91,8 +90,8 @@ Mientras graba una página, elija **Recopilar elementos no** utilizados \( Recop
 
 Elija **Configuración de captura** \( Configuración de captura \) para exponer más opciones relacionadas con la forma en que ![ ](../media/capture-settings-icon.msft.png) DevTools captura las grabaciones de rendimiento.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Sección Configuración de captura" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
-   Sección **Configuración de** captura  
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Sección Capturar Configuración captura" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+   Sección **Capturar Configuración** captura  
 :::image-end:::  
 
 ### <a name="disable-javascript-samples"></a>Deshabilitar ejemplos de JavaScript  
@@ -498,10 +497,10 @@ Para mover el diagrama:
 Para ver información avanzada sobre un evento de pintura:  
 
 1.  [Activar](#turn-on-advanced-paint-instrumentation).  
-1.  Elija un **evento Paint** en la **sección** Main.  
+1.  Elija un **Paint** evento en la **sección** Principal.  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Panel De perfiles de pintura" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
-       Panel **De perfiles de pintura**  
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Panel Paint profiler" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+       Panel **Paint profiler**  
     :::image-end:::  
     
 ## <a name="analyze-rendering-performance-with-the-rendering-tool"></a>Analizar el rendimiento de representación con la herramienta de representación  
@@ -532,13 +531,13 @@ El **medidor FPS** es una superposición que aparece en la esquina superior dere
 
 Use Paint Flashing para obtener una vista en tiempo real de todos los eventos de pintura de la página.  Cada vez que se vuelve a pintar una parte de la página, DevTools describe esa sección en verde.  
 
-Para activar Paint Flashing, complete las siguientes acciones.  
+Para activar el Paint intermitente, complete las siguientes acciones.  
 
 1.  Abra la **herramienta De representación.**  Vaya a [Analizar el rendimiento de representación con la herramienta de representación](#analyze-rendering-performance-with-the-rendering-tool).  
-1.  Activa la casilla **Destello de pintura.**  
+1.  Active la casilla **Paint parpadear.**  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Paint Flashing" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
-       **Paint Flashing**  
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Paint Parpadeo" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
+       **Paint Parpadeo**  
     :::image-end:::  
     
 ### <a name="view-an-overlay-of-layers-with-layer-borders"></a>Ver una superposición de capas con bordes de capa  
@@ -576,8 +575,8 @@ Para ver problemas de rendimiento de desplazamiento, complete las siguientes acc
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
-[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Abra el menú Comando: ejecute comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Herramientas para desarrolladores | Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Abra el menú Comando: ejecute comandos con el Microsoft Edge menú de comandos DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Introducción al análisis del rendimiento en tiempo de ejecución | Microsoft Docs"  
 
 [ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Demostración de pestañas de actividad | glitch"  
@@ -594,4 +593,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

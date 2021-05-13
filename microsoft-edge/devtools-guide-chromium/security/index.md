@@ -3,16 +3,16 @@ description: Use el Panel de seguridad para asegurarse de que una página está 
 title: Comprender los problemas de seguridad con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 71138ad33afb9eb56055fa522eb35edb71974c89
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2e6aab865319e6ed7d108cddb77432f293153995
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397779"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565039"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,7 @@ ms.locfileid: "11397779"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="understand-security-issues-with-microsoft-edge-devtools"></a>Comprender los problemas de seguridad con Microsoft Edge DevTools  
-
-  
 
 <!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  Navigate to **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->  
 
@@ -61,7 +58,7 @@ Este problema se produce cuando la dirección URL que visitó se solicitó a tra
 
 Si ya ha configurado HTTPS en el servidor, lo único que debe hacer para solucionar este problema es configurar el servidor para redirigir todas las solicitudes HTTP a HTTPS.  
 
-Si no ha configurado HTTPS en el servidor, [Let's Encrypt][LetsEncrypt] proporciona una forma gratuita y relativamente fácil de iniciar el proceso.  O bien, puede considerar hospedar su sitio en una red CDN.  La mayoría de los principales sitios de host de CDN en HTTPS ahora son de forma predeterminada.  
+Si no ha configurado HTTPS en el servidor, [Let's Encrypt][LetsEncrypt] proporciona una forma gratuita y relativamente fácil de iniciar el proceso.  O bien, puede considerar hospedar el sitio en un CDN.  La mayoría de los principales sitios de host de CDN en HTTPS ahora son de forma predeterminada.  
 
 > [!TIP]
 > La [sugerencia Usar HTTPS][WebhintUseHttps] en [webhint][Webhint] puede ayudar a automatizar el proceso de asegurarse de que todas las solicitudes HTTP se dirigen a HTTPS.  
@@ -104,7 +101,7 @@ Elija una de las entradas de la navegación a la izquierda para ver los detalles
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Herramientas para desarrolladores de Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Herramientas para desarrolladores | Microsoft Docs"  
 [DevToolsOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 
 [LetsEncrypt]: https://letsencrypt.org "Vamos a cifrar: certificados SSL/TLS gratuitos"  
@@ -124,4 +121,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

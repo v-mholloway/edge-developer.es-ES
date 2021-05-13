@@ -3,16 +3,16 @@ description: Descubra nuevos flujos de trabajo para ver y cambiar CSS en Microso
 title: Referencia de CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bddbf14e73f5c29bfd4757c9cd6d255f419c331f
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 0680b08c9809698c1db6c186a7be76a93c31df4b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519334"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564479"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11519334"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="css-reference"></a>Referencia de CSS  
 
-Descubra nuevos flujos de trabajo en la siguiente referencia completa de las características de Microsoft Edge DevTools relacionadas con la visualización y el cambio de CSS.  
+Descubra nuevos flujos de trabajo en la siguiente referencia completa de Microsoft Edge características de DevTools relacionadas con la visualización y el cambio de CSS.  
 
-Para obtener información básica, vaya a [Introducción a Ver y cambiar CSS][DevToolsCSSGetStarted].  
+Para obtener información básica, vaya a [Introducción con Ver y cambiar CSS][DevToolsCSSGetStarted].  
 
 ## <a name="choose-an-element"></a>Elegir un elemento  
 
@@ -552,11 +551,11 @@ Al abrir el **Selector de colores**, el **cuentagotas** \( Cuentagotas ![ ](../m
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
-[DevToolsCSSGetStarted]: ../css/index.md "Introducción a la visualización y cambio de css | Microsoft Docs"  
-[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Agregar un pseudoestado a una clase: introducción a ver y cambiar css | Microsoft Docs"  
-[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Ver el CSS de un elemento: introducción a la visualización y cambio de css | Microsoft Docs"  
-[DevToolsCssPrintPreview]: ../css/print-preview.md "Forzar las DevTools de Microsoft Edge al modo de vista previa de impresión (tipo de medios de impresión CSS) | Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ejecutar comandos con el Microsoft Edge de comandos DevTools | Microsoft Docs"  
+[DevToolsCSSGetStarted]: ../css/index.md "Introducción Con vista y cambio de CSS | Microsoft Docs"  
+[DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Agregar un pseudoestado a una clase: Introducción Con ver y cambiar css | Microsoft Docs"  
+[DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "Ver el CSS de un elemento: Introducción ver y cambiar css | Microsoft Docs"  
+[DevToolsCssPrintPreview]: ../css/print-preview.md "Forzar Microsoft Edge DevTools al modo de vista previa de impresión (tipo de medios de impresión CSS) | Microsoft Docs"  
 [DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Volver a formatear un archivo JavaScript minificado con pretty-print: use el depurador | Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "El sistema de colores: diseño de material"  
@@ -573,4 +572,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

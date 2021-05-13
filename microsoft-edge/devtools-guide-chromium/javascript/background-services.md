@@ -3,16 +3,16 @@ description: Cómo depurar la captura en segundo plano, la sincronización en se
 title: Depurar servicios en segundo plano con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 4f5f52bcde976cea8432e3160a792438e5603e21
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439531"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564199"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439531"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="debug-background-services-with-microsoft-edge-devtools"></a>Depurar servicios en segundo plano con Microsoft Edge DevTools  
 
 La sección **Servicios** en segundo plano de Microsoft Edge DevTools es una colección de herramientas para las API de JavaScript que permite al sitio web enviar y recibir actualizaciones incluso cuando un usuario no tiene el sitio web abierto.  
@@ -175,4 +174,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

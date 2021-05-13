@@ -3,16 +3,16 @@ description: Obtenga información sobre cómo usar Microsoft Edge DevTools para 
 title: Optimizar la velocidad del sitio web con Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e3ddadcf37303a476f3a656696b00f121f079b69
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 304cf9e36260b8637af38ed0dfe1ba91f3a56504
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519614"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564885"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11519614"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="optimize-website-speed-with-microsoft-edge-devtools"></a>Optimizar la velocidad del sitio web con Microsoft Edge DevTools  
 
 ## <a name="goal-of-tutorial"></a>Objetivo del tutorial  
@@ -71,7 +70,7 @@ En primer lugar, debe configurar el sitio para poder realizar cambios en él má
        Menú que aparece después de elegir **Tony**  
     :::image-end:::  
     
-1.  Elija **Remix Project**.  El nombre del proyecto cambia de **tony** a algún nombre generado aleatoriamente.  Ahora tiene su propia copia editable del código.  Más adelante, puede realizar cambios en este código.  
+1.  Elija **Remezcla Project**.  El nombre del proyecto cambia de **tony** a algún nombre generado aleatoriamente.  Ahora tiene su propia copia editable del código.  Más adelante, puede realizar cambios en este código.  
 1.  Elija **Mostrar** y **elija En una nueva ventana**.  La demostración se abre en una pestaña nueva.  Esta pestaña se conoce como pestaña **de demostración**.  El sitio puede tardar un tiempo en cargarse.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Pestaña de demostración" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
@@ -110,7 +109,7 @@ La línea base es un registro de cómo se realizó el sitio antes de realizar cu
     *   **Dispositivo**.  Establecer en **Móvil cambia** la cadena del agente de usuario y simula una ventanilla móvil.  Si se **establece en Escritorio,** se desactivan los **cambios de** Móvil.  
     *   **Auditorías**.  Desactive una categoría para impedir que el panel Auditorías ejecute **dichas** auditorías y las excluye del informe.  Deje las otras categorías Activadas, si desea mostrar los tipos de recomendaciones que se proporcionan.  Desactiva las categorías para acelerar ligeramente el proceso de auditoría.  
     *   **Limitación**.  Establecida en **Simulated Slow 4G, 4x CPU Slowdown** simula las condiciones típicas de navegación en un dispositivo móvil.  Se denomina "simulado" porque el panel Auditorías no limita realmente durante el proceso de auditoría.  En su lugar, solo extrapola el tiempo que tarda la página en cargarse en condiciones móviles.  Por **otro lado,** la configuración Aplicado... limita realmente la CPU y la red, con la negociación de un proceso de auditoría más largo.  
-    *   **Borrar almacenamiento**.  Active la casilla para borrar todo el almacenamiento asociado a la página antes de cada auditoría.  Deje esta configuración en si desea auditar la experiencia de los visitantes por primera vez en su sitio.  Desactiva esta configuración cuando quieras la experiencia de repetición de visita.  
+    *   **Desactive Storage**.  Active la casilla para borrar todo el almacenamiento asociado a la página antes de cada auditoría.  Deje esta configuración en si desea auditar la experiencia de los visitantes por primera vez en su sitio.  Desactiva esta configuración cuando quieras la experiencia de repetición de visita.  
     
 1.  Elija **Ejecutar auditorías**.  Después de 10 a 30 segundos, el panel **Auditorías** muestra un informe del rendimiento del sitio.  
     
@@ -120,7 +119,7 @@ La línea base es un registro de cómo se realizó el sitio antes de realizar cu
     
 #### <a name="handling-report-errors"></a>Controlar errores de informe  
 
-Si alguna vez recibe un error en el informe del panel Auditorías, intente ejecutar la pestaña de demostración desde una ventana **de InPrivate** sin otras pestañas abiertas.  Esto garantiza que está ejecutando Microsoft Edge desde un estado limpio.  Las extensiones de Microsoft Edge, en particular, suelen interferir con el proceso de auditoría.  
+Si alguna vez recibe un error en el informe del panel Auditorías, intente ejecutar la pestaña de demostración desde una ventana **de InPrivate** sin otras pestañas abiertas.  Esto garantiza que se está ejecutando Microsoft Edge desde un estado limpio.  Microsoft Edge Las extensiones, en particular, suelen interferir con el proceso de auditoría.  
 
 <!--todo: add screen capture for error in audit -->  
 <!--
@@ -137,7 +136,7 @@ El número en la parte superior del informe es la puntuación de rendimiento gen
    Puntuación general de rendimiento  
 :::image-end:::  
 
-La **sección Métricas** proporciona medidas cuantitativas del rendimiento del sitio.  Cada métrica proporciona información sobre un aspecto diferente del rendimiento.  Por ejemplo, **First Contentful Paint** indica cuándo se pinta el contenido por primera vez en la pantalla, lo que es un hito importante en la percepción del usuario de la carga de la página, mientras que **Time To Interactive** marca el punto en el que la página parece lo suficientemente lista para controlar las interacciones del usuario.  
+La **sección Métricas** proporciona medidas cuantitativas del rendimiento del sitio.  Cada métrica proporciona información sobre un aspecto diferente del rendimiento.  Por ejemplo, **First Contentful Paint** indica cuándo el contenido se pinta por primera vez en la pantalla, lo que es un hito importante en la percepción del usuario de la carga de la página, mientras que **Time To Interactive** marca el punto en el que la página parece lo suficientemente lista para controlar las interacciones del usuario.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="Sección Métricas" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
    Sección **Métricas**  
@@ -324,7 +323,7 @@ Para una aplicación pequeña, hacer un cambio de tamaño único como este puede
     
 <!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->  
 
-*   Usa una red CDN de imagen que te permite cambiar el tamaño dinámicamente de una imagen cuando la solicites.  
+*   Usa una imagen CDN que te permita cambiar el tamaño dinámicamente de una imagen cuando la solicites.  
 *   Como mínimo, optimice cada imagen.  Esto puede crear grandes ahorros.  
   La optimización es cuando se ejecuta una imagen a través de un programa especial que reduce el tamaño del archivo de imagen.  Para obtener más sugerencias, vaya a [Optimización de imagen esencial.][EssentialImageOptimization]  
     
@@ -426,7 +425,7 @@ El subproceso principal es donde el explorador realiza la mayor parte del trabaj
 El objetivo es usar el panel Rendimiento para analizar el trabajo que está realizando el subproceso principal mientras se carga la página y encontrar formas de aplazar o quitar el trabajo innecesario.  
 
 1.  Elija la **herramienta** Rendimiento.  
-1.  Elija **Configuración de captura** \( Configuración de captura ![ ](../media/capture-icon.msft.png) \).  
+1.  Elija **Capturar Configuración** \( Capturar Configuración ![ ](../media/capture-icon.msft.png) \).  
 1.  Establezca **Network** en **Slow 3G** y **CPU** en **6x slowdown**.  Los dispositivos móviles suelen tener más restricciones de hardware que portátiles o escritorios, por lo que esta configuración te permite experimentar la carga de la página como si estuvieras usando un dispositivo menos eficaz.  
 1.  Elija **Actualizar** \( ![ Actualizar ](../media/reload-icon.msft.png) \).  DevTools actualiza la página y, a continuación, genera una visualización de todo el trabajo realizado para cargar la página.  Esta visualización se conoce como **seguimiento**.  
     
@@ -546,4 +545,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

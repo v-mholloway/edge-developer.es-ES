@@ -3,16 +3,16 @@ description: Abra la consola, cree una expresión en directo y establezca la exp
 title: Rastrear qué elemento tiene el foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2c2040c690441fb33c802cf454dc7a1e3f33c494
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: e7d7bc9ebf8dd891bf7531d8dd283801a01fc3c1
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439173"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564598"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439173"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="track-which-element-has-focus"></a>Rastrear qué elemento tiene el foco  
 
 Supongamos que está probando la accesibilidad de navegación del teclado de una página.  Al navegar por la página con la clave, el anillo de enfoque a veces desaparece porque `Tab` el elemento que tiene el foco está oculto.  
@@ -41,7 +40,7 @@ Complete las siguientes acciones para realizar un seguimiento del elemento centr
        Crear una expresión en directo  
     :::image-end:::  
     
-1.  Escribe `document.activeElement`.  
+1.  Escriba `document.activeElement`.  
 1.  Elige fuera de la **interfaz de usuario de Expresión** en directo para guardar.  
     
 El valor que se muestra `document.activeElement` a continuación es el resultado de la expresión.  
@@ -68,4 +67,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

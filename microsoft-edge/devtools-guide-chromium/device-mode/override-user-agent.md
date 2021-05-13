@@ -1,18 +1,18 @@
 ---
 description: Abra la herramienta Condiciones de red, deshabilite Seleccionar automáticamente y elija en la lista o escriba una cadena personalizada.
-title: Invalidar la cadena de agente de usuario de Microsoft Edge DevTools
+title: Invalidar la cadena de agente de usuario Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a0ba10b551b4853cf204656ca7a9fb014323986b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 50d831847342c749cd36f203998351d53325a6f8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398696"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564297"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11398696"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>Invalidar la cadena de agente de usuario Microsoft Edge DevTools  
 
-# <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>Invalidar la cadena de agente de usuario de Microsoft Edge DevTools  
+Para invalidar la [cadena de agente][MDNUserAgent] de usuario Microsoft Edge DevTools:  
 
-Para invalidar la [cadena de agente][MDNUserAgent] de usuario de Microsoft Edge DevTools:  
-
-1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el **menú de comandos**.  
+1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú de comandos .  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menú comando" lightbox="../media/device-mode-console-command-menu.msft.png":::
        Menú **comando**  
@@ -65,4 +64,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

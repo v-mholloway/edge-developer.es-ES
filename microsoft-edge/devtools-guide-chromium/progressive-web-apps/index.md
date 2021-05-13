@@ -3,16 +3,16 @@ description: Use el panel Aplicación para inspeccionar, modificar y depurar man
 title: Depurar aplicaciones web progresivas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: aea01d25474a030e78ac0eaeaef3954ab7f4539f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3a0732327aac210e399c438b8d9c34c75a7c2910
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398542"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564731"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398542"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="debug-progressive-web-apps"></a>Depurar aplicaciones web progresivas  
 
 Use el panel **Aplicación** para inspeccionar, modificar y depurar manifiestos de aplicaciones web, trabajadores de servicio y cachés de trabajadores de servicio.  
@@ -46,7 +45,7 @@ Esta guía solo analiza las características de La aplicación web progresiva **
 
 *   Usa el **panel Manifiesto** para inspeccionar el manifiesto de la aplicación web y desencadenar los eventos Agregar a pantalla principal.  
 *   Use el panel **Trabajadores** de servicio para toda una gama de tareas relacionadas con el trabajo de servicio, como anular el registro o actualizar un servicio, emular eventos de inserción, desconectarse o detener a un trabajador de servicio.  
-*   Vea la memoria caché del trabajador de servicio desde el **panel Almacenamiento de caché.**  
+*   Vea la memoria caché del trabajador de servicio desde el **panel Storage** caché.  
 *   Anula el registro de un trabajador de servicio y borra todo el almacenamiento y las memorias caché con un solo botón elige en el **panel Borrar** almacenamiento.  
     
 ## <a name="web-app-manifest"></a>Manifiesto de aplicación web  
@@ -96,7 +95,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## <a name="service-workers"></a>Trabajadores de servicios  
+## <a name="service-workers"></a>Trabajadores de servicio  
 
 Los trabajadores de servicio son una tecnología fundamental en la futura plataforma web.  Son scripts que el explorador ejecuta en segundo plano, separados de una página web.  Los scripts permiten tener acceso a características que sin necesidad de una página web o interacción del usuario, como notificaciones de inserción, sincronización en segundo plano y experiencias sin conexión.  
 
@@ -138,24 +137,24 @@ Si el trabajador del servicio provoca algún error, aparece una nueva etiqueta d
 
 ## <a name="service-worker-caches"></a>Cachés de trabajadores de servicio  
 
-El **panel Almacenamiento de** caché proporciona una lista de solo lectura de los recursos que se han almacenado en caché mediante la [API][MDNWebCacheAPI]de caché \(service worker\) .  
+El **panel Storage** caché proporciona una lista de solo lectura de los recursos que se han almacenado en caché mediante la [API][MDNWebCacheAPI]de caché \(service worker\).  
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="Panel de almacenamiento en caché" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
-   Panel **de almacenamiento en caché**  
+:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="Panel de Storage caché" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+   Panel **de Storage** caché  
 :::image-end:::  
 
 > [!NOTE]
 > La primera vez que abra una memoria caché y le agregue un recurso, Es posible que DevTools no detecte el cambio.  Actualice la página y muestre la memoria caché.  
 
-Si tiene dos o más cachés abiertas, las cachés se muestran en el siguiente desplegable **Almacenamiento de caché.**  
+Si tiene dos o más cachés abiertas, las cachés se muestran en la siguiente lista **desplegable Storage** caché.  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="Desplegable Almacenamiento en caché" lightbox="../media/cache-pane-cache-storage.msft.png":::
-   Desplegable **Almacenamiento en caché**  
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="La lista desplegable Storage caché" lightbox="../media/cache-pane-cache-storage.msft.png":::
+   La **lista desplegable Storage** caché  
 :::image-end:::  
 
 ## <a name="quota-usage"></a>Uso de cuota  
 
-Algunas respuestas dentro del panel **Almacenamiento de** caché pueden estar marcadas como "opacas".  Esto hace referencia a una respuesta recuperada de un origen diferente, como de una **RED CDN** o API remota, cuando [CORS][FetchHttpCorsProtocol] no está habilitado.  
+Algunas respuestas dentro del **panel de Storage** caché se pueden marcar como "opacas".  Esto hace referencia a una respuesta recuperada **** de un origen diferente, como de una API CDN o remota, cuando [CORS][FetchHttpCorsProtocol] no está habilitado.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
@@ -164,7 +163,7 @@ Para evitar la pérdida de información entre dominios, se agrega un relleno sig
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-Los detalles de este relleno varían de un explorador a **** otro, pero para Microsoft Edge, esto significa que el tamaño mínimo que cualquier respuesta opaca almacenada en caché contribuye al uso general de almacenamiento es de aproximadamente [7 megabytes][ChromiumIssues796060#c17].  Recuerde el relleno al determinar cuántas respuestas opacas desea almacenar en caché, ya que puede superar fácilmente las limitaciones de cuota de almacenamiento mucho antes de lo que espera en función del tamaño real de los recursos opacos.  
+Los detalles de este relleno varían de un explorador a otro, pero para Microsoft Edge, esto significa que el tamaño mínimo que cualquier respuesta opaca almacenada en caché contribuye al uso general del almacenamiento es de aproximadamente [7 megabytes][ChromiumIssues796060#c17]. ****  Recuerde el relleno al determinar cuántas respuestas opacas desea almacenar en caché, ya que puede superar fácilmente las limitaciones de cuota de almacenamiento mucho antes de lo que espera en función del tamaño real de los recursos opacos.  
 
 Guías relacionadas:  
 
@@ -175,7 +174,7 @@ Guías relacionadas:
 
 ## <a name="clear-storage"></a>Borrar almacenamiento  
 
-El **panel Borrar almacenamiento** es una característica muy útil al desarrollar aplicaciones web progresivas.  Este panel permite anular el registro de los trabajadores del servicio y borrar todas las cachés y el almacenamiento con un solo botón.  <!--Check out the section below to learn more.  -->
+El **panel Storage** borrar es una característica muy útil al desarrollar aplicaciones web progresivas.  Este panel permite anular el registro de los trabajadores del servicio y borrar todas las cachés y el almacenamiento con un solo botón.  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:  
 
@@ -200,7 +199,7 @@ Related Guides:
 
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: El valor de almacenamiento en caché aumenta en cada actualización cuando el código de Analytics está en el html"  
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Problema 796060: El valor Storage caché aumenta en cada actualización cuando el código de Analytics está en el html"  
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
 
@@ -225,4 +224,4 @@ Este trabajo dispone de licencia conforme a [Licencia internacional de Creative 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
