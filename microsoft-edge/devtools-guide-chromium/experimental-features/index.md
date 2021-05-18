@@ -118,7 +118,8 @@ ms.locfileid: "11564241"
 1.  <span data-ttu-id="25f95-166">En la **Source Order Viewer** sección, seleccione la casilla **Mostrar orden de origen.**</span><span class="sxs-lookup"><span data-stu-id="25f95-166">Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.</span></span>  
 1.  <span data-ttu-id="25f95-167">Resalte cualquier elemento HTML para mostrar una superposición que el orden en el origen de la página web.</span><span class="sxs-lookup"><span data-stu-id="25f95-167">Highlight any HTML element to display an overlay that the order in the webpage source.</span></span>  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::<span data-ttu-id="25f95-168">no-loc(Source Order Viewer)::: en el panel Accesibilidad" lightbox=".. /media/experiments-source-order-viewer.msft.png":: **Source Order Viewer** en el panel **Accesibilidad**</span><span class="sxs-lookup"><span data-stu-id="25f95-168">no-loc(Source Order Viewer)::: in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** in the **Accessibility** pane</span></span>  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
