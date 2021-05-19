@@ -3,17 +3,17 @@ description: Guía de introducción a WebView2 para aplicaciones WPF
 title: Introducción a WebView2 para aplicaciones WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, aplicaciones wpf, wpf, edge, CoreWebView2, control de explorador, html perimetral, introducción, introducción, .NET
-ms.openlocfilehash: e7ddb3977d34e8150a10354e638226bcf96d610d
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+keywords: WebView2, webview2, WebView, webview, aplicaciones wpf, wpf, edge, CoreWebView2, control de explorador, html perimetral, introducción, Introducción, .NET
+ms.openlocfilehash: 9808c6f801e3f7a5052186bb3088621758c41762
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536214"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574599"
 ---
 # <a name="get-started-with-webview2-in-wpf"></a>Introducción a WebView2 en WPF
 
@@ -23,7 +23,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.  
 
-*   [WebView2 Runtime][Webview2Installer] o cualquier canal no estable de [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] o cualquier canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] no estable instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 o posterior.  
     
 ## <a name="step-1---create-a-single-window-app"></a>Paso 1: Crear una aplicación de una sola ventana  
@@ -43,7 +43,7 @@ Comience con un proyecto de escritorio básico que contenga una sola ventana pri
        :::column-end:::
     :::row-end:::
     
-1.  Escriba valores para **Nombre del proyecto y** **Ubicación**.  Elija **.NET Framework 4.6.2** o posterior **\(o .NET Core 3.0** o posterior\).  
+1.  Escriba valores para **Project nombre y** **Ubicación**.  Elija **.NET Framework 4.6.2** o posterior **\(o .NET Core 3.0** o posterior\).  
     
     :::row:::
        :::column span="1":::
@@ -62,7 +62,7 @@ Comience con un proyecto de escritorio básico que contenga una sola ventana pri
 
 Use NuGet para agregar el SDK de WebView2 al proyecto.  
 
-1.  Mantenga el mouse sobre el proyecto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Administrar paquetes NuGet...**.  
+1.  Mantenga el mouse en el proyecto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Administrar NuGet paquetes...**.  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Administrar paquetes NuGet" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        Administrar paquetes NuGet
@@ -336,7 +336,7 @@ Enhorabuena, has creado tu primera aplicación WebView2.
 Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.  
 
 *   Para obtener más información sobre cómo crear aplicaciones webView2, vaya a Procedimientos recomendados de desarrollo [de WebView2][WV2BestPractices].  
-*   Para obtener un ejemplo completo de las capacidades de WebView2, vaya al repositorio [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] en GitHub.  
+*   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] en GitHub.  
 *   Para obtener información más detallada acerca de la API de WebView2, vaya a [Referencia de API](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2](../index.md#next-steps).  
     
@@ -356,7 +356,7 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
 
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Desarrollador de Microsoft Edge"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 | Microsoft Edge Programador"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider Channels"  
 

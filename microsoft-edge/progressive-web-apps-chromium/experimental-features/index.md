@@ -3,22 +3,22 @@ description: Las últimas características experimentales de Microsoft Edge para
 title: Características experimentales | Aplicaciones web progresivas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/19/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 641b6fd5185e7f96289c1de6482764979ee0981d
-ms.sourcegitcommit: 9cc54ba3e731ecc8b713c3cf215018848f7405b9
+ms.openlocfilehash: 4a50b925e002746357b2b770b199d84772b456f5
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "11496757"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574592"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Características experimentales en aplicaciones web progresivas (PWA)  
 
 Microsoft Edge proporciona acceso a características experimentales que aún están en desarrollo.  Para determinar si cada característica está lista y cuándo liberar cada una, pruebe y [proporcione comentarios](#providing-feedback-on-experimental-features).  
 
-Las características experimentales están disponibles en todos los canales de Microsoft Edge, pero las últimas características experimentales solo están disponibles en el canal de Microsoft Edge Canary.  
+Las características experimentales están disponibles en todos los canales de Microsoft Edge, pero las características experimentales más recientes solo están disponibles en el canal Microsoft Edge Canary.  
 
 ## <a name="turn-on-experimental-features"></a>Activar características experimentales  
 
@@ -27,9 +27,9 @@ Para activar las características experimentales \(or off\) en Microsoft Edge, s
 1.  Abra Microsoft Edge.   
     
     > [!NOTE]
-    > Asegúrese de usar una versión de Microsoft Edge que tenga el experimento enumerado en este artículo.  Vaya a [Características experimentales](#features-that-are-available-to-test).  
+    > Asegúrese de usar una Microsoft Edge que tenga el experimento enumerado en este artículo.  Vaya a [Características experimentales](#features-that-are-available-to-test).  
     
-1.  Vaya a `edge://flags` .  
+1.  Vaya a `edge://flags`.  
 1.  Vaya al experimento correspondiente.  
 1.  Elija el menú desplegable junto a la descripción del experimento y elija `Enabled` .  
     
@@ -44,13 +44,13 @@ Para activar las características experimentales \(or off\) en Microsoft Edge, s
     > *   `Disabled`  
     > *   `Enabled`  
     
-1.  Reiniciar MicrosoftEdge.  
+1.  Reiniciar Microsoft Edge.  
     
 ### <a name="origin-trials"></a>Pruebas de origen  
 
-Microsoft Edge a veces usa pruebas de origen para probar características para dominios o sitios web específicos.  Es posible que desee usar una versión de prueba de origen para su sitio web para aplicar una característica específica.  Si es propietario de un sitio web, puede inscribirse en una prueba de origen.  Una versión de prueba de origen proporciona características a un porcentaje de usuarios de Microsoft Edge que visitan su sitio web.
+Microsoft Edge a veces usa pruebas de origen para probar características para dominios o sitios web específicos.  Es posible que desee usar una versión de prueba de origen para su sitio web para aplicar una característica específica.  Si es propietario de un sitio web, puede inscribirse en una prueba de origen.  Una versión de prueba de origen proporciona características a un porcentaje Microsoft Edge usuarios que visitan su sitio web.
 
-Para obtener más información acerca de las pruebas de Origen, vaya a [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].  
+Para obtener más información acerca de las pruebas de Origin, [vaya a Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].  
     
 > [!NOTE]
 > Las características experimentales se actualizan constantemente y pueden causar problemas de rendimiento.  Para desactivar una característica experimental, vaya a [Activar características experimentales,](#turn-on-experimental-features)vaya al experimento y, a continuación, elija `Disabled` .  
@@ -59,7 +59,7 @@ Para obtener más información acerca de las pruebas de Origen, vaya a [Microsof
 
 En la siguiente lista se describen las nuevas características experimentales de la aplicación web que están disponibles para probar y validar en Microsoft Edge.  
 
-| Característica | Versión de Microsoft Edge | Plataforma |  
+| Característica | Microsoft Edge versión | Plataforma |  
 |:--- |:--- |:--- |  
 | [Administración del protocolo URI](#uri-protocol-handling) | 91 o posterior | Windows y Linux |    
 | [Administración de vínculos URL](#url-link-handling) | 91 o posterior | Windows|
@@ -67,7 +67,6 @@ En la siguiente lista se describen las nuevas características experimentales de
 | [Ejecutar en inicio de sesión del sistema operativo](#run-on-os-login) | 88 o posterior | Todos |  
 | [Accesos directos](#shortcuts) | 87 o posterior | Todos |  
 | [Administración de archivos](#file-handling) | 83 o posterior | Todo el escritorio |  
-
 
 ## <a name="uri-protocol-handling"></a>Administración del protocolo URI  
 
@@ -77,10 +76,10 @@ Para obtener más información acerca de la compatibilidad basada en explorador 
 
 Esta característica le permite completar las siguientes acciones.  
 
-*   Registrar tu PWA con el sistema operativo host mediante el manifiesto de la aplicación web
+*   Registrar el PWA con el sistema operativo host mediante el manifiesto de la aplicación web
 *   Declarar que una PWA controla un protocolo URI específico  
-     
-Después de registrar un PWA como controlador de protocolo, cuando un usuario elige un hipervínculo con un esquema específico, como un explorador o una aplicación nativa, el sistema operativo activa la PWA registrada y recibe el `mailto://` `web+music://` URI.  
+    
+Después de registrar un PWA como controlador de protocolo, cuando un usuario elige un hipervínculo con un esquema específico, como un explorador o una aplicación nativa, el sistema operativo activa el PWA registrado y recibe el `mailto://` `web+music://` URI.  
 
 Esta característica requiere que actualices el manifiesto de la aplicación web para incluir una matriz, en la `protocol_handlers` matriz debes especificar dos campos:  
 
@@ -94,7 +93,7 @@ Actualice el manifiesto para admitir el protocolo que desea registrar.  Después
     
 Si más de una aplicación registra un protocolo, se muestra al usuario un mensaje.  El usuario elige la aplicación adecuada de la lista presentada por el sistema operativo o el explorador.  
 
-Para obtener una vista previa del control de protocolos en Microsoft Edge en Windows, vaya a Activar características [experimentales](#turn-on-experimental-features) y active El control del **protocolo PWA de escritorio.**  
+Para obtener una vista previa del Microsoft Edge en Windows, vaya a Activar características [experimentales](#turn-on-experimental-features) y active Control de protocolo **de PWA escritorio.**  
 
 Para obtener más información acerca de la versión de prueba de origen que se está ejecutando para los controladores de protocolo, vaya a Registrar para el registro del controlador de [protocolo de aplicación web.][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]  
 
@@ -132,13 +131,13 @@ En este ejemplo, un manifiesto de aplicación web declara que la aplicación deb
  
 ## <a name="url-link-handling"></a>Administración de vínculos URL  
 
-Un localizador uniforme de recursos \(URL\) es un tipo de URI.  Crea una experiencia más atractiva cuando las aplicaciones web progresivas \(PWAs\) se registren como controladores para URI https.  Las PWA pueden solicitar que se inicien cuando se activen los URI asociados.  Por ejemplo, si un usuario elige un vínculo a un artículo de noticias de un mensaje de correo electrónico.  Se inicia automáticamente un PWA asociado para mostrar artículos de noticias para controlar la activación del vínculo.  
+Un localizador uniforme de recursos \(URL\) es un tipo de URI.  Crea una experiencia más atractiva cuando las aplicaciones web progresivas \(PWAs\) se registren como controladores para URI https.  Las PWA pueden solicitar que se inicien cuando se activen los URI asociados.  Por ejemplo, si un usuario elige un vínculo a un artículo de noticias de un mensaje de correo electrónico.  Se inicia automáticamente PWA asociado para mostrar artículos de noticias para controlar la activación del vínculo.  
 
-Esta característica te permite registrar un PWA con el explorador mediante el manifiesto de la aplicación web y declarar que el explorador controla vínculos específicos.  Para registrar un PWA con el explorador, agregue el miembro `url_handlers` opcional al archivo de manifiesto.  El `url_handlers` miembro es un que agrupa los orígenes de los URI que la aplicación desea `object[]` controlar.  
+Esta característica te permite registrar una PWA con el explorador mediante el manifiesto de la aplicación web y declarar que el explorador controla vínculos específicos.  Para registrar una PWA con el explorador, agregue el miembro `url_handlers` opcional al archivo de manifiesto.  El `url_handlers` miembro es un que agrupa los orígenes de los URI que la aplicación desea `object[]` controlar.  
 
 El explorador valida el control de vínculos mediante un `web-app-origin-association` archivo JSON que se encuentra en el origen.  El archivo de origen afina aún más las rutas de acceso incluidas o excluidas en el origen.  Para obtener instrucciones detalladas sobre cómo probar el controlador de direcciones URL, vaya a [PWA como controladores de dirección URL][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
 
-Para obtener una vista previa del control de vínculos url en Microsoft Edge en Windows, vaya a Activar características [experimentales](#turn-on-experimental-features) y active Control de **direcciones URL de PWA de escritorio.**  
+Para obtener una vista previa del control de vínculos url en Microsoft Edge en Windows, vaya a Activar características [experimentales](#turn-on-experimental-features) y active Control de direcciones **URL PWA escritorio.**  
 
 ### <a name="example-of-the-url_handlers-in-the-manifest"></a>Ejemplo de la url_handlers en el manifiesto  
 
@@ -172,7 +171,7 @@ El siguiente fragmento de código es un manifiesto de aplicación web de ejemplo
 
 Un PWA coincide con un URI para el control de direcciones URL si el URI coincide con una de las cadenas de origen y el explorador valida que el origen acepta permitir que esta aplicación controle `url_handlers` dicho URI.  
 
-El miembro contiene un origen que abarca el ámbito y otros orígenes no relacionados `url_handlers` de la PWA solicitante.  No restringir los URI al mismo ámbito o dominio que el PWA solicitante permite usar nombres de dominio diferentes para el mismo contenido, pero controlarlos con el mismo PWA.  
+El miembro contiene un origen que abarca el ámbito y otros orígenes no relacionados de la `url_handlers` PWA.  No restringir los URI al mismo ámbito o dominio que el PWA de solicitud permite usar nombres de dominio diferentes para el mismo contenido, pero controlarlos con el mismo PWA.  
 
 #### <a name="wildcard-matching"></a>Coincidencia de caracteres comodín  
 
@@ -191,42 +190,42 @@ Para crear una barra de título envolvente como una aplicación **** nativa para
     
 Después de proporcionar una superposición, todo el área de cliente web está disponible para su uso.  Esta característica incluye una actualización de manifiesto.  Proporciona formas de determinar el tamaño y la posición de la superposición para ayudarle a organizar el contenido.  
 
-Para obtener una vista previa de las superposiciones de controles de ventana en Microsoft Edge para Windows 10, vaya a Activar características [experimentales](#turn-on-experimental-features) y vaya a Escritorio **PWA Window Controls Overlay**.   
+Para obtener una vista previa de las superposiciones de controles de ventana en Microsoft Edge para Windows 10, vaya a Activar características [experimentales](#turn-on-experimental-features) y vaya a Escritorio PWA superposición **de controles de ventana**.   
 
 ### <a name="examples-of-title-bar-area-customization"></a>Ejemplos de personalización del área de la barra de título  
 
-Esta característica se basa en la capacidad de las aplicaciones nativas para personalizar la barra de título.  Puedes personalizar una barra de título para las notificaciones o acciones importantes de la aplicación.  Revise los siguientes ejemplos para Microsoft Visual Studio Code y Microsoft Teams.  
+Esta característica se basa en la capacidad de las aplicaciones nativas para personalizar la barra de título.  Puedes personalizar una barra de título para las notificaciones o acciones importantes de la aplicación.  Revise los siguientes ejemplos para obtener Microsoft Visual Studio código y Microsoft Teams.  
 
 #### <a name="visual-studio-code"></a>Visual Studio Code  
 
 Microsoft Visual Studio Code es un editor popular basado en Electron que se incluye en varias plataformas de escritorio.  
 
-En el ejemplo siguiente se muestra cómo Visual Studio Code usa la barra de título para maximizar el estado real de pantalla disponible para incluir el nombre de archivo actual y la estructura de menús de nivel superior en la barra de título.  
+En el ejemplo siguiente se muestra cómo Visual Studio Code la barra de título para maximizar la propiedad de pantalla disponible para incluir el nombre de archivo actual y la estructura de menús de nivel superior en la barra de título.  
 
-:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="Un ejemplo de la barra de título en Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
-   Un ejemplo de la barra de título en Visual Studio Code  
+:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="Un ejemplo de la barra de título de Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
+   Un ejemplo de la barra de título de Visual Studio Code  
 :::image-end:::  
 
 #### <a name="microsoft-teams"></a>Microsoft Teams  
 
-La herramienta de comunicación y colaboración en el lugar de trabajo Microsoft Teams también se ha creado con Electron y está disponible en varias plataformas de escritorio.  En el siguiente ejemplo, Microsoft Teams muestra y `back` `forward` botones de navegación, un cuadro de búsqueda y controles de perfil de usuario.  
+Las herramientas de comunicación y colaboración Microsoft Teams workplace también se han creado con Electron y están disponibles en varias plataformas de escritorio.  En el siguiente ejemplo, Microsoft Teams y botones de navegación, un cuadro `back` de búsqueda y controles de perfil de `forward` usuario.  
 
-:::image type="complex" source="../media/teams-title-customization.png" alt-text="Un ejemplo de la barra de título en Microsoft Teams" lightbox="../media/teams-title-customization.png":::
-   Un ejemplo de la barra de título en Microsoft Teams  
+:::image type="complex" source="../media/teams-title-customization.png" alt-text="Un ejemplo de la barra de título de Microsoft Teams" lightbox="../media/teams-title-customization.png":::
+   Un ejemplo de la barra de título de Microsoft Teams  
 :::image-end:::  
 
 ### <a name="overlay-window-controls-on-a-frameless-window"></a>Superponer controles de ventana en una ventana sin marco  
 
-Para maximizar el área direccionable para el contenido web, el explorador crea una ventana sin marco.  Una ventana sin marco quita toda la interfaz de usuario del explorador, excepto los controles de ventana proporcionados como una superposición.  La superposición de controles de ventana permite a los usuarios minimizar, maximizar, restaurar y cerrar la aplicación.  También proporciona acceso a controles de explorador relevantes mediante el menú de la aplicación web.  Para los exploradores basados en Chromium, la superposición incluye los siguientes controles.  
+Para maximizar el área direccionable para el contenido web, el explorador crea una ventana sin marco.  Una ventana sin marco quita toda la interfaz de usuario del explorador, excepto los controles de ventana proporcionados como una superposición.  La superposición de controles de ventana permite a los usuarios minimizar, maximizar, restaurar y cerrar la aplicación.  También proporciona acceso a controles de explorador relevantes mediante el menú de la aplicación web.  Para Chromium exploradores basados en el usuario, la superposición incluye los siguientes controles.  
 
 *   Una región arrastrable con el mismo ancho y alto de cada uno de los botones de control de ventana  
-*   El **botón Configuración y más** \(...\)  
+*   El **Configuración y más** \(...\) botón  
 *   Los botones de control de ventana minimizan, maximizan, restauran y cierran  
     
 Además de los controles enumerados anteriormente, la interfaz de usuario mostrada en la superposición cambia de tamaño dinámicamente en los siguientes escenarios.  
 
 *   Cuando se inicia una aplicación web instalada, el origen de la página web se muestra a la izquierda del menú **Configuración** y más \(...\) durante unos segundos y, a continuación, desaparece.  
-*   Si un usuario interactúa con **** una extensión mediante el menú Configuración y más \(...\), el icono de la extensión se muestra en la superposición a la izquierda del menú de tres puntos.  Después de salir de cualquier cuadro de diálogo de extensión, el icono se quita de la superposición.  
+*   Si un usuario interactúa con una extensión mediante el menú **Configuración y** más \(...\), el icono de la extensión se muestra en la superposición a la izquierda del menú de tres puntos.  Después de salir de cualquier cuadro de diálogo de extensión, el icono se quita de la superposición.  
     
 | Dirección del idioma | Ubicación de superposición | Detalles |  
 |:--- |:--- |:--- |  
@@ -485,16 +484,18 @@ body {
 }
 ```  
 
+Chromium exploradores basados en aplicaciones están probando y dando forma a esta característica.  Para obtener más información, incluidos los ejemplos de código, vaya a Personalizar la superposición de controles de ventana de la barra de título de [PWA de la ventana.][WebDevWindowControlsOverlay]  
+
 ## <a name="run-on-os-login"></a>Ejecutar en inicio de sesión del sistema operativo  
 
-Esta característica te permite configurar la aplicación para que se inicie automáticamente cuando el usuario inicie sesión en Microsoft Windows.  Varias clases de aplicaciones aprovechan la funcionalidad.  Las clases de aplicaciones incluyen correo electrónico, chat, panel de supervisión y aplicaciones para mostrar datos en tiempo real.  La funcionalidad permite a un usuario interactuar con las aplicaciones tan pronto como el usuario inicia sesión en el sistema operativo.  Esta característica inicia automáticamente el PWA de la misma manera que se inicia manualmente.  
+Esta característica te permite configurar la aplicación para que se inicie automáticamente cuando el usuario inicie sesión en Microsoft Windows.  Varias clases de aplicaciones aprovechan la funcionalidad.  Las clases de aplicaciones incluyen correo electrónico, chat, panel de supervisión y aplicaciones para mostrar datos en tiempo real.  La funcionalidad permite a un usuario interactuar con las aplicaciones tan pronto como el usuario inicia sesión en el sistema operativo.  Esta característica inicia automáticamente el PWA de la misma forma que se inicia manualmente.  
 
 > [!IMPORTANT]
 > **Ejecutar en inicio de sesión del sistema** operativo es una característica [eficaz.][GithubW3cPermissionsPowerfulFeature]  Los usuarios deben decidir si se activa la funcionalidad de la aplicación web instalada.  
 
 ### <a name="turn-on-run-on-os-login"></a>Activar Ejecutar inicio de sesión del sistema operativo  
 
-Para obtener una vista previa de las funciones **Ejecutar** en el inicio de sesión del sistema operativo para su PWA, vaya a Activar características [experimentales](#turn-on-experimental-features) y active Las PWA de escritorio se ejecutan en el inicio **de sesión del sistema operativo.**  
+Para obtener una **vista** previa de las capacidades ejecutar en el sistema operativo para su PWA, vaya a Activar características [experimentales](#turn-on-experimental-features) y active Las PWA de escritorio se ejecutan en el inicio de sesión **del sistema operativo.**  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Activar las PWA de escritorio que se ejecutan en el experimento inicio de sesión del sistema operativo" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    Activar las **PWA de escritorio que se ejecutan en el experimento de inicio de sesión del sistema** operativo  
@@ -502,20 +503,20 @@ Para obtener una vista previa de las funciones **Ejecutar** en el inicio de sesi
 
 ### <a name="turn-on-the-feature-for-the-installed-web-app"></a>Activar la característica de la aplicación web instalada  
 
-Para activar la `Start app when you sign in` característica de un PWA instalado, 
+Para activar la característica `Start app when you sign in` de un servidor PWA, 
 
 1.  Abra Microsoft Edge.   
-1.  Vaya a `edge://apps` .  
+1.  Vaya a `edge://apps`.  
 1.  Mantenga el mouse en la aplicación.  
 1.  Abra el menú contextual \(right-click\) y, a continuación, elija **Iniciar aplicación al iniciar sesión**.  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Usa el menú contextual para activar la aplicación Inicio al iniciar sesión en la característica de Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
-       Usa el menú contextual para activar la **aplicación Inicio al iniciar sesión en** la característica de Microsoft Edge  
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Usa el menú contextual para activar la aplicación Inicio cuando inicies sesión en la Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+       Usa el menú contextual para activar la **aplicación Inicio cuando inicies sesión** en la Microsoft Edge  
     :::image-end:::  
     
 ## <a name="shortcuts"></a>Accesos directos  
 
-`Shortcuts` es un nuevo miembro del archivo de manifiesto.  Te permite definir vínculos a elementos, páginas web clave o acciones en la aplicación web.  Microsoft Windows lo integra como **jumplists**.  **Las listas de accesos** emergentes definen menús emergentes que aparecen cuando se encuentra en uno de los siguientes elementos de la interfaz de usuario y se abre un menú contextual \(hacer clic con el botón secundario\).  
+`Shortcuts` es un nuevo miembro del archivo de manifiesto.  Te permite definir vínculos a elementos, páginas web clave o acciones en la aplicación web.  Microsoft Windows integra como **listas de saltos**.  **Las listas de accesos** emergentes definen menús emergentes que aparecen cuando se encuentra en uno de los siguientes elementos de la interfaz de usuario y se abre un menú contextual \(hacer clic con el botón secundario\).  
 
 *   Un icono en el menú Inicio  
 *   Un icono en la barra de tareas  
@@ -562,13 +563,13 @@ Las siguientes propiedades definen cada acceso directo.
 
 La capacidad de registrarse como un controlador de tipos de archivo está en la fase de experimentación.  Puedes especificar los tipos de archivo que controla la aplicación en una entrada de manifiesto.  Durante la instalación, el sistema operativo host del usuario registra la aplicación como un controlador de archivos para los tipos de archivo enumerados.  Asegúrese de la existencia de la característica en el código de inicio de las `launchQueue` aplicaciones y de que controla el archivo.  
 
-Los exploradores basados en Chromium están probando y dando forma a esta característica.  Para obtener más información, incluidos los ejemplos de código, vaya a [Permitir que las aplicaciones web sean controladores de archivos][WebDevFileHandling].  
+Chromium exploradores basados en aplicaciones están probando y dando forma a esta característica.  Para obtener más información, incluidos los ejemplos de código, vaya a [Permitir que las aplicaciones web sean controladores de archivos][WebDevFileHandling].  
 
-Para obtener una vista previa del control de archivos en Microsoft Edge para Windows 10, vaya a Activar características [experimentales](#turn-on-experimental-features) y active api **de administración de archivos.**  
+Para obtener una vista previa del control de archivos Microsoft Edge para Windows 10, vaya a Activar características [experimentales](#turn-on-experimental-features) y active la **API de administración de archivos**.  
     
 ## <a name="providing-feedback-on-experimental-features"></a>Proporcionar comentarios sobre características experimentales  
 
-Para proporcionar comentarios sobre los experimentos de la aplicación web de Microsoft Edge.  
+Para proporcionar comentarios sobre Microsoft Edge de aplicaciones web.  
 
 *   Envíe sus comentarios con **Configuración y Más** \( `...` \) > Enviar comentarios a **Microsoft**.  
 *   Seleccione `Alt` + `Shift` + `I` .  
@@ -581,7 +582,7 @@ Para proporcionar comentarios sobre los experimentos de la aplicación web de Mi
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
 
-[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Pruebas de origen | Desarrollador de Microsoft Edge"  
+[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Pruebas de origen | Microsoft Edge Programador"  
 [MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Registrar para el registro del controlador de protocolo de aplicación web | Microsoft Developer"  
 
 [MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]: https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers "Controladores de protocolo basados en web | MDN"  
@@ -591,3 +592,4 @@ Para proporcionar comentarios sobre los experimentos de la aplicación web de Mi
 [GithubWicgPwaUrlHandlerBlobMainExplainerMd]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md "PwAs como controladores de dirección URL | GitHub"  
 
 [WebDevFileHandling]: https://web.dev/file-handling "Permitir que las aplicaciones web sean controladores de archivos | web.dev"  
+[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay "Personalizar la superposición de controles de ventana de la barra de PWA la barra de título | web.dev"  

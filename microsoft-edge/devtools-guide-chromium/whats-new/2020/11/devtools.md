@@ -208,7 +208,7 @@ Para copiar el valor de la propiedad en el portapapeles, vaya a [Copiar JSON de 
 
 [A partir de Microsoft Edge versión 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], puede personalizar los métodos abreviados de teclado para cualquier acción en DevTools.  En Microsoft Edge versión 88, ahora puede crear métodos abreviados de teclado de varios clics.  Para establecer un método abreviado para una acción en DevTools, vaya a [Configuración][DevtoolsCustomizeIndexSettings] > **Experimentos** y elija la casilla situada junto a **Habilitar el editor de métodos abreviados de teclado**.  Para obtener más información acerca de la personalización y edición de accesos directos, vaya a [Editar métodos abreviados de teclado para cualquier acción en DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  
 
-Por ejemplo, el resaltado rojo muestra un método abreviado de teclado de varios clics personalizado para la acción **Iniciar grabación de eventos**.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de origen abierto Chromium, navegue hasta el [Problema N.°174309][CR174309].  
+Por ejemplo, el resaltado rojo muestra un método abreviado de teclado de varios clics personalizado para la acción **Iniciar grabación de eventos**.  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de origen abierto Chromium, navegue hasta el [Problema N.° 174309][CR174309].  
 
 :::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Métodos abreviados de teclado de presión simultánea" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
    Métodos abreviados de teclado de varios clics  
@@ -336,8 +336,8 @@ Use esta característica para revisar el valor de una variable webassembly \(Was
 
 DevTools ahora usa `kB` de forma consistente para mostrar los tamaños de los archivos y de la memoria.  Anteriormente, DevTools combinaba `kB` y `KiB`.
 
-*   `kB` o kilobytes \(10^3 o 1000bytes\)  
-*   `KiB` o kibibytes \(2^10 o 1024bytes\)  
+*   `kB` o kilobytes \(10^3 o 1000 bytes\)  
+*   `KiB` o kibibytes \(2^10 o 1024 bytes\)  
     
 Por ejemplo, la herramienta **Red** anteriormente usaba `kB` en las etiquetas, pero usaba `KiB` en los cálculos.  Sus comentarios mostraron que esta inconstancia ocasionó confusión.  Para revisar el historial de esta característica en el proyecto de origen abierto Chromium, navegue hasta el problema [1035309][CR1035309].  
 

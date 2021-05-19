@@ -2,8 +2,7 @@
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de conducta de Microsoft Open Source  
 
-Este proyecto ha adoptado el Código de [conducta de Código de código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct).  
-Para obtener más información, consulte [las preguntas](https://opensource.microsoft.com/codeofconduct/faq) más frecuentes sobre código de conducta o póngase en [contacto opencode@microsoft.com](mailto:opencode@microsoft.com) con cualquier pregunta o comentario adicional.  
+Para obtener más información sobre el Código de conducta de Código de código abierto de Microsoft, vaya a Código de conducta [de Código de código abierto de Microsoft](CODE_OF_CONDUCT.md).  
 
 ## <a name="legal-notices"></a>Avisos legales  
 
@@ -19,15 +18,15 @@ Microsoft y sus colaboradores se reservan todos los demás derechos, ya sea bajo
 
 ## <a name="contributing"></a>Contribuir  
 
-Este es el repositorio de documentación **de** Microsoft Edge hospedado en [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/index) .  
+Este es el repositorio de Microsoft Edge **documentación hospedada** en [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge/index) .  
 
-Si desea incluir una nueva cobertura o recibir comentarios, considere la posibilidad de [contribuir](./CONTRIBUTING.md).  Puede editar el contenido existente, agregar contenido nuevo o crear nuevos [problemas](https://github.com/MicrosoftDocs/edge-developer/issues).  El equipo de Microsoft Edge revisa sus sugerencias y trabaja para incorporar las sugerencias a los documentos.  
+Si desea incluir una nueva cobertura o recibir comentarios, considere la posibilidad de [contribuir](./CONTRIBUTING.md).  Puede editar el contenido existente, agregar contenido nuevo o crear nuevos [problemas](https://github.com/MicrosoftDocs/edge-developer/issues).  El Microsoft Edge revisa sus sugerencias y trabaja para incorporar las sugerencias a los documentos.  
 
-Busque los datos de la [página Estado](https://developer.microsoft.com/microsoft-edge/status) en:  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) .  La página proporciona el estado de implementación más reciente y los planes futuros para las características de la plataforma `Status` web en Microsoft Edge.
+Busque los datos de la página web [Estado](https://developer.microsoft.com/microsoft-edge/status) en:  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) .  La página web proporciona el estado de implementación más reciente `Status` y los planes futuros para las características de la plataforma web en Microsoft Edge.
 
 ### <a name="conventions"></a>Convenciones  
 
-*   Al agregar una página, debe agregar una entrada para ella en [toc.md](./microsoft-edge/toc.yml) que aparezca.
+*   Al agregar una página web, debe agregar una entrada para [ella](./microsoft-edge/toc.yml) toc.md que aparezca.
 *   Un directorio puede contener más directorios o `readme.md` s
 *   Los nombres de carpeta o directorio están separados por guiones \(por ejemplo, `f12-tools` \) y en minúsculas.  Los directorios se usan en las direcciones URL del `docs.microsoft.com` sitio.  Evite usar guiones bajos, PascalCase o camelCase.  
 
@@ -40,11 +39,11 @@ Estos otros elementos de texto tienen el estilo disponible:
     *   También puede anidar viñetas.  
     *   Las listas de viñetas deben tener más de una entrada.  
 *   Disposición estándar 
-
+    
 1.  Listas ordenadas.  
 1.  Use numeración de estilo occidental normal.  
 1.  Solo se debe usar cuando una lista realmente tiene orden.  
-
+    
 ---  
 
 Las reglas horizontales están disponibles.  Use las reglas horizontales con moderación para reducir el desorden.  
@@ -52,7 +51,7 @@ Evite usar reglas horizontales con etiquetas de título; algunos encabezados ya 
 
 ### <a name="displaying-code"></a>Mostrar código  
 
-Puede usar la sintaxis `code` de Markdown en línea \(con los backticks\).  
+Puede usar la sintaxis `code` de markdown en línea \(con los backticks\).  
 
 O puede mostrar bloques de código.  El siguiente fragmento de código es un ejemplo css.  
 
@@ -79,7 +78,7 @@ Cuatro versiones diferentes de notas tienen un estilo actual.
 *   ADVERTENCIA  
 *   SUGERENCIA  
 *   IMPORTANTE  
-
+    
 Respectivamente, las notas tienen el aspecto de los siguientes fragmentos de código.  
 
 ```md
@@ -108,9 +107,9 @@ Para las notas de bloque de varias líneas, use un carácter mayor que \( \) del
 
 ```md
 > This is a line in a blockquote.  
-> My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the Markdown.  
+> My text may wrap to more than one line when the markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the markdown.  
 > This is another line in a blockquote.  
-```
+```  
 
 ### <a name="images"></a>Imágenes  
 
