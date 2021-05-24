@@ -361,10 +361,10 @@
           href: web-platform/site-impacting-changes.md
         - name: Mover usuarios a Microsoft Edge desde IE
           href: web-platform/ie-to-microsoft-edge-redirection.md
-        - name: Seguimiento de prevención en Microsoft Edge
+        - name: Prevención de seguimiento en Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: Cadena del agente de usuario de Microsoft Edge
-          href: web-platform/user-agent-string.md
+        - name: Cómo detectar Microsoft Edge en el sitio web
+          href: web-platform/user-agent-guidance.md
         - name: Personalizar el botón de revelación de contraseñas
           href: web-platform/password-reveal.md
     - name: Información general sobre Web We Want
