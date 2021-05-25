@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
-ms.openlocfilehash: 48af14c33a368a3449acb88b4dfb875ad5398e7a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c5a17cbc55c6ccb42e06369474cd274d70742494
+ms.sourcegitcommit: 31741a0c331816642ceafd20680bd3206c87c7bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397919"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "11579732"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>Crear un tutorial de extensión, parte 2  
   
@@ -26,7 +26,7 @@ En este tutorial se tratan las siguientes tecnologías de extensión.
 *   Incluir páginas de contenido en pestañas de explorador existentes  
 *   Hacer que las páginas de contenido escuchen los mensajes de las ventanas emergentes y respondan  
 
-Aprenderás a actualizar el menú emergente para reemplazar la imagen de inicio estática por un título y un botón HTML estándar.  Ese botón, cuando se selecciona, pasa esa imagen de estrellas, que está incrustada en la extensión, a la página de contenido.  Esa imagen se inserta en la pestaña del explorador activo. Siga los pasos siguientes para obtener más detalles.
+Aprenderás a actualizar el menú emergente para reemplazar la imagen de estrellas estáticas por un título y un botón HTML estándar.  Ese botón, cuando se selecciona, pasa esa imagen de estrellas, que está incrustada en la extensión, a la página de contenido.  Esa imagen se inserta en la pestaña del explorador activo. Siga los pasos siguientes para obtener más detalles.
 
 1.  Quitar la imagen de la ventana emergente y reemplazarla por un botón  
 
