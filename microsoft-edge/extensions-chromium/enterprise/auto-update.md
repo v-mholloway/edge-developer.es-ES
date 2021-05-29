@@ -1,18 +1,18 @@
 ---
 description: Obtenga información sobre las actualizaciones automáticas de extensiones en Microsoft Edge
-title: Actualizar extensiones automáticamente en Microsoft Edge
+title: Actualizar automáticamente las extensiones en Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 74d7b61c8eca1155b545b7e81627a652bf336e66
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: d9901f9c39dabfab111eb7e0c34a3e267a317110
+ms.sourcegitcommit: 59d8043e37b89da814f63bc85daf84e0e7167eab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483075"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "11586391"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -27,7 +27,7 @@ ms.locfileid: "11483075"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="automatically-update-extensions-in-microsoft-edge"></a>Actualizar extensiones automáticamente en Microsoft Edge  
+# <a name="automatically-update-extensions-in-microsoft-edge"></a>Actualizar automáticamente las extensiones en Microsoft Edge  
 
 Al establecer la extensión para que se actualice automáticamente, la extensión comparte las siguientes ventajas con Microsoft Edge cuando se establece en actualización automática.  
 
@@ -37,17 +37,17 @@ Al establecer la extensión para que se actualice automáticamente, la extensió
 
 Anteriormente, se admiten extensiones no basadas en almacén.  Además, actualizó los archivos binarios nativos y la extensión al mismo tiempo.  
 
-Ahora, el almacén de complementos de Microsoft Edge hospeda las extensiones y actualiza la extensión con el mismo mecanismo que Microsoft Edge.  No controla el mecanismo de actualización.  Tenga cuidado al actualizar las extensiones que tienen una dependencia de los archivos binarios nativos.  
+Ahora, el Microsoft Edge complementos hospeda las extensiones y actualiza la extensión con el mismo mecanismo que Microsoft Edge.  No controla el mecanismo de actualización.  Tenga cuidado al actualizar las extensiones que tienen una dependencia de los archivos binarios nativos.  
 
 > [!NOTE]
-> Este artículo no se aplica a las extensiones que publique con el panel [del Centro de][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] partners.  Puede usar el panel para publicar versiones actualizadas para los usuarios y para el almacén de complementos de Microsoft Edge.  Para obtener más información, vaya [a Actualizar o quitar la extensión][ExtensionsPublishUpdateExtension].  
+> Este artículo no se aplica a las extensiones que publique con el panel [del Centro de][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] partners.  Puede usar el panel para publicar versiones actualizadas para los usuarios y para el Microsoft Edge complementos.  Para obtener más información, vaya [a Actualizar o quitar la extensión][ExtensionsPublishUpdateExtension].  
 
-## <a name="overview"></a>Información general  
+## <a name="overview"></a>Introducción  
 
 Cada pocas horas, Microsoft Edge comprueba si cada extensión o aplicación instalada tiene una dirección URL de actualización.  Para especificar una dirección URL de actualización para la extensión, use el `update_url` campo del manifiesto.  El `update_url` campo del manifiesto apunta a una ubicación para completar una comprobación de actualización.  Para cada `update_url` uno, envía solicitudes de archivos XML de manifiesto actualizados.  Si el archivo XML del manifiesto de actualización muestra una versión más reciente que la instalada, Microsoft Edge descarga e instala la versión más reciente.  El mismo proceso funciona para las actualizaciones manuales, donde el nuevo archivo debe firmarse con la misma `.crx` clave privada que la versión instalada actualmente.  
 
 > [!NOTE]
-> Para mantener la privacidad del usuario, Microsoft Edge no envía ningún encabezado con solicitudes de manifiesto de actualización automática e omite los encabezados de las respuestas a `Cookie` `Set-Cookie` dichas solicitudes.  
+> Para mantener la privacidad del usuario, Microsoft Edge no envía ningún encabezado con solicitudes de manifiesto de actualización automática y omite los encabezados de las respuestas a `Cookie` `Set-Cookie` dichas solicitudes.  
 
 ## <a name="update-url"></a>Dirección URL de actualización  
 
@@ -68,7 +68,7 @@ El manifiesto actualizado devuelto por el servidor debe ser un documento XML.  R
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
-<gupdate xmlns='http://www.microsoft.com/update2/response' protocol='2.0'>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'>
     <updatecheck codebase='http://contoso.com/mytestextension/mte_v2.crx' version='2.0' />
   </app>
@@ -81,7 +81,7 @@ En la tabla siguiente se describen los atributos del archivo XML de manifiesto a
 |:--- |:--- |  
 | `appid` | El identificador de extensión se genera en función de un hash de la clave pública.  Para buscar el identificador de una extensión, abra Microsoft Edge y vaya a `edge://extensions` . |  
 | `codebase` | Dirección URL del `.crx` archivo. |  
-| `version` | Microsoft Edge usa este valor de atributo para determinar si debe descargar el `.crx` archivo especificado por `codebase` .  Debe coincidir con el valor del `version` archivo `manifest.json` del `.crx` archivo. |  
+| `version` | Este valor de atributo lo usa Microsoft Edge para determinar si debe descargar el `.crx` archivo especificado por `codebase` .  Debe coincidir con el valor del `version` archivo `manifest.json` del `.crx` archivo. |  
 
 El archivo XML del manifiesto de actualización puede contener información sobre varias extensiones al incluir varios elementos.  
 
@@ -93,7 +93,7 @@ La frecuencia de comprobación de actualización predeterminada es de varias hor
 
 El mecanismo básico es simple.  Para actualizar automáticamente la extensión, realice las siguientes acciones.  
 
-1.  Cargue el archivo XML estático en el servidor web, como Apache.  
+1.  Upload el archivo XML estático en el servidor web, como Apache.  
 1.  Actualice el archivo XML a medida que libere nuevas versiones de las extensiones.  
     
 Aproveche el hecho de que algunos parámetros agregados a la solicitud de manifiesto de actualización indican la extensión `ID` y `version` .  Puede usar lo mismo `update URL` para todas las extensiones en lugar de un archivo XML estático.  Para usar lo mismo para todas las extensiones, señale a una dirección URL que ejecute código dinámico del lado servidor `update URL` para probar los parámetros.  
@@ -145,7 +145,7 @@ Si envía una sola solicitud y el número de extensiones instaladas que usan la 
 
 ## <a name="advanced-usage-minimum-browser-version"></a>Uso avanzado: versión mínima del explorador  
 
-Como nueva versión de las API para el sistema de extensiones de Microsoft Edge, puedes publicar una versión actualizada de la extensión o aplicación que solo funciona con versiones más recientes de Microsoft Edge.  Cuando Microsoft Edge se actualiza automáticamente, puede tardar unos días antes de que la mayoría de los usuarios se actualicen a esa nueva versión.  Para asegurarse de que una actualización específica solo se aplica a las versiones de Microsoft Edge actuales o más recientes que una versión específica, agregue el `prodversionmin` atributo en el manifiesto de actualización.  En el siguiente fragmento de código, el valor de atributo de especifica que la aplicación se actualizó automáticamente a la versión solo cuando el usuario ejecuta Microsoft Edge o una versión `prodversionmin` `3.0.193.0` más `2.0` `3.0.193.0` reciente.  
+Como nueva versión de las API para el sistema de extensiones de Microsoft Edge, puedes liberar una versión actualizada de la extensión o aplicación que solo funciona con versiones Microsoft Edge más recientes.  Cuando Microsoft Edge se actualiza automáticamente, puede tardar unos días antes de que la mayoría de los usuarios se actualicen a esa nueva versión.  Para asegurarse de que una actualización específica solo se aplica Microsoft Edge versiones actuales o más recientes que una versión específica, agregue el atributo `prodversionmin` en el manifiesto de actualización.  En el siguiente fragmento de código, el valor de atributo de especifica que la aplicación se actualizó automáticamente a la versión solo cuando el usuario ejecuta Microsoft Edge `prodversionmin` `3.0.193.0` o `2.0` `3.0.193.0` posterior.  
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
