@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "11399657"
 ---
-<span data-ttu-id="fc29d-101">Comparta sus comentarios para ayudar a crear experiencias webView2 más enriquecciones.</span><span class="sxs-lookup"><span data-stu-id="fc29d-101">Share your feedback to help build richer WebView2 experiences.</span></span>  <span data-ttu-id="fc29d-102">Para enviar solicitudes de características o errores, o buscar problemas conocidos, vaya al repositorio de comentarios [de Microsoft Edge WebView.][GithubMicrosoftedgeWebviewfeedback]</span><span class="sxs-lookup"><span data-stu-id="fc29d-102">To submit feature requests or bugs, or search for known issues, navigate to the [Microsoft Edge WebView feedback][GithubMicrosoftedgeWebviewfeedback] repo.</span></span>  
+<span data-ttu-id="c5e6b-101">Comparta sus comentarios para ayudar a crear experiencias webView2 más enriquecciones.</span><span class="sxs-lookup"><span data-stu-id="c5e6b-101">Share your feedback to help build richer WebView2 experiences.</span></span>  <span data-ttu-id="c5e6b-102">Para enviar solicitudes de características o errores, o buscar problemas conocidos, vaya al Microsoft Edge de comentarios de [WebView.][GithubMicrosoftedgeWebviewfeedback]</span><span class="sxs-lookup"><span data-stu-id="c5e6b-102">To submit feature requests or bugs, or search for known issues, navigate to the [Microsoft Edge WebView feedback][GithubMicrosoftedgeWebviewfeedback] repo.</span></span>  
 
 <!-- links -->  
 

@@ -1,13 +1,13 @@
 ---
-description: Información sobre la comprobación de la firma gpg para las herramientas de sesgo para las versiones de Microsoft Edge.
-title: Comprobar las descargas de Herramientas de selenio para Microsoft Edge
+description: Información sobre cómo comprobar la firma gpg para selenio tools para Microsoft Edge versiones.
+title: Comprobar las descargas de herramientas de Selenium para Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, se sintaxis, pruebas, herramientas, automatización, prueba
+keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
 ms.openlocfilehash: cf5889ab3c5f1ca89579a398a232716008144562
 ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
 ms.translationtype: MT
@@ -15,18 +15,18 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/30/2021
 ms.locfileid: "11306278"
 ---
-# <span data-ttu-id="fa582-104">Comprobar las descargas de Herramientas de selenio para Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="fa582-104">Verify downloads of Selenium Tools for Microsoft Edge</span></span>  
+# <span data-ttu-id="7725a-104">Compruebe las descargas de Selenium Tools para Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7725a-104">Verify downloads of Selenium Tools for Microsoft Edge</span></span>  
 
-<span data-ttu-id="fa582-105">En este artículo se proporciona la clave pública que se debe usar al comprobar la firma de las versiones de [Las Herramientas de selenio para Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].</span><span class="sxs-lookup"><span data-stu-id="fa582-105">This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].</span></span>  
+<span data-ttu-id="7725a-105">En este artículo se proporciona la clave pública que se debe usar al comprobar la firma de las versiones de Las herramientas [de selenio para Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].</span><span class="sxs-lookup"><span data-stu-id="7725a-105">This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].</span></span>  
 
-<span data-ttu-id="fa582-106">Las [Java se firman][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [con][GithubMicrosoftEdgeSeleniumToolsReleases] [GPG.][Gnupg]</span><span class="sxs-lookup"><span data-stu-id="fa582-106">The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] of [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] are signed using [GPG][Gnupg].</span></span>  
+<span data-ttu-id="7725a-106">Las [Java de][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium Tools para Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] se firman con [GPG][Gnupg].</span><span class="sxs-lookup"><span data-stu-id="7725a-106">The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] of [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] are signed using [GPG][Gnupg].</span></span>  
 
-<span data-ttu-id="fa582-107">Use las siguientes claves para comprobar la firma de los paquetes proporcionados por el equipo de Herramientas de [desarrollo de Microsoft Edge][TwitterEdgeDevTools].</span><span class="sxs-lookup"><span data-stu-id="fa582-107">Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].</span></span>  
+<span data-ttu-id="7725a-107">Use las siguientes claves para comprobar la firma de los paquetes proporcionados por el equipo Microsoft Edge [Developer Tools][TwitterEdgeDevTools].</span><span class="sxs-lookup"><span data-stu-id="7725a-107">Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].</span></span>  
 
-## <span data-ttu-id="fa582-108">Clave pública para comprobar Las herramientas de selenio para Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="fa582-108">Public key for verifying Selenium Tools for Microsoft Edge</span></span>  
+## <span data-ttu-id="7725a-108">Clave pública para comprobar Las herramientas de selenio para Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7725a-108">Public key for verifying Selenium Tools for Microsoft Edge</span></span>  
 
-*   <span data-ttu-id="fa582-109">**Identificador de clave pública:** Equipo de herramientas de desarrollo de Microsoft Edge [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="fa582-109">**Public Key ID**: Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)</span></span>  
-*   <span data-ttu-id="fa582-110">**Huella digital de clave pública:**</span><span class="sxs-lookup"><span data-stu-id="fa582-110">**Public Key Fingerprint**:</span></span> `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
+*   <span data-ttu-id="7725a-109">**Identificador de clave pública:** Microsoft Edge equipo de herramientas para [desarrolladores EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="7725a-109">**Public Key ID**: Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)</span></span>  
+*   <span data-ttu-id="7725a-110">**Huella digital de clave pública:**</span><span class="sxs-lookup"><span data-stu-id="7725a-110">**Public Key Fingerprint**:</span></span> `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
 
 ```output
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -52,10 +52,10 @@ ptJfPKT84TtqmRoJApBgxAsnD4t4JiuvnHkYHgzAzwcXFiofj2cCeJZf1tzIk6+Z
 
 <!-- links -->  
 
-[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-seprocesamiento-tools | GitHub"  
+[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"  
 
-[Gnupg]: https://gnupg.org "El centro de protección de privacidad | Pg"  
+[Gnupg]: https://gnupg.org "La protección de privacidad de GNU | GnuPG"  
 
-[MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge:msedge-se javascript-tools-java | Sonatype Maven Central Repository Search"  
+[MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge:msedge-selenium-tools-java | sonatype Maven Central Repository Search"  
 
 [TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools | Twitter"  
