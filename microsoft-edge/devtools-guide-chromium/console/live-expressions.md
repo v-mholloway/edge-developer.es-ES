@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT

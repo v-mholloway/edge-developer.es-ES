@@ -1,5 +1,5 @@
 ---
-description: Usar Puppeteer para automatizar y probar en Microsoft Edge
+description: Use Puppeteer para automatizar y probar en Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -17,9 +17,9 @@ ms.locfileid: "11480170"
 ---
 # <a name="puppeteer-overview"></a>Información general sobre Puppeteer  
 
-[Puppeteer][|::ref1::|Main] es una biblioteca [de nodos][NodejsMain] que proporciona una API de alto nivel para controlar Microsoft Edge \(Chromium\) mediante el [protocolo DevTools][GithubChromedevtoolsProtocol].  Puppeteer inicia exploradores [sin cabeza][WikiHeadlessBrowser] de forma predeterminada.  Los exploradores sin cabeza no muestran una interfaz de usuario, por lo que en su lugar debes usar la línea de comandos.  También puede configurar Puppeteer para que ejecute también Microsoft Edge completo \(non-headless\).  
+[Puppeteer][|::ref1::|Main] es una biblioteca [de nodos][NodejsMain] que proporciona una API de alto nivel para controlar Microsoft Edge \(Chromium\) mediante el [protocolo DevTools][GithubChromedevtoolsProtocol].  Puppeteer inicia exploradores [sin cabeza][WikiHeadlessBrowser] de forma predeterminada.  Los exploradores sin cabeza no muestran una interfaz de usuario, por lo que en su lugar debes usar la línea de comandos.  También puede configurar El titiritero para que ejecute el archivo completo \(non-headless\) Microsoft Edge.  
 
-De forma predeterminada, al instalar Puppeteer, el instalador descarga una versión reciente de [Chromium][ChromiumHome], el explorador de código abierto en el que también se basa [Microsoft Edge][MicrosoftBlogsWindowsExperience20181206].  Si tiene Microsoft Edge \(Chromium\) instalado, puede usar [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` es una versión ligera de Puppeteer que inicia una instalación de explorador existente, como Microsoft Edge \(Chromium\).  Para descargar Microsoft Edge \(Chromium\), vaya a [Descargar canales insider de Microsoft Edge][MicrosoftedgeinsiderDownload].  
+De forma predeterminada, al instalar Puppeteer, el instalador descarga una versión reciente de [Chromium][ChromiumHome], el explorador de código abierto en el que Microsoft Edge también se [basa][MicrosoftBlogsWindowsExperience20181206].  Si ha instalado Microsoft Edge \(Chromium\), puede usar [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` es una versión ligera de Puppeteer que inicia una instalación de explorador existente, como Microsoft Edge \(Chromium\).  Para descargar Microsoft Edge \(Chromium\), vaya a [Descargar Microsoft Edge Canales insider][MicrosoftedgeinsiderDownload].  
 
 ## <a name="installing-puppeteer-core"></a>Instalación de puppeteer-core  
 
@@ -57,7 +57,7 @@ const puppeteer = require('puppeteer-core');
 })();
 ```  
 
-Cambiar `executablePath` para apuntar a la instalación de Microsoft Edge \(Chromium\).  Por ejemplo, en macOS, `executablePath` para Microsoft Edge Canary debe establecerse en `/Applications/Microsoft\ Edge\ Canary.app/` .  Para buscar el , vaya a y copie la ruta de acceso ejecutable en esa página o instale el paquete de rutas perimetrales `executablePath` con uno de los siguientes `edge://version` comandos. **** [][npmEdgePaths]  
+Cambie `executablePath` para que apunte a la instalación de Microsoft Edge \(Chromium\).  Por ejemplo, en macOS, el valor `executablePath` Microsoft Edge Canary debe establecerse en `/Applications/Microsoft\ Edge\ Canary.app/` .  Para buscar el , vaya a y copie la ruta de acceso ejecutable en esa página o instale el paquete de rutas perimetrales `executablePath` con uno de los siguientes `edge://version` comandos. **** [][npmEdgePaths]  
 
 ```shell
 npm i edge-paths
@@ -78,7 +78,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 Por último, establezca `executablePath: EDGE_PATH` en `example.js` .  Haz clic en Guardar para guardar los cambios.  
 
 > [!NOTE]
-> Microsoft Edge \(EdgeHTML\) no funciona con `puppeteer-core` .  Debe instalar los [canales de Microsoft Edge Insider][MicrosoftedgeinsiderDownload] para seguir este ejemplo.  
+> Microsoft Edge \(EdgeHTML\) no funciona con `puppeteer-core` .  Debe instalar los [canales Microsoft Edge Insider para][MicrosoftedgeinsiderDownload] seguir este ejemplo.  
 
 Ahora, ejecute `example.js` desde la línea de comandos.  
 
@@ -86,7 +86,7 @@ Ahora, ejecute `example.js` desde la línea de comandos.
 node example.js
 ```  
 
-`puppeteer-core` inicia Microsoft Edge, navega a `https://www.microsoftedgeinsider.com` y guarda una captura de pantalla de la página web.  Personalice el tamaño de la captura de pantalla [con page.setViewport()][PuppeteerApipagesetviewport].  
+`puppeteer-core` inicia Microsoft Edge, navega a y guarda una captura `https://www.microsoftedgeinsider.com` de pantalla de la página web.  Personalice el tamaño de la captura de pantalla [con page.setViewport()][PuppeteerApipagesetviewport].  
 
 :::image type="complex" source="./media/puppeteer-example.png" alt-text="El example.png creado por example.js" lightbox="./media/puppeteer-example.png":::
    El `example.png` archivo generado por `example.js`  
@@ -96,10 +96,10 @@ Este es solo un ejemplo sencillo de los escenarios de automatización y pruebas 
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
-El equipo de desarrolladores de Microsoft Edge está deseando escuchar sus comentarios sobre el uso de Puppeteer `puppeteer-core` y Microsoft Edge.  Usa el **icono Enviar comentarios** en las Herramientas de desarrollo de Microsoft Edge o el @EdgeDevTools tweet para que el equipo de Microsoft Edge sepa lo que piensas. [][TwitterIntentTweetEdgedevtools]  
+El Microsoft Edge desarrollador está deseando escuchar sus comentarios acerca del uso de Puppeteer `puppeteer-core` y Microsoft Edge.  Usa el **icono Enviar comentarios** en el Microsoft Edge DevTools o el @EdgeDevTools tweet para que el equipo Microsoft Edge sepa lo que piensas. [][TwitterIntentTweetEdgedevtools]  
 
 :::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en las Herramientas de desarrollo del borde de Microsoft Edge" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
-   El **icono Enviar comentarios** en Microsoft Edge DevTools  
+   El **icono Enviar comentarios** en el Microsoft Edge DevTools  
 :::image-end:::  
 
 <!--## See also  
@@ -128,7 +128,7 @@ El equipo de desarrolladores de Microsoft Edge está deseando escuchar sus comen
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider Channels"  
 
-[ChromiumHome]: https://www.chromium.org/Home "Chromium | Los proyectos de Chromium"  
+[ChromiumHome]: https://www.chromium.org/Home "Chromium | The Chromium Projects"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 

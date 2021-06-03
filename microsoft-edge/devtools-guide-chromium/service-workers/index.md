@@ -62,7 +62,7 @@ Para obtener más información sobre los eventos de captura, elija la flecha `re
 
 ### <a name="service-worker-update-timeline"></a>Escala de tiempo de actualización del trabajador de servicio  
 
-El equipo de Microsoft Edge DevTools agregó una escala de tiempo en la **herramienta Aplicación** para reflejar el ciclo de vida de actualización del trabajador del servicio.  Muestra los eventos de instalación y activación.  Cada uno de los eventos tiene una flecha desplegable correspondiente para darle más detalles.  
+El Microsoft Edge DevTools agregó una escala de tiempo en la **herramienta Aplicación** para reflejar el ciclo de vida de actualización del trabajador del servicio.  Muestra los eventos de instalación y activación.  Cada uno de los eventos tiene una flecha desplegable correspondiente para darle más detalles.  
 
 ### <a name="request-routing-and-fetch-events"></a>Eventos de enrutamiento y captura de solicitudes  
 
@@ -84,7 +84,7 @@ Para encontrar más información sobre la pila, establezca un punto de interrupc
 
 ### <a name="future-work"></a>Trabajo futuro  
 
-El equipo de DevTools de Microsoft Edge tiene previsto desarrollar aún más los detalles de la memoria caché y está investigando más formas de mejorar la experiencia de depuración del trabajador del servicio para desarrolladores de [aplicaciones web][MdnProgressiveWebApps] progresivas.  
+El Microsoft Edge de DevTools planea desarrollar aún más los detalles de la memoria caché y están investigando más formas de mejorar la experiencia de depuración del trabajador del servicio para desarrolladores de [aplicaciones web][MdnProgressiveWebApps] progresivas.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 

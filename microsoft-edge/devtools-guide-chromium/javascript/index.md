@@ -224,7 +224,7 @@ Para obtener más información sobre cuándo y cómo usar cada tipo, vaya [a Pau
 
 En este artículo no se explica un par de controles de paso a paso de código.  Para obtener más información, vaya [a Paso sobre la línea de código][DevToolsJavascriptReferenceStepThroughCode] en el artículo "Usar las características del depurador".
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Consulta también
 
 *   [Usar las características del depurador:][DevToolsJavascriptReference] usar la interfaz de usuario del depurador en la herramienta Orígenes.
 *   [Introducción a la herramienta Sources:][DevToolsSourcesIndex] presenta el depurador de JavaScript y el editor de código.

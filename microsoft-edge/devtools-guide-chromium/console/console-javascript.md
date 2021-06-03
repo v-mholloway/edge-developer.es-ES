@@ -1,5 +1,5 @@
 ---
-description: Una introducción al uso de la herramienta consola dentro de Microsoft Edge Developer Tools como un entorno JavaScript.
+description: Una introducción al uso de la herramienta consola dentro del Microsoft Edge Developer Tools como un entorno JavaScript.
 title: La consola como entorno de JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -79,7 +79,7 @@ Si inicia una instrucción multilínea en **la consola,** se reconoce automátic
 
 Aparte de en sus propios scripts, **la** consola admite la espera de [nivel][GithubTc39ProposalTopLevelAwait] superior para ejecutar JavaScript asincrónico arbitrario en él.  Por ejemplo, use la `fetch` API sin ajustar la instrucción con una función `await` asincrónica.  
 
-Para obtener los últimos 50 problemas que se han presentado en el repositorio de [GitHub][GithubMicrosoftVscodeEdgeDevtools] de Microsoft Edge Developer Tools for Visual Studio Code GitHub, complete las siguientes acciones.  
+Para obtener los últimos 50 problemas que se han presentado en el repositorio Microsoft Edge [Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub, complete las siguientes acciones.  
 
 1.  Abra la **consola**.  
 1.  Copie y pegue el siguiente fragmento de código para obtener un objeto que contenga 10 entradas.  

@@ -15,7 +15,7 @@ ms.locfileid: "11461139"
 ---
 # <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Mover usuarios a Microsoft Edge desde Internet Explorer  
 
-Muchos sitios web modernos tienen diseños incompatibles con Internet Explorer \(IE\).  Cuando un usuario de IE visita un sitio web público incompatible, el usuario puede recibir un mensaje.  El mensaje indica que el sitio web es incompatible con el explorador.  Después de mostrar el mensaje, se espera que el usuario cambie manualmente a un explorador moderno.  Para minimizar las interrupciones, a partir de la versión 84, Microsoft Edge admite una nueva funcionalidad que redirige automáticamente a los usuarios.  Cuando un usuario de IE navega a un sitio web incompatible con IE, Windows redirige automáticamente al usuario a Microsoft Edge.  Para revisar los sitios web de la lista, vaya a [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
+Muchos sitios web modernos tienen diseños incompatibles con Internet Explorer \(IE\).  Cuando un usuario de IE visita un sitio web público incompatible, el usuario puede recibir un mensaje.  El mensaje indica que el sitio web es incompatible con el explorador.  Después de mostrar el mensaje, se espera que el usuario cambie manualmente a un explorador moderno.  Para minimizar las interrupciones, a partir de la versión 84, Microsoft Edge admite una nueva funcionalidad que redirige automáticamente a los usuarios.  Cuando un usuario de IE navega a un sitio web incompatible con IE, Windows redirige automáticamente al usuario a Microsoft Edge.  Para revisar los sitios web de la lista, vaya a [Necesita Microsoft Edge lista][MicrosoftEdgeNeededgeV1].
 
 En este artículo se describen los siguientes conceptos.  
 
@@ -32,7 +32,7 @@ La lista de compatibilidad de IE solo agrega un sitio web cuando se producen las
 
 ## <a name="redirection-experience"></a>Experiencia de redirección
 
-En el redireccionamiento a Microsoft Edge, se muestra al usuario el cuadro de diálogo de una sola vez en la siguiente captura de pantalla.  El cuadro de diálogo proporciona al usuario la siguiente información.  
+Al volver a Microsoft Edge, se muestra al usuario el cuadro de diálogo de una sola vez en la siguiente captura de pantalla.  El cuadro de diálogo proporciona al usuario la siguiente información.  
 
 *   Explica por qué se redirige el sitio web.  
 *   Solicita al usuario su consentimiento para copiar los datos de exploración y las preferencias de IE a Microsoft Edge.  
@@ -103,6 +103,6 @@ La lista de compatibilidad de IE se actualiza en una semana.
 
 [MicrosoftOfficialHome]: https://www.microsoft.com "Inicio oficial de Microsoft"  
 
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Necesita microsoft edge list v1 xml | Microsoft Edge"  
+[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Necesita Microsoft Edge lista v1 xml | Microsoft Edge"  
 
-[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "El sitio web al que intentabas llegar no funciona con Internet Explorer | Microsoft Office soporte técnico"  
+[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "El sitio web al que intentabas llegar no funciona con Internet Explorer | Microsoft Office Soporte técnico"  

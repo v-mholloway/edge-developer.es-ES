@@ -82,7 +82,7 @@ El fragmento de código se ejecuta en el trabajador de servicio siempre que el e
 
 Esta sencilla introducción muestra cómo usar el almacenamiento en caché en la aplicación web progresiva (PWA). Cada PWA es diferente y puede usar diferentes estrategias de almacenamiento en caché. El código puede tener un aspecto diferente y puede usar diferentes estrategias de almacenamiento en caché para distintas rutas dentro de la misma aplicación.
 
-## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>Usar IndexedDB en su PWA para almacenar datos estructurados
+## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>Usar IndexedDB en su PWA almacenar datos estructurados
 
 `IndexedDB` es una API para almacenar datos estructurados. Al igual que la API, también es asincrónica, lo que significa que puede usarla en el subproceso principal o con trabajadores web como `Cache` trabajadores de servicio. Use la API para almacenar una cantidad significativa de datos estructurados en el cliente o datos `IndexedDB` binarios, como objetos multimedia cifrados. Para obtener más información, vaya a [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
 
@@ -91,10 +91,10 @@ Esta sencilla introducción muestra cómo usar el almacenamiento en caché en la
 A veces es posible que deba almacenar pequeñas cantidades de datos para proporcionar una mejor experiencia sin conexión para los usuarios. Si ese es el caso, es posible que encuentre la simplicidad del sistema de par clave-valor del almacenamiento web según sus necesidades.  
 
 > [!IMPORTANT]
-> El almacenamiento web es un proceso sincrónico y no está disponible para su uso en subprocesos de trabajo como trabajadores de servicio. El uso intenso puede crear problemas de rendimiento para la aplicación. 
+> El Storage web es un proceso sincrónico y no está disponible para su uso dentro de subprocesos de trabajo como trabajadores de servicio. El uso intenso puede crear problemas de rendimiento para la aplicación. 
 
 
-Hay 2 tipos de almacenamiento web: `localStorage` y `sessionStorage` . Cada uno se mantiene como un almacén de datos independiente aislado del dominio que lo creó. `sessionStorage` solo persiste durante la sesión de exploración (por ejemplo, mientras el explorador está abierto, que incluye actualizaciones y restauraciones). `localStorage` persiste hasta que el código, el usuario o el explorador quitan los datos (por ejemplo, cuando hay un almacenamiento limitado disponible). El siguiente fragmento de código muestra cómo usar `localStorage` , que es similar a cómo se `sessionStorage` usa.
+Hay 2 tipos de web Storage: `localStorage` y `sessionStorage` . Cada uno se mantiene como un almacén de datos independiente aislado del dominio que lo creó. `sessionStorage` solo persiste durante la sesión de exploración (por ejemplo, mientras el explorador está abierto, que incluye actualizaciones y restauraciones). `localStorage` persiste hasta que el código, el usuario o el explorador quitan los datos (por ejemplo, cuando hay un almacenamiento limitado disponible). El siguiente fragmento de código muestra cómo usar `localStorage` , que es similar a cómo se `sessionStorage` usa.
 
 ```javascript
 var data = {
@@ -132,7 +132,7 @@ function insertOfflineLink( request ) {
 
 El `insertOfflineLink()` método pasa la dirección URL de la solicitud al método para recuperar los `localStorage.getItem()` metadatos almacenados. Los datos recuperados se comprueban para ver si existen y, si lo hace, se puede realizar una acción en los datos, como crear e insertar el marcado para mostrarlos.
 
-## <a name="test-for-network-connections-in-your-pwa"></a>Probar las conexiones de red en su PWA
+## <a name="test-for-network-connections-in-your-pwa"></a>Pruebe las conexiones de red en su PWA
 
 Además de almacenar información para uso sin conexión, es útil saber cuándo hay una conexión de red disponible para sincronizar datos o informar a los usuarios de que el estado de la red ha cambiado. Use las siguientes opciones para probar la conectividad de red.
 
@@ -153,14 +153,14 @@ window.addEventListener("offline", function(){
 });
 ```  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 Para obtener más información sobre cómo administrar escenarios sin conexión, vaya a las páginas siguientes.  
 
 *   [Memoria caché][MDNCache]  
 *   [IndexedDB][MDNIndexeddbApi]  
 *   [Trabajador de servicio][MDNServiceWorker]  
-*   [Almacenamiento web][MDNWebStorageApi]  
+*   [Web Storage][MDNWebStorageApi]  
 *   [navigator.onLine][MDNNavigatoronline]  
 *   [Eventos en línea y sin conexión][MDNNavigatoronlineOfflineEvents]  
 *   [Solicitud con intención: estrategias de almacenamiento en caché en la era de los PWA][AlistapartRequestIntentCachingStrategiesAgePwas]
@@ -171,7 +171,7 @@ Para obtener más información sobre cómo administrar escenarios sin conexión,
 [MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "Api IndexedDB | MDN"  
 [MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Uso de IndexDb: api de IndexDB | MDN"  
 [MDNServiceWorker]: https://developer.mozilla.org/docs/Web/API/ServiceWorker "ServiceWorker | MDN"  
-[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Api de almacenamiento web | MDN"  
+[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Api Storage web | MDN"  
 [MDNNavigatoronline]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine "NavigatorOnLine | MDN"  
 [MDNNavigatoronlineOfflineEvents]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events "Eventos en línea y sin conexión: NavigatorOnLine | MDN"  
 

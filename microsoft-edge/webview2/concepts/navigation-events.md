@@ -64,7 +64,7 @@ Realice un seguimiento de los eventos de navegación a cada nuevo documento medi
 
 Para supervisar o cancelar eventos de navegación dentro de subframes en una instancia WebView2, use los eventos y que actúan igual que los eventos equivalentes que no son `FrameNavigationStarting` `FrameNavigationCompleted` de fotogramas.  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   Para empezar a usar WebView2, vaya a Guías de Introducción [WebView2.][Webview2IndexGetStarted]  
 *   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] en GitHub.  

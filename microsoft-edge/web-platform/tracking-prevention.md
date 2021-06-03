@@ -1,5 +1,5 @@
 ---
-description: Esta página proporciona documentación sobre la característica de prevención de seguimiento de Microsoft Edge (Chromium)
+description: En esta página se proporciona documentación sobre la característica de prevención Microsoft Edge (Chromium) de seguimiento
 title: Prevención de seguimiento en Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -16,9 +16,9 @@ ms.locfileid: "11399291"
 ---
 # <a name="tracking-prevention-in-microsoft-edge-chromium"></a>Prevención de seguimiento en Microsoft Edge (Chromium)  
 
-La característica de prevención de seguimiento de Microsoft Edge protege a los usuarios del seguimiento en línea al restringir la capacidad de los rastreadores para acceder al almacenamiento basado en exploradores, así como a la red.  Se ha creado para cumplir la promesa de privacidad del explorador Microsoft [Edge][MicrosoftEdgeBrowserPrivacyPromise] y, al mismo tiempo, garantizar que no haya ningún impacto de forma predeterminada en la compatibilidad de sitios web o la viabilidad económica de la web.  
+La característica de prevención de seguimiento de Microsoft Edge protege a los usuarios del seguimiento en línea al restringir la capacidad de los rastreadores para acceder al almacenamiento basado en exploradores, así como a la red.  Se ha creado para cumplir la promesa Microsoft Edge privacidad del explorador y, [al][MicrosoftEdgeBrowserPrivacyPromise] mismo tiempo, garantizar que no haya ningún impacto de forma predeterminada en la compatibilidad de sitios web o en la viabilidad económica de la web.  
 
-Microsoft Edge ofrece actualmente a los usuarios tres niveles de prevención de seguimiento, que se seleccionan navegando a `edge://settings/privacy` .  
+Microsoft Edge ofrece a los usuarios tres niveles de prevención de seguimiento, que se seleccionan navegando a `edge://settings/privacy` .  
 
 ![Tres opciones de prevención de seguimiento][ImageThreeSettingsTrackingPrevention]  
 
@@ -26,17 +26,17 @@ Microsoft Edge ofrece actualmente a los usuarios tres niveles de prevención de 
 1.  **Equilibrado (predeterminado):** el nivel predeterminado de prevención de seguimiento diseñado para los usuarios que desean ver anuncios menos espeluznante que los siguen por la web mientras exploran.  Balanced tiene como objetivo bloquear los rastreadores de sitios con los que los usuarios nunca interactúan, a la vez que minimizan el riesgo de problemas de compatibilidad en la web.  
 1.  **Estricto:** el nivel más restrictivo de prevención de seguimiento diseñado para usuarios que están bien negociando la compatibilidad de sitios web para obtener la máxima privacidad.  
 
-La característica de prevención de seguimiento en Microsoft Edge está hecha de tres componentes principales que trabajan juntos para determinar si un recurso específico de un sitio web debe clasificarse como rastreador y bloquearse.  Los componentes son los siguientes:  
+La característica de prevención de seguimiento de Microsoft Edge está hecha de tres componentes principales que trabajan juntos para determinar si un recurso específico de un sitio web debe clasificarse como rastreador y bloquearse.  Los componentes son los siguientes:  
 
-1.  **Clasificación:** la forma en que Microsoft Edge determina si una dirección URL pertenece a un rastreador.  
-1.  **Aplicación:** las acciones realizadas para proteger a los usuarios de Microsoft Edge de las direcciones URL clasificadas como rastreadores.  
+1.  **Clasificación:** la forma Microsoft Edge determina si una dirección URL pertenece a un rastreador.  
+1.  **Aplicación:** las acciones realizadas para proteger Microsoft Edge usuarios de direcciones URL clasificadas como rastreadores.  
 1.  **Mitigaciones:** los mecanismos proporcionados para garantizar que los sitios favoritos especificados por el usuario siguen funcionando, al tiempo que ofrecen una protección predeterminada segura.  
 
 Cada uno de los componentes se explora y se explica detalladamente en esta página.  
 
 ## <a name="classification"></a>Clasificación  
 
-El primer componente de la característica de prevención de seguimiento en Microsoft Edge es la clasificación.  Para clasificar los rastreadores en línea y agruparlos en categorías, Microsoft Edge usa las listas de protección de seguimiento de código abierto [Disconnect][|::ref1::|Main] open source [.][GitHubDisconnectMeTrackingProtection]  Las listas se entregan a través del componente "Listas de protección de confianza", que se puede ver en `edge://components` .  Después de descargarlas, las listas se almacenan en el disco, donde puede usarlas para determinar si se clasifica una dirección URL determinada.  
+El primer componente de la característica de prevención de seguimiento en Microsoft Edge es la clasificación.  Para clasificar los rastreadores en línea y agruparlos en categorías, Microsoft Edge las listas de protección [de][|::ref1::|Main] seguimiento de código [abierto][GitHubDisconnectMeTrackingProtection]disconnect .  Las listas se entregan a través del componente "Listas de protección de confianza", que se puede ver en `edge://components` .  Después de descargarlas, las listas se almacenan en el disco, donde puede usarlas para determinar si se clasifica una dirección URL determinada.  
 
 Para determinar si el sistema de clasificación de Microsoft Edge considera que una dirección URL es un rastreador, se comprueba una serie de nombres de host, empezando por una coincidencia exacta y, a continuación, buscando coincidencias parciales para hasta cuatro etiquetas más allá del dominio de nivel superior.  
 
@@ -56,9 +56,9 @@ Si alguno de esos nombres de host [][|::ref2::|Main] coincide con un nombre de h
 
 ## <a name="enforcement"></a>Cumplimiento  
 
-Para proporcionar protección frente a acciones de seguimiento en la web, Microsoft Edge realiza dos acciones de aplicación contra rastreadores clasificados:
+Para proporcionar protección frente a acciones de seguimiento en la web, Microsoft Edge dos acciones de aplicación contra rastreadores clasificados:
 
-*   **Restringir el acceso** al almacenamiento: si un recurso de seguimiento conocido intenta obtener acceso a cualquier almacenamiento web en el que pueda intentar conservar los datos sobre el usuario, Microsoft Edge bloquea ese acceso.  Esto incluye restringir la capacidad de ese rastreador para obtener o establecer cookies, así como las API de almacenamiento de acceso, `IndexedDB` como y `localStorage` .  
+*   **Restringir el acceso** al almacenamiento: si un recurso de seguimiento conocido intenta obtener acceso a cualquier almacenamiento web en el que pueda intentar conservar los datos sobre el usuario, Microsoft Edge bloqueará ese acceso.  Esto incluye restringir la capacidad de ese rastreador para obtener o establecer cookies, así como las API de almacenamiento de acceso, `IndexedDB` como y `localStorage` .  
 *   **Bloquear** cargas de recursos: si se carga un recurso de seguimiento conocido en un sitio web, Microsoft Edge puede bloquear esa carga antes de que la solicitud llegue a la red según el impacto de compatibilidad de la carga y la configuración de prevención de seguimiento que haya establecido un usuario.  Las cargas bloqueadas pueden incluir scripts de seguimiento, píxeles, iframes y mucho más.  Esto evita que los datos potencialmente se envíen al dominio de seguimiento e incluso pueden mejorar los tiempos de carga y el rendimiento de la página como efecto secundario.  
 
 Un usuario puede elegir el icono desplegable de información de página en el lado izquierdo de la barra de direcciones para averiguar qué rastreadores se bloquearon en una página específica: 
@@ -69,17 +69,17 @@ La forma en que se aplican las restricciones depende del nivel de prevención de
 
 ## <a name="mitigations"></a>Mitigaciones  
 
-Para garantizar que la compatibilidad web se conserve tanto como sea posible, Microsoft Edge tiene tres mitigaciones para ayudar a equilibrar las aplicaciones en situaciones específicas.  Estas son la [mitigación de la relación de organización,](#org-relationship-mitigation)la mitigación [de participación](#org-engagement-mitigation)de la organización y la [lista CompatExceptions](#the-compatexceptions-list).  
+Para garantizar que la compatibilidad web se conserve tanto como sea posible, Microsoft Edge tres mitigaciones para ayudar a equilibrar las aplicaciones en situaciones específicas.  Estas son la [mitigación de la relación de organización,](#org-relationship-mitigation)la mitigación [de participación](#org-engagement-mitigation)de la organización y la [lista CompatExceptions](#the-compatexceptions-list).  
 
-Antes de sumergirse en las mitigaciones, vale la pena definir el concepto de "Organización" o "Org" en resumen.  [Disconnect][|::ref3::|Main] también mantiene una lista denominada [entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson] en la que se definen grupos de direcciones URL que pertenecen a la misma organización o empresa primaria.  La característica de prevención de seguimiento [](#org-relationship-mitigation) en Microsoft Edge usa esta lista tanto en la mitigación de relaciones de organización como en la mitigación de [org engagement](#org-engagement-mitigation) para minimizar la aparición de problemas de compatibilidad causados por la prevención de seguimiento que afecta a las solicitudes entre organizaciones.  
+Antes de sumergirse en las mitigaciones, vale la pena definir el concepto de "Organización" o "Org" en resumen.  [Disconnect][|::ref3::|Main] también mantiene una lista denominada [entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson] en la que se definen grupos de direcciones URL que pertenecen a la misma organización o empresa primaria.  La característica de prevención de seguimiento de [](#org-relationship-mitigation) Microsoft Edge usa esta lista tanto en la mitigación de relaciones de organización como en la mitigación de [org engagement](#org-engagement-mitigation) para minimizar la aparición de problemas de compatibilidad causados por la prevención de seguimiento que afecta a las solicitudes entre organizaciones.  
 
 ### <a name="org-relationship-mitigation"></a>Mitigación de relaciones de la organización  
 
-Varios sitios web populares mantienen sitios web y redes de entrega de contenido \(CDNs\) para servir recursos estáticos y contenido a esos sitios.  Para asegurarse de que estos tipos de escenarios no se ven afectados por la prevención de seguimiento, Microsoft Edge exime a un sitio de la prevención de seguimiento cuando el sitio realiza solicitudes de terceros a otros sitios propiedad de la misma organización primaria \(como se define en la lista Desconectar [entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson]on \).  Esto se ilustra mejor con un ejemplo.  
+Varios sitios web populares mantienen sitios web y redes de entrega de contenido \(CDNs\) para servir recursos estáticos y contenido a esos sitios.  Para asegurarse de que este tipo de escenarios no se ven afectados por la prevención de seguimiento, Microsoft Edge exime a un sitio de la prevención de seguimiento cuando el sitio realiza solicitudes de terceros a otros sitios propiedad de la misma organización primaria \(como se define en la lista Desconectar [entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson]on \).  Esto se ilustra mejor con un ejemplo.  
 
 > **Por ejemplo:**
 > 
-> Una organización denominada Org1 es propietaria de los dominios y , tal como se define en la lista `org1.test` `org1-cdn.test` Desconectar entities.js[en][GitHubDisconnectMeTrackingProtectionEntitiesJson].  Imagine que se clasifica como un rastreador y normalmente se le aplicarían las aplicaciones de prevención `org1-cdn.test` de seguimiento.  Si un usuario visita y el sitio intenta cargar un recurso desde , Microsoft Edge no realiza ninguna acción de aplicación contra las solicitudes realizadas a aunque no sea una dirección URL de `https://org1.test` `https://org1-cdn.test` primera `org1-cdn.test` persona.  Sin embargo, si otra dirección URL que no forma parte de la organización Org1 intenta cargar ese mismo recurso, la solicitud estaría sujeta a las fuerzas de seguridad porque no forma parte de la misma organización.  
+> Una organización denominada Org1 es propietaria de los dominios y , tal como se define en la lista `org1.test` `org1-cdn.test` Desconectar entities.js[en][GitHubDisconnectMeTrackingProtectionEntitiesJson].  Imagine que se clasifica como rastreador y normalmente se le aplicarían medidas de prevención `org1-cdn.test` de seguimiento.  Si un usuario visita y el sitio intenta cargar un recurso desde , Microsoft Edge no realiza ninguna acción de aplicación contra las solicitudes realizadas a aunque no sea una dirección URL de `https://org1.test` `https://org1-cdn.test` primera `org1-cdn.test` persona.  Sin embargo, si otra dirección URL que no forma parte de la organización Org1 intenta cargar ese mismo recurso, la solicitud estaría sujeta a las fuerzas de seguridad porque no forma parte de la misma organización.  
 > 
 > Aunque esto relaja el seguimiento de las medidas de prevención para los sitios que pertenecen a la misma organización, es poco probable que esto presente un alto riesgo de privacidad, ya que dichas organizaciones pueden determinar a qué sitios o recursos ha tenido acceso, así como a través de datos `https://org1.test` `https://org1-cdn.test` back-end internos.  
 
@@ -101,15 +101,15 @@ Actualmente, la mitigación de participación de la organización solo se aplica
 
 ### <a name="the-compatexceptions-list"></a>La lista CompatExceptions  
 
-En función de los comentarios recientes de los usuarios recibidos por Microsoft, Microsoft Edge mantiene una pequeña lista de sitios \(la mayoría de los cuales se encuentran en la categoría Desconectar contenido\) que se rompían debido a la prevención de seguimiento a pesar de tener las dos mitigaciones anteriores en su lugar. Los sitios de esta lista están exentos del seguimiento de las aplicaciones de prevención.  La lista se puede encontrar en el disco en las [ubicaciones que se describen](#determining-whetherhow-a-particular-url-is-classified) a continuación.  Los usuarios pueden invalidar las entradas en él mediante la **opción Bloquear** en `edge://settings/content/cookies` .
+Basándose en los comentarios recientes de los usuarios recibidos por Microsoft, Microsoft Edge mantiene una pequeña lista de sitios \(la mayoría de los cuales se encuentran en la categoría Desconectar contenido\) que se rompían debido a la prevención de seguimiento a pesar de tener las dos mitigaciones anteriores en su lugar. Los sitios de esta lista están exentos del seguimiento de las aplicaciones de prevención.  La lista se puede encontrar en el disco en las [ubicaciones que se describen](#determining-whetherhow-a-particular-url-is-classified) a continuación.  Los usuarios pueden invalidar las entradas en él mediante la **opción Bloquear** en `edge://settings/content/cookies` .
 
-Para evitar que esta lista avance, Microsoft está trabajando actualmente en la API de [acceso][GitHubMsExplainersStorageAccessApi] de almacenamiento en la base de código chromium.  La [API][GitHubMsExplainersStorageAccessApi] de acceso al almacenamiento ofrece a los desarrolladores de sitios una forma de solicitar acceso de almacenamiento a los usuarios directamente, lo que proporciona a los usuarios más transparencia en la forma en que su configuración de privacidad afecta a su experiencia de navegación y proporciona controles a los desarrolladores de sitios para desbloquearse de forma rápida e intuitiva.
+Para evitar que esta lista avance, Microsoft está trabajando actualmente en la API Storage [Access][GitHubMsExplainersStorageAccessApi] en la base Chromium código.  La API de [Storage Access][GitHubMsExplainersStorageAccessApi] ofrece a los desarrolladores de sitios una forma de solicitar acceso de almacenamiento a los usuarios directamente, proporcionando a los usuarios más transparencia sobre cómo su configuración de privacidad está afectando a su experiencia de exploración y proporcionando controles a los desarrolladores de sitios para desbloquearse de forma rápida e intuitiva.
 
-Después de implementar la [API][GitHubMsExplainersStorageAccessApi] de acceso de almacenamiento, Microsoft dejará de usar la lista CompatExceptions y se pondrá en contacto con los sitios afectados para que conozcan los problemas y para solicitar que usen la [API][GitHubMsExplainersStorageAccessApi] de acceso de almacenamiento para avanzar.  
+Después de implementar la API de access de [Storage,][GitHubMsExplainersStorageAccessApi] Microsoft dejará de usar la lista CompatExceptions y se pondrá en contacto con los sitios afectados tanto para que conozcan los problemas como para solicitar que usen la API de access de [Storage][GitHubMsExplainersStorageAccessApi] avanzando.  
 
 ## <a name="current-tracking-prevention-behavior"></a>Comportamiento de prevención de seguimiento actual  
 
-En la tabla siguiente se muestran las acciones y mitigaciones de aplicación que se aplican a cada categoría de rastreador clasificado en Microsoft Edge.  
+En la tabla siguiente se muestran las acciones de aplicación y mitigaciones que se aplican a cada categoría de rastreador clasificado en Microsoft Edge.  
 
 *   En la parte superior se encuentran las categorías de rastreadores definidas por las categorías de lista de protección de seguimiento [de desconexión.][GitHubDisconnectTrackingProtectionCategories]  
 *   A lo largo del lado izquierdo se encuentran los tres niveles de prevención de seguimiento en Microsoft Edge \(Basic, Balanced y Strict\).  
@@ -119,9 +119,9 @@ En la tabla siguiente se muestran las acciones y mitigaciones de aplicación que
 
 | | Publicidad | Análisis | Contenido | Criptomining | Huella digital | Redes sociales | Otros | Mitigación de la misma organización | Mitigación de participación de la organización |  
 | - | - | - | - | - | - | - | - | - | - | - |  
-| **Básico** | - | - | - | B | B | - | - | Habilitado | N/D |  
+| **Básico** | - | - | - | B | B | - | - | Habilitado | N/A |  
 | **Equilibrado** | S | - | S | B | B | S | S | Habilitada | Habilitada |  
-| **Estricta** | B | B | S | B | B | B | B | Habilitada | Deshabilitada |  
+| **Estricta** | B | B | S | B | B | B | B | Habilitado | Deshabilitado |  
 
 > [!NOTE]
 > La mitigación de participación de la organización no se aplica a las categorías Criptomining o Fingerprinting.  
@@ -156,7 +156,7 @@ La forma más sencilla de determinar si una dirección URL específica se clasif
 >
 > macOS: `~/Library/Application Support/Microsoft Edge <OptionalChannelName>/Trust Protection Lists`  
 >
-> **Directorio de instalación:** las listas que se agrupan con el instalador de Microsoft Edge.  Si seleccionó un directorio de instalación diferente, las rutas exactas pueden ser diferentes.  
+> **Directorio de instalación:** las listas que se incluyen con el instalador Microsoft Edge instalación.  Si seleccionó un directorio de instalación diferente, las rutas exactas pueden ser diferentes.  
 >
 > Windows: `%PROGRAMFILES(x86)%\Microsoft\ Edge <OptionalChannelName>\Application<Version>\Trust Protection Lists`  
 >
@@ -181,7 +181,7 @@ Dicho esto, las **** opciones **Bloquear** y Permitir de la página pueden usars
 
 [MicrosoftEdgeBrowserPrivacyPromise]: https://microsoftedgewelcome.microsoft.com/privacy "Privacidad: Microsoft Edge"  
 
-[ChromiumDesignDocsSiteEngagement]: https://www.chromium.org/developers/design-documents/site-engagement "Participación en el sitio: los proyectos de Chromium"  
+[ChromiumDesignDocsSiteEngagement]: https://www.chromium.org/developers/design-documents/site-engagement "Site Engagement: el Chromium proyectos"  
 
 [DisconnectMain]: https://disconnect.me "Desconectar"  
 
@@ -189,4 +189,4 @@ Dicho esto, las **** opciones **Bloquear** y Permitir de la página pueden usars
 [GitHubDisconnectTrackingProtectionCategories]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json "services.js: desconectarme/desconectar-seguimiento-protección | Github"  
 [GitHubDisconnectMeTrackingProtectionEntitiesJson]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json "entities.js: desconectarme/desconectar-seguimiento-protección | Github"  
 
-[GitHubMsExplainersStorageAccessApi]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md "Storage Access API Explainer: MSEdgeExplainers/StorageAccessAPI | GitHub"
+[GitHubMsExplainersStorageAccessApi]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md "Storage Explíquelo de la API de Access: MSEdgeExplainers/StorageAccessAPI | GitHub"

@@ -1,6 +1,6 @@
 ---
-description: Cómo usar webhint en Visual Studio code
-title: webhint Visual Studio code extension
+description: Cómo usar webhint en Visual Studio Code
+title: extensión webhint Visual Studio Code webhint
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -16,15 +16,15 @@ ms.locfileid: "11399277"
 ---
 # <a name="webhint-vs-code-extension"></a>Webhint Vs Extensión de código  
 
-Use [webhint][WebhintMain], una herramienta de linchado personalizable, para mejorar la accesibilidad, el rendimiento, la compatibilidad entre exploradores, la compatibilidad de PWA y la seguridad del sitio.  Comprueba el código en busca de procedimientos recomendados y errores comunes. Este proyecto de código abierto, desarrollado inicialmente por el equipo de Microsoft Edge, ahora forma parte de [OpenJS Foundation][OpenjsFoundation].  El equipo de Microsoft Edge sigue contribuyendo a la webhint junto con los desarrolladores web de la comunidad.  
+Use [webhint][WebhintMain], una herramienta de linting personalizable, para mejorar la accesibilidad, el rendimiento, la compatibilidad entre exploradores, PWA compatibilidad y la seguridad del sitio.  Comprueba el código en busca de procedimientos recomendados y errores comunes. Este proyecto de código abierto, desarrollado inicialmente por el Microsoft Edge, ahora forma parte de [OpenJS Foundation][OpenjsFoundation].  El Microsoft Edge continúa contribuyendo a la webhint junto con los desarrolladores web de la comunidad.  
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Captura de pantalla de webhint Visual Studio code extension":::
-   Captura de pantalla de webhint Visual Studio code extension  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Captura de pantalla de webhint Visual Studio Code extensión":::
+   Captura de pantalla de webhint Visual Studio Code extensión  
 :::image-end:::
 
 <!--![Screenshot of webhint Visual Studio Code extension][ImageWebhintExtension]  -->  
 
-Identifique y corrija problemas en html, CSS, JavaScript, TypeScript y mucho más agregando la extensión [webhint Visual Studio Code][VisualstudioMarketplaceWebhint].  Las sugerencias aparecen como subrayados en línea y se resumen en el **panel** Problemas.  
+Identifique y corrija problemas en html, CSS, JavaScript, TypeScript y mucho más agregando la extensión [webhint para Visual Studio Code][VisualstudioMarketplaceWebhint].  Las sugerencias aparecen como subrayados en línea y se resumen en el **panel** Problemas.  
 
 ## <a name="configuration"></a>Configuración  
 
@@ -84,11 +84,11 @@ Si desea tener más control sobre las sugerencias y analizadores que se activan,
 
 ## <a name="getting-in-touch-with-the-webhint-team"></a>Getting in touch with the webhint team  
 
-Envíe sus comentarios mediante [la presentación de un problema][GithubWebhintioIssuesNew] en el repositorio de [GitHub webhint][GithubWebhintio].  
+Envíe sus comentarios mediante [la presentación de un problema][GithubWebhintioIssuesNew] en el repositorio GitHub [web.][GithubWebhintio]  
 
-Para contribuir a la extensión, vaya a [webhint Visual Studio guía de contribución de extensión de código][GithubWebhintioExtensionVscodeContributing].  
+Para contribuir a la extensión, vaya a [webhint Visual Studio Code guía de contribución de extensión][GithubWebhintioExtensionVscodeContributing].  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   [Accesibilidad][AccessibilityIndex]  
 *   [Visual Studio Code][VisualstudiocodeIndex]  
@@ -101,7 +101,7 @@ Para contribuir a la extensión, vaya a [webhint Visual Studio guía de contribu
 
 [AccessibilityIndex]: /microsoft-edge/accessibility "Accesibilidad | Microsoft Docs"  
 
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio código | Microsoft Docs"  
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code | Microsoft Docs"  
 
 [GithubWebhintio]: https://github.com/webhintio/hint "webhint | GitHub"  
 [GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Contribuir: webhint | GitHub"  

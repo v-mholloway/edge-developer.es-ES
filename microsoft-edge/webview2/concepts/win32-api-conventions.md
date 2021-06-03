@@ -139,7 +139,7 @@ Si usa y analiza uri, puede usar las siguientes marcas de creación de URI para 
 Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 ```  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   Para empezar a usar WebView2 Win32 C/C++, vaya a [Introducción a WebView2][Webview2IndexGetStarted].  
 *   Para obtener información más detallada acerca de las API de WebView2, vaya a [Referencia de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  

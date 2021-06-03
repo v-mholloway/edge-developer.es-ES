@@ -38,7 +38,7 @@ Para usar la característica de pantalla de medios [CSS][DualScreenDocsCssMedia]
 
 1.  Vaya a `edge://flags`.  
 1.  En el **cuadro de texto** Marcas de búsqueda, escriba , elija la marca características de plataforma web `Experimental Web Platform features` **experimental** y cambie **Deshabilitado** a **Habilitado**.  
-1.  Reiniciar MicrosoftEdge.  
+1.  Reiniciar Microsoft Edge.  
     
 :::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Activar la marca de características de la plataforma web experimental" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
    Activar la marca **de características de la plataforma web** experimental  
@@ -85,7 +85,7 @@ Estos son recursos adicionales que pueden ayudarle a mejorar su sitio web \(o ap
 
 [DualScreenWebIndex]: /dual-screen/web/index "Experiencias web de pantalla doble | Microsoft Docs"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Obtener el emulador de Surface Duo | Microsoft Docs"  
-[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Cómo trabajar con la unión: Introducción a los dispositivos de pantalla doble | Microsoft Docs"  
+[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Cómo trabajar con la unión: introducción a los dispositivos de pantalla doble | Microsoft Docs"  
 [DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Usa el emulador de Surface Duo | Microsoft Docs"  
 [DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "Característica de pantalla expandida para medios CSS para la detección de pantalla doble | Microsoft Docs"  
 [DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "API de JavaScript de getWindowSegments para dispositivos de pantalla doble | Microsoft Docs"  

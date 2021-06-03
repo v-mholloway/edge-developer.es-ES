@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 ms.openlocfilehash: bd91939a19f02a426834a85ef92eca388f8f1eda
 ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
 ms.translationtype: MT
@@ -127,15 +127,15 @@ La **opción Usar textura de** pantalla agrega contexto a la experiencia de depu
    Panel **Capas compuestas**
 :::image-end:::  
 
-El **panel Capas compuestas** abre los elementos de la **herramienta Capas** sin cambiar contextos.  Es posible que aún tenga acceso a los detalles de cada una de las capas y tenga los **rects de** desplazamiento lento y **Paint**.
+El **panel Capas compuestas** abre los elementos de la **herramienta Capas** sin cambiar contextos.  Es posible que aún tenga acceso a **** los detalles de cada una de las capas y tenga los retrocesos de desplazamiento lento **y Paint**.
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
-El equipo de Microsoft Edge Devtools está trabajando en la interfaz de usuario y agregando más funcionalidad a la vista 3D en función de los comentarios.  Envíe sus comentarios para ayudar a mejorar las DevTools de Microsoft Edge.  Elige el **icono Enviar** comentarios en DevTools o selecciona en Windows/Linux o en macOS y escribe los comentarios o solicitudes de características que tienes para `Alt` + `Shift` + `I` `Option` + `Shift` + `I` DevTools.  
+El Microsoft Edge de Devtools está trabajando en la interfaz de usuario y agregando más funcionalidad a la vista 3D en función de los comentarios.  Envíe sus comentarios para ayudar a mejorar el Microsoft Edge DevTools.  Elija el **icono Enviar** comentarios en DevTools o seleccione en Windows/Linux o en macOS e introduzca los comentarios o solicitudes de características que tenga para `Alt` + `Shift` + `I` `Option` + `Shift` + `I` DevTools.  
 
 <!-- links -->  
 
-[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Vista 3D de Microsoft Edge DevTools: MicrosoftEdge/DevToolsSamples | GitHub"  
+[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge Vista 3D de DevTools: MicrosoftEdge/DevToolsSamples | GitHub"  
 
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modelo de objetos de documento (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "Z-index | MDN"  

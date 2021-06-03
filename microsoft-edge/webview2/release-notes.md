@@ -254,7 +254,7 @@ Fecha de lanzamiento: 8 de diciembre de 2020
 
 Fecha de lanzamiento: 20 de noviembre de 2020  
 
-[Paquete NuGet][NuGetGallery1.0.664.37] \| WebView2 Runtime versión 86.0.616.0 o posterior  
+[NuGet paquete][NuGetGallery1.0.664.37] \| WebView2 Runtime versión 86.0.616.0 o posterior  
 
 ### <a name="general"></a>General  
 
@@ -276,7 +276,7 @@ Fecha de lanzamiento: 20 de noviembre de 2020
 
 Fecha de lanzamiento: 19 de octubre de 2020  
 
-[Paquete NuGet][NuGetGallery1.0.674-prerelease] \| WebView2 Runtime versión 86.0.616.0 o posterior  
+[NuGet paquete][NuGetGallery1.0.674-prerelease] \| WebView2 Runtime versión 86.0.616.0 o posterior  
 
 ### <a name="general"></a>General  
 
@@ -285,7 +285,7 @@ Fecha de lanzamiento: 19 de octubre de 2020
 *   Se agregó [la propiedad Environment][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseGetEnvironment] en WebView2.  Esta propiedad expone el entorno WebView2 donde se creó una instancia de WebView2.  
 *   Se [agregaron API de administración][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseGetCookiemanager] de cookies que permiten a los desarrolladores autenticar la sesión de WebView2 o recuperar cookies de WebView para autenticar otras herramientas.  El equipo de Webview planea realizar mejoras de lenguaje o específicas del marco.  Para obtener más información, vaya a [Api Review: Cookie Management][GithubMicrosoftedgeWebview2AnnouncementIssue2].  
 *   Se actualizó el evento [WebResourceResponseReceived][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseAddWebresourceresponsereceived] y se agregaron [WebResourceResponseView][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponseviewViewWebview210674Prerelease] y [WebResourceResponseReceivedEventArgs::P opulateResponseContent][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsViewWebview209628PrereleasePopulateresponsecontent] a [WebResourceResponseView::GetContent][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponseviewViewWebview210674PrereleaseGetcontent].  
-*   Desactivado Microsoft [Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] en WebView2.  
+*   Desactivado el [Protección de aplicaciones de Microsoft Defender (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] en WebView2.  
 *   Se agregó [SystemCursorId][Webview2ReferenceWin32Icorewebview2experimentalcompositioncontroller2ViewWebview210674PrereleaseGetSystemcursorid] para el hospedaje visual.  
 *   Se agregó un error corregido para el método Input en el hospedaje visual.  
 *   Se ha quitado el requisito `version.lib` de uso de la biblioteca estática de WebView2.  
@@ -306,7 +306,7 @@ Fecha de lanzamiento: 19 de octubre de 2020
 
 Fecha de lanzamiento: 19 de octubre de 2020  
 
-[Paquete NuGet][NuGetGallery1.0.622.22] \| WebView2 Runtime versión 86.0.616.0 o posterior  
+[NuGet paquete][NuGetGallery1.0.622.22] \| WebView2 Runtime versión 86.0.616.0 o posterior  
 
 ### <a name="general"></a>General  
 
@@ -320,7 +320,7 @@ Fecha de lanzamiento: 19 de octubre de 2020
 
 Fecha de lanzamiento: 10 de septiembre de 2020  
 
-[Paquete NuGet][NuGetGallery0.9.622.11] \| WebView2 Runtime versión 86.0.616.0 o posterior  
+[NuGet paquete][NuGetGallery0.9.622.11] \| WebView2 Runtime versión 86.0.616.0 o posterior  
 
 ### <a name="general"></a>General  
 
@@ -338,7 +338,7 @@ Fecha de lanzamiento: 10 de septiembre de 2020
 
 Fecha de lanzamiento: 20 de julio de 2020  
 
-[Paquete NuGet][NuGetGallery0.9.579] \| Versión 86.0.579.0 de Microsoft Edge.  
+[NuGet paquete][NuGetGallery0.9.579] \| Microsoft Edge versión 86.0.579.0.  
 
 ### <a name="general"></a>General  
 
@@ -370,7 +370,7 @@ Fecha de lanzamiento: 20 de julio de 2020
     
 ## <a name="09538"></a>0.9.538  
 
-[Paquete NuGet][NuGetGallery0.9.538] \| Versión 85.0.538.0 de Microsoft Edge.  
+[NuGet paquete][NuGetGallery0.9.538] \| Microsoft Edge versión 85.0.538.0.  
 
 ### <a name="general"></a>General  
 
@@ -384,7 +384,7 @@ Fecha de lanzamiento: 20 de julio de 2020
     > **Cambio de**ruptura: [CreateCoreWebView2EnvironmentWithDetails][Webview2ReferenceWin32Webview2IdlViewWebview209488Createcorewebview2environmentwithdetails] en desuso y reemplazado por [CreateCoreWebView2EnvironmentWithOptions][Webview2ReferenceWin32Webview2IdlViewWebview209538Createcorewebview2environmentwithoptions].  
     
 *   > [!IMPORTANT]
-    > **Breaking Change:** Para garantizar que la API de WebView2 se alinee con las convenciones de nomenclatura de la API de Windows, el equipo de WebView actualizó los nombres de los siguientes.  
+    > **Breaking Change**: Para garantizar que la API de WebView2 se alinee con las convenciones de nomenclatura de la API Windows, el equipo de WebView actualizó los nombres de los siguientes.  
     > 
     > *   [AreRemoteObjectsAllowed][Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetAreremoteobjectsallowed] ahora [es AreHostObjectsAllowed][Webview2ReferenceWin32Icorewebview2settingsViewWebview209538GetArehostobjectsallowed].  
     
@@ -401,13 +401,13 @@ Fecha de lanzamiento: 20 de julio de 2020
     
 ## <a name="09515-prerelease"></a>0.9.515-prerelease  
 
-[Paquete NuGet][NuGetGallery0.9.515-prerelease] \| Versión 84.0.515.0 de Microsoft Edge.  
+[NuGet paquete][NuGetGallery0.9.515-prerelease] \| Microsoft Edge versión 84.0.515.0.  
 
 *   > [!IMPORTANT]
     > **Anuncio:** WebView2 ahora admite Windows Forms y WPF en .NET Framework 4.6.2 o posterior y .NET Core 3.0 o posterior en el paquete **de**versión previa.  
     
-*   Para obtener más información acerca de la creación de aplicaciones WPF, vaya a la Guía de introducción de [WPF][Webview2GetStartedWpf] y la Referencia de [WPF][DotnetApiMicrosoftWebWebview2Wpf] de WebView2 para LAS API específicas de WPF.  
-*   Para obtener más información acerca de la creación de aplicaciones de Windows Forms, vaya a la Guía de introducción de [Windows Forms][Webview2GetStartedWinforms] y a la Referencia de [Windows Forms][DotnetApiMicrosoftWebWebview2Winforms] de WebView2 para API específicas de Windows Forms.  
+*   Para obtener más información acerca de la creación de aplicaciones WPF, vaya a la Guía de [Introducción WPF][Webview2GetStartedWpf] y la Referencia [de WPF][DotnetApiMicrosoftWebWebview2Wpf] de WebView2 para LAS API específicas de WPF.  
+*   Para obtener más información acerca de cómo crear aplicaciones Windows Forms, vaya a la Guía de Introducción de formularios de [Windows][Webview2GetStartedWinforms] y la Referencia de formularios de [Windows][DotnetApiMicrosoftWebWebview2Winforms] WebView2 para API específicas de Windows Forms.  
 *   Para obtener más información acerca de las API de CoreWebView2, vaya a [.NET Reference][DotnetApiMicrosoftWebWebview2Core].  
 *   > [!CAUTION]
     > **Problemas conocidos:** el equipo de WebView es consciente de algunos problemas de la versión previa que se están resolviendo en versiones futuras.  
@@ -417,16 +417,16 @@ Fecha de lanzamiento: 20 de julio de 2020
     
 ## <a name="09488"></a>0.9.488  
 
-[Paquete NuGet][NuGetGallery0.9.488] \| Versión 84.0.488.0 de Microsoft Edge.  
+[NuGet paquete][NuGetGallery0.9.488] \| Microsoft Edge versión 84.0.488.0.  
 
 *   > [!IMPORTANT]
-    > **Anuncio:** a partir de la próxima versión 83 de Microsoft Edge, Evergreen WebView ya no está dirigido al canal del explorador Estable.  En su lugar, está dirigido a otro conjunto de archivos binarios, con la marca [Evergreen WebView2 Runtime,][Webview2ConceptsDistributionEvergreenDistributionMode]que puede instalar en cadena a través de un instalador que el equipo de WebView está desarrollando actualmente.  Para obtener más información, vaya a [Distribución de aplicaciones][Webview2ConceptsDistribution].  
+    > **Anuncio:** a partir de la próxima Microsoft Edge versión 83, Evergreen WebView ya no está dirigido al canal del explorador Estable.  En su lugar, está dirigido a otro conjunto de archivos binarios, con la marca [Evergreen WebView2 Runtime,][Webview2ConceptsDistributionEvergreenDistributionMode]que puede instalar en cadena a través de un instalador que el equipo de WebView está desarrollando actualmente.  Para obtener más información, vaya a [Distribución de aplicaciones][Webview2ConceptsDistribution].  
     
 *   > [!IMPORTANT]
     > **Anuncio:** avanzando, el equipo de WebView publica dos paquetes: un paquete de versión previa con API experimentales \(para que lo pruebe\) y un paquete de versión estable con API estables \(para su confianza\).  Para obtener información sobre las diferencias, vaya a [Understanding browser versions y WebView2][Webview2ConceptsVersioning].  
     
 *   > [!IMPORTANT]
-    > **Breaking Change:** Para garantizar que la API de WebView2 se alinee con las convenciones de nomenclatura de la API de Windows, el equipo de WebView actualizó los nombres de las interfaces siguientes.  
+    > **Breaking Change:** Para garantizar que la API de WebView2 se alinee con las convenciones de nomenclatura de la API Windows, el equipo de WebView actualizó los nombres de las interfaces siguientes.  
     > 
     > *   `CORE_WEBVIEW2_*` prefix es ahora `COREWEBVIEW2_*` .  
     > *   [GetCoreWebView2BrowserVersionInfo][Webview2ReferenceWin32Webview2IdlViewWebview209430Getcorewebview2browserversioninfo] es [ahora GetAvailableCoreWebView2BrowserVersionString][Webview2ReferenceWin32Webview2IdlViewWebview209488Getavailablecorewebview2browserversionstring].  
@@ -459,12 +459,12 @@ Fecha de lanzamiento: 20 de julio de 2020
         
 ## <a name="09430"></a>0.9.430  
 
-[Paquete NuGet][NuGetGallery0.9.430] \| Versión 82.0.430.0 de Microsoft Edge.  
+[NuGet paquete][NuGetGallery0.9.430] \| Microsoft Edge versión 82.0.430.0.  
 
 El SDK de WebView2 es la versión beta oficial de Win32 C++, que incorpora varias solicitudes de características de comentarios.  El equipo de WebView intenta limitar el número de versiones con cambios importantes.  A medida que se acerca la disponibilidad general, se incorporan varios cambios importantes en la versión beta.  
 
 *   > [!IMPORTANT]
-    > **Cambio de**separación: a medida que se acerca la versión final, el equipo de WebView cambió el nombre del prefijo para asegurarse de que la `IWebView2WebView` API de WebView2 se alinea con la convención de nomenclatura `ICoreWebView2` de la API de Windows.  Además, para aprovechar el SDK de WebView2 de los marcos de interfaz de usuario, el equipo de WebView se separó de `ICoreWebView2` [ICoreWebView2][Webview2ReferenceWin32Icorewebview2ViewWebview209430] e [ICoreWebView2Host][Webview2ReferenceWin32Icorewebview2hostViewWebview209430].  `ICoreWebView2Host` admite cambiar el tamaño, mostrar y ocultar, enfocar y otras funciones relacionadas con las ventanas y la composición.  ICoreWebView2 admite todas las demás funciones de WebView2.  Para obtener más información sobre cómo incorporar [][GithubMicrosoftedgeWebview2samplesPr17] los cambios, vaya a la solicitud de extracción de WebView2 en el proyecto [APISample][GithubMicrosoftedgeWebview2samplesMain] de WebView2.  
+    > **Cambio**de separación: a medida que se acerca la versión final, el equipo de WebView cambió el nombre del prefijo para asegurarse de que la `IWebView2WebView` API de WebView2 se alinea con la convención de nomenclatura de la API Windows `ICoreWebView2` api.  Además, para aprovechar el SDK de WebView2 de los marcos de interfaz de usuario, el equipo de WebView se separó de `ICoreWebView2` [ICoreWebView2][Webview2ReferenceWin32Icorewebview2ViewWebview209430] e [ICoreWebView2Host][Webview2ReferenceWin32Icorewebview2hostViewWebview209430].  `ICoreWebView2Host` admite cambiar el tamaño, mostrar y ocultar, enfocar y otras funciones relacionadas con las ventanas y la composición.  ICoreWebView2 admite todas las demás funciones de WebView2.  Para obtener más información sobre cómo incorporar [][GithubMicrosoftedgeWebview2samplesPr17] los cambios, vaya a la solicitud de extracción de WebView2 en el proyecto [APISample][GithubMicrosoftedgeWebview2samplesMain] de WebView2.  
     
 *   > [!IMPORTANT]
     > **Breaking Change**: Split [DocumentStateChanged][Webview2ReferenceWin32Iwebview2webviewViewWebview208355AddDocumentstatechanged] en tres componentes:  [SourceChanged][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddSourcechanged], [ContentLoading][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddContentloading]e [HistoryChanged][Webview2ReferenceWin32Icorewebview2ViewWebview209430AddHistorychanged].  Ahora, cuando la dirección URL de origen cambia, `SourceChanged` se ejecuta el evento.  Cuando se cambia el estado del historial, `HistoryChanged` se ejecuta el evento.  El `ContentLoading` evento se ejecuta antes del script inicial cuando se carga un nuevo documento.  
@@ -798,27 +798,27 @@ Versión preliminar del desarrollador inicial.
 [NuGetGallery]: https://www.nuget.org/packages/Microsoft.Web.WebView2 "NuGet Galería | Microsoft.Web.WebView2"  
 [NuGetGallery0.8.149]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.149 "NuGet Galería | Microsoft.Web.WebView2 v0.8.149"  
 [NuGetGallery0.8.190]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190 "NuGet Galería | Microsoft.Web.WebView2 v0.8.190"  
-[NuGetGallery0.8.230]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.230 "Galería nuGet | Microsoft.Web.WebView2 v0.8.230"  
-[NuGetGallery0.8.270]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.270 "Galería nuGet | Microsoft.Web.WebView2 v0.8.270"  
-[NuGetGallery0.8.314]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314 "Galería nuGet | Microsoft.Web.WebView2 v0.8.314"  
-[NuGetGallery0.8.355]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355 "Galería nuGet | Microsoft.Web.WebView2 v0.8.355"  
-[NuGetGallery0.9.430]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430 "Galería nuGet | Microsoft.Web.WebView2 v0.9.430"  
-[NuGetGallery0.9.488]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "Galería nuGet | Microsoft.Web.WebView2 v0.9.488"  
-[NuGetGallery0.9.515-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v0.9.515"  
-[NuGetGallery0.9.538]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "Galería nuGet | Microsoft.Web.WebView2 v0.9.538"  
-[NuGetGallery0.9.579]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "Galería nuGet | Microsoft.Web.WebView2 v0.9.579"  
-[NuGetGallery0.9.622.11]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11 "Galería nuGet | Microsoft.Web.WebView2 v0.9.622.11"  
-[NuGetGallery0.9.628-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v0.9.628"  
-[NuGetGallery1.0.622.22]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.622.22 "Galería nuGet | Microsoft.Web.WebView2 v1.0.622.22"  
-[NuGetGallery1.0.664.34]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.34 "Galería nuGet | Microsoft.Web.WebView2 v1.0.664.34"  
-[NuGetGallery1.0.664.37]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.37 "Galería nuGet | Microsoft.Web.WebView2 v1.0.664.37"  
-[NuGetGallery1.0.674-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.674"  
-[NuGetGallery1.0.705.50]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.50 "Galería nuGet | Microsoft.Web.WebView2 v1.0.705.50"  
-[NuGetGallery1.0.721-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.721-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.721"  
-[NuGetGallery1.0.774.44]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.774.44 "Galería nuGet | Microsoft.Web.WebView2 v1.0.774.44"  
-[NuGetGallery1.0.790-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.790"  
-[NuGetGallery1.0.818.41]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.818.41 "Galería nuGet | Microsoft.Web.WebView2 v1.0.818.41"  
-[NuGetGallery1.0.824-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.824-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.824"  
-[NuGetGallery1.0.865-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.865-prerelease "Galería nuGet | Versión preliminar de Microsoft.Web.WebView2 v1.0.865"  
+[NuGetGallery0.8.230]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.230 "NuGet Galería | Microsoft.Web.WebView2 v0.8.230"  
+[NuGetGallery0.8.270]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.270 "NuGet Galería | Microsoft.Web.WebView2 v0.8.270"  
+[NuGetGallery0.8.314]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314 "NuGet Galería | Microsoft.Web.WebView2 v0.8.314"  
+[NuGetGallery0.8.355]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355 "NuGet Galería | Microsoft.Web.WebView2 v0.8.355"  
+[NuGetGallery0.9.430]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430 "NuGet Galería | Microsoft.Web.WebView2 v0.9.430"  
+[NuGetGallery0.9.488]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "NuGet Galería | Microsoft.Web.WebView2 v0.9.488"  
+[NuGetGallery0.9.515-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515-prerelease "NuGet Galería | Versión preliminar de Microsoft.Web.WebView2 v0.9.515"  
+[NuGetGallery0.9.538]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "NuGet Galería | Microsoft.Web.WebView2 v0.9.538"  
+[NuGetGallery0.9.579]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "NuGet Galería | Microsoft.Web.WebView2 v0.9.579"  
+[NuGetGallery0.9.622.11]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11 "NuGet Galería | Microsoft.Web.WebView2 v0.9.622.11"  
+[NuGetGallery0.9.628-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "NuGet Galería | Versión preliminar de Microsoft.Web.WebView2 v0.9.628"  
+[NuGetGallery1.0.622.22]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.622.22 "NuGet Galería | Microsoft.Web.WebView2 v1.0.622.22"  
+[NuGetGallery1.0.664.34]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.34 "NuGet Galería | Microsoft.Web.WebView2 v1.0.664.34"  
+[NuGetGallery1.0.664.37]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.37 "NuGet Galería | Microsoft.Web.WebView2 v1.0.664.37"  
+[NuGetGallery1.0.674-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "NuGet Galería | Versión preliminar de Microsoft.Web.WebView2 v1.0.674"  
+[NuGetGallery1.0.705.50]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.50 "NuGet Galería | Microsoft.Web.WebView2 v1.0.705.50"  
+[NuGetGallery1.0.721-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.721-prerelease "NuGet Galería | Versión preliminar de Microsoft.Web.WebView2 v1.0.721"  
+[NuGetGallery1.0.774.44]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.774.44 "NuGet Galería | Microsoft.Web.WebView2 v1.0.774.44"  
+[NuGetGallery1.0.790-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease "NuGet Galería | Versión preliminar de Microsoft.Web.WebView2 v1.0.790"  
+[NuGetGallery1.0.818.41]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.818.41 "NuGet Galería | Microsoft.Web.WebView2 v1.0.818.41"  
+[NuGetGallery1.0.824-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.824-prerelease "NuGet Galería | Versión preliminar de Microsoft.Web.WebView2 v1.0.824"  
+[NuGetGallery1.0.865-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.865-prerelease "NuGet Galería | Versión preliminar de Microsoft.Web.WebView2 v1.0.865"  
 
-[WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Anuncio de disponibilidad general de Microsoft Edge WebView2 | Microsoft Edge Blog"  
+[WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Anuncio de Microsoft Edge disponibilidad general de WebView2 | Microsoft Edge Blog"  

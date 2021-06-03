@@ -27,10 +27,10 @@ La animación en productos web puede ser un problema de accesibilidad.  Los sist
 }
 ```  
 
-Con Microsoft [Edge DevTools,][DevtoolsIndex]puedes simular esta configuración de movimiento reducido sin tener que cambiar el sistema operativo.  
+Con el [Microsoft Edge DevTools,][DevtoolsIndex]puedes simular esta configuración de movimiento reducido sin tener que cambiar el sistema operativo.  
 
-1.  Abra el **menú de comandos**.  
-    1.  Selecciona `Control` + `Shift` + `P` en Windows/Linux o `Command` + `Shift` + `P` en macOS.  
+1.  Abra el **Menú de comandos**.  
+    1.  Seleccione `Control` + `Shift` + `P` en Windows/Linux o `Command` + `Shift` + `P` en macOS.  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            Menú **comando**  
@@ -46,6 +46,6 @@ Con Microsoft [Edge DevTools,][DevtoolsIndex]puedes simular esta configuración 
     
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  

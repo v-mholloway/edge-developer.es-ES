@@ -27,7 +27,7 @@ description: Feature differences between Microsoft Edge and WebView2 title: Feat
 ---
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Diferencias de características del explorador entre Microsoft Edge y WebView2  
 
-WebView2 se basa en el nuevo explorador de Microsoft Edge.  Tienes la oportunidad de ampliar las características del explorador a las aplicaciones basadas en WebView2, lo que resulta útil.  Sin embargo, dado que WebView2 no está limitado a aplicaciones de explorador, hay algunas características del explorador que deben modificarse o quitarse.  En este artículo se proporciona la siguiente información.  
+WebView2 se basa en el nuevo Microsoft Edge explorador.  Tienes la oportunidad de ampliar las características del explorador a las aplicaciones basadas en WebView2, lo que resulta útil.  Sin embargo, dado que WebView2 no está limitado a aplicaciones de explorador, hay algunas características del explorador que deben modificarse o quitarse.  En este artículo se proporciona la siguiente información.  
 
 *   Características del explorador modificadas e información de soporte técnico.   
 *   La capacidad de activar o desactivar la característica.  
@@ -38,17 +38,17 @@ WebView2 se basa en el nuevo explorador de Microsoft Edge.  Tienes la oportunida
 En el contexto de WebView2, las características del explorador se adhieren a las siguientes directrices de diseño.  
 
 *   La mayoría de las características funcionan igual en WebView2 y Microsoft Edge.  Si una característica no tiene sentido en el contexto de WebView2 o por otras razones, la característica se modifica o se apaga. 
-*   Las características de WebView2 no incluyen la personal de marca de Microsoft Edge.  
+*   Las características de WebView2 no incluyen Microsoft Edge personal de marca.  
     
 ## <a name="features"></a>Características  
 
-En la tabla siguiente se muestran las características de WebView2 que difieren del explorador Microsoft Edge.   
+En la tabla siguiente se muestran las características de WebView2 que difieren del Microsoft Edge explorador.   
 
 *   **El estado** predeterminado indica que la característica forma parte de la experiencia predeterminada en una nueva instancia webView2.  
 *   **Configurable** indica que puede activar o desactivar la característica mediante API de WebView2 o modificadores de línea de comandos.  
     
 > [!NOTE]  
-> En este artículo no se trata la modificación de características mediante modificadores de línea de comandos.  Para obtener más información acerca de cómo activar y desactivar las características con modificadores de línea de comandos, vaya a Lista de modificadores de línea [de comandos chromium][PeterExperimentsChromiumCommandLineSwitches].  
+> En este artículo no se trata la modificación de características mediante modificadores de línea de comandos.  Para obtener más información acerca de cómo activar y desactivar características con modificadores de línea de comandos, vaya a Lista de Chromium [modificadores de línea de comandos][PeterExperimentsChromiumCommandLineSwitches].  
     
 | Característica | Estado predeterminado | Configurable | Detalles |  
 |:--- |:--- |:--- | :--- |  
@@ -75,11 +75,11 @@ En la tabla siguiente se muestran las características de WebView2 que difieren 
 | Profile and Identity | Desactivado | No | La característica que sincroniza tus favoritos, cookies, y así sucesivamente, está desactivada.  |  
 | Web Payment API | Desactivado | No | Esta característica está desactivada.  | 
 | Windows Defender Application Guard | Desactivado | No | Esta característica está desactivada.  |  
-| edge:// URLs | Revisar detalles | No | La configuración del explorador de Microsoft Edge se encuentra en `edge://` las direcciones URL.  Dado que la mayoría de estas páginas web tienen personal de marca de Microsoft Edge o no tienen sentido en el contexto de WebView2, algunas de estas direcciones URL están desactivadas.  Para obtener más información, vaya [a Direcciones URL internas bloqueadas](#blocked-internal-urls).  |  
+| edge:// URLs | Revisar detalles | No | Configuración para el explorador Microsoft Edge están en `edge://` direcciones URL.  Dado que la mayoría de estas páginas web Microsoft Edge personal de marca o no tienen sentido en el contexto de WebView2, algunas de estas direcciones URL están desactivadas.  Para obtener más información, vaya [a Direcciones URL internas bloqueadas](#blocked-internal-urls).  |  
 
 ## <a name="blocked-internal-urls"></a>Direcciones URL internas bloqueadas  
 
-Las siguientes páginas web de configuración de Microsoft Edge y Google Chrome no están disponibles en WebView2.  
+Las páginas web Microsoft Edge y configuración de Google Chrome no están disponibles en WebView2.  
 
 *   `chrome-search://local-ntp/local-ntp.html`  
 *   `edge://application-guard-internals`  
@@ -99,7 +99,7 @@ Las siguientes páginas web de configuración de Microsoft Edge y Google Chrome 
     
 ## <a name="additional-keyboard-shortcuts-information"></a>Información adicional de métodos abreviados de teclado  
 
-Los métodos abreviados de teclado o los enlaces de teclas se admiten en Microsoft Edge y WebView2.  Cuando Se actualiza Microsoft Edge, los enlaces de clave predeterminados pueden cambiar.  Además, un método abreviado de teclado que está desactivado de forma predeterminada puede activarse si la característica ahora es compatible con WebView2.  Para evitar cambios en los métodos abreviados de teclado, puede establecer en , que desactiva todas las teclas que tienen acceso a las características del explorador, pero mantiene activados todos los métodos abreviados básicos de edición de texto y `AreBrowserAcceleratorKeysEnabled` `FALSE` movimiento.  
+Los métodos abreviados de teclado o los enlaces de teclas se admiten en Microsoft Edge WebView2.  Cuando Microsoft Edge actualizaciones, los enlaces de clave predeterminados pueden cambiar.  Además, un método abreviado de teclado que está desactivado de forma predeterminada puede activarse si la característica ahora es compatible con WebView2.  Para evitar cambios en los métodos abreviados de teclado, puede establecer en , que desactiva todas las teclas que tienen acceso a las características del explorador, pero mantiene activados todos los métodos abreviados básicos de edición de texto y `AreBrowserAcceleratorKeysEnabled` `FALSE` movimiento.  
 
 En la tabla siguiente se enumeran los accesos directos que siempre están desactivados en WebView2.  Un carácter asterisco \( \) indica que el acceso directo no está desactivado, pero la característica a la que tiene acceso está desactivada o no se aplica a `*` WebView2.  
 
@@ -190,8 +190,8 @@ Si establece en , se desactivarán `AreBrowserAcceleratorKeysEnabled` `FALSE` lo
 
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "Evento CoreWebView2Controller.AcceleratorKeyPressed | Microsoft Docs"  
 
-[DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge Métodos abreviados de teclado de DevTools | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "Agregar compatibilidad con la API de notificación HTML5 (#308) | GitHub"  
 
-[PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "Lista de modificadores de línea de comandos chromium | Peter Beverloo"  
+[PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "Lista de Chromium modificadores de línea de comandos | Peter Beverloo"  

@@ -1,5 +1,5 @@
 ---
-description: Obtenga información sobre cómo cambiar los estilos y la configuración de fuentes CSS mediante el panel Estilos en Microsoft Edge DevTools.
+description: Obtenga información sobre cómo cambiar los estilos y la configuración de fuentes CSS mediante el panel Estilos de Microsoft Edge DevTools.
 title: Editar estilos y opciones de fuente CSS en el panel Estilos de DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -26,7 +26,7 @@ CSS proporciona una mejor compatibilidad con la tipografía en los últimos año
 
 Para facilitar el trabajo con tipografía, un **Editor** de fuentes visual está ahora en el **panel Estilos.**  Puede cambiar la configuración de fuente y los cambios se representan inmediatamente en el explorador.  Todo ello sin conocimientos profundos de CSS.  
 
-Actualmente, **Enable new font editor tool within the Styles pane** la característica es experimental y debe [activarla para Microsoft Edge Developer Tools][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures].  
+Actualmente, la característica es experimental y debe activarla para **Enable new font editor tool within the Styles pane** [Microsoft Edge Developer Tools][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures].  
 
 Cualquier CSS del panel **Estilos,** ya sea definiciones de fuente o estilos en línea, muestra automáticamente un icono que abre el **Editor de fuentes visual.**  Para abrir el **Editor de fuentes visual,** elija el icono **Editor de** fuentes.  
 
@@ -112,6 +112,6 @@ El editor de propiedades CSS también incluye palabras clave preestablecidas.  P
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "Características experimentales | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  

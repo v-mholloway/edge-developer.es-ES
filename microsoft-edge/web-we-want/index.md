@@ -30,7 +30,7 @@ La iniciativa Web We Want es el lugar para que los proveedores de exploradores y
 
 *   Manténgase en contacto siguiendo la iniciativa en [Twitter][TwitterWebWeWant] o [LinkedIn][LinkedInWebWeWant] para mantenerse al día de lo que está en desarrollo o para participar en encuestas que nos ayudan a priorizar los deseos enviados.
 
-Hemos enviado correctamente algunos Wants a chromium DevTools, como el Visor de pedidos de origen \([Want][WebWeWantWants64], [Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]\) y la vista [3D][Devtools3DViewIndex], similar a lo que había en Firefox DevTools. También hay un puñado de otros Wants que tienen propuestas anteriores en grupos de estándares. Únase a nosotros para impulsar el futuro de la web con la web que queremos.
+Hemos enviado correctamente algunos Wants a Chromium DevTools, como el Visor de pedidos de origen \([Want][WebWeWantWants64], [Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]\) y la vista [3D,][Devtools3DViewIndex]similar a lo que había en Firefox DevTools. También hay un puñado de otros Wants que tienen propuestas anteriores en grupos de estándares. Únase a nosotros para impulsar el futuro de la web con la web que queremos.
 
 <!-- links -->  
 

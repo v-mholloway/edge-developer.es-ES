@@ -38,7 +38,7 @@ Obtenga información sobre cómo usar Microsoft Edge y DevTools para encontrar p
 *   Identifique los árboles DOM desasociados \(una causa común de pérdidas de memoria\) con **instantánea de montón**.  
 *   Descubra cuándo se asigna nueva memoria en el montón de JavaScript \(JS heap\) con instrumentación de asignación **en la escala de tiempo**.  
 
-## <a name="overview"></a>Información general  
+## <a name="overview"></a>Introducción  
 
 En el sentido del modelo de rendimiento **RAIL,** el foco de sus esfuerzos de rendimiento deben ser los usuarios.  
 

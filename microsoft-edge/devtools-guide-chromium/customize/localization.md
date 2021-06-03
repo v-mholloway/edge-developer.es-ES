@@ -63,8 +63,8 @@ Las Herramientas de desarrollador coinciden con el idioma del explorador de form
    DevTools en chino  
 :::image-end:::  
 
-Si desea revertir DevTools al inglés, vaya a [Configuración de DevTools][DevtoolsCustomizeIndexSettings] o seleccione , elija Preferencias y desactive la casilla Coincidir idioma `F1` del **explorador.** ****  
+Si desea revertir DevTools al inglés, vaya a [DevTools Configuración][DevtoolsCustomizeIndexSettings] o seleccione , elija Preferencias y desactive la casilla Coincidir idioma `F1` **del** explorador. ****  
 
 <!-- links -->  
 
-[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Configuración: Personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  

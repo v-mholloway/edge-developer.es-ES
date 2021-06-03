@@ -325,7 +325,7 @@ Si se encuentra ejecutando el mismo código de depuración en la consola una y o
 
 Consulte [Ejecutar fragmentos de código de JavaScript en cualquier página web][DevToolsJavascriptSnippets].  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   [Introducción Con depuración de JavaScript en Microsoft Edge DevTools:][DevToolsJavascriptGetStarted] un tutorial sencillo y breve con código existente, con capturas de pantalla.
 *   [Introducción a la herramienta][DevToolsSourcesIndex] Orígenes: la **herramienta Orígenes** incluye el depurador y el editor de JavaScript.

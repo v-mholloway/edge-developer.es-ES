@@ -1,13 +1,13 @@
 ---
-description: Conozca las herramientas para desarrolladores de Microsoft Edge (Chromium)
-title: Introducción a Microsoft Edge (Chromium) Developer Tools
+description: Conozca las herramientas de Microsoft Edge (Chromium) para desarrolladores
+title: Microsoft Edge (Chromium) Developer Tools overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 ms.openlocfilehash: 3d91b0754f84579d770940503cf4a252e3926416
 ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "11481473"
 ---
-# <a name="microsoft-edge-chromium-developer-tools-overview"></a>Introducción a Microsoft Edge (Chromium) Developer Tools  
+# <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge (Chromium) Developer Tools overview  
 
 Al instalar Microsoft Edge, obtiene un explorador. Además, obtiene una forma eficaz de inspeccionar, depurar e incluso crear proyectos web.  Las herramientas para desarrolladores que se suministran con el explorador se basan en las herramientas del proyecto de código abierto Chromium, por lo que es posible que ya esté familiarizado con las herramientas.  Para que las descripciones sean más cortas en este artículo, ahora se `Microsoft Edge Developer Tools` `DevTools` denominan .  
 
@@ -41,7 +41,7 @@ Para abrir y explorar DevTools, use una de las siguientes acciones.
 
 *   Mantenga el mouse en cualquier elemento de la página web, abra el menú contextual \(clic con el botón secundario\) y, a continuación, elija **Inspeccionar**.  Esta acción abre la **herramienta** Elementos.  
 *   Seleccione `F12` .  
-*   Selecciona `Ctrl` + `Shift` + `I` en Windows/Linux o `Command` + `Option` + `I` en macOS.  
+*   Seleccione `Ctrl` + `Shift` + `I` en Windows/Linux o `Command` + `Option` + `I` en macOS.  
     
 :::row:::  
    :::column span="":::  
@@ -58,7 +58,7 @@ Para abrir y explorar DevTools, use una de las siguientes acciones.
 
 Hay dos formas principales de interactuar con DevTools.
 *   Usar el mouse  
-*   [Métodos abreviados de teclado][DevtoolsGuideShortcutsIndex].  Los métodos abreviados de teclado proporcionan una forma rápida de acceder a la funcionalidad y son necesarios para la accesibilidad.  El equipo de Microsoft Edge DevTools trabaja duro para que todas las herramientas estén disponibles con el teclado y las tecnologías de asistencia, como los lectores de pantalla.  Para obtener más información acerca de cómo abrir las diferentes características de DevTools, vaya a [Métodos abreviados de teclado de Microsoft Edge DevTools][DevtoolsGuideOpenIndex].  
+*   [Métodos abreviados de teclado][DevtoolsGuideShortcutsIndex].  Los métodos abreviados de teclado proporcionan una forma rápida de acceder a la funcionalidad y son necesarios para la accesibilidad.  El Microsoft Edge de DevTools trabaja duro para que todas las herramientas estén disponibles con el teclado y las tecnologías de asistencia, como los lectores de pantalla.  Para obtener más información acerca de cómo abrir las diferentes características de DevTools, vaya a Microsoft Edge [métodos abreviados de teclado de DevTools][DevtoolsGuideOpenIndex].  
 
 ## <a name="dock-the-devtools-in-your-browser"></a>Acoplar las DevTools en el explorador  
 
@@ -67,7 +67,7 @@ Al abrir DevTools, se acopla a la izquierda del explorador.  Para cambiar la ubi
 1.  Elija el **botón Personalizar y controlar DevTools** \( `...` \).  
 1.  A la derecha de **Placement de DevTools con relación** a la página \( Dock**side**\), elija una opción **dock side.**  
     
-Para obtener más información, vaya a Cambiar la ubicación [de Microsoft Edge DevTools (Undock, Dock To Bottom, Dock To Left).][DevtoolsGuideCustomizePlacement]  
+Para obtener más información, vaya a Cambiar Microsoft Edge ubicación [de DevTools (Undock, Dock To Bottom, Dock To Left)][DevtoolsGuideCustomizePlacement].  
 
 :::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Captura de pantalla del menú lateral Dock en DevTools" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
    Captura de pantalla del menú lateral Dock en DevTools  
@@ -110,7 +110,7 @@ DevTools le ofrece una cantidad increíble de energía para inspeccionar, depura
 
 DevTools creció durante un período de varios años.  Puede suponer que DevTools es difícil de aprender cuando abre por primera vez cualquiera de las herramientas.  El siguiente texto presenta rápidamente las distintas partes.  La barra de herramientas principal ofrece algunas secciones y las secciones se ordenan de izquierda a derecha.  
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Captura de pantalla de la barra de menús de DevTools con etiquetas que explican las distintas secciones.  En orden: Inspeccionar herramienta, Herramienta de emulación de dispositivo, Grupo de pestañas Herramientas, Errores de JavaScript, Problemas, Configuración, Comentarios, Personalizar y Cerrar." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Captura de pantalla de la barra de menús de DevTools con etiquetas que explican las distintas secciones.  En orden: Inspeccionar herramienta, Herramienta de emulación de dispositivo, Grupo de pestaña Herramientas, Errores de JavaScript, Problemas, Configuración, Comentarios, Personalizar y Cerrar." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
    Captura de pantalla de la barra de menús de DevTools con etiquetas que explican las distintas secciones.  En orden: Inspeccionar herramienta, Herramienta de emulación de dispositivo, Grupo de pestaña Herramientas, Errores de JavaScript, Problemas, Configuración, Comentarios, Personalizar y Cerrar.  
 :::image-end:::  
 
@@ -128,7 +128,7 @@ DevTools creció durante un período de varios años.  Puede suponer que DevTool
     
 *   El grupo de pestañas Herramientas es un grupo de pestañas que representan distintas herramientas que se usan en distintos escenarios.  Puede personalizar cada una de las herramientas y cada herramienta puede cambiar en función del contexto.  Para abrir un menú desplegable de más herramientas, elija el botón **Más pestañas** \( `>>` \).  Cada una de las herramientas se presenta más adelante en la siguiente sección.  
 *   Junto al grupo de pestañas Herramientas hay un error opcional y emite accesos directos.  Los accesos directos se muestran cuando se producen errores o problemas de JavaScript en la página web actual.  El botón Abrir consola para ver **# errors, # warnings** \(**JavaScript Errors**\) muestra un círculo rojo seguido del número `X` de errores de JavaScript.  Para abrir la [consola y][DevtoolsGuideConsoleIndex] obtener información sobre el error, elija el botón Errores **de JavaScript.**  El **botón Abrir problemas para ver # issues** \(**Issues**\) es un icono de mensaje azul seguido del número de problemas.  Para abrir la [herramienta Problemas,][DevtoolsGuideIssuesIndex] elija **el botón** Problemas.  
-*   El **botón** Configuración muestra un icono de engranaje.  Para abrir la página web Configuración **de** DevTools, elija el **botón** Configuración.  La **página web** Configuración muestra un menú para cambiar **** **Preferencias,** activar Experimentos y mucho más.  
+*   El **Configuración** muestra un icono de engranaje.  Para abrir devTools **Configuración** página web, elija el **botón Configuración** página web.  La **Configuración** web muestra un menú **** para cambiar **Preferencias,** activar Experimentos y mucho más.  
 *   El **botón Enviar comentarios** muestra torso con una burbuja de chat junto a él.  Para abrir el cuadro **de diálogo** Enviar comentarios, elija el **botón Enviar** comentarios.  El **cuadro de diálogo** Enviar comentarios te permite escribir información para describir lo que sucedió e incluye automáticamente una captura de pantalla.  Úselo para conectarse con el equipo de DevTools para informar de problemas, problemas o sugerir ideas.  
 *   El **botón Personalizar y controlar Devtools** \( `...` \) abre un menú desplegable.  Le permite definir dónde acoplar DevTools, buscar, abrir diferentes herramientas y mucho más.  
     
@@ -142,7 +142,7 @@ En el grupo de pestaña Herramientas, puede abrir las distintas herramientas que
 
 ## <a name="power-tip-use-the-command-menu"></a>Sugerencia de encendido: usar el menú de comandos  
 
-DevTools proporciona muchas características y funcionalidades para usar con el producto web.  Accede a las distintas partes de DevTools de muchas maneras, pero la forma más rápida de acceder a las características que necesitas es usar el menú de comandos.  Para obtener más información, vaya a Ejecutar comandos con el menú Comando [de Microsoft Edge DevTools][DevtoolsGuideCommandMenuIndex].  Para abrir el menú de comandos, complete una de las siguientes acciones.  
+DevTools proporciona muchas características y funcionalidades para usar con el producto web.  Accede a las distintas partes de DevTools de muchas maneras, pero la forma más rápida de acceder a las características que necesitas es usar el menú de comandos.  Para obtener más información, vaya a Ejecutar comandos con [el Microsoft Edge comando DevTools][DevtoolsGuideCommandMenuIndex].  Para abrir el menú de comandos, complete una de las siguientes acciones.  
 
 *   Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
 *   Elija **Personalizar y controlar DevTools** \( `...` \) y, a continuación, elija **Ejecutar comando**.  
@@ -170,7 +170,7 @@ El menú de comandos permite escribir comandos para mostrar, ocultar o ejecutar 
 
 DevTools se puede personalizar para satisfacer sus necesidades o la forma en que trabaja.  Para cambiar la configuración, complete una de las siguientes acciones.  
 
-*   Elija **Configuración** \(el icono de engranaje en la parte superior derecha\)  
+*   Elija **Configuración** \(el icono de engranaje de la parte superior derecha\)  
 *   Seleccione `F1` o `?` .  
     
 En la **sección Preferencias,** puede cambiar varias partes de DevTools.  Por ejemplo, puede **** usar la opción Coincidir con el idioma del explorador para usar el mismo idioma en las DevTools que se usan en el explorador.  Para otro ejemplo, use la **configuración Theme** para cambiar el tema de DevTools.  
@@ -186,35 +186,35 @@ También puede cambiar la configuración de las características avanzadas, incl
 *   Define los **dispositivos** que quieres incluir en el modo de simulación y prueba del dispositivo.  Para obtener más información, vaya [a Emular dispositivos móviles en Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].  
 *   Elija un perfil **de limitación de** red.  
 *   Definir ubicaciones **simuladas**.  
-*   Personalizar los métodos abreviados de teclado.  Para usar los mismos métodos abreviados en DevTools que Visual Studio code, complete las siguientes acciones.  
+*   Personalizar los métodos abreviados de teclado.  Para usar los mismos métodos abreviados en devTools que Visual Studio Code, realice las siguientes acciones.  
     1.  Elija **Match shortcuts from preset**.  
-    1.  Elija **Visual Studio code**.  
+    1.  Elija **Visual Studio Code**.  
         
-    :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="Captura de pantalla de todos los métodos abreviados de teclado y el menú para que coincidan con cada uno de los accesos directos en Visual Studio código" lightbox="./media/devtools-intro-match-keys.msft.png":::  
-       Captura de pantalla de todos los métodos abreviados de teclado y el menú para que coincidan con cada uno de los accesos directos en Visual Studio código  
+    :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="Captura de pantalla de todos los métodos abreviados de teclado y el menú para que coincidan cada uno con los accesos directos de Visual Studio Code" lightbox="./media/devtools-intro-match-keys.msft.png":::  
+       Captura de pantalla de todos los métodos abreviados de teclado y el menú para que coincidan cada uno con los accesos directos de Visual Studio Code  
     :::image-end:::  
     
 ## <a name="try-experimental-features"></a>Probar características experimentales  
 
-El equipo de DevTools proporciona nuevas características como experimentos en DevTools.  Para obtener la lista completa de experimentos, **** vaya a Configuración de DevTools y, a continuación, elija **Experimentos**.  Puede activar o desactivar cada uno de los experimentos.  Ayuda a decidir cuál de los experimentos es valioso para ti.  Para obtener más información sobre los experimentos, vaya a [Características experimentales][DevtoolsGuideExperimentalFeaturesIndex].  
+El equipo de DevTools proporciona nuevas características como experimentos en DevTools.  Para obtener la lista completa de experimentos, vaya a devTools **Configuración**y, a continuación, elija **Experimentos**.  Puede activar o desactivar cada uno de los experimentos.  Ayuda a decidir cuál de los experimentos es valioso para ti.  Para obtener más información sobre los experimentos, vaya a [Características experimentales][DevtoolsGuideExperimentalFeaturesIndex].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
-Si quieres obtener una vista previa de las características más recientes que llegan a [DevTools,][DevtoolsGuideWhatsNew202102Devtools]descarga [Microsoft Edge Canary,][MicrosoftedgeinsiderDownload]que se compila por la noche.  
+Si quieres obtener una vista previa de las características más recientes que llegan a [DevTools,][DevtoolsGuideWhatsNew202102Devtools]descarga [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], que se compila cada noche.  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
-*   [DevtoolsGuide para principiantes: Introducción a HTML y DOM][DevtoolsGuideBeginnersHtml]  
-*   [Protocolo DevTools de Microsoft Edge (Chromium)][DevtoolsProtocolIndex]  
+*   [DevtoolsGuide para principiantes: Introducción con HTML y dom][DevtoolsGuideBeginnersHtml]  
+*   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]  
     
 <!-- links -->  
 
 [DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools para principiantes: Introducción a HTML y el dom | Microsoft Docs"  
-[DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Ejecute comandos con el menú Comando de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Ejecute comandos con el menú Microsoft Edge comando DevTools | Microsoft Docs"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Información general de la consola | Microsoft Docs"  
-[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Cambiar la ubicación de Microsoft Edge DevTools (Undock, Dock to Bottom, Dock to Left) | Microsoft Docs"  
+[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Cambiar Microsoft Edge ubicación de DevTools (Undock, Dock To Bottom, Dock to Left) | Microsoft Docs"  
 [DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideDomIndex]: ./dom/index.md "Introducción a ver y cambiar el dom | Microsoft Docs"  
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "Introducción al análisis del rendimiento en tiempo de ejecución | Microsoft Docs"  
@@ -227,14 +227,14 @@ Si quieres obtener una vista previa de las características más recientes que l
 [DevtoolsGuideNetworkIndex]: ./network/index.md "Inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideOpenIndex]: ./open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "Analizar el rendimiento en tiempo de ejecución | Microsoft Docs"  
-[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Microsoft Edge Métodos abreviados de teclado de DevTools | Microsoft Docs"  
 [DevtoolsGuideSourcesIndex]: ./sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
 [DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "Ver y editar el almacenamiento de sesiones con Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "Novedades de DevTools (Microsoft Edge 90) | Microsoft Docs"  
 [DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Editar archivos con áreas de trabajo | Microsoft Docs"  
 [DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Información general del protocolo DevTools de Microsoft Edge (Chromium) | Microsoft Docs"  
 
-[MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Complementos de Microsoft Edge"  
+[MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Complementos"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider Channels"  
 

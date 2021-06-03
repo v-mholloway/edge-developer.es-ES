@@ -1,13 +1,13 @@
 ---
-description: Comprender cómo desarrollar aplicaciones de WebView2 seguras
-title: Procedimientos recomendados para desarrollar aplicaciones de WebView2 seguras
+description: Comprender cómo desarrollar aplicaciones webview2 seguras
+title: Procedimientos recomendados para desarrollar aplicaciones webview2 seguras
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, aplicaciones Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, control de explorador, HTML Edge, seguridad
+keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral, seguridad
 ms.openlocfilehash: d53417cc1ac98b44565692edbaec06216f7c110b
 ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
@@ -15,23 +15,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/15/2020
 ms.locfileid: "11119006"
 ---
-# Procedimientos recomendados para desarrollar aplicaciones de WebView2 seguras  
+# Procedimientos recomendados para desarrollar aplicaciones webview2 seguras  
 
-El [control WebView2][Webview2Main] permite a los programadores hospedar contenido web en las aplicaciones nativas. Cuando se usa correctamente, el contenido Web de hospedaje ofrece varias ventajas, como el uso de interfaces de usuario basadas en Web, el acceso a características de la plataforma web, el uso compartido de código entre plataformas, etc.  Para evitar las vulnerabilidades que pueden surgir al hospedar contenido Web, asegúrese de diseñar su aplicación WebView2 para supervisar estrechamente las interacciones entre el contenido web y la aplicación host.  
+El [control WebView2][Webview2Main] permite a los desarrolladores hospedar contenido web en las aplicaciones nativas. Cuando se usa correctamente, hospedar contenido web ofrece varias ventajas, como el uso de la interfaz de usuario basada en web, el acceso a las características de la plataforma web, el uso compartido de código entre plataformas, entre plataformas, y así sucesivamente.  Para evitar vulnerabilidades que pueden surgir al hospedar contenido web, asegúrese de diseñar la aplicación WebView2 para supervisar estrechamente las interacciones entre el contenido web y la aplicación host.  
 
-1.  Tratar todo el contenido web como inseguro.  
-    *   Valide los mensajes web y los parámetros de objeto de host antes de consumirlos, ya que los mensajes web y los parámetros pueden tener un formato incorrecto \(involuntariamente o malintencionado \) y hacer que la aplicación se comporte de manera inesperada.
-    *   Compruebe siempre el origen del documento que se está ejecutando dentro de WebView2 y evalúe la confiabilidad del contenido.  
-1.  Diseñe mensajes Web específicos y interacciones de objeto de hospedaje en lugar de usar proxies genéricos.  
-1.  Establezca las siguientes opciones para restringir la funcionalidad de contenido web modificando [ICoreWebView2Settings (Win32)][Webview2ReferenceWin32Icorewebview2settings] o [CoreWebView2Settings (.net)][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings].  
-    *   Se establece `AreHostObjectsAllowed` en `false` si no se espera que el contenido web tenga acceso a los objetos host.  
-    *   Se establece `IsWebMessageEnabled` en `false` si no se espera que el contenido web publique mensajes Web en la aplicación nativa.  
-    *   Se establece `IsScriptEnabled` en `false` si no se espera que el contenido web ejecute scripts \(por ejemplo, al mostrar contenido HTML estático \).  
-    *   Se establece `AreDefaultScriptDialogsEnabled` en `false` si no se espera que el contenido web aparezca o no en los `alert` cuadros de `prompt` diálogo.  
-1.  En los pasos siguientes, use los `NavigationStarting` `FrameNavigationStarting` eventos y para actualizar la configuración en función del origen de la página nueva.  
-    1.  Para evitar que la aplicación navegue a determinadas páginas, use los eventos para comprobar y, a continuación, bloquear la navegación de página o marco.  
-    1.  Al navegar a una página nueva, es posible que tenga que ajustar los valores de propiedad en [ICoreWebView2Settings (Win32)][Webview2ReferenceWin32Icorewebview2settings] o [CoreWebView2Settings (.net)][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings] como se ha descrito anteriormente.  
-1.  Cuando navegue a un documento nuevo, use el `ContentLoading` evento para quitar objetos de host expuestos mediante `RemoveHostObjectFromScript` .  
+1.  Trate todo el contenido web como inseguro.  
+    *   Valide los mensajes web y los parámetros del objeto host antes de consumir cada uno, ya que los mensajes y parámetros web pueden estar malformados \(involuntaria o malintencionadamente\) y provocar que la aplicación se comporte inesperadamente.
+    *   Compruebe siempre el origen del documento que se ejecuta dentro de WebView2 y evalúe la fiabilidad del contenido.  
+1.  Diseñe mensajes web específicos e interacciones de objetos host en lugar de usar servidores proxy genéricos.  
+1.  Establezca las siguientes opciones para restringir la funcionalidad de contenido web [modificando ICoreWebView2Settings (Win32)][Webview2ReferenceWin32Icorewebview2settings] o [CoreWebView2Settings (.NET).][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]  
+    *   Se establece en , si no espera que el `AreHostObjectsAllowed` contenido web tenga acceso a objetos `false` host.  
+    *   Establezca en , si no espera que el contenido `IsWebMessageEnabled` web publique mensajes web en la aplicación `false` nativa.  
+    *   Establezca en , si no espera que el contenido web ejecute `IsScriptEnabled` scripts \(por ejemplo, al mostrar `false` contenido html estático\).  
+    *   Establezca en , si no espera que el `AreDefaultScriptDialogsEnabled` contenido web se muestre o cuadros de `false` `alert` `prompt` diálogo.  
+1.  En los pasos siguientes, use los `NavigationStarting` eventos y para actualizar la configuración según el origen de la nueva `FrameNavigationStarting` página.  
+    1.  Para evitar que la aplicación vaya a determinadas páginas, use los eventos para comprobar y, a continuación, bloquear la navegación de páginas o fotogramas.  
+    1.  Al navegar a una página nueva, es posible que deba ajustar los valores de propiedad en [ICoreWebView2Settings (Win32)][Webview2ReferenceWin32Icorewebview2settings] o [CoreWebView2Settings (.NET)][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings] como se describió anteriormente.  
+1.  Al navegar a un nuevo documento, use el `ContentLoading` evento para quitar objetos host expuestos mediante `RemoveHostObjectFromScript` .  
 
 <!--## Security
 
@@ -43,8 +43,8 @@ When constructing a message to send into a WebView, prefer using `PostWebMessage
 
 <!-- links -->  
 
-[Webview2Main]: ../index.md "Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft docs"  
+[Webview2Main]: ../index.md "Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
 
-[Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interfaz ICoreWebView2Settings | Microsoft docs"  
+[Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interfaz ICoreWebView2Settings | Microsoft Docs"  
 
-[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]: /dotnet/api/microsoft.web.webview2.core.corewebview2settings "Clase CoreWebView2Settings (Microsoft. Web. WebView2. Core) | Microsoft docs"  
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]: /dotnet/api/microsoft.web.webview2.core.corewebview2settings "Clase CoreWebView2Settings (Microsoft.Web.WebView2.Core) | Microsoft Docs"  

@@ -33,7 +33,7 @@ El siguiente artículo tiene como objetivo ayudar a los usuarios que dependen pr
 
 La accesibilidad de DevTools es un trabajo en curso.  Algunos paneles y pestañas funcionan mejor con tecnología de asistencia que otros.  Esta guía le guiará por los paneles que son los más accesibles y resalta los problemas específicos que puede encontrar en el camino.  
 
-## <a name="overview"></a>Información general  
+## <a name="overview"></a>Introducción  
 
 Antes de empezar, ayuda a tener un modelo mental de cómo se estructura la interfaz de usuario de DevTools.  DevTools se divide en una serie de paneles que se organizan en una lista de [pestañas de ARIA.][W3CWaiAriaTablist]  
 

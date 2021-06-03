@@ -16,7 +16,7 @@ ms.locfileid: "11526161"
 ---
 # <a name="customize-the-password-reveal-button"></a>Personalizar el botón de revelación de contraseñas  
 
-El `password` tipo de entrada de Microsoft Edge incluye un control de **revelación de** contraseñas.  Un usuario puede elegir el botón **de entrada de** contraseña para revelar el campo **de** contraseña.  El campo contraseña **revelada** ayuda al usuario a comprobar si la contraseña es correcta.  Después de que un **** usuario haya escrito texto **** en el campo de contraseña, un usuario puede elegir el botón de revelación de contraseña o seleccionar para alternar la visibilidad `Alt` + `F8` de la entrada.  
+El `password` tipo de entrada de Microsoft Edge incluye un control de **revelación de** contraseña.  Un usuario puede elegir el botón **de entrada de** contraseña para revelar el campo **de** contraseña.  El campo contraseña **revelada** ayuda al usuario a comprobar si la contraseña es correcta.  Después de que un **** usuario haya escrito texto **** en el campo de contraseña, un usuario puede elegir el botón de revelación de contraseña o seleccionar para alternar la visibilidad `Alt` + `F8` de la entrada.  
 
 :::row:::
    :::column span="":::
@@ -34,7 +34,7 @@ El `password` tipo de entrada de Microsoft Edge incluye un control de **revelaci
    :::column-end:::
 :::row-end:::  
 
-De forma predeterminada, **el botón de revelación** de contraseñas se inserta en el DOM de instantánea de todos los elementos HTML `input` con el conjunto en `type` `"password"` .  A partir de la versión 87 de Microsoft Edge, los usuarios o [empresas][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] pueden deshabilitar esta característica globalmente.  Usted, diseñadores web y desarrolladores, debe esperar que la mayoría de los usuarios de Microsoft Edge tengan la experiencia predeterminada.  
+De forma predeterminada, **el botón de revelación** de contraseñas se inserta en el DOM de instantánea de todos los elementos HTML `input` con el conjunto en `type` `"password"` .  A partir Microsoft Edge versión 87, los usuarios o [empresas][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] pueden deshabilitar esta característica globalmente.  Usted, diseñadores web y desarrolladores, debe esperar que la mayoría Microsoft Edge usuarios tengan la experiencia predeterminada.  
 
 ## <a name="remove-the-password-reveal-control"></a>Quitar el control de revelación de contraseñas  
 
@@ -83,4 +83,4 @@ El **botón de revelación** de contraseñas no está disponible si **el** campo
 
 <!-- links -->  
 
-[DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]: /deployedge/microsoft-edge-policies#passwordrevealenabled "PasswordRevealEnabled - Microsoft Edge: directivas | Microsoft Docs"  
+[DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]: /deployedge/microsoft-edge-policies#passwordrevealenabled "PasswordRevealEnabled - Microsoft Edge- Directivas | Microsoft Docs"  

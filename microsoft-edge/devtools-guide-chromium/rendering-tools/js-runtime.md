@@ -101,7 +101,7 @@ El gráfico de llama se divide en dos partes.
 
 | index | Parte | Descripción |  
 | --- |:--- |:--- |  
-| 1 | Información general | Una vista visual de toda la grabación.  El alto de las barras corresponde a la profundidad de la pila de llamadas.  Por lo tanto, cuanto mayor sea la barra, más profunda será la pila de llamadas.  |  
+| 1 | Introducción | Una vista visual de toda la grabación.  El alto de las barras corresponde a la profundidad de la pila de llamadas.  Por lo tanto, cuanto mayor sea la barra, más profunda será la pila de llamadas.  |  
 | 2 | Pilas de llamadas | Se trata de una vista detallada de las funciones a las que se llamó durante la grabación.  El eje horizontal es el tiempo y el eje vertical es la pila de llamadas.  Las pilas están organizadas de arriba abajo.  Por lo tanto, la función en la parte superior llamada a la que está debajo de ella, y así sucesivamente.  |  
 
 Las funciones se coloreadas aleatoriamente.  No hay ninguna correlación con los colores usados en los otros paneles.  Sin embargo, las funciones siempre tienen el mismo color entre invocaciones para que pueda observar patrones en cada tiempo de ejecución.  

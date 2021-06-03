@@ -121,7 +121,7 @@ Las características están activadas de forma predeterminada.  Para obtener má
 
 Ahora puedes personalizar el método abreviado de teclado para cualquier acción en DevTools.  Desde Microsoft Edge versión 84, puede elegir **** entre los ajustes preestablecidos Visual Studio Code **y DevTools (predeterminado)** para los [métodos abreviados de teclado.][DevtoolsCustomizeShortcuts]  A partir Microsoft Edge versión 87, puede activar el experimento Habilitar **editor** de métodos abreviados de teclado para personalizar aún más [los métodos abreviados de teclado.][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]  
 
-Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla situada junto a Habilitar editor de métodos abreviados de **teclado**.  Para obtener más información acerca de la personalización y edición de accesos directos, vaya a [Editar métodos abreviados][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]de teclado para cualquier acción en DevTools .  Para revisar las actualizaciones en tiempo real de esta característica en Chromium proyecto de código abierto, vaya a Problema [#174309][CR174309].  
+Para habilitar el experimento, vaya a [Activar características experimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] y seleccione la casilla situada junto a Habilitar editor de métodos abreviados de **teclado**.  Para obtener más información acerca de la personalización y edición de accesos directos, vaya a [Editar métodos abreviados de teclado para cualquier acción en DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  Para revisar las actualizaciones en tiempo real de esta característica en Chromium proyecto de código abierto, vaya a Problema [#174309][CR174309].  
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Acceso directo personalizado para pausar un script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Acceso directo personalizado para pausar un script  
@@ -288,7 +288,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 
 [DevtoolsConsoleIndex]: ../../../console/index.md "Use la consola | Microsoft Docs"  
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Elemento o objeto JavaScript elegido recientemente: referencia de api de utilidades de consola | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalizar los métodos abreviados de teclado en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalización de accesos rápidos de teclado en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edite los métodos abreviados de teclado para cualquier acción en el archivo DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Referencia de análisis de rendimiento | Microsoft Docs"  

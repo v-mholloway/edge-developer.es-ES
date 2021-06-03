@@ -18,7 +18,7 @@ ms.locfileid: "11397513"
 
 ## <a name="overview"></a>Introducción  
 
-El objetivo de este tutorial es crear una extensión de Microsoft Edge (Chromium) a partir de un directorio vacío.  Está creando una extensión que muestra la imagen de la NASA del día. En este tutorial, aprenda a crear una extensión completando las siguientes acciones.  
+El objetivo de este tutorial es crear una extensión Microsoft Edge (Chromium) a partir de un directorio vacío.  Está creando una extensión que muestra la imagen de la NASA del día. En este tutorial, aprenda a crear una extensión completando las siguientes acciones.  
 
 *   Crear un `manifest.json` archivo.  
 *   Agregar iconos.  

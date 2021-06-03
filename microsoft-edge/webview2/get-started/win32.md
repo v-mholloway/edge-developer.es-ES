@@ -23,7 +23,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.  
 
-*   [WebView2 Runtime][Webview2Installer] o cualquier canal no estable de [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] o cualquier canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] no estable instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
     
     > [!NOTE]
     > El equipo de WebView recomienda usar el canal Canary y la versión mínima necesaria es 82.0.488.0.  
@@ -35,36 +35,36 @@ Asegúrese de instalar la siguiente lista de requisitos previos antes de continu
 Comience con un proyecto de escritorio básico que contenga una sola ventana principal.  
 
 > [!IMPORTANT]
-> Para centrar mejor el tutorial, usa código de ejemplo modificado de [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.  Para descargar el ejemplo modificado y empezar, vaya a [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
+> Para centrar mejor el tutorial, usa el código de ejemplo modificado de [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] para la aplicación de ejemplo.  Para descargar el ejemplo modificado y empezar, vaya a [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
 
 1.  En Visual Studio, abra `WebView2GettingStarted.sln` .  
-    Si usa una versión anterior de Visual Studio, mantenga el mouse en el proyecto **WebView2GettingStarted,** abra el menú contextual \(haga clic con el botón secundario en\) y elija **Propiedades**.  En **Propiedades de configuración**general, modifique la versión de Windows SDK y el conjunto de herramientas de plataforma para usar el SDK de Win10 y Visual Studio  >  **** herramientas disponibles. **** ****  
+    Si usa una versión anterior de Visual Studio, mantenga el mouse en el proyecto **WebView2GettingStarted,** abra el menú contextual \(haga clic con el botón secundario en\) y elija **Propiedades**.  En **Propiedades de configuración**general, modifique Windows versión del SDK y conjunto de herramientas de plataforma para usar el SDK de  >  **** Win10 **** y el conjunto de herramientas Visual Studio disponible. ****  
     
 :::image type="complex" source="../media/tool-version.png" alt-text="Versión de la herramienta" lightbox="../media/tool-version.png":::
    Versión de la herramienta  
 :::image-end:::      
 
-Visual Studio mostrar errores, ya que el proyecto no tiene el archivo de encabezado WebView2.  Los errores deben corregirse después [del paso 2](#step-2---install-webview2-sdk).  
+Visual Studio puede mostrar errores, ya que el proyecto no tiene el archivo de encabezado WebView2.  Los errores deben corregirse después [del paso 2](#step-2---install-webview2-sdk).  
 
 ## <a name="step-2---install-webview2-sdk"></a>Paso 2: Instalar WebView2 SDK  
 
 Agregue el SDK de WebView2 al proyecto.  Use NuGet para instalar el SDK de Win32.  
 
-1.  Mantenga el mouse en el proyecto, abra el menú contextual \(hacer clic con el botón secundario\) y elija **Administrar paquetes nuget**.  
+1.  Mantenga el mouse en el proyecto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Administrar NuGet paquetes**.  
     
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Administrar paquetes NuGet" lightbox="../media/manage-nuget-packages.png":::
        Administrar paquetes NuGet  
     :::image-end:::  
     
-1.  Instalar la biblioteca de implementación de Windows.  
-    1.  En la barra de búsqueda, `Microsoft.Windows.ImplementationLibrary` escriba > **elija Microsoft.Windows.ImplementationLibrary**.  
+1.  Instale la biblioteca Windows implementación.  
+    1.  En la barra de búsqueda, `Microsoft.Windows.ImplementationLibrary` escriba > **elija Microsoft.Windows. ImplementationLibrary**.  
     1.  En la ventana del lado derecho, elija **Instalar**.  NuGet descarga la biblioteca en el equipo.  
         
         > [!NOTE]
-        > La [Biblioteca de implementación de Windows][GithubMicrosoftWilMain] y la biblioteca de plantillas de [C++][CppCxWrlTemplateLibraryVS2019] de Windows Runtime son opcionales y facilitan el trabajo con COM en el ejemplo.  
+        > La [Windows de implementación y][GithubMicrosoftWilMain] Windows de plantillas de [C++][CppCxWrlTemplateLibraryVS2019] en tiempo de ejecución son opcionales y facilitan el trabajo con COM para el ejemplo.  
         
-        :::image type="complex" source="../media/wil.png" alt-text="Biblioteca de implementación de Windows" lightbox="../media/wil.png":::
-           Biblioteca de implementación de Windows  
+        :::image type="complex" source="../media/wil.png" alt-text="Windows Biblioteca de implementación" lightbox="../media/wil.png":::
+           Windows Biblioteca de implementación  
         :::image-end:::  
         
 1.  Instale el SDK de WebView2.  
@@ -113,9 +113,9 @@ Para compilar y ejecutar la aplicación de ejemplo, seleccione `F5` .  La aplica
 
 Agregue un WebView a la ventana principal.  
 
-Use el método para configurar el entorno y localizar el explorador `CreateCoreWebView2Environment` de Microsoft Edge \(Chromium\) que encienda el control.  También puede usar el método si desea especificar la ubicación del explorador, la carpeta de usuario, las marcas del explorador, entre otros, en lugar de usar `CreateCoreWebView2EnvironmentWithOptions` la configuración predeterminada.  Una vez completado el método, ejecute el método dentro de la devolución de llamada y `CreateCoreWebView2Environment` ejecute el método para obtener el `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView asociado.  
+Use el método para configurar el entorno y localizar el explorador `CreateCoreWebView2Environment` Microsoft Edge \(Chromium\) que encienda el control.  También puede usar el método si desea especificar la ubicación del explorador, la carpeta de usuario, las marcas del explorador, entre otros, en lugar de usar `CreateCoreWebView2EnvironmentWithOptions` la configuración predeterminada.  Una vez completado el método, ejecute el método dentro de la devolución de llamada y `CreateCoreWebView2Environment` ejecute el método para obtener el `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView asociado.  
 
-En la devolución de llamada, establece algunas opciones más, cambia el tamaño de WebView para que tome el 100 % de la ventana principal y navega a Bing.  
+En la devolución de llamada, establezca unas cuantas opciones más, cambie el tamaño de WebView para que tome el 100 % de la ventana principal y vaya a Bing.  
 
 Copie el siguiente fragmento de código y péguelo después `HelloWebView.cpp` del comentario y antes del `// <-- WebView2 sample code starts here -->` `// <-- WebView2 sample code ends here -->` comentario.  
 
@@ -162,12 +162,12 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
     }).Get());
 ```  
 
-### <a name="build-your-bing-sample-app"></a>Crear la aplicación de ejemplo de Bing  
+### <a name="build-your-bing-sample-app"></a>Crear tu Bing de ejemplo  
 
-Para compilar y ejecutar la aplicación, seleccione `F5` .  Ahora tienes una ventana WebView que muestra la página de Bing.  
+Para compilar y ejecutar la aplicación, seleccione `F5` .  Ahora tiene una ventana WebView que muestra la Bing página.  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Ventana de Bing" lightbox="../media/bing-window.png":::
-   Ventana de Bing  
+:::image type="complex" source="../media/bing-window.png" alt-text="Bing ventana" lightbox="../media/bing-window.png":::
+   Bing ventana  
 :::image-end:::    
 
 ## <a name="step-4---navigation-events"></a>Paso 4: Eventos de navegación  

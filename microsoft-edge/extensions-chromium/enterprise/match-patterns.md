@@ -1,5 +1,5 @@
 ---
-description: Documentación de directivas de empresa para extensiones perimetrales (Chromium).
+description: Enterprise de directivas para extensiones perimetrales (Chromium).
 title: Patrones de coincidencia
 author: MSEdgeTeam
 ms.author: msedgedevrel

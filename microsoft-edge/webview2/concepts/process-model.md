@@ -26,7 +26,7 @@ ms.locfileid: "11535618"
    :::column-end:::
 :::row-end:::  
 
-WebView2 usa el mismo modelo de proceso que el explorador de Microsoft Edge.  Para obtener más información sobre el modelo de proceso del explorador, vaya a [Arquitectura del explorador: vea][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]el explorador web moderno.  
+WebView2 usa el mismo modelo de proceso que el Microsoft Edge explorador.  Para obtener más información sobre el modelo de proceso del explorador, vaya a [Arquitectura del explorador: vea][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]el explorador web moderno.  
 
 Un proceso de explorador está asociado con los procesos del representador y otros procesos de utilidad, como se describe en ese artículo.  Además, si se especifica WebView2, los procesos de solicitud de aplicaciones host usan WebView2.  
 
@@ -62,10 +62,10 @@ Para abrir la ventana Administrador de tareas del explorador desde la **ventana 
     
 Se muestran todos los procesos asociados con el proceso de explorador de webView2, incluidos los propósitos asociados.  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
-*   Para empezar a usar WebView2, vaya a Guías de introducción a [WebView2.][Webview2IndexGetStarted]  
-*   Para obtener un ejemplo completo de las capacidades de WebView2, vaya al repositorio [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.  
+*   Para Introducción webView2, vaya a Guías de Introducción [WebView2.][Webview2IndexGetStarted]  
+*   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] en GitHub.  
 *   Para obtener información más detallada acerca de las API de WebView2, vaya a [Referencia de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2][Webview2IndexNextSteps].  
     
@@ -75,7 +75,7 @@ Se muestran todos los procesos asociados con el proceso de explorador de webView
 
 <!-- links -->  
 
-[Webview2IndexGetStarted]: ../index.md#get-started "Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Clase WebView2 | Microsoft Docs"  

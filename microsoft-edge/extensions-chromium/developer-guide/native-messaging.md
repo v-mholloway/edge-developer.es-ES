@@ -16,12 +16,12 @@ ms.locfileid: "11475214"
 ---
 # <a name="native-messaging"></a>Mensajería nativa  
 
-Las extensiones se comunican con una aplicación nativa de Win32 instalada en el dispositivo de un usuario mediante API de paso de mensajes.  El host de la aplicación nativa envía y recibe mensajes con extensiones mediante entrada estándar y salida estándar.  Las extensiones que usan mensajería nativa se instalan en Microsoft Edge de forma similar a cualquier otra extensión.  Sin embargo, Microsoft Edge no instala ni administra las aplicaciones nativas.  
+Las extensiones se comunican con una aplicación nativa de Win32 instalada en el dispositivo de un usuario mediante API de paso de mensajes.  El host de la aplicación nativa envía y recibe mensajes con extensiones mediante entrada estándar y salida estándar.  Las extensiones que usan mensajería nativa se instalan en Microsoft Edge similares a cualquier otra extensión.  Sin embargo, las aplicaciones nativas no están instaladas ni administradas por Microsoft Edge.  
 
 Para adquirir la extensión y el host de la aplicación nativa, tienes dos modelos de distribución.  
 
 *   Empaquetar la extensión y el host juntos.  Cuando un usuario instala el paquete, se instalan tanto la extensión como el host.  
-*   Instale la extensión con el almacén de complementos de [Microsoft Edge][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]y la extensión pedirá a los usuarios que instalen el host.  
+*   Instale la extensión mediante el [Microsoft Edge complementos y][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]la extensión pide a los usuarios que instalen el host.  
 
 Para crear la extensión para enviar y recibir mensajes con hosts de aplicaciones nativas, siga estos pasos.  
 
@@ -116,7 +116,7 @@ El archivo de manifiesto de host debe ser un archivo JSON válido que contenga l
       
       Especifica la ruta de acceso al binario de host de mensajería nativa.  
       
-      *   En dispositivos Windows, puedes usar rutas relativas al directorio que contiene el archivo de manifiesto.  
+      *   En Windows dispositivos, puede usar rutas de acceso relativas al directorio que contiene el archivo de manifiesto.  
       *   En macOS y Linux, la ruta de acceso debe ser absoluta.  
           
       El proceso de host comienza con el directorio actual establecido en el directorio que contiene el binario de host.  Por ejemplo \(Windows\), si el parámetro está establecido en , el binario se inicia con `C:\App\nm_host.exe` el directorio actual \( `C:\App\` \).  
@@ -131,7 +131,7 @@ El archivo de manifiesto de host debe ser un archivo JSON válido que contenga l
    :::column span="3":::
       ---  
       
-      Especifica el tipo de interfaz que se usa para comunicarse con el host de mensajería nativa.  El valor indica a Microsoft Edge que use `stdin` y se comunique con el `stdout` host.  
+      Especifica el tipo de interfaz que se usa para comunicarse con el host de mensajería nativa.  El valor indica Microsoft Edge usar `stdin` y comunicarse con el `stdout` host.  
       El único valor aceptable es `stdio` .  
    :::column-end:::
 :::row-end:::  
@@ -161,7 +161,7 @@ Para realizar una instalación local de la extensión durante el desarrollo y `m
 1.  Vaya a `edge://extensions` la página y compruebe que la extensión aparece.  
 1.  Copie la clave `microsoft_catalog_extension_id` de \(ID\) de la lista de extensiones de la página.  
     
-Cuando esté listo para distribuir la extensión a los usuarios, publique la extensión en el almacén de complementos de Microsoft Edge.  El identificador de extensión de la extensión publicada puede diferir del identificador usado durante la instalación local de la extensión.  Si el identificador cambió, actualice `allowed_origins` en el archivo de manifiesto de host con el identificador de la extensión publicada.  
+Cuando esté listo para distribuir la extensión a los usuarios, publique la extensión en el almacén Microsoft Edge complementos.  El identificador de extensión de la extensión publicada puede diferir del identificador usado durante la instalación local de la extensión.  Si el identificador cambió, actualice `allowed_origins` en el archivo de manifiesto de host con el identificador de la extensión publicada.  
 
 ## <a name="step-3---copy-the-native-messaging-host-manifest-file-to-your-system"></a>Paso 3: copiar el archivo de manifiesto de host de mensajería nativa en el sistema  
 
@@ -204,7 +204,7 @@ Para agregar una clave del Registro al directorio con la clave de manifiesto, co
         
     1.  Ejecute el `.reg` archivo.  
         
-Microsoft Edge consulta la `HKEY_CURRENT_USER` clave raíz seguida de `HKEY_LOCAL_MACHINE` .  En ambas claves, primero se busca en el Registro de 32 bits y, a continuación, se busca en el Registro de 64 bits para identificar hosts de mensajería nativos.  La clave del Registro especifica la ubicación del manifiesto del host de mensajería nativa.  Si las entradas del Registro de Microsoft Edge no tienen la ubicación del manifiesto del host, las ubicaciones del Registro Chromium y Chrome se usan como opciones de reserva.  Si Microsoft Edge encuentra la clave del Registro en cualquiera de las ubicaciones enumeradas anteriormente, no consulta las ubicaciones que aparecen en el siguiente fragmento de código.  Si ejecuta el archivo creado como parte de un `.reg` script por lotes, asegúrese de ejecutarlo con un símbolo del sistema de administrador.
+Microsoft Edge consulta la `HKEY_CURRENT_USER` clave raíz seguida de `HKEY_LOCAL_MACHINE` .  En ambas claves, primero se busca en el Registro de 32 bits y, a continuación, se busca en el Registro de 64 bits para identificar hosts de mensajería nativos.  La clave del Registro especifica la ubicación del manifiesto del host de mensajería nativa.  Si las entradas del Registro de Microsoft Edge no tienen la ubicación del manifiesto de host, las ubicaciones del registro Chromium y Chrome se usan como opciones de reserva.  Si Microsoft Edge la clave del Registro en cualquiera de las ubicaciones enumeradas anteriormente, no consulta las ubicaciones que aparecen en el siguiente fragmento de código.  Si ejecuta el archivo creado como parte de un `.reg` script por lotes, asegúrese de ejecutarlo con un símbolo del sistema de administrador.
 
 La siguiente lista es el orden de búsqueda de las ubicaciones del Registro.  
 
@@ -275,7 +275,7 @@ Para almacenar el archivo de manifiesto, complete una de las siguientes acciones
 
 <!-- links -->  
 
-[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Complementos de Microsoft Edge"
+[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge Complementos"
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

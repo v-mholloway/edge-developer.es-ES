@@ -7,7 +7,7 @@ ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, aplicaciones de winforms, winforms, edge, CoreWebView2, control de explorador, html perimetral, introducción, Introducción, .NET, formularios de windows
+keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, control de explorador, edge html, get started, Introducción, .NET, windows forms
 ms.openlocfilehash: 704e5732ddcff02e56f49bec37a5d1ad5f11c2b5
 ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
@@ -23,7 +23,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.  
 
-*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] o cualquier canal no estable de [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
+*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] o cualquier canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] no estable instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
     
     > [!NOTE]
     > El equipo de WebView recomienda usar el canal Canary y la versión mínima necesaria es 82.0.488.0.  
@@ -43,7 +43,7 @@ Comience con un proyecto de escritorio básico que contenga una sola ventana pri
        Nuevo proyecto  
     :::image-end:::
     
-1.  Escriba valores para **Nombre del proyecto y** **Ubicación**.  Elija **.NET Framework 4.6.2** o posterior.  
+1.  Escriba valores para **Project nombre y** **Ubicación**.  Elija **.NET Framework 4.6.2** o posterior.  
     
     :::image type="complex" source="./media/winforms-start-proj.png" alt-text="Iniciar proyecto" lightbox="./media/winforms-start-proj.png":::
        Iniciar proyecto  
@@ -55,10 +55,10 @@ Comience con un proyecto de escritorio básico que contenga una sola ventana pri
 
 Use NuGet para agregar el SDK de WebView2 al proyecto.  
 
-1.  Mantenga el mouse en el proyecto, abra el menú contextual \(hacer clic con el botón secundario\) y elija **Administrar paquetes NuGet...**.  
+1.  Mantenga el mouse en el proyecto, abra el menú contextual \(haga clic con el botón secundario\) y elija **Administrar NuGet paquetes...**.  
     
-    :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Administrar paquetes nuget":::
-       Administrar paquetes nuget
+    :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Administrar NuGet paquetes de administración":::
+       Administrar NuGet paquetes de administración
     :::image-end:::
     
 1.  En la barra de búsqueda, `Microsoft.Web.WebView2` escriba > **elija Microsoft.Web.WebView2**.  
@@ -77,13 +77,13 @@ Use NuGet para agregar el SDK de WebView2 al proyecto.
 
 Agrega un WebView a la aplicación.  
 
-1.  Abra el **Diseñador de Windows Forms**.  
+1.  Abra el **Windows Forms Designer**.  
 1.  Busque **WebView2 en** el cuadro **de herramientas**.  
     
     > [!NOTE]
-    > Si usa Visual Studio 2017, es posible que **WebView2** no se muestre de forma predeterminada en el cuadro **de herramientas**.  Para habilitar el comportamiento, elija **Opciones**  >  **de**herramientas  >  **Generales** > **** la configuración Del cuadro de herramientas Rellenar automáticamente en `True` .  
+    > Si está usando Visual Studio 2017, es posible que **WebView2** no se muestre de forma predeterminada en el cuadro de **herramientas**.  Para habilitar el comportamiento, elija **Opciones**  >  **de**herramientas  >  **Generales** > **** la configuración Del cuadro de herramientas Rellenar automáticamente en `True` .  
     
-    Arrastre y coloque el control **WebView2** en la aplicación de Windows Forms.
+    Arrastre y coloque el control **WebView2** en Windows Forms App.
     
     :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Cuadro de herramientas que muestra WebView2":::
        Cuadro de herramientas que muestra WebView2  
@@ -108,15 +108,15 @@ Para compilar y ejecutar el proyecto, seleccione `F5` .  Asegúrese de que el co
 :::image-end:::    
 
 > [!NOTE]
-> Si estás trabajando en un monitor de PPP alto, es posible que debas configurar la aplicación de Windows Forms para que sea [compatible con PPP alto.][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]  
+> Si estás trabajando en un monitor de PPP alto, es posible que deba configurar la aplicación Windows Forms para que admita [ppp alto.][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]  
 
 ## <a name="step-4---handle-window-resize-events"></a>Paso 4: Controlar eventos de cambio de tamaño de ventana  
 
-Agrega algunos controles más a Windows Forms desde el cuadro de herramientas y, a continuación, controla los eventos de cambio de tamaño de la ventana correctamente.  
+Agregue algunos controles más a los formularios Windows desde el cuadro de herramientas y, a continuación, controle los eventos de cambio de tamaño de la ventana correctamente.  
 
-1.  En el **Diseñador de Windows Forms,** abra el **cuadro de herramientas**.  
-1.  Arrastre y coloque un **textbox** en la aplicación de Windows Forms.  Asigne el **nombre TextBox** `addressBar` a la pestaña **Propiedades**.  
-1.  Arrastre y coloque un **botón** en la aplicación de Windows Forms.  Cambie el texto del **botón a y** asigne un nombre al botón `Go!` **en** la `goButton` pestaña **Propiedades**.  
+1.  En el **Windows Forms Designer**, abra el cuadro de **herramientas**.  
+1.  Arrastre y coloque un **TextBox** en Windows Forms App.  Asigne el **nombre TextBox** `addressBar` a la pestaña **Propiedades**.  
+1.  Arrastre y coloque un **botón** en Windows Forms App.  Cambie el texto del **botón a y** asigne un nombre al botón `Go!` **en** la `goButton` pestaña **Propiedades**.  
     
     La aplicación debe tener el aspecto de la siguiente imagen en el diseñador.  
     
@@ -164,7 +164,7 @@ Agregue la capacidad de permitir a los usuarios cambiar la dirección URL que mu
     using Microsoft.Web.WebView2.Core;
     ```
     
-1.  En el **Diseñador de Windows Forms,** haga doble clic en el `Go!` botón para crear el método en el `goButton_Click` `Form1.cs` archivo.  Copie y pegue el siguiente fragmento de código dentro de la función.  Ahora, la `goButton_Click` función navega por WebView hasta la dirección URL especificada en la barra de direcciones.
+1.  En el **Windows Forms Designer**, haga doble clic en el botón para crear el método en el `Go!` `goButton_Click` `Form1.cs` archivo.  Copie y pegue el siguiente fragmento de código dentro de la función.  Ahora, la `goButton_Click` función navega por WebView hasta la dirección URL especificada en la barra de direcciones.
     
     ```csharp
     private void goButton_Click(object sender, EventArgs e)
@@ -350,7 +350,7 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
 <!-- links -->  
 
 [WV2BestPractices]: ../concepts/developer-guide.md "Procedimientos recomendados de desarrollo de WebView2 | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegación | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Espacio de nombres Microsoft.Web.WebView2.WinForms | Microsoft Docs"  
@@ -358,13 +358,13 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "Método WebView2.EnsureCoreWebView2Async(CoreWebView2Environment) | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync "WebView2.Exemétodo cuteScriptAsync(String) | Microsoft Docs"  
 
-[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "Configuración de la aplicación de Windows Forms para la compatibilidad con PPP alto: compatibilidad con PPP alto en Windows Forms | Microsoft Docs"  
+[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "Configuración de la aplicación Windows Forms para la compatibilidad con PPP alta: compatibilidad con PPP alto en Windows forms | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider Channels"  
 
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Desarrollador de Microsoft Edge"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 | Microsoft Edge Programador"  
 
 [MicrosoftMain]: https://www.microsoft.com "Microsoft"  
 

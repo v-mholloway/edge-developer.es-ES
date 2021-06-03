@@ -17,11 +17,11 @@ ms.locfileid: "11399102"
 ---
 # <a name="use-the-web-app-manifest-to-integrate-your-progressive-web-app-into-the-operating-system"></a>Usar el manifiesto de aplicación web para integrar la aplicación web progresiva en el sistema operativo
 
-Un manifiesto de aplicación web de un sitio web rige el aspecto y el comportamiento de la aplicación web progresiva \(PWA\) cuando se instala en un dispositivo.  En el nivel más básico, el manifiesto proporciona detalles sobre el nombre de la aplicación, los iconos que se usarán para representar la aplicación en los menús del sistema y los colores del tema que el sistema operativo \(OS\) usa en la barra de título.  El manifiesto también te permite desbloquear características eficaces que permiten que la aplicación se comporte como otras aplicaciones nativas del sistema.  
+Un manifiesto de aplicación web de un sitio web rige cómo se ve y se comporta la aplicación web progresiva \(PWA\) cuando se instala en un dispositivo.  En el nivel más básico, el manifiesto proporciona detalles sobre el nombre de la aplicación, los iconos que se usarán para representar la aplicación en los menús del sistema y los colores del tema que el sistema operativo \(OS\) usa en la barra de título.  El manifiesto también te permite desbloquear características eficaces que permiten que la aplicación se comporte como otras aplicaciones nativas del sistema.  
 
 ## <a name="use-shortcuts-to-provide-quick-access-to-features"></a>Usar accesos directos para proporcionar acceso rápido a las características  
 
-La mayoría de los sistemas operativos proporcionan acceso rápido a las características clave de la aplicación mediante accesos directos en el menú contextual conectado al icono de la aplicación.  Para usar accesos directos en tu PWA, incluye la `shortcuts` propiedad en el manifiesto de la aplicación web.  El siguiente fragmento de código muestra cómo definir un acceso directo en el manifiesto de la aplicación web.  
+La mayoría de los sistemas operativos proporcionan acceso rápido a las características clave de la aplicación mediante accesos directos en el menú contextual conectado al icono de la aplicación.  Para usar accesos directos en el PWA, incluya la `shortcuts` propiedad en el manifiesto de la aplicación web.  El siguiente fragmento de código muestra cómo definir un acceso directo en el manifiesto de la aplicación web.  
 
 ```json
 "shortcuts": [
@@ -64,7 +64,7 @@ Muchos sistemas operativos permiten a los usuarios compartir rápidamente víncu
 
 Cuando se agrega al manifiesto de aplicación web, se establece `"/share.html"` como la página de acción de un recurso compartido. Además, define tres parámetros que se pasarán a esa página de acción: `"title"` , `"text"` y `"url"` .  Estos parámetros se almacenarán en `"name"` las propiedades , y del objeto `"description"` `"link"` [ShareData.][GitHubWicgWebShareDomSharedata]  De forma predeterminada, la página de acción recibe los parámetros como parte de una solicitud GET, pero puede especificar la solicitud y la codificación \(as \), tal como lo haría en `method` `enctype` un formulario web.
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 Para obtener más información sobre los manifiestos de aplicación web, vaya a la siguiente lista de temas relacionados.  
 

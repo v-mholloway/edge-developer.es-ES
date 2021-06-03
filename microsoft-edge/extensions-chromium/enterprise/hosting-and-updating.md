@@ -1,6 +1,6 @@
 ---
 description: Hospedar y publicar extensiones en la empresa para Microsoft Edge (Chromium).
-title: Publicar y actualizar extensiones en el almacén de complementos de Microsoft Edge
+title: Publicar y actualizar extensiones en el Microsoft Edge complementos
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/10/2021
@@ -14,22 +14,22 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/26/2021
 ms.locfileid: "11461223"
 ---
-# <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-store"></a>Publicar y actualizar extensiones en el almacén de complementos de Microsoft Edge  
+# <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-store"></a>Publicar y actualizar extensiones en el Microsoft Edge complementos  
 
-La mayoría de las extensiones se publican en el almacén de complementos de [Microsoft Edge][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] para proteger a los usuarios de extensiones malintencionadas.  
+La mayoría de las extensiones se publican en [el Microsoft Edge complementos][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] para proteger a los usuarios de extensiones malintencionadas.  
 
 ## <a name="publish-options-for-extensions"></a>Opciones de publicación para extensiones  
 
-Todas las extensiones se distribuyen a los usuarios como un archivo especial \( `.zip` \) con un `.crx` sufijo.  Las extensiones publicadas en el almacén de complementos de Microsoft Edge se cargan como `.zip` archivos.  El proceso de publicación convierte automáticamente el `.zip` archivo en un `.crx` archivo.  
+Todas las extensiones se distribuyen a los usuarios como un archivo especial \( `.zip` \) con un `.crx` sufijo.  Las extensiones publicadas en el Microsoft Edge complementos se cargan como `.zip` archivos.  El proceso de publicación convierte automáticamente el `.zip` archivo en un `.crx` archivo.  
 
-Los dos escenarios siguientes no requieren que publiques la extensión en el almacén de complementos de Microsoft Edge.  
+Los dos escenarios siguientes no requieren que publiques la extensión en el Microsoft Edge complementos.  
 
-*   Extensiones distribuidas mediante la directiva de empresa.  
-*   Usar directorios de extensión desempaquetar en una máquina local cuando Microsoft Edge está en modo de desarrollador.  
+*   Extensiones distribuidas mediante Enterprise directiva.  
+*   Usar directorios de extensión desempaquetar en un equipo local Microsoft Edge está en modo de desarrollador.  
 
 ## <a name="updates-to-extensions"></a>Actualizaciones de extensiones
 
-El explorador Microsoft Edge comprueba automáticamente si hay nuevas versiones de extensiones instaladas. Las actualizaciones se instalan sin intervención del usuario.  
+El Microsoft Edge busca automáticamente nuevas versiones de extensiones instaladas. Las actualizaciones se instalan sin intervención del usuario.  
 
 
 <!-- image links -->

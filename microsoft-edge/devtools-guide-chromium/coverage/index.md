@@ -38,7 +38,7 @@ El **** panel Cobertura de Microsoft Edge DevTools le ayuda a encontrar código 
 > [!WARNING]
 > Encontrar código sin usar es relativamente fácil.  Pero refactorizar una base de código para que cada página solo incluye el JavaScript y CSS que necesita puede resultar difícil.  En esta guía no se explica cómo refactorizar una base de código para evitar el código no usado, ya que estos refactores dependen en gran medida de la pila de tecnología.  
 
-## <a name="overview"></a>Información general  
+## <a name="overview"></a>Introducción  
 
 El envío de JavaScript o CSS sin usar es un problema común en el desarrollo web.  Por ejemplo, supongamos que desea usar el componente [de botón Bootstrap][BootstrapButtons] en la página.  Para usar el componente de botón, debe agregar un vínculo a la hoja de estilos de Bootstrap en su HTML, de esta forma:  
 

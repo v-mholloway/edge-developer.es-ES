@@ -1,13 +1,13 @@
 ---
-description: Automatizar y probar el control WebView2 con el controlador de Microsoft Edge
-title: Automatizar y probar WebView2 con controlador de Microsoft Edge
+description: Automatizar y probar el control WebView2 con Microsoft Edge controlador
+title: Automatizar y probar WebView2 con Microsoft Edge controlador
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Controlador de Microsoft Edge
+keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Microsoft Edge Driver
 ms.openlocfilehash: 37c0e41e11693c8a21b7240bf9370fd658834cff
 ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "11536173"
 ---
-# <a name="automate-and-test-webview2-with-microsoft-edge-driver"></a>Automatizar y probar WebView2 con controlador de Microsoft Edge  
+# <a name="automate-and-test-webview2-with-microsoft-edge-driver"></a>Automatizar y probar WebView2 con Microsoft Edge controlador  
 
 Dado que WebView2 usa la plataforma web Microsoft Edge \(Chromium\), los desarrolladores de WebView2 \(you\) pueden aprovechar las herramientas web estándar para la depuración y automatización.  Selenio es una de estas herramientas.  Implementa la API de [W3C WebDriver.][W3cWebdriver2]  Puede usar Selenio para crear pruebas automatizadas para simular las interacciones del usuario.  
 
@@ -31,15 +31,15 @@ Una vez clonado el repositorio, cree el proyecto en Visual Studio.  Debería ten
    Aplicación de ejemplo webView2API  
 :::image-end:::    
 
-## <a name="step-2--install-microsoft-edge-driver"></a>Paso 2: Instalar el controlador de Microsoft Edge  
+## <a name="step-2--install-microsoft-edge-driver"></a>Paso 2: Instalar Microsoft Edge controlador  
 
-Siga las instrucciones para instalar El controlador [de Microsoft Edge][WebdriverChromiumDownloadMicrosoftEdgeDriver] es el controlador específico del explorador requerido por Selenium para automatizar y probar WebView2.  
+Siga las instrucciones para instalar [Microsoft Edge driver][WebdriverChromiumDownloadMicrosoftEdgeDriver] específico del explorador requerido por Selenium para automatizar y probar WebView2.  
 
-Asegúrese de que la versión del controlador de Microsoft Edge coincide con la versión de WebView2 Runtime que usa la aplicación.  Para que el ejemplo webView2API funcione, asegúrese de que la versión de WebView2 Runtime sea mayor o igual que la versión admitida de la última versión del SDK de WebView2.  Para buscar la última versión del SDK de WebView2, vaya a [Notas de la versión de WebView2][Webview2ReleaseNotes].  Para averiguar qué versión de WebView2 Runtime tiene actualmente, vaya a `edge://settings/help` .  
+Asegúrese de que la versión de Microsoft Edge driver coincide con la versión de WebView2 Runtime que usa la aplicación.  Para que el ejemplo webView2API funcione, asegúrese de que la versión de WebView2 Runtime sea mayor o igual que la versión admitida de la última versión del SDK de WebView2.  Para buscar la última versión del SDK de WebView2, vaya a [Notas de la versión de WebView2][Webview2ReleaseNotes].  Para averiguar qué versión de WebView2 Runtime tiene actualmente, vaya a `edge://settings/help` .  
 
 ## <a name="step-3--add-selenium-to-the-webview2api-sample"></a>Paso 3: Agregar selenio al ejemplo webView2API  
 
-En este momento, debe tener WebView2 Runtime instalado, creado un proyecto webView2 e instalado controlador de Microsoft Edge.  Ahora, empieza a usar Selenio.  
+En este momento, debe tener WebView2 Runtime instalado, creado un proyecto WebView2 e instalado Microsoft Edge driver.  Ahora, empieza a usar Selenio.  
 
 > [!NOTE]
 > Selenium admite C\#, Java, Python, Javascript y Ruby.  Sin embargo, la siguiente guía se escribe con C\#.  
@@ -62,20 +62,20 @@ En este momento, debe tener WebView2 Runtime instalado, creado un proyecto webVi
        Nuevo proyecto  
     :::image-end:::  
     
-1.  Ahora agregue **Selenio** al proyecto.  Instale Selenium mediante el paquete **NuGet Selenium.WebDriver**.  
+1.  Ahora agregue **Selenio** al proyecto.  Instale Selenium mediante el **paquete de NuGet Selenium.WebDriver**.  
     
-    Para descargar el **paquete NuGet Selenium.WebDriver**, en **Visual Studio**, mantenga el mouse en **Project**y elija Administrar **paquete NuGet**.  Debería aparecer la siguiente pantalla.  
+    Para descargar el **paquete de selenio.WebDriver NuGet**, en **Visual Studio**, mantenga el mouse **en Project**y elija Administrar **NuGet paquete**.  Debería aparecer la siguiente pantalla.  
     
-    :::image type="complex" source="../media/webdriver/download-nuget.png" alt-text="Descargar paquete NuGet" lightbox="../media/webdriver/download-nuget.png":::
-       Descargar paquete NuGet  
+    :::image type="complex" source="../media/webdriver/download-nuget.png" alt-text="Descargar NuGet paquete" lightbox="../media/webdriver/download-nuget.png":::
+       Descargar NuGet paquete  
     :::image-end:::  
     
 1.  Escriba en la barra de búsqueda, elija `Selenium.WebDriver` **Selenium.WebDriver** en los resultados y asegúrese de marcar la casilla junto a **incluir la versión previa**.  En la ventana del lado derecho, asegúrese de que **Version** está configurado para instalar **4.0.0-alpha04** o posterior y elija **Instalar**.  NuGet descarga Selenio en el equipo.  
     
-    Para obtener más información sobre el paquete NuGet Selenium.WebDriver, vaya a [Selenium.WebDriver 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04].  
+    Para obtener más información sobre el paquete de NuGet Selenium.WebDriver, vaya a [Selenium.WebDriver 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04].  
     
-    :::image type="complex" source="../media/webdriver/nuget.png" alt-text="Administrar el paquete NuGet" lightbox="../media/webdriver/nuget.png":::
-       Administrar el paquete NuGet  
+    :::image type="complex" source="../media/webdriver/nuget.png" alt-text="Administrar NuGet paquete" lightbox="../media/webdriver/nuget.png":::
+       Administrar NuGet paquete  
     :::image-end:::  
     
 1.  Use `OpenQA.Selenium.Edge` agregando la siguiente instrucción:  `using OpenQA.Selenium.Edge;` al principio del `Program.cs` archivo.  
@@ -106,12 +106,12 @@ En este momento, debe tener WebView2 Runtime instalado, creado un proyecto webVi
     
     | Parámetro | Detalles |    
     |:--- |:--- |  
-    | `is_legacy` | Establece en `false` , lo que indica a Selenio que estás impulsando el nuevo explorador Microsoft Edge basado en Chromium. |  
+    | `is_legacy` | Establece en , lo que indica a Selenium que estás impulsando el nuevo `false` Chromium basado Microsoft Edge explorador. |  
     | `"webview2"` | Cadena que indica a Selenium que estás impulsando WebView2. |  
     
-1.  A continuación, establezca la ruta de acceso de archivo del tiempo de ejecución del proyecto webView2, cree una cadena denominada que proporciona la ruta de acceso del archivo al lugar donde instaló el controlador de Microsoft Edge y cree una cadena denominada para almacenar el nombre del tiempo de ejecución del controlador `edgeOptions.BinaryLocation` `msedgedriverDir` de Microsoft [][MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads] `msedgedriverExe` Edge.  De forma predeterminada, el tiempo de ejecución se denomina `msedgedriver.exe` . Use estas dos cadenas para construir el `EdgeDriverService` objeto como se muestra a continuación.  Por último, cree el `EdgeDriver` objeto mediante `EdgeDriverService` y `EdgeOptions` .  
+1.  A continuación, establezca la ruta de acceso de archivo del tiempo de ejecución del proyecto webView2, cree una cadena denominada que proporciona la ruta de acceso del archivo al lugar donde instaló el controlador de Microsoft Edge y cree una cadena denominada para almacenar el nombre del tiempo de ejecución del controlador `edgeOptions.BinaryLocation` `msedgedriverDir` de [][MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads] `msedgedriverExe` Microsoft Edge.  De forma predeterminada, el tiempo de ejecución se denomina `msedgedriver.exe` . Use estas dos cadenas para construir el `EdgeDriverService` objeto como se muestra a continuación.  Por último, cree el `EdgeDriver` objeto mediante `EdgeDriverService` y `EdgeOptions` .  
     
-    Puede copiar y pegar el siguiente código debajo `edgeOptions` de .  Asegúrese de especificar las rutas de acceso de archivo correctas al tiempo de ejecución del proyecto y al tiempo de ejecución del controlador de Microsoft Edge en el equipo.  
+    Puede copiar y pegar el siguiente código debajo `edgeOptions` de .  Asegúrese de especificar las rutas de acceso de archivo correctas al tiempo de ejecución del proyecto y Microsoft Edge tiempo de ejecución del controlador en el equipo.  
     
     ```csharp
     //Set the BinaryLocation to the filepath of the WebView2API Sample runtime
@@ -144,13 +144,13 @@ En este momento, debe tener WebView2 Runtime instalado, creado un proyecto webVi
        Selenio que ejecuta WebView2  
     :::image-end:::
     
-¡Enhorabuena!  Ha automatizado correctamente un proyecto webView2 y ha controlado WebView2 con Selenio y controlador de Microsoft Edge.  
+¡Enhorabuena!  Ha automatizado correctamente un proyecto webView2 y ha controlado WebView2 con Selenium y Microsoft Edge Driver.  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   Para obtener un vistazo completo a cómo las API de Selenium unidades WebView2 o Microsoft Edge \(Chromium\), vaya a [WebDriver en la documentación de Selenio][SeleniumWebdriver]   
-*   Para obtener más información sobre el control WebView2 y cómo usarlo al insertar contenido web en la aplicación nativa, vaya a Introducción a [Microsoft Edge WebView2][WebViewIndex].  
-*   Para obtener más información sobre la automatización de Microsoft Edge \(Chromium\), vaya a [Usar WebDriver (Chromium) para la automatización de pruebas][WebdriverChromium]   
+*   Para obtener más información sobre el control WebView2 y cómo usarlo al insertar contenido web en la aplicación nativa, vaya a [Introducción a Microsoft Edge WebView2][WebViewIndex].  
+*   Para obtener más información sobre la automatización Microsoft Edge \(Chromium\), vaya a [Usar WebDriver (Chromium)][WebdriverChromium] para la automatización de pruebas   
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
 
@@ -159,16 +159,16 @@ En este momento, debe tener WebView2 Runtime instalado, creado un proyecto webVi
 <!-- links -->  
 
 [WebdriverChromium]: ../../webdriver-chromium/index.md "Use WebDriver (Chromium) para la automatización de pruebas | Microsoft Docs"  
-[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Descargar controlador de Microsoft Edge: use WebDriver (Chromium) para la automatización de pruebas | Microsoft Docs"  
+[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Descargar controlador Microsoft Edge: usar WebDriver (Chromium) para la automatización de pruebas | Microsoft Docs"  
 [WebViewIndex]: ../index.md "Introducción a Microsoft Edge WebView2 : Microsoft Docs"  
 [Webview2ReleaseNotes]: ../release-notes.md "Notas de la versión de WebView2 SDK | Microsoft Docs"  
 
-[MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Descargar WebDriver | Desarrollador de Microsoft Edge"  
+[MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Descargar WebDriver | Microsoft Edge Programador"  
 
 [GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample "Ejemplo de API de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites "Requisitos previos: ejemplo de API de WebView2 | GitHub"  
 
-[NugetSeleniumWebdriver400Alpha04]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha04 "Selenium.WebDriver 4.0.0-alpha04 | Galería nuGet"  
+[NugetSeleniumWebdriver400Alpha04]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha04 "Selenium.WebDriver 4.0.0-alpha04 | NuGet Galería"  
 
 [SeleniumWebdriver]: https://www.selenium.dev/documentation/en/webdriver "WebDriver | Selenio"  
 

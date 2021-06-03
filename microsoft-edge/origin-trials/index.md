@@ -17,11 +17,11 @@ ms.locfileid: "11397548"
 ---
 # <a name="use-origin-trials-in-microsoft-edge"></a>Usar pruebas de origen en Microsoft Edge  
 
-Los desarrolladores pueden usar las pruebas de Origin para probar api experimentales en sitios en directo durante un período de tiempo limitado.  Al usar las pruebas de origen, los usuarios de Microsoft Edge que visitan el sitio pueden ejecutar código que usa API experimentales.  Para obtener acceso a las API experimentales en cada equipo de usuario, no es necesario ir a y activar `edge://flags` las marcas de características.  Para obtener más información, vaya a [API experimentales][DeveloperMicrsoftEdgeOriginTrials].  Además, puede proporcionar comentarios sobre el diseño de la API, los casos de uso o la experiencia con las API para ingenieros de exploradores y la comunidad estándar web.  
+Los desarrolladores pueden usar las pruebas de Origin para probar api experimentales en sitios en directo durante un período de tiempo limitado.  Al usar las pruebas de origen, los usuarios de Microsoft Edge que visiten el sitio pueden ejecutar código que use API experimentales.  Para obtener acceso a las API experimentales en cada equipo de usuario, no es necesario ir a y activar `edge://flags` las marcas de características.  Para obtener más información, vaya a [API experimentales][DeveloperMicrsoftEdgeOriginTrials].  Además, puede proporcionar comentarios sobre el diseño de la API, los casos de uso o la experiencia con las API para ingenieros de exploradores y la comunidad estándar web.  
 
 ## <a name="get-started-using-origin-trials"></a>Introducción al uso de pruebas de Origin  
 
-Para obtener más información acerca de las API experimentales disponibles en Microsoft Edge, vaya a [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials].  Asegúrese de revisar los requisitos mínimos de versión de Microsoft Edge y la fecha de finalización de la prueba para evaluar la idoneidad de usar las API experimentales en su sitio web.  
+Para obtener más información acerca de las API experimentales disponibles en Microsoft Edge, vaya [a Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials].  Asegúrese de revisar los requisitos mínimos de versión Microsoft Edge y la fecha de finalización de la prueba para evaluar la idoneidad del uso de las API experimentales en su sitio web.  
 
 > [!NOTE]
 > Un experimento puede finalizar antes de lo planeado si se produce alguna de las siguientes situaciones.  
@@ -33,9 +33,9 @@ Para obtener más información acerca de las API experimentales disponibles en M
 
 Siga estos pasos para registrarse para una prueba de una API experimental.  
 
-1.  Visite la [página Microsoft Edge Origin Trials Developer Console.][DeveloperMicrsoftEdgeOriginTrials]  
+1.  Visite la página Microsoft Edge Consola para [desarrolladores de pruebas de][DeveloperMicrsoftEdgeOriginTrials] origin.  
 1.  Elija el botón Registrar en cualquiera de los experimentos disponibles.  
-1.  Inicie sesión en la Consola de desarrolladores con su nombre de usuario y contraseña de GitHub.  
+1.  Inicie sesión en la Consola de desarrollador con GitHub nombre de usuario y contraseña.  
 1.  Elija **Autorizar MicrosoftEdge**.  
 1.  Complete el formulario.  
     
@@ -52,7 +52,7 @@ Siga estos pasos para registrarse para una prueba de una API experimental.
     
 ### <a name="apply-your-token"></a>Aplicar el token  
 
-Un token se genera instantáneamente y se muestra en la página De pruebas de [Microsoft Edge Origin Developer Console.][DeveloperMicrsoftEdgeOriginTrials]  Para empezar a usar la prueba en su sitio web, use cualquiera de los siguientes métodos para aplicar el token a la página.  
+Un token se genera de forma instantánea y se muestra en la Microsoft Edge Consola para desarrolladores de [pruebas de][DeveloperMicrsoftEdgeOriginTrials] Origin.  Para empezar a usar la prueba en su sitio web, use cualquiera de los siguientes métodos para aplicar el token a la página.  
 
 *   Agregue el `origin-trial` valor de atributo y el token a la etiqueta en cada página que use la API `meta` experimental.  
     
@@ -91,7 +91,7 @@ Al usar API experimentales, asegúrese de proporcionar una experiencia de trabaj
 
 ### <a name="roadmap-for-allowed-origins"></a>Guía básica para orígenes permitidos  
 
-El portal de pruebas de origen de Microsoft Edge actualmente solo admite orígenes habilitados para SSL, lo que significa que los sitios web deben tener HTTPS correctamente implementado para registrar un experimento.  En el futuro, se planean los siguientes orígenes seguros.  
+El portal Microsoft Edge pruebas de origen actual solo admite orígenes habilitados para SSL, lo que significa que los sitios web deben tener HTTPS correctamente implementado para registrarse en un experimento.  En el futuro, se planean los siguientes orígenes seguros.  
 
 *   Registrarse `http://localhost` como origen de los experimentos.  Para usarlo `http://localhost` hoy, vaya a `edge://flags` y establezca el experimento en **Habilitado**.  
 *   Use extensiones con `extensions://` orígenes con prefijo para inscribirse en experimentos.  

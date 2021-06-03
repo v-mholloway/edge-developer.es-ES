@@ -59,7 +59,7 @@ Para las aplicaciones que no desean enviar un `WebView2Loader.dll` , siga estos 
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   Para empezar a usar WebView2, vaya a [WebView2 Introducción Guías][Webview2MainGetStarted].  
 *   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.

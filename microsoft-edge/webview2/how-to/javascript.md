@@ -21,7 +21,7 @@ El uso de JavaScript en controles WebView2 te permite personalizar aplicaciones 
 
 ## <a name="before-you-begin"></a>Antes de comenzar  
 
-En este artículo se supone que ya tiene un proyecto en funcionamiento.  Si no tiene un proyecto y desea seguirlo, vaya a la Guía de introducción a [WebView2][Webview2GetStartedWpf].  
+En este artículo se supone que ya tiene un proyecto en funcionamiento.  Si no tiene un proyecto y desea seguirlo, vaya a la [WebView2 Introducción Guide][Webview2GetStartedWpf].  
 
 ## <a name="basic-webview2-functions"></a>Funciones básicas de WebView2  
 
@@ -29,7 +29,7 @@ Usa las siguientes funciones para empezar a insertar JavaScript en la aplicació
 
 | API  | Descripción  |
 |:--- |:--- |  
-| [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Ejecute JavaScript en un control WebView. Para obtener más información, vaya al tutorial Introducción. |
+| [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Ejecute JavaScript en un control WebView. Para obtener más información, vaya al Introducción tutorial. |
 | [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Se ejecuta cuando se crea el modelo de objetos de documento \(DOM\). |
       
 ## <a name="scenario--running-a-dedicated-script-file"></a>Escenario: ejecución de un archivo de script dedicado  
@@ -110,10 +110,10 @@ Ahora agregue código para quitar la funcionalidad del menú contextual del cont
     
 1.  Vuelva a ejecutar el código.  Confirme que no puede abrir un menú contextual \(hacer clic con el botón secundario\).  
     
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
-*   Para empezar a usar WebView2, vaya a [WebView2 Get Started Guides][Webview2MainGetStarted].  
-*   Para obtener un ejemplo completo de las capacidades de WebView2, vaya al repositorio [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.  
+*   Para empezar a usar WebView2, vaya a [WebView2 Introducción Guías][Webview2MainGetStarted].  
+*   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya al repositorio [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.  
 *   Para obtener información detallada sobre las API de WebView2, vaya a [Referencia de api][Webview2ApiReference].  
 *   Para obtener más información sobre WebView2, vaya a [Recursos de WebView2][Webview2MainNextSteps].  
     
@@ -123,12 +123,12 @@ Ahora agregue código para quitar la funcionalidad del menú contextual del cont
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
-[Webview2ApiReference]: ../webview2-api-reference.md "Referencia de api de Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
 [Webview2GetStartedWpf]: ../get-started/wpf.md "Introducción a WebView2 en WPF (versión preliminar) | Microsoft Docs"  
 [Webview2MainGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - interfaz ICoreWebView2 | Microsoft Docs"  
 

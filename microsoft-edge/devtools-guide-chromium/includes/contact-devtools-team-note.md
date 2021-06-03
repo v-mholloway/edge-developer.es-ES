@@ -11,23 +11,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "11205639"
 ---
-Use las siguientes opciones para analizar las nuevas características y cambios en la publicación, o cualquier otra cosa relacionada con DevTools.  
+Use las siguientes opciones para discutir las nuevas características y cambios en la publicación, o cualquier otra cosa relacionada con DevTools.  
 
-*   Envía tus comentarios con el icono **Enviar** comentarios o selecciona `Alt` + `Shift` + `I` \(Windows, Linux\) o `Option` + `Shift` + `I` \(macOS\) en DevTools.  
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].  
-*   Enviar una sugerencia a [La web que queremos][TheWebWeWant].  
-*   Para presentar errores sobre este artículo, use la siguiente sección **comentarios.**  
+*   Envíe sus comentarios con el icono **Enviar** comentarios o seleccione `Alt` + `Shift` + `I` \(Windows, Linux\) o `Option` + `Shift` + `I` \(macOS\) en DevTools.  
+*   Tweet a [@EdgeDevTools][PostTweetEdgeDevTools].  
+*   Envíe una sugerencia para [Sitio web que queremos][TheWebWeWant].  
+*   Para archivos de errores sobre este artículo, use la siguiente **comentarios** sección.  
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   El **icono Enviar comentarios** en Microsoft Edge DevTools  
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="El icono Enviar comentarios en las Herramientas de desarrollo del borde de Microsoft Edge" lightbox="../media/bing-devtools-send-feedback.msft.png":::
+   El icono **Enviar comentarios en** devTools de Microsoft Edge  
 :::image-end:::  
 
 <!-- links -->  
 
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Publicar un tweet"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Publicar un Tweet"  
 
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools cuenta de Twitter"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Nuevo problema : MicrosoftDocs/edge-developer - GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Nuevo problema: MicrosoftDocs/programador perimetral - GitHub"  
 
 [TheWebWeWant]: https://webwewant.fyi "La web que queremos"  

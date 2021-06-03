@@ -1,12 +1,12 @@
 ---
-description: Cómo registrar mensajes y ejecutar JavaScript en la consola de Microsoft Edge DevTools.
+description: Cómo registrar mensajes y ejecutar JavaScript en la Microsoft Edge DevTools Console.
 title: Registrar mensajes en la herramienta consola
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 ms.openlocfilehash: d48a48de7b261a628ac99f58680deb119268a980
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT

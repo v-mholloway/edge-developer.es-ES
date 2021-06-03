@@ -1,6 +1,6 @@
 ---
-description: Forzar Microsoft Edge DevTools al modo de vista previa de esquema de colores.
-title: Forzar Microsoft Edge DevTools al modo de vista previa de esquema de colores (CSS prefiere la combinación de colores)
+description: Fuerza Microsoft Edge DevTools al modo de vista previa de esquema de color.
+title: Forzar Microsoft Edge DevTools en modo de vista previa de esquema de color (CSS prefiere combinación de colores)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
@@ -36,16 +36,16 @@ Los sistemas operativos tienen una forma de mostrar cualquier aplicación en col
 
 1.  Después de elegir una combinación de colores, actualice el documento actual para mostrar el modo simulado.  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Modo de luz simulada dentro de Microsoft Edge DevTools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
-       Modo de luz simulada dentro de Microsoft Edge DevTools  
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Modo de luz simulada dentro Microsoft Edge DevTools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+       Modo de luz simulada dentro Microsoft Edge DevTools  
     :::image-end:::  
     
-    Ver y cambiar el CSS como cualquier otra página web.  Para obtener más información, vaya [a Introducción a Ver y cambiar CSS][DevtoolsCssIndex].  
+    Ver y cambiar el CSS como cualquier otra página web.  Para obtener más información, vaya [a Introducción Con ver y cambiar CSS][DevtoolsCssIndex].  
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Herramientas de desarrollo de Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Habilitar tema oscuro en Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "Introducción a la visualización y cambio de css | Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Introducción Con vista y cambio de CSS | Microsoft Docs"  
 
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  

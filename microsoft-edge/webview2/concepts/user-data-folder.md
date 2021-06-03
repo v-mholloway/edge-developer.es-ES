@@ -30,14 +30,14 @@ WebView2 crea automáticamente las carpetas de datos de usuario.  Los programado
 
 Para especificar la ubicación de la carpeta de datos de usuario, incluya el parámetro al llamar a `userDataFolder` [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) \(Win32\) o [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) \(.NET\).  Después de la creación, los datos del explorador del control WebView2 se almacenan en una subcarpeta de `userDataFolder` .  Cuando `userDataFolder` no se especifica, WebView2 crea carpetas de datos de usuario en ubicaciones predeterminadas de la siguiente manera:  
 
-*   Para las aplicaciones empaquetadas de la Tienda Windows, la carpeta de usuario predeterminada es la `ApplicationData\LocalFolder` subcarpeta de la carpeta del paquete.  
+*   Para las aplicaciones Windows store empaquetadas, la carpeta de usuario predeterminada es la `ApplicationData\LocalFolder` subcarpeta de la carpeta del paquete.  
 *   Para las aplicaciones de escritorio existentes, la carpeta de datos de usuario predeterminada es la ruta de acceso exe de la aplicación + `.WebView2` .  En lugar de usar el valor predeterminado, se recomienda especificar una carpeta de datos de usuario y crearla en la misma carpeta donde se almacenan todos los demás datos de la aplicación.  
     
 ## <a name="delete-user-data-folders"></a>Eliminar carpetas de datos de usuario  
 
 Es posible que la aplicación necesite eliminar carpetas de datos de usuario:  
 
-*   Al desinstalar la aplicación.  Si desinstalas aplicaciones de la Tienda Windows empaquetadas, Windows elimina las carpetas de datos de usuario automáticamente.  
+*   Al desinstalar la aplicación.  Si desinstala aplicaciones empaquetadas Windows store, Windows las carpetas de datos de usuario automáticamente.  
 *   Para limpiar todo el historial de datos de exploración.  
 *   Para recuperarse de daños en los datos.  
 *   Para quitar datos de sesión anteriores.  

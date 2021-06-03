@@ -85,7 +85,7 @@ Dentro del controlador, puede controlar si una solicitud va `fetch` a la red, ex
 
 Los trabajadores del servicio pueden enviar notificaciones a los usuarios. Las notificaciones de inserción son útiles para pedir a los usuarios que vuelvan a interactuar con la aplicación una vez transcurrido algún tiempo. Para obtener más información, vaya al [tutorial y demostración de notificaciones de inserción.][AzurewebsitesWebpushdemo]  
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 Para obtener más información sobre los trabajadores de servicio, vaya a la siguiente lista de temas relacionados.  
 
@@ -94,7 +94,7 @@ Para obtener más información sobre los trabajadores de servicio, vaya a la sig
     
 <!-- links -->  
 
-[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Notificaciones de inserción web |  Demostraciones de Microsoft Edge"  
+[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Notificaciones de inserción web |  Microsoft Edge Demos"  
 
 [MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "Hacer que las PWA funcionen sin conexión con los trabajadores de servicio: pwas | MDN"  
 [MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "Cómo hacer que las PWA vuelvan a interactuar con notificaciones e inserción: pwas | MDN"  

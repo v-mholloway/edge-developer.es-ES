@@ -41,7 +41,7 @@ Inspeccione y modifique las animaciones con Microsoft Edge DevTools Animation In
 *   Inspeccione las animaciones ralentizando cada una, reprobando cada una o viendo el código fuente.  
 *   Modifique las animaciones cambiando el tiempo, el retraso, la duración o los desplazamientos de fotograma clave.  
 
-## <a name="overview"></a>Información general  
+## <a name="overview"></a>Introducción  
 
 El Microsoft Edge DevTools Animation Inspector tiene dos propósitos principales.  
 
@@ -81,7 +81,7 @@ El Inspector de animación se agrupa en cuatro secciones principales \(o panes\)
 | Índice | Panel | Descripción |  
 |:--- |:--- |:--- |  
 | 1 | **Controles** | Desde aquí, puedes borrar todos los grupos de animación capturados actualmente o cambiar la velocidad del grupo de animación seleccionado actualmente. |  
-| 2 | **Información general** | Elija un grupo de animación aquí para inspeccionarlo y modificarlo en el **panel** Detalles. |  
+| 2 | **Introducción** | Elija un grupo de animación aquí para inspeccionarlo y modificarlo en el **panel** Detalles. |  
 | 3 | **Línea de tiempo** | Pausa e inicia una animación desde aquí, o salta a un punto específico de la animación. |  
 | 4 | **Detalles** | Inspeccione y modifique el grupo de animaciones seleccionado actualmente. |  
 

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
 ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
@@ -43,7 +43,7 @@ La forma más rápida de abrir directamente la **consola** es `Control` + `Shift
 
 ## <a name="error-reports-and-console"></a>Informes de errores y consola  
 
-**La** consola es el lugar predeterminado donde se notifican los errores de conectividad y JavaScript.  Si se produce algún error, se muestra un botón junto al icono **Configuración** de DevTools que proporciona el número de errores y advertencias.  Elija para abrir la **consola y** mostrar el problema.  Para obtener más información, vaya [a Depurar errores notificados en consola][DevtoolsConsoleConsoleDebugJavascript].  
+**La** consola es el lugar predeterminado donde se notifican los errores de conectividad y JavaScript.  Si se produce algún error, se muestra un botón junto al icono **Configuración** en DevTools que proporciona el número de errores y advertencias.  Elija para abrir la **consola y** mostrar el problema.  Para obtener más información, vaya [a Depurar errores notificados en consola][DevtoolsConsoleConsoleDebugJavascript].  
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools proporciona información detallada sobre el error en la consola" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools proporciona información detallada sobre el error en la **consola**  
@@ -61,7 +61,7 @@ Al abrir DevTools en una página web, es probable que muestre un auge de la info
 
 El caso de uso más popular para la **consola** es registrar información de los scripts mediante el `console.log()` método u otros métodos similares.  Para probarlo, complete las siguientes acciones.  
 
-1.  Para abrir **consola,** seleccione `Control` + `Shift` + `J` \(Windows, Linux\) o `Command` + `Option` + `J` \(macOS\).  
+1.  Para abrir **consola**, `Control` + `Shift` + `J` seleccione \(Windows, Linux\) o `Command` + `Option` + `J` \(macOS\).  
 1.  Vaya a [Ejemplos de mensajes de consola: registro, información, error][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]y advertencia, o copie y ejecute el siguiente fragmento de código en la **consola**.  
     
     ```javascript

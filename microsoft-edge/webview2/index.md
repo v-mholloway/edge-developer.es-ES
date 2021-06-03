@@ -161,7 +161,7 @@ Una versión de disponibilidad general \(GA\) o vista previa está disponible en
     
 Puede ejecutar aplicaciones webView2 en las siguientes versiones de Windows.  
 
-*   Windows 10  
+*   Windows10  
 *   Windows 8.1  
 *   Windows 7 \*\*  
 *   Windows Server 2019  

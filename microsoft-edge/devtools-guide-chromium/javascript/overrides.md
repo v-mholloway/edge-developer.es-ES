@@ -1,6 +1,6 @@
 ---
 description: La característica Invalidaciones es una característica dentro de la herramienta Orígenes de Microsoft Edge DevTools que permite copiar recursos de página web en el disco duro.  Al actualizar la página web, DevTools no carga el recurso, sino que lo reemplaza por la copia local.
-title: Invalidar recursos de página web con copias locales con Microsoft Edge DevTools
+title: Invalidar recursos de página web con copias locales mediante Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/11/2020
@@ -14,7 +14,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/25/2021
 ms.locfileid: "11519439"
 ---
-# <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Invalidar recursos de página web con copias locales con Microsoft Edge DevTools  
+# <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Invalidar recursos de página web con copias locales mediante Microsoft Edge DevTools  
 
 A veces, necesita probar algunas correcciones posibles para una página web, pero no tiene acceso a los archivos de origen, o cambiar la página requiere un proceso de compilación lento y complejo.  Puede depurar y corregir todo tipo de problemas en DevTools.  Pero los cambios no persisten; después de actualizar el archivo local, todo el trabajo ha desaparecido.  La característica Invalidaciones de la [herramienta Orígenes][DevToolsSourcesTool] le ayuda a resolver este problema.  
 

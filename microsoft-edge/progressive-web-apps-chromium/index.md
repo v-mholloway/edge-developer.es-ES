@@ -234,7 +234,7 @@ Para ser una excelente PWA, la aplicación también debe cumplir los siguientes 
 > [!NOTE]
 > Para convertir el PWA en una [aplicación Microsoft Store,][MicrosoftDeveloperStore] vaya a [Aplicaciones web progresivas en el Microsoft Store][PwaChromiumMicrosoftStore].  
   
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   [PwAs de descomisado de mitos][Davrous20191018MythBustingPwasNewEdgeEdition]  
 *   [Una guía básica progresiva para la aplicación web progresiva][CloudfourThinksProgressiveRoadmapYourWebApp]  

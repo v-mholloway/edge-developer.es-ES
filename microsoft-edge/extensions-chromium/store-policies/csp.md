@@ -16,11 +16,11 @@ ms.locfileid: "11397520"
 ---
 # <a name="content-security-policy-csp"></a>Directiva de seguridad de contenido \(CSP\)  
 
-Para mitigar una gran clase de posibles problemas de scripting entre sitios, el sistema de extensión perimetral de Microsoft ha incorporado el concepto general de directiva de seguridad de contenido [\(CSP\)][W3CContentSecurityPolicy].  Esto presenta algunas directivas bastante estrictas que hacen que las extensiones sean más seguras de forma predeterminada y le proporciona la capacidad de crear y aplicar reglas que rigen los tipos de contenido que pueden cargarse y ejecutarse por las extensiones y las aplicaciones.  
+Para mitigar una gran clase de posibles problemas de scripting entre sitios, el sistema de extensión de Microsoft Edge ha incorporado el concepto general de directiva de seguridad de contenido [\(CSP\)][W3CContentSecurityPolicy].  Esto presenta algunas directivas bastante estrictas que hacen que las extensiones sean más seguras de forma predeterminada y le proporciona la capacidad de crear y aplicar reglas que rigen los tipos de contenido que pueden cargarse y ejecutarse por las extensiones y las aplicaciones.  
 
 En general, CSP funciona como un mecanismo de bloqueo/lista de permitidos para los recursos cargados o ejecutados por las extensiones.  La definición de una directiva razonable para su extensión le permite tener en cuenta cuidadosamente los recursos que necesita la extensión y solicitar al explorador que se asegure de que esos son los únicos recursos a los que tiene acceso la Extensión.  Las directivas proporcionan seguridad por encima de los permisos de host que solicita la extensión; son una capa adicional de protección, no un reemplazo.  
 
-En la web, dicha directiva se define a través de un elemento o encabezado `meta` HTTP.  Dentro del sistema de extensión de Microsoft Edge, ninguno de los dos es un mecanismo adecuado.  En su lugar, se define una directiva de extensión con `manifest.json` el archivo de la extensión de la siguiente manera:  
+En la web, dicha directiva se define a través de un elemento o encabezado `meta` HTTP.  Dentro del Microsoft Edge extension, ninguno de los dos es un mecanismo adecuado.  En su lugar, se define una directiva de extensión con `manifest.json` el archivo de la extensión de la siguiente manera:  
 
 ```javascript
 {
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 Los recursos de script y objeto solo se pueden cargar desde el paquete de extensión, no desde la web en general.  Esto garantiza que la extensión solo ejecute el código que aprobó específicamente, lo que impide que un atacante de red activo redirija malintencionadamente la solicitud de un recurso.  
 
-En lugar de escribir código que dependa de la carga de jQuery \(o cualquier otra biblioteca\) desde una red CDN externa, considere la posibilidad de incluir la versión específica de jQuery en el paquete de extensión.  Es decir, en lugar de:  
+En lugar de escribir código que dependa de la carga de jQuery \(o cualquier otra biblioteca\) desde un CDN externo, considere la posibilidad de incluir la versión específica de jQuery en el paquete de extensión.  Es decir, en lugar de:  
 
 ```html
 <!doctype html>

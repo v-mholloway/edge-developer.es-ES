@@ -38,7 +38,7 @@ Este tutorial proporciona prácticas para configurar y usar un área de trabajo.
 > *   [Usar DevTools para realizar cambios básicos en CSS][DevToolsCssIndex]  
 > *   [Ejecutar un servidor web HTTP local][MDNSimpleLocalHTTPServer]  
 
-## <a name="overview"></a>Información general  
+## <a name="overview"></a>Introducción  
 
 Las áreas de trabajo permiten guardar un cambio que realice en Devtools en una copia local del mismo archivo en el equipo.  Para este tutorial, debe tener la siguiente configuración en el equipo.  
 

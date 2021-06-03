@@ -1,6 +1,6 @@
 ---
 description: En este artículo se proporciona documentación sobre las sugerencias Microsoft Edge cliente del agente de usuario y la cadena de agente de usuario
-title: Cómo detectar Microsoft Edge en su sitio web
+title: Cómo detectar Microsoft Edge en el sitio web
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/19/2021
@@ -14,7 +14,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/20/2021
 ms.locfileid: "11578785"
 ---
-# <a name="how-to-detect-microsoft-edge-in-your-website"></a>Cómo detectar Microsoft Edge en su sitio web  
+# <a name="how-to-detect-microsoft-edge-in-your-website"></a>Cómo detectar Microsoft Edge en el sitio web  
 
 Los exploradores proporcionan mecanismos para que los sitios web detecten información del explorador, como la marca y el número de versión.  Los mecanismos también detectan otras características del dispositivo, como el sistema operativo host.  Dos de estos mecanismos admitidos en Microsoft Edge [son sugerencias](#user-agent-client-hints) de cliente de agente de usuario y [cadenas de agente de usuario.](#user-agent-string)  Después de décadas de uso, User-Agent cadenas de caracteres están obsoletas y tienen un largo historial como causa de problemas de compatibilidad de sitios web.  En su lugar, el Microsoft Edge recomienda usar un mecanismo mejorado para recuperar información del explorador denominada [Sugerencias](#user-agent-client-hints)de cliente de agente de usuario .  En este artículo se describen los dos mecanismos Microsoft Edge para recuperar la información del agente de usuario.  
 

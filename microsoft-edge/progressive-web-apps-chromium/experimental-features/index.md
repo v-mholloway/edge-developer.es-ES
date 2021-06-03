@@ -63,7 +63,7 @@ En la siguiente lista se describen las nuevas características experimentales de
 |:--- |:--- |:--- |  
 | [Administración del protocolo URI](#uri-protocol-handling) | 91 o posterior | Windows y Linux |    
 | [Administración de vínculos URL](#url-link-handling) | 91 o posterior | Windows|
-| [Superposición de controles de ventana para aplicaciones de escritorio](#window-controls-overlay-for-installed-desktop-web-apps) | 91 o posterior | Windows 10|   
+| [Superposición de controles de ventana para aplicaciones de escritorio](#window-controls-overlay-for-installed-desktop-web-apps) | 91 o posterior | Windows10|   
 | [Ejecutar en inicio de sesión del sistema operativo](#run-on-os-login) | 88 o posterior | Todos |  
 | [Accesos directos](#shortcuts) | 87 o posterior | Todos |  
 | [Administración de archivos](#file-handling) | 83 o posterior | Todo el escritorio |  

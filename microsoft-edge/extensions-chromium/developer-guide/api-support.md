@@ -1,6 +1,6 @@
 ---
-description: Lista de API compatibles que se deben usar al compilar extensiones de Microsoft Edge.
-title: API admitidas para extensiones de Microsoft Edge
+description: Lista de API admitidas que se deben usar al crear Microsoft Edge extensiones.
+title: API admitidas para Microsoft Edge extensiones
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -14,15 +14,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11398108"
 ---
-# <a name="supported-apis-for-microsoft-edge-extensions"></a>API admitidas para extensiones de Microsoft Edge
+# <a name="supported-apis-for-microsoft-edge-extensions"></a>API admitidas para Microsoft Edge extensiones
 
-En la tabla siguiente se proporciona una lista de API que puede usar al crear extensiones para el explorador \(Chromium\) de Microsoft Edge.
+En la tabla siguiente se proporciona una lista de API que puede usar al crear extensiones para el explorador Microsoft Edge \(Chromium\).
 
 | API                                   | Descripción                                            
 |---------------------------------------|----------------------------------------------------------|
 | [alarmas](https://developer.chrome.com/extensions/alarms) | Programar el código para que se ejecute periódicamente o en un momento especificado en el futuro. |
 | [marcadores](https://developer.chrome.com/extensions/bookmarks) | Crear, organizar y manipular marcadores. |
-| [browserAction](https://developer.chrome.com/extensions/browserAction) | Use acciones del explorador para colocar iconos en la barra de herramientas de Microsoft Edge. También puedes usar acciones del explorador para agregar una información sobre herramientas, un distintivo o un elemento emergente. |
+| [browserAction](https://developer.chrome.com/extensions/browserAction) | Use acciones del explorador para colocar iconos en la barra de herramientas Microsoft Edge. También puedes usar acciones del explorador para agregar una información sobre herramientas, un distintivo o un elemento emergente. |
 | [browsingData](https://developer.chrome.com/extensions/browsingData) | Quite los datos de exploración del perfil local de un usuario. |
 | [comandos](https://developer.chrome.com/extensions/commands) | Agregue métodos abreviados de teclado que desencadene acciones en la extensión. Por ejemplo, una acción para abrir el explorador o enviar un comando a la extensión. |
 | [contentSettings](https://developer.chrome.com/extensions/contentSettings) | En general, la configuración de contenido le permite personalizar el comportamiento de Microsoft Edge en cada sitio, en lugar de globalmente. Cambiar la configuración que controla si los sitios web pueden usar características como cookies, JavaScript y complementos. |
@@ -39,21 +39,21 @@ En la tabla siguiente se proporciona una lista de API que puede usar al crear ex
 | [enterprise.hardwarePlatform](https://developer.chrome.com/extensions/enterprise.hardwarePlatform) | Obtenga el fabricante y el modelo de la plataforma de hardware donde se ejecuta el explorador. Esta API solo está disponible para las extensiones instaladas por la directiva de empresa. |
 | [eventos](https://developer.chrome.com/extensions/events) | Tipos comunes usados por las API que producen eventos para notificarle cuándo se produce un evento interesante. |
 | [extensión](https://developer.chrome.com/extensions/extension) | Cualquier página de extensión puede usar las utilidades de esta API. Incluye compatibilidad para intercambiar mensajes entre extensiones y scripts de contenido, que se describe en Paso de mensajes. |
-| [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Contiene declaraciones de tipo para extensiones de Microsoft Edge. |
+| [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Contiene declaraciones de tipo para Microsoft Edge extensiones. |
 | [fontSettings](https://developer.chrome.com/extensions/fontSettings) | Administrar la configuración de fuente en Microsoft Edge. |
 | [historial](https://developer.chrome.com/extensions/history) | Interactuar con el registro del explorador de páginas visitadas. Puede agregar, quitar o consultar direcciones URL en el historial del explorador. Para invalidar la página de historial con su propia versión, vaya a Invalidar páginas. |
 | [i18n](https://developer.chrome.com/extensions/i18n) | Implementar la internacionalización en toda la aplicación o extensión. |
 | [idle](https://developer.chrome.com/extensions/idle) | Detectar cuándo cambia el estado de inactividad de la máquina. |
 | [administración](https://developer.chrome.com/extensions/management) | Administrar la lista de extensiones instaladas o en ejecución. Es útil para las extensiones que invalidan la página de nueva pestaña integrada. |
 | [notificaciones](https://developer.chrome.com/extensions/notifications) | Crea notificaciones enriquecciones con plantillas y muestralas en la bandeja del sistema. |
-| [omnibox](https://developer.chrome.com/extensions/omnibox) | Registre palabras clave en la barra de direcciones de Microsoft Edge, también conocida como omnibox. |
-| [pageAction](https://developer.chrome.com/extensions/pageAction) | Agregue iconos a la barra de herramientas de Microsoft Edge, a la derecha de la barra de direcciones. Las acciones de página son acciones que se pueden realizar en la página actual y no son aplicables a todas las páginas. Las acciones de página aparecen atenuadas cuando están inactivas. |
+| [omnibox](https://developer.chrome.com/extensions/omnibox) | Registre palabras clave en la Microsoft Edge de direcciones, también conocida como omnibox. |
+| [pageAction](https://developer.chrome.com/extensions/pageAction) | Agregue iconos a la barra Microsoft Edge de herramientas, a la derecha de la barra de direcciones. Las acciones de página son acciones que se pueden realizar en la página actual y no son aplicables a todas las páginas. Las acciones de página aparecen atenuadas cuando están inactivas. |
 | [pageCapture](https://developer.chrome.com/extensions/pageCapture) | Guardar pestañas como archivos MHTML.|
 | [permisos](https://developer.chrome.com/extensions/permissions) | Recupere los permisos declarados opcionales en tiempo de ejecución, en lugar de en el momento de la instalación. Puede usar esta API para mostrar los permisos necesarios y aprobados para los usuarios. |
 | [Inicio/Apagado](https://developer.chrome.com/extensions/power) | Invalide las características de administración de energía del sistema. |
 | [printerProvider](https://developer.chrome.com/extensions/printerProvider) | Use eventos para consultar impresoras, sus capacidades y enviar trabajos de impresión. |
-| [privacidad](https://developer.chrome.com/extensions/privacy) | Controle las características de Microsoft Edge que afectan a la privacidad de un usuario. Esta API depende del prototipo `EdgeSetting` de para obtener y establecer la configuración de Microsoft `types` Edge. |
-| [proxy](https://developer.chrome.com/extensions/proxy) | Administrar la configuración de proxy para Microsoft Edge. Esta API depende del prototipo `EdgeSetting` de la API para obtener y establecer la configuración de proxy de Microsoft `types` Edge. |
+| [privacidad](https://developer.chrome.com/extensions/privacy) | Controle las características Microsoft Edge que afectan a la privacidad de un usuario. Esta API depende del prototipo `EdgeSetting` de para obtener y establecer la configuración de `types` Microsoft Edge. |
+| [proxy](https://developer.chrome.com/extensions/proxy) | Administrar la configuración de proxy para Microsoft Edge. Esta API depende del prototipo de la API para obtener y establecer la configuración `EdgeSetting` `types` de proxy de Microsoft Edge. |
 | [tiempo de ejecución](https://developer.chrome.com/extensions/runtime) | Recupera la página en segundo plano, devuelve detalles sobre el manifiesto y escucha y responde a eventos en el ciclo de vida de la aplicación o extensión. También puede convertir la ruta de acceso relativa de las direcciones URL a direcciones URL completa. |
 | [sesiones](https://developer.chrome.com/extensions/sessions) | Consultar y restaurar pestañas y ventanas desde una sesión de exploración. |
 | [almacenamiento](https://developer.chrome.com/extensions/storage) | Almacenar, recuperar y realizar un seguimiento de los cambios en los datos de usuario. |
@@ -83,9 +83,9 @@ Microsoft Edge no admite las siguientes API de extensión:
 
 ## <a name="additional-considerations-for-supported-apis"></a>Consideraciones adicionales para las API compatibles
 
-* El usuario debe haber iniciado sesión en Microsoft Edge con una cuenta de MSA o Azure Active Directory para usar `chrome.identity.getProfileUserInfo` . Si el usuario ha iniciado sesión en Microsoft Edge con una cuenta de Active Directory local, la API devuelve los valores de correo electrónico `null` e identificador.
+* El usuario debe haber iniciado sesión Microsoft Edge una cuenta de MSA o Azure Active Directory para usar `chrome.identity.getProfileUserInfo` . Si el usuario ha iniciado sesión Microsoft Edge una cuenta de Active Directory local, la API devuelve los valores de correo electrónico `null` e identificador.
 
-* Microsoft Edge no admite extensiones que usan pagos de Chrome Web Store porque se usa para solicitar tokens para usuarios `identity.getAuthtoken` que han iniciado sesión. Estos tokens se envían a la API de licencias basada en REST. 
+* Microsoft Edge no admite extensiones que usan pagos Chrome Web Store porque se usa para solicitar tokens para usuarios que han `identity.getAuthtoken` iniciado sesión. Estos tokens se envían a la API de licencias basada en REST. 
 
 
 <!-- links -->  

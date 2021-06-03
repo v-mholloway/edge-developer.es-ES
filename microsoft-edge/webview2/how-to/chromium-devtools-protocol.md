@@ -175,7 +175,7 @@ Para presentar un error Chromium o un problema del Protocolo DevTools, complete 
 1.  Archivo de un [informe de errores][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform].  
 1.  Vaya a [Comentarios de WebView][GithubMicrosoftedgeWebview2feedback] y abra un nuevo problema.  
     
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   [Ejemplos de WebView2][GithubMicrosoftedgeWebview2samples]  
     
