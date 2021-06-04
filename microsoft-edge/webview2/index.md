@@ -163,15 +163,15 @@ Puede ejecutar aplicaciones webView2 en las siguientes versiones de Windows.
 
 *   Windows10  
 *   Windows 8.1  
-*   Windows 7 \*\*  
+*   Windows 7   
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server 2012 R2  
-*   Windows Server 2008 R2 \*\*  
+*   Windows Server 2008 R2   
     
 > [!IMPORTANT]
-> \*\* La compatibilidad con WebView2 para Windows 7 y Windows Server 2008 R2 tiene el mismo ciclo de compatibilidad que Microsoft Edge.  Para obtener más información, vaya [a Microsoft Edge sistemas operativos compatibles.][DeployedgeMicrosoftEdgeSupportedOS]  
+>  La compatibilidad con WebView2 para Windows 7 y Windows Server 2008 R2 tiene el mismo ciclo de compatibilidad que Microsoft Edge.  Para obtener más información, vaya [a Microsoft Edge sistemas operativos compatibles.][DeployedgeMicrosoftEdgeSupportedOS]  
 
 ## <a name="next-steps"></a>Pasos siguientes  
 
