@@ -18,7 +18,7 @@ ms.locfileid: "11230694"
 
 [Visual Studio Code][VisualStudioCodeDocs] es un editor de código fuente ligero, pero eficaz.  [Visual Studio Code][VisualStudioCodeDocs] está disponible para Windows, Linux y macOS.  Incluye compatibilidad integrada con JavaScript, TypeScript y Node.js, por lo que es una excelente herramienta para desarrolladores web antes de personalizarlo.  Si aún no lo está usando, descargue [Visual Studio Code][VisualstudioCode].  
 
-## Extensiones  
+##  <a name="extensions"></a>Extensiones  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
@@ -51,7 +51,7 @@ Busque en Marketplace la extensión específica y elija **Instalar**.
    :::column-end:::
 :::row-end:::  
 
-## Depurador de Microsoft Edge  
+##  <a name="debugger-for-microsoft-edge"></a>Depurador de Microsoft Edge  
 
 Con la [extensión Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code, depure el código front-end de JavaScript línea por línea y vea instrucciones directamente desde `console.log()` [Visual Studio Code][VisualstudioCode].  
       
@@ -61,7 +61,7 @@ Con la herramienta Depurador, puede iniciar o adjuntar a Microsoft Edge \(EdgeHT
    **Depurador para Microsoft Edge** Visual Studio Code en acción  
 :::image-end:::  
 
-## Microsoft Edge Herramientas para Visual Studio Code
+##  <a name="microsoft-edge-tools-for-visual-studio-code"></a>Microsoft Edge Herramientas para Visual Studio Code
 
 Con la [Microsoft Edge tools para Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code, use la herramienta **Elementos** del Microsoft Edge en Visual Studio Code.  Úselo para las siguientes acciones.  
 
@@ -76,7 +76,7 @@ Para obtener más información, vaya [a Microsoft Edge Tools for Visual Studio C
    **Microsoft Edge herramientas para Visual Studio Code** Visual Studio Code en acción  
 :::image-end:::  
 
-## webhint  
+##  <a name="webhint--"></a>webhint  
       
 Use [webhint][WebhintMain], una herramienta de linting personalizable, para mejorar la siguiente funcionalidad del sitio.  
 

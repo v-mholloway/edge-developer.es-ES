@@ -34,7 +34,7 @@ Para portabilidad de la extensión de Chrome, siga estos pasos.
     > [!NOTE]
     > Si la extensión intercambia mensajes con una aplicación nativa mediante , asegúrese de que se establece en en el archivo de manifiesto `chrome.runtime.connectNative` del host de mensajería `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` nativa.  La configuración permite que la aplicación identifique la extensión.  
     
-## Pasos siguientes  
+##  <a name="next-steps"></a>Pasos siguientes  
 
 Una vez que el paquete de extensión esté listo para publicarse en el almacén de complementos [Microsoft Edge,][ExtensionsPublishCreateDevAccount] cree una cuenta de desarrollador y [publique la extensión][ExtensionsPublishPublishExtension].  
 

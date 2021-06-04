@@ -23,7 +23,7 @@ Playwright inicia exploradores [sin cabeza][WikiHeadlessBrowser] de forma predet
 
 De forma predeterminada, al instalar Playwright, el instalador descarga [Chromium][ChromiumHome], [Firefox][FirefoxMain]y [WebKit][|::ref3::|Main].  Si también tienes Microsoft Edge \(Chromium\), Playwright solo necesita un cambio de código de una línea para probar tu sitio web o aplicación en Microsoft Edge.  Para descargar Microsoft Edge \(Chromium\), vaya a [Descargar Microsoft Edge][MicrosoftEdgeDownload].  
 
-## Instalación de Playwright  
+##  <a name="installing-playwright--"></a>Instalación de Playwright  
 
 Instala [Playwright para][|::ref4::|Main] probar tu sitio web o aplicación con el siguiente comando.  
 
@@ -31,7 +31,7 @@ Instala [Playwright para][|::ref4::|Main] probar tu sitio web o aplicación con 
 npm i playwright
 ```  
 
-## Iniciar Microsoft Edge con Playwright  
+##  <a name="launch-microsoft-edge-with-playwright--"></a>Iniciar Microsoft Edge con Playwright  
 
 > [!NOTE]
 > [Playwright][|::ref5::|Main] requiere Node.js versión 10.17 o posterior. Ejecute `node -v` desde la línea de comandos para asegurarse de que tiene una versión compatible de Node.js.  Los archivos binarios del explorador para Chromium, Firefox y WebKit funcionan en Windows, macOS y Linux. Para obtener más información, vaya [a Requisitos del sistema playwright][PlaywrightSystemRequirements].  
@@ -94,7 +94,7 @@ Playwright inicia Microsoft Edge, navega a `https://www.microsoft.com/edge` y gu
 
 Para obtener más información acerca de Playwright, vaya al sitio [web de Playwright][|::ref6::|Main].  Echa un vistazo [al repositorio de Playwright][PlaywrightRepo] en GitHub.  Para compartir sus comentarios sobre cómo automatizar y probar su sitio web o aplicación con Playwright, [presente un problema][PlaywrightRepoNewIssue].  
 
-## Contactar al equipo de Microsoft Edge DevTools  
+##  <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 

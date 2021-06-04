@@ -21,7 +21,7 @@ Para enviar la extensión al almacén Microsoft Edge complementos, debe estar re
 > [!IMPORTANT]
 > No hay ninguna cuota de registro implicada en el envío de extensiones al Microsoft Edge programa.  
 
-## Antes de comenzar  
+##  <a name="before-you-begin"></a>Antes de comenzar  
 
 Si no tiene una cuenta o si tiene una cuenta comercial existente con el Centro de partners, cree una nueva cuenta [de Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] para registrarse con el programa Microsoft Edge asociado.  Para crear una cuenta de Microsoft \(Outlook/live/Hotmail\), realice las siguientes acciones.  
 
@@ -33,7 +33,7 @@ Si tienes una cuenta de desarrollador registrada en el Centro de partners, usa l
 > [!NOTE]
 > Hoy en día, Microsoft Edge extensiones no admiten registrarse con una cuenta laboral o educativa.  En el futuro, el equipo Microsoft Edge de extensiones planea admitir la vinculación de inquilinos de Azure AD a cuentas de MSA para la administración de extensiones.  
 
-## Inscribirse en el Microsoft Edge en el Centro de partners  
+##  <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>Inscribirse en el Microsoft Edge en el Centro de partners  
 
 1.  Vaya a la [página del desarrollador][MicrosoftPartnerCenter] y elija IR AL **PANEL**.  
 1.  Si tienes una cuenta de Microsoft, inicia sesión en ella ahora.  Si no es así, cree una nueva cuenta de Microsoft.  Usa la misma cuenta de Microsoft que usas para iniciar sesión en tu cuenta de desarrollador.  Después de iniciar sesión, se muestra un formulario de registro. En la tabla siguiente se describen los campos del formulario de registro.  
@@ -102,7 +102,7 @@ Si tienes una cuenta de desarrollador registrada en el Centro de partners, usa l
 1.  Antes de enviar el formulario de registro, lea y acepte los términos y condiciones del [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].  
 1.  Para completar la inscripción, elija **Finalizar**.  
     
-## Pasos siguientes  
+##  <a name="next-steps"></a>Pasos siguientes  
 
 Para mostrar el estado de comprobación, vaya al Centro de partners > **configuración de la cuenta**.  Mientras espera a que se complete el proceso de comprobación, continúe compilando, probar y preparar los envíos.  
 

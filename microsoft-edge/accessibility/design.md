@@ -29,7 +29,7 @@ Al crear un diseño inclusivo, todas las personas pueden hacer uso de la tecnolo
 
 Muchos problemas comunes de accesibilidad en la web se pueden resolver a través de una buena práctica de codificación.  La documentación de las Directrices de accesibilidad de contenido web [(WCAG) 2.0](https://www.w3.org/TR/WCAG20) proporciona técnicas y procedimientos recomendados para ayudarle a diseñar aplicaciones web dinámicas más accesibles.  Para obtener más información sobre la creación de sitios web accesibles, vaya a [Crear sitios web accesibles.](./build/index.md)
 
-## Recursos  
+##  <a name="resources"></a>Recursos  
 
 #### [Diseño para inclusión](https://w3.org/WAI/users/Overview.html)  
 

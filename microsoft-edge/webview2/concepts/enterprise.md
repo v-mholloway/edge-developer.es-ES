@@ -19,7 +19,7 @@ ms.locfileid: "11057868"
 
 [WebView2][WebView2Landing] es un componente que los desarrolladores usan para crear sus aplicaciones y los desarrolladores pueden implementar una actualización automática de [Evergreen WebView2 Runtime][Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview] en el dispositivo del usuario para que enciendan sus aplicaciones.  En este documento se describe cómo los administradores de TI pueden administrar las aplicaciones webView2 y el tiempo de ejecución.  Los comentarios tanto de los administradores de TI como de los desarrolladores son bienvenidos en el repositorio de [comentarios de WebView2][GithubMicrosoftedgeWebviewfeddback].  
 
-## Directivas de grupo para WebView2  
+##  <a name="group-policies-for-webview2"></a>Directivas de grupo para WebView2  
 
 Los administradores de TI pueden usar objetos de directiva de grupo \(GPO\) para configurar la configuración de directiva para WebView2.  El siguiente conjunto de directivas son/no son aplicables a WebView2,  
 

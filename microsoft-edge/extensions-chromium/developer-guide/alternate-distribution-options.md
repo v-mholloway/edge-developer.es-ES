@@ -26,7 +26,7 @@ Las extensiones que no se cargan desde el almacén de complementos perimetrales 
 *   Use el Windows (solo Windows).  
 *   Usar un archivo JSON de preferencias (macOS y Linux).  
     
-## Antes de comenzar  
+##  <a name="before-you-begin"></a>Antes de comenzar  
 
 Asegúrese de publicar la extensión en el almacén Microsoft Edge complementos o empaquetar un archivo y asegúrese de que se instala correctamente `.crx` en el equipo.  Si instala el archivo `.crx` mediante , asegúrese de que puede navegar a la extensión en esa dirección `update_URL` URL.  
 
@@ -39,7 +39,7 @@ Además, asegúrese de que tiene la siguiente información.
 > [!NOTE] 
 > Los ejemplos siguientes se `1.0` usan como versión y para el `aaaaaaaaaabbbbbbbbbbcccccccccc` identificador.  
 
-## Usar el Windows (solo Windows)  
+##  <a name="use-the-windows-registry-(windows-only)"></a>Usar el Windows (solo Windows)  
 
 Para distribuir la extensión mediante el Windows, siga estos pasos.
 
@@ -60,7 +60,7 @@ Para distribuir la extensión mediante el Windows, siga estos pasos.
   
 1.  Compruebe que la extensión aparece en Microsoft Edge navegando a `edge://extensions` .  
 
-## Usar un archivo JSON de preferencias (macOS y Linux)  
+##  <a name="use-a-preferences-json-file-(macos-and-linux)"></a>Usar un archivo JSON de preferencias (macOS y Linux)  
 
 Para distribuir la extensión mediante un archivo JSON de preferencias, siga estos pasos.
 
@@ -120,7 +120,7 @@ Para distribuir la extensión mediante un archivo JSON de preferencias, siga est
 
 1.  Compruebe que la extensión está instalada en Microsoft Edge navegando a `edge://extensions` .  
 
-## Actualizar y desinstalar extensiones instaladas externamente
+##  <a name="update-and-uninstall-externally-installed-extensions"></a>Actualizar y desinstalar extensiones instaladas externamente
 
 Microsoft Edge examina las entradas de metadatos en el Registro cada vez que se inicia el explorador y realiza cualquier cambio en las extensiones instaladas externamente.  
 

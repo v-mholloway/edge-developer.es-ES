@@ -16,14 +16,14 @@ ms.locfileid: "11343180"
 ---
 # Póngase en contacto Microsoft Edge soporte técnico de extensión  
 
-## Solicitar ayuda para cualquier problema o enviar comentarios  
+##  <a name="request-help-for-any-issues-or-submit-feedback"></a>Solicitar ayuda para cualquier problema o enviar comentarios  
 
 1.  Después de enviar la extensión con el Centro de partners y tener una pregunta sobre el estado de revisión o certificación de la misma, vaya a [Nueva][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] solicitud de soporte técnico y complete el formulario.  
 1.  Si la extensión no funciona con Microsoft Edge como espera o tiene una pregunta sobre cómo desarrollar una extensión, vaya a API [admitidas][ExtensionsDeveloperGuideApiSupport] para extensiones de Microsoft Edge y Extensiones de [puerto Chromium][ExtensionsDeveloperGuidePortChromeExtension]a Microsoft Edge .  Para cualquier otra pregunta, envíe un correo electrónico [a ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoft].  
 1.  Si tiene algún problema al enviar la extensión al Centro de partners, vaya [a Publicar la extensión][ExtensionsPublishPublishExtension].  Si tiene otras preguntas o desea enviar comentarios sobre su experiencia de publicación, envíe un correo electrónico a [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoft].  
 1.  Para mostrar la extensión en una colección en el almacén de complementos de Microsoft Edge, vaya a Enviar una solicitud para agregar una extensión a las [colecciones][OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u] en la página principal de complementos de Microsoft Edge y complete el formulario.   
     
-## Informar de la infracción de derechos de autor o de marca comercial  
+##  <a name="report-copyright-or-trademark-infringement"></a>Informar de la infracción de derechos de autor o de marca comercial  
 
 Si crees que un elemento de la tienda Microsoft Edge complementos infringe un copyright o marca comercial, ve a [Avisos][MicrosoftInfoMarketplaceHtml] de infracción y completa el formulario.  El Microsoft Edge de extensiones revisa el informe y, a continuación, realiza la acción necesaria.  
 

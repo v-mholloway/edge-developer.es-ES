@@ -18,7 +18,7 @@ ms.locfileid: "11343118"
 
 Administrar la configuración de la cuenta y los detalles del perfil de Microsoft Edge cuenta de desarrollador en [el Centro de partners][MicrosoftPartnerCenter].  
 
-## Configuración de la cuenta  
+##  <a name="account-settings"></a>Configuración de la cuenta  
 
 Para mostrar la configuración de la cuenta, elija el icono de engranaje en la esquina superior derecha de la configuración del programador [del Centro][MicrosoftPartnerCenter]  >  **de partners.**  En la **configuración del programador,** revise y actualice la siguiente información.  
 
@@ -28,7 +28,7 @@ Para mostrar la configuración de la cuenta, elija el icono de engranaje en la e
     
 En la **sección Detalles de** la cuenta, revise el estado y el tipo de su cuenta.  Tu id. de vendedor y otra información de id. de editor también se muestran en la **sección Detalles de la** cuenta.  Microsoft asigna los valores para identificar de forma única tu cuenta de desarrollador y son de solo lectura.  
 
-## Detalles de contacto  
+##  <a name="contact-details--"></a>Detalles de contacto  
 
 La **sección Información de** contacto muestra los detalles que proporcionaste al crear tu cuenta.  El Microsoft Edge de extensión usa la información de detalles de contacto para ponerse en contacto con usted acerca de su cuenta.  El nombre para mostrar del editor que se muestra en Microsoft Edge de complementos también se muestra es la sección **Información de** contacto.  
   
@@ -36,7 +36,7 @@ Si la información de contacto cambia, edite la **sección Información de** con
 
 Si necesita cambiar cualquiera de sus datos de contacto, el equipo de extensión Microsoft Edge puede comprobar su cuenta de nuevo, especialmente si tiene una cuenta de empresa.  El estado de comprobación vuelve a `Pending` mientras la revisión está en proceso.  El proceso de verificación oscila entre unos días y un par de semanas, y su empresa puede recibir una llamada telefónica de nuestro socio de verificación.  
 
-## Other settings  
+##  <a name="other-settings"></a>Other settings  
 
 Revise la siguiente configuración en la sección Configuración de la cuenta.  
 
