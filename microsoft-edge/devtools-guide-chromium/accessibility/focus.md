@@ -3,16 +3,16 @@ description: Abra la consola, cree una expresión en directo y establezca la exp
 title: Rastrear qué elemento tiene el foco
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e7d7bc9ebf8dd891bf7531d8dd283801a01fc3c1
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 2fd53caccefefb0b0bce4b5c82f30632e11a3cb6
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564598"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597105"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,7 +31,7 @@ ms.locfileid: "11564598"
 
 Supongamos que está probando la accesibilidad de navegación del teclado de una página.  Al navegar por la página con la clave, el anillo de enfoque a veces desaparece porque `Tab` el elemento que tiene el foco está oculto.  
 
-Complete las siguientes acciones para realizar un seguimiento del elemento centrado en DevTools.  
+Para realizar un seguimiento del elemento centrado en DevTools:
 
 1.  Abra la **consola**.  
 1.  Elija **Crear expresión en directo** \( Crear expresión en directo ![ ](../media/create-live-expression-icon.msft.png) \).  
@@ -41,7 +41,7 @@ Complete las siguientes acciones para realizar un seguimiento del elemento centr
     :::image-end:::  
     
 1.  Escriba `document.activeElement`.  
-1.  Elige fuera de la **interfaz de usuario de Expresión** en directo para guardar.  
+1.  Para guardar la expresión, seleccione fuera de la expresión en directo.
     
 El valor que se muestra `document.activeElement` a continuación es el resultado de la expresión.  
 
@@ -51,12 +51,18 @@ Dado que esa expresión siempre representa el elemento centrado, ahora tiene una
 *   Mantenga el mouse sobre el resultado, abra el menú contextual \(clic con el botón derecho\) y elija Mostrar en el **panel** Elementos para mostrar el elemento en el árbol DOM de la **herramienta** Elementos.  
 *   Mantenga el mouse sobre el resultado, abra el menú contextual \(haga clic con el botón secundario\) y elija Almacenar como **variable global** para crear una referencia variable al nodo que puede usar en la **consola**.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+
+## <a name="see-also"></a>Consulta también
+
+*  [Analizar la falta de indicación del foco del teclado en un menú lateral](test-analyze-no-focus-indicator.md)
+
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
 
+<!-- links -->  
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 > La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  

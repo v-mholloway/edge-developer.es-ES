@@ -3,20 +3,24 @@ description: Fuerza Microsoft Edge DevTools al modo de vista previa de esquema d
 title: Forzar Microsoft Edge DevTools en modo de vista previa de esquema de color (CSS prefiere combinación de colores)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 1cdc9601e9e6fea1f6921c6cc40a1ed8232a0da8
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: dc2911ce7a7fcbeef7763099541822b5cd6cf053
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519152"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597066"
 ---
 # <a name="dark-or-light-color-scheme-simulation"></a>Simulación de combinación de colores claros o oscuros  
 
-Los sistemas operativos tienen una forma de mostrar cualquier aplicación en colores más oscuros o más claros.  Tener un producto web que tenga un tema claro en un sistema operativo en modo oscuro es una rejilla y puede ser un problema de accesibilidad para algunos usuarios.  En la web, puede usar la consulta multimedia CSS [prefers-color-scheme][MDNPrefersColorScheme] para detectar si los usuarios prefieren mostrar el producto en una combinación de colores más oscura o más clara.  Usa [Microsoft Edge DevTools para][DevtoolsIndex] simular un cambio del modo oscuro a el modo claro sin tener que cambiar todo el sistema operativo.  
+Muchos sistemas operativos tienen una forma de mostrar cualquier aplicación en colores más oscuros o más claros.  Tener un producto web que tiene un tema claro en un sistema operativo en modo oscuro es una rejilla y puede ser un problema de accesibilidad para algunos usuarios.  
+
+Para una página web, puede usar la consulta multimedia CSS [prefers-color-scheme][MDNPrefersColorScheme] para detectar si el usuario prefiere mostrar el producto en una combinación de colores más oscura o más clara.  A continuación, para probar el resultado, usa [Microsoft Edge DevTools][DevtoolsIndex] para simular un cambio del modo oscuro a claro, sin tener que cambiar la configuración de todo el sistema operativo.  
+
+**Para emular el tema oscuro o claro:**
 
 1.  Abra el **Menú de comandos**.  
     1.  Seleccione `Ctrl` + `Shift` + `P` \(Windows/Linux\) o `Command` + `Shift` + `P` \(macOS\).  
@@ -40,12 +44,17 @@ Los sistemas operativos tienen una forma de mostrar cualquier aplicación en col
        Modo de luz simulada dentro Microsoft Edge DevTools  
     :::image-end:::  
     
-    Ver y cambiar el CSS como cualquier otra página web.  Para obtener más información, vaya [a Introducción Con ver y cambiar CSS][DevtoolsCssIndex].  
+    Ver y cambiar el CSS como cualquier otra página web.  Para obtener más información, vaya [a Introducción a ver y cambiar CSS][DevtoolsCssIndex].  
+
+
+## <a name="see-also"></a>Consulta también
+
+* [Comprobar si hay problemas de contraste con el tema oscuro y el tema claro](test-dark-mode.md)
+
 
 <!-- links -->  
-
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Habilitar tema oscuro en Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "Introducción Con vista y cambio de CSS | Microsoft Docs"  
-
+[DevtoolsCssIndex]: ../css/index.md "Introducción a la visualización y cambio de css | Microsoft Docs"  
+<!-- external links -->
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  

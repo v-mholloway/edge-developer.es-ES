@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 80b0e4368b1c8feaf28a58ac2e3bd9c1ea2f1f92
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: 56ce6b1d8f1ad98eeb9c141c2e9b002e7679d7de
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483664"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597019"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>Usar la consola para interactuar con el DOM
 
@@ -62,12 +62,12 @@ Para obtener una referencia directa al elemento que se debe manipular, complete 
 
 1.  Use la **herramienta Inspeccionar** para elegir el elemento.  
 
-    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="Para elegir un elemento, use la herramienta Inspector" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
-        Para elegir un elemento, use la **herramienta Inspector**  
+    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="Para elegir un elemento, use la herramienta Inspeccionar" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
+        Para elegir un elemento, use la **herramienta Inspeccionar**  
     :::image-end:::  
     
 1.  Seleccióne y DevTools saltará a la **herramienta** Elementos.  
-1.  Elija el `...` menú situado junto al elemento en la vista DOM.  
+1.  Elija el `...` menú situado junto al elemento del árbol DOM.  
     
     :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="El elemento elegido se muestra en el árbol DOM de la herramienta Elementos, elija el menú desbordamiento para obtener más características" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         El elemento elegido se muestra en el árbol DOM de la **herramienta Elementos,** elija el menú desbordamiento para obtener más características  
@@ -75,8 +75,8 @@ Para obtener una referencia directa al elemento que se debe manipular, complete 
     
 1.  Abra el menú contextual y elija `Copy`  >  `Copy JS Path` .  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copiar la ruta de acceso de JavaScript desde un elemento en la vista DOM de la herramienta Elementos" lightbox="../media/console-dom-copy-JS-path.msft.png":::
-        Copiar la ruta de acceso de JavaScript desde un elemento en la vista DOM de **la herramienta** Elementos  
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copiar la ruta de acceso de JavaScript desde un elemento en el árbol DOM de la herramienta Elementos" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+        Copiar la ruta de acceso de JavaScript desde un elemento en el árbol DOM de la **herramienta** Elementos  
     :::image-end:::  
     
 1.  Vuelva a la **consola y** pegue el comando.  
@@ -98,7 +98,7 @@ Hay muchos métodos de comodidad y accesos directos disponibles como [Utilidades
 El `$` tiene poderes especiales en **la consola** y puede recordarlo desde jQuery.
 
 *   `$_` almacena el resultado del último comando.  Por lo tanto, si escribe `2 + 2` y selecciona `Enter` y, a continuación, escribe `$_` , la **consola** le muestra `4` .
-*   `$0` to `$4` es una pila de los últimos elementos inspeccionados es siempre la más `$0` reciente.  Por lo tanto, en el ejemplo anterior, simplemente eligió el elemento de la herramienta **Inspector** y escriba `$0.textContent = "My Playground"` para obtener el mismo efecto.
+*   `$0` to `$4` es una pila de los últimos elementos inspeccionados es siempre la más `$0` reciente.  Por lo tanto, en el ejemplo anterior, simplemente eligió el elemento de la herramienta **Inspeccionar** y escriba `$0.textContent = "My Playground"` para obtener el mismo efecto.
 *   `$x()` permite elegir elementos DOM con XPATH.
 *   `$()` y `$$()` son versiones más cortas de for y `document.querySelector()` `document.querySelectorAll()` .  
     

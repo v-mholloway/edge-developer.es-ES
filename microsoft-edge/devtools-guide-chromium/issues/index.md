@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 64954d632416f7d1353269d04c1550ca7a0652b7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 17c1162bdec21ccc4abe1d3d34ce7c766aeb1009
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564185"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11596987"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -108,6 +108,12 @@ La **herramienta Problemas** del cajón DevTools presenta advertencias de una fo
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Valor ninguno en la columna SameSite para la cookie de ck02 en la herramienta DevTools Network" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` valor de la **columna SameSite** de `ck02` la cookie en la herramienta DevTools **Network**  
     :::image-end:::  
+
+
+## <a name="see-also"></a>Consulta también
+
+* [Probar automáticamente una página web para problemas de accesibilidad](../accessibility/test-issues-tool.md)
+
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 

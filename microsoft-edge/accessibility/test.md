@@ -1,25 +1,31 @@
 ---
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 description: Consulte herramientas y procedimientos de prueba que ayudan a evaluar la accesibilidad de un sitio web.
-title: 'Accesibilidad: prueba'
+title: Pruebas de accesibilidad
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accesibilidad, accesibilidad para desarrolladores, sitios web accesibles, edge, desarrollo web, ARIA, desarrollador, UIA, Automatización de la interfaz de usuario
-ms.openlocfilehash: b3aeb5ede1519352c12ab190fa6fbef9eee2ae12
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b03680d2112311b97912ed92ae446a74410c95bf
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397884"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597112"
 ---
 # <a name="accessibility-testing"></a>Pruebas de accesibilidad  
 
-Las pruebas de accesibilidad son una forma de pruebas de facilidad de uso para comprobar que todas las personas puedan usar el sitio web. Consulte la página [](https://www.w3.org/wiki/Accessibility_testing) Pruebas de accesibilidad de W3C para obtener información sobre cuándo deben realizarse las pruebas, los requisitos de prueba, quién debe probar el sitio, etc.
+Las pruebas de accesibilidad son una forma de pruebas de facilidad de uso para comprobar que todas las personas puedan usar el sitio web. Consulte la página W3C [Assessing Web Accessibility Overview](https://www.w3.org/WAI/test-evaluate) para obtener información sobre cuándo deben realizarse las pruebas, los requisitos de prueba, quién debe probar el sitio, etc.
 
-Use las siguientes herramientas y productores de pruebas para evaluar su sitio web en busca de accesibilidad:
+Use las siguientes herramientas y procedimientos de prueba para evaluar su sitio web en busca de accesibilidad:
+
+#### <a name="accessibility-testing-in-devtools"></a>Pruebas de accesibilidad en DevTools
+
+*   [Características de prueba de accesibilidad en DevTools:][DevtoolsAccessibilityReference] una lista de comprobación de pruebas de accesibilidad y qué características de DevTools usar para cada prueba.
+
+*   Información general sobre las pruebas de accesibilidad con [DevTools:][DevtoolsAccessibilityAccessibilitytestingindevtools] un tutorial sobre el uso de varias características de DevTools para probar problemas de accesibilidad.
 
 #### [<a name="accessibility-evaluation-resources"></a>Recursos de evaluación de accesibilidad](https://www.w3.org/WAI/eval/Overview.html)  
 
@@ -52,3 +58,8 @@ Una Visual Studio que realiza comprobaciones de accesibilidad en cualquier aplic
 #### [<a name="web-accessibility-evaluation-tools-list"></a>Lista de herramientas de evaluación de accesibilidad web](https://www.w3.org/WAI/ER/tools/index.html)  
 
 Una lista de herramientas de evaluación de accesibilidad web para ayudar a determinar si los sitios web cumplen las directrices de accesibilidad.
+
+<!-- links: -->
+
+[DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "Información general sobre las pruebas de accesibilidad con DevTools | Microsoft Docs"
+[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "Características de prueba de accesibilidad en DevTools | Microsoft Docs"

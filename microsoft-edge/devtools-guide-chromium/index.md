@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3d91b0754f84579d770940503cf4a252e3926416
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: 7f9a4288980dd938a43b229e1d5396adc7937c67
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481473"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597007"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge (Chromium) Developer Tools overview  
 
@@ -114,10 +114,10 @@ DevTools creció durante un período de varios años.  Puede suponer que DevTool
    Captura de pantalla de la barra de menús de DevTools con etiquetas que explican las distintas secciones.  En orden: Inspeccionar herramienta, Herramienta de emulación de dispositivo, Grupo de pestaña Herramientas, Errores de JavaScript, Problemas, Configuración, Comentarios, Personalizar y Cerrar.  
 :::image-end:::  
 
-*   La herramienta Inspeccionar le permite elegir un elemento en la página web actual.  Después de activarlo, puede mover el mouse sobre diferentes partes de la página web para obtener información detallada sobre el elemento y una superposición de color para mostrar las dimensiones, el relleno y el margen.  
+*   La herramienta Inspeccionar permite elegir un elemento en la página web actual.  Después de activarlo, puede mover el mouse sobre diferentes partes de la página web para obtener información detallada sobre el elemento y una superposición de color para mostrar las dimensiones, el relleno y el margen.  
     
-    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Captura de pantalla de la herramienta de inspección con el primer titular de este artículo elegido" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
-       Captura de pantalla de la herramienta de inspección con el primer titular de este artículo elegido  
+    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="La herramienta Inspeccionar con el primer título de este artículo elegido" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
+       La herramienta Inspeccionar con el primer título de este artículo elegido  
     :::image-end:::  
     
 *   La [herramienta Emulación de dispositivos][DevtoolsGuideDeviceModeIndex] muestra el producto web actual en un modo de dispositivo emulado.  La **herramienta emulación de** dispositivos te permite ejecutar y probar cómo reacciona el producto al cambiar el tamaño del explorador.  También te ofrece una estimación del diseño y el comportamiento de un dispositivo móvil.  

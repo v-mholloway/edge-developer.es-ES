@@ -7,12 +7,12 @@ ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, service worker, PWA
-ms.openlocfilehash: 2f32155d1d28d1e65ad29abfe58a414f3e3c6ed7
-ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
+ms.openlocfilehash: c00b7c7fd18d4bb3d413369ec1464c0cb0255311
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387283"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597139"
 ---
 # <a name="service-worker-improvements"></a>Mejoras del trabajador de servicio  
 
@@ -76,8 +76,8 @@ La **herramienta Red** muestra las solicitudes de red que pasaron por el trabaja
 
 ## <a name="sources"></a>Orígenes  
 
-:::image type="complex" source="../media/sw-sources.msft.png" alt-text="Vista DOM" lightbox="../media/sw-sources.msft.png":::
-   Vista DOM  
+:::image type="complex" source="../media/sw-sources.msft.png" alt-text="Árbol DOM" lightbox="../media/sw-sources.msft.png":::
+   Árbol DOM  
 :::image-end:::  
 
 Para encontrar más información sobre la pila, establezca un punto de interrupción en el controlador de captura.  Los detalles llevan a dónde se solicita el recurso en el script de página.  Cuando el depurador se detiene dentro de un controlador de captura, se muestra una información de pila combinada en el panel a la derecha.  Después de eso, puede moverse en los marcos de la pila.  

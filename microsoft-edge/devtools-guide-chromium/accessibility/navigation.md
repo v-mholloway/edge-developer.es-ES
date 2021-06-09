@@ -3,16 +3,16 @@ description: Una guía para navegar por Microsoft Edge DevTools con tecnología 
 title: Navegar Microsoft Edge DevTools con tecnología de asistencia
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: cf2742dfb08ee482b26fe43417b7454e5b6ff809
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 2cb57a8ea1ea34506b4698d80ae0981d8716f3d2
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564584"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597099"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -29,67 +29,68 @@ ms.locfileid: "11564584"
    limitations under the License.  -->
 # <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Navegar Microsoft Edge DevTools con tecnología de asistencia  
 
-El siguiente artículo tiene como objetivo ayudar a los usuarios que dependen principalmente de la tecnología de asistencia, como los lectores de pantalla, a acceder y usar [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools es][MicrosoftEdgeDevtoolsMain] un conjunto de herramientas de desarrollador web integradas en el Microsoft Edge web.  Si está buscando características de DevTools relacionadas con la mejora de la accesibilidad de una página web, vaya a [Accessibility Reference][DevtoolsAccessibilityReference].  
+Este artículo ayuda a los usuarios que dependen principalmente de la tecnología de asistencia, como los lectores de [pantalla, Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  DevTools es un conjunto de herramientas de desarrollador web integradas en el Microsoft Edge web.  
 
-La accesibilidad de DevTools es un trabajo en curso.  Algunos paneles y pestañas funcionan mejor con tecnología de asistencia que otros.  Esta guía le guiará por los paneles que son los más accesibles y resalta los problemas específicos que puede encontrar en el camino.  
+Para ver las características de DevTools relacionadas con la mejora de la accesibilidad de una página web, vea [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference] and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
-## <a name="overview"></a>Introducción  
+La accesibilidad de DevTools es un trabajo en curso.  Algunas herramientas y pestañas funcionan mejor con tecnología de asistencia que otras.  Esta guía le guiará por las herramientas y pestañas que son las más accesibles y resalta los problemas específicos que puede encontrar en el camino.  
 
-Antes de empezar, ayuda a tener un modelo mental de cómo se estructura la interfaz de usuario de DevTools.  DevTools se divide en una serie de paneles que se organizan en una lista de [pestañas de ARIA.][W3CWaiAriaTablist]  
+## <a name="overview"></a>Información general  
 
-Por ejemplo:  
+DevTools se divide en una serie de herramientas.  (Dentro del **menú comando,** las herramientas se denominan _paneles_.)  Las herramientas se organizan en una lista de [pestañas de ARIA][W3CWaiAriaTablist] en la barra de herramientas principal y en la barra de herramientas del cajón.
+
+A continuación se muestran ejemplos de herramientas:
 
 *   La **herramienta Elementos** permite [ver y cambiar nodos DOM][DevtoolsDomIndexNavigateDomTreeKeyboard] o [CSS][DevtoolsCssIndex].  
-*   El [panel Consola][DevtoolsConsoleIndex] le permite leer los registros de JavaScript y los objetos de edición en directo.  
+*   La **herramienta Consola** permite leer los registros de JavaScript y los objetos de edición en directo.  Para obtener más información, vaya [a Usar la consola][DevtoolsConsoleIndex].
 
-Dentro del área de contenido de cada panel, hay varias herramientas diferentes, a menudo denominadas pestañas o paneles en la documentación.  
-Por ejemplo, la **herramienta Elementos** contiene pestañas adicionales para inspeccionar escuchas de eventos, el árbol de accesibilidad y mucho más.  La distinción entre pestañas y paneles es algo arbitraria.  La única razón por la que puede revisar un término u otro es mantener la coherencia con el resto de la documentación oficial de DevTools.  
+Dentro de cada herramienta, hay uno o más conjuntos de pestañas.  Por ejemplo, la **herramienta Elementos** contiene un conjunto de pestañas que incluyen **Styles**, **Event Listeners**y **Accessibility**.
 
 ## <a name="keyboard-shortcuts"></a>Accesos rápidos de teclado  
 
-[DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] es una hoja de trucos útil.  Asegúrese de marcarlo y volver a consultarlo a medida que explora los diferentes paneles.  
+[Referencia de métodos abreviados de teclado de DevTools][DevtoolsShortcuts] es una hoja de trucos útil.  Asegúrese de marcarlo y volver a consultarlo a medida que explora las diferentes herramientas.
 
 ## <a name="open-devtools"></a>Abrir DevTools  
 
 Para empezar, vaya a [Abrir Microsoft Edge DevTools][DevtoolsOpen].  Hay varias formas de abrir DevTools, ya sea mediante métodos abreviados de teclado o elementos de menú.  
 
-## <a name="navigate-between-panels"></a>Navegar entre paneles  
+## <a name="navigate-between-tools"></a>Navegar entre herramientas
 
 ### <a name="navigate-by-keyboard"></a>Navegar por teclado  
 
-*   Con DevTools abierto, seleccione `Control` + `]` \(Windows, Linux\) o `Command` + `]` \(macOS\) para centrar el panel siguiente.  
-*   Seleccione `Control` + `[` \(Windows, Linux\) o `Command` + `[` \(macOS\) para centrar el panel anterior.  
-*   También es posible usar para mover el foco a la lista de pestañas ARIA de un panel y usar las teclas de flecha para cambiar los paneles, aunque puede ser más rápido usar los `Shift` + `Tab` métodos abreviados mencionados anteriormente. [][W3CWaiAriaTablist]  
+*   Con DevTools abierto, seleccione `Control` + `]` \(Windows, Linux\) o `Command` + `]` \(macOS\) para mover el foco a la siguiente herramienta de la barra de herramientas principal.
+*   Seleccione `Control` + `[` \(Windows, Linux\) o `Command` + `[` \(macOS\) para mover el foco a la herramienta anterior en la barra de herramientas principal.
+*   Seleccione o repita hasta que el foco se mueva a las pestañas de la barra de herramientas principal o de la barra de herramientas del cajón y, a continuación, use las teclas de flecha para `Tab` `Shift` + `Tab` moverse entre las herramientas.
 
 **Problemas conocidos**  
 
-*   Algunos paneles, como las **** herramientas **consola** y rendimiento, pueden mover el foco al área de contenido del panel tan pronto como se active cada panel.  Esto puede dificultar la navegación por teclas de flecha.  
-*   El nombre del panel seleccionado se anuncia, pero solo después de leer el contenido centrado en el panel.  Esto puede hacer que sea muy fácil de perder.  
+*   Algunas herramientas, como las **** herramientas **consola** y rendimiento, pueden mover el foco al área de contenido de la herramienta en cuanto se selecciona la herramienta.  Esto puede dificultar la navegación por teclas de flecha.  
+*   El nombre de la herramienta seleccionada se anuncia, pero solo después de anunciar el contenido centrado en la herramienta.  Esta secuencia de anuncios puede facilitar la pérdida del nombre de la herramienta.
 
 ### <a name="navigate-by-command-menu"></a>Navegar por menú de comandos  
 
-Para centrar un panel específico, use el [menú comando][DevtoolsCommandMenuIndex]:  
+Para seleccionar una herramienta específica, use el [menú comando][DevtoolsCommandMenuIndex].  En el menú comando, una herramienta se denomina _panel_.
 
 1.  Con DevTools abierto, seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para **** abrir el menú de comandos .  
     El **menú de comandos** es un cuadro combinado de autocompletar de búsqueda aproximada.  
-1.  Escriba el nombre del panel que desea abrir y, a continuación, use el teclado para `Down Arrow` navegar a la opción correcta.  
+1.  Escriba el nombre de un panel (herramienta) y, a continuación, use el teclado para navegar a `Down Arrow` la opción correcta.  
 1.  Seleccione `Enter` para ejecutar un comando.  
 
-Complete las siguientes acciones para abrir la **herramienta** Elementos.  
+Para abrir la **herramienta** Elementos:
 
 1.  Abra el **Menú de comandos**.  
 1.  Escriba `E` a `L` continuación .  La **opción Panel > Mostrar elementos** está seleccionada.  
-1.  Seleccione `Enter` para ejecutar el comando que abre el panel.  
+1.  Seleccione `Enter` .  
 
-Abrir un panel de esta manera dirige el foco al contenido del panel.  En el caso de la **herramienta Elementos,** el foco se mueve al **árbol DOM**.  
+Abrir una herramienta de esta manera pone el foco en el área de contenido de la herramienta.  En el caso de la **herramienta Elementos,** el foco se mueve al **árbol DOM**.
 
-## <a name="elements-panel"></a>Panel Elementos  
+## <a name="elements-tool"></a>Herramienta Elementos
 
 ### <a name="inspect-an-element-on-the-page"></a>Inspeccionar un elemento de la página  
 
 1.  Navegue hasta el elemento que desea inspeccionar con el cursor en el lector de pantalla.  
-1.  Simular un clic con el botón derecho con un mouse en el elemento para abrir el menú contextual.  
-1.  Elija la **opción Inspeccionar.**  Esto [abre el panel Elementos y centra el elemento en el árbol DOM][DevtoolsDomIndexViewDomNodes].  
+1.  Simule un clic con el botón derecho en el elemento para abrir el menú contextual.  
+1.  Elija la **opción Inspeccionar.**  Esto [abre la herramienta Elementos y centra el elemento en el árbol DOM][DevtoolsDomIndexViewDomNodes].  
 
 El **árbol DOM** se establece como un árbol [ARIA.][W3CWaiAriaTree]  Para obtener un ejemplo, vaya a [Navegar por el árbol **DOM** con un teclado][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
@@ -111,7 +112,7 @@ El **árbol DOM** se establece como un árbol [ARIA.][W3CWaiAriaTree]  Para obte
 
 **Problemas conocidos**  
 
-*   Al escribir en la entrada de texto, no recibe comentarios.  Si haces un error de tipográfico y usas las teclas de flecha para explorar la entrada, tampoco recibes comentarios.  La forma más sencilla de comprobar el trabajo es aceptar el cambio y, a continuación, escuchar todo el elemento que se va a anunciar.  
+*   Cuando escribes en la entrada de texto, no obtienes comentarios.  Si haces un error tipográfico y usas las teclas de flecha para explorar la entrada, tampoco recibes comentarios.  La forma más sencilla de comprobar el trabajo es aceptar el cambio y, a continuación, escuchar todo el elemento que se va a anunciar.  
 
 ### <a name="edit-the-html-of-an-element-in-the-dom-tree"></a>Editar el CÓDIGO HTML de un elemento en el árbol DOM  
 
@@ -121,18 +122,18 @@ El **árbol DOM** se establece como un árbol [ARIA.][W3CWaiAriaTree]  Para obte
 
 Por ejemplo, al escribir y seleccionar `h3` `Control` + `Enter` \(Windows, Linux\) o `Command` + `Enter` \(macOS\), `h3` cambian las etiquetas de inicio y finalización del elemento.  
 
-## <a name="elements-tool-panels"></a>Paneles de herramientas de elementos  
+## <a name="tabs-in-the-elements-tool"></a>Pestañas en la herramienta Elementos
 
 La **herramienta Elementos** contiene pestañas adicionales para inspeccionar elementos como el CSS aplicado a un elemento o el lugar relevante en el árbol de accesibilidad.  
 
-*   Con el foco en un nodo del árbol **DOM,** seleccione `Tab` hasta que oiga que el panel **Estilos** está seleccionado.  
-*   Use la `Right Arrow` para explorar otras pestañas disponibles.  
+*   Con el foco en un nodo en el **árbol DOM,** seleccione hasta que oiga `Tab` que la pestaña **Estilos** está seleccionada.  
+*   Use la `Right Arrow` para explorar otras pestañas disponibles.
 
 El **árbol DOM** convierte los elementos con atributos en vínculos seleccionables, por lo que es posible que deba seleccionar más de una vez para llegar al panel `href` `Tab` **Estilos.**  
 
 **Problemas conocidos**  
 
-Las **pestañas Puntos de interrupción DOM** y **Propiedades** no son accesibles con el teclado.  
+Las **pestañas Puntos de interrupción DOM** y **Propiedades** no son accesibles con teclado.  
 
 ### <a name="styles-pane"></a>Panel Estilos  
 
@@ -149,7 +150,7 @@ Dado que todas las herramientas de estilo se conectan de una forma u otra al pan
 *   Seleccione `Down Arrow` esta opción para navegar por la lista de estilos por orden de especificidad.  Un lector de pantalla anuncia cada estilo empezando por el nombre del archivo CSS, el número de línea en el que aparece el estilo y el nombre del estilo.  Por ejemplo, `main.css:233 .card__img {}`.  
 *   Seleccione `Enter` para inspeccionar un estilo con más detalle.  El foco comienza en una versión editable del nombre del estilo.  
 *   Seleccione `Tab` para moverse entre las versiones editables de cada propiedad CSS y los valores correspondientes.  Al final de cada bloque de estilos hay un campo de texto editable en blanco que puede usar para agregar propiedades CSS adicionales.  
-*   Puede seguir seleccionando para desplazarse por la lista de estilos o seleccionar salir del modo y volver a navegar por `Tab` `Escape` las teclas de flecha.  
+*   Puedes seguir seleccionando para desplazarte por la lista de estilos o seleccionar salir del modo y volver a navegar por `Tab` `Escape` las teclas de flecha.  
 
 Para obtener accesos directos adicionales, vaya a [Referencia del teclado del panel Estilos][DevtoolsShortcutsStylesPaneKeyboard].  
 
@@ -169,20 +170,20 @@ Para alternar el estado de un elemento, como `:active` o `:focus` :
 
 #### <a name="add-an-existing-class"></a>Agregar una clase existente  
 
-Junto al botón **Alternar estado del** elemento, se encuentra el botón Clases **de** elementos.  Para mover el foco a él, seleccione `Tab` y seleccione `Enter` .  El foco se mueve a un campo de texto de edición con la **etiqueta Agregar nueva clase**.  
+Junto al botón **Alternar estado del** elemento, se encuentra el botón Clases **de** elementos.  Para mover el foco a él, seleccione `Tab` y, a continuación, seleccione `Enter` .  El foco se mueve a un campo de texto de edición con la **etiqueta Agregar nueva clase**.  
 
-El **botón Clases de** elementos se usa principalmente para agregar clases existentes a un elemento.  Por ejemplo, si la hoja de estilos contenía una clase auxiliar llamada, puede seleccionar dentro del campo editar texto para mostrar una lista de sugerencias de clases y usar la para buscar `.clearfix` `.` la `Down Arrow` `.clearfix` sugerencia.  O escriba el nombre de la clase usted mismo y `Enter` seleccione aplicarlo.  
+El **botón Clases de** elementos se usa principalmente para agregar clases existentes a un elemento.  Por ejemplo, si la hoja de estilos contenía una clase auxiliar denominada , puede seleccionar dentro del campo editar texto para mostrar una lista de sugerencias de clases y usar la para buscar `.clearfix` `.` la `Down Arrow` `.clearfix` sugerencia.  O escriba el nombre de la clase usted mismo y `Enter` seleccione aplicarlo.  
 
 #### <a name="add-a-new-style-rule"></a>Agregar una nueva regla de estilo  
 
-Junto al botón **Clases de elementos** se encuentra el botón Nueva regla **de** estilo.  Para mover el foco a él, seleccione `Tab` y seleccione `Enter` .  El foco se mueve a un campo de texto editable dentro del inspector de estilos.  El contenido de texto inicial del campo es el nombre de etiqueta del elemento seleccionado en el **árbol DOM**.  
+Junto al botón **Clases de elementos** se encuentra el botón Nueva regla **de** estilo.  Para mover el foco a él, seleccione `Tab` y, a continuación, seleccione `Enter` .  El foco se mueve a un campo de texto editable dentro del inspector de estilos.  El contenido de texto inicial del campo es el nombre de etiqueta del elemento seleccionado en el **árbol DOM**.  
 Puede escribir cualquier nombre de clase que desee en este campo y, a continuación, seleccionar `Tab` para asignarle propiedades CSS.  
 
 ### <a name="computed-tab"></a>Pestaña calculada  
 
 Con el foco en **la pestaña** Calculado, seleccione para mover el foco dentro y explorar `Tab` el contenido.  Dentro de **la pestaña** Calculado hay controles para explorar qué propiedades CSS se aplican realmente a un elemento por orden de especificidad.  
 
-<!--todo: add computed tab section when available  -->  
+<!--todo: add Computed tab section when available  -->  
 
 #### <a name="explore-all-computed-styles"></a>Explorar todos los estilos calculados  
 
@@ -194,15 +195,17 @@ Seleccione `Tab` hasta llegar a la colección de estilos calculados.  Se present
 
 ### <a name="event-listeners-tab"></a>Pestaña Escuchas de eventos  
 
-Desde dentro de la **herramienta Elementos,** puede inspeccionar los agentes de escucha de eventos aplicados a un elemento mediante la pestaña **Escuchas de** eventos.  Con el foco en el panel **Estilos,** seleccione el para `Right Arrow` navegar al panel **Escuchas de** eventos.  
+Para inspeccionar los agentes de escucha de eventos que se aplican a un elemento, seleccione la herramienta **Elementos** y, a continuación, seleccione la pestaña **Escuchas** de eventos (agrupada con la **pestaña** Estilos).
 
 #### <a name="explore-event-listeners"></a>Explorar escuchas de eventos  
 
 Los agentes de escucha de eventos se presentan como un [árbol de ARIA.][W3CWaiAriaTree]  Puede usar las teclas de flecha para navegar por ellas.  Un lector de pantalla anuncia el nombre del objeto DOM al que está adjunta la escucha de eventos, así como el nombre de archivo donde se define el agente de escucha de eventos y el número de línea.  
 
-### <a name="accessibility-pane"></a>Panel accesibilidad  
+### <a name="accessibility-tab"></a>Pestaña Accesibilidad
 
-Con el foco en el panel **Accesibilidad,** seleccione `Tab` para mover el foco dentro y explorar el contenido.  En el [panel Accesibilidad][DevtoolsAccessibilityReference] hay controles para explorar el árbol de accesibilidad, los atributos ARIA aplicados a un elemento y las propiedades de accesibilidad calculadas.  
+Seleccione la `Tab` tecla para moverse dentro de la pestaña **Accesibilidad** de la **herramienta** Elementos.
+
+La **pestaña Accesibilidad** está cerca de la **pestaña Estilos.** En la pestaña Accesibilidad, hay controles para explorar el árbol de accesibilidad, los atributos ARIA aplicados a un elemento y las propiedades de accesibilidad calculadas.  Para obtener más información, vaya [a Probar accesibilidad mediante la pestaña Accesibilidad][DevtoolsAccessibilityTab].
 
 #### <a name="accessibility-tree"></a>Árbol de accesibilidad  
 
@@ -210,39 +213,38 @@ El **árbol de accesibilidad** se presenta como un árbol [ARIA][W3CWaiAriaTree]
 
 **Problemas conocidos**  
 
-*   Es posible que el tipo de árbol [ARIA][W3CWaiAriaTree] usado por el **panel** Accesibilidad no se exponga correctamente en Microsoft Edge lectores de pantalla de macOS como VoiceOver.  [Suscríbete Chromium problema #868480][ChromiumIssues868480] para estar informado sobre el progreso en este problema.  
+*   Es posible que el tipo **** de árbol [ARIA][W3CWaiAriaTree] usado por la pestaña Accesibilidad no se exponga correctamente en Microsoft Edge lectores de pantalla de macOS como VoiceOver.  [Suscríbete Chromium problema #868480][ChromiumIssues868480] para estar informado sobre el progreso en este problema.  
 *   Cada una de las **** secciones **Atributos de ARIA** y Propiedades calculadas se marcan como un árbol de [ARIA,][W3CWaiAriaTree]pero cada una de ellas no tiene actualmente administración de focos y no funciona con el teclado.  
 
-## <a name="audits-panel"></a>Panel auditorías  
+## <a name="lighthouse-tool"></a>Herramienta Faro
 
-La **herramienta Auditorías** debe ejecutar una serie de pruebas en un sitio para comprobar si hay problemas comunes relacionados con el rendimiento, la accesibilidad, el SEO y varias otras categorías.  
+**Lighthouse** ejecuta una serie de pruebas en un sitio para comprobar si hay problemas comunes relacionados con el rendimiento, la accesibilidad, el SEO y varias otras categorías.  
 
-### <a name="configure-and-run-an-audit"></a>Configurar y ejecutar una auditoría  
+### <a name="configure-and-generate-a-report"></a>Configurar y generar un informe
 
-1.  Cuando se **abre la herramienta Auditorías** por primera vez, el foco se coloca en el botón **Ejecutar auditoría** al final del formulario.  De forma predeterminada, el formulario está configurado para ejecutar auditorías para cada categoría mediante emulación móvil en una conexión 3G simulada.  
-1.  Use `Shift` + `Tab` o navegue hacia atrás en el modo Examinar para cambiar la configuración de auditoría.  
-1.  Cuando esté listo para ejecutar la auditoría, vuelva al botón **Ejecutar** auditoría y seleccione `Enter` .  
+1.  Cuando la **herramienta Faro** se abre por primera vez en DevTools, el foco se coloca en el botón **Generar informe.**  De forma predeterminada, el formulario está configurado para ejecutar informes para todas las categorías mediante emulación móvil en una conexión 3G simulada.  
+1.  Para cambiar la configuración del informe, úse el foco en la configuración de Faro o vuelva `Shift` + `Tab` al modo Examinar. ****  
+1.  Cuando esté listo para ejecutar el informe, vuelva al botón **Generar informe** y seleccione `Enter` .  
 1.  El foco se mueve a una ventana modal con **un botón Cancelar** que te permite salir de la auditoría.  Es posible que oiga una serie de earcons mientras la auditoría se ejecuta y actualiza la página varias veces.  
 
 **Problemas conocidos**  
 
 *   Las distintas secciones del formulario de configuración no están marcadas actualmente con un `fieldset` elemento.  Puede ser más fácil navegar por ellos en el modo Examinar para averiguar qué controles están asociados con cada sección.  
-*   Cuando la auditoría haya terminado de ejecutarse, no hay ningún anuncio de región viva o de earcon.  Por lo general, tarda unos 30 segundos, después de lo cual debería poder navegar hasta los resultados.  El uso del modo Examinar puede ser la forma más sencilla de llegar a los resultados.  
+*   Cuando la auditoría haya terminado de ejecutarse, no hay ningún anuncio de región viva o de earcon.  Por lo general, la auditoría tarda unos 30 segundos, después de lo cual debería poder navegar hasta los resultados.  El uso del modo Examinar puede ser la forma más sencilla de llegar a los resultados.  
 
-### <a name="navigate-the-audit-report"></a>Navegar por el informe de auditoría  
+### <a name="navigate-the-lighthouse-report"></a>Navegar por el informe de Faro  
 
-El informe de auditoría se organiza en secciones que corresponden a cada una de las categorías de auditoría.  El informe se abre con una lista de puntuaciones para cada categoría.  Estas puntuaciones también son vínculos que se pueden usar para pasar a las secciones correspondientes.  Dentro de cada sección hay elementos `details` expandibles, que contienen información relacionada con auditorías pasadas o con errores.  De forma predeterminada, solo se muestran las auditorías con errores.  Cada sección termina con un elemento final `details` que contiene todas las auditorías pasadas.  
+El informe de Faro se organiza en secciones que corresponden a cada una de las categorías de auditoría.  El informe se abre con una lista de puntuaciones para cada categoría.  Estas puntuaciones también son vínculos que puede usar para pasar a las secciones correspondientes.  Dentro de cada sección hay elementos `details` expandibles, que contienen información relacionada con auditorías pasadas o con errores.  De forma predeterminada, solo se muestran las auditorías con errores.  Cada sección termina con un elemento final `details` que contiene todas las auditorías pasadas.  
 
-Para ejecutar una nueva auditoría, use `Shift` + `Tab` para salir del informe y buscar el **botón Realizar una** auditoría.  
+Para ejecutar una nueva auditoría, `Shift` + `Tab` úselo para salir del informe y seleccione el **botón Generar** informe.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
-[DevtoolsAccessibilityReference]: ./reference.md "Referencia de accesibilidad | Microsoft Docs"  
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "El panel Accesibilidad- Referencia de accesibilidad | Microsoft Docs"  
+[DevtoolsAccessibilityReference]: reference.md "Características de prueba de accesibilidad en DevTools | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: accessibility-tab.md "Probar la accesibilidad mediante la pestaña Accesibilidad | Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el Microsoft Edge de comandos DevTools | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Descripción general de la consola | Microsoft Docs"  

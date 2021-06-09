@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 8f85bab4b1229a13f3b0185c65da900573380811
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 82d547c8c1ed0606bda9ade27d0dbddbfa2ca800
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564241"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11596995"
 ---
 # <a name="experimental-features"></a>Características experimentales  
 
@@ -114,12 +114,11 @@ Después de activar el experimento, asegúrese de reiniciar DevTools.  Para usar
 Después de activar el experimento, asegúrese de reiniciar DevTools.  Para usar **Source Order Viewer** , complete los pasos siguientes.  
 
 1.  Abra la **herramienta** Elementos.  
-1.  Abra el **panel Accesibilidad** en el panel \(bottom\) del cajón.  
+1.  A la derecha de la **pestaña Estilos,** seleccione la **pestaña Accesibilidad.**  
 1.  En la **Source Order Viewer** sección, seleccione la casilla **Mostrar orden de origen.**  
 1.  Resalte cualquier elemento HTML para mostrar una superposición que el orden en el origen de la página web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer en el panel Accesibilidad" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** en el panel **Accesibilidad**  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer en el panel Accesibilidad" lightbox=".. /media/experiments-source-order-viewer.msft.png":: **Source Order Viewer** en el panel **Accesibilidad**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
