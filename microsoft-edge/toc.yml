@@ -315,8 +315,10 @@
               href: extensions-chromium/getting-started/index.md
             - name: Crear un tutorial de extensión (parte 1)
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Crear un tutorial de extensión (parte 2)
+            - name: Crear un tutorial de extensión (parte2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: Formato de archivo de manifiesto
+              href: extensions-chromium/getting-started/manifest-format.md
             - name: Transferir localmente una extensión
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Guía para desarrollador
