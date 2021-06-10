@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: 5d30fe14051ac8857c6ea4d64b8c8f1f8e8049ac
-ms.sourcegitcommit: a7609b75a94755ed983111af7083a0d3bf64eeac
+ms.openlocfilehash: 3865162b8227db2f0cfa051801a5de28ecf4b9d1
+ms.sourcegitcommit: 3094c972532bc89dcb429d26880c873809fd1ab8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "11583590"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "11599460"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>Usar WebDriver (Chromium) para la automatización de pruebas  
 
@@ -23,8 +23,25 @@ WebDriver permite a los desarrolladores crear pruebas automatizadas que simulan 
 *   Simula eventos de usuario o eventos de nivel de sistema operativo con mayor precisión.  
 *   Administra varias ventanas, pestañas y páginas web en una sola sesión de prueba.  
 *   Ejecuta varias sesiones de Microsoft Edge en un equipo específico.  
-    
-En la siguiente sección se describe cómo empezar a usar WebDriver para Microsoft Edge \(Chromium\).  
+
+## <a name="relationship-between-webdriver-and-other-software"></a>Relación entre WebDriver y otro software
+
+Para automatizar Microsoft Edge webDriver para simular la interacción del usuario, necesita 3 componentes:
+
+*  Microsoft Edge
+*  Microsoft Edge Driver
+*  Un marco de prueba de WebDriver, como Selenio
+
+La relación funcional entre WebDriver, Microsoft Edge Driver, Selenio e Internet Explorer Driver es la siguiente.
+
+| Tecnología | Rol |
+|---|---|
+| WebDriver | Un estándar W3C para un protocolo de cable de plataforma e idioma neutro.  Este protocolo permite que los programas fuera de proceso indiquen de forma remota el comportamiento de los exploradores web. |
+| Microsoft Edge Driver | Implementación de Microsoft del protocolo WebDriver específicamente para Microsoft Edge. Los autores de pruebas escriben pruebas que usan comandos de WebDriver que Microsoft Edge driver recibe. Microsoft Edge A continuación, el controlador es responsable de comunicar ese comando al explorador. |
+| Selenio | Un marco de pruebas webDriver popular que los autores de pruebas usan para escribir pruebas de un extremo a otro y automatizar exploradores. Selenio se puede usar en cualquier plataforma y está disponible en Java, Python, C#, Ruby y JavaScript. |
+| Controlador de Internet Explorer | Una implementación del protocolo WebDriver específicamente para Internet Explorer. El proyecto Selenium mantiene este producto. Para ejecutar pruebas de un extremo a otro heredadas para Internet Explorer, se recomienda usar el controlador de Internet Explorer. |
+
+En las secciones siguientes se describe cómo empezar a usar WebDriver para Microsoft Edge \(Chromium\).  
 
 ## <a name="install-microsoft-edge-chromium"></a>Instalar Microsoft Edge (Chromium)  
 
@@ -67,7 +84,7 @@ El último componente que debe descargar es un controlador de cliente específic
 
 Selenium 4 tiene compatibilidad integrada con Microsoft Edge (Chromium).  Para instalar Selenio 4, vaya a [Instalación de bibliotecas de Selenio][SeleniumInstallingLibraries].
 
-Cuando usas Selenio 4, no necesitas usar Selenium Tools para Microsoft Edge.  Selenium Tools for Microsoft Edge es solo para Selenium 3.  Si intenta usar Selenio 4 con Herramientas de selenio para Microsoft Edge y trata de crear una nueva instancia, se `EdgeDriver` produce el siguiente error: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'` .  
+Cuando usas Selenio 4, no necesitas usar Selenium Tools para Microsoft Edge.  Las herramientas de selenio Microsoft Edge son solo para Selenium 3.  Si intenta usar Selenium 4 con Selenium Tools para Microsoft Edge e intenta crear una nueva instancia, se `EdgeDriver` produce el siguiente error: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'` .  
 
 Si usa Selenio 4 y obtiene este error, quite del proyecto y asegúrese de que está usando el oficial y las clases del `Microsoft.Edge.SeleniumTools` `EdgeOptions` espacio de `EdgeDriver` `OpenQA.Selenium.Edge` nombres.
 
@@ -357,6 +374,10 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 Para obtener más información, vaya al [contenedor msedgedriver en Docker Hub][DockerHubMsedgedriver].  
 
+## <a name="testing-internet-explorer"></a>Probar Internet Explorer
+
+Aunque Microsoft Edge admite el modo IE, no puedes usar Microsoft Edge driver con Microsoft Edge para probar sitios en modo IE.  Para probar los sitios que requieren Internet Explorer, use [El controlador de Internet Explorer][GithubSeleniumHqWikiIEDriver] con Internet Explorer.
+
 ## <a name="next-steps"></a>Pasos siguientes  
 
 Para obtener más información acerca de WebDriver y cómo escribir pruebas automatizadas de WebDriver con Selenio, vaya a la documentación [de Selenio][SeleniumDocumentation].  
@@ -384,6 +405,7 @@ El Microsoft Edge está deseando escuchar sus comentarios acerca del uso de WebD
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-tools | GitHub"  
 [GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SelenioHQ/selenio | GitHub"  
+[GithubSeleniumHqWikiIEDriver]: https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver "Controlador de Internet Explorer: selenio | GitHub"
 
 [JavaScriptnpm]: https://www.npmjs.com/ "npm"  
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"  
@@ -409,7 +431,7 @@ El Microsoft Edge está deseando escuchar sus comentarios acerca del uso de WebD
 [SeleniumDownloads]: https://selenium.dev/downloads "Descargas | Selenio"  
 [SeleniumInstallingLibraries]: https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries "Instalación de bibliotecas selenio | Selenio"
 
-[SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"
+[SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "Sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"
 
 [TwitterTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Publicar un tweet"  
 

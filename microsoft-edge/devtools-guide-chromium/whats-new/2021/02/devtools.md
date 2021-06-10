@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: a6682043166909bf75a875b72058cc9839c5b43b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: a13c344bb31cdfb7d0402132e3be82e4c330c612
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564850"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597160"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -274,7 +274,7 @@ Antes, la propiedad `fn.displayName` permitía controlar los nombres de depuraci
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Este experimento proporciona una **vista de árbol de accesibilidad completa** en la herramienta **Elementos**.  El panel [Accesibilidad][DevtoolsAccessibilityReferenceAccessibilityPanel] proporciona una vista de árbol de accesibilidad parcial, que muestra la cadena directamente anterior del nodo raíz al nodo inspeccionado.  
+Este experimento proporciona una **vista de árbol de accesibilidad completa** en la herramienta **Elementos**.  El panel [Accesibilidad][DevtoolsAccessibilityTab] proporciona una vista de árbol de accesibilidad parcial, que muestra la cadena directamente anterior del nodo raíz al nodo inspeccionado.  
 Después de activar este experimento y volver a cargar DevTools, elija uno de los siguientes botones para cambiar la visualización en la herramienta Elementos para todos los elementos de la página web.  
 
 *   Para mostrar la vista de árbol de accesibilidad completa, elija la **vista Cambiar a árbol de accesibilidad**.  
@@ -285,7 +285,7 @@ Para activar el experimento, vaya a [Activar características experimentales][De
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Mostrar la vista de árbol DOM" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         Mostrar la **vista DOM**  
+         Mostrar la **vista de árbol DOM**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -305,7 +305,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "El panel Accesibilidad: referencia de accesibilidad | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "Probar la accesibilidad con la pestaña Accesibilidad | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filtrar por nivel de registro: referencia de consola | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filtrar mensajes: referencia de consola | Microsoft Docs"  

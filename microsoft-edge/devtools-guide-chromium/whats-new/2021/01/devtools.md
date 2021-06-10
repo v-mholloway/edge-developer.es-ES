@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 6d1952832c84dc159222a8aa16aa0ffe11edff34
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 9eb9f35427829dbe262b4c71d8ff5474b28eae77
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564933"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597158"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -426,7 +426,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Novedades de DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/reference.md#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Ver la relación de contraste de un elemento de texto en el Selector de colores: Referencia de accesibilidad | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Probar el contraste de color de texto con el Selector de colores | Microsoft Docs"  
 [DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Cambiar CSS: Referencias CSS | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configuración: Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalización de accesos rápidos de teclado en Microsoft Edge DevTools | Microsoft Docs"  
