@@ -1,14 +1,29 @@
 ---
-description: Feature differences between Microsoft Edge and WebView2
-title: Feature differences between Microsoft Edge and WebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
+description: Feature differences between Microsoft Edge and WebView2 title: Feature differences between Microsoft Edge and WebView2 author: MSEdgeTeam ms.author: msedgedevrel ms.date: 05/06/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, edge html no-loc:
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
+
 ---
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Diferencias de características del explorador entre Microsoft Edge y WebView2  
 
@@ -48,7 +63,7 @@ En la tabla siguiente se muestran las características de WebView2 que difieren 
 | Edge Shopping | Desactivado | No | Esta característica está desactivada.  |  
 | Family Safety | Desactivado | No | Esta característica está desactivada.  |  
 | Favorites | Desactivado | No | Esta característica está desactivada.  |  
-| IE Mode | Desactivado | No | Esta característica está desactivada. WebView2 no admite el modo IE y tiene diferencias de comportamiento en comparación con IE (como compatibilidad con MHT). |  
+| IE Mode | Desactivado | No | Esta característica está desactivada. WebView2 no admite el modo IE y tiene diferencias de comportamiento en comparación con IE (como compatibilidad con MHT o BIN). |  
 | Immersive Reader | Desactivado | No | Esta característica depende de la interfaz de usuario del explorador para la interacción.  Esta característica está desactivada.  |  
 | Intrusive Ads | Desactivado | No | Esta característica está desactivada.  |  
 | Accesos rápidos de teclado | Revisar detalles | Revisar detalles | Los métodos abreviados de teclado que están desactivados de forma predeterminada no tienen sentido o causan problemas en WebView2.  No puede activar ni desactivar estos métodos abreviados.  En su lugar, puede escuchar una combinación de teclas con el `AcceleratorKeyPressed` evento y crear una respuesta personalizada si es necesario.  Para obtener más información, vaya a [Información adicional de métodos abreviados de teclado](#additional-keyboard-shortcuts-information). |  
