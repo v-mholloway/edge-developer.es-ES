@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f5e011edd9889f226d705e51838e5d73c2a3b98d
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 00bb5a2c11fcadd4a0eba22c29ac5a2652b9edb6
+ms.sourcegitcommit: 2b225426e90b017f9766ea8568713b95d267cd6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564738"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "11607318"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -120,23 +120,12 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 Para cambiar la configuración `F12` de método abreviado de teclado que abre DevTools, realice las siguientes acciones.  
 
-1.  Elija el icono Configuración **y más** \( `...` \) icono > **Configuración**.  
-1.  En **Configuración de búsqueda,** escriba `Developer Tools` .  
-    
-    :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="La opción Abrir las DevTools cuando se presiona la tecla F12" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
-       La **opción Abrir las DevTools cuando se presiona** la tecla F12  
-    :::image-end:::  
-    
-1.  Elija **Abrir las DevTools cuando se** presione la tecla F12 para alternar la configuración a off \(or on\).  Alterna la configuración a desactivado para impedir que el método abreviado de `F12` teclado abra DevTools.  
-    
-    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="La opción Abrir las DevTools cuando se presiona la tecla F12 está desactivada" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
-       La **opción Abrir las DevTools cuando se presiona** la tecla F12 está desactivada  
-    :::image-end:::  
-    
-1.  Después de establecer el botón de alternancia en desactivado, seleccione `F12` para confirmar que DevTools ya no está abierto.  
+1.  Vaya a `edge://settings/system`.  
+1.  In `Developer Tools` , choose Open the **DevTools when the F12 key is pressed** to toggle the setting to off or on.  Alterna la configuración a desactivado para impedir que el método abreviado de `F12` teclado abra DevTools.  
+1.  Después de establecer la alternancia en desactivado, compruebe que `F12` ya no abra DevTools.  
     
     > [!NOTE]
-    > Después de desactivar la opción Abrir las DevTools cuando se presiona la tecla **F12,** para abrir DevTools, complete una de las siguientes acciones.  
+    > Después de desactivar **Abrir Las DevTools**cuando se presiona la tecla F12 , realice una de las siguientes acciones para abrir DevTools.  
     > 
     > *   Seleccione `Ctrl` + `Shift` + `I` .  
     > *   Abra el menú contextual \(clic con el botón derecho\) > **Inspeccionar**.  
