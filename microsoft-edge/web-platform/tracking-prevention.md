@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibilidad, plataforma web, prevención de seguimiento, rastreadores, cookies, almacenamiento, bloqueo de anuncios, bloqueo de rastreadores, protección de seguimiento
-ms.openlocfilehash: 66356ab7ddaa56e46e74560d72b510ba63f7d70a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 24c410beba34b992cf01b973e79c1247fdc26fee
+ms.sourcegitcommit: b5acfd4dd7f57991d659715e4621edd786d44052
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399291"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "11614638"
 ---
 # <a name="tracking-prevention-in-microsoft-edge-chromium"></a>Prevención de seguimiento en Microsoft Edge (Chromium)  
 
@@ -23,7 +23,7 @@ Microsoft Edge ofrece a los usuarios tres niveles de prevención de seguimiento,
 ![Tres opciones de prevención de seguimiento][ImageThreeSettingsTrackingPrevention]  
 
 1.  **Básico:** el nivel menos restrictivo de prevención de seguimiento diseñado para usuarios que disfrutan de anuncios personalizados y a los que no les importa que se realice un seguimiento en la web.  Basic solo protege a los usuarios contra rastreadores malintencionados, como los rastreadores de huellas digitales y cryptominers.  
-1.  **Equilibrado (predeterminado):** el nivel predeterminado de prevención de seguimiento diseñado para los usuarios que desean ver anuncios menos espeluznante que los siguen por la web mientras exploran.  Balanced tiene como objetivo bloquear los rastreadores de sitios con los que los usuarios nunca interactúan, a la vez que minimizan el riesgo de problemas de compatibilidad en la web.  
+1.  **Equilibrado (predeterminado):** el nivel predeterminado de prevención de seguimiento diseñado para los usuarios que desean ver anuncios menos personalizados al tiempo que minimizan el riesgo de problemas de compatibilidad a medida que navegan por la web.  Balanced tiene como objetivo bloquear los rastreadores de sitios con los que los usuarios nunca interactúan.  
 1.  **Estricto:** el nivel más restrictivo de prevención de seguimiento diseñado para usuarios que están bien negociando la compatibilidad de sitios web para obtener la máxima privacidad.  
 
 La característica de prevención de seguimiento de Microsoft Edge está hecha de tres componentes principales que trabajan juntos para determinar si un recurso específico de un sitio web debe clasificarse como rastreador y bloquearse.  Los componentes son los siguientes:  

@@ -1,16 +1,31 @@
 ---
-description: Diferencias de características del explorador entre Microsoft Edge y WebView2
-title: Diferencias de características del explorador entre Microsoft Edge y WebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
+description: Feature differences between Microsoft Edge and WebView2 title: Feature differences between Microsoft Edge and WebView2 author: MSEdgeTeam ms.author: msedgedevrel ms.date: 06/23/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, edge html no-loc:
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
+
 ---
-# <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Diferencias de características del explorador entre Microsoft Edge y WebView2  
+# <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Diferencias de características entre Microsoft Edge y WebView2  
 
 WebView2 se basa en el nuevo Microsoft Edge explorador.  Tienes la oportunidad de ampliar las características del explorador a las aplicaciones basadas en WebView2, lo que resulta útil.  Sin embargo, dado que WebView2 no está limitado a aplicaciones de explorador, hay algunas características del explorador que deben modificarse o quitarse.  En este artículo se proporciona la siguiente información.  
 
@@ -25,7 +40,7 @@ En el contexto de WebView2, las características del explorador se adhieren a la
 *   La mayoría de las características funcionan igual en WebView2 y Microsoft Edge.  Si una característica no tiene sentido en el contexto de WebView2 o por otras razones, la característica se modifica o se apaga. 
 *   Las características de WebView2 no incluyen Microsoft Edge personal de marca.  
     
-## <a name="features"></a>Características  
+## <a name="browser-features"></a>Características del explorador  
 
 En la tabla siguiente se muestran las características de WebView2 que difieren del Microsoft Edge explorador.   
 
@@ -51,16 +66,23 @@ En la tabla siguiente se muestran las características de WebView2 que difieren 
 | IE Mode | Desactivado | No | Esta característica está desactivada. WebView2 no admite el modo IE y tiene diferencias de comportamiento en comparación con IE (como compatibilidad con MHT o BIN). |  
 | Immersive Reader | Desactivado | No | Esta característica depende de la interfaz de usuario del explorador para la interacción.  Esta característica está desactivada.  |  
 | Intrusive Ads | Desactivado | No | Esta característica está desactivada.  |  
-| Accesos rápidos de teclado | Revisar detalles | Revisar detalles | Los métodos abreviados de teclado que están desactivados de forma predeterminada no tienen sentido o causan problemas en WebView2.  No puede activar ni desactivar estos métodos abreviados.  En su lugar, puede escuchar una combinación de teclas con el `AcceleratorKeyPressed` evento y crear una respuesta personalizada si es necesario.  Para obtener más información, vaya a [Información adicional de métodos abreviados de teclado](#additional-keyboard-shortcuts-information). |  
-| Notificaciones de inserción | Desactivado | No | Esta característica no se implementa en WebView2.  Para obtener más información, vaya a Agregar compatibilidad con la API de notificación [HTML5 (#308).][GithubMicrosoftedgeWebview2feedbackIssues308] |  
+| Métodos abreviados de teclado. | Revisar detalles | Revisar detalles | Los métodos abreviados de teclado que están desactivados de forma predeterminada no tienen sentido o causan problemas en WebView2.  No puede activar ni desactivar estos métodos abreviados.  En su lugar, puede escuchar una combinación de teclas con el `AcceleratorKeyPressed` evento y crear una respuesta personalizada si es necesario.  Para obtener más información, vaya a [Información adicional de métodos abreviados de teclado](#additional-keyboard-shortcuts-information). | 
 | Read Aloud | Desactivado | No | Esta característica está desactivada.  |  
 | Smart Screen | Activado`*` | No | `*` La interfaz de usuario de esta característica se ha quitado, pero la funcionalidad subyacente sigue estando disponible.  Además, puede desactivar el Smart Screen uso de un modificador de línea de comandos.  |  
 | Translate | Desactivado | No | Esta característica está desactivada.  |  
 | Tracking Prevention | Activado`*` | No | `*` La interfaz de usuario de esta característica se ha quitado, pero la funcionalidad subyacente sigue estando disponible.  La prevención de seguimiento siempre está establecida en equilibrada.|  
-| Profile and Identity | Desactivado | No | La característica que sincroniza tus favoritos, cookies, y así sucesivamente, está desactivada.  |  
-| Web Payment API | Desactivado | No | Esta característica está desactivada.  | 
+| Profile and Identity | Desactivado | No | La característica que sincroniza tus favoritos, cookies, y así sucesivamente, está desactivada.  | 
 | Windows Defender Application Guard | Desactivado | No | Esta característica está desactivada.  |  
 | edge:// URLs | Revisar detalles | No | Configuración para el explorador Microsoft Edge están en `edge://` direcciones URL.  Dado que la mayoría de estas páginas web Microsoft Edge personal de marca o no tienen sentido en el contexto de WebView2, algunas de estas direcciones URL están desactivadas.  Para obtener más información, vaya [a Direcciones URL internas bloqueadas](#blocked-internal-urls).  |  
+
+## <a name="web-platform-features"></a>Características de la plataforma web
+
+En la tabla siguiente se muestran las características de la plataforma WebView2 que actualmente no están disponibles.
+
+| Característica | Detalles |  
+|:--- | :--- |  
+| Notificaciones de inserción | Esta característica no se implementa en WebView2. |  
+| Web Payment API | Esta característica está desactivada. | 
 
 ## <a name="blocked-internal-urls"></a>Direcciones URL internas bloqueadas  
 
@@ -84,7 +106,7 @@ Las páginas web Microsoft Edge y configuración de Google Chrome no están disp
     
 ## <a name="additional-keyboard-shortcuts-information"></a>Información adicional de métodos abreviados de teclado  
 
-Los métodos abreviados de teclado o los enlaces de teclas se admiten en Microsoft Edge WebView2.  Cuando Microsoft Edge actualizaciones, los enlaces de clave predeterminados pueden cambiar.  Además, un método abreviado de teclado que está desactivado de forma predeterminada puede activarse si la característica ahora es compatible con WebView2.  Para evitar cambios en los métodos abreviados de teclado, puede establecer en , que desactiva todas las teclas que tienen acceso a las características del explorador, pero mantiene activados todos los métodos abreviados básicos de edición de texto y `AreBrowserAcceleratorKeysEnabled` `FALSE` movimiento.  
+Los métodos abreviados de teclado o los enlaces de teclas se admiten en Microsoft Edge WebView2. Cuando Microsoft Edge actualizaciones, los enlaces de clave predeterminados pueden cambiar.  Además, un método abreviado de teclado que está desactivado de forma predeterminada puede activarse si la característica ahora es compatible con WebView2. Para evitar cambios en los métodos abreviados de teclado, puede establecer en , que desactiva todas las teclas que tienen acceso a las características del explorador, pero mantiene activados todos los métodos abreviados básicos de edición de texto y `AreBrowserAcceleratorKeysEnabled` `FALSE` movimiento.  
 
 En la tabla siguiente se enumeran los accesos directos que siempre están desactivados en WebView2.  Un carácter asterisco \( \) indica que el acceso directo no está desactivado, pero la característica a la que tiene acceso está desactivada o no se aplica a `*` WebView2.  
 
