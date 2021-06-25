@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ec0d1a003e621ecc2220c3eb0d03992bcd8fffa1
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 71e71555940d74f2071178be2e6daf0ec2f49dfd
+ms.sourcegitcommit: d0a6959c5338cf1927093b4a9ed29a0bc0390b43
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565025"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "11615424"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,9 +30,7 @@ ms.locfileid: "11565025"
 # <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>Ver datos de caché de aplicaciones con Microsoft Edge DevTools  
 
 > [!WARNING]
-> La API de caché de [aplicaciones se está quitando de la plataforma web][HTMLStandardOfflineWebApplications].  
-
-<!--todo: Replace [HTMLStandardOfflineWebApplications] with [WebDevAppcacheRemoval].  -->  
+> La caché de aplicaciones está en desuso y debe evitar usarlo.  La API de caché de aplicaciones se está quitando de la plataforma web.  Para obtener más información, vaya [a Preparar la eliminación de AppCache][WebDevAppcacheRemoval].
 
 En esta guía se muestra cómo usar [Microsoft Edge DevTools para][MicrosoftEdgeDevTools] inspeccionar los [recursos de caché de][MDNWebAPIsWindowApplicationCache] aplicaciones.  
 
@@ -74,11 +72,8 @@ En la parte inferior de la tabla hay iconos de estado que indican la conexión d
 | `UPDATEREADY` |  Hay disponible una nueva versión de la memoria caché. |  
 
 <!-- links -->  
-
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-
-[HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Aplicaciones web sin conexión: estándar HTML"  
-
+<!-- external links: -->
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Recursos en una memoria caché de aplicaciones | MDN"  
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache: API web | MDN"  
 
