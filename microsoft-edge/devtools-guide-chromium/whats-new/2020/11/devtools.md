@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 ms.localizationpriority: high
-ms.openlocfilehash: 6fd9f9ca2c19c8db74036fb54efadb7be8566fd7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: e5706de4c7938a3cb2246aa34de07c73dafe5776
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564122"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624776"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -359,10 +359,10 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Cambiar la configuración de idioma de DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edite los métodos abreviados de teclado para cualquier acción en el archivo DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulación de dispositivos móviles en MicrosoftEdge DevTools | MicrosoftDocs"  
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
 <!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
-[DevtoolsIssuesIndex]: .. /.. /.. /issues/index.md "Buscar y corregir problemas con la herramienta Microsoft Edge DevTools Issues | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Buscar y corregir problemas con la herramienta Problemas | MicrosoftDocs"  
 [DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard "Copiar la respuesta con formato JSON al portapapeles: referencia de análisis de red | Microsoft Docs"  
 [DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: ../../../network/reference.md#display-the-timing-breakdown-of-a-request "Mostrar el desglose de tiempo de una solicitud - Referencia de análisis de red Network | Microsoft Docs"  
 
