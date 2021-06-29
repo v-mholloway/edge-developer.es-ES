@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 75642a7f0fa8d6fae2f4daead84e2fc77df21e29
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 65a3fb4da235d2330bf9205b7a4a79a999559ca4
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564934"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624804"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -324,11 +324,11 @@ El panel **Orígenes** tiene nuevos diseños para puntos de interrupción, punto
 
 Chromium problema [#1041830][CR1041830]  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
 
 Si está en Windows o macOS, considere la posibilidad de usar los canales [Microsoft Edge vista previa][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -338,7 +338,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [DevtoolsCommandMenu]: ../../../command-menu.md "Ejecutar comandos con el Microsoft Edge de comandos DevTools | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer: personalice Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
-[DevtoolsIssues]: ../../../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsIssues]: ../../../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas | Microsoft Docs"
 [DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "Uso del panel Editor para ver o editar archivos: Información general del panel orígenes | Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Actividad de red de registro: inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"
 
@@ -376,7 +376,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 
 [MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Uso de dom de sombra | MDN"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canales de vista previa de Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canales de versiones preliminares de Microsoft Edge"  
 
 [VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
 [VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
@@ -384,7 +384,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "Modelo de objetos CSS (CSSOM) | Borradores del editor de grupo de trabajo CSS de W3C"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Publicar un tweet"  
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools cuenta de Twitter"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "Cuenta de Twitter de @EdgeDevTools"  
 
 [V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Campos de clase privada: campos de clase pública y privada | V8. Desarrollo"  
 [V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Almacenamiento en caché de código para desarrolladores de JavaScript | V8. Desarrollo"  

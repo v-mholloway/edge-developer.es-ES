@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: badcaae0ad637fe7a027f78d00daf9133789693e
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483243"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624748"
 ---
 # <a name="use-the-console"></a>Usar la consola  
 
@@ -43,7 +43,7 @@ La forma más rápida de abrir directamente la **consola** es `Control` + `Shift
 
 ## <a name="error-reports-and-console"></a>Informes de errores y consola  
 
-**La** consola es el lugar predeterminado donde se notifican los errores de conectividad y JavaScript.  Si se produce algún error, se muestra un botón junto al icono **Configuración** en DevTools que proporciona el número de errores y advertencias.  Elija para abrir la **consola y** mostrar el problema.  Para obtener más información, vaya [a Depurar errores notificados en consola][DevtoolsConsoleConsoleDebugJavascript].  
+**La** consola es el lugar predeterminado donde se notifican los errores de conectividad y JavaScript.  Si se produce **** algún error, el contador Problemas se muestra junto al icono **Configuración** en DevTools que proporciona el número de errores y advertencias.  Seleccione el **contador Problemas** para abrir la **herramienta Problemas** y mostrar el problema.  Para obtener más información, vaya [a Depurar errores notificados en consola][DevtoolsConsoleConsoleDebugJavascript].
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools proporciona información detallada sobre el error en la consola" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools proporciona información detallada sobre el error en la **consola**  
@@ -51,7 +51,9 @@ La forma más rápida de abrir directamente la **consola** es `Control` + `Shift
 
 ## <a name="inspect-and-filter-information-on-the-current-webpage"></a>Inspeccionar y filtrar información en la página web actual  
 
-Al abrir DevTools en una página web, es probable que muestre un auge de la información registrada en la **consola**.  La cantidad de información se convierte en un problema cuando necesita identificar información importante.  Para ver la información importante que necesita acción, use la [herramienta Problemas][DevtoolsIssuesIndex] en DevTools.  Gran parte del ruido permanece, por lo que es una buena idea conocer las opciones automatizadas de registro y [filtro][DevtoolsConsoleConsoleFilters] en la **consola**.  
+Al abrir DevTools en una página web, puede haber una cantidad abrumadora de información en la **consola**.  La cantidad de información se convierte en un problema cuando necesita identificar información importante.  Para ver la información importante que necesita acción, use la [herramienta Problemas][DevtoolsIssuesIndex] en DevTools.
+
+Los problemas se mueven gradualmente de la **consola** a la **herramienta** Problemas.  Sin embargo, todavía hay mucha información en **console**, por lo que es una buena idea conocer las opciones automatizadas de registro y filtro en la **consola**.  Para obtener más información, vaya a [Filtrar mensajes de consola][DevtoolsConsoleConsoleFilters].
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools con una consola llena de mensajes" lightbox="../media/console-intro-noise.msft.png":::
    DevTools con una **consola llena** de mensajes  
@@ -135,7 +137,7 @@ La **consola** tiene acceso al [objeto Window][MdnDocsWebApiWindow] del explorad
    Copiar el encabezado superior \( `h1` \) contenido del DOM y mostrarlo en la **consola**  
 :::image-end:::  
 
-En lugar de solo leer desde la página web, también puede cambiarla.  Para probarlo, complete las siguientes acciones.  
+En lugar de solo leer desde la página web, también puedes cambiarla.  Para intentar cambiar la página web, realice las siguientes acciones.  
 
 1.  Abra la **consola**.  
 1.  Copie y pegue el siguiente fragmento de código.  
@@ -157,7 +159,6 @@ Ha cambiado el encabezado principal de la página web a **Rocking the Console**.
     $$('a').forEach(a => a.style.border='1px solid lime');
     ```  
     
-
 :::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipular una selección de elementos mediante la consola" lightbox="../media/console-intro-changing-styles.msft.png":::
     Manipular una selección de elementos mediante la **consola**  
 :::image-end:::  
@@ -173,7 +174,6 @@ Para obtener más información acerca de **console**, vaya a [Console reference]
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsConsoleApi]: ./api.md "Referencia de api de consola | Microsoft Docs"  
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Errores de depuración notificados en la consola | Microsoft Docs"  
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use la consola para interactuar con el dom | Microsoft Docs" 
@@ -182,11 +182,8 @@ Para obtener más información acerca de **console**, vaya a [Console reference]
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Registrar mensajes en la herramienta consola | Microsoft Docs"  
 [DevtoolsConsoleReference]: ./reference.md "Referencia de consola | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Referencia de api de utilidades de consola | Microsoft Docs"  
-
-[DevtoolsIssuesIndex]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"  
-
+[DevtoolsIssuesIndex]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas | Microsoft Docs"  
+<!-- external links -->
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Ejemplos de mensajes de consola: registro, información, error y advertencia | GitHub"  
-
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Ventana | MDN"  
-
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Bucle read–eval–print | Wikipedia"  

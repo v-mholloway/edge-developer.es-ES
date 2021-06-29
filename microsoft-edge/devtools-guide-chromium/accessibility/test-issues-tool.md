@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 986a021d2fd390cd45bd53dcfc37a83d58ed2338
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 1cba9db1744235dfbfd2a007e33d1101452aab31
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597658"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624741"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>Probar automáticamente una página web para problemas de accesibilidad
 
@@ -133,9 +133,9 @@ El árbol DOM de la **herramienta Elementos** marca los problemas directamente e
     :::image-end:::
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
-*  [Buscar y solucionar problemas con la Microsoft Edge de problemas de DevTools][DevToolsIssuesTool]
+*  [Buscar y corregir problemas con la herramienta Problemas][DevToolsIssuesTool]
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
@@ -145,5 +145,5 @@ El árbol DOM de la **herramienta Elementos** marca los problemas directamente e
 
 
 <!-- links -->
-[DevToolsIssuesTool]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsIssuesTool]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Página web de demostración de pruebas de accesibilidad | GitHub"

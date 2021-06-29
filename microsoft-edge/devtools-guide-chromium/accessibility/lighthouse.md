@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bb158085eb516c8d4ce37a22f6b612784db51461
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 822c25240ba30df31416ca783bf48d6d9ba52ed2
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597720"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624636"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -81,11 +81,11 @@ Para auditar una página con la herramienta Faro, siga estos pasos.
 > La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+Este trabajo dispone de una [Licencia internacional de Atribución de Creative Commons 4.0][CCA4IL].  
 
 
 <!-- links -->  
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Pruebas de accesibilidad web - Chrome Web Store"  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd "axe - Pruebas de accesibilidad web - Chrome Web Store"  
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2537495ad14462aac70bfb1b5873aaa0b6e21cdf
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: fabfa21abedb02bc83ec2bedbe3662f0d81c1bf9
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564675"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624811"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -132,7 +132,7 @@ En las secciones siguientes se anuncian características adicionales disponibles
 
 La nueva **herramienta Problemas** del cajón DevTools se creó para ayudar a reducir la fatiga y el desorden de notificaciones de la **consola.**  Actualmente, la **consola es** el lugar central para desarrolladores de sitios web, bibliotecas, marcos y Microsoft Edge registrar mensajes, advertencias y errores.  La **herramienta Problemas** agrega advertencias desde el explorador de una forma estructurada, agregada y que puede actuar, vínculos a recursos afectados dentro de Microsoft Edge DevTools y proporciona instrucciones sobre cómo solucionar los problemas.  Con el tiempo, cada vez hay más advertencias **** en Microsoft Edge en la herramienta Problemas en lugar de en la consola **,** lo que debería ayudar a reducir el desorden en la **consola**.  
 
-Para empezar, vaya a [Buscar y corregir problemas con la Microsoft Edge problemas de DevTools][DevtoolsIssuesIndex].  
+Para empezar, vaya a [Buscar y solucionar problemas con la herramienta Problemas][DevtoolsIssuesIndex].  
 
 :::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="La herramienta Problemas en el cajón de DevTools" lightbox="../../media/2020/05/issues.msft.png":::
    La **herramienta Problemas** en el cajón de DevTools  
@@ -270,7 +270,7 @@ Los accesos directos de la aplicación ayudan a los usuarios a iniciar rápidame
   Accesos directos de la aplicación en el **panel** Manifiesto  
 :::image-end:::  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
 
 Si está en Windows o macOS, considere la posibilidad de usar los canales [Microsoft Edge vista previa][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 

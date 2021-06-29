@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 5f499a6c9f1109f80a9d459edf94ed2226734f19
-ms.sourcegitcommit: 87ba918b0910373bb645615377709bf140dc9b19
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 69fcd29f9b4cae9ec290798b767fbe54793cb2fd
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "11583462"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624783"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -36,7 +36,7 @@ ms.locfileid: "11583462"
 <!--  Title: Get code hints in Elements tool  -->  
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->  
 
-En la mayoría de los identificadores modernos, los subrayados ondulados debajo del texto indican errores de sintaxis.   En Microsoft Edge versión 91 o posterior, los subrayados ondulados se muestran en HTML en la vista **DOM** de la **herramienta** Elementos.  Los subrayados ondulados indican problemas de código y sugerencias relacionadas con la accesibilidad, la compatibilidad, el rendimiento, y así sucesivamente.  Para obtener más información acerca de cómo revisar y editar problemas, vaya a Buscar y solucionar problemas con la [Microsoft Edge DevTools Issues][DevtoolsIssuesIndex].  
+En la mayoría de los identificadores modernos, los subrayados ondulados debajo del texto indican errores de sintaxis.   En Microsoft Edge versión 91 o posterior, los subrayados ondulados se muestran en HTML en la vista **DOM** de la **herramienta** Elementos.  Los subrayados ondulados indican problemas de código y sugerencias relacionadas con la accesibilidad, la compatibilidad, el rendimiento, y así sucesivamente.  Para obtener más información acerca de cómo revisar y editar problemas, vaya a [Buscar y solucionar problemas con la herramienta Problemas][DevtoolsIssuesIndex].  
 
 Para abrir la **herramienta Problemas** y obtener más información sobre el problema y cómo solucionarlo, complete una de las siguientes acciones.  
 
@@ -152,7 +152,7 @@ A partir [Microsoft Edge versión 88,][DevtoolsWhatsNew202011DevtoolsCssVariable
 <!-- Title: Display Issues in severity order  -->  
 <!-- Subtitle: Entries in the Issues tool now display in severity order and allow you to focus your updates on the most important issues. -->  
 
-La **herramienta Problemas** muestra recomendaciones para mejorar el sitio web, incluida la accesibilidad, el rendimiento, la seguridad, entre otros. En función de sus comentarios, los problemas ahora se ordenan automáticamente por gravedad.  En cada categoría de comentarios, cada problema marcado como **error** aparece primero, seguido de cada problema marcado como advertencia **y,** a continuación, cada problema marcado como **sugerencia**.  Para ayudarle a refinar sus problemas, se planean opciones de filtro adicionales para una actualización futura.  Para obtener más información acerca de cómo revisar problemas, vaya a Buscar y solucionar problemas con la [Microsoft Edge DevTools Issues][DevtoolsIssuesIndex].  
+La **herramienta Problemas** muestra recomendaciones para mejorar el sitio web, incluida la accesibilidad, el rendimiento, la seguridad, entre otros. En función de sus comentarios, los problemas ahora se ordenan automáticamente por gravedad.  En cada categoría de comentarios, cada problema marcado como **error** aparece primero, seguido de cada problema marcado como advertencia **y,** a continuación, cada problema marcado como **sugerencia**.  Para ayudarle a refinar sus problemas, se planean opciones de filtro adicionales para una actualización futura.  Para obtener más información acerca de cómo revisar problemas, vaya a [Buscar y solucionar problemas con la herramienta Problemas][DevtoolsIssuesIndex].  
 
 :::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="La herramienta Problemas muestra los problemas ordenados por gravedad" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    La **herramienta Problemas** muestra los problemas ordenados por gravedad  
@@ -178,7 +178,7 @@ Para actualizar manualmente a la versión 1.1.7, vaya [a Actualizar una extensi�
 
 ### <a name="visualize-css-scroll-snap"></a>Visualizar ajuste de desplazamiento CSS  
 
-Ahora puede alternar el distintivo en la herramienta Elementos para inspeccionar la alineación de ajuste de desplazamiento `scroll-snap` CSS. ****  Cuando se aplica un elemento HTML en la página web, se muestra un distintivo junto a él `scroll-snap-type` `scroll-snap` en la **herramienta** Elementos.  Elija el distintivo para activar \(or off\) la presentación de una superposición de ajuste de desplazamiento en la página web.  Para revisar una página web de ejemplo, vaya a [Scroll Acoplar Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  En el ejemplo, los puntos se muestran en bordes de ajuste.  El puerto de desplazamiento tiene un esquema sólido mientras que los elementos de ajuste tienen contornos de guión.  El relleno de desplazamiento se rellena en verde mientras el margen de desplazamiento se rellena en naranja.  Para revisar el historial de esta característica en el Chromium de código abierto, vaya al problema [862450][CR862450].  
+Ahora puede alternar el distintivo en la herramienta Elementos para inspeccionar la alineación de ajuste de desplazamiento `scroll-snap` CSS. ****  Cuando se aplica un elemento HTML en la página web, se muestra un distintivo junto a él `scroll-snap-type` `scroll-snap` en la **herramienta** Elementos.  Elija el distintivo para activar \(or off\) la presentación de una superposición de ajuste de desplazamiento en la página web.  Para revisar una página web de ejemplo, vaya a [Scroll Snap Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  En el ejemplo, los puntos se muestran en bordes de ajuste.  El puerto de desplazamiento tiene un esquema sólido mientras que los elementos de ajuste tienen contornos de guión.  El relleno de desplazamiento se rellena en verde mientras el margen de desplazamiento se rellena en naranja.  Para revisar el historial de esta característica en el Chromium de código abierto, vaya al problema [862450][CR862450].  
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="Complemento de desplazamiento CSS" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    Complemento de desplazamiento CSS  
@@ -386,11 +386,11 @@ En Microsoft Edge versión 91 o posterior, DevTools resuelve las solicitudes de 
 
 Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1189161][CR1189161].  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
 
 Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales de versión preliminar de Microsoft Edge][MicrosoftEdgePreviewChannels] como su explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
@@ -405,7 +405,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "Abra el menú Comando: ejecute comandos con el Microsoft Edge menú DevTools Command | Microsoft Docs"  
 [DevtoolsConsoleApiError]: ../../../console/api.md#error "error: referencia de api de consola | Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Cambiar la configuración de idioma de DevTools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../../../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas | Microsoft Docs"  
 [DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "Mejoras de service worker | Microsoft Docs"  
 [DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: ../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code "Uso del panel Depurador para depurar código JavaScript: información general sobre la herramienta Orígenes | Microsoft Docs"  
 
@@ -415,7 +415,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de versiones preliminares de Microsoft Edge"  
 
 [VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Actualizar una extensión manualmente: Marketplace de extensiones | Visual Studio Code"  
 
@@ -457,7 +457,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [GlitchMemoryInspectorDemoJsHtml]: https://memory-inspector.glitch.me/demo-js.html "Memoria en JS | Glitch"  
 [GlitchMemoryInspectorDemoWasmHtml]: https://memory-inspector.glitch.me/demo-wasm.html "Memoria en Wasm | Glitch"  
 
-[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "Desplácese Acoplar de demostración | Glitch"  
+[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "Scroll Snap Demo | Glitch"  
 
 [GlitchPermissionPolicyDemoMain]: http://permission-policy-demo.glitch.me "Directiva de permisos de OOPIF | Glitch"  
 
@@ -485,7 +485,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 > La página original se encuentra [aquí](https://developer.chrome.com/blog/new-in-devtools-91) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+Este trabajo dispone de una [Licencia internacional de Atribución de Creative Commons 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

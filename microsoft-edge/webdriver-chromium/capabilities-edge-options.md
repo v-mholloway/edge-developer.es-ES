@@ -8,20 +8,22 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: 5a48ca34e46b56fa60bcacfade2add23026be144
-ms.sourcegitcommit: f95812c4e1b7277f67c6c4891be2779cc1b5bdf1
+ms.openlocfilehash: 33b9d53b72a16a9c02a03a43679137d25de0025f
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "11343782"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624769"
 ---
-# Funciones y EdgeOptions  
+# <a name="capabilities-and-edgeoptions"></a>Funciones y EdgeOptions  
 
 Las funcionalidades son opciones que puede usar para personalizar y configurar una `EdgeDriver` sesión.  Para obtener información sobre cómo iniciar una nueva sesión, vaya a `EdgeDriver` [Automatizar Microsoft Edge][WebdriverIndexAutomateMicrosoftEdgeChromium].  En este artículo se describen todas las funcionalidades admitidas [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] detalles sobre cómo pasar las funciones a `EdgeDriver` las sesiones.  
 
-Las funcionalidades se pasan a una sesión de WebDriver como un mapa JSON.  Los enlaces de idioma de WebDriver suelen proporcionar métodos de comodidad seguros para el tipo, por lo que no es necesario configurar el mapa JSON usted mismo.  Los diferentes enlaces de idioma de WebDriver usan diferentes mecanismos para configurar capacidades.  Vaya a la documentación del enlace [de idioma preferido][WebdriverIndexChooseWebdriverLanguageBinding] para obtener más información sobre cómo configurar las funcionalidades.  [Selenio][SeleniumMain] configura las capacidades a través de la `EdgeOptions` clase.  
+Las funcionalidades se pasan a una sesión de WebDriver como un mapa JSON.  Un marco de prueba de WebDriver proporciona un enlace de idioma de WebDriver.  Los enlaces de idioma de WebDriver suelen proporcionar métodos de comodidad seguros para el tipo, por lo que no es necesario configurar el mapa JSON usted mismo.  Los diferentes enlaces de idioma de WebDriver usan diferentes mecanismos para configurar capacidades.  [Selenio][SeleniumMain] configura las capacidades a través de la `EdgeOptions` clase.
 
-##  <a name="using-the-edgeoptions-class"></a>Uso de la clase EdgeOptions  
+Para obtener más información sobre cómo configurar funcionalidades, consulte la documentación del marco de pruebas de WebDriver preferido.  Para obtener más información, vaya [a Elegir un marco de pruebas de WebDriver][WebdriverIndexChooseAWebdriverTestingFramework].
+
+## <a name="using-the-edgeoptions-class"></a>Uso de la clase EdgeOptions  
 
 Cree una instancia de `EdgeOptions` , que proporciona métodos de comodidad para establecer Microsoft Edge funcionalidades específicas.  Después de configurar el `EdgeOptions` objeto, pase `EdgeOptions` al `EdgeDriver` constructor.  
 
@@ -38,11 +40,11 @@ Para usar funcionalidades que no tienen un método de comodidad asociado, use el
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 ```  
 
-##  <a name="recognized-capabilities"></a>Capacidades reconocidas  
+## <a name="recognized-capabilities"></a>Capacidades reconocidas  
 
 Para las funcionalidades estándar que acepta, navegue a la documentación `EdgeDriver` [de Selenium][SharedCapabilitiesSeleniumDocumentation] y al estándar [W3C WebDriver][CapabilitiesW3cWebdriver].  En este artículo solo se enumeran las funcionalidades específicas de Microsoft Edge.  
 
-##  <a name="edgeoptions-object"></a>EdgeOptions (objeto)  
+## <a name="edgeoptions-object"></a>EdgeOptions (objeto)  
 
 La mayoría Microsoft Edge funcionalidades específicas se exponen a través del `EdgeOptions` objeto.  En algunos idiomas, la clase implementa las `EdgeOptions` capacidades.  En otros idiomas, las capacidades se almacenan en el `ms:edgeOptions` diccionario en `DesiredCapabilities` .  
 
@@ -65,7 +67,7 @@ La mayoría Microsoft Edge funcionalidades específicas se exponen a través del
 | windowsApp | string |  | Id. de modelo de usuario de aplicación Microsoft Edge paquete de aplicación que se debe iniciar, por ejemplo `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` .  Se `windowsApp` usa en lugar de al `binary` conectarse a un Windows 10X o emulador mediante Windows Device Portal. |  
 | windowTypes | lista de cadenas |  | Una lista de tipos de ventana que se muestran en la lista de identificadores de ventana.  Para obtener acceso a los elementos webview de Android, incluya `webview` en la lista. |  
 
-##  <a name="perfloggingprefs-object"></a>perfLoggingPrefs (objeto)  
+## <a name="perfloggingprefs-object"></a>perfLoggingPrefs (objeto)  
 
 El `perfLoggingPrefs` diccionario tiene el siguiente formato \(todas las claves son opcionales\).  
 
@@ -76,7 +78,7 @@ El `perfLoggingPrefs` diccionario tiene el siguiente formato \(todas las claves 
 | enablePage | booleano | true | Para recopilar eventos \(or not collect\) del dominio Page. |  
 | traceCategories | string | \(empty\) | Una cadena separada por comas de Microsoft Edge de seguimiento para las que se deben recopilar los eventos de seguimiento.  Una cadena no especificada o vacía deshabilita el seguimiento. |  
 
-##  <a name="returned-capabilities"></a>Capacidades devueltas  
+## <a name="returned-capabilities"></a>Capacidades devueltas  
 
 La siguiente lista contiene todas las funciones Microsoft Edge específicas que `EdgeDriver` se devuelven al crear una nueva sesión.  
 
@@ -86,12 +88,11 @@ La siguiente lista contiene todas las funciones Microsoft Edge específicas que 
 | msedge.userDataDir | string | Ruta de acceso a la carpeta de datos de usuario usada por la Microsoft Edge usuario. |  
 
 <!-- links -->  
-
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Introducción a la depuración remota Windows 10 dispositivos | Microsoft Docs"  
-[WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Elegir un enlace de idioma de WebDriver: WebDriver (Chromium) | Microsoft Docs"
+[WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Elegir un marco de prueba de WebDriver: use WebDriver (Chromium) para la automatización de pruebas | Microsoft Docs"
 [WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automatizar Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
 [WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Instalar Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"  
-
+<!-- external links -->
 [SeleniumMain]: https://www.selenium.dev "Automatización del explorador SeleniumHQ"  
 [SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Capacidades compartidas | Documentación de Selenio"   
 

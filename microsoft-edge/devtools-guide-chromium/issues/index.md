@@ -1,20 +1,20 @@
 ---
-description: Use la herramienta Problemas para buscar y solucionar problemas con su sitio web.
-title: Buscar y solucionar problemas con la Microsoft Edge de problemas de DevTools
+description: Use la herramienta Problemas para identificar y solucionar problemas con la página web actual.
+title: Buscar y corregir problemas con la herramienta Problemas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 17c1162bdec21ccc4abe1d3d34ce7c766aeb1009
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 86277c509aa4b67635661ba3a316fb5b1e3b9d14
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11596987"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624727"
 ---
-<!-- Copyright Sam Dutton 
+<!-- Copyright Sam Dutton
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -26,118 +26,150 @@ ms.locfileid: "11596987"
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  -->  
-# <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a>Buscar y solucionar problemas con la Microsoft Edge de problemas de DevTools  
+   limitations under the License.  -->
 
-La **herramienta Problemas** en Microsoft Edge DevTools reduce la fatiga de notificación y el desorden de la **consola**.  Úselo para buscar soluciones a problemas detectados por el explorador, como problemas de cookies y contenido mixto.  
+# <a name="find-and-fix-problems-using-the-issues-tool"></a>Buscar y corregir problemas con la herramienta Problemas
 
-> [!NOTE]
-> En Microsoft Edge 84, la **herramienta Problemas** admite tres tipos de problema:  
-> *   [Problemas de cookies][MDNSameSiteCookies]  
-> *   [Contenido mixto][MDNMixedContent]  
-> *   [Problemas del COEP][W3CCOEPSpec]
-> 
-> El Microsoft Edge de DevTools planea admitir más tipos de problemas en versiones futuras de Microsoft Edge.  
+En Microsoft Edge DevTools, la **** herramienta Problemas analiza automáticamente la página web actual, informa de los problemas agrupados por tipo y proporciona documentación para ayudar a explicar y resolver los problemas.
 
-## <a name="open-the-issues-tool-in-the-devtools-drawer"></a>Abra la herramienta Problemas en el cajón DevTools  
+La **herramienta Problemas** proporciona comentarios en las siguientes categorías:
+*  Accesibilidad.
+*  Compatibilidad entre exploradores.
+*  Rendimiento.
+*  Aplicaciones web progresivas.
+*  Security.
+*  Otros.
 
-1.  Navegue a una página web, como [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], que contiene problemas que corregir.  
-1.  [Abra DevTools][DevtoolsOpen].  
-1.  :::row:::
-       :::column span="":::
-          Elija el **botón Ir a problemas** en la barra de advertencia amarilla.  
-          
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Vaya al botón Problemas en la barra de advertencia amarilla cuando se detecten problemas" lightbox="../media/issues-open-issues-tab.msft.png":::
-             El **botón Ir a Problemas** de la barra de advertencia amarilla cuando se detectan problemas.  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          Como alternativa, elija **Problemas** en el **menú Más** herramientas.  
-          
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Herramienta Problemas en el menú Más herramientas" lightbox="../media//issues-more-tools-menu.msft.png":::
-             **Herramienta Problemas** en **el menú Más** herramientas  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
-    
-1.  Elija el **botón Volver a cargar** página, si es necesario.  
-    
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Herramienta Problemas en el botón de página DevTools Drawer with Reload" lightbox="../media/issues-tab-before-refresh.msft.png":::
-       **Herramienta Problemas** en el botón de página DevTools Drawer with **Reload**  
-    :::image-end:::  
-
-    Los problemas notificados en **la consola** son bastante difíciles de comprender, como las advertencias de cookies de la siguiente imagen.  En función de los problemas notificados, puede que no esté claro lo que debe hacer.  
-    
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Herramienta Problemas en el cajón de DevTools con tres problemas de cookies" lightbox="../media/issues-tab-after-refresh.msft.png":::
-       **Herramienta** Problemas en el cajón de DevTools con tres problemas de cookies  
-    :::image-end:::  
-    
-## <a name="view-items-in-the-issues-tool"></a>Ver elementos en la herramienta Problemas  
-
-La **herramienta Problemas** del cajón DevTools presenta advertencias de una forma estructurada, agregada y que puede actuar.  
-
-1.  Elija un elemento en la **herramienta Problemas** para obtener instrucciones sobre cómo solucionar el problema y encontrar los recursos afectados.  
-    
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Marcar las cookies entre sitios como problema seguro abierto en la herramienta Problemas" lightbox="../media/issues-tab-issue-open.msft.png":::
-       **Marcar las cookies entre sitios como problema seguro** abierto en la herramienta **Problemas**  
-    :::image-end:::  
-    
-    Cada elemento tiene cuatro componentes:  
-    
-    *   Un titular que describe el problema.  
-    *   Una descripción que proporciona el contexto y la solución.  
-    *   Sección **RECURSOS AFECTADOS que** vincula a recursos dentro del contexto de DevTools adecuado, como el panel Red.  
-    *   Vínculos a más instrucciones.  
-    
-1.  Elija elementos en **RECURSOS AFECTADOS** para ver detalles.  En el siguiente ejemplo, el problema **Marcar las cookies entre** sitios como seguridad afecta a una cookie y dos solicitudes.  
-    
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Recursos afectados abiertos en la herramienta Problemas" lightbox="../media/issues-tab-affected-resources.msft.png":::
-       Recursos afectados abiertos en la **herramienta Problemas** en el cajón DevTools  
-    :::image-end:::  
-    
-## <a name="view-issues-in-context"></a>Ver problemas en contexto  
-
-1.  Elija un vínculo de recurso para ver el elemento en el contexto adecuado dentro de DevTools.  En el ejemplo siguiente, elija `samesite-sandbox.glitch.me` en **Solicitudes** para mostrar las cookies adjuntas a esa solicitud.  
-    
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Ver la cookie afectada en la herramienta DevTools Network" lightbox="../media/issues-tab-view-request.msft.png":::
-       Ver la cookie afectada en la herramienta DevTools **Network**  
-    :::image-end:::  
-
-1.  Desplácese para ver el elemento con un problema: para el siguiente ejemplo, la `ck02` cookie.  Mantenga el mouse en **la columna SameSite** para revisar `None` el valor detectado por el problema.  
-    
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Valor ninguno en la columna SameSite para la cookie de ck02 en la herramienta DevTools Network" lightbox="../media/issues-tab-view-issue.msft.png":::
-       `None` valor de la **columna SameSite** de `ck02` la cookie en la herramienta DevTools **Network**  
-    :::image-end:::  
+Varios orígenes **proporcionan** comentarios en la herramienta Problemas, como la plataforma Chromium, El eje Deque, los datos de compatibilidad del explorador MDN y la webhint.  Para obtener información sobre estos orígenes de comentarios que rellenan la **herramienta Problemas,** vaya a:
+*  [Introducción a axe Tools][DequeAxe]
+*  [repositorio browser-compat-data][MDNCompat]
+*  [webhint][webhintIo]
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="open-the-issues-tool"></a>Abrir la herramienta Problemas
+
+Realice los pasos siguientes para abrir la **herramienta Problemas** mediante una página de demostración.
+
+
+1.  Navegue a una página web que contenga problemas que corregir.  Por ejemplo, abra la página de demostración [de pruebas de accesibilidad][A11ytestingPagewitherrors] en una nueva pestaña o ventana.
+
+1.  Abra DevTools.  Después de unos segundos, aparece el **contador de** problemas \( Contador de problemas \) en la esquina superior derecha ![ de ](../media/issues-counter-icon.msft.png) DevTools.  El número de problemas en el contador de problemas puede ser diferente.
+
+1.  Seleccione el **contador Problemas**.  La **herramienta Problemas** se abre con problemas agrupados en distintas categorías.
+
+    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="Categorías de problemas en la herramienta Problemas de la página de demostración" lightbox="../media/issues-tool-categories.msft.png":::
+       Categorías de problemas en la herramienta Problemas de la página de demostración
+    :::image-end:::
+
+### <a name="other-ways-to-open-the-issues-tool"></a>Otras formas de abrir la herramienta Problemas
+
+Hay varias formas adicionales de abrir la **herramienta Problemas:**
+*  Seleccione el **menú Más herramientas** ( ) en el panel principal o en el cajón y, a continuación, seleccione **+** **** **Problemas**.
+*  Seleccione **Personalizar y controlar DevTools**Más  >  **herramientas**  >  **Problemas**.
+*  En el árbol DOM de la **herramienta Elementos,** seleccione y, a continuación, haga clic en un nombre de elemento `Shift` ondulado subrayado.  O bien, abra el menú contextual en un elemento ondulado subrayado y, a continuación, **seleccione Ver problemas**.
+
+### <a name="issues-are-automatically-ordered-by-severity"></a>Los problemas se ordenan automáticamente por gravedad
+
+Dentro de cada categoría de problemas, primero se enumeran los errores, después las advertencias y, a continuación, las sugerencias.
+
+:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="La herramienta Problemas muestra problemas de rendimiento ordenados por gravedad" lightbox="../media/issues-ordered-by-severity.msft.png":::
+   La **herramienta Problemas** muestra problemas de rendimiento ordenados por gravedad
+:::image-end:::
+
+### <a name="include-third-party-issues"></a>Incluir problemas de terceros
+
+Para incluir problemas causados por sitios de terceros, **** en la parte superior de la herramienta Problemas, active la casilla Incluir problemas **de** terceros.
+
+
+## <a name="expand-entries-in-the-issues-tool"></a>Expandir entradas en la herramienta Problemas
+
+La **herramienta Problemas** presenta documentación adicional y correcciones recomendadas para aplicar a cada problema.  Para expandir un problema para obtener esta información adicional, seleccione un problema, como se muestra a continuación.
+
+1.  Abra la [página de demostración][A11ytestingPagewitherrors] en una nueva ventana o pestaña y, a continuación, abra DevTools.
+
+1.  Abra la **herramienta Problemas** seleccionando el **contador Problemas** \( Contador de ![ problemas ](../media/issues-counter-icon.msft.png) \).
+
+1.  Seleccione un problema para expandir el problema.
+
+    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="La herramienta Problemas que muestra información adicional sobre cómo solucionar el problema" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+       La **herramienta Problemas** que muestra información adicional sobre cómo solucionar el problema
+    :::image-end:::
+
+Cada problema mostrado tiene los siguientes componentes:
+*   Un titular que describe el problema.
+*   Una descripción que proporciona más contexto y soluciones propuestas.
+*   Sección **RECURSOS AFECTADOS que** se vincula a recursos de DevTools, como la herramienta **Elementos,** **Orígenes** **o** Red.
+*   Vínculos a documentación adicional.
+
+
+## <a name="view-issues-in-context-of-an-associated-tool"></a>Ver problemas en el contexto de una herramienta asociada
+
+Un problema en la **herramienta Problemas** puede incluir uno o más vínculos que abran distintas herramientas, como la **herramienta Elementos,** **Orígenes** **o** Red. Puede abrir una de estas herramientas para realizar pasos de solución de problemas adicionales. Para abrir una herramienta vinculada desde la **herramienta Problemas,** siga estos pasos.
+
+1.  Como se describe en la sección anterior, abra la página de demostración y, a continuación, expanda un problema en la **herramienta** Problemas.
+
+1.  En **RECURSOS AFECTADOS**Abra  >  **en**, seleccione el nombre de la herramienta.  El recurso afectado se muestra en la herramienta seleccionada.
+
+    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Seleccionar una herramienta para abrir un recurso afectado desde dentro de la herramienta Problemas" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+       Seleccionar una herramienta para abrir un recurso afectado desde dentro de la herramienta Problemas
+    :::image-end:::
+
+    Un problema expandido puede tener un **vínculo Red** para mostrar el recurso afectado en la **herramienta Red.**
+
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="La herramienta Red se abre al seleccionar un vínculo de recurso Red" lightbox="../media/issues-tab-view-issue.msft.png":::
+    La **herramienta Red** se abre al seleccionar un vínculo de **recurso** Red
+    :::image-end:::
+
+
+## <a name="open-issues-from-the-dom-tree"></a>Abrir problemas desde el árbol DOM
+
+Si un elemento tiene un problema asociado, el árbol DOM de la **herramienta Elementos** muestra un subrayado ondulado bajo el nombre del elemento.  Puede abrir el menú contextual (hacer clic con el botón secundario) en el elemento y, a continuación, seleccionar Ver problemas **o**seleccionar y hacer clic izquierdo en el elemento con el `Shift` subrayado ondulado.
+
+Para mostrar un problema para los elementos con subrayados ondulados en el árbol DOM, siga estos pasos.
+
+1.  Abra una página, como la página [de demostración,][A11ytestingPagewitherrors]en una nueva pestaña o ventana.
+
+1.  Abra DevTools y, a continuación, seleccione la **pestaña** Elementos.
+
+1.  En el árbol DOM, expanda `<body>`  >  `<header>`  >  `<form>` .  Observe que el `<input>` elemento tiene un subrayado ondulado.
+
+    :::image type="complex" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="Problemas con subrayado ondulado en el árbol DOM de la herramienta Elementos" lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
+       Problemas con subrayado ondulado en el **árbol DOM** de la **herramienta** Elementos
+    :::image-end:::
+
+1.  Mantenga el mouse sobre el `<input>` elemento.  Una información sobre herramientas muestra información sobre el problema.
+
+1.  Abra el menú contextual del elemento con el subrayado ondulado y, a continuación, **seleccione Ver problemas**.  La **herramienta** Problemas se abre y muestra el problema asociado con ese elemento.
+
+    :::image type="complex" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Detalles sobre los problemas de un elemento ondulado subrayado en el árbol DOM" lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
+       Detalles sobre los problemas de un elemento ondulado subrayado en el **árbol DOM**
+    :::image-end:::
+
+
+## <a name="see-also"></a>Vea también
 
 * [Probar automáticamente una página web para problemas de accesibilidad](../accessibility/test-issues-tool.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
-<!-- links -->  
-
-[DevtoolsOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
-
-[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "Pruebas de cookies de SameSite | Glitch"  
-
-[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "Cookies de SameSite | MDN"  
-[MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Contenido mixto | MDN"  
-
-[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Directiva de incrustación entre orígenes | Grupo de Community web de la Community web"  
+<!-- links -->
+[DevtoolsOpenIndex]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"
+<!-- external links -->
+[A11ytestingPagewitherrors]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Página de demostración de pruebas de accesibilidad | Microsoft Docs"
+[DequeAxe]: https://www.deque.com/axe "Axe Tools Overview | Deque"
+[MDNCompat]: https://github.com/mdn/browser-compat-data "Datos de compatibilidad del explorador MDN | GitHub"
+[webhintIo]: https://webhint.io "webhint.io"
 
 > [!NOTE]
-> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/issues/index) y es creado por [Sam Dutton][SamDutton] \(Developer Advocate\).  
-[![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
+> Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].
+> La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/issues/index) y es creado por [Sam Dutton][SamDutton] \(Developer Advocate\).
+[ ![ Creative Commons License][CCby4Image]][CCA4IL] Este trabajo se concede bajo una licencia de Creative Commons [Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
-[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton

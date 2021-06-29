@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 50661f68c7b3269d003bdc25f6a8098ae0e3ec89
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: f6ec0652bbbb7d7e60a69877a9d44a7a2fd636a5
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597724"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624797"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>Información general sobre las pruebas de accesibilidad con DevTools
 
@@ -128,7 +128,7 @@ Estos problemas encontrados por la herramienta **Problemas** son algunos problem
 
 ## <a name="limits-of-automated-testing"></a>Límites de las pruebas automatizadas
 
-La [herramienta Problemas,][DevToolsIssuesTool] [Accessibility Insights][AccessibilityInsights]y [Lighthouse][Lighthouse] son herramientas que generan automáticamente un informe de accesibilidad para una página web.  Obtener un informe automatizado de estas herramientas es solo el principio del recorrido de pruebas de accesibilidad.
+Las [herramientas Problemas,][DevToolsIssuesTool] [Accesibilidad Ideas][AccessibilityInsights]y [Faro][Lighthouse] son herramientas que generan automáticamente un informe de accesibilidad para una página web.  Obtener un informe automatizado de estas herramientas es solo el principio del recorrido de pruebas de accesibilidad.
 
 La accesibilidad se trata de la interacción humana: personas con necesidades diferentes que usan sus productos en distintos entornos técnicos.  Esta prueba no se puede automatizar por completo, pero necesita la comprobación de un usuario que navega por el producto.  En el mejor escenario, tendrías acceso a evaluadores con diferentes necesidades de accesibilidad y evaluadores con diversos entornos.  Pero ya puedes hacer mucho tú mismo usando el teclado para navegar e inspeccionando diferentes partes de la página.
 
@@ -494,7 +494,7 @@ Para ver los pasos detallados del tutorial, vaya a Comprobar que la página se p
 
 Hemos cubierto varias herramientas que puede usar para asegurarse de que detecta problemas de accesibilidad en sus productos.  Estas herramientas van desde comprobaciones automatizadas y comprobaciones de detalles manuales hasta la simulación de diferentes estados y entornos.  Estas herramientas se resumen en Características de prueba [de accesibilidad en DevTools](reference.md).  Las herramientas automatizadas no pueden encontrar todos los problemas de un producto, ya que muchas de las barreras de accesibilidad solo se muestran durante el uso interactivo.
 
-Ninguna de estas herramientas puede reemplazar una ronda adecuada de pruebas de sus productos con personas que usan tecnologías de asistencia y siguiendo un plan para comprobar todas las pruebas necesarias. También puede usar la característica [Evaluaciones][AccessibilityInsightsAssessment] de [Accessibility Insights][AccessibilityInsights].  Es posible que deba realizar comprobaciones adicionales, como:
+Ninguna de estas herramientas puede reemplazar una ronda adecuada de pruebas de sus productos con personas que usan tecnologías de asistencia y siguiendo un plan para comprobar todas las pruebas necesarias. También puede usar la característica [Evaluaciones][AccessibilityInsightsAssessment] de [accesibilidad Ideas][AccessibilityInsights].  Es posible que deba realizar comprobaciones adicionales, como:
 
 * Probar al acercarse.
 * Pruebas con lectores de pantalla.
@@ -520,7 +520,7 @@ Estamos trabajando constantemente en nuevas características de accesibilidad pa
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Características de prueba de accesibilidad en DevTools | Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Simulación de combinación de colores claros o | Microsoft Docs"
-[DevToolsIssuesTool]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsIssuesTool]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reducción de la simulación de movimiento | Microsoft Docs"
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Emular las deficiencias de | Microsoft Docs"
 <!-- links into test-issues-tool.md -->
@@ -536,7 +536,7 @@ Estamos trabajando constantemente en nuevas características de accesibilidad pa
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Página web de demostración de pruebas de accesibilidad | GitHub"
 [W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "relación de contraste | W3C"
 [WCAG]: https://www.w3.org/TR/WCAG21/ "Directrices de accesibilidad de contenido web | W3C"
-[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Evaluación en Accessibility Insights for Web | Accessibility Insights"
-[AccessibilityInsights]: https://accessibilityinsights.io "Accessibility Insights"
+[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Evaluación en Accessibility Ideas para web | Accesibilidad Ideas"
+[AccessibilityInsights]: https://accessibilityinsights.io "Accesibilidad Ideas"
 [Lighthouse]: https://developers.google.com/web/tools/lighthouse/ "| Google"
 [WebhintForCode]:https://aka.ms/webhint4code "webhint | Visual Studio Marketplace"

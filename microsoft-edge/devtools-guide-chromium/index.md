@@ -7,13 +7,13 @@ ms.date: 04/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7f9a4288980dd938a43b229e1d5396adc7937c67
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 78603c51dab5a61f8d6b43e60a3f252eac665d99
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597007"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624762"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Microsoft Edge (Chromium) Developer Tools overview  
 
@@ -204,7 +204,7 @@ El equipo de DevTools proporciona nuevas características como experimentos en D
 
 Si quieres obtener una vista previa de las características más recientes que llegan a [DevTools,][DevtoolsGuideWhatsNew202102Devtools]descarga [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], que se compila cada noche.  
 
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Vea también  
 
 *   [DevtoolsGuide para principiantes: Introducción con HTML y dom][DevtoolsGuideBeginnersHtml]  
 *   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]  
@@ -221,7 +221,7 @@ Si quieres obtener una vista previa de las características más recientes que l
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "Características experimentales | Microsoft Docs"  
 [DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "Corregir problemas de memoria | Microsoft Docs"  
 [DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Editar estilos y opciones de fuente CSS en el panel Estilos | Microsoft Docs"  
-[DevtoolsGuideIssuesIndex]: ./issues/index.md "Buscar y solucionar problemas con la herramienta Problemas de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideIssuesIndex]: ./issues/index.md "Buscar y solucionar problemas con la herramienta Problemas | Microsoft Docs"  
 [DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Invalidar recursos de página web con copias locales mediante Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideNetworkIndex]: ./network/index.md "Inspeccionar la actividad de red en Microsoft Edge DevTools | Microsoft Docs"  
