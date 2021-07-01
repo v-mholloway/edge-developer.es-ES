@@ -443,9 +443,9 @@
               href: webview2/concepts/browser-features.md
             - name: Distribuir mi aplicación
               href: webview2/concepts/distribution.md
-            - name: Administrar carpetas de datos de usuario
+            - name: Administrar la carpeta de datos de usuario
               href: webview2/concepts/user-data-folder.md
-            - name: Administrar aplicaciones de WebView2
+            - name: Administrar aplicaciones WebView2
               href: webview2/concepts/enterprise.md
             - name: Eventos de navegación
               href: webview2/concepts/navigation-events.md
