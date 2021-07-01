@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, control de explorador, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
-ms.openlocfilehash: 9c1aa073294fc649223da19c44850dc4335f6c00
-ms.sourcegitcommit: 7f7922dbb6af87ecac1378d18359125770c5b8e5
+ms.openlocfilehash: 64c835d0122a1c72e610efed2c060f7921a8e2b5
+ms.sourcegitcommit: 5ae09b1ad6cd576c9fec12538b23cd849861f2b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536873"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "11627988"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Introducción a Microsoft Edge WebView2  
 
@@ -161,17 +161,17 @@ Una versión de disponibilidad general \(GA\) o vista previa está disponible en
     
 Puede ejecutar aplicaciones webView2 en las siguientes versiones de Windows.  
 
-*   Windows10  
+*   Windows 10  
 *   Windows 8.1  
-*   Windows 7   
+*   Windows 7 \*\*  
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server 2012 R2  
-*   Windows Server 2008 R2   
+*   Windows Server 2008 R2 \*\*  
     
 > [!IMPORTANT]
->  La compatibilidad con WebView2 para Windows 7 y Windows Server 2008 R2 tiene el mismo ciclo de compatibilidad que Microsoft Edge.  Para obtener más información, vaya [a Microsoft Edge sistemas operativos compatibles.][DeployedgeMicrosoftEdgeSupportedOS]  
+> \*\* La compatibilidad con WebView2 para Windows 7 y Windows Server 2008 R2 tiene el mismo ciclo de compatibilidad que Microsoft Edge.  Para obtener más información, vaya [a Microsoft Edge sistemas operativos compatibles.][DeployedgeMicrosoftEdgeSupportedOS]  
 
 ## <a name="next-steps"></a>Pasos siguientes  
 
