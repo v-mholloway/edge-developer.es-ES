@@ -118,7 +118,8 @@ Después de activar el experimento, asegúrese de reiniciar DevTools.  Para usar
 1.  En la **Source Order Viewer** sección, seleccione la casilla **Mostrar orden de origen.**  
 1.  Resalte cualquier elemento HTML para mostrar una superposición que el orden en el origen de la página web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer en el panel Accesibilidad" lightbox=".. /media/experiments-source-order-viewer.msft.png":: **Source Order Viewer** en el panel **Accesibilidad**  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
