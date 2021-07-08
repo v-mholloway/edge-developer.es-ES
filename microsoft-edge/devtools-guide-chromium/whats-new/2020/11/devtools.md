@@ -359,10 +359,10 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Cambiar la configuración de idioma de DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edite los métodos abreviados de teclado para cualquier acción en el archivo DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulación de dispositivos móviles en MicrosoftEdge DevTools | MicrosoftDocs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulación de dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
 <!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
-[DevtoolsIssuesIndex]: ../../../issues/index.md "Buscar y corregir problemas con la herramienta Problemas | MicrosoftDocs"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Buscar y corregir problemas con la herramienta Problemas | Microsoft Docs"  
 [DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard "Copiar la respuesta con formato JSON al portapapeles: referencia de análisis de red | Microsoft Docs"  
 [DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: ../../../network/reference.md#display-the-timing-breakdown-of-a-request "Mostrar el desglose de tiempo de una solicitud - Referencia de análisis de red Network | Microsoft Docs"  
 
