@@ -3,16 +3,16 @@ description: Cómo ver nodos, buscar nodos, editar nodos, nodos de referencia en
 title: Introducción a la visualización y cambio del DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 66078844730ebb22664c9ce89517511d7eb99ee7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 8340c4d4d7eacdb6ad4155c1c9699db150522f16
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564290"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643437"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,9 +29,9 @@ ms.locfileid: "11564290"
    limitations under the License.  -->  
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>Introducción a la visualización y cambio del DOM  
 
-Complete estos tutoriales interactivos para aprender los conceptos básicos de ver y cambiar el DOM de una página mediante Microsoft Edge DevTools.  
+Complete estos tutoriales interactivos para aprender los [](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) conceptos básicos de ver y cambiar el modelo de objetos de documento \(DOM\) de una página mediante Microsoft Edge DevTools.  
 
-En este tutorial se supone que conoce la diferencia entre DOM y HTML.  Vaya a [Apéndice: HTML frente al DOM](#appendix-html-versus-the-dom) para obtener una explicación.  
+En este tutorial se supone que conoce la diferencia entre DOM y HTML. Vaya a [Apéndice: HTML frente al DOM](#appendix-html-versus-the-dom) para obtener una explicación.  
 
 ## <a name="open-dom-examples"></a>Ejemplos de OPEN DOM  
 

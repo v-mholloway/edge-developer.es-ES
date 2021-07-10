@@ -7,12 +7,12 @@ ms.date: 04/28/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, Microsoft Store
-ms.openlocfilehash: 5e78e909187408566219ffe80779bb9221b585fa
-ms.sourcegitcommit: e3cd336c9448277e0dde3b9da1521b5cbc7c44d2
+ms.openlocfilehash: 40a6b94412a0788c87f7231025809098c98f18e9
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "11527085"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643252"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>Publicar la aplicación web progresiva en el Microsoft Store  
 
@@ -138,7 +138,19 @@ Para enviar la aplicación a la Tienda, complete las siguientes acciones.
     
 Después de completar el envío, se revisa la aplicación, normalmente en un plazo de entre 24 y 48 horas.  Después de recibir la aprobación, el PWA está disponible en el Microsoft Store.  
 
-## <a name="see-also"></a>Consulta también  
+### <a name="measure-usage-of-your-store-installed-pwa"></a>Medir el uso de las aplicaciones instaladas en la Tienda PWA
+
+Cuando el PWA se inicia inicialmente, si el PWA se instaló desde el Microsoft Store, Microsoft Edge incluye el siguiente encabezado con la solicitud para la primera navegación de la aplicación `Referer` web.
+
+```
+Referer: app-info://platform/microsoft-store
+```
+
+Usa esta característica para medir el tráfico distinto del tráfico instalado en la Tienda PWA.  En función del tráfico, puedes ajustar el contenido de la aplicación para mejorar la experiencia del usuario.  Esta característica es accesible tanto para el código de cliente como para el código del servidor.
+
+Esta característica se introdujo en Microsoft Edge versión 91.
+
+## <a name="see-also"></a>Consulte también  
 
 PWABuilder proporciona más documentación para ayudarle a obtener sus PWA en el Microsoft Store.  
 

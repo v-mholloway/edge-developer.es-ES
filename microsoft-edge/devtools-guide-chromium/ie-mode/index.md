@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, ie11, internet explorer 11, es el modo ie
-ms.openlocfilehash: e65869cd88b449dcde0aec25c77df27f99b78f8d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 070bf970c784b4f2173ebc52e4494fc6807b4a8e
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398605"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643238"
 ---
 # <a name="internet-explorer-mode-and-the-devtools"></a>Modo internet Explorer y DevTools  
 
@@ -70,6 +70,14 @@ Para probar el sitio web basado en Internet Explorer 11 \(o app\) en modo Intern
 1.  Inicie Internet Explorer DevTools.  
     *   Seleccione `F12` .  
     *   Mantenga el mouse en cualquier lugar, abra un menú contextual \(clic con el botón derecho\) y elija **Inspeccionar elemento**.  Para obtener más información acerca de cómo usar esas herramientas, vaya a Uso de las herramientas para [desarrolladores F12][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
+
+Si Internet Explorer 11 no está disponible, como en Windows 11, puede usar IEChooser para iniciar las DevTools de Internet Explorer para depurar el contenido de las pestañas del modo IE. Para usar IEChooser, siga estos pasos.
+
+1.  Abra IEChooser.
+    1. Abrir el cuadro de diálogo Ejecutar Por ejemplo, presione `Windows logo key`  +  `R` .
+    2. Escriba `%systemroot%\system32\f12\IEChooser.exe` y, a continuación, **seleccione Aceptar**.
+2.  En IEChooser, seleccione la entrada para la pestaña Modo IE.
+
 
 ## <a name="remote-debugging-and-ie-mode"></a>Depuración remota y modo IE  
 

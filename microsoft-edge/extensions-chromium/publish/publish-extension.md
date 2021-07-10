@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: c7d44a8c02a030cc11c763c35efb7111fff76665
-ms.sourcegitcommit: 7f7922dbb6af87ecac1378d18359125770c5b8e5
+ms.openlocfilehash: aadb3470eb295934cde4ad26b089ac0c83898e5c
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536805"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643245"
 ---
 # <a name="publish-your-extension"></a>Publicar la extensión  
 
@@ -20,7 +20,7 @@ Después de desarrollar y probar la extensión, estás listo para distribuir la 
 
 Publique la extensión en el almacén Microsoft Edge complementos para aumentar el alcance de la extensión y hacer que esté disponible para otros Microsoft Edge usuarios.  En este artículo se proporciona el proceso para enviar la extensión al Microsoft Edge de complementos.  
 
-## <a name="before-you-begin"></a>Antes de comenzar  
+## <a name="before-you-begin"></a>Antes de empezar  
 
 Debe tener listo un prototipo de trabajo de la extensión.  Para obtener información sobre cómo crear una extensión, consulte el [tutorial Introducción][ExtensionsGettingStarted].  
 
@@ -97,7 +97,7 @@ Elija **Guardar** para continuar con la **sección Desc. De la** Tienda.
 
 La información proporcionada en la siguiente sección se muestra a los usuarios que revisan la descripción en el Microsoft Edge complementos.  Aunque algunos campos son opcionales, debe proporcionar tanta información como sea posible.  Para enumerar la extensión en la tienda, se requieren los siguientes detalles.  
 
-*   **Descripción** de cada idioma del paquete de extensión.  
+*   **Descripción** de cada idioma del paquete de extensión. Para admitir varios idiomas, puede usar la API de internacionalización ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).  
 *   **Logotipo de la Tienda de extensiones** para cada idioma del paquete de extensión.  
     
 > [!NOTE]
@@ -179,3 +179,4 @@ Una vez que el envío pasa la certificación, la extensión se publica en Micros
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Insertar vídeos & listas de reproducción | Ayuda de YouTube"  
 
 [MailtoExtDevSupportMicrosoftCom]: mailto:ext_dev_support@microsoft.com "Enviar correo electrónico a ext_dev_support@microsoft.com" 
+

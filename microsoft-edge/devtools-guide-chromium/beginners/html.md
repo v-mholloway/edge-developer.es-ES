@@ -3,16 +3,16 @@ description: Introducción con HTML y DOM
 title: 'DevTools para principiantes: Introducción a HTML y DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: d2893021f5e19ffb714215b27edadba08c8d6f71
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, web development, f12 tools, devtools, devtools for beginners, devtools HTML for beginners, devtools DOM for beginners, devtools html tutorial, devtools DOM tutorial, devtools document object model tutorial
+ms.openlocfilehash: a049ec500e22f89db3ab1e966b55d89c2ad682fe
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564570"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643572"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -29,25 +29,25 @@ ms.locfileid: "11564570"
    limitations under the License.  -->
 # <a name="devtools-for-beginners-get-started-with-html-and-the-dom"></a>DevTools para principiantes: Introducción a HTML y DOM  
 
-Este es el primero de una serie de tutoriales que le enseñarán los conceptos básicos del desarrollo web.  Obtenga información sobre un conjunto de herramientas de desarrollador web, denominadas Microsoft Edge DevTools, que pueden aumentar su productividad.  
+Este es el primero de una serie de tutoriales que le enseñarán los conceptos básicos del desarrollo web. Obtenga información sobre un conjunto de herramientas de desarrollador web, denominadas Microsoft Edge DevTools, que pueden aumentar su productividad.  
 
-En este tutorial en particular, aprenderá acerca de HTML y dom.  HTML es una de las tecnologías principales del desarrollo web.  Es el idioma que controla la estructura y el contenido de las páginas web.  El DOM también está relacionado con la estructura y el contenido de las páginas web, obtenga más información sobre esto más adelante.  
+En este tutorial se describe HTML y [el modelo de objetos de documento](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\). HTML es una de las tecnologías principales del desarrollo web. Es el idioma que controla la estructura y el contenido de las páginas web. El DOM también está relacionado con la estructura y el contenido de las páginas web, de los que más información nos enteramos más adelante.
 
 ## <a name="goals"></a>Objetivos  
 
-Vas a aprender el desarrollo web creando tu propio sitio web.  Para cuando complete todos los tutoriales de la serie **DevTools para** principiantes, el sitio terminado puede tener el aspecto siguiente.  
+Va a aprender el desarrollo web mediante la creación de un sitio web.  Para cuando complete todos los tutoriales de la serie **DevTools para** principiantes, el sitio terminado puede tener el aspecto siguiente.  
 
-:::image type="complex" source="../media/beginners-html-finished.msft.png" alt-text="El sitio terminado" lightbox="../media/beginners-html-finished.msft.png":::
+:::image type="complex" source="media/beginners-html-finished.msft.png" alt-text="El sitio terminado" lightbox="media/beginners-html-finished.msft.png":::
    El sitio terminado  
 :::image-end:::  
 
-Al final de este tutorial, debe comprender los siguientes temas.  
+Al final de este tutorial, debe comprender los siguientes conceptos.  
 
 *   Cómo HTML y DOM crean el contenido que se muestra en las páginas web.  
 *   How Microsoft Edge DevTools may help you experiment with HTML and DOM changes.  
 *   La diferencia entre HTML y DOM.  
 
-También tiene un sitio web real.  Puede usar el sitio para hospedar su currículum vitae o blog.  
+También tendrá un sitio web de trabajo. Puede usar el sitio para hospedar su currículum vitae o blog.  
 
 ## <a name="prerequisites"></a>Requisitos previos  
 
@@ -58,262 +58,213 @@ Antes de intentar este tutorial, complete los siguientes requisitos previos:
 
 ## <a name="set-up-your-code"></a>Configurar el código  
 
-Va a crear el sitio en un editor de código en línea llamado Glitch.  
+Va a crear un sitio en el editor de código de Glitch online.  
 
-1.  Abra el [código fuente][GlitchAlluringShockIndex].  Esta pestaña se denomina pestaña **editor a** lo largo de este tutorial.  
+1.  Abra el [código fuente][GlitchAlluringShockIndex]. Esta pestaña se denomina pestaña **editor a** lo largo de este tutorial.  
     
-    :::image type="complex" source="../media/beginners-html-setup1.msft.png" alt-text="Pestaña editor" lightbox="../media/beginners-html-setup1.msft.png":::
+    :::image type="complex" source="media/beginners-html-setup1.msft.png" alt-text="Pestaña editor" lightbox="media/beginners-html-setup1.msft.png":::
        Pestaña editor  
     :::image-end:::  
     
-1.  Elija **alluring-shock**.  El menú Project opciones se abre en la esquina superior izquierda.  
+1.  Elija **alluring-shock**. Se **abre Project menú Opciones** de configuración.  
     
-    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menú Project opciones" lightbox="../media/beginners-html-setup2.msft.png":::
+    :::image type="complex" source="media/beginners-html-setup2.msft.png" alt-text="Menú Project opciones" lightbox="media/beginners-html-setup2.msft.png":::
        Menú Project opciones  
     :::image-end:::  
     
-1.  Elija **Remezcla Project**.  Glitch crea una copia del proyecto que puede editar y genera aleatoriamente un nuevo nombre para el proyecto.  El contenido es el mismo que antes.  
+1.  Elija **Remezcla Project**. Glitch crea una copia del proyecto que puede editar y genera aleatoriamente un nuevo nombre para el proyecto. El contenido es el mismo que antes.  
     
-    :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="El proyecto remezclado" lightbox="../media/beginners-html-setup3.msft.png":::
+    :::image type="complex" source="media/beginners-html-setup3.msft.png" alt-text="El proyecto remezclado" lightbox="media/beginners-html-setup3.msft.png":::
        El proyecto remezclado  
     :::image-end:::  
     
-1.  Si tienes previsto completar el siguiente tutorial **** de esta serie, elige Iniciar sesión e iniciar sesión en Glitch con tu cuenta GitHub o Facebook.  Si decide no iniciar sesión en su cuenta, perderá la capacidad de editar el proyecto después de cerrar la pestaña de edición.  
-1.  Elija **Mostrar** y **elija En una nueva ventana**.  Se abre una pestaña nueva que muestra la página activa.  Esta pestaña se denomina pestaña **activa a** lo largo de este tutorial.  
+1.  Si tienes previsto completar el siguiente tutorial de esta serie, elige **Iniciar** sesión en Glitch con tu cuenta de Facebook, GitHub o Google; o envíate un vínculo mágico. Si decide no iniciar sesión en una cuenta, no podrá editar el proyecto después de cerrar la pestaña editor.
+
+1.  Elija **Mostrar**  \>  **en una nueva ventana**.  Se abre una pestaña nueva que muestra la página activa. Esta pestaña se denomina pestaña **activa a** lo largo de este tutorial.  
     
-    :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="La pestaña activa" lightbox="../media/beginners-html-setup4.msft.png":::
+    :::image type="complex" source="media/beginners-html-setup4.msft.png" alt-text="La pestaña activa" lightbox="media/beginners-html-setup4.msft.png":::
        La pestaña activa  
     :::image-end:::  
     
 ## <a name="add-content"></a>Agregar contenido  
 
-El sitio está bastante vacío.  Siga los pasos siguientes para agregarle contenido.  
+El sitio necesita más información. Complete los pasos siguientes para agregar contenido.  
 
-1.  En la **pestaña editor**, reemplace `<!-- You're "About Me" will go here.  -->` por `<h1>About Me</h1>` .  
+1. En la **pestaña editor**, reemplace `<!-- You're "About Me" will go here.  -->` por `<h1>About Me</h1>` .  
     
-    :::row:::
-       :::column span="":::
-          ```html
-          ...
-              ...
-              <body>
-                  <p> Your site!</p>
-                  <main>
-                      <h1>About Me</h1>
-                  </main>
-                  ...
-              ...
-          ...
-          ```  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add1.msft.png" alt-text="El nuevo código se resalta en la pestaña editor" lightbox="../media/beginners-html-add1.msft.png":::
-             El nuevo código se resalta en la pestaña editor  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
+    ```html
+        ...
+        <body>
+            <p> Your site!</p>
+                <main>
+                    <h1>About Me</h1>
+                </main>
+        ...
+    ```  
     
-1.  Ver los cambios en la **pestaña activa**.  El texto `About Me` está visible en la página.  El texto es mayor que el texto que lo rodea, ya que `<h1>` el elemento representa un encabezado de sección.  El explorador web aplica estilos automáticamente a los encabezados en tamaños de fuente más grandes.  
+    :::image type="complex" source="media/beginners-html-add1.msft.png" alt-text="El nuevo código se resalta en la pestaña editor" lightbox="media/beginners-html-add1.msft.png":::
+        El nuevo código se resalta en la pestaña editor  
+    :::image-end:::  
     
-    :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="El nuevo encabezado está visible en la pestaña activa" lightbox="../media/beginners-html-add2.msft.png":::
+1. Ver los cambios en la **pestaña activa**. El texto `About Me` está visible en la página. El texto es mayor que el texto circundante porque `<h1>` el elemento representa un encabezado 1.  El explorador web aplica estilos automáticamente a los encabezados en tamaños de fuente más grandes.  
+    
+    :::image type="complex" source="media/beginners-html-add2.msft.png" alt-text="El nuevo encabezado está visible en la pestaña activa" lightbox="media/beginners-html-add2.msft.png":::
        El nuevo encabezado está visible en la pestaña activa  
     :::image-end:::  
     
-1.  Vuelva a la **pestaña editor**, inserte en la línea siguiente donde acaba de `<p>I am learning HTML.  Recent accomplishments:</p>` colocar `<h1>About Me</h1>` .  
+1. Vuelva a la **pestaña editor**, inserte en la línea `<p>I am learning web development. Recent accomplishments:</p>` siguiente  `<h1>About Me</h1>` .  
     
-    :::row:::
-       :::column span="":::
-          ```html
-          ...
-              ...
-              <body>
-                  <p> Your site!</p>
-                  <main>
-                      <h1>About Me</h1>
-                      <p>I am learning web development.  Recent accomplishments:</p>
-                  </main>
-                  ...
-              ...
-          ...
-          ```  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="El código actualizado se resalta en la pestaña editor" lightbox="../media/beginners-html-add3.msft.png":::
-             El código actualizado se resalta en la pestaña editor  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
+    ```html
+    ...
+        <body>
+            <p> Your site!</p>
+                <main>
+                    <h1>About Me</h1>
+                    <p>I am learning web development. Recent accomplishments:</p>
+                </main>
+    ...
+    ```  
+
+    :::image type="complex" source="media/beginners-html-add3.msft.png" alt-text="El código actualizado se resalta en la pestaña editor" lightbox="media/beginners-html-add3.msft.png":::
+        El código actualizado se resalta en la pestaña editor  
+    :::image-end:::  
     
-1.  Ver el cambio en la **pestaña activa**.  
-1.  De vuelta en la **pestaña editor,** agregue una lista de sus logros:  
+1. Ver el cambio en la **pestaña activa**.
+
+1. De vuelta en la **pestaña editor,** agregue una lista de sus logros con el siguiente código.
     
-    :::row:::
-       :::column span="":::
-          ```html
-          ...
-              ...
-                  ...
-                  <p>I am learning web development.  Recent accomplishments:</p>
-                  <ul>
-                      <li>Learned how to set up my code in Glitch.</li>
-                      <li>Added content to my HTML.</li>
-                      <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
-                      <li>TODO: Learn the difference between HTML and the DOM.</li>
-                  </ul>
-                  ...
-              ...
-          ...
-          ```  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="El código actualizado también se resalta en la pestaña editor" lightbox="../media/beginners-html-add4.msft.png":::
-             El código actualizado también se resalta en la pestaña editor  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::  
+    ```html
+    ...
+    <p>I am learning web development.  Recent accomplishments:</p>
+        <ul>
+            <li>Learned how to set up my code in Glitch.</li>
+            <li>Added content to my HTML.</li>
+            <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
+            <li>TODO: Learn the difference between HTML and the DOM.</li>
+        </ul>
+    ...
+    ```  
+
+    :::image type="complex" source="media/beginners-html-add4.msft.png" alt-text="El código actualizado también se resalta en la pestaña editor" lightbox="media/beginners-html-add4.msft.png":::
+        El código actualizado también se resalta en la pestaña editor  
+    :::image-end:::  
+
+1. Vea la **pestaña activa para** asegurarse de que el nuevo contenido se muestra correctamente.  
     
-1.  De nuevo, vuelva a la **pestaña activa** para asegurarse de que el nuevo contenido se muestra correctamente.  
-    
-    :::image type="complex" source="../media/beginners-html-add5.msft.png" alt-text="La nueva lista está visible en la pestaña activa" lightbox="../media/beginners-html-add5.msft.png":::
+    :::image type="complex" source="media/beginners-html-add5.msft.png" alt-text="La nueva lista está visible en la pestaña activa" lightbox="media/beginners-html-add5.msft.png":::
        La nueva lista está visible en la pestaña activa  
     :::image-end:::  
     
 ## <a name="experiment-with-content-changes-in-microsoft-edge-devtools"></a>Experimentar con cambios de contenido en Microsoft Edge DevTools  
 
-Si estaba desarrollando una página grande con mucho HTML, es algo tedioso ir y venir entre la pestaña editor y la pestaña activa cientos de veces para mostrar los cambios, especialmente si no está seguro de qué colocar exactamente en la página.  Microsoft Edge DevTools le ayuda a experimentar con los cambios de contenido sin salir nunca de **la pestaña en directo.**  
+Si está desarrollando una página con mucho HTML, se vuelve tedioso ir y venir entre la pestaña editor y la pestaña activa para ver los cambios. Microsoft Edge DevTools le ayuda a experimentar con los cambios de contenido sin salir nunca de **la pestaña en directo.**  
 
 ### <a name="learn-the-difference-between-html-and-the-dom"></a>Obtenga información sobre la diferencia entre HTML y DOM  
 
-Antes de empezar a editar el contenido desde Microsoft Edge DevTools, debe comprender la diferencia entre HTML y DOM.  La mejor manera de aprender es por ejemplo:  
+Antes de editar contenido Microsoft Edge DevTools, vamos a comprender la diferencia entre HTML y DOM. Siga los pasos siguientes para obtener información de un ejemplo.
 
-1.  Vaya a la **pestaña activa**.  En la parte inferior de la página, se `A new element!?!` muestra el texto.  
+1. Vaya a la **pestaña activa**. En la parte inferior de la página, se muestra el `A new element!?!` texto.  
+
+    <!--
+        :::image type="complex" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page the text A new element!?! displays" lightbox="media/beginners-html-dom1.msft.png":::
+        At the bottom of the page the text `A new element!?!` is displays  
+        :::image-end:::
+    -->
     
-    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="En la parte inferior de la página, el texto Un nuevo elemento!?! se muestra" lightbox="../media/beginners-html-dom1.msft.png":::
-       En la parte inferior de la página se `A new element!?!` muestra el texto  
-    :::image-end:::  
+1. Abra la **pestaña editor** e intente buscar el texto en `index.html` . El texto no se muestra en esta vista.  
+
+    <!--
+        :::image type="complex" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text A new element!?! is not found in index.html" lightbox="media/beginners-html-dom2.msft.png":::
+        The mystery text `A new element!?!` is not found in `index.html`  
+        :::image-end:::
+    -->
+
+1. Abra la **pestaña activa**, mantenga el mouse sobre , abra el menú contextual (haga clic con el botón `A new element!?!` secundario) y, a continuación, elija **Inspeccionar**.  
     
-1.  Vuelva a la **pestaña editor e** intente encontrar el texto en `index.html` .  El texto no está ahí.  
-    
-    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="Texto misterioso Un nuevo elemento!?! no se encuentra en ninguna parte en index.html" lightbox="../media/beginners-html-dom2.msft.png":::
-       El texto `A new element!?!` misterioso no se encuentra en ninguna parte `index.html`  
-    :::image-end:::  
-    
-1.  Vuelva a la pestaña **activa**, mantenga el mouse sobre , abra el menú contextual \(haga clic con el `A new element!?!` botón secundario\) y elija **Inspeccionar**.  
-    
-    :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="Inspección de texto" lightbox="../media/beginners-html-dom3.msft.png":::
+    :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="Inspección de texto" lightbox="media/beginners-html-dom3.msft.png":::
        Inspección de texto  
     :::image-end:::  
     
-    DevTools se abre junto a la página.  `<div>A new element!?!</div>` se resalta en azul.  Aunque esta estructura en DevTools se parece al HTML, en realidad es el **árbol DOM**.  
+    DevTools se abre junto a la página. `<div>A new element!?!</div>` está resaltado. Aunque esta estructura en DevTools tiene un aspecto similar a HTML, es el **árbol DOM**.  
     
-    :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="DevTools está abierto junto a la página" lightbox="../media/beginners-html-dom4.msft.png":::
+    :::image type="complex" source="media/beginners-html-dom4.msft.png" alt-text="DevTools está abierto junto a la página" lightbox="media/beginners-html-dom4.msft.png":::
        DevTools está abierto junto a la página  
     :::image-end:::  
     
-Cuando se carga la página, el explorador toma el HTML para crear el *contenido inicial* de la página.  El DOM representa el *contenido* actual de la página, que puede cambiar con el tiempo.  El contenido `<div>A new element!?!</div>` misterioso se agrega a tu página debido a la etiqueta en la parte inferior del `<script src="new.js"></script>` HTML.  Esta etiqueta hace que se ejecute algún código JavaScript.  Obtenga más información sobre JavaScript en un tutorial posterior, pero por ahora piense en él como un lenguaje de programación que puede cambiar el contenido de la página.  En este caso concreto, el código JavaScript se `<div>A new element!?!</div>` agrega a la página.  Por eso, este texto misterioso está visible en la página en directo, pero no en el HTML.  
+Cuando se carga la página, el explorador usa el CÓDIGO HTML para crear el contenido inicial de la página. El DOM representa el contenido actual de la página, que puede cambiar con el tiempo. 
+
+El `<div>A new element!?!</div>` contenido se agrega a la página debido a la etiqueta en la parte inferior del `<script src="new.js"></script>` HTML. Esta etiqueta hace que se ejecute algún código JavaScript. Obtenga más información sobre JavaScript en un [tutorial posterior](../javascript/index.md).
+
+Por ahora, piense en él como un lenguaje de scripting que puede cambiar el contenido de la página. En este caso, el código JavaScript se `<div>A new element!?!</div>` agrega a la página. Es por ello que este texto se muestra en la **pestaña** activa, pero no en el HTML.  
 
 ### <a name="edit-the-dom"></a>Editar el DOM  
 
 Si quieres experimentar rápidamente con cambios de contenido sin salir de la pestaña en directo, prueba DevTools.  
 
-1.  En DevTools, mantenga el mouse en , abra el menú contextual \(haga clic con el `Your site!` botón secundario\) y elija Editar como **HTML**.  
-    
-    :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="Edición del nodo como HTML" lightbox="../media/beginners-html-edit1.msft.png":::
-       Edición del nodo como HTML  
-    :::image-end:::  
+1.  En DevTools, mantenga el mouse sobre , abra el menú contextual (haga clic con el botón `Your site!` secundario) y **elija Editar como HTML**.  
     
 1.  Reemplace `<p>Your site!</p>` por el código siguiente.  
+
+```html
+    ...
+    <header>
+        <p><b>Welcome to my site!</b></p>
+        <button>Download my resume</button>
+    </header>
+    ...
+```  
+
+:::image type="complex" source="media/beginners-html-edit2.msft.png" alt-text="Actualización del nodo como HTML" lightbox="media/beginners-html-edit2.msft.png":::
+    Actualización del nodo como HTML  
+::image-end:::  
+
+1.  Seleccione `Control` + `Enter` \(Windows, Linux\) o `Command` + `Enter` \(macOS\) para guardar los cambios o seleccione fuera del cuadro. Los cambios se muestran automáticamente en la vista en directo de la página. El texto `Your site!` se ha reemplazado por el nuevo contenido.  
     
-    :::row:::
-       :::column span="":::
-          ```html
-          ...
-              ...
-                  ...
-                  <header>
-                      <p><b>Welcome to my site!</b></p>
-                      <button>Download my resume</button>
-                  </header>
-                  ...
-              ...
-          ...
-          ```  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Actualización del nodo como HTML" lightbox="../media/beginners-html-edit2.msft.png":::
-             Actualización del nodo como HTML  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::  
-    
-1.  Seleccione `Control` + `Enter` \(Windows, Linux\) o `Command` + `Enter` \(macOS\) para guardar los cambios o elija fuera del cuadro.  Los cambios se muestran automáticamente en la vista en directo de la página.  El texto `Your site!` se ha reemplazado por el nuevo contenido.  
-    
-    :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="El nuevo contenido se muestra inmediatamente en la página" lightbox="../media/beginners-html-edit3.msft.png":::
+    :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="El nuevo contenido se muestra inmediatamente en la página" lightbox="media/beginners-html-edit3.msft.png":::
        El nuevo contenido se muestra inmediatamente en la página  
     :::image-end:::  
     
-Este flujo de trabajo solo es bueno para experimentar con cambios de contenido.  Si actualiza la página o cierra la pestaña, los cambios desaparecerán para siempre.  Si usa este flujo de trabajo y desea guardar los cambios, debe copiar manualmente esos cambios en su HTML.  En las siguientes secciones se muestran algunas formas más de cambiar el contenido del árbol DOM.  
+Este flujo de trabajo solo es adecuado para experimentar con cambios de contenido. Si actualiza la página o cierra la pestaña, los cambios se perderán. Si desea guardar los cambios, copie manualmente el código en el archivo HTML. En las dos secciones siguientes se muestran más formas de cambiar el contenido del árbol DOM.  
 
-## <a name="reorder-nodes"></a>Reordenar nodos  
+## <a name="reorder-nodes"></a>Reordenar nodos
 
-También puede cambiar el orden de los nodos DOM.  Por ejemplo, en la página web, el menú de navegación está cerca de la parte inferior.  Para moverlo a la parte superior:  
+También puede cambiar el orden de los nodos DOM. Por ejemplo, en la página web, el menú de navegación está cerca de la parte inferior. Para moverlo a la parte superior, siga estos pasos.  
 
 1.  Busque el `<nav>` nodo en el árbol **DOM** de DevTools.  
     
-    :::image type="complex" source="../media/beginners-html-reorder1.msft.png" alt-text="El nodo de navegación se resalta en azul en DevTools" lightbox="../media/beginners-html-reorder1.msft.png":::
-       El nodo de navegación se resalta en azul en DevTools  
+    :::image type="complex" source="media/beginners-html-reorder1.msft.png" alt-text="El nodo de navegación se resalta en DevTools" lightbox="media/beginners-html-reorder1.msft.png":::
+       El nodo de navegación se resalta en DevTools  
     :::image-end:::  
     
-1.  Arrastre el nodo a la parte superior, de modo `<nav>` que el nodo sea el primer elemento secundario del `<body>` nodo.  
+1.  Arrastre el nodo a la parte superior, de modo `<nav>` que el nodo sea el primer elemento secundario después del `<body>` nodo.  
     
-    :::row:::
-       :::column span="":::
-          &nbsp;  
-       :::column-end:::
-       :::column span="":::
-          El `<nav>` nodo se muestra ahora en la parte superior de la página.  
-       :::column-end:::
-    :::row-end:::  
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Arrastrar el nodo de navegación a la parte superior" lightbox="../media/beginners-html-reorder2.msft.png":::
-             Arrastrar el nodo de navegación a la parte superior  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="El nodo de navegación está en la parte superior de la página" lightbox="../media/beginners-html-reorder3.msft.png":::
-             El nodo de navegación está en la parte superior de la página  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::  
-    
-### <a name="delete-a-node"></a>Eliminar un nodo  
-
-También puede quitar nodos del árbol DOM.  
-
-1.  En el **árbol DOM,** elija `<div>A new element!?!</div>` .  DevTools resalta el color azul del nodo.  
-    
-    :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="Elegir el nodo que se va a eliminar" lightbox="../media/beginners-html-delete1.msft.png":::
-       Elegir el nodo que se va a eliminar  
+    :::image type="complex" source="media/beginners-html-reorder3.msft.png" alt-text="El nodo de navegación está en la parte superior de la página" lightbox="media/beginners-html-reorder3.msft.png":::
+        El nodo de navegación está en la parte superior de la página  
     :::image-end:::  
+    
+### <a name="delete-a-node"></a>Eliminar un nodo
+
+También puede quitar nodos del árbol DOM. Realice los pasos siguientes.
+
+1.  En el **árbol DOM,** elija `<div>A new element!?!</div>` . DevTools resalta el nodo. 
     
 1.  Seleccione la `Delete` tecla del teclado.  El `<div>A new element!?!</div>` nodo se quita del árbol DOM.  
     
-    :::image type="complex" source="../media/beginners-html-delete2.msft.png" alt-text="El nodo se ha eliminado" lightbox="../media/beginners-html-delete2.msft.png":::
+    :::image type="complex" source="media/beginners-html-delete2.msft.png" alt-text="El nodo se ha eliminado" lightbox="media/beginners-html-delete2.msft.png":::
        El nodo se ha eliminado  
     :::image-end:::  
     
 ## <a name="copy-your-changes"></a>Copiar los cambios  
 
-Casi ha terminado.  Has realizado algunos cambios en tu página en DevTools, pero aún no se guardan en el código fuente.  
+Casi ha terminado. Ha realizado algunos cambios en la página en DevTools, pero no se guardan en el código fuente.  
 
-1.  Actualice la **pestaña activa**.  Los cambios realizados en el árbol DOM desaparecen.  En concreto, el texto `Your site!` vuelve a la parte superior de la página y el texto vuelve a la parte `A new element!?!` inferior.  
+1.  Actualice la **pestaña activa**. Los cambios realizados en el árbol DOM desaparecen. En concreto, el texto `Your site!` vuelve a la parte superior de la página y el texto vuelve a la parte `A new element!?!` inferior.  
     
-    :::image type="complex" source="../media/beginners-html-copy1.msft.png" alt-text="Los cambios que ha realizado han desaparecido" lightbox="../media/beginners-html-copy1.msft.png":::
+    :::image type="complex" source="media/beginners-html-copy1.msft.png" alt-text="Los cambios que ha realizado han desaparecido" lightbox="media/beginners-html-copy1.msft.png":::
        Los cambios que ha realizado han desaparecido  
     :::image-end:::  
     
-1.  Copie el código siguiente.  
+1.  Copie el siguiente código.  
     
     ```html
     <!DOCTYPE html>
@@ -347,9 +298,9 @@ Casi ha terminado.  Has realizado algunos cambios en tu página en DevTools, per
     </html>
     ```  
     
-1.  Vuelva a la **pestaña editor y** reemplace el contenido del archivo por el código que acaba de `index.html` copiar.  
+1.  Vuelva a la **pestaña editor y** reemplace el contenido del archivo por el código que `index.html` copió.  
     
-    :::image type="complex" source="../media/beginners-html-copy2.msft.png" alt-text="Cómo debe index.htmel archivo l" lightbox="../media/beginners-html-copy2.msft.png":::
+    :::image type="complex" source="media/beginners-html-copy2.msft.png" alt-text="Cómo debe index.htmel archivo l" lightbox="media/beginners-html-copy2.msft.png":::
        Aspecto del `index.html` archivo  
     :::image-end:::  
     
