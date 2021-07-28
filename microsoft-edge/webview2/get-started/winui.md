@@ -8,41 +8,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicaciones winui, winui, edge, CoreWebView2, control de explorador, html perimetral, introducción, Introducción, .NET
-ms.openlocfilehash: e334e8e7aec5fff4c57700a99de5cde906242e4f
-ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
+ms.openlocfilehash: 64d2806cf0fa55619701e0b208366a0807407350
+ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "11574585"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "11675137"
 ---
-# <a name="get-started-with-webview2-in-winui-3-preview"></a>Introducción a WebView2 en WinUI 3 (versión preliminar)  
+# <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>Introducción a WebView2 en WinUI 3 (Windows SDK de aplicaciones)
 
 En este artículo, empieza a crear tu primera aplicación WebView2 y obtén información sobre las características principales de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  La primera aplicación WebView2 usa WinUI3.  Para obtener más información sobre las API individuales, vaya a [Referencia de api][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
-
-## <a name="prerequisites"></a>Requisitos previos  
-
-Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.  
-
-*   [WebView2 Runtime][Webview2Installer] o cualquier canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] no estable instalado en Windows 10 versión 1803 \(compilación 17134\) o posterior.  Para obtener más información Windows 10, vaya [a Windows Update: Faq][MicrosoftSupport12373].  
-    
-    > [!NOTE]
-    > El equipo de WebView recomienda usar el canal Canary y la versión mínima necesaria es 82.0.488.0.  
-    
-*   [Visual Studio][MicrosoftVisualstudioMain] 2019, versión 16.9 Preview.  Para obtener más información, vaya [a Windows biblioteca de interfaz de usuario 3 Versión preliminar 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-    *   Incluya las siguientes cargas de trabajo al instalar Visual Studio.  
-        *   Desarrollo de escritorio de .NET \(el instalador también instala .NET 5\)  
-        *   Desarrollo Windows plataforma universal  
-    *   Para crear aplicaciones de C++, también debe incluir las siguientes cargas de trabajo.  
-        *   Desarrollo de escritorio con C++  
-        *   El componente opcional de las herramientas de plataforma Windows C++ \(v142\) para la carga de trabajo Windows plataforma universal.  Para obtener más información, vaya a **Detalles de instalación** en la sección Desarrollo Windows **plataforma** universal, en el panel derecho.  
         
-## <a name="step-0---visual-studio-settings"></a>Paso 0: Visual Studio configuración  
+## <a name="step-0---set-up-development-environment"></a>Paso 0: Configurar el entorno de desarrollo 
 
-1.  Asegúrese de que el sistema tiene un NuGet de paquete habilitado para [nuget.org][NugetHome].  Para obtener más información, vaya [a Common NuGet configurations][NugetConsumePackagesConfiguringNugetBehavior] y [Windows Community Toolkit][WindowsCommunitytoolkit].  
-1.  Descargue e instale el paquete [vsix Project reunión.][VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]  El instalador agrega las plantillas de proyecto WinUI 3 y el paquete NuGet que contiene las bibliotecas winui 3 a Visual Studio 2019.  
-    
-    Para obtener instrucciones sobre cómo agregar el paquete a Visual Studio, vaya a `VSIX` Buscar y usar Visual Studio [extensiones][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox].
-    
+1. Siga los pasos del [][WindowsAppsWinui3ConfigureYourDevEnvironment] 1 al 4 de Configurar el entorno de desarrollo para instalar Visual Studio, configurar el origen del paquete de NuGet e instalar la extensión del SDK de aplicación de Windows para Visual Studio. 
+1. Instale [WebView2 Runtime][Webview2Installer] o cualquier canal no estable Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] instalado en Windows 10 versión 1803 \(compilación 17134\) o posterior.  Para obtener más información Windows 10, vaya [a Windows Update: Faq][MicrosoftSupport12373].  
 1.  Para obtener acceso a todas las características de Visual Studio específicas del [desarrollador,][WindowsUwpGetStartedEnableYourDeviceForDevelopment]active el modo de desarrollador .  
     
 ## <a name="step-1---create-project"></a>Paso 1: Crear Project  
@@ -198,6 +178,13 @@ Para permitir a los usuarios controlar la página web que se muestra en el contr
     
 ## <a name="step-4---navigation-events"></a>Paso 4: Eventos de navegación  
 
+Para este paso, debemos importar la biblioteca WebView2 Core.
+
+Agregue la siguiente línea a la parte superior de `MainWindow.xaml.cs` :
+```csharp
+using Microsoft.Web.WebView2.Core;
+```
+
 Las aplicaciones que hospedan controles WebView2 escuchan los siguientes eventos que se genera mediante controles WebView2 durante la navegación en la página web.  
 
 *   `NavigationStarting`  
@@ -226,7 +213,7 @@ public MainWindow()
     MyWebView.NavigationStarting += EnsureHttps;
 }
 
-private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
+private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArgs args)
 {
     String uri = args.Uri;
     if (!uri.StartsWith("https://"))
@@ -247,12 +234,12 @@ Para compilar y ejecutar el proyecto, seleccione `F5` .  Asegúrese de que la na
 Puede usar aplicaciones host para insertar código JavaScript en controles WebView2 en tiempo de ejecución.  Puede realizar la tarea WebView para ejecutar JavaScript arbitrario o agregar scripts de inicialización.  JavaScript inyectado se aplica a todos los nuevos documentos de nivel superior y a los fotogramas secundarios hasta que se quita JavaScript.  JavaScript inyectado se ejecuta con un tiempo específico.  
 
 *   Ejecutarlo después de la creación del objeto global.  
-*   Ejecutarlo antes de que se ejecute cualquier otro script incluido en el documento HTML.  
+*   Ejecutarlo antes de que se ejecute cualquier otro script incluido en el documento HTML.
     
 Por ejemplo, agregue scripts que envíen una alerta cuando un usuario navegue a sitios que no son HTTPS.  Modifique la `EnsureHttps` función para insertar un script en el contenido web que usa [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].  
 
 ```csharp
-private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
+private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArgs args)
 {
     String uri = args.Uri;
     if (!uri.StartsWith("https://"))
@@ -275,7 +262,7 @@ Para compilar y ejecutar el proyecto, seleccione `F5` .  Asegúrate de que la ap
 
 Enhorabuena, has creado tu primera aplicación WebView2.  
 
-## <a name="next-steps"></a>Pasos siguientes  
+## <a name="next-steps"></a>Siguientes pasos  
 
 Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.  
 
@@ -288,7 +275,7 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
     
 *   Para obtener información detallada acerca de la API de WebView2, vaya a [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Ponerse en contacto con el equipo de Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -308,7 +295,7 @@ Para enviar las solicitudes de características específicas de WinUI o los erro
 
 [VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "Instalar sin usar el cuadro de diálogo Administrar extensiones: administrar extensiones para Visual Studio | Microsoft Docs"  
 
-[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "Configurar el entorno de desarrollo: Windows biblioteca de interfaz de usuario 3.0 Preview 1 (mayo de 2020) | Microsoft Docs"  
+[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/project-reunion/set-up-your-development-environment "Configurar el entorno de desarrollo: Windows biblioteca de interfaz de usuario 3.0 Preview 1 (mayo de 2020) | Microsoft Docs"  
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Toolkit documentación | Microsoft Docs"  
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Configurar la aplicación de escritorio para el empaquetado MSIX en Visual Studio | Microsoft Docs"  
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "Habilitar el dispositivo para desarrollo | Microsoft Docs"  
@@ -331,7 +318,7 @@ Para enviar las solicitudes de características específicas de WinUI o los erro
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
-[VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]: https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion "Project Reunión | Visual Studio Marketplace"  
+[VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]: https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion "WindowsAppSDK | Visual Studio Marketplace"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 

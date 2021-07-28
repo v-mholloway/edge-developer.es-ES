@@ -1,6 +1,6 @@
 ---
 description: Modelos de versión usados para Microsoft Edge WebView2
-title: Comprender las versiones del SDK de WebView2
+title: Comprender las versiones de SDK de WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
-ms.openlocfilehash: 18ae2b8feb9310798f78e67cbb767d0642d83d24
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 645eb4e50ba6bd74ab046b09d7071ff3c375a923
+ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535716"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "11675123"
 ---
-# <a name="understand-webview2-sdk-versions"></a>Comprender las versiones del SDK de WebView2  
+# <a name="understand-webview2-sdk-versions"></a>Comprender las versiones de SDK de WebView2  
 
 Las nuevas versiones del SDK de WebView2 se envían con la misma cadencia general que el explorador Microsoft Edge \(Chromium\), que es aproximadamente cada seis semanas.  
 
@@ -41,7 +41,7 @@ El paquete de versión contiene todas las API de Win32 C/C++ y .NET estables y a
 El equipo de WebView está buscando comentarios sobre las API experimentales que pueden incluirse en futuras versiones.  Las API experimentales se marcan como `experimental` en el SDK.  Para ayudarle a evaluar las API experimentales y compartir sus comentarios, vaya al repositorio de comentarios [de WebView][GithubMicrosoftedgeWebviewfeedback].  
 
 > [!CAUTION]
-> Las API experimentales pueden introducirse, modificarse y quitarse del SDK al SDK.  Evita usar las API experimentales en aplicaciones de producción.  
+> Las API experimentales pueden introducirse, modificarse y quitarse del SDK al SDK.  Evita usar las API experimentales en aplicaciones de producción.  Después de la versión de una API como estable y pública, Microsoft admite la versión experimental de esa API para dos versiones en un estado en desuso. 
 
 > [!NOTE]
 > Es posible que las API experimentales no estén disponibles en la versión instalada de WebView2 Runtime.  

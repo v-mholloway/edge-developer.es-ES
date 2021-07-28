@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, ie11, internet explorer 11, es el modo ie
-ms.openlocfilehash: 070bf970c784b4f2173ebc52e4494fc6807b4a8e
-ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
+ms.openlocfilehash: e960dd5db4f253fbd5144194555c303dfc168e0f
+ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "11643238"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "11675130"
 ---
 # <a name="internet-explorer-mode-and-the-devtools"></a>Modo internet Explorer y DevTools  
 
@@ -68,7 +68,7 @@ Para probar el sitio web basado en Internet Explorer 11 \(o app\) en modo Intern
         1.  **Menú Inicio**  >  **Internet Explorer 11**.  
 1.  En Internet Explorer 11, abra la misma página web.  
 1.  Inicie Internet Explorer DevTools.  
-    *   Seleccione `F12` .  
+    *   Seleccione `F12`.  
     *   Mantenga el mouse en cualquier lugar, abra un menú contextual \(clic con el botón derecho\) y elija **Inspeccionar elemento**.  Para obtener más información acerca de cómo usar esas herramientas, vaya a Uso de las herramientas para [desarrolladores F12][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
 
 Si Internet Explorer 11 no está disponible, como en Windows 11, puede usar IEChooser para iniciar las DevTools de Internet Explorer para depurar el contenido de las pestañas del modo IE. Para usar IEChooser, siga estos pasos.
@@ -91,10 +91,27 @@ Después de iniciar Microsoft Edge \(Chromium\) mediante un argumento de línea 
 
 El modo IE permanece no disponible hasta que se cierra completamente y se reinicia Microsoft Edge \(Chromium\).  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+
+## <a name="replacing-internet-explorer-automation"></a>Reemplazo de la automatización de Internet Explorer  
+
+Si tiene una aplicación existente que usa el objeto [InternetExplorer][InternetExplorerObject] para automatizar Internet Explorer 11, pero la aplicación de escritorio de Internet Explorer 11 no está disponible, la aplicación no funcionará.  Internet Explorer 11 se retirará el 15 de junio de 2022.  Para obtener más información, vaya [a El futuro de Internet Explorer en Windows 10 está en Microsoft Edge][BlogsWindowsExperienceFutureOfIEEdge].  Microsoft Edge \(Chromium\) no admite la automatización del modo IE a través del objeto, por lo que las aplicaciones que dependen de este objeto tendrán que actualizarse con una de las `InternetExplorer` alternativas recomendadas a continuación.  Las aplicaciones que usan el control [WebBrowser][WebBrowserControl] seguirán funcionando y no se verán afectadas por la eliminación de Internet Explorer 11.
+
+Si la aplicación de automatización no requiere el modo IE para que el contenido del sitio web \(o app\) funcione correctamente, se recomienda actualizar la aplicación para que use Microsoft Edge \(Chromium\) en lugar de Internet Explorer 11.  Muchas herramientas de automatización disponibles admiten Microsoft Edge \(Chromium\), incluidos WebDriver y Playwright.  Para obtener más información sobre cómo automatizar Microsoft Edge \(Chromium\) con WebDriver, vaya a [WebDriver overview][WebDriverIndex].  Para obtener más información sobre el uso de Playwright, vaya a [Introducción a Playwright][PlaywrightIndex].
+
+Las aplicaciones que requieren el modo IE para que el contenido del sitio web \(o app\) funcione correctamente debe usar el `WebBrowser` control.  El control usa la plataforma Internet Explorer (MSHTML/Trident) para representar contenido web y funcionará incluso si la aplicación de escritorio de `WebBrowser` Internet Explorer 11 no está disponible.
+
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
+[PlaywrightIndex]: ../../playwright/index.md "Playwright: Microsoft Edge desarrollo | Microsoft Docs"
+[BlogsWindowsExperienceFutureOfIEEdge]: https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/ "El futuro de Internet Explorer en Windows 10 está en Microsoft Edge | Windows Blog de experiencia"
 [PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Uso de las herramientas de desarrollo de F12 | Microsoft Docs"  
+
+[WebDriverIndex]: ../../webdriver-chromium/index.md "Usar WebDriver (Chromium) para la automatización de pruebas: Microsoft Edge desarrollo | Microsoft Docs"  
+
+[InternetExplorerObject]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85) "Objeto InternetExplorer (Windows) | Microsoft Docs"
+[WebBrowserControl]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85) "Control WebBrowser (Internet Explorer) | Microsoft Docs"
