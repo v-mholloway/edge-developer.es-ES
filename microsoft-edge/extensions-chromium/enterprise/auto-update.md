@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: d9901f9c39dabfab111eb7e0c34a3e267a317110
-ms.sourcegitcommit: 59d8043e37b89da814f63bc85daf84e0e7167eab
+ms.openlocfilehash: ff6335a9d2eda8a8d66e0fd9df36cf47aaf21179
+ms.sourcegitcommit: d44dc9f230e8075efc08a62ff83e2bf2c6851776
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "11586391"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "11710442"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -62,7 +62,7 @@ Si hospedas tu propia extensión o aplicación, debes agregar el `update_url` ca
 }
 ```  
 
-## <a name="updated-manifest"></a>Manifiesto actualizado  
+## <a name="update-manifest"></a>Manifiesto de actualización  
 
 El manifiesto actualizado devuelto por el servidor debe ser un documento XML.  Revise el siguiente fragmento de código para ver un ejemplo del archivo XML de manifiesto actualizado.  
 

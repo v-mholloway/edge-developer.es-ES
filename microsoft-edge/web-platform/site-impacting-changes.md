@@ -7,12 +7,12 @@ ms.date: 07/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibilidad, plataforma web
-ms.openlocfilehash: 842e57af361c18715bfb3c001679fabb4a86d0dd
-ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
+ms.openlocfilehash: ea0cf4e753841f9cf2aaeaca7350b77a48e47453
+ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "11675144"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "11709258"
 ---
 # <a name="site-compatibility-impacting-changes-coming-to-microsoft-edge"></a>Cambios que afectan la compatibilidad del sitio próximamente en Microsoft Edge  
 
@@ -36,8 +36,9 @@ Revise este artículo con frecuencia.  El Microsoft Edge actualiza este artícul
 | Autoupgrade mixed content images | Edge v88  |  | Las referencias a imágenes no seguras \(HTTP\) se actualizan automáticamente a HTTPS; si la imagen no está disponible a través de HTTPS, se produce un error en la descarga de la imagen. Hay [disponible una directiva][DeployedgeMicrosoftEdgePoliciesInsecurecontentallowedforurls] de grupo para controlar esta característica. Este cambio se está produciendo en el Chromium proyecto, en el que Microsoft Edge se basa. Para obtener más información, vaya a la [entrada Estado de la plataforma Chrome][ChromestatusFeature4926989725073408].  | 
 | Eliminación de 3DES en TLS  | Edge v93  |  | A partir de Edge v93, se quitará la compatibilidad TLS_RSA_WITH_3DES_EDE_CBC_SHA conjunto de cifrado. Este cambio se está produciendo en el Chromium proyecto, en el que Microsoft Edge se basa. Para obtener más información, vaya a la [entrada Estado de la plataforma Chrome][ChromestatusFeature6678134168485888]. Además, en Edge v93, una directiva de compatibilidad estará disponible para admitir escenarios que necesitan conservar la compatibilidad con servidores obsoletos. Esta directiva de compatibilidad se volverá obsoleta y dejará de funcionar en Edge v95. Asegúrese de actualizar los servidores afectados antes de ese momento. |
 | Restringir las solicitudes de red privada para proteger contextos  | Edge v93  |  | A partir de Edge v93, el acceso a recursos en redes locales (intranet) desde páginas en Internet requiere que esas páginas se entreguen a través de HTTPS. Este cambio se está produciendo en el Chromium proyecto, en el que Microsoft Edge se basa. Para obtener más información, vaya a la [entrada Estado de la plataforma Chrome][ChromestatusFeature5436853517811712]. Hay dos directivas de compatibilidad disponibles para admitir escenarios que necesitan conservar la compatibilidad con páginas no seguras: [InsecurePrivateNetworkRequestAllowed][DeployEdgeMicrosoftEdgePoliciesInsecurePrivateNetworkRequestAllowed] e [InsecurePrivateNetworkRequestAllowedForUrls][DeployEdgeMicrosoftEdgePoliciesInsecurePrivateNetworkRequestAllowedForUrls]. |
-| Semántica de plan B SDP de WebRTC en desuso | [Chrome+1](#release-comments) \(Edge v94\)  |  | Este cambio se está produciendo en el Chromium proyecto, en el que Microsoft Edge se basa. Este cambio deja en desuso un dialecto del Protocolo de descripción de sesión (SDP) heredado denominado Plan B. Este formato SDP se está reemplazando por el plan unificado, que es un formato SDP compatible con especificación y compatible entre exploradores. Para obtener más información, vaya a la entrada Estado de la plataforma [Chrome][ChromestatusFeature5823036655665152] y [PSA: Timeline for Plan B SDP Deprecation and Removal - Please Migrate to Unified Plan][PSADeprecateWebRTCPlanB]. La programación de lanzamiento de Microsoft para la eliminación está planeada para una versión después de Chrome. Solicitar un token de prueba de origen inverso plan B de [WebRTC][ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial] permite a los sitios seguir usando la API en desuso hasta edge v96. |
-| Bloquear descargas de contenido mixto | Edge v94  |  | La descarga de archivos desde direcciones URL HTTP se bloqueará en las páginas HTTPS. Este cambio se está produciendo en el Chromium proyecto, en el que Microsoft Edge se basa.  Para obtener más información, vaya a la entrada [del blog de seguridad de Google][GoogleBlogSecurity20200206]. |  
+| Semántica de plan B SDP de WebRTC en desuso | [Chrome+1](#release-comments) \(TBA\)  |  | Este cambio se está produciendo en el Chromium proyecto, en el que Microsoft Edge se basa. Este cambio deja en desuso un dialecto del Protocolo de descripción de sesión (SDP) heredado denominado Plan B. Este formato SDP se está reemplazando por el plan unificado, que es un formato SDP compatible con especificación y compatible entre exploradores. Para obtener más información, vaya a la entrada Estado de la plataforma [Chrome][ChromestatusFeature5823036655665152], [PSA: Timeline for Plan B SDP Deprecation and Removal - Please Migrate to Unified Plan][PSADeprecateWebRTCPlanB], and [PSA: Plan B throwing is limited to Canary in M93 (not throwing in Stable)][PSADeprecateWebRTCPlanBLimitedToCanaryInM93]. La programación de lanzamiento de Microsoft para la eliminación está planeada para una versión después de Chrome. Solicitar un token de prueba de origen inverso plan B de [WebRTC][ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial] permite a los sitios seguir usando la API en desuso hasta edge v96. |
+| Bloquear descargas de contenido mixto | Edge v94  |  | La descarga de archivos desde direcciones URL HTTP se bloqueará en las páginas HTTPS. Este cambio se está produciendo en el Chromium proyecto, en el que Microsoft Edge se basa.  Para obtener más información, vaya a la entrada [del blog de seguridad de Google][GoogleBlogSecurity20200206]. |
+| Eliminación de cuadros de diálogo javaScript de subframe entre orígenes | [Chrome+1](#release-comments) (Edge v94)  |  | Quita `window.alert` , `window.prompt` y de `window.confirm` iFrames entre orígenes. Este cambio se está produciendo en el Chromium proyecto, en el que Microsoft Edge se basa.  Para obtener más información, vaya [a Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |   
 
 ##### <a name="release-comments"></a>Comentarios de publicación  
 
@@ -88,5 +89,7 @@ Revise este artículo con frecuencia.  El Microsoft Edge actualiza este artícul
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal "Preparación para la eliminación de AppCache | web.dev"  
 
 [PSADeprecateWebRTCPlanB]: https://groups.google.com/g/discuss-webrtc/c/UBtZfawdIAA/m/-UVQQcubBQAJ "PSA: escala de tiempo para la eliminación y desuso de SDP del plan B: migrar al plan unificado"
+
+[PSADeprecateWebRTCPlanBLimitedToCanaryInM93]: https://groups.google.com/g/discuss-webrtc/c/DRRAnej3BTE/m/EqIhrLleBgAJ "PSA: El lanzamiento del plan B se limita a Canary en M93 (no se inicia en Estable)"
 
 <!--todo:  cleanup links  -->  

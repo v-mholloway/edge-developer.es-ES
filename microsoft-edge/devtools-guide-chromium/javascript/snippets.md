@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4a84e959f652320f40a501a26e9ba763c7348b33
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 80be38fad2819fc1b05314d71a1a590a31d3c6d2
+ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564115"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "11709265"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,19 +72,19 @@ En **la pestaña Fragmentos** de código, en el **panel Navegador** de la izquie
 
 ### <a name="open-the-snippets-tab-with-a-mouse"></a>Abra la pestaña Fragmentos de código con un mouse  
 
-1.  Elija la **pestaña Orígenes.**  Aparece **la herramienta** Orígenes.  
+1.  Seleccione la **pestaña Orígenes.**  Aparece **la herramienta** Orígenes.  
     
     :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="La herramienta Orígenes con la pestaña Página abierta a la izquierda" lightbox="../media/javascript-sources-page-pane.msft.png":::
        La **herramienta Orígenes** con la pestaña **Página** abierta a la izquierda  
     :::image-end:::  
     
-1.  En el **panel** Navegador (a la izquierda), elija la pestaña **Fragmentos de** código.  Para obtener acceso **a la opción Fragmentos** de código, es posible que deba elegir **Más pestañas** \( ![ Más pestañas ](../media/more-tabs-icon.msft.png) \).  
+1.  En el **panel Navegador** (a la izquierda), seleccione la pestaña **Fragmentos de** código.  Para obtener acceso **a la opción Fragmentos** de código, es posible que deba seleccionar **Más pestañas** \( ![ Más pestañas ](../media/more-tabs-icon.msft.png) \).  
     
 ### <a name="open-the-snippets-tab-with-the-command-menu"></a>Abra la pestaña Fragmentos de código con el menú comando  
 
 1.  Seleccione cualquier cosa en DevTools, para que DevTools tenga el foco.  
 1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el menú comando.  
-1.  Escriba `Snippets` , elija Mostrar **fragmentos de código**y, a continuación, seleccione para ejecutar el `Enter` comando.  
+1.  Escriba `Snippets` , seleccione Mostrar **fragmentos de código**y, a continuación, seleccione para ejecutar el `Enter` comando.  
     
     :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="El comando Mostrar fragmentos de código" lightbox="../media/javascript-search-show-snippets.msft.png":::
        El **comando Mostrar fragmentos de código**  
@@ -95,7 +95,7 @@ En **la pestaña Fragmentos** de código, en el **panel Navegador** de la izquie
 ### <a name="create-a-snippet-through-the-sources-tool"></a>Crear un fragmento de código a través de la herramienta Orígenes  
 
 1.  [Abra la pestaña Fragmentos de código](#open-the-snippets-tab).  
-1.  Elija **Nuevo fragmento de código**.  
+1.  Seleccione **Nuevo fragmento de código**.  
 1.  Escriba un nombre para el fragmento de código y, a continuación, seleccione `Enter` .  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Asigne un nombre a un fragmento de código" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
@@ -106,7 +106,7 @@ En **la pestaña Fragmentos** de código, en el **panel Navegador** de la izquie
 
 1.  Centra el cursor en alguna parte de DevTools.  
 1.  Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\) para abrir el menú comando.  
-1.  Escriba `Snippet` , elija Crear nuevo fragmento **de**código y, a continuación, `Enter` seleccione para ejecutar el comando.  
+1.  Escriba `Snippet` , seleccione Crear nuevo fragmento **de**código y, a continuación, `Enter` seleccione para ejecutar el comando.  
     
     :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="El comando para crear un nuevo fragmento de código" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        El comando para crear un nuevo fragmento de código  
@@ -136,7 +136,7 @@ Para cambiar el nombre del nuevo fragmento de código con un nombre personalizad
 
 1.  [Abra la pestaña Fragmentos de código](#open-the-snippets-tab).  
 1.  Elija el nombre del fragmento de código que desea ejecutar.  El fragmento de código se abre en **el Editor de código**.  
-1.  Elija **Ejecutar fragmento de código** \( Ejecutar fragmento de código ![ ](../media/run-snippet-icon.msft.png) \).
+1.  Seleccione **Ejecutar fragmento de código** \( Ejecutar fragmento de código ![ ](../media/run-snippet-icon.msft.png) \).  
     
 ### <a name="run-a-snippet-with-the-command-menu"></a>Ejecutar un fragmento de código con el menú de comandos  
 
@@ -153,21 +153,29 @@ Para cambiar el nombre del nuevo fragmento de código con un nombre personalizad
 ## <a name="rename-snippets"></a>Cambiar el nombre de fragmentos de código  
 
 1.  [Abra la pestaña Fragmentos de código](#open-the-snippets-tab).  
-1.  Mantenga el mouse en el nombre del fragmento de código, abra el menú contextual \(haga clic con el botón secundario\) y elija **Cambiar nombre**.  
+1.  Mantenga el mouse en el nombre del fragmento de código, abra el menú contextual \(haga clic con el botón secundario\) y seleccione **Cambiar nombre**.  
     
 ## <a name="delete-snippets"></a>Eliminar fragmentos de código  
 
 1.  [Abra la pestaña Fragmentos de código](#open-the-snippets-tab).  
-1.  Mantenga el mouse sobre el nombre del fragmento de código, abra el menú contextual \(haga clic con el botón secundario en\) y elija **Quitar**.  
-    
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+1.  Mantenga el mouse en el nombre del fragmento de código, abra el menú contextual \(haga clic con el botón secundario en\) y seleccione **Quitar**.  
+
+## <a name="save-snippets"></a>Guardar fragmentos de código  
+
+De forma predeterminada, los fragmentos de código solo están disponibles en DevTools, pero también puede guardarlos en el disco.  
+
+1.  [Abra la pestaña Fragmentos de código](#open-the-snippets-tab).  
+1.  Mantenga el mouse en el nombre del fragmento de código, abra el menú contextual \(haga clic con el botón secundario\) y **seleccione Guardar como**.  
+1.  Elija un nombre de archivo y una ubicación cuando se le pida.  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsConsoleIndex]: ../console/index.md "Información general de la consola | Microsoft Docs"  
-[DevToolsSourcesTool]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../console/index.md "Información general de la Consola | Microsoft Docs"  
+[DevToolsSourcesTool]: ../sources/index.md "Información general sobre la herramienta Orígenes | Microsoft Docs"  
 [DevtoolsJavascriptOverrides]: ./overrides.md "Invalida | Microsoft Docs"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  

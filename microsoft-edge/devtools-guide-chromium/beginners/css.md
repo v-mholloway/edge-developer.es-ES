@@ -3,16 +3,16 @@ description: Introducción con CSS
 title: 'DevTools para principiantes: Introducción a CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 6f34cfa8610848505c8aa795c4fab16e5d2a98ed
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 68db66fffc72737e32ab30eaa721574b5efa605f
+ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564647"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "11709296"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -32,7 +32,7 @@ ms.locfileid: "11564647"
 
 En este tutorial, aprenderá a usar CSS para dar estilo a una página web.  También aprenderá a usar Microsoft Edge DevTools para experimentar con cambios CSS.  
 
-El siguiente artículo es el segundo tutorial de una serie de tutoriales que le enseña los conceptos básicos del desarrollo web y Microsoft Edge DevTools.  Para obtener experiencia práctica, cree su propio sitio web.  No es necesario completar el primer tutorial antes de seguir el segundo.  [Configurar el código muestra](#set-up-your-code) cómo configurarse.  
+Este artículo forma parte de una serie de tutoriales que le enseñarán los conceptos básicos del desarrollo web y Microsoft Edge DevTools.  Para obtener experiencia práctica, cree su propio sitio web.  No tiene que completar los tutoriales anteriores antes de hacerlo.  [Configurar el código muestra](#set-up-your-code) cómo configurarse.  
 
 > [!NOTE]
 > Este tutorial está diseñado para principiantes absolutos y se centra en los **conceptos básicos** del desarrollo web y los conceptos básicos del uso de DevTools para experimentar con CSS.  Si desea un tutorial que solo se centre en DevTools, vaya a [Introducción con Ver y cambiar CSS][DevtoolsCssIndex].  
@@ -43,7 +43,7 @@ Al principio del tutorial, el sitio debe ser parecido a la siguiente figura.
    Cómo es el sitio actualmente  
 :::image-end:::  
 
-Después de completar el tutorial, el sitio debe ser parecido a la siguiente figura.  
+Después de completar el tutorial, el sitio debe tener el aspecto siguiente.  
 
 :::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="Cómo debe ser el sitio al final del tutorial" lightbox="../media/beginners-css-intro2.msft.png":::
    Cómo debe ser el sitio al final del tutorial  
@@ -61,44 +61,44 @@ Está creando un sitio web real.
 
 ## <a name="prerequisites"></a>Requisitos previos  
 
-Antes de intentar este tutorial, complete los siguientes requisitos previos.  
+Complete los siguientes requisitos previos antes de realizar este tutorial.  
 
-*   Complete [Introducción con HTML y dom][DevtoolsBeginnersHtml] o asegúrese de que tiene una comprensión de HTML y dom similar a lo que se enseña en ese tutorial.  
-*   Descargue el [Microsoft Edge][MicrosoftEdgeInsider] web.  En el siguiente tutorial se usa un conjunto de herramientas de desarrollo web, denominadas Microsoft Edge DevTools, integradas en Microsoft Edge.  
+*   Complete [Introducción html y dom][DevtoolsBeginnersHtml] o asegúrese de que ya conoce HTML y DOM.  
+*   Descargue el explorador web [Microsoft Edge][MicrosoftEdgeInsider].  En el siguiente tutorial se usa un conjunto de herramientas de desarrollo web, denominadas Microsoft Edge DevTools, integradas en Microsoft Edge.  
 
 ## <a name="set-up-your-code"></a>Configurar el código  
 
-Para crear el sitio, primero debe completar las siguientes acciones para configurar el código.  
+Para crear el sitio, realice primero los siguientes pasos para configurar el código.  
 
 > [!NOTE]
 > Si ya ha completado el primer tutorial de la serie, vaya a la siguiente sección.  Siga usando el código del último tutorial, [Introducción con HTML y dom][DevtoolsBeginnersHtml].  
 
-1.  Abra el [código fuente][GlitchCookedAmphibianIndex].  Se hace referencia a la pestaña en el foco del explorador como la **pestaña de edición**.  
+1.  Abra el [código fuente][GlitchCookedAmphibianIndex].  La pestaña del explorador que está seleccionado actualmente se denomina pestaña **de edición**.  
     
     :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="La pestaña de edición" lightbox="../media/beginners-css-setup1.msft.png":::
        La **pestaña de** edición  
     :::image-end:::  
     
-1.  Elija **cooked-amphibian**.  Aparece un menú.  
+1.  Seleccione **cooked-amphibian**.  Aparece un menú.  
     
-    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Menú Project opciones" lightbox="../media/beginners-css-setup2.msft.png":::
-       Menú Project opciones  
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Menú Opciones del proyecto" lightbox="../media/beginners-css-setup2.msft.png":::
+       Menú Opciones del proyecto  
     :::image-end:::  
 
-1.  Elija **Remezcla Project**.  Glitch crea una copia del proyecto que puede editar.  
+1.  Seleccione **Remezcla Project**.  Glitch crea una copia del proyecto que puede editar.  
     
     > [!NOTE]
     > Glitch genera un nombre aleatorio para el nuevo proyecto.  
     
-1.  Elija **Mostrar** y **elija En una nueva ventana**.  Se abre otra pestaña con una vista en directo del sitio.  Se hace referencia a la pestaña en el foco del explorador como la **pestaña activa**.  
+1.  Seleccione **Mostrar** y, a continuación, **seleccione En una nueva ventana**.  Se abre otra pestaña con una vista en directo del sitio.  La pestaña del explorador que está seleccionado actualmente se denomina pestaña **activa**.  
     
-    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="La pestaña activa" lightbox="../media/beginners-css-setup3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="La pestaña en tiempo real" lightbox="../media/beginners-css-setup3.msft.png":::
        La **pestaña activa**  
     :::image-end:::  
 
 ## <a name="understand-css"></a>Comprender CSS  
 
-**CSS** es un idioma de equipo que determina el diseño y el estilo de las páginas web.  La siguiente figura es un párrafo con un borde.  
+**CSS** es un lenguaje de equipo que controla el diseño y el estilo de las páginas web.  La siguiente figura es un párrafo con un borde.  
 
 :::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="El texto se ha estilo con CSS" lightbox="../media/beginners-css-red_paragraph.msft.png":::
    El texto se ha estilo con CSS  
@@ -112,11 +112,11 @@ El siguiente fragmento de código es el código HTML y CSS usado para crear el p
 </p>
 ```  
 
-`style="border: 1px dashed red; padding: 5px;"` probablemente tenga un aspecto nuevo.  El resto debería ser familiar.  Si no es así, [Introducción con HTML y dom][DevtoolsBeginnersHtml] antes de intentar las siguientes secciones.  
+Es posible que el atributo HTML `style="border: 1px dashed red; padding: 5px;"` tenga un aspecto nuevo.  El resto debería ser familiar.  Si no es así, [Introducción con HTML y dom][DevtoolsBeginnersHtml] antes de intentar las siguientes secciones.  
 
 ## <a name="add-inline-styles"></a>Agregar estilos en línea  
 
-Complete las siguientes acciones para usar **estilos en línea** para aplicar estilos a un solo elemento.  
+Puede usar estilos **en línea para** aplicar estilos a un solo elemento.  
 
 1.  Vuelva a la pestaña de edición y abra `index.html` .  
     
@@ -124,7 +124,7 @@ Complete las siguientes acciones para usar **estilos en línea** para aplicar es
        Abrir `index.html` en la pestaña de edición  
     :::image-end:::  
     
-1.  Agregar `style="background-color: aliceblue;"` a su `<nav>` .  En el bloque de código siguiente, la cuarta línea de código es la que necesita cambiar.  El resto está justo ahí, por lo que puede asegurarse de que está colocando el nuevo código en el lugar correcto.  
+1.  Agregue el atributo `style="background-color: aliceblue;"` en el `<nav>` elemento.  En el bloque de código siguiente, la cuarta línea de código es la única que necesita cambiar.  Las otras líneas de código se muestran aquí para ayudarle a colocar el nuevo atributo en el lugar correcto.  
     
     ```html
     <header>
@@ -144,7 +144,7 @@ Complete las siguientes acciones para usar **estilos en línea** para aplicar es
        El color de fondo detrás de los **vínculos Inicio** **y** Contacto ahora es azul  
     :::image-end:::  
     
-## <a name="re-use-styles-on-a-single-page-with-internal-stylesheets"></a>Volver a usar estilos en una sola página con hojas de estilos internas  
+## <a name="reuse-styles-on-a-single-page-with-internal-stylesheets"></a>Reutilizar estilos en una sola página con hojas de estilos internas  
 
 En un fragmento de código anterior, un estilo en línea aplicó un estilo a una sola `<p>` etiqueta.  
 
@@ -154,16 +154,16 @@ En un fragmento de código anterior, un estilo en línea aplicó un estilo a una
 </p>
 ```  
 
-¿Qué sucede si desea que todos los elementos de la página web se den el mismo `<p>` estilo?  Debe copiar y pegar el código en todas las `<p>` etiquetas del sitio.  Eso es mucho tiempo y esfuerzo.  Y, si necesita realizar una edición, debe cambiar todas las etiquetas de nuevo.  Complete las siguientes acciones para usar una hoja de estilos **interna** para escribir el CSS una vez para que se aplique a varios elementos.  
+¿Qué sucede si desea que todos los elementos de la página web se den el mismo `<p>` estilo?  Tendrías que copiar y pegar el código en cada etiqueta del sitio, lo que requeriría `<p>` mucho tiempo y esfuerzo.  Si necesita realizar una edición, tendrá que cambiar todas las etiquetas de nuevo.  En su lugar, en los pasos siguientes, se usa una **hoja** de estilos Interna para escribir el CSS una vez, de modo que se aplique a varios elementos.  
 
-1.  En la pestaña activa, elija **Contacto** para navegar a la página de contacto.  Observe la fuente de **Inicio** y **Contacto**.  
+1.  En la pestaña activa, seleccione **Contacto** para navegar a la página de contacto.  Observe la fuente de los **vínculos Inicio** **y** Contacto.  
     
     :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="La página Contacto" lightbox="../media/beginners-css-internal1.msft.png":::
        La página Contacto  
     :::image-end:::  
     
 1.  En la **pestaña editor**, abra `contact.html` .  
-1.  Agregue el siguiente código a `contact.html` .  Recuerde que las líneas que comienzan `<style>` con y terminan con son las que necesita `</style>` agregar.  El otro código está justo ahí para que sepa dónde colocar el nuevo código.  
+1.  Agregue el siguiente código a `contact.html` .  Recuerde que las líneas que comienzan `<style>` con y terminan con son las que necesita `</style>` agregar.  El otro código se muestra aquí para que sepa dónde colocar el nuevo código.  
     
     ```html
     ...
@@ -182,7 +182,7 @@ En un fragmento de código anterior, un estilo en línea aplicó un estilo a una
     ```  
     
 1.  Vuelva a la **pestaña activa**.  
-1.  Elija **Contacto** para volver a la página de contacto.  La fuente de **Inicio** y **Contacto** ha cambiado.  
+1.  Seleccione **Contacto** para volver a la página de contacto.  Observe que la fuente de los **vínculos Inicio** **y** Contacto ha cambiado.  
     
     :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="La fuente de los vínculos Inicio y Contacto ha cambiado" lightbox="../media/beginners-css-internal2.msft.png":::
        La fuente de los **vínculos Inicio** **y** Contacto ha cambiado  
@@ -217,7 +217,7 @@ Las hojas de estilos internas aplican estilos mediante **selectores**.  Los sele
       `font-family`  
    :::column-end:::
    :::column span="2":::
-      La propiedad describe una forma general de cambiar el estilo del elemento.  
+      La propiedad describe qué estilo del elemento debe cambiarse.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -232,11 +232,11 @@ Las hojas de estilos internas aplican estilos mediante **selectores**.  Los sele
    :::column-end:::
 :::row-end:::  
 
-Por ejemplo, `font-family: 'Courier New', Courier, serif` proporciona al explorador la siguiente instrucción: "Establecer la fuente de los elementos que coinciden con el patrón en `li a` `'Courier New'` .  Si esa fuente no está disponible, use `Courier` .  Si no está disponible, use `serif` ."  
+Por ejemplo, `font-family: 'Courier New', Courier, serif` proporciona al explorador la siguiente instrucción: "Establecer la fuente de los elementos que coinciden con el patrón en `li a` `'Courier New'` .  Si esa fuente no está disponible, use `Courier` .  Si eso no está disponible, use `serif` ."  
 
 ### <a name="add-multiple-selectors-to-a-ruleset"></a>Agregar varios selectores a un conjunto de reglas  
 
-Un bloque de código CSS como el siguiente fragmento de código se denomina conjunto **de reglas**.  
+El siguiente fragmento de código CSS se denomina **conjunto de reglas**.  
 
 ```css
 li a {
@@ -244,7 +244,7 @@ li a {
 }
 ```  
 
-Complete las siguientes acciones para usar comas para agregar varios selectores a un conjunto de reglas.  
+En los pasos siguientes se describe cómo usar comas para agregar varios selectores a un conjunto de reglas.  
 
 1.  En la **pestaña editor**, abra `contact.html` .  
 1.  Después `li a` del tipo `, h1` .  
@@ -260,7 +260,7 @@ Complete las siguientes acciones para usar comas para agregar varios selectores 
     El fragmento de código anterior indica al explorador que le de estilo a los elementos de la misma forma que estilos `<h1>` de elementos que coinciden con el patrón `li a` .  
     
 1.  Vaya a la **pestaña activa**.  
-1.  Elija el **vínculo** Contacto para volver a la página de contacto.  Ahora, **Póngase en contacto conmigo.** tiene la misma fuente que los vínculos de navegación.  
+1.  Seleccione el **vínculo** Contacto para volver a la página de contacto.  Ahora, **Póngase en contacto conmigo.** tiene la misma fuente que los vínculos de navegación.  
     
     :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="¡El texto Póngase en contacto conmigo!  ahora tiene la misma fuente que los vínculos Inicio y Contacto" lightbox="../media/beginners-css-multiple1.msft.png":::
        ¡El texto **Póngase en contacto conmigo!** ahora tiene la misma fuente que los vínculos **Inicio** **y** Contacto  
@@ -268,19 +268,19 @@ Complete las siguientes acciones para usar comas para agregar varios selectores 
     
 ## <a name="experiment-with-devtools"></a>Experimentar con DevTools  
 
-A medida que continúa su viaje para convertirse en un experto en desarrollo web, puede que encuentre que CSS es complicado.  Puede escribir algún CSS y esperar que se muestre de una manera, pero el explorador hace algo completamente diferente.  Microsoft Edge DevTools facilita la experimentación con los cambios y muestra inmediatamente cómo afectan los cambios a la página.  
+A medida que continúa su viaje para convertirse en un experto en desarrollo web, puede que encuentre que CSS es complicado.  Es posible que escribas algún código que no muestre lo que pretendías.  Microsoft Edge DevTools facilita la experimentación mostrando los cambios en la página en tiempo real.  
 
-### <a name="add-a-declaration-to-an-existing-rulest-in-devtools"></a>Agregar una declaración a un rulest existente en DevTools  
+### <a name="add-a-declaration-to-an-existing-ruleset-in-devtools"></a>Agregar una declaración a un conjunto de reglas existente en DevTools  
 
-Complete las siguientes acciones para iterar en el estilo de un elemento existente y agregue una declaración a un conjunto de reglas existente.  
+Para agregar una declaración a un conjunto de reglas existente  
 
-1.  Mantenga el mouse en **el vínculo** Inicio, abra el menú contextual \(haga clic con el botón secundario\) y elija **Inspeccionar**.  
+1.  Mantenga el mouse en **el vínculo** Inicio, abra el menú contextual \(haga clic con el botón secundario\) y seleccione **Inspeccionar**.  
     
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Inspeccionar el vínculo Inicio" lightbox="../media/beginners-css-add1.msft.png":::
        Inspeccionar el vínculo Inicio  
     :::image-end:::  
     
-    DevTools se abre junto a la página.  El código que representa el vínculo Inicio, `<a href="/">Home</a>` se resalta en azul en el árbol DOM.  El fragmento de código y la vista previa deben estar familiarizados [Introducción html y dom][DevtoolsBeginnersHtml].  
+    DevTools se abrirá junto a la página.  El código que representa el vínculo Inicio, `<a href="/">Home</a>` se resalta en azul en el árbol DOM.  El fragmento de código y la vista previa deben estar familiarizados [Introducción html y dom][DevtoolsBeginnersHtml].  
     
     :::row:::
        :::column span="":::
@@ -299,7 +299,7 @@ Complete las siguientes acciones para iterar en el estilo de un elemento existen
        :::column-end:::
     :::row-end:::  
     
-1.  Elija la línea vacía siguiente `font-family: 'Courier New', Courier, Serif` para agregar una nueva declaración.  
+1.  Seleccione la línea vacía siguiente `font-family: 'Courier New', Courier, Serif` para agregar una nueva declaración.  
     
     :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="Agregar una nueva declaración" lightbox="../media/beginners-css-add4.msft.png":::
        Agregar una nueva declaración  
@@ -319,9 +319,9 @@ Complete las siguientes acciones para iterar en el estilo de un elemento existen
     
 ### <a name="edit-a-declaration-in-devtools"></a>Editar una declaración en DevTools  
 
-Complete las siguientes acciones para editar las declaraciones existentes en DevTools.  
+Para editar declaraciones existentes en DevTools  
 
-1.  Elija el cuadrado magenta junto a `magenta` .  Aparece un selector de colores.  
+1.  Seleccione el cuadrado magenta junto a `magenta` .  Aparece un selector de colores.  
     
     :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="Selector de colores" lightbox="../media/beginners-css-edit1.msft.png":::
        Selector de colores  
@@ -335,9 +335,9 @@ Complete las siguientes acciones para editar las declaraciones existentes en Dev
     
 ### <a name="add-a-new-ruleset-in-devtools"></a>Agregar un nuevo conjunto de reglas en DevTools  
 
-Complete las siguientes acciones para agregar nuevos conjuntos de reglas en DevTools.  
+Para agregar nuevos conjuntos de reglas en DevTools  
 
-1.  Elija **Nueva regla de estilo** \( Nueva regla de estilo ![ ](../media/new-style-rule-icon.msft.png) \) que está junto a **.cls**.  Aparece un conjunto de reglas vacío `a` con como selector.  
+1.  Seleccione **Nueva regla de estilo** \( Nueva regla de estilo ![ ](../media/new-style-rule-icon.msft.png) \) que está junto a **.cls**.  Aparece un conjunto de reglas vacío `a` con como selector.  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Agregar una nueva regla" lightbox="../media/beginners-css-rule1.msft.png":::
        Agregar una nueva regla  
@@ -351,7 +351,8 @@ Complete las siguientes acciones para agregar nuevos conjuntos de reglas en DevT
     
     `:hover` es una **pseudo-clase**.  Use pseudo-clases para elementos de estilo que puedan entrar en estados especiales.  Por ejemplo, el estilo solo tiene efecto cuando se pasa el `a:hover` mouse sobre un `<a>` elemento.  
     
-1.  Elija entre corchetes para agregar una nueva declaración.  
+1.  Seleccione el área vacía entre corchetes para agregar una nueva declaración.  
+
 1.  Escriba `background-color` el nombre de declaración y seleccione `Enter` .  
     
     :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="Tipo de fondo-color" lightbox="../media/beginners-css-rule3.msft.png":::
@@ -370,7 +371,7 @@ Complete las siguientes acciones para agregar nuevos conjuntos de reglas en DevT
        Mantenga el mouse en el vínculo Inicio para mostrar su fondo verde  
     :::image-end:::  
     
-## <a name="re-use-styles-across-pages-with-external-stylesheets"></a>Volver a usar estilos en páginas con hojas de estilos externas  
+## <a name="reuse-styles-across-pages-with-external-stylesheets"></a>Reutilizar estilos en páginas con hojas de estilos externas  
 
 En un paso anterior, agregó el siguiente fragmento de código como hoja de estilos interna a `contact.html` .  
 
@@ -388,7 +389,7 @@ En un paso anterior, agregó el siguiente fragmento de código como hoja de esti
 ...
 ```  
 
-¿Qué sucede si quieres dar `index.html` el mismo estilo?  ¿Qué sucede si tuviera un gran número de páginas a las que desea aplicar sus estilos?  Debe copiar y pegar la hoja de estilos interna en cada página web del sitio.  Complete las siguientes acciones para agregar una hoja de estilos **externa** que le permita escribir el CSS una vez y aplicarlo a varias páginas.  
+¿Qué sucede si quieres dar `index.html` el mismo estilo?  ¿Qué sucede si tuviera un gran número de páginas a las que desea aplicar sus estilos?  Tendría que copiar y pegar la hoja de estilos interna en cada página web del sitio.  En los pasos siguientes se describe cómo agregar una hoja de estilos **externa** para que pueda escribir el CSS una vez y aplicarlo a varias páginas.  
 
 1.  En primer lugar, actualice la pestaña activa para quitar los cambios realizados en DevTools.  
     
@@ -414,13 +415,13 @@ En un paso anterior, agregó el siguiente fragmento de código como hoja de esti
        El estilo en línea se ha quitado del elemento nav  
     :::image-end:::  
     
-1.  Elija **Nuevo archivo**.  
+1.  Seleccione **Nuevo archivo**.  
     
     :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="El nuevo cuadro de diálogo de archivo" lightbox="../media/beginners-css-external5.msft.png":::
        El nuevo cuadro de diálogo de archivo  
     :::image-end:::  
     
-1.  Reemplace `cool-file.js` por y elija Agregar `style.css` **archivo**.  
+1.  Reemplace `cool-file.js` por y seleccione Agregar `style.css` **archivo**.  
     
     :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="Tipo style.css" lightbox="../media/beginners-css-external6.msft.png":::
        Tipo `style.css`  
@@ -444,7 +445,7 @@ En un paso anterior, agregó el siguiente fragmento de código como hoja de esti
        Agregar código a `style.css`  
     :::image-end:::  
     
-    Asegúrese de que ha creado una hoja de estilos externa. El CÓDIGO HTML no es consciente de que existe.  
+    Asegúrese de que ha creado una hoja de estilos externa. El HTML no es consciente de que existe.  
     
 1.  Abra `index.html` .  
 1.  Agregue `<link rel="stylesheet" href="style.css">` a su HTML.  
@@ -473,7 +474,7 @@ En un paso anterior, agregó el siguiente fragmento de código como hoja de esti
        La página principal  
     :::image-end:::  
     
-1.  Elija el **vínculo** Contacto para navegar a la página de contacto.  La página de contacto tiene el mismo formato que la página principal.  
+1.  Seleccione el **vínculo** Contacto para navegar a la página de contacto.  La página de contacto tiene el mismo formato que la página principal.  
     
     :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="La página de contacto" lightbox="../media/beginners-css-external11.msft.png":::
        La página de contacto  
@@ -482,6 +483,8 @@ En un paso anterior, agregó el siguiente fragmento de código como hoja de esti
 ## <a name="use-a-css-framework"></a>Usar un marco CSS  
 
 **Los marcos CSS** son colecciones de estilos creados por otros desarrolladores que facilitan la creación de sitios web atractivos.  En lugar de definir estilos usted mismo, un marco le proporciona una colección de estilos que puede usar en los elementos de la página.  
+
+Siga estos pasos para agregar el marco CSS de Bootstrap a la página.  
 
 1.  Copie el código siguiente:  
     
@@ -509,7 +512,7 @@ En un paso anterior, agregó el siguiente fragmento de código como hoja de esti
     
 ### <a name="use-a-class"></a>Usar una clase  
 
-En la última sección, agregó Bootstrap a las páginas web, lo que cambió las fuentes de algunos de los elementos del sitio.  Los marcos CSS le ayudan a realizar cambios importantes en la página con muy poco código.  Complete las siguientes acciones para cambiar el encabezado.  
+En la última sección, agregó Bootstrap a las páginas web, lo que cambió las fuentes de algunos de los elementos del sitio.  Los marcos CSS le ayudan a realizar cambios importantes en la página con muy poco código.  Siga estos pasos para usar una de las clases de Bootstrap para cambiar el encabezado.  
 
 1.  Copie el siguiente fragmento de código.  
     
@@ -531,8 +534,8 @@ En la última sección, agregó Bootstrap a las páginas web, lo que cambió las
     
 1.  Ver los cambios en la pestaña activa.  Hay un cuadro grande y gris alrededor del encabezado.  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="El encabezado ahora tiene un cuadro grande y gris alrededor de él" lightbox="../media/beginners-css-jumbotron3.msft.png":::
-       El encabezado ahora tiene un cuadro grande y gris alrededor de él  
+    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="El encabezado ahora tiene un cuadro gris grande alrededor de él" lightbox="../media/beginners-css-jumbotron3.msft.png":::
+       El encabezado ahora tiene un cuadro gris grande alrededor de él  
     :::image-end:::  
     
 ### <a name="understand-classes"></a>Comprender clases  
@@ -551,7 +554,7 @@ Las clases permiten asignar colecciones de estilos a elementos arbitrarios.  Use
 Una ventaja de una clase es que le permite aplicar estilos a los elementos que desee.  Por ejemplo, supongamos que desea establecer el color de fondo de algunos `<p>` elementos en púrpura, pero no todos los `<p>` elementos.  Use el siguiente fragmento de código para definir el estilo de una clase.  
 
 ```css
-.custom-background {
+.my-class-name {
   background-color: purple;
 }
 ```  
@@ -560,14 +563,14 @@ A continuación, aplique la clase solo a los `<p>` elementos que desee aplicar e
 
 ```html
 <p>The text is not purple.</p>
-<p class="custom-background">The text is purple.</p>
+<p class="my-class-name">The text is purple.</p>
 <p>The text is not purple.</p>
-<p class="custom-background">The text is purple.</p>
+<p class="my-class-name">The text is purple.</p>
 ```  
 
 ### <a name="align-elements"></a>Alinear elementos  
 
-Complete las siguientes acciones para arrancar y proporcionar clases para alinear elementos.  
+Complete los pasos siguientes para usar otras clases de Bootstrap que sean útiles para alinear elementos.  
 
 1.  Vuelva a la pestaña editor y abra `index.html` .  
 1.  Agregue `class="container-fluid"` a la `<body>` etiqueta.  
@@ -594,15 +597,15 @@ Complete las siguientes acciones para arrancar y proporcionar clases para alinea
        El contenido de navegación está ahora a la izquierda del contenido principal  
     :::image-end:::  
     
-## <a name="next-steps"></a>Pasos siguientes  
+## <a name="next-steps"></a>Siguientes pasos  
 
 Enhorabuena, ha terminado.  
 
 *   La mejor forma de mejorar el desarrollo web es crear más sitios.  No te preocupes por las cosas que se rompen.  Simplemente diviértase y aprenda lo más posible a lo largo del camino.  
 *   Para obtener más información sobre el estilo de páginas web, vaya a [Introducción a CSS][MDNCssFirstSteps].  
-*   Para obtener más información sobre cómo usar DevTools para experimentar con el CSS de una página, vaya a [Introducción con Ver y cambiar CSS][DevtoolsCssIndex].  
+*   Para obtener más información sobre cómo experimentar con CSS en DevTools, vaya a [Introducción con Ver y cambiar CSS][DevtoolsCssIndex].  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -619,7 +622,7 @@ Enhorabuena, ha terminado.
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
-> La página original se encontró [aquí](https://developers.google.com/web/tools/chrome-devtools/beginners/css) y fue creado por [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
+> La página original se encontró [aquí](https://developers.google.com/web/tools/chrome-devtools/beginners/css) y fue creada por [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
 Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
