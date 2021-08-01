@@ -23,6 +23,8 @@
           items:
             - name: Características experimentales
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 93
+              href: devtools-guide-chromium/whats-new/2021/07/devtools.md
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
             - name: Microsoft Edge 91
@@ -407,9 +409,9 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Prevención de seguimiento en Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: Cómo detectar Microsoft Edge en el sitio web
+        - name: Detectar Microsoft Edge desde su sitio web
           href: web-platform/user-agent-guidance.md
-        - name: Personalizar el botón de revelación de contraseñas
+        - name: Personalizar el botón de revelar contraseñas
           href: web-platform/password-reveal.md
     - name: Información general sobre Web We Want
       href: web-we-want/index.md

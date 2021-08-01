@@ -3,16 +3,16 @@ description: Una referencia completa de las Microsoft Edge del panel DevTools Ne
 title: Referencia de análisis de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bdb1145e7ee8ed7865b68f9fd632c4b1a30007e9
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 93916c2ea65f9500ae0bf8a7a6e59caf45893bc1
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564836"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710768"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -163,10 +163,36 @@ Para borrar manualmente las cookies del explorador en cualquier momento, manteng
 Para invalidar manualmente el agente de usuario, siga estos pasos.  
 
 1.  Abra el **cajón Condiciones de** red.  
-1.  Desactiva la casilla **Seleccionar automáticamente.**  
-1.  Elija una opción de agente de usuario en el menú o escriba una personalizada en el cuadro de texto.  
+1.  Desactive la **casilla Seleccionar automáticamente.**  
+1.  Elija una opción de agente de usuario en el menú o escriba un agente de usuario personalizado en el cuadro de texto.  
 
-<!--todo: add network condition section when available -->  
+## <a name="set-user-agent-client-hints"></a>Establecer sugerencias de cliente de agente de usuario
+
+Si el sitio usa sugerencias de cliente de agente de [usuario,](../../web-platform/user-agent-guidance.md)use el panel **Condiciones** de red para proporcionar sugerencias de cliente de agente de usuario diferentes.
+
+1. Abra el **menú contextual** (haga clic con el botón secundario) y elija **Inspeccionar**.
+1. Elija **Condiciones de**  >  **red**.
+1. En el panel Agente de usuario desactive la casilla **Usar explorador predeterminado** y, a continuación, elija Sugerencias de cliente de agente de **usuario.**
+
+    :::image type="complex" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="Establecer sugerencias de cliente de agente de usuario" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
+        Establecer sugerencias de cliente de agente de usuario  
+    :::image-end::: 
+
+1. Acepte el valor predeterminado de **Custom...** o elija un explorador y un dispositivo predefinidos en la lista desplegable.
+1. Para cualquiera de las opciones, establezca las sugerencias del cliente del agente de usuario de la siguiente manera.
+    * **Marca** y **versión** como *Edge* y *92*. Elija **+ Agregar marca** para agregar varios pares de marca y versión.
+    * **Versión completa del explorador** como *92.0.1111.0*.
+    * **Plataforma** y **versión** como *Windows* *y 10.0*.
+    * **Arquitectura** como *x86*.
+    * **Modelo de dispositivos** como *Galaxy Nexus*.
+
+    > [!NOTE]
+    > Establezca o cambie cualquiera de las sugerencias de cliente del agente de usuario. No hay valores necesarios.
+
+1. Selecciona **Actualización**. 
+1. Para comprobar los cambios, elija **Consola** y escriba `navigator.userAgentData` . Expanda los resultados según sea necesario para ver los cambios en los datos del agente de usuario.
+
+También puede establecer sugerencias de cliente de agente de usuario en [Emular dispositivos móviles en Microsoft Edge](../device-mode/index.md).  
 
 ## <a name="filter-requests"></a>Solicitudes de filtro  
 
@@ -533,7 +559,7 @@ Para mostrar el cuerpo de la respuesta a una solicitud, siga estos pasos.
 Para mostrar datos de encabezado HTTP sobre una solicitud, siga estos pasos.  
 
 1.  Elija la dirección URL de la solicitud, en la **columna Nombre** de la tabla Solicitudes.  
-1.  Elija el **psanel headers.**  
+1.  Elija el panel **Encabezados.**  
 
 :::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Panel Encabezados" lightbox="../media/network-resources-headers.msft.png":::
    Panel **Encabezados**  
@@ -541,7 +567,7 @@ Para mostrar datos de encabezado HTTP sobre una solicitud, siga estos pasos.
 
 #### <a name="display-http-header-source"></a>Mostrar origen de encabezado HTTP  
 
-De forma predeterminada, el panel **Encabezados** muestra los nombres de encabezado alfabéticamente.  Para dsiplay los nombres de encabezado HTTP en el orden recibido, siga estos pasos.  
+De forma predeterminada, el panel **Encabezados** muestra los nombres de encabezado alfabéticamente.  Para mostrar los nombres de encabezado HTTP en el orden recibido, siga estos pasos.  
 
 1.  Abra el panel **Encabezados** para la solicitud que le interese.  Para obtener más información, vaya [a Mostrar encabezados HTTP](#display-http-headers).  
 1.  Elija **ver origen**, junto a la sección Encabezado de **solicitud** o Encabezado **de** respuesta.  
@@ -956,7 +982,7 @@ De forma predeterminada, DevTools muestra el **panel Información** general.  Pa
    Casilla **Mostrar información general**  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

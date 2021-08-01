@@ -3,16 +3,16 @@ description: Usa dispositivos virtuales en Microsoft Edge para crear sitios web 
 title: Emular dispositivos móviles en Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, emulación, dispositivo, simulación, móvil
-ms.openlocfilehash: b62a1799b1707fc4c6890bb7ad9ad4aa9afab113
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 924f4a0dc99c4da1766e5ded43539e10f487b435
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564409"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710754"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -249,26 +249,35 @@ También puede establecer la limitación de red desde **el** panel Rendimiento.
     
 ## <a name="override-geolocation"></a>Reemplazar geolocalización  
 
-:::row:::
-   :::column span="":::
-      Si la página depende de la información de geolocalización de un dispositivo móvil para representarse correctamente, proporcione distintas geolocalizaciones mediante la interfaz de usuario de reemplazo de geolocalización.  
+ Si la página depende de la información de geolocalización de un dispositivo móvil para representarse correctamente, proporcione distintas geolocalizaciones mediante la interfaz de usuario de reemplazo de geolocalización.
 
+:::row:::
+   :::column span="":::       
       1.  Elija **Personalizar y controlar DevTools** \( `...` \) > Más herramientas ****  >  **Sensores**.  
+         
+   :::column-end:::
+   :::column span="":::
+
+      1.  Abra el menú comando `Control` + `Shift` + `P` seleccionando \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
+      1. Escriba `Sensors` y elija Mostrar **sensores**.  
+            
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::       
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensores de geolocalización" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Sensores** de geolocalización  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Abra el Menú de comandos.  
-          *   Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
-      1. Escriba `Sensors` y elija Mostrar **sensores**.  
-      
+     
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Mostrar sensores para geolocalización" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Mostrar sensores** para geolocalización  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
+
 
 En **el** panel Sensores, puede seleccionar una de las **** ubicaciones preestablecidas incluidas en DevTools mediante el menú desplegable Ubicación.  Para especificar una ubicación personalizada, elija **Otros...** e introduzca las coordenadas de la ubicación personalizada.  Para probar la página en un estado de error cuando la información de ubicación no está disponible, elija **Ubicación no disponible.**  
 
@@ -278,20 +287,30 @@ En **el** panel Sensores, puede seleccionar una de las **** ubicaciones preestab
 
 ## <a name="set-orientation"></a>Establecer orientación  
 
+Si la página depende de la información de orientación de un dispositivo móvil para que se represente correctamente, abra la interfaz de usuario de orientación.  
+
 :::row:::
    :::column span="":::
-      Si la página depende de la información de orientación de un dispositivo móvil para que se represente correctamente, abra la interfaz de usuario de orientación.  
 
       1.  Elija **Personalizar y controlar DevTools** \( `...` \) > Más herramientas ****  >  **Sensores**.  
+      
+      
+   :::column-end:::
+   :::column span="":::
+      1.  Abra el menú comando `Control` + `Shift` + `P` seleccionando \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
+      1. Escriba `Sensors` y elija Mostrar **sensores**.  
+           
+   :::column-end:::
+:::row-end:::  
+
+:::row:::
+   :::column span="":::
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensores de orientación" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Sensores** de orientación  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Abra el Menú de comandos.  
-          *   Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
-      1. Escriba `Sensors` y elija Mostrar **sensores**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Mostrar sensores para orientación" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Mostrar sensores** para orientación  
@@ -307,21 +326,30 @@ En **el** panel Sensores, puede seleccionar una orientación preestablecida en *
 
 ## <a name="set-user-agent-string"></a>Establecer cadena de agente de usuario  
 
+Si la página depende de la cadena de agente de usuario de un dispositivo móvil para representarse correctamente, use el panel **Condiciones** de red para proporcionar distintas cadenas de agente de usuario.  
+
 :::row:::
    :::column span="":::
-      Si la página depende de la cadena de agente de usuario de un dispositivo móvil para representarse correctamente, use el panel **Condiciones** de red para proporcionar distintas cadenas de agente de usuario.  
       
       1.  Elija **Personalizar y controlar DevTools** \( `...` \) > Más herramientas **Condiciones**  >  **de red**.  
-      
+           
+   :::column-end:::
+   :::column span="":::
+      1.  Abra el menú comando `Control` + `Shift` + `P` seleccionando \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
+      1. Escriba `Network conditions` y elija Mostrar condiciones de **red**.  
+           
+   :::column-end:::
+:::row-end:::  
+
+:::row:::
+   :::column span="":::
+            
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Entrada condiciones de red en el menú Más herramientas" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          **Entrada condiciones de** red en el **menú Más** herramientas  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Abra el Menú de comandos.  
-          *   Seleccione `Control` + `Shift` + `P` \(Windows, Linux\) o `Command` + `Shift` + `P` \(macOS\).  
-      1. Escriba `Network conditions` y elija Mostrar condiciones de **red**.  
-      
+            
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Mostrar condiciones de red" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
          **Mostrar condiciones de red**  
       :::image-end:::  
@@ -334,7 +362,35 @@ Junto al **agente de usuario,** desactive la **casilla Seleccionar automáticame
     Establecer la cadena de agente de usuario en Microsoft Edge en macOS  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="set-user-agent-client-hints"></a>Establecer sugerencias de cliente de agente de usuario
+
+Si el sitio usa sugerencias de cliente de agente de usuario, use el **panel** [Dispositivos](../../web-platform/user-agent-guidance.md)emulados para agregar dispositivos y establecer sugerencias de cliente de agente de usuario.
+
+1. Abra el **menú contextual** (haga clic con el botón secundario) y elija **Inspeccionar**.
+1. Elija **Configuración**  >  **dispositivos**.
+1. En el panel Dispositivos emulados, seleccione **Agregar dispositivo personalizado...** y expanda Sugerencias de **cliente de agente de usuario.**
+
+    :::image type="complex" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="Establecer sugerencias de cliente de agente de usuario" lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+        Establecer sugerencias de cliente de agente de usuario  
+    :::image-end::: 
+
+1. Escriba un nombre único en el cuadro **de texto Nombre** del dispositivo, como `Test101` .
+1. Acepte los valores predeterminados o cambie **la relación de**píxeles Width , **Height**y **Device** según sea necesario.
+1. Establezca las sugerencias del cliente del agente de usuario de la siguiente manera.
+    * **Marca** y **versión** como *Edge* y *92*. Elija **+ Agregar marca** para agregar varios pares de marca y versión.
+    * **Versión completa del explorador** como *92.0.1111.0*.
+    * **Plataforma** y **versión** como *Windows* *y 10.0*.
+    * **Arquitectura** como *x86*.
+    * **Modelo de dispositivos** como *Galaxy Nexus*.
+
+    > [!NOTE]
+    > Establezca o cambie cualquiera de las sugerencias de cliente del agente de usuario. No hay valores necesarios.
+
+1. Seleccione **Agregar**. El nuevo dispositivo se muestra en un estado seleccionado en la parte superior de la **lista Dispositivos emulados.**
+
+También puede establecer sugerencias de cliente de agente de usuario en referencia [de análisis de red](../network/reference.md).
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

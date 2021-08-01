@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, html perimetral
-ms.openlocfilehash: 6eae00a0fddb75782be5a3e94efaa5a8965674a0
-ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
+ms.openlocfilehash: d1baa8c81c92da31b0b65eb21b6873965831f961
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "11643451"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710741"
 ---
 # <a name="get-started-with-webview2"></a>Introducción a WebView2  
 
@@ -283,16 +283,17 @@ Para compilar y ejecutar la aplicación, seleccione `F5` .  La dirección URL ap
 
 Enhorabuena, has creado tu primera aplicación WebView2.  
 
-## <a name="next-steps"></a>Pasos siguientes  
+## <a name="next-steps"></a>Siguientes pasos  
 
 Para obtener funcionalidad adicional de WebView2 que no se describe en este artículo, revise los siguientes recursos.  
 
+*   Para obtener el código usado en este tutorial, vaya al repositorio [MicrosoftEdge/WebView2Samples][Win32GithubCode].
 *   Para obtener más información sobre cómo crear aplicaciones webView2, vaya a Procedimientos recomendados de desarrollo [de WebView2][WV2BestPractices].  
 *   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a Ejemplo de [API de WebView2][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Para obtener una aplicación de ejemplo creada con WebView2, vaya a [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Para obtener información detallada acerca de la API de WebView2, vaya a [Referencia de api][Webview2ReferenceWin32].  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Ponerse en contacto con el equipo de Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -323,3 +324,5 @@ Para obtener funcionalidad adicional de WebView2 que no se describe en este art�
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Instalador de WebView2"  
+
+[Win32GithubCode]:https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted "Código de guía de introducción de Win32 WebView2"

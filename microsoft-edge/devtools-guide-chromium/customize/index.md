@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0be3219579794dca28f71e336da1154f31f2d2be
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 54cea0518656feedb981c73eb19456a7f0568814
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564388"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710733"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,11 +35,10 @@ En esta página se enumeran las formas de personalizar Microsoft Edge DevTools.
 
 **Configuración**  >  **Las** preferencias contienen muchas opciones para personalizar DevTools.  
 
-Para abrir Configuración, complete una de las siguientes acciones.  
+Para abrir Configuración, realice una de las siguientes acciones.
+*   En DevTools, seleccione el **icono Configuración** \( Configuración ![ icono ](../media/settings-icon-dark.msft.png) \).
+*   Mientras DevTools tenga el foco, seleccione `F1` .
 
-*   Seleccione `F1` mientras DevTools está en el foco.  
-*   Abra el **menú principal y,** a **continuación, elija Configuración**.  
-    
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Configuración" lightbox="../media/customize-settings-preferences.msft.png":::
    **Configuración**  
 :::image-end:::  
@@ -112,7 +111,7 @@ Para activar los experimentos de DevTools, realice las siguientes acciones.
 
 La próxima vez que abra DevTools, se mostrará una nueva página denominada **Experiments** en [Configuración](#settings).  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

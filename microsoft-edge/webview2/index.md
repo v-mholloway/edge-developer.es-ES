@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones win32, win32, perímetro, ICoreWebView2, CoreWebView2, ICoreWebView2Host, control de explorador, html perimetral, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
-ms.openlocfilehash: 64c835d0122a1c72e610efed2c060f7921a8e2b5
-ms.sourcegitcommit: 5ae09b1ad6cd576c9fec12538b23cd849861f2b2
+ms.openlocfilehash: a2f377893f4232b86a72a68010a8194004a14d29
+ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "11627988"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710699"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Introducción a Microsoft Edge WebView2  
 
@@ -157,11 +157,14 @@ Una versión de disponibilidad general \(GA\) o preliminar está disponible en l
 *   .NET Framework 4.5 o posterior  
 *   .NET Core 3.1 o posterior  
 *   .NET 5  
-*   [WinUI 3.0][UwpToolkitsWinui3] \(Versión preliminar\)  
+*   [WinUI 3.0][UwpToolkitsWinui3]  
     
 Puede ejecutar aplicaciones webView2 en las siguientes versiones de Windows.  
 
 *   Windows 10  
+*   Windows 10 IoT Enterprise LTSC x32 2019
+*   Windows 10 IoT Enterprise LTSC x64 2019
+*   Windows 10 IoT Enterprise 21h1 x64
 *   Windows 8.1  
 *   Windows 7 \*\*  
 *   Windows Server 2019  
