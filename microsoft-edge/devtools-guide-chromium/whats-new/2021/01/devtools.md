@@ -10,7 +10,7 @@ keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 ms.localizationpriority: high
 ms.openlocfilehash: 9eb9f35427829dbe262b4c71d8ff5474b28eae77
 ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "11597158"

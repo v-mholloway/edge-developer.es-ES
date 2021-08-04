@@ -13,7 +13,7 @@ no-loc:
 - Google Cast
 ms.openlocfilehash: ac07c968bbbf7f995018aa326a3f8781bda11e74
 ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/13/2021
 ms.locfileid: "11564864"
@@ -370,7 +370,7 @@ La exploración de InPrivate es el modo de exploración privada en el que no se 
 
 ## <a name="read-aloud"></a>Leer en voz alta  
 
-Microsoft Edge ofrece Leer en voz alta, que lee el contenido de una página web para el usuario.  Para empezar a leer en voz alta, mueva el puntero en cualquier lugar de la página y abra el menú contextual \(haga clic con el botón derecho \) o abra **Configuración y más (...)** y seleccione **Leer en voz alta**.  Leer en voz alta ofrece varias voces que se pueden usar para leer el contenido de la página web.  Si usa voces [instaladas en Windows 10][OfficeSupport4c83a8d8748642f78e462b0fdf753130] en la sección **Idioma y hora** de la configuración de Windows 10 y quiere borrar la memoria caché local de las voces que usó anteriormente, vaya a `edge://settings/clearBrowserData`.  
+Microsoft Edge ofrece Leer en voz alta, que lee el contenido de una página web para el usuario.  Para empezar a leer en voz alta, mueva el puntero en cualquier lugar de la página y abra el menú contextual \ (haga clic con el botón derecho \) o abra **Configuración y más (...)** y seleccione **Leer en voz alta**.  Leer en voz alta ofrece varias voces que se pueden usar para leer el contenido de la página web.  Si usa voces [instaladas en Windows 10][OfficeSupport4c83a8d8748642f78e462b0fdf753130] en la sección **Idioma y hora** de la configuración de Windows 10 y quiere borrar la memoria caché local de las voces que usó anteriormente, vaya a `edge://settings/clearBrowserData`.  
 
 Cuando empieza a leer en voz alta, Microsoft Edge usa la [API de Web Speech][GithubW3cIncubatorCommunityGroupSpeechApi].  Según la voz que seleccione, el contenido de la página se convierte de texto a voz mediante una biblioteca del lado del cliente, ya sea proporcionada por la plataforma \(por ejemplo, una específica para su sistema operativo\) o una biblioteca del lado del servidor impulsada por Azure Cognitive Services.  Si el contenido se convierte a voz con una biblioteca del lado cliente, no se envía información a los servidores de Microsoft.  Si el contenido se convierte a voz con Azure Cognitive Services \(indicado con la palabra "En línea" en cualquiera de los nombres de voz\), el texto, junto con un token generado aleatoriamente, se enviará a Microsoft.  Una vez completada la conversión, el servicio devuelve el texto narrado en un archivo de audio a su dispositivo.  Todos los datos se cifran a medida que se transfieren desde el dispositivo a Microsoft, y viceversa.  El texto que se envía a Microsoft y el archivo de audio generado se eliminan de forma inmediata cuando se produce la conversión. No se almacenan otros datos sobre el contenido web durante ningún período de tiempo.  
 
@@ -384,7 +384,7 @@ Para comprender cómo afecta la nueva funcionalidad a Microsoft Edge y a los ser
 
 ## <a name="resolve-navigation-errors"></a>Solucionar errores de navegación  
 
-Si Microsoft Edge detecta tiempos de espera de conexión SSL, errores de certificado u otros problemas de red que puedan deberse a un portal cautivo \(por ejemplo, a una red Wi-Fi en un hotel o aeropuerto \), Microsoft Edge envía una solicitud a `http://edge.microsoft.com/captiveportal/generate_204` y comprueba el código de respuesta.  Si la solicitud se redirige a otra URL, Microsoft Edge abre la dirección URL en una nueva pestaña, suponiendo que sea una página de inicio de sesión.  Las solicitudes a la página de detección del portal cautivo son un servicio sin estado, las solicitudes no se registran y las cookies no se envían ni se guardan.  En las plataformas Windows, Microsoft Edge usa un servicio de portal cautivo de Windows.  De lo contrario, se usa el servicio de portal cautivo de Microsoft Edge.  Para desactivar el servicio, vaya a `edge://settings/privacy` y desactive la opción **Usar un servicio web para ayudar a resolver errores de navegación**.  
+Si Microsoft Edge detecta tiempos de espera de conexión SSL, errores de certificado u otros problemas de red que puedan deberse a un portal cautivo \ (por ejemplo, a una red Wi-Fi en un hotel o aeropuerto \), Microsoft Edge envía una solicitud a `http://edge.microsoft.com/captiveportal/generate_204` y comprueba el código de respuesta.  Si la solicitud se redirige a otra URL, Microsoft Edge abre la dirección URL en una nueva pestaña, suponiendo que sea una página de inicio de sesión.  Las solicitudes a la página de detección del portal cautivo son un servicio sin estado, las solicitudes no se registran y las cookies no se envían ni se guardan.  En las plataformas Windows, Microsoft Edge usa un servicio de portal cautivo de Windows.  De lo contrario, se usa el servicio de portal cautivo de Microsoft Edge.  Para desactivar el servicio, vaya a `edge://settings/privacy` y desactive la opción **Usar un servicio web para ayudar a resolver errores de navegación**.  
 
 ## <a name="secure-dns"></a>DNS seguro
 
