@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4f5f52bcde976cea8432e3160a792438e5603e21
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: e57c2930874fcbe38ee3c274441844b2358d1d7d842ec8b41f23d9ae5d1ab93a
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564199"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804257"
 ---
 <!-- Copyright Kayce Basques
 
@@ -149,7 +149,7 @@ Para mostrar una notificación de **** inserción a un usuario, un trabajador de
        Ver los detalles de un evento en el **panel Mensajería de** inserción  
     :::image-end:::  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

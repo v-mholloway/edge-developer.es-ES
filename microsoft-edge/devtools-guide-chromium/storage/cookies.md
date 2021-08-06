@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 4f5a352445bd13b82ada82df3a528a1e80aa144e
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 8559ebeda599881e93e8532e75df94926170e39973911124ea0de576fdf1bd67
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565060"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803648"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -92,7 +92,7 @@ Elija **Borrar todo** \( Borrar todo ![ ](../media/clear-icon.msft.png) \) para 
    Figura 6: Borrar todas las cookies  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

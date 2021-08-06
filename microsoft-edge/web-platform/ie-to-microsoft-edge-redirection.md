@@ -7,12 +7,12 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibilidad, plataforma web, Internet Explorer
-ms.openlocfilehash: dd8db64311b60ff0c740776de94def88f22c2e96
-ms.sourcegitcommit: 0e67a56b9dc1f7a86924d142db0efd36fd99d38b
+ms.openlocfilehash: 687790a3fcbd912bf4d9896e5bd90c1d2be1159fbcc2db383b24689bd48df5b8
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "11608670"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798807"
 ---
 # <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Mover usuarios a Microsoft Edge desde Internet Explorer  
 

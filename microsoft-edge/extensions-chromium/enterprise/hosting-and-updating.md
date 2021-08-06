@@ -7,12 +7,12 @@ ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 2249462b0a2dac86efa4b775171e2a3229a34431
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 7deadd3ff21bc06574f1e6006e60af01f16ce55a0375f27a453cf998b3818c72
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461223"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803317"
 ---
 # <a name="publish-and-update-extensions-in-the-microsoft-edge-add-ons-store"></a>Publicar y actualizar extensiones en el Microsoft Edge complementos  
 

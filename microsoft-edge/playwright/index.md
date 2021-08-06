@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, desarrollador, herramientas, automatización, prueba, playwright, node, javascript, npm
-ms.openlocfilehash: 5ce51864177731dd1bafb845466abb00cce1e0aa
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 73c72cb225f1d2e2e536930eef09ae7679ec781ab58b7be01cbc552b62965b5f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231086"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803610"
 ---
-# Playwright  
+# <a name="playwright"></a>Playwright  
 
 [Playwright][|::ref1::|Main] es una biblioteca [Node.js][NodejsMain] para automatizar [Chromium,][ChromiumHome] [Firefox][FirefoxMain]y [WebKit][|::ref2::|Main] con una única API.  Playwright está diseñado para habilitar la automatización web entre exploradores que es siempre verde, capaz, confiable y rápida.  Dado [Microsoft Edge se basa en la][MicrosoftBlogsWindowsExperience20181206]plataforma web de código Chromium de código abierto, Playwright también es capaz de automatizar Microsoft Edge.  
 
@@ -23,7 +23,7 @@ Playwright inicia exploradores [sin cabeza][WikiHeadlessBrowser] de forma predet
 
 De forma predeterminada, al instalar Playwright, el instalador descarga [Chromium][ChromiumHome], [Firefox][FirefoxMain]y [WebKit][|::ref3::|Main].  Si también tienes Microsoft Edge \(Chromium\), Playwright solo necesita un cambio de código de una línea para probar tu sitio web o aplicación en Microsoft Edge.  Para descargar Microsoft Edge \(Chromium\), vaya a [Descargar Microsoft Edge][MicrosoftEdgeDownload].  
 
-##  <a name="installing-playwright--"></a>Instalación de Playwright  
+## <a name="installing-playwright"></a>Instalación de Playwright  
 
 Instala [Playwright para][|::ref4::|Main] probar tu sitio web o aplicación con el siguiente comando.  
 
@@ -31,7 +31,7 @@ Instala [Playwright para][|::ref4::|Main] probar tu sitio web o aplicación con 
 npm i playwright
 ```  
 
-##  <a name="launch-microsoft-edge-with-playwright--"></a>Iniciar Microsoft Edge con Playwright  
+## <a name="launch-microsoft-edge-with-playwright"></a>Iniciar Microsoft Edge con Playwright  
 
 > [!NOTE]
 > [Playwright][|::ref5::|Main] requiere Node.js versión 10.17 o posterior. Ejecute `node -v` desde la línea de comandos para asegurarse de que tiene una versión compatible de Node.js.  Los archivos binarios del explorador para Chromium, Firefox y WebKit funcionan en Windows, macOS y Linux. Para obtener más información, vaya [a Requisitos del sistema playwright][PlaywrightSystemRequirements].  
@@ -94,7 +94,7 @@ Playwright inicia Microsoft Edge, navega a `https://www.microsoft.com/edge` y gu
 
 Para obtener más información acerca de Playwright, vaya al sitio [web de Playwright][|::ref6::|Main].  Echa un vistazo [al repositorio de Playwright][PlaywrightRepo] en GitHub.  Para compartir sus comentarios sobre cómo automatizar y probar su sitio web o aplicación con Playwright, [presente un problema][PlaywrightRepoNewIssue].  
 
-##  <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 

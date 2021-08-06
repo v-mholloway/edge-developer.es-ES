@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d5a5ea8faef40925fb0fb986eb984ac9ae4f051b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 93ff81db37fd2b17d76be314ff532322443126cb4a286c159e5f478eb0f1ab68
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565109"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11797927"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -148,7 +148,7 @@ Puede interactuar con la difusión en pantalla de las siguientes maneras.
 > *   Las difusión en pantalla afectan negativamente a las tasas de fotogramas.  Deshabilite la difusión por pantalla al medir desplazamientos o animaciones para obtener una imagen más precisa del rendimiento de la página.  
 > *   Si la pantalla del dispositivo Android se bloquea, el contenido de la difusión en pantalla desaparece.  Desbloquea la pantalla del dispositivo Android para reanudar automáticamente la difusión por pantalla.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

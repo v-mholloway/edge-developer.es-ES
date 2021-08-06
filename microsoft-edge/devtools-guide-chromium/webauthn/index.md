@@ -6,19 +6,19 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d5eeedfaa98e56bbba81634685a223844803a1ad
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 668cefd1728d1383df249417a026ae28827b3601079e250d2a6d32a85f5df336
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564038"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798933"
 ---
 # <a name="emulate-authenticators-and-debug-webauthn-in-microsoft-edge-devtools"></a>Emular autenticadores y depurar WebAuthn en Microsoft Edge DevTools  
 
 En lugar de depurar la autenticación web en tu sitio web o aplicación con autenticadores físicos, usa la herramienta **WebAuthn** en Microsoft Edge DevTools para crear e interactuar con autenticadores virtuales basados en software.  
 
-## <a name="before-you-begin"></a>Antes de comenzar  
+## <a name="before-you-begin"></a>Antes de empezar  
 
 Un excelente lugar para empezar a usar la autenticación web es la especificación [de la API de autenticación web.][GithubW3cWebauthn]  
 
@@ -116,13 +116,13 @@ Para quitar un autenticador virtual, junto al autenticador, elija el **botón** 
    Quitar autenticador  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft Docs"  
 
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Demostración de webauthn | Appspot"  
 

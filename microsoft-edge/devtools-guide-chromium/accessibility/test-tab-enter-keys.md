@@ -1,20 +1,20 @@
 ---
 description: Compruebe la compatibilidad con el teclado con las teclas Tab y Enter.
-title: Comprobar la compatibilidad con el teclado mediante las teclas Tab y Enter
+title: Comprobar la compatibilidad con el teclado usando las teclas Tab y Enter
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 48151e16a9059b5ebaadca36f29447d4ad3be8c7
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 490f38474380e7c6c8870cf5a6a83e44f5bfb645142c7aedd110529e97ed3675
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597653"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802347"
 ---
-# <a name="check-for-keyboard-support-by-using-the-tab-and-enter-keys"></a>Comprobar la compatibilidad con el teclado mediante las teclas Tab y Enter
+# <a name="check-for-keyboard-support-by-using-the-tab-and-enter-keys"></a>Comprobar la compatibilidad con el teclado usando las teclas Tab y Enter
 
 
 No todos los usuarios tienen un puntero o un dispositivo táctil y no todos los usuarios pueden ver los proyectos web que creamos.  Por este motivo, es importante que la interfaz de usuario funcione al menos con un teclado.  Asegúrese de que puede usar la clave para mover el foco a cada control de formulario de una página web y asegúrese de que puede usar la `Tab` `Enter` clave para enviar formularios.
@@ -34,7 +34,7 @@ Para comprobar si hay problemas de accesibilidad en la página de demostración 
 
 1.  Vuelva `Tab` a seleccionar.  El siguiente elemento en el que pone el foco es el primer vínculo **Más** de la sección de la página web, tal como `content` se indica en un esquema.
     
-    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="Navegar por el documento con el teclado y la tecla Tab. El foco se muestra en un vínculo del documento." lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="Navegar por el documento con el teclado y la tecla "Tab". El foco se muestra en un vínculo del documento." lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
         Navegar por el documento con el teclado y la tecla de tabulación. El foco se muestra en un vínculo del documento.
     :::image-end:::
     
@@ -67,12 +67,12 @@ Basándonos en el tutorial anterior, encontramos los siguientes problemas que de
 *  El orden del acceso del teclado a través de las secciones de la página no es correcto.  Navegas por todos los vínculos **Más** del documento antes de llegar al menú de navegación de la barra lateral.  Cuando la tecla pone el foco en el menú de navegación de la barra lateral, ya has recorrido `Tab` todo el contenido de la página. El menú de navegación de la barra lateral estaba pensado para proporcionar un acceso fácil al contenido de la página.  Para obtener más información sobre cómo resolver este problema, vaya a Probar compatibilidad [con teclado mediante el Visor de pedidos de origen](test-tab-key-source-order-viewer.md).
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

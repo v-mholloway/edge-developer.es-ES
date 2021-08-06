@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3626de9bdc2cce266efafe4b1b2e8fff501a74f7
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 98c4d9fd9f1a03f20bd6002fc5a28e06923b3c5dda0d523e20849ef6e0da1250
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597704"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802608"
 ---
 # <a name="analyze-the-lack-of-indication-of-keyboard-focus-in-a-sidebar-menu"></a>Analizar la falta de indicación del foco del teclado en un menú lateral
 
@@ -53,13 +53,13 @@ Los estilos de la página tienen una regla de pseudo-clase CSS para el estado qu
 Además, tenga en cuenta que los vínculos tienen una configuración de propiedad CSS de `outline: none` .  Este es un procedimiento común, para quitar el esquema que los exploradores agregan automáticamente a los elementos cuando se centran en ellos mediante un teclado.  No usar `focus` el estilo causa confusión para los usuarios.
 
 
-## <a name="see-also"></a>Consulta también 
+## <a name="see-also"></a>Consulte también 
 
 *  [Rastrear qué elemento tiene el foco](focus.md)
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

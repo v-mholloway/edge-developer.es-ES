@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a6e83d0651c5611b53735447f6ddc34c90550db1
-ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: df1b2dec6a0bc7e4dce40c7b94e466a812ca0f1576c9c31052d6bcbd26bab012
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "11643444"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809253"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -122,14 +122,14 @@ Para cambiar la configuración `F12` de método abreviado de teclado que abre De
     > *   Seleccione `Ctrl` + `Shift` + `I` .  
     > *   Abra el menú contextual \(clic con el botón derecho\) > **Inspeccionar**.  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevtoolsConsoleIndex]: ../console/index.md "Descripción general de la consola | Microsoft Docs"  
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge Métodos abreviados de teclado de DevTools | Microsoft Docs"  
+[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  
 
 <!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->  
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->

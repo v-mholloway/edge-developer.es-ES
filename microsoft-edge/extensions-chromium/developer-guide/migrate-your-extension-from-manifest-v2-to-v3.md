@@ -7,12 +7,12 @@ ms.date: 05/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones perimetrales, extensiones de explorador, complementos, desarrollador, manifiesto v3, migración a manifiesto v3
-ms.openlocfilehash: 5aa1aa7446a312d581bacc4fa19ba7362c6c2a3e
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 89e957da475b8503ec5b555589fe9b6ed8f5d23101f29045f2ca13b33c314f7f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564619"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807496"
 ---
 # <a name="prepare-to-update-your-extensions-from-manifest-v2-to-v3"></a>Prepararse para actualizar las extensiones de Manifest v2 a v3  
 
@@ -56,7 +56,7 @@ El Microsoft Edge de extensiones continúa publicando actualizaciones en el blog
 
 [DeployedgeMicrosoftEdgePoliciesExtensions]: /deployedge/microsoft-edge-policies#extensions "Extensiones - Microsoft Edge: directivas | Microsoft Docs"  
 
-[MicrosoftMicrosoftedgeAddons]: https://microsoftedge.microsoft.com/addons "Microsoft Edge Complementos"  
+[MicrosoftMicrosoftedgeAddons]: https://microsoftedge.microsoft.com/addons "Complementos de Microsoft Edge"  
 
 [MicrosoftTechcommunityT5ArticlesManifestV3ChnagesAreNowAvailableInMicrosoftEdgeMP1780254]: https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254 "Los cambios del manifiesto V3 ya están disponibles en Microsoft Edge | Microsoft Tech Community"  
 

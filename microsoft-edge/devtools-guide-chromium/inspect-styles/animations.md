@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a695517cb56da057e62293b5ca92b22058602f44
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 4ab2dcd38ca1b5a4db89fe064b0ecea76af19eaab5aa7fc7eba48c41f59ba27c
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564220"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800883"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,7 +41,7 @@ Inspeccione y modifique las animaciones con Microsoft Edge DevTools Animation In
 *   Inspeccione las animaciones ralentizando cada una, reprobando cada una o viendo el código fuente.  
 *   Modifique las animaciones cambiando el tiempo, el retraso, la duración o los desplazamientos de fotograma clave.  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 El Microsoft Edge DevTools Animation Inspector tiene dos propósitos principales.  
 
@@ -81,7 +81,7 @@ El Inspector de animación se agrupa en cuatro secciones principales \(o panes\)
 | Índice | Panel | Descripción |  
 |:--- |:--- |:--- |  
 | 1 | **Controles** | Desde aquí, puedes borrar todos los grupos de animación capturados actualmente o cambiar la velocidad del grupo de animación seleccionado actualmente. |  
-| 2 | **Introducción** | Elija un grupo de animación aquí para inspeccionarlo y modificarlo en el **panel** Detalles. |  
+| 2 | **Información general** | Elija un grupo de animación aquí para inspeccionarlo y modificarlo en el **panel** Detalles. |  
 | 3 | **Línea de tiempo** | Pausa e inicia una animación desde aquí, o salta a un punto específico de la animación. |  
 | 4 | **Detalles** | Inspeccione y modifique el grupo de animaciones seleccionado actualmente. |  
 
@@ -163,7 +163,7 @@ Para agregar un retraso a una animación, elige y arrástrala en cualquier lugar
    Retraso modificado  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

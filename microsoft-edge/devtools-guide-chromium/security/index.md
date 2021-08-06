@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2e6aab865319e6ed7d108cddb77432f293153995
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 41328c73510b346bcc320118c331fe12cd7f069b066306ecf32cd60dbb9569ee
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565039"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803409"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -95,14 +95,14 @@ Elija una de las entradas de la navegación a la izquierda para ver los detalles
    Detalles del origen principal  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Herramientas para desarrolladores | Microsoft Docs"  
-[DevToolsOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft Docs"  
 
 [LetsEncrypt]: https://letsencrypt.org "Vamos a cifrar: certificados SSL/TLS gratuitos"  
 

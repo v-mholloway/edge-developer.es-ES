@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 822c25240ba30df31416ca783bf48d6d9ba52ed2
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: b141ad8c2baab1225df0da46a7922c0ebc86d9875153dd9ac671304148d6788c
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624636"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803002"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -71,7 +71,7 @@ Para auditar una página con la herramienta Faro, siga estos pasos.
 1.  Para volver a las opciones de configuración, en DevTools, seleccione **Realizar una auditoría** ( `+` ).    
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -81,7 +81,7 @@ Para auditar una página con la herramienta Faro, siga estos pasos.
 > La página original se encuentra [aquí](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) y está redactada por [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de una [Licencia internacional de Atribución de Creative Commons 4.0][CCA4IL].  
+Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 
 
 <!-- links -->  

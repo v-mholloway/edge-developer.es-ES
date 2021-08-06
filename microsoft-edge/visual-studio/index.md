@@ -7,12 +7,12 @@ ms.date: 07/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, vs, visual studio, depurador
-ms.openlocfilehash: b7f2837d1d659ad9bf396d7de61efbcdeb6fe982
-ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
+ms.openlocfilehash: ef60b40f8867b282cfae85a48826317bc3964cac8bd9fc246c54c4b577e75cce
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11709235"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805266"
 ---
 # <a name="visual-studio"></a>Visual Studio  
 

@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, vs code, visual studio code, depurador
-ms.openlocfilehash: e36348fc1ef5e30a511e6eda73c7646a85d8717e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 24b6912ee99a6c6d0bf961f6e76167bfe8f536184cc460d9ebbe030f5b68a7b4
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399298"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798816"
 ---
 # <a name="debugger-for-microsoft-edge-visual-studio-code-extension"></a>Depurador para Microsoft Edge Visual Studio Code extensión  
 

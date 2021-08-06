@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 68db66fffc72737e32ab30eaa721574b5efa605f
-ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
+ms.openlocfilehash: 99e8c525f910e42c1b58aed83bd25ef1229627cc6d42150516c9a0aa1589d95f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11709296"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802921"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -597,7 +597,7 @@ Complete los pasos siguientes para usar otras clases de Bootstrap que sean útil
        El contenido de navegación está ahora a la izquierda del contenido principal  
     :::image-end:::  
     
-## <a name="next-steps"></a>Siguientes pasos  
+## <a name="next-steps"></a>Pasos siguientes  
 
 Enhorabuena, ha terminado.  
 

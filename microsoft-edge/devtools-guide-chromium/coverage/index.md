@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: b31d14feac13a907ca0c5ce7ef702bcdef375ad5
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 4aa974abf33191ae790aa0b12761449a740db4939ebc5443cff0a4a94fca7365
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564465"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803740"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ El **** panel Cobertura de Microsoft Edge DevTools le ayuda a encontrar código 
 > [!WARNING]
 > Encontrar código sin usar es relativamente fácil.  Pero refactorizar una base de código para que cada página solo incluye el JavaScript y CSS que necesita puede resultar difícil.  En esta guía no se explica cómo refactorizar una base de código para evitar el código no usado, ya que estos refactores dependen en gran medida de la pila de tecnología.  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 El envío de JavaScript o CSS sin usar es un problema común en el desarrollo web.  Por ejemplo, supongamos que desea usar el componente [de botón Bootstrap][BootstrapButtons] en la página.  Para usar el componente de botón, debe agregar un vínculo a la hoja de estilos de Bootstrap en su HTML, de esta forma:  
 
@@ -89,13 +89,13 @@ La tabla del panel **Cobertura** muestra los recursos analizados y la cantidad d
 *   La **columna Bytes sin** usar es el número de bytes que no se usaron.  
 *   La última columna sin nombre es una visualización de las columnas **Bytes totales** y **Bytes no** usados.  La sección roja de la barra es bytes no usados.  La sección verde se usa bytes.  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Microsoft Edge comando DevTools | Microsoft Docs"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú de comandos de DevTools de Microsoft Edge | Microsoft Docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Botones - Bootstrap"  
 

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 8340c4d4d7eacdb6ad4155c1c9699db150522f16
-ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: aedc96cbfae198ec15786e1a603e3fe35fb00565f3ec9a6ea74327c5171b7f67
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "11643437"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798738"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -120,7 +120,7 @@ Puede buscar en el árbol DOM por cadena, selector CSS o selector XPath.
     
 Como se mencionó anteriormente, la barra de búsqueda también admite selectores CSS y XPath.  
 
-## <a name="edit-the-dom"></a>Editar el DOM  
+## <a name="edit-the-dom"></a>Edición del DOM  
 
 Puede editar el DOM al instante y revisar cómo afectan los cambios a la página.  
 
@@ -208,7 +208,7 @@ Seleccione `H` para ocultar un nodo.
         
     1.  Vuelva a `H` seleccionar la clave.  El nodo se muestra de nuevo.  
 
-### <a name="delete-a-node"></a>Eliminar un nodo  
+### <a name="delete-a-node"></a>Eliminación de un nodo  
 
 Seleccione `Delete` para eliminar un nodo.  
 
@@ -412,7 +412,7 @@ Muchas de las instrucciones de este tutorial le indican que mantenga el mouse en
    Dónde elegir si no se muestran todas las opciones  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -424,7 +424,7 @@ Muchas de las instrucciones de este tutorial le indican que mantenga el mouse en
 
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Ejemplo | Glitch"
 
-[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introducción al dom | MDN"  
+[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introducción al DOM | MDN"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

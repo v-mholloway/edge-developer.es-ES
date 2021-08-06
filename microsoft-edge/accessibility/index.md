@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 keywords: accesibilidad, accesibilidad para desarrolladores, sitios web accesibles, edge, desarrollo web, ARIA, desarrollador, UIA, Automatización de la interfaz de usuario
-ms.openlocfilehash: ae2b0a876b60e0475e283cc52ffd14275fc32aba
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 4c0acadcf6fccba16b4b6431a6f82b7355c50982e9a264e65227e439a8e7e737
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11236054"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800180"
 ---
-# Información general sobre accesibilidad  
+# <a name="accessibility-overview"></a>Información general sobre accesibilidad  
 
 > "\[T\]he impact of disability is radically changed on the Web because the Web removes barriers to communication and interaction that many people face in the physical world." [(Accesibilidad | W3C)][W3CAccessibility]  
 
@@ -25,7 +25,7 @@ El diseño de sitios web y otras tecnologías para su inclusión crea una experi
 
 Estos son algunos procedimientos recomendados, ejemplos de código y [][AccessibilityBuild]recursos adicionales para obtener más información sobre el [diseño,][AccessibilityDesign]la creación y las pruebas de sitios web accesibles en Microsoft Edge. [][AccessibilityTest]  
 
-##  <a name="accessibility-in-microsoft-edge"></a>Accesibilidad en Microsoft Edge  
+## <a name="accessibility-in-microsoft-edge"></a>Accesibilidad en Microsoft Edge  
 
 En Microsoft Edge, presentamos la [API][WindowsWin32AutoEntryui] moderna de automatización de la interfaz de usuario \(API de UIA\).  El cambio a UIA fue una inversión importante en accesibilidad de exploradores, y se asoma la base para una experiencia web más inclusiva para los usuarios que dependen de la tecnología de asistencia en Windows 10.  Los usuarios también se benefician de la naturaleza perenne del Chromium motor.  
 
@@ -39,13 +39,13 @@ El Microsoft Edge trabaja con W3C y otros proveedores de exploradores de forma c
 
 Para obtener información sobre a qué nuevas características html5 se admiten de forma Microsoft Edge, vaya a [HTML5Accessibility][HTML5Accessibility].  
 
-##  <a name="resources"></a>Recursos  
+## <a name="resources"></a>Recursos  
 
-#### Blog Windows automatización de la interfaz de usuario de Microsoft  
+#### <a name="microsoft-windows-ui-automation-blog"></a>Blog Windows automatización de la interfaz de usuario de Microsoft  
 
 El [blog Windows automatización de la interfaz de][ArchiveBlogsWinuiautomation] usuario de Microsoft trata temas relacionados con la API Windows automatización.  
 
-#### Iniciativa de accesibilidad web (WAI)  
+#### <a name="web-accessibility-initiative-wai"></a>Iniciativa de accesibilidad web (WAI)  
 
 The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an effort to help improve the accessibility of the web.  El sitio proporciona una variedad de recursos para Introducción a la accesibilidad [web,][W3CWaiGettingstartedOverview]diseño para la [inclusión,][W3CWaiFundamentals]tutoriales y [presentaciones,][W3CWaiTeachAdvocate]etc.  
 

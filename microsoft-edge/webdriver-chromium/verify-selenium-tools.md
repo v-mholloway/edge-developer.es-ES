@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: cf5889ab3c5f1ca89579a398a232716008144562
-ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
+ms.openlocfilehash: 73e073ba68aa218d050090cb4dc208d1353a1de509f065fc1e65fa53645460ae
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "11306278"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798214"
 ---
-# Compruebe las descargas de Selenium Tools para Microsoft Edge  
+# <a name="verify-downloads-of-selenium-tools-for-microsoft-edge"></a>Compruebe las descargas de Selenium Tools para Microsoft Edge  
 
 En este artículo se proporciona la clave pública que se debe usar al comprobar la firma de las versiones de Las herramientas [de selenio para Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].  
 
@@ -23,7 +23,7 @@ Las [Java de][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Sele
 
 Use las siguientes claves para comprobar la firma de los paquetes proporcionados por el equipo Microsoft Edge [Developer Tools][TwitterEdgeDevTools].  
 
-##  <a name="public-key-for-verifying-selenium-tools-for-microsoft-edge"></a>Clave pública para comprobar Las herramientas de selenio para Microsoft Edge  
+## <a name="public-key-for-verifying-selenium-tools-for-microsoft-edge"></a>Clave pública para comprobar Las herramientas de selenio para Microsoft Edge  
 
 *   **Identificador de clave pública:** Microsoft Edge equipo de herramientas para [desarrolladores EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
 *   **Huella digital de clave pública:** `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  

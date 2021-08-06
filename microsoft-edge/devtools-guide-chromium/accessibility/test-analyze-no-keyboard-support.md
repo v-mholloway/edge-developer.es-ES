@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 16ec030ed433fc24d3b2b88bfb423a2479996dfe
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: c8fb22e42d0edd8e064a06983b66e6c3c2c974b73cbab4209daee1ac2c818f58
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597696"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802565"
 ---
 # <a name="analyze-keyboard-support-on-forms-using-the-devtools"></a>Analizar la compatibilidad con teclado en formularios con DevTools
 
@@ -89,12 +89,12 @@ Usar un `click` evento para leer los botones es una buena práctica, ya que un e
 Este es un ejemplo clásico en el que Se agregó JavaScript para crear funciones `button` que los elementos proporcionan de forma nativa.  La simulación de la funcionalidad de los `div` botones con elementos acabó produciendo una experiencia inaccesible.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

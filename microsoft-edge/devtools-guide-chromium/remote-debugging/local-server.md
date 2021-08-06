@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2d721a0ccd27befc7a59726f4c5ef9227042b30b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 24fd94162ec230f22a1f6e4be2c2110558950cf5a92a04d0eccd4663843e40a0
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565095"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804064"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -109,7 +109,7 @@ Si el servidor web se está ejecutando fuera de un puerto no estándar, recuerde
 > [!TIP]
 > Para reanudar la exploración normal, recuerda revertir la configuración de proxy en el dispositivo Android después de desconectarte del equipo de desarrollo.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

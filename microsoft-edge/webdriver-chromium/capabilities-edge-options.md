@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: 33b9d53b72a16a9c02a03a43679137d25de0025f
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 1d7dbfb6071efde3a5f31534351668e475973f2133fc3ba0f91c4fb812ce0f8b
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624769"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798788"
 ---
 # <a name="capabilities-and-edgeoptions"></a>Funciones y EdgeOptions  
 

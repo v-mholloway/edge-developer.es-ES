@@ -7,12 +7,12 @@ ms.date: 03/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, localización, loc, idioma
-ms.openlocfilehash: b1fe4c255e77c548a7d9c95a65ad95149e6dec70
-ms.sourcegitcommit: 53de914ff3bb7d6b3ae401b0b0c21d68bd7cb84b
+ms.openlocfilehash: a83d33dcd63d6d79e898a1872a02a4d019710997617ad0854bf6c8109f1c6af1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "11469671"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805045"
 ---
 # <a name="change-devtools-language-settings"></a>Cambiar la configuración del idioma de DevTools  
 

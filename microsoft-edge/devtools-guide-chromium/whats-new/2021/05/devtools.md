@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 09e1438ae7fd6547a7dd14757f54f370c9008773
-ms.sourcegitcommit: 1dd6376784c394087fe2938acaa069212cf7656e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: cf8b45730e60d95f27595739446b730ce21bdfe1fe228a2bee0af33471a4581b
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "11659431"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806884"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-92"></a>Novedades de DevTools (Microsoft Edge 92)
 

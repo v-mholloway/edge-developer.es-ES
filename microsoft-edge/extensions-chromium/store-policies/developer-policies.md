@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 8b3e537752e1f5e891626f8cd28cb89806295166
-ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
+ms.openlocfilehash: f82b6743999d26eadcb0452ae80e9c67795582232a0dcce6ef91aa9f0f3e903a
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "11643430"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11797829"
 ---
 # <a name="microsoft-edge-add-ons-store-developer-policies"></a>Directivas para desarrolladores del tienda de complementos de Microsoft Edge  
 

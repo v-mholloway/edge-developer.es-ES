@@ -7,16 +7,16 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 89d29d3772934f9e1b4545d2a9e383ed6510df40
-ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
+ms.openlocfilehash: bb4d9d74ffbb50e181ff5868da038188317f6bd30210a4bfdbd027fff4203b4c
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "11343090"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803240"
 ---
-# Addendum de acuerdo para desarrolladores de aplicaciones Microsoft Edge usuarios del programa  
+# <a name="app-developer-agreement-addendum-for-microsoft-edge-program-users"></a>Addendum de acuerdo para desarrolladores de aplicaciones Microsoft Edge usuarios del programa  
 
-##  <a name="exhibit-g:-terms-and-conditions-for-microsoft-edge-extensions"></a>Prueba documental G: Términos y condiciones para Microsoft Edge extensiones  
+## <a name="exhibit-g-terms-and-conditions-for-microsoft-edge-extensions"></a>Prueba documental G: Términos y condiciones para Microsoft Edge extensiones  
 
 Estos Términos y condiciones para Microsoft Edge Extensions \(el "Addendum de extensiones"\) son un complemento de los términos y condiciones del Contrato para desarrolladores de aplicaciones, cuya versión actual puede encontrarse en [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies] .  Este Addendum se aplica si ha enviado o está haciendo disponibles Microsoft Edge Extensions \(each, an "Extension"\) a través de Microsoft Edge complementos.  Salvo que se modifique expresamente por este Addendum de extensiones, todos los términos y condiciones del Contrato de desarrollador de aplicaciones, que se incorpora por referencia aquí, se aplican a la oferta y distribución de sus extensiones de Microsoft Edge.  Excepto cuando se modifiquen expresamente por este addendum, los términos y condiciones que se aplican a una "Aplicación" o "Aplicación" en virtud del Acuerdo para desarrolladores de aplicaciones se aplicarán a una extensión tal como se define en este addendum y todas las referencias a "Store" o "Microsoft Store" en el Contrato de desarrollador de aplicaciones se aplicarán Microsoft Edge los complementos definidos en este Addendum.  
 

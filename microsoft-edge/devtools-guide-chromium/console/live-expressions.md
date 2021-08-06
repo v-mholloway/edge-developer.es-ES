@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 51b7aa5119775f43861a84c1055ac9149a626d8a
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 0ac6cbe40d3bf52cfcde76554b90bc1926f555c4c031c595ce5f42c171ae8a82
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483159"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801273"
 ---
 # <a name="monitor-changes-in-javascript-using-live-expressions"></a>Supervisar los cambios en JavaScript mediante expresiones live  
 
@@ -85,7 +85,7 @@ Cuando se usan **expresiones**en directo, siempre se obtiene la **** informació
 
 **Las expresiones live** se ejecutan exclusivamente en el equipo y no es necesario cambiar nada en el código para mostrar.  **Las expresiones en** directo son una excelente manera de asegurarse de que solo se muestra la información que desea depurar.  Además, **live expressions** te ayudan a limitar el ruido en los equipos de los usuarios.
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

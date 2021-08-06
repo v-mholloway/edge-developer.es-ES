@@ -148,6 +148,8 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/publish/publish-extension
             - text: Abrir cuenta de desarrollador
               url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+            - text: Agregar y administrar usuarios
+              url: /microsoft-edge/extensions-chromium/publish/aad-account.md
             - text: Actualizar la lista de extensiones
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: Actualizar la configuración de la cuenta
@@ -174,7 +176,7 @@ additionalContent:
               url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
         - title: WebView2
           links:
-            - text: Introducción
+            - text: Información general
               url: /microsoft-edge/webview2/index
             - text: Introducción a WebView2
               url: /microsoft-edge/webview2/gettingstarted/win32

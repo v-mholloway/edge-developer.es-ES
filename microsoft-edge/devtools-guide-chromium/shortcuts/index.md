@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f2b10bc763073632975248cd5a9caa523702e869
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 665133dd027c3ea8dd5e61e6606e556a50c64db21695d9222ceb6e2e859d8304
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565102"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799886"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -153,7 +153,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 | Ejecutar | `Enter` | `Return` |  
 | Expandir todas las subpropiedades de un objeto que se registran en la consola | Mantenga `Alt` y, a **continuación, elija Expandir** \( Expandir ![ ](../media/expand-icon.msft.png) \) | Mantenga `Alt` y, a **continuación, elija Expandir** \( Expandir ![ ](../media/expand-icon.msft.png) \) |  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -162,7 +162,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la mayoría 
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer: personalice Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Cambiar ubicación de DevTools: personalizar Microsoft Edge devTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emulación de dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Puntos de interrupción de línea de código: cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft Docs"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  

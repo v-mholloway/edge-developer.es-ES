@@ -7,14 +7,14 @@ ms.date: 09/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
-ms.openlocfilehash: 7070878b9608e6d239179078390f2315e0b289a1
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+ms.openlocfilehash: 40f88e2ec3dbcba2ad0c22ef171c66a51c0f478ac86d1fe72497bf4960608c0f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104779"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803307"
 ---
-# Transferir localmente una extensión
+# <a name="sideload-an-extension"></a>Transferir localmente una extensión
 
 Durante el desarrollo, puede usar el Microsoft Edge \(Chromium\) para ejecutar y depurar la extensión de forma segura. Al descargar localmente la extensión en el explorador, puede ejecutar y probar la extensión. En este artículo se explica cómo usar extensiones en Microsoft Edge.
 

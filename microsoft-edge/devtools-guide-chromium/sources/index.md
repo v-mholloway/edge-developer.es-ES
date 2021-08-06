@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6ba6a7615c2d9e2b70975af01edeeb3e10db8e59
-ms.sourcegitcommit: 31741a0c331816642ceafd20680bd3206c87c7bf
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: ed06b033554025b582916f59d09a358a0fa4baabb000bd513861f681ece2ff92
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "11579746"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804779"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,7 +49,7 @@ Cuando DevTools es ancho, el panel **Depurador** se coloca a la derecha e incluy
    Navegar, ver, editar y depurar JavaScript devuelto por el servidor  
 :::image-end:::  
 
-Para maximizar el tamaño de la herramienta Orígenes, desasoye DevTools en una ventana independiente y, opcionalmente, mueva la ventana DevTools a un monitor independiente.  Vea [Cambiar Microsoft Edge ubicación de DevTools (Undock, Dock to bottom, Dock to left).][DevToolsCustomizePlacement]
+Para maximizar el tamaño de la herramienta Orígenes, desasoye DevTools en una ventana independiente y, opcionalmente, mueva la ventana DevTools a un monitor independiente.  Consulte [Cambiar la ubicación de DevTools (Undock, Dock to bottom, Dock to left).][DevToolsCustomizePlacement]
 
 Para cargar la página web de demostración de depuración que se muestra anteriormente, consulta [El enfoque básico para usar un depurador](#the-basic-approach-to-using-a-debugger), a continuación.
 
@@ -134,7 +134,7 @@ La **característica Invalidaciones** es similar a Workspaces.  Usa Invalidacion
 
 Un archivo que reemplaza un archivo devuelto por el servidor se indica mediante un punto púrpura junto al nombre del archivo, en DevTools.
 
-#### <a name="see-also"></a>Consulta también
+#### <a name="see-also"></a>Consulte también
 
 *   [Invalidar recursos de página web con copias locales mediante Microsoft Edge DevTools][DevtoolsJavascriptOverrides]
 
@@ -150,7 +150,7 @@ Use la pestaña Scripts **** **de** contenido del panel Navegador para ver los s
 
 Cuando el depurador entra en el código que no reconoce, es posible que desee marcar ese código como código de biblioteca, para evitar entrar en ese código.  Vea [Marcar scripts de contenido como código de biblioteca][DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode].
 
-#### <a name="see-also"></a>Consulta también
+#### <a name="see-also"></a>Consulte también
 
 *   [Scripts de contenido][MDNContentScripts]
 *   [Crear un tutorial de extensión, parte 2][ExtensionsChromiumGetstartPart2ContentScripts]
@@ -181,7 +181,7 @@ Hay varias maneras de ejecutar un fragmento de código:
 
 Los fragmentos de código son similares a los bookmarklets.
 
-#### <a name="see-also"></a>Consulta también
+#### <a name="see-also"></a>Consulte también
 
 *   [Ejecutar fragmentos de código de JavaScript en cualquier página web con Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptSnippets]
 
@@ -343,7 +343,7 @@ h1 {
 
 Los cambios CSS se llevan a efecto inmediatamente; no es necesario guardar manualmente los cambios.
 
-#### <a name="see-also"></a>Consulta también
+#### <a name="see-also"></a>Consulte también
 
 *   [Editar estilos y opciones de fuente CSS en el panel Estilos][DevToolsInspectStylesEditFonts]
 
@@ -449,7 +449,7 @@ Para usar un depurador en una página web, normalmente se establece un punto de 
 
 1.  Pase por el código mediante los controles de la parte superior del panel **Depurador,** como **Step** ( `F9` ).
 
-#### <a name="see-also"></a>Consulta también
+#### <a name="see-also"></a>Consulte también
 
 *   [Introducción a la depuración de JavaScript:][DevtoolsGuideChromiumJavascriptIndex] un tutorial con una página web sencilla y existente que contiene algunos controles de formulario.
 
@@ -489,24 +489,24 @@ Los siguientes artículos abarcan el **panel Depurador** y los puntos de interru
 
 *   [Pausar el código con puntos de interrupción:][DevToolsJavaScriptBreakpoints] cómo establecer puntos de interrupción básicos y especializados en el depurador.
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevToolsBeginnersCss]: ../beginners/css.md "DevTools para principiantes: Introducción a CSS | Microsoft Docs"
-[DevToolsBeginnersHtml]: ../beginners/html.md "DevTools para principiantes: Introducción a HTML y el dom | Microsoft Docs"
+[DevToolsBeginnersHtml]: ../beginners/html.md "DevTools para principiantes: introducción utilizando HTML y DOM | Microsoft Docs"
 [DevToolsCommandMenuIndex]: ../command-menu/index.md "Ejecutar comandos con el menú de comandos DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer: personalice Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsCustomizePlacement]: ../customize/placement.md "Cambiar Microsoft Edge ubicación de DevTools (Undock, Dock to bottom, Dock to left) | Microsoft Docs"
+[DevToolsCustomizePlacement]: ../customize/placement.md "Cambiar la ubicación de DevTools (Undock, Dock to bottom, Dock to left) | Microsoft Docs"
 [DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Ejecutar fragmentos de código de JavaScript en cualquier página web con Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Editar archivos con áreas de trabajo | Microsoft Docs"  
-[DevToolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar estilos y opciones de fuente CSS en el panel Estilos | Microsoft Docs"
+[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Editar archivos utilizando Áreas de trabajo | Microsoft Docs"  
+[DevToolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Editar estilos y opciones de fuente de CSS en el panel Estilos | Microsoft Docs"
 [DevToolsJavaScriptBreakpoints]: ../javascript/breakpoints.md "Pausa el código con puntos de interrupción | Microsoft Docs"
 [DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode]: ../javascript/guides/mark-content-scripts-library-code.md "Marcar scripts de contenido como código de biblioteca | Microsoft Docs"
-[DevtoolsJavascriptOverrides]: ../javascript/overrides.md "Invalidar recursos de página web con copias locales mediante Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsJavascriptOverrides]: ../javascript/overrides.md "Invalidar recursos de página web con copias locales utilizando Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavaScriptReference]: ../javascript/reference.md "Usar las características del depurador | Microsoft Docs"
 [DevToolsJavaScriptReferenceReformat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Volver a formatear un archivo JavaScript minificado con pretty-print: use las características del depurador | Microsoft Docs"
 [DevToolsJavaScriptSourceMaps]: ../javascript/source-maps.md "Asignar código preprocesado al código fuente | Microsoft Docs"

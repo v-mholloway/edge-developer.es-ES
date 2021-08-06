@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, JavaScript, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: f75ac6d728c9a69542b2f58df85248759267f76d
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: 7f70d2fef3b1f2a7055a2ee26a92fa579ca9fb8dca68abee3ec95affd6eaeb80
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483660"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801384"
 ---
 # <a name="the-console-as-a-javascript-environment"></a>La consola como entorno de JavaScript  
 
@@ -110,7 +110,7 @@ copy(await (await fetch(
 
 Use la **consola como** una excelente manera de practicar la funcionalidad de JavaScript y realizar algunos cálculos rápidos.  La potencia real es el hecho de que tiene acceso al objeto [window.][MdnDocsWebApiWindow]  Puede interactuar [con el DOM en la consola][DevtoolsConsoleConsoleDomInteraction].  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

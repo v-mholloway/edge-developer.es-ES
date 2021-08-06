@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 58e5bf43720c7ba94a721804eb44d82ba657b599
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: d633a3c21d2fbc9968914265f5e2da933075d98a49ad3b18369a797afb589c1e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564997"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799051"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,7 +41,7 @@ El equipo de DevTools ha contribuido con 170 cambios en Chromium para solucionar
    La **herramienta Rendimiento** de DevTools con las mejoras de navegación del teclado y lector de pantalla  
 :::image-end:::  
 
-¿Desea obtener información sobre cómo hacer que la página web sea accesible para todos los usuarios?  Descargue las [extensiones accessibility Insights][AccessibilityInsights] y [webhint][WebhintBrowserExtension] Microsoft Edge para empezar.  
+¿Desea obtener información sobre cómo hacer que la página web sea accesible para todos los usuarios?  Descargue [las extensiones de Ideas][AccessibilityInsights] accesibilidad [y webhint][WebhintBrowserExtension] Microsoft Edge para empezar.  
 
 Si usas lectores de pantalla o el teclado para [][PostTweetEdgeDevTools] navegar por devTools, envía tus comentarios tuiteando o publicando el icono [Enviar](#getting-in-touch-with-microsoft-edge-devtools-team) comentarios.  
 
@@ -348,7 +348,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [CR941561]: https://crbug.com/941561 "Localizabilidad del | Chromium Errores"
 [CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium Errores"
 
-[AccessibilityInsights]: https://aka.ms/a11yinsights "Accessibility Insights"  
+[AccessibilityInsights]: https://aka.ms/a11yinsights "Accesibilidad Ideas"  
 
 [GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "Limitación del panel de auditorías de DevTools: GoogleChrome/| GitHub"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "Nuevo problema: MicrosoftDocs/edge-developer"  
@@ -357,7 +357,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [MicrosoftVisualStudio]: https://aka.ms/vs "Visual Studio"  
 [MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Depurar JavaScript en Microsoft Edge desde Visual Studio | Visual Studio Blog"  
 [MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Descargar Visual Studio 2019 para Windows \& Mac"  
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modelo de objetos de documento (DOM) | MDN"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "Z-index | MDN"  
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Publicar un tweet"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools cuenta de Twitter"

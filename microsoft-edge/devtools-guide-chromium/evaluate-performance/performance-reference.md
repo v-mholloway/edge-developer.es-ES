@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: b8a15dd3503a891698d1f96bdc99946163d738ff
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: da429c8b97b976116e336ce4a46adaa5a21d268d16322c8bc42f5f26f46e7216
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564213"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800069"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -141,7 +141,7 @@ En esta sección se enumeran los eventos que pertenecen a la categoría Painting
 | Ubicación | Para Paint eventos, las coordenadas x e y del rectángulo de pintura. |  
 | Dimensiones | Para Paint eventos, el alto y el ancho de la región pintada. |  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

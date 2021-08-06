@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: bbac00ab46e205fb692cc3de3e5f08ba854b0911
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 0694a88b2f25993ec02240eca4cc7e3c41ffb6cc07f1b60509f05a5e165f4e64
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565088"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804127"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -101,7 +101,7 @@ El gráfico de llama se divide en dos partes.
 
 | index | Parte | Descripción |  
 | --- |:--- |:--- |  
-| 1 | Introducción | Una vista visual de toda la grabación.  El alto de las barras corresponde a la profundidad de la pila de llamadas.  Por lo tanto, cuanto mayor sea la barra, más profunda será la pila de llamadas.  |  
+| 1 | Información general | Una vista visual de toda la grabación.  El alto de las barras corresponde a la profundidad de la pila de llamadas.  Por lo tanto, cuanto mayor sea la barra, más profunda será la pila de llamadas.  |  
 | 2 | Pilas de llamadas | Se trata de una vista detallada de las funciones a las que se llamó durante la grabación.  El eje horizontal es el tiempo y el eje vertical es la pila de llamadas.  Las pilas están organizadas de arriba abajo.  Por lo tanto, la función en la parte superior llamada a la que está debajo de ella, y así sucesivamente.  |  
 
 Las funciones se coloreadas aleatoriamente.  No hay ninguna correlación con los colores usados en los otros paneles.  Sin embargo, las funciones siempre tienen el mismo color entre invocaciones para que pueda observar patrones en cada tiempo de ejecución.  
@@ -140,7 +140,7 @@ Mantenga el mouse sobre una función para mostrar el nombre y los datos de tempo
    Ver detalles de funciones en el gráfico  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 69e609bc0cd8618c2c138cb2ea392427513b4635
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: 8661096171f7e40f06d7a2d018193ee61f8b0313e3ab376bad8fad9997cf2219
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710851"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806401"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>Novedades de DevTools (Microsoft Edge 93)
 
@@ -45,7 +45,7 @@ Temas oscuros:
 *  Rojo
 *  Tomorrow Night Blue
 
-Para obtener más información, vaya [a Aplicar temas de color a Microsoft Edge DevTools][CustomizeDarkTheme].
+Para obtener más información, vaya [a Aplicar temas de color a DevTools][CustomizeDarkTheme].
 
 
 ## <a name="debug-dom-node-memory-leaks-with-the-new-detached-elements-tool"></a>Depurar pérdidas de memoria de nodo DOM con la nueva herramienta Elementos desasociados
@@ -136,7 +136,7 @@ Ahora, Microsoft Edge versión 93, puede copiar una sola declaración CSS o toda
 1. Seleccione **Copiar declaración como JS** o Copiar todas las **declaraciones como JS**.
 1. Pegue el CSS copiado en un archivo JavaScript en el editor de texto, como Visual Studio Code.  Por ejemplo: `'--more-link': 'lime'`.
 
-:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="Menú contextual para una regla de estilo, incluidos los comandos Copiar declaración como JS y Copiar todas las declaraciones como JS." lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="Menú contextual para una regla de estilo, incluidos los comandos "Copiar declaración como JS" y "Copiar todas las declaraciones como JS"." lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
    Menú contextual de una regla de estilo, incluida **la declaración Copiar como JS** y Copiar todas las **declaraciones como comandos JS**
 :::image-end:::
 
@@ -212,7 +212,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 
 
 <!-- links -->
-[CustomizeDarkTheme]: ../../../customize/dark-theme.md "Aplicar temas de color a Microsoft Edge DevTools | Microsoft Docs"
+[CustomizeDarkTheme]: ../../../customize/theme.md "Aplicar temas de color a DevTools | Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
 [CustomizeLocalization]: ../../../customize/localization.md "Cambiar la configuración de idioma de DevTools | Microsoft Docs"

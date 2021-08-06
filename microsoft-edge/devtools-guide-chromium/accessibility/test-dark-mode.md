@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 052c75b610ec872329f387e46819867f299a8ca9
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 6809fd3aa39139bbed2e3ea0317d9a8c9a6f1004da26df507790170bd7e8a4e2
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597690"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802313"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>Comprobar si hay problemas de contraste con el tema oscuro y el tema claro
 
@@ -61,17 +61,17 @@ Para emular la selección de un usuario del tema de color preferido:
     ```
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
-*  [Simulación de combinación de colores claros o oscuros][DevToolsColorSchemeSimulation]
+*  [Emular esquemas oscuros o claros en la página representada][DevToolsColorSchemeSimulation]
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 
 <!-- links -->
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Simulación de combinación de colores claros o | Microsoft Docs"
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Emular esquemas oscuros o claros en la página | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Página web de demostración de pruebas de accesibilidad | GitHub"

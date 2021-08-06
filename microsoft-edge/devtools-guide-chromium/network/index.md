@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 63a0c8dc1d481ee3fba93146c2e2925bbdd07203
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: b6151d9b2b2f9654f3185f33477ed0dc27c0bdd5f909a8bd076a6344afe3c8c7
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565046"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807699"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -358,7 +358,7 @@ Enhorabuena, ha completado el tutorial.  Ahora ya sabe cómo usar la herramienta
 
 Vaya a [la Referencia de red para][DevtoolsNetworkReference] descubrir más características de DevTools relacionadas con la inspección de la actividad de red.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -371,7 +371,7 @@ Vaya a [la Referencia de red para][DevtoolsNetworkReference] descubrir más cara
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Solicitudes de filtro: referencia de análisis de red | Microsoft Docs"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Ocultar el panel Información general: referencia de análisis de red | Microsoft Docs"
 [DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtrar solicitudes por propiedades: referencia de análisis de red | Microsoft Docs"
-[DevToolsOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimizar la velocidad del sitio web con Microsoft Edge DevTools | Microsoft Docs"  
 
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspeccionar la demostración de actividad de red | Glitch"  

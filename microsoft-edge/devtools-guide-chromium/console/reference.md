@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f14663ca1883c0a81184f9a4fa67ddcbd3f08a24
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 3d823be96365b3e7ef75cbfa87068c7207a59c930af5b2364b2a032a294ba752
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564528"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803558"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -268,7 +268,7 @@ Para borrar la **consola,** complete cualquiera de los siguientes flujos de trab
 *   Ejecute `console.clear()` desde JavaScript para la página web.  
 *   Seleccione `Control` + `L` mientras la **consola** está en foco.  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -282,7 +282,7 @@ Para borrar la **consola,** complete cualquiera de los siguientes flujos de trab
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Supervisar los cambios en JavaScript mediante expresiones live | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Referencia de api de utilidades de consola | Microsoft Docs"  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecute comandos con el menú Microsoft Edge comando DevTools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Ejecute comandos con el menú de comandos de DevTools de Microsoft Edge | Microsoft Docs"  
 
 [MdnDocsGlossaryBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Contexto de exploración | MDN"  
 

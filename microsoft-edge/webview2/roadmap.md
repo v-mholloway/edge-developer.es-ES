@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral
-ms.openlocfilehash: 7b67e4a6844ead0f845667a70df8657745ece938
-ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
+ms.openlocfilehash: daa339560a81d5c0c4dd15fd54c761aca71168c0444ab12d0ea867c56227c402
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "11643423"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803135"
 ---
 # <a name="microsoft-edge-webview2-roadmap"></a>Microsoft Edge Guía básica de WebView2  
 
@@ -36,11 +36,13 @@ El equipo de WebView2 está planeando los siguientes esfuerzos principales para 
 
 ## <a name="webview2-runtime-and-installer"></a>WebView2 Runtime and Installer  
 
-[El modelo de distribución Evergreen][ConceptDistributionEvergreenModel] permite dirigir o encadenar la instalación de WebView2 Runtime en la máquina del usuario.  El tiempo de ejecución e instalador de Evergreen WebView2 ha alcanzado la disponibilidad general \(GA\).  
+El modo de distribución Evergreen le permite dirigir o encadenar la instalación del tiempo de ejecución de WebView2 en la máquina del usuario.  El tiempo de ejecución e instalador de Evergreen WebView2 ha alcanzado la disponibilidad general \(GA\).  Para obtener más información, vaya [a Distribuir una aplicación WebView2 y WebView2 Runtime][ConceptDistribution].
+
 
 ## <a name="fixed-version"></a>Versión fija  
 
-[El modelo de distribución de versiones][ConceptsDistributionFixedVersionModel] fijas permite empaquetar los archivos binarios Microsoft Edge dentro de la aplicación nativa.  La versión fija ha alcanzado la disponibilidad general \(GA\).  
+El modo de distribución de versiones fijas permite empaquetar los archivos Microsoft Edge archivos binarios <!--(a specific version of the WebView2 Runtime)--> dentro de la aplicación nativa.  La versión fija ha alcanzado la disponibilidad general \(GA\).  Para obtener más información, vaya [a Distribuir una aplicación WebView2 y WebView2 Runtime][ConceptDistribution].
+
 
 ## <a name="general-availability"></a>Disponibilidad general  
 
@@ -58,10 +60,9 @@ Puedes tener acceso a los controles WebView2 en tus aplicaciones mediante [Windo
 
  
 <!-- links -->  
-
+[ConceptDistribution]: ./concepts/distribution.md "Distribuir una aplicación WebView2 y el motor de ejecución de WebView2 | Microsoft Docs"  
+<!-- external links -->
 [WindowsAppSDKRoadmap]: https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md "Guía básica"
-[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Modelo de distribución evergreen: distribución de aplicaciones con WebView2 | Microsoft Docs"  
-[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Modelo de distribución de versiones fijas: distribución de aplicaciones con WebView2 | Microsoft Docs"  
 
 [UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows Biblioteca de interfaz de usuario 3.0 Versión preliminar 1 (mayo de 2020) | Microsoft Docs"  
 

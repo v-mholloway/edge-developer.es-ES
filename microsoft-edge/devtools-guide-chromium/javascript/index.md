@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 90a979cebcb74a118cb1d8ce88d48c7ac64c7a6d
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 42032dc16a1a36a4e33730f11486c6d382e0a62d8bb6de000f5bd6f10f9b4831
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564094"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800989"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -174,7 +174,7 @@ El **panel** Ver permite supervisar los valores de variables (como ) o `sum` exp
 1.  Elija el **panel** Ver.  
 1.  Elija **Agregar expresión de reloj** \( Agregar expresión de reloj ![ ](../media/add-expression-icon.msft.png) \).  
 1.  Escriba `typeof sum`.  
-1.  Seleccione `Enter` .  DevTools muestra `typeof sum: "string"` .  El valor a la derecha de los dos puntos es el resultado de la expresión Watch.  
+1.  Seleccione `Enter`.  DevTools muestra `typeof sum: "string"` .  El valor a la derecha de los dos puntos es el resultado de la expresión Watch.  
     
 > [!NOTE]
 > En la siguiente figura, la `typeof sum` expresión watch se muestra en el **panel** Ver.  Si la ventana DevTools es amplia, el **panel** Ver se muestra en el panel **Depurador,** que aparece a la derecha.  
@@ -191,7 +191,7 @@ La **consola** le permite ver el `console.log()` resultado.  También puede usar
 
 1.  Si la **herramienta** Consola está cerrada, seleccione `Esc` para abrirla.  La **herramienta** Consola se abre en el panel inferior de la ventana DevTools.  
 1.  En la **consola**, escriba `parseInt(addend1) + parseInt(addend2)` .  La instrucción que la herramienta se pausa en una línea de código donde `addend1` y están en el `addend2` ámbito.  
-1.  Seleccione `Enter` .  DevTools evalúa la instrucción e imprime , que es el `6` resultado que espera que la demostración produzca.  
+1.  Seleccione `Enter`.  DevTools evalúa la instrucción e imprime , que es el `6` resultado que espera que la demostración produzca.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="La herramienta Consola, después de evaluar parseInt(addend1) + parseInt(addend2)" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
        La **herramienta Consola,** después de evaluar `parseInt(addend1) + parseInt(addend2)`  
@@ -224,19 +224,19 @@ Para obtener más información sobre cuándo y cómo usar cada tipo, vaya [a Pau
 
 En este artículo no se explica un par de controles de paso a paso de código.  Para obtener más información, vaya [a Paso sobre la línea de código][DevToolsJavascriptReferenceStepThroughCode] en el artículo "Usar las características del depurador".
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Consulte también
 
 *   [Usar las características del depurador:][DevToolsJavascriptReference] usar la interfaz de usuario del depurador en la herramienta Orígenes.
 *   [Introducción a la herramienta Sources:][DevToolsSourcesIndex] presenta el depurador de JavaScript y el editor de código.
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [DevToolsJavascriptReference]: ./reference.md "Usar las características del depurador | Microsoft Docs"  
-[DevToolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
+[DevToolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta Orígenes | Microsoft Docs"  
 [DevToolsJavscriptBreakpoints]: ./breakpoints.md "Cómo pausar el código con puntos de interrupción en Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Paso a través del código: use las características del depurador | Microsoft Docs"
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: a1ec308fc1412ead27c4776ce0ccc2e873376652
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 77d6be74e351daeb10b433aafcb39f9df682e573dc019d7871e148b4b924eda8
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624678"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806297"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>Usar WebDriver (Chromium) para la automatización de pruebas  
 
@@ -403,12 +403,12 @@ Para obtener más información acerca de Application Guard, vaya a:
 *  [Protección de aplicaciones de Microsoft Defender general][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 *  [Documentación de Selenio:][SeleniumDocumentation] información sobre WebDriver en el contexto de Selenio y cómo escribir pruebas automatizadas de WebDriver con Selenio.
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 El Microsoft Edge está deseando escuchar sus comentarios acerca del uso de WebDriver, marcos de prueba de WebDriver (como Selenio) y Microsoft Edge.  Para enviar al equipo sus preguntas **** y comentarios, elija el icono Enviar comentarios en el Microsoft Edge DevTools o envíe un [tweet][TwitterTweetEdgeDevTools]@EdgeDevTools .  
 

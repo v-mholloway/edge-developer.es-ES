@@ -7,12 +7,12 @@ ms.date: 12/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: bd91939a19f02a426834a85ef92eca388f8f1eda
-ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
-ms.translationtype: HT
+ms.openlocfilehash: f5b59372a5f96a4a7184f383925586938658bd579b2612555514474515f9388e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "11203973"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800676"
 ---
 # <a name="3d-view"></a>Vista 3D  
 

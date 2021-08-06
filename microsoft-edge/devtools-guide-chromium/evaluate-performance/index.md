@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f40f23c4ac9fcc0bb0186ddb96956f691890c0c0
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: c68db7c0ce01ab9414eb477d03feb4c4d262bc45ec3be2c50c0cc29a73d115c1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564276"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801110"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -243,13 +243,13 @@ Por último, hay muchas formas de mejorar el rendimiento en tiempo de ejecución
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]  
 -->
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Cambiar Microsoft Edge ubicación de DevTools (desacoplar, acoplar a abajo, acoplar a la izquierda)"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Cambiar la ubicación de DevTools (desacoplar, acoplar a abajo, acoplar a la izquierda)"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimizar la velocidad del sitio web con Microsoft Edge DevTools"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools: publicar un mensaje de | Twitter"  

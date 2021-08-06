@@ -1,20 +1,20 @@
 ---
 description: Para comprobar que una página web se puede usar con la visión borrosa, en la herramienta representación, use la lista desplegable Emular deficiencias de visión.
-title: Comprobar que la página es utilizable con la visión borrosa
+title: Verificar si la página se puede utilizar con la visión borrosa
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2fc1a1cf7746591573fce07946c7fb11abf42705
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 18e9c0a835d449fb9932d2fea2bf40279154eb547c1e83daa10c88390ef86190
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597693"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802518"
 ---
-# <a name="verify-that-the-page-is-usable-with-blurred-vision"></a>Comprobar que la página es utilizable con la visión borrosa
+# <a name="verify-that-the-page-is-usable-with-blurred-vision"></a>Verificar si la página se puede utilizar con la visión borrosa
 
 <!-- Rendering tool: Emulate vision deficiencies: Blurred vision -->
 
@@ -37,13 +37,13 @@ Para comprobar si una página web se puede usar con la visión borrosa:
 1.  En la **herramienta Representación,** en **Emular**deficiencias de visión, seleccione **Sin emulación** para quitar la simulación de visión borrosa.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Emular deficiencias visuales](emulate-vision-deficiencies.md)
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

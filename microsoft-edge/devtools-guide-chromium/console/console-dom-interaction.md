@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 56ce6b1d8f1ad98eeb9c141c2e9b002e7679d7de
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: a8acb501d099c3708824fd3a05d1ee73b76a268e06d80a2ff14c82d6d9043a87
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597019"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801885"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>Usar la consola para interactuar con el DOM
 
@@ -261,7 +261,7 @@ Puede resultar útil manipular el DOM desde la **consola**.  Pronto puede encont
 *   Almacene los scripts de la **consola como** [fragmentos de código][DevToolsJavascriptSnippets].  
 *   Ejecute los scripts en una página web con un método abreviado de teclado o el editor.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -272,4 +272,4 @@ Puede resultar útil manipular el DOM desde la **consola**.  Pronto puede encont
 [DevtoolsConsoleUtilities]: ./utilities.md "Referencia de api de utilidades de consola | Microsoft Docs"  
 
 [DevToolsJavascriptSnippets]: ../javascript/snippets.md "Ejecute fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
+[DevtoolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta Orígenes | Microsoft Docs"  

@@ -7,18 +7,18 @@ ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, vs code, visual studio code, debugger, webhint
-ms.openlocfilehash: 1aa5b66043e87ebb0f1b848dcd60e2553b378f36
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: fee9f5aa8c17aaed782d8185d5d92272367071ec26ca0f19649a33a4b183b8a4
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230694"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798325"
 ---
-# Información general sobre Visual Studio Code  
+# <a name="visual-studio-code-overview"></a>Información general sobre Visual Studio Code  
 
 [Visual Studio Code][VisualStudioCodeDocs] es un editor de código fuente ligero, pero eficaz.  [Visual Studio Code][VisualStudioCodeDocs] está disponible para Windows, Linux y macOS.  Incluye compatibilidad integrada con JavaScript, TypeScript y Node.js, por lo que es una excelente herramienta para desarrolladores web antes de personalizarlo.  Si aún no lo está usando, descargue [Visual Studio Code][VisualstudioCode].  
 
-##  <a name="extensions"></a>Extensiones  
+## <a name="extensions"></a>Extensiones  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
@@ -51,7 +51,7 @@ Busque en Marketplace la extensión específica y elija **Instalar**.
    :::column-end:::
 :::row-end:::  
 
-##  <a name="debugger-for-microsoft-edge"></a>Depurador de Microsoft Edge  
+## <a name="debugger-for-microsoft-edge"></a>Depurador de Microsoft Edge  
 
 Con la [extensión Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code, depure el código front-end de JavaScript línea por línea y vea instrucciones directamente desde `console.log()` [Visual Studio Code][VisualstudioCode].  
       
@@ -61,7 +61,7 @@ Con la herramienta Depurador, puede iniciar o adjuntar a Microsoft Edge \(EdgeHT
    **Depurador para Microsoft Edge** Visual Studio Code en acción  
 :::image-end:::  
 
-##  <a name="microsoft-edge-tools-for-visual-studio-code"></a>Microsoft Edge Herramientas para Visual Studio Code
+## <a name="microsoft-edge-tools-for-visual-studio-code"></a>Microsoft Edge Herramientas para Visual Studio Code
 
 Con la [Microsoft Edge tools para Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code, use la herramienta **Elementos** del Microsoft Edge en Visual Studio Code.  Úselo para las siguientes acciones.  
 
@@ -76,7 +76,7 @@ Para obtener más información, vaya [a Microsoft Edge Tools for Visual Studio C
    **Microsoft Edge herramientas para Visual Studio Code** Visual Studio Code en acción  
 :::image-end:::  
 
-##  <a name="webhint"></a>webhint  
+## <a name="webhint"></a>webhint  
       
 Use [webhint][WebhintMain], una herramienta de linting personalizable, para mejorar la siguiente funcionalidad del sitio.  
 

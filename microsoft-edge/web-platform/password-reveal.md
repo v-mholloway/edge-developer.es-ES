@@ -1,20 +1,20 @@
 ---
 description: Proporciona instrucciones sobre cómo personalizar la presentación del botón de revelación de contraseñas
-title: Personalizar el botón de revelación de contraseñas
+title: Personalizar el botón de revelar contraseñas
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibilidad, plataforma web, revelación de contraseñas, icono de ojo
-ms.openlocfilehash: 93f618d28e5fa2f16dda87b4122a097ef40618c9
-ms.sourcegitcommit: 1f0b2534b51417bb19d05945fea54ddad977e88f
+ms.openlocfilehash: cc27fcfe2539dc4a78da77ba1181790ca40d9ccd1b894ad0b42241dadc3b0659
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "11526161"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803784"
 ---
-# <a name="customize-the-password-reveal-button"></a>Personalizar el botón de revelación de contraseñas  
+# <a name="customize-the-password-reveal-button"></a>Personalizar el botón de revelar contraseñas  
 
 El `password` tipo de entrada de Microsoft Edge incluye un control de **revelación de** contraseña.  Un usuario puede elegir el botón **de entrada de** contraseña para revelar el campo **de** contraseña.  El campo contraseña **revelada** ayuda al usuario a comprobar si la contraseña es correcta.  Después de que un **** usuario haya escrito texto **** en el campo de contraseña, un usuario puede elegir el botón de revelación de contraseña o seleccionar para alternar la visibilidad `Alt` + `F8` de la entrada.  
 

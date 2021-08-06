@@ -1,5 +1,5 @@
 ---
-description: Una referencia completa de las Microsoft Edge del panel DevTools Network.
+description: Una referencia completa de las características del panel de red DevTools de Microsoft Edge.
 title: Referencia de análisis de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 93916c2ea65f9500ae0bf8a7a6e59caf45893bc1
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: 5c821decc2acbe14d08a50011090904408fce1817c1907aa289f62c0d2852631
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710768"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799552"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "11710768"
    limitations under the License.  -->  
 # <a name="network-analysis-reference"></a>Referencia de análisis de red  
 
-Descubra nuevas formas de analizar cómo se carga la página en esta referencia completa de las Microsoft Edge de análisis de red de DevTools.  
+Descubra nuevas formas de analizar cómo se carga la página en esta referencia completa de las características de análisis de red de Microsoft Edge DevTools.  
 
 ## <a name="record-network-requests"></a>Registrar solicitudes de red  
 
@@ -44,7 +44,7 @@ De forma predeterminada, DevTools registra todas las solicitudes de red en la **
 Para detener la grabación de solicitudes, siga estos pasos.  
 
 1.  En la **herramienta Red,** elija **Detener registro de red de grabación** \( Detener registro de red de grabación ![ ](../media/record-on-icon.msft.png) \).  Se vuelve gris para indicar que DevTools ya no está grabando solicitudes.  
-1.  Seleccione `Control` + `E` \(Windows, Linux\) o `Command` + `E` \(macOS\) mientras la **herramienta Red** está en el foco.  
+1.  Seleccione `Control` + `E` \(Windows, Linux\) o `Command` + `E` \(macOS\) mientras la **herramienta Red** está en foco.  
 
 ### <a name="clear-requests"></a>Borrar solicitudes  
 

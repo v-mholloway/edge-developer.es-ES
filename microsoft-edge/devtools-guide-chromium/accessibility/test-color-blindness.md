@@ -1,20 +1,20 @@
 ---
 description: Compruebe que las páginas web son utilizables por personas con ceguera de colores mediante la lista desplegable Emular deficiencias de la visión en la herramienta de representación.
-title: Comprobar que la página es utilizable por personas con daltonismo
+title: Verificar si las personas con daltonismo pueden utilizar la página
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 54cd7230f0402bfeb4b5ee28d2bcd0947794676f
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: cde0def6e15f8dd9e430ce56754df29f380db561b540849c65f85d449c9d028d
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597691"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802231"
 ---
-# <a name="verify-that-the-page-is-usable-by-people-with-color-blindness"></a>Comprobar que la página es utilizable por personas con daltonismo
+# <a name="verify-that-the-page-is-usable-by-people-with-color-blindness"></a>Verificar si las personas con daltonismo pueden utilizar la página
 
 <!-- Rendering tool: Emulate vision deficiencies: Protanopia -->
 
@@ -43,13 +43,13 @@ Para comprobar si las personas con ceguera de color pueden usar una página web:
 1.  En la **herramienta Representación,** debajo **de Emular deficiencias de**visión, seleccione Sin **emulación** para quitar la simulación.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Emular las deficiencias][DevToolsVisionDeficiencies] de **** la visión: define los elementos de la lista desplegable Emular deficiencias de visión, como Protanopia, Deuteranopia, Tritanopia y Achromatopsia.
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

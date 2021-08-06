@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: support
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador, soporte técnico
-ms.openlocfilehash: 4f72e0f0a738d6c89ffd0dcc80bf271d8517d1b2
-ms.sourcegitcommit: 0e67a56b9dc1f7a86924d142db0efd36fd99d38b
+ms.openlocfilehash: 90a20bbce030393036750b559a9cc19198fc6df3c8dba517a30deeaa9c9cd471
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "11608663"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798263"
 ---
 # <a name="contact-microsoft-edge-extension-support"></a>Póngase en contacto Microsoft Edge soporte técnico de extensión  
 

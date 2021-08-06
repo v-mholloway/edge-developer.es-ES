@@ -7,12 +7,12 @@ ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, service worker, PWA
-ms.openlocfilehash: c00b7c7fd18d4bb3d413369ec1464c0cb0255311
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 9a7f2f47116151ceb96853e429f84dfebd212bd5f08cde13a7ab157a798a403f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597139"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803363"
 ---
 # <a name="service-worker-improvements"></a>Mejoras del trabajador de servicio  
 
@@ -86,7 +86,7 @@ Para encontrar más información sobre la pila, establezca un punto de interrupc
 
 El Microsoft Edge de DevTools planea desarrollar aún más los detalles de la memoria caché y están investigando más formas de mejorar la experiencia de depuración del trabajador del servicio para desarrolladores de [aplicaciones web][MdnProgressiveWebApps] progresivas.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

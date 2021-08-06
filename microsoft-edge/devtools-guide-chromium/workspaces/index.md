@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 640bb80e01f776c763af053cf8354ce90cf52e93
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 69b9e4566324234afdaaa2670642b9fb454ebf2c3ccabe5ada1c569370f8e6bd
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564668"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798420"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ Este tutorial proporciona prácticas para configurar y usar un área de trabajo.
 > *   [Usar DevTools para realizar cambios básicos en CSS][DevToolsCssIndex]  
 > *   [Ejecutar un servidor web HTTP local][MDNSimpleLocalHTTPServer]  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 Las áreas de trabajo permiten guardar un cambio que realice en Devtools en una copia local del mismo archivo en el equipo.  Para este tutorial, debe tener la siguiente configuración en el equipo.  
 
@@ -265,7 +265,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  -->  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

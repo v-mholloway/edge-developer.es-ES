@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: aadb3470eb295934cde4ad26b089ac0c83898e5c
-ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
+ms.openlocfilehash: 56bdb6b7c6991f3eeb9393ffa0871db817f98eabbfa2901024d1d56448d46701
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "11643245"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803247"
 ---
 # <a name="publish-your-extension"></a>Publicar la extensión  
 

@@ -8,12 +8,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accesibilidad, accesibilidad para desarrolladores, sitios web accesibles, edge, desarrollo web, ARIA, desarrollador, UIA, Automatización de la interfaz de usuario
-ms.openlocfilehash: b03680d2112311b97912ed92ae446a74410c95bf
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 271cd960ef925ff3231fdc24c3b912b8caac3e8089d9f1725494ec704c26bbb6
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597112"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800188"
 ---
 # <a name="accessibility-testing"></a>Pruebas de accesibilidad  
 

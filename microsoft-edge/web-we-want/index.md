@@ -7,12 +7,12 @@ ms.date: 03/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, developer, web we want
-ms.openlocfilehash: f8d17b114dc418c727646c13c6b48525e02c60d0
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: c50567373c3e921fcc57be1c8d0dcaf6130398d85810e7194e041655d39e5193
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461578"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806278"
 ---
 # <a name="the-web-we-want-initiative"></a>La iniciativa Web We Want
 

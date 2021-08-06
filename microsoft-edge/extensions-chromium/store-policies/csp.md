@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 8307482e780b4d631edffd976cca7ba724e2ad40
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: db4a1595bf9ee691a141435a374ed8874cdd272ce1a1b928fe72348f38922fc7
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397520"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803590"
 ---
 # <a name="content-security-policy-csp"></a>Directiva de seguridad de contenido \(CSP\)  
 

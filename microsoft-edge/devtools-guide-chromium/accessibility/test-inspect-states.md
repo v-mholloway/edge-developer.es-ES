@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 129a89f94925de24a4e649bd91f513de031d6b4a
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 3603723910a60f06fab30bdac4e934dbca48c5696b9a163b4ea120b4edbc822f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597686"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802430"
 ---
 # <a name="verify-accessibility-of-all-states-of-elements"></a>Comprobar la accesibilidad de todos los estados de elementos
 
@@ -43,7 +43,7 @@ Por ejemplo, los vínculos del menú de navegación de la barra lateral tienen s
 
 ## <a name="hovering-when-the-inspect-tool-is-active-doesnt-show-the-text-color-contrast-for-the-hover-state"></a>Si se activa la herramienta Inspeccionar, no se muestra el contraste de color de texto para el estado de desplazamiento
 
-La **superposición** de información de la herramienta Inspeccionar solo representa un solo estado.  Los elementos de la página pueden tener estados diferentes, todos los cuales deben probarse.  Por ejemplo, al pasar el puntero del mouse sobre el menú de la página de demostración de pruebas de accesibilidad, se obtiene una animación que cambia los colores. Realice los pasos siguientes.
+La **superposición** de información de la herramienta Inspeccionar solo representa un solo estado.  Los elementos de la página pueden tener estados diferentes, todos los cuales deben probarse.  Por ejemplo, al pasar el puntero del mouse sobre el menú de la página de demostración de pruebas de accesibilidad, se obtiene una animación que cambia los colores. Para ello, realice los siguientes pasos:
 
 1.  Abra la [página web de demostración de pruebas de][DevToolsA11yErrorsDemopage] accesibilidad en una pestaña nueva.
 
@@ -111,12 +111,12 @@ Para activar el estado del mouse mientras se usa la herramienta Inspeccionar:
 La simulación de estado también es una buena forma de comprobar si se han considerado diferentes necesidades de usuario, como las necesidades de los usuarios de teclado.  Al usar las casillas De estado **del** elemento Force, puedes simular el estado para detectar que la interfaz de usuario permanece sin cambios `:focus` cuando tiene el foco. Esta falta de un indicador cuando un elemento tiene el foco es un problema.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

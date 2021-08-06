@@ -7,12 +7,12 @@ ms.date: 03/31/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: e6233289794bc1c3ef235af46402c23173c09857
-ms.sourcegitcommit: e6a4f73be57439149e3cc56491d7364831d0079e
+ms.openlocfilehash: 523340b302f62fd98f7ec12037d56d9d401df156e9ab0851e9b6f96fc3a1ef46
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "11475214"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807489"
 ---
 # <a name="native-messaging"></a>Mensajería nativa  
 
@@ -275,7 +275,7 @@ Para almacenar el archivo de manifiesto, complete una de las siguientes acciones
 
 <!-- links -->  
 
-[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge Complementos"
+[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Complementos de Microsoft Edge"
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

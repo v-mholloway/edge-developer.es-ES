@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: f2ca56c2e15f578a970e6ceb84b1554bfda53862
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 266f2946d8132cf62ff6ed1ea32759020e4b03101150704faa4b27dfdd61ec5e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564283"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803673"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -126,10 +126,11 @@ Microsoft Edge \(EdgeHTML\) Máquinas virtuales \(VM\) permiten tener acceso a d
 Si no puedes usar los emuladores y no tienes acceso a dispositivos reales, los emuladores basados en la nube son lo siguiente mejor.  Una gran ventaja de los emuladores basados en la nube sobre dispositivos reales y emuladores locales es que puede automatizar las pruebas unitarias de su sitio en diferentes plataformas.  
 
 *   [BrowserStack (comercial)][|::ref1::|] es el más fácil de usar para pruebas manuales.  Seleccionas un sistema operativo, seleccionas la versión del explorador y el tipo de dispositivo, seleccionas una dirección URL para examinar y gira hacia arriba una máquina virtual hospedada con la que puedes interactuar.  También puedes ejecutar varios emuladores en la misma pantalla, lo que te permite probar la apariencia de la aplicación en varios dispositivos al mismo tiempo.  
+*   [LambdaTest (comercial)][|::ref2::|] le ayuda a realizar pruebas manuales entre exploradores en una combinación de más de 2000 exploradores y sistemas operativos. Los usuarios pueden grabar vídeos de errores complejos y compartirlos a través de la integración, como Microsoft Teams, Slack y mucho más. Los usuarios pueden acelerar sus pruebas ejecutando pruebas en paralelo.
 *   [SauceLabs (comercial)][SauceLabs] permite ejecutar pruebas unitarias dentro de un emulador, lo que puede ser realmente útil para secuencias de comandos de un flujo a través del sitio y ver la grabación de vídeo de esto después en varios dispositivos.  También puede realizar pruebas manuales con su sitio.  
 *   [Device Anywhere (comercial)][AppExperience] no usa emuladores, sino dispositivos reales que puedes controlar de forma remota.  Esto es muy útil en caso de que necesites reproducir un problema en un dispositivo específico y puede que no muestres el error con ninguna de las opciones de las guías anteriores.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -143,7 +144,7 @@ Si no puedes usar los emuladores y no tienes acceso a dispositivos reales, los e
 
 [AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "Crear y administrar dispositivos virtuales | Desarrolladores de Android"  
 [AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Descargar herramientas de Android Studio y SDK | Desarrolladores de Android"  
-[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Ejecutar aplicaciones en el emulador de Android | Desarrolladores de Android"  
+[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Ejecutar aplicaciones en el Emulator | Desarrolladores de Android"  
 
 [AppExperience]: https://www.sigos.com/app-experience/ "Experiencia de la aplicación"  
 [AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Ayuda del simulador: configuración | manzana"  
@@ -152,6 +153,7 @@ Si no puedes usar los emuladores y no tienes acceso a dispositivos reales, los e
 [MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Modo de diseño dinámico | MDN"  
 [MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Descargar el explorador Firefox"  
 [SauceLabs]: https://saucelabs.com "Laboratorios de salsa"  
+[LambdaTest]: https://www.lambdatest.com/ "LambdaTest" 
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

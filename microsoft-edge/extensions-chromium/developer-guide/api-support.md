@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, api de extensión, desarrollador, desarrollo web
-ms.openlocfilehash: 20e924b5c973b9ecd433feeb3a772c6d17746369
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 1a97346c1b484470b63b447b0acd34833d93e0c12481da9acc56fc7a552b0cac
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398108"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807657"
 ---
 # <a name="supported-apis-for-microsoft-edge-extensions"></a>API admitidas para Microsoft Edge extensiones
 

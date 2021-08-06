@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 1cba9db1744235dfbfd2a007e33d1101452aab31
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 102df6057976b01a49ad0819b5e0c51e9415294d41a4f17cf5b26974c8ef6b38
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624741"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802496"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>Probar automáticamente una página web para problemas de accesibilidad
 
@@ -26,11 +26,13 @@ Hay varias maneras de abrir la **herramienta Problemas,** como:
 
 ## <a name="view-the-accessibility-section-of-the-issues-tool"></a>Ver la sección Accesibilidad de la herramienta Problemas
 
-1.  Abra la [página web de demostración][DevToolsA11yErrorsDemopage] de pruebas de accesibilidad en una nueva pestaña del explorador y, a continuación, seleccione **F12** para abrir DevTools.  En la parte superior derecha, **aparece** el contador de problemas \( Contador de problemas \), como un icono de burbuja de voz junto con el número de problemas ![ ](../media/issues-counter-icon.msft.png) detectados automáticamente.  Es posible que aparezca un número diferente en el explorador y que el número se actualice a medida que use DevTools.
+1.  Abra la [página web de demostración][DevToolsA11yErrorsDemopage] de pruebas de accesibilidad en una nueva pestaña del explorador y, a continuación, seleccione **F12** para abrir DevTools.  En la parte superior derecha, aparece **el contador de problemas** \( Contador de problemas ![ ](../media/issues-counter-icon.msft.png) \).  El **contador de problemas** es un icono de burbuja de voz junto con el número de problemas detectados automáticamente.
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="El contador Problemas de DevTools, que indica cuántos problemas hay en el documento actual" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         El **contador Problemas** de DevTools, que indica cuántos problemas hay en el documento actual
     :::image-end:::
+
+1.  Actualice la página, ya que algunos problemas se notifican en función de las solicitudes de red.  Observe el recuento actualizado en el **contador Problemas**.
 
 1.  Seleccione el **contador Problemas**.  Se **abre** la herramienta Problemas, en el **cajón** situado en la parte inferior de DevTools.
 
@@ -133,13 +135,13 @@ El árbol DOM de la **herramienta Elementos** marca los problemas directamente e
     :::image-end:::
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 *  [Buscar y corregir problemas con la herramienta Problemas][DevToolsIssuesTool]
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

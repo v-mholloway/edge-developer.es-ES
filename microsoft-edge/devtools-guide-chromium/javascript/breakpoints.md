@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: fda536deb7177b933013120fc11b0896acfbbe5c
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 9734841a9994625bfbaa97a84781581415ed883ed92f8ca914b81cea277d8fac
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564178"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800542"
 ---
 <!-- Copyright Kayce Basques
 
@@ -221,7 +221,7 @@ Asegurarse de que la función de destino está en el ámbito es complicado si es
 *   [Introducción a la depuración de JavaScript en Microsoft Edge DevTools:][DevtoolsJavascriptIndex] un tutorial introductorio con una página web existente.
 *   [Introducción a la][DevtoolsSourcesIndex] herramienta Sources: el depurador forma parte de **la herramienta Orígenes,** que incluye un editor de JavaScript.
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -231,7 +231,7 @@ Asegurarse de que la función de destino está en el ámbito es complicado si es
 
 [DevtoolsJavascriptIndex]: index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft Docs"  
 
-[DevtoolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
+[DevtoolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta Orígenes | Microsoft Docs"  
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Recuperación de api | MDN"  
 

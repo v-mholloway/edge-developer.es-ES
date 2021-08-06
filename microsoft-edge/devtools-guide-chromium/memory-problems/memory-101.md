@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 58b3ecde157b1c551b6c0cd435049ce221555519
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: d8c1d38fe4d09854b4ec73fe72bb09166c44ef059cd6b5d9aefc6125cd07ba72
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564780"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799265"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -173,7 +173,7 @@ Cada **grupo de objetos** nativos está hecho de objetos que tienen referencias 
 
 Cada objeto contenedor contiene una referencia al objeto nativo correspondiente, para redirigir comandos a él.  A su vez, un grupo de objetos contiene objetos contenedor.  Sin embargo, esto no crea un ciclo irreconectable, ya que recolector de elementos no utilizados es lo suficientemente inteligente como para liberar grupos de objetos cuyos contenedores ya no se hacen referencia.  Pero el olvido de liberar un solo contenedor contiene todo el grupo y los contenedores asociados.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, vs code, visual studio code, microsoft edge developer tools, microsoft edge developer tools extension
-ms.openlocfilehash: 76b3b5a085088997e9df8089dbfcbad2960cc3df
-ms.sourcegitcommit: 97bc637bb12ee527df5bdc7a8892a07aec387ba1
+ms.openlocfilehash: 223e13ab943e6c9344c8d72bd08115d93c13254ad70fed07f7b09bf8286e1485
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "11722933"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805928"
 ---
 # <a name="microsoft-edge-developer-tools-for-visual-studio-code-extension"></a>Microsoft Edge Herramientas de desarrollador para Visual Studio Code extensión  
 

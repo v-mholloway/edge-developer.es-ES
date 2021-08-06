@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: aplicaciones web progresivas, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 0063323b1fde94d84e70df51170726325dd0f2a9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 9baa01d3a18c2aa585a93aa1b4511cf21bff27ce95b35d62ebc0d23fbb70cafd
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399102"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803583"
 ---
 # <a name="use-the-web-app-manifest-to-integrate-your-progressive-web-app-into-the-operating-system"></a>Usar el manifiesto de aplicación web para integrar la aplicación web progresiva en el sistema operativo
 
@@ -64,7 +64,7 @@ Muchos sistemas operativos permiten a los usuarios compartir rápidamente víncu
 
 Cuando se agrega al manifiesto de aplicación web, se establece `"/share.html"` como la página de acción de un recurso compartido. Además, define tres parámetros que se pasarán a esa página de acción: `"title"` , `"text"` y `"url"` .  Estos parámetros se almacenarán en `"name"` las propiedades , y del objeto `"description"` `"link"` [ShareData.][GitHubWicgWebShareDomSharedata]  De forma predeterminada, la página de acción recibe los parámetros como parte de una solicitud GET, pero puede especificar la solicitud y la codificación \(as \), tal como lo haría en `method` `enctype` un formulario web.
 
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Consulte también  
 
 Para obtener más información sobre los manifiestos de aplicación web, vaya a la siguiente lista de temas relacionados.  
 

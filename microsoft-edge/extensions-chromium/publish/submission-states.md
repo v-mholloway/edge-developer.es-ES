@@ -7,14 +7,14 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 881166471ec5fabb66367ead650cb86b883cf01d
-ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
+ms.openlocfilehash: fee28cf377582e670080f489c442a7c7130aa7448c122d206e47605104219fbb
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "11343147"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807951"
 ---
-# Estados de envío para extensiones en el Microsoft Edge complementos  
+# <a name="submission-states-for-extensions-in-the-microsoft-edge-add-ons-store"></a>Estados de envío para extensiones en el Microsoft Edge complementos  
 
 La página de información general del Centro de partners muestra el estado de la extensión en el flujo de envío general.  En este artículo se describen los diferentes estados en los que puede estar la extensión en cualquier momento durante el proceso de envío y certificación.  
 

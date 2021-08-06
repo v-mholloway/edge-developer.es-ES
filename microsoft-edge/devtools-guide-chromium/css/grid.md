@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 68493fae5e96ef1b2c7ed1205d67fd2b4cf67df5
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 143d17fb577d89d4b675e78eff15af26be5746c53f75b03769e00d42bc270268
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564458"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801211"
 ---
 # <a name="inspect-css-grid"></a>Inspeccionar cuadrícula CSS  
 
@@ -23,7 +23,7 @@ Los ejemplos usados en las figuras de este artículo se toman de las siguientes 
 *   [Cuadro de frutas][JecFyiDemoCssGridFruit]  
 *   [Caja de refrigerio][JecFyiDemoCssGridSnack]  
 
-## <a name="before-you-begin"></a>Antes de comenzar  
+## <a name="before-you-begin"></a>Antes de empezar  
 
 CSS Grid es un poderoso paradigma de diseño para la web.  Un excelente lugar para empezar a aprender sobre CSS Grid y las muchas características es la [guía css grid layout][MdnCssGridLayout] en MDN.  
 
@@ -182,13 +182,13 @@ Para resaltar el elemento HTML en la herramienta **Elementos** y desplazarse has
    Resaltar la cuadrícula  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft Docs"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "Cuadrícula CSS | jec.fyi"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Cuadrícula CSS | jec.fyi"  

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0680b08c9809698c1db6c186a7be76a93c31df4b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: ef62a2ea16714167a7fa0e080b5b581f6b974ed989a7530d4c904ea22ba38c2d
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564479"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808014"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -263,7 +263,7 @@ Complete las siguientes acciones para agregar una clase a un elemento.
 1.  [Seleccione el elemento](#choose-an-element) en el **árbol DOM**.  
 1.  Elija **.cls**.  
 1.  Escriba el nombre de la clase en el **cuadro de** texto Agregar nueva clase.  
-1.  Seleccione `Enter` .  
+1.  Seleccione `Enter`.  
 
 :::image type="complex" source="../media/css-elements-styles-filter-classes.msft.png" alt-text="Panel Clases de elementos" lightbox="../media/css-elements-styles-filter-classes.msft.png":::
    Panel **Clases de** elementos  
@@ -545,7 +545,7 @@ Al abrir el **Selector de colores**, el **cuentagotas** \( Cuentagotas ![ ](../m
     
 <!--todo:  add the section on the Angle clock section for What's New 88.  -->  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

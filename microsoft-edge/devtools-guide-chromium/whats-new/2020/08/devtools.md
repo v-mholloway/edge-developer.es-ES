@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ec2219e9ebdd5d79c61bcaa813f7784246b1f5d0
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 02aa9cca6c1306885ff0c68331002bff4e4e05c02b81b8f4cb4143f8b69d63f0
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564948"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804507"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -41,7 +41,7 @@ En Microsoft Edge 86, puede hacer coincidir los métodos abreviados de teclado d
    Coincida con los métodos abreviados de teclado en DevTools para Visual Studio Code  
 :::image-end:::  
 
-Para activar esta característica, vaya a [Personalizar métodos abreviados de teclado en el Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
+Para activar esta característica, vaya a [Personalizar métodos abreviados de teclado en DevTools][DevtoolsCustomizeShortcuts].  
 
 Por ejemplo, el método abreviado de teclado para pausar o continuar ejecutando un script [en Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] es `F5` .  Con el valor **preestablecido DevTools (predeterminado),** ese mismo acceso directo en DevTools es , pero cuando elige el valor preestablecido `F8` **Visual Studio Code,** ese acceso directo ahora también es `F5` .  
 
@@ -232,7 +232,7 @@ Los problemas de cookies de terceros ahora están ocultos de forma predeterminad
    Casilla de verificación problemas de cookies de terceros  
 :::image-end:::  
 
-Chromium: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]  
+Chromium problemas: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589]  
 
 ### <a name="emulate-missing-local-fonts"></a>Emular fuentes locales que faltan  
 
@@ -293,7 +293,7 @@ DevTools ahora admite mejor las siguientes características del lenguaje JavaScr
 | [Operadores de asignación lógica][V8FeaturesLogicalAssignment] | DevTools ahora admite la asignación lógica con los `&&=` nuevos operadores , y en las herramientas `||=` `??=` **Consola** **y** Orígenes.  |  
 | Separadores [numéricos de impresión bastante][V8FeaturesNumericSeparators] | Ahora DevTools imprime correctamente los separadores numéricos en la **herramienta** Orígenes.  |  
 
-Chromium: [1086817][CR1086817], [1080569][CR1080569]  
+Chromium problemas: [1086817][CR1086817], [1080569][CR1080569]  
 
 ### <a name="lighthouse-62-in-the-lighthouse-panel"></a>Faro 6.2 en el panel Faro  
 
@@ -469,8 +469,8 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [DevtoolsCoverageIndex]: ../../../coverage/index.md "Busque código JavaScript y CSS sin usar con la pestaña Cobertura en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCssGrid]: ../../../css/grid.md "Inspeccionar css grid en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer: personalice Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalización de accesos rápidos de teclado en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalizar métodos abreviados de teclado en DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulación de dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../../../device-mode/dual-screen-and-foldables.md "Emular dispositivos de pantalla doble y plegables en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analizar el rendimiento de representación con la herramienta de representación: referencia de análisis de rendimiento | Microsoft Docs"  
 <!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->  

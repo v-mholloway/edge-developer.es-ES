@@ -7,12 +7,12 @@ ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, devtools para principiantes, devtools de HTML para principiantes, devtools del DOM para principiantes, tutorial de devtools de html, tutorial de devtools del DOM, tutorial de devtools del document object model
-ms.openlocfilehash: a049ec500e22f89db3ab1e966b55d89c2ad682fe
-ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
-ms.translationtype: HT
+ms.openlocfilehash: 184d6b9d130e7052a4f0d479e4837fa84281c6983ca50ab17d508b5a2f9cbe75
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "11643572"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802164"
 ---
 <!-- Copyright Katherine Jackson 
 

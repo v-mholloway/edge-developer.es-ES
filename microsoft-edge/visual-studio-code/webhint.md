@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, vs code, visual studio code, webhint
-ms.openlocfilehash: 3dfd900bf818d02dbc8123c00e7928e56d9b6ade
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 72e1c0f9bff7fbf6f8d15c8426f5db0affc67717ad84adcbeccd8a82d8cb33f0
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399277"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805192"
 ---
 # <a name="webhint-vs-code-extension"></a>Webhint Vs Extensión de código  
 
@@ -88,7 +88,7 @@ Envíe sus comentarios mediante [la presentación de un problema][GithubWebhinti
 
 Para contribuir a la extensión, vaya a [webhint Visual Studio Code guía de contribución de extensión][GithubWebhintioExtensionVscodeContributing].  
 
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Consulte también  
 
 *   [Accesibilidad][AccessibilityIndex]  
 *   [Visual Studio Code][VisualstudiocodeIndex]  

@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 06ec6905b11d01ec0e7c03fb8c4c9c843923a881
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: e25c980d4739477657c73d133a2479055927f3cb48477b2515d549a9b4ff7d8f
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710712"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808938"
 ---
 <!-- Copyright Kayce Basques 
 

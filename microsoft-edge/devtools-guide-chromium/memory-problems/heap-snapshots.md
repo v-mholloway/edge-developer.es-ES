@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 5f097cc45facc7f366a99a9564cf6f3d443f2058
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: b7797326d4449a9e8b05915a453d6b7a0739c45e5697068dfcae7315669a05ef
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565018"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799983"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -250,7 +250,7 @@ Para obtener más información sobre las pérdidas de DOM y los fundamentos del 
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

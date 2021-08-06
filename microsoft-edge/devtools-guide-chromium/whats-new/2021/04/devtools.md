@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 69fcd29f9b4cae9ec290798b767fbe54793cb2fd
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: fce34a73cfc303c794020bc8d3a398de714ace3e15de7272e98509a9cf0071ee
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624783"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807247"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -97,7 +97,7 @@ En Microsoft Edge versión 91 o posterior, si eres desarrollador de aplicación 
    Revisar la **escala de** tiempo del ciclo **de actualización** para el trabajador de servicio  
 :::image-end:::  
 
-Para obtener más información sobre el ciclo de vida de los trabajadores de servicio, vaya a [El ciclo de vida del trabajador de servicio][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle].  Para obtener más información acerca de las herramientas de depuración para las aplicaciones web progresivas y los trabajadores de servicio en DevTools, vaya a [Mejoras del trabajador de servicio][DevtoolsServiceWorkerIndex].  Para revisar las actualizaciones en tiempo real de esta característica en Chromium proyecto de código abierto, vaya al problema [1066604][CR1066604].  
+Para obtener más información sobre el ciclo de vida de los trabajadores de servicio, vaya a [El ciclo de vida del trabajador de servicio][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle].  Para obtener más información acerca de las herramientas de depuración para las aplicaciones web progresivas y los trabajadores de servicio en DevTools, vaya a [Mejoras del trabajador de servicio][DevtoolsServiceWorkerIndex].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1066604][CR1066604].  
 
 ## <a name="progressive-web-apps-no-longer-display-warnings-for-non-square-icons"></a>Las aplicaciones web progresivas ya no muestran advertencias para iconos que no son cuadrados  
 
@@ -123,14 +123,14 @@ Most operating systems require square icons.  Please include at least one square
    :::column-end:::
 :::row-end:::  
 
-Para revisar errores y advertencias en el manifiesto de la aplicación web, vaya a la **herramienta Aplicación** y elija la **sección** Manifiesto.  Los errores y advertencias se enumeran en el **encabezado Errores y advertencias.**  Para obtener más información sobre el manifiesto de aplicación web, vaya a Usar el manifiesto de aplicación [web para integrar la aplicación web progresiva en el sistema operativo][ProgressiveWebAppsWebappmanifests].  Para crear iconos para incluir en el manifiesto de la aplicación web, vaya al Generador de [imágenes de PWABuilder][PwabuilderImagegenerator].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya al problema [1185945][CR1185945].  
+Para revisar errores y advertencias en el manifiesto de la aplicación web, vaya a la **herramienta Aplicación** y elija la **sección** Manifiesto.  Los errores y advertencias se enumeran en el **encabezado Errores y advertencias.**  Para obtener más información sobre el manifiesto de aplicación web, vaya a Usar el manifiesto de aplicación [web para integrar la aplicación web progresiva en el sistema operativo][ProgressiveWebAppsWebappmanifests].  Para crear iconos para incluir en el manifiesto de la aplicación web, vaya al Generador de [imágenes de PWABuilder][PwabuilderImagegenerator].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [1185945][CR1185945].  
 
 ## <a name="localized-devtools-now-supported-in-chromium-based-browsers"></a>Localized DevTools ahora es compatible con Chromium exploradores basados en aplicaciones  
 
 <!--  Title: Localization for all  -->  
 <!--  Subtitle: Match browser language enabled to all Chromium-based browsers  -->  
 
-A partir [Microsoft Edge versión 81][DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages], Microsoft Edge DevTools se muestra en su propio idioma.  Muchos desarrolladores usan otras herramientas de desarrollador como StackOverflow y Visual Studio Code en su idioma nativo, no solo en inglés.  El Microsoft Edge de DevTools, el equipo de Chrome DevTools y el equipo de Google Lighthouse colaboraron para proporcionar la misma experiencia en todos los exploradores basados en Chromium web.  Para obtener más información sobre cómo usar DevTools en su idioma, vaya a [Cambiar la configuración de idioma de DevTools][DevtoolsCustomizeLocalization].  Para obtener más información sobre la colaboración en esta característica en el proyecto de código abierto Chromium, vaya a [1136655][CR1136655].  
+A partir [Microsoft Edge versión 81][DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages], Microsoft Edge DevTools se muestra en su propio idioma.  Muchos desarrolladores usan otras herramientas de desarrollador como StackOverflow y Visual Studio Code en su idioma nativo, no solo en inglés.  El Microsoft Edge de DevTools, el equipo de Chrome DevTools y el equipo de Google Lighthouse colaboraron para proporcionar la misma experiencia en todos los exploradores basados en Chromium web.  Para obtener más información sobre cómo usar DevTools en su idioma, vaya a [Cambiar la configuración de idioma de DevTools][DevtoolsCustomizeLocalization].  Para obtener más información acerca de la colaboración en esta característica en el proyecto de código abierto Chromium, vaya a [1136655][CR1136655].  
 
 :::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge explorador y DevTools establecidos en japonés" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
    Microsoft Edge explorador y DevTools establecidos en japonés  
@@ -141,7 +141,7 @@ A partir [Microsoft Edge versión 81][DevtoolsWhatsNew202001DevtoolsUsingDevtool
 <!--  Title: Navigate to CSS variables with the arrow keys  -->  
 <!--  Subtitle: In the Styles pane, use the arrow keys to choose CSS variables.  Select `Enter` to see the variable definition.  -->  
 
-A partir [Microsoft Edge versión 88,][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]el panel **Estilos** muestra variables CSS y proporciona un vínculo directamente a la definición de cada variable.  En Microsoft Edge versión 91 o posterior, puede usar las teclas de flecha para navegar fácilmente a las variables CSS.  Para abrir la definición en el panel **Estilos,** mantenga el mouse en una variable y, a continuación, seleccione `Enter` .  Para obtener más información acerca de las variables CSS, vaya [a Using CSS custom properties (variables)][MdnDocsWebCssUsingCssCustomProperties].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto de Chromium, vaya al problema [1187735][CR1187735].  
+A partir [Microsoft Edge versión 88,][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]el panel **Estilos** muestra variables CSS y proporciona un vínculo directamente a la definición de cada variable.  En Microsoft Edge versión 91 o posterior, puede usar las teclas de flecha para navegar fácilmente a las variables CSS.  Para abrir la definición en el panel **Estilos,** mantenga el mouse en una variable y, a continuación, seleccione `Enter` .  Para obtener más información acerca de las variables CSS, vaya [a Using CSS custom properties (variables)][MdnDocsWebCssUsingCssCustomProperties].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya a Problema [1187735][CR1187735].  
 
 :::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="Variable CSS --theme-body-background resaltada en el panel Estilos" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    Variable `--theme-body-background` CSS resaltada en el **panel Estilos**  
@@ -188,7 +188,7 @@ Ahora puede alternar el distintivo en la herramienta Elementos para inspeccionar
 
 Use la nueva **herramienta Inspector de** memoria para inspeccionar una memoria de `ArrayBuffer` JavaScript y Wasm.  Abra la [página web de demostración memoria en JS.][GlitchMemoryInspectorDemoJsHtml]  En la **herramienta Orígenes,** abra el `memory-write-wasm` archivo y establezca un punto de interrupción en la línea `0x03c` .  Actualice la página web.  Expanda la **sección Ámbito** en el panel del depurador.  El nuevo icono se muestra junto al valor **del búfer.**  Elirá para abrir la nueva **herramienta Inspector de** memoria.  
 
-Para obtener más información sobre la depuración en la **herramienta Orígenes,** vaya a Usar el [panel Depurador para depurar código JavaScript][DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode].  Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya al problema [1166577][CR1166577].  
+Para obtener más información sobre la depuración en la **herramienta Orígenes,** vaya a Usar el [panel Depurador para depurar código JavaScript][DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode].  Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1166577][CR1166577].  
 
 :::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="Herramienta Inspector de memoria" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
    **Herramienta inspector de** memoria  
@@ -253,7 +253,7 @@ En la **herramienta Red,** elija el nuevo botón **** Más condiciones de **red.
 1.  Vaya a **Codificaciones de contenido aceptadas**. 
 1.  Quite la casilla situada junto a `Content-Encoding` la que desea probar.  
     
-Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya al problema [1162042][CR1162042].  
+Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1162042][CR1162042].  
 
 :::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="Nuevas Más condiciones de red... botón abre la herramienta Condiciones de red para configurar Content-Encoding" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    Nuevo **Botón Más condiciones de red...** abre la herramienta Condiciones **de** red para configurar `Content-Encoding`  
@@ -269,7 +269,7 @@ Ahora, para mostrar el valor CSS calculado en el panel **Estilos,** complete las
 1.  Abra el menú contextual \(haga clic con el botón derecho\).  
 1.  Elija **Ver valor calculado**.  
     
-Para revisar el historial de esta característica en el proyecto de código abierto Chromium, vaya a Problema [1076198][CR1076198].  
+Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1076198][CR1076198].  
 
 :::image type="complex" source="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png" alt-text="Nuevo acceso directo para mostrar el valor calculado" lightbox="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png":::
    Nuevo acceso directo para mostrar el valor calculado  
@@ -295,7 +295,7 @@ La directiva de permisos es una API de plataforma web que ofrece a un sitio web 
 1.  Elija **Mostrar detalles**.  
 1.  Elija el icono junto a cada directiva para navegar a la solicitud de red o `iframe` que bloqueó la característica.  
     
-Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya al problema [1158827][CR1158827].  
+Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1158827][CR1158827].  
 
 :::image type="complex" source="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png" alt-text="Características bloqueadas en la vista Detalles del marco" lightbox="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png":::
    Características bloqueadas en la vista Detalles del marco  
@@ -316,7 +316,7 @@ Busca experimentos más rápido con el nuevo filtro de experimento.  Por ejemplo
 
 ### <a name="new-vary-header-column-in-the-cache-storage-pane"></a>Nueva columna De encabezado Vary en el panel Almacenamiento en caché  
 
-Use la nueva `Vary Header` columna en el panel De **Storage** caché para mostrar los valores de encabezado [de][HttpwgSpecsRfc7231HtmlHeaderVary] respuesta HTTP Variables.  Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya al problema [1186049][CR1186049].  
+Use la nueva `Vary Header` columna en el panel De **Storage** caché para mostrar los valores de encabezado [de][HttpwgSpecsRfc7231HtmlHeaderVary] respuesta HTTP Variables.  Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1186049][CR1186049].  
 
 :::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="Variar columna de encabezado" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
    Variar columna de encabezado  
@@ -343,7 +343,7 @@ Los agrupadores modernos de JavaScript como [Webpack][WebpackJsMain]y [Rollup][R
 
 #### <a name="support-hover-preview-with-bracket-notation"></a>Compatibilidad con la vista previa activa con la notación entre corchetes  
 
-DevTools ahora admite la vista previa activa en expresiones de miembros de JavaScript que usan `[]` la notación en la **herramienta** Orígenes.  Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya al problema [1178305][CR1178305].  
+DevTools ahora admite la vista previa activa en expresiones de miembros de JavaScript que usan `[]` la notación en la **herramienta** Orígenes.  Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1178305][CR1178305].  
 
 :::image type="complex" source="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png" alt-text="Compatibilidad con la vista previa activa con notación []" lightbox="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png":::
    Compatibilidad con la vista previa activa con `[]` la notación  
@@ -351,7 +351,7 @@ DevTools ahora admite la vista previa activa en expresiones de miembros de JavaS
 
 #### <a name="improved-outline-of-html-files"></a>Esquema mejorado de archivos HTML  
 
-DevTools ahora tiene mejor compatibilidad de esquema para `.html` los archivos.  En la **herramienta Orígenes,** abra el `.html` archivo.  Para activar \(o desactivar\) el esquema de código, seleccione en `Ctrl` + `Shift` + `O` Windows/Linux o `Cmd` + `Shift` + `O` en macOS.  En la siguiente figura, DevTools ahora enumera correctamente todas las funciones del esquema.  Anteriormente, DevTools solo muestra algunas de las funciones.  Para revisar el historial de esta característica en el proyecto de código abierto de Chromium, vaya a Los problemas [761019][CR761019] y [1191465][CR1191465].  
+DevTools ahora tiene mejor compatibilidad de esquema para `.html` los archivos.  En la **herramienta Orígenes,** abra el `.html` archivo.  Para activar \(o desactivar\) el esquema de código, seleccione en `Ctrl` + `Shift` + `O` Windows/Linux o `Cmd` + `Shift` + `O` en macOS.  En la siguiente figura, DevTools ahora enumera correctamente todas las funciones del esquema.  Anteriormente, DevTools solo muestra algunas de las funciones.  Para revisar el historial de esta característica en el proyecto de código abierto de Chromium, vaya a Problemas [761019][CR761019] y [1191465][CR1191465].  
 
 :::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" Esquema mejorado de archivos HTML" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    Esquema mejorado de archivos HTML  
@@ -386,11 +386,11 @@ En Microsoft Edge versión 91 o posterior, DevTools resuelve las solicitudes de 
 
 Para revisar el historial de esta característica en el proyecto Chromium de código abierto, vaya a Problema [1189161][CR1189161].  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
 
 Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales de versión preliminar de Microsoft Edge][MicrosoftEdgePreviewChannels] como su explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
@@ -415,7 +415,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de versiones preliminares de Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"  
 
 [VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Actualizar una extensión manualmente: Marketplace de extensiones | Visual Studio Code"  
 
@@ -430,26 +430,26 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Errores de Chromium"  
 [CR11374]: https://crbug.com/v8/11374 "Problema 11374: Implementar la comprobación de marca ergonómica para campos privados"  
-[CR761019]: https://crbug.com/761019 "Problema 761019: &quot;Ir a símbolo&quot; pierde la primera función y prefiere una coincidencia peor si contiene todas las chars con tipo"  
+[CR761019]: https://crbug.com/761019 "Problema 761019: &quot;Ir a símbolo&quot; pierde la primera función y prefiere una coincidencia peor si contiene todas las caracteres con tipo"  
 [CR862450]: https://crbug.com/862450 "Problema 862450: [css-scroll-snap] Considere la posibilidad de agregar la característica Devtools para el complemento de desplazamiento css"  
 [CR979000]: https://crbug.com/979000 "Problema 979000: Los mapas de origen con rutas de acceso de orígenes en colisión no funcionan."  
-[CR1066604]: https://crbug.com/1066604 "Problema 1066604: DevTools: Vea detalles sobre ServiceWorker para instalar y activar eventos | Chromium errores"  
+[CR1066604]: https://crbug.com/1066604 "Problema 1066604: DevTools: vea detalles sobre ServiceWorker instalar y activar eventos | Chromium errores"  
 <!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->  
-[CR1076198]: https://crbug.com/1076198 "Problema 1076198: [Solicitud de característica] Saltar a la propiedad calculada desde la `styles` pestaña"  
-[CR1092093]: "Problema 1092093: Hacer que los controles de formularios se atenúan más al color al admitir la propiedad https://crbug.com/1092093 CSS 'accent-color'"  
+[CR1076198]: https://crbug.com/1076198 "Issue 1076198: [Feature Request] Jump to computed property from `styles` tab"  
+[CR1092093]: "Problema 1092093: hacer que los controles de formulario sea más color-estilables al admitir la https://crbug.com/1092093 propiedad CSS 'accent-color'"  
 [CR1136655]: https://crbug.com/1136655 "Problema 1136655: Devtools: Localización V2 | Chromium errores"  
 [CR1142705]: "Problema 1142705: los puntos de interrupción dejan de funcionar cuando 2 mapas de origen apuntan al mismo archivo virtual al usar https://crbug.com/1142705 webpack"  
-[CR1149832]: "Problema 1149832: Solicitud de característica: la vista previa de imagen también debe mostrar https://crbug.com/1149832 el tamaño del archivo"  
-[CR1158827]: https://crbug.com/1158827 "Problema 1158827: [Directiva de permisos] Implementar la compatibilidad de devtool para la directiva de permisos"  
-[CR1162042]: https://crbug.com/1162042 "Problema 1162042: DevTools: admite la deshabilitación de gzip/brotli/jxl content-encoding"  
-[CR1166577]: https://crbug.com/1166577 "Problema 1166577: ☂️ inspector de memoria lineal 1.0"  
+[CR1149832]: https://crbug.com/1149832 "Issue 1149832: Feature request: image preview should also show file size"  
+[CR1158827]: "Problema 1158827: [Directiva de permisos] Implementar la compatibilidad https://crbug.com/1158827 con devtool para la directiva de permisos"  
+[CR1162042]: https://crbug.com/1162042 "Issue 1162042: DevTools: support disabling gzip/brotli/jxl content-encoding"  
+[CR1166577]: "Problema 1166577: ☂️ Inspector de memoria lineal https://crbug.com/1166577 1.0"  
 [CR1170656]: https://crbug.com/1170656 "Problema 1170656: Mostrar relación intrínseca de aspecto"  
-[CR1178305]: "Problema 1178305: El depurador no muestra el valor de propiedad de un elemento indizado cuando está https://crbug.com/1178305 activa"  
-[CR1180794]: "Problema 1180794: Los puntos de interrupción no funcionan con optimización de la línea del compilador https://crbug.com/1180794 de cierre"  
-[CR1185945]: "Problema 1185945: La advertencia de manifiesto implica que todos los iconos deben ser cuadrados https://crbug.com/1185945 | Chromium errores"  
-[CR1186049]: https://crbug.com/1186049 "Problema 1186049: Column for Vary: header in Cache Storage viewer"  
+[CR1178305]: "Problema 1178305: El depurador no muestra el valor de la propiedad de un elemento indizado cuando está https://crbug.com/1178305 activa"  
+[CR1180794]: "Problema 1180794: Los puntos de interrupción no funcionan con la optimización de la configuración del compilador de https://crbug.com/1180794 cierre"  
+[CR1185945]: "Problema 1185945: La advertencia de manifiesto implica que todos los iconos https://crbug.com/1185945 deben ser cuadrados | Chromium errores"  
+[CR1186049]: https://crbug.com/1186049 "Issue 1186049: Column for Vary: header in Cache Storage viewer"  
 [CR1187735]: https://crbug.com/1187735 "Issue 1187735: Accessibility: MAS2.1.1: Keyboard: Unable to invoke the 'Var(..)' function using keyboard | Chromium errores"  
-[CR1189161]: https://crbug.com/1189161 "Problema 1189161: los stacktraces no se `new Error` transforman a través de ENANO"  
+[CR1189161]: https://crbug.com/1189161 "Problema 1189161: `new Error` los stacktraces no se transforman a través de ENANITO"  
 [CR1191465]: https://crbug.com/1191465 "Problema 1191465: Ctrl+Mayús+O roto en HTML"  
 
 [GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Explicador de directivas de permisos | GitHub"  
@@ -485,7 +485,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 > La página original se encuentra [aquí](https://developer.chrome.com/blog/new-in-devtools-91) y está creada por [Jecelyn Yeen][JecelynYeen] \(Promotor de desarrollo, Chrome DevTools\).  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de una [Licencia internacional de Atribución de Creative Commons 4.0][CCA4IL].  
+Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

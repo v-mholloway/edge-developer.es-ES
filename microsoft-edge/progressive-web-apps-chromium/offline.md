@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: aplicaciones web progresivas, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 6b6031aac10161c16195c83496f8d8b5b842628e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: f60a43a06001e70db232685822105fe60b2334ac96dd89ea006647fa5e4d72d2
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398080"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808287"
 ---
 # <a name="offline-and-network-connectivity-support-in-progressive-web-apps"></a>Compatibilidad con conectividad de red y sin conexión en aplicaciones web progresivas
 
@@ -153,7 +153,7 @@ window.addEventListener("offline", function(){
 });
 ```  
 
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Consulte también  
 
 Para obtener más información sobre cómo administrar escenarios sin conexión, vaya a las páginas siguientes.  
 

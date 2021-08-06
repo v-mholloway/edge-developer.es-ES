@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo web, html, css, javascript, developer, extensions, mv2, mv3, manifest
-ms.openlocfilehash: ac2358f8927a762dcef98f9e10cc9f343d8a93f1
-ms.sourcegitcommit: afeeeea9fccc3c4c096d7d44c401f4fe87ea2cd7
+ms.openlocfilehash: b78c79c8387705d99e2f28eb4a10b370b5006fde337f694b847290782f51fd4e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "11599437"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803849"
 ---
 # <a name="manifest-file-format-for-extensions"></a>Formato de archivo de manifiesto para extensiones
 
@@ -205,7 +205,7 @@ Para obtener información de referencia sobre cada campo, vaya [a Formato de arc
 > La página original se encuentra [aquí.](https://developer.chrome.com/docs/extensions/mv3/manifest/)  
 
 [![Licencia de Creative Commons][CCby4Image]][CCA4IL]  
-Este trabajo dispone de una [Licencia internacional de Atribución de Creative Commons 4.0][CCA4IL].  
+Este trabajo dispone de licencia conforme a [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

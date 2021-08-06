@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 2fd53caccefefb0b0bce4b5c82f30632e11a3cb6
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 5cbdae51a618801c81663ae75f8847b350fb4ea0f8515de72f41c60be4dda999
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597105"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803063"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -52,12 +52,12 @@ Dado que esa expresión siempre representa el elemento centrado, ahora tiene una
 *   Mantenga el mouse sobre el resultado, abra el menú contextual \(haga clic con el botón secundario\) y elija Almacenar como **variable global** para crear una referencia variable al nodo que puede usar en la **consola**.  
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Analizar la falta de indicación del foco del teclado en un menú lateral](test-analyze-no-focus-indicator.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: fabfa21abedb02bc83ec2bedbe3662f0d81c1bf9
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: b445b0f6afda67f1d8cc46a9f1b4d2e02ae496ac205f04282796343839ca40ef
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624811"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11806108"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -270,7 +270,7 @@ Los accesos directos de la aplicación ayudan a los usuarios a iniciar rápidame
   Accesos directos de la aplicación en el **panel** Manifiesto  
 :::image-end:::  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de versión preliminar de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Descargar los canales de vista previa de Microsoft Edge  
 
 Si está en Windows o macOS, considere la posibilidad de usar los canales [Microsoft Edge vista previa][MicrosoftEdgePreviewChannels] como explorador de desarrollo predeterminado.  Los canales de versión preliminar proporcionan acceso a las características más recientes de DevTools.  
 
@@ -309,7 +309,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [CR1040019]: https://crbug.com/1040019 "DevTools: vista previa de imágenes e imágenes de fondo fácilmente en el panel Estilos | Chromium errores"  
 [CR1040025]: https://crbug.com/1040025 "DevTools: muestra información básica de a11y en elementos emergentes | Chromium errores"  
 [CR1048378]: https://crbug.com/1048378 "Compatibilidad con la interfaz de usuario de DevTools para el modo de contraste alto | Chromium errores"  
-[CR1054381]: https://crbug.com/1054381 "CR 1054381 | Chromium errores"  
+[CR1054381]: https://crbug.com/1054381 "Cr 1054381 | Chromium errores"  
 [CR1068116]: https://crbug.com/1068116 "Enviar problemas de panel | Chromium errores"  
 [CR1072952]: https://crbug.com/1072952 "DevTools: el selector de colores debe producir una sintaxis de color CSS moderna | Chromium errores"  
 [CR1075437]: https://crbug.com/1075437 "DevTools: agregue compatibilidad con la palabra clave y el valor css 'revert' | Chromium errores"  

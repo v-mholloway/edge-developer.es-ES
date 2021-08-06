@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, verify chromium, detect microsoft edge, detecting microsoft edge
-ms.openlocfilehash: 6414ddc23b7a53e2d67432952557d2f1c4d60fa2
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: 39a01ebc10b48a8214b09096974a3864dcb06e572a119ec6af6b975c1657f6dd
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710692"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798221"
 ---
 # <a name="detecting-microsoft-edge-from-your-website"></a>Detectar Microsoft Edge desde su sitio web
 

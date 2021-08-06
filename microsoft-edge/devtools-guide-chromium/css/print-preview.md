@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6c49d956a9a7185b162ca8e2996e7b3e715b40ab
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 7a06fdea9e6d544114c623246bfae9a52a565fdd267bae06adb521d90a166c59
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564430"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807348"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,7 +46,7 @@ La [consulta de medios de impresión][MDNUsingMediaQueries] controla el aspecto 
     
 Desde aquí, puede mostrar y cambiar su CSS, como cualquier otra página web.  Vaya a [Introducción con ver y cambiar CSS][DevToolsCSSGetStarted].  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

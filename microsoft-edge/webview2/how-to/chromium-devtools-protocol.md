@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Chrome DevTools Protocol
-ms.openlocfilehash: cd59bc0d177d17680222fcff8452c2cf8d56b195
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 16504587d70be184760627ac224cf8a12f0f7e024cba7c729ac23cb6734bad36
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536200"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803201"
 ---
-# <a name="use-chromium-devtools-protocol-in-webview2"></a>Usar el protocolo Chromium DevTools en WebView2  
+# <a name="use-chromium-devtools-protocol-in-webview2"></a>Usar el protocolo DevTools de Chromium en WebView2  
 
 El [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] proporciona API para instrumentar, inspeccionar, depurar y perfilar exploradores basados Chromium web.  El Chromium DevTools protocol es la base para Microsoft Edge \(Chromium\) DevTools.  Use el Chromium de DevTools para las características que no se implementan en la plataforma WebView2.  Para obtener más información acerca de Chromium funcionalidad del Protocolo de DevTools, vaya [a Chromium protocolo DevTools][GitHubChromedevtoolsDevtoolsProtocol].  
 
@@ -175,7 +175,7 @@ Para presentar un error Chromium o un problema del Protocolo DevTools, complete 
 1.  Archivo de un [informe de errores][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform].  
 1.  Vaya a [Comentarios de WebView][GithubMicrosoftedgeWebview2feedback] y abra un nuevo problema.  
     
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Consulte también  
 
 *   [Ejemplos de WebView2][GithubMicrosoftedgeWebview2samples]  
     

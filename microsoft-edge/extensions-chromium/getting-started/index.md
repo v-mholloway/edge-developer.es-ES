@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
-ms.openlocfilehash: 05732287bc1a782ed5830d5e7028cf5580f3b605
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: cc6afc4d0ea8e242b535235e89d723d07a2f1206621a7b26874a058699759de2
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397928"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807473"
 ---
 # <a name="extension-concepts-and-architecture"></a>Conceptos de extensión y arquitectura  
 

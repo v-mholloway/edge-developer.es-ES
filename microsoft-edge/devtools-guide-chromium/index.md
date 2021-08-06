@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 78603c51dab5a61f8d6b43e60a3f252eac665d99
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
-ms.translationtype: HT
+ms.openlocfilehash: 3b58447e137b5bff786c75ce248f37c6f503f7b7545b26931a77477e3c440d84
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624762"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805010"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Introducción a las herramientas de Microsoft Edge (Chromium) para desarrolladores  
 
@@ -67,7 +67,7 @@ Al abrir DevTools, se acopla a la izquierda del explorador.  Para cambiar la ubi
 1.  Elija el botón ** Personalizar y controlar DevTools** \( `...` \).  
 1.  A la derecha de **Ubicación de DevTools con respecto a la página** \(**Acoplar**\), elija una de las opciones de **Acoplar**.  
     
-Para obtener más información, vaya a [Cambiar la ubicación de Microsoft Edge DevTools (Desacoplar, Acoplar en la parte inferior, Acoplar a la izquierda)][DevtoolsGuideCustomizePlacement].  
+Para obtener más información, vaya a Cambiar la ubicación [de DevTools (Undock, Dock to Bottom, Dock To Left).][DevtoolsGuideCustomizePlacement]  
 
 :::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Captura de pantalla del menú lateral de Acoplar en DevTools" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
    Captura de pantalla del menú lateral de Acoplar en DevTools  
@@ -214,7 +214,7 @@ Para obtener una vista previa de las [características más recientes de DevTool
 [DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools para principiantes: introducción utilizando HTML y DOM | Microsoft Docs"  
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Ejecute comandos con el menú de comandos de DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Información general de la Consola | Microsoft Docs"  
-[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Cambiar ubicación de Microsoft Edge DevTools (Desacoplar, Acoplar en la parte inferior, Acoplar a la izquierda) | Microsoft Docs"  
+[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Cambiar la ubicación de DevTools (Desacoplar, Acoplar a abajo, Acoplar a la izquierda) | Microsoft Docs"  
 [DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "Emulación de dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideDomIndex]: ./dom/index.md "Cómo ver y cambiar el DOM | Microsoft Docs"  
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "Introducción al análisis del rendimiento en tiempo de ejecución | Microsoft Docs"  

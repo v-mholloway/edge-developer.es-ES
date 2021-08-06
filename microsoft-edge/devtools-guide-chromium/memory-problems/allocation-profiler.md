@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: a02249840256b1e5a2469a253d765eb888527662
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 4e029b769728446b294b4cf196be7a58b64b72c7a5e05906299b7bfe961fdb71
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564087"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808511"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -84,7 +84,7 @@ Al elegir en un objeto específico del montón se muestra el árbol de retenció
 
 Puede ver la asignación de memoria mediante la función JavaScript.  Para obtener más información, vaya [a Investigar asignación de memoria por función][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

@@ -1,18 +1,18 @@
 ---
 description: Cómo mover de Microsoft Edge DevTools a la parte inferior o izquierda de la ventanilla, o a una ventana independiente.
-title: Cambiar Microsoft Edge ubicación de DevTools (Undock, Dock to bottom, Dock to left)
+title: Cambiar la ubicación de DevTools (Undock, Dock to bottom, Dock to left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3c6dbf3e4a72b793997fcbe0970c88e4bee07caf
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: ff28f8ed79998a929811e99cbe788f2b71131aa4503e13b97f33655a164a4ed9
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564367"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800781"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,9 +27,9 @@ ms.locfileid: "11564367"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Cambiar Microsoft Edge ubicación de DevTools (Undock, Dock to bottom, Dock to left)  
+# <a name="change-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Cambiar la ubicación de DevTools (Undock, Dock to bottom, Dock to left)  
 
-De forma predeterminada, DevTools está acoplada a la derecha de la ventanilla (ventana).  También puede acoplar DevTools a la parte inferior o izquierda de la ventana, o desacoplar DevTools a una ventana independiente.
+De forma predeterminada, Microsoft Edge DevTools está acoplada a la derecha de la ventanilla (ventana).  También puede acoplar DevTools a la parte inferior o izquierda de la ventana, o desacoplar DevTools a una ventana independiente.
 
 :::row:::
    :::column span="":::
@@ -46,7 +46,7 @@ De forma predeterminada, DevTools está acoplada a la derecha de la ventanilla (
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Elija Acoplar a la parte inferior" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Elija Acoplar en la parte inferior" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
          Elegir `Dock to bottom`  
       :::image-end:::  
    :::column-end:::
@@ -80,7 +80,7 @@ DevTools puede desacoplarse a una ventana independiente, que puede mover a un mo
 1.  Elija Personalizar y **controlar DevTools** \( \) y elija `...` **Undock into separate window** \( ![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to ![ bottom ](../media/bottom-icon.msft.png) \) o Dock to **left** \( Dock to ![ left ](../media/left-icon.msft.png) \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Elegir Desacoplar en ventana independiente" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Elegir **Desacoplar en una ventana independiente**  
+       Elija **Desacoplar en una ventana independiente**  
     :::image-end:::  
     
 ## <a name="change-placement-from-the-command-menu"></a>Cambiar la ubicación desde el menú comando  
@@ -100,13 +100,13 @@ DevTools puede desacoplarse a una ventana independiente, que puede mover a un mo
        El comando Undock  
     :::image-end:::  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Microsoft Edge comando DevTools | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú de comandos de DevTools de Microsoft Edge | Microsoft Docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

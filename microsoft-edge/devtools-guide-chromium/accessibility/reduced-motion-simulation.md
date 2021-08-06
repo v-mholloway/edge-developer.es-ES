@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7244c2e80bbf9070214b6abd02583792c785953c
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: be7b753fa18736dbf071d0203b85554d5056164eafb8df55e4f40df8086d4214
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597057"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802538"
 ---
 # <a name="reduced-motion-simulation"></a>Simulación de movimiento reducida  
 
@@ -49,7 +49,7 @@ Para simular la configuración de movimiento reducido del sistema operativo, sin
 1.  Actualice la página web y compruebe si se ejecutan las animaciones.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 * [Compruebe que la página se puede usar con la animación](test-reduced-ui-motion.md) de la interfaz de usuario desactivada: un tutorial con una página de demostración, con explicaciones.
 

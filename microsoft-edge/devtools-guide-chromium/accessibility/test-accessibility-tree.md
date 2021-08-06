@@ -1,20 +1,20 @@
 ---
 description: Comprobar la compatibilidad con el teclado y el lector de pantalla en el Árbol de accesibilidad.
-title: Comprobar la compatibilidad con el teclado y el lector de pantalla en el Árbol de accesibilidad
+title: Comprobar el Árbol de accesibilidad con el soporte del teclado y el lector de pantalla
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0ab5e5609485505d1ad5fa6e2fffced9af25edcb
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 6dc8456cce195402f41eb1c944fd01ef4541a1d43df175800b0f46b571400df1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597705"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802586"
 ---
-# <a name="check-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>Comprobar la compatibilidad con el teclado y el lector de pantalla en el Árbol de accesibilidad
+# <a name="check-the-accessibility-tree-for-keyboard-and-screen-reader-support"></a>Comprobar el Árbol de accesibilidad con el soporte del teclado y el lector de pantalla
 
 <!-- Accessibility tab: Accessibility Tree -->
 
@@ -42,13 +42,13 @@ Para explorar el uso del árbol de accesibilidad con la página de demostración
 Cualquier elemento del árbol que no tenga un nombre o tenga un rol de (como el elemento) es un problema, ya que ese elemento no estará disponible para los usuarios de teclado ni para los usuarios que usan tecnología de `generic` `div` asistencia.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Ver la posición de un elemento en el árbol de accesibilidad][DevtoolsAccessibilityAccessibilityTabViewTree]
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

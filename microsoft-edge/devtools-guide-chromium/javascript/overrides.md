@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 66c0686c166163f1640384d096288af0b530f135
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 8f19d7b83acfbf9a1582a9e9e8b77e88b5c6e09d2be9e3c1d9db9e76dbab6136
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519439"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807428"
 ---
 # <a name="override-webpage-resources-with-local-copies-using-microsoft-edge-devtools"></a>Invalidar recursos de página web con copias locales mediante Microsoft Edge DevTools  
 
@@ -119,10 +119,10 @@ El archivo se almacena en la carpeta invalidaciones.  Compruebe que DevTools cre
 
 Use el editor proporcionado con la **herramienta Orígenes** de DevTools o cualquier editor que desee cambiar los archivos.  Los cambios se sincronizan en todos los productos que tienen acceso a los archivos de la carpeta invalidaciones.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsSourcesTool]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
+[DevToolsSourcesTool]: ../sources/index.md "Información general sobre la herramienta Orígenes | Microsoft Docs"  

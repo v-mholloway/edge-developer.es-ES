@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3240e437a917dd7074a0584b91dcc6c34576ca24
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: b40c9b5d29cc8045c1c3ac6ca3568f7d6c907730d0e6e6bf570dfc9ff87a4a8b
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564052"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808245"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -111,7 +111,7 @@ Si expande el sub panel **Orígenes,** ahora mostrará un nuevo archivo con el n
    Trabajar con `sourceURL`  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: badcaae0ad637fe7a027f78d00daf9133789693e
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 30465b62dd5319fe3a2751c541f69a44bbb51802c82e8d5386adb7a0f80a3153
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624748"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803835"
 ---
 # <a name="use-the-console"></a>Usar la consola  
 
@@ -169,7 +169,7 @@ Para obtener más información sobre cómo trabajar con el DOM, vaya [a Usar la 
 
 Para obtener más información acerca de **console**, vaya a [Console reference][DevtoolsConsoleReference], Console Utilities [API reference][DevtoolsConsoleUtilities]y Console [API reference][DevtoolsConsoleApi].  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

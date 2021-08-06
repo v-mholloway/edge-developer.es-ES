@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: f6ec0652bbbb7d7e60a69877a9d44a7a2fd636a5
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 3630d8bf51a5b56ac4fd5d2ddbe56243b765660201286956f0c89cb75f3bf1cb
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624797"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803272"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>Información general sobre las pruebas de accesibilidad con DevTools
 
@@ -510,16 +510,16 @@ Otra forma de averiguar qué hacer para mejorar el producto web es usar la exten
 Estamos trabajando constantemente en nuevas características de accesibilidad para DevTools.  Si falta algo, envíenos un mensaje y díganos lo que podemos hacer.
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- links -->
 [DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "Mostrar consultas multimedia: emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsDeviceModeIndex]: ../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsDeviceModeIndex]: ../device-mode/index.md "Emulación de dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Características de prueba de accesibilidad en DevTools | Microsoft Docs"
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Simulación de combinación de colores claros o | Microsoft Docs"
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Emular esquemas oscuros o claros en la página | Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "Buscar y solucionar problemas con la herramienta Problemas | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reducción de la simulación de movimiento | Microsoft Docs"
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Emular las deficiencias de | Microsoft Docs"

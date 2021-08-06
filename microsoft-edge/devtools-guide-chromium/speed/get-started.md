@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 304cf9e36260b8637af38ed0dfe1ba91f3a56504
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 6d2da842cd6d2581b4dbeaf9352e68a98b34dda9f1e711358e1ae3fa3619392b
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564885"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805791"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -60,7 +60,7 @@ En primer lugar, debe configurar el sitio para poder realizar cambios en él má
 
 1.  [Abra el código fuente del sitio](https://glitch.com/edit/#!/tony).  Esta pestaña se conoce como pestaña **editor**.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-server-js.msft.png" alt-text="Pestaña editor" lightbox="../media/speed-glitch-tony-server-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-server-js.msft.png" alt-text="La pestaña del editor" lightbox="../media/speed-glitch-tony-server-js.msft.png":::
        Pestaña **editor**  
     :::image-end:::  
     
@@ -70,7 +70,7 @@ En primer lugar, debe configurar el sitio para poder realizar cambios en él má
        Menú que aparece después de elegir **Tony**  
     :::image-end:::  
     
-1.  Elija **Remezcla Project**.  El nombre del proyecto cambia de **tony** a algún nombre generado aleatoriamente.  Ahora tiene su propia copia editable del código.  Más adelante, puede realizar cambios en este código.  
+1.  Elija **Replicar proyecto**.  El nombre del proyecto cambia de **tony** a algún nombre generado aleatoriamente.  Ahora tiene su propia copia editable del código.  Más adelante, puede realizar cambios en este código.  
 1.  Elija **Mostrar** y **elija En una nueva ventana**.  La demostración se abre en una pestaña nueva.  Esta pestaña se conoce como pestaña **de demostración**.  El sitio puede tardar un tiempo en cargarse.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Pestaña de demostración" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
@@ -518,7 +518,7 @@ Si prefiere un enfoque que se parece más a , la API de tiempo de usuario le per
 *   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.  
 -->  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

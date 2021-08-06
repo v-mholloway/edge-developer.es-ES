@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: d48a48de7b261a628ac99f58680deb119268a980
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 2a774daca2c81b0cc09174d943c2efd4d1e324e1bbb4675e03e690bde561315a
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483666"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801453"
 ---
 # <a name="log-messages-in-the-console-tool"></a>Registrar mensajes en la herramienta consola  
 
@@ -207,7 +207,7 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 
 Puede que tenga la tentación de usar los métodos de registro como medio principal para depurar páginas web, ya que los métodos de registro son fáciles de usar.  Tenga en cuenta el resultado de cualquier `console.log()` solicitud.  Los productos live no deben usar ningún registro que se usó para depurar.  Puede revelar información interna a las personas.  Y el ruido creado en la **consola es** abrumador.  Al usar la [depuración de puntos de][DevtoolsJavascriptBreakpoints] interrupción o [expresiones][DevtoolsConsoleLiveExpressions]en directo, puede encontrar que los flujos de trabajo son más eficaces y obtiene mejores resultados.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

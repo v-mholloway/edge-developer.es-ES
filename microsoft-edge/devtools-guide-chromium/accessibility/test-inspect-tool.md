@@ -1,20 +1,20 @@
 ---
 description: Use la herramienta Inspeccionar para detectar problemas de accesibilidad al pasar el mouse sobre la página web.
-title: Usar la herramienta Inspeccionar para detectar problemas de accesibilidad al pasar el puntero sobre la página web
+title: Usar la herramienta Inspeccionar para detectar problemas de accesibilidad al pasar sobre la página web
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: c95116d38e5b0bda88af43ef8bfde4204b8cb372
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 6e363e07c252dd0305216cdbeda1241d5aa2bc193e1111e6b69eeeae9f8deadd
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597660"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802388"
 ---
-# <a name="use-the-inspect-tool-to-detect-accessibility-issues-by-hovering-over-the-webpage"></a>Usar la herramienta Inspeccionar para detectar problemas de accesibilidad al pasar el puntero sobre la página web
+# <a name="use-the-inspect-tool-to-detect-accessibility-issues-by-hovering-over-the-webpage"></a>Usar la herramienta Inspeccionar para detectar problemas de accesibilidad al pasar sobre la página web
 
 La **herramienta Inspeccionar** muestra información sobre los elementos individuales al pasar el puntero sobre la página web que se representa, incluida la información de accesibilidad.
 En cambio, la **herramienta Problemas** notifica automáticamente los problemas de toda la página web.
@@ -113,14 +113,14 @@ Para configurar la superposición de cuadrícula o la superposición de flexbox,
 Después de seleccionar un elemento en la página representada, puede **** usar la pestaña **** Accesibilidad (cerca de la pestaña Estilos) para ver el árbol de accesibilidad y usar el Visor de pedidos **de origen**. ****
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Inspeccionar un nodo](../dom/index.md#inspect-a-node)
 *  [Comprobar el contraste de color de texto en el estado predeterminado con la herramienta Inspeccionar](test-inspect-text-contrast.md)
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

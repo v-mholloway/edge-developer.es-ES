@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: accesibilidad, accesibilidad para desarrolladores, sitios web accesibles, edge, desarrollo web, ARIA, desarrollador, UIA, Automatización de la interfaz de usuario
 ms.custom: seodec18
-ms.openlocfilehash: 2fcc8160c830b5a62d8023a5cb7cc9df376c49ca
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: bfe67fa9a869cea8e7f573c0818441650225f7e509bdfb4e41479aee32dec941
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10572943"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799649"
 ---
-# Automatización de ARIA y ui en Microsoft Edge
+# <a name="aria-and-ui-automation-in-microsoft-edge"></a>Automatización de ARIA y ui en Microsoft Edge
 
 W3C define Aplicaciones de Internet enriquecidas accesibles (ARIA) como una sintaxis para hacer accesible el contenido web dinámico y la interfaz de usuario personalizada. Microsoft Edge reconoce la información de roles, estados y propiedades de ARIA y la expone a tecnologías de asistencia, que a su vez pueden usar las API de automatización de la interfaz de usuario de [Microsoft](https://blogs.msdn.microsoft.com/winuiautomation/) para recuperar la información.
 

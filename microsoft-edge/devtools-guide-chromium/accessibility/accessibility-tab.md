@@ -1,18 +1,18 @@
 ---
 description: Probar la accesibilidad mediante la pestaña Accesibilidad.
-title: Probar la accesibilidad mediante la pestaña Accesibilidad
+title: Probar la accesibilidad con la pestaña Accesibilidad
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 839feed56fc82af2b4d96a081c476696166075b9
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 4e31b1f1a30c1328b6ef60bbe1b7c6d4c5a602859dee12ad45d0d3bd1cc9b387
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597726"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798503"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -28,7 +28,7 @@ ms.locfileid: "11597726"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="test-accessibility-using-the-accessibility-tab"></a>Probar la accesibilidad mediante la pestaña Accesibilidad
+# <a name="test-accessibility-using-the-accessibility-tab"></a>Probar la accesibilidad con la pestaña Accesibilidad
 
 La **pestaña Accesibilidad** es donde se ve el árbol de accesibilidad, los atributos ARIA y las propiedades de accesibilidad calculada de los nodos DOM.  
 
@@ -80,7 +80,7 @@ Vea las propiedades de accesibilidad calculadas de un elemento en la **pestaña 
 :::image-end:::  
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

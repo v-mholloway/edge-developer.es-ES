@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 03b17f524e9be55e1ed37147ce46b7a15fc3a17d
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: b6a3cd9b5c392f435145d4eadda0bf6abb14694a74d28ebea8c9cc72a6dc912c
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564962"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799195"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,7 +41,7 @@ El equipo de DevTools ha contribuido con 170 cambios en Chromium para solucionar
    La **herramienta Rendimiento** de DevTools con las mejoras de navegación del teclado y lector de pantalla  
 :::image-end:::  
 
-¿Desea obtener información sobre cómo hacer que la página web sea accesible para todos los usuarios?  Descargue las [extensiones accessibility Insights][AccessibilityInsights] y [webhint][WebhintBrowserExtension] Microsoft Edge para empezar.  
+¿Desea obtener información sobre cómo hacer que la página web sea accesible para todos los usuarios?  Descargue [las extensiones de Ideas][AccessibilityInsights] accesibilidad [y webhint][WebhintBrowserExtension] Microsoft Edge para empezar.  
 
 Si usas lectores de pantalla o el teclado para navegar [][PostTweetEdgeDevTools] por DevTools, envíanos tus comentarios tuiteando o publicando el icono [Enviar](#getting-in-touch-with-microsoft-edge-devtools-team) comentarios.  
 
@@ -341,7 +341,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Publicar un Tweet"  
 
 [CR924693]: https://crbug.com/924693 "Solicitud de característica: Agregar Moto G4 a la lista de modo de dispositivo | Chromium Errores"  
-[CR1030258]: https://crbug.com/1030258 "CR 1030258 | Chromium Errores"  
+[CR1030258]: https://crbug.com/1030258 "Cr 1030258 | Chromium Errores"  
 [CR1026879]: https://crbug.com/1026879 "La pestaña Cookie de la consola de desarrollo ya no muestra prioridad | Chromium Errores"  
 [CR1029826]: https://crbug.com/1029826 "pestaña de red -> derecho elegir solicitar -> copia -> copia ya que la captura no copia las cookies | Chromium Errores"  
 [CR985402]: https://crbug.com/985402 "Las cadenas de error de icono de manifiesto de la aplicación web son confusas | Chromium Errores"  
@@ -354,8 +354,8 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "Nuevo problema: MicrosoftDocs/edge-developer"  
 
 [TheWebWeWant]: https://webwewant.fyi "La web que queremos"  
-[AccessibilityInsights]: https://accessibilityinsights.io "Accessibility Insights"  
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modelo de objetos de documento (DOM) | MDN"  
+[AccessibilityInsights]: https://accessibilityinsights.io "Accesibilidad Ideas"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "Z-index | MDN"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools cuenta de Twitter"  
 

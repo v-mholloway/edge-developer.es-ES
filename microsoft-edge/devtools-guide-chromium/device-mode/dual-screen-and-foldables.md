@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, emulación, dispositivo, simulación, móvil, pantalla doble, plegado, Surface Duo, Samsung Galaxy Fold
-ms.openlocfilehash: c3bd3296afa86d9d2c90c164bc3e9088bc043c3c
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 22a83e242027ca2e4b3e9c0072cf8c0624ec2cd16497dc7a38b2de6460e9be4c
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564346"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800622"
 ---
 # <a name="emulate-dual-screen-and-foldable-devices-in-microsoft-edge-devtools"></a>Emular dispositivos de pantalla doble y plegado en Microsoft Edge DevTools  
 
@@ -75,7 +75,7 @@ Estos son recursos adicionales que pueden ayudarle a mejorar su sitio web \(o ap
 *   Para obtener más información sobre el desarrollo web en dispositivos de pantalla doble, vaya a [Experiencias web de pantalla dual.][DualScreenWebIndex]  
 *   Instalar el [emulador de Surface Duo][DualScreenAndroidUseEmulator].  El emulador de Surface Duo es diferente del emulador de Microsoft Edge, ejecuta Android e se integra con [Android Studio][AndroidDeveloperStudio].  Para obtener más información, ve [a Obtener el SDK de Surface Duo][DualScreenAndroidGetDuoSdk].  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

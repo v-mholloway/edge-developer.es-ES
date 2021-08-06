@@ -7,12 +7,12 @@ ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, PWABuilder, manifiesto web, trabajador de servicio, inserción
-ms.openlocfilehash: 3023c38790185ca6989f4a487928abc79b1d5a2c
-ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
+ms.openlocfilehash: c16850cdd86a9b83073961e81d7728ab276fae98deff3567c5dc44128c3f326e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11480198"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11799851"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a>Introducción a Las aplicaciones web progresivas (Chromium)  
 
@@ -318,7 +318,7 @@ Los siguientes pasos incluyen tareas adicionales que le ayudarán a comprender l
 *   [Pruebas entre exploradores][BrowserStackTestEdgeBrowser]  
 *   Implementar prácticas de validación y pruebas como [Webhint][Webhint]  
     
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Consulte también  
 
 *   [Aplicaciones web progresivas en documentos web de MDN][MDNProgressiveWebApps]  
 *   [Aplicaciones web progresivas en web.dev][WebDevProgressiveWebApps]  

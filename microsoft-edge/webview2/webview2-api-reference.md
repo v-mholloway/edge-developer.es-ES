@@ -8,12 +8,12 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador
-ms.openlocfilehash: 4432fe838747e04838343b19d57524d32fa90f3c
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: c55b394ea0d7771b401839267fe27d97ca9089e9b1bda07559bc14f80f353bb6
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535695"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804304"
 ---
 # <a name="microsoft-edge-webview2-api-reference"></a>Microsoft Edge Referencia de API de WebView2  
 

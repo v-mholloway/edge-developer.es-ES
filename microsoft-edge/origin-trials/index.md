@@ -8,12 +8,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, desarrollo web, html, css, pruebas de origen, desarrollador
-ms.openlocfilehash: cc03ec556d4b32ca37cebcd4ee7ba155bfe4404b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2e27be1c26a29937e7dad35a5498d3d3fbc4a40e471d0fa4109d8d8d5c497ccf
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397548"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804318"
 ---
 # <a name="use-origin-trials-in-microsoft-edge"></a>Usar pruebas de origen en Microsoft Edge  
 

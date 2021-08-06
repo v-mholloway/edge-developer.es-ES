@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 54cea0518656feedb981c73eb19456a7f0568814
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: c5f0229473583ece794f5160f3a7b1839857ad43b0e337cf9f28dba290458534
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710733"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798569"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,14 +38,14 @@ En esta página se enumeran las formas de personalizar Microsoft Edge DevTools.
 Para abrir Configuración, realice una de las siguientes acciones.
 *   En DevTools, seleccione el **icono Configuración** \( Configuración ![ icono ](../media/settings-icon-dark.msft.png) \).
 *   Mientras DevTools tenga el foco, seleccione `F1` .
-
+    
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Configuración" lightbox="../media/customize-settings-preferences.msft.png":::
    **Configuración**  
 :::image-end:::  
 
 ## <a name="drawer"></a>Cajón  
 
-El **cajón** es un segundo panel donde se muestran las herramientas que elija.  
+El **cajón** es un segundo panel donde puede elegir qué herramientas mostrar.  
 
 Para abrir \(o cerrar\) el **cajón**, seleccione `Escape` .  
 
@@ -53,7 +53,7 @@ Para abrir \(o cerrar\) el **cajón**, seleccione `Escape` .
    El **cajón**  
 :::image-end:::  
 
-De forma predeterminada, algunas herramientas se abren en el panel principal, mientras que otras aparecen en el **cajón**.  Elija **Más** \( `...` \) para abrir una herramienta en el **cajón**.  
+De forma predeterminada, algunas herramientas se abren en el panel principal, mientras que otras aparecen en el **cajón**.  Seleccione **Más** \( `...` \) para abrir una herramienta en el **cajón**.  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Botón para abrir el cajón" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    Botón para abrir el **cajón**  
@@ -61,13 +61,13 @@ De forma predeterminada, algunas herramientas se abren en el panel principal, mi
 
 Puede mover herramientas entre el panel principal y el cajón.  
 
-*   Para mover una herramienta del cajón al panel principal, mantenga el mouse sobre una herramienta, abra el menú contextual \(haga clic con el botón secundario en\) y elija **Mover a la parte superior**.  
+*   Para mover una herramienta del cajón al panel principal, mantenga el mouse sobre una herramienta, abra el menú contextual \(hacer clic con el botón derecho\) y seleccione **Mover a la parte superior**.  
     
     :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Mover la herramienta del cajón al panel principal" lightbox="../media/move-from-drawer.msft.png":::
        Mover la herramienta del **cajón** al panel principal  
     :::image-end:::  
     
-*   Para mover una herramienta del panel principal al cajón, mantenga el mouse sobre una herramienta, abra el menú contextual \(hacer clic con el botón derecho\) y elija **Mover a la parte inferior**.  
+*   Para mover una herramienta del panel principal al cajón, mantenga el mouse sobre una herramienta, abra el menú contextual \(clic con el botón derecho\) y seleccione **Mover a la parte inferior**.  
     
     :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Mover la herramienta desde el panel principal al cajón" lightbox="../media/move-to-drawer.msft.png":::
        Mover la herramienta desde el panel principal al **cajón**
@@ -76,7 +76,7 @@ Puede mover herramientas entre el panel principal y el cajón.
 
 ## <a name="reorder-panels"></a>Reordenar paneles  
 
-Elija y arrastre una herramienta para cambiar el orden.  El orden de la herramienta personalizada persiste en las sesiones de DevTools.  
+Seleccione y arrastre una herramienta para cambiar el orden.  El orden de la herramienta personalizada persiste en las sesiones de DevTools.  
 
 > [!NOTE]
 > De forma predeterminada, la **herramienta Red** suele ser la cuarta desde la izquierda.  En la siguiente figura, la **herramienta Red** es la primera desde la izquierda.  
@@ -93,12 +93,12 @@ Vaya a [Microsoft Edge ubicación de DevTools][DevToolsPlacement].
    DevTools desacopladas  
 :::image-end:::  
 
-## <a name="dark-theme"></a>Tema oscuro  
+## <a name="theme"></a>Tema  
 
-Vaya a [Habilitar tema oscuro][DarkTheme].  
+Vaya a [Aplicar temas de color a DevTools][Theme].  
 
-:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="El tema oscuro" lightbox="../media/customize-settings-appearance-theme.msft.png":::
-   El tema oscuro  
+:::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selección de un tema de color diferente" lightbox="./media/customize-theme-setting.png":::
+   Selección de un tema de color diferente  
 :::image-end:::  
 
 ## <a name="experiments"></a>Experimentos  
@@ -106,8 +106,8 @@ Vaya a [Habilitar tema oscuro][DarkTheme].
 Para activar los experimentos de DevTools, realice las siguientes acciones.  
 
 1.  Vaya a `edge://flags/#enable-devtools-experiments`.  
-1.  Elija **Habilitar**.  
-1.  Elija **Volver a iniciar ahora**, en la parte inferior de la página.  
+1.  Seleccione **Habilitar**.  
+1.  Seleccione **Volver a iniciar ahora**, en la parte inferior de la página.  
 
 La próxima vez que abra DevTools, se mostrará una nueva página denominada **Experiments** en [Configuración](#settings).  
 
@@ -122,7 +122,7 @@ La próxima vez que abra DevTools, se mostrará una nueva página denominada **E
 <!-- links -->  
 
 [DevToolsPlacement]: ./placement.md "Cambiar Microsoft Edge ubicación de DevTools | Microsoft Docs"  
-[DarkTheme]: ./dark-theme.md "Habilitar tema oscuro en Microsoft Edge DevTools | Microsoft Docs"  
+[Theme]: ./theme.md "Aplicar temas de color a DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

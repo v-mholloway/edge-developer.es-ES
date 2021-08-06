@@ -6,15 +6,15 @@ ms.author: msedgedevrel
 ms.date: 03/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 no-loc:
 - Enable new font editor tool within the Styles pane
-ms.openlocfilehash: 5d9074ca65f9cb98662a1bc181f70ead4c4232e1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: ab8f44988fb84575ac003aaa5694b0971f5eb334941df6156bb9b7fc86efd367
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439496"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804904"
 ---
 # <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>Editar estilos y opciones de fuente CSS en el panel Estilos  
 
@@ -106,7 +106,7 @@ El editor de propiedades CSS también incluye palabras clave preestablecidas.  P
    Abrir la interfaz de palabras clave preestablecidas  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

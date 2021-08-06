@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: b493bb790b48bc1c4dca0e6802d2f638099b7644
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 60b70ce0c93437050d0a5e179c86b62e34d79b5b6c54aa02d3fbe64cac73090e
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483677"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801529"
 ---
 # <a name="filter-console-messages"></a>Filtrar mensajes de consola  
 
@@ -86,7 +86,7 @@ Para filtrar más y expandir la opción, elija el icono de triángulo junto a é
     Elegir cualquiera de las nuevas opciones para filtrar mediante el tipo y el origen  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

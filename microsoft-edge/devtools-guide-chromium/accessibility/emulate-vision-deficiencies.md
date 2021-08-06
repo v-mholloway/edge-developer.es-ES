@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 0a0ee09c2f739beb366b4c39d113b31fb719ec6a
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 8af8e621fe67fbb17d6319f9b8e6ff28595312543b73eba33277ab0c291fc450
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597124"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803115"
 ---
 # <a name="emulate-vision-deficiencies"></a>Emular deficiencias visuales  
 
@@ -88,9 +88,9 @@ También puede usar el **menú comando para** tener acceso a las diferentes simu
 > Las **herramientas Emular deficiencias de** visión simulan aproximaciones de cómo una persona con cada deficiencia puede ver el producto.  Cada persona es diferente, por lo tanto, las deficiencias de la vista varían en la gravedad de una persona a otra.  Para satisfacer mejor las necesidades de los usuarios, evite cualquier combinación de colores que pueda ser un problema.  Las **herramientas Emular deficiencias** de visión no son una evaluación de accesibilidad completa del producto.  En su lugar, **las herramientas Emular** deficiencias de visión deben darle un buen primer paso para evitar problemas.  
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
-* [Comprobar que la página es utilizable con la visión borrosa](test-blurred-vision.md)
+* [Verificar si la página se puede utilizar con la visión borrosa](test-blurred-vision.md)
 
 
 <!-- links -->  

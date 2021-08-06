@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ebd12f8932332b3e63162ab6952577bdb43bbccd
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 36f2e7a3670c02ed34cd71a0859da5c06a626b01f1f0f45ed78b4c90152401c9
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483658"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11801757"
 ---
 # <a name="debug-errors-reported-in-console"></a>Errores de depuración notificados en la consola  
 
@@ -190,7 +190,7 @@ El resultado es un seguimiento para mostrar que se denomina y, a continuación, 
    Seguimiento creado desde la **consola**  
 :::image-end:::  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

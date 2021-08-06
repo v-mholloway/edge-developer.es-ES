@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 6b15d317d4c720ab5ad76b7047532df101f69376
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: ead22cc47668dfabe145cc23a55f201ece8d936fcbae281bb906d7bfc5534709
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564129"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807524"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -325,13 +325,13 @@ Si se encuentra ejecutando el mismo código de depuración en la consola una y o
 
 Consulte [Ejecutar fragmentos de código de JavaScript en cualquier página web][DevToolsJavascriptSnippets].  
 
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Consulte también  
 
 *   [Introducción Con depuración de JavaScript en Microsoft Edge DevTools:][DevToolsJavascriptGetStarted] un tutorial sencillo y breve con código existente, con capturas de pantalla.
 *   [Introducción a la herramienta][DevToolsSourcesIndex] Orígenes: la **herramienta Orígenes** incluye el depurador y el editor de JavaScript.
 *   [Deshabilitar JavaScript con Microsoft Edge DevTools][DevToolsJavascriptDisable].
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -341,7 +341,7 @@ Consulte [Ejecutar fragmentos de código de JavaScript en cualquier página web]
 [DevToolsJavascriptDisable]: ./disable.md "Deshabilitar JavaScript con Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptGetStarted]: ./index.md "Introducción a la depuración de JavaScript en Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptSnippets]: ./snippets.md "Ejecute fragmentos de código de JavaScript en cualquier página con Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta sources | Microsoft Docs"  
+[DevToolsSourcesIndex]: ../sources/index.md "Información general sobre la herramienta Orígenes | Microsoft Docs"  
 [DevToolsCustomize]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]

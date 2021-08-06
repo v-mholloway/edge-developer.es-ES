@@ -7,14 +7,14 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 6be7d788ac22232475e278ae9a5b04de9b6e17f7
-ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
+ms.openlocfilehash: 3fee330776ad5e0781687016cdfc8ea5ecccedc8df9f78cb88998bc54407c268
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "11343139"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807503"
 ---
-# Portabilidad de la extensión  
+# <a name="port-your-extension"></a>Portabilidad de la extensión  
 
 Microsoft Edge permite portabilidad de la extensión de Chrome con cambios mínimos.  Las API de extensión y las claves de manifiesto admitidas por Chrome son compatibles con el código con Microsoft Edge.  Para obtener una lista de API admitidas por Microsoft Edge, vaya a [Compatibilidad con api][ExtensionApiSupport].  
 
@@ -34,7 +34,7 @@ Para portabilidad de la extensión de Chrome, siga estos pasos.
     > [!NOTE]
     > Si la extensión intercambia mensajes con una aplicación nativa mediante , asegúrese de que se establece en en el archivo de manifiesto `chrome.runtime.connectNative` del host de mensajería `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` nativa.  La configuración permite que la aplicación identifique la extensión.  
     
-##  <a name="next-steps"></a>Pasos siguientes  
+## <a name="next-steps"></a>Pasos siguientes  
 
 Una vez que el paquete de extensión esté listo para publicarse en el almacén de complementos [Microsoft Edge,][ExtensionsPublishCreateDevAccount] cree una cuenta de desarrollador y [publique la extensión][ExtensionsPublishPublishExtension].  
 

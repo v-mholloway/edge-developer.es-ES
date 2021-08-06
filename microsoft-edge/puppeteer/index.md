@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, desarrollador, herramientas, automatización, prueba
-ms.openlocfilehash: 89a4dad3319f8e61f27487973509a8ee5ac23b6a
-ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
+ms.openlocfilehash: b4631ba56aff7de9eb3147cc2f53530e0b5d7f1f9e309d4a816e9d6bcd5429f3
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11480170"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11803764"
 ---
 # <a name="puppeteer-overview"></a>Información general sobre Puppeteer  
 
@@ -94,7 +94,7 @@ node example.js
 
 Este es solo un ejemplo sencillo de los escenarios de automatización y pruebas habilitados por Puppeteer y `puppeteer-core` .  Para obtener más información acerca de Puppeteer y cómo funciona, vaya a [Puppeteer][|::ref2::|Main].  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 El Microsoft Edge desarrollador está deseando escuchar sus comentarios acerca del uso de Puppeteer `puppeteer-core` y Microsoft Edge.  Usa el **icono Enviar comentarios** en el Microsoft Edge DevTools o el @EdgeDevTools tweet para que el equipo Microsoft Edge sepa lo que piensas. [][TwitterIntentTweetEdgedevtools]  
 

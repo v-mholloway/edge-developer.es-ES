@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral, seguridad
-ms.openlocfilehash: d53417cc1ac98b44565692edbaec06216f7c110b
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: a37c5de7866b86bfadf4ab2059bd453741472ce75294a5220470c0c68ce60052
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119006"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800167"
 ---
-# Procedimientos recomendados para desarrollar aplicaciones webview2 seguras  
+# <a name="best-practices-for-developing-secure-webview2-applications"></a>Procedimientos recomendados para desarrollar aplicaciones webview2 seguras  
 
 El [control WebView2][Webview2Main] permite a los desarrolladores hospedar contenido web en las aplicaciones nativas. Cuando se usa correctamente, hospedar contenido web ofrece varias ventajas, como el uso de la interfaz de usuario basada en web, el acceso a las características de la plataforma web, el uso compartido de código entre plataformas, entre plataformas, y así sucesivamente.  Para evitar vulnerabilidades que pueden surgir al hospedar contenido web, asegúrese de diseñar la aplicación WebView2 para supervisar estrechamente las interacciones entre el contenido web y la aplicación host.  
 

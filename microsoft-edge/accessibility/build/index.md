@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: accesibilidad, accesibilidad para desarrolladores, sitios web accesibles, edge, desarrollo web, ARIA, desarrollador, UIA, Automatización de la interfaz de usuario
 ms.custom: seodec18
-ms.openlocfilehash: 99f0eb9d96bc6d53df72839c6c2f1e61cbd5494e
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 5754e6198888d54412dd7d5616c812400fee8a0180685ceda8f1f4e609541b39
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564024"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11800163"
 ---
 # <a name="building-accessible-websites"></a>Creación de sitios web accesibles  
 
@@ -62,7 +62,7 @@ Para obtener más información sobre ARIA, vaya a ARIA en la [sección](#resourc
 
 ## <a name="assistive-technology-compatibility-testing"></a>Pruebas de compatibilidad de tecnología de asistencia  
 
-Comprobar que el sitio web que está creando funciona con tecnologías de asistencia reales es la mejor manera de garantizar una buena experiencia para los usuarios con discapacidades.  Dado que muchas tecnologías de asistencia usan el teclado, probar la accesibilidad del teclado de su sitio web es un buen lugar para empezar.  [Las pruebas de][W3cPerspectiveVideosKeyboard] compatibilidad de teclado validan que los usuarios tienen acceso a todos los controles interactivos sin necesidad de un mouse.  Microsoft [Accessibility Insights para Web][AccessibilityinsightsWebOverview] es una extensión de explorador para Microsoft Edge y Chrome que le guía y revela varios problemas comunes.  
+Comprobar que el sitio web que está creando funciona con tecnologías de asistencia reales es la mejor manera de garantizar una buena experiencia para los usuarios con discapacidades.  Dado que muchas tecnologías de asistencia usan el teclado, probar la accesibilidad del teclado de su sitio web es un buen lugar para empezar.  [Las pruebas de][W3cPerspectiveVideosKeyboard] compatibilidad de teclado validan que los usuarios tienen acceso a todos los controles interactivos sin necesidad de un mouse.  Microsoft [Accessibility Ideas web][AccessibilityinsightsWebOverview] es una extensión de explorador para Microsoft Edge y Chrome que le guía y revela varios problemas comunes.  
 
 Una vez que estás seguro de que tu sitio web funciona bien con un teclado, pruébalo con otras tecnologías de asistencia, como lectores de pantalla.  Se destapan problemas en lo siguiente.  
 
@@ -73,15 +73,15 @@ Diferentes exploradores pueden asignar elementos a las API de accesibilidad de l
 
 WebAIM realiza encuestas con [][WebaimProjectsLowvisionsurvey2] lector de pantalla y usuarios de baja visión que le ayudan a decidir qué tecnologías de asistencia y exploradores desea probar. [][WebaimProjectsScreenreadersurvey8]  
 
-### <a name="learning-how-to-test"></a>Aprender a probar  
+### <a name="learning-how-to-test"></a>Learning Cómo probar  
 
-Las tecnologías de asistencia son herramientas sofisticadas.  No supongas que puedes comenzar inmediatamente las pruebas con una tecnología de asistencia sin aprender primero cómo funciona.  Aprender a probar con un lector de pantalla tiene una curva de aprendizaje especialmente empinada.  Un usuario de lector de pantalla principiante puede asumir que se ha producido un error de lector de pantalla mientras el problema está relacionado con el uso incorrecto del lector de pantalla.  
+Las tecnologías de asistencia son herramientas sofisticadas.  No supongas que puedes comenzar inmediatamente las pruebas con una tecnología de asistencia sin aprender primero cómo funciona.  Learning probar con un lector de pantalla tiene una curva de aprendizaje especialmente empinada.  Un usuario de lector de pantalla principiante puede asumir que se ha producido un error de lector de pantalla mientras el problema está relacionado con el uso incorrecto del lector de pantalla.  
 
 Para obtener más información sobre cómo aprender a probar con tecnologías de asistencia, vaya a [Pruebas][WebaimArticlesScreenreaderTesting] con lectores de pantalla en WebAIM.  
 
 ### <a name="testing-locally"></a>Probar localmente  
 
-La mayoría de los dispositivos incluyen tecnología de asistencia integrada en el sistema operativo.  Microsoft Windows incluye el lector [Windows Narrador][MicrosoftSupport22798] pantalla y [Windows lupa][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  Las tecnologías de asistencia de terceros como [NVDA,][NvaccessAboutNvda] [FreedomscientificSoftwareJaws]y [ZoomText][FreedomscientificSoftwareZoomtext] están disponibles para su descarga.  Apple macOS incluye el lector [de pantalla VoiceOver.][AppleAccessibilityMacVision]  Además, iOS, Android y Linux admiten una variedad de tecnologías de asistencia.  
+La mayoría de los dispositivos incluyen tecnología de asistencia integrada en el sistema operativo.  Microsoft Windows incluye el lector de pantalla [Windows narrador][MicrosoftSupport22798] y [Windows lupa][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  Las tecnologías de asistencia de terceros como [NVDA,][NvaccessAboutNvda] [FreedomscientificSoftwareJaws]y [ZoomText][FreedomscientificSoftwareZoomtext] están disponibles para su descarga.  Apple macOS incluye el lector [de pantalla VoiceOver.][AppleAccessibilityMacVision]  Además, iOS, Android y Linux admiten una variedad de tecnologías de asistencia.  
 
 ### <a name="testing-in-virtual-machines-and-emulators"></a>Pruebas en máquinas virtuales y emuladores  
 
@@ -214,13 +214,13 @@ Una serie de vídeos situacionales breves de W3C sobre el impacto de la accesibi
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Máquinas virtuales | Microsoft Edge Programador"  
 
-[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guía completa para Narrador | Soporte técnico de Microsoft"  
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guía completa del narrador | Soporte técnico de Microsoft"  
 [MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Usa lupa para que las cosas en la pantalla sean más fáciles de ver | Soporte técnico de Microsoft"  
 
-[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Accessibility Insights for Web | Accessibility Insights"  
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Accesibilidad Ideas web | Accesibilidad Ideas"  
 
 [AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Crear y administrar dispositivos virtuales | Desarrolladores de Android"  
-[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Ejecutar aplicaciones en el emulador de Android | Desarrolladores de Android"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Ejecutar aplicaciones en el Emulator | Desarrolladores de Android"  
 [AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Descargar Android Studio | Desarrolladores de Android"  
 
 [AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Accesibilidad a la visión: Mac | manzana"  

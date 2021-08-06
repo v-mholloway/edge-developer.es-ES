@@ -4,12 +4,12 @@ ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
 ms.date: 02/12/2021
-ms.openlocfilehash: ba355dce729c37d408afc31a8b705d75ebdf416a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 5ce87e034f0cdcf8fac4160a0dd76ba3b942810f7ed26d38d4dba81d044ccbc2
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397708"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11805790"
 ---
 > [!NOTE]
 > El **panel Auditorías** proporciona vínculos al contenido hospedado en sitios web de terceros.  Microsoft no es responsable y no tiene control sobre el contenido de estos sitios y se pueden recopilar datos.  

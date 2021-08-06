@@ -7,14 +7,14 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 3b2c72e13488632e2fadea2a7e8eb95888f67170
-ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
+ms.openlocfilehash: 12c01ba47946bb05bc1baede2f441715ac29fe8e73c8fbc504f5f16823541749
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "11343153"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798340"
 ---
-# Métodos de distribución de extensiones alternativos  
+# <a name="alternate-extension-distribution-methods"></a>Métodos de distribución de extensiones alternativos  
 
 Por lo general, las extensiones se distribuyen a través Microsoft Edge de complementos. Hay algunos escenarios en los que los desarrolladores pueden necesitar distribuir extensiones mediante métodos alternativos. Por ejemplo:
 
@@ -26,7 +26,7 @@ Las extensiones que no se cargan desde el almacén de complementos perimetrales 
 *   Use el Windows (solo Windows).  
 *   Usar un archivo JSON de preferencias (macOS y Linux).  
     
-##  <a name="before-you-begin"></a>Antes de comenzar  
+## <a name="before-you-begin"></a>Antes de empezar  
 
 Asegúrese de publicar la extensión en el almacén Microsoft Edge complementos o empaquetar un archivo y asegúrese de que se instala correctamente `.crx` en el equipo.  Si instala el archivo `.crx` mediante , asegúrese de que puede navegar a la extensión en esa dirección `update_URL` URL.  
 
@@ -39,7 +39,7 @@ Además, asegúrese de que tiene la siguiente información.
 > [!NOTE] 
 > Los ejemplos siguientes se `1.0` usan como versión y para el `aaaaaaaaaabbbbbbbbbbcccccccccc` identificador.  
 
-##  <a name="use-the-windows-registry-(windows-only)"></a>Usar el Windows (solo Windows)  
+## <a name="use-the-windows-registry-windows-only"></a>Usar el Windows (solo Windows)  
 
 Para distribuir la extensión mediante el Windows, siga estos pasos.
 
@@ -60,7 +60,7 @@ Para distribuir la extensión mediante el Windows, siga estos pasos.
   
 1.  Compruebe que la extensión aparece en Microsoft Edge navegando a `edge://extensions` .  
 
-##  <a name="use-a-preferences-json-file-(macos-and-linux)"></a>Usar un archivo JSON de preferencias (macOS y Linux)  
+## <a name="use-a-preferences-json-file-macos-and-linux"></a>Usar un archivo JSON de preferencias (macOS y Linux)  
 
 Para distribuir la extensión mediante un archivo JSON de preferencias, siga estos pasos.
 
@@ -120,7 +120,7 @@ Para distribuir la extensión mediante un archivo JSON de preferencias, siga est
 
 1.  Compruebe que la extensión está instalada en Microsoft Edge navegando a `edge://extensions` .  
 
-##  <a name="update-and-uninstall-externally-installed-extensions"></a>Actualizar y desinstalar extensiones instaladas externamente
+## <a name="update-and-uninstall-externally-installed-extensions"></a>Actualizar y desinstalar extensiones instaladas externamente
 
 Microsoft Edge examina las entradas de metadatos en el Registro cada vez que se inicia el explorador y realiza cualquier cambio en las extensiones instaladas externamente.  
 

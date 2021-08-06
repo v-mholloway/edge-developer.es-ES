@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.date: 04/06/2021
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: de7d6c39c09ba321f21b34e6e461ec030f09f6ad
-ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
+ms.openlocfilehash: d87732fddcab8d6f587a4bc667ec3a7d805ae0caa48f14d16a770a4a8d133ae6
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11480163"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11798347"
 ---
 # <a name="microsoft-edge-chromium-devtools-protocol-overview"></a>Microsoft Edge (Chromium) DevTools Protocol overview  
 

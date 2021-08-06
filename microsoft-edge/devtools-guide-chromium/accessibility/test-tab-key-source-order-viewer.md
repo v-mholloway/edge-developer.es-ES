@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 7e90221b581280a6eb63cee4d073622a80871903
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 87cb50eee00f5ad625e900d54aa03aece96f15e9bbd86eee1bad28b485f49374
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597654"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802267"
 ---
 # <a name="test-keyboard-support-using-the-source-order-viewer"></a>Probar la compatibilidad con teclado con el Visor de pedidos de origen
 
@@ -69,12 +69,12 @@ Para activar y usar el Visor de pedidos de origen, con la página de demostraci�
 1.  Desplácese por la página para ver todas las superposiciones numéricas, incluida la sección de pie de página.
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

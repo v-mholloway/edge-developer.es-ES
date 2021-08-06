@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: ff6335a9d2eda8a8d66e0fd9df36cf47aaf21179
-ms.sourcegitcommit: d44dc9f230e8075efc08a62ff83e2bf2c6851776
+ms.openlocfilehash: 81b354c73902f79212274c3d7190054dba3525ebfe549bc046503a07df53fab8
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "11710442"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11807482"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -42,7 +42,7 @@ Ahora, el Microsoft Edge complementos hospeda las extensiones y actualiza la ext
 > [!NOTE]
 > Este artículo no se aplica a las extensiones que publique con el panel [del Centro de][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] partners.  Puede usar el panel para publicar versiones actualizadas para los usuarios y para el Microsoft Edge complementos.  Para obtener más información, vaya [a Actualizar o quitar la extensión][ExtensionsPublishUpdateExtension].  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 Cada pocas horas, Microsoft Edge comprueba si cada extensión o aplicación instalada tiene una dirección URL de actualización.  Para especificar una dirección URL de actualización para la extensión, use el `update_url` campo del manifiesto.  El `update_url` campo del manifiesto apunta a una ubicación para completar una comprobación de actualización.  Para cada `update_url` uno, envía solicitudes de archivos XML de manifiesto actualizados.  Si el archivo XML del manifiesto de actualización muestra una versión más reciente que la instalada, Microsoft Edge descarga e instala la versión más reciente.  El mismo proceso funciona para las actualizaciones manuales, donde el nuevo archivo debe firmarse con la misma `.crx` clave privada que la versión instalada actualmente.  
 

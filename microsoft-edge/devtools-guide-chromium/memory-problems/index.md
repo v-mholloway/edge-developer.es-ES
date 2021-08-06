@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: 3b2405d23dd6ee349484c9ba66d195e3ed12144b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 8d79c74711dec285548de25f3db9d3c754661abab2bdb8e8bde0d979d7438372
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565032"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11804626"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ Obtenga información sobre cómo usar Microsoft Edge y DevTools para encontrar p
 *   Identifique los árboles DOM desasociados \(una causa común de pérdidas de memoria\) con **instantánea de montón**.  
 *   Descubra cuándo se asigna nueva memoria en el montón de JavaScript \(JS heap\) con instrumentación de asignación **en la escala de tiempo**.  
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 En el sentido del modelo de rendimiento **RAIL,** el foco de sus esfuerzos de rendimiento deben ser los usuarios.  
 
@@ -234,7 +234,7 @@ Puede usar el Administrador de tareas Microsoft Edge explorador o grabaciones de
 
 Después de identificar el problema, puede **** usar un instrumental de asignación en la grabación de escala de tiempo para averiguar dónde se asigna la memoria y qué funciones están causando las asignaciones.  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

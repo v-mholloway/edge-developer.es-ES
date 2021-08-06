@@ -7,12 +7,12 @@ ms.date: 04/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, remoto, depuración, windows 10, windows, portal de dispositivos
-ms.openlocfilehash: e3f60f07ba96aaed8cd9d7348eee1b0a846faecf
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 7cbb48b949858b5cc5ea39dea2fb0f3907893fd748366beb5dbb61512c8cd614
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519285"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11797996"
 ---
 # <a name="get-started-with-remote-debugging-windows-10-devices"></a>Introducción a la depuración remota de Windows 10 dispositivos  
 

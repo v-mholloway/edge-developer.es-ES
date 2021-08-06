@@ -1,20 +1,20 @@
 ---
 description: Comprueba que las páginas web se pueden usar con la animación de la interfaz de usuario desactivada (movimiento reducido) con la característica multimedia Emular CSS prefiere la lista desplegable de movimiento reducido en la herramienta de representación.
-title: Comprobar que la página se puede usar con la animación de la interfaz de usuario desactivada
+title: Verificar si la página se puede usar con la animación de la interfaz de usuario desactivada
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: ec30925b706b4b1c6dfaaa6ce66a38fab8759ac2
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: 13c41918aee9e590a0e89707d3ee031751af42a2a4d8f2f9d7fc79f48dd39867
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597657"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11802245"
 ---
-# <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off"></a>Comprobar que la página se puede usar con la animación de la interfaz de usuario desactivada
+# <a name="verify-that-the-page-is-usable-with-ui-animation-turned-off"></a>Verificar si la página se puede usar con la animación de la interfaz de usuario desactivada
 
 Una página web no debe mostrar animaciones a un usuario que a desactivar las animaciones en el sistema operativo.  Las animaciones pueden ayudar a la facilidad de uso de un producto, pero también pueden causar distracción, confusión o náuseas.
 
@@ -58,13 +58,13 @@ Observe que la página web de demostración todavía ejecuta las siguientes anim
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 *  [Simulación de movimiento reducida](reduced-motion-simulation.md)
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
