@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: ac07c968bbbf7f995018aa326a3f8781bda11e74
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
-ms.translationtype: MT
+ms.openlocfilehash: 9627c2798ae3095b47497c699f5ae6981e6d7f272ffb64cd5a920aae90f5e85a
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564864"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809120"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>notas del producto sobre la privacidad de Microsoft Edge  
 

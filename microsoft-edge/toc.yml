@@ -141,11 +141,11 @@
               href: devtools-guide-chromium/command-menu/index.md
             - name: 'Personalizar DevTools '
               items:
-                - name: Información general
+                - name: Introducción
                   href: devtools-guide-chromium/customize/index.md
-                - name: Tema oscuro
-                  href: devtools-guide-chromium/customize/dark-theme.md
-                - name: Cambiar colocación
+                - name: Aplicar un tema de color
+                  href: devtools-guide-chromium/customize/theme.md
+                - name: Cambiar la ubicación de DevTools
                   href: devtools-guide-chromium/customize/placement.md
                 - name: Hacer coincidir con el idioma del explorador
                   href: devtools-guide-chromium/customize/localization.md
@@ -277,7 +277,7 @@
               items:
                 - name: Emular deficiencias visuales
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-                - name: Simular esquemas de colores
+                - name: Emular esquema oscuro o claro
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simular movimiento reducido
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
@@ -337,6 +337,8 @@
           items:
             - name: Registro para desarrolladores
               href: extensions-chromium/publish/create-dev-account.md
+            - name: Agregar y administrar usuarios
+              href: extensions-chromium/publish/aad-account.md
             - name: Publicar la extensión
               href: extensions-chromium/publish/publish-extension.md
             - name: Actualizar la extensión
@@ -371,9 +373,11 @@
       href: privacy-whitepaper/index.md
     - name: Aplicaciones web progresivas
       items:
-        - name: Información general sobre aplicaciones web progresivas
+        - name: Información general sobre Aplicaciones web progresivas
           href: progressive-web-apps-chromium/index.md
-        - name: Introducción a PWA
+        - name: Novedades
+          href: progressive-web-apps-chromium/whats-new/pwa.md
+        - name: Introducción a las Aplicaciones web progresivas
           href: progressive-web-apps-chromium/get-started.md
         - name: Escenarios sin conexión
           href: progressive-web-apps-chromium/offline.md
@@ -441,7 +445,7 @@
           items:
             - name: Diferencias entre Microsoft Edge y WebView2
               href: webview2/concepts/browser-features.md
-            - name: Distribuir mi aplicación
+            - name: Distribuir una aplicación WebView2 y Tiempo de ejecución
               href: webview2/concepts/distribution.md
             - name: Administrar la carpeta de datos de usuario
               href: webview2/concepts/user-data-folder.md
@@ -457,15 +461,11 @@
               href: webview2/concepts/versioning.md
             - name: Modelo de subprocesos
               href: webview2/concepts/threading-model.md
-            - name: Procedimientos recomendados de desarrollo de WebView2
+            - name: Procedimientos recomendados de desarrollo
               href: webview2/concepts/developer-guide.md
             - name: Convenciones de la API de Win32
               href: webview2/concepts/win32-api-conventions.md
-        - name: Notas de la versión
-          href: webview2/release-notes.md
-        - name: Guía básica
-          href: webview2/roadmap.md
-        - name: Cómo
+        - name: Procedimiento
           items:
             - name: Escenarios extendidos de JavaScript en WebView2
               href: webview2/how-to/javascript.md
@@ -479,6 +479,10 @@
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: Cambiar a un canal de vista previa
               href: webview2/how-to/set-preview-channel.md
+        - name: Notas de la versión
+          href: webview2/release-notes.md
+        - name: Plan de desarrollo
+          href: webview2/roadmap.md
         - name: Referencia
           href: webview2/webview2-api-reference.md
           items:

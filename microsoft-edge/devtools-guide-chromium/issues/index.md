@@ -7,12 +7,12 @@ ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 86277c509aa4b67635661ba3a316fb5b1e3b9d14
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
+ms.openlocfilehash: 5e0147ae53f39d107be0f129793b2970676f213125dc38f3dfd5db971fe938b4
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624727"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809876"
 ---
 <!-- Copyright Sam Dutton
 
@@ -46,14 +46,13 @@ Varios orígenes **proporcionan** comentarios en la herramienta Problemas, como 
 *  [webhint][webhintIo]
 
 
-## <a name="open-the-issues-tool"></a>Abrir la herramienta Problemas
-
-Realice los pasos siguientes para abrir la **herramienta Problemas** mediante una página de demostración.
-
+## <a name="opening-the-issues-tool"></a>Abrir la herramienta Problemas
 
 1.  Navegue a una página web que contenga problemas que corregir.  Por ejemplo, abra la página de demostración [de pruebas de accesibilidad][A11ytestingPagewitherrors] en una nueva pestaña o ventana.
 
-1.  Abra DevTools.  Después de unos segundos, aparece el **contador de** problemas \( Contador de problemas \) en la esquina superior derecha ![ de ](../media/issues-counter-icon.msft.png) DevTools.  El número de problemas en el contador de problemas puede ser diferente.
+1.  Abra DevTools.  Después de unos segundos, el contador **de** problemas \( Contador de problemas \) aparece en la ![ esquina superior derecha de ](../media/issues-counter-icon.msft.png) DevTools.
+
+1.  Actualice la página, ya que algunos problemas se notifican en función de las solicitudes de red.  Observe el recuento actualizado en el **contador Problemas**.
 
 1.  Seleccione el **contador Problemas**.  La **herramienta Problemas** se abre con problemas agrupados en distintas categorías.
 
@@ -146,17 +145,17 @@ Para mostrar un problema para los elementos con subrayados ondulados en el árbo
     :::image-end:::
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Probar automáticamente una página web para problemas de accesibilidad](../accessibility/test-issues-tool.md)
 
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contactar al equipo de Microsoft Edge DevTools
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Ponerse en contacto con el equipo de Microsoft Edge DevTools
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 <!-- links -->
-[DevtoolsOpenIndex]: ../open/index.md "Abra Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsOpenIndex]: ../open/index.md "Abrir Microsoft Edge DevTools | Microsoft Docs"
 <!-- external links -->
 [A11ytestingPagewitherrors]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Página de demostración de pruebas de accesibilidad | Microsoft Docs"
 [DequeAxe]: https://www.deque.com/axe "Axe Tools Overview | Deque"

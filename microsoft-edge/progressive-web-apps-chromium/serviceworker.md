@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: aplicaciones web progresivas, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 314acbbd5a2f423c274f92e815b2be4329ace9b8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: cbe6a1d4e3c8b3b2d7e2d5d070c3aed4a09916719f2ada1ac73368a5fc761ef0
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399137"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809316"
 ---
 # <a name="use-service-workers-to-manage-network-requests-and-push-notifications"></a>Usar los trabajadores de servicio para administrar las solicitudes de red y las notificaciones de inserción
 
@@ -85,7 +85,7 @@ Dentro del controlador, puede controlar si una solicitud va `fetch` a la red, ex
 
 Los trabajadores del servicio pueden enviar notificaciones a los usuarios. Las notificaciones de inserción son útiles para pedir a los usuarios que vuelvan a interactuar con la aplicación una vez transcurrido algún tiempo. Para obtener más información, vaya al [tutorial y demostración de notificaciones de inserción.][AzurewebsitesWebpushdemo]  
 
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Consulte también  
 
 Para obtener más información sobre los trabajadores de servicio, vaya a la siguiente lista de temas relacionados.  
 

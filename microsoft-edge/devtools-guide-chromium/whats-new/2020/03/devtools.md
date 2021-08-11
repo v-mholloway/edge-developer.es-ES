@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
-ms.openlocfilehash: e5fa4b066e47b0779fcdf2b3e814c598e9615ccf
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+keywords: microsoft edge, desarrollo web, herramientas f12, devtools
+ms.openlocfilehash: d3d707d513c2a8846d7dd76eecdbe45e551d8ea6756c7b16e3a506fd41fbbeea
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564955"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809736"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -326,15 +326,15 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 
 [CR963183]: https://crbug.com/963183 "Problema 963183: DevTools no son compatibles con WCAG"  
 [CR1003700]: https://crbug.com/1003700 "Problema 1003700: Agregar compatibilidad con DevTools para la simulación de deficiencia de visión de color"  
-[CR1011679]: https://crbug.com/1011679 "Problema 1011679: Introducir &quot;Acoplar a la izquierda&quot; mediante el menú de comandos"  
+[CR1011679]: https://crbug.com/1011679 "Problema 1011679: Introducir &quot;Acoplar a la izquierda&quot; mediante el menú comando"  
 [CR1016501]: https://crbug.com/1016501 "Problema 1016501: Solicitud de característica: botón para eliminar todas las invalidaciones locales"  
 [CR1050999]: https://crbug.com/1050999 "Problema 1050999: Pestaña Propiedades"  
-[CR1051466]: https://crbug.com/1051466 "Problema 1051466: Compatibilidad con la depuración DE COOP/COEP en DevTools"  
+[CR1051466]: https://crbug.com/1051466 "Problema 1051466: Admitir la depuración DE COOP/COEP en DevTools"  
 [CR1054447]: https://crbug.com/1054447 "Problema 1054447: Actualizar métricas de rendimiento en la escala de tiempo de DevTools"  
 [CR1051822]: https://crbug.com/1051822 "Problema 1051822: DevTools: agregar interfaz de usuario para emular la configuración regional"
 [CR1041830]: https://crbug.com/1041830 "Problema 1041830: Mejorar los colores de los puntos de interrupción"
-[CR1050855]: https://crbug.com/1050855 "Problema 1050855: Configuración vista es difícil de detectar"
-[CR1056348]: https://crbug.com/1056348 "Problema 1056348: Actualización de componentes de infobar"
+[CR1050855]: https://crbug.com/1050855 "Problema 1050855: la Configuración es difícil de detectar"
+[CR1056348]: https://crbug.com/1056348 "Problema 1056348: Actualización de componentes de Infobar"
 
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP y COEP explicados: directiva de abridor entre orígenes"  
 [COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "COOP y COEP explicados: directiva de incrustación entre orígenes"  

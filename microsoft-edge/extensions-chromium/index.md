@@ -7,14 +7,14 @@ ms.date: 02/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
-ms.openlocfilehash: 3ed0871883acfb7c3cf08c2da9f47d18ae3465f0
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 06a8bcac8690229e44e294fbc68e796ec28ce06fdb76bd030509955bcbda2ea1
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327529"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809323"
 ---
-# Introducción a Microsoft Edge (Chromium) extensiones  
+# <a name="overview-of-microsoft-edge-chromium-extensions"></a>Introducción a Microsoft Edge (Chromium) extensiones  
 
 Una extensión es un pequeño programa que \(un desarrollador\) usa para agregar o modificar características para Microsoft Edge \(Chromium\).  Una extensión está diseñada para mejorar la experiencia de exploración diaria de un usuario.  Proporciona funcionalidad de nicho que es importante para una audiencia de destino.  
 
@@ -37,7 +37,7 @@ Para trabajar directamente con una parte del explorador, como una ventana o una 
   Una Microsoft Edge \(Chromium\)  
 :::image-end:::  
 
-##  <a name="basic-guidance"></a>Instrucciones básicas  
+## <a name="basic-guidance"></a>Instrucciones básicas  
 
 Algunos de los exploradores más populares para crear extensiones incluyen Safari, Firefox, Chrome, Opera, Brave y Microsoft Edge.  Excelentes lugares para comenzar los tutoriales de desarrollo de extensiones y la investigación de documentación son sitios hospedados por las organizaciones del explorador.  La tabla siguiente no es definitiva y puede usarse como punto de partida.  
 
@@ -53,7 +53,7 @@ Algunos de los exploradores más populares para crear extensiones incluyen Safar
 > [!IMPORTANT]
 > Muchos de los tutoriales de los sitios usan API específicas del explorador que pueden no coincidir con el explorador para el que desarrolla.  En la mayoría de los casos, una extensión Chromium funciona tal como está en diferentes exploradores Chromium y las API funcionan según lo esperado.  Solo algunas API menos comunes pueden ser estrictamente específicas del explorador.  Para obtener vínculos a los tutoriales, vaya [a Ver también](#see-also).  
 
-##  <a name="why-chromium"></a>¿Por Chromium?  
+## <a name="why-chromium"></a>¿Por Chromium?  
 
 Si el objetivo es publicar la extensión en el almacén de extensiones de cada explorador, debe modificarse para que cada versión tenga como destino y se ejecute en cada entorno de explorador distinto.  Por ejemplo, [las extensiones de Safari][AppleDeveloperSafariservicesAppExtensions] pueden usar código web y nativo para comunicarse con aplicaciones nativas equivalentes.  Los últimos cuatro exploradores de la tabla anterior usan el mismo paquete de código y minimizan el requisito de mantener versiones en paralelo.  Estos exploradores se basan en el [Chromium de código abierto][|::ref1::|Home].  
 
@@ -61,7 +61,7 @@ Cree una extensión Chromium para escribir la menor cantidad de código.  Tambi�
 
 El siguiente contenido se centra principalmente en Chromium extensiones.  
 
-##  <a name="browser-compatibility-and-extension-testing"></a>Pruebas de compatibilidad y extensión del explorador  
+## <a name="browser-compatibility-and-extension-testing"></a>Pruebas de compatibilidad y extensión del explorador  
 
 En ocasiones, la paridad de api no existe entre Chromium exploradores.  Por ejemplo, hay diferencias en las API de identidad y pago.  Para asegurarse de que la extensión cumple las expectativas del cliente, revise el estado de la API a través de los siguientes documentos oficiales del explorador.  
 
@@ -73,26 +73,26 @@ Las API que necesita definir los cambios que debe realizar para solucionar las d
 
 Para probar la extensión en diferentes entornos antes de enviarla a un almacén de exploradores, trascárguela localmente en el explorador mientras la desarrolla.  
 
-##  <a name="publish-your-extension-to-browser-stores"></a>Publicar la extensión en almacenes de exploradores  
+## <a name="publish-your-extension-to-browser-stores"></a>Publicar la extensión en almacenes de exploradores  
 
 Puede enviar y buscar extensiones de explorador en los siguientes almacenes de exploradores.  
 
 *   [Complementos del explorador Firefox][MozillaAddonsFirefoxExtensions]  
 *   [Chrome Web Store][GoogleChromeWebstoreCategoryExtensions]  
 *   [Complementos de Opera][OperaAddonsExtensions]  
-*   [Microsoft Edge Complementos][MicrosoftEdgeAddonsCategoryExtensions]  
+*   [Complementos de Microsoft Edge][MicrosoftEdgeAddonsCategoryExtensions]  
 
 Algunos almacenes permiten descargar extensiones enumeradas de otros exploradores.  Sin embargo, los almacenes de exploradores no garantizan el acceso entre exploradores.  Para garantizar que los usuarios encuentren la extensión en diferentes exploradores, debe mantener una descripción en cada almacén de extensiones de explorador.  
 
 Es posible que los usuarios necesiten instalar la extensión en diferentes exploradores. En este escenario, puede migrar las extensiones de Chromium existentes de un explorador a otro.  
 
-###  <a name="migrate-an-existing-extension-to-microsoft-edge"></a>Migrar una extensión existente a Microsoft Edge  
+### <a name="migrate-an-existing-extension-to-microsoft-edge"></a>Migrar una extensión existente a Microsoft Edge  
 
 Si ya ha desarrollado una extensión para otro explorador Chromium, puede enviarla al Microsoft Edge complementos. No es necesario volver a escribir la extensión y comprobar que funciona en Microsoft Edge.  Al migrar una extensión de Chromium existente a otros exploradores Chromium, asegúrese de que las mismas API o alternativas estén disponibles para el explorador de destino.  
 
 Para obtener más información sobre cómo Microsoft Edge la extensión de Chrome a Microsoft Edge, vaya a Extensiones de [Port Chrome Microsoft Edge (Chromium).][ExtensionsChromiumDeveloperGuidePortChrome] Después de portabilidad de la extensión al explorador de destino, el siguiente paso es publicarla.  
 
-###  <a name="publish-to-the-microsoft-edge-add-ons-website"></a>Publicar en el sitio Complementos para Microsoft Edge web  
+### <a name="publish-to-the-microsoft-edge-add-ons-website"></a>Publicar en el sitio Complementos para Microsoft Edge web  
 
 Para empezar a publicar la extensión en Microsoft Edge, debes registrarte para una cuenta de desarrollador con una cuenta de correo electrónico de MSA para enviar la descripción de extensión [a][MicrosoftDeveloperRegistration] la tienda.  Una cuenta de correo electrónico de MSA incluye `@outlook.com` , , y así `@live.com` sucesivamente.  Cuando elija una dirección de correo electrónico para registrarse, considere si debe transferir o compartir la propiedad de la extensión con otros usuarios de su organización.  Una vez completado el registro, puede crear un nuevo envío de extensión a la tienda.  
 
@@ -108,7 +108,7 @@ Para enviar la extensión a la tienda, asegúrese de proporcionar los siguientes
 
 Después de enviar correctamente la extensión, la extensión se somete a un proceso de revisión y pasa o falla el proceso de certificación.  A los propietarios se les notifica el resultado y se les dan los pasos siguientes según sea necesario.  Si envía una actualización de extensión al almacén, se inicia un nuevo proceso de revisión.  
 
-##  <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Consulte también  
 
 *   [Portabilidad de una extensión de Google Chrome][ExtensionworkshopPorting]  
 *   [Crear una extensión de aplicación safari][AppleDeveloperSafariservicesAppExtensionsBuilding]  

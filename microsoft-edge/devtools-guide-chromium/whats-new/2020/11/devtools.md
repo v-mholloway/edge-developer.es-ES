@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 ms.localizationpriority: high
-ms.openlocfilehash: e5706de4c7938a3cb2246aa34de07c73dafe5776
-ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
-ms.translationtype: MT
+ms.openlocfilehash: be4d8ed7ae24a7ad9d5c3a9b3979712be3b9a22e9434243298f994f55c759734
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "11624776"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808546"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -358,7 +358,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [DevtoolsConsoleIndex]: ../../../console/index.md "Descripción general de la consola | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Cambiar la configuración de idioma de DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edite los métodos abreviados de teclado para cualquier acción en el archivo DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "Editar el método abreviado de teclado para una acción de DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulación de dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
 <!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  

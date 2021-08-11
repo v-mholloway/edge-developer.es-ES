@@ -7,12 +7,12 @@ ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
-ms.openlocfilehash: 4a50b925e002746357b2b770b199d84772b456f5
-ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
+ms.openlocfilehash: 39c530c51f5ff486a008903d75cc7d2bf06df0a3f048871bc1e7c9fce5c74359
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "11574592"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809358"
 ---
 # <a name="experimental-features-in-progressive-web-apps-pwas"></a>Características experimentales en aplicaciones web progresivas (PWA)  
 
@@ -63,7 +63,7 @@ En la siguiente lista se describen las nuevas características experimentales de
 |:--- |:--- |:--- |  
 | [Administración del protocolo URI](#uri-protocol-handling) | 91 o posterior | Windows y Linux |    
 | [Administración de vínculos URL](#url-link-handling) | 91 o posterior | Windows|
-| [Superposición de controles de ventana para aplicaciones de escritorio](#window-controls-overlay-for-installed-desktop-web-apps) | 91 o posterior | Windows10|   
+| [Superposición de controles de ventana para aplicaciones de escritorio](#window-controls-overlay-for-installed-desktop-web-apps) | 91 o posterior | Windows 10|   
 | [Ejecutar en inicio de sesión del sistema operativo](#run-on-os-login) | 88 o posterior | Todos |  
 | [Accesos directos](#shortcuts) | 87 o posterior | Todos |  
 | [Administración de archivos](#file-handling) | 83 o posterior | Todo el escritorio |  

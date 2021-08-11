@@ -7,18 +7,18 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
-ms.openlocfilehash: c5a17cbc55c6ccb42e06369474cd274d70742494
-ms.sourcegitcommit: 31741a0c331816642ceafd20680bd3206c87c7bf
+ms.openlocfilehash: 84cd72ad6a733747cd256d78f6f9930186971de89b993964f07a8480e47ea469
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "11579732"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11809337"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>Crear un tutorial de extensión, parte 2  
   
 [Origen del paquete de extensión completado para este elemento][ArchiveExtensionGettingStartedPart2]    
 
-## <a name="overview"></a>Introducción  
+## <a name="overview"></a>Información general  
 
 En este tutorial se tratan las siguientes tecnologías de extensión.
 *   Insertar bibliotecas de JavaScript en la extensión  

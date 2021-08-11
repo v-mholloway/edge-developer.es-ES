@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: a13c344bb31cdfb7d0402132e3be82e4c330c612
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
-ms.translationtype: MT
+ms.openlocfilehash: ca95112d5db50ec25fd47f2ec0e36e6edd23f814ec23307750698a136e095b23
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597160"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808336"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -68,9 +68,9 @@ Ahora puede personalizar el acceso rápido de teclado para cualquier acción en 
 1.  Elija la acción que quiere personalizar.  
 1.  Elija el icono \(![Icono para editar el acceso rápido de teclado](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) Editar.  
 1.  Seleccione las claves con las que quiere enlazar la acción.  
-1.  Elija el icono \(![Icono de la marca de verificación del acceso rápido de teclado](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) de la marca de verificación.  
+1.  Elija el icono \(![Icono de la marca de verificación del acceso rápido de teclado](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) icono.  
     
-Para obtener más información acerca de la personalización y edición de accesos directos, vaya a [Personalizar accesos rápidos de teclado en Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya al problema [174309][CR174309].  
+Para obtener más información acerca de la personalización y edición de métodos abreviados, vaya a [Personalizar métodos abreviados de teclado en DevTools][DevtoolsCustomizeShortcuts].  Para revisar las actualizaciones en tiempo real de esta característica en el proyecto de código abierto Chromium, vaya al problema [174309][CR174309].  
 
 :::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Personalizar los accesos rápidos de teclado en la Configuración de DevTools con un acceso directo en el modo de edición" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
    Personalizar los accesos rápidos de teclado en la [Configuración de DevTools][DevtoolsCustomizeIndexSettings] con un acceso directo en el modo de edición  
@@ -311,7 +311,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 [DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filtrar mensajes: referencia de consola | Microsoft Docs"  
 [DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar "Abrir la barra lateral de la consola: referencia de consola | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalización de accesos rápidos de teclado en las herramientas de desarrollo de Microsoft Edge | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalizar métodos abreviados de teclado en DevTools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "Habilitar + menús de las pestañas de los botones para abrir más herramientas: características experimentales | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "Activar características experimentales: características experimentales | Microsoft Docs"  
 [DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "Agregar o quitar columnas: referencia de análisis de red | Microsoft Docs"  

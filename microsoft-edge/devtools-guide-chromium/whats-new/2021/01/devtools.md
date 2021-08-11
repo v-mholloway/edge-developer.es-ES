@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 9eb9f35427829dbe262b4c71d8ff5474b28eae77
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
-ms.translationtype: MT
+ms.openlocfilehash: b276dff5555418d8ffc534104d18e00d94561ccaf98ea2f79f5ef5f7d98baec7
+ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597158"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "11808714"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -428,9 +428,9 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 
 [DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Probar el contraste de color de texto con el Selector de colores | Microsoft Docs"  
 [DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Cambiar CSS: Referencias CSS | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configuración: Personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalización de accesos rápidos de teclado en Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Prueba en dispositivos plegables y de doble pantalla: emular dispositivos de pantalla doble y plegables en Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personalizar métodos abreviados de teclado en devTools |Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Prueba en dispositivos plegables y de doble pantalla: emula dispositivos de doble pantalla y plegables en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simular una ventanilla móvil: Emular dispositivos móviles en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Registrar el rendimiento de carga: referencia del análisis de rendimiento | Microsoft Docs"  
