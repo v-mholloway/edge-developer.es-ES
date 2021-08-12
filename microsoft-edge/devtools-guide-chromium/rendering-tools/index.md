@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 6dee44036906e0b802ec79b0e4d42f74cc60026d2dfe89e18c3487996ad20fb7
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
+ms.openlocfilehash: c8060b20e3b25d40fcf7a90102d19cde483d64001f7fcb8998c3fbafe4b862df
+ms.sourcegitcommit: 8a3c6e6f69a4b5419f857b9e9fc983e573fd956c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11798870"
+ms.lasthandoff: 08/09/2021
+ms.locfileid: "11810533"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -49,7 +49,7 @@ Haga una grabación en la **herramienta Rendimiento** y busque eventos sospechos
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-si nota un poco de jank en JavaScript, es posible que deba llevar el análisis al siguiente nivel y recopilar un perfil de CPU de JavaScript.  Los perfiles de CPU muestran dónde se usa el tiempo de ejecución dentro de las funciones de la página.  Obtenga información sobre cómo crear perfiles de CPU en [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime].
+Si observa bastante jank (interrupciones de representación) en JavaScript, es posible que deba llevar el análisis al siguiente nivel y recopilar un perfil de CPU de JavaScript.  Los perfiles de CPU muestran dónde se usa el tiempo de ejecución dentro de las funciones de la página.  Obtenga información sobre cómo crear perfiles de CPU en [Speed up JavaScript runtime][DevtoolsRenderingToolsJavascriptRuntime].
 
 ### <a name="javascript-problems"></a>JavaScript: problemas  
 
