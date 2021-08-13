@@ -136,7 +136,7 @@ Ahora, Microsoft Edge versión 93, puede copiar una sola declaración CSS o toda
 1. Seleccione **Copiar declaración como JS** o Copiar todas las **declaraciones como JS**.
 1. Pegue el CSS copiado en un archivo JavaScript en el editor de texto, como Visual Studio Code.  Por ejemplo: `'--more-link': 'lime'`.
 
-:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="Menú contextual para una regla de estilo, incluidos los comandos "Copiar declaración como JS" y "Copiar todas las declaraciones como JS"." lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="Menú contextual para una regla de estilo, incluidos los comandos Copiar declaración como JS y Copiar todas las declaraciones como JS." lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
    Menú contextual de una regla de estilo, incluida **la declaración Copiar como JS** y Copiar todas las **declaraciones como comandos JS**
 :::image-end:::
 

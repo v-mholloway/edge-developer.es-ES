@@ -166,15 +166,15 @@ Puede ejecutar aplicaciones webView2 en las siguientes versiones de Windows.
 *   Windows 10 IoT Enterprise LTSC x64 2019
 *   Windows 10 IoT Enterprise 21h1 x64
 *   Windows 8.1  
-*   Windows 7 \*\*  
+*   Windows 7   
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server 2012 R2  
-*   Windows Server 2008 R2 \*\*  
+*   Windows Server 2008 R2   
     
 > [!IMPORTANT]
-> \*\* La compatibilidad con WebView2 para Windows 7 y Windows Server 2008 R2 tiene el mismo ciclo de compatibilidad que Microsoft Edge.  Para obtener más información, consulte [Sistemas operativos compatibles con Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].  
+>  La compatibilidad con WebView2 para Windows 7 y Windows Server 2008 R2 tiene el mismo ciclo de compatibilidad que Microsoft Edge.  Para obtener más información, consulte [Sistemas operativos compatibles con Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].  
 
 ## <a name="next-steps"></a>Siguientes pasos  
 
