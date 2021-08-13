@@ -3,16 +3,16 @@ description: Haga que su PWA sea más reconocible mediante la publicación en el
 title: Publicar la aplicación web progresiva en el Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, Microsoft Store
-ms.openlocfilehash: c19b5eaf0bbd152ac1b6d676514f54a2f3140e08ccb16952f0cb46f03e74e9d7
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 11a889ba98b7562e65484086ad6df60cd528f84817dd2f727ea0f2713a068204
+ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809029"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "11881749"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>Publicar la aplicación web progresiva en el Microsoft Store  
 
@@ -101,19 +101,20 @@ Ahora que ya tienes la información de publicación de la aplicación, genera un
 Para generar un paquete de aplicación, complete las siguientes acciones.  
 
 1.  Vaya a [PWA Builder][PwabuilderMain].  
-1.  Escriba la dirección URL de su PWA.  
-1.  Elija **Start**  >  **Build My PWA**  >  **Windows**  >  **Options**.  
+1.  Escriba la dirección URL de su PWA y haga clic en **Inicio**.  
+1.  Una vez completado el informe, asegúrese de que el PWA esté listo para la tienda. Si su PWA puntuación es demasiado baja, **** puede **** visitar opciones de manifiesto y opciones de trabajo de servicio y consultar las secciones que necesitan trabajo.
+1.  Cuando el PWA esté listo para publicarse, haga **** clic en Siguiente y seleccione el botón Almacenar paquete en la **Windows** de la página de publicación. ****
 1.  Pegue los siguientes valores que guardó en la [sección Crear una reserva de](#create-an-app-reservation) aplicación.  
     *   **Id. de paquete**  
     *   **Publisher Id.**  
     *   **Publisher Nombre para mostrar**  
         
-    :::image type="complex" source="./media/pwabuilder-publisher-info.msft.png" alt-text="Pegar información del editor en PWABuilder" lightbox="./media/pwabuilder-publisher-info.msft.png":::
+    :::image type="complex" source="./media/pwabuilder-windows-package-options.png" alt-text="Pegar información del editor en PWABuilder" lightbox="./media/pwabuilder-windows-package-options.png":::
        Pegar información del editor en PWABuilder  
     :::image-end:::  
     
-1.  Elija **Listo**.  
-1.  Para descargar el paquete Windows aplicación, elija **Descargar**.
+1.  Seleccione **Generar**.  
+1.  Para descargar el paquete Windows aplicación, selecciona **Descargar**.
 
 La descarga es un `.zip` archivo que contiene un archivo y un `.msixbundle` `.classic.appxbundle` archivo.  Los dos paquetes de aplicaciones permiten que PWA se ejecuten en una amplia variedad de Windows versiones.  Para obtener más información, vaya [a ¿Qué es un paquete clásico?][GithubPwaBuilderPwabuilderWindowsChromiumDocsClassicPackageMd].  
 
@@ -136,7 +137,7 @@ Para enviar la aplicación a la Tienda, complete las siguientes acciones.
         
 1.  En el **símbolo del** sistema Paquetes, elija el archivo y los `.msixbundle` que `.classic.appxbundle` generó en la sección [Empaquetar PWA.](#package-your-pwa-for-the-store)  
     
-Después de completar el envío, se revisa la aplicación, normalmente en un plazo de entre 24 y 48 horas.  Después de recibir la aprobación, el PWA está disponible en el Microsoft Store.  
+Después de completar el envío, se revisa la aplicación, normalmente en un plazo de 24 a 48 horas.  Después de recibir la aprobación, el PWA está disponible en el Microsoft Store.  
 
 ### <a name="measure-usage-of-your-store-installed-pwa"></a>Medir el uso de las aplicaciones instaladas en la Tienda PWA
 

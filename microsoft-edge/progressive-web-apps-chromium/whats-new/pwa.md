@@ -3,16 +3,16 @@ description: Nuevas características para aplicaciones web progresivas (PWA).
 title: Novedades de las aplicaciones web progresivas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, pwas, pwa, aplicaciones web progresivas
-ms.openlocfilehash: b3975c85d476c68190de9d0cb6b9f710c216b3982426602f836c70befb02d1fc
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 3eb8e09d11932367770c8f6a1c1a99d2e07c1a39bca31d402e8e4bb29c012de7
+ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809984"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "11881768"
 ---
 # <a name="whats-new-in-progressive-web-apps"></a>Novedades de las aplicaciones web progresivas
 
@@ -56,40 +56,35 @@ Ahora puede registrar su PWA para controlar protocolos específicos con el siste
 
 Obtenga más información sobre el uso de controladores de protocolo con su PWA características experimentales en [Progressive Web Apps (PWA).][ExpProtocolHandlers]
 
-## <a name="streamlined-app-info-menus"></a>Menús de información de aplicaciones simplificados
+## <a name="streamlined-app-info-menu"></a>Menú Información de la aplicación optimizada
 
-Cuando un usuario selecciona el menú **Configuración** (**...**) en la barra de título de la aplicación, se muestra el menú información _de_ la aplicación. Hemos actualizado este menú y simplificado la experiencia para el usuario de las siguientes maneras:
-* Movió la información del editor de aplicaciones al nivel superior y la hizo lo primero que un usuario ve.
-* Movió la información de privacidad y los controles a un menú privacidad dedicado **de** 2nd level.
-* Movió las herramientas relacionadas con el contenido a un menú dedicado de 2nd-level **Más** herramientas.
+Cuando un usuario selecciona el botón puntos suspensivos (**...**) en la barra de título de la aplicación, se muestra el menú Información de la aplicación. ****  Hemos actualizado el **** menú Información de la aplicación y hemos optimizado la experiencia del usuario de las siguientes maneras, para proporcionar una experiencia de usuario más parecido a una aplicación de escritorio que a una interfaz de usuario del explorador:
+*  Movió la **aplicación Publisher** información al nivel superior y la hizo lo primero que un usuario ve.
 
-Estos cambios hacen que **el Configuración** de usuario proporcione una experiencia de usuario más parecido a una aplicación de escritorio que a una interfaz de usuario del explorador.
+   :::image type="complex" source="media/app-info.png" alt-text="El nuevo menú de información de la aplicación simplificado" lightbox="media/app-info.png":::
+      El nuevo menú de información **de la aplicación simplificado**
+   :::image-end:::
 
-#### <a name="updated-app-info-menu"></a>Menú de información de la aplicación actualizado
+*  Movió la información de privacidad y los controles a un menú privacidad dedicado **de** 2nd level.
 
-:::image type="complex" source="media/app-info.png" alt-text="El nuevo menú de información de la aplicación simplificado" lightbox="media/app-info.png":::
-   El nuevo menú de información de la aplicación simplificado
-:::image-end:::
+   :::image type="complex" source="media/privacy-menu.png" alt-text="Controles de privacidad en el menú privacidad dedicado" lightbox="media/privacy-menu.png":::
+      Controles de privacidad en el menú **privacidad** dedicado
+   :::image-end:::
 
-#### <a name="dedicated-privacy-menu"></a>Menú Privacidad dedicado
+*  Movió las herramientas relacionadas con el contenido a un menú dedicado de 2nd-level **Más** herramientas.
 
-:::image type="complex" source="media/privacy-menu.png" alt-text="Controles de privacidad en el menú privacidad dedicado" lightbox="media/privacy-menu.png":::
-   Controles de privacidad en el menú **privacidad** dedicado
-:::image-end:::
+   :::image type="complex" source="media/more-tools.png" alt-text="Las herramientas relacionadas con el contenido ahora se encuentran en el menú Más herramientas" lightbox="media/more-tools.png":::
+      Las herramientas relacionadas con el contenido ahora se encuentran en el **menú Más** herramientas
+   :::image-end:::
 
-#### <a name="dedicated-more-tools-menu"></a>Menú Dedicado más herramientas
-
-:::image type="complex" source="media/more-tools.png" alt-text="Las herramientas relacionadas con el contenido ahora se encuentran en el menú Más herramientas" lightbox="media/more-tools.png":::
-   Las herramientas relacionadas con el contenido ahora se encuentran en el **menú Más** herramientas
-:::image-end:::
 
 ## <a name="post-install-flyout-dialog-box"></a>Cuadro de diálogo desplegable posterior a la instalación
 
 Después de PWA desde el explorador Microsoft Edge en Windows, los usuarios ahora pueden seleccionar entre cuatro opciones para iniciar fácilmente sus aplicaciones: 
-* **Anclar a la barra de tareas** 
-* **Anclar a Inicio**
-* **Crear acceso directo de escritorio**
-* **Inicio automático en el inicio de sesión del dispositivo**
+*  **Anclar a la barra de tareas** 
+*  **Anclar a Inicio**
+*  **Crear acceso directo de escritorio**
+*  **Inicio automático en el inicio de sesión del dispositivo**
 
 Para mayor comodidad, este cuadro de diálogo desplegable se muestra la primera vez que se inicia la aplicación.
 

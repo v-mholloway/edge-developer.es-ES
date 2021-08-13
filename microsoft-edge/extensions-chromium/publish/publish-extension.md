@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 56bdb6b7c6991f3eeb9393ffa0871db817f98eabbfa2901024d1d56448d46701
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 7a53db81e20c9bef61cb6daf094db0c218883652083a415757618bcf4a01ec52
+ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803247"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "11881723"
 ---
 # <a name="publish-your-extension"></a>Publicar la extensión  
 
@@ -42,13 +42,13 @@ Para enviar la extensión al [Centro de partners,][MicrosoftPartnerCenter]siga e
 
 ## <a name="step-1--start-a-new-submission"></a>Paso 1: Iniciar un nuevo envío  
 
-Vaya al panel [de desarrolladores][MicrosoftPartnerCenter] y elija **Crear nueva extensión en** la página web **Información** general.  
+Vaya al panel [del desarrollador y,][MicrosoftPartnerCenter] a continuación, **seleccione Crear nueva extensión en** la página web **Información** general.  
 
 ## <a name="step-2--upload-the-extension-package"></a>Paso 2: Upload el paquete de extensión  
 
 Use la **página web Paquetes** para cargar el archivo zip del paquete de extensión.  Solo puede cargar un paquete a la vez.  El envío se bloquea si la carga del paquete no se realiza correctamente en la página web **Paquetes.**  
 
-Para cargar el paquete, elija y arrastre el paquete al campo de carga.  Además, puede elegir **Examinar los archivos**.  Después de cargar el paquete, el paquete se valida.  Después de que la validación se realiza correctamente, revise los detalles de la extensión y, a continuación, elija **Siguiente** para continuar.  Si hay errores de validación, resuelva los problemas e intente cargar de nuevo.  
+Para cargar el paquete, seleccione y arrastre el paquete al campo de carga.  Además, puede seleccionar **Examinar los archivos**.  Después de cargar el paquete, el paquete se valida.  Después de que la validación se realiza correctamente, revise los detalles de la extensión y, a continuación, **seleccione Siguiente** para continuar.  Si hay errores de validación, resuelva los problemas e intente cargar de nuevo.  
 
 ## <a name="step-3--provide-availability-details"></a>Paso 3: Proporcionar detalles de disponibilidad  
 
@@ -56,7 +56,7 @@ En la **página web Disponibilidad,** escriba la siguiente información sobre la
 
 ### <a name="visibility"></a>Visibilidad  
 
-Elija una de las siguientes opciones de visibilidad para definir si la extensión se puede detectar en el Microsoft Edge complementos.  
+Seleccione una de las siguientes opciones de visibilidad para definir si la extensión se puede detectar en el Microsoft Edge complementos.  
 
 *   `Public` \(default\)  
     Public permite a todos descubrir la extensión mediante la búsqueda, la exploración en el almacén de complementos de Microsoft Edge o el uso de la dirección URL de descripción de la extensión en el almacén de complementos de Microsoft Edge.  La dirección URL de descripción está disponible en el panel del Centro de partners en la página web Información **general sobre** la extensión.  
@@ -68,10 +68,10 @@ Elija una de las siguientes opciones de visibilidad para definir si la extensió
 
 ### <a name="markets"></a>Mercados  
 
-Defina los mercados específicos en los que tiene previsto ofrecer la extensión.  La configuración predeterminada para los mercados es todos los mercados y eso incluye los mercados futuros que se agregan más adelante.  Para elegir mercados específicos, elija **Cambiar mercados**.  Alterna los mercados individuales para excluir cada uno o elige Anular la selección **de todos** y, a continuación, agrega mercados individuales de tu elección.  
+Defina los mercados específicos en los que tiene previsto ofrecer la extensión.  La configuración predeterminada para los mercados es todos los mercados y eso incluye los mercados futuros que se agregan más adelante.  Para elegir mercados específicos, seleccione **Cambiar mercados**.  Alterna los mercados individuales para excluir cada uno o selecciona Anular la selección de **todos** y, a continuación, agrega mercados individuales de tu elección.  
 
 > [!NOTE]
-> Puede cambiar los mercados en los que se ofrece la extensión.  Un usuario que instala la extensión mientras está disponible en el mercado del usuario conserva el acceso a la extensión.  Sin embargo, el usuario no tiene acceso a actualizaciones futuras enviadas al Microsoft Edge de complementos.  
+> Puede cambiar los mercados donde se ofrece la extensión.  Un usuario que instala la extensión mientras está disponible en el mercado del usuario conserva el acceso a la extensión.  Sin embargo, el usuario no tiene acceso a actualizaciones futuras enviadas al Microsoft Edge de complementos.  
 
 Seleccione **Guardar** para continuar con la **sección Propiedades.**  
 
@@ -82,13 +82,13 @@ En la **página web Propiedades,** escriba la siguiente información para especi
 | Nombre de la propiedad Extension | Descripción |  
 |:--- |:--- |  
 | Categoría \(required\) | La categoría que mejor describe la extensión.  Enumerar la extensión en la categoría correcta ayuda a los usuarios a encontrar la extensión fácilmente y a comprender más sobre ella.  |  
-| Requisitos de la directiva de privacidad \(required\) | Indica si la extensión tiene acceso, recopila o transmite información personal.  La extensión puede producir un error en el paso de certificación si elige **Sí** y no proporciona un `Privacy policy URL` .  |  
+| Requisitos de la directiva de privacidad \(required\) | Indica si la extensión tiene acceso, recopila o transmite información personal.  La extensión puede producir un error en el paso de certificación si selecciona **Sí** y no proporciona un `Privacy policy URL` .  |  
 | Dirección URL de la directiva de privacidad | Una dirección URL válida de la directiva de privacidad para comunicar cómo se sigue la extensión a las leyes y normativas de privacidad.  Eres responsable de asegurarte de que la extensión se desvía de las leyes y normativas de privacidad.  También es responsable de proporcionar una dirección URL de directiva de privacidad si su extensión está accediendo, transmitiendo o recopilando información personal.  Para determinar si la extensión requiere una directiva de privacidad, vaya a Microsoft Edge [Developer Agreement][MicrosoftAppDeveloperAgreement] y Microsoft Edge de desarrolladores del almacén de [complementos.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
 | DIRECCIÓN URL del sitio web | Una página web que proporciona información adicional acerca de la extensión.  Debe apuntar a una página web en su propio sitio web, no a la descripción web de la extensión en el Microsoft Edge `Website URL` complementos.  Ayuda `Website URL` a los usuarios a obtener más información sobre la extensión, sus características y cualquier otra información relevante.  |  
 | Detalles de contacto de soporte técnico | La dirección URL de la página web de soporte técnico o la dirección de correo electrónico para ponerse en contacto con el equipo de soporte técnico.  |  
 | Contenido maduro | Casilla para especificar si la extensión incluye contenido maduro.  La clasificación de extensión ayuda a determinar el grupo de edad adecuado de la audiencia de destino de la extensión.  Para ayudar a determinar si la extensión tiene contenido maduro, vaya a Microsoft Edge directivas de desarrollador de [la tienda de complementos][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
 
-Elija **Guardar** para continuar con la **sección Desc. De la** Tienda.  
+Selecciona **Guardar** para continuar con la **sección Listados de la** Tienda.  
 
 > [!Important]
 > El nombre del desarrollador/organización, la dirección URL del sitio web y los detalles de contacto de soporte técnico que envió durante el registro se muestran a los usuarios en el Microsoft Edge complementos.  
@@ -101,16 +101,16 @@ La información proporcionada en la siguiente sección se muestra a los usuarios
 *   **Logotipo de la Tienda de extensiones** para cada idioma del paquete de extensión.  
     
 > [!NOTE]
-> Los detalles mínimos necesarios de la descripción de la tienda deben rellenarse para al menos uno de los idiomas mencionados en el paquete zip de extensión.  Para agregar o quitar idiomas en la descripción de la tienda en **** la tienda de complementos de Microsoft Edge, usa la lista desplegable Agregar un idioma en la página web de listas **de la** Tienda.  Además, puede elegir duplicar los activos de un idioma en otros usando el botón de funcionalidad duplicada en la página web de detalles de idioma.  
+> Los detalles mínimos necesarios de la descripción de la tienda deben rellenarse para al menos uno de los idiomas mencionados en el paquete zip de extensión.  Para agregar o quitar idiomas en la descripción de la tienda en **** la tienda de complementos de Microsoft Edge, usa la lista desplegable Agregar un idioma en la página web de listas **de la** Tienda.  Además, puedes duplicar los activos de un idioma en otros usando el botón **Funcionalidad** duplicada de la página web **Detalles del** idioma.  
 
 | Nombre de la propiedad Detalles del idioma | Descripción |  
 |:--- |:--- |  
-| Nombre para mostrar \(required\) | La `name` extensión especificada en el archivo de manifiesto de la extensión.  Para cambiar el nombre para mostrar de la tienda después del envío, puede actualizar el nombre en el archivo de manifiesto, crear un nuevo paquete de extensión y, a continuación, volver a cargarlo.  |  
+| Nombre para mostrar \(required\) | La `name` extensión especificada en el archivo de manifiesto de la extensión.  Para cambiar el nombre para mostrar del almacén después del envío, puede actualizar el nombre en el archivo de manifiesto, crear un nuevo paquete de extensión y, a continuación, volver a cargarlo.  |  
 | Descripción \(required\) | El campo se centra en explicar qué hace la extensión, por qué los usuarios deben instalarla u otra información relevante que los usuarios `description` necesitan saber.  Debe tener menos de 10 000 caracteres.  |  
-| Logotipo del Almacén de extensiones \(required\) | Imagen que representa la empresa o con una relación de aspecto de 1 y un tamaño recomendado de `extension logo` 300 x 300 píxeles.  Además, puede elegir copiar el activo de un idioma a todos los demás idiomas mediante el botón duplicado.  El botón se encuentra siguiendo el campo después de cargar el logotipo del idioma.  |  
-| Pequeño icono promocional \(optional\) | La `Small promotional tile` imagen se usa para mostrar la extensión junto con otras extensiones en el almacén.  El tamaño de la imagen debe ser de 440 x 280 píxeles.  Además, puede elegir copiar el activo de un idioma a todos los demás idiomas mediante el botón duplicado.  El botón se encuentra siguiendo el campo después de cargar un icono promocional para el idioma.  |  
-| Capturas de pantalla \(optional\) | Puede enviar un máximo de 10 `screenshots` describiendo detalladamente la funcionalidad de la extensión.  El tamaño de las capturas de pantalla debe ser de 640 x 480 píxeles o 1280 x 800 píxeles.  Además, puede elegir copiar el activo de un idioma a todos los demás idiomas mediante el botón duplicado.  El botón se encuentra siguiendo el campo después de cargar al menos uno para el idioma.|  
-| Icono promocional grande \(optional\) | `Large promotion tiles` se usan en la tienda para características de extensiones más prominentes en el sitio Complementos para Microsoft Edge web.  Las imágenes, si se envían, son visibles para los usuarios.  El tamaño de los archivos PNG debe ser de 1400 x 560 píxeles.  Además, puede elegir copiar el activo de un idioma a todos los demás idiomas mediante el botón duplicado.  El botón se encuentra siguiendo el campo después de cargar un icono promocional para el idioma.  |  
+| Logotipo del Almacén de extensiones \(required\) | Imagen que representa la empresa o con una relación de aspecto de 1 y un tamaño recomendado de `extension logo` 300 x 300 píxeles.  Además, puedes copiar el activo de un idioma a todos los demás idiomas mediante el botón Duplicar.  Este botón se encuentra siguiendo el campo después de cargar el logotipo para el idioma.  |  
+| Pequeño icono promocional \(optional\) | La `Small promotional tile` imagen se usa para mostrar la extensión junto con otras extensiones en el almacén.  El tamaño de la imagen debe ser de 440 x 280 píxeles.  Además, puedes copiar el activo de un idioma a todos los demás idiomas mediante el botón Duplicar.  El botón se encuentra siguiendo el campo después de cargar un icono promocional para el idioma.  |  
+| Capturas de pantalla \(optional\) | Puede enviar un máximo de 10 `screenshots` describiendo detalladamente la funcionalidad de la extensión.  El tamaño de las capturas de pantalla debe ser de 640 x 480 píxeles o 1280 x 800 píxeles.  Además, puedes copiar el activo de un idioma a todos los demás idiomas mediante el botón Duplicar.  El botón se encuentra siguiendo el campo después de cargar al menos uno para el idioma.|  
+| Icono promocional grande \(optional\) | `Large promotion tiles` se usan en la tienda para características de extensiones más prominentes en el sitio Complementos para Microsoft Edge web.  Las imágenes, si se envían, son visibles para los usuarios.  El tamaño de los archivos PNG debe ser de 1400 x 560 píxeles.  Además, puedes copiar el activo de un idioma a todos los demás idiomas mediante el botón Duplicar.  El botón se encuentra siguiendo el campo después de cargar un icono promocional para el idioma.  |  
 | Url de vídeo de YouTube \(optional\) | Puedes incluir un vídeo promocional de YouTube de tu extensión.  El vídeo se muestra en la página web de descripción `YouTube video URL` de la tienda de la extensión.  |  
 | Descripción breve \(required\) | Para editar el , debe actualizar el campo de descripción del archivo de manifiesto del paquete de extensión y `short description` volver a cargarlo.  |  
 | Términos de búsqueda \(optional\) | `Search terms` son palabras o frases únicas que ayudan a descubrir la extensión cuando un usuario busca en el Microsoft Edge complementos.  Los términos de búsqueda no se muestran a los usuarios.  |  
@@ -126,7 +126,7 @@ Asegúrese de que el vídeo cumple los siguientes requisitos.
 Para enviar la dirección URL de vídeo de YouTube del vídeo, siga estos pasos.  
 
 1.  En YouTube, busca el vídeo que quieres agregar a la página web de descripción de la tienda.  
-1.  En el vídeo, elija **Compartir**  >  **insertar**.  
+1.  En el vídeo, seleccione **Compartir**  >  **insertar**.  
 1.  Copie el código HTML que se muestra.  
 1.  En la página web de detalles de la descripción de la tienda, pegue el código HTML en el `YouTube video URL` campo.  
     
@@ -143,7 +143,7 @@ On the **Submit your extension** webpage, add notes for certification to help te
 
 ### <a name="notes-for-certification-optional"></a>Notas para la certificación (opcional)  
 
-Cuando envíe la extensión, use la página web **Notas** para la certificación para proporcionar información adicional a los evaluadores de certificación.  La información adicional ayuda a garantizar que la extensión se prueba correctamente.  Si la extensión no está totalmente probada, puede que no se pueda certificar.  
+Cuando envíe la extensión, use la página web **Notas** para la certificación para proporcionar información adicional a los evaluadores de certificación.  La información adicional ayuda a garantizar que la extensión se prueba correctamente.  Si la extensión no está totalmente probada, podría fallar la certificación.  
 
 Asegúrese de incluir la siguiente información, según sea necesario.  
 
@@ -153,7 +153,7 @@ Asegúrese de incluir la siguiente información, según sea necesario.
 *   Si el envío es una actualización de una extensión existente, incluya información sobre los cambios realizados en la extensión.  
 *   Cualquier información adicional que los evaluadores deben comprender acerca del envío.  
     
-Después de proporcionar la información, elija **Publicar** para enviar la extensión al Microsoft Edge complementos.  El envío continúa con el paso de certificación.  El proceso de certificación puede tardar hasta siete días laborables después de su envío.  
+Después de proporcionar la información, seleccione **Publicar** para enviar la extensión al Microsoft Edge complementos.  El envío continúa con el paso de certificación.  El proceso de certificación puede tardar hasta siete días laborables después del envío.  
 
 Una vez que el envío pasa la certificación, la extensión se publica en Microsoft Edge de complementos.  El estado de la extensión en el panel del Centro de partners cambia a `In the Store` .  
 
