@@ -34,7 +34,7 @@ Para comprobar si hay problemas de accesibilidad en la página de demostración 
 
 1.  Vuelva `Tab` a seleccionar.  El siguiente elemento en el que pone el foco es el primer vínculo **Más** de la sección de la página web, tal como `content` se indica en un esquema.
     
-    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="Navegar por el documento con el teclado y la tecla "Tab". El foco se muestra en un vínculo del documento." lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="Navegar por el documento con el teclado y la tecla Tab. El foco se muestra en un vínculo del documento." lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
         Navegar por el documento con el teclado y la tecla de tabulación. El foco se muestra en un vínculo del documento.
     :::image-end:::
     
