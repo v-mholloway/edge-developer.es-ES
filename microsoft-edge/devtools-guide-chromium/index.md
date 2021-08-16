@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 3b58447e137b5bff786c75ce248f37c6f503f7b7545b26931a77477e3c440d84
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 38cde5a5b6860459d14be3f3035d891f2fcb8409
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11805010"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893936"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Introducción a las herramientas de Microsoft Edge (Chromium) para desarrolladores  
 

@@ -1,14 +1,29 @@
 ---
-description: Diferencias de características entre Microsoft Edge y WebView2
-title: Diferencias de características entre Microsoft Edge y WebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 06/23/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
+description: Feature differences between Microsoft Edge and WebView2 title: Feature differences between Microsoft Edge and WebView2 author: MSEdgeTeam ms.author: msedgedevrel ms.date: 06/23/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, edge html no-loc:
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
+
 ---
 # <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Diferencias de características entre Microsoft Edge y WebView2  
 
@@ -52,6 +67,7 @@ En la tabla siguiente se muestran las características de WebView2 que difieren 
 | Immersive Reader | Desactivado | No | Esta característica depende de la interfaz de usuario del explorador para la interacción.  Esta característica está desactivada.  |  
 | Intrusive Ads | Desactivado | No | Esta característica está desactivada.  |  
 | Métodos abreviados de teclado. | Revisar detalles | Revisar detalles | Los métodos abreviados de teclado que están desactivados de forma predeterminada no tienen sentido o causan problemas en WebView2.  No puede activar ni desactivar estos métodos abreviados.  En su lugar, puede escuchar una combinación de teclas con el `AcceleratorKeyPressed` evento y crear una respuesta personalizada si es necesario.  Para obtener más información, vaya a [Información adicional de métodos abreviados de teclado](#additional-keyboard-shortcuts-information). | 
+| Anotaciones DE PDF | Desactivado | No | Esta característica está desactivada. La característica de visualización de PDF está habilitada, pero el dibujo, la entrada en pantalla y el resaltado en un PDF no están habilitados. Para obtener más información, vaya [a Deshabilitar característica: Compatibilidad con anotaciones PDF](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21). |
 | Read Aloud | Desactivado | No | Esta característica está desactivada.  |  
 | Smart Screen | Activado`*` | No | `*` La interfaz de usuario de esta característica se ha quitado, pero la funcionalidad subyacente sigue estando disponible.  Además, puede desactivar el Smart Screen uso de un modificador de línea de comandos.  |  
 | Translate | Desactivado | No | Esta característica está desactivada.  |  
@@ -182,7 +198,7 @@ Si establece en , se desactivarán `AreBrowserAcceleratorKeysEnabled` `FALSE` lo
 
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "Evento CoreWebView2Controller.AcceleratorKeyPressed | Microsoft Docs"  
 
-[DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge Métodos abreviados de teclado de DevTools | Microsoft Docs"  
+[DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Métodos abreviados de teclado de Microsoft Edge DevTools | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "Agregar compatibilidad con la API de notificación HTML5 (#308) | GitHub"  
 

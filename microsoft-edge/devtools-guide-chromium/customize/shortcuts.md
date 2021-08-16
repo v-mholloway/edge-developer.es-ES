@@ -7,12 +7,12 @@ ms.date: 03/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, custom, shortcuts, teclado, visual studio code
-ms.openlocfilehash: d2b02531c8608ca4cee787c75f9e7f0a268918546030848b20ab2050c3411c7e
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 96e541a2723be4fd880110476f4abf69eb5c4e7f
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11799710"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893206"
 ---
 # <a name="customize-keyboard-shortcuts-in-devtools"></a>Personalizar métodos abreviados de teclado en DevTools  
 
@@ -36,7 +36,7 @@ Para hacer coincidir el método abreviado de teclado en el Microsoft Edge DevToo
     
 Por ejemplo, para pausar o continuar ejecutando un script en Visual Studio Code, seleccione `F5` .  Pero con el valor **preestablecido DevTools (Predeterminado),** para pausar o continuar ejecutando un script, seleccione `F8` .  Al cambiar el valor preestablecido **a Visual Studio Code,** ahora también seleccionas `F5` en DevTools, al igual que en Visual Studio Code.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 * [Microsoft Visual Studio Código][VisualStudioCode]
 * [Visual Studio Code métodos abreviados de teclado para Windows][VisualStudioCodeShortcutsKeyboardWindows] (archivo PDF)
@@ -61,7 +61,7 @@ Por ejemplo, para pausar o continuar ejecutando un script en Visual Studio Code,
        Seleccione las claves que desea asignar a la acción  
     :::image-end:::  
     
-1.  Para guardar el nuevo método abreviado de teclado, seleccione la marca de verificación \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) de la marca de verificación.
+1.  Para guardar el nuevo método abreviado de teclado, seleccione la marca de verificación \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) icono.
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Seleccione el icono de marca de verificación para guardar el nuevo método abreviado de teclado" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Seleccione el icono de marca de verificación para guardar el nuevo método abreviado de teclado  

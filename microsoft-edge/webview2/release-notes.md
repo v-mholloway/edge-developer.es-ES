@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, html perimetral
-ms.openlocfilehash: a200b3e9f9f52fbfb6518d7d6f4080c2e21cbb48159504f9f33d51d365500c8c
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 126efdcae9c917cc19428d4b70eac12d9f723d76
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11805501"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893943"
 ---
 # <a name="release-notes-for-webview2-sdk"></a>Notas de la versión del SDK de WebView2  
 

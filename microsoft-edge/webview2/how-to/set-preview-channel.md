@@ -3,49 +3,34 @@ description: Cómo especificar un canal Microsoft Edge vista previa que se va a 
 title: Cambiar a un canal de vista previa para probar las próximas API y características
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2021
+ms.date: 08/03/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral
-ms.openlocfilehash: 8c1481853645017727709b0e5e264407e68bf62d
-ms.sourcegitcommit: 613c4c5325177560f9e814ead1a802531f92b8ec
+ms.openlocfilehash: 4406cd874eab588d69066e5a15b8fa944e398705
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11709352"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893754"
 ---
 # <a name="switch-to-a-preview-channel-to-test-upcoming-apis-and-features"></a>Cambiar a un canal de vista previa para probar las próximas API y características
 
 Las actualizaciones de WebView2 Evergreen Runtime suelen incluir nuevas API y características.  Algunas de estas actualizaciones podrían interrumpir la aplicación WebView2.  Para probar las API experimentales con antelación y garantizar la compatibilidad de avance de la aplicación, debes realizar pruebas de compatibilidad con un canal de vista previa de Microsoft Edge, junto con una versión preliminar del SDK de WebView2.
 
+Al probar un paquete de SDK preliminar, debe dirigir la aplicación a usar un canal de vista previa de Microsoft Edge (Beta, Dev o Canary), en lugar de usar el tiempo de ejecución de WebView2 de forma predeterminada.  A continuación se explican varios métodos para hacerlo.
 
-## <a name="combinations-of-the-sdk-and-browser-channel"></a>Combinaciones del SDK y el canal del explorador 
+WebView2 Runtime no tiene las API experimentales de WebView2.  Para que el código webView2 se ejecute cuando se usan API experimentales en un SDK de versión preliminar, el cliente (en una máquina de desarrollo) debe tener un canal Microsoft Edge versión preliminar.  Se recomienda el canal de vista previa de Canary, ya que está por delante de los otros canales y tiene las API experimentales más recientes.
 
-Las API experimentales de WebView2 se usan durante el desarrollo y las pruebas de la aplicación WebView2, no para una versión de producción de la aplicación WebView2.
+El SDK de versión preliminar funciona junto con un canal de vista previa de la siguiente manera:
+*  Una versión preliminar del SDK de WebView2 contiene las firmas de método para las API experimentales, que permiten escribir código con las API experimentales de WebView2 en la aplicación.  
+*  Los canales de vista previa de Microsoft Edge contienen los archivos binarios Microsoft Edge que son necesarios para ejecutar y representar la aplicación, incluida la implementación de las API experimentales.
 
-*   Durante el desarrollo y las pruebas de la aplicación WebView2, para usar las API experimentales de WebView2, use la siguiente combinación:
-    *   Una versión preliminar del SDK de WebView2.
-    *   Un Microsoft Edge de vista previa (Beta, Dev o Canary).  Se recomienda Canary.
+Para obtener más información sobre cómo funcionan las versiones del SDK junto con los canales de versión en tiempo de ejecución de WebView2 o de vista previa de Microsoft Edge, vaya a Comprender las versiones del [SDK de WebView2][WebView2ConceptsVersioning].
 
-*   Para una versión de producción de la aplicación WebView2, usa la siguiente combinación, que no proporciona API experimentales de WebView2:
-    *   Una versión de lanzamiento del SDK de WebView2.
-    *   Tiempo de ejecución de WebView2.
 
-Para desarrollar una aplicación WebView2 que use API experimentales, necesita dos componentes:
-*  Una _versión preliminar del_ SDK de WebView2.  Una versión de lanzamiento del SDK no tiene API experimentales de WebView2.
-*  Un Microsoft Edge _de vista_ previa (Beta, Dev o Canary), también denominado canal _Microsoft Edge Insiders._
-   *  WebView2 Runtime no admite las API experimentales de WebView2.
-   *  La versión estable de Microsoft Edge no admite WebView2.
-
-### <a name="relation-of-the-sdk-and-a-channel-or-runtime"></a>Relación del SDK y un canal o tiempo de ejecución
-
-*   SDK: una nueva versión del SDK de WebView2 contiene las firmas de método para las API experimentales, que permiten escribir código con las API experimentales de WebView2 en la aplicación.
-*   Binarios: para que el código webView2 se cree y se ejecute cuando se usan API experimentales, debes dirigir la aplicación para que use un canal de vista previa de Microsoft Edge (Beta, Dev o Canary).  Los canales de vista previa contienen Microsoft Edge archivos binarios necesarios para representar la aplicación al usar las API experimentales.
-
-De [forma](#approaches-to-making-your-app-use-a-specific-browser-channel)predeterminada, una aplicación WebView2 intenta buscar y usar automáticamente WebView2 Runtime, que no tiene las API experimentales de WebView2.  Este valor predeterminado permite desarrollar código fácilmente con el SDK de WebView2 de versión estable.  Sin embargo, al probar un paquete de SDK preliminar (que contiene API experimentales), debe dirigir la aplicación a usar un canal de vista previa específico de Microsoft Edge.
-
-### <a name="downloading-the-prerelease-sdk-and-a-preview-channel"></a>Descargar el SDK de versión preliminar y un canal de vista previa
+## <a name="downloading-the-prerelease-sdk-and-a-preview-channel"></a>Descargar el SDK de versión preliminar y un canal de vista previa
 
 Para usar API experimentales, descargue una versión preliminar del SDK de WebView2 desde el paquete [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
@@ -236,7 +221,7 @@ Para eliminar la `ReleaseChannelPreference` invalidación del Registro, ejecute 
 `REG DELETE HKLM\Software\Policies\Microsoft\Edge\WebView2\ReleaseChannelPreference /f`
 
 
-<!--4. Environment Variable ========================================================================-->
+<!-- 4. Environment Variable ========================================================================-->
 ## <a name="using-an-environment-variable"></a>Uso de una variable de entorno
 
 Para hacer que la aplicación use un canal Microsoft Edge vista previa mediante una variable de entorno:
@@ -278,6 +263,7 @@ Para hacer que la aplicación use un canal Microsoft Edge vista previa mediante 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
 
 <!-- links -->
+[WebView2ConceptsVersioning]: ../concepts/versioning.md "Comprender las versiones de SDK de WebView2 | Microsoft Docs"
 <!-- external links -->
 [Webview2RefWin32GlobalsCreateCoreWebView2EnvironmentWithOptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider Channels"

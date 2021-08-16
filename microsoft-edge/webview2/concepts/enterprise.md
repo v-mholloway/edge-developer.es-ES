@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral, empresa, directiva de grupo, capacidad de administración
-ms.openlocfilehash: 0932241d3141fe887130e4cdd5792b9e823f98960d747ebb273be2b61e10a560
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 318c2da28f9e02c0dd70619070b059e6fbc0e06a
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809015"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893621"
 ---
 # <a name="managing-webview2-applications"></a>Administrar aplicaciones WebView2  
 
@@ -31,7 +31,7 @@ Los administradores de TI pueden usar objetos de directiva de grupo \(GPO\) para
 *   [Las directivas específicas de WebView2][WebView2Policies] están disponibles para usted<!--dev, or admin?--> para administrar WebView2 directamente.  Sin embargo, se recomienda que los desarrolladores de aplicaciones de WebView2 implementen sus propias directivas de grupo para administrar el uso de WebView2, ya que es más fácil para los administradores administrar la aplicación en lugar de administrar WebView2 directamente.  
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 *  [Distribuir una aplicación WebView2 y El][Webview2ConceptsDistribution] tiempo de ejecución de WebView2: acerca del tiempo de ejecución de WebView2 auto actualizando.
 

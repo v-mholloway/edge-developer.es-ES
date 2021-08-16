@@ -7,12 +7,12 @@ ms.date: 07/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 833567658b9b27cdbb2ab7f4f59e0bfc13167295a60c593f132fad0339ca41ae
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 4aadbcdc4de0efc52954dcfcd3b1ddf0c8de64c0
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807454"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11892963"
 ---
 # <a name="register-as-a-microsoft-edge-extension-developer"></a>Registrarse como desarrollador de extensiones de Microsoft Edge  
 

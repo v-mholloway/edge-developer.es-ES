@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, edge, procedimientos recomendados
-ms.openlocfilehash: d4b7544a991fb9dda80d969afc8e7da2bc83d711d9a2002fb205271f87960f2f
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 65e6801f645fd673b308a28a5229cb0a037b7b01
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800146"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893950"
 ---
 # <a name="webview2-development-best-practices"></a>Procedimientos recomendados de desarrollo de WebView2
 

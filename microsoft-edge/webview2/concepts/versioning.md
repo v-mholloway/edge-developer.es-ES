@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
-ms.openlocfilehash: b5edd47d7c4defcc6d9e8225e0d8708ba40a2085b1c4d580a8332b8193861a29
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 5461d752164b2af49c7104e3008166ce8abbbaea
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11808280"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893572"
 ---
 # <a name="understand-webview2-sdk-versions"></a>Comprender las versiones de SDK de WebView2
 

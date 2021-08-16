@@ -7,12 +7,12 @@ ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 5e0147ae53f39d107be0f129793b2970676f213125dc38f3dfd5db971fe938b4
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 074f08eeae4e86072eff7b939e4b7a4e84016957
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809876"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893082"
 ---
 <!-- Copyright Sam Dutton
 
@@ -145,7 +145,7 @@ Para mostrar un problema para los elementos con subrayados ondulados en el árbo
     :::image-end:::
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 * [Probar automáticamente una página web para problemas de accesibilidad](../accessibility/test-issues-tool.md)
 

@@ -7,12 +7,12 @@ ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, pwas, pwa, aplicaciones web progresivas
-ms.openlocfilehash: 3eb8e09d11932367770c8f6a1c1a99d2e07c1a39bca31d402e8e4bb29c012de7
-ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
+ms.openlocfilehash: 9643c8846ccea373c3051b137cc4299ba617dad7
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "11881768"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893546"
 ---
 # <a name="whats-new-in-progressive-web-apps"></a>Novedades de las aplicaciones web progresivas
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
-ms.openlocfilehash: ccae2dc6a51e4ed0ebb8ac3752b77e3639b9b686efef525a4389d9fcd1b5ad1f
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: f36f12d439c71838dac5add94055dd1ae739c094
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11808315"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893676"
 ---
 # <a name="distribute-a-webview2-app-and-the-webview2-runtime"></a>Distribuir una aplicación WebView2 y El tiempo de ejecución de WebView2
 

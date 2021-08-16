@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, control de explorador, edge html, get started, Introducción, .NET, windows forms
-ms.openlocfilehash: 704e5732ddcff02e56f49bec37a5d1ad5f11c2b5
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 6a5ce116edc5c57040d5ae853b77a026f7c05c56
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536238"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893494"
 ---
 # <a name="get-started-with-webview2-in-windows-forms"></a>Introducción a WebView2 en Windows Forms
 
@@ -23,7 +23,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.  
 
-*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] o cualquier canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] no estable instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
+*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] o cualquier canal [Microsoft Edge Insider (versión preliminar)][MicrosoftedgeinsiderDownload] (Beta, Dev o Canary) instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
     
     > [!NOTE]
     > El equipo de WebView recomienda usar el canal Canary y la versión mínima necesaria es 82.0.488.0.  
@@ -343,7 +343,7 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
 *   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2][Webview2IndexNextSteps].  
 *   Para obtener información detallada acerca de la API de WebView2, vaya a [Referencia de api][DotnetApiMicrosoftWebWebview2WinformsWebview2].  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Ponerse en contacto con el equipo de Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

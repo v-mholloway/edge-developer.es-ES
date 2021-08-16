@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: ff28f8ed79998a929811e99cbe788f2b71131aa4503e13b97f33655a164a4ed9
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 8f1e950599c9fb1d1fee26328ca749d24c5c6d22
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800781"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893628"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -106,7 +106,7 @@ DevTools puede desacoplarse a una ventana independiente, que puede mover a un mo
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú de comandos de DevTools de Microsoft Edge | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Ejecute comandos con el menú Microsoft Edge comando DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  

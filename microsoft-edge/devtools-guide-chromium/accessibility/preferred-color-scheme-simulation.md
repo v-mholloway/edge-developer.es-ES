@@ -7,12 +7,12 @@ ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: c233fc26af5b4c1b061b84e7dd3998b24671696b261c345d8affa8f4b550e50d
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: a4a32215cd45aedc7f9b7261fa3a441f269939ba
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802623"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893013"
 ---
 # <a name="emulate-dark-or-light-schemes-in-the-rendered-page"></a>Emular esquemas oscuros o claros en la página representada
 
@@ -50,7 +50,7 @@ Este artículo trata sobre cómo cambiar la apariencia de la página web en desa
 
 1.  Escriba "oscuro", "luz" o "emular".  A continuación, seleccione **Representación: Emular CSS prefers-color-scheme: dark** o **Rendering: Emular CSS prefers-color-scheme: light**y **seleccione Entrar**.
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Emular el modo oscuro o claro mediante los comandos Rendering: Emulate CSS prefers-color-scheme en el menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Emular el modo oscuro o claro mediante los comandos "Rendering: Emulate CSS prefers-color-scheme" en el menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
         Emular el modo oscuro o claro con los comandos **Rendering: Emular CSS prefers-color-scheme** en el menú comando
     :::image-end:::  
 

@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 02aa9cca6c1306885ff0c68331002bff4e4e05c02b81b8f4cb4143f8b69d63f0
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: a408a9151b9b4094ba430488f2904c226597fe8d
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11804507"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893915"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -491,7 +491,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 
 [MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "El nuevo Surface Duo"  
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools cuenta de Twitter"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "Cuenta de Twitter de @EdgeDevTools"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Errores de Chromium"  
 

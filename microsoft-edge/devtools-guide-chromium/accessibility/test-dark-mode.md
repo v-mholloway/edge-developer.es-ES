@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 6809fd3aa39139bbed2e3ea0317d9a8c9a6f1004da26df507790170bd7e8a4e2
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 82c7bd2a24a14df52b61901304ceae234bc3f97e
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802313"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11892977"
 ---
 # <a name="check-for-contrast-issues-with-dark-theme-and-light-theme"></a>Comprobar si hay problemas de contraste con el tema oscuro y el tema claro
 
@@ -61,7 +61,7 @@ Para emular la selección de un usuario del tema de color preferido:
     ```
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 *  [Emular esquemas oscuros o claros en la página representada][DevToolsColorSchemeSimulation]
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)

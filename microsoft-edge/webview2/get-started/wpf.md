@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicaciones wpf, wpf, edge, CoreWebView2, control de explorador, html perimetral, introducción, Introducción, .NET
-ms.openlocfilehash: 9808c6f801e3f7a5052186bb3088621758c41762
-ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
+ms.openlocfilehash: 969b6209b6cb84f5345f5b0e533f2e972e81fa58
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "11574599"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893872"
 ---
 # <a name="get-started-with-webview2-in-wpf"></a>Introducción a WebView2 en WPF
 
@@ -23,7 +23,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.  
 
-*   [WebView2 Runtime][Webview2Installer] o cualquier canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] no estable instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
+*   El tiempo de ejecución de [WebView2][Webview2Installer] o cualquier canal [Microsoft Edge Insider (versión preliminar)][MicrosoftedgeinsiderDownload] debe instalarse en un sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 o posterior.  
     
 ## <a name="step-1---create-a-single-window-app"></a>Paso 1: Crear una aplicación de una sola ventana  
@@ -340,7 +340,7 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
 *   Para obtener información más detallada acerca de la API de WebView2, vaya a [Referencia de API](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2](../index.md#next-steps).  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Ponerse en contacto con el equipo de Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

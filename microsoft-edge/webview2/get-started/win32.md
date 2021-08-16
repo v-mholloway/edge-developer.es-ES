@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, html perimetral
-ms.openlocfilehash: d1baa8c81c92da31b0b65eb21b6873965831f961
-ms.sourcegitcommit: 57f52b3edb34b8eb5389b746ff0970f7fd3b9a82
+ms.openlocfilehash: 988cee4b2998ad185464402e8755d71118c931e6
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710741"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893635"
 ---
 # <a name="get-started-with-webview2"></a>Introducción a WebView2  
 
@@ -23,7 +23,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.  
 
-*   [WebView2 Runtime][Webview2Installer] o cualquier canal Microsoft Edge [(Chromium)][MicrosoftedgeinsiderDownload] no estable instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] o cualquier canal [Microsoft Edge Insider (versión preliminar)][MicrosoftedgeinsiderDownload] (Beta, Dev o Canary) instalado en un sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 o posterior con la compatibilidad con C++ instalada.  
     
@@ -283,7 +283,7 @@ Para compilar y ejecutar la aplicación, seleccione `F5` .  La dirección URL ap
 
 Enhorabuena, has creado tu primera aplicación WebView2.  
 
-## <a name="next-steps"></a>Siguientes pasos  
+## <a name="next-steps"></a>Pasos siguientes  
 
 Para obtener funcionalidad adicional de WebView2 que no se describe en este artículo, revise los siguientes recursos.  
 

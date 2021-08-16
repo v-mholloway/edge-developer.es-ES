@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 3630d8bf51a5b56ac4fd5d2ddbe56243b765660201286956f0c89cb75f3bf1cb
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 7f497f531d1e86357c317bf309e1c05ce0e6f9e3
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803272"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893047"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>Información general sobre las pruebas de accesibilidad con DevTools
 

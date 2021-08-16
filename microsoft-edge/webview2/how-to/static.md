@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral
-ms.openlocfilehash: 8f48a4fde9e2960de6156fc14db8c84f87a49868
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 8e778e32027af7ec7db931b1a321a6d15629d39b
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536175"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893246"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>Vincular estáticamente la biblioteca de cargadores de WebView2  
 
-Es posible que desee distribuir la aplicación con un único archivo ejecutable, en lugar de un paquete de muchos archivos. Para crear un único archivo ejecutable o reducir el tamaño del paquete, debe vincular estáticamente los archivos WebView2Loader. El SDK de WebView2 contiene un archivo de encabezado `WebView2Loader.dll` y el `IDL` archivo. `WebView2Loader.dll` es un componente pequeño que ayuda a las aplicaciones a localizar WebView2 Runtime, o canales no estables de Microsoft Edge, en el dispositivo.  
+Es posible que desee distribuir la aplicación con un único archivo ejecutable, en lugar de un paquete de muchos archivos. Para crear un único archivo ejecutable o reducir el tamaño del paquete, debe vincular estáticamente los archivos WebView2Loader. El SDK de WebView2 contiene un archivo de encabezado `WebView2Loader.dll` y el `IDL` archivo. `WebView2Loader.dll` es un componente pequeño que ayuda a las aplicaciones a localizar webView2 Runtime o Microsoft Edge de vista previa en el dispositivo.  
 
 Para las aplicaciones que no desean enviar un `WebView2Loader.dll` , siga estos pasos.  
 
@@ -59,7 +59,7 @@ Para las aplicaciones que no desean enviar un `WebView2Loader.dll` , siga estos 
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-## <a name="see-also"></a>Consulta también  
+## <a name="see-also"></a>Vea también  
 
 *   Para empezar a usar WebView2, vaya a [WebView2 Introducción Guías][Webview2MainGetStarted].  
 *   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.

@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 61a5902317b229f375f3669d828fea1c1f3aabc002e9a7337acfa8ba75c9d8ad
-ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
+ms.openlocfilehash: 37630d60a95d174e7c97c29e6d36e61aa2d33be3
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "11881732"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893131"
 ---
 # <a name="update-or-remove-your-extension"></a>Actualizar o quitar la extensión  
 

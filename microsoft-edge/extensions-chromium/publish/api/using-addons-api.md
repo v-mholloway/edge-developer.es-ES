@@ -7,12 +7,12 @@ ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador, api de complementos, api de publicación
-ms.openlocfilehash: 83d19d6fdc62153440873ea76e0aae2aadb76fbefcf81b43186b43c4c71262ab
-ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
+ms.openlocfilehash: 72a9e38e29b666db0b93bd76ee4b660c0b40d14a
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "11881798"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893796"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api"></a>Uso de la API Microsoft Edge complementos
 

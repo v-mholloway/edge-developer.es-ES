@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: f3ddbd5cfcc1fc2180648f6daa274283e5e98ec57254308230b9d251bb1aca48
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 78817f9cde393f19b214ac8bde09e43690d1cbce
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809987"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893761"
 ---
 # <a name="add-and-manage-users-from-your-organization-on-to-the-microsoft-edge-program"></a>Agregar y administrar usuarios de la organización en el programa Microsoft Edge usuario
 

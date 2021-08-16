@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 266f2946d8132cf62ff6ed1ea32759020e4b03101150704faa4b27dfdd61ec5e
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 84f3d0d1aa852f38ebcafea45fce8605616e7cc7
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803673"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893600"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -147,7 +147,7 @@ Si no puedes usar los emuladores y no tienes acceso a dispositivos reales, los e
 [AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Ejecutar aplicaciones en el Emulator | Desarrolladores de Android"  
 
 [AppExperience]: https://www.sigos.com/app-experience/ "Experiencia de la aplicación"  
-[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Ayuda del simulador: configuración | manzana"  
+[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Ayuda del simulador: configuración | Manzana"  
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"  
 [MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode en la Mac App Store"  
 [MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Modo de diseño dinámico | MDN"  

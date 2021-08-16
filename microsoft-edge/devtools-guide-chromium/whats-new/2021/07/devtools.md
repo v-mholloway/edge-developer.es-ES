@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 8661096171f7e40f06d7a2d018193ee61f8b0313e3ab376bad8fad9997cf2219
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: b9ce2551806aa6ec4a60eb5fbf72dfc59f7e7a8c
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11806401"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893271"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-93"></a>Novedades de DevTools (Microsoft Edge 93)
 
@@ -136,7 +136,7 @@ Ahora, Microsoft Edge versión 93, puede copiar una sola declaración CSS o toda
 1. Seleccione **Copiar declaración como JS** o Copiar todas las **declaraciones como JS**.
 1. Pegue el CSS copiado en un archivo JavaScript en el editor de texto, como Visual Studio Code.  Por ejemplo: `'--more-link': 'lime'`.
 
-:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="Menú contextual para una regla de estilo, incluidos los comandos Copiar declaración como JS y Copiar todas las declaraciones como JS." lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="Menú contextual para una regla de estilo, incluidos los comandos "Copiar declaración como JS" y "Copiar todas las declaraciones como JS"." lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
    Menú contextual de una regla de estilo, incluida **la declaración Copiar como JS** y Copiar todas las **declaraciones como comandos JS**
 :::image-end:::
 
@@ -238,7 +238,7 @@ Si tiene Windows, Linux o macOS, considere la posibilidad de usar los [canales d
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canales de vista previa de Microsoft Edge"
 
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Actualizar una extensión manualmente: Marketplace de extensiones | Visual Studio Code"
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Actualizar una extensión manualmente: Extension Marketplace | Visual Studio Code"
 
 [VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Herramientas de desarrollador para Visual Studio Code | Visual Studio Marketplace"
 

@@ -7,12 +7,12 @@ ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: aplicaciones web progresivas, PWA, Edge, Windows, Microsoft Store
-ms.openlocfilehash: 11a889ba98b7562e65484086ad6df60cd528f84817dd2f727ea0f2713a068204
-ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
+ms.openlocfilehash: 08af1c5bc6e394fcdfdf0b823901f1a09fcba235
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "11881749"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893220"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>Publicar la aplicación web progresiva en el Microsoft Store  
 
@@ -151,7 +151,7 @@ Usa esta característica para medir el tráfico distinto del tráfico instalado 
 
 Esta característica se introdujo en Microsoft Edge versión 91.
 
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Vea también  
 
 PWABuilder proporciona más documentación para ayudarle a obtener sus PWA en el Microsoft Store.  
 

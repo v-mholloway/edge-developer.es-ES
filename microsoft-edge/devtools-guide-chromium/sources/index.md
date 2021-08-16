@@ -7,12 +7,12 @@ ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: ed06b033554025b582916f59d09a358a0fa4baabb000bd513861f681ece2ff92
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 92eb7e2d67d96c993dc3b7309e7eaec1373d2a50
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11804779"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893957"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -134,7 +134,7 @@ La **característica Invalidaciones** es similar a Workspaces.  Usa Invalidacion
 
 Un archivo que reemplaza un archivo devuelto por el servidor se indica mediante un punto púrpura junto al nombre del archivo, en DevTools.
 
-#### <a name="see-also"></a>Consulte también
+#### <a name="see-also"></a>Vea también
 
 *   [Invalidar recursos de página web con copias locales mediante Microsoft Edge DevTools][DevtoolsJavascriptOverrides]
 
@@ -150,7 +150,7 @@ Use la pestaña Scripts **** **de** contenido del panel Navegador para ver los s
 
 Cuando el depurador entra en el código que no reconoce, es posible que desee marcar ese código como código de biblioteca, para evitar entrar en ese código.  Vea [Marcar scripts de contenido como código de biblioteca][DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode].
 
-#### <a name="see-also"></a>Consulte también
+#### <a name="see-also"></a>Vea también
 
 *   [Scripts de contenido][MDNContentScripts]
 *   [Crear un tutorial de extensión, parte 2][ExtensionsChromiumGetstartPart2ContentScripts]
@@ -181,7 +181,7 @@ Hay varias maneras de ejecutar un fragmento de código:
 
 Los fragmentos de código son similares a los bookmarklets.
 
-#### <a name="see-also"></a>Consulte también
+#### <a name="see-also"></a>Vea también
 
 *   [Ejecutar fragmentos de código de JavaScript en cualquier página web con Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptSnippets]
 
@@ -343,7 +343,7 @@ h1 {
 
 Los cambios CSS se llevan a efecto inmediatamente; no es necesario guardar manualmente los cambios.
 
-#### <a name="see-also"></a>Consulte también
+#### <a name="see-also"></a>Vea también
 
 *   [Editar estilos y opciones de fuente CSS en el panel Estilos][DevToolsInspectStylesEditFonts]
 
@@ -449,7 +449,7 @@ Para usar un depurador en una página web, normalmente se establece un punto de 
 
 1.  Pase por el código mediante los controles de la parte superior del panel **Depurador,** como **Step** ( `F9` ).
 
-#### <a name="see-also"></a>Consulte también
+#### <a name="see-also"></a>Vea también
 
 *   [Introducción a la depuración de JavaScript:][DevtoolsGuideChromiumJavascriptIndex] un tutorial con una página web sencilla y existente que contiene algunos controles de formulario.
 

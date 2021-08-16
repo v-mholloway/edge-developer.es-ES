@@ -7,12 +7,12 @@ ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador, api de complementos, api de publicación
-ms.openlocfilehash: f34fa29c8babbe6cbc2c6f8bad7e810fbd114df1cc2fdd8b0a20ac010f01cc42
-ms.sourcegitcommit: 48101fb3ad5c688ce066e8a64c29fd9cbffdaaab
+ms.openlocfilehash: 67e680b6f8181a5f8e8ec6283d0bc0eb54ff408b
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "11881799"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893656"
 ---
 # <a name="microsoft-edge-add-ons-api-reference"></a>Microsoft Edge Referencia de api de complementos
 
@@ -367,7 +367,7 @@ Esta es una lista de códigos de error comunes y posibles razones.  Para obtener
 | Error de servidor interno de 500 | La solicitud no se completó. | El servidor ha cumplido una condición inesperada. |
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 *  [Uso de la API Microsoft Edge complementos][UsingAddonsAPI]
 

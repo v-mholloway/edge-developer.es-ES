@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral
-ms.openlocfilehash: daa339560a81d5c0c4dd15fd54c761aca71168c0444ab12d0ea867c56227c402
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: c91c445d6c741f00180f3571f5098018051faf7f
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803135"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893908"
 ---
 # <a name="microsoft-edge-webview2-roadmap"></a>Microsoft Edge Guía básica de WebView2  
 

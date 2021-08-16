@@ -176,7 +176,7 @@ additionalContent:
               url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
         - title: WebView2
           links:
-            - text: Información general
+            - text: Introducción
               url: /microsoft-edge/webview2/index
             - text: Introducción a WebView2
               url: /microsoft-edge/webview2/gettingstarted/win32

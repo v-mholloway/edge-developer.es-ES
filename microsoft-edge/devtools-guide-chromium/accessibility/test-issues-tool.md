@@ -7,12 +7,12 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 102df6057976b01a49ad0819b5e0c51e9415294d41a4f17cf5b26974c8ef6b38
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: a70336b26184b81bb9f3db34d81e50a0c77fb6de
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11802496"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893026"
 ---
 # <a name="automatically-test-a-webpage-for-accessibility-issues"></a>Probar automáticamente una página web para problemas de accesibilidad
 
@@ -135,7 +135,7 @@ El árbol DOM de la **herramienta Elementos** marca los problemas directamente e
     :::image-end:::
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 *  [Buscar y corregir problemas con la herramienta Problemas][DevToolsIssuesTool]
 *  [Información general sobre las pruebas de accesibilidad con DevTools](accessibility-testing-in-devtools.md)

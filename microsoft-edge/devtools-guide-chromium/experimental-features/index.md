@@ -22,12 +22,12 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 25da6f4754e6c63e96e50fe4594527b0fce51e8a5aa4456c5b112ba9cb49eee1
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 178ff71dbf806c63be03bc95fc86404235272880
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11806199"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893901"
 ---
 # <a name="experimental-features"></a>Características experimentales  
 
@@ -118,8 +118,7 @@ Después de activar el experimento, asegúrese de reiniciar DevTools.  Para usar
 1.  En la **Source Order Viewer** sección, seleccione la casilla **Mostrar orden de origen.**  
 1.  Resalte cualquier elemento HTML para mostrar una superposición que el orden en el origen de la página web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer en el panel Accesibilidad" lightbox=".. /media/experiments-source-order-viewer.msft.png":: **Source Order Viewer** en el panel **Accesibilidad**  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
@@ -262,7 +261,7 @@ Para proporcionar comentarios sobre Microsoft Edge experimentos de DevTools o cu
 [DevtoolsCssGrid]: ../css/grid.md "Inspeccionar css grid en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "Personalizar Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Configuración: personalizar Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "Edite el método abreviado de teclado para una acción DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "Editar el método abreviado de teclado para una acción de DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code "Coincidencia de métodos abreviados de teclado Microsoft Visual Studio código | Microsoft Docs"  
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emular dispositivos de pantalla doble y plegables en Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simular dispositivos móviles con modo de dispositivo en Microsoft Edge DevTools | Microsoft Edge"  
