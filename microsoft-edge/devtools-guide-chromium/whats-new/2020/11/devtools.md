@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, desarrollo web, herramientas F12, DevTools
 ms.localizationpriority: high
-ms.openlocfilehash: be4d8ed7ae24a7ad9d5c3a9b3979712be3b9a22e9434243298f994f55c759734
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: d69ecde5b7c84d7937a41e1d62cdfc2e142ec831
+ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11808546"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "11893929"
 ---
 <!-- Copyright Jecelyn Yeen 
 
