@@ -7,12 +7,12 @@ ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador, api de complementos, api de publicación
-ms.openlocfilehash: 72a9e38e29b666db0b93bd76ee4b660c0b40d14a
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: 2663ac06985b0d32fd1f6cd46f2699ae8c44b76f
+ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893796"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "11906984"
 ---
 # <a name="using-the-microsoft-edge-add-ons-api"></a>Uso de la API Microsoft Edge complementos
 
@@ -32,7 +32,7 @@ La fecha provisional para la disponibilidad de las API es diciembre de 2021.
 | _id. de operación_ | El identificador de una operación REST. |
 | _package_ | El `.zip` paquete que contiene los archivos del Microsoft Edge complemento. |
 | _producto_ | Una Microsoft Edge o tema.  También se conoce como un Microsoft Edge _complemento_. |
-| _Id. de producto_ | El identificador de producto del producto cuyo borrador debe publicarse.  El identificador del producto es un GUID de 32 caracteres asociado a un producto que se envía al Centro de partners.  Por ejemplo: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
+| _Id. de producto_ | El identificador de producto del producto cuyo borrador debe publicarse.  El identificador del producto es un GUID de 128 bits asociado a un producto en el Centro de partners.  Por ejemplo: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
 | _envío_ | Una actualización que se envía a un producto existente en el Centro de partners.  Cada actualización de un producto es un envío, independientemente de si el estado es `In Draft` `In Review` , o `In the Store` (publicado). |
 
 
@@ -107,7 +107,7 @@ Use esta API para actualizar el paquete de un complemento.  Esta API carga un pa
 ```rest
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: PUT
-Header Parameters: $TOKEN: the access token; Content-Type: application/zip
+Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
 
@@ -142,7 +142,7 @@ Use esta API para comprobar el estado de carga del paquete.
 ```rest
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 ```
 
 ### <a name="sample-request"></a>Solicitud de ejemplo
@@ -166,7 +166,7 @@ Use esta API para publicar el borrador actual del producto en el sitio web Micro
 ```rest
 Endpoint: /v1/products/$productID/submissions
 Type: POST
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 Body content: Notes for certification, in plain text format
 ```
 
@@ -194,7 +194,7 @@ Use esta API para comprobar el estado de la operación de publicación.
 ```rest
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 ```
 
 ### <a name="sample-request"></a>Solicitud de ejemplo

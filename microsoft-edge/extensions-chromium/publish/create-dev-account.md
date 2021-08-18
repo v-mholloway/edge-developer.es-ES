@@ -7,12 +7,12 @@ ms.date: 07/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 4aadbcdc4de0efc52954dcfcd3b1ddf0c8de64c0
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: b89779167e087e3d7dbc6cc2572f5bb67de4c72f
+ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11892963"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "11906963"
 ---
 # <a name="register-as-a-microsoft-edge-extension-developer"></a>Registrarse como desarrollador de extensiones de Microsoft Edge  
 
@@ -23,7 +23,7 @@ Para enviar una extensión al almacén Microsoft Edge complementos, debe estar r
 
 ## <a name="before-you-begin"></a>Antes de empezar  
 
-Si no tiene una cuenta o si tiene una cuenta comercial existente con el Centro de partners, cree una nueva cuenta [de Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] para registrarse con el programa Microsoft Edge asociado.  Para crear una cuenta de Microsoft \(Outlook/live/Hotmail\), realice las siguientes acciones.  
+Si no tiene una cuenta, o si __ tiene una cuenta comercial existente con el Centro de partners, cree una nueva cuenta [de Microsoft (MSA) (o][WindowsCommunityEverythingAboutMicrosoftAccounts] use una cuenta de Microsoft existente (MSA)) para registrarse con el programa Microsoft Edge.  Para crear una cuenta de Microsoft \(Outlook/live/Hotmail\), realice las siguientes acciones.  
 
 1. Vaya a [account.microsoft.com][MicrosoftAccount].  
 1. Elija **Crear una cuenta de Microsoft**.

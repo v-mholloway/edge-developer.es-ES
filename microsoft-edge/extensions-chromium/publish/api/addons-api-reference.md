@@ -7,12 +7,12 @@ ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador, api de complementos, api de publicación
-ms.openlocfilehash: 67e680b6f8181a5f8e8ec6283d0bc0eb54ff408b
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: b511f630bf0f38142154b3319971c4da77e705eb
+ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893656"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "11906977"
 ---
 # <a name="microsoft-edge-add-ons-api-reference"></a>Microsoft Edge Referencia de api de complementos
 
@@ -38,7 +38,7 @@ Ninguna.
 
 #### <a name="request-headers"></a>Encabezados de solicitud
 
-* Obligatorio.  `Authorization: <auth token>`
+* Obligatorio.  `Authorization: Bearer <auth token>`
 
 #### <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -98,15 +98,13 @@ Carga un paquete para actualizar un borrador de envío existente de un producto 
 
 #### <a name="uri-parameters"></a>Parámetros de URI
 
-Puedes especificar los siguientes parámetros adicionales en el URI de la solicitud:
-
 | Parámetro de URI | Descripción |
 |---|---|
 | `productID` | Obligatorio.  El identificador de producto del producto al que debe cargarse el paquete. |
 
 #### <a name="request-headers"></a>Encabezados de solicitud
 
-*  Obligatorio.  `Authorization: <auth token>`
+*  Obligatorio.  `Authorization: Bearer <auth token>`
 
 *  Obligatorio.  `Content-Type: application/zip`
 
@@ -118,7 +116,7 @@ Puedes especificar los siguientes parámetros adicionales en el URI de la solici
 
 #### <a name="response-headers"></a>Encabezados de respuesta
 
-*  Ubicación: `/products/\{productID}/submissions/draft/package/operations/\{operationID}`
+*  Ubicación: `/products/{productID}/submissions/draft/package/operations/{operationID}`
 
 #### <a name="status-codes"></a>Códigos de estado
 
@@ -144,15 +142,13 @@ Obtiene el estado de la carga del paquete.
 
 #### <a name="uri-parameters"></a>Parámetros de URI
 
-Puedes especificar los siguientes parámetros adicionales en el URI de la solicitud:
-
 | Parámetro de URI | Descripción |
 |---|---|
 | `operationID` | Obligatorio.  Identificador de operación de la solicitud de carga enviada en el paso anterior.  Esta información está disponible en el encabezado de respuesta.
 
 #### <a name="request-headers"></a>Encabezados de solicitud
 
-* Obligatorio.  `Authorization: <auth token>`
+* Obligatorio.  `Authorization: Bearer <auth token>`
 
 #### <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -230,7 +226,6 @@ Publica el borrador actual del producto en Microsoft Edge complementos.
 
 #### <a name="uri-parameters"></a>Parámetros de URI
 
-Puedes especificar los siguientes parámetros adicionales en el URI de la solicitud:
 
 | Parámetro de URI | Descripción |
 |---|---|
@@ -238,7 +233,7 @@ Puedes especificar los siguientes parámetros adicionales en el URI de la solici
 
 #### <a name="request-headers"></a>Encabezados de solicitud
 
-* Obligatorio.  `Authorization: <auth token>`
+* Obligatorio.  `Authorization: Bearer <auth token>`
 
 #### <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -248,9 +243,7 @@ Puedes especificar los siguientes parámetros adicionales en el URI de la solici
 
 #### <a name="response-headers"></a>Encabezados de respuesta
 
-Cuando hay una solicitud de publicación válida, la respuesta devuelve un encabezado:
-
-`Location: "/products/{productID}/submissions/operations/{operationID}"`
+* Ubicación: `/products/{productID}/submissions/operations/{operationID}`
 
 #### <a name="status-codes"></a>Códigos de estado
 
@@ -280,7 +273,7 @@ Ninguna.
 
 #### <a name="request-headers"></a>Encabezados de solicitud
 
-* Obligatorio.  `Authorization: <auth token>`
+* Obligatorio.  `Authorization: Bearer <auth token>`
 
 #### <a name="request-body"></a>Cuerpo de la solicitud
 

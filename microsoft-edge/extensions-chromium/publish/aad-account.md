@@ -7,12 +7,12 @@ ms.date: 07/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 78817f9cde393f19b214ac8bde09e43690d1cbce
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: e3db05067cd9a741a6034781a8b4ef821d05c2bb
+ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893761"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "11906970"
 ---
 # <a name="add-and-manage-users-from-your-organization-on-to-the-microsoft-edge-program"></a>Agregar y administrar usuarios de la organización en el programa Microsoft Edge usuario
 
@@ -22,10 +22,10 @@ Para agregar y administrar usuarios en el programa Microsoft Edge para administr
 
 Si no tiene una cuenta y es nuevo en el Centro de partners, continúe con el paso **1**. Si tiene una cuenta para desarrolladores del Centro de partners, continúe con el paso **2**.
 
-1. Si es nuevo en el Centro de partners y no tiene una cuenta o si tiene una cuenta comercial existente con el Centro de partners (vea el paso **2.c** a continuación), y para obtener más información, vaya a la cuenta [de Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] (o use una existente) para registrarse con el programa Microsoft Edge. Siga los pasos de [Register as a Microsoft Edge extensions developer][DeveloperRegistration]. 
+1. Si es nuevo en el Centro de partners y no tiene __ una cuenta, o si tiene una cuenta comercial existente con el Centro de partners (vea el paso **2.c** a continuación), use una cuenta de MSA para registrarse con el programa Microsoft Edge. Siga los pasos de [Register as a Microsoft Edge extensions developer][DeveloperRegistration]. 
 
 1. Si tienes una cuenta de desarrollador registrada en el Centro de partners, usa la cuenta de Microsoft (MSA) correspondiente para iniciar sesión en tu cuenta de desarrollador. A continuación, inscríbete Microsoft Edge programa. El Microsoft Edge en el Centro de partners no admite la **inscripción directamente** con una cuenta laboral o educativa. 
-    1. **Si ya ha iniciado sesión en el Centro**de partners con su cuenta de trabajo, debe iniciar sesión como administrador global o propietario principal. Si no es el propietario, vaya a [Administración de usuarios][UserMGMT] para buscar el propietario principal de la cuenta.
+    1. **Si ya ha iniciado sesión en el Centro de partners con**su cuenta de trabajo, debe iniciar sesión como propietario principal. Si no es el propietario, vaya a [Administración de usuarios][UserMGMT] para buscar el propietario principal de la cuenta.
     1. Compruebe que el propietario principal es un usuario de MSA (Hotmail/Live/Outlook). Pida al propietario de la cuenta que se registre en el programa Microsoft Edge Complementos mediante los pasos descritos en Inscribir en el programa Microsoft Edge para [el Centro de partners][DeveloperRegistration].
     1. Si su organización no tiene una cuenta de MSA (Hotmail/Live/Outlook) como propietario principal, debe registrarse para el programa Microsoft Edge con una cuenta de MSA. Esto sucede cuando la organización tiene una cuenta comercial en el Centro de partners. Siga los pasos de [Inscribir en el programa Microsoft Edge para el Centro de partners][DeveloperRegistration].
 
