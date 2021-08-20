@@ -50,7 +50,7 @@ Este artículo trata sobre cómo cambiar la apariencia de la página web en desa
 
 1.  Escriba "oscuro", "luz" o "emular".  A continuación, seleccione **Representación: Emular CSS prefers-color-scheme: dark** o **Rendering: Emular CSS prefers-color-scheme: light**y **seleccione Entrar**.
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Emular el modo oscuro o claro mediante los comandos "Rendering: Emulate CSS prefers-color-scheme" en el menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Emular el modo oscuro o claro mediante los comandos Rendering: Emulate CSS prefers-color-scheme en el menú comando" lightbox="../media/css-console-command-menu-rendering.msft.png":::
         Emular el modo oscuro o claro con los comandos **Rendering: Emular CSS prefers-color-scheme** en el menú comando
     :::image-end:::  
 
