@@ -3,18 +3,21 @@ description: Referencia de la API de complementos, para que los puntos de conexi
 title: Microsoft Edge Referencia de api de complementos
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador, api de complementos, api de publicación
-ms.openlocfilehash: b511f630bf0f38142154b3319971c4da77e705eb
-ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
+ms.openlocfilehash: beaeabf21b4502edd029a17c6ae8e550544e0aa6
+ms.sourcegitcommit: 1edba4737118613dc63a0846d2049dded2342f87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "11906977"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "11909368"
 ---
-# <a name="microsoft-edge-add-ons-api-reference"></a>Microsoft Edge Referencia de api de complementos
+# <a name="microsoft-edge-add-ons-api-reference-under-development"></a>Microsoft Edge Referencia de API de complementos (en desarrollo)
+
+> [!NOTE]
+> Este artículo es una solicitud de comentarios.  La API Microsoft Edge complementos aún no está disponible para pruebas y la página Publicar API aún no está disponible en el Centro de partners.  La API Microsoft Edge complementos está en desarrollo activo y la hoja de ruta sigue evolucionando en función de los cambios del mercado y los comentarios de los clientes.  Los planes descritos aquí no son exhaustivos y están sujetos a cambios.
 
 Esta es la referencia de extremo rest para la API Microsoft Edge complementos.  Esta API automatiza las actualizaciones de publicación de los complementos que se han enviado al sitio web Microsoft Edge complementos.
 

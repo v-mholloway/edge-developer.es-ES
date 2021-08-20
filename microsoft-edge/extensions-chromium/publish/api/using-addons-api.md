@@ -3,24 +3,25 @@ description: Extremos rest para automatizar las actualizaciones de publicación 
 title: Uso de la API Microsoft Edge complementos
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador, api de complementos, api de publicación
-ms.openlocfilehash: 2663ac06985b0d32fd1f6cd46f2699ae8c44b76f
-ms.sourcegitcommit: 936f084e4e6b70b2553cc522622bf8e442cd6bf2
+ms.openlocfilehash: 27c7fd8cd0fe341f83f52543930b8f7f3877f248
+ms.sourcegitcommit: 1edba4737118613dc63a0846d2049dded2342f87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "11906984"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "11909382"
 ---
-# <a name="using-the-microsoft-edge-add-ons-api"></a>Uso de la API Microsoft Edge complementos
+# <a name="using-the-microsoft-edge-add-ons-api-under-development"></a>Uso de la API Microsoft Edge complementos (en desarrollo)
+
+> [!NOTE]
+> Este artículo es una solicitud de comentarios.  La API Microsoft Edge complementos aún no está disponible para pruebas y la página Publicar API aún no está disponible en el Centro de partners.  La API Microsoft Edge complementos está en desarrollo activo y la hoja de ruta sigue evolucionando en función de los cambios del mercado y los comentarios de los clientes.  Los planes descritos aquí no son exhaustivos y están sujetos a cambios.
 
 En este artículo, junto con la referencia Microsoft Edge API de complementos, se proporciona información general sobre la [API][AddonsAPIRef]de complementos Microsoft Edge propuesta.  Esperamos sus sugerencias y comentarios sobre los contratos de API propuestos.  Envíe sus comentarios como un [problema sobre la API de complementos][GitHubMicrosoftDocsEdgeDeveloperNewIssue].
 
 La API Microsoft Edge complementos de Microsoft Edge proporciona un conjunto de puntos de conexión rest para publicar actualizaciones mediante programación en complementos enviados al sitio web Microsoft Edge complementos.  Puede usar estos puntos de conexión rest para automatizar el proceso de carga y publicación de complementos en el sitio web Microsoft Edge complementos.
-
-La fecha provisional para la disponibilidad de las API es diciembre de 2021.
 
 
 <!-- ====================================================================== -->
@@ -41,17 +42,23 @@ La fecha provisional para la disponibilidad de las API es diciembre de 2021.
 
 Para usar la API Microsoft Edge complementos, debe habilitar la API para su proyecto en el Centro de partners de Microsoft.
 
+> [!NOTE]
+> La **interfaz de usuario publicar API** aún no está presente en el Centro de partners.
+
 1. Visita el Centro de partners de Microsoft e inicia sesión en la cuenta desde la que ya has publicado un complemento.
 
-1. En el **Microsoft Edge,** aparece una nueva página para **publicar API.**
+1. En el **Microsoft Edge,** seleccione **Publicar API**.
 
-1. Seleccione el **botón Crear credenciales de API** para generar las credenciales de la API.  Este paso puede tardar unos minutos.  Una vez habilitadas las API, **** se muestran en esta página el id. de **cliente,** el secreto de cliente y la dirección URL del **token** de autenticación.
+1. En la **página Publicar API,** seleccione el botón Crear credenciales **de API** para generar las credenciales de la API.  Este paso puede tardar unos minutos.  Una vez habilitadas las API, **** se muestran en esta página el id. de **cliente,** el secreto de cliente y la dirección URL del **token** de autenticación.
 
 1. Tenga en **cuenta clientID,** **Client Secret** y **Auth Token URL**.  Los usarás en el siguiente paso para obtener un token de acceso.
 
 
 <!-- ====================================================================== -->
 ## <a name="retrieving-the-access-token"></a>Recuperación del token de acceso
+
+> [!NOTE]
+> La API Microsoft Edge complementos aún no está disponible para pruebas.
 
 Después de haber adquirido la autorización necesaria para la aplicación, obtenga tokens de acceso para las API.  Para obtener un token con la concesión de credenciales de cliente, envíe una solicitud POST a la dirección URL del token de autenticación.  La información del inquilino está disponible en la dirección URL que recibió en el **antes de comenzar los** pasos anteriores.
 
@@ -94,7 +101,7 @@ Para obtener más información, vaya a Flujo de credenciales de cliente [de OAut
 Una vez que tenga un token de acceso, puede usar la API Microsoft Edge complementos.  Esta API expone puntos de conexión para obtener una lista de productos, actualizar productos y publicar productos.
 
 > [!NOTE]
-> Actualmente, no hay ninguna API para crear un nuevo producto o actualizar los metadatos de un producto, como una descripción.  Debe completar estas tareas manualmente en el Centro de partners de Microsoft.
+> No hay ninguna API para crear un nuevo producto o actualizar los metadatos de un producto, como una descripción.  Debe completar estas tareas manualmente en el Centro de partners de Microsoft.
 
 Los ejemplos siguientes usan el dominio , que es un marcador de posición y puede reemplazarse `https://addons.edge.microsoft.com/api` cuando la API está disponible en producción.
 
