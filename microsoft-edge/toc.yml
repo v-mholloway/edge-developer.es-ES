@@ -325,6 +325,8 @@
           items:
             - name: Compatibilidad con API
               href: extensions-chromium/developer-guide/api-support.md
+            - name: Declarar permisos
+              href: extensions-chromium/enterprise/declare-permissions.md
             - name: Migrar extensión de Chromium a Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: Migrar la extensión del manifiesto v2 al v3
@@ -371,8 +373,6 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: Actualización automática
               href: extensions-chromium/enterprise/auto-update.md
-            - name: Declarar permisos
-              href: extensions-chromium/enterprise/declare-permissions.md
     - name: Información general sobre las pruebas de origen
       href: origin-trials/index.md
     - name: Documento técnico de privacidad
