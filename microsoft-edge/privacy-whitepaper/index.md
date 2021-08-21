@@ -3,7 +3,7 @@ description: notas del producto sobre la privacidad de Microsoft Edge
 title: notas del producto sobre la privacidad de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, privacidad, notas del producto, confianza
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 9627c2798ae3095b47497c699f5ae6981e6d7f272ffb64cd5a920aae90f5e85a
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 72ff9a32ac93620d5f9cf316168d8dc750f22b3b
+ms.sourcegitcommit: b7c47af115312ba1a79e8455045ca23dad3b65ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11809120"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "11910029"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -370,7 +370,7 @@ La exploración de InPrivate es el modo de exploración privada en el que no se 
 
 ## <a name="read-aloud"></a>Leer en voz alta  
 
-Microsoft Edge ofrece Leer en voz alta, que lee el contenido de una página web para el usuario.  Para empezar a leer en voz alta, mueva el puntero en cualquier lugar de la página y abra el menú contextual \(haga clic con el botón derecho \) o abra **Configuración y más (...)** y seleccione **Leer en voz alta**.  Leer en voz alta ofrece varias voces que se pueden usar para leer el contenido de la página web.  Si usa voces [instaladas en Windows 10][OfficeSupport4c83a8d8748642f78e462b0fdf753130] en la sección **Idioma y hora** de la configuración de Windows 10 y quiere borrar la memoria caché local de las voces que usó anteriormente, vaya a `edge://settings/clearBrowserData`.  
+Microsoft Edge ofrece Leer en voz alta, que lee el contenido de una página web para el usuario.  Para empezar a leer en voz alta, mueva el puntero en cualquier lugar de la página y abra el menú contextual \ (haga clic con el botón derecho \) o abra **Configuración y más (...)** y seleccione **Leer en voz alta**.  Leer en voz alta ofrece varias voces que se pueden usar para leer el contenido de la página web.  Si usa voces [instaladas en Windows 10][OfficeSupport4c83a8d8748642f78e462b0fdf753130] en la sección **Idioma y hora** de la configuración de Windows 10 y quiere borrar la memoria caché local de las voces que usó anteriormente, vaya a `edge://settings/clearBrowserData`.  
 
 Cuando empieza a leer en voz alta, Microsoft Edge usa la [API de Web Speech][GithubW3cIncubatorCommunityGroupSpeechApi].  Según la voz que seleccione, el contenido de la página se convierte de texto a voz mediante una biblioteca del lado del cliente, ya sea proporcionada por la plataforma \(por ejemplo, una específica para su sistema operativo\) o una biblioteca del lado del servidor impulsada por Azure Cognitive Services.  Si el contenido se convierte a voz con una biblioteca del lado cliente, no se envía información a los servidores de Microsoft.  Si el contenido se convierte a voz con Azure Cognitive Services \(indicado con la palabra "En línea" en cualquiera de los nombres de voz\), el texto, junto con un token generado aleatoriamente, se enviará a Microsoft.  Una vez completada la conversión, el servicio devuelve el texto narrado en un archivo de audio a su dispositivo.  Todos los datos se cifran a medida que se transfieren desde el dispositivo a Microsoft, y viceversa.  El texto que se envía a Microsoft y el archivo de audio generado se eliminan de forma inmediata cuando se produce la conversión. No se almacenan otros datos sobre el contenido web durante ningún período de tiempo.  
 
@@ -384,7 +384,7 @@ Para comprender cómo afecta la nueva funcionalidad a Microsoft Edge y a los ser
 
 ## <a name="resolve-navigation-errors"></a>Solucionar errores de navegación  
 
-Si Microsoft Edge detecta tiempos de espera de conexión SSL, errores de certificado u otros problemas de red que puedan deberse a un portal cautivo \(por ejemplo, a una red Wi-Fi en un hotel o aeropuerto \), Microsoft Edge envía una solicitud a `http://edge.microsoft.com/captiveportal/generate_204` y comprueba el código de respuesta.  Si la solicitud se redirige a otra URL, Microsoft Edge abre la dirección URL en una nueva pestaña, suponiendo que sea una página de inicio de sesión.  Las solicitudes a la página de detección del portal cautivo son un servicio sin estado, las solicitudes no se registran y las cookies no se envían ni se guardan.  En las plataformas Windows, Microsoft Edge usa un servicio de portal cautivo de Windows.  De lo contrario, se usa el servicio de portal cautivo de Microsoft Edge.  Para desactivar el servicio, vaya a `edge://settings/privacy` y desactive la opción **Usar un servicio web para ayudar a resolver errores de navegación**.  
+Si Microsoft Edge detecta tiempos de espera de conexión SSL, errores de certificado u otros problemas de red que puedan deberse a un portal cautivo \ (por ejemplo, a una red Wi-Fi en un hotel o aeropuerto \), Microsoft Edge envía una solicitud a `http://edge.microsoft.com/captiveportal/generate_204` y comprueba el código de respuesta.  Si la solicitud se redirige a otra URL, Microsoft Edge abre la dirección URL en una nueva pestaña, suponiendo que sea una página de inicio de sesión.  Las solicitudes a la página de detección del portal cautivo son un servicio sin estado, las solicitudes no se registran y las cookies no se envían ni se guardan.  En las plataformas Windows, Microsoft Edge usa un servicio de portal cautivo de Windows.  De lo contrario, se usa el servicio de portal cautivo de Microsoft Edge.  Para desactivar el servicio, vaya a `edge://settings/privacy` y desactive la opción **Usar un servicio web para ayudar a resolver errores de navegación**.  
 
 ## <a name="secure-dns"></a>DNS seguro
 
@@ -398,7 +398,7 @@ DNS seguro está desactivado de forma predeterminada en los equipos administrado
 
 Microsoft Edge le ayuda a buscar cupones y los mejores precios mientras compra en línea.  Para ayudarle a encontrar cupones y los mejores precios cuando compra en línea, Microsoft Edge descarga localmente una lista de los dominios de compras en el cliente del servicio de compras de Microsoft.  Cuando navega por un sitio web o guarda un elemento en sus Colecciones, Microsoft Edge determina localmente si el sitio web en el que está es un dominio de compras o una página web de detalles del producto.  Si se determina que el sitio web es una página web de compras, Microsoft Edge enviará la dirección URL —sin información de identificación personal—al servicio de compras de Microsoft.  También enviamos al servicio el precio del producto, la imagen del producto, el nombre del producto, las calificaciones y las reseñas, junto con información sobre Microsoft Edge y su versión del sistema operativo.  Estos datos se envían a través de HTTPS con un identificador generado aleatoriamente y las cookies (si se permiten).  La característica de compras de Microsoft Edge requiere compartir información de cookies con Bing.  Las cookies pueden usarse, por ejemplo, para la depuración, detección de fraudes y análisis.  El servicio de compras de Microsoft muestra precios de otros minoristas, tendencias históricas de precios y cualquier cupón disponible para ese sitio web.  
 
-Cuando aplique los cupones al carrito, las cookies se almacenarán en el dispositivo para identificar correctamente al proveedor de cupones.  Nuestros proveedores de cupones de confianza solo guardarán las cookies si el cupón se redime con éxito en el carrito.  Después de que se apliquen los cupones, la información sobre el éxito de los cupones se reenviará al servicio de compras de Microsoft para que podamos comprender qué cupones se aplicaron con éxito y cuáles no.  Los datos enviados al servicio de compras de Microsoft se envían a través de HTTPS con un identificador generado aleatoriamente que cambia por cada búsqueda de cupones.  
+Cuando aplique los cupones al carrito, las cookies se almacenarán en el dispositivo para identificar correctamente al proveedor de cupones.  Nuestros proveedores de cupones de confianza solo guardarán las cookies si el cupón se redime con éxito en el carrito.  Después de que se apliquen los cupones, la información sobre el éxito de los cupones se reenviará al servicio de compras de Microsoft para que podamos comprender qué cupones se aplicaron con éxito y cuáles no.  Los datos enviados al servicio de compras de Microsoft se envían a través de HTTPS con un identificador generado aleatoriamente que cambia cada vez que se busca un cupón. Edge se ha asociado con Bing Shopping para proporcionarle al usuario cupones relevantes para él cada vez que realice una consulta. En algunos casos, Microsoft puede recibir ingresos por el uso de los cupones. En todo caso, esto no se tiene en cuenta a la hora de clasificar los cupones que se le muestran a los usuarios. 
 
 :::image type="complex" source="./media/shopping.png" alt-text="Compras y cupones" lightbox="./media/shopping.png":::
    Compras y cupones  
@@ -411,7 +411,7 @@ El servicio de compras está activado de forma predeterminada para todos los usu
 1.  Vaya a `edge://settings/privacy`.  
 1.  Desactive la configuración **Ahorrar tiempo y dinero con Compras en Microsoft Edge.**  
     
-La navegación de InPrivate usa la configuración de compra del perfil que inició la sesión de InPrivate.  
+La navegación de InPrivate usa la configuración de compra del perfil que inició la sesión de InPrivate. 
 
 ## <a name="sign-in-and-identity"></a>Inicio de sesión e identidad  
 
@@ -497,7 +497,14 @@ Para desactivar las actualizaciones de listas, puede usar la directiva de grupo 
 
 ## <a name="translate"></a>Traducir  
 
-En Microsoft Edge, puede explorar la web y traducir las páginas web en el idioma que prefiera.  La característica de traducción integrada usa un servicio en el dispositivo que muestrea partes aleatorias de una página web para detectar el idioma original.  Si el idioma detectado no es uno de los idiomas predeterminados, Microsoft Edge ofrece traducir la página web a su idioma de visualización u otro idioma que elija.  Microsoft Edge no traduce una página web sin su permiso.  Para traducir una página web, abra el menú contextual \(haga clic con el botón secundario\) y elija **Traducir**.  Para traducir la página web, Microsoft Edge envía el contenido de la página y un token generado al azar al servicio de traducción de Microsoft Azure a través de una conexión HTTPS segura.  El contenido de la página no se almacena para ningún fin.  Para impedir que Microsoft Edge ofrezca la traducción de páginas web, vaya a `edge://settings/languages` y desactive la opción **Oferta para traducir páginas que no estén en un idioma que lea**.  
+Con Microsoft Edge puede explorar la web y traducir las páginas web en el idioma que prefiera. Microsoft Edge usa el [Traductor de Microsoft][MicrosoftSpeechTranslator] para traducir páginas web. Esta característica usa, en un primer momento, una biblioteca en el dispositivo que toma una muestra de determinadas partes visibles de una página web para detectar el idioma original. Si el idioma detectado no es uno de los idiomas predeterminados, Microsoft Edge le ofrece traducir la página web a su idioma de visualización u otro idioma que prefiera. Puede, por tanto, traducir la página seleccionando **Traducir**. Puede traducir de forma automática todas las páginas en ese idioma activando la casilla **Traducir siempre las páginas de \<a language\>**.
+
+Microsoft Edge no traducirá una página web sin su permiso. Si desea traducir, Microsoft Edge enviará el texto de la página web que quiere traducir junto con el idioma *del* y *al* que traducir y un token de servicio al Traductor de Microsoft a través de una conexión HTTPS segura. El token de servicio no contiene ninguna información identificable del usuario. El [Traductor de Microsoft][MicrosoftSpeechTranslator] procesa el texto para quitar los identificadores (como el correo electrónico o el número de teléfono) y almacena ese texto para generar mejoras en el servicio. Podrá ver los detalles de esta comunicación en [Declaración de privacidad de Microsoft: privacidad de Microsoft][MicrosoftPrivacyStatement].
+
+Si no desea que Microsoft Edge le ofrezca traducir páginas web, siga estos pasos.
+
+1. Vaya a `edge://settings/languages`.
+1. Desactive el botón de alternancia de  **Ofrecer traducir páginas que no estén en un idioma que sepa**  y cierre la página web.
 
 ## <a name="web-apps-and-pinned-sites"></a>Aplicaciones web y sitios anclados  
 
@@ -585,4 +592,8 @@ Los comentarios de los usuarios se envían de forma segura a Microsoft mediante 
 [W3cEncryptedMediaPrivacy]: https://w3.org/TR/encrypted-media#privacy "11. Privacidad: extensiones cifradas multimedia | WC3"  
 [W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "Especificación de API de ubicación geográfica 2.ª edición | WC3"  
 
-[TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Desarrollo de Microsoft Edge | Twitter"  
+[TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"  
+
+[MicrosoftPrivacyStatement]: https://privacy.microsoft.com/privacystatement "Declaración de privacidad de Microsoft: privacidad de Microsoft"
+
+[MicrosoftSpeechTranslator]: https://azure.microsoft.com/services/cognitive-services/speech-translation/ "Traducción de voz | Microsoft Azure"
