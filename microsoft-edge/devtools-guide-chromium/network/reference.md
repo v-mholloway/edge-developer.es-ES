@@ -1,5 +1,5 @@
 ---
-description: Una referencia completa de las características del panel de red DevTools de Microsoft Edge.
+description: Una referencia completa de las Microsoft Edge del panel DevTools Network.
 title: Referencia de análisis de red
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 5c821decc2acbe14d08a50011090904408fce1817c1907aa289f62c0d2852631
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: a0360f6fb6150e08f9c60dfad89e753193c15b63
+ms.sourcegitcommit: 3d1b23679e8b61cdebe6c014247925adc04d132c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11799552"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11921011"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "11799552"
    limitations under the License.  -->  
 # <a name="network-analysis-reference"></a>Referencia de análisis de red  
 
-Descubra nuevas formas de analizar cómo se carga la página en esta referencia completa de las características de análisis de red de Microsoft Edge DevTools.  
+Descubra nuevas formas de analizar cómo se carga la página en esta referencia completa de las Microsoft Edge de análisis de red de DevTools.  
 
 ## <a name="record-network-requests"></a>Registrar solicitudes de red  
 
@@ -44,7 +44,7 @@ De forma predeterminada, DevTools registra todas las solicitudes de red en la **
 Para detener la grabación de solicitudes, siga estos pasos.  
 
 1.  En la **herramienta Red,** elija **Detener registro de red de grabación** \( Detener registro de red de grabación ![ ](../media/record-on-icon.msft.png) \).  Se vuelve gris para indicar que DevTools ya no está grabando solicitudes.  
-1.  Seleccione `Control` + `E` \(Windows, Linux\) o `Command` + `E` \(macOS\) mientras la **herramienta Red** está en foco.  
+1.  Seleccione `Control` + `E` \(Windows, Linux\) o `Command` + `E` \(macOS\) mientras la **herramienta Red** está en el foco.  
 
 ### <a name="clear-requests"></a>Borrar solicitudes  
 
@@ -67,6 +67,10 @@ Para guardar las solicitudes en cargas de página, en la **herramienta Red,** ac
 Captura capturas de pantalla para analizar las pantallas de los usuarios a la espera de que se cargue la página.  
 
 Para habilitar capturas de pantalla, elija **Configuración de red**y, en la herramienta **Red,** active la **casilla Capturar capturas de** pantalla.  
+
+:::image type="complex" source="../media/network-network-screenshot-box.msft.png" alt-text="Habilitar capturas de pantalla de captura" lightbox="../media/network-network-screenshot-box.msft.png":::
+   Habilitar **capturas de pantalla de captura**  
+:::image-end:::  
 
 Actualice la página mientras la **herramienta Red** está en el foco para capturar capturas de pantalla.  
 
@@ -123,7 +127,7 @@ Una nueva clase de aplicaciones web, denominada [Progressive Web Apps][DevtoolsP
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Elija el **menú desplegable En** línea, busque en **Preestablecidos**y elija **Sin** conexión para simular una experiencia de red sin conexión.  
+Elija el **menú desplegable Sin** limitación, busque en **Presets**y elija **Sin** conexión para simular una experiencia de red sin conexión.  
 
 :::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Menú desplegable Sin conexión" lightbox="../media/network-network-offline-dropdown.msft.png":::
    Menú **desplegable Sin** conexión  
@@ -131,7 +135,7 @@ Elija el **menú desplegable En** línea, busque en **Preestablecidos**y elija *
 
 ### <a name="emulate-slow-network-connections"></a>Emular conexiones de red lentas  
 
-Emular velocidades 3G, rápidas 3G y otras velocidades de conexión desde el **menú** desplegable En línea.  
+Emular velocidades 3G, rápidas 3G y otras velocidades de conexión desde el menú desplegable **Sin** limitación.  
 
 :::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Menú desplegable Limitación" lightbox="../media/network-network-throttling-menu.msft.png":::
    Menú **desplegable Limitación**  
@@ -964,14 +968,10 @@ Elija **Filtro** \( ![ Filtro ](../media/filter-icon.msft.png) \) para ocultarlo
 
 Use filas grandes cuando desee más espacios en blanco en la tabla de solicitudes de red.  Algunas columnas también proporcionan un poco más de información al usar filas grandes.  Por ejemplo, el valor inferior de la **columna Size** es el tamaño sin comprimir de una solicitud.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Un ejemplo de filas de solicitudes grandes en el panel Solicitudes" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
-   Un ejemplo de filas de solicitudes grandes en el **panel Solicitudes**  
-:::image-end:::  
-
 Para habilitar filas grandes, active la casilla **Usar filas de solicitud grandes.**  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Casilla Usar filas de solicitud grandes" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
-   Casilla **Usar filas de solicitud grandes**  
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Un ejemplo de filas de solicitudes grandes en el panel Solicitudes" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+   Un ejemplo de filas de solicitudes grandes en el **panel Solicitudes**  
 :::image-end:::  
 
 ### <a name="hide-the-overview-pane"></a>Ocultar el panel Información general  

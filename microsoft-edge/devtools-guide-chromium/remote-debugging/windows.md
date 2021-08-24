@@ -7,12 +7,12 @@ ms.date: 04/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools, remoto, depuración, windows 10, windows, portal de dispositivos
-ms.openlocfilehash: 7cbb48b949858b5cc5ea39dea2fb0f3907893fd748366beb5dbb61512c8cd614
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 191ea3d93b33963e470af63b3a6ff59a54b60e42
+ms.sourcegitcommit: 3d1b23679e8b61cdebe6c014247925adc04d132c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11797996"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11920948"
 ---
 # <a name="get-started-with-remote-debugging-windows-10-devices"></a>Introducción a la depuración remota de Windows 10 dispositivos  
 
@@ -166,7 +166,7 @@ El explorador de archivos no se inicia desde DevTools en la **herramienta Oríge
 
 <!-- links -->
 
-[DevtoolsIndex]: ../index.md "Introducción a Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge Información general sobre herramientas para desarrolladores | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Depurar aplicaciones web progresivas | Microsoft Docs"  
 
 [DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool]: /dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool "Ver certificados con la herramienta Administrador de certificados: Cómo: Ver certificados con el complemento MMC | Microsoft Docs"  

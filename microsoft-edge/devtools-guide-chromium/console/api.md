@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 8dbc4544e79bb9495cf9a891bb0bdd1216790aacbcc79aaa894c7c6949eed1d8
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 92335aa0968e9571f07ae2f46a58e427538655e2
+ms.sourcegitcommit: 3d1b23679e8b61cdebe6c014247925adc04d132c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11801668"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11920591"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -106,7 +106,7 @@ console.clear()
    :::column-end:::
 :::row-end:::  
 
-### <a name="see-also"></a>Consulte también  
+### <a name="see-also"></a>Vea también  
 
 *   [Borrar la consola][DevtoolsConsoleReferenceClear]  
 
@@ -667,7 +667,7 @@ console.warn(object [, object, ...])
 [DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filtrar por nivel de registro: referencia de consola | Microsoft Docs"  
 [DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Conservar mensajes entre cargas de página: referencia de consola | Microsoft Docs"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Introducción a las herramientas de desarrollador de Microsoft Edge (Chromium) | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge Información general sobre herramientas para desarrolladores | Microsoft Docs"  
 
 > [!NOTE]
 > Algunas partes de esta página son modificaciones basadas en el trabajo creado y [compartido por Google][GoogleSitePolicies] y se usan según los términos descritos en la [Licencia internacional de Creative Commons Attribution 4.0][CCA4IL].  
