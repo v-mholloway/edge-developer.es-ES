@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, control de explorador, edge html, get started, Introducción, .NET, windows forms
-ms.openlocfilehash: 6a5ce116edc5c57040d5ae853b77a026f7c05c56
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: d4ccdd32f18a4e7048183b1688b1a740ae004d68
+ms.sourcegitcommit: 095331fd73d99aa68e17d318cd69fef4badef9ef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893494"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11921844"
 ---
 # <a name="get-started-with-webview2-in-windows-forms"></a>Introducción a WebView2 en Windows Forms
 
@@ -21,7 +21,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 ## <a name="prerequisites"></a>Requisitos previos  
 
-Asegúrese de instalar la siguiente lista de requisitos previos antes de continuar.  
+Instale la siguiente lista de requisitos previos antes de continuar.
 
 *   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] o cualquier canal [Microsoft Edge Insider (versión preliminar)][MicrosoftedgeinsiderDownload] (Beta, Dev o Canary) instalado en el sistema operativo compatible \(actualmente Windows 10, Windows 8.1 y Windows 7\).  
     
@@ -29,9 +29,6 @@ Asegúrese de instalar la siguiente lista de requisitos previos antes de continu
     > El equipo de WebView recomienda usar el canal Canary y la versión mínima necesaria es 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 o posterior.  
-    
-> [!NOTE]
-> WebView2 actualmente no admite los diseñadores de .NET 5 y .NET Core.  
 
 ## <a name="step-1---create-a-single-window-app"></a>Paso 1: Crear una aplicación de una sola ventana
 
