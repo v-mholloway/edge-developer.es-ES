@@ -403,9 +403,9 @@
       href: visual-studio/index.md
     - name: Visual Studio Code
       items:
-        - name: Información general sobre Visual Studio Code
+        - name: Introducción a Visual Studio Code
           href: visual-studio-code/index.md
-        - name: Depurador para la extensión de Microsoft Edge
+        - name: Depurador para Edge
           href: visual-studio-code/debugger-for-edge.md
         - name: Extensión de Microsoft Edge DevTools
           href: visual-studio-code/microsoft-edge-devtools-extension.md
