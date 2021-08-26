@@ -243,7 +243,9 @@
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
                 - name: Inspeccionar cuadrícula CSS
                   href: devtools-guide-chromium/css/grid.md
-                - name: Forzar DevTools en el modo de vista previa de impresión
+                - name: CSS-in-JS
+                  href: devtools-guide-chromium/css/css-in-js.md
+                - name: Forzar DevTools al modo de vista previa de impresión
                   href: devtools-guide-chromium/css/print-preview.md
             - name: Problemas
               href: devtools-guide-chromium/issues/index.md

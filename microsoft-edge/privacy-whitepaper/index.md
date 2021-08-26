@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 72ff9a32ac93620d5f9cf316168d8dc750f22b3b
-ms.sourcegitcommit: b7c47af115312ba1a79e8455045ca23dad3b65ee
+ms.openlocfilehash: 6a43d3102605589e783e76867dfba5c545a0078c
+ms.sourcegitcommit: d6ecc4ab48c7e0e048fd8248f6379222642e9d41
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "11910029"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "11925553"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>notas del producto sobre la privacidad de Microsoft Edge  
 
@@ -273,7 +273,11 @@ Para mejorar la experiencia del Modo niños, Microsoft Edge agrega una palabra c
 1.  Elija **Configuración**  >  **Privacidad**.  
 1.  Seleccione **Elegir qué borrar**.  
     
-El Modo niños no recopila datos para la personalización de la fuente de noticias u otros servicios de Microsoft.  No puede cambiar la configuración de privacidad del Modo niños.  Otras opciones como Windows Defender SmartScreen y los datos de diagnóstico se configuran según el perfil en el que se inició el Modo niños.  Para obtener más información acerca de los datos de diagnóstico sobre cómo usar el explorador y Windows Defender SmartScreen, vaya a [Diagnóstico de datos](#diagnostic-data) y [SmartScreen](#smartscreen).  
+El Modo niños no recopila datos para la personalización de la fuente de noticias u otros servicios de Microsoft.  No puede cambiar la configuración de privacidad del Modo niños.  Otras opciones como Windows Defender SmartScreen y los datos de diagnóstico se configuran según el perfil en el que se inició el Modo niños.  Para más información acerca de los datos de diagnóstico que indican cómo usa el explorador y Windows Defender SmartScreen, vaya a [Diagnóstico de datos](#diagnostic-data) y [SmartScreen](#smartscreen).  
+
+## <a name="microsoft-edge-driver"></a>Microsoft Edge Driver
+
+Microsoft Edge Driver permite a los desarrolladores controlar el explorador de Microsoft Edge a través del [protocolo WebDriver][WebDriverProtocol].  Microsoft Edge Driver es un archivo ejecutable `msedgedriver.exe` independiente de Microsoft Edge que los desarrolladores llaman desde el código de cliente, como un script de prueba.  De forma predeterminada, Microsoft Edge Driver envía a Microsoft datos de diagnóstico, como el estado del [comando New Session WebDriver][WebDriverProtocolNewSession].  Para desactivar la recopilación de datos de diagnóstico de Microsoft Edge Driver, establezca la variable de entorno `MSEDGEDRIVER_TELEMETRY_OPTOUT` en `1`.  Para obtener más información sobre Microsoft Edge Driver, vaya a [Usar WebDriver para automatizar Microsoft Edge][WebDriverDoc].  
 
 ## <a name="network-time"></a>Hora de red  
 
@@ -562,6 +566,8 @@ Los comentarios de los usuarios se envían de forma segura a Microsoft mediante 
 [WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]: /windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua "Aplicación potencialmente no deseada (PUA): Cómo identifica Microsoft el malware y las aplicaciones potencialmente no deseadas | Microsoft Docs"  
 [WindowsSecurityThreatProtectionWindowsDefender]: /windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus "Detectar y bloquear aplicaciones potencialmente no deseadas | Microsoft Docs"  
 
+[WebDriverDoc]: /microsoft-edge/webdriver-chromium "Usar WebDriver para automatizar Microsoft Edge | Microsoft Docs"
+
 [BingMain]: https://bing.com "Bing"  
 
 [ChromiumMain]: https://www.chromium.org "Proyectos de Chromium"  
@@ -591,6 +597,9 @@ Los comentarios de los usuarios se envían de forma segura a Microsoft mediante 
 
 [W3cEncryptedMediaPrivacy]: https://w3.org/TR/encrypted-media#privacy "11. Privacidad: extensiones cifradas multimedia | WC3"  
 [W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "Especificación de API de ubicación geográfica 2.ª edición | WC3"  
+
+[WebDriverProtocol]: https://www.w3.org/TR/webdriver2/ "WebDriver | Borrador de trabajo de W3C 24 de agosto de 2020"
+[WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session "8.1 Nueva sesión | Borrador de trabajo de W3C 24 de agosto de 2020"
 
 [TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"  
 
