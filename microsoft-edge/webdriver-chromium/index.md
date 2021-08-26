@@ -1,23 +1,23 @@
 ---
 description: Aprende a probar tu sitio web o aplicación en Microsoft Edge o automatizar el explorador con WebDriver
-title: Usar WebDriver (Chromium) para la automatización de pruebas
+title: Use WebDriver para automatizar Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/24/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, desarrollo web, html, css, javascript, programador, webdriver, selenio, pruebas, herramientas, automatización, prueba
-ms.openlocfilehash: 77d6be74e351daeb10b433aafcb39f9df682e573dc019d7871e148b4b924eda8
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 13a78a55f3a09e5b16caf3af9c63c83624122b63
+ms.sourcegitcommit: d6ecc4ab48c7e0e048fd8248f6379222642e9d41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11806297"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "11925532"
 ---
-# <a name="use-webdriver-chromium-for-test-automation"></a>Usar WebDriver (Chromium) para la automatización de pruebas  
+# <a name="use-webdriver-to-automate-microsoft-edge"></a>Use WebDriver para automatizar Microsoft Edge  
 
-WebDriver permite a los desarrolladores crear pruebas automatizadas que simulan la interacción del usuario.  Las pruebas y simulaciones de WebDriver difieren de las pruebas unitarias de JavaScript de las siguientes maneras.  
+WebDriver permite a los desarrolladores automatizar Microsoft Edge mediante la simulación de la interacción del usuario.  Las pruebas y simulaciones de WebDriver difieren de las pruebas unitarias de JavaScript de las siguientes maneras.  
 
 *   Tiene acceso a la funcionalidad y la información que no están disponibles para JavaScript que se ejecuta en exploradores.  
 *   Simula eventos de usuario o eventos de nivel de sistema operativo con mayor precisión.  
@@ -403,6 +403,11 @@ Para obtener más información acerca de Application Guard, vaya a:
 *  [Protección de aplicaciones de Microsoft Defender general][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
 
 
+## <a name="opt-out-of-diagnostic-data-collection"></a>No participar en la recopilación de datos de diagnóstico
+
+De forma predeterminada, Microsoft Edge controlador envía datos de diagnóstico, como el estado del comando [New Session WebDriver][WebDriverProtocolNewSession] a Microsoft.  Para desactivar la colección de datos de diagnóstico para Microsoft Edge driver, establezca la `MSEDGEDRIVER_TELEMETRY_OPTOUT` variable de entorno en `1` .  Para obtener más información acerca de los datos que Microsoft Edge Driver recopila, vaya a la [Microsoft Edge de privacidad.][MicrosoftEdgePrivacyWhitepaper]  
+
+
 ## <a name="see-also"></a>Consulte también
 
 *  [Documentación de Selenio:][SeleniumDocumentation] información sobre WebDriver en el contexto de Selenio y cómo escribir pruebas automatizadas de WebDriver con Selenio.
@@ -420,6 +425,8 @@ El Microsoft Edge está deseando escuchar sus comentarios acerca del uso de WebD
 <!-- links -->  
 [DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Funcionalidades y EdgeOptions | Microsoft Docs"  
+[MicrosoftEdgePrivacyWhitepaper]: /microsoft-edge/privacy-whitepaper#microsoft-edge-driver
+
 <!-- external links -->
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge- Directivas | Microsoft Docs"  
 [DeployedgeMicrosoftEdgeSecurityWindowsDefenderApplicationGuard]: /deployedge/microsoft-edge-security-windows-defender-application-guard "Microsoft Edge compatibilidad con Protección de aplicaciones de Microsoft Defender | Microsoft Docs"
@@ -464,5 +471,6 @@ El Microsoft Edge está deseando escuchar sus comentarios acerca del uso de WebD
 [VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"  
 
 [W3CWebdriver]: https://w3.org/TR/webdriver2 "WebDriver | W3C"  
+[WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session "8.1 Nueva sesión | Borrador de trabajo de W3C 24 de agosto de 2020"
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Explorador sin cabeza | Wikipedia"  

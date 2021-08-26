@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral
-ms.openlocfilehash: 4406cd874eab588d69066e5a15b8fa944e398705
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: bcec0b596ff9e1fd06e5d38507f0e00d5bffbdec
+ms.sourcegitcommit: d6ecc4ab48c7e0e048fd8248f6379222642e9d41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893754"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "11925546"
 ---
 # <a name="switch-to-a-preview-channel-to-test-upcoming-apis-and-features"></a>Cambiar a un canal de vista previa para probar las próximas API y características
 
@@ -202,7 +202,7 @@ Para deshacer la configuración anterior, ejecute el siguiente comando:
 
 `REG DELETE HKLM\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /f`
 
-### <a name="registry-override-browser-executable-folder"></a>Invalidación del Registro: carpeta ejecutable del explorador
+### <a name="registry-override-release-channel-preference"></a>Invalidación del Registro: preferencia de canal de publicación
 
 Para hacer que la aplicación use un canal Microsoft Edge vista previa mediante una invalidación del Registro que cambie la preferencia del canal de versión cambiando el orden de búsqueda de un canal:
 

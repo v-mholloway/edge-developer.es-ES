@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 2b6bb6099a173bf3d9346c8374ed918300c2a4b4eb62b2e44b72fa2ec24de632
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 24bc836c1ebeb6d9915b75932880639594e48ca8
+ms.sourcegitcommit: d6ecc4ab48c7e0e048fd8248f6379222642e9d41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807072"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "11925560"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -166,7 +166,7 @@ Por ejemplo, los `h1` estilos agregados con `CSSStyleSheet` \(CSSOM API\) no se 
    Cambiar la `background` propiedad de los estilos `h1` agregados con de a `CSSStyleSheet` `pink` `lightblue` .
 :::image-end:::  
 
-Pruebe esta característica con un [ejemplo que use CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
+Pruebe esta característica con un [ejemplo que use CSS-in-JS][CodepenZoherghadyaliAbdgrpz].  Para obtener más información, vaya a Edición de estilos para marcos [CSS-in-JS][CssInJs].
 
 Chromium problema [#946975][CR946975]  
 
@@ -333,7 +333,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
-
+[CssInJs]: ../../../css/css-in-js.md "Edición de estilos para marcos CSS-in-JS | Microsoft Docs"
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenu]: ../../../command-menu.md "Ejecutar comandos con el Microsoft Edge de comandos DevTools | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer: personalice Microsoft Edge DevTools | Microsoft Docs"
@@ -384,7 +384,7 @@ Si está en Windows o macOS, considere la posibilidad de usar los canales [Micro
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "Modelo de objetos CSS (CSSOM) | Borradores del editor de grupo de trabajo CSS de W3C"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Publicar un tweet"  
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools cuenta de Twitter"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "Cuenta de Twitter de @EdgeDevTools"  
 
 [V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Campos de clase privada: campos de clase pública y privada | V8. Desarrollo"  
 [V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Almacenamiento en caché de código para desarrolladores de JavaScript | V8. Desarrollo"  
