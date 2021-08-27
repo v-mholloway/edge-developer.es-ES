@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, desarrollo web, herramientas f12, devtools
-ms.openlocfilehash: 42032dc16a1a36a4e33730f11486c6d382e0a62d8bb6de000f5bd6f10f9b4831
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 3a96ddeada2f3ff47b98d435242b13c2677a3d7a
+ms.sourcegitcommit: a0fe46d94839011d86daf2f6a07bfd7fbdf86c32
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800989"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "11925739"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -69,9 +69,9 @@ La **interfaz de usuario de** la herramienta Orígenes tiene tres partes.
    Las 3 partes de la interfaz **de usuario de la herramienta Orígenes**  
 :::image-end:::  
 
-1.  El **panel** Navegador \(Sección 1 de la figura anterior\).  Aquí se enumeran todos los archivos que solicita la página web.  
-1.  El **panel Editor** \(Sección 2 de la figura anterior\).  Después de elegir un archivo en el panel **Navegador,** este panel muestra el contenido del archivo.  
-1.  El **panel** Depurador \(Sección 3 de la figura anterior\).  Este panel proporciona herramientas para inspeccionar JavaScript para la página web.  Si la ventana DevTools es amplia, este panel se muestra a la derecha del **panel Editor.**  
+*  El **panel** Navegador \(en la esquina superior izquierda\).  Aquí se enumeran todos los archivos que solicita la página web.  
+*  El **panel Editor** \(en la esquina superior derecha\).  Después de elegir un archivo en el panel **Navegador,** este panel muestra el contenido del archivo.  
+*  El **panel** Depurador \(en la parte inferior\).  Este panel proporciona herramientas para inspeccionar JavaScript para la página web.  Si la ventana DevTools es amplia, este panel se muestra a la derecha del **panel Editor.**  
     
 ## <a name="step-3-pause-the-code-with-a-breakpoint"></a>Paso 3: Pausar el código con un punto de interrupción  
 
@@ -149,7 +149,7 @@ Los puntos de interrupción de línea de código son el tipo más común de punt
     ```  
     
 1.  A la izquierda, el número de esta línea de código en particular se muestra como **34**.  Elija la **línea 34**.  DevTools muestra un icono rojo a la izquierda de **34**.  El icono rojo indica que un punto de interrupción de línea de código está en esta línea.  DevTools siempre se pausa antes de que se ejecute esta línea de código.  
-1.  Elija **Reanudar ejecución de script** \( Reanudar ejecución de script ![ ](../media/resume-script-run-icon.msft.png) \).  El script continúa en ejecución hasta que llega a la línea 33.  En las líneas 31, 32 y 33, DevTools imprime los valores de , y a la derecha de los dos puntos y coma `addend1` `addend2` en cada `sum` línea.  
+1.  Elija **Reanudar ejecución de script** \( Reanudar ejecución de script ![ ](../media/resume-script-run-icon.msft.png) \).  El script continúa en ejecución hasta que llega a la línea 34.  En las líneas 31, 32 y 33, DevTools imprime los valores de , y a la derecha de los dos puntos y coma `addend1` `addend2` en cada `sum` línea.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools se pausa en el punto de interrupción de línea de código en la línea 34" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
        DevTools se pausa en el punto de interrupción de línea de código en la línea 34  
