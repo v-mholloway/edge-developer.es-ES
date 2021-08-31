@@ -1,6 +1,6 @@
 ---
 description: Guía de introducción con WebView2 para aplicaciones WinForms
-title: Introducción a webView2 para aplicaciones de WinForms
+title: Introducción a WebView2 en aplicaciones de WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, control de explorador, edge html, get started, Introducción, .NET, windows forms
-ms.openlocfilehash: d4ccdd32f18a4e7048183b1688b1a740ae004d68
-ms.sourcegitcommit: 095331fd73d99aa68e17d318cd69fef4badef9ef
+ms.openlocfilehash: 292e859bc9d763b28dca5a7115b6edf94284c24b
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "11921844"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934075"
 ---
-# <a name="get-started-with-webview2-in-windows-forms"></a>Introducción a WebView2 en Windows Forms
+# <a name="get-started-with-webview2-in-winforms-apps"></a>Introducción a WebView2 en aplicaciones de WinForms
 
 En este artículo, empieza a crear tu primera aplicación WebView2 y obtén información sobre las características principales de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Para obtener más información sobre las API individuales, vaya a [Referencia de api][DotnetApiMicrosoftWebWebview2Winforms].  
 
@@ -347,7 +347,7 @@ Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.
 <!-- links -->  
 
 [WV2BestPractices]: ../concepts/developer-guide.md "Procedimientos recomendados de desarrollo de WebView2 | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegación | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Espacio de nombres Microsoft.Web.WebView2.WinForms | Microsoft Docs"  

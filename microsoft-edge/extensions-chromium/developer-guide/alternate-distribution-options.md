@@ -7,16 +7,16 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 12c01ba47946bb05bc1baede2f441715ac29fe8e73c8fbc504f5f16823541749
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 3dd82042700bfd5a3092179dfe33d2db5e4f1b71
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11798340"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934329"
 ---
 # <a name="alternate-extension-distribution-methods"></a>Métodos de distribución de extensiones alternativos  
 
-Por lo general, las extensiones se distribuyen a través Microsoft Edge de complementos. Hay algunos escenarios en los que los desarrolladores pueden necesitar distribuir extensiones mediante métodos alternativos. Por ejemplo:
+Por lo general, las extensiones se distribuyen a través Microsoft Edge sitio web de complementos. Hay algunos escenarios en los que los desarrolladores pueden necesitar distribuir extensiones mediante métodos alternativos. Por ejemplo:
 
 1.  La extensión está asociada con otro software y debe instalarse junto con el resto del software incluido.   
 1.  Los administradores de red desean distribuir una extensión en toda su organización.   
@@ -28,7 +28,7 @@ Las extensiones que no se cargan desde el almacén de complementos perimetrales 
     
 ## <a name="before-you-begin"></a>Antes de empezar  
 
-Asegúrese de publicar la extensión en el almacén Microsoft Edge complementos o empaquetar un archivo y asegúrese de que se instala correctamente `.crx` en el equipo.  Si instala el archivo `.crx` mediante , asegúrese de que puede navegar a la extensión en esa dirección `update_URL` URL.  
+Asegúrese de publicar la extensión en el sitio web Microsoft Edge complementos o empaquetar un archivo y asegúrese de que se instala correctamente `.crx` en el equipo.  Si instala el archivo `.crx` mediante , asegúrese de que puede navegar a la extensión en esa dirección `update_URL` URL.  
 
 Además, asegúrese de que tiene la siguiente información.    
 
@@ -47,7 +47,7 @@ Para distribuir la extensión mediante el Windows, siga estos pasos.
     *   32 bits Windows: `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` .  
     *   64 bits Windows: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` .  
 1.  Cree una nueva clave o carpeta en **Extensiones** con el mismo nombre que el identificador de la extensión. Por ejemplo, cree la clave con el nombre `aaaaaaaaaabbbbbbbbbbcccccccccc` .  
-1.  En la **clave Extensiones,** cree la `update_url` propiedad y establezca el valor en `https://edge.microsoft.com/extensionwebstorebase/v1/crx` .  La propiedad apunta al archivo de la extensión en el almacén Microsoft Edge `update_url` `.crx` complementos.  
+1.  En la **clave Extensiones,** cree la `update_url` propiedad y establezca el valor en `https://edge.microsoft.com/extensionwebstorebase/v1/crx` .  La `update_url` propiedad apunta al archivo de la extensión en el sitio Microsoft Edge de `.crx` complementos.  
 
     ```json
     {
@@ -101,7 +101,7 @@ Para distribuir la extensión mediante un archivo JSON de preferencias, siga est
         }
         ```  
  
-    *  Copie el siguiente código en el archivo JSON al instalarlo desde el almacén de complementos de Microsoft Edge en macOS y Linux.
+    *  Copie el siguiente código en el archivo JSON al instalarlo desde el sitio web de Microsoft Edge complementos en macOS y Linux.
     
         ```json
         {

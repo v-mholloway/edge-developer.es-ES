@@ -1,6 +1,6 @@
 ---
-description: Guía de introducción a WebView2 para aplicaciones WinUI
-title: Introducción a WebView2 para aplicaciones WinUI
+description: Guía de introducción para usar WebView2 para aplicaciones de WinUI 3.
+title: Introducción a WebView2 en WinUI 3 (Windows SDK de aplicaciones)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/17/2021
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicaciones winui, winui, edge, CoreWebView2, control de explorador, html perimetral, introducción, Introducción, .NET
-ms.openlocfilehash: 64d2806cf0fa55619701e0b208366a0807407350
-ms.sourcegitcommit: 9f5dd05432f87339f4c3d71f1f9ce1d06afcaf4b
+ms.openlocfilehash: a1d2f052c8703a7a8a1792d628ba22735192a7f4
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "11675137"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934060"
 ---
 # <a name="get-started-with-webview2-in-winui-3-windows-app-sdk"></a>Introducción a WebView2 en WinUI 3 (Windows SDK de aplicaciones)
 
-En este artículo, empieza a crear tu primera aplicación WebView2 y obtén información sobre las características principales de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  La primera aplicación WebView2 usa WinUI3.  Para obtener más información sobre las API individuales, vaya a [Referencia de api][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
+En este artículo, empieza a crear tu primera aplicación WebView2 y obtén información sobre las características principales de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  La primera aplicación WebView2 usa WinUI 3.  Para obtener más información sobre las API individuales, vaya a [Referencia de api][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
         
 ## <a name="step-0---set-up-development-environment"></a>Paso 0: Configurar el entorno de desarrollo 
 
@@ -262,7 +262,7 @@ Para compilar y ejecutar el proyecto, seleccione `F5` .  Asegúrate de que la ap
 
 Enhorabuena, has creado tu primera aplicación WebView2.  
 
-## <a name="next-steps"></a>Siguientes pasos  
+## <a name="next-steps"></a>Pasos siguientes  
 
 Para seguir aprendiendo más sobre WebView2, vaya a los siguientes recursos.  
 
@@ -284,8 +284,8 @@ Para enviar las solicitudes de características específicas de WinUI o los erro
 <!-- links -->  
 [WV2BestPractices]: ../concepts/developer-guide.md "Procedimientos recomendados de desarrollo de WebView2 | Microsoft Docs"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Eventos de navegación | Microsoft Docs"  
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
 

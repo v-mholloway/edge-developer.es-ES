@@ -1,6 +1,6 @@
 ---
 description: Guía de introducción a WebView2 para aplicaciones de Win32
-title: Introducción a WebView2 para aplicaciones de Win32
+title: Introducción a WebView2 en aplicaciones de Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, html perimetral
-ms.openlocfilehash: 988cee4b2998ad185464402e8755d71118c931e6
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: 453e4884ca81433a620018bf5babe2c6ec9a0449
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893635"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934152"
 ---
-# <a name="get-started-with-webview2"></a>Introducción a WebView2  
+# <a name="get-started-with-webview2-in-win32-apps"></a>Introducción a WebView2 en aplicaciones de Win32
 
 En este artículo, empieza a crear tu primera aplicación WebView2 y obtén información sobre las características principales de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Para obtener más información acerca de las API de WebView2 individuales, vaya a [Referencia de api][Webview2ReferenceWin32].  
 

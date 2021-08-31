@@ -7,18 +7,21 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: f82b6743999d26eadcb0452ae80e9c67795582232a0dcce6ef91aa9f0f3e903a
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: f05ae204316797dc7a532d825f71572abcff89d7
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11797829"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934434"
 ---
 # <a name="microsoft-edge-add-ons-store-developer-policies"></a>Directivas para desarrolladores del tienda de complementos de Microsoft Edge  
 
 ## <a name="introduction-and-objective-of-this-document"></a>Introducción y objetivo de este documento  
 
 Gracias por su interés en desarrollar extensiones para la Microsoft Edge complementos.  Las directivas de desarrollador de la tienda de complementos de Microsoft Edge \(Directivas de desarrollador de la tienda [][MicrosoftPartnerCenter] de complementos\) se aplican a las extensiones, incluido el envío de extensiones a través del Centro de partners y la provisión de dichas extensiones a través de los complementos de Microsoft Edge.  
+
+El _Microsoft Edge de complementos_ de Microsoft Edge también se denomina Microsoft Edge de _complementos._  Las _Microsoft Edge de_ desarrolladores de la tienda de complementos de Microsoft Edge también se denominan directivas para desarrolladores de sitios web de Microsoft Edge _complementos._
+
 
 ## <a name="principles"></a>Principios  
 

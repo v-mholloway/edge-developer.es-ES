@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral, seguridad
-ms.openlocfilehash: a37c5de7866b86bfadf4ab2059bd453741472ce75294a5220470c0c68ce60052
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 4f4da9e2db588b99f6fe2538941969beb2343a77
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800167"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934068"
 ---
 # <a name="best-practices-for-developing-secure-webview2-applications"></a>Procedimientos recomendados para desarrollar aplicaciones webview2 seguras  
 
@@ -43,7 +43,7 @@ When constructing a message to send into a WebView, prefer using `PostWebMessage
 
 <!-- links -->  
 
-[Webview2Main]: ../index.md "Introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
+[Webview2Main]: ../index.md "Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interfaz ICoreWebView2Settings | Microsoft Docs"  
 

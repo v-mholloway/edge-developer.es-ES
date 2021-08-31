@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral
-ms.openlocfilehash: 8e778e32027af7ec7db931b1a321a6d15629d39b
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: 91a09823a60fbe60e9eb23d938e8a173366dbf98
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893246"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934089"
 ---
 # <a name="statically-link-the-webview2-loader-library"></a>Vincular estáticamente la biblioteca de cargadores de WebView2  
 
@@ -59,7 +59,7 @@ Para las aplicaciones que no desean enviar un `WebView2Loader.dll` , siga estos 
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Consulta también  
 
 *   Para empezar a usar WebView2, vaya a [WebView2 Introducción Guías][Webview2MainGetStarted].  
 *   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya a [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.
@@ -71,8 +71,8 @@ Para las aplicaciones que no desean enviar un `WebView2Loader.dll` , siga estos 
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
-[Webview2MainGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentarios de WebView: MicrosoftEdge/WebViewFeedback | GitHub"  
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  

@@ -1,6 +1,6 @@
 ---
 description: Hospedar contenido web en las aplicaciones de Win32, .NET y UWP con el control WebView2 de Microsoft Edge.
-title: Control WebView2 de Microsoft Edge
+title: Introducción a Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones win32, win32, perímetro, ICoreWebView2, CoreWebView2, ICoreWebView2Host, control de explorador, html perimetral, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
-ms.openlocfilehash: 4f2a7b128c55ad1b006da8ffdcf939b3e20581be
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: faa4c5c075e0216eebccd7520d34923878c8204f
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893369"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11933991"
 ---
-# <a name="introduction-to-microsoft-edge-webview2"></a>Introducción a Microsoft Edge WebView2  
+# <a name="introduction-to-microsoft-edge-webview2"></a>Introducción a Microsoft Edge WebView2
 
 El control Microsoft Edge WebView2 permite insertar tecnologías web \(HTML, CSS y JavaScript\) en las aplicaciones nativas.  El control WebView2 usa [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] como motor de representación para mostrar el contenido web en las aplicaciones nativas.  Con WebView2, puede insertar código web en diferentes partes de la aplicación nativa o crear toda la aplicación nativa en una sola instancia de WebView.  Para obtener información sobre cómo empezar a crear una aplicación WebView2, vaya a [Introducción](#get-started).  
 
@@ -137,20 +137,21 @@ Las aplicaciones híbridas permiten a los desarrolladores disfrutar de lo mejor 
    :::column-end:::
 :::row-end:::  
 
-## <a name="get-started"></a>Comenzar  
+## <a name="get-started"></a>Comenzar
 
 Para crear y probar la aplicación con el control WebView2, debe tener <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and -->el [SDK de WebView2][NugetPackagesMicrosoftWebWebView2] instalado.  Seleccione una de las siguientes opciones para comenzar.  
 
-*   [Comenzar con Win32 C/C++][Webview2GetStartedWin32]  
-*   [Comenzar con WPF][Webview2GetStartedWpf]  
-*   [Comenzar con WinForms][Webview2GetStartedWinforms]  
-*   [Comenzar con WinUI3][Webview2GetStartedWinui]  
+*   [Introducción a WebView2 en aplicaciones de Win32][Webview2GetStartedWin32]  
+*   [Introducción a WebView2 en aplicaciones WPF][Webview2GetStartedWpf]
+*   [Introducción a WebView2 en aplicaciones de WinForms][Webview2GetStartedWinforms]
+*   [Introducción a WebView2 en aplicaciones de WinUI 2][Webview2GetStartedWinui2]
+*   [Introducción a WebView2 en aplicaciones de WinUI 3 (versión preliminar)][Webview2GetStartedWinui]
     
-El repositorio de [Ejemplos de WebView2][GithubMicrosoftedgeWebview2samples] contiene ejemplos que muestran todas las características de SDK de WebView2 y los patrones de uso de la API.  A medida que se agreguen más características a SDK de WebView2, las aplicaciones de ejemplo se actualizarán.  
+El repositorio de [Ejemplos de WebView2][GithubMicrosoftedgeWebview2samples] contiene ejemplos que muestran todas las características de SDK de WebView2 y los patrones de uso de la API.  A medida que se agreguen más características a SDK de WebView2, las aplicaciones de ejemplo se actualizarán.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles  
 
-Una versión de disponibilidad general \(GA\) o preliminar está disponible en los siguientes entornos de programación.  
+Una versión de disponibilidad general \(GA\) o vista previa de WebView2 está disponible para los siguientes entornos de programación.
 
 *   Win32 C/C++ \(GA\)  
 *   .NET Framework 4.5 o posterior  
@@ -201,22 +202,23 @@ Para obtener más información sobre cómo crear e implementar aplicaciones webV
 [Webview2ConceptsSecurity]: ./concepts/security.md "Procedimientos recomendados para desarrollar aplicaciones webview2 seguras | Microsoft Docs"  
 [Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Administrar la carpeta de datos de usuario | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Comprender las versiones de SDK de WebView2 | Microsoft Docs"  
-[Webview2GetStartedWin32]: ./get-started/win32.md "Introducción a WebView2 | Microsoft Docs"  
-[Webview2GetStartedWinforms]: ./get-started/winforms.md "Introducción a WebView2 en las aplicaciones de Windows Forms (versión preliminar) | Microsoft Docs"  
-[Webview2GetStartedWinui]: ./get-started/winui.md "Introducción a WebView2 en WinUI3 (versión preliminar) | Microsoft Docs"  
-[Webview2GetStartedWpf]: ./get-started/wpf.md "Introducción a WebView2 en WPF (versión preliminar) | Microsoft Docs"  
-[Webview2HowToDebug]: ./how-to/debug.md "Cómo depurar con WebView2 | Microsoft Docs"  
+
+[Webview2GetStartedWin32]: ./get-started/win32.md "Introducción a WebView2 en aplicaciones de Win32 | Microsoft Docs"  
+[Webview2GetStartedWinforms]: ./get-started/winforms.md "Introducción a WebView2 en WinForms apps | Microsoft Docs"  
+[Webview2GetStartedWinui2]: ./get-started/winui2.md "Introducción a WebView2 en winui 2 aplicaciones | Microsoft Docs"  
+[Webview2GetStartedWinui]: ./get-started/winui.md "Introducción a WebView2 en winui 3 aplicaciones (versión preliminar) | Microsoft Docs"  
+[Webview2GetStartedWpf]: ./get-started/wpf.md "Introducción a WebView2 en aplicaciones wpf | Microsoft Docs"  
+
+[Webview2HowToDebug]: ./how-to/debug.md "Introducción a la depuración de aplicaciones webView2 | Microsoft Docs"  
 [Webview2HowToWebdriver]: ./how-to/webdriver.md "Automatizar y probar WebView2 con Microsoft Edge Driver | Microsoft Docs"  
-[Webview2ReleaseNotes]: ./release-notes.md "Notas de la versión de SDK de WebView2 | Microsoft Docs"  
-
-[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "Biblioteca de interfaz de usuario de Windows 3 versión preliminar 2 (julio de 2020) | Microsoft Docs"  
-
+[Webview2ReleaseNotes]: ./release-notes.md "Notas de la versión de WebView2 SDK | Microsoft Docs"  
+<!-- external links -->
+[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "Windows Biblioteca de interfaz de usuario 3 Versión preliminar 2 (julio de 2020) | Microsoft Docs"  
 [DeployedgeMicrosoftEdgeSupportedOS]: /deployedge/microsoft-edge-supported-operating-systems "Sistemas operativos compatibles con Microsoft Edge | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "Comentarios de WebView: MicrosoftEdge/WebViewFeedback | GitHub"  
 
 [MicrosoftedgeinsiderMain]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Descargar Microsoft Edge Insider"  
 
 [NugetPackagesMicrosoftWebWebView2]: https://www.nuget.org/packages/Microsoft.Web.WebView2 "Microsoft.Web.WebView2 | Galería de NuGet"  

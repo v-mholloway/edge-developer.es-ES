@@ -1,6 +1,6 @@
 ---
-description: Obtenga información sobre cómo administrar carpetas de datos de usuario en aplicaciones WebView2
-title: Administrar la carpeta de datos de usuario en aplicaciones WebView2.
+description: Obtenga información sobre cómo administrar carpetas de datos de usuario en aplicaciones WebView2.
+title: Administrar la carpeta de datos de usuario
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral, carpeta de datos de usuario
-ms.openlocfilehash: 6e8253499582fe7beb49b3cdf5effb0e0553073c1beebcc45ae7fe4c05e1b908
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 807c0cfa2a6a0ffa09aab7d369abc72ef2a390e4
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11800202"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11933970"
 ---
 # <a name="manage-the-user-data-folder"></a>Administrar la carpeta de datos de usuario  
 
@@ -35,7 +35,7 @@ Para especificar la ubicación de la carpeta de datos de usuario, incluya el par
     
 ## <a name="delete-user-data-folders"></a>Eliminar carpetas de datos de usuario  
 
-Es posible que la aplicación necesite eliminar carpetas de datos de usuario:  
+Es posible que la aplicación necesite eliminar carpetas de datos de usuario por los siguientes motivos:
 
 *   Al desinstalar la aplicación.  Si desinstala aplicaciones empaquetadas Windows store, Windows las carpetas de datos de usuario automáticamente.  
 *   Para limpiar todo el historial de datos de exploración.  
@@ -57,7 +57,7 @@ Tenga en cuenta lo siguiente al compartir carpetas de datos de usuario:
 1.  Al volver a crear controles WebView2 para actualizar las versiones del explorador mediante [eventos add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) \(Win32\) o [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) \(.NET\), asegúrese de que los procesos del explorador salen y cierran los controles webView2 que comparten la misma carpeta de datos de usuario.  Para recuperar el identificador de proceso del proceso del explorador, use la `BrowserProcessId` propiedad del control WebView2.  
 1.  Los controles WebView2 que comparten la misma carpeta de datos de usuario deben usar las mismas opciones para [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) \(Win32\) o [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) \(.NET\).  Si no es así, la creación de WebView2 producirá un error con `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
     
-Para aislar diferentes partes de la aplicación o cuando no es necesario compartir datos entre controles WebView2, puede elegir usar diferentes carpetas de datos de usuario.  Por ejemplo, una aplicación puede estar formada por dos controles WebView2, uno para mostrar un anuncio y otro para mostrar contenido de la aplicación.  En este escenario, los desarrolladores pueden optar por usar diferentes carpetas de datos de usuario para cada control WebView2.  
+Para aislar diferentes partes de la aplicación, o cuando no es necesario compartir datos entre controles WebView2, puede usar diferentes carpetas de datos de usuario.  Por ejemplo, una aplicación puede estar formada por dos controles WebView2, uno para mostrar un anuncio y otro para mostrar contenido de la aplicación.  Puede usar diferentes carpetas de datos de usuario para cada control WebView2.
 
 > [!NOTE]
-> Cada proceso de explorador webView2 consume memoria adicional y espacio en disco.  Por lo tanto, se recomienda no ejecutar WebView2s con demasiadas carpetas de datos de usuario diferentes al mismo tiempo.  
+> Cada proceso de explorador webView2 consume memoria adicional y espacio en disco.  Por lo tanto, se recomienda no ejecutar un control WebView2 con demasiadas carpetas de datos de usuario diferentes al mismo tiempo.  

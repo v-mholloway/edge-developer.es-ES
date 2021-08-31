@@ -7,12 +7,12 @@ ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: bb4d9d74ffbb50e181ff5868da038188317f6bd30210a4bfdbd027fff4203b4c
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: b05bcb9f3adb71255738bf6c1e2fcbd396af6924
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803240"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934474"
 ---
 # <a name="app-developer-agreement-addendum-for-microsoft-edge-program-users"></a>Addendum de acuerdo para desarrolladores de aplicaciones Microsoft Edge usuarios del programa  
 
@@ -40,4 +40,4 @@ Estos Términos y condiciones para Microsoft Edge Extensions \(el "Addendum de e
 
 <!-- links -->  
 
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge Directivas de desarrollador del almacén de complementos | Microsoft Docs"  
+[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge Directivas de desarrollador de sitios web de complementos | Microsoft Docs"  

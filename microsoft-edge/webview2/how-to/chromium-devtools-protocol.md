@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Chrome DevTools Protocol
-ms.openlocfilehash: 16504587d70be184760627ac224cf8a12f0f7e024cba7c729ac23cb6734bad36
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 4d59cf7c8a3531622b8edad182a124502cbffbe9
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11803201"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934131"
 ---
 # <a name="use-chromium-devtools-protocol-in-webview2"></a>Usar el protocolo DevTools de Chromium en WebView2  
 
@@ -88,10 +88,9 @@ Para crear una `HTML file` para buscar la geolocalización, complete siguiendo l
     
 ## <a name="step-2-display-geolocationhtml-in-a-webview2"></a>Paso 2: Mostrar geolocation.html en un WebView2  
 
-1.  Para crear una aplicación WebView2, usa cualquiera de las siguientes guías de introducción o ejemplos de WebView2.  
-    *   [Introducción webView2 en Windows forms][Webview2GetStartedWinforms]  
-    *   [Introducción webView2 en WPF][Webview2GetStartedWpf]  
-    *   [Ejemplos de WebView2][GithubMicrosoftedgeWebview2samples]  
+1.  Para crear una aplicación WebView2, usa una guía de introducción o los ejemplos de WebView2.
+    *   [Comenzar](../index.md#get-started)
+    *   [Ejemplos de WebView2][GithubMicrosoftedgeWebview2samples]
         
 1.  Establezca la navegación inicial del control WebView2 en `geolocation.html` .  
     
@@ -175,15 +174,11 @@ Para presentar un error Chromium o un problema del Protocolo DevTools, complete 
 1.  Archivo de un [informe de errores][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform].  
 1.  Vaya a [Comentarios de WebView][GithubMicrosoftedgeWebview2feedback] y abra un nuevo problema.  
     
-## <a name="see-also"></a>Consulte también  
+## <a name="see-also"></a>Consulta también  
 
 *   [Ejemplos de WebView2][GithubMicrosoftedgeWebview2samples]  
     
  <!-- links -->  
-
-[Webview2GetStartedWinforms]: /microsoft-edge/webview2/get-started/winforms "Introducción a WebView2 en Windows Forms | Microsoft Docs"  
-[Webview2GetStartedWpf]: /microsoft-edge/webview2/get-started/wpf "Introducción a WebView2 en WPF | Microsoft Docs"  
-
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "Método CoreWebView2.GetDevToolsProtocolEventReceiver(String) | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "Método CoreWebView2.CallDevToolsProtocolMethodAsync(String, String) | Microsoft Docs"  
 

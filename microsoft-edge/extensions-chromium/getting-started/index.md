@@ -1,24 +1,24 @@
 ---
-description: Obtenga información sobre Chromium y conceptos básicos para crear extensiones.
-title: Microsoft Edge (Chromium) Conceptos y arquitectura de extensiones
+description: La arquitectura de Microsoft Edge (Chromium) y los conceptos básicos para crear extensiones.
+title: Conceptos de extensión y arquitectura
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
-ms.openlocfilehash: cc6afc4d0ea8e242b535235e89d723d07a2f1206621a7b26874a058699759de2
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 57f59be3e17d94c2645b15d93ec9f6f9ebda3898
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807473"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934458"
 ---
-# <a name="extension-concepts-and-architecture"></a>Conceptos de extensión y arquitectura  
+# <a name="extension-concepts-and-architecture"></a>Conceptos de extensión y arquitectura
 
-En este artículo se proporciona una breve introducción a los conceptos que le ayudarán a crear una extensión.  Para comprender Microsoft Edge extensiones \(Chromium\), siga este procedimiento para comprender cómo funcionan los exploradores de varias pestañas.  
+En este artículo se presentan conceptos que le ayudarán a crear una Microsoft Edge extensión.  Siga este procedimiento para comprender cómo funcionan los exploradores de varias pestañas.
 
-## <a name="understand-how-browsers-work"></a>Comprender cómo funcionan los exploradores  
+## <a name="understand-how-browsers-work"></a>Comprender cómo funcionan los exploradores
 
 En la siguiente lista se describe información útil para comprender antes de crear la extensión.  
 
@@ -29,7 +29,9 @@ En la siguiente lista se describe información útil para comprender antes de cr
     :::image-end:::  
     
 1.  Cada pestaña controla una solicitud GET.  Cada pestaña usa una dirección URL para obtener una sola secuencia de datos, que normalmente es un documento HTML.  Esa única secuencia o página incluye instrucciones como JavaScript, etiquetas, referencias de imagen, referencias CSS y mucho más.  Todos los recursos se descargan en esa página de una pestaña y, a continuación, la página se representa en la pestaña.  
+
 1.  La comunicación se produce entre cada pestaña y un servidor remoto.  Cada pestaña se ejecuta en un entorno aislado.  Cada pestaña todavía está conectada a Internet, pero cada una está aislada de otras pestañas.  Una pestaña puede ejecutar JavaScript para comunicarse con un servidor.  El servidor es el servidor de origen de la primera solicitud GET que se introdujo en la barra de direcciones URL de la pestaña.  
+
 1.  El modelo de extensión usa un modelo de comunicación diferente.  De forma similar a una página de pestaña, una extensión se ejecuta en un subproceso individual que está aislado de otros subprocesos de página de pestañas.  Una pestaña envía solicitudes GET únicas a servidores remotos y, a continuación, representa la página.  Sin embargo, una extensión funciona de forma similar a un servidor remoto.  Al instalar una extensión en un explorador, se crea un servidor web independiente en el explorador.  La extensión está aislada de todas las páginas de pestañas.  
     
     :::image type="complex" source="./media/index-image3-upsidedown.png" alt-text="Las extensiones usan un modelo de comunicación diferente" lightbox="./media/index-image3-upsidedown.png":::

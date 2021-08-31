@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, controlador de explorador, edge html
-ms.openlocfilehash: b5a86751bfe3386058812ca166fa7cf9e0e201dc
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 3920f147e5af2a39efffff1ce91cf37a2e861a59
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535646"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934096"
 ---
 # <a name="win32-c-webview2-api-conventions"></a>Convenciones de la API de WebView2 de Win32 C++  
 
@@ -144,16 +144,11 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 *   Para empezar a usar WebView2 Win32 C/C++, vaya a [Introducción a WebView2][Webview2IndexGetStarted].  
 *   Para obtener información más detallada acerca de las API de WebView2, vaya a [Referencia de API][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Ponerse en contacto con el equipo de Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-
-[Webview2GetStartedWin32]: ../get-started/win32.md "Introducción a WebView2 | Microsoft Docs"  
-
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview: interfaz ICoreWebView2 | Microsoft Docs"  
-
 [CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Función de devolución de llamada (WRL) | Microsoft Docs"  
-
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Clase WebView2 | Microsoft Docs"  

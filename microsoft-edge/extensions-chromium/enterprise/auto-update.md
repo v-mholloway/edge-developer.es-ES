@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 81b354c73902f79212274c3d7190054dba3525ebfe549bc046503a07df53fab8
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 726414c68dabc15e765d55254e91682f6ced9f1d
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807482"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934441"
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -37,12 +37,12 @@ Al establecer la extensión para que se actualice automáticamente, la extensió
 
 Anteriormente, se admiten extensiones no basadas en almacén.  Además, actualizó los archivos binarios nativos y la extensión al mismo tiempo.  
 
-Ahora, el Microsoft Edge complementos hospeda las extensiones y actualiza la extensión con el mismo mecanismo que Microsoft Edge.  No controla el mecanismo de actualización.  Tenga cuidado al actualizar las extensiones que tienen una dependencia de los archivos binarios nativos.  
+Ahora, el Microsoft Edge de complementos hospeda las extensiones y actualiza la extensión con el mismo mecanismo que Microsoft Edge.  No controla el mecanismo de actualización.  Tenga cuidado al actualizar las extensiones que tienen una dependencia de los archivos binarios nativos.  
 
 > [!NOTE]
-> Este artículo no se aplica a las extensiones que publique con el panel [del Centro de][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] partners.  Puede usar el panel para publicar versiones actualizadas para los usuarios y para el Microsoft Edge complementos.  Para obtener más información, vaya [a Actualizar o quitar la extensión][ExtensionsPublishUpdateExtension].  
+> Este artículo no se aplica a las extensiones que publique con el panel [del Centro de][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] partners.  Puede usar el panel para publicar versiones actualizadas para los usuarios y para el sitio Microsoft Edge de complementos.  Para obtener más información, vaya [a Actualizar una Microsoft Edge extensión][ExtensionsPublishUpdateExtension].  
 
-## <a name="overview"></a>Información general  
+## <a name="overview"></a>Introducción  
 
 Cada pocas horas, Microsoft Edge comprueba si cada extensión o aplicación instalada tiene una dirección URL de actualización.  Para especificar una dirección URL de actualización para la extensión, use el `update_url` campo del manifiesto.  El `update_url` campo del manifiesto apunta a una ubicación para completar una comprobación de actualización.  Para cada `update_url` uno, envía solicitudes de archivos XML de manifiesto actualizados.  Si el archivo XML del manifiesto de actualización muestra una versión más reciente que la instalada, Microsoft Edge descarga e instala la versión más reciente.  El mismo proceso funciona para las actualizaciones manuales, donde el nuevo archivo debe firmarse con la misma `.crx` clave privada que la versión instalada actualmente.  
 
@@ -91,7 +91,7 @@ La frecuencia de comprobación de actualización predeterminada es de varias hor
 
 ## <a name="advanced-usage-request-parameters"></a>Uso avanzado: parámetros de solicitud  
 
-El mecanismo básico es simple.  Para actualizar automáticamente la extensión, realice las siguientes acciones.  
+El mecanismo básico es simple.  Para actualizar automáticamente la extensión:
 
 1.  Upload el archivo XML estático en el servidor web, como Apache.  
 1.  Actualice el archivo XML a medida que libere nuevas versiones de las extensiones.  
@@ -145,7 +145,9 @@ Si envía una sola solicitud y el número de extensiones instaladas que usan la 
 
 ## <a name="advanced-usage-minimum-browser-version"></a>Uso avanzado: versión mínima del explorador  
 
-Como nueva versión de las API para el sistema de extensiones de Microsoft Edge, puedes liberar una versión actualizada de la extensión o aplicación que solo funciona con versiones Microsoft Edge más recientes.  Cuando Microsoft Edge se actualiza automáticamente, puede tardar unos días antes de que la mayoría de los usuarios se actualicen a esa nueva versión.  Para asegurarse de que una actualización específica solo se aplica Microsoft Edge versiones actuales o más recientes que una versión específica, agregue el atributo `prodversionmin` en el manifiesto de actualización.  En el siguiente fragmento de código, el valor de atributo de especifica que la aplicación se actualizó automáticamente a la versión solo cuando el usuario ejecuta Microsoft Edge `prodversionmin` `3.0.193.0` o `2.0` `3.0.193.0` posterior.  
+Como nueva versión de las API para el sistema de extensiones de Microsoft Edge, puedes liberar una versión actualizada de la extensión o aplicación que solo funciona con versiones Microsoft Edge más recientes.  Cuando Microsoft Edge se actualiza automáticamente, puede tardar unos días antes de que la mayoría de los usuarios se actualicen a esa nueva versión.  
+
+Para asegurarse de que una actualización específica solo se aplica a Microsoft Edge versiones actuales o más recientes que una versión específica, agregue el atributo en `prodversionmin` el manifiesto de actualización.  En el siguiente fragmento de código, el valor de atributo de especifica que la aplicación se actualizó automáticamente a la versión solo cuando el usuario ejecuta Microsoft Edge `prodversionmin` `3.0.193.0` o `2.0` `3.0.193.0` posterior.  
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -157,8 +159,7 @@ Como nueva versión de las API para el sistema de extensiones de Microsoft Edge,
 ```  
 
 <!-- links -->  
-
-[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "Actualizar o quitar la extensión | Microsoft Docs"  
+[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "Actualizar una Microsoft Edge de | Microsoft Docs"  
 
 [MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centro de partners"  
 

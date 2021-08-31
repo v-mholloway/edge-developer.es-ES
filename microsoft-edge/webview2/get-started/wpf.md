@@ -1,6 +1,6 @@
 ---
 description: Guía de introducción a WebView2 para aplicaciones WPF
-title: Introducción a WebView2 para aplicaciones WPF
+title: Introducción a WebView2 en aplicaciones WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2021
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, aplicaciones wpf, wpf, edge, CoreWebView2, control de explorador, html perimetral, introducción, Introducción, .NET
-ms.openlocfilehash: 969b6209b6cb84f5345f5b0e533f2e972e81fa58
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: fa5de13079575d57e7b3b413e8b4345401a49194
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893872"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11933963"
 ---
-# <a name="get-started-with-webview2-in-wpf"></a>Introducción a WebView2 en WPF
+# <a name="get-started-with-webview2-in-wpf-apps"></a>Introducción a WebView2 en aplicaciones WPF
 
 En este artículo, empieza a crear tu primera aplicación WebView2 y obtén información sobre las características principales de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Para obtener más información sobre las API individuales, vaya a [Referencia de api][DotnetApiMicrosoftWebWebview2Wpf].  
 

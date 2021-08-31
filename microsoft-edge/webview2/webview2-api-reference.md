@@ -8,16 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador
-ms.openlocfilehash: 39e14394303beda67bb1eef52ae442103922e651
-ms.sourcegitcommit: 3d1b23679e8b61cdebe6c014247925adc04d132c
+ms.openlocfilehash: ca4bff954a13c7b1c83f5de5a028b10ea5178a9e
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "11920934"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934082"
 ---
 # <a name="microsoft-edge-webview2-api-reference"></a>Microsoft Edge Referencia de API de WebView2  
 
-El Microsoft Edge WebView2 permite hospedar contenido web en la aplicación mediante Microsoft Edge [(Chromium)](https://www.microsoftedgeinsider.com) como motor de representación.  Para obtener más información, vaya a [Overview of Microsoft Edge WebView2](./index.md) [y Introducción con WebView2](./get-started/win32.md).  
+El Microsoft Edge WebView2 permite hospedar contenido web en la aplicación mediante Microsoft Edge [(Chromium)](https://www.microsoftedgeinsider.com) como motor de representación.  Para obtener más información, vaya a [Overview of Microsoft Edge WebView2](./index.md) y [Get started with WebView2](./get-started/win32.md).  
+<!-- linking to a parent node of the TOC ("Get started with WebView2") isn't supported, so the above link goes to the first child article, but with link text of the parent TOC node. -->
 
 
 ## <a name="languages-and-frameworks"></a>Idiomas y marcos  

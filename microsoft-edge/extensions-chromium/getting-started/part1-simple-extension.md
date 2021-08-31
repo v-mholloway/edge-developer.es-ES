@@ -7,24 +7,24 @@ ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo web, html, css, javascript, desarrollador, extensiones
-ms.openlocfilehash: 14a64d92d1ec738dea444c09fd0188b90469d9d6159247d2fe3d03a27ce482a2
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 278a99ef4be8ad4472cf5aa37b18b5cfdbd3bb79
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11805191"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934504"
 ---
 # <a name="create-an-extension-tutorial---part-1"></a>Crear un tutorial de extensión: parte 1  
 
 ## <a name="overview"></a>Información general  
 
-El objetivo de este tutorial es crear una extensión Microsoft Edge (Chromium) a partir de un directorio vacío.  Está creando una extensión que muestra la imagen de la NASA del día. En este tutorial, aprenda a crear una extensión completando las siguientes acciones.  
+El objetivo de este tutorial es crear una extensión Microsoft Edge (Chromium), empezando por un directorio vacío.  Está creando una extensión que muestra la imagen de la NASA del día.  En este tutorial, aprenderás a crear una extensión mediante:
 
 *   Crear un `manifest.json` archivo.  
 *   Agregar iconos.  
 *   Abrir un cuadro de diálogo emergente predeterminado.  
 
-## <a name="before-you-begin"></a>Antes de comenzar
+## <a name="before-you-begin"></a>Antes de empezar
 
 Para probar la extensión completada que está creando en este tutorial, descargue el [código fuente][ArchiveExtensionGettingStartedPart1].  
 

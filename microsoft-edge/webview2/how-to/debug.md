@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral
-ms.openlocfilehash: 01cd67897f7041bca0cedcee2cc3242f3ebcc962
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 6f707ad14f31390a80b59292fa3ca840fdf629bd
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536180"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11933955"
 ---
 # <a name="get-started-debugging-webview2-apps"></a>Introducción a la depuración de aplicaciones webView2  
 
@@ -23,7 +23,7 @@ El objetivo del control Microsoft Edge WebView2 es combinar lo mejor de las cara
 
 Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] para depurar el contenido web que se muestra en los controles WebView2, del mismo modo que puede depurar para otra página web mostrada en Microsoft Edge.  Para abrir DevTools, establezca el foco en el control WebView y, a continuación, use una de las siguientes acciones.  
 
-*   Seleccione `F12` .  
+*   Seleccione `F12`.  
 *   Seleccione `Ctrl` + `Shift` + `I` .  
 *   Abra el menú contextual \(hacer clic con el botón secundario\) y elija `Inspect` .  
     
@@ -248,7 +248,7 @@ En Visual Studio Code, realice las siguientes acciones para depurar el código.
 *   Para obtener información más detallada acerca de las API de WebView2, vaya a [Referencia de API][Webview2ApiReference].
 *   Para obtener más información acerca de WebView2, vaya a [Recursos de WebView2][Webview2MainNextSteps].
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Ponerse en contacto con el equipo de Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -259,7 +259,7 @@ En Visual Studio Code, realice las siguientes acciones para depurar el código.
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "Propiedad CoreWebView2EnvironmentOptions.AdditionalBrowserArguments (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment: global | Microsoft Docs"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
-[Webview2MainGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Ejemplos de WebView2: MicrosoftEdge/WebView2Samples | GitHub"  

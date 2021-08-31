@@ -8,20 +8,20 @@ ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Host, control de explorador, html perimetral
-ms.openlocfilehash: 8db5c4a5b3709c144240fe88e6f8480445c1659f
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: fadd73ea14692826b7a34948989ceeaac9d4162f
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536182"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934124"
 ---
 # <a name="use-javascript-in-webview-for-extended-scenarios"></a>Usar JavaScript en WebView para escenarios extendidos  
 
 El uso de JavaScript en controles WebView2 te permite personalizar aplicaciones nativas para satisfacer tus requisitos.  En este artículo se explora cómo usar JavaScript en WebView2 y se analiza cómo desarrollar mediante funciones y características avanzadas de WebView2.  
 
-## <a name="before-you-begin"></a>Antes de comenzar  
+## <a name="before-you-begin"></a>Antes de empezar  
 
-En este artículo se supone que ya tiene un proyecto en funcionamiento.  Si no tiene un proyecto y desea seguirlo, vaya a la [WebView2 Introducción Guide][Webview2GetStartedWpf].  
+En este artículo se supone que ya tiene un proyecto en funcionamiento.  Si no tiene un proyecto y desea seguirlo, vaya a las guías de introducción a [WebView2][Webview2MainGetStarted].
 
 ## <a name="basic-webview2-functions"></a>Funciones básicas de WebView2  
 
@@ -112,23 +112,21 @@ Ahora agregue código para quitar la funcionalidad del menú contextual del cont
     
 ## <a name="see-also"></a>Consulta también  
 
-*   Para empezar a usar WebView2, vaya a [WebView2 Introducción Guías][Webview2MainGetStarted].  
+*   Para empezar a usar WebView2, vaya a [WebView2 get started guides][Webview2MainGetStarted].  
 *   Para obtener un ejemplo completo de las funcionalidades de WebView2, vaya al repositorio [WebView2Samples][GithubMicrosoftedgeWebview2samples] en GitHub.  
 *   Para obtener información detallada sobre las API de WebView2, vaya a [Referencia de api][Webview2ApiReference].  
 *   Para obtener más información sobre WebView2, vaya a [Recursos de WebView2][Webview2MainNextSteps].  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Getting in touch with the Microsoft Edge WebView team  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Ponerse en contacto con el equipo de Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
-[Webview2GetStartedWpf]: ../get-started/wpf.md "Introducción a WebView2 en WPF (versión preliminar) | Microsoft Docs"  
-[Webview2MainGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: introducción a Microsoft Edge WebView2 (versión preliminar) | Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "Introducción: introducción a Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "Pasos siguientes: Introducción a Microsoft Edge WebView2 | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - interfaz ICoreWebView2 | Microsoft Docs"  
 

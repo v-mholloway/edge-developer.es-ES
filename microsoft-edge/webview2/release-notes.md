@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, aplicaciones de win32, win32, edge, ICoreWebView2, ICoreWebView2Controller, control de explorador, html perimetral
-ms.openlocfilehash: 126efdcae9c917cc19428d4b70eac12d9f723d76
-ms.sourcegitcommit: 01ed086305c06b4e3a0436586524986700276148
+ms.openlocfilehash: aec8c8e74c044463db55c97482a9fd569fdc3fce
+ms.sourcegitcommit: 66a8e3db5b63b0532ca2f4003fa37bde6bd225b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "11893943"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934012"
 ---
 # <a name="release-notes-for-webview2-sdk"></a>Notas de la versión del SDK de WebView2  
 
@@ -180,6 +180,7 @@ Para la compatibilidad completa de la API, esta versión del SDK de WebView2 req
 
 #### <a name="bug-fixes"></a>Correcciones de errores  
 *   Se ha corregido un error en los controles .NET de WebView2 que faltaba el primer encabezado al iterar la colección `CoreWebView2WebResourceRequest` de encabezados. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
+
 
 
 ## <a name="10865-prerelease"></a>1.0.865-prerelease  
@@ -608,7 +609,7 @@ Esta versión preliminar del SDK de WebView2 requiere Microsoft Edge versión 84
     > **Anuncio:** WebView2 ahora admite Windows Forms y WPF en .NET Framework 4.6.2 o posterior y .NET Core 3.0 o posterior en el paquete de versión **preliminar.**  
     
 *   Para obtener más información acerca de la creación de aplicaciones WPF, vaya a la Guía de [Introducción WPF][Webview2GetStartedWpf] y la Referencia [de WPF][DotnetApiMicrosoftWebWebview2Wpf] de WebView2 para LAS API específicas de WPF.  
-*   Para obtener más información acerca de cómo crear aplicaciones Windows Forms, vaya a la Guía de Introducción de formularios de [Windows][Webview2GetStartedWinforms] y la Referencia de formularios de [Windows][DotnetApiMicrosoftWebWebview2Winforms] WebView2 para API específicas de Windows Forms.  
+*   Para obtener más información acerca de la creación de aplicaciones Windows Forms, vaya a Introducción a WebView2 en aplicaciones [de WinForms][Webview2GetStartedWinforms] y la Referencia de formularios de [Windows][DotnetApiMicrosoftWebWebview2Winforms] WebView2 para API específicas de Windows Forms.  
 *   Para obtener más información acerca de las API de CoreWebView2, vaya a [.NET Reference][DotnetApiMicrosoftWebWebview2Core].  
 *   > [!CAUTION]
     > **Problemas conocidos:** el equipo de WebView es consciente de algunos problemas de la versión preliminar que se están resolviendo en futuras versiones.  

@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, api de extensión, desarrollador, desarrollo web
-ms.openlocfilehash: 1a97346c1b484470b63b447b0acd34833d93e0c12481da9acc56fc7a552b0cac
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: 3e168d5942020e8a6c2e658b097dcf2b530d4380
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807657"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934308"
 ---
 # <a name="supported-apis-for-microsoft-edge-extensions"></a>API admitidas para Microsoft Edge extensiones
 
@@ -83,9 +83,11 @@ Microsoft Edge no admite las siguientes API de extensión:
 
 ## <a name="additional-considerations-for-supported-apis"></a>Consideraciones adicionales para las API compatibles
 
-* El usuario debe haber iniciado sesión Microsoft Edge una cuenta de MSA o Azure Active Directory para usar `chrome.identity.getProfileUserInfo` . Si el usuario ha iniciado sesión Microsoft Edge una cuenta de Active Directory local, la API devuelve los valores de correo electrónico `null` e identificador.
+*  El usuario debe haber iniciado sesión Microsoft Edge una cuenta de Microsoft (MSA) o una cuenta Azure Active Directory para usar `chrome.identity.getProfileUserInfo` . Si el usuario ha iniciado sesión Microsoft Edge una cuenta de Active Directory local, la API devuelve los valores de correo electrónico `null` e identificador.
 
-* Microsoft Edge no admite extensiones que usan pagos Chrome Web Store porque se usa para solicitar tokens para usuarios que han `identity.getAuthtoken` iniciado sesión. Estos tokens se envían a la API de licencias basada en REST. 
+   Una cuenta de Microsoft (MSA) es una Outlook.com, Live.com o Hotmail.com cuenta.
+
+*  Microsoft Edge no admite extensiones que usan pagos Chrome Web Store porque se usa para solicitar tokens para usuarios que han `identity.getAuthtoken` iniciado sesión.  Estos tokens se envían a la API de licencias basada en REST.
 
 
 <!-- links -->  

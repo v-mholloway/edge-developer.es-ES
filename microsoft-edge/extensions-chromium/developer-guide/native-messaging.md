@@ -7,12 +7,12 @@ ms.date: 03/31/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, desarrollo de extensiones, extensiones del explorador, complementos, centro de partners, desarrollador
-ms.openlocfilehash: 523340b302f62fd98f7ec12037d56d9d401df156e9ab0851e9b6f96fc3a1ef46
-ms.sourcegitcommit: 841e41de1a32501ece862399fa56170c022127c5
+ms.openlocfilehash: e1bb102a06b484dd207b4bb5468c03807db0b0a0
+ms.sourcegitcommit: dc445eae30234af1ad3fa42645aabb940529912b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "11807489"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "11934476"
 ---
 # <a name="native-messaging"></a>Mensajería nativa  
 
@@ -21,7 +21,7 @@ Las extensiones se comunican con una aplicación nativa de Win32 instalada en el
 Para adquirir la extensión y el host de la aplicación nativa, tienes dos modelos de distribución.  
 
 *   Empaquetar la extensión y el host juntos.  Cuando un usuario instala el paquete, se instalan tanto la extensión como el host.  
-*   Instale la extensión mediante el [Microsoft Edge complementos y][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]la extensión pide a los usuarios que instalen el host.  
+*   Instale la extensión mediante el [Microsoft Edge de][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]complementos y la extensión pide a los usuarios que instalen el host.  
 
 Para crear la extensión para enviar y recibir mensajes con hosts de aplicaciones nativas, siga estos pasos.  
 
@@ -161,7 +161,7 @@ Para realizar una instalación local de la extensión durante el desarrollo y `m
 1.  Vaya a `edge://extensions` la página y compruebe que la extensión aparece.  
 1.  Copie la clave `microsoft_catalog_extension_id` de \(ID\) de la lista de extensiones de la página.  
     
-Cuando esté listo para distribuir la extensión a los usuarios, publique la extensión en el almacén Microsoft Edge complementos.  El identificador de extensión de la extensión publicada puede diferir del identificador usado durante la instalación local de la extensión.  Si el identificador cambió, actualice `allowed_origins` en el archivo de manifiesto de host con el identificador de la extensión publicada.  
+Cuando esté listo para distribuir la extensión a los usuarios, publique la extensión en el sitio web Microsoft Edge complementos.  El identificador de extensión de la extensión publicada puede diferir del identificador usado durante la instalación local de la extensión.  Si el identificador cambió, actualice `allowed_origins` en el archivo de manifiesto de host con el identificador de la extensión publicada.  
 
 ## <a name="step-3---copy-the-native-messaging-host-manifest-file-to-your-system"></a>Paso 3: copiar el archivo de manifiesto de host de mensajería nativa en el sistema  
 
