@@ -353,20 +353,20 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: Ponerse en contacto con el soporte técnico de extensiones
               href: extensions-chromium/publish/contact-extensions-team.md
+            - name: Directivas de complementos de Microsoft Edge
+              items:
+                - name: Directiva de seguridad de contenido
+                  href: extensions-chromium/store-policies/csp.md
+                - name: Anexo ADA de desarrollador de Microsoft Edge
+                  href: extensions-chromium/store-policies/ada-addendum.md
+                - name: Directivas para desarrolladores de la tienda de complementos de Microsoft Edge
+                  href: extensions-chromium/store-policies/developer-policies.md
             - name: API de complementos de Microsoft Edge
               items:
                 - name: Uso de la API de complementos
                   href: extensions-chromium/publish/api/using-addons-api.md
                 - name: Referencia de la API de complementos
                   href: extensions-chromium/publish/api/addons-api-reference.md
-        - name: Directivas de complementos de Microsoft Edge
-          items:
-            - name: Directiva de seguridad de contenido
-              href: extensions-chromium/store-policies/csp.md
-            - name: Anexo ADA de desarrollador de Microsoft Edge
-              href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Directivas para desarrolladores del tienda de complementos de Microsoft Edge
-              href: extensions-chromium/store-policies/developer-policies.md
         - name: Extensiones para empresas
           items:
             - name: Hacer coincidir con patrones
