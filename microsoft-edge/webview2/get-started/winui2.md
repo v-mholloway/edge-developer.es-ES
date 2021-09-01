@@ -60,7 +60,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 1.  En la lista de plantillas de aplicación, seleccione Aplicación en blanco **(aplicación universal Windows).**
 
-    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="Cuadro de diálogo "Crear un nuevo proyecto"" lightbox="media/winui2-getting-started-create-project.png":::
+    :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="Cuadro de diálogo &quot;Crear un nuevo proyecto&quot;" lightbox="media/winui2-getting-started-create-project.png":::
        Cuadro **de diálogo Crear un nuevo** proyecto
     :::image-end:::
 
@@ -68,7 +68,7 @@ En este artículo, empieza a crear tu primera aplicación WebView2 y obtén info
 
 1.  En el **Project de texto nombre,** escriba un nombre de proyecto, como `UWPSampleProject` .
 
-    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="El cuadro de diálogo "Configurar el nuevo proyecto" para una aplicación en blanco (aplicación universal Windows)"" lightbox="media/winui2-getting-started-config-new-project.png":::
+    :::image type="complex" source="media/winui2-getting-started-config-new-project.png" alt-text="El cuadro de diálogo &quot;Configurar el nuevo proyecto&quot; para una aplicación en blanco (aplicación universal Windows)" lightbox="media/winui2-getting-started-config-new-project.png":::
        Cuadro **de diálogo Configurar el nuevo proyecto** para una aplicación en blanco **(Windows)**
     :::image-end:::
 
